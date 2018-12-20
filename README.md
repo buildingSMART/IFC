@@ -6,4 +6,4 @@
 Official schema management and versioning repository for IFC. It is manages by the buildingSMART International Model Support Group under the Technical Room.
 
 
-NOTE: this is experiemental for the moment, the goal is to have here a full representation of the IFC specification including the schema, the property and quantity sets and the documentation.
+NOTE: this is experimental for the moment, the goal is to have here a full representation of the IFC specification including the schema, the property and quantity sets and the documentation.
