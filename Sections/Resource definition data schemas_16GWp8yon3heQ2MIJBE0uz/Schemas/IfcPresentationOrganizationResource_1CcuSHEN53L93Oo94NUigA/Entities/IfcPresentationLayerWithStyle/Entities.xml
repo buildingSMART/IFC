@@ -53,11 +53,7 @@
 			<Documentation>The _IfcPresentationLayerWithStyle_ shall only be used to assign subtypes of _IfcGeometricRepresentationItem_&apos;s and to _IfcMappedItem_. There shall be no instance of subtypes of _IfcRepresentation_ in the set of _AssignedItem_&apos;s.
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; New where rule.</Documentation>
-			<Expression>SIZEOF(QUERY(temp &lt;* AssignedItems | (
-  SIZEOF(TYPEOF(temp) * [
-    &apos;IFCGEOMETRYRESOURCE.IFCGEOMETRICREPRESENTATIONITEM&apos;,
-    &apos;IFCGEOMETRYRESOURCE.IFCMAPPEDITEM&apos;]) = 1)
-)) = SIZEOF(AssignedItems)</Expression>
+			<Expression>SIZEOF(QUERY(temp &lt;* AssignedItems | (SIZEOF(TYPEOF(temp) * [&apos;IFCGEOMETRYRESOURCE.IfcGeometricRepresentationItem&apos;,&apos;IFCGEOMETRYRESOURCE.IfcMappedItem&apos;]) &gt;= 1))) = SIZEOF(AssignedItems)</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>

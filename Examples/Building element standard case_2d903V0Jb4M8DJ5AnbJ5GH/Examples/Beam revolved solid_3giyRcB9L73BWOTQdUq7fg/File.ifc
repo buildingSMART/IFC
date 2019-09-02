@@ -85,7 +85,7 @@ DATA;
 /* defines the beam as a standard case element with revolved solid geometry                       */
 /* the profile set usage indicated the cardinal point                                             */
 /* ---------------------------------------------------------------------------------------------- */
-#70= IFCBEAM('3v1174zor6w9secwnbuYk1',#6,$,$,$,#73,#90,$,$);
+#70= IFCBEAMSTANDARDCASE('3v1174zor6w9secwnbuYk1',#6,$,$,$,#73,#90,$,$);
 #71= IFCMATERIALPROFILESETUSAGE(#66,5,$);
 #72= IFCRELASSOCIATESMATERIAL('09XSzlrVbBaPJrUqRqW_4D',#6,'MatAssoc','Material Associates',(#70),#71);
 #73= IFCLOCALPLACEMENT($,#74);

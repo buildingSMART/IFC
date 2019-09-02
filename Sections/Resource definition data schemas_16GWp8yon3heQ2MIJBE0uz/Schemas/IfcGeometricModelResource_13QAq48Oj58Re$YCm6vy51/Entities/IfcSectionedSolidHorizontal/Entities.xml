@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSectionedSolidHorizontal" UniqueId="f68a12da-ce0e-4612-b29e-5a806895b5c8" DiagramNumber="1" BaseDefinition="IfcSectionedSolid" EntityFlags="32">
+	<Localization>
+		<DocLocalization Name="Sectioned Solid Horizontal" Locale="en" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="197.33332824707" Y="2152" Width="400" Height="161.333333333333" />
+	<Attributes>
+		<DocAttribute Name="CrossSectionPositions" UniqueId="3fcd980f-6728-4b2a-aab9-9fd4b2b292e9" DefinedType="IfcDistanceExpression" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="?">
+			<Documentation>List of distance expressions in sequentially increasing order paired with _CrossSections_, indicating the position of the corresponding section along the _Directrix_.</Documentation>
+			<DiagramLine>
+				<DocPoint X="597.33332824707" Y="2202.33325195313" />
+				<DocPoint X="597.33332824707" Y="2202.33325195313" />
+				<DocPoint X="977.333312988281" Y="2202.33325195313" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="597.33332824707" Y="2182.33325195313" Width="400" Height="50" />
+		</DocAttribute>
+		<DocAttribute Name="FixedAxisVertical" UniqueId="d23af836-5a9f-459e-9951-80823ea30043" DefinedType="IfcBoolean" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Indicates whether _Sections_ are oriented with the Y axis of each profile facing upwards in +Z direction (True), or vertically perpendicular to the _Directrix_ varying according to slope (False).</Documentation>
+			<DiagramLine>
+				<DocPoint X="597.33332824707" Y="2297.33333333333" />
+				<DocPoint X="597.33332824707" Y="2297.33333333333" />
+				<DocPoint X="974.666666666667" Y="2297.33333333333" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="597.33332824707" Y="2277.33333333333" Width="0" Height="0" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrespondingSectionPositions" UniqueId="7a8a7fd9-8326-49df-89c0-03f648861cc4">
+			<Documentation>The set of cross sections and the set of cross section positions shall be of the same size.</Documentation>
+			<Expression>SIZEOF(CrossSections) = SIZEOF(CrossSectionPositions)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="NoLongitudinalOffsets" UniqueId="05b295a8-2adf-47ae-b578-1fb527aaba25">
+			<Documentation>Distance expressions must not use longitudinal offsets.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* CrossSectionPositions | EXISTS(temp.OffsetLongitudinal))) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

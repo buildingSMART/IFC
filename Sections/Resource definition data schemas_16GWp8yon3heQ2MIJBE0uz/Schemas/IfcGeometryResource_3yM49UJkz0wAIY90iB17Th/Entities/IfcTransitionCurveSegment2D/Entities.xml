@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTransitionCurveSegment2D" UniqueId="b77db604-8175-4a1a-a61b-41f170430693" DiagramNumber="13" BaseDefinition="IfcCurveSegment2D" EntityFlags="32">
+	<Localization>
+		<DocLocalization Name="Transition Curve Segment 2D" Locale="en" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="19461.333984375" Y="1453.33333333333" Width="400" Height="460.000010172526" />
+	<Attributes>
+		<DocAttribute Name="StartRadius" UniqueId="b8a80eb6-8775-464c-81c2-385da4e760b6" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The radius of the curve at the start point. If the radius is not provided by a value, i.e. being “NIL” it is interpreted as INFINITE – the _StartPoint_ is at the point, where it does not have a curvature.</Documentation>
+			<DiagramLine>
+				<DocPoint X="19861.333984375" Y="1486.33337402344" />
+				<DocPoint X="19861.333984375" Y="1486.33337402344" />
+				<DocPoint X="20253.3326822917" Y="1486.33337402344" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="19861.333984375" Y="1466.33337402344" Width="0" Height="0" />
+		</DocAttribute>
+		<DocAttribute Name="EndRadius" UniqueId="7127c975-84dd-46c9-b055-62ac3329510c" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The radius of the curve at the end point. If the radius is not provided by a value, i.e. being “NIL” it is interpreted as INFINITE – the end point is at the point, where it does not have a curvature.</Documentation>
+			<DiagramLine>
+				<DocPoint X="19861.333984375" Y="1573.66667683919" />
+				<DocPoint X="19861.333984375" Y="1573.66667683919" />
+				<DocPoint X="20253.3326822917" Y="1573.66667683919" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="19861.333984375" Y="1553.66667683919" Width="0" Height="0" />
+		</DocAttribute>
+		<DocAttribute Name="IsStartRadiusCCW" UniqueId="8a32d068-c640-4326-85ee-c594fd0aa2ec" DefinedType="IfcBoolean" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Indication of the curve starting counter-clockwise or clockwise. The orientation of the curve is IsCcw=”true”, if the spiral arc goes counter-clockwise as seen from the start point and start direction, or “to the left&quot;, and with IsCcw=”false” if the spiral arc goes clockwise, or “to the right”.</Documentation>
+			<DiagramLine>
+				<DocPoint X="19861.333984375" Y="1660.99997965495" />
+				<DocPoint X="19861.333984375" Y="1660.99997965495" />
+				<DocPoint X="20253.3326822917" Y="1660.99997965495" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="19861.333984375" Y="1640.99997965495" Width="0" Height="0" />
+		</DocAttribute>
+		<DocAttribute Name="IsEndRadiusCCW" UniqueId="4d870336-02c6-47dc-a7e5-90b13fcb429c" DefinedType="IfcBoolean" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Indication of the curve ending counter-clockwise or clockwise. The orientation of the clothoidal arc is IsCcw=”true”, if the spiral arc goes counter-clockwise as seen towards the end point and end direction, or “to the left&quot;, and with IsCcw=”false” if the spiral arc goes clockwise, or “to the right”.</Documentation>
+			<DiagramLine>
+				<DocPoint X="19861.333984375" Y="1748.3332824707" />
+				<DocPoint X="19861.333984375" Y="1748.3332824707" />
+				<DocPoint X="20253.3326822917" Y="1748.3332824707" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="19861.333984375" Y="1728.3332824707" Width="0" Height="0" />
+		</DocAttribute>
+		<DocAttribute Name="TransitionCurveType" UniqueId="db9ec493-23e2-4453-b3cc-8b951017f4f5" DefinedType="IfcTransitionCurveType" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Indicates the specific type of transition curve.</Documentation>
+			<DiagramLine>
+				<DocPoint X="19861.333984375" Y="1860.66658528646" />
+				<DocPoint X="19861.333984375" Y="1860.66658528646" />
+				<DocPoint X="20253.3326822917" Y="1860.66658528646" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="19861.333984375" Y="1840.66658528646" Width="400" Height="100" />
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

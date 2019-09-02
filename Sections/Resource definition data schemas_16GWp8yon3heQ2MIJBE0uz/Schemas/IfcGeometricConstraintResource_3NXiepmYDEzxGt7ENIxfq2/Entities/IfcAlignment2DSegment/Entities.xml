@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAlignment2DSegment" UniqueId="99256c95-26f9-40c1-8626-d82861f2eecc" DiagramNumber="4" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="0">
+	<Localization>
+		<DocLocalization Name="Alignment 2D Segment" Locale="en" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="4866.666015625" Y="109.333338419596" Width="400" Height="366.666661580404" />
+	<Subtypes>
+		<DocSubtype UniqueId="09b02425-31f8-4a04-bdb3-17d12431aaba" DefinedType="IfcAlignment2DHorizontalSegment" />
+		<DocSubtype UniqueId="a6ceb5e8-fd6c-4594-9172-62a2838eedcb" DefinedType="IfcAlignment2DVerticalSegment" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="TangentialContinuity" UniqueId="f0b30a23-5b9b-4a8d-bd24-3a7708494f14" DefinedType="IfcBoolean" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Connectivity between the continuous segments is not enforced per se to be tangential. Setting &quot;TangentialContinuity&quot; to True means that the current segment shall continue with tangential continuity to the previous one.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5266.666015625" Y="369.333384195964" />
+				<DocPoint X="5266.666015625" Y="369.333384195964" />
+				<DocPoint X="5513.33251953125" Y="369.333384195964" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5266.666015625" Y="349.333384195964" Width="400" Height="50" />
+		</DocAttribute>
+		<DocAttribute Name="StartTag" UniqueId="e7fc2631-06b2-46f2-bb0a-74498454f1fb" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Tag to annotate the start point of the alignment segment.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5266.666015625" Y="137.333320617676" />
+				<DocPoint X="5266.666015625" Y="137.333320617676" />
+				<DocPoint X="5513.33251953125" Y="137.333320617676" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5266.666015625" Y="117.333320617676" Width="400" Height="50" />
+		</DocAttribute>
+		<DocAttribute Name="EndTag" UniqueId="11b43d14-fee6-4366-b011-51661eebd6b3" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Tag to annotate the end point of the alignment segment.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5266.666015625" Y="222.666697184245" />
+				<DocPoint X="5266.666015625" Y="222.666697184245" />
+				<DocPoint X="5513.33251953125" Y="222.666697184245" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5266.666015625" Y="202.666697184245" Width="0" Height="0" />
+		</DocAttribute>
+	</Attributes>
+	<Tree>
+		<DocLine>
+			<DiagramLine>
+				<DocPoint X="4885.33349609375" Y="476" />
+				<DocPoint X="4885.33349609375" Y="476" />
+				<DocPoint X="4885.33349609375" Y="528" />
+			</DiagramLine>
+			<Tree>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="4885.33349609375" Y="528" />
+						<DocPoint X="4885.33349609375" Y="1413.99999491374" />
+						<DocPoint X="4936.00032552083" Y="1413.99999491374" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="4885.33349609375" Y="528" />
+						<DocPoint X="4885.33349609375" Y="556.666646321615" />
+						<DocPoint X="4933.333984375" Y="556.666646321615" />
+					</DiagramLine>
+				</DocLine>
+			</Tree>
+		</DocLine>
+	</Tree>
+</DocEntity>
+

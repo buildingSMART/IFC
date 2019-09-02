@@ -1,0 +1,1 @@
+Similar to standard walls (_IfcWallStandardCase_), elemented walls are defined parametrically with _IfcMaterialLayerSetUsage_, but go into further detail, where each material layer corresponds to an aggregated part of a particular type, where such parts may be further decomposed and/or use parametric material definitions.

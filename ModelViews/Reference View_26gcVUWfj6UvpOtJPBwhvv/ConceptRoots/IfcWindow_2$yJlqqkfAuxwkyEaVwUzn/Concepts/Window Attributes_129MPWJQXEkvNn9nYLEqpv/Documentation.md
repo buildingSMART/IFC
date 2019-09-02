@@ -1,3 +1,0 @@
-The _IfcWindowTypePartitioningEnum_ defines the general layout of the window type and its symbolic presentation. Depending on the enumerator, the appropriate instances of _IfcWindowLiningProperties_ and _IfcWindowPanelProperties_ are attached in the list of _HasPropertySets_. The _IfcWindowTypePartitioningEnum_ mainly determines the way of partitioning the window into individual window panels and thereby number and position of window panels.
-
-See _IfcWindowTypePartitioningEnum_ for the correct usage of panel partitioning and _IfcWindowPanelProperties_ for the opening symbols for different panel operation types.

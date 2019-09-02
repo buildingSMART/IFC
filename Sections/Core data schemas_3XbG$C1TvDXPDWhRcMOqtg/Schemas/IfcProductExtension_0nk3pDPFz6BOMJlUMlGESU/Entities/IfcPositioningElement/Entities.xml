@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPositioningElement" Name="IfcPositioningElement" UniqueId="dfb6beda-5c7c-4df8-bbc6-b101ce4006f3" DiagramNumber="12" BaseDefinition="IfcProduct" EntityFlags="205">
+	<Localization>
+		<DocLocalization Name="Positioning Element" Locale="en" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="8094.06298828125" Y="2746.59838867188" Width="350.133361816406" Height="450.13333" />
+	<Subtypes>
+		<DocSubtype UniqueId="9fe00383-2205-42bc-b961-bf3fc2e0dfbd" DefinedType="IfcGrid" />
+		<DocSubtype UniqueId="c1d00f12-5779-4b3e-a9aa-a6a96c76f84c" DefinedType="IfcLinearPositioningElement" />
+		<DocSubtype UniqueId="8de7bcbf-4e60-4a56-a93c-519381ad4162" DefinedType="IfcReferent" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="ContainedInStructure" UniqueId="eab7c659-344b-47a3-82ed-2c7243b71a28" DefinedType="IfcRelContainedInSpatialStructure" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatedElements">
+			<Documentation>Relationship to a spatial structure element, to which the positioning element is primarily associated.
+{ .change-ifc2x}
+&gt; IFC2x CHANGE&amp;nbsp; The inverse relationship has been added to _IfcGrid_ with upward compatibility
+
+{ .change-ifc4}
+&gt; IFC4 CHANGE&amp;nbsp; The inverse relationship has been promoted from _IfcGrid_ to this new supertype with upward compatibility</Documentation>
+			<DiagramLine>
+				<DocPoint X="8444.19635009766" Y="2790.33203125" />
+				<DocPoint X="8444.19635009766" Y="2790.33203125" />
+				<DocPoint X="9077.86328125" Y="2790.33203125" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="8444.19635009766" Y="2770.33203125" Width="584" Height="70" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="HasPlacement" UniqueId="d0aa9601-b4ea-4006-ab30-c5b59bf73e03">
+			<Documentation>The placement for the grid has to be given.</Documentation>
+			<Expression>EXISTS(SELF\IfcProduct.ObjectPlacement)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+	<Tree>
+		<DocLine>
+			<DiagramLine>
+				<DocPoint X="8120" Y="3196.73171867188" />
+				<DocPoint X="8120" Y="3196.73171867188" />
+				<DocPoint X="8120" Y="3602.66666666667" />
+			</DiagramLine>
+			<Tree>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="8120" Y="3602.66666666667" />
+						<DocPoint X="8120" Y="3499.33325195313" />
+						<DocPoint X="8186.6669921875" Y="3499.33325195313" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="8120" Y="3602.66666666667" />
+						<DocPoint X="8120" Y="3831.33251953125" />
+						<DocPoint X="8189.33447265625" Y="3831.33251953125" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="8120" Y="3602.66666666667" />
+						<DocPoint X="8120" Y="4313.99983723958" />
+						<DocPoint X="8192" Y="4313.99983723958" />
+					</DiagramLine>
+				</DocLine>
+			</Tree>
+		</DocLine>
+	</Tree>
+</DocEntity>
+

@@ -1,1 +1,0 @@
-The nominal diameter describing the cross-section size of the fastener type.

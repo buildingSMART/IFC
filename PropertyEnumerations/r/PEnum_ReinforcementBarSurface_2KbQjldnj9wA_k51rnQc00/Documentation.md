@@ -1,1 +1,0 @@
-Enumeration indicating whether the bar has a plain or textured (ribbed) surface.

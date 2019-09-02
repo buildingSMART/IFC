@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocChangeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IFC4x1 Release Candidate 2" UniqueId="3f69261f-4b3b-413f-9b15-ddc87f3dd63f">
+	<ChangesEntities>
+		<DocChangeAction Name="Core data schemas" UniqueId="8b86a871-e4b1-4994-86f4-5d685e57a774">
+			<Changes>
+				<DocChangeAction Name="IfcProductExtension" UniqueId="06d9b932-5f10-4258-a314-f2d224b5c9a5">
+					<Changes>
+						<DocChangeAction Name="IfcAlignmentTypeEnum" UniqueId="bc3e8e93-41b5-40ea-adba-bf80d1f5e0b6">
+							<Changes>
+								<DocChangeAction Name="USERDEFINED" UniqueId="bf2c3efe-ce84-4639-8619-d0aff89aa178" Action="added" />
+								<DocChangeAction Name="NOTDEFINED" UniqueId="8944359e-ddc0-404c-99a1-c3b2e09a4aac" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcAlignment" UniqueId="2ef39380-bb44-4391-bc33-64bec3d5a16d">
+							<Changes>
+								<DocChangeAction Name="Axis" UniqueId="fcadeb2f-3e59-449f-9f4a-f45e56af4cd9" Action="modified" ImpactSPF="true" ImpactXML="true">
+									<Aspects>
+										<DocChangeAspect Aspect="name" OldValue="PredefinedType" NewValue="Axis" />
+										<DocChangeAspect Aspect="type" OldValue="IfcAlignmentTypeEnum" NewValue="IfcBoundedCurve" />
+										<DocChangeAspect Aspect="instantiation" OldValue="OPTIONAL" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="PredefinedType" UniqueId="4e57cb7e-6d6c-4cb5-8a02-0f52da038845" Action="modified" ImpactSPF="true" ImpactXML="true">
+									<Aspects>
+										<DocChangeAspect Aspect="name" OldValue="Horizontal" NewValue="PredefinedType" />
+										<DocChangeAspect Aspect="type" OldValue="IfcAlignment2DHorizontal" NewValue="IfcAlignmentTypeEnum" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="Vertical" UniqueId="9169f970-1e45-43fe-b8b0-0f9840d62972" Action="deleted" ImpactSPF="true" />
+								<DocChangeAction Name="LinearRefMethod" UniqueId="e861e50d-fb63-49fc-930e-54aac9260b2b" Action="deleted" ImpactSPF="true" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcLinearPositioningElement" UniqueId="57dfff84-b34f-483c-8a5b-1af2891990d1" Action="added" />
+					</Changes>
+				</DocChangeAction>
+			</Changes>
+		</DocChangeAction>
+		<DocChangeAction Name="Resource definition data schemas" UniqueId="f294f546-d5f7-4da7-9a7a-6bca7db1ea17">
+			<Changes>
+				<DocChangeAction Name="IfcGeometricConstraintResource" UniqueId="15455949-67ba-489a-a452-e56687767bc3">
+					<Changes>
+						<DocChangeAction Name="IfcAlignment2DHorizontal" UniqueId="a612dcfb-2ba5-432e-8e00-a261c9797609">
+							<Changes>
+								<DocChangeAction Name="ToAlignmentCurve" UniqueId="6b882304-0591-4182-af32-542e0413308a" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcAlignment2DHorizontalSegment" UniqueId="097510c9-f8c3-4b19-83e3-a14fad314cba">
+							<Changes>
+								<DocChangeAction Name="ToHorizontal" UniqueId="8e0ba84a-b4ab-40eb-a1f2-5e114278841c" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcAlignment2DVerSegCircularArc" UniqueId="698839ac-5f8e-4fef-9ae9-50dfe8020ca3">
+							<Changes>
+								<DocChangeAction Name="ToVertical" UniqueId="79993bfe-0054-4b9c-ac07-2d496254eefe" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcAlignment2DVerSegLine" UniqueId="8e67cafe-bcdb-42db-acfa-f5aa9ef7d643">
+							<Changes>
+								<DocChangeAction Name="ToVertical" UniqueId="9fe1a79c-b1b1-4fa3-8449-b156c44267cf" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcAlignment2DVerSegParabolicArc" UniqueId="cc7e59f4-2231-41a9-9073-e82d299c4344">
+							<Changes>
+								<DocChangeAction Name="ToVertical" UniqueId="b578b7d2-87d0-4747-a7c1-71a1daa052e9" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcAlignment2DVertical" UniqueId="b0b09aff-3f0d-4598-8fbd-8479ce94951a">
+							<Changes>
+								<DocChangeAction Name="ToAlignmentCurve" UniqueId="451ad52f-d6e9-4cbc-8a6e-cc0d915dcd67" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcAlignmentCurve" UniqueId="bd0c590c-4e3e-4cd3-b3c1-e20dc4a9d1f6" Action="added" />
+					</Changes>
+				</DocChangeAction>
+			</Changes>
+		</DocChangeAction>
+	</ChangesEntities>
+</DocChangeSet>
+

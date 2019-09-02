@@ -1,1 +1,0 @@
-The number of modules in series, where the total number of modules equals the number in parallel multiplied by the number in series.

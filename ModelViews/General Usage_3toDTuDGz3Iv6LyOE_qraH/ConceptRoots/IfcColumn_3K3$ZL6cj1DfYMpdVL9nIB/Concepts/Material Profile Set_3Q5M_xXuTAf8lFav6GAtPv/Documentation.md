@@ -1,1 +1,3 @@
-The material information of the _IfcColumn_ is defined by the _IfcMaterialProfileSet_ or as fallback by _IfcMaterial_, and it is attached either directly or at the _IfcColumnType_. In this case, the material information does not allow to construct a shape by applying the profile definition to the axis representation, to enable this parametric definition, the _IfcMaterialProfileSetUsage_ has to be used instead.
+The material of the _IfcColumn_ is defined by the _IfcMaterialProfileSet_ or as fallback by _IfcMaterial_, and it is attached either directly or at the _IfcColumnType_.
+
+> NOTE&nbsp; It is illegal to assign an _IfcMaterialProfileSetUsage_ to an _IfcColumn_. Only the subtype _IfcColumnStandardCase_ supports this concept.

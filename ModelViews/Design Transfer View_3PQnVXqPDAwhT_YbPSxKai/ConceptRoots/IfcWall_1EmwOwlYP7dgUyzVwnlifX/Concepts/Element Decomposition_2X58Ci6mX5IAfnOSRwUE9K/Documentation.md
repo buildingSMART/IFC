@@ -1,1 +1,0 @@
-A wall may be decomposed into parts for particular components such as framing and panels on each side. If a material layer set is defined, each _IfcElement_.Name shall match the corresponding _IfcMaterialLayer_.Name.

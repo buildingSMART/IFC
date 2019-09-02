@@ -246,9 +246,9 @@ Specific subtypes introduce additional attributes for _User Identity_.
 * Spatial objects may be further identified via the _LongName_ attribute. This value should generally correspond to building signage describing floor levels or rooms. While the _Name_ attribute generally provides a coded or abbreviated identifier, the _LongName_ provides a functional name for the location such as &quot;Reception Area&quot;. See concept template _Spatial Element Occurrence Attributes_
 * Physical elements may be further identified via the _Tag_ attribute. This is a human readable identifier such as an element or item number While there is no restriction on usage of such tags, it is recommended the _Tag_ is unique within it&apos;s containing scope. See concept template _Element Occurrence Attributes_</Documentation>
 			<Localization>
-				<DocLocalization Name="AUTOMATIC" Locale="tt">
+				<DocLocalization Locale="tt">
 					<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
-                &lt;TemplateRule Parameters=&quot;ObjectName[Value]=&apos;Beam_01&apos;&quot;/&gt;
+ &lt;TemplateRule Parameters=&quot;ObjectName[Value]=&apos;Member_1-001&apos;&quot;&gt;&lt;/TemplateRule&gt;
 &lt;/TemplateRules&gt; </Documentation>
 				</DocLocalization>
 			</Localization>
@@ -303,7 +303,7 @@ The main attributes to be provided for a _Object Occurrence Predefined Type_ are
 
  If the object is typed by an _IfcTypeObject_, then the _PredefinedType_ at the _IfcObject_ occurrence shall only be used if the _PredefinedType_ at _IfcTypeObject_ is set to _NOTDEFINED_.</Documentation>
 			<Localization>
-				<DocLocalization Name="AUTOMATIC" Locale="tt">
+				<DocLocalization Locale="tt">
 					<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
   &lt;TemplateRules operator=&quot;or&quot;&gt;
 	&lt;!-- Other checking type attribute on object or occurrence --&gt;
@@ -368,13 +368,12 @@ The main attributes to be provided for a _Object Occurrence Predefined Type_ are
 						<DocTemplateDefinition id="Site_Attributes_3soUxCzVn0bg0t4iBDJPsN" Name="Site Attributes" UniqueId="f6c9eecc-f5fc-4096-a037-12c2cd4d9d97" Type="IfcSite">
 							<Documentation>A site may be located according to latitute, longitute, elevation, land title designation, and/or postal address.</Documentation>
 							<Localization>
-								<DocLocalization Name="AUTOMATIC" Locale="tt">
+								<DocLocalization Locale="tt">
 									<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
 	&lt;TemplateRule Parameters=&quot;Name[Value]=&apos;SiteName&apos;&quot;/&gt;
 	&lt;TemplateRule Parameters=&quot;LongName[Value]=&apos;LongSiteName&apos;&quot;/&gt;
-	&lt;TemplateRule Parameters=&quot;Latitude[Value]=-33.85&quot;/&gt;
-                &lt;TemplateRule Parameters=&quot;Longitude[Value]=151.2&quot;/&gt;
-                &lt;TemplateRule Parameters=&quot;Elevation[Value]=58&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;Latitude[Value]=-50.975864&quot;/&gt;
+      &lt;!-- Other checking parameters: Longitude[Value], Elevation[Value] --&gt; 
 	&lt;TemplateRule Parameters=&quot;HasAddress[Size]&gt;0&quot;/&gt;
 &lt;/TemplateRules&gt;</Documentation>
 								</DocLocalization>
@@ -478,10 +477,10 @@ The main attributes to be provided for a _Object Occurrence Predefined Type_ are
 						<DocTemplateDefinition id="Building_Attributes_1040yDtLX7yucQjgMcjFLo" Name="Building Attributes" UniqueId="40100f0d-dd58-47f3-899a-b6a5a6b4f572" Type="IfcBuilding">
 							<Documentation>A building may be located according to a postal address, and may indicate a baseline elevation and land elevation.</Documentation>
 							<Localization>
-								<DocLocalization Name="AUTOMATIC" Locale="tt">
+								<DocLocalization Locale="tt">
 									<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
 	&lt;TemplateRule Parameters=&quot;Name[Value]=&apos;AEC3 Office&apos;&quot;/&gt;
-	&lt;TemplateRule Parameters=&quot;LongName[Value]=&apos;AEC3 Office Building Munich&apos;&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;LongName[Value]=&apos;AEC3 Office Munich&apos;&quot;/&gt;
 	&lt;TemplateRule Parameters=&quot;HasAdress[Size]=1&quot;/&gt;
 	&lt;TemplateRule Parameters=&quot;AddressLines[Value]=&apos;Joseph-Wild-Str.13&apos;&quot;/&gt;
 	&lt;TemplateRule Parameters=&quot;Town[Value]=&apos;München&apos;&quot;/&gt;
@@ -579,10 +578,10 @@ The main attributes to be provided for a _Object Occurrence Predefined Type_ are
 						<DocTemplateDefinition id="Storey_Attributes_18Z9koCG9BYRqWGgfmOAu8" Name="Storey Attributes" UniqueId="488c9bb2-3102-4b89-bd20-42aa7060ae08" Type="IfcBuildingStorey">
 							<Documentation>A building storey may be indicate the elevation of the top surface of the floor slab, excluding any floor coverings. For storeys with raised or sunken areas, the elevation should reflect the largest area of the slab. For split-level buildings, each level should have it&apos;s own _IfcBuildingStorey_.</Documentation>
 							<Localization>
-								<DocLocalization Name="AUTOMATIC" Locale="tt">
+								<DocLocalization Locale="tt">
 									<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
-	&lt;TemplateRule Parameters=&quot;Name[Value]=&apos;OG2&apos;&quot;/&gt;
-	&lt;TemplateRule Parameters=&quot;LongName[Value]=&apos;Obergeschoss 2&apos;&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;Name[Value]=&apos;OG1&apos;&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;LongName[Value]=&apos;Obergeschoss 1&apos;&quot;/&gt;
 	&lt;TemplateRule Parameters=&quot;Elevation[Value]=10.0&quot;/&gt;
 &lt;/TemplateRules&gt;</Documentation>
 								</DocLocalization>
@@ -613,12 +612,12 @@ The main attributes to be provided for a _Object Occurrence Predefined Type_ are
 						<DocTemplateDefinition id="Space_Attributes_1KEbAdUPn3IQ2w1CFyAHJJ" Name="Space Attributes" UniqueId="543a52a7-799c-4349-a0ba-04c3fc2914d3" Type="IfcSpace">
 							<Documentation>Space may be further described by their elevation including floor coverings.</Documentation>
 							<Localization>
-								<DocLocalization Name="AUTOMATIC" Locale="tt">
+								<DocLocalization Locale="tt">
 									<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
-	&lt;TemplateRule Parameters=&quot;Name[Value]=&apos;OF-02.012&apos;&quot;/&gt;
-	&lt;TemplateRule Parameters=&quot;LongName[Value]=&apos;Office 2.12&apos;&quot;/&gt;
-	&lt;TemplateRule Parameters=&quot;TypeName[Value]=&apos;OF-02&apos;&quot;/&gt;
-	&lt;TemplateRule Parameters=&quot;TypeLongName[Value]=&apos;Office OF-02&apos;&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;Name[Value]=&apos;Buero1&apos;&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;LongName[Value]=&apos;Bueroraum 1&apos;&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;TypeName[Value]=&apos;Buero&apos;&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;TypeLongName[Value]=&apos;Bueroraum&apos;&quot;/&gt;
 &lt;/TemplateRules&gt;</Documentation>
 								</DocLocalization>
 							</Localization>
@@ -708,17 +707,6 @@ The main attributes to be provided for a _Object Occurrence Predefined Type_ are
 						</DocTemplateDefinition>
 					</Templates>
 				</DocTemplateDefinition>
-				<DocTemplateDefinition Name="System Element Attributes" UniqueId="8042f661-d4d7-4e93-a506-6d04a405d05a" Type="IfcSystem">
-					<Documentation>Systems may be further identified via the _LongName_ attribute. This value should generally correspond to readable names for systems. While the _Name_ attribute generally provides a coded or abbreviated identifie, like &quot;HW&quot;, the _LongName_ provides a functional name for the system such as &quot;Hot water system&quot;.</Documentation>
-					<Rules>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="Name">
-							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
-							</Rules>
-						</DocModelRuleAttribute>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="LongName" Identification="LongName" />
-					</Rules>
-				</DocTemplateDefinition>
 				<DocTemplateDefinition Name="Element Occurrence Attributes" UniqueId="037ad90d-348e-42c0-a85b-ad0d5383f598" Type="IfcElement">
 					<Documentation>Physical elements may be further identified via the _Tag_ attribute. This is a human readable identifier such as an element or item number While there is no restriction on usage of such tags, it is recommended the _Tag_ is unique within it&apos;s containing scope.</Documentation>
 					<Rules>
@@ -732,7 +720,7 @@ The main attributes to be provided for a _Object Occurrence Predefined Type_ are
 						<DocTemplateDefinition id="Door_Attributes_0UNQGfptnF8uioKwsOuZYj" Name="Door Attributes" UniqueId="1e5da429-cf7c-4f23-8b32-53ad98e238ad" Type="IfcDoor">
 							<Documentation>Doors may be further described by their size and operation type.</Documentation>
 							<Localization>
-								<DocLocalization Name="AUTOMATIC" Locale="tt">
+								<DocLocalization Locale="tt">
 									<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
   &lt;TemplateRules operator=&quot;or&quot;&gt;
 	&lt;TemplateRule Parameters=&quot;OperationType[Value]=&apos;SINGLE_SWING_LEFT&apos;&quot;/&gt;
@@ -741,8 +729,8 @@ The main attributes to be provided for a _Object Occurrence Predefined Type_ are
         	&lt;TemplateRule Parameters=&quot;TypeOperationType[Value]=&apos;SINGLE_SWING_LEFT&apos; &quot;/&gt;
       &lt;/TemplateRules&gt;
   &lt;/TemplateRules&gt;
-  &lt;TemplateRule Parameters=&quot;OverallHeight[Value]=2.20&quot;/&gt;
-  &lt;TemplateRule Parameters=&quot;OverallWidth[Value]=1.10&quot;/&gt;
+  &lt;TemplateRule Parameters=&quot;OverallHeight[Value]=2.13&quot;/&gt;
+  &lt;TemplateRule Parameters=&quot;OverallWidth[Value]=1.01&quot;/&gt;
 &lt;/TemplateRules&gt;</Documentation>
 								</DocLocalization>
 							</Localization>
@@ -847,17 +835,17 @@ The main attributes to be provided for a _Object Occurrence Predefined Type_ are
 						<DocTemplateDefinition id="Window_Attributes_3u3TY5b1EAe5Nj0iIslY" Name="Window Attributes" UniqueId="f80dd8bf-fc59-4138-aa05-5ed02c4b6be2" Type="IfcWindow">
 							<Documentation>Windows may be further described by their size and partitioning type.</Documentation>
 							<Localization>
-								<DocLocalization Name="AUTOMATIC" Locale="tt">
+								<DocLocalization Locale="tt">
 									<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
   &lt;TemplateRules operator=&quot;or&quot;&gt;
 	&lt;TemplateRule Parameters=&quot;PartitioningType[Value]=&apos;DOUBLE_PANEL_VERTICAL&apos;&quot;/&gt;
       &lt;TemplateRules operator=&quot;and&quot;&gt;
        	&lt;TemplateRule Parameters=&quot;PartitioningType[Exits]=FALSE&quot;/&gt;
-        	&lt;TemplateRule Parameters=&quot;TypePartitioningType[Value]=&apos;DOUBLE_PANEL_VERTICAL&apos;&quot;/&gt;
+        	&lt;TemplateRule Parameters=&quot;TypePartitioningType[Value]=&apos;DOUBLE_PANEL_VERTICAL&apos; &quot;/&gt;
       &lt;/TemplateRules&gt;
   &lt;/TemplateRules&gt;
-  &lt;TemplateRule Parameters=&quot;OverallHeight[Value]=2.50&quot;/&gt;
-  &lt;TemplateRule Parameters=&quot;OverallWidth[Value]=1.75&quot;/&gt;
+  &lt;TemplateRule Parameters=&quot;OverallHeight[Value]=1.51&quot;/&gt;
+  &lt;TemplateRule Parameters=&quot;OverallWidth[Value]=0.76&quot;/&gt;
 &lt;/TemplateRules&gt;</Documentation>
 								</DocLocalization>
 							</Localization>
@@ -950,16 +938,277 @@ The main attributes to be provided for a _Object Occurrence Predefined Type_ are
 								</DocModelRuleAttribute>
 							</Rules>
 						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Mechanical_Fastener_Attributes_1egcaOOpbALg7a0Zi9Beqm" Name="Mechanical Fastener Attributes" UniqueId="68aa6918-6339-4a56-a1e4-023b092e8d30" Type="IfcMechanicalFastener">
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Tag">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="NominalDiameter">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveLengthMeasure" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="NominalLength">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveLengthMeasure" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsTypedBy">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelDefinesByType">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingType">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMechanicalFastenerType">
+															<Rules>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="NominalDiameter">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveLengthMeasure" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="NominalLength">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveLengthMeasure" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="NominalDiameter">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveLengthMeasure" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="NominalLength">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveLengthMeasure" />
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Reinforcing_Bar_Attributes_3oYIXghTD4BYiuJYSZCJX" Name="Reinforcing Bar Attributes" UniqueId="f289287f-aab7-4d10-b8ac-e1389c8cc4e1" Type="IfcReinforcingBar">
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Tag">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsTypedBy">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelDefinesByType">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingType">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcReinforcingBarType">
+															<Rules>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="NominalDiameter">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveLengthMeasure" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="CrossSectionArea">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAreaMeasure" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="BarLength">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveLengthMeasure" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="BarSurface">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcReinforcingBarSurfaceEnum" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="BendingShapeCode">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="BendingParameters">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcBendingParameterSelect" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="NominalDiameter">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveLengthMeasure" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="CrossSectionArea">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAreaMeasure" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="BarLength">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveLengthMeasure" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="BarSurface">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcReinforcingBarSurfaceEnum" />
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Reinforcing_Mesh_Attributes_0QQk0gs89EagPV_gRf3cjg" Name="Reinforcing Mesh Attributes" UniqueId="1a6ae02a-d882-4e92-a65f-faa6e90e6b6a" Type="IfcReinforcingMesh">
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Tag">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsTypedBy">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelDefinesByType">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingType">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcReinforcingMeshType">
+															<Rules>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="MeshLength">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveLengthMeasure" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="MeshWidth">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveLengthMeasure" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="LongitudinalBarNominalDiameter">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveLengthMeasure" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="TransverseBarNominalDiameter">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveLengthMeasure" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="LongitudinalBarCrossSectionArea">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAreaMeasure" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="TransverseBarCrossSectionArea">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAreaMeasure" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="LongitudinalBarSpacing">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveLengthMeasure" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="TransverseBarSpacing">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveLengthMeasure" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="BendingShapeCode">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="BendingParameters">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLengthMeasure" />
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPlaneAngleMeasure" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="MeshLength" />
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="MeshWidth" />
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="LongitudinalBarNominalDiameter" />
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="TransverseBarNominalDiameter" />
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="LongitudinalBarCrossSectionArea" />
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="TransverseBarCrossSectionArea" />
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="LongitudinalBarSpacing" />
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="TransverseBarSpacing" />
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Tendon_Attributes_3x5qh1NID9FhOiWhNMBMWq" Name="Tendon Attributes" UniqueId="fb174ac1-5d23-493e-b62c-82b5d62d6834" Type="IfcTendon">
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Tag">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsTypedBy">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelDefinesByType">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingType">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcTendonType">
+															<Rules>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="NominalDiameter">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveLengthMeasure" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="CrossSectionArea">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAreaMeasure" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="SheathDiameter">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveLengthMeasure" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="NominalDiameter" />
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="CrossSectionArea" />
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="TensionForce" />
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="PreStress" />
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="FrictionCoefficient" />
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="AnchorageSlip" />
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="MinCurvatureRadius" />
+							</Rules>
+						</DocTemplateDefinition>
 					</Templates>
 				</DocTemplateDefinition>
 				<DocTemplateDefinition id="Grid_Attributes_2SUqSDbuf0_gTtH9j0M8W0" Name="Grid Attributes" UniqueId="9c7b470d-978a-40fa-a777-449b40588800" Type="IfcGrid">
 					<Documentation>Grids may be used to provide a layout reference for building elements.</Documentation>
 					<Localization>
-						<DocLocalization Name="AUTOMATIC" Locale="tt">
+						<DocLocalization Locale="tt">
 							<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
-	&lt;TemplateRule Parameters=&quot;UAxes[Size]=5&quot;/&gt;
-	&lt;TemplateRule Parameters=&quot;VAxes[Size]=5&quot;/&gt;
-	&lt;TemplateRule Parameters=&quot;WAxes[Size]=5&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;UAxes[Size]=5 &quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;VAxes[Size]=5 &quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;WAxes[Size]=5 &quot;/&gt;
 &lt;/TemplateRules&gt;</Documentation>
 						</DocLocalization>
 					</Localization>
@@ -1020,6 +1269,57 @@ The main attributes to be provided for a _Object Occurrence Predefined Type_ are
 						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="WAxes" Identification="WAxes">
 							<Rules>
 								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGridAxis" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocTemplateDefinition>
+				<DocTemplateDefinition id="Alignment_Attributes_18hxpYJj7aPJTwpcwiPO" Name="Alignment Attributes" UniqueId="48afbff3-893b-4791-94dd-fface6eac658" Type="IfcAlignment">
+					<Documentation>Alignments may be used to provide a layout reference for infrastructure elements.</Documentation>
+					<Rules>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Axis">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAlignmentCurve">
+									<Rules>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Horizontal">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAlignment2DHorizontal">
+													<Rules>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Segments">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAlignment2DHorizontalSegment">
+																	<Rules>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="CurveGeometry">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCircularArcSegment2D" />
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcClothoidalArcSegment2D" />
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLineSegment2D" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Vertical">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAlignment2DVertical">
+													<Rules>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Segments">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAlignment2DVerSegCircularArc" />
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAlignment2DVerSegLine" />
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAlignment2DVerSegParabolicArc" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
 							</Rules>
 						</DocModelRuleAttribute>
 					</Rules>
@@ -1091,11 +1391,7 @@ Specific subtypes introduce additional attributes for _User Identity_.
 								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
 							</Rules>
 						</DocModelRuleAttribute>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ParameterTakesPrecedence">
-							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcBoolean" />
-							</Rules>
-						</DocModelRuleAttribute>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ParameterTakesPrecedence" />
 						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasPropertySets">
 							<Rules>
 								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDoorLiningProperties" />
@@ -1117,11 +1413,7 @@ Specific subtypes introduce additional attributes for _User Identity_.
 								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
 							</Rules>
 						</DocModelRuleAttribute>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ParameterTakesPrecedence">
-							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcBoolean" />
-							</Rules>
-						</DocModelRuleAttribute>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ParameterTakesPrecedence" />
 						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasPropertySets">
 							<Rules>
 								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcWindowLiningProperties" />

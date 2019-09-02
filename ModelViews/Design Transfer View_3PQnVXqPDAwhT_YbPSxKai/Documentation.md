@@ -44,32 +44,32 @@ All geometry is supported in the Design Transfer View, including Constructive So
 
 The Design Transfer View derives from the Reference View, such that it is a superset of the Reference View. It is valid to include geometry defined within the Design Transfer View (e.g. CSG) along with geometry defined within the Reference View (e.g. tessellation). Reference View geometry may also be omitted, as it is defined as optional.
 
-The IFC data model provides constructs for implicit and explicit parametric modeling. Explicit parametric behavior may be represented with the IFC constraint model (_IfcRelAssociatesConstraint_) to indicate product configuration tables and geometric formulas, which is out of scope for this model view. Implicit parametric behavior is based on defined rules for common elements defined by an axis path or footprint area.
+The IFC data model provides constructs for implicit and explicit parametric modeling. Explicit parametric behavior may be represented with the IFC constraint model (_IfcRelAssociatesConstraint_) to indicate product configuration tables and geometric formulas, which is out of scope for this model view. Implicit parametric behavior is based on defined rules for common elements defined by an axis path or footprint area, and may be modelled by _standard-case_ and _elemented-case_ entities.
 
-Elements may have parametric behaviors defined by material configuration at type definitions (either _IfcMaterialLayerSet_, _IfcMaterialProfileSet_, or _IfcMaterialConstituentSet_, which are applied to an axis path or footprint area. Material profiles define cross sections of materials that are swept along a curve. Material layers define thicknesses of materials that fill a bounded area. Applicable entities include the following:
+_Standard-case_ entities are defined by material configuration at type definitions (either _IfcMaterialLayerSet_, _IfcMaterialProfileSet_, or _IfcMaterialConstituentSet_, which are applied to an axis path or footprint area. Material profiles define cross sections of materials that are swept along a curve. Material layers define thicknesses of materials that fill a bounded area. _Standard-case_ entities include the following:
 
 <table class="gridtable">
 <tr><th>Entity</th><th>Material</th><th>Representation</th></tr>
-<tr><td><i>IfcSlab</i></td><td><i>IfcMaterialLayerSetUsage</i></td><td>'Footprint'</td></tr>
-<tr><td><i>IfcPlate</i></td><td><i>IfcMaterialLayerSetUsage</i></td><td>'Footprint'</td></tr>
-<tr><td><i>IfcWall</i></td><td><i>IfcMaterialLayerSetUsage</i></td><td>'Axis'</td></tr>
-<tr><td><i>IfcColumn</i></td><td><i>IfcMaterialProfileSetUsage</i></td><td>'Axis'</td></tr>
-<tr><td><i>IfcBeam</i></td><td><i>IfcMaterialProfileSetUsage</i></td><td>'Axis'</td></tr>
-<tr><td><i>IfcMember</i></td><td><i>IfcMaterialProfileSetUsage</i></td><td>'Axis'</td></tr>
-<tr><td><i>IfcDoor</i></td><td><i>IfcMaterialConstituentSet</i></td><td>'Profile'</td></tr>
-<tr><td><i>IfcWindow</i></td><td><i>IfcMaterialConstituentSet</i></td><td>'Profile'</td></tr>
-<tr><td><i>IfcOpeningElement</i></td><td>-</td><td>'Profile'</td></tr>
+<tr><td><i>IfcSlabStandardCase</i></td><td><i>IfcMaterialLayerSetUsage</i></td><td>'Footprint'</td></tr>
+<tr><td><i>IfcPlateStandardCase</i></td><td><i>IfcMaterialLayerSetUsage</i></td><td>'Footprint'</td></tr>
+<tr><td><i>IfcWallStandardCase</i></td><td><i>IfcMaterialLayerSetUsage</i></td><td>'Axis'</td></tr>
+<tr><td><i>IfcColumnStandardCase</i></td><td><i>IfcMaterialProfileSetUsage</i></td><td>'Axis'</td></tr>
+<tr><td><i>IfcBeamStandardCase</i></td><td><i>IfcMaterialProfileSetUsage</i></td><td>'Axis'</td></tr>
+<tr><td><i>IfcMemberStandardCase</i></td><td><i>IfcMaterialProfileSetUsage</i></td><td>'Axis'</td></tr>
+<tr><td><i>IfcDoorStandardCase</i></td><td><i>IfcMaterialConstituentSet</i></td><td>'Profile'</td></tr>
+<tr><td><i>IfcWindowStandardCase</i></td><td><i>IfcMaterialConstituentSet</i></td><td>'Profile'</td></tr>
+<tr><td><i>IfcOpeningStandardCase</i></td><td><i>IfcMaterialConstituentSet</i></td><td>'Profile'</td></tr>
 </table>
 
-Elements may be further described by compositions of parts, where each composed element is defined by material configuration at type definitions. Applicable entities include the following:
+_Elemented-case_ entities are defined by compositions of elements, where each composed element is defined by material configuration at type definitions. _Elemented-case_ entities include the following:
 
 <table class="gridtable">
 <tr><th>Entity</th><th>Components</th>
 
-</tr><tr><td><i>IfcSlab</i></td><td>
-<i>IfcPlate</i> (subfloor)<br><i>IfcElementAssembly</i> (joists)<br><i>IfcBuildingElementPart</i> (ceiling drywall)
+</tr><tr><td><i>IfcSlabElementedCase</i></td><td>
+<i>IfcPlateStandardCase</i> (subfloor)<br><i>IfcElementAssembly</i> (joists)<br><i>IfcBuildingElementPart</i> (ceiling drywall)
 </td></tr>
 
-<tr><td><i>IfcWall</i></td><td>
+<tr><td><i>IfcWallElementedCase</i></td><td>
 <i>IfcBuildingElementPart</i> (panels on forward side)<br><i>IfcElementAssembly</i> (studs, track, insulation)<br><i>IfcBuildingElementPart</i> (panels on reverse side)</td></tr>
 </table>
