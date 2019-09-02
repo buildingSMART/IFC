@@ -1,0 +1,6 @@
+(Time: IfcLocalTime) : BOOLEAN;
+IF EXISTS (Time.SecondComponent) THEN
+  RETURN (EXISTS (Time.MinuteComponent));  
+ELSE    
+  RETURN (TRUE);  
+END_IF;

@@ -1,0 +1,1 @@
+Specific to IfcDistributionElement: The spatial containment shall be within IfcSite, IfcBuilding, or IfcBuildingStorey, or within IfcSpace.

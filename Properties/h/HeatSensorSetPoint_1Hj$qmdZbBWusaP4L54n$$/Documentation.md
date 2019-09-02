@@ -1,0 +1,1 @@
+The temperature value to be sensed.

@@ -1,0 +1,1 @@
+The maximum instantaneous value of current attained during the breaking operation of a protective device. (IEC 441-17-12)

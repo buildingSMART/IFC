@@ -1,0 +1,1 @@
+The area of utilization expressed as a minimum value and a maximum value  - according to local building codes.

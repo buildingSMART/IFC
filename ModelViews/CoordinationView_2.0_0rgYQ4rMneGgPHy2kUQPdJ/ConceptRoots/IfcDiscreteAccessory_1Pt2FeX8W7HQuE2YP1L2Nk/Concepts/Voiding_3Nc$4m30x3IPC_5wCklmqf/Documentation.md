@@ -1,0 +1,1 @@
+Specific to IfcDiscreteAccessory: An IfcDiscreteAccessory shall not have openings, cut-out shall be handled by CSG geometry or being included in the explicit geometry.

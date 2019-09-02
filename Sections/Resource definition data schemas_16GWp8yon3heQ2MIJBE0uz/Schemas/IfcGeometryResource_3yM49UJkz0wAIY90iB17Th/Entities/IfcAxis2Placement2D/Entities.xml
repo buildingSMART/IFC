@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAxis2Placement2D" UniqueId="0110d280-1722-46bf-b12c-0b81868564a8" DiagramNumber="3" BaseDefinition="IfcPlacement" EntityFlags="101">
+	<Attributes>
+		<DocAttribute Name="RefDirection" UniqueId="5e585783-4533-48ef-834e-1d2f291ac661" DefinedType="IfcDirection" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The direction used to determine the direction of the local X Axis.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="P" UniqueId="33104550-d380-4611-9005-707c5ca49a0e" DefinedType="IfcDirection" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="2">
+			<Documentation>P[1]: The normalized direction of the placement X Axis. This is (1.0,0.0,0.0) if RefDirection is omitted. P[2]: The normalized direction of the placement Y Axis. This is a derived attribute and is orthogonal to P[1].</Documentation>
+			<Derived>IfcBuild2Axes(RefDirection)</Derived>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="0XWQ8Tdt5CTh8U5_O3jGnz">
+			<Expression>(NOT (EXISTS (RefDirection))) OR (RefDirection.Dim = 2)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR2" UniqueId="1XH_iBgOP1whsSuWwWIEya">
+			<Expression>SELF\IfcPlacement.Location.Dim = 2</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

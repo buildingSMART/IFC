@@ -1,0 +1,1 @@
+Specific to IfcBuilding: the IfcBuilding shall not have a material assigned.

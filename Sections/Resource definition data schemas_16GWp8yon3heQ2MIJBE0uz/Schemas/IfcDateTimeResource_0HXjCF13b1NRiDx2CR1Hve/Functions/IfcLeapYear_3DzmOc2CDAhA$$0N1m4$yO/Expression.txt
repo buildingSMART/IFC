@@ -1,0 +1,9 @@
+(Year : IfcYearNumber)
+      :BOOLEAN;
+
+IF ((((Year MOD 4) = 0) AND ((Year MOD 100) <> 0)) OR
+            ((Year MOD 400) = 0)) THEN
+  RETURN(TRUE);
+ELSE
+  RETURN(FALSE);
+END_IF;

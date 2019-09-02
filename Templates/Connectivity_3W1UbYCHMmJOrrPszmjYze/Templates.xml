@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Connectivity_3W1UbYCHMmJOrrPszmjYze" Name="Connectivity" UniqueId="3W1UbYCHMmJOrrPszmjYze" Version="0.3" Status="draft" Owner="buildingSMART International">
+	<Templates>
+		<DocTemplateDefinition Name="Connectivity Basic" UniqueId="285jdN1Oc2Jx20F_Z1y4T0" Version="0.3" Status="draft" Owner="buildingSMART International" Type="IfcRelConnectsElements">
+			<Documentation>Connection information between two &lt;elements&gt; as a logical connection without providing the connection feature, the connection type, or realizing elements (fasteners, etc.) for the connection.&lt;/elements&gt;</Documentation>
+		</DocTemplateDefinition>
+		<DocTemplateDefinition Name="Connectivity Path" UniqueId="25laZ6vBXZIgHDeRtD5F8J" Version="0.3" Status="draft" Owner="buildingSMART International" Type="IfcRelConnectsPathElements">
+			<Documentation>Connection information between two &lt;elements&gt; with an optional connection geometry describing the connection feature as end caps (to trim the element&amp;#39;s footprint profile at the connection ends).&lt;/elements&gt;</Documentation>
+		</DocTemplateDefinition>
+		<DocTemplateDefinition Name="Connectivity Realization" UniqueId="34aadUmd5tGug3KOmCa_4r" Version="0.3" Status="draft" Owner="buildingSMART International" Type="IfcRelConnectsWithRealizingElement">
+			<Documentation>&lt;elements&gt;&lt;/elements&gt;</Documentation>
+			<Templates>
+				<DocTemplateDefinition Name="Connectivity Realized" UniqueId="2gWRO6L_b1HumhEFZK$TTz" Version="0.3" Status="draft" Owner="buildingSMART International" Type="IfcRelConnectsWithRealizingElement">
+					<Documentation>Connection information between two _elements_or between an _element_and another _element_as a connection including the link the realizing elements (fasteners, etc.) that establish this connection physically.</Documentation>
+				</DocTemplateDefinition>
+				<DocTemplateDefinition Name="Connectivity Is Realization" UniqueId="2c$LkaVkuFGxkZ1vxnzk5f" Version="0.3" Status="draft" Owner="buildingSMART International" Type="IfcRelConnectsWithRealizingElement">
+					<Documentation>The _element_is used within a connectivity relationship, represented by _IfcRelConnectsWithRealizingElement_, as one of the _RealizingElements_.</Documentation>
+				</DocTemplateDefinition>
+			</Templates>
+		</DocTemplateDefinition>
+		<DocTemplateDefinition Name="Connectivity by Ports" UniqueId="0YZbFmrffHIueVXtXC7QUN" Version="0.3" Status="draft" Owner="buildingSMART International" Type="IfcRelConnectsPorts" />
+		<DocTemplateDefinition Name="Connectivity to Control" UniqueId="0k8EnaXqCyHfBLCx6eW3hp" Version="0.3" Status="draft" Owner="buildingSMART International" Type="IfcRelFlowControlElements" />
+	</Templates>
+</DocTemplateDefinition>
+

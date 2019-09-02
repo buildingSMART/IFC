@@ -1,0 +1,1 @@
+The material from which the damper frame is constructed.

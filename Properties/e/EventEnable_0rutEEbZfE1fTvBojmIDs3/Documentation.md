@@ -1,0 +1,1 @@
+Enumeration that defines the type of event enabling

@@ -1,0 +1,1 @@
+The primary material used to construct the air terminal box.

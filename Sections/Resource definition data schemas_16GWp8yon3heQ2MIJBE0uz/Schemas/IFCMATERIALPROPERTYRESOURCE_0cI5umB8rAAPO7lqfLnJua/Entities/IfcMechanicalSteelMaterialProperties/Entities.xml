@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMechanicalSteelMaterialProperties" UniqueId="2uqlH8syjFsxOVsJp_Ax8r" DiagramNumber="5" BaseDefinition="IfcMechanicalMaterialProperties" EntityFlags="237">
+	<Attributes>
+		<DocAttribute Name="YieldStress" UniqueId="0klXbtYmX2qvVvPyN91imz" DefinedType="IfcPressureMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>A measure of the yield stress (or characteristic 0.2 percent proof stress) of the material.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="UltimateStress" UniqueId="0TkAsUm0j2O85tuGAH60P4" DefinedType="IfcPressureMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>A measure of the ultimate stress of the material.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="UltimateStrain" UniqueId="2KO$3vA7XAnvPfPWUNN7s7" DefinedType="IfcPositiveRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>A measure of the (engineering) strain at the state of ultimate stress of the material.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="HardeningModule" UniqueId="3LHhvP2TH0NeFL2Fkis8C4" DefinedType="IfcModulusOfElasticityMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>A measure of the hardening module of the material (slope of stress versus strain curve after yield range).</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ProportionalStress" UniqueId="149hX43PPBt9H556tPhAHo" DefinedType="IfcPressureMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>A measure of the proportional stress of the material. It describes the stress before the first plastic deformation occurs and is commonly measured at a deformation of 0.01%.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="PlasticStrain" UniqueId="2$6UciLTXEwxu80TfPNpS3" DefinedType="IfcPositiveRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>A measure of the permanent displacement, as in slip or twinning, which remains after the stress has been removed. Currently applied to a strain of 0.2% proportional stress of the material.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Relaxations" UniqueId="1lM7otw1X9wQM5QPg1p5qq" DefinedType="IfcRelaxation" AttributeFlags="1" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Measures of decrease in stress over long time intervals resulting from plastic flow. Different relaxation values for different initial stress levels for a material may be given.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR31" UniqueId="2y27Oyzi5Cv98nRBfW$CF2">
+			<Documentation>Yield stress, if given, shall be non-negative.</Documentation>
+			<Expression>NOT(EXISTS(YieldStress)) OR (YieldStress &gt;= 0.)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR32" UniqueId="0YqGV3YYv6dw05h5RZpmIP">
+			<Documentation>Ultimate stress, if given, shall be non-negative.</Documentation>
+			<Expression>NOT(EXISTS(UltimateStress)) OR (UltimateStress &gt;= 0.)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR33" UniqueId="07j8bXUHTDcPCqRD$rtoST">
+			<Documentation>Hardening module, if given, shall be non-negative.</Documentation>
+			<Expression>NOT(EXISTS(HardeningModule)) OR (HardeningModule &gt;= 0.)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR34" UniqueId="29VQuPKfLAGuC8bVetI4rw">
+			<Documentation>Proportional stress, if given, shall be non-negative.</Documentation>
+			<Expression>NOT(EXISTS(ProportionalStress)) OR (ProportionalStress &gt;= 0.)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

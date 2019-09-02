@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralSteelProfileProperties" UniqueId="1g6hqSMeP5kexWRgDCxCtx" DiagramNumber="2" BaseDefinition="IfcStructuralProfileProperties" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="ShearAreaZ" UniqueId="2ekDROtT5AzOCXInv8gKYS" DefinedType="IfcAreaMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Area of the profile for calculating the shear stress for a shear force parallel to the profile&apos;s Z-axis. Usually measured in [mm2].</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ShearAreaY" UniqueId="3_2R4hf8j4Hf8BIIFXUydg" DefinedType="IfcAreaMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Area of the profile for calculating the shear stress for a shear force parallel to the profile&apos;s Y-axis. Usually measured in [mm2].</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="PlasticShapeFactorY" UniqueId="0ePr4MGF5EBBfpjxu5971q" DefinedType="IfcPositiveRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Ratio of plastic versus elastic bending moment capacity (about y-axis) of the profile.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="PlasticShapeFactorZ" UniqueId="2ztl11oMXCjxfxvoh3TEP2" DefinedType="IfcPositiveRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Ratio of plastic versus elastic bending moment capacity (about z-axis) of the profile.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR31" UniqueId="2lIMBEpN1BWg0BaT1waojx">
+			<Expression>NOT(EXISTS(ShearAreaY)) OR (ShearAreaY &gt;= 0.)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR32" UniqueId="1Jb4D6Rev5rxWvgOAnP7bk">
+			<Expression>NOT(EXISTS(ShearAreaZ)) OR (ShearAreaZ &gt;= 0.)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

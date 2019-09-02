@@ -1,0 +1,1 @@
+The period of time for the lease. Note that values should be given in year/day/month and not in hour/minute/second.

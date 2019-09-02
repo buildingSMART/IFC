@@ -1,0 +1,1 @@
+Specific to IfcReinforcingBar: It shall not be provided, if the IfcReinforcingBar is part of an aggregation.

@@ -1,0 +1,1 @@
+Inclination of the element as derived from the placement of the element shape, by convention: Vertical = 0', horizontal = 90', if unit is grad). The calculation procedure will be specific for each type of element.  In cases of inconsistency between the geometric parameters and the azimuth property, provided in the attached property set, the geometric parameters take precedence.

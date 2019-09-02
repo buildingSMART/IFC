@@ -1,0 +1,19 @@
+    (AScalar : GENERIC;
+     AList   : LIST OF GENERIC:AL)
+	: LIST[1:?] OF GENERIC:AL;
+  
+    LOCAL
+      Result : LIST OF GENERIC:AL := [];
+    END_LOCAL;
+
+  IF NOT(EXISTS(AScalar)) THEN
+    Result := AList;
+  ELSE
+    Result := Result + AScalar;
+    IF (HIINDEX(AList) >= 1) THEN
+      REPEAT i:=1 TO HIINDEX(AList);
+        Result[i+1] := AList[i];
+      END_REPEAT;
+    END_IF;
+  END_IF;
+  RETURN(Result);

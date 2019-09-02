@@ -1,0 +1,1 @@
+A reference to a classification of the degree of aggregation or granularity of topic data such as regional, local etc.

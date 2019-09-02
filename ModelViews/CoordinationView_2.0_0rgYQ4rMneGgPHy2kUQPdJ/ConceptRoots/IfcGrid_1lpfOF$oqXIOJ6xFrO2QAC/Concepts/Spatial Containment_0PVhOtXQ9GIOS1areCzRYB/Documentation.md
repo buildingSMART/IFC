@@ -1,0 +1,1 @@
+Specific to IfcGrid: It is restricted to be containied in IfcSite, IfcBuilding, or IfcBuildingStory only.

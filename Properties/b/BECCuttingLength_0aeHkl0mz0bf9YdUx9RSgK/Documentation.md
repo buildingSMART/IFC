@@ -1,0 +1,1 @@
+Usually calculated from the sum of the partial length parameters with corrections for the bendings.

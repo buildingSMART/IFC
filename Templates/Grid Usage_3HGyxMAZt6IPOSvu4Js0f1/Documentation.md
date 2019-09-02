@@ -1,0 +1,1 @@
+The specific functionalities involved by providing an _IfcGrid_as the _element_.

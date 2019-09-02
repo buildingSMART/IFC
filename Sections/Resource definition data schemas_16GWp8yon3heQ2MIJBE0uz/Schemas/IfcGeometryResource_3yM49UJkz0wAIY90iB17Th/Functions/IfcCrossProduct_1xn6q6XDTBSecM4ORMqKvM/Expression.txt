@@ -1,0 +1,29 @@
+  (Arg1, Arg2 : IfcDirection) 
+    : IfcVector;
+LOCAL
+  Mag : REAL;
+  Res : IfcDirection;
+  V1,V2  : LIST[3:3] OF REAL;
+  Result : IfcVector;
+END_LOCAL;
+
+  IF (NOT EXISTS (Arg1) OR (Arg1.Dim = 2)) OR (NOT EXISTS (Arg2) OR (Arg2.Dim = 2)) THEN
+    RETURN(?);
+  ELSE
+    BEGIN
+      V1  := IfcNormalise(Arg1).DirectionRatios;
+      V2  := IfcNormalise(Arg2).DirectionRatios;
+      Res := IfcRepresentationItem() || IfcGeometricRepresentationItem () 
+             || IfcDirection([(V1[2]*V2[3] - V1[3]*V2[2]), (V1[3]*V2[1] - V1[1]*V2[3]), (V1[1]*V2[2] - V1[2]*V2[1])]);
+      Mag := 0.0;
+      REPEAT i := 1 TO 3;
+        Mag := Mag + Res.DirectionRatios[i]*Res.DirectionRatios[i];
+      END_REPEAT;
+      IF (Mag > 0.0) THEN
+        Result := IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcVector(Res, SQRT(Mag));
+      ELSE
+        Result := IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcVector(Arg1, 0.0);
+      END_IF;
+      RETURN(Result);
+    END;
+  END_IF;

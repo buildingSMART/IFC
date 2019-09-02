@@ -1,0 +1,1 @@
+Indication whether this object is sprinkler protected (true) or not (false).

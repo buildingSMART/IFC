@@ -1,0 +1,19 @@
+(Date : IfcCalendarDate) : LOGICAL;
+IF NOT ({1 <= Date.DayComponent <= 31}) THEN    
+  RETURN(FALSE);  
+END_IF;
+CASE Date.MonthComponent OF
+  4         : RETURN({ 1<= Date.DayComponent <= 30});
+  6         : RETURN({ 1<= Date.DayComponent <= 30});
+  9         : RETURN({ 1<= Date.DayComponent <= 30});
+  11        : RETURN({ 1<= Date.DayComponent <= 30});    
+  2         :    
+  BEGIN
+    IF (IfcLeapYear(Date.YearComponent)) THEN
+      RETURN({ 1<= Date.DayComponent <= 29});      
+    ELSE
+      RETURN({ 1<= Date.DayComponent <= 28});      
+    END_IF;    
+  END;
+  OTHERWISE : RETURN(TRUE);  
+END_CASE;

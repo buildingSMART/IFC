@@ -1,0 +1,1 @@
+Refrigerant evaporating temperature.

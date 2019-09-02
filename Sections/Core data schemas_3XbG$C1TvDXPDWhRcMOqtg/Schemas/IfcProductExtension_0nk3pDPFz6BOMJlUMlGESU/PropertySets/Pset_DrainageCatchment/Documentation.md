@@ -1,0 +1,2 @@
+Area of land that drains naturally to a given point (BS6100 modified). Used as a non type driven property set in conjunction with an appropriate instance of IfcSpatialStructureElement that is identified as a catchment using the inherited IfcRoot.Name attribute. Catchments may be nested using IfcRelNests so that subcatchment areas (as component parts of a catchment area) can be identified. A catchment area will be geometrically defined by a closed loop (closed polyline or polyloop)
+Note also that the boundary between catchment areas (watershed) is not currently identified.

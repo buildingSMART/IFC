@@ -1,0 +1,12 @@
+(B: IfcRationalBezierCurve) : BOOLEAN;
+   LOCAL
+     Result : BOOLEAN := TRUE;
+   END_LOCAL;
+
+   REPEAT i := 0 TO B.UpperIndexOnControlPoints;
+     IF B.Weights[i] <= 0.0  THEN
+       Result := FALSE;
+       RETURN(Result);
+     END_IF;
+   END_REPEAT;
+   RETURN(Result);

@@ -1,0 +1,65 @@
+(n : IfcSiUnitName )     : IfcDimensionalExponents;
+  CASE n OF
+    METRE          : RETURN (IfcDimensionalExponents
+                             (1, 0, 0, 0, 0, 0, 0));
+    SQUARE_METRE   : RETURN (IfcDimensionalExponents
+                             (2, 0, 0, 0, 0, 0, 0));
+    CUBIC_METRE    : RETURN (IfcDimensionalExponents
+                             (3, 0, 0, 0, 0, 0, 0));
+    GRAM           : RETURN (IfcDimensionalExponents
+                             (0, 1, 0, 0, 0, 0, 0));
+    SECOND         : RETURN (IfcDimensionalExponents
+                             (0, 0, 1, 0, 0, 0, 0));
+    AMPERE         : RETURN (IfcDimensionalExponents
+                             (0, 0, 0, 1, 0, 0, 0));
+    KELVIN         : RETURN (IfcDimensionalExponents
+                             (0, 0, 0, 0, 1, 0, 0));
+    MOLE           : RETURN (IfcDimensionalExponents
+                             (0, 0, 0, 0, 0, 1, 0));
+    CANDELA        : RETURN (IfcDimensionalExponents
+                             (0, 0, 0, 0, 0, 0, 1));
+    RADIAN         : RETURN (IfcDimensionalExponents
+                             (0, 0, 0, 0, 0, 0, 0));
+    STERADIAN      : RETURN (IfcDimensionalExponents
+                             (0, 0, 0, 0, 0, 0, 0));
+    HERTZ          : RETURN (IfcDimensionalExponents
+                             (0, 0, -1, 0, 0, 0, 0));
+    NEWTON         : RETURN (IfcDimensionalExponents
+                             (1, 1, -2, 0, 0, 0, 0));
+    PASCAL         : RETURN (IfcDimensionalExponents
+                             (-1, 1, -2, 0, 0, 0, 0));
+    JOULE          : RETURN (IfcDimensionalExponents
+                             (2, 1, -2, 0, 0, 0, 0));
+    WATT           : RETURN (IfcDimensionalExponents
+                             (2, 1, -3, 0, 0, 0, 0));
+    COULOMB        : RETURN (IfcDimensionalExponents
+                             (0, 0, 1, 1, 0, 0, 0));
+    VOLT           : RETURN (IfcDimensionalExponents
+                             (2, 1, -3, -1, 0, 0, 0));
+    FARAD          : RETURN (IfcDimensionalExponents
+                             (-2, -1, 4, 1, 0, 0, 0));
+    OHM            : RETURN (IfcDimensionalExponents
+                             (2, 1, -3, -2, 0, 0, 0));
+    SIEMENS        : RETURN (IfcDimensionalExponents
+                             (-2, -1, 3, 2, 0, 0, 0));
+    WEBER          : RETURN (IfcDimensionalExponents
+                             (2, 1, -2, -1, 0, 0, 0));
+    TESLA          : RETURN (IfcDimensionalExponents
+                             (0, 1, -2, -1, 0, 0, 0));
+    HENRY          : RETURN (IfcDimensionalExponents
+                             (2, 1, -2, -2, 0, 0, 0));
+    DEGREE_CELSIUS : RETURN (IfcDimensionalExponents
+                             (0, 0, 0, 0, 1, 0, 0));
+    LUMEN          : RETURN (IfcDimensionalExponents
+                             (0, 0, 0, 0, 0, 0, 1));
+    LUX            : RETURN (IfcDimensionalExponents
+                             (-2, 0, 0, 0, 0, 0, 1));
+    BECQUEREL      : RETURN (IfcDimensionalExponents
+                             (0, 0, -1, 0, 0, 0, 0));
+    GRAY           : RETURN (IfcDimensionalExponents
+                             (2, 0, -2, 0, 0, 0, 0));
+    SIEVERT        : RETURN (IfcDimensionalExponents
+                             (2, 0, -2, 0, 0, 0, 0));
+    OTHERWISE      : RETURN (IfcDimensionalExponents
+                             (0, 0, 0, 0, 0, 0, 0));
+  END_CASE;

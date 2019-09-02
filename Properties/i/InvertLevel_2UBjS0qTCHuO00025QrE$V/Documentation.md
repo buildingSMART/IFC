@@ -1,0 +1,1 @@
+Level of the lowest part of the cross section. (BS6100 250 8001)

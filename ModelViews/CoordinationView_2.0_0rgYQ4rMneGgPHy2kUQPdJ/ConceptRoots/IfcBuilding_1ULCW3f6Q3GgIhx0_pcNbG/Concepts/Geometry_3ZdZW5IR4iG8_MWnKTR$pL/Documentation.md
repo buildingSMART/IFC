@@ -1,0 +1,1 @@
+Specific to _IfcBuilding_: There shall be no geometric representation assigned to _IfcBuilding_.

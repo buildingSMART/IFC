@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcDimensionPair" UniqueId="1qf0RLe4P3ReMDGJ2knCai" DiagramNumber="1" BaseDefinition="IfcDraughtingCalloutRelationship" EntityFlags="229">
+	<WhereRules>
+		<DocWhereRule Name="WR11" UniqueId="0UM3NMI$b2yAWV85MULz2l">
+			<Expression>SELF.Name IN [&apos;chained&apos;,&apos;parallel&apos;]</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR12" UniqueId="0d2V_eyaD9teEUK2nafJSG">
+			<Expression>SIZEOF(TYPEOF(SELF.RelatingDraughtingCallout) * [
+               &apos;IFCPRESENTATIONDIMENSIONINGRESOURCE.IFCANGULARDIMENSION&apos;,
+               &apos;IFCPRESENTATIONDIMENSIONINGRESOURCE.IFCDIAMETERDIMENSION&apos;,
+               &apos;IFCPRESENTATIONDIMENSIONINGRESOURCE.IFCLINEARDIMENSION&apos;,
+               &apos;IFCPRESENTATIONDIMENSIONINGRESOURCE.IFCRADIUSDIMENSION&apos;]) = 1</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR13" UniqueId="1qIJgHuN56dgFKiSj9GXrh">
+			<Expression>SIZEOF(TYPEOF(SELF.RelatedDraughtingCallout) * [
+               &apos;IFCPRESENTATIONDIMENSIONINGRESOURCE.IFCANGULARDIMENSION&apos;,
+               &apos;IFCPRESENTATIONDIMENSIONINGRESOURCE.IFCDIAMETERDIMENSION&apos;,
+               &apos;IFCPRESENTATIONDIMENSIONINGRESOURCE.IFCLINEARDIMENSION&apos;,
+               &apos;IFCPRESENTATIONDIMENSIONINGRESOURCE.IFCRADIUSDIMENSION&apos;]) = 1</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,1 @@
+Properties for signal handling for an proportional controller taking a single input and creating a single valued output

@@ -1,0 +1,1 @@
+Specific to IfcPlate: The spatial containment shall be within IfcSite, IfcBuilding, or IfcBuildingStorey. The IfcPlate shall not be contained in IfcSpace.

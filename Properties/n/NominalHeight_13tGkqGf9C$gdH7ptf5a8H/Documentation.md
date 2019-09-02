@@ -1,0 +1,1 @@
+The nominal height of the duct fitting. Refer to NominalDiameterOrWidth for comments about interpretation of multiple items in the list.

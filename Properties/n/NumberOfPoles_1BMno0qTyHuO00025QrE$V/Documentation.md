@@ -1,0 +1,1 @@
+The number of logical connections that can be made on an electrical device.

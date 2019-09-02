@@ -1,0 +1,1 @@
+Definition from BS6100: A small diameter valve, with a free outlet, from which water is drawn.

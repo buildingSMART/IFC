@@ -1,0 +1,1 @@
+Local context information for the take-off quantity, if multiple information items are passed, then the property shall be indexed, e.g. LocalContext1, LocalContext2, …

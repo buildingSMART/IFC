@@ -1,0 +1,1 @@
+The volume of water that needs to be stored to supply water to the building for human use for one day in the event of water supply failure.

@@ -1,0 +1,1 @@
+The sound pressure value to be sensed.

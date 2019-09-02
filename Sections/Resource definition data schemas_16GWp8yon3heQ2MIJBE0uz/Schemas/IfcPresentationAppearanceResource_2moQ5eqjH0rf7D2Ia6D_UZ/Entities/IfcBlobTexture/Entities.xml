@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBlobTexture" UniqueId="6f3625b4-6b27-4ac2-8c49-34b2079baf0c" DiagramNumber="7" BaseDefinition="IfcSurfaceTexture" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="RasterFormat" UniqueId="cc5e35b1-16ee-455a-aece-ce1cd7148396" DefinedType="IfcIdentifier" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The format of the _RasterCode_ often using a compression.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="RasterCode" UniqueId="d73b45d5-03ef-42a4-80f8-40956c1ed197" DefinedType="BOOLEAN" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Blob, given as a single binary, to capture the texture within one popular file (compression) format.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR11" UniqueId="3_3dEmVgT03P3485UP_qa3">
+			<Documentation>Currently the formats of bmp, jpg, gif and pgn, shall be supported.</Documentation>
+			<Expression>SELF.RasterFormat IN [&apos;BMP&apos;, &apos;JPG&apos;, &apos;GIF&apos;, &apos;PNG&apos;]</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

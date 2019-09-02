@@ -1,0 +1,1 @@
+Temperature of fluid entering condenser per manufacturer's listing (if available)

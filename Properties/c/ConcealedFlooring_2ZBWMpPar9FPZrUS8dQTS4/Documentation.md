@@ -1,0 +1,1 @@
+Indication whether this space is declared to be a concealed flooring (TRUE) or not (FALSE). A concealed flooring is normally meant to be the space beneath a raised floor.

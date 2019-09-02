@@ -1,0 +1,1 @@
+Quantity take-off information specific to a single layer of the element,  if multiple layer information is passed, then the property shall be indexed, e.g. LayerQuantity1, ayerQuantity2, …

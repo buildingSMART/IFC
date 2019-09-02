@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPipeFittingType" UniqueId="7c307679-338b-48cf-92f2-d34c9d5f235c" DiagramNumber="2" BaseDefinition="IfcFlowFittingType" EntityFlags="101">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="2c44496c-2f0c-4ee8-9fd6-632c0dceca41" DefinedType="IfcPipeFittingTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The type of pipe fitting.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="03sbrVpLvCsQIPfHXY0YDu">
+			<Expression>(PredefinedType &lt;&gt; IfcPipeFittingTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcPipeFittingTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

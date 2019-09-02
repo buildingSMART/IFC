@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcEvaporativeCoolerType" UniqueId="1b538bfd-de8a-4443-a6f0-4c1aade608e4" DiagramNumber="1" BaseDefinition="IfcEnergyConversionDeviceType" EntityFlags="101">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="0c69e1a9-5536-4c40-97e6-9df634ea2fb9" DefinedType="IfcEvaporativeCoolerTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Defines the type of evaporative cooler.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="2SD7munRTDL9lUAjN9h2Oz">
+			<Expression>(PredefinedType &lt;&gt; IfcEvaporativeCoolerTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcEvaporativeCoolerTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

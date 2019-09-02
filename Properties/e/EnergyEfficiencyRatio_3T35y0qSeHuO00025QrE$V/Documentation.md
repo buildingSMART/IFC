@@ -1,0 +1,1 @@
+Energy efficiency ratio (EER).

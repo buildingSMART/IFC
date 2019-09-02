@@ -1,0 +1,1 @@
+Reference ID for this specified type of quantity, e.g. linking back to a macro name, etc.

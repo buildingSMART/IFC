@@ -1,0 +1,1 @@
+Indicates whether the meter is the main meter on the system. If FALSE, it is a submeter.

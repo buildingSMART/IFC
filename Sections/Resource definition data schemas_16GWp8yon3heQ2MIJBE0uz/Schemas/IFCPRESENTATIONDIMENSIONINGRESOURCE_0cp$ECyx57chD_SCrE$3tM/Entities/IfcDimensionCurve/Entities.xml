@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcDimensionCurve" UniqueId="3up3vf25r85R1oQuDpwPdx" DiagramNumber="2" BaseDefinition="IfcAnnotationCurveOccurrence" EntityFlags="101">
+	<Attributes>
+		<DocAttribute Name="AnnotatedBySymbols" UniqueId="2xPPcRKuXEfvjSnN9qFnf$" DefinedType="IfcTerminatorSymbol" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="2" Inverse="AnnotatedCurve">
+			<Documentation>Reference to the terminator symbols that may be assigned to the dimension curve. There shall be either zero, one or two terminator symbols assigned.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR51" UniqueId="2SqfSElkj7QxmLM6dS8U0v">
+			<Documentation>A dimension curve shall be used by at least one referencing dimension curve directed callout, i.e. it should not be used outside of the context of a dimension element group.</Documentation>
+			<Expression>SIZEOF(USEDIN(SELF,&apos;IFCPRESENTATIONDIMENSIONINGRESOURCE.IFCDRAUGHTINGCALLOUT.CONTENTS&apos;)) 
+      &gt;= 1</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR52" UniqueId="07k7FzAGH9HBmYSqieNaXX">
+			<Documentation>The dimension curve should not be annotated with more than one terminator having the role &quot;Origin&quot;, nor with more than one terminator having the role &quot;Target&quot;.</Documentation>
+			<Expression>(SIZEOF(QUERY (Dct1 &lt;* USEDIN(SELF,&apos;IFCPRESENTATIONDIMENSIONINGRESOURCE.&apos; + 
+               &apos;IFCTERMINATORSYMBOL.ANNOTATEDCURVE&apos;) | (Dct1.Role = IfcDimensionExtentUsage.ORIGIN))) &lt;= 1) 
+AND 
+(SIZEOF(QUERY (Dct2 &lt;* USEDIN(SELF,&apos;IFCPRESENTATIONDIMENSIONINGRESOURCE.&apos; + 
+               &apos;IFCTERMINATORSYMBOL.ANNOTATEDCURVE&apos;) | (Dct2.Role = IfcDimensionExtentUsage.TARGET))) &lt;= 1)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR53" UniqueId="0rbkEGQZTEMwOOYbxXFCqA">
+			<Documentation>All terminators assigned to a dimension curve shall be dimension curve terminators.</Documentation>
+			<Expression>SIZEOF(QUERY (Dct &lt;* AnnotatedBySymbols | 
+  NOT(&apos;IFCPRESENTATIONDIMENSIONINGRESOURCE.IFCDIMENSIONCURVETERMINATOR&apos; IN TYPEOF(Dct)))) 
+  = 0
+</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

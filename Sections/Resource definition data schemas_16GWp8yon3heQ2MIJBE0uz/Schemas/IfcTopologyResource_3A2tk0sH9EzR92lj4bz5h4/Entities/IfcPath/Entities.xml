@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPath" UniqueId="ae69801c-7451-4fd5-9784-4dba6d6e1616" DiagramNumber="1" BaseDefinition="IfcTopologicalRepresentationItem" EntityFlags="37">
+	<Attributes>
+		<DocAttribute Name="EdgeList" UniqueId="a4fe7cfe-c5f5-4183-813f-88d75bd7cf83" DefinedType="IfcOrientedEdge" AttributeFlags="0" AggregationType="1" AggregationFlag="2" AggregationLower="1" AggregationUpper="0">
+			<Documentation>The list of oriented edges which are concatenated together to form this path.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="2WS1MC8OH1eABMF05g8Tl3">
+			<Documentation>The end vertex of each edge shall be the same as the start vertex of its successor.</Documentation>
+			<Expression>IfcPathHeadToTail(SELF)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

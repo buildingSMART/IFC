@@ -1,0 +1,1 @@
+Provision of openings and other subtractions (such as recesses, cut-outs, etc.) that require a Boolean difference between the _element &#39;_body&#39; geometry and the opening &#39;body&#39; geometry.

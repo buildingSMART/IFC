@@ -1,0 +1,1 @@
+Square air terminal type attributes.

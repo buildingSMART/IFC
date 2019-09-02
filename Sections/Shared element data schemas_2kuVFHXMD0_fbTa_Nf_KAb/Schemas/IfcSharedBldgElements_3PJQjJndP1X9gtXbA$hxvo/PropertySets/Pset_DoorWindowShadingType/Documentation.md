@@ -1,0 +1,1 @@
+Properties common to the definition of the shading component of occurrences of IfcDoor and IfcWindow, used for static (simplified) shading calculations.

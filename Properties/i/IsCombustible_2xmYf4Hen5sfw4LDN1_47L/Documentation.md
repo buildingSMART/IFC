@@ -1,0 +1,1 @@
+Combustibility (YES it is combustible or NO it is not combustible).

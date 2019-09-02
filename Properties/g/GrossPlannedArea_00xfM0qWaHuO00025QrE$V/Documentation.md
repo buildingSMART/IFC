@@ -1,0 +1,1 @@
+Total planned area for the space. Used for programming the space.

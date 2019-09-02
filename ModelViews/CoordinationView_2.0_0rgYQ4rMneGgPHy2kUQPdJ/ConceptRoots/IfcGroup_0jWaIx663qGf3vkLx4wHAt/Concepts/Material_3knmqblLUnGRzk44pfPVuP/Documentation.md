@@ -1,0 +1,1 @@
+Specific to IfcGroup: the IfcGroup shall not have a material assigned.

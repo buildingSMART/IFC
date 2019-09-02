@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAsymmetricIShapeProfileDef" UniqueId="a97ad274-6a1b-4db7-b4a9-46725be04471" DiagramNumber="3" BaseDefinition="IfcIShapeProfileDef" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="TopFlangeWidth" UniqueId="f33b2498-9ce9-410d-be0c-52b58ab7d57a" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Extent of the top flange, defined parallel to the x axis of the position coordinate system.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="TopFlangeThickness" UniqueId="3390a6a3-6070-47d2-a75f-2d359b3c6ea5" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Flange thickness of the top flange of the I-shape. If given, the upper and the lower flanges can have different thicknesses. If not given, the value of the inherited FlangeThickness attribute applies to both, the top and bottom flange thickness.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="TopFlangeFilletRadius" UniqueId="084b5c7a-a7ff-4a3e-aedf-11d993da5b5d" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The fillet between the web and the top flange of the I-shape. If given, the fillet between upper and the lower flanges and the web can be different. If not given, the value of the inherited FilletRadius attribute applies to both, the top and bottom fillet. If the inherited FilletRadius is not given either, no filler is applied.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="CentreOfGravityInY" UniqueId="1ys4wQp$5F7enzqEAvfA90" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Location of centre of gravity along the y axis measured from the center of the bounding box. 
+  
+&gt; &lt;small&gt;&lt;font color=&quot;#ff0000&quot;&gt;
+IFC2x Edition 2 Addendum 2 CHANGE The attribute &lt;i&gt;CentreOfGravityInY&lt;/i&gt; has been made optional. Upward compatibility for file based exchange is guaranteed.
+  &lt;/font&gt;&lt;/small&gt;</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

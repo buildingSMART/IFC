@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Location" UniqueId="3es7mztOTBJODNoTNJUJt0" Version="0.3" Status="draft" Owner="buildingSMART International">
+	<Templates>
+		<DocTemplateDefinition Name="Geographic Location" UniqueId="1aeje5Wjy2GRjJLDxdwhCV" Version="0.3" Status="draft" Owner="buildingSMART International" Type="IfcSite">
+			<Documentation>The latitude, longitude, and height above a datum of the origin of the site. The longitude and latitude are measured in minutes, degrees, seconds, and (optionally) microseconds. The height above datum is measured by the length unit of the project.</Documentation>
+		</DocTemplateDefinition>
+		<DocTemplateDefinition Name="Address" UniqueId="1rfBJ69_y3GQqEGv85KvP1" Version="0.3" Status="draft" Owner="buildingSMART International" Type="IfcPostalAddress">
+			<Documentation>Assignment of a postal address to a site or building.</Documentation>
+		</DocTemplateDefinition>
+		<DocTemplateDefinition Name="Building Datum" UniqueId="1KOhVpTVjhJ8RJrjcCvcBX" Version="0.3" Status="draft" Owner="buildingSMART International" Type="IfcBuilding">
+			<Documentation>Definition of the height of building reference height (&amp;plusmn;0.00) against the geographic datum (e.g. &amp;plusmn;0.00 = 231,29 above sea level). Optionally also the height of the average terrain height against the geographic datum around the building.</Documentation>
+		</DocTemplateDefinition>
+		<DocTemplateDefinition Name="Storey Elevation" UniqueId="3jCy_wRk6OI8WOXURNf9Zj" Version="0.3" Status="draft" Owner="buildingSMART International" Type="IfcBuildingStorey">
+			<Documentation>Definition of the height of the building story above or below the reference height of the building (&amp;plusmn;0.00). Example would be +3.30 as the height of the first story - being 3.30m above the reference height.
+
+Note: This information is for informative purpose only. The z coordinate of the local placement of IfcBuildingStorey solely determines the positioning of the building story and all contained building elements and spaces.</Documentation>
+		</DocTemplateDefinition>
+	</Templates>
+</DocTemplateDefinition>
+

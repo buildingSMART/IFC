@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Placement" UniqueId="3I5oAMn40LJxWLcuWSU$tw" Version="0.3" Status="draft" Owner="buildingSMART International" Type="IfcObjectPlacement">
+	<Templates>
+		<DocTemplateDefinition Name="Placement Absolute" UniqueId="0Wwo3MEyK7GQ6skrt4_A_w" Version="0.3" Status="draft" Owner="buildingSMART International" Type="IfcLocalPlacement">
+			<Documentation>Provision of an object coordinate system for the &quot;element&quot; being absolute, i.e. establishing the _element_&amp;#39;s coordinate system directly within the implicit coordinate system of the project. The absolute placement coordinate system can be identical to the implicit project coordinate system, being (0.,0.,0.), are having a distance.
+
+The absolute placement is realized by omitting the attribute _PlacementRelTo_at&amp;nbsp; _IfcLocalPlacement_.</Documentation>
+		</DocTemplateDefinition>
+		<DocTemplateDefinition Name="Placement Relative" UniqueId="2ThxDHK97hGhCaPwJJ9DdX" Version="0.3" Status="draft" Owner="buildingSMART International" Type="IfcLocalPlacement">
+			<Documentation>Provision of an object coordinate system for the _element_ being relative to the object placement of another element. The two applicable cases are
+
+*  a project structure element (e.g. placement of wall relative to building story), or
+*  a composite (or container element - e.g. placement of opening relative to wall, or building element part relative to wall).
+
+The default requirement stipulated by this **concept template** is that the element may be placed relative to any element of the two categories given above. The general restrictions are:
+
+*  the relative placement of _element_shall be supported for placing relative to _IfcSite_, _IfcBuilding_and _IfcBuildingStorey_.
+*  the relative placement of element to the composite is supported depending on the concept &quot;decomposition&quot; that applies to the _element_.
+
+A **model view definitio**n shall clearly define any further restrictions to the type of element to which this _element_can be placed relatively to.</Documentation>
+		</DocTemplateDefinition>
+	</Templates>
+</DocTemplateDefinition>
+

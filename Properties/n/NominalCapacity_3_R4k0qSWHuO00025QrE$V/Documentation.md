@@ -1,0 +1,1 @@
+Nominal cooling capacity of chiller at standardized conditions per ARI Standards 550-92, Centrifugal and Rotary Screw Water-Chilling Packages, and ARI Standards 590-92, Positive Displacement Compressor.

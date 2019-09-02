@@ -1,0 +1,1 @@
+The output power rating that is certified for a device.

@@ -1,0 +1,1 @@
+Definition from BS6100 250 6223: A small diameter valve, used to drain water from a cistern or water filled system.

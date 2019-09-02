@@ -1,0 +1,1 @@
+General description of the lighting requirement for the space (e.g. "natural lighting required")

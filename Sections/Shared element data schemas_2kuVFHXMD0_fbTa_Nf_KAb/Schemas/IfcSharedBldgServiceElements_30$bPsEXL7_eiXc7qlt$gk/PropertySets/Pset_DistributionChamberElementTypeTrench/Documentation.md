@@ -1,0 +1,1 @@
+Definition from BS6100 221 4118: Excavation, the length of which greatly exceeds the width.

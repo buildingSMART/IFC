@@ -1,0 +1,1 @@
+Specific to IfcSpace: the IfcSpace shall not have a material assigned.

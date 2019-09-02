@@ -1,0 +1,1 @@
+Definition from BS6100 100 3410: Space formed in the ground for the passage of pipes, cables, ducts.

@@ -1,0 +1,1 @@
+The Coordination View Version 2.0 supports the design coordination between architectural, building service and structural engineering BIM applications.

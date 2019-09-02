@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTable" UniqueId="a998a201-457f-4f17-9337-b5f2acb084d8" DiagramNumber="2" EntityFlags="165">
+	<Attributes>
+		<DocAttribute Name="Name" UniqueId="9abc07c5-b708-450e-a8bd-c055f3dd735e" DefinedType="STRING" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>A unique name which is intended to describe the usage of the Table.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Rows" UniqueId="7022ee4b-bd52-48f7-9edb-ef5c09c44206" DefinedType="IfcTableRow" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Reference to information content of rows.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="NumberOfCellsInRow" UniqueId="a079c8cc-df08-4b62-b081-51e8572745d1" DefinedType="INTEGER" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The number of cells in each row, this complies to the number of columns in a table. See WR2 that ensures that each row has the same number of cells. The actual value is derived from the first member of the Rows list.</Documentation>
+			<Derived>HIINDEX(Rows[1].RowCells)</Derived>
+		</DocAttribute>
+		<DocAttribute Name="NumberOfHeadings" UniqueId="f715f965-b239-42f1-b0c7-fd99d00ea73a" DefinedType="INTEGER" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The number of headings in a table. This is restricted by WR3 to max. one.</Documentation>
+			<Derived>SIZEOF(QUERY( Temp &lt;* Rows | Temp.IsHeading))</Derived>
+		</DocAttribute>
+		<DocAttribute Name="NumberOfDataRows" UniqueId="c5f803f8-2be0-441c-9417-3e937fb62764" DefinedType="INTEGER" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The number of rows in a table that contains data, i.e. total number of rows minus number of heading rows in table.</Documentation>
+			<Derived>SIZEOF(QUERY( Temp &lt;* Rows | NOT(Temp.IsHeading)))</Derived>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="b812fd32-232a-4a5b-acc0-caadda4d8f2d">
+			<Documentation>Ensures that each row defines the same number of cells. This restricts the available table styles in IFC Release 1.5. The rule compares whether all other rows of the IfcTable have the same number of cells as the first row. EXPRESS = SIZEOF(QUERY( Temp &lt;\* Rows | HIINDEX(Temp.RowCells) &lt;&gt; HIINDEX(Rows[1].RowCells))) = 0</Documentation>
+			<Expression>SIZEOF(QUERY( Temp &lt;* Rows | HIINDEX(Temp.RowCells) &lt;&gt; HIINDEX(Rows[1].RowCells))) = 0</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR2" UniqueId="ebeee4dd-a97a-4190-af1c-04f04b0a4e20">
+			<Documentation>Ensures that each row defines the same number of cells. This restricts the available table styles in IFC Release 1.5. The rule compares whether all other rows of the IfcTable have the same number of cells as the first row. EXPRESS = SIZEOF(QUERY( Temp &lt;\* Rows | HIINDEX(Temp.RowCells) &lt;&gt; HIINDEX(Rows[1].RowCells))) = 0</Documentation>
+			<Expression>SIZEOF(QUERY( Temp &lt;* Rows | HIINDEX(Temp.RowCells) &lt;&gt; HIINDEX(Rows[1].RowCells))) = 0</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR3" UniqueId="27t_Tl07r0$QC0YI719Zsf">
+			<Documentation>Ensures that there is one heading row as maximum. This restricts the allowed number of heading rows for this release. This limitation may be removed in future releases. EXPRESS = 0 &lt;= NumberOfHeadings &lt;= 1 }</Documentation>
+			<Expression>{ 0 &lt;= NumberOfHeadings &lt;= 1 }</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,1 @@
+Panel space heater type occurrence attributes.

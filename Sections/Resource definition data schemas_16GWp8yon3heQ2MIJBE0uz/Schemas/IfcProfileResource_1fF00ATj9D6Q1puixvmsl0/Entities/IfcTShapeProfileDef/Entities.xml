@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTShapeProfileDef" UniqueId="c5e6f97d-9889-46a6-bcbb-63e9cbb0b1c4" DiagramNumber="4" BaseDefinition="IfcParameterizedProfileDef" EntityFlags="237">
+	<Attributes>
+		<DocAttribute Name="Depth" UniqueId="ba4784da-d4b1-4f22-a835-28f21fb95c57" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Web lengths, see illustration above (= h).</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="FlangeWidth" UniqueId="6ed7052b-c662-42bc-a3fa-7e12a958e215" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Flange lengths, see illustration above (= b).</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="WebThickness" UniqueId="e0f4c060-66bc-4d98-acca-d3b51e211075" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Constant wall thickness of web (= ts).</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="FlangeThickness" UniqueId="df89c02a-ade3-42be-bfae-01bf68430794" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Constant wall thickness of flange (= tg).</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="FilletRadius" UniqueId="1594be10-83da-4e4b-9659-4f3415565953" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Fillet radius according the above illustration (= r1). If it is not given, zero is assumed.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="FlangeEdgeRadius" UniqueId="23604099-5595-4772-b498-58cf6d21ba2c" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Edge radius according the above illustration (= r2). If it is not given, zero is assumed.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="WebEdgeRadius" UniqueId="55533e11-7b3e-42ed-97af-eec943eb0c3e" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Edge radius according the above illustration (= r3). If it is not given, zero is assumed.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="WebSlope" UniqueId="00b0c529-097f-4762-b409-70a3fac704e0" DefinedType="IfcPlaneAngleMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Slope of flange of the profile. If it is not given, zero is assumed.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="FlangeSlope" UniqueId="c048d2db-273d-41a9-b441-b903590d3eac" DefinedType="IfcPlaneAngleMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Slope of web of the profile. If it is not given, zero is assumed.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="CentreOfGravityInY" UniqueId="2PEOM3xZD99wH__2z3ltD6" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Location of centre of gravity along the x axis measured from the center of the bounding box. 
+  
+&gt; &lt;small&gt;&lt;font color=&quot;#ff0000&quot;&gt;
+IFC2x Edition 2 Addendum 2 CHANGE The attribute &lt;i&gt;CentreOfGravityInX&lt;/i&gt; has been made optional. Upward compatibility for file based exchange is guaranteed.
+  &lt;/font&gt;&lt;/small&gt;</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="1RiRuWn8f3sAuHCBhusddD">
+			<Documentation>The flange thickness shall be smaller than the depth.</Documentation>
+			<Expression>FlangeThickness &lt; Depth</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR2" UniqueId="2_rrO9RL50cRbjjghG7jER">
+			<Documentation>The web thickness shall be smaller than the flange width.</Documentation>
+			<Expression>WebThickness &lt; FlangeWidth</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

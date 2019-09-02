@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcFanType" UniqueId="13691192-2383-4c23-ab6a-c8a9a2b8c1ba" DiagramNumber="3" BaseDefinition="IfcFlowMovingDeviceType" EntityFlags="101">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="a35b99d4-7d3d-4273-92a5-5812abe54400" DefinedType="IfcFanTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Defines the type of fan typically used in building services.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="2_noFBBPfEFAwXij$0mtZ9">
+			<Expression>(PredefinedType &lt;&gt; IfcFanTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcFanTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

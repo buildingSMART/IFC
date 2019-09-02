@@ -1,0 +1,1 @@
+Specific to _IfcWallStandardCase_: The &#39;Body&#39; shape representation is required to be assigned to a CAD layer. The assignment of the &#39;Axis&#39; shape representation is optional and may be either assigned to the same CAD layer or to a different CAD layer.

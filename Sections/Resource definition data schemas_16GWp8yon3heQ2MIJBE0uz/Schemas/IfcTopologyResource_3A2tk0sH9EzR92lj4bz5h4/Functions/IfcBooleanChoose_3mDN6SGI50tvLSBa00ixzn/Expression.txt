@@ -1,0 +1,7 @@
+(B : BOOLEAN ;
+     Choice1, Choice2 : Generic : Item) : Generic : Item;
+  IF B THEN
+     RETURN (Choice1);
+  ELSE
+     RETURN (Choice2);
+  END_IF;

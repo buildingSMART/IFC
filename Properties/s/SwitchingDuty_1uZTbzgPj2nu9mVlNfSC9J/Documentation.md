@@ -1,0 +1,1 @@
+The maximum number of operations for the device at the rated making and breaking capacity.

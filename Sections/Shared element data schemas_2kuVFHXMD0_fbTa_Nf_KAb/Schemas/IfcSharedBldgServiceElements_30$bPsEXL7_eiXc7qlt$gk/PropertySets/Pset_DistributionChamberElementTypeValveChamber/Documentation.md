@@ -1,0 +1,1 @@
+Definition from BS6100 250 6224: Chamber that houses a valve(s).

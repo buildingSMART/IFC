@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcWaterProperties" UniqueId="0TO5jaw8f37hQnNohRBSgs" DiagramNumber="2" BaseDefinition="IfcMaterialProperties" EntityFlags="237">
+	<Attributes>
+		<DocAttribute Name="IsPotable" UniqueId="0lhn98hAvFhf7s0loOmN$A" DefinedType="BOOLEAN" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>If TRUE, then the water is considered potable.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Hardness" UniqueId="1xoD5KLx59NgbC14GiAxDf" DefinedType="IfcIonConcentrationMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Water hardness as positive, multivalent ion concentration in the water (usually concentrations of calcium and magnesium ions in terms of calcium carbonate).</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="AlkalinityConcentration" UniqueId="2Fm4AmWsr9_BfEWSvyipsF" DefinedType="IfcIonConcentrationMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Maximum alkalinity concentration (maximum sum of concentrations of each of the negative ions substances measured as CaCO~3~).</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="AcidityConcentration" UniqueId="2I7_XrD3r7pRjIsVbA39NL" DefinedType="IfcIonConcentrationMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Maximum CaCO~3~ equivalent that would neutralize the acid.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ImpuritiesContent" UniqueId="3HJ5l5evrC$gEAAC$MPV1c" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Fraction of impurities such as dust to the total amount of water. This is measured in weight of impurities per weight of water and is therefore unitless.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="PHLevel" UniqueId="30k9ffiFDD$9XcolnLsU_d" DefinedType="IfcPHMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Maximum water ph in a range from 0-14.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="DissolvedSolidsContent" UniqueId="1FIK8iUA123fg$CDAGDuMH" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Fraction of the dissolved solids to the total amount of water. This is measured in weight of dissolved solids per weight of water and is therefore unitless.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<UniqueRules>
+		<DocUniqueRule Name="UR11" UniqueId="2$7Sfw5b9CERJXj7LJMjKZ">
+			<Items>
+				<DocUniqueRuleItem Name="Material" UniqueId="04C901ZPL7PxN7N$D_ZQSQ" />
+			</Items>
+		</DocUniqueRule>
+	</UniqueRules>
+</DocEntity>
+

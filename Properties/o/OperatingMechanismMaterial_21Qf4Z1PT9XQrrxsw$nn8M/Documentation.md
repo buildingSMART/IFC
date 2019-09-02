@@ -1,0 +1,1 @@
+Material from which the operating mechanism (gate, globe, plug, needle, clack etc.) of the valve is constructed

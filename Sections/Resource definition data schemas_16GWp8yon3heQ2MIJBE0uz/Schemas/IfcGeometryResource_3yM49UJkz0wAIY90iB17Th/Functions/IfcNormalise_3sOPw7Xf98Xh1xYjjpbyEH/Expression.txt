@@ -1,0 +1,52 @@
+  (Arg : IfcVectorOrDirection) 
+    : IfcVectorOrDirection;
+LOCAL
+  Ndim : INTEGER;
+  V    : IfcDirection
+       := IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([1.,0.]); 
+  Vec  : IfcVector 
+       := IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcVector (
+            IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([1.,0.]), 1.);
+  Mag  : REAL;
+  Result : IfcVectorOrDirection
+         := V;
+END_LOCAL;
+
+  IF NOT EXISTS (Arg) THEN
+    RETURN (?);
+  ELSE
+    Ndim := Arg.Dim;
+    IF 'IFCGEOMETRYRESOURCE.IFCVECTOR' IN TYPEOF(Arg) THEN
+      BEGIN
+	V.DirectionRatios := Arg\IfcVector.Orientation.DirectionRatios;
+        Vec.Magnitude := Arg\IfcVector.Magnitude;
+	Vec.Orientation := V;
+        IF Arg.Magnitude = 0.0 THEN
+          RETURN(?);
+        ELSE
+          Vec.Magnitude := 1.0;
+        END_IF;
+      END;
+    ELSE
+      V.DirectionRatios := Arg.DirectionRatios;
+    END_IF;
+    Mag := 0.0;
+      REPEAT i := 1 TO Ndim;
+        Mag := Mag + V.DirectionRatios[i]*V.DirectionRatios[i];
+      END_REPEAT;
+    IF Mag > 0.0 THEN
+      Mag := SQRT(Mag);
+      REPEAT i := 1 TO Ndim;
+        V.DirectionRatios[i] := V.DirectionRatios[i]/Mag;
+      END_REPEAT;
+      IF 'IFCGEOMETRYRESOURCE.IFCVECTOR' IN TYPEOF(arg) THEN
+        Vec.Orientation := V;
+        Result := Vec;
+      ELSE
+        Result := V;
+      END_IF;
+    ELSE
+      RETURN(?);
+    END_IF;
+  END_IF;
+  RETURN (Result);

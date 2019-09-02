@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcExtrudedAreaSolid" UniqueId="f65777d3-6cb6-48f6-8a26-d79b570cdfb2" DiagramNumber="4" BaseDefinition="IfcSweptAreaSolid" EntityFlags="101">
+	<Attributes>
+		<DocAttribute Name="ExtrudedDirection" UniqueId="aef4b8f4-190c-4dbd-a5ef-4ad2bf1d00a3" DefinedType="IfcDirection" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The direction in which the surface is to be swept.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Depth" UniqueId="a0e24ce6-15a3-49a4-827b-25a7987a23f7" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The distance the surface is to be swept.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR31" UniqueId="2KwYJaFSH1jBH87I$gMDke">
+			<Documentation>The ExtrudedDirection shall not be perpendicular to the local z-axis.</Documentation>
+			<Expression>IfcDotProduct(IfcRepresentationItem() || IfcGeometricRepresentationItem() || IfcDirection([0.0,0.0,1.0]), SELF.ExtrudedDirection) &lt;&gt; 0.0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

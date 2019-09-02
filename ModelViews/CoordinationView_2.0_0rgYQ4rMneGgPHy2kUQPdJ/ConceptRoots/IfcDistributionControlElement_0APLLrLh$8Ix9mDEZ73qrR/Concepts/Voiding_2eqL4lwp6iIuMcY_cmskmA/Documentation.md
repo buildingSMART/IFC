@@ -1,0 +1,1 @@
+Specific to IfcDistributionControlElement: The IfcDistributionControlElement shall not have a voiding relationship. Voids in the shape of an IfcDistributionControlElement shall be already included in th shape representation (e.g. part of the explicit shape).

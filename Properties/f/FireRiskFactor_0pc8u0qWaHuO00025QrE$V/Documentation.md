@@ -1,0 +1,1 @@
+Fire Risk factor assigned to the space according to local building regulations.

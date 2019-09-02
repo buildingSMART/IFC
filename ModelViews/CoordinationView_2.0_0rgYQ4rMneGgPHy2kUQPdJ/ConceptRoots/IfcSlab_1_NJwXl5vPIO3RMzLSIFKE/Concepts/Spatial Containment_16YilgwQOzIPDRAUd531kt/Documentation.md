@@ -1,0 +1,1 @@
+Specific to IfcSlab: The spatial containment shall be within IfcSite, IfcBuilding, or IfcBuildingStorey. The IfcSlab shall not be contained in IfcSpace.

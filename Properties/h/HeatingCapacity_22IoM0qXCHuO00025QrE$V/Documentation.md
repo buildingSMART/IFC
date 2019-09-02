@@ -1,0 +1,1 @@
+Heating capacity of the PackagedACUnit per ARI Standards 210/240, 270, 275, 360, 340 and 365 for heat pumps, AFUE for fuel burning and NEMA for electric heat.

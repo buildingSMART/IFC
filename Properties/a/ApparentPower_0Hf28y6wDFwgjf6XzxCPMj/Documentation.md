@@ -1,0 +1,1 @@
+Apparent power.

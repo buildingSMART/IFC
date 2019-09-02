@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPropertySingleValue" UniqueId="6283d4e3-23ff-4d09-b4a2-a0fb4f925aed" DiagramNumber="2" BaseDefinition="IfcSimpleProperty" EntityFlags="237">
+	<Attributes>
+		<DocAttribute Name="NominalValue" UniqueId="17155b9a-60a6-4a80-afd5-b35efea8f4ab" DefinedType="IfcValue" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Value and measure type of this property. 
+&gt; &lt;small&gt;
+NOTE&amp;nbsp; By virtue of the defined data type, that is selected from the SELECT &lt;i&gt;IfcValue&lt;/i&gt;, the appropriate unit can be found within the &lt;i&gt;IfcUnitAssignment&lt;/i&gt;, defined for the project if no value for the unit attribute is given.&lt;br&gt;
+&lt;font color=&quot;#ff0000&quot;&gt;
+IFC2x Edition 3 CHANGE&amp;nbsp; The attribute has been made optional with upward compatibility for file based exchange.
+&lt;/font&gt;
+&lt;/small&gt;</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Unit" UniqueId="bc0834af-0f38-4cb7-b5b2-e586cecb1355" DefinedType="IfcUnit" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Unit for the nominal value, if not given, the default value for the measure type (given by the TYPE of nominal value) is used as defined by the global unit assignment at IfcProject.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

@@ -1,0 +1,1 @@
+Specific to IfcSite: The usage of attributes is (1) Name being the site number or code, (2) LongName being the site name, and (3) Description being any additional informative text.&nbsp;

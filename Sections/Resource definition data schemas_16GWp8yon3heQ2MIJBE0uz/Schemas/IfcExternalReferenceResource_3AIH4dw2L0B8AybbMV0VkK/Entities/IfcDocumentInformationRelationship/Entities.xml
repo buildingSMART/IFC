@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcDocumentInformationRelationship" UniqueId="79f322fe-2390-4be9-ac5e-2c79ccbfc1d5" DiagramNumber="3" EntityFlags="101">
+	<Attributes>
+		<DocAttribute Name="RelatingDocument" UniqueId="aa89e7a7-4654-4e52-af82-fda6e179130a" DefinedType="IfcDocumentInformation" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The document that acts as the parent, referencing or original document in a relationship.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="RelatedDocuments" UniqueId="785f2826-b24e-4a4e-ba65-203c8c439d34" DefinedType="IfcDocumentInformation" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+			<Documentation>The document that acts as the child, referenced or replacing document in a relationship.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="RelationshipType" UniqueId="b23740b1-d36a-4d3d-88df-c8e7e0d1efbf" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Describes the type of relationship between documents. This could be sub-document, replacement etc. The interpretation has to be established in an application context.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

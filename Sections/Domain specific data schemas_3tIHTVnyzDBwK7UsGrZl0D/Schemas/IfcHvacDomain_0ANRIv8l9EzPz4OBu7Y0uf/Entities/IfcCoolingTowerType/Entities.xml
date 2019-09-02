@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCoolingTowerType" UniqueId="74a69c5e-478f-401b-86d1-69b8d18930e3" DiagramNumber="1" BaseDefinition="IfcEnergyConversionDeviceType" EntityFlags="101">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="2357962a-5d20-4f79-8146-a8ff8b9b3810" DefinedType="IfcCoolingTowerTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Defines the typical types of cooling towers (e.g., OpenTower, ClosedTower, CrossFlow, etc.).</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="2r76TLl2H0F90UKpApnOdp">
+			<Expression>(PredefinedType &lt;&gt; IfcCoolingTowerTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcCoolingTowerTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

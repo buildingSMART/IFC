@@ -1,0 +1,1 @@
+A room or a place or a box where an electrical supply enters and is then further distributed via electrical circuits. A distribution point may be a main distribution point or a sub-main distribution point.

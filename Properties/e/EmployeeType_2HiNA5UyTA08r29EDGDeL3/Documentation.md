@@ -1,0 +1,1 @@
+General description of the employee type that will occupy the space (e.g.  manager, programmer, secretary, etc.). The type classification depends on the company based terms for employee types.

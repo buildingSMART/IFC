@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcDimensionCurveDirectedCallout" UniqueId="3GAgT_wXDFJAwRqovpOCTh" DiagramNumber="1" BaseDefinition="IfcDraughtingCallout" EntityFlags="229">
+	<Subtypes>
+		<DocSubtype UniqueId="2ltS187_bAheCcCniRi6W1" DefinedType="IfcLinearDimension" />
+		<DocSubtype UniqueId="26P2AYzXLCYwbnCFhSN3iZ" DefinedType="IfcAngularDimension" />
+		<DocSubtype UniqueId="33VCg1OnjFIunPsHR7snKA" DefinedType="IfcRadiusDimension" />
+		<DocSubtype UniqueId="1NxoJXKZH1fQDYdMk9L_dm" DefinedType="IfcDiameterDimension" />
+	</Subtypes>
+	<WhereRules>
+		<DocWhereRule Name="WR41" UniqueId="3LZz7Dq0b09xNF3XFj6ffp">
+			<Documentation>There shall be exactly one dimension curve in the set of draughting callout elements.</Documentation>
+			<Expression>SIZEOF(QUERY (Dc &lt;* SELF\IfcDraughtingCallout.Contents | (
+      &apos;IFCPRESENTATIONDIMENSIONINGRESOURCE.IFCDIMENSIONCURVE&apos; IN TYPEOF(Dc)))) 
+     = 1</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR42" UniqueId="01yUepebnEQw85Jw$xHxof">
+			<Documentation>There shall be only zero, one, or two projection curves within the content of the callout.</Documentation>
+			<Expression>SIZEOF (QUERY (Dc &lt;* SELF.contents |
+       (&apos;IFCPRESENTATIONDIMENSIONINGRESOURCE.IFCPROJECTIONCURVE&apos; IN
+         TYPEOF (Dc)))) &lt;= 2</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

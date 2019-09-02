@@ -1,0 +1,1 @@
+The current that a device is actually handling or is calculated to be handling at a point in time.

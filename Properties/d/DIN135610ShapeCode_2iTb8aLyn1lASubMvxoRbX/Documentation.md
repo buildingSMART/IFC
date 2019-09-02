@@ -1,0 +1,1 @@
+The bending type code for the specific bending shape as defined in the DIN 1356 Teil 10 standard. Note: depending on the standardized shape different combinations of following parameters a...z are used.

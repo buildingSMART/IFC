@@ -1,0 +1,1 @@
+Specific to IfcFlowMovingDevice: The IfcFlowMovingDevice shall not have a voiding relationship. Voids in the shape of an IfcFlowMovingDevice shall be already included in th shape representation (e.g. part of the xplicit shape).

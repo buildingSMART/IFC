@@ -1,0 +1,1 @@
+The upper and lower bounds of smoke concentration for operation of the smoke sensor.

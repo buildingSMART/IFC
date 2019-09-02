@@ -1,0 +1,1 @@
+Indicates whether an instance of IfcDistributionPort is to act as the design point for sprinkler hydraulic calculation (set TRUE) or not (either set FALSE or assumed to be FALSE where an instance of the property set is not assigned to an instance of IfcDistributionPort).

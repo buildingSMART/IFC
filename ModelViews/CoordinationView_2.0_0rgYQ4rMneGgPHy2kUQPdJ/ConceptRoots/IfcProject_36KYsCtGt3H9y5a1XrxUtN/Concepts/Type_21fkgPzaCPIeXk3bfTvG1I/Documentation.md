@@ -1,0 +1,1 @@
+Specific to IfcProject: There shall be no type assigned (there is no type object for IfcProject)

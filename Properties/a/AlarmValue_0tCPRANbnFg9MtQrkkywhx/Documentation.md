@@ -1,0 +1,1 @@
+Enumeration defining the operating state of the control system element

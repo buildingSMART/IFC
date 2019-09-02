@@ -1,0 +1,1 @@
+Specific to IfcDistributionFlowElement: The IfcDistributionFlowElement shall not have a voiding relationship. Voids in the shape of an IfcDistributionFlowElement shall be already included in th shape representation (e.g. part of the xplicit shape).

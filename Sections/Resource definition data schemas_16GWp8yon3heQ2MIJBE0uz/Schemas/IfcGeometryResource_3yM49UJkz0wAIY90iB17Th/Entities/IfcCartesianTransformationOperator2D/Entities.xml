@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCartesianTransformationOperator2D" UniqueId="8151008e-da2b-4181-80dc-d2cdf2bc502f" DiagramNumber="4" BaseDefinition="IfcCartesianTransformationOperator" EntityFlags="229">
+	<Subtypes>
+		<DocSubtype UniqueId="aadf18f6-e0d6-4db6-9087-3037f9496a77" DefinedType="IfcCartesianTransformationOperator2DnonUniform" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="U" UniqueId="cefc7e0a-b9de-444f-9bf4-f92852569b8e" DefinedType="IfcDirection" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="2">
+			<Documentation>The list of mutually orthogonal, normalized vectors defining the transformation matrix T. They are derived from the explicit attributes Axis1 and Axis2 in that order.</Documentation>
+			<Derived>IfcBaseAxis(2,SELF\IfcCartesianTransformationOperator.Axis1,
+SELF\IfcCartesianTransformationOperator.Axis2,?)</Derived>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="2_dFyLGlX4qOqJGg5aaaW9">
+			<Documentation>The coordinate space dimensionality of this entity shall be 2.</Documentation>
+			<Expression>SELF\IfcCartesianTransformationOperator.Dim = 2</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR2" UniqueId="3ZBH2uRlz6mPk7_YsDlUIm">
+			<Documentation>The inherited Axis1 should have (if given) the dimensionality of 2.</Documentation>
+			<Expression>NOT(EXISTS(SELF\IfcCartesianTransformationOperator.Axis1)) OR 
+(SELF\IfcCartesianTransformationOperator.Axis1.Dim = 2)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR3" UniqueId="2xxhMOU6DAuRp5WM0SKQ98">
+			<Documentation>The inherited Axis2 should have (if given) the dimensionality of 2.</Documentation>
+			<Expression>NOT(EXISTS(SELF\IfcCartesianTransformationOperator.Axis2)) OR 
+(SELF\IfcCartesianTransformationOperator.Axis2.Dim = 2)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

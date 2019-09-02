@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRationalBezierCurve" UniqueId="1W93A80ZfBRhxG5mxiX1vO" DiagramNumber="9" BaseDefinition="IfcBezierCurve" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="WeightsData" UniqueId="0rReOglC5EBAWnjko$IppJ" DefinedType="REAL" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="0">
+			<Documentation>The supplied values of the weights.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Weights" UniqueId="1Orr$NYXvCeQUF6b1KSfMN" DefinedType="REAL" AttributeFlags="0" AggregationType="2" AggregationFlag="0" AggregationLower="0" AggregationUpper="255">
+			<Documentation>The array of weights associated with the control points. This is derived from the weights data.</Documentation>
+			<Derived>IfcListToArray(WeightsData,0,SELF\IfcBSplineCurve.UpperIndexOnControlPoints)</Derived>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="3tqsPuDP59mBpjT0UDn8WL">
+			<Expression>SIZEOF(WeightsData) = SIZEOF(SELF\IfcBSplineCurve.ControlPointsList)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR2" UniqueId="3i6yAC6oPBNuQcJaSeu54O">
+			<Expression>IfcCurveWeightsPositive(SELF)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

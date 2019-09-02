@@ -1,0 +1,1 @@
+Indicated, whether the jambs of an opening in a curved building element are intended to be parallel (TRUE) or are radial (FALSE). Radial means, that the extension of the jambs are rays through the axis of the revolution forming the curved building element.

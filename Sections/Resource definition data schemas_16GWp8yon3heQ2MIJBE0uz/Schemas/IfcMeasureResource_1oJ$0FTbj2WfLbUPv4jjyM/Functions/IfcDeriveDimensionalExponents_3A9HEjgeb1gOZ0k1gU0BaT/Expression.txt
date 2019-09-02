@@ -1,0 +1,30 @@
+    (UnitElements : SET [1:?] Of IfcDerivedUnitElement)
+    : IfcDimensionalExponents;  
+    LOCAL
+    Result : IfcDimensionalExponents :=
+            IfcDimensionalExponents(0, 0, 0, 0, 0, 0, 0);  
+    END_LOCAL;
+    REPEAT i := LOINDEX(UnitElements) TO HIINDEX(UnitElements);
+        Result.LengthExponent := Result.LengthExponent +
+          (UnitElements[i].Exponent *
+           UnitElements[i].Unit.Dimensions.LengthExponent);
+        Result.MassExponent := Result.MassExponent  +
+          (UnitElements[i].Exponent *
+           UnitElements[i].Unit.Dimensions.MassExponent);
+        Result.TimeExponent := Result.TimeExponent +
+          (UnitElements[i].Exponent *
+           UnitElements[i].Unit.Dimensions.TimeExponent);
+        Result.ElectricCurrentExponent := Result.ElectricCurrentExponent +
+          (UnitElements[i].Exponent *
+           UnitElements[i].Unit.Dimensions.ElectricCurrentExponent);
+        Result.ThermodynamicTemperatureExponent := Result.ThermodynamicTemperatureExponent +
+          (UnitElements[i].Exponent *
+           UnitElements[i].Unit.Dimensions.ThermodynamicTemperatureExponent);
+        Result.AmountOfSubstanceExponent := Result.AmountOfSubstanceExponent +
+          (UnitElements[i].Exponent *
+           UnitElements[i].Unit.Dimensions.AmountOfSubstanceExponent);
+        Result.LuminousIntensityExponent := Result.LuminousIntensityExponent +
+          (UnitElements[i].Exponent *
+           UnitElements[i].Unit.Dimensions.LuminousIntensityExponent);
+    END_REPEAT;  
+    RETURN (Result);

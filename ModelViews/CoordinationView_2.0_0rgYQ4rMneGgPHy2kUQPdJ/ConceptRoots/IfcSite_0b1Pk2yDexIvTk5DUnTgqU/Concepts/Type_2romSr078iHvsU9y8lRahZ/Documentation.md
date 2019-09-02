@@ -1,0 +1,1 @@
+Specific to IfcSite: the IfcSite shall not have a type object assigned.

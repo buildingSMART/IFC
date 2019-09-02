@@ -1,0 +1,1 @@
+The high limit value for the analog input.

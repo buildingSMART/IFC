@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMaterialLayer" UniqueId="1550d694-6c4a-46c4-9661-12b1956f035d" DiagramNumber="1" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="Material" UniqueId="5e1b64ef-4e51-4312-8c39-0c01567e2571" DefinedType="IfcMaterial" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Optional reference to the material from which the layer is constructed. Note, that if this value is not given, it does not denote a layer with no material (an air gap), it only means that the material is not specified at that point.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LayerThickness" UniqueId="37ff71f7-f0fc-487e-b121-8627e1c4e98a" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The thickness of the layer (dimension measured along the local x-axis of Mls LCS, in positive direction).</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="IsVentilated" UniqueId="e6dcc683-da58-48b5-959e-f29b34e3b2e2" DefinedType="IfcLogical" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Indication of whether the material layer represents an air layer (or cavity). 
+* set to TRUE if the material layer is an air gap and provides air exchange from the layer to the outside air.
+* set to UNKNOWN if the material layer is an air gap and does not provide air exchange (or when this information about air exchange of the air gap is not available).
+* set to FALSE if the material layer is a solid material layer (the default).</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ToMaterialLayerSet" UniqueId="f2c9c962-d35f-4ea5-b566-2dba24893f5a" DefinedType="IfcMaterialLayerSet" AttributeFlags="8" AggregationType="0" AggregationFlag="0" Inverse="MaterialLayers">
+			<Documentation>Reference to the material layer set, in which the material layer is included.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStyledItem" UniqueId="03067245-b9da-400b-8de8-c6189fa9b928" DiagramNumber="1" BaseDefinition="IfcRepresentationItem" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="Item" UniqueId="1f40d575-2832-4c30-80dc-77a3fcabd3c9" DefinedType="IfcRepresentationItem" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>A geometric representation item to which the style is assigned.
+  
+&gt; &lt;font size=&quot;-1&quot; color=&quot;#0000ff&quot;&gt;
+IFC2x Edition 2 Addendum 2 CHANGE The attribute &lt;i&gt;Item&lt;/i&gt; has been made optional. Upward compatibility for file based exchange is guaranteed.
+  &lt;/font&gt;</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Styles" UniqueId="d38b5c99-b51e-4f5a-a2a5-140d9071d049" DefinedType="IfcPresentationStyleAssignment" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Representation style assignments which are assigned to an item. NOTE: In current IFC release only one presentation style assignment shall be assigned.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Name" UniqueId="d82e6d30-0872-439b-9e6c-e97111ad8266" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The word, or group of words, by which the styled item is referred to.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR11" UniqueId="1Dn0srNTXCrOLHZF8_5FF8">
+			<Documentation>Restricts the number of styles to 1 (the datatype SET remains for compatibility reasons with ISO 10303-46).</Documentation>
+			<Expression>SIZEOF(Styles) = 1</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR12" UniqueId="3Wn_mqJiPDA8VCCDAwx6xi">
+			<Documentation>A styled item cannot be styled by another styled item.</Documentation>
+			<Expression>NOT(&apos;IFCPRESENTATIONAPPEARANCERESOURCE.IFCSTYLEDITEM&apos; IN TYPEOF(Item))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

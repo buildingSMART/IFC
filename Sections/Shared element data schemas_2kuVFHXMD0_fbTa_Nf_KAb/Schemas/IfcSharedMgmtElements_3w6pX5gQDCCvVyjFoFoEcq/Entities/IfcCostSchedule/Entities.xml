@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCostSchedule" UniqueId="ff373331-377a-4ddd-8781-060d4b4f0828" DiagramNumber="1" BaseDefinition="IfcControl" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="SubmittedBy" UniqueId="2hvZIRbRbDI9eaow1XFZ7P" DefinedType="IfcActorSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The identity of the person or organization submitting the cost schedule.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="PreparedBy" UniqueId="1F$QF7EBHAdxF4Uy3MNVeX" DefinedType="IfcActorSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The identity of the person or organization preparing the cost schedule.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="SubmittedOn" UniqueId="01517834-9aeb-40dd-9b60-86a3bc514efc" DefinedType="IfcDateTimeSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The date on which the cost schedule was submitted.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Status" UniqueId="69cf6268-7c30-4f3d-a314-486cc0140ad1" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The current status of a cost schedule. Examples of status values that might be used for a cost schedule status include:
+- PLANNED
+- APPROVED
+- AGREED
+- ISSUED
+- STARTED</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="TargetUsers" UniqueId="1RsaImLzHCMOBepF5aqw_G" DefinedType="IfcActorSelect" AttributeFlags="1" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+			<Documentation>The actors for whom the cost schedule was prepared.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="UpdateDate" UniqueId="99952380-22fd-4754-9d3d-84dca6afe470" DefinedType="IfcDateTimeSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The date that this cost schedule is updated; this allows tracking the schedule history.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ID" UniqueId="1Nkc4AGlz0R9gL4lua7Y0N" DefinedType="IfcIdentifier" AttributeFlags="2" AggregationType="0" AggregationFlag="0">
+			<Documentation>A unique identification assigned to a cost schedule that enables its differentiation from other cost schedules.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="PredefinedType" UniqueId="11588a64-9704-464e-859a-69c5c7ed8693" DefinedType="IfcCostScheduleTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Predefined types of cost schedule from which that required may be selected.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<UniqueRules>
+		<DocUniqueRule Name="UR2" UniqueId="1ahg4eier849czhJ0JlqVO">
+			<Items>
+				<DocUniqueRuleItem Name="ID" UniqueId="0b2clK0MD9dxSzZW8zNseB" />
+			</Items>
+		</DocUniqueRule>
+	</UniqueRules>
+</DocEntity>
+

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPresentationLayerWithStyle" UniqueId="d58d8ae7-e309-454d-b3f1-2b58ce4d583d" DiagramNumber="1" BaseDefinition="IfcPresentationLayerAssignment" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="LayerOn" UniqueId="c35508db-bb0f-4b65-8ebe-1263d8d30880" DefinedType="LOGICAL" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>A logical setting, TRUE indicates that the layer is set to &apos;On&apos;, FALSE that the layer is set to &apos;Off&apos;, UNKNOWN that such information is not available.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LayerFrozen" UniqueId="cd1d47f4-0d9b-443b-99a8-e11337ce2807" DefinedType="LOGICAL" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>A logical setting, TRUE indicates that the layer is set to &apos;Frozen&apos;, FALSE that the layer is set to &apos;Not frozen&apos;, UNKNOWN that such information is not available.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LayerBlocked" UniqueId="30057b28-65bc-49de-8333-f563a5910322" DefinedType="LOGICAL" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>A logical setting, TRUE indicates that the layer is set to &apos;Blocked&apos;, FALSE that the layer is set to &apos;Not blocked&apos;, UNKNOWN that such information is not available.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LayerStyles" UniqueId="e8b3dbe7-1765-4f94-95ef-729981109562" DefinedType="IfcPresentationStyleSelect" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0">
+			<Documentation>Assignment of presentation styles to the layer to provide a default style for representation items.
+&gt; &lt;small&gt;
+NOTE&amp;nbsp; In most cases the assignment of styles to a layer is restricted to an &lt;i&gt;IfcCurveStyle&lt;/i&gt; representing the layer curve colour, layer curve thickness, and layer curve type.
+&lt;/small&gt;</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

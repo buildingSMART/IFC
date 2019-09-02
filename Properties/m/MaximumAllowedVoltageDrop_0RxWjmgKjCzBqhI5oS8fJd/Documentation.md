@@ -1,0 +1,1 @@
+The maximum voltage drop across the circuit that must not be exceeded.

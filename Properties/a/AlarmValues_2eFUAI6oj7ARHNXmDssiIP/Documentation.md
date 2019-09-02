@@ -1,0 +1,1 @@
+Specifies any states the present value must equal before an EventEnable shall occur. Upper limit of the list is equal to the NumberOfStates.

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelAssociatesMaterial" UniqueId="68083c6e-1181-46f4-84da-7cd237846083" DiagramNumber="6" BaseDefinition="IfcRelAssociates" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="RelatingMaterial" UniqueId="463ce87e-d144-4166-8fe4-c3c46fd0dd1d" DefinedType="IfcMaterialSelect" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Material definition (either a single material, a list of materials, or a set of material layers) assigned to the elements.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR21" UniqueId="0X31mISTP7guMVs4LkYoir">
+			<Documentation>The material information must not be associated to a substraction feature (such as an opening) or to a virtual element.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* SELF\IfcRelAssociates.RelatedObjects | 
+(&apos;IFCPRODUCTEXTENSION.IFCFEATUREELEMENTSUBTRACTION&apos; IN TYPEOF(temp))
+  OR (&apos;IFCPRODUCTEXTENSION.IFCVIRTUALELEMENT&apos; IN TYPEOF(temp))
+)) = 0</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR22" UniqueId="0vQjxdpff54fL2jdTAE3SX">
+			<Documentation>The material information, using _IfcMaterialSelect_ should be associated to a product occurrence or an product type.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* SELF\IfcRelAssociates.RelatedObjects | 
+(NOT(&apos;IFCKERNEL.IFCPRODUCT&apos; IN TYPEOF(temp)) 
+ AND NOT(&apos;IFCKERNEL.IFCTYPEPRODUCT&apos; IN TYPEOF(temp)))
+)) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,1 @@
+The phase identification used when the function of the conductor is a phase. In general, it is recommended that IEC recommendations for phase identification are used (L1, L2 etc.). However, other phase identifiers may be used such as by color (Red, Blue, Yellow) or by number (1, 2, 3) etc.

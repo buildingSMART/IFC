@@ -1,0 +1,1 @@
+Latent cooling capacity of the PackagedACUnit per ARI Standards 210/240, 270, 275, 360, 340 and 365.

@@ -1,0 +1,3 @@
+Specific to _IfcSite_: The spatial containment relationship to elements located on the _IfcSite_ is optional in scope of the **Coordination View V2.0**. As an workaround those elements can be contained in an _IfcBuilding_ or _IfcBuildingStorey_located on the _IfcSite_.
+
+EXAMPLE Site elements, such as fences, trees, lantern, and similar, can either be spatially contained in the _IfcSite_, or in the _IfcBuildingStorey_ that corresponds to the ground floor.

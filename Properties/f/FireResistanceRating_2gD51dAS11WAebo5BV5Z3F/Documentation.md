@@ -1,0 +1,1 @@
+Fire rating identifying the entity's fire resistive value (e.g., 1-hour, 2-hour, etc.) so that its resistance to fire can be compared to that of the surrounding structure.

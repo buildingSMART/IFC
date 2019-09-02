@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcLightSource" UniqueId="71827db2-742f-4dc0-bf75-f01994ba5b74" DiagramNumber="2" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="197">
+	<Subtypes>
+		<DocSubtype UniqueId="50ccedc2-67e7-4971-b946-461b939c9f1d" DefinedType="IfcLightSourceAmbient" />
+		<DocSubtype UniqueId="381532d8-cbfe-47ac-87a1-9570427e1676" DefinedType="IfcLightSourceDirectional" />
+		<DocSubtype UniqueId="c4d9ebd8-5647-44df-897c-f4cfaadf3ca4" DefinedType="IfcLightSourcePositional" />
+		<DocSubtype UniqueId="c5996967-314c-415e-aae7-7e171be2ceaf" DefinedType="IfcLightSourceGoniometric" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="Name" UniqueId="150164ef-7d33-445f-8a1b-2d529f61d7a4" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The name given to the light source in presentation.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LightColour" UniqueId="ff1fa3ae-d82f-44c4-803a-3710bb57144d" DefinedType="IfcColourRgb" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Definition from ISO/CD 10303-46:1992: Based on the current lighting model, the colour of the light to be used for shading.
+Definition from VRML97 - ISO/IEC 14772-1:1997: The color field specifies the spectral color properties of both the direct and ambient light emission as an RGB value.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="AmbientIntensity" UniqueId="55499aa0-2d76-4bb7-8ffb-ddb32a56f629" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Definition from VRML97 - ISO/IEC 14772-1:1997: The ambientIntensity specifies the intensity of the ambient emission from the light. Light intensity may range from 0.0 (no light emission) to 1.0 (full intensity).</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Intensity" UniqueId="118472c5-0afa-48b6-a33a-dcada5d71a1f" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Definition from VRML97 - ISO/IEC 14772-1:1997: The intensity field specifies the brightness of the direct emission from the ligth. Light intensity may range from 0.0 (no light emission) to 1.0 (full intensity).</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

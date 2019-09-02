@@ -1,0 +1,1 @@
+Indication whether this space is declared to be a concealed ceiling (TRUE) or not (FALSE). A concealed ceiling is normally meant to be the space between a slab and a suspended ceiling.

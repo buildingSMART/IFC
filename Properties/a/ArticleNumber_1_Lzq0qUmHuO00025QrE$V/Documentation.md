@@ -1,0 +1,1 @@
+Article number or reference that may be applied to a product according to a standard scheme for article number definition (e.g. UN, EAN)

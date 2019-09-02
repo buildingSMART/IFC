@@ -1,0 +1,1 @@
+Indication of whether contents of the purchase order are delivered 'Free on Board' (= True) or not (= False).

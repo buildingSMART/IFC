@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcConstructionProductResource" UniqueId="686e69fb-789c-4cef-a1b2-e9bb3345a558" DiagramNumber="1" BaseDefinition="IfcConstructionResource" EntityFlags="101">
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="0LZn6gRHPDAvvdFgsX93RZ">
+			<Documentation>There should only be a single relationship, assigning products to the product resource.</Documentation>
+			<Expression>SIZEOF(SELF\IfcResource.ResourceOf) &lt;=1</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR2" UniqueId="23K6URAH17H9w_dH7hDrJo">
+			<Documentation>If a reference to a resource is given, then through the IfcRelAssignsToResource relationship with the RelatedObjectType PRODUCT.</Documentation>
+			<Expression>NOT(EXISTS(SELF\IfcResource.ResourceOf[1])) OR
+(SELF\IfcResource.ResourceOf[1].RelatedObjectsType = IfcObjectTypeEnum.PRODUCT)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

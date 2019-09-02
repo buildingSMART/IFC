@@ -1,0 +1,1 @@
+Material from which the object is constructed.

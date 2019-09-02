@@ -1,0 +1,1 @@
+Specific to IfcSpace: The usage of attributes is (1) Name being the space number or designator, (2) LongName being the space name, and (3) Description being any additional informative text.&nbsp;

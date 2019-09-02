@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcProcedure" UniqueId="0cce4f12-90b1-4e02-a09b-0dab4f9a731c" DiagramNumber="3" BaseDefinition="IfcProcess" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="ProcedureID" UniqueId="3kXEZo7rLCxQsgiRVPJCp2" DefinedType="IfcIdentifier" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>An identifying designation given to a procedure.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ProcedureType" UniqueId="0c8gbxxw9BygS1A9K3U43Z" DefinedType="IfcProcedureTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Predefined procedure types from which that required may be set.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="UserDefinedProcedureType" UniqueId="0skfr8AovFmOcc8eJs0Uxd" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>A user defined procedure type.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="33C4FTADb6RR07fc$7gXCE">
+			<Documentation>Restrict the relationship &apos;Nests&apos; inherited from IfcObject to IfcRelNests.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* SELF\IfcObjectDefinition.Decomposes | NOT(&apos;IFCKERNEL.IFCRELNESTS&apos; IN TYPEOF(temp)))) = 0</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR2" UniqueId="2MpTFf_wHA$wi9XcdKfQsn">
+			<Documentation>Restrict the relationship &apos;IsNestedBy&apos; inherited from IfcObject to IfcRelNests.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* SELF\IfcObjectDefinition.IsDecomposedBy | NOT(&apos;IFCKERNEL.IFCRELNESTS&apos; IN TYPEOF(temp)))) = 0</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR3" UniqueId="1MnYe2zgXCZuqq2cMzvc6p">
+			<Documentation>The Name attribute should be inserted to describe the task name.</Documentation>
+			<Expression>EXISTS(SELF\IfcRoot.Name)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR4" UniqueId="1qMFOc4MT6JwBOvFXX_0AR">
+			<Documentation>The attribute UserDefinedProcedureType must be asserted when the value of the IfcProcedureTypeEnum is set to USERDEFINED.</Documentation>
+			<Expression>(ProcedureType &lt;&gt; IfcProcedureTypeEnum.USERDEFINED) OR
+((ProcedureType = IfcProcedureTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcProcedure.UserDefinedProcedureType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelConnectsElements" UniqueId="2749c418-fb5d-400d-92ce-0c491a55cbd7" DiagramNumber="9" BaseDefinition="IfcRelConnects" EntityFlags="237">
+	<Subtypes>
+		<DocSubtype UniqueId="934789df-1208-4c7d-a326-237fe6c71ec0" DefinedType="IfcRelConnectsWithRealizingElements" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="ConnectionGeometry" UniqueId="5b2207fa-16ea-4fe2-900a-652e7e2b521e" DefinedType="IfcConnectionGeometry" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Relationship to the control class, that provides the geometrical constraints of the connection.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="RelatingElement" UniqueId="f875bb4c-3105-4b90-a8d1-25dfc10e0f90" DefinedType="IfcElement" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Reference to an Element that is connected by the objectified relationship.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="RelatedElement" UniqueId="eb56d278-f844-4217-8731-9c4cc688940e" DefinedType="IfcElement" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Reference to an Element that is connected by the objectified relationship.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR31" UniqueId="0pvlYrYvP4vwJ5PWF9Hmxf">
+			<Documentation>The instance of the relating element shall not be the same instance as the related element.</Documentation>
+			<Expression>RelatingElement :&lt;&gt;: RelatedElement</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

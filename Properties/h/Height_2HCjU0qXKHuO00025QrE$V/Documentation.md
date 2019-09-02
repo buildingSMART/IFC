@@ -1,0 +1,1 @@
+Height of the vibration isolator before tha application of load.

@@ -1,0 +1,33 @@
+    (Element : IfcElement )
+                : INTEGER;
+    
+    LOCAL
+      Association : BAG OF IfcRelAssociates := [];
+      MaterialAssociation : SET OF IfcRelAssociatesMaterial := [];
+    END_LOCAL;
+    
+    Association := USEDIN(Element, 'IFCKERNEL.IFCRELASSOCIATES.RELATEDOBJECTS');
+ 
+    IF SIZEOF (Association) > 0 THEN
+      REPEAT i := 1 TO HIINDEX(Association);
+        IF ('IFCPRODUCTEXTENSION.IFCRELASSOCIATESMATERIAL' IN TYPEOF(Association[i])) THEN 
+          MaterialAssociation := MaterialAssociation + Association[i];
+        END_IF;
+      END_REPEAT;
+    END_IF;
+    
+    IF (SIZEOF(MaterialAssociation) <> 1) THEN
+      RETURN (?);
+    ELSE
+      IF 'IFCMATERIALRESOURCE.IFCMATERIAL' IN TYPEOF(MaterialAssociation[1].RelatingMaterial) THEN
+         RETURN (1);
+      END_IF;
+      IF 'IFCMATERIALRESOURCE.IFCMATERIALLAYERSETUSAGE' IN TYPEOF(MaterialAssociation[1].RelatingMaterial) THEN
+         RETURN (SIZEOF(MaterialAssociation[1].RelatingMaterial.ForLayerSet.MaterialLayers));
+      END_IF;
+      IF 'IFCMATERIALRESOURCE.IFCMATERIALLIST' IN TYPEOF(MaterialAssociation[1].RelatingMaterial) THEN
+         RETURN (?);
+      END_IF;
+    END_IF;
+  
+    RETURN (?);

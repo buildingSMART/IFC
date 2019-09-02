@@ -1,0 +1,1 @@
+Enumeration defining the polarity

@@ -1,0 +1,152 @@
+(m   : IfcUnitEnum; Dim : IfcDimensionalExponents) : LOGICAL;  
+CASE m OF
+  LENGTHUNIT : IF
+    Dim = (IfcDimensionalExponents (1, 0, 0, 0, 0, 0, 0))
+      THEN RETURN(TRUE);
+      ELSE RETURN(FALSE);
+    END_IF;
+  MASSUNIT : IF
+    Dim = (IfcDimensionalExponents (0, 1, 0, 0, 0, 0, 0))
+      THEN RETURN(TRUE);
+      ELSE RETURN(FALSE);
+    END_IF;
+  TIMEUNIT : IF
+    Dim = (IfcDimensionalExponents (0, 0, 1, 0, 0, 0, 0))
+      THEN RETURN(TRUE);
+      ELSE RETURN(FALSE);
+    END_IF;
+  ELECTRICCURRENTUNIT : IF
+    Dim = (IfcDimensionalExponents (0, 0, 0, 1, 0, 0, 0))
+      THEN RETURN(TRUE);
+      ELSE RETURN(FALSE);
+    END_IF;
+  THERMODYNAMICTEMPERATUREUNIT : IF
+    Dim = (IfcDimensionalExponents (0, 0, 0, 0, 1, 0, 0))
+      THEN RETURN(TRUE);
+      ELSE RETURN(FALSE);
+    END_IF;
+  AMOUNTOFSUBSTANCEUNIT : IF
+    Dim = (IfcDimensionalExponents (0, 0, 0, 0, 0, 1, 0))
+      THEN RETURN(TRUE);
+      ELSE RETURN(FALSE);
+    END_IF;
+  LUMINOUSINTENSITYUNIT : IF
+    Dim = (IfcDimensionalExponents (0, 0, 0, 0, 0, 0, 1))
+      THEN RETURN(TRUE);
+      ELSE RETURN(FALSE);
+    END_IF;
+  PLANEANGLEUNIT : IF
+    Dim = (IfcDimensionalExponents (0, 0, 0, 0, 0, 0, 0))
+      THEN RETURN(TRUE);
+      ELSE RETURN(FALSE);
+    END_IF;
+  SOLIDANGLEUNIT : IF
+    Dim = (IfcDimensionalExponents (0, 0, 0, 0, 0, 0, 0))
+      THEN RETURN(TRUE);
+      ELSE RETURN(FALSE);
+    END_IF;
+  AREAUNIT : IF
+    Dim = (IfcDimensionalExponents (2, 0, 0, 0, 0, 0, 0))
+      THEN RETURN(TRUE);
+      ELSE RETURN(FALSE);
+    END_IF;
+  VOLUMEUNIT : IF
+    Dim = (IfcDimensionalExponents (3, 0, 0, 0, 0, 0, 0))
+      THEN RETURN(TRUE);
+      ELSE RETURN(FALSE);
+    END_IF;
+
+  ABSORBEDDOSEUNIT : IF
+    Dim = (IfcDimensionalExponents (2, 0, -2, 0, 0, 0, 0))
+      THEN RETURN(TRUE);
+      ELSE RETURN(FALSE);
+    END_IF;
+  RADIOACTIVITYUNIT : IF
+    Dim = (IfcDimensionalExponents (0, 0, -1, 0, 0, 0, 0))
+      THEN RETURN(TRUE);
+      ELSE RETURN(FALSE);
+    END_IF;
+  ELECTRICCAPACITANCEUNIT : IF
+    Dim = (IfcDimensionalExponents (-2, 1, 4, 1, 0, 0, 0))
+      THEN RETURN(TRUE);
+      ELSE RETURN(FALSE);
+    END_IF;
+  DOSEEQUIVALENTUNIT : IF
+    Dim = (IfcDimensionalExponents (2, 0, -2, 0, 0, 0, 0))
+      THEN RETURN(TRUE);
+      ELSE RETURN(FALSE);
+    END_IF;
+  ELECTRICCHARGEUNIT : IF
+    Dim = (IfcDimensionalExponents (0, 0, 1, 1, 0, 0, 0))
+      THEN RETURN(TRUE);
+      ELSE RETURN(FALSE);
+    END_IF;
+  ELECTRICCONDUCTANCEUNIT : IF
+    Dim = (IfcDimensionalExponents (-2, -1, 3, 2, 0, 0, 0))
+      THEN RETURN(TRUE);
+      ELSE RETURN(FALSE);
+    END_IF;
+  ELECTRICVOLTAGEUNIT : IF
+    Dim = (IfcDimensionalExponents (2, 1, -3, -1, 0, 0, 0))
+      THEN RETURN(TRUE);
+      ELSE RETURN(FALSE);
+    END_IF;
+  ELECTRICRESISTANCEUNIT : IF
+    Dim = (IfcDimensionalExponents (2, 1, -3, -2, 0, 0, 0))
+      THEN RETURN(TRUE);
+      ELSE RETURN(FALSE);
+    END_IF;
+  ENERGYUNIT : IF
+    Dim = (IfcDimensionalExponents (2, 1, -2, 0, 0, 0, 0))
+      THEN RETURN(TRUE);
+      ELSE RETURN(FALSE);
+    END_IF;
+  FORCEUNIT : IF
+    Dim = (IfcDimensionalExponents (1, 1, -2, 0, 0, 0, 0))
+      THEN RETURN(TRUE);
+      ELSE RETURN(FALSE);
+    END_IF;
+  FREQUENCYUNIT : IF
+    Dim = (IfcDimensionalExponents (0, 0, -1, 0, 0, 0, 0))
+      THEN RETURN(TRUE);
+      ELSE RETURN(FALSE);
+    END_IF;
+  INDUCTANCEUNIT : IF
+    Dim = (IfcDimensionalExponents (2, 1, -2, -2, 0, 0, 0))
+      THEN RETURN(TRUE);
+      ELSE RETURN(FALSE);
+    END_IF;
+  ILLUMINANCEUNIT : IF
+    Dim = (IfcDimensionalExponents (-2, 0, 0, 0, 0, 0, 1))
+      THEN RETURN(TRUE);
+      ELSE RETURN(FALSE);
+    END_IF;
+  LUMINOUSFLUXUNIT : IF
+    Dim = (IfcDimensionalExponents (0, 0, 0, 0, 0, 0, 1))
+      THEN RETURN(TRUE);
+      ELSE RETURN(FALSE);
+    END_IF;
+  MAGNETICFLUXUNIT : IF
+    Dim = (IfcDimensionalExponents (2, 1, -2, -1, 0, 0, 0))
+      THEN RETURN(TRUE);
+      ELSE RETURN(FALSE);
+    END_IF;
+  MAGNETICFLUXDENSITYUNIT : IF
+    Dim = (IfcDimensionalExponents (0, 1, -2, -1, 0, 0, 0))
+      THEN RETURN(TRUE);
+      ELSE RETURN(FALSE);
+    END_IF;
+  POWERUNIT : IF
+    Dim = (IfcDimensionalExponents (2, 1, -3, 0, 0, 0, 0))
+      THEN RETURN(TRUE);
+      ELSE RETURN(FALSE);
+    END_IF;
+  PRESSUREUNIT : IF
+    Dim = (IfcDimensionalExponents (-1, 1, -2, 0, 0, 0, 0))
+      THEN RETURN(TRUE);
+      ELSE RETURN(FALSE);
+    END_IF;
+
+  OTHERWISE :
+    RETURN (UNKNOWN);
+END_CASE;

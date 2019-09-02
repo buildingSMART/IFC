@@ -1,0 +1,1 @@
+Material used for construction of the fins.

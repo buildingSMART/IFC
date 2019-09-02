@@ -1,0 +1,1 @@
+Main material of the covering, it should only be given, if no IfcMaterial class is assigned to the IfcCovering instance.

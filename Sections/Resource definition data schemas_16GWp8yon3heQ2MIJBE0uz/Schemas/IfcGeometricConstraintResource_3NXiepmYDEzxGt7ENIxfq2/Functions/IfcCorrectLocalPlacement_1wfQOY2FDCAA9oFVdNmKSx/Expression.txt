@@ -1,0 +1,23 @@
+  (AxisPlacement:IfcAxis2Placement; 
+   RelPlacement : IfcObjectPlacement):LOGICAL;
+
+  IF (EXISTS(RelPlacement)) THEN
+    IF ('IFCGEOMETRICCONSTRAINTRESOURCE.IFCGRIDPLACEMENT' IN TYPEOF(RelPlacement)) THEN
+      RETURN(?);
+    END_IF;
+    IF ('IFCGEOMETRICCONSTRAINTRESOURCE.IFCLOCALPLACEMENT' IN TYPEOF(RelPlacement)) THEN
+      IF ('IFCGEOMETRYRESOURCE.IFCAXIS2PLACEMENT2D' IN TYPEOF(AxisPlacement)) THEN
+        RETURN(TRUE);
+      END_IF;
+      IF ('IFCGEOMETRYRESOURCE.IFCAXIS2PLACEMENT3D' IN TYPEOF(AxisPlacement)) THEN
+        IF (RelPlacement.RelativePlacement.Dim = 3) THEN
+          RETURN(TRUE);
+        ELSE
+          RETURN(FALSE);
+        END_IF;
+      END_IF;
+    END_IF;
+  ELSE
+    RETURN(TRUE);  
+  END_IF;
+  RETURN(?);

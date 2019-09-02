@@ -1,0 +1,1 @@
+The volume of water that needs to be stored to supply make up water to the cooling towers in a building for one day in the event of water supply failure.

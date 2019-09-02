@@ -1,0 +1,1 @@
+The nominal length of a conductor.

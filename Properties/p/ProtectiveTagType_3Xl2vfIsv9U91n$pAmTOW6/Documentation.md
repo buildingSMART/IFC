@@ -1,0 +1,1 @@
+The breaking capacity value of the device. Note: This may be expressed as a code or a value depending on standard and/or source.

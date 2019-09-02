@@ -1,0 +1,1 @@
+The bending type code for the specific bending shape as defined in the BEC standard. Note: depending on the standardized shape different combinations of following parameters a...e (f...l), TD, u, v, u1, v1, aid_x, and aid_y are used.

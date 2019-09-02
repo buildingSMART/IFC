@@ -1,0 +1,1 @@
+Definition from BS6100 100 3431: Recess or small chamber into which liquid is drained to facilitate its removal.

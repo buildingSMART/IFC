@@ -1,0 +1,1 @@
+The name of the manufactured item as used by the manufacturer.

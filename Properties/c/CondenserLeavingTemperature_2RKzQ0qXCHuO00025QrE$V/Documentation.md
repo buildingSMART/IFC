@@ -1,0 +1,1 @@
+Termperature of fluid leaving condenser per manufacturer's listing (if available)

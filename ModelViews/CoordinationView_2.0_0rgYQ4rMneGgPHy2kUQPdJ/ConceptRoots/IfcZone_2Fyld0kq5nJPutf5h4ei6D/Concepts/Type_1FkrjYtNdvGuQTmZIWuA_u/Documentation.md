@@ -1,0 +1,1 @@
+Specific to IfcZone: The IfcZone shall not have a type assigned.

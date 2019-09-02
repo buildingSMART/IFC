@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAirToAirHeatRecoveryType" UniqueId="85f459a0-3831-4b34-b397-56bb368682cd" DiagramNumber="1" BaseDefinition="IfcEnergyConversionDeviceType" EntityFlags="101">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="c4ddd349-e565-4ef2-94a5-74133269b028" DefinedType="IfcAirToAirHeatRecoveryTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Defines the type of air to air heat recovery device.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="0fXV7NBBj86whBFWxra0fj">
+			<Expression>(PredefinedType &lt;&gt; IfcAirToAirHeatRecoveryTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcAirToAirHeatRecoveryTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

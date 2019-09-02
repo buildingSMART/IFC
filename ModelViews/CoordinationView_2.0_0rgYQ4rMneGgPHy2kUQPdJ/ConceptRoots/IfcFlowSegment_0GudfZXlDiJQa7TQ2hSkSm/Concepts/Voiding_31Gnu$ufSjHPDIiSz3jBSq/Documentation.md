@@ -1,0 +1,1 @@
+Specific to IfcFlowSegment: The IfcFlowSegment shall not have a voiding relationship. Voids in the shape of an IfcFlowSegment shall be already included in th shape representation (e.g. part of the xplicit shape).

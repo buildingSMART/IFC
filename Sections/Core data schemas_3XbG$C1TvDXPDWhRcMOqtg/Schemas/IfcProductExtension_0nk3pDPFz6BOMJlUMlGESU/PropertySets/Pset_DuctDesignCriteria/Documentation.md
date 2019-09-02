@@ -1,0 +1,2 @@
+This property set is used to define the general characteristics of the duct design parameters. This property set is typically attached to an instance of an IfcSystem, however, it may also be attached to individual elements within a duct distribution system where individual design parameters overrule those of the system.
+HISTORY: New property set in IFC Release 2.0.

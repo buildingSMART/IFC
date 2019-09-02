@@ -1,0 +1,1 @@
+Coefficient of Performance: Ratio of cooling energy output to energy input under full load operating conditions per ARI Standards 210/240, 270, 275, 360, 340 and 365.

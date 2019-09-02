@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTextStyleTextModel" UniqueId="59ceb694-4afb-4c76-9a16-127226c2f9f1" DiagramNumber="3" EntityFlags="165">
+	<Attributes>
+		<DocAttribute Name="TextIndent" UniqueId="f0117f35-2e03-4ea2-9924-bd490c8fa331" DefinedType="IfcSizeSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The property specifies the indentation that appears before the first formatted line.
+  
+&gt; &lt;small&gt;NOTE&amp;nbsp; It has been introduced for later compliance to full CSS1 support.&lt;/small&gt;</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="TextAlign" UniqueId="47ae34b7-031d-41db-96d7-bf54c78482a2" DefinedType="IfcTextAlignment" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>This property describes how text is aligned horizontally within the element. The actual justification algorithm used is dependent on the rendering algorithm.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="TextDecoration" UniqueId="209760cf-b102-4531-a492-b7328a9ef26b" DefinedType="IfcTextDecoration" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>This property describes decorations that are added to the text of an element.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LetterSpacing" UniqueId="67f38bcd-c711-4feb-8d70-7b389f7877f5" DefinedType="IfcSizeSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The length unit indicates an addition to the default space between characters. Values can be negative, but there may be implementation-specific limits. The user agent is free to select the exact spacing algorithm. The letter spacing may also be influenced by justification (which is a value of the &apos;align&apos; property).
+  
+&gt; &lt;small&gt;NOTE&amp;nbsp; The following values are allowed, &lt;i&gt;IfcDescriptiveMeasure&lt;/i&gt; with value=&apos;normal&apos;, or &lt;i&gt;IfcLengthMeasure&lt;i&gt;, the length unit is globally defined at &lt;i&gt;IfcUnitAssignment&lt;/i&gt;.&lt;/i&gt;&lt;/i&gt;&lt;/small&gt;</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="WordSpacing" UniqueId="fad83a93-a548-4cf6-8329-87893148c863" DefinedType="IfcSizeSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The length unit indicates an addition to the default space between words. Values can be negative, but there may be implementation-specific limits. The user agent is free to select the exact spacing algorithm. The word spacing may also be influenced by justification (which is a value of the &apos;text-align&apos; property).
+  
+&gt; &lt;small&gt;NOTE&amp;nbsp; It has been introduced for later compliance to full CSS1 support.&lt;/small&gt;</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="TextTransform" UniqueId="3def65a2-04e8-4dd9-b36d-100a15a831fb" DefinedType="IfcTextTransformation" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>This property describes how text characters may transform to upper case, lower case, or capitalized case, independent of the character case used in the text literal.
+  
+&gt; &lt;small&gt;NOTE&amp;nbsp; It has been introduced for later compliance to full CSS1 support.&lt;/small&gt;</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LineHeight" UniqueId="baf993d3-bde7-40b2-8809-170b5ab31fa4" DefinedType="IfcSizeSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The property sets the distance between two adjacent lines&apos; baselines.  
+When a ratio value is specified, the line height is given by the font size of the current element multiplied with the numerical value. A value of &apos;normal&apos; sets the line height to a reasonable value for the element&apos;s font. It is suggested that user agents set the &apos;normal&apos; value to be a ratio number in the range of 1.0 to 1.2.
+  
+&gt; &lt;small&gt;NOTE&amp;nbsp; The following values are allowed:&lt;br&gt; &lt;i&gt;IfcDescriptiveMeasure&lt;/i&gt; with value=&apos;normal&apos;, or &lt;br&gt;
+&lt;i&gt;IfcLengthMeasure&lt;i&gt;, with non-negative values, the length unit is globally defined at &lt;i&gt;IfcUnitAssignment&lt;/i&gt;, or &lt;br&gt;&lt;i&gt;IfcRatioMeasure&lt;/i&gt;.&lt;/i&gt;&lt;/i&gt;&lt;/small&gt;</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

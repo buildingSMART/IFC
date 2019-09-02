@@ -1,0 +1,1 @@
+Specific to IfcGroup: The IfcGroup shall not have a type assigned.

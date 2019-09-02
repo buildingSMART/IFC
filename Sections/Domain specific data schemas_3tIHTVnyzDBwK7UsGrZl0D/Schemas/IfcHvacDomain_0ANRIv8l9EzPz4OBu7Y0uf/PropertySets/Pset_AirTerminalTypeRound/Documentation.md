@@ -1,0 +1,1 @@
+Round air terminal type attributes.

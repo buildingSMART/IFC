@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSectionedSpine" UniqueId="d92abdea-e3e3-4799-9cb5-39b1c40f03aa" DiagramNumber="5" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="237">
+	<Attributes>
+		<DocAttribute Name="SpineCurve" UniqueId="9972a3cc-e10b-4958-b69a-cff36403a20f" DefinedType="IfcCompositeCurve" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>A single composite curve, that defines the spine curve. Each of the composite curve segments correspond to the part between two cross-sections.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="CrossSections" UniqueId="ab186537-69aa-4b04-909e-0a50fb0c39a8" DefinedType="IfcProfileDef" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="0">
+			<Documentation>A list of at least two cross sections, each defined within the xy plane of the position coordinate system of the cross section. The position coordinate system is given by the corresponding list CrossSectionPositions.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="CrossSectionPositions" UniqueId="248f7801-8a52-417a-a51f-43ba0fbb601d" DefinedType="IfcAxis2Placement3D" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="0">
+			<Documentation>Position coordinate systems for the cross sections that form the sectioned spine. The profiles defining the cross sections are positioned within the xy plane of the corresponding position coordinate system.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Dim" UniqueId="40abd247-1c82-4fc0-8a01-aab4d02b1e8c" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The dimensionality of the spine curve is always 3.</Documentation>
+			<Derived>3</Derived>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="2W2F5kqsn1OPo5U_l2uScW">
+			<Documentation>The set of cross sections and the set of cross section positions shall be of the same size.</Documentation>
+			<Expression>SIZEOF(CrossSections) = SIZEOF(CrossSectionPositions)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR2" UniqueId="1RsLYhnxH9afNiL$xRX13S">
+			<Documentation>The profile type (either AREA or CURVE) shall be consistent within the list of the profiles defining the cross sections.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* CrossSections | CrossSections[1].ProfileType &lt;&gt; temp.ProfileType)) = 0</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR3" UniqueId="2CUNOZDYH4rvrBzq8BvxWv">
+			<Documentation>The curve entity which is the underlying spine curve shall have the dimensionality of 3.</Documentation>
+			<Expression>SpineCurve.Dim = 3</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

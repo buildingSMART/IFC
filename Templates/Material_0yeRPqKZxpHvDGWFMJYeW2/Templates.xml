@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Material_0yeRPqKZxpHvDGWFMJYeW2" Name="Material" UniqueId="0yeRPqKZxpHvDGWFMJYeW2" Version="0.3" Status="draft" Owner="buildingSMART International" Type="IfcRelAssociatesMaterial">
+	<Templates>
+		<DocTemplateDefinition Name="Single Material" UniqueId="0pajBTG6OqJu62gWLSoXU1" Version="0.3" Status="draft" Owner="buildingSMART International" Type="IfcRelAssociatesMaterial IfcMaterial">
+			<Documentation>Provision of a single material name that defines the material of the _element_construction.</Documentation>
+		</DocTemplateDefinition>
+		<DocTemplateDefinition Name="Material Layer Set" UniqueId="2Nu_GFX5YSJAxlkMCQngFi" Version="0.3" Status="draft" Owner="buildingSMART International" Type="IfcRelAssociatesMaterial IfcMaterialLayerSet">
+			<Documentation>Provision of a material layer set, consisting of a set of material layers with thickness and material name that defines the material of the _element_construction.</Documentation>
+		</DocTemplateDefinition>
+		<DocTemplateDefinition Name="Material Layer Usage" UniqueId="2laVFRi89tI9WUlbSFrLrs" Version="0.3" Status="draft" Owner="buildingSMART International" Type="IfcRelAssociatesMaterial IfcMaterialLayerSetUsage">
+			<Documentation>Provision of the assignment of a material layer set to the _element_reference axis or reference plane (with an offset). The alignment and thickness of the material layer set has to be consistent along the axis or parallel to the plane.</Documentation>
+		</DocTemplateDefinition>
+		<DocTemplateDefinition Name="Material List" UniqueId="32gYzWGcsGHQQ__$VUwfrh" Version="0.3" Status="draft" Owner="buildingSMART International" Type="IfcRelAssociatesMaterial IfcMaterialList">
+			<Documentation>Provision of a list of material name that defines the different materials of the _element_construction.
+
+NOTE: There is no correspondence of the parts or components of the _element_construction and the materials within the material list.
+
+DEPRECATION: The Material List will be deprecated in IFC4.</Documentation>
+		</DocTemplateDefinition>
+	</Templates>
+</DocTemplateDefinition>
+

@@ -1,0 +1,1 @@
+Maximum number of openings that can fit with the case for normal use. In the openings there must be nipples, so cable may run through.

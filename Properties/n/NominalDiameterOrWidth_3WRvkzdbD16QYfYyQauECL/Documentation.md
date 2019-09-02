@@ -1,0 +1,1 @@
+The nominal diameter or width of the duct fitting. If the list contains only one value, then this nominal diameter or width applies to all ports. For more than value in the list, the nominal diameter or width value applies to the port that corresponds to the list index.

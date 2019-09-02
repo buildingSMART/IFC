@@ -1,0 +1,1 @@
+No further restriction of the concept template defined here.

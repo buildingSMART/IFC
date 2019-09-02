@@ -1,0 +1,1 @@
+Weight of the air terminal box.

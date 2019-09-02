@@ -1,0 +1,47 @@
+  (Styles : SET[1:?] OF IfcFillStyleSelect)
+  :LOGICAL;
+
+LOCAL
+   Hatching : INTEGER := 0;
+   Tiles    : INTEGER := 0;
+   Colour   : INTEGER := 0;
+   External : INTEGER := 0;
+END_LOCAL;
+
+
+External := SIZEOF(QUERY(Style <* Styles |
+  'IFCPRESENTATIONAPPEARANCERESOURCE.IFCEXTERNALLYDEFINEDHATCHSTYLE' IN
+   TYPEOF(Style)));
+
+Hatching  := SIZEOF(QUERY(Style <* Styles |
+  'IFCPRESENTATIONAPPEARANCERESOURCE.IFCFILLAREASTYLEHATCHING' IN
+   TYPEOF(Style)));
+
+Tiles     := SIZEOF(QUERY(Style <* Styles |
+  'IFCPRESENTATIONAPPEARANCERESOURCE.IFCFILLAREASTYLETILES' IN
+   TYPEOF(Style)));
+
+Colour    := SIZEOF(QUERY(Style <* Styles |
+  'IFCPRESENTATIONRESOURCE.IFCCOLOUR' IN
+   TYPEOF(Style)));
+
+
+IF (External > 1) THEN
+  RETURN (FALSE);
+END_IF;
+
+
+IF ((External = 1) AND ((Hatching > 0) OR (Tiles > 0) OR (Colour > 0))) THEN
+  RETURN (FALSE);
+END_IF;
+
+
+IF (Colour > 1) THEN
+  RETURN (FALSE);
+END_IF;
+
+IF ((Hatching > 0) AND (Tiles >0)) THEN
+  RETURN (FALSE);
+END_IF;
+
+RETURN(TRUE);

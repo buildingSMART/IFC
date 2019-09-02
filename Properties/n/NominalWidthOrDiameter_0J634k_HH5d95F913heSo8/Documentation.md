@@ -1,0 +1,1 @@
+The nominal width of a cable, busbar or tube or, in the case of a circular cross section, the diameter. Note that this value may be used for larger sized cables whose dimensions are explicitly given.

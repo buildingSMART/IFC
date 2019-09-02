@@ -1,0 +1,1 @@
+Specific to IfcFlowController: The IfcFlowController shall not have a voiding relationship. Voids in the shape of an IfcFlowController shall be already included in th shape representation (e.g. part of the xplicit shape).

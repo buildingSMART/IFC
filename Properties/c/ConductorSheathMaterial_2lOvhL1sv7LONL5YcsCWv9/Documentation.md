@@ -1,0 +1,1 @@
+The material from which the sheath or insulation is constructed. Such as EPR, Copper, MICC, PVC, PEX, Rubber, XPLE, XPLE_LS. Note that materials used should be agreed between exchange participants before use.

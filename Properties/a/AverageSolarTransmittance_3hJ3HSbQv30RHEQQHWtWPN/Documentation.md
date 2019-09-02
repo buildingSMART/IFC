@@ -1,0 +1,1 @@
+Overall or average ratio of the solar flux transmitted through a body to that incident upon it.
