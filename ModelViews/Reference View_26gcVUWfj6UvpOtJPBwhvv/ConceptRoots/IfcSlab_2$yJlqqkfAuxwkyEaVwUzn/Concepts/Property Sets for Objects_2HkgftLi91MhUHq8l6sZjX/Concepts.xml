@@ -2,27 +2,67 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Property Sets for Objects" UniqueId="91baaa77-56c2-415a-b791-d08bc6da3b61">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 	<Items>
-		<DocTemplateItem UniqueId="a4ec5576-1292-4886-ac39-50989a96b57a" RuleParameters="Name=Pset_SlabCommon;" Order="0">
+		<DocTemplateItem UniqueId="cbec759a-6243-445b-a305-5f8477ea52bc" RuleParameters="PsetName=Pset_SlabCommon;" Order="0">
 			<Concepts>
-				<DocTemplateUsage Name="Properties" UniqueId="457ac889-cdf8-4f95-b88a-64b3d7ac5d82">
+				<DocTemplateUsage Name="Properties" UniqueId="d72ba643-1a53-499c-bd3a-5019c23723e8">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
 					<Items>
-						<DocTemplateItem UniqueId="7f801385-902a-4943-b3e7-765113e1992b" RuleParameters="Name=Reference;Value=IfcIdentifier;" Order="0" />
-						<DocTemplateItem UniqueId="40c97126-efec-49de-a6fe-b678f9685caf" RuleParameters="Name=AcousticRating;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="6fce791e-b164-495e-8daa-7efd998a733d" RuleParameters="Name=FireRating;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="5e55240e-485d-46af-8424-5d5890bd2ec5" RuleParameters="Name=Combustible;Value=IfcBoolean;" Order="0" />
-						<DocTemplateItem UniqueId="ad1a1515-ded1-4758-bed8-edd5c366aab8" RuleParameters="Name=SurfaceSpreadOfFlame;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="be5fbee9-44f1-452a-bf54-087e16a32988" RuleParameters="Name=ThermalTransmittance;Value=IfcThermalTransmittanceMeasure;" Order="0" />
-						<DocTemplateItem UniqueId="77a8615f-bd31-4c8c-bb15-ec2834703f81" RuleParameters="Name=IsExternal;Value=IfcBoolean;" Order="0" />
-						<DocTemplateItem UniqueId="8350ca71-26de-42bc-8be3-e77dec8b5b12" RuleParameters="Name=LoadBearing;Value=IfcBoolean;" Order="0" />
-						<DocTemplateItem UniqueId="547367ae-76d3-474f-998e-df9f40f09fdd" RuleParameters="Name=Compartmentation;Value=IfcBoolean;" Order="0" />
-						<DocTemplateItem UniqueId="d05ced52-d9fc-4bb8-9925-10e03362c0bd" RuleParameters="Name=PitchAngle;Value=IfcPlaneAngleMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="17a84036-664e-4b3f-aabb-525932ca7948" RuleParameters="Order=1;PropertyName=Reference;Value=IfcIdentifier;" Order="0" />
+						<DocTemplateItem UniqueId="8703cafb-2e46-4c09-8665-5f2a5aa62be7" RuleParameters="Order=3;PropertyName=AcousticRating;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="9147a164-6fd5-4a65-9248-1a07728cdb49" RuleParameters="Order=4;PropertyName=FireRating;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="a0d241e3-ac02-4fc1-a10d-e1e128c8146b" RuleParameters="Order=5;PropertyName=Combustible;Value=IfcBoolean;" Order="0" />
+						<DocTemplateItem UniqueId="92ee59d1-8d11-4476-abee-39c39eaadf7a" RuleParameters="Order=6;PropertyName=SurfaceSpreadOfFlame;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="14bc1048-6c30-44d1-b9e4-776fdcbf6a35" RuleParameters="Order=7;PropertyName=ThermalTransmittance;Value=IfcThermalTransmittanceMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="9a05e948-5e68-4355-a02f-674fccf5d085" RuleParameters="Order=8;PropertyName=IsExternal;Value=IfcBoolean;" Order="0" />
+						<DocTemplateItem UniqueId="39e542f0-3f34-4c9d-95e8-40e1a96a4a43" RuleParameters="Order=9;PropertyName=LoadBearing;Value=IfcBoolean;" Order="0" />
+						<DocTemplateItem UniqueId="332e2df6-9b48-453b-8d3f-4856e8f7257d" RuleParameters="Order=10;PropertyName=Compartmentation;Value=IfcBoolean;" Order="0" />
+						<DocTemplateItem UniqueId="f9dd9afd-8413-4b4d-b170-9e01db06eb0d" RuleParameters="Order=11;PropertyName=PitchAngle;Value=IfcPlaneAngleMeasure;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Properties" UniqueId="376d1c2b-082b-4723-98c4-a9fc0274c186">
+				<DocTemplateUsage Name="Properties" UniqueId="ac93a491-4577-49b4-b6e6-2dee612b8796">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
 					<Items>
-						<DocTemplateItem UniqueId="cae42ddc-3b23-4325-8096-46ef119dd32e" RuleParameters="Name=Status;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="231f67bd-cf81-41cb-b29c-c92eceddaef8" RuleParameters="Order=2;PropertyName=Status;Value=IfcLabel;Reference=PEnum_ElementStatus;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="d7555745-d042-4723-977b-4e9242af38ec" RuleParameters="PsetName=Pset_PrecastSlab;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Properties" UniqueId="dc524600-f85e-4348-8156-2dadb134c62c">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
+					<Items>
+						<DocTemplateItem UniqueId="9856e697-4f55-411f-9f9f-a25819d1fcd9" RuleParameters="PropertyName=TypeDesignator;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="7c9be7d4-8e70-442b-8e80-22d354a2336d" RuleParameters="Order=2;PropertyName=ToppingType;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="3ca91917-7e8b-4dec-a56c-1886c3112332" RuleParameters="Order=3;PropertyName=EdgeDistanceToFirstAxis;Value=IfcPositiveLengthMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="166c6e7c-4317-4181-815c-71192d8a3787" RuleParameters="Order=4;PropertyName=DistanceBetweenComponentAxes;Value=IfcPositiveLengthMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="950d782a-bba1-4068-8373-44de78bb2e6c" RuleParameters="Order=5;PropertyName=AngleToFirstAxis;Value=IfcPlaneAngleMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="caf195f0-473e-428a-8ae3-3eaccc3cb09f" RuleParameters="Order=6;PropertyName=AngleBetweenComponentAxes;Value=IfcPlaneAngleMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="0c058a29-6474-463f-98c1-df8c4f884af0" RuleParameters="Order=7;PropertyName=NominalThickness;Value=IfcPositiveLengthMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="b2908ae5-fb08-4519-a4aa-1363b604b098" RuleParameters="Order=8;PropertyName=NominalToppingThickness;Value=IfcPositiveLengthMeasure;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="19eb6269-a808-45ee-89dd-d99a938bfbf8" RuleParameters="PsetName=Pset_ReinforcementBarPitchOfSlab;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Properties" UniqueId="ba4402f1-a81e-4934-b606-520f50eb933e">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
+					<Items>
+						<DocTemplateItem UniqueId="7ceb7146-88cd-41b7-8b52-e7f5dae344fe" RuleParameters="PropertyName=Description;Value=IfcText;" Order="0" />
+						<DocTemplateItem UniqueId="20970045-7919-43a7-aaf2-17dce9040282" RuleParameters="Order=2;PropertyName=Reference;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="7deb3ff0-f91c-4f51-8244-35e52fad2c46" RuleParameters="Order=3;PropertyName=LongOutsideTopBarPitch;Value=IfcPositiveLengthMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="72158ce7-c1d9-4442-b0c1-5d96796a5728" RuleParameters="Order=4;PropertyName=LongInsideCenterTopBarPitch;Value=IfcPositiveLengthMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="47c84e53-c07a-4d97-abb7-b6bbc48f8082" RuleParameters="Order=5;PropertyName=LongInsideEndTopBarPitch;Value=IfcPositiveLengthMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="a4caed51-a3c3-4952-a5da-6ec15a241833" RuleParameters="Order=6;PropertyName=ShortOutsideTopBarPitch;Value=IfcPositiveLengthMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="cd0f37fb-6582-4a6f-9388-07b00aee65aa" RuleParameters="Order=7;PropertyName=ShortInsideCenterTopBarPitch;Value=IfcPositiveLengthMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="2ca3ee4d-04a5-44fc-886b-78a6b4b403aa" RuleParameters="Order=8;PropertyName=ShortInsideEndTopBarPitch;Value=IfcPositiveLengthMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="80117821-3487-4bef-a3d2-83fc6deed456" RuleParameters="Order=9;PropertyName=LongOutsideLowerBarPitch;Value=IfcPositiveLengthMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="b9c143a8-a768-407b-95c8-fcacfc152832" RuleParameters="Order=10;PropertyName=LongInsideCenterLowerBarPitch;Value=IfcPositiveLengthMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="907edf8e-f538-49f1-8774-17035017806b" RuleParameters="Order=11;PropertyName=LongInsideEndLowerBarPitch;Value=IfcPositiveLengthMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="a3c652a7-64e3-4b9e-bd3e-4587c580b9ec" RuleParameters="Order=12;PropertyName=ShortOutsideLowerBarPitch;Value=IfcPositiveLengthMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="dbc1b2f8-ce9e-4b59-bb15-fcd2a8215c2f" RuleParameters="Order=13;PropertyName=ShortInsideCenterLowerBarPitch;Value=IfcPositiveLengthMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="87300cc0-d8f7-4c7e-9d61-26d5e6caa5f7" RuleParameters="Order=14;PropertyName=ShortInsideEndLowerBarPitch;Value=IfcPositiveLengthMeasure;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>

@@ -1,1 +1,1 @@
-_IfcRoot_ assigns the globally unique ID.
+_Globally unique ID, as compressed uuid, is assigned to each subtype of _IfcRoot_._

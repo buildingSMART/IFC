@@ -2,13 +2,13 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Spatial Containment" UniqueId="380a3295-e342-4765-9602-e9fb37aaa1a5">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Containment_3PeWY01HBmesKdP1dTP15" />
 	<Items>
-		<DocTemplateItem UniqueId="f4cf28e9-7d3c-4da0-af9e-13d2dec8088e" RuleParameters="Structure=IfcBuildingStorey;" Order="0">
+		<DocTemplateItem UniqueId="f4cf28e9-7d3c-4da0-af9e-13d2dec8088e" RuleParameters="RelatingStructure=IfcBuildingStorey;" Order="0">
 			<Documentation>Default spatial container (in most cases the storey where the base of the chimney is placed)</Documentation>
 		</DocTemplateItem>
-		<DocTemplateItem UniqueId="7d2d0ed3-c751-4304-a1df-828a18c3d7ee" RuleParameters="Structure=IfcBuilding;" Order="0">
+		<DocTemplateItem UniqueId="7d2d0ed3-c751-4304-a1df-828a18c3d7ee" RuleParameters="RelatingStructure=IfcBuilding;" Order="0">
 			<Documentation>Spatial container for the element if it cannot be assigned to a building storey</Documentation>
 		</DocTemplateItem>
-		<DocTemplateItem UniqueId="a170735b-58ed-42d6-ab23-c92cf9f1741b" RuleParameters="Structure=IfcSite;" Order="0">
+		<DocTemplateItem UniqueId="a170735b-58ed-42d6-ab23-c92cf9f1741b" RuleParameters="RelatingStructure=IfcSite;" Order="0">
 			<Documentation>Spatial container for the element in case that it is placed on site (outside of building)</Documentation>
 		</DocTemplateItem>
 	</Items>

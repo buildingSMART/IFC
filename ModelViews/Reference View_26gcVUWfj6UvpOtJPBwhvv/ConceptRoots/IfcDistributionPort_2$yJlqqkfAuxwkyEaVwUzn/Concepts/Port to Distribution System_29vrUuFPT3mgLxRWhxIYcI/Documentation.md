@@ -1,0 +1,1 @@
+The _IfcDistributionPort_ is assigned to the distribution system where it plays its role as inlet or outlet.

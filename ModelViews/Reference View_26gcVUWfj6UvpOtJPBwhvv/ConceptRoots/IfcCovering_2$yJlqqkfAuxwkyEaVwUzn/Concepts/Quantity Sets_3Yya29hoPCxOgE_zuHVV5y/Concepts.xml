@@ -2,8 +2,22 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Quantity Sets" UniqueId="e2f24089-af26-4ced-8a8e-fbde117df17c">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
 	<Items>
-		<DocTemplateItem UniqueId="f0890cc8-30b1-4282-9e02-eaaace2c51f9" RuleParameters="Name=Qto_CoveringBaseQuantities;" Order="0">
-			<Documentation>Base quantities depending on geometry as defined in this specification</Documentation>
+		<DocTemplateItem UniqueId="fdc004ad-127a-497d-a445-204277e28095" RuleParameters="QsetName=Qto_CoveringBaseQuantities;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Quantities" UniqueId="7a0b75c9-1655-4b23-8f87-bd4b344b7c7d">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Length_Quantity_3TXdZXum1FS9rZvJdRIz4S" />
+					<Items>
+						<DocTemplateItem UniqueId="8eea140b-edaf-462d-84a7-9681f6771f35" RuleParameters="Order=1;QuantityName=Width;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Quantities" UniqueId="49efde39-f15d-4071-8ae4-59ef2b6a429f">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Area_Quantity_1bh4T7Rlz3VfJYP3Kux_6" />
+					<Items>
+						<DocTemplateItem UniqueId="64a05549-b8da-4213-aaf1-040d4b3693af" RuleParameters="Order=2;QuantityName=GrossArea;" Order="0" />
+						<DocTemplateItem UniqueId="6d56c538-23dd-47e2-9ff6-e8ebd6a91daa" RuleParameters="Order=3;QuantityName=NetArea;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
 		</DocTemplateItem>
 	</Items>
 	<Exchanges>

@@ -1,4 +1,4 @@
 The **IfcDistributionPort** may be assigned to the following entities using relationships as indicated:
 
-* [IfcDistributionSystem](../../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm) ([IfcRelAssignsToGroup](../../ifckernel/lexical/ifcrelassignstogroup.htm)): Indicates a system containing interconnected devices.
-* [IfcPerformanceHistory](../../ifccontrolextension/lexical/ifcperformancehistory.htm) ([IfcRelAssignsToControl](../../ifckernel/lexical/ifcrelassignstocontrol.htm)): Indicates realtime or historical infomation captured for the device.
+* _IfcDistributionSystem_ (through _IfcRelAssignsToGroup_): Indicates a system containing interconnected devices.
+* _IfcPerformanceHistory_< (through _IfcRelAssignsToControl_): Indicates real time or historical infomation captured for the device.

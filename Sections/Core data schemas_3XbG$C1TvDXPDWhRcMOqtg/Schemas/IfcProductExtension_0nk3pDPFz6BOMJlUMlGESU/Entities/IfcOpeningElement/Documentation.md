@@ -18,7 +18,10 @@ The attribute _PredefinedType_ should be used to capture the differences,
 * the attribute is set to RECESS for a recess or niche.
 * If the value for _PredefinedType_ is omitted, or the value is set to NOTDEFINED, no specific information of whether it is an opening or recess shall be assumed.
 
-An _IfcOpeningElement_ has to be inserted into an _IfcElement_ by using the _IfcRelVoidsElement_ relationship. The relationship implies a Boolean subtraction operation between the volume of the voided element and the volume of the opening. It may be filled by an _IfcDoor_, _IfcWind_ow, or another filling element by using the relationship _IfcRelFillsElements_.
+An _IfcOpeningElement_ has to be inserted into an _IfcElement_ by using the _IfcRelVoidsElement_ relationship. It may be filled by an _IfcDoor_, _IfcWindow_, or another filling element by using the relationship _IfcRelFillsElements_. Depending on the type of the _IfcShapeRepresentation_ of the _IfcOpeningElement_ the voiding relationship implies:
+
+*  if the _IfcShapeRepresentation_.<emRepresentationIdentifier = 'Body', then the Body shape represntation of the opening has to be subtracted from the body shape representation of the voided element - implicit Boolean difference operation.
+*  if the _IfcShapeRepresentation_.<emRepresentationIdentifier = 'Reference', then the Reference shape representation of the opening is not subtracted, it is provided in addition to the hole in the Body shape representation of the voided element.
 
 The _IfcOpeningElement_ shall not participate in the containment relationship, i.e. it is not linked directly to the spatial structure of the project. It has a mandatory _VoidsElements_ inverse relationship pointing to the _IfcElement_ that is contained in the spatial structure.
 

@@ -2,28 +2,28 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UniqueId="60b26ba0-cc69-4a7a-a9dc-885620c526ff">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 	<Items>
-		<DocTemplateItem UniqueId="13aca65c-8592-49c8-b2c9-af92489d753d" RuleParameters="Name=Pset_AirToAirHeatRecoveryTypeCommon;" Order="0">
+		<DocTemplateItem UniqueId="1f00a7bc-dc52-4434-933c-4d282fb8d692" RuleParameters="PsetName=Pset_AirToAirHeatRecoveryTypeCommon;" Order="0">
 			<Concepts>
-				<DocTemplateUsage Name="Properties" UniqueId="24ff608e-13ca-4ca0-835b-f96785612807">
+				<DocTemplateUsage Name="Properties" UniqueId="c9a74672-ac24-47d2-858d-c91e0a011863">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
 					<Items>
-						<DocTemplateItem UniqueId="0eaa9b38-fa43-4275-a3c9-c8a27167045e" RuleParameters="Name=Reference;Value=IfcIdentifier;" Order="0" />
-						<DocTemplateItem UniqueId="225452d5-68d1-46e1-ab58-02005bc726aa" RuleParameters="Name=HasDefrost;Value=IfcBoolean;" Order="0" />
+						<DocTemplateItem UniqueId="c0e3cca2-bf21-414b-bad6-73379bef4d29" RuleParameters="Order=1;PropertyName=Reference;Value=IfcIdentifier;" Order="0" />
+						<DocTemplateItem UniqueId="d759ab4b-26e0-44a3-bf1f-3c6adde842b3" RuleParameters="Order=4;PropertyName=HasDefrost;Value=IfcBoolean;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Properties" UniqueId="2d2c1743-4704-4d35-a03b-c3d6ad560af3">
+				<DocTemplateUsage Name="Properties" UniqueId="982dfc11-d79c-4759-ab03-25723d6a95a2">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
 					<Items>
-						<DocTemplateItem UniqueId="6cb0fb69-3900-4d16-a688-2833b8ba1fec" RuleParameters="Name=Status;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="1103bf92-faa5-4362-8599-9aca989f2432" RuleParameters="Name=HeatTransferTypeEnum;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="fca9b114-d039-4fe2-85e6-c22e027cb116" RuleParameters="Order=2;PropertyName=Status;Value=IfcLabel;Reference=PEnum_ElementStatus;" Order="0" />
+						<DocTemplateItem UniqueId="a2a55c69-4b4e-4e6c-9669-964346b0b68d" RuleParameters="Order=3;PropertyName=HeatTransferTypeEnum;Value=IfcLabel;Reference=PEnum_AirToAirHeatTransferHeatTransferType;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Properties" UniqueId="93e04f8b-fa5d-41aa-a404-30d559b0ac86">
+				<DocTemplateUsage Name="Properties" UniqueId="f2e5d832-6531-4586-8208-9c0c840bad6f">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Bounded_Value_0zPwBITXr4sQ2Ujkn_bOo" />
 					<Items>
-						<DocTemplateItem UniqueId="3286cb24-e1cd-43fc-b10a-2720cda6ce0d" RuleParameters="Name=OperationalTemperatureRange;Value=IfcThermodynamicTemperatureMeasure;" Order="0" />
-						<DocTemplateItem UniqueId="17276fcc-f536-4cae-80c5-6d35c479835a" RuleParameters="Name=PrimaryAirflowRateRange;Value=IfcVolumetricFlowRateMeasure;" Order="0" />
-						<DocTemplateItem UniqueId="468ffb79-e694-45f7-9738-b0979bab2177" RuleParameters="Name=SecondaryAirflowRateRange;Value=IfcPressureMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="6105c567-dd30-43bd-9d66-f10392c52434" RuleParameters="Order=5;PropertyName=OperationalTemperatureRange;SetValue=IfcThermodynamicTemperatureMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="12c3b70b-3be2-4eb4-b93a-6ce280c64136" RuleParameters="Order=6;PropertyName=PrimaryAirflowRateRange;SetValue=IfcVolumetricFlowRateMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="9c545966-e2e5-4bf6-aaf6-ca8a4dee53e7" RuleParameters="Order=7;PropertyName=SecondaryAirflowRateRange;SetValue=IfcPressureMeasure;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>

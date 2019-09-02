@@ -49,11 +49,11 @@ The _Group Assignment_ concept establish a given object as being the group colle
 
 &gt; EXAMPLE&amp;nbsp; An air handler belonging to an air conditioning system is an example of such group assignment.</Documentation>
 			<Rules>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsGroupedBy">
+				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsGroupedBy" Identification="IsGrouped">
 					<Rules>
 						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssignsToGroup">
 							<Rules>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedObjects" Identification="RelatedType">
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedObjects" Identification="RelatedObjects">
 									<Rules>
 										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProduct" />
 									</Rules>
@@ -63,74 +63,6 @@ The _Group Assignment_ concept establish a given object as being the group colle
 					</Rules>
 				</DocModelRuleAttribute>
 			</Rules>
-			<Templates>
-				<DocTemplateDefinition id="Building_System_Assignment_2MWLBS5eT3ePTdd0ECzkb" Name="Building System Assignment" UniqueId="968152dc-1687-43a1-9767-9c038cf6efe5" Type="IfcBuildingSystem">
-					<Rules>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsGroupedBy">
-							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssignsToGroup">
-									<Rules>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedObjects" Identification="RelatedType">
-											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProduct" />
-											</Rules>
-										</DocModelRuleAttribute>
-									</Rules>
-								</DocModelRuleEntity>
-							</Rules>
-						</DocModelRuleAttribute>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="LongName">
-							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
-							</Rules>
-						</DocModelRuleAttribute>
-					</Rules>
-				</DocTemplateDefinition>
-				<DocTemplateDefinition id="Distribution_System_Assignment_2mw_r1zpL61ReSsrWlzu2C" Name="Distribution System Assignment" UniqueId="b0ebed41-f735-4605-ba1c-db582ff7808c" Type="IfcDistributionSystem">
-					<Rules>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="LongName">
-							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
-							</Rules>
-						</DocModelRuleAttribute>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsGroupedBy">
-							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssignsToGroup">
-									<Rules>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedObjects">
-											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProduct" />
-											</Rules>
-										</DocModelRuleAttribute>
-									</Rules>
-								</DocModelRuleEntity>
-							</Rules>
-						</DocModelRuleAttribute>
-					</Rules>
-				</DocTemplateDefinition>
-				<DocTemplateDefinition id="Zone_Assignment_3FiRcMwJf9mPW63Zu6EWTv" Name="Zone Assignment" UniqueId="cfb1b996-e93a-49c1-9806-0e3e063a0779" Type="IfcZone">
-					<Rules>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="LongName">
-							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
-							</Rules>
-						</DocModelRuleAttribute>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsGroupedBy">
-							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssignsToGroup">
-									<Rules>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedObjects">
-											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProduct" />
-											</Rules>
-										</DocModelRuleAttribute>
-									</Rules>
-								</DocModelRuleEntity>
-							</Rules>
-						</DocModelRuleAttribute>
-					</Rules>
-				</DocTemplateDefinition>
-			</Templates>
 		</DocTemplateDefinition>
 		<DocTemplateDefinition id="Product_Assignment_3idFi4hVv8Q85erufbQaJ" Name="Product Assignment" UniqueId="3idFi4hVv8Q85eru$fbQaJ" Type="IfcProduct">
 			<Documentation>Products may have assignments indicating processes that operate upon the product. An example of such assignment is a task to construct a wall.</Documentation>
@@ -240,6 +172,60 @@ The _Group Assignment_ concept establish a given object as being the group colle
 					</Rules>
 				</DocModelRuleAttribute>
 			</Rules>
+		</DocTemplateDefinition>
+		<DocTemplateDefinition Name="Assignment to Group" UniqueId="de73eaf7-7f2f-4af8-b574-24f353ddab1d" Type="IfcObject">
+			<Documentation>The _Assignment to Group_ established the assignment of an object to a group, being an arbitrary collection of objects. It is the complementary concept template to _Group Assignment_ defining how object are assigned by a group.
+
+The grouping relationship does not apply any other meaning then grouping objects under some aspect. It is non-hierarchical, meaning that objects can be assigned to many groups, and it does not interfere with other relationship concepts, such as _Element Decomposition_.</Documentation>
+			<Rules>
+				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasAssignments">
+					<Rules>
+						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssignsToGroup">
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingGroup" />
+							</Rules>
+						</DocModelRuleEntity>
+					</Rules>
+				</DocModelRuleAttribute>
+			</Rules>
+			<Templates>
+				<DocTemplateDefinition Name="Component to Distribution System" UniqueId="72c79ed8-61e6-490f-94f6-e74d7bdb33e1" Type="IfcDistributionElement">
+					<Documentation>The _Component to Distribution System_ assignment</Documentation>
+					<Rules>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasAssignments">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssignsToGroup">
+									<Rules>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingGroup">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDistributionSystem" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocTemplateDefinition>
+				<DocTemplateDefinition id="Port_to_Distribution_System_0bzWNJWzHC4A90p5chgeC" Name="Port to Distribution System" UniqueId="25f605d3-83d4-4c10-a240-cc59abaa8fcc" Type="IfcDistributionPort">
+					<Documentation>The _Port to Distribution System_ assignment</Documentation>
+					<Rules>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasAssignments" Identification="IsAssigned">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssignsToGroup">
+									<Rules>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingGroup" Identification="RelatingSystem">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDistributionSystem" Identification="SystemName" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocTemplateDefinition>
+			</Templates>
 		</DocTemplateDefinition>
 	</Templates>
 </DocTemplateDefinition>

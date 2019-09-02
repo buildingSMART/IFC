@@ -2,7 +2,22 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UniqueId="94555a18-8dcf-42ae-8cb6-a4ba9f27bd14">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
 	<Items>
-		<DocTemplateItem UniqueId="884dec85-7428-4ee0-ae75-5ddc0f1ba7f2" RuleInstanceID="IfcElementQuantity" RuleParameters="Name=Qto_SolarDeviceBaseQuantities;" Order="0" />
+		<DocTemplateItem UniqueId="dcb511b7-1948-4b7b-bc4c-778969d014ea" RuleParameters="QsetName=Qto_SolarDeviceBaseQuantities;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Quantities" UniqueId="2e49a609-a29d-402e-bacc-b2326acc978a">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Weight_Quantity_3X0MvMF8bFGfPv1_7RF0hx" />
+					<Items>
+						<DocTemplateItem UniqueId="2e18bd76-fcd3-424b-87d3-01cc823140ff" RuleParameters="Order=1;QuantityName=GrossWeight;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Quantities" UniqueId="259e348b-b4e7-4fc7-b233-8637416a560b">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Area_Quantity_1bh4T7Rlz3VfJYP3Kux_6" />
+					<Items>
+						<DocTemplateItem UniqueId="e6953728-583a-4a09-9df4-a65b96b85a63" RuleParameters="Order=2;QuantityName=GrossArea;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+		</DocTemplateItem>
 	</Items>
 </DocTemplateUsage>
 

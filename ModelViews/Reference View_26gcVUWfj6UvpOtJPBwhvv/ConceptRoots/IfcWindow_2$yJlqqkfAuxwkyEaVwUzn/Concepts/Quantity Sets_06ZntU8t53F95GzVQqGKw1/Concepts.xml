@@ -2,8 +2,23 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Quantity Sets" UniqueId="068f1dde-2371-433c-9150-f5f6b4414e81">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
 	<Items>
-		<DocTemplateItem UniqueId="b3ae49bf-a765-4154-9dd4-681458b45372" RuleParameters="Name=Qto_WindowBaseQuantities;" Order="0">
-			<Documentation>Base quantities depending on geometry as defined in this specification</Documentation>
+		<DocTemplateItem UniqueId="f2de08ac-acbc-46ad-979e-3ae03ab7c49e" RuleParameters="QsetName=Qto_WindowBaseQuantities;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Quantities" UniqueId="8a20d5d1-bdb2-4902-8622-b9de40df5097">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Length_Quantity_3TXdZXum1FS9rZvJdRIz4S" />
+					<Items>
+						<DocTemplateItem UniqueId="1ca6947f-fab0-4b12-b426-4bcd0df445a5" RuleParameters="Order=1;QuantityName=Width;" Order="0" />
+						<DocTemplateItem UniqueId="7f4b51eb-4660-49f3-977e-aff57d0bc924" RuleParameters="Order=2;QuantityName=Height;" Order="0" />
+						<DocTemplateItem UniqueId="210e834c-93ce-4772-beea-98c0c18df264" RuleParameters="Order=3;QuantityName=Perimeter;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Quantities" UniqueId="3f6c8a39-0157-4870-a60c-876bca3ce4e1">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Area_Quantity_1bh4T7Rlz3VfJYP3Kux_6" />
+					<Items>
+						<DocTemplateItem UniqueId="66e72f27-eb85-4152-8ac3-3ba3a88a3d22" RuleParameters="Order=4;QuantityName=Area;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
 		</DocTemplateItem>
 	</Items>
 	<Exchanges>

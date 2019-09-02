@@ -2,42 +2,134 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UniqueId="ab8a65fa-3066-412f-8347-a023abc3f817">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 	<Items>
-		<DocTemplateItem UniqueId="23720048-b673-4e08-b8ce-addc0cc17891" RuleParameters="Name=Pset_ManufacturerOccurrence;" Order="0">
+		<DocTemplateItem UniqueId="7fc5f7cb-c6cf-49e3-90b8-0485f1373f27" RuleParameters="PsetName=Pset_EnvironmentalImpactIndicators;" Order="0">
 			<Concepts>
-				<DocTemplateUsage Name="Properties" UniqueId="fe5043f9-7d48-4868-ab28-6c9748103f2e">
+				<DocTemplateUsage Name="Properties" UniqueId="0decb114-80ed-438b-bd78-3a8906fda177">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
 					<Items>
-						<DocTemplateItem UniqueId="9373b843-2741-409b-8935-da3184ef60e2" RuleParameters="Name=AcquisitionDate;Value=IfcDate;" Order="0" />
-						<DocTemplateItem UniqueId="37d83801-e5df-4289-beae-714ecc39f05e" RuleParameters="Name=BarCode;Value=IfcIdentifier;" Order="0" />
-						<DocTemplateItem UniqueId="b24c5fe7-c496-4bc0-9fc6-24ed86c7654d" RuleParameters="Name=SerialNumber;Value=IfcIdentifier;" Order="0" />
-						<DocTemplateItem UniqueId="ae43f64e-9bcd-41f7-a81f-87b2b7a2961a" RuleParameters="Name=BatchReference;Value=IfcIdentifier;" Order="0" />
+						<DocTemplateItem UniqueId="0a93ea81-0131-4d9f-befd-82857da1e37d" RuleParameters="Order=1;PropertyName=Reference;Value=IfcIdentifier;" Order="0" />
+						<DocTemplateItem UniqueId="13cbb0b3-0989-4ac2-a574-1bd1b98acf71" RuleParameters="Order=2;PropertyName=FunctionalUnitReference;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="0ca62dcc-9ef4-42b9-8a7b-9d1d8737ca4e" RuleParameters="Order=3;PropertyName=Unit;Value=IfcText;" Order="0" />
+						<DocTemplateItem UniqueId="d67143b3-60e4-4dde-ae46-dc2293e0ac9a" RuleParameters="Order=5;PropertyName=ExpectedServiceLife;Value=IfcTimeMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="2f8a5351-934b-49b0-bc31-e51a52ef1797" RuleParameters="Order=6;PropertyName=TotalPrimaryEnergyConsumptionPerUnit;Value=IfcEnergyMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="3ac05a03-0d0e-4abc-b0f2-b622cea38c85" RuleParameters="Order=7;PropertyName=WaterConsumptionPerUnit;Value=IfcVolumeMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="1be8fc9c-037f-4c08-afd2-103310974a2f" RuleParameters="Order=8;PropertyName=HazardousWastePerUnit;Value=IfcMassMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="fdd72966-9b92-47b4-98ac-86bfaf8f17a7" RuleParameters="Order=9;PropertyName=NonHazardousWastePerUnit;Value=IfcMassMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="2f1bd795-b551-4cec-a413-8bafeedec340" RuleParameters="Order=10;PropertyName=ClimateChangePerUnit;Value=IfcMassMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="0705d732-1673-4347-866c-fefe2520977f" RuleParameters="Order=11;PropertyName=AtmosphericAcidificationPerUnit;Value=IfcMassMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="fd0455ce-cc36-497c-956b-eb947acb4767" RuleParameters="Order=12;PropertyName=RenewableEnergyConsumptionPerUnit;Value=IfcEnergyMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="8a2bc4fe-2928-482d-ad65-aa2cbdce279b" RuleParameters="Order=13;PropertyName=NonRenewableEnergyConsumptionPerUnit;Value=IfcEnergyMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="346335d0-43c6-4218-9b4b-c3356c60e158" RuleParameters="Order=14;PropertyName=ResourceDepletionPerUnit;Value=IfcMassMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="53a6fbee-523e-46f1-a031-7abaf5fbd76e" RuleParameters="Order=15;PropertyName=InertWastePerUnit;Value=IfcMassMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="833552fc-601d-402a-a5f5-ce90ba339e05" RuleParameters="Order=16;PropertyName=RadioactiveWastePerUnit;Value=IfcMassMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="dfb2ed80-ff5e-4406-8ad0-d5bfca55a8df" RuleParameters="Order=17;PropertyName=StratosphericOzoneLayerDestructionPerUnit;Value=IfcMassMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="534bd620-86f2-496a-a96a-a55e5fb16831" RuleParameters="Order=18;PropertyName=PhotochemicalOzoneFormationPerUnit;Value=IfcMassMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="7bcff233-84bf-49fb-8bf0-2f8d0a2b1fa6" RuleParameters="Order=19;PropertyName=EutrophicationPerUnit;Value=IfcMassMeasure;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Properties" UniqueId="49366b90-0e02-474a-89ac-33d7cfc9fb12">
+				<DocTemplateUsage Name="Properties" UniqueId="93612d08-4265-4497-b0b0-6cd79b8a2ca6">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
 					<Items>
-						<DocTemplateItem UniqueId="6ab50873-865f-440a-afe8-a3f9c78ad7ef" RuleParameters="Name=AssemblyPlace;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="7896ef70-bd0d-462e-975d-2510749e0e8a" RuleParameters="Order=4;PropertyName=LifeCyclePhase;Value=IfcLabel;Reference=PEnum_LifeCyclePhase;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>
 		</DocTemplateItem>
-		<DocTemplateItem UniqueId="29c799c9-e188-4de8-9a1e-64a404749ea6" RuleParameters="Name=Pset_ManufacturerTypeInformation;" Order="0">
+		<DocTemplateItem UniqueId="cf6fa80b-7d12-4c18-8688-0a13e8e1c3d4" RuleParameters="PsetName=Pset_EnvironmentalImpactValues;" Order="0">
 			<Concepts>
-				<DocTemplateUsage Name="Properties" UniqueId="9889e733-8e06-42d2-bddc-8ff509aef250">
+				<DocTemplateUsage Name="Properties" UniqueId="dab8c477-1259-48a7-9a36-46d0257e6c7c">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
 					<Items>
-						<DocTemplateItem UniqueId="bff6b432-0c9d-4f4d-b96a-b1f029434621" RuleParameters="Name=GlobalTradeItemNumber;Value=IfcIdentifier;" Order="0" />
-						<DocTemplateItem UniqueId="28f3c524-4797-4c7d-9764-df41f503f4a7" RuleParameters="Name=ArticleNumber;Value=IfcIdentifier;" Order="0" />
-						<DocTemplateItem UniqueId="2f8a3635-5d57-4bb7-ac06-276b6677cf2a" RuleParameters="Name=ModelReference;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="bf692fb7-cbf1-4519-96d8-fa2fc88feeb5" RuleParameters="Name=ModelLabel;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="98156b36-ca7c-43a8-ab1b-d66893440270" RuleParameters="Name=Manufacturer;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="82f068d5-432d-47bd-a30c-d6e514396880" RuleParameters="Name=ProductionYear;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="b6ee2b39-c9c3-4026-8a1b-a0479192e522" RuleParameters="Order=1;PropertyName=TotalPrimaryEnergyConsumption;Value=IfcEnergyMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="563bf23b-6781-4b23-a32c-8d9bb280d487" RuleParameters="Order=2;PropertyName=WaterConsumption;Value=IfcVolumeMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="7df693d7-3575-48f9-8de0-8567f2b74a2a" RuleParameters="Order=3;PropertyName=HazardousWaste;Value=IfcMassMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="e1e6266a-cb7a-4736-97cb-ea10832d3be8" RuleParameters="Order=4;PropertyName=NonHazardousWaste;Value=IfcMassMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="e26a5969-58d7-49d7-8b3f-3a5067b0d74f" RuleParameters="Order=5;PropertyName=ClimateChange;Value=IfcMassMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="07104f92-33fd-42c6-8ca9-7ebc7ae35230" RuleParameters="Order=6;PropertyName=AtmosphericAcidification;Value=IfcMassMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="b866445a-e716-47fe-bcb8-31ef929b7dd1" RuleParameters="Order=7;PropertyName=RenewableEnergyConsumption;Value=IfcEnergyMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="71c475cf-e757-4cc6-81f4-c24afebeb1ea" RuleParameters="Order=8;PropertyName=NonRenewableEnergyConsumption;Value=IfcEnergyMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="c646ed46-d30b-4b4d-9215-da07c2c3e6d8" RuleParameters="Order=9;PropertyName=ResourceDepletion;Value=IfcMassMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="872b7cae-017e-4c6c-a910-b73bc15e8535" RuleParameters="Order=10;PropertyName=InertWaste;Value=IfcMassMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="15d23ee5-092b-49c6-8975-e9fb71b00859" RuleParameters="Order=11;PropertyName=RadioactiveWaste;Value=IfcMassMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="a14af0b1-0f78-4e41-a2b8-fb804fc9c39c" RuleParameters="Order=12;PropertyName=StratosphericOzoneLayerDestruction;Value=IfcMassMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="485f5f1f-ae87-4a26-8aa1-78428a46b69d" RuleParameters="Order=13;PropertyName=PhotochemicalOzoneFormation;Value=IfcMassMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="c9d50df1-4e4a-4485-90de-8bf8b49f378a" RuleParameters="Order=14;PropertyName=Eutrophication;Value=IfcMassMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="75baa76f-ef7c-4c6a-819c-faceea80577f" RuleParameters="Order=15;PropertyName=LeadInTime;Value=IfcDuration;" Order="0" />
+						<DocTemplateItem UniqueId="d8bdce2a-243c-4d91-847c-c700d05c26d0" RuleParameters="Order=16;PropertyName=Duration;Value=IfcDuration;" Order="0" />
+						<DocTemplateItem UniqueId="984e6d4a-b2c5-44db-a17b-681c1327e726" RuleParameters="Order=17;PropertyName=LeadOutTime;Value=IfcDuration;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Properties" UniqueId="c9f60d1a-07b2-48ad-81ce-0699ba3718d0">
+			</Concepts>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="007431a9-e99a-40d5-8fa6-df41a78eeea1" RuleParameters="PsetName=Pset_ManufacturerOccurrence;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Properties" UniqueId="b1e9bf87-6cba-442f-bd32-b23e2a000aa1">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
+					<Items>
+						<DocTemplateItem UniqueId="7d1e4ebe-4040-4ddd-bc86-d772cc960de6" RuleParameters="Order=1;PropertyName=AcquisitionDate;Value=IfcDate;" Order="0" />
+						<DocTemplateItem UniqueId="38e62e31-f159-4bea-8c22-42b6d9d0b9c9" RuleParameters="Order=2;PropertyName=BarCode;Value=IfcIdentifier;" Order="0" />
+						<DocTemplateItem UniqueId="45fb366c-2464-4db5-9ad8-12630b9face3" RuleParameters="Order=3;PropertyName=SerialNumber;Value=IfcIdentifier;" Order="0" />
+						<DocTemplateItem UniqueId="31a85fc6-d58d-40db-b93a-6ea9e1770b51" RuleParameters="Order=4;PropertyName=BatchReference;Value=IfcIdentifier;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Properties" UniqueId="dcd21732-8b5a-4cb7-8e86-13e334daee01">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
 					<Items>
-						<DocTemplateItem UniqueId="20618fa9-27bd-41d4-85e3-4ab83d4feef8" RuleParameters="Name=AssemblyPlace;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="b7701daf-b193-493b-a31a-b1e800ce198d" RuleParameters="Order=5;PropertyName=AssemblyPlace;Value=IfcLabel;Reference=PEnum_AssemblyPlace;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="aa5a5a5c-7e24-4a94-9a66-b3ef1b5fbdd5" RuleParameters="PsetName=Pset_ManufacturerTypeInformation;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Properties" UniqueId="f8611b2a-81d0-4c13-8dab-4fc9b6958e78">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
+					<Items>
+						<DocTemplateItem UniqueId="a7c7c93d-d274-45fa-8298-87d8d7adc71a" RuleParameters="Order=1;PropertyName=GlobalTradeItemNumber;Value=IfcIdentifier;" Order="0" />
+						<DocTemplateItem UniqueId="af887da6-ec2b-4a82-a82c-5269f56868b9" RuleParameters="Order=2;PropertyName=ArticleNumber;Value=IfcIdentifier;" Order="0" />
+						<DocTemplateItem UniqueId="3746dc94-1414-4eb2-8afb-145d060259df" RuleParameters="Order=3;PropertyName=ModelReference;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="6b891a37-a6b1-4b01-a193-f84c59db3f4a" RuleParameters="Order=4;PropertyName=ModelLabel;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="c4057703-d822-4a9d-a209-ca3e5858eb48" RuleParameters="Order=5;PropertyName=Manufacturer;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="278594df-5035-4923-9bc2-9013e84ca24d" RuleParameters="Order=6;PropertyName=ProductionYear;Value=IfcLabel;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Properties" UniqueId="92076ff9-9e60-485d-8f1d-7620dbeac478">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
+					<Items>
+						<DocTemplateItem UniqueId="37507b61-0789-425b-8449-1e8c1b136401" RuleParameters="Order=7;PropertyName=AssemblyPlace;Value=IfcLabel;Reference=PEnum_AssemblyPlace;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="48e17a35-b567-4a06-ae0c-8288b87670ee" RuleParameters="PsetName=Pset_ServiceLife;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Properties" UniqueId="4de4a14e-d70b-4e3c-9a55-b22b52d6cd60">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Bounded_Value_0zPwBITXr4sQ2Ujkn_bOo" />
+					<Items>
+						<DocTemplateItem UniqueId="0f145c36-c079-45f6-8dd0-951b28f7037d" RuleParameters="Order=1;PropertyName=ServiceLifeDuration;SetValue=IfcDuration;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Properties" UniqueId="41b2bcc9-c239-4b37-8b35-0ee33824d0c3">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
+					<Items>
+						<DocTemplateItem UniqueId="7b5b3def-62e2-4050-9d99-20ae36085dbe" RuleParameters="Order=2;PropertyName=MeanTimeBetweenFailure;Value=IfcDuration;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="54c65360-646a-4d0a-96c3-6cc151726981" RuleParameters="PsetName=Pset_Warranty;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Properties" UniqueId="87b2dde2-ed35-4f75-8061-9e2a655688ee">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
+					<Items>
+						<DocTemplateItem UniqueId="bde1e5ed-040d-489c-97d2-8986b834abf0" RuleParameters="PropertyName=WarrantyIdentifier;Value=IfcIdentifier;" Order="0" />
+						<DocTemplateItem UniqueId="e99b1c12-e106-45aa-b6d1-0d64f8016860" RuleParameters="Order=2;PropertyName=WarrantyStartDate;Value=IfcDate;" Order="0" />
+						<DocTemplateItem UniqueId="c0f295e8-3dbc-4fc6-b8d9-7ce2ff3c107a" RuleParameters="Order=3;PropertyName=WarrantyEndDate;Value=IfcDate;" Order="0" />
+						<DocTemplateItem UniqueId="085f2d77-5092-4886-b062-0aca17a4d087" RuleParameters="Order=4;PropertyName=IsExtendedWarranty;Value=IfcBoolean;" Order="0" />
+						<DocTemplateItem UniqueId="d4fa1b5e-e317-47f9-ad59-86ae310896fa" RuleParameters="Order=5;PropertyName=WarrantyPeriod;Value=IfcDuration;" Order="0" />
+						<DocTemplateItem UniqueId="25f3d1dd-926b-452f-951e-8cc2b9a84d80" RuleParameters="Order=6;PropertyName=WarrantyContent;Value=IfcText;" Order="0" />
+						<DocTemplateItem UniqueId="1187963f-402d-4664-a943-b9909d8e1378" RuleParameters="Order=7;PropertyName=PointOfContact;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="8151a102-11a2-4289-9124-8dbfc80cdacc" RuleParameters="Order=8;PropertyName=Exclusions;Value=IfcText;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>

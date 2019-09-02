@@ -2,7 +2,23 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UniqueId="2d0bdb6e-6133-4800-8a08-3a18a3f13989">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
 	<Items>
-		<DocTemplateItem UniqueId="60759379-7844-427d-b4d0-f158f8da0da6" RuleInstanceID="IfcElementQuantity" RuleParameters="Name=Qto_BoilerBaseQuantities;" Order="0" />
+		<DocTemplateItem UniqueId="3730d9ae-886e-4e2a-91ed-e865d0ba9bd8" RuleParameters="QsetName=Qto_BoilerBaseQuantities;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Quantities" UniqueId="a41eb1df-72eb-48bf-8faf-0a164a712b84">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Weight_Quantity_3X0MvMF8bFGfPv1_7RF0hx" />
+					<Items>
+						<DocTemplateItem UniqueId="e80473ce-860e-4587-a582-b975cb1baecc" RuleParameters="Order=1;QuantityName=GrossWeight;" Order="0" />
+						<DocTemplateItem UniqueId="7f1ee8d4-5ca4-4466-bf88-eb3649dfe152" RuleParameters="Order=2;QuantityName=NetWeight;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Quantities" UniqueId="1d420478-803d-44d4-b0f8-e40956d255b7">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Area_Quantity_1bh4T7Rlz3VfJYP3Kux_6" />
+					<Items>
+						<DocTemplateItem UniqueId="f9c44a97-fc46-44a3-aded-65c4cdfbc62b" RuleParameters="Order=3;QuantityName=TotalSurfaceArea;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+		</DocTemplateItem>
 	</Items>
 </DocTemplateUsage>
 

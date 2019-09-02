@@ -1,0 +1,3 @@
+As shown in Figure 1, openings within the composite wall are directly assigned to _IfcWallElementedCase_ using _IfcRelVoidsElement_ pointing to _IfcOpeningElement_ and apply to all aggregated parts. If individual parts have cutting and other voiding features, then the decomposed parts have a separate voiding relationship _IfcRelVoidsElement_ pointing to _IfcVoidingFeature_.
+
+!["voiding"](../../../figures/ifcwallelementedcase_fig01.png "Figure 1 &mdash; Wall elemented voiding")

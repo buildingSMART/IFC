@@ -2,23 +2,29 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UniqueId="8c1427c5-c5b3-472b-917b-26f55ac15bda">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 	<Items>
-		<DocTemplateItem UniqueId="7fa50a6c-f8b5-485e-b508-72b68884716e" RuleParameters="Name=Pset_SwitchingDeviceTypeCommon;" Order="0">
+		<DocTemplateItem UniqueId="35143a5a-84a6-4ba2-ba98-db515f8ff159" RuleParameters="PsetName=Pset_SwitchingDeviceTypeCommon;" Order="0">
 			<Concepts>
-				<DocTemplateUsage Name="Properties" UniqueId="32cef9d7-3a0e-4953-bfb9-d776a40f9d61">
+				<DocTemplateUsage Name="Properties" UniqueId="395799fc-15f0-4d49-a5d5-b02a904108e7">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
 					<Items>
-						<DocTemplateItem UniqueId="c1a52d6c-28c5-4829-aa50-af45ae3cf4cf" RuleParameters="Name=Reference;Value=IfcIdentifier;" Order="0" />
-						<DocTemplateItem UniqueId="127a9a6b-ac20-44d7-bf23-dae37c7b7798" RuleParameters="Name=NumberOfGangs;Value=IfcInteger;" Order="0" />
-						<DocTemplateItem UniqueId="1354b6d1-9175-47bc-8b3b-c0e887623c37" RuleParameters="Name=HasLock;Value=IfcBoolean;" Order="0" />
-						<DocTemplateItem UniqueId="9b3e031f-faa1-4773-ac19-4504d55c3dbc" RuleParameters="Name=IsIlluminated;Value=IfcBoolean;" Order="0" />
-						<DocTemplateItem UniqueId="e9b6367a-939b-4ad1-8016-9105ff948a5b" RuleParameters="Name=Legend;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="27c91257-d563-4d72-b29a-6f36ff9f9b1c" RuleParameters="Order=1;PropertyName=Reference;Value=IfcIdentifier;" Order="0" />
+						<DocTemplateItem UniqueId="2d3e2aeb-e4aa-4d7b-b58a-e82468c3397d" RuleParameters="Order=3;PropertyName=NumberOfGangs;Value=IfcInteger;" Order="0" />
+						<DocTemplateItem UniqueId="5e5a54e5-a310-4988-bf19-3b79869da4ce" RuleParameters="Order=5;PropertyName=HasLock;Value=IfcBoolean;" Order="0" />
+						<DocTemplateItem UniqueId="7d09eaa2-779c-42b8-94db-28e693163945" RuleParameters="Order=6;PropertyName=IsIlluminated;Value=IfcBoolean;" Order="0" />
+						<DocTemplateItem UniqueId="8e14a6d1-151b-4cb4-8aec-d220d1c77dea" RuleParameters="Order=7;PropertyName=Legend;Value=IfcLabel;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Properties" UniqueId="d6d5b5de-4c34-4f0e-8724-4aae4c6e8e31">
+				<DocTemplateUsage Name="Properties" UniqueId="70f685a2-f3dc-468f-ba24-0dde9ecbc46f">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
 					<Items>
-						<DocTemplateItem UniqueId="256afd92-823c-4a68-9624-ada77c27d37e" RuleParameters="Name=Status;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="b69c72d6-59cd-4abf-a887-78fc02c5896d" RuleParameters="Name=SwitchFunction;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="f25ad55f-dc12-42fa-aaf6-654569163e79" RuleParameters="Order=2;PropertyName=Status;Value=IfcLabel;Reference=PEnum_ElementStatus;" Order="0" />
+						<DocTemplateItem UniqueId="d18538f0-4e72-4777-93ef-c90ffaa41668" RuleParameters="Order=4;PropertyName=SwitchFunction;Value=IfcLabel;Reference=PEnum_SwitchFunctionType;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Properties" UniqueId="85485d73-1fad-4507-a8d6-226d8b5a6d68">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Table_Value_0roKUmQhnB4ux7QMxo11SX" />
+					<Items>
+						<DocTemplateItem UniqueId="e58638fb-7a65-429c-886b-f2df0944ce03" RuleParameters="Order=8;PropertyName=SetPoint;Value=IfcInteger;Reference=IfcLabel;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>

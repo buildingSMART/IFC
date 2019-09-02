@@ -2,7 +2,29 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UniqueId="3a35315c-e8a3-4c15-95c1-e85d05d7f695">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
 	<Items>
-		<DocTemplateItem UniqueId="40542489-dc44-488c-8b0a-a916be9f48aa" RuleInstanceID="IfcElementQuantity" RuleParameters="Name=Qto_CableCarrierSegmentBaseQuantities;" Order="0" />
+		<DocTemplateItem UniqueId="197b6da7-c816-40b5-808c-462e51efbc36" RuleParameters="QsetName=Qto_CableCarrierSegmentBaseQuantities;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Quantities" UniqueId="da4caf8d-0b25-4120-8eb0-b2df73682ea7">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Weight_Quantity_3X0MvMF8bFGfPv1_7RF0hx" />
+					<Items>
+						<DocTemplateItem UniqueId="fe00dfc4-af70-4a7e-b95a-c31a2e76801f" RuleParameters="Order=1;QuantityName=GrossWeight;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Quantities" UniqueId="28e86203-543e-47bb-9cdd-42b2f71e867d">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Length_Quantity_3TXdZXum1FS9rZvJdRIz4S" />
+					<Items>
+						<DocTemplateItem UniqueId="45a257fa-1aaf-42fb-a259-9087b546051f" RuleParameters="Order=2;QuantityName=Length;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Quantities" UniqueId="9989bb36-8f28-43cf-94f4-2e590cbdd1e0">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Area_Quantity_1bh4T7Rlz3VfJYP3Kux_6" />
+					<Items>
+						<DocTemplateItem UniqueId="7c521cf2-f82f-4308-b80a-512b392c0459" RuleParameters="Order=3;QuantityName=CrossSectionArea;" Order="0" />
+						<DocTemplateItem UniqueId="0147e250-184d-4684-8032-8a029cc2bd3e" RuleParameters="Order=4;QuantityName=OuterSurfaceArea;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+		</DocTemplateItem>
 	</Items>
 </DocTemplateUsage>
 

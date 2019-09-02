@@ -7,6 +7,8 @@ The _IfcSpatialZone_ inherits and declares these attributes that shall have the 
 * _Description_: Any additional description provided by the user, e.g. a space description "Corner office with habour view".
 * _ObjectType_: reserved for typing of spatial elements in case of _PredefinedType_ = .USERDEFINED., restrictions on applicable values might be published in view definitions or implementer agreements.
 
+Physical elements that are referenced by this spatial zone are related using the _IfcRelReferencedInSpatialStructure_ relationship as it is a non-hierarchical assignment in addition to the hierarchical spatial containment within a subtype of _IfcSpatialStructureElement_. Also spaces, that referenced by this spatial zone are related using the _IfcRelReferencedInSpatialStructure_ relationship. The _IfcSpatialZone_ itself can also be referenced by another spatial element using _IfcRelReferencedInSpatialStructure_.
+
 > NOTE&nbsp; The _IfcSpatialZone_ is different to the _IfcZone_ entity by allowing an own placement and shape representation, whereas _IfcZone_ is only a grouping of _IfcSpace_'s.
 
 > HISTORY&nbsp; New entity in IFC4.

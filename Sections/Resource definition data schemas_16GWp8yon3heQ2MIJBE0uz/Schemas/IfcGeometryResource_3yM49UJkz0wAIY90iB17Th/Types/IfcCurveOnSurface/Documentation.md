@@ -3,7 +3,7 @@ The _IfcCurveOnSurface_ enables the choice of curve types on parameteric surface
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
 > A curve_on_surface is a curve on a parametric surface. It may be any of the following: > * a pcurve or
-> * a surface curve, including the specialised subtypes of intersection curve and seam_curve, or
+> * a surface curve, including the specialised subtypes of intersection curve and seam curve, or
 > * a composite curve on surface.
 
   

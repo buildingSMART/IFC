@@ -2,7 +2,30 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UniqueId="3BJekiWXv4w9qYvti25pQn">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
 	<Items>
-		<DocTemplateItem UniqueId="abb256d6-ea84-4f45-81a8-525214cae3eb" RuleInstanceID="IfcElementQuantity" RuleParameters="Name=Qto_OpeningElementBaseQuantities;TemplateType=QTO_OCCURRENCEDRIVEN;" Order="0" />
+		<DocTemplateItem UniqueId="0904af59-782e-4e1a-a472-f61201178a88" RuleParameters="QsetName=Qto_OpeningElementBaseQuantities;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Quantities" UniqueId="5723e862-a55e-4a4a-b19b-0dc674f5ac98">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Length_Quantity_3TXdZXum1FS9rZvJdRIz4S" />
+					<Items>
+						<DocTemplateItem UniqueId="0a592bc8-290e-4a38-8340-037c274bba23" RuleParameters="Order=1;QuantityName=Width;" Order="0" />
+						<DocTemplateItem UniqueId="09534f83-00b9-4eb9-a82e-7550117e8814" RuleParameters="Order=2;QuantityName=Height;" Order="0" />
+						<DocTemplateItem UniqueId="ca218d33-5a54-41f9-ba21-5d860fb4a360" RuleParameters="Order=3;QuantityName=Depth;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Quantities" UniqueId="8d0af33e-a47c-4022-a843-ebeb77f7ed01">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Area_Quantity_1bh4T7Rlz3VfJYP3Kux_6" />
+					<Items>
+						<DocTemplateItem UniqueId="75061ae3-c2dd-44ed-b07d-67b316552bf8" RuleParameters="Order=4;QuantityName=Area;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Quantities" UniqueId="ff718ae3-1b46-4ca6-a040-66ae2abe40f3">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Volume_Quantity_1aaQEmj_b1Ae8clDaSAmiE" />
+					<Items>
+						<DocTemplateItem UniqueId="04489030-2650-4cdd-8bc6-dd7ccdceb92f" RuleParameters="Order=5;QuantityName=Volume;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+		</DocTemplateItem>
 	</Items>
 </DocTemplateUsage>
 

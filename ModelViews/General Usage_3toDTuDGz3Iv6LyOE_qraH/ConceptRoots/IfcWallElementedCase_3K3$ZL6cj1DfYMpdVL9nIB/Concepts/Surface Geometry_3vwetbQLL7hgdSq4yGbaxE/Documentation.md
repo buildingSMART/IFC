@@ -1,3 +1,3 @@
-> NOTE&nbsp; The 'Surface' can be used to define a surfacic model of the building (e.g. for analytical purposes, or for reduced Level of Detail representation). It could suppress the geometric details of the parts in the decomposition.
+The 'Surface Geometry' shape representation can be used to define a surfacic model of the building (e.g. for analytical purposes, or for reduced Level of Detail representation). It could suppress the geometric details of the parts in the decomposition.
 
 > NOTE&nbsp; It is invalid to exchange a 'Body' shape representation of an _IfcWallElementedCase_. The body geometry is defined by the parts within the decomposition.

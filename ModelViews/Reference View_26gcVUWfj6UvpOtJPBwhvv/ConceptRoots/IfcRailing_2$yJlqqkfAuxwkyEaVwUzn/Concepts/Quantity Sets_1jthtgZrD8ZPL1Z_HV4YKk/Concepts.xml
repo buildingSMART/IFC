@@ -2,8 +2,15 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Quantity Sets" UniqueId="6ddebdea-8f53-488d-9541-8fe45f12252e">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
 	<Items>
-		<DocTemplateItem UniqueId="e3d957ef-e44d-4a98-ab7d-0666f66a4993" RuleParameters="Name=Qto_RailingBaseQuantities;" Order="0">
-			<Documentation>Base quantities depending on geometry as defined in this specification</Documentation>
+		<DocTemplateItem UniqueId="34276436-ce53-488b-8a9f-b3c58b6f3ee9" RuleParameters="QsetName=Qto_RailingBaseQuantities;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Quantities" UniqueId="e22c3535-cfe7-4ebc-b6a3-162c31bf78a3">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Length_Quantity_3TXdZXum1FS9rZvJdRIz4S" />
+					<Items>
+						<DocTemplateItem UniqueId="d60b4ebd-cc2b-4157-a809-753ef610a1bc" RuleParameters="Order=1;QuantityName=Length;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
 		</DocTemplateItem>
 	</Items>
 	<Exchanges>

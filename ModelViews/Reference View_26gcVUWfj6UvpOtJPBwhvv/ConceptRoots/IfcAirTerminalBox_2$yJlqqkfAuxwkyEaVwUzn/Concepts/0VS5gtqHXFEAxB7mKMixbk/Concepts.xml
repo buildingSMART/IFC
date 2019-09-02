@@ -2,36 +2,36 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UniqueId="1f705ab7-d118-4f38-aecb-1f0516b3b96e">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 	<Items>
-		<DocTemplateItem UniqueId="2aa99620-fdb6-459b-87c8-418fe98997bc" RuleParameters="Name=Pset_AirTerminalBoxTypeCommon;" Order="0">
+		<DocTemplateItem UniqueId="ce415d28-cb96-46ed-a899-c090a18a5541" RuleParameters="PsetName=Pset_AirTerminalBoxTypeCommon;" Order="0">
 			<Concepts>
-				<DocTemplateUsage Name="Properties" UniqueId="3d918891-820f-43a9-a1cc-c91bffb66cbb">
+				<DocTemplateUsage Name="Properties" UniqueId="7a28f0c5-b310-442e-bc24-77a972c02993">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
 					<Items>
-						<DocTemplateItem UniqueId="6e77f99f-336b-4660-a396-b1ab6c2cdf3e" RuleParameters="Name=Reference;Value=IfcIdentifier;" Order="0" />
-						<DocTemplateItem UniqueId="09881c1b-f671-43d5-b214-55ae004eaf9c" RuleParameters="Name=NominalAirFlowRate;Value=IfcVolumetricFlowRateMeasure;" Order="0" />
-						<DocTemplateItem UniqueId="6c23fcd7-6207-4e5a-b539-5fd9503d941c" RuleParameters="Name=HasSoundAttenuator;Value=IfcBoolean;" Order="0" />
-						<DocTemplateItem UniqueId="75d607fb-c856-471a-bc79-4357cf3d50e1" RuleParameters="Name=HasReturnAir;Value=IfcBoolean;" Order="0" />
-						<DocTemplateItem UniqueId="6aade5c5-7714-4397-b496-66835ee3dc33" RuleParameters="Name=HasFan;Value=IfcBoolean;" Order="0" />
-						<DocTemplateItem UniqueId="d59b09c4-d323-4c22-adcf-fb4aeb7d6e75" RuleParameters="Name=NominalInletAirPressure;Value=IfcPressureMeasure;" Order="0" />
-						<DocTemplateItem UniqueId="68cb5701-17e6-4e9b-8363-ed692a42f395" RuleParameters="Name=NominalDamperDiameter;Value=IfcPositiveLengthMeasure;" Order="0" />
-						<DocTemplateItem UniqueId="20f1c10b-6918-43d9-8de7-935635b1edd0" RuleParameters="Name=HousingThickness;Value=IfcLengthMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="8fff6179-ed67-4b94-ac47-3aecd5c617ca" RuleParameters="Order=1;PropertyName=Reference;Value=IfcIdentifier;" Order="0" />
+						<DocTemplateItem UniqueId="3b4e0444-5900-4c06-9e08-1eb1f420f29d" RuleParameters="Order=5;PropertyName=NominalAirFlowRate;Value=IfcVolumetricFlowRateMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="0552a6c8-44cc-4ffd-8292-ab0fe130e524" RuleParameters="Order=8;PropertyName=HasSoundAttenuator;Value=IfcBoolean;" Order="0" />
+						<DocTemplateItem UniqueId="9174831b-7d70-4a46-9db7-c612ef950332" RuleParameters="Order=9;PropertyName=HasReturnAir;Value=IfcBoolean;" Order="0" />
+						<DocTemplateItem UniqueId="69d073ee-e483-4a8a-b00a-2829091c8cba" RuleParameters="Order=10;PropertyName=HasFan;Value=IfcBoolean;" Order="0" />
+						<DocTemplateItem UniqueId="34c40ab4-8776-4cc1-85e7-124942e0971e" RuleParameters="Order=11;PropertyName=NominalInletAirPressure;Value=IfcPressureMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="9c351e92-2d61-414b-a236-d641c2b3aa4e" RuleParameters="Order=12;PropertyName=NominalDamperDiameter;Value=IfcPositiveLengthMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="f28f9be3-46c1-4ea6-ac4d-4f123157b6b7" RuleParameters="Order=13;PropertyName=HousingThickness;Value=IfcLengthMeasure;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Properties" UniqueId="1eeeaded-153c-4e63-bf74-30e0573a28cc">
+				<DocTemplateUsage Name="Properties" UniqueId="b726b2ca-9683-425e-9f5c-407541a1a5e9">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
 					<Items>
-						<DocTemplateItem UniqueId="7291acdb-110f-4c33-a67b-bf651cfe1e0f" RuleParameters="Name=Status;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="9e9e16e0-9364-4465-95ee-d422ba25b3b5" RuleParameters="Name=ArrangementType;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="6a7cd0ca-9ff5-4b7f-b144-256a81e8ab36" RuleParameters="Name=ReheatType;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="15769575-02ce-40e5-b069-172da4112131" RuleParameters="Order=2;PropertyName=Status;Value=IfcLabel;Reference=PEnum_ElementStatus;" Order="0" />
+						<DocTemplateItem UniqueId="203c847f-5b6c-456a-8312-9cc86fd7ceef" RuleParameters="Order=6;PropertyName=ArrangementType;Value=IfcLabel;Reference=PEnum_AirTerminalBoxArrangementType;" Order="0" />
+						<DocTemplateItem UniqueId="f198e773-e448-4eb7-b87a-c74d91b31d05" RuleParameters="Order=7;PropertyName=ReheatType;Value=IfcLabel;Reference=PEnum_AirTerminalBoxReheatType;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Properties" UniqueId="6fe90e43-8d97-44fd-a2a6-6bfe3031936e">
+				<DocTemplateUsage Name="Properties" UniqueId="09c87af2-d52e-4b1c-a06d-745294896cf2">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Bounded_Value_0zPwBITXr4sQ2Ujkn_bOo" />
 					<Items>
-						<DocTemplateItem UniqueId="4ef80dcf-1af9-4289-b00f-bda3d89eaa91" RuleParameters="Name=AirflowRateRange;Value=IfcVolumetricFlowRateMeasure;" Order="0" />
-						<DocTemplateItem UniqueId="d0fead7c-e0ed-4369-8b15-2714d5954f76" RuleParameters="Name=AirPressureRange;Value=IfcPressureMeasure;" Order="0" />
-						<DocTemplateItem UniqueId="d063ebcb-6ea9-402b-990d-18beb72e9bf3" RuleParameters="Name=OperationTemperatureRange;Value=IfcThermodynamicTemperatureMeasure;" Order="0" />
-						<DocTemplateItem UniqueId="4b9d071a-0bc5-41cf-8618-9c4e89932ac4" RuleParameters="Name=ReturnAirFractionRange;Value=IfcPositiveRatioMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="f0caf3be-e8e8-48c2-b6ac-cc6f4b0ce2f9" RuleParameters="Order=3;PropertyName=AirflowRateRange;SetValue=IfcVolumetricFlowRateMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="7f4d9d19-c937-4885-b1b8-875e955daa9f" RuleParameters="Order=4;PropertyName=AirPressureRange;SetValue=IfcPressureMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="c6dc2021-a9a1-4955-a5be-3f4a914c919b" RuleParameters="Order=14;PropertyName=OperationTemperatureRange;SetValue=IfcThermodynamicTemperatureMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="068140ea-5dc5-417a-9ab4-a69492cff49b" RuleParameters="Order=15;PropertyName=ReturnAirFractionRange;SetValue=IfcPositiveRatioMeasure;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>

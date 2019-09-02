@@ -2,18 +2,25 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UniqueId="f8334a54-8300-4919-b37e-e0c290f1a617">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 	<Items>
-		<DocTemplateItem UniqueId="49bb9bb0-551c-4d2f-b7d5-929e29101226" RuleParameters="Name=Pset_AudioVisualApplianceTypeCommon;" Order="0">
+		<DocTemplateItem UniqueId="8f962c27-95fb-466b-bdf0-12c1eed9aa17" RuleParameters="PsetName=Pset_AudioVisualApplianceTypeCommon;" Order="0">
 			<Concepts>
-				<DocTemplateUsage Name="Properties" UniqueId="8e5d569d-5984-4d82-94de-9d1e8cb50804">
+				<DocTemplateUsage Name="Properties" UniqueId="74f34640-4cd8-42ab-ac94-19a03edea38e">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
 					<Items>
-						<DocTemplateItem UniqueId="1e6988c1-2350-4b1d-8c76-cdc452c4d386" RuleParameters="Name=Reference;Value=IfcIdentifier;" Order="0" />
+						<DocTemplateItem UniqueId="f76b0bb3-0e68-46b7-8319-ddba9fa2a045" RuleParameters="Order=1;PropertyName=Reference;Value=IfcIdentifier;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Properties" UniqueId="392a0fb0-58de-49ca-94b0-cc0603b442c1">
+				<DocTemplateUsage Name="Properties" UniqueId="fb283e09-6e46-4996-b1cc-7fb0845a2018">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
 					<Items>
-						<DocTemplateItem UniqueId="3685df9c-33bc-4a47-b7c4-4408f21b2541" RuleParameters="Name=Status;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="12658341-e269-4737-91f3-a15489b2de53" RuleParameters="Order=2;PropertyName=Status;Value=IfcLabel;Reference=PEnum_ElementStatus;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Properties" UniqueId="17665736-15ed-4cb7-b47f-9a3345a6dfa7">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Table_Value_0roKUmQhnB4ux7QMxo11SX" />
+					<Items>
+						<DocTemplateItem UniqueId="06beb02d-82ed-45f8-b9f4-9bf736bef92c" RuleParameters="Order=3;PropertyName=MediaSource;Value=IfcIdentifier;Reference=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="e0a6681c-ad45-467f-a17f-1e514e620850" RuleParameters="Order=4;PropertyName=AudioVolume;Value=IfcInteger;Reference=IfcSoundPowerMeasure;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>

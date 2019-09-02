@@ -1,0 +1,1 @@
+The various subtypes of _IfcReinforcingElement_ do not support the concept of voiding - there shall no voids (openings, cut-outs, recesses) being defined as shape features for reinforcing elements.

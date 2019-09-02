@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UniqueId="0FrsODsE91oxbPKKndZw$f">
+	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Decomposition_1cVuH3xCvAZQOan_h15FW" />
+	<Items>
+		<DocTemplateItem UniqueId="1eacdeb9-91bf-4990-b7f9-76b63898df87" Order="0">
+			<Documentation>If referenced, the site is the root of the spatial structure.</Documentation>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="284d25ce-fff6-4fcb-96b0-8292b9f367d1" RuleParameters="Spatial Parts=IfcBuilding;" Order="0">
+			<Documentation>If referenced, the building is the root of the spatial structure (no explicit site information included).</Documentation>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="06701950-0e55-4767-8eda-e6d6ca2f9718" RuleParameters="Spatial Parts=IfcSpatialZone;" Order="0">
+			<Documentation>If referenced, the spatial zone is the root of the spatial structure (to be used as a stub for non-building related projects).</Documentation>
+		</DocTemplateItem>
+	</Items>
+	<Exchanges>
+		<DocExchangeItem Applicability="export" Requirement="optional">
+			<Exchange xsi:type="DocExchangeDefinition" xsi:nil="true" href="Reference_Exchange_3SsM4bYOvFyBAKwmAlwLEg" />
+		</DocExchangeItem>
+		<DocExchangeItem Applicability="import" Requirement="optional">
+			<Exchange xsi:type="DocExchangeDefinition" xsi:nil="true" href="Reference_Exchange_3SsM4bYOvFyBAKwmAlwLEg" />
+		</DocExchangeItem>
+	</Exchanges>
+</DocTemplateUsage>
+

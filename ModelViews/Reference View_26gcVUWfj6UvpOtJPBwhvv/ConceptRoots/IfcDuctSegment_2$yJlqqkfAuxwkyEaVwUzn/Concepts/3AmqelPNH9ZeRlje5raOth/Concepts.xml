@@ -2,7 +2,30 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UniqueId="cac34a2f-6574-498e-86ef-b68175918deb">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
 	<Items>
-		<DocTemplateItem UniqueId="0272d2a3-3fec-4b36-8c34-22784c762382" RuleInstanceID="IfcElementQuantity" RuleParameters="Name=Qto_DuctSegmentBaseQuantities;" Order="0" />
+		<DocTemplateItem UniqueId="406d934e-93e3-46fe-8dd0-89c04a833c5b" RuleParameters="QsetName=Qto_DuctSegmentBaseQuantities;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Quantities" UniqueId="f4f3390f-0165-4792-8ef0-9805379d2133">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Length_Quantity_3TXdZXum1FS9rZvJdRIz4S" />
+					<Items>
+						<DocTemplateItem UniqueId="8c54786e-7e9f-482f-813c-174c90cbccc6" RuleParameters="Order=1;QuantityName=Length;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Quantities" UniqueId="749ae70b-cab8-409e-81ae-c5cb5d0e6e14">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Area_Quantity_1bh4T7Rlz3VfJYP3Kux_6" />
+					<Items>
+						<DocTemplateItem UniqueId="baf69958-2bc3-4869-a093-24fb22d1f3d3" RuleParameters="Order=2;QuantityName=GrossCrossSectionArea;" Order="0" />
+						<DocTemplateItem UniqueId="c2f35357-f875-467f-9193-e7070f0c5a24" RuleParameters="Order=3;QuantityName=NetCrossSectionArea;" Order="0" />
+						<DocTemplateItem UniqueId="a481f9ff-b5e6-4466-bf80-5db31409885a" RuleParameters="Order=4;QuantityName=OuterSurfaceArea;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Quantities" UniqueId="f5a9ab9b-02a3-49b5-9adb-45ff32e48f84">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Weight_Quantity_3X0MvMF8bFGfPv1_7RF0hx" />
+					<Items>
+						<DocTemplateItem UniqueId="c2afca4f-efb0-4812-9ab0-5606370aec77" RuleParameters="Order=5;QuantityName=GrossWeight;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+		</DocTemplateItem>
 	</Items>
 </DocTemplateUsage>
 

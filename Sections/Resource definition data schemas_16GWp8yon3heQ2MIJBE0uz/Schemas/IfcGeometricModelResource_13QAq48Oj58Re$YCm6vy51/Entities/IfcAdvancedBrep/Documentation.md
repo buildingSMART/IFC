@@ -4,17 +4,27 @@ An advanced B-rep is a boundary representation model in which all faces, edges a
 
 <table summary="faceted brep" border="0">
 <tr>
-<td valign="top"><img src="../../../figures/ifcadvancedbrep_01.png" alt="faceted brep instantiation" width="600" height="600"></td>
+<td valign="top"><img src="../../../figures/ifcadvancedbrep_01.png" alt="advanced brep b-spline surface" width="600" height="600"></td>
 <td style="vertical-align:bottom">
-<p>Figure 1 illustrates use of <em>IfcAdvancedBrep</em> for
-boundary representation models with b-spline surfaces. The diagram
-shows the topological and geometric representation items that are
-used for advanced B-reps, based on <em>IfcAdvancedFace</em>.</p>
+<p>Figure 1 illustrates use of <em>IfcAdvancedBrep</em> for boundary representation models with b-spline surfaces. The diagram shows the topological and geometric representation items that are used for advanced B-reps, based on <em>IfcAdvancedFace</em>.</p>
 </td>
 </tr>
 <tr>
 <td>
-<p class="figure">Figure 1 &mdash; Advanced Brep</p>
+<p class="figure">Figure 1 &mdash; Advanced Brep, b-spline surface</p>
+<p>&nbsp;</p>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top">&nbsp;&nbsp;&nbsp;<img src="../../../figures/ifcadvancedbrep_02.png" alt="advanced brep elementary surface" width="600" height="650"></td>
+<td style="vertical-align:bottom">
+<p>Figure 2 illustrates use of <em>IfcAdvancedBrep</em> for boundary representation models with elementary surfaces. The diagram shows the topological and geometric representation items that are used for advanced B-reps, based on <em>IfcAdvancedFace</em>. It shows the use of <em>IfcIntersectionCurve</em> to provide the geometric representation of the edge curve both as 3D curve and as u,v pcurve in the parametric space of the adjacent surfaces.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="figure">Figure 2 &mdash; Advanced Brep, elementary surface</p>
 </td>
 <td>&nbsp;</td>
 </tr>

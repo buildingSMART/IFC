@@ -2,27 +2,35 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UniqueId="32530542-3f62-4a3c-b835-42d425f2bfc0">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 	<Items>
-		<DocTemplateItem UniqueId="f4520fb0-b0a2-48fd-a0da-8f4901956b63" RuleParameters="Name=Pset_EvaporativeCoolerTypeCommon;" Order="0">
+		<DocTemplateItem UniqueId="f45ded25-851d-470d-8160-625f3e8bd243" RuleParameters="PsetName=Pset_EvaporativeCoolerTypeCommon;" Order="0">
 			<Concepts>
-				<DocTemplateUsage Name="Properties" UniqueId="7f02e9b1-9404-406c-814e-bec0741fd8e9">
+				<DocTemplateUsage Name="Properties" UniqueId="c320fa99-7a7d-43e9-b967-7ac00297e37e">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
 					<Items>
-						<DocTemplateItem UniqueId="3248949a-8257-451b-bb17-ff022c194bee" RuleParameters="Name=Reference;Value=IfcIdentifier;" Order="0" />
-						<DocTemplateItem UniqueId="89f310d5-d7c8-493a-ac22-82f06e0c3319" RuleParameters="Name=HeatExchangeArea;Value=IfcAreaMeasure;" Order="0" />
-						<DocTemplateItem UniqueId="223c7f11-ca36-4557-ab7b-89233e6a0730" RuleParameters="Name=WaterRequirement;Value=IfcVolumetricFlowRateMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="937a6eae-4b9a-471d-80b2-2cc8edb636cb" RuleParameters="Order=1;PropertyName=Reference;Value=IfcIdentifier;" Order="0" />
+						<DocTemplateItem UniqueId="da73c259-8e7e-4c5a-b1b5-7e7d69b30391" RuleParameters="Order=4;PropertyName=HeatExchangeArea;Value=IfcAreaMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="f1d4455d-420f-4b7d-a20a-782c37abe244" RuleParameters="Order=6;PropertyName=WaterRequirement;Value=IfcVolumetricFlowRateMeasure;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Properties" UniqueId="99f80377-e704-48f9-b610-961d2b479720">
+				<DocTemplateUsage Name="Properties" UniqueId="470723e0-70c1-4490-ae60-3e36f6d98a09">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
 					<Items>
-						<DocTemplateItem UniqueId="b214b5f3-b062-4ad0-9f07-cd9af49c7e39" RuleParameters="Name=Status;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="ecc7002b-095d-414d-b8ae-95134ccaa315" RuleParameters="Name=FlowArrangement;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="08ae1ea2-d2c1-4eb4-97b3-0675a6aa8dbf" RuleParameters="Order=2;PropertyName=Status;Value=IfcLabel;Reference=PEnum_ElementStatus;" Order="0" />
+						<DocTemplateItem UniqueId="a18ed5b6-99d2-4844-97f7-af442c9d105a" RuleParameters="Order=3;PropertyName=FlowArrangement;Value=IfcLabel;Reference=PEnum_EvaporativeCoolerFlowArrangement;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Properties" UniqueId="afcd9256-304e-425e-82ce-c265dbc8f25d">
+				<DocTemplateUsage Name="Properties" UniqueId="d906ebee-3f82-4ddb-abff-aa3379fe0f5b">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Bounded_Value_0zPwBITXr4sQ2Ujkn_bOo" />
 					<Items>
-						<DocTemplateItem UniqueId="ab828173-96f4-4969-b4e6-e2bc264aaba6" RuleParameters="Name=OperationTemperatureRange;Value=IfcThermodynamicTemperatureMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="6a8304c1-313f-4314-bc79-83b5fff489be" RuleParameters="Order=5;PropertyName=OperationTemperatureRange;SetValue=IfcThermodynamicTemperatureMeasure;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Properties" UniqueId="51d8fc55-aad1-4c51-85af-1d8da9a63480">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Table_Value_0roKUmQhnB4ux7QMxo11SX" />
+					<Items>
+						<DocTemplateItem UniqueId="9cf430cd-7f24-4a25-ad33-bcdd9f92dee2" RuleParameters="Order=7;PropertyName=EffectivenessTable;Value=IfcVolumetricFlowRateMeasure;Reference=IfcReal;" Order="0" />
+						<DocTemplateItem UniqueId="d5ab4fb7-8285-4f93-b92e-eacd21e462fe" RuleParameters="Order=8;PropertyName=AirPressureDropCurve;Value=IfcVolumetricFlowRateMeasure;Reference=IfcPressureMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="315075a6-d112-49f1-abbd-762e7d0781b4" RuleParameters="Order=9;PropertyName=WaterPressDropCurve;Value=IfcVolumetricFlowRateMeasure;Reference=IfcPressureMeasure;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>

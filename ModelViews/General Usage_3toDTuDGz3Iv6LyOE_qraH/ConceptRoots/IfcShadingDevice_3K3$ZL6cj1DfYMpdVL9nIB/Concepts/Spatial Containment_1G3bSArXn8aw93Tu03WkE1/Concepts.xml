@@ -2,16 +2,16 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Spatial Containment" UniqueId="500e570a-d61c-4893-a243-77800382e381">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Containment_3PeWY01HBmesKdP1dTP15" />
 	<Items>
-		<DocTemplateItem UniqueId="0e1004cc-d9b2-4d3c-8e7d-d564a3cb2b16" RuleParameters="Structure=IfcBuildingStorey;" Order="0">
+		<DocTemplateItem UniqueId="0e1004cc-d9b2-4d3c-8e7d-d564a3cb2b16" RuleParameters="RelatingStructure=IfcBuildingStorey;" Order="0">
 			<Documentation>Default spatial container</Documentation>
 		</DocTemplateItem>
-		<DocTemplateItem UniqueId="aa829358-e93b-409f-891a-6bd44895a35f" RuleParameters="Structure=IfcBuilding;" Order="0">
+		<DocTemplateItem UniqueId="aa829358-e93b-409f-891a-6bd44895a35f" RuleParameters="RelatingStructure=IfcBuilding;" Order="0">
 			<Documentation>Spatial container for the element if it cannot be assigned to a building storey</Documentation>
 		</DocTemplateItem>
-		<DocTemplateItem UniqueId="2dc228af-b8f1-4a1c-9e77-178adff2b3b8" RuleParameters="Structure=IfcSite;" Order="0">
+		<DocTemplateItem UniqueId="2dc228af-b8f1-4a1c-9e77-178adff2b3b8" RuleParameters="RelatingStructure=IfcSite;" Order="0">
 			<Documentation>Spatial container for the element in case that it is placed on site (outside of building)</Documentation>
 		</DocTemplateItem>
-		<DocTemplateItem UniqueId="02fc832e-8e20-4ea4-b96e-cda5c1549c2b" RuleParameters="Structure=IfcSpace;" Order="0">
+		<DocTemplateItem UniqueId="02fc832e-8e20-4ea4-b96e-cda5c1549c2b" RuleParameters="RelatingStructure=IfcSpace;" Order="0">
 			<Documentation>In particular use cases, a shading device maybe assigned directly to space</Documentation>
 		</DocTemplateItem>
 	</Items>

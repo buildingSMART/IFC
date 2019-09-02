@@ -19,7 +19,7 @@ The _IfcBeamStandardCase_ defines in addition that the _IfcBeamType_ should have
 <table>
 
  <tr>
-  <td><img src="../../../figures/ifcbeamstandardcase_cardinalpoint.png" height="250" width="500" alt="Cardinal point usage"></td>
+  <td><img src="../../../figures/ifcbeamstandardcase_cardinalpoint.png" width="675" alt="Cardinal point usage"></td>
   <td>
 
     <blockquote class="example">EXAMPLE&nbsp; Figure 2 illustrates alignment of cardinal points.</blockquote>

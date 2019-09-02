@@ -1,0 +1,1 @@
+The default geometric item to exchange the body shape representation of reinforcing elements is the _IfcSweptDiskSolid_ using the _IfcIndexedPolyCurve_ to describe the _Directrix_.

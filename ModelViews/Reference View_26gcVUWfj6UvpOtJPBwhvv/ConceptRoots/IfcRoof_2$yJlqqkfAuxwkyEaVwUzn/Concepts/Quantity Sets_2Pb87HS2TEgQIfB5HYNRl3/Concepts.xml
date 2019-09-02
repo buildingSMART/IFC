@@ -2,8 +2,17 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Quantity Sets" UniqueId="999481d1-7027-4ea9-a4a9-2c54625dbbc3">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
 	<Items>
-		<DocTemplateItem UniqueId="89d11418-935c-478c-b126-711f09bca79b" RuleParameters="Name=Qto_RoofBaseQuantities;" Order="0">
-			<Documentation>Base quantities depending on geometry as defined in this specification</Documentation>
+		<DocTemplateItem UniqueId="04cdb78f-3927-48a2-a518-19c1c696b2b1" RuleParameters="QsetName=Qto_RoofBaseQuantities;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Quantities" UniqueId="f1bec920-778d-49ee-b9b4-d07d9a5500a2">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Area_Quantity_1bh4T7Rlz3VfJYP3Kux_6" />
+					<Items>
+						<DocTemplateItem UniqueId="5e107aaa-3e39-4831-a239-e1987c4c1c5b" RuleParameters="Order=1;QuantityName=GrossArea;" Order="0" />
+						<DocTemplateItem UniqueId="9a901208-3b0f-4018-8e63-77bd9e94fa2f" RuleParameters="Order=2;QuantityName=NetArea;" Order="0" />
+						<DocTemplateItem UniqueId="aacd31cd-5c8d-4202-b5d1-ef0b0cf302c7" RuleParameters="Order=3;QuantityName=ProjectedArea;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
 		</DocTemplateItem>
 	</Items>
 	<Exchanges>

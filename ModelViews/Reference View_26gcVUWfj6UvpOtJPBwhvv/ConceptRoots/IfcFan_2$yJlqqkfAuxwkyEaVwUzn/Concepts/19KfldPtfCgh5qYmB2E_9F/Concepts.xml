@@ -2,53 +2,60 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UniqueId="49529be7-677a-4caa-b174-8b02c23be24f">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 	<Items>
-		<DocTemplateItem UniqueId="cc8c66ef-f914-4295-a256-38b137450faa" RuleParameters="Name=Pset_FanOccurrence;" Order="0">
+		<DocTemplateItem UniqueId="a64798a7-a061-4cbd-9561-7dcc0323ac6a" RuleParameters="PsetName=Pset_FanOccurrence;" Order="0">
 			<Concepts>
-				<DocTemplateUsage Name="Properties" UniqueId="8ae8f274-ca2c-44e8-93c8-b50c87b3c407">
+				<DocTemplateUsage Name="Properties" UniqueId="6b208548-ab57-41a2-81f1-5bf509ec24b6">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
 					<Items>
-						<DocTemplateItem UniqueId="547d2b71-cf4e-4aef-9690-a88e8314ae01" RuleParameters="Name=DischargeType;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="0e45e8fa-1b5d-48d5-ad22-c2e86f675996" RuleParameters="Name=ApplicationOfFan;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="f25c4cff-b702-4576-bb0b-df39c816f37a" RuleParameters="Name=CoilPosition;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="68d0dad0-25df-49a6-bb75-cd716bf90248" RuleParameters="Name=MotorPosition;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="292651be-ca74-435e-a002-bad473e6c02a" RuleParameters="Name=FanMountingType;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="4d01989b-e4c9-4b1d-b416-a424a65740ed" RuleParameters="Order=1;PropertyName=DischargeType;Value=IfcLabel;Reference=PEnum_FanDischargeType;" Order="0" />
+						<DocTemplateItem UniqueId="ab145129-56ba-425e-b44c-7af5dc9cec5e" RuleParameters="Order=2;PropertyName=ApplicationOfFan;Value=IfcLabel;Reference=PEnum_FanApplicationType;" Order="0" />
+						<DocTemplateItem UniqueId="5844f16f-9aec-4302-9111-8e876642d55f" RuleParameters="Order=3;PropertyName=CoilPosition;Value=IfcLabel;Reference=PEnum_FanCoilPosition;" Order="0" />
+						<DocTemplateItem UniqueId="c8ca05e1-244a-42b5-b490-bc5b92748819" RuleParameters="Order=4;PropertyName=MotorPosition;Value=IfcLabel;Reference=PEnum_FanMotorPosition;" Order="0" />
+						<DocTemplateItem UniqueId="7627ee4f-4888-405b-8a4b-6ca5452c119e" RuleParameters="Order=5;PropertyName=FanMountingType;Value=IfcLabel;Reference=PEnum_FanMountingType;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Properties" UniqueId="77480968-77fe-42b4-b392-9ceb4026dfa5">
+				<DocTemplateUsage Name="Properties" UniqueId="b706c78f-e54c-4e05-ac7d-7b86d14e00ed">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
 					<Items>
-						<DocTemplateItem UniqueId="bcad06aa-0dfc-4d9b-bc41-c93d19b85a55" RuleParameters="Name=FractionOfMotorHeatToAirStream;Value=IfcNormalisedRatioMeasure;" Order="0" />
-						<DocTemplateItem UniqueId="c471a5c0-314c-4623-9f5e-62de5f728968" RuleParameters="Name=ImpellerDiameter;Value=IfcPositiveLengthMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="bd3fc55f-9749-40f3-b545-5d75b340ffd8" RuleParameters="Order=6;PropertyName=FractionOfMotorHeatToAirStream;Value=IfcNormalisedRatioMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="00f0f3c2-eab8-4705-8b16-29dbbf169c86" RuleParameters="Order=7;PropertyName=ImpellerDiameter;Value=IfcPositiveLengthMeasure;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>
 		</DocTemplateItem>
-		<DocTemplateItem UniqueId="e54d53fa-73a7-4e86-8b53-071e1de48c7e" RuleParameters="Name=Pset_FanTypeCommon;" Order="0">
+		<DocTemplateItem UniqueId="524600a1-09d7-4bdb-b599-166df1a5e582" RuleParameters="PsetName=Pset_FanTypeCommon;" Order="0">
 			<Concepts>
-				<DocTemplateUsage Name="Properties" UniqueId="1f73a4de-ef09-4a0e-9456-0ccb3afe94ec">
+				<DocTemplateUsage Name="Properties" UniqueId="45d72923-d1e7-477f-b6a4-2d11f921b69b">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
 					<Items>
-						<DocTemplateItem UniqueId="e5b40973-863d-4004-855e-883bdf095f1f" RuleParameters="Name=Reference;Value=IfcIdentifier;" Order="0" />
-						<DocTemplateItem UniqueId="4fdb48b8-9b82-41bc-8534-c77fb3b80557" RuleParameters="Name=NominalAirFlowRate;Value=IfcVolumetricFlowRateMeasure;" Order="0" />
-						<DocTemplateItem UniqueId="d7ed74e9-5c6d-4010-bf62-7c6b84ffefcb" RuleParameters="Name=NominalTotalPressure;Value=IfcPressureMeasure;" Order="0" />
-						<DocTemplateItem UniqueId="381dcaff-37d0-4a5e-a8df-5c07221ce821" RuleParameters="Name=NominalStaticPressure;Value=IfcPressureMeasure;" Order="0" />
-						<DocTemplateItem UniqueId="db819215-52da-4cdf-9a74-0b926a59ed74" RuleParameters="Name=NominalRotationSpeed;Value=IfcRotationalFrequencyMeasure;" Order="0" />
-						<DocTemplateItem UniqueId="040b48e4-3538-473f-8069-4a7ed041aa58" RuleParameters="Name=NominalPowerRate;Value=IfcPowerMeasure;" Order="0" />
-						<DocTemplateItem UniqueId="f8ec9671-8203-491c-8ff1-558c938fdaa8" RuleParameters="Name=OperationalCriteria;Value=IfcTimeMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="cfbbb86d-28f3-4f41-bd9d-2a8347fee999" RuleParameters="Order=1;PropertyName=Reference;Value=IfcIdentifier;" Order="0" />
+						<DocTemplateItem UniqueId="06d30c58-3a25-4148-acf6-4486a4558ed9" RuleParameters="Order=6;PropertyName=NominalAirFlowRate;Value=IfcVolumetricFlowRateMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="471aa9e8-2c61-4e50-b168-6bfc6b8915f4" RuleParameters="Order=7;PropertyName=NominalTotalPressure;Value=IfcPressureMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="b041fbf3-e7cb-4fb9-9af5-b91ea122f6a8" RuleParameters="Order=8;PropertyName=NominalStaticPressure;Value=IfcPressureMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="934d0a05-a82f-49cc-af33-e890f575b3da" RuleParameters="Order=9;PropertyName=NominalRotationSpeed;Value=IfcRotationalFrequencyMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="d7d52dd7-6b9b-46cf-ad33-688ca575b769" RuleParameters="Order=10;PropertyName=NominalPowerRate;Value=IfcPowerMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="33f6b69c-a7e3-4be3-9b9d-9cb505b0dbd1" RuleParameters="Order=11;PropertyName=OperationalCriteria;Value=IfcTimeMeasure;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Properties" UniqueId="a473e4ea-85ce-4755-86b2-d00a4a00457c">
+				<DocTemplateUsage Name="Properties" UniqueId="ba4c49e1-0eae-4514-9b44-272c369ef001">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
 					<Items>
-						<DocTemplateItem UniqueId="5b6b0c73-25e3-4282-9ac4-fc77bbbfa2de" RuleParameters="Name=Status;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="c9b7488d-12f8-4866-8231-b96a3df9a340" RuleParameters="Name=MotorDriveType;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="f6999c07-38f9-49f7-a25c-d04bd50c647b" RuleParameters="Name=CapacityControlType;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="61a044a5-8f72-48fc-aca1-c2e82a712999" RuleParameters="Order=2;PropertyName=Status;Value=IfcLabel;Reference=PEnum_ElementStatus;" Order="0" />
+						<DocTemplateItem UniqueId="505a994b-0e23-4e7c-bd59-5e8191303ed5" RuleParameters="Order=3;PropertyName=MotorDriveType;Value=IfcLabel;Reference=PEnum_FanMotorConnectionType;" Order="0" />
+						<DocTemplateItem UniqueId="92ae7dbb-4de6-4e4f-a015-0e3ff8541784" RuleParameters="Order=4;PropertyName=CapacityControlType;Value=IfcLabel;Reference=PEnum_FanCapacityControlType;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Properties" UniqueId="0e1f692b-02f5-4957-adfd-661513f0972d">
+				<DocTemplateUsage Name="Properties" UniqueId="aa2826df-f5d5-4e8e-9147-033b3f33068b">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Bounded_Value_0zPwBITXr4sQ2Ujkn_bOo" />
 					<Items>
-						<DocTemplateItem UniqueId="22d747dd-b357-4235-888e-acf66c9f3965" RuleParameters="Name=OperationTemperatureRange;Value=IfcThermodynamicTemperatureMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="4c913426-e725-4f2d-8e21-388b56328b50" RuleParameters="Order=5;PropertyName=OperationTemperatureRange;SetValue=IfcThermodynamicTemperatureMeasure;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Properties" UniqueId="8b883a24-99fc-45e6-ba1a-037060578c1c">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Table_Value_0roKUmQhnB4ux7QMxo11SX" />
+					<Items>
+						<DocTemplateItem UniqueId="c6dcc770-fbd0-472c-b65f-8216030dadf1" RuleParameters="Order=12;PropertyName=PressureCurve;Value=IfcVolumetricFlowRateMeasure;Reference=IfcPressureMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="1449edcf-7dcc-40a4-bce6-120cad4cb50b" RuleParameters="Order=13;PropertyName=EfficiencyCurve;Value=IfcVolumetricFlowRateMeasure;Reference=IfcNormalisedRatioMeasure;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>

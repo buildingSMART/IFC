@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcToroidalSurface" UniqueId="48f9b867-ec04-4a55-9138-f52b74f1b60e" DiagramNumber="8" BaseDefinition="IfcElementarySurface" EntityFlags="32">
+	<DiagramRectangle xsi:type="DocRectangle" X="11605.333984375" Y="1199.99987792969" Width="400" Height="100" />
+	<Attributes>
+		<DocAttribute Name="MajorRadius" UniqueId="6d516f41-e0c1-4436-9ba8-bdc235df5f75" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The major radius of the torus.</Documentation>
+			<DiagramLine>
+				<DocPoint X="11993.333984375" Y="1299.99987792969" />
+				<DocPoint X="11993.333984375" Y="1299.99987792969" />
+				<DocPoint X="11993.333984375" Y="1803.99987792969" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="11993.333984375" Y="1783.99987792969" Width="0" Height="0" />
+		</DocAttribute>
+		<DocAttribute Name="MinorRadius" UniqueId="996fe0f6-341c-4dda-9436-f345cfac480f" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The minor radius of the torus.</Documentation>
+			<DiagramLine>
+				<DocPoint X="11737.3330078125" Y="1299.99987792969" />
+				<DocPoint X="11737.3330078125" Y="1299.99987792969" />
+				<DocPoint X="11737.3330078125" Y="1658.66650390625" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="11737.3330078125" Y="1638.66650390625" Width="0" Height="0" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="MajorLargerMinor" UniqueId="10986000-0edb-4855-995d-00f5812c1e18">
+			<Documentation>The attribute value of the MinorRadius shall be smaller then the value of the MajorRadius</Documentation>
+			<Expression>MinorRadius &lt; MajorRadius</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

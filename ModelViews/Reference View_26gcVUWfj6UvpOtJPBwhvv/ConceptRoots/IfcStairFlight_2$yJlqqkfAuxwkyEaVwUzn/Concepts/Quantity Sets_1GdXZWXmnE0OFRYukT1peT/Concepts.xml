@@ -2,8 +2,22 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Quantity Sets" UniqueId="509e18e0-870c-4e01-83db-8b8b9d073a1d">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
 	<Items>
-		<DocTemplateItem UniqueId="8d90ff01-aac5-482a-961b-51befa5e75a0" RuleParameters="Name=Qto_StairFlightBaseQuantities;" Order="0">
-			<Documentation>Base quantities depending on geometry as defined in this specification</Documentation>
+		<DocTemplateItem UniqueId="af173da1-a349-416e-8fb7-5f50e2279c0e" RuleParameters="QsetName=Qto_StairFlightBaseQuantities;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Quantities" UniqueId="d17b4374-ad51-4bed-910e-3af0b53e7433">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Length_Quantity_3TXdZXum1FS9rZvJdRIz4S" />
+					<Items>
+						<DocTemplateItem UniqueId="35d62b9e-0d2e-4c64-a4e2-7e363fd40592" RuleParameters="Order=1;QuantityName=Length;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Quantities" UniqueId="62365dd7-f7e8-4256-b21d-fab45f4be38e">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Volume_Quantity_1aaQEmj_b1Ae8clDaSAmiE" />
+					<Items>
+						<DocTemplateItem UniqueId="273e6b13-70eb-45d6-936b-9612674261a8" RuleParameters="Order=2;QuantityName=GrossVolume;" Order="0" />
+						<DocTemplateItem UniqueId="78c7ec9f-ced5-4549-a225-265fbcac8aef" RuleParameters="Order=3;QuantityName=NetVolume;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
 		</DocTemplateItem>
 	</Items>
 	<Exchanges>

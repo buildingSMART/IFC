@@ -26,13 +26,13 @@ More precisely: The _IfcPropertyEnumeratedValue_ defines a property, which value
     <tr>
      <td>BladeAction</td>
      <td>Opposed</td>
-     <td><em>IfcString</em></td>
+     <td><em>IfcLabel</em></td>
      <td>DamperBladeActionEnum</td>
     </tr>
     <tr>
      <td>BladeAction</td>
      <td>Parallel</td>
-     <td><em>IfcString</em></td>
+     <td><em>IfcLabel</em></td>
      <td>DamperBladeActionEnum</td>
     </tr>
    </table>

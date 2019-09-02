@@ -1,0 +1,1 @@
+Since there are no Boolean operations, either as _IfcBooleanResult_ or implicitly by _IfcRelVoidsElement_ the geometry of the _IfcOpeningElement_ shall not be used to subtract the opening from the 'Body' shape representation of the voided element.

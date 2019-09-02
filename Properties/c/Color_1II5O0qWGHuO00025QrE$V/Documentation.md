@@ -1,1 +1,0 @@
-Color of the urinal.

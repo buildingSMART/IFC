@@ -1,0 +1,1 @@
+The 'CoG', Center of Gravity, shape representation is used as a means to verify the correct import by comparing the CoG of the imported geometry with the explicily provided CoG created during export.

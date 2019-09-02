@@ -2,18 +2,24 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UniqueId="b4b37630-e000-403c-ab4a-00432e95fbfb">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 	<Items>
-		<DocTemplateItem UniqueId="94788b83-4102-41f4-8940-518133736fb3" RuleParameters="Name=Pset_UnitaryControlElementTypeCommon;" Order="0">
+		<DocTemplateItem UniqueId="bb031ee5-aaf3-4393-854c-94145ba3bc3b" RuleParameters="PsetName=Pset_UnitaryControlElementTypeCommon;" Order="0">
 			<Concepts>
-				<DocTemplateUsage Name="Properties" UniqueId="2fb4cc0f-5b18-4cc6-8481-88ec8deb0032">
+				<DocTemplateUsage Name="Properties" UniqueId="452f2e2d-9c6b-46a3-a78f-d8f00df3668f">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
 					<Items>
-						<DocTemplateItem UniqueId="4e73fa6c-3196-49b1-9a1c-061af81c7c5c" RuleParameters="Name=Reference;Value=IfcIdentifier;" Order="0" />
+						<DocTemplateItem UniqueId="e7976c70-a3c5-41c6-8b2f-80fdbb731783" RuleParameters="Order=1;PropertyName=Reference;Value=IfcIdentifier;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Properties" UniqueId="89e24aa1-a289-4dee-8526-06bbc0f202c1">
+				<DocTemplateUsage Name="Properties" UniqueId="50d8eda0-35f6-4446-843e-d20ec5c68d1d">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
 					<Items>
-						<DocTemplateItem UniqueId="75d4f4d9-f726-40f8-86ad-47de6d29ac18" RuleParameters="Name=Status;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="4f77bbfd-8de2-4688-97cc-936328d0b1b2" RuleParameters="Order=2;PropertyName=Status;Value=IfcLabel;Reference=PEnum_ElementStatus;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Properties" UniqueId="b4356c1d-f73a-4f86-8c2a-bf1b4f72f35f">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Table_Value_0roKUmQhnB4ux7QMxo11SX" />
+					<Items>
+						<DocTemplateItem UniqueId="be789a47-63a5-42ee-8320-2f109b4fbc87" RuleParameters="Order=3;PropertyName=Mode;Value=IfcIdentifier;Reference=IfcLabel;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Partial Templates" UniqueId="a322fdd7-cd28-4ea7-8797-f6cf124ab3d6">
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Partial Templates" UniqueId="2Z8ltNpIXEfuUNziyIIhFM">
 	<Templates>
-		<DocTemplateDefinition id="Layer_2Px3KhQ9BUQe1b3_Zs3Jn" Name="Layer" UniqueId="99ffb0d4-ada2-4b79-aa01-943fa3d834f1" Type="IfcPresentationLayerAssignment">
+		<DocTemplateDefinition id="Layer_2Px3KhQ9BUQe1b3_Zs3Jn" Name="Layer" UniqueId="2P$x3KhQ9BUQe1b3_Zs3Jn" Type="IfcPresentationLayerAssignment">
 			<Documentation>Presentation layers may be used to organize geometry into groups that may be shown or hidden. Such designation is only for viewing and editing purposes and does not imply any semantic meaning.</Documentation>
 			<Rules>
 				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name">
@@ -26,12 +26,17 @@
 				</DocModelRuleAttribute>
 			</Rules>
 		</DocTemplateDefinition>
-		<DocTemplateDefinition id="Values_28jAgf2IL4VB09ZLxV7LE" Name="Values" UniqueId="88b4aaa9-0925-447c-b009-fe357b7c754e" Type="IfcPropertySingleValue">
+		<DocTemplateDefinition id="Values_28jAgf2IL4VB09ZLxV7LE" Name="Values" UniqueId="28jAgf2IL4VB09$ZLxV7LE" Type="IfcSimpleProperty">
 			<Documentation>Properties may contain user-defined data, where data types are open-ended.</Documentation>
 			<Rules>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="NominalValue" Identification="Value">
+				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="PropertyName">
 					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcValue" />
+						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
+					</Rules>
+				</DocModelRuleAttribute>
+				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+					<Rules>
+						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
 					</Rules>
 				</DocModelRuleAttribute>
 			</Rules>
@@ -39,14 +44,60 @@
 				<DocTemplateDefinition xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
 				<DocTemplateDefinition xsi:nil="true" href="Bounded_Value_0zPwBITXr4sQ2Ujkn_bOo" />
 				<DocTemplateDefinition xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
+				<DocTemplateDefinition xsi:nil="true" href="List_Value_2E4BQ8aNbEEesoQhogfKj" />
+				<DocTemplateDefinition xsi:nil="true" href="Table_Value_0roKUmQhnB4ux7QMxo11SX" />
+				<DocTemplateDefinition Name="Reference Value Time Series" UniqueId="3Y2y4MY9j6pB6JCRFYDsgE" Type="IfcPropertyReferenceValue">
+					<Rules>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="PropertyName">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="PropertyReference" Identification="Value">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIrregularTimeSeries">
+									<Rules>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Values">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIrregularTimeSeriesValue">
+													<Rules>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ListValues" Identification="Reference">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcValue" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocTemplateDefinition>
 			</Templates>
 		</DocTemplateDefinition>
-		<DocTemplateDefinition Name="Quantities" UniqueId="6c03e465-c5dd-42ce-9412-bebacabd2f3b" Type="IfcPhysicalSimpleQuantity">
+		<DocTemplateDefinition Name="Quantities" UniqueId="1i0_HbnTr2pfGIlhhAlIyx" Type="IfcPhysicalSimpleQuantity">
+			<Rules>
+				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="QuantityName">
+					<Rules>
+						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+					</Rules>
+				</DocModelRuleAttribute>
+			</Rules>
 			<Templates>
-				<DocTemplateDefinition Name="Length Quantity" UniqueId="dd8678e1-e300-4f70-9d63-e539db4bd11c" Type="IfcQuantityLength" />
-				<DocTemplateDefinition Name="Area Quantity" UniqueId="65ac4747-6eff-437e-94e2-643fd4e3bf86" Type="IfcQuantityArea" />
-				<DocTemplateDefinition Name="Volume Quantity" UniqueId="6491a3b0-b7e9-412a-8226-bcd91c2b0b0e" Type="IfcQuantityVolume" />
-				<DocTemplateDefinition Name="Weight Quantity" UniqueId="e1016e56-3c89-4f42-9679-07e1db3c0afb" Type="IfcQuantityWeight" />
+				<DocTemplateDefinition xsi:nil="true" href="Length_Quantity_3TXdZXum1FS9rZvJdRIz4S" />
+				<DocTemplateDefinition xsi:nil="true" href="Area_Quantity_1bh4T7Rlz3VfJYP3Kux_6" />
+				<DocTemplateDefinition xsi:nil="true" href="Volume_Quantity_1aaQEmj_b1Ae8clDaSAmiE" />
+				<DocTemplateDefinition xsi:nil="true" href="Weight_Quantity_3X0MvMF8bFGfPv1_7RF0hx" />
+				<DocTemplateDefinition xsi:nil="true" href="Count_Quantity_2AhlyoLonFQgnauXKMOyln" />
+				<DocTemplateDefinition xsi:nil="true" href="Time_Quantity_13nC1G1DvB3vv3S8lPWW6e" />
 			</Templates>
 		</DocTemplateDefinition>
 		<DocTemplateDefinition id="Profile_Definition_3hCQazBmX9NwnoRtrW8wdR" Name="Profile Definition" UniqueId="eb31a93d-2f08-495f-ac72-6f7d6023a9db" Type="IfcProfileDef">
@@ -79,7 +130,48 @@
 						</DocModelRuleAttribute>
 					</Rules>
 					<Templates>
-						<DocTemplateDefinition id="PolyCurve_Profile_Definition_3Jk6ORvbj0Twt7ndGj8PQH" Name="PolyCurve Profile Definition" UniqueId="d3b8661b-e65b-4077-adc7-c6742d219691" Type="IfcArbitraryProfileDefWithVoids">
+						<DocTemplateDefinition id="PolyCurve_Profile_Definition_03SwXg4uT5lRy9kpp3a9BP" Name="PolyCurve Profile Definition" UniqueId="0373a86a-1387-45bd-bf09-bb3cc39092d9" Type="IfcArbitraryClosedProfileDef">
+							<Documentation>Poly curve profile definitons define the closed two-dimensional curve used for the cross-section by a indexed poly curve having straight and circular arc segments.
+
+&gt; NOTE&amp;nbsp; The indexed poly curve has been introduced to provide a less complex and less data set size consuming definition compared to the composite curve.</Documentation>
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ProfileType">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProfileTypeEnum" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ProfileName">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="OuterCurve">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIndexedPolyCurve">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Points">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCartesianPointList2D" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Segments">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLineIndex" />
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcArcIndex" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="SelfIntersect">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcBoolean" />
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition id="PolyCurve_with_Voids_Profile_Definition_3Jk6ORvbj0Twt7ndGj8PQH" Name="PolyCurve with Voids Profile Definition" UniqueId="d3b8661b-e65b-4077-adc7-c6742d219691" Type="IfcArbitraryProfileDefWithVoids">
 							<Documentation>Poly curve profile definitons define the closed two-dimensional curve used for the cross-section by a indexed poly curve having straight and circular arc segments.
 
 &gt; NOTE&amp;nbsp; The indexed poly curve has been introduced to provide a less complex and less data set size consuming definition compared to the composite curve.</Documentation>
@@ -247,7 +339,7 @@
 								</DocModelRuleAttribute>
 							</Rules>
 						</DocTemplateDefinition>
-						<DocTemplateDefinition id="Centerline_Profile_Definition_1WQRhhMmPFgONx0_4YY8aX" Name="Centerline Profile Definition" UniqueId="6069baeb-5b06-4fa9-85fb-03e122888921" Type="IfcCenterLineProfileDef">
+						<DocTemplateDefinition Name="Centerline Profile Definition" UniqueId="6069baeb-5b06-4fa9-85fb-03e122888921" Type="IfcCenterLineProfileDef">
 							<Rules>
 								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ProfileType">
 									<Rules>
@@ -1222,7 +1314,44 @@
 				</DocTemplateDefinition>
 			</Templates>
 		</DocTemplateDefinition>
-		<DocTemplateDefinition xsi:nil="true" href="Profile_Properties_0qu4qkDf6S9WvyaisBMxF" />
+		<DocTemplateDefinition Name="Profile Properties" UniqueId="34ff8134-b8da-4670-9839-f24b362d6ecf" Type="IfcProfileDef">
+			<Documentation>Profile properties may capture standard or user-defined parameters.</Documentation>
+			<Rules>
+				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ProfileType">
+					<Rules>
+						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProfileTypeEnum" />
+					</Rules>
+				</DocModelRuleAttribute>
+				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ProfileName">
+					<Rules>
+						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+					</Rules>
+				</DocModelRuleAttribute>
+				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasProperties">
+					<Rules>
+						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProfileProperties">
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Properties">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProperty" />
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocModelRuleEntity>
+					</Rules>
+				</DocModelRuleAttribute>
+			</Rules>
+		</DocTemplateDefinition>
 		<DocTemplateDefinition Name="Geometry" UniqueId="f77f739d-c1f1-4bc5-95c3-b7585e0a9f54" Type="IfcGeometricRepresentationItem">
 			<Documentation>Geometric items are used to describe shape representations of products.</Documentation>
 			<Templates>
@@ -1248,7 +1377,105 @@
 													<Rules>
 														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcSurfaceStyle">
 															<References>
-																<DocTemplateDefinition xsi:nil="true" href="Surface_Color_Style_3gHpLYmULDnwrrpIILsus" />
+																<DocTemplateDefinition id="Surface_Color_Style_3gHpLYmULDnwrrpIILsus" Name="Surface Color Style" UniqueId="3gHpLYmULDnwrr$pIILsus" Type="IfcSurfaceStyle">
+																	<Rules>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Styles">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcSurfaceStyleShading">
+																					<Rules>
+																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="SurfaceColour">
+																							<Rules>
+																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcColourRgb" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																					</Rules>
+																				</DocModelRuleEntity>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcSurfaceStyleRendering">
+																					<Rules>
+																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="SurfaceColour">
+																							<Rules>
+																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcColourRgb">
+																									<Rules>
+																										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name">
+																											<Rules>
+																												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																											</Rules>
+																										</DocModelRuleAttribute>
+																										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Red">
+																											<Rules>
+																												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcNormalisedRatioMeasure" />
+																											</Rules>
+																										</DocModelRuleAttribute>
+																										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Green">
+																											<Rules>
+																												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcNormalisedRatioMeasure" />
+																											</Rules>
+																										</DocModelRuleAttribute>
+																										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Blue">
+																											<Rules>
+																												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcNormalisedRatioMeasure" />
+																											</Rules>
+																										</DocModelRuleAttribute>
+																									</Rules>
+																								</DocModelRuleEntity>
+																							</Rules>
+																						</DocModelRuleAttribute>
+																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Transparency">
+																							<Rules>
+																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcNormalisedRatioMeasure" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="DiffuseColour">
+																							<Rules>
+																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcColourOrFactor" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="TransmissionColour">
+																							<Rules>
+																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcColourOrFactor" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="DiffuseTransmissionColour">
+																							<Rules>
+																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcColourOrFactor" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ReflectionColour">
+																							<Rules>
+																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcColourOrFactor" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="SpecularColour">
+																							<Rules>
+																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcColourOrFactor" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="SpecularHighlight">
+																							<Rules>
+																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcSpecularExponent" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ReflectanceMethod">
+																							<Rules>
+																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcReflectanceMethodEnum" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																					</Rules>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Side">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcSurfaceSide" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocTemplateDefinition>
 															</References>
 														</DocModelRuleEntity>
 													</Rules>
@@ -1360,15 +1587,14 @@
 												</DocModelRuleAttribute>
 												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="SweptArea" Identification="Profile">
 													<Rules>
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcArbitraryClosedProfileDef" />
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcArbitraryProfileDefWithVoids">
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcArbitraryClosedProfileDef">
 															<References>
-																<DocTemplateDefinition xsi:nil="true" href="PolyCurve_Profile_Definition_3Jk6ORvbj0Twt7ndGj8PQH" />
+																<DocTemplateDefinition xsi:nil="true" href="PolyCurve_Profile_Definition_03SwXg4uT5lRy9kpp3a9BP" />
 															</References>
 														</DocModelRuleEntity>
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCenterLineProfileDef">
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcArbitraryProfileDefWithVoids">
 															<References>
-																<DocTemplateDefinition xsi:nil="true" href="Centerline_Profile_Definition_1WQRhhMmPFgONx0_4YY8aX" />
+																<DocTemplateDefinition xsi:nil="true" href="PolyCurve_with_Voids_Profile_Definition_3Jk6ORvbj0Twt7ndGj8PQH" />
 															</References>
 														</DocModelRuleEntity>
 														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProfileDef" />
@@ -1761,7 +1987,7 @@
 													<Rules>
 														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProfileDef">
 															<References>
-																<DocTemplateDefinition xsi:nil="true" href="PolyCurve_Profile_Definition_3Jk6ORvbj0Twt7ndGj8PQH" />
+																<DocTemplateDefinition xsi:nil="true" href="PolyCurve_with_Voids_Profile_Definition_3Jk6ORvbj0Twt7ndGj8PQH" />
 															</References>
 														</DocModelRuleEntity>
 													</Rules>
@@ -2039,15 +2265,9 @@
 												</DocModelRuleAttribute>
 												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="SweptArea" Identification="Profile">
 													<Rules>
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcArbitraryClosedProfileDef" />
 														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcArbitraryProfileDefWithVoids">
 															<References>
-																<DocTemplateDefinition xsi:nil="true" href="PolyCurve_Profile_Definition_3Jk6ORvbj0Twt7ndGj8PQH" />
-															</References>
-														</DocModelRuleEntity>
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCenterLineProfileDef">
-															<References>
-																<DocTemplateDefinition xsi:nil="true" href="Centerline_Profile_Definition_1WQRhhMmPFgONx0_4YY8aX" />
+																<DocTemplateDefinition xsi:nil="true" href="PolyCurve_with_Voids_Profile_Definition_3Jk6ORvbj0Twt7ndGj8PQH" />
 															</References>
 														</DocModelRuleEntity>
 														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProfileDef" />
@@ -2615,7 +2835,7 @@
 													<Rules>
 														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProfileDef">
 															<References>
-																<DocTemplateDefinition xsi:nil="true" href="PolyCurve_Profile_Definition_3Jk6ORvbj0Twt7ndGj8PQH" />
+																<DocTemplateDefinition xsi:nil="true" href="PolyCurve_with_Voids_Profile_Definition_3Jk6ORvbj0Twt7ndGj8PQH" />
 															</References>
 														</DocModelRuleEntity>
 													</Rules>
@@ -2737,7 +2957,7 @@
 													<Rules>
 														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProfileDef">
 															<References>
-																<DocTemplateDefinition xsi:nil="true" href="PolyCurve_Profile_Definition_3Jk6ORvbj0Twt7ndGj8PQH" />
+																<DocTemplateDefinition xsi:nil="true" href="PolyCurve_with_Voids_Profile_Definition_3Jk6ORvbj0Twt7ndGj8PQH" />
 															</References>
 														</DocModelRuleEntity>
 													</Rules>
@@ -2909,13 +3129,321 @@
 								</DocTemplateDefinition>
 							</Templates>
 						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Faceted_Brep_Geometry_2xLQILa992CA6_mDWrzHI" Name="Faceted Brep Geometry" UniqueId="bb55a495-9092-4230-afc6-fb0360d7d452" Type="IfcFacetedBrep">
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Outer">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcClosedShell">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="CfsFaces">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcFaceSurface">
+															<Rules>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Bounds">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcFaceBound">
+																			<Rules>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Bound">
+																					<Rules>
+																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPolyLoop">
+																							<Rules>
+																								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Polygon">
+																									<Rules>
+																										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCartesianPoint" />
+																									</Rules>
+																								</DocModelRuleAttribute>
+																							</Rules>
+																						</DocModelRuleEntity>
+																					</Rules>
+																				</DocModelRuleAttribute>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Orientation">
+																					<Rules>
+																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcBoolean" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																			</Rules>
+																		</DocModelRuleEntity>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcFaceOuterBound">
+																			<Rules>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Bound">
+																					<Rules>
+																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPolyLoop">
+																							<Rules>
+																								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Polygon">
+																									<Rules>
+																										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCartesianPoint" />
+																									</Rules>
+																								</DocModelRuleAttribute>
+																							</Rules>
+																						</DocModelRuleEntity>
+																					</Rules>
+																				</DocModelRuleAttribute>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Orientation">
+																					<Rules>
+																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcBoolean" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Advanced_Brep_Geometry_0xQGJDM59DAREUPBCcfqsm" Name="Advanced Brep Geometry" UniqueId="3b6904cd-5852-4d29-b39e-64b326a74db0" Type="IfcAdvancedBrep">
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Outer">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcClosedShell">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="CfsFaces">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAdvancedFace">
+															<Rules>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Bounds">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcFaceOuterBound">
+																			<Rules>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Orientation">
+																					<Rules>
+																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcBoolean" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Bound">
+																					<Rules>
+																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcEdgeLoop">
+																							<Rules>
+																								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="EdgeList">
+																									<Rules>
+																										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcOrientedEdge">
+																											<Rules>
+																												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="EdgeElement">
+																													<Rules>
+																														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcEdgeCurve">
+																															<Rules>
+																																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="EdgeStart">
+																																	<Rules>
+																																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcVertexPoint" />
+																																	</Rules>
+																																</DocModelRuleAttribute>
+																																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="EdgeEnd">
+																																	<Rules>
+																																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcVertexPoint" />
+																																	</Rules>
+																																</DocModelRuleAttribute>
+																																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="EdgeGeometry">
+																																	<Rules>
+																																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRationalBSplineCurveWithKnots">
+																																			<Rules>
+																																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Degree">
+																																					<Rules>
+																																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcInteger" />
+																																					</Rules>
+																																				</DocModelRuleAttribute>
+																																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ControlPointsList">
+																																					<Rules>
+																																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCartesianPoint" />
+																																					</Rules>
+																																				</DocModelRuleAttribute>
+																																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="CurveForm">
+																																					<Rules>
+																																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcBSplineCurveForm" />
+																																					</Rules>
+																																				</DocModelRuleAttribute>
+																																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ClosedCurve">
+																																					<Rules>
+																																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLogical" />
+																																					</Rules>
+																																				</DocModelRuleAttribute>
+																																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="SelfIntersect">
+																																					<Rules>
+																																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLogical" />
+																																					</Rules>
+																																				</DocModelRuleAttribute>
+																																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="KnotMultiplicities">
+																																					<Rules>
+																																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcInteger" />
+																																					</Rules>
+																																				</DocModelRuleAttribute>
+																																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Knots">
+																																					<Rules>
+																																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcParameterValue" />
+																																					</Rules>
+																																				</DocModelRuleAttribute>
+																																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="KnotSpec">
+																																					<Rules>
+																																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcKnotType" />
+																																					</Rules>
+																																				</DocModelRuleAttribute>
+																																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="WeightsData">
+																																					<Rules>
+																																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcReal" />
+																																					</Rules>
+																																				</DocModelRuleAttribute>
+																																			</Rules>
+																																		</DocModelRuleEntity>
+																																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPolyline">
+																																			<Rules>
+																																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Points">
+																																					<Rules>
+																																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCartesianPoint" />
+																																					</Rules>
+																																				</DocModelRuleAttribute>
+																																			</Rules>
+																																		</DocModelRuleEntity>
+																																	</Rules>
+																																</DocModelRuleAttribute>
+																																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="SameSense">
+																																	<Rules>
+																																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcBoolean" />
+																																	</Rules>
+																																</DocModelRuleAttribute>
+																															</Rules>
+																														</DocModelRuleEntity>
+																													</Rules>
+																												</DocModelRuleAttribute>
+																											</Rules>
+																										</DocModelRuleEntity>
+																									</Rules>
+																								</DocModelRuleAttribute>
+																							</Rules>
+																						</DocModelRuleEntity>
+																					</Rules>
+																				</DocModelRuleAttribute>
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="FaceSurface">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRationalBSplineSurfaceWithKnots">
+																			<Rules>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="UDegree">
+																					<Rules>
+																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcInteger" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="VDegree">
+																					<Rules>
+																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcInteger" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ControlPointsList">
+																					<Rules>
+																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCartesianPoint" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="UClosed">
+																					<Rules>
+																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLogical" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="VClosed">
+																					<Rules>
+																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLogical" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="UMultiplicities">
+																					<Rules>
+																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcInteger" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="VMultiplicities">
+																					<Rules>
+																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcInteger" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="UKnots">
+																					<Rules>
+																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcParameterValue" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="VKnots">
+																					<Rules>
+																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcParameterValue" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="KnotSpec">
+																					<Rules>
+																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcKnotType" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="WeightsData">
+																					<Rules>
+																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcReal" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																			</Rules>
+																		</DocModelRuleEntity>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCylindricalSurface">
+																			<Rules>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Position">
+																					<Rules>
+																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAxis2Placement3D" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Radius">
+																					<Rules>
+																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveLengthMeasure" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																			</Rules>
+																		</DocModelRuleEntity>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcSphericalSurface" />
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcToroidalSurface">
+																			<Rules>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Position">
+																					<Rules>
+																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAxis2Placement3D" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="MajorRadius">
+																					<Rules>
+																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveLengthMeasure" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="MinorRadius">
+																					<Rules>
+																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveLengthMeasure" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																			</Rules>
+																		</DocModelRuleEntity>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPlane">
+																			<Rules>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Position">
+																					<Rules>
+																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAxis2Placement3D" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
 					</Templates>
 				</DocTemplateDefinition>
 				<DocTemplateDefinition Name="Surface Model Geometry" UniqueId="66059531-56c6-4010-9065-c8cbd379767b" Type="IfcGeometricRepresentationItem">
 					<Templates>
 						<DocTemplateDefinition Name="Tessellated Geometry" UniqueId="a46de0c5-20f2-4f88-b037-5fb255182827" Type="IfcTessellatedFaceSet">
 							<Templates>
-								<DocTemplateDefinition Name="Triangulated Geometry" UniqueId="677bd4ce-e38b-4581-b40d-c9eaa2416971" Type="IfcTriangulatedFaceSet">
+								<DocTemplateDefinition id="Triangulated_Geometry_1dUzJEuuj5WRGDoUgYGMbn" Name="Triangulated Geometry" UniqueId="677bd4ce-e38b-4581-b40d-c9eaa2416971" Type="IfcTriangulatedFaceSet">
 									<Rules>
 										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Coordinates">
 											<Rules>
@@ -2945,7 +3473,7 @@
 												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveInteger" />
 											</Rules>
 										</DocModelRuleAttribute>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="NormalIndex">
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="PnIndex">
 											<Rules>
 												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveInteger" />
 											</Rules>
@@ -2970,6 +3498,11 @@
 														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ColourIndex">
 															<Rules>
 																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveInteger" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Opacity">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcNormalisedRatioMeasure" />
 															</Rules>
 														</DocModelRuleAttribute>
 													</Rules>
@@ -3008,11 +3541,6 @@
 														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveInteger" />
 													</Rules>
 												</DocModelRuleAttribute>
-												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="NormalIndex">
-													<Rules>
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveInteger" />
-													</Rules>
-												</DocModelRuleAttribute>
 												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasColours">
 													<Rules>
 														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIndexedColourMap">
@@ -3035,6 +3563,12 @@
 																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveInteger" />
 																	</Rules>
 																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Opacity">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcNormalisedRatioMeasure" />
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcNormalisedRatioMeasure" />
+																	</Rules>
+																</DocModelRuleAttribute>
 															</Rules>
 														</DocModelRuleEntity>
 													</Rules>
@@ -3049,7 +3583,91 @@
 																			<Rules>
 																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcImageTexture">
 																					<References>
-																						<DocTemplateDefinition xsi:nil="true" href="Image_Texture_0PLqwkKhv3vv4aUQb558RB" />
+																						<DocTemplateDefinition id="Image_Texture_0PLqwkKhv3vv4aUQb558RB" Name="Image Texture" UniqueId="0PLqwkKhv3vv4aUQb558RB" Type="IfcImageTexture">
+																							<Documentation>Image textures are based on external files in common image formats such as PNG or JPEG. Such files may be located on servers according to absolute URLs, on the same server as the IFC file according to relative URLs, within the same local directory according to relative file path, within an IFC-ZIP file according to relative file path, or within an arbitrary directory according to absolute file path.
+
+Absolute URLs are recommended for textures published at a location deemed to be permanent (independent of the building model data), while relative URLs are recommended for all other sharing scenarios. Local file paths should be avoided.
+
+Scaling is supported to correlate the size of a texture with its physical dimensions, and enables usage of textures on parametric geometry such that texture coordinates need not be defined.</Documentation>
+																							<Rules>
+																								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Mode">
+																									<Rules>
+																										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
+																									</Rules>
+																								</DocModelRuleAttribute>
+																								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="TextureTransform">
+																									<Rules>
+																										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCartesianTransformationOperator2D">
+																											<Rules>
+																												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Axis1">
+																													<Rules>
+																														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDirection" />
+																													</Rules>
+																												</DocModelRuleAttribute>
+																												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Axis2">
+																													<Rules>
+																														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDirection" />
+																													</Rules>
+																												</DocModelRuleAttribute>
+																												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="LocalOrigin">
+																													<Rules>
+																														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCartesianPoint">
+																															<Rules>
+																																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Coordinates">
+																																	<Rules>
+																																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLengthMeasure" />
+																																	</Rules>
+																																</DocModelRuleAttribute>
+																															</Rules>
+																														</DocModelRuleEntity>
+																													</Rules>
+																												</DocModelRuleAttribute>
+																												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Scale" />
+																											</Rules>
+																										</DocModelRuleEntity>
+																										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCartesianTransformationOperator2DnonUniform">
+																											<Rules>
+																												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Axis1">
+																													<Rules>
+																														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDirection" />
+																													</Rules>
+																												</DocModelRuleAttribute>
+																												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Axis2">
+																													<Rules>
+																														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDirection" />
+																													</Rules>
+																												</DocModelRuleAttribute>
+																												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="LocalOrigin">
+																													<Rules>
+																														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCartesianPoint">
+																															<Rules>
+																																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Coordinates">
+																																	<Rules>
+																																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLengthMeasure" />
+																																	</Rules>
+																																</DocModelRuleAttribute>
+																															</Rules>
+																														</DocModelRuleEntity>
+																													</Rules>
+																												</DocModelRuleAttribute>
+																												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Scale" />
+																												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Scale2" />
+																											</Rules>
+																										</DocModelRuleEntity>
+																									</Rules>
+																								</DocModelRuleAttribute>
+																								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Parameter">
+																									<Rules>
+																										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
+																									</Rules>
+																								</DocModelRuleAttribute>
+																								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="URLReference">
+																									<Rules>
+																										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcURIReference" />
+																									</Rules>
+																								</DocModelRuleAttribute>
+																							</Rules>
+																						</DocTemplateDefinition>
 																					</References>
 																				</DocModelRuleEntity>
 																			</Rules>
@@ -3070,13 +3688,103 @@
 														</DocModelRuleEntity>
 													</Rules>
 												</DocModelRuleAttribute>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="PnIndex">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveInteger" />
+													</Rules>
+												</DocModelRuleAttribute>
 											</Rules>
 										</DocTemplateDefinition>
 									</Templates>
 								</DocTemplateDefinition>
+								<DocTemplateDefinition id="Polygonal_Geometry_1omBCMQqX7ZP7wRajQU1i7" Name="Polygonal Geometry" UniqueId="72c0b316-6b48-478d-91fa-6e4b5a781b07" Type="IfcPolygonalFaceSet">
+									<Rules>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Coordinates">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCartesianPointList3D">
+													<Rules>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="CoordList">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLengthMeasure" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Closed">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcBoolean" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Faces">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIndexedPolygonalFace">
+													<Rules>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="CoordIndex">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveInteger" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIndexedPolygonalFaceWithVoids">
+													<Rules>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="CoordIndex">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveInteger" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="InnerCoordIndices">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveInteger" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="PnIndex">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveInteger" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasColours">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIndexedColourMap">
+													<Rules>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Opacity">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcNormalisedRatioMeasure" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Colours">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcColourRgbList">
+																	<Rules>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ColourList">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcNormalisedRatioMeasure" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ColourIndex">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveInteger" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocTemplateDefinition>
 							</Templates>
 						</DocTemplateDefinition>
-						<DocTemplateDefinition id="ShellBased_Surface_Model_3ha798g190NPPzV4rZGMRI" Name="ShellBased Surface Model" UniqueId="eb907248-a812-405d-967d-7c4d634166d2" Type="IfcShellBasedSurfaceModel">
+						<DocTemplateDefinition Name="ShellBased Surface Model" UniqueId="eb907248-a812-405d-967d-7c4d634166d2" Type="IfcShellBasedSurfaceModel">
 							<Rules>
 								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="SbsmBoundary">
 									<Rules>
@@ -3146,7 +3854,7 @@
 								</DocModelRuleAttribute>
 							</Rules>
 						</DocTemplateDefinition>
-						<DocTemplateDefinition id="FaceBased_Surface_Model_2zcE1zjff6QBNYAhKQaQpc" Name="FaceBased Surface Model" UniqueId="bd98e07d-b69a-4668-b5e2-2ab51a91ace6" Type="IfcFaceBasedSurfaceModel">
+						<DocTemplateDefinition Name="FaceBased Surface Model" UniqueId="bd98e07d-b69a-4668-b5e2-2ab51a91ace6" Type="IfcFaceBasedSurfaceModel">
 							<Rules>
 								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="FbsmFaces">
 									<Rules>
@@ -3233,7 +3941,61 @@
 				</DocModelRuleAttribute>
 			</Rules>
 			<Templates>
-				<DocTemplateDefinition xsi:nil="true" href="Geometry_Curve_Style_3C4lU9PzX0TwHH51kePqJO" />
+				<DocTemplateDefinition id="Geometry_Curve_Style_3C4lU9PzX0TwHH51kePqJO" Name="Geometry Curve Style" UniqueId="cc12f789-67d8-4077-a451-141ba86744d8" Type="IfcCurveStyle">
+					<Rules>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="CurveFont">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCurveStyleFont">
+									<Rules>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="PatternList">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCurveStyleFontPattern">
+													<Rules>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="VisibleSegmentLength">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLengthMeasure" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="InvisibleSegmentLength">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveLengthMeasure" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="CurveWidth">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveRatioMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="CurveColour">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcColourRgb" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ModelOrDraughting">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcBoolean" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocTemplateDefinition>
 				<DocTemplateDefinition id="Geometry_Text_Style_0qt3Bw5rr3XvtbD02sZ0fi" Name="Geometry Text Style" UniqueId="34dc32fa-175d-4387-9de5-3400b68c0a6c" Type="IfcTextStyle">
 					<Rules>
 						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name">
@@ -3300,13 +4062,95 @@
 						</DocModelRuleAttribute>
 					</Rules>
 				</DocTemplateDefinition>
-				<DocTemplateDefinition xsi:nil="true" href="Geometry_Fill_Area_Style_1hQdPNcv98Bs6d7jlRUfS" />
+				<DocTemplateDefinition id="Geometry_Fill_Area_Style_1hQdPNcv98Bs6d7jlRUfS" Name="Geometry Fill Area Style" UniqueId="6bfda9d9-5e6e-4920-bd86-9c7b6f6dea5c" Type="IfcFillAreaStyle">
+					<Rules>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="FillStyles">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcColourRgb" />
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcFillAreaStyleHatching">
+									<Rules>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HatchLineAppearance">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCurveStyle" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="StartOfNextHatchLine">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcVector" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="PointOfReferenceHatchLine">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCartesianPoint" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="PatternStart">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCartesianPoint" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HatchLineAngle">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPlaneAngleMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ModelorDraughting">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcBoolean" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocTemplateDefinition>
 				<DocTemplateDefinition Name="Geometry Surface Style" UniqueId="33g0RysrP1tPipBeN0XfAo" Type="IfcPresentationStyle">
 					<Templates>
 						<DocTemplateDefinition xsi:nil="true" href="Surface_Color_Style_3gHpLYmULDnwrrpIILsus" />
-						<DocTemplateDefinition xsi:nil="true" href="Surface_Texture_Style_1Wsam8rX97_P7rXhHzb6IQ" />
+						<DocTemplateDefinition Name="Surface Texture Style" UniqueId="60da4c08-d612-47f9-91f5-86b47d94649a" Type="IfcSurfaceStyle">
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Styles">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcSurfaceStyleWithTextures">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Textures">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcImageTexture">
+															<References>
+																<DocTemplateDefinition xsi:nil="true" href="Image_Texture_0PLqwkKhv3vv4aUQb558RB" />
+															</References>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Side">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcSurfaceSide" />
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
 					</Templates>
 				</DocTemplateDefinition>
+			</Templates>
+		</DocTemplateDefinition>
+		<DocTemplateDefinition Name="Material Definition" UniqueId="d9ea8f0e-f629-46b2-adf5-941da7bcc8bc" Type="IfcMaterialDefinition">
+			<Templates>
+				<DocTemplateDefinition xsi:nil="true" href="Material_1PXhOQjvz4uAadztqSAJX" />
 			</Templates>
 		</DocTemplateDefinition>
 		<DocTemplateDefinition Name="Material Styles" UniqueId="f8524756-81f5-48b8-81cf-d0249af70f8a" Type="IfcMaterialDefinitionRepresentation">
@@ -3318,7 +4162,34 @@
 				</DocTemplateDefinition>
 			</Templates>
 		</DocTemplateDefinition>
-		<DocTemplateDefinition xsi:nil="true" href="Material_Properties_3p9fvGMRr6OA7VQEayYwCF" />
+		<DocTemplateDefinition Name="Material Properties" UniqueId="f3269e50-59bd-4660-a1df-68e93c8ba30f" Type="IfcMaterialDefinition">
+			<Documentation>Material properties may capture standard or user-defined parameters.</Documentation>
+			<Rules>
+				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasProperties">
+					<Rules>
+						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMaterialProperties">
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Properties">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProperty" />
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocModelRuleEntity>
+					</Rules>
+				</DocModelRuleAttribute>
+			</Rules>
+		</DocTemplateDefinition>
 		<DocTemplateDefinition Name="Texture" UniqueId="1I9L_uSJLFcvKsY8zeIVeA" Type="IfcPresentationItem">
 			<Documentation>Texturing allows for realistic visualization of geometry, such that elements may be more easily and efficiently recognized, and construction details may be specifically indicated.</Documentation>
 			<Templates>

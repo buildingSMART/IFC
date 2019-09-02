@@ -2,7 +2,22 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UniqueId="1ob_RGBwP7QQCSpVyvTD7B">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
 	<Items>
-		<DocTemplateItem UniqueId="84ffac38-6725-4b15-9239-a5879bcc7a4f" RuleInstanceID="IfcElementQuantity" RuleParameters="Name=Qto_SiteBaseQuantities;TemplateType=QTO_OCCURRENCEDRIVEN;" Order="0" />
+		<DocTemplateItem UniqueId="07278c56-84a4-4c45-a8c7-d3ccd44bbdc9" RuleParameters="QsetName=Qto_SiteBaseQuantities;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Quantities" UniqueId="90bb3f7c-661e-4306-9077-72fa4a390762">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Length_Quantity_3TXdZXum1FS9rZvJdRIz4S" />
+					<Items>
+						<DocTemplateItem UniqueId="bf53bb17-dd7a-4c4f-b4ad-f173c7226963" RuleParameters="Order=1;QuantityName=GrossPerimeter;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Quantities" UniqueId="34395528-cfac-4640-8162-2ee14806604f">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Area_Quantity_1bh4T7Rlz3VfJYP3Kux_6" />
+					<Items>
+						<DocTemplateItem UniqueId="d9d717dc-69af-4187-a696-7d1ec0fbeb6a" RuleParameters="Order=2;QuantityName=GrossArea;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+		</DocTemplateItem>
 	</Items>
 	<Exchanges>
 		<DocExchangeItem Applicability="export" Requirement="optional">

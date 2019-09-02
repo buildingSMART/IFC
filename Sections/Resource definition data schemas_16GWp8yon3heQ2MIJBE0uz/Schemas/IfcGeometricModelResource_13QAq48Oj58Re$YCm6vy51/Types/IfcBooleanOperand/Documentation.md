@@ -7,3 +7,6 @@ Select type including all geometric representation items which may participate i
 > NOTE&nbsp; Corresponding STEP type **boolean_operand** defined in ISO 10303-42.
 
 > HISTORY&nbsp; New type in IFC1.5.1.
+
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; The item _IfcTessellatedFaceSet_ has been added to the select.

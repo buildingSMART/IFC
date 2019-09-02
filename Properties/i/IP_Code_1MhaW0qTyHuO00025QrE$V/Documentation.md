@@ -1,1 +1,1 @@
-IEC 60529 Classification of degrees of protection provided by enclosures (IP Code).
+IP Code, the International Protection Marking, IEC 60529), classifies and rates the degree of protection provided against intrusion.

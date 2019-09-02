@@ -2,63 +2,69 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UniqueId="eeac1ff2-8ae6-4dd1-996b-9b9f7ce8fa31">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 	<Items>
-		<DocTemplateItem UniqueId="1d9a3ede-d999-44e2-a5c2-edf55de2fea3" RuleParameters="Name=Pset_AirTerminalOccurrence;" Order="0">
+		<DocTemplateItem UniqueId="7f2caa5f-fda4-43d3-b582-80fac87b8906" RuleParameters="PsetName=Pset_AirTerminalOccurrence;" Order="0">
 			<Concepts>
-				<DocTemplateUsage Name="Properties" UniqueId="cbd29645-7674-4319-918b-236638283dbf">
+				<DocTemplateUsage Name="Properties" UniqueId="4cb781f1-78ba-4356-bde6-c21c8e4c3bb8">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
 					<Items>
-						<DocTemplateItem UniqueId="027132e5-1264-4999-824e-0d6cd89e06a8" RuleParameters="Name=AirflowType;Value=PEnum_AirTerminalAirflowType;" Order="0" />
-						<DocTemplateItem UniqueId="fa4d5885-f2a0-4d37-a7a3-1ed63b54afe3" RuleParameters="Name=Location;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="db0609aa-3c1f-4677-bc66-7de9b0514409" RuleParameters="Order=1;PropertyName=AirflowType;Value=PEnum_AirTerminalAirflowType;Reference=PEnum_AirTerminalAirflowType;" Order="0" />
+						<DocTemplateItem UniqueId="44e0d304-5bbb-4f4a-9801-343ae3d1db43" RuleParameters="Order=3;PropertyName=Location;Value=IfcLabel;Reference=PEnum_AirTerminalLocation;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Properties" UniqueId="9276550e-da90-4bf1-bfe7-2c63731af615">
+				<DocTemplateUsage Name="Properties" UniqueId="d2822764-f287-45cc-b47a-b065c8188d94">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
 					<Items>
-						<DocTemplateItem UniqueId="f278d474-dadc-4050-bda3-2942589b70bb" RuleParameters="Name=AirFlowRate;Value=IfcVolumetricFlowRateMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="7a46e94f-a3da-45d4-86f9-d87c79e0be1b" RuleParameters="Order=2;PropertyName=AirFlowRate;Value=IfcVolumetricFlowRateMeasure;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>
 		</DocTemplateItem>
-		<DocTemplateItem UniqueId="fbc8e0bd-a2dc-436d-8c63-2d95738ab40a" RuleParameters="Name=Pset_AirTerminalTypeCommon;" Order="0">
+		<DocTemplateItem UniqueId="701aa291-664b-4de1-8534-6a836274b774" RuleParameters="PsetName=Pset_AirTerminalTypeCommon;" Order="0">
 			<Concepts>
-				<DocTemplateUsage Name="Properties" UniqueId="0b446c87-33b8-4feb-904d-60f82fbfe98e">
+				<DocTemplateUsage Name="Properties" UniqueId="bab9fe7e-e0e7-495b-9eb2-a11bf3bc4294">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
 					<Items>
-						<DocTemplateItem UniqueId="b9d32b0e-2df8-44bf-9ee4-6f9b3cf49f33" RuleParameters="Name=Reference;Value=IfcIdentifier;" Order="0" />
-						<DocTemplateItem UniqueId="35a00021-95f6-403f-9a16-381b042d9b7d" RuleParameters="Name=SlotWidth;Value=IfcPositiveLengthMeasure;" Order="0" />
-						<DocTemplateItem UniqueId="9f75f715-4538-4a02-9e25-ee759b2e8863" RuleParameters="Name=SlotLength;Value=IfcPositiveLengthMeasure;" Order="0" />
-						<DocTemplateItem UniqueId="30192119-d3e0-453b-beed-5cfe133eff50" RuleParameters="Name=NumberOfSlots;Value=IfcInteger;" Order="0" />
-						<DocTemplateItem UniqueId="72cf0079-4771-459f-a911-82171187ec74" RuleParameters="Name=ThrowLength;Value=IfcLengthMeasure;" Order="0" />
-						<DocTemplateItem UniqueId="62bd5292-e20d-46e2-8f5f-a78baf067fe5" RuleParameters="Name=AirDiffusionPerformanceIndex;Value=IfcReal;" Order="0" />
-						<DocTemplateItem UniqueId="d9c93be3-a85a-40f4-9bbf-d8a4192cbb66" RuleParameters="Name=FinishColor;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="771bcb27-6117-4549-80c7-965b61e05296" RuleParameters="Name=CoreSetHorizontal;Value=IfcPlaneAngleMeasure;" Order="0" />
-						<DocTemplateItem UniqueId="e0c6257f-2050-426e-84cb-c56aa549589c" RuleParameters="Name=CoreSetVertical;Value=IfcPlaneAngleMeasure;" Order="0" />
-						<DocTemplateItem UniqueId="4d85ebc7-1fcc-4e20-9045-b5a52b417c29" RuleParameters="Name=HasIntegralControl;Value=IfcBoolean;" Order="0" />
-						<DocTemplateItem UniqueId="b31006a3-5a2d-4e9f-bb8c-270e985fb185" RuleParameters="Name=HasSoundAttenuator;Value=IfcBoolean;" Order="0" />
-						<DocTemplateItem UniqueId="a69ed808-b126-4e12-814f-d0b09dda4733" RuleParameters="Name=HasThermalInsulation;Value=IfcBoolean;" Order="0" />
-						<DocTemplateItem UniqueId="2072543f-0114-4046-bafe-d21d24386c38" RuleParameters="Name=NeckArea;Value=IfcAreaMeasure;" Order="0" />
-						<DocTemplateItem UniqueId="3d33434b-0395-44ed-822f-db97804801f1" RuleParameters="Name=EffectiveArea;Value=IfcAreaMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="d5c13bc0-1a21-48ea-b986-a5de7f0ac00f" RuleParameters="Order=1;PropertyName=Reference;Value=IfcIdentifier;" Order="0" />
+						<DocTemplateItem UniqueId="b440a744-5dc9-47bd-ad8c-9a2831a6397c" RuleParameters="Order=5;PropertyName=SlotWidth;Value=IfcPositiveLengthMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="57c772d9-1e1c-4b38-a145-ef4e99fc073e" RuleParameters="Order=6;PropertyName=SlotLength;Value=IfcPositiveLengthMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="0bf6a3ba-d10f-4d6b-ad75-335f4c7cadc2" RuleParameters="Order=7;PropertyName=NumberOfSlots;Value=IfcInteger;" Order="0" />
+						<DocTemplateItem UniqueId="e0e2146b-e1c4-4de4-a0b6-63f4411308db" RuleParameters="Order=12;PropertyName=ThrowLength;Value=IfcLengthMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="20814036-66e7-4ab4-8988-851da089d761" RuleParameters="Order=13;PropertyName=AirDiffusionPerformanceIndex;Value=IfcReal;" Order="0" />
+						<DocTemplateItem UniqueId="4af043c2-fa56-4ac8-b757-64e3dfc51a50" RuleParameters="Order=15;PropertyName=FinishColor;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="e466f1f8-ceee-46d8-b269-2244f9185c82" RuleParameters="Order=18;PropertyName=CoreSetHorizontal;Value=IfcPlaneAngleMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="045dfb00-13c6-4bb3-8cd1-e1303d73d3a7" RuleParameters="Order=19;PropertyName=CoreSetVertical;Value=IfcPlaneAngleMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="a5319555-ff7a-4c8a-bb47-788b4cb0f1c9" RuleParameters="Order=20;PropertyName=HasIntegralControl;Value=IfcBoolean;" Order="0" />
+						<DocTemplateItem UniqueId="6361d6a7-6f3e-43f6-98d7-731cbd746a8d" RuleParameters="Order=22;PropertyName=HasSoundAttenuator;Value=IfcBoolean;" Order="0" />
+						<DocTemplateItem UniqueId="433efd1a-0449-44ab-99e6-19663613d22c" RuleParameters="Order=23;PropertyName=HasThermalInsulation;Value=IfcBoolean;" Order="0" />
+						<DocTemplateItem UniqueId="005ff3fc-f802-44b9-84e6-b439c1322736" RuleParameters="Order=24;PropertyName=NeckArea;Value=IfcAreaMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="ae0ee690-84fe-4bb9-ad9e-91919f910a84" RuleParameters="Order=25;PropertyName=EffectiveArea;Value=IfcAreaMeasure;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Properties" UniqueId="61cbdcbd-f6b5-43ea-a995-28bd38af8721">
+				<DocTemplateUsage Name="Properties" UniqueId="453f8614-6a30-4755-af3a-ca6c2dd86bee">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
 					<Items>
-						<DocTemplateItem UniqueId="56adae02-7efb-4ce7-9b00-b3c034be334a" RuleParameters="Name=Status;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="ace89600-f625-4a4a-915f-2af6982620ad" RuleParameters="Name=Shape;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="4aded4fc-d556-4cba-a3bb-899eb442b895" RuleParameters="Name=FaceType;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="28fce606-6f7e-455b-9270-0fd6fa6b6d83" RuleParameters="Name=FlowPattern;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="fc8600ed-5a66-4904-8bc3-f518e3e77741" RuleParameters="Name=DischargeDirection;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="42306f18-8f0f-415a-829b-8fb6efe0b878" RuleParameters="Name=FinishType;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="54b0dca1-cb54-4092-80fe-5a6aaadb97be" RuleParameters="Name=MountingType;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="d1294297-72a3-49c2-9f26-8bf7d6c3f971" RuleParameters="Name=CoreType;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="a8f5dcf9-d50d-423d-8406-546cc61e5109" RuleParameters="Name=FlowControlType;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="bc890434-b993-4131-9182-39343d720bcb" RuleParameters="Order=2;PropertyName=Status;Value=IfcLabel;Reference=PEnum_ElementStatus;" Order="0" />
+						<DocTemplateItem UniqueId="6f212ad8-5635-42bf-8700-1a1cb3b2944b" RuleParameters="Order=3;PropertyName=Shape;Value=IfcLabel;Reference=PEnum_AirTerminalShape;" Order="0" />
+						<DocTemplateItem UniqueId="3d5899a7-a64f-481d-9d8a-0a4fd563d925" RuleParameters="Order=4;PropertyName=FaceType;Value=IfcLabel;Reference=PEnum_AirTerminalFaceType;" Order="0" />
+						<DocTemplateItem UniqueId="8db10187-b060-4172-9b2d-47b34862e919" RuleParameters="Order=8;PropertyName=FlowPattern;Value=IfcLabel;Reference=PEnum_AirTerminalFlowPattern;" Order="0" />
+						<DocTemplateItem UniqueId="c9de23bf-b7f6-4da6-bffb-7cdfc68a6b54" RuleParameters="Order=11;PropertyName=DischargeDirection;Value=IfcLabel;Reference=PEnum_AirTerminalDischargeDirection;" Order="0" />
+						<DocTemplateItem UniqueId="f0717269-4c42-46ee-a5af-73f8980e8ad5" RuleParameters="Order=14;PropertyName=FinishType;Value=IfcLabel;Reference=PEnum_AirTerminalFinishType;" Order="0" />
+						<DocTemplateItem UniqueId="c9b14b64-2cb1-4d12-81cb-2c0789908793" RuleParameters="Order=16;PropertyName=MountingType;Value=IfcLabel;Reference=PEnum_AirTerminalMountingType;" Order="0" />
+						<DocTemplateItem UniqueId="8ba85c49-ae80-490d-a58a-5c74a56b13a2" RuleParameters="Order=17;PropertyName=CoreType;Value=IfcLabel;Reference=PEnum_AirTerminalCoreType;" Order="0" />
+						<DocTemplateItem UniqueId="c612b353-254f-4ef2-99e2-031673cb9724" RuleParameters="Order=21;PropertyName=FlowControlType;Value=IfcLabel;Reference=PEnum_AirTerminalFlowControlType;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Properties" UniqueId="1e11cb28-ff3d-4584-94d6-feeb749b0aff">
+				<DocTemplateUsage Name="Properties" UniqueId="f9005c01-de55-45b4-a17a-7885a9458495">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Bounded_Value_0zPwBITXr4sQ2Ujkn_bOo" />
 					<Items>
-						<DocTemplateItem UniqueId="2ef414bf-5d10-40c2-b002-e5cf42df7a2e" RuleParameters="Name=AirFlowrateRange;Value=IfcVolumetricFlowRateMeasure;" Order="0" />
-						<DocTemplateItem UniqueId="a31ccd42-871e-40a2-bdea-5347489510b1" RuleParameters="Name=TemperatureRange;Value=IfcThermodynamicTemperatureMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="ef055a34-a109-4270-aee7-6d813a53edd5" RuleParameters="Order=9;PropertyName=AirFlowrateRange;SetValue=IfcVolumetricFlowRateMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="e2831147-fa0e-4f1f-94cb-f7e9409bcb2d" RuleParameters="Order=10;PropertyName=TemperatureRange;SetValue=IfcThermodynamicTemperatureMeasure;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Properties" UniqueId="d61cc4ca-e9ef-4fd0-a5f4-bc9299b484c1">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Table_Value_0roKUmQhnB4ux7QMxo11SX" />
+					<Items>
+						<DocTemplateItem UniqueId="50505c0c-c783-41a0-a04f-a721fdb277d4" RuleParameters="Order=26;PropertyName=AirFlowrateVersusFlowControlElement;Value=IfcVolumetricFlowRateMeasure;Reference=IfcPositiveRatioMeasure;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>

@@ -2,26 +2,32 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UniqueId="17289c52-b6f0-47cf-8e14-c81df860b0ba">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 	<Items>
-		<DocTemplateItem UniqueId="25c62fc0-2d58-4e93-8607-783dcb6bcbd3" RuleParameters="Name=Pset_LampTypeCommon;" Order="0">
+		<DocTemplateItem UniqueId="8d81d841-ed04-4289-91a4-00fc11bfe4f6" RuleParameters="PsetName=Pset_LampTypeCommon;" Order="0">
 			<Concepts>
-				<DocTemplateUsage Name="Properties" UniqueId="7c8e1fcd-0cee-4490-abc4-546f99e0b6bf">
+				<DocTemplateUsage Name="Properties" UniqueId="5bfe1255-f0a1-4647-9813-0925c0e50b00">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
 					<Items>
-						<DocTemplateItem UniqueId="af74d268-0984-4a82-a1a9-be407dee3969" RuleParameters="Name=Reference;Value=IfcIdentifier;" Order="0" />
-						<DocTemplateItem UniqueId="63301a8c-cfa5-491b-a4f1-4c08d7da387d" RuleParameters="Name=ContributedLuminousFlux;Value=IfcLuminousFluxMeasure;" Order="0" />
-						<DocTemplateItem UniqueId="b523774e-ea32-48fc-a421-88f0acc08f69" RuleParameters="Name=LightEmitterNominalPower;Value=IfcPowerMeasure;" Order="0" />
-						<DocTemplateItem UniqueId="1970fded-941a-4a80-9b40-fb00b759eba3" RuleParameters="Name=LampMaintenanceFactor;Value=IfcReal;" Order="0" />
-						<DocTemplateItem UniqueId="82a0a331-05ff-4e39-83fd-9f18ea285544" RuleParameters="Name=ColorAppearance;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="3f34ae22-508f-4dcc-92e3-b6a95037dbbe" RuleParameters="Name=ColorTemperature;Value=IfcThermodynamicTemperatureMeasure;" Order="0" />
-						<DocTemplateItem UniqueId="b23edb0d-5d06-4779-99df-b5b5acd175d2" RuleParameters="Name=ColorRenderingIndex;Value=IfcInteger;" Order="0" />
+						<DocTemplateItem UniqueId="bc632d33-36fa-4b57-9e9b-3b7f946d9800" RuleParameters="Order=1;PropertyName=Reference;Value=IfcIdentifier;" Order="0" />
+						<DocTemplateItem UniqueId="95fb3f5a-acca-4684-994d-bd4e750d797f" RuleParameters="Order=3;PropertyName=ContributedLuminousFlux;Value=IfcLuminousFluxMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="eb4fbce7-69f2-4987-b0f2-a4dceff06036" RuleParameters="Order=4;PropertyName=LightEmitterNominalPower;Value=IfcPowerMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="344dab73-cf8c-4467-9242-7dbdedeebd1c" RuleParameters="Order=5;PropertyName=LampMaintenanceFactor;Value=IfcReal;" Order="0" />
+						<DocTemplateItem UniqueId="452ab416-17de-4f47-9afa-d2c3562e814a" RuleParameters="Order=8;PropertyName=ColorAppearance;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="2afb2ff4-1445-4e5c-99b8-3b8c1b7c2fd0" RuleParameters="Order=10;PropertyName=ColorTemperature;Value=IfcThermodynamicTemperatureMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="9eb45cc1-0654-4bf2-9a9d-f77723c038e0" RuleParameters="Order=11;PropertyName=ColorRenderingIndex;Value=IfcInteger;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Properties" UniqueId="a910ba4a-f459-48ea-a3fa-9ddde9214695">
+				<DocTemplateUsage Name="Properties" UniqueId="f792699e-bdc3-4bfc-b41e-76021216314e">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
 					<Items>
-						<DocTemplateItem UniqueId="70d4d996-7c2a-4270-b94a-6c67bf63217f" RuleParameters="Name=Status;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="cdfcd419-1708-434c-9316-02baaa9122c4" RuleParameters="Name=LampBallastType;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="d51c796d-9f73-401b-9036-5063fd9e099c" RuleParameters="Name=LampCompensationType;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="45b01848-fe1d-4c8b-96b3-04665ceaa470" RuleParameters="Order=2;PropertyName=Status;Value=IfcLabel;Reference=PEnum_ElementStatus;" Order="0" />
+						<DocTemplateItem UniqueId="25d087e0-a32e-4c77-b0df-ab07dcb95ebb" RuleParameters="Order=6;PropertyName=LampBallastType;Value=IfcLabel;Reference=PEnum_LampBallastType;" Order="0" />
+						<DocTemplateItem UniqueId="8bc87f34-0c52-4819-8064-b333d61eba73" RuleParameters="Order=7;PropertyName=LampCompensationType;Value=IfcLabel;Reference=PEnum_LampCompensationType;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Properties" UniqueId="0a94dae7-2f91-4026-b03b-b88d42efd241">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Table_Value_0roKUmQhnB4ux7QMxo11SX" />
+					<Items>
+						<DocTemplateItem UniqueId="e25e11dc-ab56-47de-93b6-946b780dabbf" RuleParameters="Order=9;PropertyName=Spectrum;Value=IfcNumericMeasure;Reference=IfcNumericMeasure;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>

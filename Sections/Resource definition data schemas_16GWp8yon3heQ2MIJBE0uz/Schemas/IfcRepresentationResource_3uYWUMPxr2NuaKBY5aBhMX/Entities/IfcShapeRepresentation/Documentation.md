@@ -39,12 +39,12 @@ Several representation identifiers for shape representation are included as pred
 <td align="left" valign="top">3D Surface representation, e.g. of an analytical surface, of an elementplane)</td>
 </tr>
 <tr>
-<td align="left" valign="top" width="210"><b>Body</b></td>
-<td align="left" valign="top">3D Body representation, e.g. as wireframe, surface, or solid model, of an element</td>
+<td align="left" valign="top" width="210"><b>Reference</b></td>
+<td align="left" valign="top">3D representation that is not part of the Body representation. This is used, e.g., for opening geometries, if there are to be excluded from an implicit Boolean operation.</td>
 </tr>
 <tr>
-<td align="left" valign="top" width="210"><b>Mesh</b></td>
-<td align="left" valign="top">3D Body representation, e.g. as tessellation, or other surface, or boundary representation, added in addition to the solid model (potentially involving Boolean operations) of an element</td>
+<td align="left" valign="top" width="210"><b>Body</b></td>
+<td align="left" valign="top">3D Body representation, e.g. as wireframe, surface, or solid model, of an element</td>
 </tr>
 <tr>
 <td align="left" valign="top" width="210"><b>Clearance</b></td>

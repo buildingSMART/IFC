@@ -2,24 +2,31 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UniqueId="bf86b335-b683-4a25-a57e-13185275754b">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 	<Items>
-		<DocTemplateItem UniqueId="677ab68d-c263-4adf-abc4-9af7c53efcc6" RuleParameters="Name=Pset_HumidifierTypeCommon;" Order="0">
+		<DocTemplateItem UniqueId="d41db5ad-0adb-4706-aa84-a8adc5174af2" RuleParameters="PsetName=Pset_HumidifierTypeCommon;" Order="0">
 			<Concepts>
-				<DocTemplateUsage Name="Properties" UniqueId="3a99ff72-b637-4190-9d3f-059b16150124">
+				<DocTemplateUsage Name="Properties" UniqueId="bd71d923-836d-47f5-9f8a-b5aa118190c7">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
 					<Items>
-						<DocTemplateItem UniqueId="3eb46677-ebb8-47f4-8101-76812026abe1" RuleParameters="Name=Reference;Value=IfcIdentifier;" Order="0" />
-						<DocTemplateItem UniqueId="4965c3ec-f466-4e93-bced-7f08dc51a8c7" RuleParameters="Name=Weight;Value=IfcMassMeasure;" Order="0" />
-						<DocTemplateItem UniqueId="96b713ae-a331-438b-b958-3efc0d5138dc" RuleParameters="Name=NominalMoistureGain;Value=IfcMassFlowRateMeasure;" Order="0" />
-						<DocTemplateItem UniqueId="81c71fc7-6c0c-4e1b-88b3-96cf6e369ec5" RuleParameters="Name=NominalAirFlowRate;Value=IfcVolumetricFlowRateMeasure;" Order="0" />
-						<DocTemplateItem UniqueId="0135bcfb-9aff-40cc-93cb-d5935c8bc94c" RuleParameters="Name=WaterRequirement;Value=IfcVolumetricFlowRateMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="4abc4733-980b-48c9-9d26-b4e349abff36" RuleParameters="Order=1;PropertyName=Reference;Value=IfcIdentifier;" Order="0" />
+						<DocTemplateItem UniqueId="e41d729a-422b-4070-a66c-baca4214d7e5" RuleParameters="Order=4;PropertyName=Weight;Value=IfcMassMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="f7555d55-c578-4ddd-ad27-af422366ec50" RuleParameters="Order=5;PropertyName=NominalMoistureGain;Value=IfcMassFlowRateMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="c3f5c02d-8eb0-4b51-8d18-2f7d1b9ae092" RuleParameters="Order=6;PropertyName=NominalAirFlowRate;Value=IfcVolumetricFlowRateMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="7f06f967-8bb9-4fcc-add3-5a428b97c47a" RuleParameters="Order=8;PropertyName=WaterRequirement;Value=IfcVolumetricFlowRateMeasure;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Properties" UniqueId="1b5b331c-902e-4dbb-bbfd-fab8f053ff72">
+				<DocTemplateUsage Name="Properties" UniqueId="eb720217-b22f-42d2-8cb2-04ee121e9106">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
 					<Items>
-						<DocTemplateItem UniqueId="b76278fd-3b55-41a5-9d80-9e4b2096b1eb" RuleParameters="Name=Status;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="90140d8f-200d-4433-8677-b35fee16c170" RuleParameters="Name=Application;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="d7f73870-3246-488d-a6e2-3d1cb7ce6751" RuleParameters="Name=InternalControl;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="e92c53e7-7b53-4a8e-a2a1-49c300c2f5e5" RuleParameters="Order=2;PropertyName=Status;Value=IfcLabel;Reference=PEnum_ElementStatus;" Order="0" />
+						<DocTemplateItem UniqueId="d5974d4f-14d2-4d59-a7a9-20f06f7fc72a" RuleParameters="Order=3;PropertyName=Application;Value=IfcLabel;Reference=PEnum_HumidifierApplication;" Order="0" />
+						<DocTemplateItem UniqueId="de7445e2-dee9-4ddb-9a62-5ee6c1214037" RuleParameters="Order=7;PropertyName=InternalControl;Value=IfcLabel;Reference=PEnum_HumidifierInternalControl;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Properties" UniqueId="68190f1b-656b-4bf2-9d9f-ec2e6ec62941">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Table_Value_0roKUmQhnB4ux7QMxo11SX" />
+					<Items>
+						<DocTemplateItem UniqueId="edc5941e-1e10-41b6-a681-53ac425aaadf" RuleParameters="Order=9;PropertyName=SaturationEfficiencyCurve;Value=IfcVolumetricFlowRateMeasure;Reference=IfcNormalisedRatioMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="e520fd03-3ad9-416e-909d-6c687d659555" RuleParameters="Order=10;PropertyName=AirPressureDropCurve;Value=IfcVolumetricFlowRateMeasure;Reference=IfcPressureMeasure;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>

@@ -9,7 +9,7 @@ The following additional constraints apply to the 'Axis' representation, if the 
 <table border="0" cellpadding="2" cellspacing="2" summary="Axis">
 
 <tr><td align="left" valign="top" width="350">
-<img src="../../../figures/ifcbeamstandardcase_axis-01.png" alt="Axis" height="300" width="400" border="1"></td>
+<img src="../../../figures/ifcbeamstandardcase_axis-01.png" alt="Axis" height="280" width="400" border="1"></td>
 <td><blockquote class="example">EXAMPLE&nbsp; As shown in Figure 76, the axis shall be defined along the z axis of the object coordinate system. The axis representation can be used to represent the system length of a beam that may extent the body length of the beam.</blockquote>
 
 </td>
@@ -22,9 +22,9 @@ The following additional constraints apply to the 'Axis' representation, if the 
 <table>
 
 <tr><td align="left" valign="top" width="350">
-<img src="../../../figures/ifcbeamstandardcase_axis-02.png" alt="Axis" height="300" width="400" border="1"></td>
+<img src="../../../figures/ifcbeamstandardcase_axis-02.png" alt="Axis" height="290" width="400" border="1"></td>
 <td><blockquote class="example">EXAMPLE&nbsp; As shown in Figure 77, the axis representation shall be used to represent the cardinal point as the offset between the 'Axis' and the extrusion path of the beam. The extrusion path is provided as <em>IfcExtrudedAreaSolid.ExtrudedDirection</em> and should be parallel to the 'Axis' and the z axis. It has to be guaranteed that the value provided by
-<em>IfcMaterialProfileSetUsage.CardinalPoint</em> is consistent to the <em>IfcExtrudedAreaSolid.Position</em>.</blockquote>
+<em>IfcMaterialProfileSetUsage.CardinalPoint</em> is consistent to the <em>IfcParameterizedProfileDef.Position</em>.</blockquote>
 
 </td>
 </tr>

@@ -2,21 +2,43 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UniqueId="61b02de7-2f85-49b1-8c42-61db5dc40099">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 	<Items>
-		<DocTemplateItem UniqueId="38ecc804-75dd-4bce-ac12-a0ed1a714e46" RuleParameters="Name=Pset_ActuatorTypeCommon;" Order="0">
+		<DocTemplateItem UniqueId="b7850e98-f2f4-4ed3-93a0-f484e8da6073" RuleParameters="PsetName=Pset_ActuatorTypeCommon;" Order="0">
 			<Concepts>
-				<DocTemplateUsage Name="Properties" UniqueId="ae3ef692-5d5c-4e59-aba0-53ac85eefb73">
+				<DocTemplateUsage Name="Properties" UniqueId="452c5476-219f-44b7-9fb5-1ad949f7970d">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
 					<Items>
-						<DocTemplateItem UniqueId="59c3b73d-a42f-4358-9260-e41c9f05dc61" RuleParameters="Name=Reference;Value=IfcIdentifier;" Order="0" />
-						<DocTemplateItem UniqueId="4157a7d9-cf88-4172-a24a-98fb6240ac5c" RuleParameters="Name=ManualOverride;Value=IfcBoolean;" Order="0" />
+						<DocTemplateItem UniqueId="0efbcaa0-3ce7-4958-845a-9fe4ef8800d1" RuleParameters="Order=1;PropertyName=Reference;Value=IfcIdentifier;" Order="0" />
+						<DocTemplateItem UniqueId="3cc73391-a7d7-45ea-91b8-fc3f0fdd4e55" RuleParameters="Order=4;PropertyName=ManualOverride;Value=IfcBoolean;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Properties" UniqueId="1729542c-52df-4a9d-b98c-6f29f7e7b83f">
+				<DocTemplateUsage Name="Properties" UniqueId="cb70bac8-8476-43c9-8be2-98c588cb86c3">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
 					<Items>
-						<DocTemplateItem UniqueId="6e2beb4b-88d0-4888-8f70-a448d9ff23e0" RuleParameters="Name=Status;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="2608b659-d828-4f6e-ba29-85903bca705b" RuleParameters="Name=FailPosition;Value=IfcLabel;" Order="0" />
-						<DocTemplateItem UniqueId="a275d44c-c595-4dc0-8aea-63fc299ddedb" RuleParameters="Name=Application;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="e8fa22f3-ccb7-4721-a446-9a821cdef32d" RuleParameters="Order=2;PropertyName=Status;Value=IfcLabel;Reference=PEnum_ElementStatus;" Order="0" />
+						<DocTemplateItem UniqueId="bf63f0ad-2f49-4674-b4d7-4f683f8a5885" RuleParameters="Order=3;PropertyName=FailPosition;Value=IfcLabel;Reference=PEnum_FailPosition;" Order="0" />
+						<DocTemplateItem UniqueId="40f240a6-92a8-427f-ad38-4b91f6e654cb" RuleParameters="Order=5;PropertyName=Application;Value=IfcLabel;Reference=PEnum_ActuatorApplication;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="5b70e724-8649-4fc5-881f-dd912051a06c" RuleParameters="PsetName=Pset_ActuatorTypeLinearActuation;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Properties" UniqueId="307c030e-d1d7-4e21-8a40-33da545662d7">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
+					<Items>
+						<DocTemplateItem UniqueId="af8258db-5310-4c23-bce1-c739ebfbb9a9" RuleParameters="Order=1;PropertyName=Force;Value=IfcForceMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="2080a601-dc5a-443b-a8d8-78a5172ed878" RuleParameters="Order=2;PropertyName=Stroke;Value=IfcLengthMeasure;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="b5e4de1b-fc27-450f-9544-61c44a70f0ed" RuleParameters="PsetName=Pset_ActuatorTypeRotationalActuation;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Properties" UniqueId="45f6bba0-fa7c-41e9-bad5-362bc60c8857">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
+					<Items>
+						<DocTemplateItem UniqueId="6153a6c9-3c9c-47b5-8915-7fc621509213" RuleParameters="Order=1;PropertyName=Torque;Value=IfcTorqueMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="939f0e26-8fe7-4c9a-a256-d95c1bf07838" RuleParameters="Order=2;PropertyName=RangeAngle;Value=IfcPlaneAngleMeasure;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>

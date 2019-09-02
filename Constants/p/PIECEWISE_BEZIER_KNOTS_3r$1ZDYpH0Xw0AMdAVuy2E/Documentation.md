@@ -1,1 +1,1 @@
-The form of knots appropriate for a piecewise B&#65533;?&copy;zier curve.
+The form of knots appropriate for a piecewise Bezier curve.

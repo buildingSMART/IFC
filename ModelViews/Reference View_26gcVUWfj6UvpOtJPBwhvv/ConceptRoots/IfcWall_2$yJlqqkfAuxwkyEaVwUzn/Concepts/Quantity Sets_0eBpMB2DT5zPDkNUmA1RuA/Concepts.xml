@@ -2,8 +2,40 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Quantity Sets" UniqueId="282f358b-08d7-45f5-936e-5dec0a05be0a">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
 	<Items>
-		<DocTemplateItem UniqueId="ed300bf5-746f-465f-979e-532eb27cdde9" RuleParameters="Name=Qto_WallBaseQuantities;" Order="0">
-			<Documentation>Base quantities depending on geometry as defined in this specification</Documentation>
+		<DocTemplateItem UniqueId="f55f24a2-2633-4445-84e8-827ed5621771" RuleParameters="QsetName=Qto_WallBaseQuantities;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Quantities" UniqueId="ab0ed699-6f18-4515-8af3-88a751b472b3">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Length_Quantity_3TXdZXum1FS9rZvJdRIz4S" />
+					<Items>
+						<DocTemplateItem UniqueId="539866b6-ed14-4824-acfc-d17e05a10bdb" RuleParameters="Order=1;QuantityName=Length;" Order="0" />
+						<DocTemplateItem UniqueId="b02712bf-362d-4413-97b9-db985fc49f30" RuleParameters="Order=2;QuantityName=Width;" Order="0" />
+						<DocTemplateItem UniqueId="f938f0fe-23c5-466d-8950-01bc2868988b" RuleParameters="Order=3;QuantityName=Height;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Quantities" UniqueId="11a1b4ad-aa6c-4588-a3f6-7616ecc67225">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Area_Quantity_1bh4T7Rlz3VfJYP3Kux_6" />
+					<Items>
+						<DocTemplateItem UniqueId="1ada35c5-7219-4397-82e6-de17a8deda16" RuleParameters="Order=4;QuantityName=GrossFootprintArea;" Order="0" />
+						<DocTemplateItem UniqueId="f57cd44d-3dda-4012-8dd3-d9df17fab4e5" RuleParameters="Order=5;QuantityName=NetFootprintArea;" Order="0" />
+						<DocTemplateItem UniqueId="5b1605ea-6d8d-4357-884b-bbf5a9f81b32" RuleParameters="Order=6;QuantityName=GrossSideArea;" Order="0" />
+						<DocTemplateItem UniqueId="66854818-bb30-4a15-b24b-40a62119dd19" RuleParameters="Order=7;QuantityName=NetSideArea;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Quantities" UniqueId="913a39e6-0f25-4e47-b562-e4574981fe29">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Volume_Quantity_1aaQEmj_b1Ae8clDaSAmiE" />
+					<Items>
+						<DocTemplateItem UniqueId="25a5553b-86f1-45b4-bfe8-5ec8f0df1989" RuleParameters="Order=8;QuantityName=GrossVolume;" Order="0" />
+						<DocTemplateItem UniqueId="741cf57a-bdfd-4a84-aa02-a1b6217ba722" RuleParameters="Order=9;QuantityName=NetVolume;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Quantities" UniqueId="0c207b0e-ac98-4ecf-99dd-3b707b4bd232">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Weight_Quantity_3X0MvMF8bFGfPv1_7RF0hx" />
+					<Items>
+						<DocTemplateItem UniqueId="8c67d117-b251-48fc-aa12-2aacec449f62" RuleParameters="Order=10;QuantityName=GrossWeight;" Order="0" />
+						<DocTemplateItem UniqueId="1d6e172f-2c29-4e94-919b-73ec55985446" RuleParameters="Order=11;QuantityName=NetWeight;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
 		</DocTemplateItem>
 	</Items>
 	<Exchanges>

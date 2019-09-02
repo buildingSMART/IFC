@@ -1,5 +1,3 @@
-Currently, the 'Body', and 'Box' representations are supported. The 'Box' representation includes the representation type 'BoundingBox' and is explained at _IfcFeatureElement_.
-
 The 'Body' representation of _IfcOpeningElement_ can be represented using the representation types 'SweptSolid', and 'Brep'. The representation type 'Brep' is explained at _IfcFeatureElement_
 
 _Swept Solid Representation Type with Horizontal

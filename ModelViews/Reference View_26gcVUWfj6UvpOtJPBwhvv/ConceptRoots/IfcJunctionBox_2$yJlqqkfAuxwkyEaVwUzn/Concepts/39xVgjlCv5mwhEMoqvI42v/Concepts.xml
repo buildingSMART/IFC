@@ -2,7 +2,22 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UniqueId="c9edfaad-bcce-45c3-aace-5b2d394840b9">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
 	<Items>
-		<DocTemplateItem UniqueId="2e59dd92-c26d-4b63-a2a4-ca3ebe860c8d" RuleInstanceID="IfcElementQuantity" RuleParameters="Name=Qto_JunctionBoxBaseQuantities;" Order="0" />
+		<DocTemplateItem UniqueId="42b35fe6-e0d9-4f22-891b-ea4e2bc7513b" RuleParameters="QsetName=Qto_JunctionBoxBaseQuantities;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Quantities" UniqueId="77786d2b-6f30-432b-8433-b7be3d33c69a">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Weight_Quantity_3X0MvMF8bFGfPv1_7RF0hx" />
+					<Items>
+						<DocTemplateItem UniqueId="e31c2902-c9ae-44ec-9fca-7ef787b7ac41" RuleParameters="Order=1;QuantityName=GrossWeight;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Quantities" UniqueId="7b84cace-e9de-4718-9f11-db21834ef55d">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Count_Quantity_2AhlyoLonFQgnauXKMOyln" />
+					<Items>
+						<DocTemplateItem UniqueId="c6aeee0f-6f4f-45c0-86a9-b34922b5a343" RuleParameters="Order=2;QuantityName=NumberOfGangs;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+		</DocTemplateItem>
 	</Items>
 </DocTemplateUsage>
 

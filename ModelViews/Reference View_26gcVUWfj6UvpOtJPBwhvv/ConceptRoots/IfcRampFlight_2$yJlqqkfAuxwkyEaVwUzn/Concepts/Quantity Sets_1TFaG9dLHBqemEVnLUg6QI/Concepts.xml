@@ -2,8 +2,30 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Quantity Sets" UniqueId="5d3e4409-9d54-4bd2-8c0e-7f155ea86692">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
 	<Items>
-		<DocTemplateItem UniqueId="62097353-6358-47e5-b193-0c75fa7009c0" RuleParameters="Name=Qto_RampFlightBaseQuantities;" Order="0">
-			<Documentation>Base quantities depending on geometry as defined in this specification</Documentation>
+		<DocTemplateItem UniqueId="9b4e8620-59d8-496d-9d75-a66db01fa1ca" RuleParameters="QsetName=Qto_RampFlightBaseQuantities;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Quantities" UniqueId="f8386b9e-0dbe-44dc-8531-fc9d059622a5">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Length_Quantity_3TXdZXum1FS9rZvJdRIz4S" />
+					<Items>
+						<DocTemplateItem UniqueId="f41a3e6e-6629-40ef-9366-f45b1280d49c" RuleParameters="Order=1;QuantityName=Length;" Order="0" />
+						<DocTemplateItem UniqueId="340b4de3-7061-4bf5-8e18-21c526456131" RuleParameters="Order=2;QuantityName=Width;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Quantities" UniqueId="62b0795e-ef64-4326-a0a0-767345bef570">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Area_Quantity_1bh4T7Rlz3VfJYP3Kux_6" />
+					<Items>
+						<DocTemplateItem UniqueId="cb3411c3-fc67-4410-b85c-c1c6a3ec95c9" RuleParameters="Order=3;QuantityName=GrossArea;" Order="0" />
+						<DocTemplateItem UniqueId="523b2956-e64d-454e-b3bc-dedd5ff4088a" RuleParameters="Order=4;QuantityName=NetArea;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Quantities" UniqueId="1ed71ff8-b6c7-4682-9db8-020541083ce8">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Volume_Quantity_1aaQEmj_b1Ae8clDaSAmiE" />
+					<Items>
+						<DocTemplateItem UniqueId="94be1c80-660f-4a53-a207-5d58130bcf8e" RuleParameters="Order=5;QuantityName=GrossVolume;" Order="0" />
+						<DocTemplateItem UniqueId="e3fc19d7-835a-43d6-b5da-caf1e20d9f24" RuleParameters="Order=6;QuantityName=NetVolume;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
 		</DocTemplateItem>
 	</Items>
 	<Exchanges>

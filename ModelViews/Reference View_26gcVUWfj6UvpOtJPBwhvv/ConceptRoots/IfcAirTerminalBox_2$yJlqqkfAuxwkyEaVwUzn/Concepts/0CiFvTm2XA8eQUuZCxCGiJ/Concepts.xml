@@ -2,7 +2,16 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UniqueId="0cb0fe5d-c028-4a22-869e-e2333b310b13">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
 	<Items>
-		<DocTemplateItem UniqueId="c85ec442-1f99-44d8-92bf-6330d535c4a6" RuleInstanceID="IfcElementQuantity" RuleParameters="Name=Qto_AirTerminalBoxTypeBaseQuantities;" Order="0" />
+		<DocTemplateItem UniqueId="33f70a7c-cd29-467f-bbd7-a599aab44a3d" RuleParameters="QsetName=Qto_AirTerminalBoxTypeBaseQuantities;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Quantities" UniqueId="f6a47602-76f4-471e-ba4b-7b615c2282e9">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Weight_Quantity_3X0MvMF8bFGfPv1_7RF0hx" />
+					<Items>
+						<DocTemplateItem UniqueId="f9c4f337-458e-4568-896b-df0d6c765c6c" RuleParameters="Order=1;QuantityName=GrossWeight;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+		</DocTemplateItem>
 	</Items>
 </DocTemplateUsage>
 

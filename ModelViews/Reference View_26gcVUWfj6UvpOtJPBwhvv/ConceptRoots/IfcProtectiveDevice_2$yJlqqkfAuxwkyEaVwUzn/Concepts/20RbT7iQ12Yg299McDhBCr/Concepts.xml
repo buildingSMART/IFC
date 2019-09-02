@@ -2,18 +2,148 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UniqueId="806e5747-b1a0-428a-a089-25698dacb335">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 	<Items>
-		<DocTemplateItem UniqueId="cd7f66ea-b526-481a-9b00-780a328ff7d6" RuleParameters="Name=Pset_ProtectiveDeviceTypeCommon;" Order="0">
+		<DocTemplateItem UniqueId="63a9a9f1-cc22-4c36-aca7-f8b8ec8d6930" RuleParameters="PsetName=Pset_ProtectiveDeviceBreakerUnitI2TCurve;" Order="0">
 			<Concepts>
-				<DocTemplateUsage Name="Properties" UniqueId="dc3e9fd1-3164-4cea-bc4d-38900448a739">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
-					<Items>
-						<DocTemplateItem UniqueId="d3ed7b9c-cd37-4cef-b852-9a06b79955e4" RuleParameters="Name=Reference;Value=IfcIdentifier;" Order="0" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Properties" UniqueId="0aa3a2ae-8104-4005-adab-904a3e6059df">
+				<DocTemplateUsage Name="Properties" UniqueId="009b357d-be8e-4e0f-bdd5-1bcb7a448fda">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
 					<Items>
-						<DocTemplateItem UniqueId="2d6e5fd5-9368-426c-8763-e3d18c1a0b98" RuleParameters="Name=Status;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="5d6ea519-f890-486d-a05f-00ddf59bd14c" RuleParameters="Order=1;PropertyName=VoltageLevel;Value=IfcLabel;Reference=PEnum_VoltageLevels;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Properties" UniqueId="b645292a-9132-4431-844f-01ff17dbbfdc">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
+					<Items>
+						<DocTemplateItem UniqueId="ce0cf10d-8af2-4692-b1ac-973d6ebf3f95" RuleParameters="Order=2;PropertyName=NominalCurrent;Value=IfcElectricCurrentMeasure;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Properties" UniqueId="5fd012cb-f04e-46f5-9557-98d32ceb5518">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Table_Value_0roKUmQhnB4ux7QMxo11SX" />
+					<Items>
+						<DocTemplateItem UniqueId="e5d70962-8ddf-4bbe-bd58-f6fe239a04ea" RuleParameters="Order=3;PropertyName=BreakerUnitCurve;Value=IfcElectricCurrentMeasure;Reference=IfcReal;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="2e9c6d73-a8c1-44a5-af47-0671e2e3eb52" RuleParameters="PsetName=Pset_ProtectiveDeviceBreakerUnitI2TFuseCurve;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Properties" UniqueId="4e80a83c-51cc-46a4-b127-5da1b4b25729">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
+					<Items>
+						<DocTemplateItem UniqueId="a804a363-29bb-4890-a940-9f635af604be" RuleParameters="Order=1;PropertyName=VoltageLevel;Value=IfcLabel;Reference=PEnum_VoltageLevels;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Properties" UniqueId="127f884d-9daf-4237-b208-026f70ac80ad">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Table_Value_0roKUmQhnB4ux7QMxo11SX" />
+					<Items>
+						<DocTemplateItem UniqueId="501d331c-a011-4442-9cf9-78360cb873ef" RuleParameters="Order=2;PropertyName=BreakerUnitFuseMeltingCurve;Value=IfcElectricCurrentMeasure;Reference=IfcReal;" Order="0" />
+						<DocTemplateItem UniqueId="61b39871-6da8-4dfd-8710-6a95651000f5" RuleParameters="Order=3;PropertyName=BreakerUnitFuseBreakingingCurve;Value=IfcElectricCurrentMeasure;Reference=IfcReal;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="a26e68f6-4950-4610-a2f3-b3cef3858d1e" RuleParameters="PsetName=Pset_ProtectiveDeviceBreakerUnitIPICurve;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Properties" UniqueId="cc5c116a-a237-4b2a-97e0-722d3482bf53">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
+					<Items>
+						<DocTemplateItem UniqueId="11ab7598-fa58-435e-8003-cff2814fc4e2" RuleParameters="Order=1;PropertyName=VoltageLevel;Value=IfcLabel;Reference=PEnum_VoltageLevels;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Properties" UniqueId="451019a0-d291-416c-af11-c6a857387180">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
+					<Items>
+						<DocTemplateItem UniqueId="7efabe19-3cac-4957-ae90-09f6bf64ffde" RuleParameters="Order=2;PropertyName=NominalCurrent;Value=IfcElectricCurrentMeasure;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Properties" UniqueId="621a3855-3f56-459c-8ba8-78b1850b00f4">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Table_Value_0roKUmQhnB4ux7QMxo11SX" />
+					<Items>
+						<DocTemplateItem UniqueId="261ac066-37bf-41d2-a954-1a3029b8e665" RuleParameters="Order=3;PropertyName=BreakerUnitIPICurve;Value=IfcElectricCurrentMeasure;Reference=IfcElectricCurrentMeasure;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="a1e74bf8-8f09-4c60-884f-bd87ef8ea102" RuleParameters="PsetName=Pset_ProtectiveDeviceBreakerUnitTypeMotorProtection;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Properties" UniqueId="590a0adc-7270-429b-9743-2d4c1522369f">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="List_Value_2E4BQ8aNbEEesoQhogfKj" />
+					<Items>
+						<DocTemplateItem UniqueId="7c923496-9d2b-479e-9d68-b448bae4630f" RuleParameters="Order=1;PropertyName=PerformanceClasses;Value=IfcLabel;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Properties" UniqueId="6b1c2086-f5c7-47eb-a3dc-ffdecb28cf10">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
+					<Items>
+						<DocTemplateItem UniqueId="412adeaa-4b86-43e0-a050-8abb38856cbc" RuleParameters="Order=2;PropertyName=VoltageLevel;Value=IfcLabel;Reference=PEnum_VoltageLevels;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Properties" UniqueId="8088c051-04ae-485d-a479-5db472dbf7cd">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
+					<Items>
+						<DocTemplateItem UniqueId="3d354414-07d6-4f63-96bc-475f034e2bfa" RuleParameters="Order=3;PropertyName=ICU60947;Value=IfcElectricCurrentMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="036d6e55-8efa-4718-ac65-446558e7d051" RuleParameters="Order=4;PropertyName=ICS60947;Value=IfcElectricCurrentMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="3b4babc8-6c41-420f-aeb0-c99e643fe720" RuleParameters="Order=5;PropertyName=ICW60947;Value=IfcElectricCurrentMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="1538e910-a6e4-4cdc-a686-683dfa03765d" RuleParameters="Order=6;PropertyName=ICM60947;Value=IfcElectricCurrentMeasure;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="5a99d428-060a-4767-a6ef-828d28ec81f9" RuleParameters="PsetName=Pset_ProtectiveDeviceOccurrence;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Properties" UniqueId="6a06e5f1-82ce-4cdb-92d8-b2c9446b594d">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
+					<Items>
+						<DocTemplateItem UniqueId="344e5c03-3914-49c0-a955-6eab40088cd1" RuleParameters="Order=1;PropertyName=PoleUsage;Value=IfcLabel;Reference=PEnum_PoleUsage;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Properties" UniqueId="8b4c9552-9a81-41a3-9b14-3f2009c88172">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
+					<Items>
+						<DocTemplateItem UniqueId="4503ed26-46ba-4128-8e8a-9bbe46aa6173" RuleParameters="Order=2;PropertyName=LongTimeFunction;Value=IfcBoolean;" Order="0" />
+						<DocTemplateItem UniqueId="4c66a54c-fd01-4b62-812e-5ed65a9907c3" RuleParameters="Order=3;PropertyName=ShortTimeFunction;Value=IfcBoolean;" Order="0" />
+						<DocTemplateItem UniqueId="06cbe680-f7ef-41df-920a-8b4433c7e8c7" RuleParameters="Order=4;PropertyName=ShortTimei2tFunction;Value=IfcBoolean;" Order="0" />
+						<DocTemplateItem UniqueId="37c79b32-560a-4faf-9dcf-f436114a897d" RuleParameters="Order=5;PropertyName=GroundFaultFunction;Value=IfcBoolean;" Order="0" />
+						<DocTemplateItem UniqueId="c63b33c2-0093-48ee-a798-ccd09c19ca7b" RuleParameters="Order=6;PropertyName=GroundFaulti2tFunction;Value=IfcBoolean;" Order="0" />
+						<DocTemplateItem UniqueId="ab393ff8-3c2c-4ebc-b909-01fbdc9fb50c" RuleParameters="Order=7;PropertyName=LongTimeCurrentSetValue;Value=IfcElectricCurrentMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="700f784b-e7f3-460b-8059-1e34280e7608" RuleParameters="Order=8;PropertyName=ShortTimeCurrentSetValue;Value=IfcElectricCurrentMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="9038227f-1b9b-401b-a2e3-3ca6ec72a6d6" RuleParameters="Order=9;PropertyName=InstantaneousCurrentSetValue;Value=IfcElectricCurrentMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="8b808291-f567-4401-8fa1-9f8b2830a195" RuleParameters="Order=10;PropertyName=GroundFaultCurrentSetValue;Value=IfcElectricCurrentMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="21c3a815-10cc-4e10-b60c-59c0781e50b4" RuleParameters="Order=11;PropertyName=LongTimeDelay;Value=IfcTimeMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="94a9e4ac-b023-4658-b11c-2433e3200c7e" RuleParameters="Order=12;PropertyName=ShortTimeTrippingTime;Value=IfcTimeMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="c7961319-f690-4951-bad0-6cd23902b78d" RuleParameters="Order=13;PropertyName=InstantaneousTrippingTime;Value=IfcTimeMeasure;" Order="0" />
+						<DocTemplateItem UniqueId="7e97a7b1-d92c-4add-bd26-4e459a9a9aa4" RuleParameters="Order=14;PropertyName=GroundFaultTrippingTime;Value=IfcTimeMeasure;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="95fd3958-8b4e-4bd9-a18b-33dfe12cc109" RuleParameters="PsetName=Pset_ProtectiveDeviceTrippingCurve;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Properties" UniqueId="f371d955-b2d4-45d4-9388-24cab3c9db32">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
+					<Items>
+						<DocTemplateItem UniqueId="1e054f6e-97de-4f91-aa2a-f89551cb5464" RuleParameters="Order=1;PropertyName=TrippingCurveType;Value=IfcLabel;Reference=PEnum_TrippingCurveType;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Properties" UniqueId="df7c3788-6545-4ded-bc96-7716dd92211d">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Table_Value_0roKUmQhnB4ux7QMxo11SX" />
+					<Items>
+						<DocTemplateItem UniqueId="3bc04610-f6ac-45b7-8a99-c12dc73b010d" RuleParameters="Order=2;PropertyName=TrippingCurve;Value=IfcElectricCurrentMeasure;Reference=IfcTimeMeasure;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="27bb2abc-f855-4204-baca-2bd26be3ef18" RuleParameters="PsetName=Pset_ProtectiveDeviceTypeCommon;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Properties" UniqueId="ca1a473f-3bea-4919-85c6-088c52ec0497">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
+					<Items>
+						<DocTemplateItem UniqueId="06ab85a1-8c83-42bd-8ad3-91924e059773" RuleParameters="Order=1;PropertyName=Reference;Value=IfcIdentifier;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Properties" UniqueId="1cacda2f-a447-4b76-8aed-cb4daefbee3d">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
+					<Items>
+						<DocTemplateItem UniqueId="8a8eab7e-887f-48c7-95ea-72cd94a01737" RuleParameters="Order=2;PropertyName=Status;Value=IfcLabel;Reference=PEnum_ElementStatus;" Order="0" />
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>
