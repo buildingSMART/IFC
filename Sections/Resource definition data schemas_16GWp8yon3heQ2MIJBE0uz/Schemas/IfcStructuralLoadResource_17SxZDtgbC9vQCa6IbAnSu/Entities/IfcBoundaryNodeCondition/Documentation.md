@@ -1,18 +1,11 @@
-**Definition
-from IAI:** The entity _IfcBoundaryNodeCondition_ describes boundary conditions that can be applied to structural point connections, either directly for the connection (e.g. the joint) or for the relation between a structural member and the connection.&nbsp;
+Describes linearly elastic support conditions or connection conditions.
 
-The following conventions to the values of the _LinearStiffness[X,Y,Z]_ and _RotationalStiffness[X,Y,Z]_ apply:
+Applicability:
 
-* value (-1.) represents an infinitely large value &ndash; or a fixed connectivity with infinitive stiffness
-* value zero (0.), represents no stiffness or a free connectivity
-* any other value represents a finitive stiffness or spring connectivity in that direction or rotation
-* value NIL ($) represents an unknown connectivity condition
+* Point supports and connections.
 
-> <font size="-1">NOTE: Instances of the entity <i>IfcBoundaryNodeCondition</i>
-are used e.g., to define the boundary condition for instances of <i>IfcStructuralPointConnection</i>
-or <i>IfcRelConnectsStructuralMember</i>
-pointing to a structural node connection.</font>
+> HISTORY&nbsp; New entity in IFC2x2.  
+> IFC 2x4 change: Attributes _LinearStiffnessX/Y/Z_ renamed to _TranslationalStiffnessX/Y/Z_.
 
-> <font color="#0000ff" size="-1">HISTORY: New entity
-in Release IFC2x Edition 2. </font>
->
+{ .change-ifc2x4}
+> IFC4 CHANGE All attribute data types changed from numeric to SELECT between Boolean and numeric. Stiffnesses may now also be negative, for example to capture destabilizing effects in boundary conditions. The IFC2x3 convention of -1. representing infinite stiffness is no longer valid and must not be used. Infinite stiffness, i.e. fixed supports, are now modeled by the Boolean value TRUE.

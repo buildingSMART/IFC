@@ -1,12 +1,13 @@
 A structural action is a structural activity that acts upon a structural item or building element.
 
-> <font color="#0000FF" size="-1"> HISTORY: New entity in Release IFC2x
-		  Edition 2. </font>
-> 
+> HISTORY&nbsp; New entity in IFC2x2.
 
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; Attribute _DestabilizingLoad_ made optional. Attribute _CausedBy_ deleted; use _IfcRelAssignsToProduct_ via _ReferencedBy_ instead.
 
-**Example:**  
-The following figure illustrates the rationale for the use of the attribute 'CausedBy' for the representation of the dependencies between actions and action results. The given simplified structure contains two mechanical models that are analyzed independently, but do influence each other.
+{ .use-head}
+Relationship use definition
 
-!["structural action caused by reactions"](figures/IfcStructuralAction-Fig1.gif "&nbsp;<font size="-1">Illustration of the usage of the reference
-				attribute 'CausedBy' in the entity <i>IfcStructuralAction</i>.</font>")
+Structural actions are grouped into either an _IfcStructuralLoadGroup_ of predefined type LOAD_GROUP or, more often, an _IfcStructuralLoadCase_. This is accomplished via the inverse relationship _HasAssignments_ and an _IfcRelAssignsToGroup_ relationship object. _IfcStructuralLoadGroup.LoadGroupFor_ or _IfcStructuralLoadCase.LoadGroupFor_ respectively refers to the structural analysis model(s) in which the loads are used.
+
+It is furthermore possible to establish relationships between actions in one analysis model and reactions in another analysis model which cause the actions. For example, a support reaction from one structural system may be taken over as a load onto another supporting structural system. This is expressed by means of the inverse relationship _ReferencedBy_ of the action and an _IfcRelAssignsToProduct_ relationship object. _IfcRelAssignsToProduct.Name_ is set to 'Causes' and _IfcRelAssignsToProduct.RelatedObjects_ refers to an instance of a subtype of _IfcStructuralReaction_.

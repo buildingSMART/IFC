@@ -1,1 +1,0 @@
-Specific to IfcFlowFitting: The IfcFlowFitting shall not have a voiding relationship. Voids in the shape of an IfcFlowFitting shall be already included in th shape representation (e.g. part of the xplicit shape).

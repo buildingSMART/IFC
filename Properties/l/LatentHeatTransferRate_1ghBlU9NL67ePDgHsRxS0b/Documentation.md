@@ -1,1 +1,0 @@
-Latent heat transfer rate

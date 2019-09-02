@@ -1,1 +1,0 @@
-Specific to IfcReinforcingBar: An IfcReinforcingBar shall not have openings, cut-out shall be handled by CSG geometry or being included in the explicit geometry.

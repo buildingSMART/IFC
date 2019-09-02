@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDuctFitting" Name="IfcDuctFitting" UniqueId="760a81f2-5681-4856-8e70-144d4bd1d61a" DiagramNumber="2" BaseDefinition="IfcFlowFitting" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Kanalverbinder" Locale="de" />
+		<DocLocalization Name="Raccord de gaine" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="2787.7544" Y="546.39927" Width="343.80613" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="4f963f62-427b-4df0-9553-0271dd9a6efe" DefinedType="IfcDuctFittingTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<DiagramLine>
+				<DocPoint X="2787.7544" Y="596.39927" />
+				<DocPoint X="2542.00037" Y="596.39927" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2795.8074639" Y="588.3462061" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="7ecec5de-e41c-425f-8efa-e31d3afd40f5">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcDuctFittingType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcDuctFittingTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcDuctFittingTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="ee0be020-c2bd-4df3-8cd5-4b1da70976f1">
+			<Documentation>Either there is no duct fitting type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcDuctFittingType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCHVACDOMAIN.IFCDUCTFITTINGTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,1 +1,0 @@
-Specific to IfcReinforcingMesh: It shall not be provided, if the IfcReinforcingMesh is part of an aggregation.

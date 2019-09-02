@@ -1,13 +1,18 @@
-Enumeration defining the pile type according to function.
+Enumeration defining the pile type.
 
-> <font color="#0000FF" size="-1"> HISTORY New type in IFC Release 2x2
-		  </font>
->
+> HISTORY&nbsp; New type in IFC2x2
 
-ENUMERATION
+{ .change-ifc2x4}
+> IFC 2x4 CHANGE:&nbsp; Items BORED, DRIVEN, JETGROUTING added.
 
-* **COHESION** A cohesion pile. 
-* **FRICTION** A friction pile. 
-* **SUPPORT** A support pile. 
-* **USERDEFINED** The type of pile function is user defined. 
+{ .spec-head}
+Enumerated Item Definitions:
+
+* **BORED** A bore pile.
+* **DRIVEN** A rammed, vibrated, or otherwise driven pile.
+* **JETGROUTING** An injected pile-like construction.
+* **COHESION** A cohesion pile.
+* **FRICTION** A friction pile.
+* **SUPPORT** A support pile.
+* **USERDEFINED** The type of pile function is user defined.
 * **NOTDEFINED** The type of pile function is not defined.

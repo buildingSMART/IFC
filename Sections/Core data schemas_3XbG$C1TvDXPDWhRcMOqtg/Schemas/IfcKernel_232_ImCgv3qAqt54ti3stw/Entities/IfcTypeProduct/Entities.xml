@@ -1,18 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTypeProduct" UniqueId="de22199b-0d1f-4205-842f-3dea858c822b" DiagramNumber="1" BaseDefinition="IfcTypeObject" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTypeProduct" UniqueId="de22199b-0d1f-4205-842f-3dea858c822b" DiagramNumber="8" BaseDefinition="IfcTypeObject" EntityFlags="237">
+	<Localization>
+		<DocLocalization Name="Produkt (allgemein) - Typ" Locale="de" />
+		<DocLocalization Name="Définition d&apos;un type de produit" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="11319.327" Y="1578.6591" Width="454.06667" Height="255.93333" />
 	<Attributes>
 		<DocAttribute Name="RepresentationMaps" UniqueId="f1cc5d32-2c48-43ef-9814-701621b457a5" DefinedType="IfcRepresentationMap" AttributeFlags="1" AggregationType="1" AggregationFlag="2" AggregationLower="1" AggregationUpper="0">
 			<Documentation>List of unique representation maps. Each representation map describes a block definition of the shape of the product style. By providing more than one representation map, a multi-view block definition can be given.</Documentation>
+			<DiagramLine>
+				<DocPoint X="11773.394" Y="1767.9591" />
+				<DocPoint X="12295.94" Y="1767.9591" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="11771.9155046" Y="1756.450756" Width="323" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Tag" UniqueId="59d94263-1a31-4d38-8cb7-efb44b1a6814" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The tag (or label) identifier at the particular type of a product, e.g. the article number (like the EAN). It is the identifier at the specific level.</Documentation>
+			<DiagramLine>
+				<DocPoint X="11773.394" Y="1637.2924" />
+				<DocPoint X="12295.96" Y="1637.2924" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="11736.060667" Y="1627.2924" Width="50" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="ReferencedBy" UniqueId="4ac81661-5fee-4465-897b-54cba1c0bfe6" DefinedType="IfcRelAssignsToProduct" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingProduct">
+			<Documentation>Reference to the _IfcRelAssignsToProduct_ relationship, by which other products, processes, controls, resources or actors (as subtypes of _IfcObjectDefinition_) can be related to this product type.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; New inverse relationship.</Documentation>
+			<DiagramLine>
+				<DocPoint X="11546.36" Y="1578.6591" />
+				<DocPoint X="11546.36" Y="1517.29243" />
+				<DocPoint X="12497.35567" Y="1517.29243" />
+				<DocPoint X="12497.35567" Y="487.27913" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="11549.8578333" Y="1546.285793" Width="461" Height="70" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR41" UniqueId="0NwVR$bYv7WwrZ2ogPt1Kp">
-			<Documentation>The product style, if assigned to an object, shall only be assigned to object of type IfcProduct or IfcProxy.</Documentation>
-			<Expression>NOT(EXISTS(SELF\IfcTypeObject.ObjectTypeOf[1])) OR
-(SIZEOF(QUERY(temp &lt;* SELF\IfcTypeObject.ObjectTypeOf[1].RelatedObjects |
+		<DocWhereRule Name="ApplicableOccurrence" UniqueId="70a66287-b374-4f24-84d1-d6ded53ff17b">
+			<Documentation>The product type (or style), if assigned to an object, shall only be assigned to object being a sub type of _IfcProduct_.</Documentation>
+			<Expression>NOT(EXISTS(SELF\IfcTypeObject.Types[1])) OR
+(SIZEOF(QUERY(temp &lt;* SELF\IfcTypeObject.Types[1].RelatedObjects |
   NOT(&apos;IFCKERNEL.IFCPRODUCT&apos; IN TYPEOF(temp)))
 ) = 0)</Expression>
 		</DocWhereRule>

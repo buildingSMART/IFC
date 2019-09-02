@@ -1,1 +1,0 @@
-Specific to IfcFlowTreatmentDevice: The IfcFlowTreatmentDevice shall not have a voiding relationship. Voids in the shape of an IfcFlowTreatmentDevice shall be already included in th shape representation (e.g. part of the xplicit shape).

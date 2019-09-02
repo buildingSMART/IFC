@@ -1,8 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMonetaryUnit" UniqueId="0671cb13-dc5d-4349-956e-d3344b3f2781" DiagramNumber="1" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Monetäre Einheit" Locale="de" />
+		<DocLocalization Name="Unité monétaire" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1085.5125" Y="270.64013" Width="283.07544" Height="100" />
 	<Attributes>
-		<DocAttribute Name="Currency" UniqueId="9060944e-647c-499d-9a70-cc9491f4a0cb" DefinedType="IfcCurrencyEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>The international enumeration name of the currency.</Documentation>
+		<DocAttribute Name="Currency" UniqueId="9060944e-647c-499d-9a70-cc9491f4a0cb" DefinedType="IfcLabel" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Code or name of the currency.  Permissible values are the three-letter alphabetic currency codes as per [ISO 4217](http://www.iso.org/iso/support/faqs/faqs_widely_used_standards/widely_used_standards_other/currency_codes/currency_codes_list-1.htm){ target=&quot;_top&quot;}, for example CNY, EUR, GBP, JPY, USD.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1227.0503" Y="370.64013" />
+				<DocPoint X="1227.0503" Y="447.35001" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1289.137417" Y="386.559904" Width="107" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

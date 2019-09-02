@@ -1,1 +1,0 @@
-Specific to IfcZone: the IfcZone shall not have a material assigned.

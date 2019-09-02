@@ -1,1 +1,0 @@
-Specific to IfcWall: The spatial containment shall be within IfcSite, IfcBuilding, or IfcBuildingStorey. The IfcWall shall not be contained in IfcSpace.

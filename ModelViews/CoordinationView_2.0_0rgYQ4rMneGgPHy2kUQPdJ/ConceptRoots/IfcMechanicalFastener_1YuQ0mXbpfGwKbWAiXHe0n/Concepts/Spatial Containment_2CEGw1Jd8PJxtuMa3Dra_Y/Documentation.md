@@ -1,1 +1,0 @@
-Specific to IfcMechanicalFastener: It shall not be provided, if the IfcMechanicalFastener is part of an aggregation.

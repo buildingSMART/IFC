@@ -1,8 +1,10 @@
-**Definition from ISO/CD 10303-42:1992**: This select type collects together both versions of the placement as used in two dimensional or in three dimensional Cartesian space. This enables entities requiring this information to reference them without specifying the space dimensionality.
+The _IfcAxis2Placement_ allows for the choice of various placement entities.
 
-> <font color="#0000FF" size="-1">NOTE: Corresponding STEP type:
-		axis2_placement, please refer to ISO/IS 10303-42:1994, p. 19 for the final
-		definition of the formal standard. </font>
+{ .extDef}
+> NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
+> This select type represents the placing of mutually perpendicular axes in two-dimensional or in threedimensional Cartesian space.  
+> This select type enables entities requiring axis placement information to reference the axes without specifying the space dimensionality.
 
-> <font color="#0000FF" size="-1">HISTORY: New type in IFC
-		Release 1.5</font>
+> NOTE&nbsp; Type adapted from **axis2_placement** defined in ISO 10303-42.
+
+> HISTORY&nbsp; New type in IFC1.5

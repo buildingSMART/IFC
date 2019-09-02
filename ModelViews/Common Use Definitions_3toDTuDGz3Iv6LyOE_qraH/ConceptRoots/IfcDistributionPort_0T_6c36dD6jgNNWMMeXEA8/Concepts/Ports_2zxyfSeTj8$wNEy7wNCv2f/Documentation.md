@@ -1,0 +1,3 @@
+Distribution ports are indicated on products and product types using the _IfcRelNests_ relationship where _RelatingObject_ refers to the enclosing _IfcDistributionElement_ or _IfcDistributionElementType_ respectively. The order of ports indicates logical ordering such within outlets, junction boxes, or communications equipment.
+
+Ports may be further nested into sub-ports, for indicating specific connections on components or pins.

@@ -1,0 +1,1 @@
+An _IfcEvent_ may be assigned to an _IfcWorkCalendar_ to indicate times when such event is active using _IfcRelAssignsToControl_; otherwise the effective calendar is determined by the nearest _IfcProcess_ ancestor with a calendar assigned.

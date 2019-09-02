@@ -1,1 +1,0 @@
-Specific to IfcFastener: It shall not be provided, if the IfcFastener is part of an aggregation.

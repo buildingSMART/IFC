@@ -1,62 +1,148 @@
-**Definition from ISO 6707-1:1989**: Construction enclosing the building from above.
+A roof is the covering of the top part of a building, it protects the building against the effects of wheather.
 
-The _IfcRoof_ is a description of the total roof. It acts as a container entity, that aggregates all components of the roof, it represents. The aggregation is handled via the _IfcRelAggregates_ relationship, relating a roof (_IfcRoof_) with the related roof entities, like slabs (_IfcSlab_), rafters and purlins (_IfcBeam_), or other (included) roofs, such as dormers (_IfcRoof_).
+{ .extDef}
+> NOTE&nbsp; Definition according to ISO 6707-1: construction enclosing the building from above.
 
-> <font color="#0000FF" size="-1">HISTORY: New Entity in IFC
-		Release 2.0.</font>
+The _IfcRoof_ is a description of the total roof. It acts as a container entity, that aggregates all components of the roof, it represents. The aggregation is handled via the _IfcRelAggregates_ relationship, relating an _IfcRoof_ with the related roof elements, like slabs (represented by _IfcSlab_), rafters and purlins (represented by _IfcBeam_), or other included roofs, such as dormers (represented by _IfcRoof_).
 
-****Property Set Use Definition****:
+The geometric representation of _IfcRoof_ is given by the _IfcProductDefinitionShape_, allowing multiple geometric representations. Independent 'Body' geometric representations should only be used when the _IfcRoof_ is not defined as an aggregate. If defined as an aggregate, the 'Body' geometric representation is the sum of the representation of the components within the aggregate.
 
-The property sets relating to the _IfcRoof_ are defined by the _IfcPropertySet_ and attached by the _IfcRelDefinesByProperties_ relationship. It is accessible by the inverse _IsDefinedBy_ relationship. The following property set definitions specific to the _IfcRoof_ are part of this IFC release:
+> NOTE&nbsp; View definitions and implementer agreements may restrict the _IfcRoof_ to not have an independent geometry, but to always require aggregated elements to represent the shape of the roof.
 
-* [Pset_RoofCommon](../../psd/IfcSharedBldgElements/Pset_RoofCommon.xml){ target="SOURCE"}: common property set for all roof occurrences
+> NOTE&nbsp; If the _IfcRoof_ has aggregated elements to represent the shape of the roof, then only those elements shall have openings, not the _IfcRoof_ itself.
 
-****Quantity Use Definition****:
+> HISTORY&nbsp; New entity in IFC2.0.
 
-The quantities relating to the _IfcRoof_ are defined by the _IfcElementQuantity_ and attached by the _IfcRelDefinesByProperties_. It is accessible by the inverse _IsDefinedBy_ relationship. The following quantities are foreseen, but will be subjected to the local standard of measurement:
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; Attribute _ShapeType_ renamed to _PredefinedType_.
 
-<table cellpadding="2" cellspacing="2" border="1"> 
-		<tr valign="TOP"> 
-		  <td valign="TOP" align="LEFT"><font size="-1"><i><b>Name</b></i></font></td> 
-		  <td valign="TOP" align="LEFT" width="60%"><font size="-1"><i><b>Description</b></i></font></td> 
-		  <td valign="TOP" align="LEFT"><font size="-1"><i><b>Value
-			 Type</b></i></font></td> 
-		</tr> 
-		<tr> 
-		  <td valign="TOP" align="LEFT"><font size="-1">TotalSurfaceArea</font></td> 
-		  <td valign="TOP" align="LEFT" width="60%"><font size="-1">Total
-			 (exposed to the outside) area of all roof slabs belonging to the roof. The
-			 exact definition and calculation rules depend on the method of measurement
-			 used.</font></td> 
-		  <td valign="TOP" align="LEFT"><font size="-1"><i>IfcQuantityArea</i></font></td> 
-		</tr> 
-	 </table>
+___
+## Common Use Definitions
+The following concepts are inherited at supertypes:
 
-****Geometry Use Definitions****:
+* _IfcRoot_: [Identity](../../templates/identity.htm), [Revision Control](../../templates/revision-control.htm)
+* _IfcElement_: [Box Geometry](../../templates/box-geometry.htm), [FootPrint Geometry](../../templates/footprint-geometry.htm), [Body SurfaceOrSolidModel Geometry](../../templates/body-surfaceorsolidmodel-geometry.htm), [Body SurfaceModel Geometry](../../templates/body-surfacemodel-geometry.htm), [Body Tessellation Geometry](../../templates/body-tessellation-geometry.htm), [Body Brep Geometry](../../templates/body-brep-geometry.htm), [Body AdvancedBrep Geometry](../../templates/body-advancedbrep-geometry.htm), [Body CSG Geometry](../../templates/body-csg-geometry.htm), [Mapped Geometry](../../templates/mapped-geometry.htm)
+* _IfcBuildingElement_: [Product Assignment](../../templates/product-assignment.htm), [Surface 3D Geometry](../../templates/surface-3d-geometry.htm)
 
-The geometric representation of _IfcRoof_ is given by the _IfcProductDefinitionShape_, allowing multiple geometric representations. Independent geometric representations should only be used when the _IfcRoof_ is not defined as an aggregate. If defined as an aggregate, the geometric representation is the sum of the representation of the components within the aggregate.
+[![Image](../../../img/diagram.png)&nbsp;Instance diagram](../../../annex/annex-d/common-use-definitions/ifcroof.htm)
 
-**Local Position**
+{ .use-head}
+Object Typing
 
-The local placement for _IfcRoof_ is defined in its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_, which defines the local coordinate system that is referenced by all geometric representations.
+The [Object Typing](../../templates/object-typing.htm) concept applies to this entity as shown in Table 1.
 
-* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point (if given) to the local placement of the same _IfcSpatialStructureElement_ that is used in the _ContainedInStructure_ inverse attribute or to a referenced spatial structure element at a higher level..
-* If the relative placement is not used, the absolute placement is defined within the world coordinate system. 
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Type</b></th></tr>
+<tr><td><a href="../../ifcsharedbldgelements/lexical/ifcrooftype.htm">IfcRoofType</a></td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 1 &mdash; IfcRoof Object Typing</p></td></tr></table>
 
-If the _LocalPlacement_ is given for the _IfcRoof_, then all components, which are aggregated to the roof should use this placement as their relative placement.
+  
+  
+{ .use-head}
+Property Sets for Objects
 
-**_Geometric Representation_**
+The [Property Sets for Objects](../../templates/property-sets-for-objects.htm) concept applies to this entity as shown in Table 2.
 
-If the _IfcRoof_ has components (referenced by_SELF\IfcObject.IsDecomposedBy_) then no independent geometric representation shall defined for the _IfcRoof_. The _IfcRoof_ is then geometrically represented by the geometric representation of its components. The components are accessed via _SELF\IfcObject.IsDecomposedBy[1].RelatedObjects_.
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PredefinedType</b></th><th><b>Name</b></th></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedbldgelements/Pset_RoofCommon.xml">Pset_RoofCommon</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcstructuralelementsdomain/Pset_ConcreteElementGeneral.xml">Pset_ConcreteElementGeneral</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcstructuralelementsdomain/Pset_PrecastConcreteElementFabrication.xml">Pset_PrecastConcreteElementFabrication</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcstructuralelementsdomain/Pset_PrecastConcreteElementGeneral.xml">Pset_PrecastConcreteElementGeneral</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_Condition.xml">Pset_Condition</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcproductextension/Pset_EnvironmentalImpactIndicators.xml">Pset_EnvironmentalImpactIndicators</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcproductextension/Pset_EnvironmentalImpactValues.xml">Pset_EnvironmentalImpactValues</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_ManufacturerOccurrence.xml">Pset_ManufacturerOccurrence</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_ManufacturerTypeInformation.xml">Pset_ManufacturerTypeInformation</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedmgmtelements/Pset_PackingInstructions.xml">Pset_PackingInstructions</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_ServiceLife.xml">Pset_ServiceLife</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_Warranty.xml">Pset_Warranty</a></td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 2 &mdash; IfcRoof Property Sets for Objects</p></td></tr></table>
 
-If the _IfcRoof_ has no components defined (empty set of _SELF\IfcObject.IsDecomposedBy_) then the _IfcRoof_ may be represented by an _IfcShapeRepresentation_ with the _RepresentationType_ = 'Brep'.
+  
+  
+{ .use-head}
+Quantity Sets
 
-**Illustration**:
+The [Quantity Sets](../../templates/quantity-sets.htm) concept applies to this entity as shown in Table 3.
 
-<table cellpadding="2" cellspacing="2"> 
-		<tr valign="TOP"> 
-		  <td valign="TOP" align="LEFT"><a href="drawings/IfcRoof-Layout1.dwf"><img src="figures/IfcRoof-Layout1.gif" alt="roof" width="399" height="274" border="0"></a></td> 
-		  <td valign="TOP" align="LEFT"><i>IfcRoof</i> defining only the local
-			 placement for all components.</td> 
-		</tr> 
-	 </table>
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Name</b></th></tr>
+<tr><td><a href="../../qto/ifcsharedbldgelements/Qto_RoofBaseQuantities.xml">Qto_RoofBaseQuantities</a></td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3 &mdash; IfcRoof Quantity Sets</p></td></tr></table>
+
+  
+  
+{ .use-head}
+Spatial Containment
+
+The [Spatial Containment](../../templates/spatial-containment.htm) concept applies to this entity as shown in Table 4.
+
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Structure</b></th><th><b>Description</b></th></tr>
+<tr><td><a href="../../ifcproductextension/lexical/ifcbuildingstorey.htm">IfcBuildingStorey</a></td><td>Default spatial container </td></tr>
+<tr><td><a href="../../ifcproductextension/lexical/ifcbuilding.htm">IfcBuilding</a></td><td>Spatial container for the element if it cannot be assigned to a building storey</td></tr>
+<tr><td><a href="../../ifcproductextension/lexical/ifcsite.htm">IfcSite</a></td><td>Spatial container for the element in case that it is placed on site (outside of building)</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 4 &mdash; IfcRoof Spatial Containment</p></td></tr></table>
+
+  
+  
+{ .use-head}
+Element Decomposition
+
+The [Element Decomposition](../../templates/element-decomposition.htm) concept applies to this entity as shown in Table 5.
+
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>RelatedObjects</b></th><th><b>Description</b></th></tr>
+<tr><td><a href="../../ifcsharedbldgelements/lexical/ifcslab.htm">IfcSlab</a></td><td>A roof may be aggregated into slabs for each face.</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 5 &mdash; IfcRoof Element Decomposition</p></td></tr></table>
+
+_Geometric representation by aggregated elements_
+
+If the _IfcRoof_ has components (referenced by _SELF\IfcObject.IsDecomposedBy_) then no independent geometric representation shall defined for the _IfcRoof_. The _IfcRoof_ is then geometrically represented by the geometric representation of its components. The components are accessed via _SELF\IfcObject.IsDecomposedBy[1].RelatedObjects_. The geometric representations that are supported for the aggregated elements are defined with each element. See geometric use definition for _IfcSlab_, _IfcBeam_, _IfcColumn_, _IfcBuildingElementPart_ and other subtypes of _IfcBuildingElement_.
+
+Figure 1 illustrates roof placement, with an _IfcRoof_ defining the local placement for all aggregated elements.
+
+!["roof"](../../../figures/IfcRoof-Layout1.gif "Figure 1 &mdash; Roof placement")
+
+  
+  
+{ .use-head}
+Product Placement
+
+The [Product Placement](../../templates/product-placement.htm) concept applies to this entity as shown in Table 6.
+
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Type</b></th><th><b>Relative</b></th><th><b>Description</b></th></tr>
+<tr><td><a href="../../ifcgeometricconstraintresource/lexical/ifclocalplacement.htm">IfcLocalPlacement</a></td><td><a href="../../ifcgeometricconstraintresource/lexical/ifclocalplacement.htm">IfcLocalPlacement</a></td><td>Relative placement according to position and rotation relative to container.</td></tr>
+<tr><td><a href="../../ifcgeometricconstraintresource/lexical/ifclocalplacement.htm">IfcLocalPlacement</a></td><td>&nbsp;</td><td>Absolute placement according to position and rotation of world coordinate system.</td></tr>
+<tr><td><a href="../../ifcgeometricconstraintresource/lexical/ifcgridplacement.htm">IfcGridPlacement</a></td><td>&nbsp;</td><td>Placement according to grid intersection.</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 6 &mdash; IfcRoof Product Placement</p></td></tr></table>
+
+The following restriction may be imposed by view definitions or implementer agreements:
+
+* If the _IfcRoof_ establishes an aggregate, then all contained elements shall be placed relative to the _IfcRoof.ObjectPlacement_.

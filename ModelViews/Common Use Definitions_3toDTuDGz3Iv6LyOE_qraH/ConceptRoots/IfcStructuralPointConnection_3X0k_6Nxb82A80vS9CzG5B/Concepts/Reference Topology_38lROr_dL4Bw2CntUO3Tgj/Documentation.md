@@ -1,0 +1,1 @@
+Instances of _IfcStructuralPointConnection_ shall have a topology representation which consists of one _IfcVertexPoint_, representing the reference point of the point connection. See definitions at _IfcStructuralItem_ for further specifications.

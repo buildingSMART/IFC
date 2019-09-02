@@ -1,11 +1,19 @@
-Selection of whether a material, a material layer, material layer set (with or without usage information) or a material list is assigned to an element.
+_IfcMaterialSelect_ provides selection of either a material definition or a material usage definition that can be assigned to an element, a resource or another entity within this specification.
 
-SELECT
+* _IfcMaterialDefinition_ 
+    * _IfcMaterial_
+    * _IfcMaterialLayer_
+    * _IfcMaterialLayerSet_
+    * _IfcMaterialProfile_
+    * _IfcMaterialProfileSet_
+    * _IfcMaterialConstituent_
+    * _IfcMaterialConstituentSet_ 
+* _IfcMaterialUsageDefinition_ 
+    * _IfcMaterialLayerSetUsage_
+    * _IfcMaterialProfileSetUsage_ 
+* _IfcMaterialList_ 
 
-* IfcMaterial
-* IfcMaterialList
-* IfcMaterialLayer
-* IfcMaterialLayerSet
-* IfcMaterialLayerSetUsage
+> HISTORY&nbsp; New select in IFC1.0
 
-> <font color="#FF0000" size="-1">IFC2x PLATFORM CHANGE: IfcMaterialLayer and IfcMaterialLayerSet have been added in the select list with upward compatibility.</font>
+{ .change-ifc2x4}
+> IFC4 CHANGE The select now includes two new abstract entities _IfcMaterialDefinition_ and _IfcMaterialUsageDefinition_ with upward compatibility. The use of _IfcMaterialList_ is deprecated from IFC4 onwards.

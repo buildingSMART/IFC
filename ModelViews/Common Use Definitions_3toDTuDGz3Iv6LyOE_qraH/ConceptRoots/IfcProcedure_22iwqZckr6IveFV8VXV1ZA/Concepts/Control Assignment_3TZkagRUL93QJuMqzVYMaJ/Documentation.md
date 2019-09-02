@@ -1,0 +1,1 @@
+An _IfcProcedure_ may be assigned to an _IfcWorkCalendar_ to indicate times when such procedure may be performed using _IfcRelAssignsToControl_; otherwise the effective calendar is determined by the nearest _IfcProcess_ ancestor with a calendar assigned. Advisory notes should be assigned to the specific _IfcProcess_ for which it gives advice using _IfcRelAssignsToProcess_.

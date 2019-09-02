@@ -1,1 +1,0 @@
-Weight of the fan.

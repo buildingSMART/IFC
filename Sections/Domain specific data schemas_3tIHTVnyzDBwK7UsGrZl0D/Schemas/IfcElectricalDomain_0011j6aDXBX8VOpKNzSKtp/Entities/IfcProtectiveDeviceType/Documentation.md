@@ -1,29 +1,9 @@
-An _IfcProtectiveDeviceType_ is a device that breaks an electrical circuit when a stated electric current that passes through it is exceeded.
+The flow controller type **IfcProtectiveDeviceType** defines commonly shared information for occurrences of protective devices. The set of shared information may include:
 
-> <font color="#0000ff" size="-1">
-HISTORY: New entity in IFC 2x2 </font>
-> 
+* common properties with shared property sets
+* common representations
+* common materials
+* common composition of elements
+* common ports
 
-
-****Use Definitions****
-
-An _IfcProtectiveDeviceType_ is a subtype of IfcFlowControllerType that provides for various devices that ensure the safety of an electrical circuit.
-
-Usage of _IfcProtectiveDeviceType_ defines the parameters for one or more occurrences of _IfcFlowController_. Parameters are specified through property sets that are enumerated in the _IfcIfcProtectiveDeviceTypeEnum_ data type.
-
-****Property Set Use Definition****:
-
-The property sets relating to the _IfcProtectiveDeviceType_are defined by the _IfcPropertySet_ and attached by the _IfcRelDefinesByType_ relationship. It is accessible by the inverse _IsDefinedBy_ relationship. The following property set definitions specific to an _IfcProtectiveDeviceType_ are part of this IFC release:
-
-* [Pset_ElectricalDeviceCommon](../../psd/IfcElectricalDomain/Pset_ElectricalDeviceCommon.xml): property set for properties that are common to all types of electrical devices, if available 
-* [Pset_ProtectiveDeviceTypeCommon](../../psd/IfcElectricalDomain/Pset_ProtectiveDeviceTypeCommon.xml): property set for properties that are common to all types of protective device, if available 
-* [Pset_ProtectiveDeviceTypeCircuitBreaker](../../psd/IfcElectricalDomain/Pset_ProtectiveDeviceTypeCircuitBreaker.xml): specific property set for the properties of a circuit breaker , if available 
-* [Pset_ProtectiveDeviceTypeEarthFailureDevice](../../psd/IfcElectricalDomain/Pset_ProtectiveDeviceTypeEarthFailureDevice.xml): specific property set for the properties of an earth failure device, if available 
-* [Pset_ProtectiveDeviceTypeFuseDisconnector](../../psd/IfcElectricalDomain/Pset_ProtectiveDeviceTypeFuseDisconnector.xml): specific property set for the properties of a fuse disconnector, if available 
-* [Pset_ProtectiveDeviceTypeResidualCurrentCircuitBreaker](../../psd/IfcElectricalDomain/Pset_ProtectiveDeviceTypeResidualCurrentCircuitBreaker.xml): specific property set for the properties of a residual current circuit breaker, if available 
-* [Pset_ProtectiveDeviceTypeResidualCurrentSwitch](../../psd/IfcElectricalDomain/Pset_ProtectiveDeviceTypeResidualCurrentSwitch.xml): specific property set for the properties of a residual current switch, if available 
-* [Pset_ProtectiveDeviceTypeVaristor](../../psd/IfcElectricalDomain/Pset_ProtectiveDeviceTypeVaristor.xml): specific property set for the properties of a varistor, if available 
-
-****Geometry Use Definitions****
-
-Representations of the type are defined as representation maps (at the level of the supertype _IfcTypeProduct_). These are assigned at the occurrence through the _IfcShapeRepresentation.Item_ being an _IfcMappedItem_.
+It is used to define a protective device type specification indicating the specific product information that is common to all occurrences of that product type. The **IfcProtectiveDeviceType** may be declared within _IfcProject_ or _IfcProjectLibrary_ using _IfcRelDeclares_ and may be exchanged with or without occurrences of the type. Occurrences of **IfcProtectiveDeviceType** are represented by instances of _IfcProtectiveDevice_. Refer to the documentation at _IfcProtectiveDevice_ for supported property sets, materials, composition, and ports.

@@ -1,0 +1,1 @@
+An _IfcTask_ may be assigned a Work Breakdown Structure (WBS) code. A WBS code is dealt with as a classification of task and is associated to a task occurrence using the _IfcRelAssociatesClassification_ relationship class. As well as being to designate the code, the classification structure also enables the source of the work breakdown structure classification to be identified.

@@ -1,18 +1,50 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralResultGroup" UniqueId="744fe291-2e62-4a6f-b0a4-1ead956bee5c" DiagramNumber="5" BaseDefinition="IfcGroup" EntityFlags="165">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStructuralResultGroup" Name="IfcStructuralResultGroup" UniqueId="744fe291-2e62-4a6f-b0a4-1ead956bee5c" DiagramNumber="1" BaseDefinition="IfcGroup" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Berechnungsergebnisse des Lastfalls / Lastkombination" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1183.3217" Y="1476.1884" Width="210.1391" Height="208.80128" />
 	<Attributes>
 		<DocAttribute Name="TheoryType" UniqueId="50f3f700-985f-42c4-a053-708cf2af2e25" DefinedType="IfcAnalysisTheoryTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Specifies the analysis theory used to obtain the respective results.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1291.507" Y="1476.1884" />
+				<DocPoint X="1291.507" Y="1245.65197" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1366.447672" Y="1418.726845" Width="139" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ResultForLoadGroup" UniqueId="0912b5b6-1758-417c-8a7c-5bf6ef79f48f" DefinedType="IfcStructuralLoadGroup" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ResultForLoadGroup" UniqueId="0912b5b6-1758-417c-8a7c-5bf6ef79f48f" DefinedType="IfcStructuralLoadGroup" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>Reference to an instance of IfcStructuralLoadGroup for which this instance represents the result.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1183.3217" Y="1659.5998" />
+				<DocPoint X="335.52619" Y="1659.5998" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1185.9883667" Y="1654.2664667" Width="239" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="IsLinear" UniqueId="c52b2d50-09a4-46e4-8f2d-0b3034de6be1" DefinedType="BOOLEAN" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>This Boolean value allows to easily recognize if a linear analysis has been applied (allowing the superposition of analysis results), or vice versa.</Documentation>
+			<Documentation>This value allows to easily recognize whether a linear analysis has been applied (allowing the superposition of analysis results).</Documentation>
+			<DiagramLine>
+				<DocPoint X="1358.1388" Y="1476.1884" />
+				<DocPoint X="1358.1388" Y="1405.595078" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1413.903856" Y="1495.188099" Width="95" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="ResultGroupFor" UniqueId="611d0a6e-2ce8-4adc-8e0f-7b92afe5309e" DefinedType="IfcStructuralAnalysisModel" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="HasResults">
 			<Documentation>Reference to an instance of IfcStructuralAnalysisModel for which this instance captures a result.</Documentation>
+			<DiagramLine>
+				<DocPoint X="440.44207" Y="632.33587" />
+				<DocPoint X="440.44207" Y="831.59029" />
+				<DocPoint X="1225.26198" Y="831.59029" />
+				<DocPoint X="1225.26198" Y="1476.1884" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="443.1087367" Y="873.586685" Width="326" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="HasObjectType" UniqueId="3561c6db-b5eb-43f0-92c1-4a657c07e904">
+			<Documentation>The attribute ObjectType shall be given if the analysis theory type is set to USERDEFINED.</Documentation>
+			<Expression>(TheoryType &lt;&gt; IfcAnalysisTheoryTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

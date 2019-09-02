@@ -1,1 +1,0 @@
-Indication of whether the sheath is fire resistant (= TRUE) or not (= FALSE).

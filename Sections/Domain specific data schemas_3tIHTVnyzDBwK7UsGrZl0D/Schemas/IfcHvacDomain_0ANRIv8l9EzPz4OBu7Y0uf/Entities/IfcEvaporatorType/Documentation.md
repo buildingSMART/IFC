@@ -1,23 +1,9 @@
-The element type _IfcEvaporatorType_ defines a list of commonly shared property set definitions of an evaporator and an optional set of product representations. It is used to define an evaporator specification (i.e. the specific product information, that is common to all occurrences of that product type).
+The energy conversion device type **IfcEvaporatorType** defines commonly shared information for occurrences of evaporators. The set of shared information may include:
 
-> <font size="-1">
-		NOTE: The product representations are defined as
-		representation maps (at the level of the supertype <i>IfcTypeProduct</i>, which
-		get assigned by an element occurrence instance through the
-		<i>IfcShapeRepresentation.Item[1]</i> being an
-		<i>IfcMappedItem</i>.
-    	</font>
+* common properties with shared property sets
+* common representations
+* common materials
+* common composition of elements
+* common ports
 
-A evaporator type is used to define the common properties of an evaporator that may be applied to many occurrences of that type. An evaporator is a device in which a liquid refrigerent is vaporized and absorbs heat from the surrounding fluid. Evaporator types may be exchanged without being already assigned to occurrences.
-
-The occurrences of the _IfcEvaporatorType_ are represented by instances of _IfcEnergyConversionDevice_ or its subtypes.
-
-****Property Set Use Definition****:
-
-The property sets relating to this entity are defined by the _IfcPropertySet_ and attached by the _IfcRelDefinesByProperties_ relationship. It is accessible by the inverse _IsDefinedBy_ relationship. The following property set definitions specific to this entity are part of this IFC release:
-
-* [Pset_EvaporatorTypeCommon](../../psd/IfcHvacDomain/Pset_EvaporatorTypeCommon.xml){ target="SOURCE"}: common property set for all evaporator types 
-
-> <font color="#0000ff" size="-1">
-    	HISTORY: New entity in IFC Release 2x2.<br>
-    	</font>
+It is used to define a evaporator type specification indicating the specific product information that is common to all occurrences of that product type. The **IfcEvaporatorType** may be declared within _IfcProject_ or _IfcProjectLibrary_ using _IfcRelDeclares_ and may be exchanged with or without occurrences of the type. Occurrences of **IfcEvaporatorType** are represented by instances of _IfcEvaporator_. Refer to the documentation at _IfcEvaporator_ for supported property sets, materials, composition, and ports.

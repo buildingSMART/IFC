@@ -1,1 +1,0 @@
-A circuit supplies electrical devices with voltage and current.

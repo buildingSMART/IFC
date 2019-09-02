@@ -1,1 +1,0 @@
-Specific to IfcStair: This version of IFC does not define a type for stairs.

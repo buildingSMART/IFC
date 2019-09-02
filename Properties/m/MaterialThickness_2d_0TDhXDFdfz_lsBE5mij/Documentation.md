@@ -1,1 +1,0 @@
-The thickness of the duct segment material.

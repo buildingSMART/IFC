@@ -1,5 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcConstraint" UniqueId="d03dd5c6-bc93-4f7a-903f-d59e7c256d59" DiagramNumber="1" EntityFlags="205">
+	<Localization>
+		<DocLocalization Name="Beschränkung" Locale="de" />
+		<DocLocalization Name="Contrainte" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="64.156933" Y="437.57909" Width="447.42978" Height="696.27878" />
 	<Subtypes>
 		<DocSubtype UniqueId="b100e56c-4aaa-4883-a15a-a840f4036192" DefinedType="IfcObjective" />
 		<DocSubtype UniqueId="913f866a-ba39-407c-bcdf-b4ae8078c5d5" DefinedType="IfcMetric" />
@@ -7,43 +12,85 @@
 	<Attributes>
 		<DocAttribute Name="Name" UniqueId="a96ada47-fcff-40e9-9a9c-b70ac0c99a51" DefinedType="IfcLabel" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>A name to be used for the constraint (e.g., ChillerCoefficientOfPerformance).</Documentation>
+			<DiagramLine>
+				<DocPoint X="511.58671" Y="459.62742" />
+				<DocPoint X="1511.88361" Y="459.62742" />
+				<DocPoint X="1511.88361" Y="1127.17855" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="597.448669" Y="451.3516464" Width="73" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Description" UniqueId="0a3a6e99-aefa-43e9-8879-dd20addf527d" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>A description that may apply additional information about a constraint.</Documentation>
+			<DiagramLine>
+				<DocPoint X="511.58671" Y="542.83064" />
+				<DocPoint X="817.36741" Y="542.83064" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="477.781656" Y="535.7247469" Width="130" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="ConstraintGrade" UniqueId="bf869c29-5929-4e43-b21b-787d7cce70a3" DefinedType="IfcConstraintEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Enumeration that qualifies the type of constraint.</Documentation>
+			<DiagramLine>
+				<DocPoint X="511.58671" Y="663.43985" />
+				<DocPoint X="817.43006" Y="663.43985" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="498.290465" Y="654.108696" Width="189" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="ConstraintSource" UniqueId="b66f856a-0c4f-4ea8-945d-427e9a936555" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Any source material, such as a code or standard, from which the constraint originated.</Documentation>
+			<DiagramLine>
+				<DocPoint X="511.58671" Y="738.15405" />
+				<DocPoint X="1443.36172" Y="738.15405" />
+				<DocPoint X="1443.36172" Y="1127.17862" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="652.18065" Y="727.946559" Width="198" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="CreatingActor" UniqueId="4730840e-ab1d-4c08-98f1-5d6971c50e1a" DefinedType="IfcActorSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Person and/or organization that has created the constraint.</Documentation>
+			<DiagramLine>
+				<DocPoint X="511.58671" Y="810.87386" />
+				<DocPoint X="817.4055" Y="810.87386" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="632.70566" Y="803.7908958" Width="158" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="CreationTime" UniqueId="f2e74ad7-9998-444d-b4f1-9cbaa8740a15" DefinedType="IfcDateTimeSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="CreationTime" UniqueId="f2e74ad7-9998-444d-b4f1-9cbaa8740a15" DefinedType="IfcDateTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Time when information specifying the constraint instance was created.</Documentation>
+			<DiagramLine>
+				<DocPoint X="511.58671" Y="936.63811" />
+				<DocPoint X="817.43644" Y="936.63811" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="480.122338" Y="927.5496963" Width="155" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="UserDefinedGrade" UniqueId="9c83de82-3273-4c32-91c6-ae490c5c104d" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Allows for specification of user defined grade of the constraint  beyond the enumeration values (hard, soft, advisory) provided by ConstraintGrade attribute of type _IfcConstraintEnum_. 
 When a value is provided for attribute UserDefinedGrade in parallel the attribute ConstraintGrade shall have enumeration value USERDEFINED.</Documentation>
+			<DiagramLine>
+				<DocPoint X="511.58671" Y="1065.7216" />
+				<DocPoint X="1369.81371" Y="1065.7216" />
+				<DocPoint X="1369.81371" Y="1127.178716" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="663.44902" Y="1056.6409544" Width="214" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ClassifiedAs" UniqueId="1JK9yQTxj0E8RoWZ8NM$wK" DefinedType="IfcConstraintClassificationRelationship" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="ClassifiedConstraint">
-			<Documentation>Reference to the constraint classifications through objectified relationship.</Documentation>
+		<DocAttribute Name="HasExternalReferences" UniqueId="0acdd9d1-5a08-4e9a-ac1d-5bfdccf3d6d2" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="32" AggregationType="3" AggregationFlag="0" Inverse="RelatedResourceObjects">
+			<Documentation>Reference to an external references, e.g. library, classification, or document information, that are associated to the constraint.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE New inverse attribute.</Documentation>
+			<DiagramLine>
+				<DocPoint X="100.47229" Y="437.57909" />
+				<DocPoint X="100.47229" Y="151.47123" />
+				<DocPoint X="1070.5359" Y="151.47123" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="45.398881" Y="183.344569" Width="411" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="RelatesConstraints" UniqueId="3Tm5xO0wTEBPsMVKPkDIjm" DefinedType="IfcConstraintRelationship" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatingConstraint">
-			<Documentation>References to the objectified relationships that relate other constraints with this constraint.</Documentation>
-		</DocAttribute>
-		<DocAttribute Name="IsRelatedWith" UniqueId="2Qiruoa9HDdxrlGsrTXgCs" DefinedType="IfcConstraintRelationship" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatedConstraints">
-			<Documentation>References to the objectified relationships that relate this constraint with other constraints.</Documentation>
-		</DocAttribute>
-		<DocAttribute Name="PropertiesForConstraint" UniqueId="ae15850d-b69e-467e-9807-7fcf73ab1bcb" DefinedType="IfcPropertyConstraintRelationship" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatingConstraint">
+		<DocAttribute Name="PropertiesForConstraint" UniqueId="ae15850d-b69e-467e-9807-7fcf73ab1bcb" DefinedType="IfcResourceConstraintRelationship" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingConstraint">
 			<Documentation>Reference to the properties to which the constraint is applied.</Documentation>
-		</DocAttribute>
-		<DocAttribute Name="Aggregates" UniqueId="0Ax4g$50f7_xCeg2qJd2Iy" DefinedType="IfcConstraintAggregationRelationship" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatingConstraint">
-			<Documentation>Reference to the relationships that collect other constraints into this aggregate constraint.</Documentation>
-		</DocAttribute>
-		<DocAttribute Name="IsAggregatedIn" UniqueId="37_9pYMh92GR2kCYM7k9Ey" DefinedType="IfcConstraintAggregationRelationship" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatedConstraints">
-			<Documentation>Reference to the relationships that relate this constraint into aggregate constraints.</Documentation>
+			<DiagramLine>
+				<DocPoint X="152.66878" Y="437.57909" />
+				<DocPoint X="152.66878" Y="361.047425" />
+				<DocPoint X="152.633113966" Y="361.047425" />
+				<DocPoint X="152.633113966" Y="270.30159" />
+				<DocPoint X="1076.367753966" Y="270.30159" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="222.370880966" Y="298.937962" Width="608" Height="70" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

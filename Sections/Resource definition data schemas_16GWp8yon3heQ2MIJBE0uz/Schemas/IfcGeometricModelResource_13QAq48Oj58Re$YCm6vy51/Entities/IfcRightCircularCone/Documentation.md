@@ -1,54 +1,58 @@
-**Definition from ISO/CD 10303-42:1992:** A right circular cone is a CSG primitive in the form of a cone. It is defined by an axis, a point on the axis, (...) and a distance giving the location along the axis from the point to the base of the cone. In addition, a radius is given (...).
-
-&nbsp;In contrary to the ISO/CD 10303-42 definition, the _IfcRightCircularCone_ may not be truncated. It provides:
+The _IfcRightCircularCone_ is a Construction Solid Geometry (CSG) 3D primitive. It is a solid with a circular base and a point called apex as the top. The tapers from the base to the top. The axis from the center of the circular base to the apex is perpendicular to the base. The inherited _Position_ attribute defines the _IfcAxisPlacement3D_ and provides the location and orientation of the cone:
 
 * _SELF\IfcCsgPrimitive3D.Position_: The location and orientation of the axis system for the primitive.&nbsp;
-* _SELF\IfcCsgPrimitive3D.Position.Location_: The center of the&nbsp;circular area being the bottom face of the cylinder.
-* _SELF\IfcCsgPrimitive3D.Position.Position[3]:_The z-axis of the inherited placement coordinate system provides the center axis of the&nbsp;_IfcRightCircularCone_, and the apex is at the _Height_ value applied to the positive direction of the z-axis. The _BottomRadius_ defines the circular base at the xy-plane of the&nbsp;placement coordinate system.&nbsp;_&nbsp;_
+* _SELF\IfcCsgPrimitive3D.Position.Location_: The center of the circular area being the bottom face of the cone.
+* _SELF\IfcCsgPrimitive3D.Position.Position[3]:_ The z-axis of the inherited placement coordinate system provides the center axis of the _IfcRightCircularCone_, and the apex is at the _Height_ value applied to the positive direction of the z-axis. The _BottomRadius_ defines the circular base at the xy-plane of the placement coordinate system.
 
-_<table border="0" cellpadding="2" cellspacing="2" width="100%">
-  <tbody>
-    <tr>
-      <td valign="top" width="420"><img alt="cone" src="figures/IfcRightCircularCone-Layout1.png" height="300" width="400"></td>
-      <td colspan="1" rowspan="2" valign="top"><img alt="cone" src="figures/IfcRightCircularCone.jpg" height="400" width="400"></td>
-    </tr>
-    <tr>
-      <td valign="top" width="420">The cone is
-positioned within its
-own placement coordinate system. The origin is the center of the bottom
-circular disk, that lies in the XY plane. The apex lies on the positive
-z axis at [0, 0, <i>Height</i>].</td>
-    </tr>
-    <tr>
-      <td colspan="2" rowspan="1" valign="top" width="420">When a texture is applied to the sides of the
-cone, the texture wraps counterclockwise (from above) starting at the
-back of the cone. The texture has a vertical seam at the back in the
-X=0 plane, from the apex (0,&nbsp;0, <i>Height</i>) to
-the point (0, <i>BottomRadius</i>, 0). For the bottom cap,
-a circle is cut out of the texture square centred at (0, 0,&nbsp;0)
-with dimensions (2&nbsp;&times; <i>BottomRadius)</i>
-by (2&nbsp;&times; <i>BottomRadius)</i>. The
-bottom cap texture appears right side up when the top of the cone is
-rotated towards the -Z-axis. Texture Transform affects the texture
-coordinates of the Cone.&nbsp;
-      <blockquote><small>NOTE &nbsp;see the Extensible
-3D (<a href="http://www.web3d.org/x3d/specifications/ISO-IEC-19775-X3DAbstractSpecification/Part01/components/geometry3D.html#Cone">X3D</a>)
-definition for textures, please note, that all extrusions in IFC are
-into the positve z axis, whereas in X3D there are into the positive y
-axis, and the IFC cone is positioned at the bottom face, whereas in
-X3D it is positioned centric..</small></blockquote>
-      </td>
-    </tr>
-  </tbody>
+Figure 1 illustrates geometric parameters of the cone. The cone is positioned within its own placement coordinate system. The origin is the center of the bottom circular disk, that lies in the XY plane. The apex lies on the positive z axis at [0, 0, _Height_].
+
+!["cone1"](../../../figures/IfcRightCircularCone-Layout1.png "Figure 1 &mdash; Right circular cone geometry")
+
+> NOTE&nbsp; Entity adapted from **right_circular_cone** defined in ISO 10303-42.
+
+> HISTORY&nbsp; New entity in IFC2x3
+
+{ .use-head}
+Texture use definition
+
+On the circular side, textures are aligned facing upright with origin at the back (+Y direction) revolving counter-clockwise. Textures are stretched or repeated to the extent of the base circumference according to RepeatS. Textures are compressed linearly going upwards towards the top point according to RepeatT.
+
+On the bottom face, textures are aligned facing front-to-back, with the center of the circle aligned to the center of the texture.
+
+Figure 2 illustrates default texture mapping with a clamped texture (RepeatS=False and RepeatT=False). The image on the left shows the texture where the S axis points to the right and the T axis points up. The image on the right shows the texture applied to the geometry where the X axis points back to the right, the Y axis points back to the left, and the Z axis points up.
+
+<table summary="texture" class="gridtable">
+<tr><td><img alt="texture" src="../../../figures/IfcRightCircularCone-Texture.png"></td></tr>
+<tr><td>
+<table summary="texture" width="512" class="gridtable">
+<tr>
+<th>Side</th>
+<th>Normal</th>
+<th>Origin&nbsp;X</th>
+<th>Origin&nbsp;Y</th>
+<th>Origin&nbsp;Z</th>
+<th>S&nbsp;Axis</th>
+<th>T&nbsp;Axis</th>
+</tr>
+<tr>
+<td>Side</td>
+<td>+Y</td>
+<td>0</td>
+<td>+Radius</td>
+<td>0</td>
+<td>-X</td>
+<td>(towards top point)</td>
+</tr>
+<tr>
+<td>Bottom</td>
+<td>-Z</td>
+<td>-Radius</td>
+<td>+Radius</td>
+<td>0</td>
+<td>+X</td>
+<td>-Y</td>
+</tr>
 </table>
-
-> <font color="#0000ff" size="-1">NOTE&nbsp;
-Corresponding STEP entity: right_circular_cone, the position attribute
-has been promoted to the immediate supertype <i>IfcCsgPrimitive3D</i>.
-No semi_angle attribute, and the radius defines the bottom radius,
-since only a non-truncated cone is in scope. Please refer to ISO/IS
-10303-42:1994, p. 176 for the final definition of the formal standard. </font>
-> 
-> <font color="#0000ff" size="-1">HISTORY&nbsp;
-New entity in IFC2x Edition 3.</font>
->
+</td></tr>
+<tr><td><p class="figure">Figure 2 &mdash; Right circular cone textures</p></td></tr>
+</table>

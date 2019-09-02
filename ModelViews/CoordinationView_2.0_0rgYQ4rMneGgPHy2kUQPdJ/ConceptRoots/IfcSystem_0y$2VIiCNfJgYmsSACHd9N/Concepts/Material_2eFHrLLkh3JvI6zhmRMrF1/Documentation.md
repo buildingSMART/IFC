@@ -1,1 +1,0 @@
-Specific to IfcSystem: the IfcSystem shall not have a material assigned.

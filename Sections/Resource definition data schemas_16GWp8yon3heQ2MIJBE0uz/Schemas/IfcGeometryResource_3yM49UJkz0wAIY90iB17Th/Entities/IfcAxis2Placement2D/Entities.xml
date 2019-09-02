@@ -1,19 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAxis2Placement2D" UniqueId="0110d280-1722-46bf-b12c-0b81868564a8" DiagramNumber="3" BaseDefinition="IfcPlacement" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Einfügepunkt mit zwei Achsen - zweidimensionaler Raum (2D)" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="4280.332" Y="951.40467" Width="408.66667" Height="100" />
 	<Attributes>
-		<DocAttribute Name="RefDirection" UniqueId="5e585783-4533-48ef-834e-1d2f291ac661" DefinedType="IfcDirection" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>The direction used to determine the direction of the local X Axis.</Documentation>
+		<DocAttribute Name="RefDirection" UniqueId="5e585783-4533-48ef-834e-1d2f291ac661" DefinedType="IfcDirection" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>The direction used to determine the direction of the local X axis. If a value is omited that it defaults to [1.0, 0.0.].</Documentation>
+			<DiagramLine>
+				<DocPoint X="4280.332" Y="974.73797" />
+				<DocPoint X="3973.45207" Y="974.73797" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4280.332" Y="974.73797" Width="143" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="P" UniqueId="33104550-d380-4611-9005-707c5ca49a0e" DefinedType="IfcDirection" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="2">
-			<Documentation>P[1]: The normalized direction of the placement X Axis. This is (1.0,0.0,0.0) if RefDirection is omitted. P[2]: The normalized direction of the placement Y Axis. This is a derived attribute and is orthogonal to P[1].</Documentation>
+			<Documentation>_P[1]_: The normalized direction of the placement X Axis. This is [1.0,0.0] if _RefDirection_ is omitted.  
+_P[2]_: The normalized direction of the placement Y Axis. This is a derived attribute and is orthogonal to P[1]. If _RefDirection_ is omitted, it defaults to [0.0,1.0]</Documentation>
 			<Derived>IfcBuild2Axes(RefDirection)</Derived>
+			<DiagramLine>
+				<DocPoint X="4280.332" Y="1030.738" />
+				<DocPoint X="3973.45207" Y="1030.738" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4280.332" Y="1025.4046667" Width="175" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="0XWQ8Tdt5CTh8U5_O3jGnz">
+		<DocWhereRule Name="RefDirIs2D" UniqueId="9a579f2a-2735-4397-ac33-607b47c642b9">
 			<Expression>(NOT (EXISTS (RefDirection))) OR (RefDirection.Dim = 2)</Expression>
 		</DocWhereRule>
-		<DocWhereRule Name="WR2" UniqueId="1XH_iBgOP1whsSuWwWIEya">
+		<DocWhereRule Name="LocationIs2D" UniqueId="247e60b5-6a73-49f1-9a86-a248befbdc39">
 			<Expression>SELF\IfcPlacement.Location.Dim = 2</Expression>
 		</DocWhereRule>
 	</WhereRules>

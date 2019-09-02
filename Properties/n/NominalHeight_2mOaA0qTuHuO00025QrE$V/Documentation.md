@@ -1,1 +1,1 @@
-The nominal height of the duct segment. Refer to NominalDiameterOrWidth for comments about interpretation of multiple items in the list.
+The nominal height of the duct segment.

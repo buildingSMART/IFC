@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcDoorPanelProperties" UniqueId="9cba168e-4c79-497b-9481-9b26b7aa86d4" DiagramNumber="1" BaseDefinition="IfcPreDefinedPropertySet" EntityFlags="237">
+	<Localization>
+		<DocLocalization Name="Festdefinierte Merkmale der Türfüllung / des Türflügels" Locale="de" />
+		<DocLocalization Name="Propriétés du panneau de porte" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="529.97333" Y="1732.8666" Width="398.2" Height="375.83333" />
+	<Attributes>
+		<DocAttribute Name="PanelDepth" UniqueId="60db7d64-ad51-4907-abb9-1e37b03e6ef5" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Depth of the door panel, measured perpendicular to the plane of the door leaf.</Documentation>
+			<DiagramLine>
+				<DocPoint X="928.17333" Y="2043.4499" />
+				<DocPoint X="1166.40666" Y="2043.4499" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="920.17333" Y="2035.4499" Width="137" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="PanelOperation" UniqueId="653eed18-68d7-4612-8bdf-6873cf96ca54" DefinedType="IfcDoorPanelOperationEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The _PanelOperation_ defines the way of operation of that panel. The _PanelOperation_ of the door panel has to correspond with the _OperationType_ of the _IfcDoorStyle_ by which it is referenced.</Documentation>
+			<DiagramLine>
+				<DocPoint X="928.17333" Y="1764.0522" />
+				<DocPoint X="1135.63993" Y="1764.0522" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="925.506663" Y="1758.718867" Width="179" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="PanelWidth" UniqueId="5ac6ab35-7be7-4433-9f2a-95d15dfb9753" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Width of this panel, given as ratio relative to the total clear opening width of the door. If omited, it defaults to 1. A value has to be provided for all doors with _OperationType_&apos;s at _IfcDoorStyle_ defining a door with more then one panel.</Documentation>
+			<DiagramLine>
+				<DocPoint X="928.17333" Y="1944.7833" />
+				<DocPoint X="1146.57333" Y="1944.7833" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="930.8399967" Y="1939.4499667" Width="133" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="PanelPosition" UniqueId="dc262691-0151-4a09-8981-de18a10127ae" DefinedType="IfcDoorPanelPositionEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Position of this panel within the door. The _PanelPosition_ of the door panel has to correspond with the _OperationType_ of the _IfcDoorStyle_ by which it is referenced.</Documentation>
+			<DiagramLine>
+				<DocPoint X="928.17333" Y="1850.3929" />
+				<DocPoint X="1135.5667" Y="1850.3929" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="914.839997" Y="1845.059567" Width="157" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="ShapeAspectStyle" UniqueId="4c01c2bd-ea29-4104-bd4f-963e2032e958" DefinedType="IfcShapeAspect" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>Pointer to the shape aspect, if given. The shape aspect reflects the part of the door shape, which represents the door panel.
+{ .deprecated}
+&gt; DEPRECATION&amp;nbsp; The attribute is deprecated and shall no longer be used, i.e. the value shall be NIL ($).</Documentation>
+			<DiagramLine>
+				<DocPoint X="806.40667" Y="1732.8666" />
+				<DocPoint X="806.40667" Y="1539.44993" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="934.40667" Y="1692.8666" Width="208" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="ApplicableToType" UniqueId="1899ca1c-6aab-48aa-84c9-331108dd28eb">
+			<Documentation>The _IfcDoorPanelProperties_ shall only be used in the context of an _IfcDoorType_.
+&gt; NOTE&amp;nbsp; The deprecated entity _IfcDoorStyle_ is applicable as well.</Documentation>
+			<Expression>(EXISTS(SELF\IfcPropertySetDefinition.DefinesType[1])) 
+AND 
+(
+ (&apos;IFCSHAREDBLDGELEMENTS.IFCDOORTYPE&apos; IN TYPEOF(SELF\IfcPropertySetDefinition.DefinesType[1]))
+  OR
+ (&apos;IFCARCHITECTUREDOMAIN.IFCDOORSTYLE&apos; IN TYPEOF(SELF\IfcPropertySetDefinition.DefinesType[1]))
+)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

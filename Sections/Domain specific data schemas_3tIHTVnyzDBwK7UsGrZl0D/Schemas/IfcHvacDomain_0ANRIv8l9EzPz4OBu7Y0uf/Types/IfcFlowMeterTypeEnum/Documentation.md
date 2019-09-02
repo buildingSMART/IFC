@@ -1,14 +1,16 @@
 This enumeration defines various types of flow meter:
 
-* **ELECTRICMETER**: Electric meter
-* **ENERGYMETER**: Energy meter
-* **FLOWMETER**: Flow meter
-* **GASMETER**: Gas meter
-* **OILMETER**: Oil meter
-* **WATERMETER**: Water meter
+{ .spec-head}
+Enumerated Item Definitions:
+
+* **ENERGYMETER**: An electric meter or energy meter is a device that measures the amount of electrical energy supplied to or produced by a residence, business or machine.
+* **GASMETER**: A device that measures the quantity of a gas or fuel.
+* **OILMETER**: A device that measures the quantity of oil.
+* **WATERMETER**: A device that measures the quantity of water.
 * **USERDEFINED**: User-defined meter type
 * **NOTDEFINED**: Undefined meter type
 
-> <font color="#0000ff" size="-1">
-    	HISTORY: New enumeration in IFC 2x2<br>
-    	</font>
+> HISTORY&nbsp; New enumeration in IFC2x2.
+
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; ELECTRICMETER and FLOWMETER removed.

@@ -1,1 +1,0 @@
-Specific to _IfcFooting_: It is restricted to be contained in _IfcSite_, _IfcBuilding_, or _IfcBuildingStory_ only. It shall not be provided, if the _IfcFooting_ is part of an aggregation.

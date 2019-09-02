@@ -1,1 +1,0 @@
-Provision of element properties combined in property sets being assigned to the "element".

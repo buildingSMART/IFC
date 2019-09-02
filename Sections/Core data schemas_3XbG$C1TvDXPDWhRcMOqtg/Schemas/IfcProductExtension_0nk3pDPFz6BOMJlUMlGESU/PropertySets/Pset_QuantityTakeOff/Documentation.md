@@ -1,1 +1,0 @@
-Description of quantities for work items to be exchanged in addition to the IfcElementQuantity

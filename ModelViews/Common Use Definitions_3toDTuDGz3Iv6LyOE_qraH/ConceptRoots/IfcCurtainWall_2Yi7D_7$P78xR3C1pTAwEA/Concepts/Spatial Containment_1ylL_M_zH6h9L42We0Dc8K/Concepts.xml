@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Spatial Containment" UniqueId="7cbd5f96-fbd4-46ac-9544-0a0a00366214">
+	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Containment_3PeWY01HBmesKdP1dTP15" />
+	<Items>
+		<DocTemplateItem UniqueId="a3ff47da-78cb-48ca-8f68-377a9020206e" RuleParameters="Structure=IfcBuildingStorey;" Order="0">
+			<Documentation>Default spatial container</Documentation>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="b24868f8-cee6-4d11-b690-72955e8a7a25" RuleParameters="Structure=IfcBuilding;" Order="0">
+			<Documentation>Spatial container for the element if it cannot be assigned to a building storey - curtain wall facades may be assigned directly to the building</Documentation>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="6d72e844-5c71-44c1-a465-000988f41143" RuleParameters="Structure=IfcSite;" Order="0">
+			<Documentation>Spatial container for the element in case that it is placed on site (outside of building)</Documentation>
+		</DocTemplateItem>
+	</Items>
+</DocTemplateUsage>
+

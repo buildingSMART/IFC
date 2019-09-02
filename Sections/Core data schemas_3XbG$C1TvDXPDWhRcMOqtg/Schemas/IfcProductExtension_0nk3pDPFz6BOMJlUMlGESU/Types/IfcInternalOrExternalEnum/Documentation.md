@@ -1,69 +1,16 @@
-This enumeration defines the different types of spaces or space boundaries in terms of either being inside the building or outside the building.
+This enumeration defines the different types of space boundaries in terms of either being inside the building or outside the building.
 
-**Enumeration**:
+{ .spec-head}
+Enumerated Item Definitions:
 
-<table cellspacing="2" cellpadding="2">
-      <tr>
-        <td valign="top" align="left">
-          INTERNAL
-        </td>
-        <td valign="top" align="left">
-          <i>IfcSpace</i>
-        </td>
-        <td valign="top" align="left">
-          The space is an internal space, fully enclosed by
-          physical boundaries (directly or indirectly through
-          adjacent spaces).
-        </td>
-      </tr>
-      <tr>
-        <td valign="top" align="left">
-           
-        </td>
-        <td valign="top" align="left">
-          <i>IfcSpaceBoundary</i>
-        </td>
-        <td valign="top" align="left">
-          The space boundary faces to the inside of an internal
-          space.
-        </td>
-      </tr>
-      <tr>
-        <td valign="top" align="left">
-          EXTERNAL
-        </td>
-        <td valign="top" align="left">
-          <i>IfcSpace</i>
-        </td>
-        <td valign="top" align="left">
-          The space is an external space, not (or only partially)
-          enclosed by physical boundaries.
-        </td>
-      </tr>
-      <tr>
-        <td valign="top" align="left">
-           
-        </td>
-        <td valign="top" align="left">
-          <i>IfcSpaceBoundary</i>
-        </td>
-        <td valign="top" align="left">
-          The space boundary faces to the outer space, or the
-          inside of an external space.
-        </td>
-      </tr>
-      <tr>
-        <td valign="top" align="left">
-          NOTDEFINED
-        </td>
-        <td valign="top" align="left">
-           
-        </td>
-        <td valign="top" align="left">
-          No information available.
-        </td>
-      </tr>
-    </table>
+* **INTERNAL**: The space boundary faces a physical or virtual element where there is an internal space on the other side.
+* **EXTERNAL**: The space boundary faces a physical or virtual element where there is an external space on the other side.
+* **EXTERNAL_EARTH**: The space boundary faces a physical or virtual element where there is earth (or terrain) on the other side.
+* **EXTERNAL_WATER**: The space boundary faces a physical or virtual element where there is water (water component of terrain) on the other side.
+* **EXTERNAL_FIRE**: The space boundary faces a physical or virtual element where there is another building on the other side.
+* **NOTDEFINED**: No information available.
 
-> <small><font color="#0000FF">HISTORY: New enumeration in
-      IFC Release 2.0</font></small>
+> HISTORY&nbsp; New enumeration in IFC2.0
+
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; Enumeration no longer applicable to _IfcSpace_. The following enumerators are added: EXTERNAL_EARTH, EXTERNAL_WATER, EXTERNAL_FIRE.

@@ -1,32 +1,16 @@
-The association relationship (_IfcRelAssociates_) refer to external sources of information (most notably a classification, library or document). There is no dependency implied by the association.
+The association relationship _IfcRelAssociates_ refers to sources of information (most notably a classification, library, document, approval, contraint, or material). The information associated may reside internally or externally of the project data. There is no dependency implied by the association.
 
-> <font size="-1">EXAMPLE: Further information may the given to
-		the tank equipment (as subtype of <i>IfcProduct</i>) in terms of its
-		classification and instruction documents, the source of the additional
-		information is held external to the IFC project model. </font>
+> EXAMPLE&nbsp; Further external information may be provided to the tank equipment (as subtype of _IfcProduct_) in terms of its classification and instruction documents, the source of the additional information is held external to the project data model.
 
-Association relationships can the established to objects (occurrences) or to types (both object types, _IfcTypeObject_, or partial types, _IfcPropertySetDefinition_).
+Association relationships can be established to objects (occurrences as subtypes of _IfcObject_) or to types (as subtypes of _IfcTypeObject_). Some associations (such as approval, or document) may also be applied to property templates (as subtypes of _IfcPropertyDefinition_).
 
-> <font size="-1">EXAMPLE 1: The classification information for
-		the tank equipment may be associated to the <i>IfcTypeProduct</i> (subtype of
-		<i>IfcTypeObject</i>), defining the specific information for all occurrences of
-		that tank in the project. Therefore the association of the (e.g.) Uniclass
-		notation 'L6814' may be associated by a subtype of <i>IfcRelAssociates</i> to
-		the type information.</font>
+> EXAMPLE&nbsp; The classification information for the storage tank equipment may be associated to the _IfcTankType_ (subtype of _IfcTypeObject_), defining the specific information for all occurencies of that tank in the project. Therefore the association of the Uniclass notation 'L6814' may be associated by a subtype of _IfcRelAssociates_ to the type information.
 
-> <font size="-1">EXAMPLE 2: The classification information for a
-		particular space within a building may the associated to the <i>IfcSpace</i>
-		object (subtype of <i>IfcObject</i>), defining a particular occurrence of
-		space. Therefore the association of the (e.g.) DIN notation 'HNF 1.5' may be
-		associated by a subtype of <i>IfcRelAssociates</i> to the
-		object.</font>
+> EXAMPLE&nbsp; The classification information for a particular space within a building may be associated to the _IfcSpace_ object (subtype of _IfcObject_), defining a particular occurrence of space. Therefore the association of the DIN notation 'NF 1.5' may be associated by a subtype of _IfcRelAssociates_ to the object.
 
-The association relationship establishs a uni-directional association. The subtypes of _IfcRelAssociates_ establishes the particular semantic meaning of the association relationship.
+The association relationship establishs an association between one to many objects or property templates and the associated information. The subtypes of _IfcRelAssociates_ establish the particular semantic meaning of the association relationship.
 
-> <font color="#0000FF" size="-1">HISTORY: New entity in IFC
-		Release 2x.</font>
+> HISTORY&nbsp; New entity in IFC2x.
 
-> <font color="#FF0000" size="-1">NOTE: Users should not
-		instantiate the entity <i>IfcRelAssociates</i> from IFC2x Edition2 onwards. It
-		will be changed into an ABSTRACT supertype in future releases of
-		IFC.</font>
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; Entity has been changed into an ABSTRACT supertype

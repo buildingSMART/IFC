@@ -1,20 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPropertyEnumeration" UniqueId="95f63d3d-7d92-449b-89e3-626dfacc0648" DiagramNumber="2" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPropertyEnumeration" UniqueId="95f63d3d-7d92-449b-89e3-626dfacc0648" DiagramNumber="2" BaseDefinition="IfcPropertyAbstraction" EntityFlags="237">
+	<Localization>
+		<DocLocalization Name="Merkmal - Aufzählung" Locale="de" />
+		<DocLocalization Name="Propriété à valeurs énumérées" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1900.1999" Y="579.59996" Width="389" Height="256.66667" />
 	<Attributes>
 		<DocAttribute Name="Name" UniqueId="e64d7c48-2084-49bc-97e3-b1caa44a5567" DefinedType="IfcLabel" AttributeFlags="2" AggregationType="0" AggregationFlag="0">
 			<Documentation>Name of this enumeration.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2289.1999" Y="617.93329" />
+				<DocPoint X="2879.83337" Y="617.93329" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2223.9499" Y="604.599957" Width="83" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="EnumerationValues" UniqueId="4de323e5-9f21-42b4-bb59-93e3f65054fe" DefinedType="IfcValue" AttributeFlags="0" AggregationType="1" AggregationFlag="2" AggregationLower="1" AggregationUpper="0">
 			<Documentation>List of values that form the enumeration.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2289.1999" Y="707.93329" />
+				<DocPoint X="2879.93327" Y="707.93329" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2335.866567" Y="697.93329" Width="309" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Unit" UniqueId="49677ec8-ed2f-47c0-9fc4-ff28957e44c6" DefinedType="IfcUnit" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Unit for the enumerator values, if not given, the default value for the measure type (given by the TYPE of nominal value) is used as defined by the global unit assignment at IfcProject.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2289.1999" Y="811.26663" />
+				<DocPoint X="2879.89997" Y="811.26663" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2205.241567" Y="801.6832967" Width="51" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<UniqueRules>
 		<DocUniqueRule Name="UR1" UniqueId="e44b6f8d-7dda-412d-a982-565d0c6aa010">
 			<Items>
-				<DocUniqueRuleItem Name="Name" UniqueId="0mS69G0xz6UvVMmCf1jmH9" />
+				<DocUniqueRuleItem Name="Name" UniqueId="dfb715f1-a1d1-4170-b6bc-e7a9001f8fa1" />
 			</Items>
 		</DocUniqueRule>
 	</UniqueRules>

@@ -1,0 +1,27 @@
+(C : IfcCurveOnSurface) : SET[0:2] OF IfcSurface;
+
+  LOCAL
+    Surfs : SET[0:2] OF IfcSurface;
+    N : INTEGER;
+  END_LOCAL;
+
+  Surfs := [];
+  IF 'IFCGEOMETRYRESOURCE.IFCPCURVE' IN TYPEOF (C) THEN
+    Surfs := [C\IfcPCurve.BasisSurface];
+  ELSE
+    IF 'IFCGEOMETRYRESOURCE.IFCCOMPOSITECURVEONSURFACE' IN TYPEOF (C) THEN
+
+    (* For an IfcCompositeCurveOnSurface the BasisSurface is the intersection
+       of the BasisSurface of all the segments. *)
+
+    N := SIZEOF(C\IfcCompositeCurve.Segments);
+    Surfs := IfcGetBasisSurface(C\IfcCompositeCurve.Segments[1].ParentCurve);
+    
+      IF N > 1 THEN
+        REPEAT i := 2 TO N;
+          Surfs := Surfs * IfcGetBasisSurface(C\IfcCompositeCurve.Segments[1].ParentCurve);
+        END_REPEAT;
+      END_IF;
+    END_IF;
+  END_IF;
+  RETURN(Surfs);

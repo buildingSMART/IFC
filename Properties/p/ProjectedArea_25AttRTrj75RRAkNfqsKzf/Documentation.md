@@ -1,1 +1,0 @@
-Area of the roof projected onto a 2D horizontal plane

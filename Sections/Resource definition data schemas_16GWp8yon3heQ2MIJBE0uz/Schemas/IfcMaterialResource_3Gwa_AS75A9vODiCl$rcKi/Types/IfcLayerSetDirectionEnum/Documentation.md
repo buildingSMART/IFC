@@ -1,10 +1,10 @@
-Identification of the axis of element geometry denoting the layer set thickness direction.
+_IfcLayerSetDirectionEnum_ provides identification of the axis of element geometry, denoting the layer set thickness direction, or direction of layer offsets.
 
-ENUMERATION
+{ .spec-head}
+Enumerated Item Definitions:
 
-* **AXIS1** Usually x-axis.
-* **AXIS2** Usually y-axis.
-* **AXIS3** Usually z-axis.
+* AXIS1: Usually x-axis.
+* AXIS2: Usually y-axis.
+* AXIS3: Usually z-axis.
 
-> <font size="-1" color="#0000FF">HISTORY: New Type in IFC 2x.</font>
->
+> HISTORY&nbsp; New Type in IFC2x.

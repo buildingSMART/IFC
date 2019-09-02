@@ -1,1 +1,0 @@
-A permit is a document that allows permission to gain access to an area or carry out work in a situation where security or other access restrictions apply.

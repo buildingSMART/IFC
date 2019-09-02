@@ -1,0 +1,1 @@
+It is suggested to use the 'summary task' (root element of the task hierarchy that is required for task management purposes) to assign all subtask to a work plan or work schedule. Resources used by tasks are assigned by _IfcRelAssignsToProcess_.

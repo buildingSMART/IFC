@@ -1,0 +1,1 @@
+The lower electromagnetic testing current limit in [x In], indicating that for currents lower than I4, the tripping time shall be longer than the associated tripping time, T5, i.e. the device shall not trip instantaneous.

@@ -1,1 +1,0 @@
-Indication of the expected reliability of a product

@@ -1,61 +1,34 @@
-Generalization of all furniture related objects. Furnishing objects are characterized as being
+A furnishing element is a generalization of all furniture related objects. Furnishing objects are characterized as being
 
-* pre-manufactured and assembled on-site, or 
-* manufactured on-site (built-in) 
+* pre-manufactured and assembled on-site, or
+* manufactured on-site (built-in)
 
 Thus furnishing elements can either be movable, or not (as the built-ins).
 
-> <font color="#0000FF" size="-1">HISTORY New entity in IFC
-        Release 2x.</font>
-> 
+> HISTORY&nbsp; New entity in IFC2x.
 
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; The entity is marked as deprecated for instantiation - will be made ABSTRACT after IFC4.
 
-****Geometry Use Definitions****:
+___
+## Common Use Definitions
+The following concepts are inherited at supertypes:
 
-The geometric representation of _IfcFurnishingElement_ is given by the _IfcProductDefinitionShape_ and _IfcLocalPlacement_ allowing multiple geometric representation.
+* _IfcRoot_: [Identity](../../templates/identity.htm), [Revision Control](../../templates/revision-control.htm)
+* _IfcElement_: [Property Sets for Objects](../../templates/property-sets-for-objects.htm), [Product Placement](../../templates/product-placement.htm), [Box Geometry](../../templates/box-geometry.htm), [FootPrint Geometry](../../templates/footprint-geometry.htm), [Body SurfaceOrSolidModel Geometry](../../templates/body-surfaceorsolidmodel-geometry.htm), [Body SurfaceModel Geometry](../../templates/body-surfacemodel-geometry.htm), [Body Tessellation Geometry](../../templates/body-tessellation-geometry.htm), [Body Brep Geometry](../../templates/body-brep-geometry.htm), [Body AdvancedBrep Geometry](../../templates/body-advancedbrep-geometry.htm), [Body CSG Geometry](../../templates/body-csg-geometry.htm), [Mapped Geometry](../../templates/mapped-geometry.htm)
 
-**Local Placement**
+[![Image](../../../img/diagram.png)&nbsp;Instance diagram](../../../annex/annex-d/common-use-definitions/ifcfurnishingelement.htm)
 
-The local placement for _IfcFurnishingElement_ is defined in its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_, which defines the local coordinate system that is referenced by all geometric representations.
+{ .use-head}
+Spatial Containment
 
-* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point (if given) to the local placement of the same _IfcSpatialStructureElement_ , which is used in the _ContainedInStructure_ inverse attribute, or to a spatial structure element at a higher level, referenced by that. 
-* If the relative placement is not used, the absolute placement is defined within the world coordinate system. 
+The [Spatial Containment](../../templates/spatial-containment.htm) concept applies to this entity as shown in Table 1.
 
-**_Geometric Representations_**
-
-Any _IfcFurnishingElement_ can be represented by one or several geometric representations. This includes the general representation types 'BoundingBox', 'GeometricCurveSet', 'SurfaceModel', 'Brep', and 'MappedRepresentation' being defined here.
-
-**Bounding Box Representation**
-
-Any _IfcFurnishingElement_ may be represented as a bounding box, which shows the maximum extend of the body within the coordinated system established by the _IfcLocalPlacement_. The bounding box representation is the simplest geometric representation available. The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
-
-*  _RepresentationIdentifier_ : 'Box' 
-*  _RepresentationType_ : 'BoundingBox' 
-
-**Foot Print Representation**
-
-The foot print representation of _IfcFurnishingElement_ is given by either a single or multiple 2D points and curves. The representation identifier and type of this geometric representation are:
-
-*  _IfcShapeRepresentation.RepresentationIdentifier_ = 'FootPrint' 
-*  _IfcShapeRepresentation.RepresentationType_ = 'GeometricCurveSet' 
-
-**SurfaceModel Representation**
-
-Any _IfcFurnishingElement_ (so far no further constraints are defined at the level of its subtypes) may be represented as a single or multiple surface models, based on either shell or face based models. In some cases it may be useful to also expose a simple representation as a bounding box representation of the same complex shape. The representation identifier and type of this geometric representation are:
-
-*  _IfcShapeRepresentation.RepresentationIdentifier_ = 'Body' 
-*  _IfcShapeRepresentation.RepresentationType_ = 'SurfaceModel' 
-
-**Brep Representation**
-
-Any _IfcFurnishingElement_ (so far no further constraints are defined at the level of its subtypes) may be represented as a single or multiple Boundary Representation elements (which are restricted to faceted Brep with or without voids). The Brep representation allows for the representation of complex element shape. In some cases it may be useful to also expose a simple representation as a bounding box representation of the same complex shape. The representation identifier and type of this geometric representation are:
-
-*  _IfcShapeRepresentation.RepresentationIdentifier_ = 'Body' 
-*  _IfcShapeRepresentation.RepresentationType_ = 'Brep' 
-
-**MappedRepresentation**
-
-The _IfcMappedItem_ should always be used in appropriate cases as it allows for reusing the geometry definition of the furnishing type for all occurrences of the same type. The representation identifier and type of this geometric representation are:
-
-*  _IfcShapeRepresentation.RepresentationIdentifier_ = 'FootPrint', or 'Body' (depending of the representation map) 
-*  _IfcShapeRepresentation.RepresentationType_ = 'MappedRepresentation'
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Structure</b></th></tr>
+<tr><td><a href="../../ifcproductextension/lexical/ifcspace.htm">IfcSpace</a></td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 1 &mdash; IfcFurnishingElement Spatial Containment</p></td></tr></table>

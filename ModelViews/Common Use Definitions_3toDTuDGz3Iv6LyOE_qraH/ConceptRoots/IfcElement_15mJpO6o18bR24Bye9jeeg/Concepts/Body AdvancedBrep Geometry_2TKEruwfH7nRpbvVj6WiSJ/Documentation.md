@@ -1,0 +1,3 @@
+An _IfcElement_ (so far no further constraints are defined at the level of its subtypes or by view definitions) may be represented as a single or multiple boundary representation models, which include advanced surfaces, usually refered to as NURBS surfaces. The 'AdvancedBrep' representation allows for the representation of complex free-form element shape.
+
+> NOTE&nbsp; View definitions or implementer agreements may restrict or disallow the use of 'AdvancedBrep' geometry.

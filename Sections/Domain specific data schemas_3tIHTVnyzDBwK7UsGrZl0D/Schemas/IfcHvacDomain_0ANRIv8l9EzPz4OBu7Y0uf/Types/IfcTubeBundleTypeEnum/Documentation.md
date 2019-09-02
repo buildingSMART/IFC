@@ -1,9 +1,10 @@
-Enumeration defining the typical types of tube bundles. The _IfcTubeBundleTypeEnum_ contains the following:
+Enumeration defining the typical types of tube bundles.
+
+{ .spec-head}
+Enumerated Item Definitions:
 
 * **FINNED**: Finned tube bundle type.
 * **USERDEFINED**: User-defined tube bundle type.
 * **NOTDEFINED**: Undefined tube bundle type.
 
-> <font color="#0000ff" size="-1">
-    	HISTORY: New enumeration in IFC 2x2.<br>
-    	</font>
+> HISTORY&nbsp; New enumeration in IFC2x2.

@@ -1,0 +1,17 @@
+The material of direct instances _IfcStructuralCurveMember_ (in contrast to instances of the subtype _IfcStructuralCurveMemberVarying_) is defined by _IfcMaterialProfileSetUsage_ and attached by the _IfcRelAssociatesMaterial.RelatingMaterial_. It is accessible by the inverse _HasAssociations_ relationship. Composite profile beams can be represented by refering to several _IfcMaterialProfile_s within the _IfcMaterialProfileSet_ that is referenced from the _IfcMaterialProfileSetUsage_. In case of tapered members, the material profile usage subtype _IfcMaterialProfileSetUsageDual_ is used which specifies _IfcMaterialProfileSet_s separately at the start and the end of the tapered member.
+
+The material (_IfcMaterial_) in each _IfcMaterialProfile_(_Set_) is specified minimally by a name which corresponds with an agreed upon standardized structural material designation. An external reference to the source which specifies the material designation should be provided. Alternatively, structural material properties may be provided by means of _IfcMechanicalMaterialProperties_ and _IfcExtendedMaterialProperties_.
+
+The profile (_IfcProfileDef_) in each _IfcMaterialProfile_(_Set_) is specified minimally by a name which corresponds with an agreed upon standardized structural profile designation. An external reference to the source which specifies the profile designation should be provided. Alternatively or additionally, explicit profile geometry should be provided by using respective subtypes of _IfcProfileDef_. Alternatively or additionally, structural profile properties may be provided by means of subtypes of _IfcProfileProperties_.
+
+An _IfcProfileDef_ is a two-dimensional geometric object with a x~p~,y~p~ coordinate system. The profile is inserted into the curve member model thus that the origin of x~p~,y~p~ is located at the member's reference curve and that x~p~,y~p~ are parallel with and directed like the local y,z.
+
+> NOTE&nbsp; Due to convention in structural mechanics, axis names of _IfcStructuralCurveMember_ differ from axis names of building elements like _IfcBeamStandardCase_: The extrusion axis of _IfcStructuralCurveMember_ is called x while the extrusion axis of _IfcBeamStandardCase_ is called z. Hence x,y,z of _IfcStructuralCurveMember_ correspond with z,x,y of _IfcBeamStandardCase_.
+
+If the profile is meant to be inserted centrically in terms of structural section properties, it is necessary that the origin of x~p~,y~p~ is identical with the geometric centroid of the profile (commonly also called centre of gravity). If subtypes of _IfcParameterizedProfileDef_ are used which are only singly symmetric or are asymmetric, an explicit translation by _IfcParameterizedProfileDef.Position.Location_ is required then.
+
+If the profile is inserted at its geometric centroid, _IfcMaterialProfileSetUsage.CardinalPoint_ shall be set to 10.
+
+Otherwise, the profile is inserted eccentrically and a different cardinal point should be set accordingly.
+
+> NOTE&nbsp; Another eccentricity model is available independently of eccentric profile specification: The reference curve of the member may be located eccentrically relative to the reference points of the connected _IfcStructuralPointConnection_s. The connection relationship is then established by _IfcRelConnectsWithEccentricity_. Whether one or the other or both eccentricity models may be used is subject to information requirements and local agreements.

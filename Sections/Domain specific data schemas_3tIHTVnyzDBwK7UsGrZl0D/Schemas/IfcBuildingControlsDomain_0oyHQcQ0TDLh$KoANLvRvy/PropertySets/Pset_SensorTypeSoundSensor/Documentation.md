@@ -1,1 +1,1 @@
-A device that senses or detects sound.
+A device that senses or detects sound. HISTORY: SoundSensorSensorSetPoint changed to SetPointSound. Range, accuracy and time constant deleted.

@@ -1,7 +1,8 @@
-This objectified relationship (_IfcRelAssignsToControl_) handles the assignment of a control (subtype of _IfcControl_) to other objects (subtypes of _IfcObject_, with the exception of controls).
+The objectified relationship _IfcRelAssignsToControl_ handles the assignment of a control (represented by subtypes of _IfcControl_) to other objects (represented by subtypes of _IfcObject_, with the exception of controls).
 
-> **For example**: The assignment of a cost (as subtype of _IfcControl_) to a building element (as subtype of _IfcObject_) is an application of this generic relationship.
+> EXAMPLE&nbsp; The assignment of a performance history (as subtype of _IfcControl_) for a building service element (as subtype of _IfcObject_) is an application of this generic relationship.
 
-> <font color="#0000FF" size="-1">HISTORY New Entity in IFC Release 2.0.
-		  Has been renamed from IfcRelControls in IFC Release 2x.</font>
->
+> HISTORY&nbsp; New entity in IFC2.0.
+
+{ .change-ifc2x}
+> IFC2x CHANGE Entity has been renamed from _IfcRelControls_.

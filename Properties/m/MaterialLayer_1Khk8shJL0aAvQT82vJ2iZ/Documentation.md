@@ -1,1 +1,0 @@
-Indication of the material layer (e.g. of a wall or slab) to which the quantity information belongs to)

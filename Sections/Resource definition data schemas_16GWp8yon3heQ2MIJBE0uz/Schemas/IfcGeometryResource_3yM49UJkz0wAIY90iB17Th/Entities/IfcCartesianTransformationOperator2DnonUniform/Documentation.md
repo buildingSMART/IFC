@@ -5,11 +5,6 @@ A Cartesian transformation operator 2d non uniform defines a geometric transform
 
 If the _Scale_ factor (at supertype _IfcCartesianTransformationOperator_) is omitted, it defaults to 1.0. If the _Scale2_ factor is omitted, it defaults to the value of _Scale_ (the x axis scale factor).
 
-> <font size="-1">NOTE: The scale factor (<i>Scl</i>) defined at the
-		  supertype <i>IfcCartesianTransformationOperator</i> is used to express the
-		  calculated <i>Scale</i> factor (normally x axis scale
-		  factor).</font>
->
+> NOTE&nbsp; The scale factor (_Scl_) defined at the supertype _IfcCartesianTransformationOperator_ is used to express the calculated _Scale_ factor (normally x axis scale factor).
 
-> <font size="-1" color="#0000FF">HISTORY: New entity in IFC
-		Release 2x.</font>
+> HISTORY&nbsp; New entity in IFC2x.

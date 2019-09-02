@@ -1,0 +1,1 @@
+Indicates supported media formats.

@@ -1,0 +1,3 @@
+For building operation scenarios, _IfcProcedure_ may be assigned to a product (_IfcElement_ subtype) using _IfcRelAssignsToProduct_ to indicate a specific product occurrence that performs the procedure.
+
+> EXAMPLE&nbsp; An _IfcActuator_ may have a "Close" procedure. If the _IfcProcedure_ is defined by an _IfcProcedureType_ and the _IfcProcedureType_ is assigned to a product type (using _IfcRelAssignsToProduct_), then the _IfcProcedure_ must be assigned to one or more occurrences of the specified product type using _IfcRelAssignsToProduct_.

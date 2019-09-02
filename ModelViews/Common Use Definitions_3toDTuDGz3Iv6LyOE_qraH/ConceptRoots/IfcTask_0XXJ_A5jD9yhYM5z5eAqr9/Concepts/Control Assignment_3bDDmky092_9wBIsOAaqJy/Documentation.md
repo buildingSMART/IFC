@@ -1,0 +1,1 @@
+Occurrences of _IfcTask_ may be assigned to an _IfcWorkControl_ (either a work plan or a work schedule) through _IfcRelAssignsToControl_. Please note that the _IfcRelAssignsTasks_ relationship class has been removed in IFC4 and is no longer available.

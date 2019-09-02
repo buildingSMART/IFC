@@ -1,0 +1,1 @@
+Some _IfcBuildingElement_ may be represented by an surface as an abstract geometric representation. See each subtype for specific guidance.

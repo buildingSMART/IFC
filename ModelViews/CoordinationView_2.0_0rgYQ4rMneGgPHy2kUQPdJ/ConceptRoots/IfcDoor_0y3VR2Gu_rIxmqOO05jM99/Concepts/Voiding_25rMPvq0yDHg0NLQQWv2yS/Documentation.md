@@ -1,1 +1,0 @@
-Specific to IfcDoor: The IfcDoor shall not have a voiding relationships, all potential voids and cut-out&#39;s shall already be resolved in the geometric representation.

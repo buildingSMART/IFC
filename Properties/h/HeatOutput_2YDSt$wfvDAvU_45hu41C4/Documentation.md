@@ -1,1 +1,0 @@
-The total amount of heat output by the heat emitter.

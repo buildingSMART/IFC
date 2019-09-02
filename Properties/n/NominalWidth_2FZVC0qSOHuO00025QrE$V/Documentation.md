@@ -1,1 +1,1 @@
-The nominal width of the segment
+The nominal width of the segment.

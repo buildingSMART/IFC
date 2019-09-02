@@ -1,0 +1,1695 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Product Shape" UniqueId="0EYnEN6iP1uQRGyhD6YCjX" Type="IfcProduct">
+	<Templates>
+		<DocTemplateDefinition id="Product_Placement_3Bw5jVUH9AGukt7cEGB9j" Name="Product Placement" UniqueId="3Bw5jVUH9AGukt7cE$GB9j" Type="IfcProduct">
+			<Documentation>Product occurrences can be placed in 3D space relative to where they are contained. Placement is defined by a relative position (X, Y, Z coordinates), a horizontal reference direction, and a vertical axis direction. At the outermost level, relative directions are defined according to representation context; for example, +X may point east, +Y may point north, and +Z may point up.
+
+Placement follows aggregation and containment relationships as follows:
+
+* at the outermost level, a site is globally positioned according to latitude, longitude, and elevation;
+* for spatial structures, positioning is relative to aggregation. For example, a site may aggregate multiple buildings, each building may aggregate multiple building storeys, and each building storey may aggregate multiple spaces;
+* for building elements, positioning is relative to the containing spatial structure. For example, a building storey may contain slabs, walls, columns, and beams; 
+* for aggregated parts, positioning is relative to aggregation. For example, a staircase may aggregate one or more stair flights;
+* for feature elements, positioning is relative to the affected building element. For example, an opening element is positioned relative to the wall it voids, which in turn is positioned relative to a building storey;
+* for fillings, positioning is relative to the filled opening. For example, a door is positioned relative to an opening which in turn is positioned relative to a wall; 
+* for distribution ports, positioning is relative to the containing distribution element. For example, an air terminal may have a port connection for a duct segment or fitting;
+* for distribution elements, positioning is relative to the containing spatial structure, however may be constrained by port connections. For example, a electrical junction box may fill an opening within a wall, and the junction box may contain ports for contained outlets or switches; the placement of such connected elements is contrained relative to connected port of the junction box. As another example, an air terminal may fill a ceiling covering which is placed relative to a space; the placement of a connecting duct fitting may be constrained relative to the air terminal. 
+
+If a containing spatial structure contains a grid, then placement may also be based relative to grid coordinates. In certain use cases, an absolute placement may be used by omiting the _IfcObjectPlacement_. In this case, the shape representation is defined within the world coordinate system.</Documentation>
+			<Rules>
+				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="1" Name="ObjectPlacement" Identification="Type">
+					<Rules>
+						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLocalPlacement">
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelativePlacement">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAxis2Placement3D" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="PlacementRelTo" Identification="Relative">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLocalPlacement" />
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocModelRuleEntity>
+						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGridPlacement">
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="PlacementLocation">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcVirtualGridIntersection" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="PlacementRefDirection">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDirection" />
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcVirtualGridIntersection" />
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocModelRuleEntity>
+					</Rules>
+				</DocModelRuleAttribute>
+			</Rules>
+		</DocTemplateDefinition>
+		<DocTemplateDefinition Name="Product Geometric Representation" UniqueId="0J_MaK6jH1rBgPGHgUo$Ld" Type="IfcProduct">
+			<Documentation>The shape of products may be represented in multiple ways for different purposes. Each representation has a well-known string identifier and a particular representation context. There may be multiple representation contexts to describe a shape at various levels of detail. Most building elements have a &apos;Body&apos; representation which defines or approximates the physical shape and volume. In addition to physical building elements, non-physical elements may have representations such as spaces and openings.</Documentation>
+			<Rules>
+				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+					<Rules>
+						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="Type">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocModelRuleEntity>
+					</Rules>
+				</DocModelRuleAttribute>
+			</Rules>
+			<Templates>
+				<DocTemplateDefinition id="Box_Geometry_2vGiwnk1X6WuSRd9UVeqtL" Name="Box Geometry" UniqueId="b942ceb1-b818-4683-871b-9c979fa34dd5" Type="IfcProduct">
+					<Documentation>Elements may have a simplified &apos;Box&apos; representation describing the dimensions of the smallest box bounding the object. Such representation may be used for more efficient spatial indexing or hit-testing.
+
+The representation identifier and type and the only allowed single representation item of the &apos;Box&apos; representation are:
+
+* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Box&apos;
+* _IfcShapeRepresentation_._RepresentationType_ : &apos;BoundingBox&apos;
+* _IfcShapeRepresentation_._Items_ = _IfcBoundingBox_
+
+&gt; NOTE&amp;nbsp; The specification does not determine the method by which the bounding box has to be created. If such a method need to be prescribed the definition has to be established by model view definitions or implementer agreements.</Documentation>
+					<Rules>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+									<Rules>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+													<Rules>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																	<Rules>
+																		<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Name="Value=Box" Description="Value=Box" />
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="Type">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																	<Rules>
+																		<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Name="Value=BoundingBox" Description="Value=BoundingBox" />
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcBoundingBox" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocTemplateDefinition>
+				<DocTemplateDefinition Name="Annotation Geometry" UniqueId="2GFxPJ1Sn77gMEQrYvnsze" Type="IfcAnnotation">
+					<Documentation>Annotations may provide an &apos;Annotation&apos; representation for including points, curves, surfaces, fill areas, and text.
+
+Styled items may provide structure and styles that apply to the representation, a geometric set may provide styles that apply to all items within, and/or items may provide their own styles which override styles defined at the geometric set. Styles and label can also be assigned by presentation layers.
+
+The representation identifier of the annotation representation is:
+
+* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Annotation&apos;</Documentation>
+					<Rules>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+									<Rules>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+													<Rules>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																	<Rules>
+																		<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Name="Value=Annotation" Description="Value=Annotation" />
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="Type">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items" Identification="Items" />
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+					<Templates>
+						<DocTemplateDefinition id="Annotation_2D_Geometry_01GMQdxoj86BB4IYcaS_V" Name="Annotation 2D Geometry" UniqueId="014166a7-ef2b-4818-bfcb-1128a691cf9f" Type="IfcAnnotation">
+							<Documentation>The &apos;Annotation 2D Geometry&apos; is used, when the representation of an annotation includes specific drafting representation elements, in particular areas for hatching and text.
+
+The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
+
+* _IfcShapeRepresentation_._RepresentationIdentifier_ : &apos;Annotation&apos; 
+*  _IfcShapeRepresentation_._RepresentationType_ : &apos;Annotation2D&apos; 
+* _IfcShapeRepresentation_._Items_ : 
+    * subtypes of _IfcPoint_ and _IfcCurve_ being two-dimensional and within an _IfcGeometricCurveSet_ 
+    * subtypes of _IfcAnnotationFillArea_ for hatches 
+    * subtypes of _IfcTextLiteral_ for text</Documentation>
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+															<Rules>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Name="Value=Annotation" Description="Value=Annotation" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="Type">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Name="Value=Annotation2D" Description="Value=Annotation2D" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items" Identification="Items">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPoint" />
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCurve" />
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAnnotationFillArea" />
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcTextLiteral" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Annotation_3D_Geometry_0F8JX6XL61wPgipwOorY7" Name="Annotation 3D Geometry" UniqueId="0f213846-fe15-4607-a66a-b33e98cb5887" Type="IfcAnnotation">
+							<Documentation>The &apos;Annotation 3D Geometry&apos; is used, when the representation of the annotation does includes surfaces and is not restricted to two-dimensional representation items.
+
+The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
+
+*  _IfcShapeRepresentation_._RepresentationIdentifier_ : &apos;Annotation&apos; 
+*  _IfcShapeRepresentation_._RepresentationType_ : &apos;GeometricSet&apos; 
+* _IfcShapeRepresentation_._Items_ : 
+    * subtypes of _IfcPoint_ and _IfcCurve_ being three-dimensional and within an _IfcGeometricSet_
+    * subtypes of _IfcSurface_ being three-dimensional and within an _IfcGeometricSet_</Documentation>
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+															<Rules>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Name="Value=Annotation" Description="Value=Annotation" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="Type">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Name="Value=GeometricSet" Description="Value=GeometricSet" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items" Identification="Items">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPoint" />
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCurve" />
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcSurface" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+					</Templates>
+				</DocTemplateDefinition>
+				<DocTemplateDefinition id="Axis_Geometry_0xznRVEP1B815da0HoROY" Name="Axis Geometry" UniqueId="0xznRVEP1B$815da0HoROY" Type="IfcElement">
+					<Documentation>Elements following a path provide an &apos;Axis&apos; representation indicating a line segment or any arbitrary open bounded curve. Examples of such elements include walls, beams, columns, pipes, ducts, and cables. For elements that have a material profile set association indicating cross-section, a &apos;Body&apos; representation may be generated based on the axis curve and material profiles. Curve styles may indicate particular colors, line thicknesses, and dash patterns for 2D rendering.
+
+The representation identifier of the axis representation is:
+
+* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Axis&apos;
+
+&gt; EXAMPLE&amp;nbsp; A two-dimensional bounded curve is used as the wall axis in standard walls, a three-dimensional bounded curve is used as the reference axis in standard columns.</Documentation>
+					<Rules>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+									<Rules>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+													<Rules>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																	<Rules>
+																		<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Name="Value=Axis" Description="Value=Axis" />
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="Type">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items" Identification="Items" />
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+					<Templates>
+						<DocTemplateDefinition id="Axis_2D_Geometry_1u94Jere57Mf0qgUVrF6rb" Name="Axis 2D Geometry" UniqueId="782444e8-d681-475a-9034-a9e7f53c6d65" Type="IfcElement">
+							<Documentation>The &apos;Axis&apos; representation using &apos;Curve2D&apos; representation type is predominately used to align material layer sets to geometric representations of standard walls.
+
+The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
+
+* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Axis&apos;
+* _IfcShapeRepresentation_._RepresentationType_ : &apos;Curve2D&apos;
+* _IfcShapeRepresentation_._Items_ = _IfcBoundedCurve_</Documentation>
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+															<Rules>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Name="Value=Axis" Description="Value=Axis" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="Type">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Name="Value=Curve2D" Description="Value=Curve2D" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items" Identification="Items">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcBoundedCurve" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Axis_3D_Geometry_2ubDZB_q55xBeOSih6klyq" Name="Axis 3D Geometry" UniqueId="b894d8cb-fb41-45ec-ba18-72cac6baff34" Type="IfcElement">
+							<Documentation>The &apos;Axis&apos; representation using &apos;Curve3D&apos; representation type is predominately used to align material profile sets to geometric representations of standard beams, columns, members, pipes, ducts and other longitudinal elements.
+
+The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
+
+* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Axis&apos;
+* _IfcShapeRepresentation_._RepresentationType_ : &apos;Curve3D&apos;
+* _IfcShapeRepresentation_._Items_ = _IfcBoundedCurve_</Documentation>
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+															<Rules>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Name="Value=Axis" Description="Value=Axis" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="Type">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Name="Value=Curve3D" Description="Value=Curve3D" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items" Identification="Items">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcBoundedCurve" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+					</Templates>
+				</DocTemplateDefinition>
+				<DocTemplateDefinition id="FootPrint_Geometry_1FLtVNQEb5dAeiHgtpw8qn" Name="FootPrint Geometry" UniqueId="1FLtVNQEb5dAeiHgtpw8qn" Type="IfcProduct">
+					<Documentation>Elements filling a boundary provide a &apos;Footprint&apos; representation indicating a rectangle or any arbitrary set of outer and inner boundary curves. Examples of such elements include slabs and spaces. For elements that have a material layer set association indicating material thicknesses, a &apos;Body&apos; representation may be generated based on the footprint and material layers. Fill area styles may indicate particular colors, tiles, or hatching for 2D rendering.
+
+The representation identifier of the foot print representation is:
+
+* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;FootPrint&apos;</Documentation>
+					<Rules>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+									<Rules>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+													<Rules>
+														<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																	<Rules>
+																		<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Name="Value=FootPrint" Description="Value=FootPrint" />
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="Type">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items" Identification="Items" />
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+					<Templates>
+						<DocTemplateDefinition id="FootPrint_GeomSet_Geometry_2KLjRMfYf8jBhlYuukgoS" Name="FootPrint GeomSet Geometry" UniqueId="9456d6d6-a62a-48b4-baff-be2e38baac9c" Type="IfcProduct">
+							<Documentation>The &apos;FootPrint GeomSet Geometry&apos; is the standard representation for the floor plan projection of the geometric representation of elements, comprising of mainly 2D curves
+
+The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation are used:
+
+* _IfcShapeRepresentation_._RepresentationIdentifier_ : &apos;FootPrint&apos;
+* _IfcShapeRepresentation_._RepresentationType_ : &apos;GeometricCurveSet&apos;
+* _IfcShapeRepresentation_._Items_ : _IfcGeometricCurveSet_</Documentation>
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+															<Rules>
+																<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Name="Value=FootPrint" Description="Value=FootPrint" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="Type">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Name="Value=GeometricCurveSet" Description="Value=GeometricCurveSet" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items" Identification="Items">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricCurveSet" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition Name="FootPrint Annotation Geometry" UniqueId="608f0092-eb1a-4c23-b92f-f41ae0aa6ff4" Type="IfcProduct">
+							<Documentation>The &apos;FootPrint Annotation Geometry&apos; is the representation for the floor plan projection of the geometric representation of elements, comprising of mainly 2D curves, hatches and additional annotations such as a tag number or similar.
+
+The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
+
+*  _IfcShapeRepresentation_._RepresentationIdentifier_ : &apos;FootPrint&apos; 
+*  _IfcShapeRepresentation_._RepresentationType_ : &apos;Annotation2D&apos; 
+* _IfcShapeRepresentation_._Items_ : 
+    * subtypes of _IfcPoint_ and _IfcCurve_ being two-dimensional and within an _IfcGeometricCurveSet_ 
+    * subtypes of _IfcAnnotationFillArea_ for hatches 
+    * subtypes of _IfcTextLiteral_ for text</Documentation>
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+															<Rules>
+																<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Name="Value=FootPrint" Description="Value=FootPrint" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="Type">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Name="Value=Annotation2D" Description="Value=Annotation2D" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items" Identification="Items">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricCurveSet" />
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAnnotationFillArea" />
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcTextLiteral" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+					</Templates>
+				</DocTemplateDefinition>
+				<DocTemplateDefinition id="Profile_Geometry_3nRhE_uXFCvVVrLhjEW_L" Name="Profile Geometry" UniqueId="3nRhE_$uXFCvVVrLhjEW_L" Type="IfcElement">
+					<Documentation>Elements filling an opening provide a &apos;Profile&apos; representation describing the shape of the cutout. Examples of such elements include doors and windows.
+
+The representation identifier of the profile representation is:
+
+* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Profile&apos;</Documentation>
+					<Rules>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+									<Rules>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+													<Rules>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																	<Rules>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Value=Profile" Description="Value=Profile" />
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="Type">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items" Identification="Items" />
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+					<Templates>
+						<DocTemplateDefinition id="Profile_3D_Geometry_0TYN8WT0r7avgDNITqnxm0" Name="Profile 3D Geometry" UniqueId="1d897220-740d-4793-9a8d-5d2774c7bc00" Type="IfcElement">
+							<Documentation>The _Profile 3D Geometry_ is the standard representation of the outer profile for elements filling an opening. Examples of such elements include doors and windows. In the case of doors and windows the profile geometry is used to apply the parametric definition of lining and panel dimensions to the profile.
+
+The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
+
+* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Profile&apos;
+* _IfcShapeRepresentation_._RepresentationType_ = &apos;Curve3D&apos;
+* _IfcShapeRepresentation_._Items_ = _IfcBoundedCurve_</Documentation>
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+															<Rules>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Value=Profile" Description="Value=Profile" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="Type">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Name="Value=Curve3D" Description="Value=Curve3D" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items" Identification="Items">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcBoundedCurve" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+					</Templates>
+				</DocTemplateDefinition>
+				<DocTemplateDefinition id="Surface_Geometry_0kcTvm_tD7ZvlAJ_tzwqwb" Name="Surface Geometry" UniqueId="0kcTvm_tD7ZvlAJ_tzwqwb" Type="IfcElement">
+					<Documentation>Elements may have a &apos;Surface&apos; representation describing the outer surface of the object. Such representation may be used for hit-testing objects having part composition such as framed walls, or for defining thermal boundaries idealized at the middle plane of an element.
+
+The representation identifier of the surface representation is:
+
+* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Surface&apos;</Documentation>
+					<Rules>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+									<Rules>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+													<Rules>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																	<Rules>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Value=Surface" Description="Value=Surface" />
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="Type">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items" Identification="Items" />
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+					<Templates>
+						<DocTemplateDefinition id="Surface_3D_Geometry_2zWfWzETL1ifxeyxs7TzCL" Name="Surface 3D Geometry" UniqueId="bd82983d-39d5-41b2-9ee8-f3bd8777d315" Type="IfcElement">
+							<Documentation>The _Surface 3D Geometry_ is the standard surfacic represenation for elements having a &apos;Surface&apos; representation describing the inner or outer surface of the object, e.g. for defining thermal boundaries idealized at the middle plane of an element.
+
+The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
+
+* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Surface&apos;
+* _IfcShapeRepresentation_._RepresentationType_ = &apos;Surface3D&apos;
+* _IfcShapeRepresentation_._Items_ = _IfcBoundedSurface_, _IfcSweptSurface_</Documentation>
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+															<Rules>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Value=Surface" Description="Value=Surface" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="Type">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Name="Value=Surface3D" Description="Value=Surface3D" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items" Identification="Items">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcBoundedSurface" />
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcSweptSurface" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+					</Templates>
+				</DocTemplateDefinition>
+				<DocTemplateDefinition id="Body_Geometry_34HhqMBUDBbxDFH4Qi2wt2" Name="Body Geometry" UniqueId="34HhqMBUDBbxDFH4Qi2wt2" Type="IfcElement">
+					<Documentation>Elements may have a &apos;Body&apos; representation describing the volumetric shape of the object. Such representation may be used for 3D coordination, rendering or quantity take-off. Geometry may be based on boundary representations describing outer faces, primitives such as spheres or cones, swept solids such as profile extrusions or revolutions, Constructive Solid Geometry (CSG) such as clippings or subtractions of other shapes, or Non-Uniform Rational B-Spline (NURBS) geometry. Surface styles may indicate particular colors, textures, and reflectance for 3D rendering.
+
+The representation identifier of the body representation is:
+
+* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;</Documentation>
+					<Rules>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+									<Rules>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+													<Rules>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																	<Rules>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Value=Body" Description="Value=Body" />
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="Type">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items" Identification="Items" />
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+					<Templates>
+						<DocTemplateDefinition id="Body_SurfaceOrSolidModel_Geometry_3xkt3OKkvDa9SkdTjC2X6h" Name="Body SurfaceOrSolidModel Geometry" UniqueId="fbbb70d8-52ee-4d90-972e-9ddb4c0a11ab" Type="IfcElement">
+							<Documentation>The _Body SurfaceOrSolidModel Geometry_ is the representation of the 3D shape of a product by surface or solid models and allows for a mixed representation.
+
+The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
+
+* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
+* _IfcShapeRepresentation_._RepresentationType_ = &apos;SurfaceOrSolidModel&apos;
+* _IfcShapeRepresentation_._Items_ = _IfcTessellateditem_, _IfcShellBasedSurfaceModel_, _IfcFaceBasedSurfaceModel_, _IfcSolidModel_</Documentation>
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+															<Rules>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Value=Body" Description="Value=Body" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="Type">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Name="Value=SurfaceOrSolidModel" Description="Value=SurfaceOrSolidModel" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items" Identification="Items">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcTessellatedItem" />
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShellBasedSurfaceModel" />
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcFaceBasedSurfaceModel" />
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcSolidModel" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Body_SurfaceModel_Geometry_0NqqeIb0D0zB_2PJcRuZnL" Name="Body SurfaceModel Geometry" UniqueId="17d34a12-9403-40f4-bf82-65399be23c55" Type="IfcElement">
+							<Documentation>The _Body SurfaceModel Geometry_ is the representation of the 3D shape of a product by surface models.
+
+The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
+
+* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
+* _IfcShapeRepresentation_._RepresentationType_ = &apos;SurfaceModel&apos;
+* _IfcShapeRepresentation_._Items_ = _IfcTessellateditem_, _IfcShellBasedSurfaceModel_, _IfcFaceBasedSurfaceModel_</Documentation>
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+															<Rules>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Value=Body" Description="Value=Body" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="Type">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Name="Value=SurfaceModel" Description="Value=SurfaceModel" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items" Identification="Items">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcTessellatedItem" />
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcFaceBasedSurfaceModel" />
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShellBasedSurfaceModel" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Body_Tessellation_Geometry_1SKG3PKLCRRmd2fMZq9bG" Name="Body Tessellation Geometry" UniqueId="5cfd4403-6545-4c6d-bc27-0a95a3d09950" Type="IfcElement">
+							<Documentation>The _Body Tessellation Geometry_ is the representation of the 3D shape of a product by tessellated surface models.
+
+The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
+
+* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
+* _IfcShapeRepresentation_._RepresentationType_ = &apos;Tessellation&apos;
+* _IfcShapeRepresentation_._Items_ = _IfcTessellateditem_</Documentation>
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+															<Rules>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Value=Body" Description="Value=Body" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="Type">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Name="Value=Tessellation" Description="Value=Tessellation" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items" Identification="Items">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcTessellatedItem" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Body_SweptSolid_Geometry_3BV1ZwpuDDiRuRm1EwJjPo" Name="Body SweptSolid Geometry" UniqueId="cb7c18fa-cf83-4db1-be1b-c013ba4ed672" Type="IfcElement">
+							<Documentation>The _Body SweptSolid Geometry_ is the representation of the 3D shape of a product by swept solid models, only allowing for the basic extruded area solids and revolved area solids.
+
+The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
+
+* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
+* _IfcShapeRepresentation_._RepresentationType_ = &apos;SweptSolid&apos;
+* _IfcShapeRepresentation_._Items_ = _IfcExtrudedAreaSolid_, _IfcRevolvedAreaSolid_</Documentation>
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+															<Rules>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Value=Body" Description="Value=Body" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="Type">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Name="Value=SweptSolid" Description="Value=SweptSolid" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items" Identification="Items">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcExtrudedAreaSolid" />
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRevolvedAreaSolid" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Body_AdvancedSweptSolid_Geometry_1KP7XTvT5FTPxCRBEI571U" Name="Body AdvancedSweptSolid Geometry" UniqueId="5464785d-e5d1-4f75-9ecc-6cb39214705e" Type="IfcElement">
+							<Documentation>The _Body AdvancedSweptSolid Geometry_ is the representation of the 3D shape of a product by swept solid models, including advanced sweeping operations, such as sweeping along any directrix and tapering.
+
+The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
+
+* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
+* _IfcShapeRepresentation_._RepresentationType_ = &apos;AdvancedSweptSolid&apos;
+* _IfcShapeRepresentation_._Items_ = _IfcSweptAreaSolid_, _IfcSweptDiskSolid_</Documentation>
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+															<Rules>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Value=Body" Description="Value=Body" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="Type">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Name="Value=AdvancedSweptSolid" Description="Value=AdvancedSweptSolid" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items" Identification="Items">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcSweptAreaSolid" />
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcSweptDiskSolid" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Body_Brep_Geometry_2FkIFrk2r8qgqfrdZAHpQ" Name="Body Brep Geometry" UniqueId="8fb923f5-b82d-48d2-ad29-d678ca473fda" Type="IfcElement">
+							<Documentation>The _Body Brep Geometry_ is the representation of the 3D shape of a product by faceted boundary representation models.
+
+The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
+
+* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
+* _IfcShapeRepresentation_._RepresentationType_ = &apos;Brep&apos;
+* _IfcShapeRepresentation_._Items_ = _IfcFacetedBrep_</Documentation>
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+															<Rules>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Value=Body" Description="Value=Body" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="Type">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Name="Value=Brep" Description="Value=Brep" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items" Identification="Items">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcFacetedBrep" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Body_AdvancedBrep_Geometry_3yTZLrKF5BmBloE2E05I17" Name="Body AdvancedBrep Geometry" UniqueId="fc763575-50f1-4bc0-bbf2-382380152047" Type="IfcElement">
+							<Documentation>The _Body Brep Geometry_ is the representation of the 3D shape of a product by boundary representation models, including NURBS.
+
+The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
+
+* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
+* _IfcShapeRepresentation_._RepresentationType_ = &apos;AdvancedBrep&apos;
+* _IfcShapeRepresentation_._Items_ = _IfcAdvancedBrep_, _IfcFacetedBrep_</Documentation>
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+															<Rules>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Value=Body" Description="Value=Body" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="Type">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Name="Value=AdvancedBrep" Description="Value=AdvancedBrep" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items" Identification="Items">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAdvancedBrep" />
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcFacetedBrep" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Body_CSG_Geometry_2WgtOmQML9NhwFqGRz9Pd2" Name="Body CSG Geometry" UniqueId="a0ab7630-6965-495e-be8f-d106fd2599c2" Type="IfcElement">
+							<Documentation>The _Body CSG Geometry_ is the representation of the 3D shape of a product by Constructive Solid Geometry models.
+
+The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
+
+* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
+* _IfcShapeRepresentation_._RepresentationType_ = &apos;CSG&apos;
+* _IfcShapeRepresentation_._Items_ = _IfcCSGSolid_
+
+&gt; NOTE&amp;nbsp; The _Items__IfcBooleanResult_ and _IfcPrimitive3D_ shall also be allowed for compatibility with previous releases of the standard.</Documentation>
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+															<Rules>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Value=Body" Description="Value=Body" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="Type">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Name="Value=CSG" Description="Value=CSG" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items" Identification="Items">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCsgSolid" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Body_Clipping_Geometry_0isyBrcmn3wfqgdNBG57u0" Name="Body Clipping Geometry" UniqueId="2cdbc2f5-9b0c-43ea-9d2a-9d72d0147e00" Type="IfcElement">
+							<Documentation>The _Body Clipping Geometry_ is the representation of the 3D shape of a product by using Constructive Solid Geometry models with difference operations involving half space solids only.
+
+The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
+
+* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
+* _IfcShapeRepresentation_._RepresentationType_ = &apos;Clipping&apos;
+* _IfcShapeRepresentation_._Items_ = _IfcBooleanClippingResult_
+
+&gt; NOTE&amp;nbsp; This representation type is predominately used for compatibility with previous releases of the standard.</Documentation>
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+															<Rules>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Value=Body" Description="Value=Body" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="Type">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Name="Value=Clipping" Description="Value=Clipping" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items" Identification="Items">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcBooleanClippingResult" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+					</Templates>
+				</DocTemplateDefinition>
+				<DocTemplateDefinition id="Clearance_Geometry_0Ft2E0dl11wR3Sy1Iztvi" Name="Clearance Geometry" UniqueId="0Ft2E0dl11wR3Sy1$Iztvi" Type="IfcElement">
+					<Documentation>Elements requiring surrounding space for clearance provide a &apos;Clearance&apos; representation. The reason for clearance space may be due to ventilation, maintenance, or other purpose. Examples of such elements include boilers and chillers. Such representation may be used for interference checks, where the &apos;Clearance&apos; representation must not intersect with the &apos;Body&apos; representation of other objects, though may intersect with the &apos;Clearance&apos; representation of other objects.
+
+The representation identifier of the clearance representation is:
+
+* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Clearance&apos;</Documentation>
+					<Rules>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+									<Rules>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+													<Rules>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																	<Rules>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Value=Clearance" Description="Value=Clearance" />
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="Type">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items" Identification="Items" />
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocTemplateDefinition>
+				<DocTemplateDefinition id="Lighting_Geometry_2W02_BUpX4vkxXYripLIn" Name="Lighting Geometry" UniqueId="2W02_BUpX4$vkxXYripLIn" Type="IfcElement">
+					<Documentation>Elements emitting light provide a &apos;Lighting&apos; representation. Examples of such elements include lamps and light fixtures. Such representation may be used for 3D rendering or lighting design.
+
+The representation identifier and type and the only allowed single representation item of the &apos;Lighting&apos; representation are:
+
+* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Lighting&apos;
+* _IfcShapeRepresentation_._RepresentationType_ : &apos;LightSource&apos;
+* _IfcShapeRepresentation_._Items_ = _IfcLightSource_</Documentation>
+					<Rules>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+									<Rules>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+													<Rules>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																	<Rules>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Value=Lighting" Description="Value=Lighting" />
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="Type">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																	<Rules>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Value=LightSource" Description="Value=LightSource" />
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items" Identification="Items">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLightSource">
+																	<Rules>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="LightColour">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcColourRgb" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocTemplateDefinition>
+				<DocTemplateDefinition id="Survey_Points_Geometry_0gaFKlUM5DlOLWL6uj2tEx" Name="Survey Points Geometry" UniqueId="0gaFKlUM5DlOLWL6uj2tEx" Type="IfcSite">
+					<Documentation>Elements may provide a &apos;SurveyPoints&apos; representation for defining a contour such as for _IfcSite_. It contains the survey points as a set of Cartesian points and optionally breaklines.
+
+The representation identifier and type and the only allowed single representation item of the &apos;SurveyPoints&apos; representation are:
+
+* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;SurveyPoints&apos;
+* _IfcShapeRepresentation_._RepresentationType_ : &apos;GeometricCurveSet&apos;
+* _IfcShapeRepresentation_._Items_ = _IfcGeometricCurveSet_</Documentation>
+					<Rules>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+									<Rules>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+													<Rules>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																	<Rules>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Value=SurveyPoints" Description="Value=SurveyPoints" />
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="Type">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																	<Rules>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Value=GeometricCurveSet" Description="Value=GeometricCurveSet" />
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items" Identification="Items">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricCurveSet">
+																	<Rules>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Elements">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCartesianPoint" />
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPolyline" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocTemplateDefinition>
+				<DocTemplateDefinition id="Mapped_Geometry_3iTV8STL4dxyWvZebtBcw" Name="Mapped Geometry" UniqueId="3i$TV8STL4dxyWvZebtBcw" Type="IfcProduct">
+					<Documentation>Elements may have a &apos;Mapped Geometry&apos; representation that reuses the concept _Product Type Shape_ at the corresponding product type, as defined by the concept _Object Typing_.
+
+The representation identifier of the mapped geometry representation is any of the other valid geometric representation identifiers, such as &apos;Body&apos;, &apos;FootPrint&apos;, or &apos;Axis&apos;.
+
+* _IfcShapeRepresentation_._RepresentationIdentifier_ = (any, see above)
+* _IfcShapeRepresentation_._RepresentationType_ = &apos;MappedRepresentation&apos;</Documentation>
+					<Rules>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+									<Rules>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+													<Rules>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="Type">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMappedItem">
+																	<Rules>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="MappingSource">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRepresentationMap">
+																					<Rules>
+																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="MappingOrigin">
+																							<Rules>
+																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAxis2Placement3D" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="MappedRepresentation">
+																							<Rules>
+																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																					</Rules>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="MappingTarget">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCartesianTransformationOperator3D" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocTemplateDefinition>
+			</Templates>
+		</DocTemplateDefinition>
+		<DocTemplateDefinition Name="Product Topology Representation" UniqueId="3tgEa68i59_P8U1DH0zYt5" Type="IfcRoot">
+			<Documentation>The topology of products may be represented in multiple ways for different purposes. Each representation has a well-known string identifier and a particular representation context. There may be multiple representation contexts to describe a topology for various uses.</Documentation>
+			<Templates>
+				<DocTemplateDefinition id="Reference_Topology_1vtMCN8v14oeZ2SDHirRbf" Name="Reference Topology" UniqueId="1vtMCN8v14oeZ2SDHirRbf" Type="IfcProduct">
+					<Documentation>Structural activities may have a &apos;Reference&apos; representation describing the distribution of a load.</Documentation>
+					<Rules>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representation">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProductDefinitionShape">
+									<Rules>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Representations">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcTopologyRepresentation">
+													<Rules>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationIdentifier">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																	<Rules>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Value=Reference" Description="Value=Reference" />
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="RepresentationType">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items" Identification="Topology">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcTopologicalRepresentationItem" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocTemplateDefinition>
+			</Templates>
+		</DocTemplateDefinition>
+	</Templates>
+</DocTemplateDefinition>
+

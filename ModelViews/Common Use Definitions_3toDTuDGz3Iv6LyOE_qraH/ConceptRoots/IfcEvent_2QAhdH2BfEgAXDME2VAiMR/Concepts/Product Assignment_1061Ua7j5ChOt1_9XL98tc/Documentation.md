@@ -1,0 +1,3 @@
+For building operation scenarios, _IfcEvent_ may be assigned to a product (_IfcElement_ subtype) using _IfcRelAssignsToProduct_ to indicate a specific product occurrence that sources the event.
+
+> EXAMPLE&nbsp; An _IfcSensor_ for a motion sensor may have a "Motion Sensed" event. If the _IfcEvent_ is defined by an _IfcEventType_ and the _IfcEventType_ is assigned to a product type (using _IfcRelAssignsToProduct_), then the _IfcEvent_ must be assigned to one or more occurrences of the specified product type using _IfcRelAssignsToProduct_.

@@ -1,10 +1,11 @@
-Enumeration defining the typical types of heat exchangers. The _IfcHeatExchangerTypeEnum_ contains the following:
+Enumeration defining the typical types of heat exchangers.
+
+{ .spec-head}
+Enumerated Item Definitions:
 
 * **PLATE**: Plate heat exchanger.
 * **SHELLANDTUBE**: Shell and Tube heat exchanger.
 * **USERDEFINED**: User-defined heat exchanger type.
 * **NOTDEFINED**: Undefined heat exchanger type.
 
-> <font color="#0000ff" size="-1">
-    	HISTORY: New enumeration in IFC R2x.<br>
-    	</font>
+> HISTORY&nbsp; New enumeration in IFC2x.

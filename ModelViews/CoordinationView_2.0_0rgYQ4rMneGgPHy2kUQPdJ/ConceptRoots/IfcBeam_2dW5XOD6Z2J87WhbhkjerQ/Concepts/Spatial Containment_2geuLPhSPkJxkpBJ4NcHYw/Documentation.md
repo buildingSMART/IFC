@@ -1,1 +1,0 @@
-Specific to IfcBeam: It is restricted to be containied in IfcSite, IfcBuilding, or IfcBuildingStory only. It shall not be provided, if the IfcBeam is part of an aggregation.

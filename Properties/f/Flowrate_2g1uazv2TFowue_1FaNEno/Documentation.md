@@ -1,1 +1,0 @@
-The mass flowrate of the steam.

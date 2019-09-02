@@ -1,11 +1,16 @@
-**Definition from ISO/CD 10303-46:1992**: The presentation layer assignment entity assigns an identifying name and optionally a description to a set of presentation and representation items.
+The presentation layer assignment provides the layer name (and optionally a description and an identifier) for a collection of geometric representation items. The _IfcPresentationLayerAssignment_ corresponds to the term "CAD Layer" and is used mainly for grouping and visibility control.
 
-The presentation layer assignment provides the layer name (and optionally a description) for a collection of (styled or unstyled) representation items. Visibility and access control and layer style assignment (colour, line style, line width) is handled by the subtype _IfcPresentationLayerAssignmentWithStyle_.
+> NOTE&nbsp; The use of presentation layer shall be restricted to simple grouping and displaying purposes.
 
-> <font color="#0000FF" size="-1"> NOTE: Corresponding STEP name:
-		  presentation layer assignment. Please refer to ISO/IS 10303-46:1994, p. 36 for
-		  the final definition of the formal standard. </font>
-> 
-> <font size="-1"><font color="#0000FF">HISTORY: New entity in Release
-		  IFC2x 2nd Edition.</font> </font>
->
+Visibility and access control and layer style assignment (colour, line style, line width) is handled by the subtype _IfcPresentationLayerAssignmentWithStyle_.
+
+> NOTE&nbsp; Corresponding ISO 10303 name: presentation layer assignment. Please refer to ISO/IS 10303-46:1994, p. 36 for the final definition of the formal standard.
+
+> HISTORY&nbsp; New entity in IFC2x2.
+
+{ .use-head}
+Attribute use definition
+
+Figure 1 illustrates assignment of items by shape representation or representation item. The set of _AssignedItems_ can either include a whole shape representation, or individual geometric representation items. If both, the _IfcShapeRepresentation_ has a layer assignment, and an individual geometric representation item in the set of _IfcShapeRepresentation_.Items, then the layer assignment of the _IfcGeometricRepresentationItem_ overides the layer assignment of the _IfcShapeRepresentation_.
+
+!["instantiation diagram"](../../../figures/IfcPresentationLayerAssignment-fig1.png "Figure 1 &mdash; Presentation layer assignment")

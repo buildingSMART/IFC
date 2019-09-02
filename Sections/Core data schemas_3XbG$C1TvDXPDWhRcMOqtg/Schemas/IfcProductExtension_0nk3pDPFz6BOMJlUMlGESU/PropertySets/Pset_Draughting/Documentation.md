@@ -1,2 +1,0 @@
-Property set to capture layer and colour as a quick win implementation within IFC2x platform to enable more efficient exchange of 3D building models.
-NOTE: With implementation of the IFC2x2 capabilities defined in the presentation resources (IfcPresentationLayerAssignment, IfcCurveStyle) the use of this property set may become obsolete.

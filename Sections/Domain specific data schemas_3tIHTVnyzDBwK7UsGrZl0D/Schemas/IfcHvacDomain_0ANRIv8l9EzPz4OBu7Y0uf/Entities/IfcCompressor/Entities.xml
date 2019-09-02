@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCompressor" Name="IfcCompressor" UniqueId="d8aab68b-f996-419d-8d96-d62a306be289" DiagramNumber="3" BaseDefinition="IfcFlowMovingDevice" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Kompressor" Locale="de" />
+		<DocLocalization Name="Compresseur" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="4432.8186" Y="403.15308" Width="327.61291" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="063cf1f4-074d-489d-acbe-727457caaef5" DefinedType="IfcCompressorTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<DiagramLine>
+				<DocPoint X="4432.8186" Y="453.15308" />
+				<DocPoint X="4237.33047" Y="453.15308" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4430.1342454" Y="434.362598" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="1cd6c312-d240-4d72-9506-b5fe98099eb3">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcCompressorType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcCompressorTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcCompressorTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="85752bb7-b96b-42fe-9515-3eab2f5d6ffc">
+			<Documentation>Either there is no compressor type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcCompressorType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCHVACDOMAIN.IFCCOMPRESSORTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

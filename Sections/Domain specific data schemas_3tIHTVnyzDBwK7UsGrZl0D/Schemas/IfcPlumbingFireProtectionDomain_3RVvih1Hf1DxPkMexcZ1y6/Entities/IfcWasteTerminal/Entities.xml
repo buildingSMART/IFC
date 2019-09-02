@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcWasteTerminal" Name="IfcWasteTerminal" UniqueId="8f0a8504-a6bc-4682-93f1-f55c09260b1a" DiagramNumber="1" BaseDefinition="IfcFlowTerminal" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Ablauf / Abscheider" Locale="de" />
+		<DocLocalization Name="Stockage des déchets" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="862.98" Y="1167.5667" Width="649.93334" Height="110.6" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="486553fc-cc66-472d-904f-60984dc75a9a" DefinedType="IfcWasteTerminalTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<DiagramLine>
+				<DocPoint X="1508.1109" Y="1278.1667" />
+				<DocPoint X="1508.1109" Y="1327.246697" />
+				<DocPoint X="1072.86" Y="1327.246697" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1414.777567" Y="1271.1767166" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="6c9bda0e-313d-4309-94ec-90cfd76ae8a3">
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcWasteTerminalTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcWasteTerminalTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="c13fa0a7-4761-44a8-94dd-75c3e7bd8470">
+			<Documentation>Either there is no waste terminal type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcWasteTerminalType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCPLUMBINGFIREPROTECTIONDOMAIN.IFCWASTETERMINALTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

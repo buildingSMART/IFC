@@ -1,36 +1,75 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTable" UniqueId="a998a201-457f-4f17-9337-b5f2acb084d8" DiagramNumber="2" EntityFlags="165">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTable" UniqueId="a998a201-457f-4f17-9337-b5f2acb084d8" DiagramNumber="2" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Tabelle" Locale="de" />
+		<DocLocalization Name="Table" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1759.6349" Y="926.09959" Width="359.90156" Height="336.4714" />
 	<Attributes>
-		<DocAttribute Name="Name" UniqueId="9abc07c5-b708-450e-a8bd-c055f3dd735e" DefinedType="STRING" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>A unique name which is intended to describe the usage of the Table.</Documentation>
+		<DocAttribute Name="Name" UniqueId="9abc07c5-b708-450e-a8bd-c055f3dd735e" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<DiagramLine>
+				<DocPoint X="2119.5365" Y="971.47791" />
+				<DocPoint X="3148.761" Y="971.47791" />
+				<DocPoint X="3148.761" Y="1594.02315" />
+				<DocPoint X="3150.9427536" Y="1594.02315" />
+				<DocPoint X="3150.9427536" Y="1987.72049" />
+				<DocPoint X="2900.6804536" Y="1987.72049" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2192.857542" Y="963.5707862" Width="73" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Rows" UniqueId="7022ee4b-bd52-48f7-9edb-ef5c09c44206" DefinedType="IfcTableRow" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="Rows" UniqueId="7022ee4b-bd52-48f7-9edb-ef5c09c44206" DefinedType="IfcTableRow" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Reference to information content of rows.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1927.1706" Y="1262.571" />
+				<DocPoint X="1927.1706" Y="1495.59359" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2017.190649" Y="1256.3454082" Width="146" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="Columns" UniqueId="6290f013-626e-4be6-a71e-0133059ad85e" DefinedType="IfcTableColumn" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+			<Documentation>The column information associated with this table.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1933.3782" Y="926.09959" />
+				<DocPoint X="1933.3782" Y="847.278332" />
+				<DocPoint X="1933.330795493" Y="847.278332" />
+				<DocPoint X="1933.330795493" Y="768.457074" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2039.91711" Y="945.756771" Width="181" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="NumberOfCellsInRow" UniqueId="a079c8cc-df08-4b62-b081-51e8572745d1" DefinedType="INTEGER" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The number of cells in each row, this complies to the number of columns in a table. See WR2 that ensures that each row has the same number of cells. The actual value is derived from the first member of the Rows list.</Documentation>
 			<Derived>HIINDEX(Rows[1].RowCells)</Derived>
+			<DiagramLine>
+				<DocPoint X="2119.5365" Y="1054.8201" />
+				<DocPoint X="2596.23917" Y="1054.8201" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2129.861176" Y="1048.7403527" Width="321" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="NumberOfHeadings" UniqueId="f715f965-b239-42f1-b0c7-fd99d00ea73a" DefinedType="INTEGER" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The number of headings in a table. This is restricted by WR3 to max. one.</Documentation>
 			<Derived>SIZEOF(QUERY( Temp &lt;* Rows | Temp.IsHeading))</Derived>
+			<DiagramLine>
+				<DocPoint X="2119.5365" Y="1147.4878" />
+				<DocPoint X="2596.27257" Y="1147.4878" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2116.4690044" Y="1136.922916" Width="301" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="NumberOfDataRows" UniqueId="c5f803f8-2be0-441c-9417-3e937fb62764" DefinedType="INTEGER" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The number of rows in a table that contains data, i.e. total number of rows minus number of heading rows in table.</Documentation>
 			<Derived>SIZEOF(QUERY( Temp &lt;* Rows | NOT(Temp.IsHeading)))</Derived>
+			<DiagramLine>
+				<DocPoint X="2119.5365" Y="1228.9238" />
+				<DocPoint X="2596.27257" Y="1228.9238" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2127.1145641" Y="1215.264631" Width="311" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
 		<DocWhereRule Name="WR1" UniqueId="b812fd32-232a-4a5b-acc0-caadda4d8f2d">
-			<Documentation>Ensures that each row defines the same number of cells. This restricts the available table styles in IFC Release 1.5. The rule compares whether all other rows of the IfcTable have the same number of cells as the first row. EXPRESS = SIZEOF(QUERY( Temp &lt;\* Rows | HIINDEX(Temp.RowCells) &lt;&gt; HIINDEX(Rows[1].RowCells))) = 0</Documentation>
+			<Documentation>Ensures that each row defines the same number of cells. The rule compares whether all other rows of the IfcTable have the same number of cells as the first row.</Documentation>
 			<Expression>SIZEOF(QUERY( Temp &lt;* Rows | HIINDEX(Temp.RowCells) &lt;&gt; HIINDEX(Rows[1].RowCells))) = 0</Expression>
 		</DocWhereRule>
 		<DocWhereRule Name="WR2" UniqueId="ebeee4dd-a97a-4190-af1c-04f04b0a4e20">
-			<Documentation>Ensures that each row defines the same number of cells. This restricts the available table styles in IFC Release 1.5. The rule compares whether all other rows of the IfcTable have the same number of cells as the first row. EXPRESS = SIZEOF(QUERY( Temp &lt;\* Rows | HIINDEX(Temp.RowCells) &lt;&gt; HIINDEX(Rows[1].RowCells))) = 0</Documentation>
-			<Expression>SIZEOF(QUERY( Temp &lt;* Rows | HIINDEX(Temp.RowCells) &lt;&gt; HIINDEX(Rows[1].RowCells))) = 0</Expression>
-		</DocWhereRule>
-		<DocWhereRule Name="WR3" UniqueId="27t_Tl07r0$QC0YI719Zsf">
-			<Documentation>Ensures that there is one heading row as maximum. This restricts the allowed number of heading rows for this release. This limitation may be removed in future releases. EXPRESS = 0 &lt;= NumberOfHeadings &lt;= 1 }</Documentation>
+			<Documentation>The rule restricts the allowed number of heading rows to no more than one.</Documentation>
 			<Expression>{ 0 &lt;= NumberOfHeadings &lt;= 1 }</Expression>
 		</DocWhereRule>
 	</WhereRules>

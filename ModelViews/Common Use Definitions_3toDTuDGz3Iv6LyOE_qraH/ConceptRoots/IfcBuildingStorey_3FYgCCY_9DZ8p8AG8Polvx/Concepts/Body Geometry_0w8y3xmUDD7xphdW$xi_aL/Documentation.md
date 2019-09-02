@@ -1,0 +1,3 @@
+The body (or solid model) geometric representation (if the building storey has an independent geometric representation) of _IfcBuildingStorey_ is defined using faceted B-Rep capabilities (with or without voids), based on the _IfcFacetedBrep_ or on the _IfcFacetedBrepWithVoids_.
+
+> NOTE&nbsp; Since the building storey shape is usually described by the exterior building elements, an independent shape representation shall only be given, if the building storey is exposed independently from its constituting elements and such independent geometric representation may be prohibited in model view definitions.

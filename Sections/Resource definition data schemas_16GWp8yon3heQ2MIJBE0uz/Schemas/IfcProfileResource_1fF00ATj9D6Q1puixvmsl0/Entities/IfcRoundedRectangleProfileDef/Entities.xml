@@ -1,12 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRoundedRectangleProfileDef" UniqueId="0c3d81f9-c173-4e51-8063-1ab1f071f67a" DiagramNumber="2" BaseDefinition="IfcRectangleProfileDef" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRoundedRectangleProfileDef" UniqueId="0c3d81f9-c173-4e51-8063-1ab1f071f67a" DiagramNumber="2" BaseDefinition="IfcRectangleProfileDef" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="abgerundetes Rechteckprofil - parameterisierte Definition" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="2062.08" Y="1193.8834" Width="349.90001" Height="142.66667" />
 	<Attributes>
 		<DocAttribute Name="RoundingRadius" UniqueId="afc5aaa4-0bee-4503-bf30-a7540e19281c" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>Radius of the circular arcs, by which all four corners of the rectangle are equally rounded. If not given, zero (= no rounding arcs) applies.</Documentation>
+			<Documentation>Radius of the circular arcs by which all four corners of the rectangle are equally rounded.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2411.98" Y="1265.2167" />
+				<DocPoint X="2704.40998" Y="1265.2167" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2411.98" Y="1265.2167" Width="191" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR31" UniqueId="3$PGV8lPvCOfTwKV5qFAaB">
+		<DocWhereRule Name="ValidRadius" UniqueId="836055d0-c019-47cb-9785-54986e4e5192">
 			<Documentation>The value of the attribute RoundingRadius shall be lower or equal than either of both, half the value of the Xdim and the YDim attribute.</Documentation>
 			<Expression>((RoundingRadius &lt;= (SELF\IfcRectangleProfileDef.XDim/2.)) AND 
  (RoundingRadius &lt;= (SELF\IfcRectangleProfileDef.YDim/2.)))</Expression>

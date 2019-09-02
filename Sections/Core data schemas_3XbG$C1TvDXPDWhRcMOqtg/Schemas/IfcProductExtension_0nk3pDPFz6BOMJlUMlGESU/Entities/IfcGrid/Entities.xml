@@ -1,23 +1,58 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcGrid" Name="IfcGrid" UniqueId="25379845-b692-4288-a06e-0e6782212371" DiagramNumber="6" BaseDefinition="IfcProduct" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcGrid" Name="IfcGrid" UniqueId="25379845-b692-4288-a06e-0e6782212371" DiagramNumber="4" BaseDefinition="IfcProduct" EntityFlags="237">
+	<Localization>
+		<DocLocalization Name="Raster" Locale="de" />
+		<DocLocalization Name="Grille" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="5016.7302" Y="631.93177" Width="219.46667" Height="450.13333" />
 	<Attributes>
 		<DocAttribute Name="UAxes" UniqueId="52e8b76f-1753-4f63-bec2-8c5baf34e010" DefinedType="IfcGridAxis" AttributeFlags="0" AggregationType="1" AggregationFlag="2" AggregationLower="1" AggregationUpper="0">
 			<Documentation>List of grid axes defining the first row of grid lines.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5236.1969" Y="669.39843" />
+				<DocPoint X="5786.01347" Y="669.39843" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5236.1969" Y="661.39843" Width="166" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="VAxes" UniqueId="4db57570-5afe-44ca-acac-ab9ca9b30e78" DefinedType="IfcGridAxis" AttributeFlags="0" AggregationType="1" AggregationFlag="2" AggregationLower="1" AggregationUpper="0">
 			<Documentation>List of grid axes defining the second row of grid lines.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5236.1969" Y="767.15082" />
+				<DocPoint X="5786.01347" Y="767.15082" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5236.1969" Y="761.8174867" Width="164" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="WAxes" UniqueId="7c8b1731-f15b-4944-8503-27030ed23f78" DefinedType="IfcGridAxis" AttributeFlags="1" AggregationType="1" AggregationFlag="2" AggregationLower="1" AggregationUpper="0">
 			<Documentation>List of grid axes defining the third row of grid lines. It may be given in the case of a triangular grid.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5236.1969" Y="882.46506" />
+				<DocPoint X="5786.01347" Y="882.46506" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5236.1969" Y="879.1317267" Width="171" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="PredefinedType" UniqueId="17d92a16-1003-4924-9cff-c55f5b39e118" DefinedType="IfcGridTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Predefined types to define the particular type of the grid.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; New attribute.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5049.1302" Y="1082.0651" />
+				<DocPoint X="5049.1302" Y="1199.75953" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5158.46353" Y="1087.3984333" Width="182" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="ContainedInStructure" UniqueId="eab7c659-344b-47a3-82ed-2c7243b71a28" DefinedType="IfcRelContainedInSpatialStructure" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatedElements">
 			<Documentation>Relationship to a spatial structure element, to which the grid is primarily associated.
-&gt; &lt;small&gt;&lt;font color=&quot;#FF0000&quot;&gt;IFC2x PLATFORM CHANGE&amp;nbsp; The inverse relationship has been added to &lt;i&gt;IfcGrid&lt;/i&gt; with upward compatibility&lt;/font&gt;
-&lt;/small&gt;</Documentation>
+{ .change-ifc2x}
+&gt; IFC2x CHANGE&amp;nbsp; The inverse relationship has been added to _IfcGrid_ with upward compatibility</Documentation>
+			<DiagramLine>
+				<DocPoint X="5236.1969" Y="1029.7984" />
+				<DocPoint X="5856.5302" Y="1029.7984" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5241.7969033" Y="1013.3984" Width="584" Height="70" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR41" UniqueId="2peyPNIafDYhL2CdQepuvf">
+		<DocWhereRule Name="HasPlacement" UniqueId="d0aa9601-b4ea-4006-ab30-c5b59bf73e03">
 			<Documentation>The placement for the grid has to be given.</Documentation>
 			<Expression>EXISTS(SELF\IfcProduct.ObjectPlacement)</Expression>
 		</DocWhereRule>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCoveringType" Name="IfcCoveringType" UniqueId="2851a201-39c1-4a3e-a164-c288dc59b7b9" DiagramNumber="3" BaseDefinition="IfcBuildingElementType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Bekleidung / Belag - Typ" Locale="de" />
+		<DocLocalization Name="Revêtement type" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="3629.6291" Y="1946.1593" Width="326.6" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="b0342ac0-3b78-4cc1-84b6-89044b113089" DefinedType="IfcCoveringTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Predefined types to define the particular type of the covering. There may be property set definitions available for each predefined type.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3956.2291" Y="1996.1593" />
+				<DocPoint X="4184.77287" Y="1996.1593" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3950.8957667" Y="1982.825967" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="3df9745a-cff4-4a42-a7b4-7f07c1f1c534">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcCoveringTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcCoveringTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,1 +1,0 @@
-Specific to IfcBuildingStorey: the IfcBuildingStorey shall not have a type object assigned.

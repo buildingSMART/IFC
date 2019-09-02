@@ -1,0 +1,3 @@
+The property sets relating to this entity are defined by _IfcPropertySet_ and attached by the _IfcRelDefinesByProperties_ relationship. They are accessible by the _IsDefinedBy_ inverse attribute. Applicable property sets are defined at assigned entities (primarily _IfcDistributionElement_ subtypes) where _IfcPropertySetTemplate.PropertySetType_ is _PSET_PERFORMANCEDRIVEN_.
+
+In addition to standard property sets defined within this specification, if the underlying information source provides metadata (specific type information), then custom property sets may capture such data, where corresponding _IfcPropertySetTemplate_ and _IfcPropertyTemplate_ objects may be defined for such information to be accessed by other applications.

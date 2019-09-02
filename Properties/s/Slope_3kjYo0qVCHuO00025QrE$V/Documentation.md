@@ -1,1 +1,1 @@
-Angle of the gutter to allow for drainage
+Angle of the gutter to allow for drainage.

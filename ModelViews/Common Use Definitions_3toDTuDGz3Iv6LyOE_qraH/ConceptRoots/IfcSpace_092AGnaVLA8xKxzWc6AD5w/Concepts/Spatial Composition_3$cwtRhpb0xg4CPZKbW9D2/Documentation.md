@@ -1,0 +1,1 @@
+By using the inverse relationship _IfcSpace.IsDecomposedBy_ it references _IfcSpace_ by _IfcRelAggregates.RelatedObjects_. If it refers to another instance of _IfcSpace_, the referenced _IfcSpace_ needs to have a different and lower _CompositionType_, i.e. ELEMENT (if the other _IfcSpace_ has COMPLEX), or PARTIAL (if the other _IfcSpace_ has ELEMENT).

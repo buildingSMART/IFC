@@ -1,0 +1,5 @@
+The material of the _IfcBuildingElementProxy_ is defined by _IfcMaterial_ and attached by the _IfcRelAssociatesMaterial_._RelatingMaterial_. It is accessible by the inverse _HasAssociations_ relationship.
+
+> NOTE&nbsp; It is illegal to assign an _IfcMaterial_ to an _IfcBuildingElementProxy_ with the _PredefinedType_ = ProvisionForVoid.
+
+Material information can also be given at the _IfcBuildingElementProxyType_, defining the common attribute data for all occurrences of the same type.&nbsp;It is then accessible by the inverse _IsTypedBy_ relationship pointing to _IfcBuildingElementProxyType.HasAssociations_ and via _IfcRelAssociatesMaterial.RelatingMaterial_ to _IfcMaterial_. If both are given, then the material directly assigned to _IfcBuildingElementProxy_ overrides the material assigned to _IfcBuildingElementProxyType_.

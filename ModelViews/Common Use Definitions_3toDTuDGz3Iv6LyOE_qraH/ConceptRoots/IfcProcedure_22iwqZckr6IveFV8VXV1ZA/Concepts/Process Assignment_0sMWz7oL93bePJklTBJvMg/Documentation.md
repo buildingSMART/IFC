@@ -1,0 +1,1 @@
+> NOTE&nbsp; A particular type of _IfcProcedure_ is a caution, warning or other form of advisory note. Typically, it is anticipated that such a procedure would be assigned to the specific _IfcProcess_ for which it gives advice using _IfcRelAssignsToProcess_.

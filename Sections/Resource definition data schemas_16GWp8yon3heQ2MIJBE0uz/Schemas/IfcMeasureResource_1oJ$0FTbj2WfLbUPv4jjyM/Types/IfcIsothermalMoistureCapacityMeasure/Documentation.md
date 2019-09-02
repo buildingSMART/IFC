@@ -1,8 +1,7 @@
-A measure of isothermal moisture capacity.
+_IfcIsothermalMoistureCapacityMeasure_ is a measure of isothermal moisture capacity.
 
 Usually measured in m3/kg.
 
 Type: REAL
 
-> <font size="-1" color="#0000FF">HISTORY New type in IFC Release 2x.
-</font>
+> HISTORY&nbsp; New type in IFC2x.

@@ -1,0 +1,1 @@
+The object placement for any subtype of _IfcElement_ is defined by the _IfcObjectPlacement_, either _IfcLocalPlacement_ or _IfcGridPlacement_, which defines the local object coordinate system that is referenced by all geometric representations of that _IfcElement_.

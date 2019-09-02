@@ -1,13 +1,14 @@
-A definition relationship (_IfcRelDefines_) that uses a type definition or property set definition (seens as partial type information) to define the properties of the object instance. It is a specific - occurrence relationship with implied dependencies (as the occurrence properties depend on the specific properties).
+A generic and abstract relationship which subtypes are used to:
 
-The _IfcRelDefines_ relationship establishes the link between one type (specific) information and several objects (occurrences). Those occurrences then share the same type (or partial type) information.
+* assign a object type to an object occurrence
+* assign a property set to an object instance
+* assign a property set template to a property set
 
-> <font size="-1">EXAMPLE: Several instances of windows within
-		the IFC project model may be of the same (catalogue or manufacturer) type.
-		Thereby they share the same properties. This relationship is established by a
-		subtype of the <i>IfcRelDefines</i> relationship assigning an
-		<i>IfcProductType</i> (or subtype thereof) to the
-		<i>IfcWindow</i>.</font>
+> EXAMPLE&nbsp; Several instances of windows within the IFC project model may be of the same (catalogue or manufacturer) type. Thereby they share the same properties. This relationship is established by the subtype _IfcRelDefinesByType_ of _IfcRelDefines_ relationship assigning an _IfcWindowStyle_ to multiple occurrences _IfcWindow_.
 
-> <font color="#0000FF" size="-1">HISTORY: New entity in IFC
-		Release 2x.</font>
+> EXAMPLE&nbsp; The (same) property set, e.g.  Pset_ProductManufacturerInfo, keeping the manufacturer name, label and production year of a product, can be assigned to one, or many instances of furnishing. This relationship is established by the subtype _IfcRelDefinesByProperties_ of _IfcRelDefines_ relationship assigning an _IfcPropertySet_ to one or more instances of _IfcFurnishingElement_.
+
+> HISTORY&nbsp; New entity in IFC2x.
+
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; The attribute _RelatedObjects_ had been demoted to the subtypes _IfcRelDefinesByProperties_ and _IfcRelDefinesByType_.

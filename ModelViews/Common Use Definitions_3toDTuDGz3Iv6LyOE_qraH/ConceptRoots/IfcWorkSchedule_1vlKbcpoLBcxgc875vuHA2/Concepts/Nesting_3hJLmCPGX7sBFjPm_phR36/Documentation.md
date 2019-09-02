@@ -1,0 +1,1 @@
+A work schedule can include other work schedules as sub-items through _IfcRelNests_ relationship.

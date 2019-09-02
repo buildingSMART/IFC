@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTessellatedFaceSet" UniqueId="97c81448-43b9-4f3b-8b09-5da72f6a499a" DiagramNumber="9" BaseDefinition="IfcTessellatedItem" EntityFlags="197">
+	<Localization>
+		<DocLocalization Name="tesselliertes Element aus Flächen" Locale="de" />
+		<DocLocalization Name="Ensemble de faces tessellées" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="12876.425" Y="649.52" Width="353.6" Height="258.4" />
+	<Subtypes>
+		<DocSubtype UniqueId="35324f0e-ff5e-47d0-9bb4-9a1c2dbaa971" DefinedType="IfcTriangulatedFaceSet" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="Coordinates" UniqueId="28b00035-2a37-4bda-aa0e-7845352fa060" DefinedType="IfcCartesianPointList3D" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>An ordered list of Cartesian points used by the coordinate index defined at the subtypes of _IfcTessellatedFaceSet_.</Documentation>
+			<DiagramLine>
+				<DocPoint X="12940.491" Y="907.91999" />
+				<DocPoint X="12940.491" Y="1797.78663" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="13032.483833" Y="870.52001" Width="141" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="Normals" UniqueId="8e4fd2de-ce33-4f4b-b4e5-15461e76afa9" DefinedType="IfcParameterValue" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0" XsdFormat="content" XsdTagless="true">
+			<Documentation>An ordered list of directions used by the normal index defined at the subtypes of _IfcTessellatedFaceSet_. It is a two-dimensional list of directions provided by three parameter values.</Documentation>
+			<AggregationAttribute xsi:type="DocAttribute" UniqueId="aa8a020b-8187-49e7-99c9-f25e39d27ac1" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="3" AggregationUpper="3" />
+			<DiagramLine>
+				<DocPoint X="12994.558" Y="907.92" />
+				<DocPoint X="12994.558" Y="1681.29934" />
+				<DocPoint X="13797.12467" Y="1681.29934" />
+				<DocPoint X="13797.12467" Y="1802.58666" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="13045.224667" Y="1675.9660067" Width="245" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="Closed" UniqueId="c0e5ee61-3125-425f-830c-9f1da3637f80" DefinedType="BOOLEAN" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Indication whether the _IfcTessellatedFaceSet_ is a closed shell or not. If omited no such information can be provided.</Documentation>
+			<DiagramLine>
+				<DocPoint X="13181.194" Y="907.91999" />
+				<DocPoint X="13181.194" Y="994.586663" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="13237.194" Y="918.586657" Width="84" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="HasColours" UniqueId="91135fdb-fb22-4f3b-8316-c13c64b911c0" DefinedType="IfcIndexedColourMap" AttributeFlags="32" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="MappedTo" XsdFormat="attribute">
+			<Documentation>Reference to the indexed colour map providing the corresponding colour RGB values to the faces of the subtypes of _IfcTessellatedFaceSet_.</Documentation>
+			<DiagramLine>
+				<DocPoint X="13230.025" Y="861.38666" />
+				<DocPoint X="13633.533" Y="861.38666" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="13222.025" Y="848.053327" Width="279" Height="70" />
+		</DocAttribute>
+		<DocAttribute Name="HasTextures" UniqueId="bc9e2551-f6b9-4d6e-a1ea-83aa87876820" DefinedType="IfcIndexedTextureMap" AttributeFlags="32" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="MappedTo" XsdFormat="element">
+			<Documentation>Reference to the indexed texture map providing the corresponding texture coordinates to the vertices bounding the faces of the subtypes of _IfcTessellatedFaceSet_.</Documentation>
+			<DiagramLine>
+				<DocPoint X="13230.025" Y="706.71999" />
+				<DocPoint X="13633.53334" Y="706.71999" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="13230.025" Y="690.71999" Width="290" Height="70" />
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

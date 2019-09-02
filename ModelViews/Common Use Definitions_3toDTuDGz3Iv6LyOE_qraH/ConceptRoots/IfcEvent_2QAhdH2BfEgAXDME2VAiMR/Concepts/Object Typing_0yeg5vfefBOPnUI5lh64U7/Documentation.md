@@ -1,0 +1,1 @@
+The _IfcEvent_ defines the anticipated or actual occurrence of any event; common information about event types is handled by _IfcEventType_.

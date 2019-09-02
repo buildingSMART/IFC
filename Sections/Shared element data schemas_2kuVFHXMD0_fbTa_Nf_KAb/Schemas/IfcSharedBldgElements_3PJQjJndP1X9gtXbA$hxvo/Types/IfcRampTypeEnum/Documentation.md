@@ -1,71 +1,73 @@
-This enumeration defines the basic configuration of the ramp type in terms of the number and shape of ramp flights. The type also distinguished turns by landings. In addition the subdivision of the straight and changing direction ramps is included. The ramp configurations are given for ramps without and with one and two landings.
+This enumeration defines the basic configuration of the ramp type in terms of the number and shape of ramp flights, as shown in Figure 1. The type also distinguished turns by landings. In addition the subdivision of the straight and changing direction ramps is included. The ramp configurations are given for ramps without and with one and two landings.
 
-Ramps which are subdivided into more than two landings have to be defined by the geometry only. Also ramps with non-regular shapes have to be defined by the geometry only. The type of such ramps is USERDEFINED.
+Ramps which are subdivided into more than two landings, or ramps with non-regular shapes are to be defined with type being USERDEFINED or NOTDEFINED.
 
-> <font color="#0000FF" size="-1">HISTORY New Enumeration in IFC
-		Release 2.0.</font>
+> HISTORY&nbsp; New enumeration in IFC2.0.
 
-**Illustration**
+{ .spec-head}
+Enumerated Item Definitions:
 
-<table border="1"> 
-		<tr valign="TOP"> 
-		  <td width="30%" valign="TOP" align="LEFT"><i>Enumerator</i></td> 
-		  <td width="46%" valign="TOP" align="LEFT"><i>Description</i></td> 
-		  <td width="23%" valign="TOP" align="LEFT"><i>Figure</i></td> 
-		</tr> 
-		<tr valign="TOP"> 
-		  <td width="30%" valign="TOP" align="LEFT">StraightRunRamp</td> 
-		  <td width="46%" valign="TOP" align="LEFT">A ramp - which is a sloping
-			 floor, walk, or roadway - connecting two levels. The straight ramp consists of
-			 one straight flight without turns or winders. </td> 
-		  <td width="23%" valign="TOP" align="LEFT"><img src="figures/IfcRampTypeEnum-Fig01.gif" width="171" height="39" border="0"></td> 
-		</tr> 
-		<tr valign="TOP"> 
-		  <td width="30%" valign="TOP" align="LEFT">TwoStraightRunRamp</td> 
-		  <td width="46%" valign="TOP" align="LEFT">A straight ramp consisting of
-			 two straight flights without turns but with one landing.</td> 
-		  <td width="23%" valign="TOP" align="LEFT"><img src="figures/IfcRampTypeEnum-Fig02.gif" width="171" height="39" border="0"></td> 
-		</tr> 
-		<tr valign="TOP"> 
-		  <td width="30%" valign="TOP" align="LEFT">QuarterTurnRamp</td> 
-		  <td width="46%" valign="TOP" align="LEFT">A ramp making a 90&deg; turn,
-			 consisting of two straight flights connected by a quarterspace landing. The
-			 direction of the turn is determined by the walking line.</td> 
-		  <td width="23%" valign="TOP" align="LEFT"><img src="figures/IfcRampTypeEnum-Fig03.gif" width="171" height="77" border="0"></td> 
-		</tr> 
-		<tr valign="TOP"> 
-		  <td width="30%" valign="TOP" align="LEFT">TwoQuarterTurnRamp</td> 
-		  <td width="46%" valign="TOP" align="LEFT">A ramp making a 180&deg;
-			 turn, consisting of three straight flights connected by two quarterspace
-			 landings. The direction of the turn is determined by the walking line.</td> 
-		  <td width="23%" valign="TOP" align="LEFT"><img src="figures/IfcRampTypeEnum-Fig04.gif" width="171" height="77" border="0"></td> 
-		</tr> 
-		<tr valign="TOP"> 
-		  <td width="30%" valign="TOP" align="LEFT">HalfTurnRamp</td> 
-		  <td width="46%" valign="TOP" align="LEFT">A ramp making a 180&deg;
-			 turn, consisting of two straight flights connected by a halfspace landing. The
-			 orientation of the turn is determined by the walking line.</td> 
-		  <td width="23%" valign="TOP" align="LEFT"><img src="figures/IfcRampTypeEnum-Fig05.gif" width="171" height="78" border="0"></td> 
-		</tr> 
-		<tr valign="TOP"> 
-		  <td width="30%" valign="TOP" align="LEFT">SpiralRamp</td> 
-		  <td width="46%" valign="TOP" align="LEFT">A ramp constructed around a
-			 circular or elliptical well without newels and landings.</td> 
-		  <td width="23%" valign="TOP" align="LEFT"><img src="figures/IfcRampTypeEnum-Fig06.gif" width="171" height="171" border="0"></td> 
-		</tr> 
-		<tr valign="TOP"> 
-		  <td width="30%" valign="TOP" align="LEFT"> UserDefined</td> 
-		  <td width="46%" valign="TOP" align="LEFT">Free form ramp (user defined
-			 operation type)</td> 
-		  <td width="23%" valign="TOP" align="LEFT">&nbsp;</td> 
-		</tr> 
-		<tr valign="TOP"> 
-		  <td width="30%" valign="TOP" align="LEFT">NotDefined</td> 
-		  <td width="46%" valign="TOP" align="LEFT">&nbsp;</td> 
-		  <td width="23%" valign="TOP" align="LEFT">&nbsp;</td> 
-		</tr> 
-	 </table>
-
-> <font size="-1">NOTE: These figures are only shown as
-		  illustrations.</font>
->
+<table>
+<tr>
+<td>
+<table class="gridtable">
+<tr valign="top">
+<th width="30%" valign="top" align="left"><em>Enumerator</em></th>
+<th width="46%" valign="top" align="left"><em>Description</em></th>
+<th width="23%" valign="top" align="left"><em>Figure</em></th>
+</tr>
+<tr valign="top">
+<td width="30%" valign="top" align="left">StraightRunRamp</td>
+<td width="46%" valign="top" align="left">A ramp - which is a sloping floor, walk, or roadway - connecting two levels.
+The straight ramp consists of one straight flight without turns or winders.</td>
+<td width="23%" valign="top" align="left"><img src="../../../figures/IfcRampTypeEnum-Fig01.gif" width="171" height="39" border="0"></td>
+</tr>
+<tr valign="top">
+<td width="30%" valign="top" align="left">TwoStraightRunRamp</td>
+<td width="46%" valign="top" align="left">A straight ramp consisting of two straight flights without turns but with one
+landing.</td>
+<td width="23%" valign="top" align="left"><img src="../../../figures/IfcRampTypeEnum-Fig02.gif" width="171" height="39" border="0"></td>
+</tr>
+<tr valign="top">
+<td width="30%" valign="top" align="left">QuarterTurnRamp</td>
+<td width="46%" valign="top" align="left">A ramp making a 90&deg; turn, consisting of two straight flights connected by
+a quarterspace landing. The direction of the turn is determined by the walking line.</td>
+<td width="23%" valign="top" align="left"><img src="../../../figures/IfcRampTypeEnum-Fig03.gif" width="171" height="77" border="0"></td>
+</tr>
+<tr valign="top">
+<td width="30%" valign="top" align="left">TwoQuarterTurnRamp</td>
+<td width="46%" valign="top" align="left">A ramp making a 180&deg; turn, consisting of three straight flights connected
+by two quarterspace landings. The direction of the turn is determined by the walking line.</td>
+<td width="23%" valign="top" align="left"><img src="../../../figures/IfcRampTypeEnum-Fig04.gif" width="171" height="77" border="0"></td>
+</tr>
+<tr valign="top">
+<td width="30%" valign="top" align="left">HalfTurnRamp</td>
+<td width="46%" valign="top" align="left">A ramp making a 180&deg; turn, consisting of two straight flights connected
+by a halfspace landing. The orientation of the turn is determined by the walking line.</td>
+<td width="23%" valign="top" align="left"><img src="../../../figures/IfcRampTypeEnum-Fig05.gif" width="171" height="78" border="0"></td>
+</tr>
+<tr valign="top">
+<td width="30%" valign="top" align="left">SpiralRamp</td>
+<td width="46%" valign="top" align="left">A ramp constructed around a circular or elliptical well without newels and
+landings.</td>
+<td width="23%" valign="top" align="left"><img src="../../../figures/IfcRampTypeEnum-Fig06.gif" width="171" height="171" border="0"></td>
+</tr>
+<tr valign="top">
+<td width="30%" valign="top" align="left">UserDefined</td>
+<td width="46%" valign="top" align="left">Free form ramp (user defined operation type)</td>
+<td width="23%" valign="top" align="left">&nbsp;</td>
+</tr>
+<tr valign="top">
+<td width="30%" valign="top" align="left">NotDefined</td>
+<td width="46%" valign="top" align="left">&nbsp;</td>
+<td width="23%" valign="top" align="left">&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<p class="figure">Figure 1 &mdash; Ramp types</p>
+</td>
+</tr>
+</table>

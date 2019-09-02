@@ -1,3 +1,3 @@
-The _IfcApprovalResource_ schema in the resource layer defines basic concepts for approvals to be assigned to any object in the IFC model derived from _IfcObject_.
+The _IfcApprovalResource_ schema in the resource layer defines basic concepts for approvals to be assigned to any object or object type or property definition in the IFC model derived from _IfcRoot_. The assignment is done using _IfcRelAssociatesApproval_ in the _IfcControlExtension_ schema. Also, approvals can be assigned to specific resource level objects (documents, properties, persons/organizations or materials), using _IfcResourceApprovalRelationship_.
 
-> <font size="-1" color="#0000FF">HISTORY This is new schema in IFC 2x, containing <i>IfcApproval</i> previously in <i>IfcControlExtension</i>.</font>
+> HISTORY&nbsp; New schema in IFC2x.

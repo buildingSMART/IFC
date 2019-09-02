@@ -1,13 +1,33 @@
-An_IfcOccupant_ is a type of actor that defines the form of occupancy of a property.
+An occupant is a type of actor that defines the form of occupancy of a property.
 
-> <font color="#0000ff" size="-1">HISTORY
-New class in IFC Release 2x. Modified in IFC 2x2</font>
+The principal purpose of **IfcOccupant** is to determine the nature of occupancy of a property for a particular actor. All characteristics relating to the actor (name and organization details) are inherited from the _IfcActor_ entity.
 
-### Use Definitions
-The principal purpose of _IfcOccupant_ is to determine the nature of occupancy of a property for a particular actor. All characteristics relating to the actor (name, organization details etc.) are inherited from the _IfcActor_ class.
+> HISTORY&nbsp; New entity in IFC2x
 
-The property to be occupied is defined by _IfcSpatialStructureElement_ and the assignment of the occupant to the property is via the _IfcRelOccupiesSpaces_ relationship class. Particular details of the agreement relating to the occupancy of a property are dealt with in the [Pset_PropertyAgreement](../../psd/IfcSharedFacilitiesElements/Pset_PropertyAgreement.xml) that is defined for the instance of _IfcSpatialStructureElement_. This means that an occupant may be related to a site, building, building storey or space or to any composition of site, building, building storey or space through the _IfcSpatialStructureElement.ElementComposition_. For instance, if the property concerned is several office spaces on a building storey, it might be appropriate to reference _IfcBuildingStorey.ElementComposition=PARTIAL_.
+___
+## Common Use Definitions
+The following concepts are inherited at supertypes:
 
-Occupants of a property may be considered to be the parties to an agreement. The roles that the occupant may play in respect to an agreement are defined in the _IfcOccupantTypeEnum_. If the role is not specified by the predefined contents of this enumeration, the value USERDEFINED may be set and the _IfcOccupant.UserDefinedOccupant_ attribute asserted.
+* _IfcRoot_: [Identity](../../templates/identity.htm), [Revision Control](../../templates/revision-control.htm)
+* _IfcActor_: [Property Sets for Objects](../../templates/property-sets-for-objects.htm)
 
-![Image](figures/IfcOccupant-Fig1.gif)
+[![Image](../../../img/diagram.png)&nbsp;Instance diagram](../../../annex/annex-d/common-use-definitions/ifcoccupant.htm)
+
+{ .use-head}
+Actor Assignment
+
+The [Actor Assignment](../../templates/actor-assignment.htm) concept applies to this entity as shown in Table 1.
+
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Type</b></th><th><b>Description</b></th></tr>
+<tr><td><a href="../../ifcproductextension/lexical/ifcspatialstructureelement.htm">IfcSpatialStructureElement</a></td><td>Indicates the property to be occupied. Particular details of the agreement relating to the occupancy of a property are dealt within the <em>Pset_PropertyAgreement</em> that is defined for the instance of <em>IfcSpatialStructureElement</em>. This means that an occupant may be related to a site, building, building storey or space through the <em>IfcSpatialStructureElement.ElementComposition</em> attribute. For instance, if the property concerned is several office spaces on a building storey, it might be appropriate to reference <em>IfcBuildingStorey.ElementComposition=PARTIAL</em>.  Occupants of a property may be considered to be the parties to an agreement. The roles that the occupant may play in respect to an agreement are defined in the <em>IfcOccupantTypeEnum</em> enumeration. If the role is not specified by the predefined contents of this enumeration, the value <em>USERDEFINED</em> may be set and the <em>ObjectType</em> attribute asserted.</td></tr>
+<tr><td><a href="../../ifckernel/lexical/ifccontrol.htm">IfcControl</a></td><td>Indicates project directives issued by the actor.</td></tr>
+<tr><td><a href="../../ifckernel/lexical/ifcgroup.htm">IfcGroup</a></td><td>Indicates groups for which the actor is responsible.</td></tr>
+<tr><td><a href="../../ifckernel/lexical/ifcproduct.htm">IfcProduct</a></td><td>Indicates products for which the actor is responsible.</td></tr>
+<tr><td><a href="../../ifckernel/lexical/ifcprocess.htm">IfcProcess</a></td><td>Indicates processes for which the actor is responsible.</td></tr>
+<tr><td><a href="../../ifckernel/lexical/ifcresource.htm">IfcResource</a></td><td>Indicates resources for which the actor is responsible.</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 1 &mdash; IfcOccupant Actor Assignment</p></td></tr></table>

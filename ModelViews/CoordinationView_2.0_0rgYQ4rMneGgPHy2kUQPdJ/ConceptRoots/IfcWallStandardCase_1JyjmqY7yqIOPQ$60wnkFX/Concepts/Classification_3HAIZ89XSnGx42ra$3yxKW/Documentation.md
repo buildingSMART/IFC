@@ -1,1 +1,0 @@
-Specific to _IfcWallStandardCase_: On import the requirement is relaxed to be displayed and stored as a property (rather than a specific classification reference).

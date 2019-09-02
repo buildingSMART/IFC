@@ -1,36 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralSurfaceMemberVarying" UniqueId="66950826-279c-419b-94ba-f2cc8d28c876" DiagramNumber="3" BaseDefinition="IfcStructuralSurfaceMember" EntityFlags="229">
-	<Attributes>
-		<DocAttribute Name="SubsequentThickness" UniqueId="0anfLvh9j9qftC_ZYjnFPh" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="0">
-			<Documentation>Defines the variable thickness of the structural face member using two or more subsequent and additional thickness values. The first thickness value is already given by the inherited Thickness value and shall not be included in the list.</Documentation>
-		</DocAttribute>
-		<DocAttribute Name="VaryingThicknessLocation" UniqueId="2Bup6puLjAXAhNPY5OvPaP" DefinedType="IfcShapeAspect" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>A shape aspect, containing a list of shape representations, each defining either one Cartesian point or one point on surface (by parameter values) which are needed to provide the positions of the VaryingThickness. The values contained in the list of IfcShapeAspect.ShapeRepresentations correspond to the values at the same position in the list VaryingThickness. The locations shall be along the outer bounds of the face (or surface) only.</Documentation>
-		</DocAttribute>
-		<DocAttribute Name="VaryingThickness" UniqueId="0Hvx2BOW10putja1Bk2uaM" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="3" AggregationUpper="0">
-			<Documentation>Derived list of all varying thickness values by pushing the inherited starting thickness to the beginning of the list of SubsequentThickness.</Documentation>
-			<Derived>IfcAddToBeginOfList(SELF\IfcStructuralSurfaceMember.Thickness, SubsequentThickness)</Derived>
-		</DocAttribute>
-	</Attributes>
-	<WhereRules>
-		<DocWhereRule Name="WR61" UniqueId="0V1und$NL21uETCRMObzLl">
-			<Documentation>The inherited Thickness attribute shall have a value assigned.</Documentation>
-			<Expression>EXISTS(SELF\IfcStructuralSurfaceMember.Thickness)</Expression>
-		</DocWhereRule>
-		<DocWhereRule Name="WR62" UniqueId="0o60m_Cjj4V9n3q4vfedga">
-			<Documentation>All point locations shall be given by only one shape representation item within the list of shape representations of the shape aspect.</Documentation>
-			<Expression>SIZEOF(QUERY(temp &lt;* SELF.VaryingThicknessLocation.ShapeRepresentations |
-  NOT(SIZEOF(temp\IfcRepresentation.Items) = 1)
-  )) = 0</Expression>
-		</DocWhereRule>
-		<DocWhereRule Name="WR63" UniqueId="2fNsRA2gz6uOaOCnw2HH3M">
-			<Documentation>Each shape representation, representing the point at which a varying thickness applies, shall be represented by either a Cartesian point or by a point on surface.</Documentation>
-			<Expression>SIZEOF(QUERY(temp &lt;* SELF.VaryingThicknessLocation.ShapeRepresentations |
-  NOT((&apos;IFCGEOMETRYRESOURCE.IFCCARTESIANPOINT&apos; IN TYPEOF(temp\IfcRepresentation.Items[1]))
-        OR
-      (&apos;IFCGEOMETRYRESOURCE.IFCPOINTONSURFACE&apos; IN TYPEOF(temp\IfcRepresentation.Items[1])))
-  )) = 0</Expression>
-		</DocWhereRule>
-	</WhereRules>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStructuralSurfaceMemberVarying" Name="IfcStructuralSurfaceMemberVarying" UniqueId="66950826-279c-419b-94ba-f2cc8d28c876" DiagramNumber="3" BaseDefinition="IfcStructuralSurfaceMember" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Platte / Scheibe mit veränderlicher Dicke" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="3501.4886" Y="1949.38" Width="330.98813" Height="100" />
 </DocEntity>
 

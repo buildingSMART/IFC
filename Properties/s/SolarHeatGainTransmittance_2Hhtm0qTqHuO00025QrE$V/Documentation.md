@@ -1,1 +1,1 @@
-Total solar heat transmittance that passes the glazing at normal incidence. It is a value without unit, often referred to as (SHGC):.
+(SHGC): The ratio of incident solar radiation that contributes to the heat gain of the interior, it is the solar radiation that directly passes (Tsol or τe) plus the part of the absorbed radiation that is distributed to the interior (qi). The SHGC is refered to also as g-value (g = τe + qi).

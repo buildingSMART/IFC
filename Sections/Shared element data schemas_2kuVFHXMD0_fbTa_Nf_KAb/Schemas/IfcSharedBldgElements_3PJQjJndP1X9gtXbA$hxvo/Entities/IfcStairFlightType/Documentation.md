@@ -1,16 +1,23 @@
-The element type (_IfcStairFlightType_) defines a list of commonly shared property set definitions of a stair flight and an optional set of product representations. It is used to define an stair flight specification (i.e. the specific product information, that is common to all occurrences of that product type).
+The building element type **IfcStairFlightType** defines commonly shared information for occurrences of stair flights. The set of shared information may include:
 
-> <font size="-1">NOTE: The product representations are defined as
-		  representation maps (at the level of the supertype <i>IfcTypeProduct</i>, which
-		  gets assigned by an element occurrence instance through the
-		  <i>IfcShapeRepresentation.Item[1]</i> being an
-		  <i>IfcMappedItem</i>.</font>
->
+* common properties with shared property sets
+* common representations
+* common materials
+* common composition of elements
 
-A stair flight type is used to define the common properties of a certain type of a stair flight that may be applied to many instances of that type to assign a specific style. Stair flight types may be exchanged without being already assigned to occurrences.
+It is used to define a stair flight type specification indicating the specific product information that is common to all occurrences of that product type. The **IfcStairFlightType** may be declared within _IfcProject_ or _IfcProjectLibrary_ using _IfcRelDeclares_ and may be exchanged with or without occurrences of the type. Occurrences of **IfcStairFlightType** are represented by instances of _IfcStairFlight_. Refer to the documentation at _IfcStairFlight_ for supported property sets, materials, and composition.
 
-The occurrences of the _IfcStairFlightType_ are represented by instances of _IfcStairFlight_.
+> HISTORY&nbsp; New entity in IFC2x2.
 
-> <font color="#0000FF" size="-1">HISTORY: New entity in Release IFC2x
-		  Edition 2.</font>
->
+___
+## Common Use Definitions
+The following concepts are inherited at supertypes:
+
+* _IfcRoot_: [Identity](../../templates/identity.htm), [Revision Control](../../templates/revision-control.htm)
+
+[![Image](../../../img/diagram.png)&nbsp;Instance diagram](../../../annex/annex-d/common-use-definitions/ifcstairflighttype.htm)
+
+{ .use-head}
+Type Body Geometry
+
+The [Type Body Geometry](../../templates/type-body-geometry.htm) concept applies to this entity.

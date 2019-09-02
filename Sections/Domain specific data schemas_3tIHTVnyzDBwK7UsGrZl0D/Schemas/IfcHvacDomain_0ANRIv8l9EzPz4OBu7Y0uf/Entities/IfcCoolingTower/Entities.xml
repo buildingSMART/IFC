@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCoolingTower" Name="IfcCoolingTower" UniqueId="2cb72f5c-1054-4ad5-a372-d1da32049541" DiagramNumber="1" BaseDefinition="IfcEnergyConversionDevice" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Kühlturm" Locale="de" />
+		<DocLocalization Name="Tour de refroidissement" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1220.3774" Y="1254.9908" Width="334.08435" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="a3c48294-1abd-4020-9155-50f2821b225a" DefinedType="IfcCoolingTowerTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<DiagramLine>
+				<DocPoint X="1220.3774" Y="1304.9908" />
+				<DocPoint X="1008.11625" Y="1304.9908" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1220.3774" Y="1304.9908" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="ed7dd862-7ca2-49f4-ba7a-bf3573f7000b">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcCoolingTowerType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcCoolingTowerTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcCoolingTowerTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="b1f58204-4bf0-421d-a742-419ece5ac691">
+			<Documentation>Either there is no cooling tower type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcCoolingTowerType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCHVACDOMAIN.IFCCOOLINGTOWERTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

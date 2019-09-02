@@ -1,0 +1,3 @@
+The _IfcCovering_ has a containment relationship within the hierarchical spatial structure.
+
+* The _IfcCovering_ is places within the project spatial hierarchy using the objectified relationship _IfcRelContainedInSpatialStructure_, referring to it by its inverse attribute _SELF\IfcElement.ContainedInStructure_. Subtypes of _IfcSpatialStructureElement_ are valid spatial containers, with _IfcSpace_ being the default container.

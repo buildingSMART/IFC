@@ -1,4 +1,7 @@
-Types of compressors. The _IfcCompressorTypeEnum_ contains the following:
+Enumeration defining the typical types of compressors.
+
+{ .spec-head}
+Enumerated Item Definitions:
 
 * **DYNAMIC**: The pressure of refrigerant vapor is increased by a continuous transfer of angular momentum from a rotating member to the vapor followed by conversion of this momentum into static pressure.
 * **RECIPROCATING**: Positive-displacement compressor using a piston driven by a connecting rod from a crankshaft.
@@ -18,6 +21,4 @@ Types of compressors. The _IfcCompressorTypeEnum_ contains the following:
 * **USERDEFINED**: User-defined compressor type.
 * **NOTDEFINED**: Undefined compressor type.
 
-> <font color="#0000ff" size="-1">
-    	HISTORY: New enumeration in IFC R2x.<br>
-    	</font>
+> HISTORY&nbsp; New enumeration in IFC2x.

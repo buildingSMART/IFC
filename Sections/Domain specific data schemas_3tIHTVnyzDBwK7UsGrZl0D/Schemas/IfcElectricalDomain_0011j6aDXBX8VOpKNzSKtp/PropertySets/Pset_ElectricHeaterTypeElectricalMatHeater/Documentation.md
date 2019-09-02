@@ -1,1 +1,0 @@
-An electrical device that outputs heat uniformly across its surface area.

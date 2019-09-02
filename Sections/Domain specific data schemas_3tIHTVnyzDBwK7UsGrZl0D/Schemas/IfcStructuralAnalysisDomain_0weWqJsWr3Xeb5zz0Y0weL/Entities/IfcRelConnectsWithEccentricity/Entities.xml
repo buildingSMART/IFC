@@ -1,8 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelConnectsWithEccentricity" UniqueId="a66f70d6-cdc3-47b6-b2a1-9b9c2991e6f5" DiagramNumber="1" BaseDefinition="IfcRelConnectsStructuralMember" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelConnectsWithEccentricity" UniqueId="a66f70d6-cdc3-47b6-b2a1-9b9c2991e6f5" DiagramNumber="2" BaseDefinition="IfcRelConnectsStructuralMember" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Verbindet idealisierte Tragelemente mit Exzentrizität - Relation" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1698.3967" Y="2136.6958" Width="314.06489" Height="122.17928" />
 	<Attributes>
-		<DocAttribute Name="ConnectionConstraint" UniqueId="32bf06cb-d463-43c3-be58-0f7c5d0211e2" DefinedType="IfcConnectionGeometry" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>The connection constraint explicitly states the eccentricity between a structural element and a structural connection, either given by two point (used to calculate the eccentricity), or by explicit x, y, and z offsets.</Documentation>
+		<DocAttribute Name="ConnectionConstraint" UniqueId="32bf06cb-d463-43c3-be58-0f7c5d0211e2" DefinedType="IfcConnectionGeometry" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>The connection constraint explicitly states the eccentricity between a structural member and a structural connection by means of two topological objects (vertex and vertex, or edge and edge, or face and face).</Documentation>
+			<DiagramLine>
+				<DocPoint X="2012.4616" Y="2197.7854" />
+				<DocPoint X="2279.16345" Y="2197.7854" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2004.8572741" Y="2190.1810741" Width="246" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

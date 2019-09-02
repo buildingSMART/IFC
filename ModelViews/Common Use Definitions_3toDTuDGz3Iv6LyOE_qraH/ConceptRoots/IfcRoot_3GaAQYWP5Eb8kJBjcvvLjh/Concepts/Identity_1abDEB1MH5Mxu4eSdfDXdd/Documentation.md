@@ -1,0 +1,1 @@
+_IfcRoot_ assigns the globally unique ID. In addition it may provide for a name and a description about the concept.

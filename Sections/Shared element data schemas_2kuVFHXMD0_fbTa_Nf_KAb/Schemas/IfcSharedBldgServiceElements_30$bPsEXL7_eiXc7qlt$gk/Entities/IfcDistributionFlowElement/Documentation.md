@@ -1,61 +1,113 @@
 The distribution element _IfcDistributionFlowElement_ defines occurrence elements of a distribution system that facilitate the distribution of energy or matter, such as air, water or power.
 
-> <font size="-1">EXAMPLEs of distribution flow elements are 
-        ducts, pipes, wires, fittings, equipment, etc.
-	  </font>
+> EXAMPLE&nbsp; Examples of distribution flow elements are ducts, pipes, wires, fittings, and equipment.
 
-The _IfcDistributionFlowElement_ utilizes the following capabilities mainly through inverse references to objectified relationships:
+> HISTORY&nbsp; New entity in IFC2.0.
 
-* Grouping - being part of a logical group of objects
-* Classification - assigned reference to an external classification
-* Documentation - assigned reference to an external documentation
-* Type - reference to the product type information for the element occurrence
-* Properties - reference to all attached properties, including quantities
-* Cost control - reference to cost elements associated with this distribution element
-* Work processes - reference to work tasks, in which this distribution element participates
-* Aggregation - aggregated together with other elements to form an aggregate 
-* Connection - connectivity to other elements, including the definition of the connection or joint
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; Ports are now primarily defined using _IfcRelNests_ to enable definition of ports at type definitions (both forward and backward compatible), provide a logical order, and reduce the number of relationship objects needed. The relationship _IfcRelConnectsPortToElement_ is still supported, however is now specific to dynamically connected ports.
 
-The _IfcDistributionFlowElement_ defines the occurrence of a distribution element within the spatial context of a project. The parameters that define the type of the distribution element and/or its shape are defined by the _IfcDistributionFlowElementType_ subtypes, which is related by the inverse relationship IsDefinedBy pointing to _IfcRelDefinesByType_.
+___
+## Common Use Definitions
+The following concepts are inherited at supertypes:
 
-****Property Set Use Definition****:
+* _IfcRoot_: [Identity](../../templates/identity.htm), [Revision Control](../../templates/revision-control.htm)
+* _IfcElement_: [Product Placement](../../templates/product-placement.htm), [Box Geometry](../../templates/box-geometry.htm), [FootPrint Geometry](../../templates/footprint-geometry.htm), [Body SurfaceOrSolidModel Geometry](../../templates/body-surfaceorsolidmodel-geometry.htm), [Body SurfaceModel Geometry](../../templates/body-surfacemodel-geometry.htm), [Body Tessellation Geometry](../../templates/body-tessellation-geometry.htm), [Body Brep Geometry](../../templates/body-brep-geometry.htm), [Body AdvancedBrep Geometry](../../templates/body-advancedbrep-geometry.htm), [Body CSG Geometry](../../templates/body-csg-geometry.htm), [Mapped Geometry](../../templates/mapped-geometry.htm)
+* _IfcDistributionElement_: [Quantity Sets](../../templates/quantity-sets.htm), [Spatial Containment](../../templates/spatial-containment.htm)
 
-The property sets relating to this entity are defined by the _IfcPropertySet_ and attached by the _IfcRelDefinesByProperties_ relationship. It is accessible by the inverse _IsDefinedBy_ relationship. The following property set definitions specific to this entity are part of this IFC release:
+[![Image](../../../img/diagram.png)&nbsp;Instance diagram](../../../annex/annex-d/common-use-definitions/ifcdistributionflowelement.htm)
 
-* [Pset_DistributionFlowElementCommon](../../psd/IfcSharedBldgServiceElements/Pset_DistributionFlowElementCommon.xml){ target="SOURCE"}: common property set for distribution flow element occurrences 
+{ .use-head}
+Object Typing
 
-> <font color="#0000ff" size="-1">
-    	HISTORY: New entity in IFC R2.0.<br>
-    	</font>
+The [Object Typing](../../templates/object-typing.htm) concept applies to this entity as shown in Table 1.
 
-****Containment Use Definition****
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Type</b></th></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/lexical/ifcdistributionflowelementtype.htm">IfcDistributionFlowElementType</a></td></tr>
+<tr><td><a href="../../ifcproductextension/lexical/ifcdistributionelementtype.htm">IfcDistributionElementType</a></td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 1 &mdash; IfcDistributionFlowElement Object Typing</p></td></tr></table>
 
-The _IfcDistributionFlowElement_, like any subtype of _IfcBuildingElement_, may participate in two different containment relationships. The first (and in most implementation scenarios mandatory) relationship is the hierachical spatial containment, the second (optional) relationship is the aggregation within an element assembly.
+  
+  
+{ .use-head}
+Property Sets for Objects
 
-* The _IfcDistributionFlowElement_ is placed within the project spatial hierarchy using the objectified relationship _IfcRelContainedInSpatialStructure_, referring to it by its inverse attribute _SELF\IfcElement.ContainedInStructure_. Subtypes of _IfcSpatialStructureElement_ are valid spatial containers, with _IfcBuildingStorey_ being the default container.
-* The _IfcDistributionFlowElement_ may be aggregated into an element assembly using the objectified relationship _IfcRelAggregates_, referring to it by its inverse attribute _SELF\IfcObjectDefinition.Decomposes_. Any subtype of _IfcElement_ can be an element assembly, with _IfcElementAssembly_ as a special focus subtype. In this case it should not be additionally contained in the project spatial hierarchy, i.e. SELF\IfcElement.ContainedInStructure should be _NIL_.
+The [Property Sets for Objects](../../templates/property-sets-for-objects.htm) concept applies to this entity as shown in Table 2.
 
-****Geometry Use Definitions****
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PredefinedType</b></th><th><b>Name</b></th></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedbldgserviceelements/Pset_SoundGeneration.xml">Pset_SoundGeneration</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcelectricaldomain/Pset_ElectricalDeviceCommon.xml">Pset_ElectricalDeviceCommon</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_Condition.xml">Pset_Condition</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcproductextension/Pset_EnvironmentalImpactIndicators.xml">Pset_EnvironmentalImpactIndicators</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcproductextension/Pset_EnvironmentalImpactValues.xml">Pset_EnvironmentalImpactValues</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_ManufacturerOccurrence.xml">Pset_ManufacturerOccurrence</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_ManufacturerTypeInformation.xml">Pset_ManufacturerTypeInformation</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedmgmtelements/Pset_PackingInstructions.xml">Pset_PackingInstructions</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_ServiceLife.xml">Pset_ServiceLife</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_Warranty.xml">Pset_Warranty</a></td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 2 &mdash; IfcDistributionFlowElement Property Sets for Objects</p></td></tr></table>
 
-The geometric representation of _IfcDistributionFlowElement_ is given by the _IfcProductDefinitionShape_, allowing multiple geometric representations. If an _IfcRepresentationMap_ is defined for the _IfcFlowElementType_ or one of its subtypes, then the _IfcDistributionFlowELement_ utilizes it through the _IfcMappedItem_. Included geometric representations are:
+  
+  
+{ .use-head}
+Axis Geometry
 
-**Local Placement**
+The [Axis Geometry](../../templates/axis-geometry.htm) concept applies to this entity as shown in Table 3.
 
-The local placement is defined in the supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_ which can define an absolute placement, relative placement, or grid reference, with each defining the local coordinate system referenced by all geometric representations. If given, the PlacementRelTo relationship of _IfcLocalPlacement_, shall point to the referenced _IfcProduct_. If the relative placement is not used, the absolute placement is defined within the world coordinate system.
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Identifier</b></th><th><b>Type</b></th><th><b>Items</b></th></tr>
+<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3 &mdash; IfcDistributionFlowElement Axis Geometry</p></td></tr></table>
 
-**Informal propositions for local placement**:
+This represents the 3D flow path of the item having _IfcShapeRepresentation.RepresentationType_ of 'Curve3D' and containing a single _IfcBoundedCurve_ subtype such as _IfcPolyline_, _IfcTrimmedCurve_, or _IfcCompositeCurve_. For elements containing directional ports (_IfcDistributionPort_ with _FlowDirection_ of _SOURCE_ or _SINK_), the direction of the curve indicates direction of flow where a _SINK_ port is positioned at the start of the curve and a _SOURCE_ port is positioned at the end of the curve. This representation is most applicable to flow segments (pipes, ducts, cables), however may be used at other elements to define a primary flow path if applicable.
 
-1. If the LocalPlacement is specified, then all aggregated components should use this placement as their relative placement.
+  
+  
+{ .use-head}
+Clearance Geometry
 
-**Geometric Representations**
+The [Clearance Geometry](../../templates/clearance-geometry.htm) concept applies to this entity as shown in Table 4.
 
-Currently, the use of 'SweptSolid', 'Clipping', 'Brep' and 'MappedRepresentation' representations are supported. In addition, the general representation types 'SurfaceModel' and 'BoundingBox' are allowed. The geometry use definitions for 'BoundingBox', 'SurfaceModel' and 'Brep' are explained at _IfcBuildingElement_. The geometry use definitions for 'SweptSolid' and 'Clipping' are identical to those explained in detail at _IfcBeam_.
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Identifier</b></th><th><b>Type</b></th><th><b>Items</b></th></tr>
+<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 4 &mdash; IfcDistributionFlowElement Clearance Geometry</p></td></tr></table>
 
-**MappedRepresentation**
+This represents the 3D clearance volume of the item having RepresentationType of 'Surface3D'. Such clearance region indicates space that should not intersect with the 'Body' representation of other elements, though may intersect with the 'Clearance' representation of other elements. The particular use of clearance space may be for safety, maintenance, or other purposes.
 
-In addition to the standard and advanced geometric representation of _IfcFlowDistributionElement_ that is defined using the SweptSolid or Clipping geometry, the MappedRepresentation shall be supported as it allows for reusing the geometry definition of the flow distribution element type at all occurrences of the same type. The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
+  
+  
+{ .use-head}
+Lighting Geometry
 
-* _RepresentationIdentifier_: 'Body'
-* _RepresentationType_: 'MappedRepresentation'
+The [Lighting Geometry](../../templates/lighting-geometry.htm) concept applies to this entity as shown in Table 5.
 
-The same constraints as those given for the standard SweptSolid and the advanced SweptSolid and Clipping geometric representations shall apply to the MappedRepresentation of the _IfcRepresentationMap_.
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Identifier</b></th><th><b>Type</b></th><th><b>Items</b></th></tr>
+<tr><td>&nbsp;</td><td>LightSource</td><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td><td>MappedRepresentation</td><td>&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 5 &mdash; IfcDistributionFlowElement Lighting Geometry</p></td></tr></table>
+
+This represents the light emission of the item having _IfcShapeRepresentation.RepresentationType_ of 'LightSource' and containing one or more _IfcLightSource_ subtypes. This representation is most applicable to lamps and light fixtures, however may be used at other elements that emit light.

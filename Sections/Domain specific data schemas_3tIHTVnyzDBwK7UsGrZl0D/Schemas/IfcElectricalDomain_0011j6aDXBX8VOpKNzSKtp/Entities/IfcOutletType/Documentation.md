@@ -1,23 +1,9 @@
-An _IfcOutletType_ defines a particular type of outlet which is a device installed at a point to receive an inserted plug.
+The flow terminal type **IfcOutletType** defines commonly shared information for occurrences of outlets. The set of shared information may include:
 
-> <font color="#0000ff" size="-1">
-HISTORY: New entity in IFC 2x2 </font>
-> 
+* common properties with shared property sets
+* common representations
+* common materials
+* common composition of elements
+* common ports
 
-
-****Use Definitions****
-
-An _IfcOutletType_ provides for all forms of outlet.
-
-Usage of _IfcOutletType_ defines the parameters for one or more occurrences of _IfcFlowTerminal_. Parameters are specified through property sets that are enumerated in the _IfcOutletTypeEnum_ data type.
-
-****Property Set Use Definition****:
-
-The property sets relating to the _IfcProtectiveDeviceType_are defined by the _IfcPropertySet_ and attached by the _IfcRelDefinesByType_ relationship. It is accessible by the inverse _IsDefinedBy_ relationship. The following property set definitions specific to an _IfcProtectiveDeviceType_ are part of this IFC release:
-
-* [Pset_ElectricalDeviceCommon](../../psd/IfcElectricalDomain/Pset_ElectricalDeviceCommon.xml): property set for properties that are common to all types of electrical devices, if available 
-* [Pset_OutletTypeCommon](../../psd/IfcElectricalDomain/Pset_OutletTypeCommon.xml): property set for properties that are common to all types of cabled outlet, if available 
-
-****Geometry Use Definitions****
-
-Representations of the type are defined as representation maps (at the level of the supertype _IfcTypeProduct_). These are assigned at the occurrence through the _IfcShapeRepresentation.Item_ being an _IfcMappedItem_.
+It is used to define a outlet type specification indicating the specific product information that is common to all occurrences of that product type. The **IfcOutletType** may be declared within _IfcProject_ or _IfcProjectLibrary_ using _IfcRelDeclares_ and may be exchanged with or without occurrences of the type. Occurrences of **IfcOutletType** are represented by instances of _IfcOutlet_. Refer to the documentation at _IfcOutlet_ for supported property sets, materials, composition, and ports.

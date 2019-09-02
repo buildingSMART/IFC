@@ -1,24 +1,9 @@
-The element type _IfcCoilType_ defines a list of commonly shared property set definitions of a coil and an optional set of product representations. It is used to define a coil specification (i.e. the specific product information, that is common to all occurrences of that product type).
+The energy conversion device type **IfcCoilType** defines commonly shared information for occurrences of coils. The set of shared information may include:
 
-> <font size="-1">
-		NOTE: The product representations are defined as
-		representation maps (at the level of the supertype <i>IfcTypeProduct</i>, which
-		get assigned by an element occurrence instance through the
-		<i>IfcShapeRepresentation.Item[1]</i> being an
-		<i>IfcMappedItem</i>.
-    	</font>
+* common properties with shared property sets
+* common representations
+* common materials
+* common composition of elements
+* common ports
 
-A coil type is used to define the common properties of a coil that may be applied to many occurrences of that type. A coil is a device used to provide heat transfer between non-mixing media. A common example is a cooling coil, which utilizes a finned coil in which circulates chilled water, antifreeze, or refrigerant that is used to remove heat from air moving across the surface of the coil. Coil types may be exchanged without being already assigned to occurrences.
-
-The occurrences of the _IfcCoilType_ are represented by instances of _IfcEnergyConversionDevice_ or its subtypes.
-
-****Property Set Use Definition****:
-
-The property sets relating to this entity are defined by the _IfcPropertySet_ and attached by the _IfcRelDefinesByProperties_ relationship. It is accessible by the inverse _IsDefinedBy_ relationship. The following property set definitions specific to this entity are part of this IFC release:
-
-* [Pset_CoilTypeCommon](../../psd/IfcHvacDomain/Pset_CoilTypeCommon.xml){ target="SOURCE"}: common property set for all coil types 
-    * [Pset_CoilTypeHydronic](../../psd/IfcHvacDomain/Pset_CoilTypeHydronic.xml){ target="SOURCE"}: property set for hydronic coil types  
-
-> <font color="#0000ff" size="-1">
-    	HISTORY: New entity in IFC Release 2x2.<br>
-    	</font>
+It is used to define a coil type specification indicating the specific product information that is common to all occurrences of that product type. The **IfcCoilType** may be declared within _IfcProject_ or _IfcProjectLibrary_ using _IfcRelDeclares_ and may be exchanged with or without occurrences of the type. Occurrences of **IfcCoilType** are represented by instances of _IfcCoil_. Refer to the documentation at _IfcCoil_ for supported property sets, materials, composition, and ports.

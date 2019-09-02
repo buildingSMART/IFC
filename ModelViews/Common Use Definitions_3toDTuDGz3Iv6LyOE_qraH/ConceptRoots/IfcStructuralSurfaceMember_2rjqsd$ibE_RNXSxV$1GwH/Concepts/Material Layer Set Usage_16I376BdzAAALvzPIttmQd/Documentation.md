@@ -1,0 +1,5 @@
+The material of direct instances _IfcStructuralSurfaceMember_ (in contrast to instances of the subtype _IfcStructuralSurfaceMemberVarying_) is defined by _IfcMaterialLayerSetUsage_ and attached by the _IfcRelAssociatesMaterial.RelatingMaterial_. It is accessible by the inverse _HasAssociations_ relationship.
+
+The material is specified minimally by a name which corresponds with an agreed upon standardized structural material designation. An external reference to the source which specifies the material designation should be provided. Alternatively, structural material properties may be provided by means of _IfcMaterialProperties_.
+
+In the absense of material layer set usage, direct instances of _IfcStructuralSurfaceMember_ are assumed to be located centrically relative to their reference surface. Their depth is provided in the attribute _Thickness_.

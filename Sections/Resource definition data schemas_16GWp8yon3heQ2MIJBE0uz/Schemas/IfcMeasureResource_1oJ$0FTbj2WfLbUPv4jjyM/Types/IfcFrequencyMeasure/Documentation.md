@@ -1,8 +1,7 @@
-A measure of the number of times that an item vibrates in unit time.
+_IfcFrequencyMeasure_ is a measure of the number of times that an item vibrates in unit time.
 
-Usually measured in cycles/s or Herz (Hz).
+Usually measured in cycles/s or Hertz (Hz).
 
 Type: REAL
 
-> <font size="-1" color="#0000FF">HISTORY New type in IFC Release 2.0.
-</font>
+> HISTORY&nbsp; New type in IFC2.0.

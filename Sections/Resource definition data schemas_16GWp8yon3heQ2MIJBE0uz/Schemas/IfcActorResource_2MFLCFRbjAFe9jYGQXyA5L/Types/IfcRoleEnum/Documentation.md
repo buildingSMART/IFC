@@ -1,9 +1,12 @@
-Roles which may be played by an actor.
+This enumeration defines roles which may be played by an actor.
 
-> <font size="-1" color="#0000FF">HISTORY This type has changes after IFC Release 2.0.
-<br>ISSUE See issue and change log for issues and changes made in IFC Release 2x.</font>
+> HISTORY&nbsp; New type in IFC1.5.
 
-ENUMERATION
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; Spelling of COMMISSIONINGENGINEER corrected.
+
+{ .spec-head}
+Enumerated Item Definitions:
 
 * **SUPPLIER**
 * **MANUFACTURER**
@@ -20,11 +23,11 @@ ENUMERATION
 * **PROJECTMANAGER**
 * **FACILITIESMANAGER**
 * **CIVILENGINEER**
-* **COMISSIONINGENGINEER**
+* **COMMISSIONINGENGINEER**
 * **ENGINEER**
 * **OWNER**
 * **CONSULTANT**
 * **CONSTRUCTIONMANAGER**
 * **FIELDCONSTRUCTIONMANAGER**
 * **RESELLER**
-* **USERDEFINED** User defined value to be provided.
+* **USERDEFINED**: User defined value to be provided.

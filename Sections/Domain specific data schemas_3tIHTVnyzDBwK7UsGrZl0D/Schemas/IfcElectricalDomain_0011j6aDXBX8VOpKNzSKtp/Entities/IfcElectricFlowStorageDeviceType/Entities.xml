@@ -1,7 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcElectricFlowStorageDeviceType" UniqueId="9022a034-602f-4405-bb14-2e18d8a865db" DiagramNumber="2" BaseDefinition="IfcFlowStorageDeviceType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Elektrisches Speichergerät - Typ" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1697.5261" Y="2082.2331" Width="679.96667" Height="103.26667" />
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="186735ec-129e-418f-976b-fa860a7b2a9f" DefinedType="IfcElectricFlowStorageDeviceTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0" />
+		<DocAttribute Name="PredefinedType" UniqueId="186735ec-129e-418f-976b-fa860a7b2a9f" DefinedType="IfcElectricFlowStorageDeviceTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Identifies the predefined types of electric flow storage devices from which the type required may be set.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1700.3523" Y="2185.4997" />
+				<DocPoint X="1700.3523" Y="2233.89963" />
+				<DocPoint X="2118.62602" Y="2233.89963" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1610.585666" Y="2230.5329984" Width="182" Height="35" />
+		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="06a4b961-ff35-4483-824d-5b4e1f2ec4dc">
+			<Expression>(PredefinedType &lt;&gt; IfcElectricFlowStorageDeviceTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcElectricFlowStorageDeviceTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

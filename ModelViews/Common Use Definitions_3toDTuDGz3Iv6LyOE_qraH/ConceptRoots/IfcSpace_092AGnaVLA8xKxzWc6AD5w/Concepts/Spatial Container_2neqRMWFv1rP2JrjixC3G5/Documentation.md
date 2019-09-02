@@ -1,0 +1,3 @@
+If there are building elements and/or other elements directly related to the _IfcSpace_ (like most furniture and distribution elements), they are associated with the _IfcSpace_ by using the objectified relationship _IfcRelContainedInSpatialStructure_. The _IfcSpace_ references them by its inverse relationship:
+
+* _IfcSpace.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.

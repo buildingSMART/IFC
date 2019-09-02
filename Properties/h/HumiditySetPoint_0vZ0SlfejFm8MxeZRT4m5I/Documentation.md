@@ -1,1 +1,0 @@
-The humidity value to be sensed.

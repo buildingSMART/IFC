@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Object Definition" UniqueId="0puBuLum58M9zB6BBhL8Yw" Type="IfcObjectDefinition">
+	<Templates>
+		<DocTemplateDefinition id="Object_Typing_0rek4E8Dz0zAilsiyAPqJq" Name="Object Typing" UniqueId="0rek4E8Dz0zAilsiyAPqJq" Type="IfcObject">
+			<Documentation>Object occurrences can be defined by a particular object type, using the _Object Typing_ concept. A pair of entities are defined for most semantic objects - an object occurrence entity and a corresponding object type entity.
+
+&gt; EXAMPLE&amp;nbsp; The _IfcTank_ is the object occurrence entity that has a corresponding _IfcTankType_ being the object type entity.
+
+On instance level, an object occurrence instance may have:
+
+* similar state as its object type instance by applying all characteristics defined at the type;
+* overridden state for particular characteristics;
+* no defined object type instance.
+
+Characteristics defined at the object type level may include:
+
+* common naming and predefined type;
+* common properties within a type driven property set;
+* common geometry representations, applied as mapped representation to each occurences;
+* common material assignments (with exception of material set usages);
+* common definition of a decomposition structure.
+
+Many object occurrence and object type entities have an attribute named _PredefinedType_ consisting of a specific enumeration. Such predefined type essentially provides another level of inheritance to further differentiate objects without the need for additional entities. Predefined types are not just informational; various rules apply such as applicable property sets, part composition, and distribution ports.
+
+&gt; EXAMPLE&amp;nbsp; For scenarios of object types having part compositions, such parts may be reflected at object occurrences having separate state. For example, a _wall type_ may define a particular arrangement of studs, a _wall occurrence_ may reflect the same arrangement of studs, and studs within the wall occurrence may participate in specific relationships that do not exist at the type such as being connected to an electrical junction box.
+
+&gt; NOTE&amp;nbsp; If the object type has aggregated elements, such objects are reflected at the object occurrence using the _IfcRelDefinesByObject_ relationship.</Documentation>
+			<Rules>
+				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsTypedBy">
+					<Rules>
+						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelDefinesByType">
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingType" Description="applicable entity for corresponding type" Identification="Type">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcTypeObject" />
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocModelRuleEntity>
+					</Rules>
+				</DocModelRuleAttribute>
+			</Rules>
+		</DocTemplateDefinition>
+		<DocTemplateDefinition Name="Property Sets" UniqueId="36984334-3ac8-4e59-85a6-f68d65e379c7" Type="IfcRoot">
+			<Documentation>The concept template _Property Sets_ describes how sets of properties (usually defined by a name, value, unit triple) are associated to objects or object types.</Documentation>
+			<Templates>
+				<DocTemplateDefinition id="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" Name="Property Sets for Objects" UniqueId="3tGbMc30vFCOIj99WTjYHX" Type="IfcObject">
+					<Documentation>The concept template _Property Sets for Objects_ describes how an object occurrence can be related to a single or multiple property sets. A property set contains a single or multiple properties. The data types of an individual property are single value, enumerated value, bounded value, table value, reference value, list value, and combination of property occurrences.
+
+Property sets can also be related to an object type, see concept _Property Set for Types_. They then define the common properties for all occurrences of the same type. If the same property (by name) is provided by the same property set (by name), then the properties directly assigned to the object occurrence override the properties assigned to the object type.</Documentation>
+					<Rules>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="PredefinedType" Identification="PredefinedType" />
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsDefinedBy">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelDefinesByProperties">
+									<Rules>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingPropertyDefinition">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertySet">
+													<Rules>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="Name" />
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasProperties">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProperty" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocTemplateDefinition>
+				<DocTemplateDefinition Name="Property Sets for Types" UniqueId="1Bup4gCPb9Bh84oi8YcfhU" Type="IfcTypeObject">
+					<Documentation>The concept template _Property Sets for Objects_ describes how an object type can be related to a single or multiple property sets. A property set contains a single or multiple properties. The data types of an individual property are single value, enumerated value, bounded value, table value, reference value, list value, and combination of property occurrences.
+
+The property values assigned to an object type apply equally to all occurrences of this object type, see concept _Object Typing_, unless it is overriden by a property with same name within a property set with the same name at an individual object occurrence.</Documentation>
+					<Rules>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasPropertySets">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertySet">
+									<Rules>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="Name" />
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasProperties">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProperty" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocTemplateDefinition>
+				<DocTemplateDefinition id="Property_Sets_for_Performance_33BCLRhyT3dhWXvaRXiTqQ" Name="Property Sets for Performance" UniqueId="33BCLRhyT3dhWXvaRXiTqQ" Type="IfcPerformanceHistory">
+					<Documentation>For performance history, properties are in the form of time series, for tracking data at points in time.</Documentation>
+					<Rules>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsDefinedBy">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelDefinesByProperties">
+									<Rules>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingPropertyDefinition">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertySet">
+													<Rules>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasProperties">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertyReferenceValue">
+																	<Rules>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="PropertyReference">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIrregularTimeSeries">
+																					<Rules>
+																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Values">
+																							<Rules>
+																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIrregularTimeSeriesValue">
+																									<Rules>
+																										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="TimeStamp">
+																											<Rules>
+																												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDateTime" />
+																											</Rules>
+																										</DocModelRuleAttribute>
+																										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ListValues">
+																											<Rules>
+																												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcValue" />
+																											</Rules>
+																										</DocModelRuleAttribute>
+																									</Rules>
+																								</DocModelRuleEntity>
+																							</Rules>
+																						</DocModelRuleAttribute>
+																					</Rules>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocTemplateDefinition>
+			</Templates>
+		</DocTemplateDefinition>
+		<DocTemplateDefinition id="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" Name="Quantity Sets" UniqueId="1cKZcEPNb4O8oq9YbQpwp7" Type="IfcObject">
+			<Documentation>Any specialization of object can be related to multiple quantity set occurrences. A quantity set contains multiple quantity occurrences. The data type of quantity occurrence values are count, length, area, volume, weight, time, or a combination of quantities. Each quantity is defined by its name, value, and optionally a description and a formula.
+
+The quantity set is expressed by instances of _IfcElementQuantity_, where the _Name_ attribute determines the common designator of the quantity set. This specification contains a number of predefined quantity sets, a template definition is provided for each of them. The name of the template has to be used as the value of the _Name_ attribute. The _MethodOfMeasurement_ attribute specifies the method, by which the values of the individual quantities are calculated. For the quantity set templates included in this specification, the value of _MethodOfMeasurement_ shall be &quot;BaseQuantities&quot;.</Documentation>
+			<Rules>
+				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsDefinedBy">
+					<Rules>
+						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelDefinesByProperties">
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingPropertyDefinition">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcElementQuantity">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="Name" />
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Quantities">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPhysicalQuantity" />
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocModelRuleEntity>
+					</Rules>
+				</DocModelRuleAttribute>
+			</Rules>
+		</DocTemplateDefinition>
+	</Templates>
+</DocTemplateDefinition>
+

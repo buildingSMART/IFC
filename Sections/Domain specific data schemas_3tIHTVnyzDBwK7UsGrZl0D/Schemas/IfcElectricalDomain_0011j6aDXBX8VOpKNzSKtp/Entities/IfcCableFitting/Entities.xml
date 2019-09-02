@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCableFitting" Name="IfcCableFitting" UniqueId="a981fcc0-253f-4511-8e27-f490e28f4ada" DiagramNumber="2" BaseDefinition="IfcFlowFitting" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Kabelverbinder" Locale="de" />
+		<DocLocalization Name="Raccord de câble" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="2453.2333" Y="1322.6667" Width="679.9" Height="103.2" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="acc5a78e-537d-4725-bbec-f998f3e31f25" DefinedType="IfcCableFittingTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Identifies the predefined types of cable fitting from which the type required may be set.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3127.4792" Y="1425.8667" />
+				<DocPoint X="3127.4792" Y="1481.974276" />
+				<DocPoint X="2684.8667" Y="1481.974276" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3030.256285" Y="1420.7833663" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="c99b11ab-b6ec-46ce-ab5d-36c19ce8e4ee">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcCableFittingType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcCableFittingTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcCableFittingTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="5a495312-8a29-4574-96f7-0bc995cb6d44">
+			<Documentation>Either there is no cable fitting type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcCableFittingType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCELECTRICALDOMAIN.IFCCABLEFITTINGTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

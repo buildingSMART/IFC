@@ -1,1 +1,0 @@
-Maximum operating temperature for the cable.

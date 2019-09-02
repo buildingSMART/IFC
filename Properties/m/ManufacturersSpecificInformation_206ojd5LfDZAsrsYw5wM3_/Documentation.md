@@ -1,1 +1,0 @@
-Manufacturer specific information.

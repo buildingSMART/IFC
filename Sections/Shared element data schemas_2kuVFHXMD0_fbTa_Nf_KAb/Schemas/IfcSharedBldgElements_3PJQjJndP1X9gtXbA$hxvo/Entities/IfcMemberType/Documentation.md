@@ -1,129 +1,48 @@
-The element type (_IfcMemberType_) defines a list of commonly shared property set definitions of a structural member and an optional set of product representations. It is used to define a structural member specification (i.e. the specific product information that is common to all occurrences of that product type).
+The element type _IfcMemberType_ defines commonly shared information for occurrences of members. Members are predominately linear building elements, often forming part of a structural system. The orientation of the member (being horizontal, vertical or sloped) is not relevant to its definition (in contrary to beam and column). The set of shared information may include:
 
-> <font size="-1">NOTE: The product representations are defined as
-		  representation maps (at the level of the supertype <i>IfcTypeProduct</i>, which
-		  gets assigned by an element occurrence instance through the
-		  <i>IfcShapeRepresentation.Item[1]</i> being an
-		  <i>IfcMappedItem</i>.</font>
->
+* common properties within shared property sets
+* common material information
+* common profile definitions
+* common shape representations
 
-A structural member type is used to define the common properties of a certain type of a structural member that may be applied to many instances of that type to assign a specific style. Structural member types may be exchanged without being already assigned to occurrences.
+It is used to define a member specification, or member style (the specific product information that is common to all occurrences of that member type). Member types may be exchanged without being already assigned to occurrences.
 
-The occurrences of the _IfcMemberType_ are represented by instances of _IfcMember_.
+Occurrences of the _IfcMemberType_ within building models are represented by instances of _IfcMemberStandardCase_ if the _IfcMemberType_ has a single associated _IfcMaterialProfileSet_; otherwise they are represented by instances of _IfcMember_. Occurrences of the _IfcMemberType_ within structural analysis models are represented by instances of _IfcStructuralCurveMember_, or its applicable subtypes.
 
-> <font color="#0000FF" size="-1">HISTORY New entity in Release IFC2x
-		  Edition 2.</font>
->
+> HISTORY&nbsp; New entity in IFC2x2 Addendum 1.
 
-> <font color="#FF0000" size="-1">IFC2x2 ADDENDUM CHANGE: The
-		entity <i>IfcMember</i> has been added to serve as the occurrence object for
-		all member types.</font>
+___
+## Common Use Definitions
+The following concepts are inherited at supertypes:
 
-**Use definition for steel members**
+* _IfcRoot_: [Identity](../../templates/identity.htm), [Revision Control](../../templates/revision-control.htm)
 
-When using the _IfcMemberType_ as the underlying type for steel members within steel construction aware applications the following additional conventions apply:
+[![Image](../../../img/diagram.png)&nbsp;Instance diagram](../../../annex/annex-d/common-use-definitions/ifcmembertype.htm)
 
-**Material association:******  
-The _IfcMemberType_ is associated with exactly one instance _IfcMaterial_ by the _IfcRelAssociatesMaterial_ relationship. This material association assigns a common material to all occurrences (_IfcBeam_, _IfcColumn_ or _IfcBuildingElementProxy_) of the _IfcMemberType_. If an individual occurrence has its own material assignment (see _IfcMember_), then this overrides the material assignment given at the _IfcMemberType_.
+{ .use-head}
+Material Profile Set
 
-**Geometric representation:******  
-The _IfcMemberType_ type has (at least) one representation map assigned through the _RepresentationMaps_ relation. The representation map has a full geometric representation given by:
+The [Material Profile Set](../../templates/material-profile-set.htm) concept applies to this entity.
 
-*  _IfcExtrudedAreaSolid_ for straight beams,
-* _IfcRevolvedAreaSolid_ for curved beams based on circular arcs, or 
-* _IfcSurfaceCurveSweptAreaSolid_ for all other curved beams. 
+The material of the _IfcMemberType_ is defined by the _IfcMaterialProfileSet_ or as fall back by _IfcMaterial_ and attached by the _IfcRelAssociatesMaterial_._RelatingMaterial_. It is accessible by the inverse _HasAssociations_ relationship.
 
-The attribute _ProfileName_ of the extruded _IfcProfile_ instance may contain a standardized name according to local standards. However, a geometric representation of the profile is necessary as specified below. An importing application is allowed to check for the existence of the profile name: in case of identifying it as a standardized name, the corresponding profile geometry and possibly other cross sectional properties can be read from a library. Otherwise the explicit IFC geometry and possible non geometric _IfcProfileProperties_ have to be used.
+> NOTE&nbsp; It is illegal to assign an _IfcMaterial_ to an _IfcMemberType_, if there is at least one occurrences of _IfcMemberStandardCase_ for this type.
 
-Only 'SweptSolid' representation should be used to represent steel members. The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
+The shared profile definition is defined by assigning an _IfcMaterialProfileSet_ (see material use definition above). The _IfcMaterialProfile_ refers to the subtype of _IfcProfileDef_ that is the common profile for all member occurrence, if used. It is only applicable if the _IfcMemberType_ has only occurrences of type _IfcMemberStandardCase_ (see definition of _IfcMemberStandardCase_ for further information).
 
-* _RepresentationIdentifier_ : 'Body'
-* _RepresentationType_ : 'SweptSolid'
+> NOTE&nbsp; The attribute _ProfileName_ of the _IfcProfileDef_ subtype, referenced in _IfcMaterialProfile_ should contain a standardized profile name according to local standards. However, an additional geometric representation of the profile is necessary (e.g. as _IfcExtrudedAreaSolid_). An importing application is allowed to check for the existence of the profile name: in case of identifying it as a standardized name, the corresponding profile geometry and possibly other cross sectional properties can be read from a library. Otherwise the geometric representation and possible non geometric _IfcProfileProperties_ have to be used.
 
-The following additional constraints apply to the 'SweptSolid' representation:
+  
+  
+{ .use-head}
+Type Body Geometry
 
-* **Solid:** _IfcExtrudedAreaSolid_ shall be supported.
-* **Profile:** _IfcArbitraryClosedProfileDef, IfcArbitraryOpenProfileDef, IfcArbitraryProfileDefWithVoids, IfcCircleProfileDef, IfcCompositeProfileDef, IfcIShapeProfileDef, IfcRectangleProfileDef, IfcRoundedRectangleProfileDef, IfcCShapeProfileDef, IfcCircleHollowProfileDef, IfcCraneRailAShapeProfileDef, IfcCraneRailFShapeProfileDef, IfcLShapeProfileDef, IfcRectangleHollowProfileDef, IfcTShapeProfileDef, IfcUShapeProfileDef, IfcZShapeProfileDef_ and _IfcAsymmetricIShapeProfileDef_.
-* **Extrusion:** The extrusion axis shall be perpendicular to the swept profile, i.e. pointing into the direction of the z-axis of the position of the _IfcExtrudedAreaSolid_.
+The [Type Body Geometry](../../templates/type-body-geometry.htm) concept applies to this entity.
 
-In addition to the full 'SweptSolid' representation a simple representation for the axis of gravity can be used., i.e. as a second _IfcRepresentationMap_. It represents the neutral axis of stress which is not necessarily in the profiles center of gravity. In this case the following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
+The _IfcMemberType_ may define the shared geometric representation for all member occurrences. The _RepresentationMaps_ attribute refers to a list of _IfcRepresentationMap_'s, that allow for multiple geometric representations (e.g. with _IfcShaperepresentation_'s having an _RepresentationIdentifier_ 'Box', 'Axis', or 'Body'). It is only applicable if the _IfcMemberType_ has only occurrences of type _IfcMember_ (See geometric use definition of _IfcMember_ for further information).
 
-* _RepresentationIdentifier_ : 'Axis'
-* _RepresentationType_ : 'GeometricCurveSet'
+> NOTE&nbsp; If the _IfcMemberType_ has an associated _IfcMaterialProfileSet_, then no shared geometric representation shall be provided.
 
-**Position number:******  
-The position number is specified in the attribute _IfcTypeProduct.Tag_.
+> NOTE&nbsp; The product shape representations are defined as _RepresentationMaps_ (attribute of the supertype _IfcTypeProduct_), which get assigned by an element occurrence instance through the _IfcShapeRepresentation.Item[n]_ being an _IfcMappedItem_. See _IfcTypeProduct_ for further information.
 
-**Non geometric profile properties:******  
-Non geometric profile properties (for instance mechanical properties) are specified through _IfcProfileProperties_ (and its specific subtypes). These properties are attached to _IfcMemberType_ by the relationship _IfcRelAssociatesProfileProperties_. If an individual occurrence has its own profile property assignment (see _IfcMember_), then this overrides the profile property assignment given at the _IfcMemberType_.
-
-**Quantity related properties:******  
-Quantity related properties, which do not relate to the profile, are specified through _IfcElementQuantity_ (and its specific subtypes). These properties are attached to the _IfcMemberType_ by the relationship _IfcRelDefinesByProperties_. If an individual occurrence has its own element quantity assignment (see _IfcMember_), then this overrides the quantity assignment given at the _IfcMemberType_. The following quantities are foreseen, but will be subjected to the local standard of measurement used:
-
-<table cellpadding="2" cellspacing="2" border="1"> 
-		<tr valign="TOP"> 
-		  <td valign="TOP" align="LEFT"><font size="-1"><i><b>Name</b></i></font></td> 
-		  <td valign="TOP" align="LEFT" width="60%"><font size="-1"><i><b>Description</b></i></font></td> 
-		  <td valign="TOP" align="LEFT"><font size="-1"><i><b>Value
-			 Type</b></i></font></td> 
-		</tr> 
-		<tr> 
-		  <td valign="TOP" align="LEFT"><font size="-1">NominalLength</font></td>
-		  
-		  <td valign="TOP" align="LEFT" width="60%"><font size="-1">Total nominal
-			 length of the member, not taking into account any cut-out's or other processing
-			 features.</font></td> 
-		  <td valign="TOP" align="LEFT"><font size="-1"><i>IfcQuantityLength</i></font></td> 
-		</tr> 
-		<tr> 
-		  <td valign="TOP" align="LEFT"><font size="-1">CrossSectionArea</font></td> 
-		  <td valign="TOP" align="LEFT" width="60%"><font size="-1">Total area of
-			 the cross section (or profile) of the member. The exact definition and
-			 calculation rules depend on the method of measurement used.</font></td> 
-		  <td valign="TOP" align="LEFT"><font size="-1"><i>IfcQuantityArea</i></font></td> 
-		</tr> 
-		<tr> 
-		  <td valign="TOP" align="LEFT"><font size="-1">OuterSurfaceArea</font></td> 
-		  <td valign="TOP" align="LEFT" width="60%"><font size="-1">Total area of
-			 the extruded surfaces of the member (not taking into account the end cap
-			 areas), normally generated as perimeter * length.</font></td> 
-		  <td valign="TOP" align="LEFT"><font size="-1"><i>IfcQuantityArea</i></font></td> 
-		</tr> 
-		<tr> 
-		  <td valign="TOP" align="LEFT"><font size="-1">TotalSurfaceArea</font></td> 
-		  <td valign="TOP" align="LEFT" width="60%"><font size="-1">Total area of
-			 the member, normally generated as perimeter * length + 2 * cross section
-			 area.</font></td> 
-		  <td valign="TOP" align="LEFT"><font size="-1"><i>IfcQuantityArea</i></font></td> 
-		</tr> 
-		<tr> 
-		  <td valign="TOP" align="LEFT"><font size="-1">GrossVolume</font></td> 
-		  <td valign="TOP" align="LEFT" width="60%"><font size="-1">Total gross
-			 volume of the member, not taking into account possible processing features
-			 (cut-out's, etc.) or openings and recesses. The exact definition and
-			 calculation rules depend on the method of measurement used.</font></td> 
-		  <td valign="TOP" align="LEFT"><font size="-1"><i>IfcQuantityVolume</i></font></td> 
-		</tr> 
-		<tr> 
-		  <td valign="TOP" align="LEFT"><font size="-1">NetVolume</font></td> 
-		  <td valign="TOP" align="LEFT" width="60%"><font size="-1">Total net
-			 volume of the member, taking into account possible processing features
-			 (cut-out's, etc.) or openings and recesses. The exact definition and
-			 calculation rules depend on the method of measurement used.</font></td> 
-		  <td valign="TOP" align="LEFT"><font size="-1"><i>IfcQuantityVolume</i></font></td> 
-		</tr> 
-		<tr> 
-		  <td valign="TOP" align="LEFT"><font size="-1">GrossWeight</font></td> 
-		  <td valign="TOP" align="LEFT" width="60%"><font size="-1"> Total gross
-			 weight of the member without add-on parts, not taking into account possible
-			 processing features (cut-out's, etc.) or openings and recesses.</font></td> 
-		  <td valign="TOP" align="LEFT"><font size="-1"><i>IfcQuantityWeight</i></font></td> 
-		</tr> 
-		<tr> 
-		  <td valign="TOP" align="LEFT"><font size="-1">NetWeight</font></td> 
-		  <td valign="TOP" align="LEFT" width="60%"><font size="-1"> Total net
-			 weight of the member without add-on parts, taking into account possible
-			 processing features (cut-out's, etc.) or openings and recesses.</font></td> 
-		  <td valign="TOP" align="LEFT"><font size="-1"><i>IfcQuantityWeight</i></font></td> 
-		</tr> 
-	 </table>
+> NOTE&nbsp; The values of attributes _RepresentationIdentifier_ and _RepresentationType_ of _IfcShapeRepresentation_ are restricted in the same way as those for _IfcMember_ and _IfcMemberStandardCase_

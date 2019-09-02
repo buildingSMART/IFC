@@ -1,12 +1,23 @@
-**Definition from ISO/CD 10303-41:1992**: The position of the specified month in a year as defined in ISO 8601 (subcaluse 5.2.1).
+_IfcMonthInYearNumber_ is an integer that defines the position of the specified month in a year.
+
+Calendar month numbers map to calendar month names as follows:
+
+* **1**: January
+* **2**: February
+* **3**: March
+* **4**: April
+* **5**: May
+* **6**: June
+* **7**: July
+* **8**: August
+* **9**: September
+* **10**: October
+* **11**: November
+* **12**: December
 
 Type: INTEGER
 
-> <font size="-1">
-  NOTE Corresponding STEP name: month_in_year_number, please refer to ISO/IS 10303-41:1994
-  for the final definition of the formal standard.
-</font>
+> NOTE&nbsp; See definition of **calendar month** as defined in ISO&nbsp;8601.
 
-> <font size="-1" color="#0000FF">
-  HISTORY New type in IFC Release 1.5.1.
-</font>
+{ .note}
+> HISTORY&nbsp; New type in IFC1.5.1.

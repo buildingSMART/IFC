@@ -1,1 +1,0 @@
-The minlimum height of this type.

@@ -1,45 +1,20 @@
-An _IfcBenchmarkEnum_ is an enumeration used to identify the logical comparators that can be applied in conjunction with constraint values.
+_IfcBenchmarkEnum_ is an enumeration used to identify the logical comparators that can be applied in conjunction with constraint values.
 
-> <font color="#0000FF" size="-1"> HISTORY: New type in IFC Release
-		  2.0</font>
-> 
+> HISTORY&nbsp; New enumeration in IFC2.0
 
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; Extended to include comparators for item-set and set-item comparisons: INCLUDES, NOTINCLUDES, INCLUDEDIN and NOTINCLUDEDIN, to test if an individual item is a member of a given aggregation, or if an aggregation has a given individual item as a member.
 
-**Enumeration**
+{ .spec-head}
+Enumerated Item Definitions:
 
-<table border="1"> 
-		<tr> 
-		  <td><i>Value</i></td> 
-		  <td><i>Definition</i></td> 
-		</tr> 
-		<tr> 
-		  <td>GREATERTHAN</td> 
-		  <td>Identifies that a value must be greater than that set by the
-			 constraint.</td> 
-		</tr> 
-		<tr> 
-		  <td>GREATERTHANOREQUALTO</td> 
-		  <td>Identifies that a value must be either greater than or equal to
-			 that set by the constraint.</td> 
-		</tr> 
-		<tr> 
-		  <td>LESSTHAN</td> 
-		  <td>Identifies that a value must be less than that set by the
-			 constraint.</td> 
-		</tr> 
-		<tr> 
-		  <td>LESSTHANOREQUALTO</td> 
-		  <td>Identifies that a value must be either less than or equal to that
-			 set by the constraint.</td> 
-		</tr> 
-		<tr> 
-		  <td>EQUALTO</td> 
-		  <td>Identifies that a value must be equal to that set by the
-			 constraint.</td> 
-		</tr> 
-		<tr> 
-		  <td>NOTEQUALTO</td> 
-		  <td>Identifies that a value must be not equal to that set by the
-			 constraint.</td> 
-		</tr> 
-	 </table>
+* **GREATERTHAN**: Identifies that a value must be greater than that set by the constraint.
+* **GREATERTHANOREQUALTO**: Identifies that a value must be either greater than or equal to that set by the constraint.
+* **LESSTHAN**: Identifies that a value must be less than that set by the constraint.
+* **LESSTHANOREQUALTO**: Identifies that a value must be either less than or equal to that set by the constraint.
+* **EQUALTO**: Identifies that a value must be equal to that set by the constraint.
+* **NOTEQUALTO**: Identifies that a value must be not equal to that set by the constraint.
+* **INCLUDES**: Identifies that an aggregation (set, list or table) must include the value (individual item) set by the constraint.
+* **NOTINCLUDES**: Identifies that an aggregation (set, list or table) must not include the value (individual item) set by the constraint.
+* **INCLUDEDIN**: Identifies that a value (individual item) must be included in the aggregation (set, list or table) set by the constraint.
+* **NOTINCLUDEDIN**: Identifies that a value (individual item) must not be included in the aggregation (set, list or table) set by the constraint.

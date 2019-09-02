@@ -1,1 +1,0 @@
-Bar bending angle parameter v1.

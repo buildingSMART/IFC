@@ -1,5 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDistributionFlowElement" Name="IfcDistributionFlowElement" UniqueId="63ee3d6e-fbeb-4c25-a0a5-13c7bceed367" DiagramNumber="1" BaseDefinition="IfcDistributionElement" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Komponente der TGA (allgemein)" Locale="de" />
+		<DocLocalization Name="Elément de distribution de fluide" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="73.618784" Y="870.21675" Width="594.53334" Height="102.34881" />
 	<Subtypes>
 		<DocSubtype UniqueId="f2761e58-8ea6-4ce7-89c7-eeda7044812c" DefinedType="IfcFlowFitting" />
 		<DocSubtype UniqueId="b3056760-9469-4687-a002-37c3164e4e42" DefinedType="IfcFlowSegment" />
@@ -14,6 +19,12 @@
 	<Attributes>
 		<DocAttribute Name="HasControlElements" UniqueId="7b76723e-76d9-4d81-906b-eb95f697c628" DefinedType="IfcRelFlowControlElements" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatingFlowElement">
 			<Documentation>Reference to the relationship object that relates control elements.</Documentation>
+			<DiagramLine>
+				<DocPoint X="570.8837" Y="611.75809" />
+				<DocPoint X="221.68478" Y="611.75809" />
+				<DocPoint X="221.68478" Y="870.21673" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="609.202368" Y="773.62575" Width="376" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

@@ -1,1 +1,0 @@
-Specific to IfcWindow: An IfcWindow be containied in IfcSite, IfcBuilding, IfcBuildingStory, or IfcSpace. It shall not be provided, if the IfcWindow is part of an aggregation.

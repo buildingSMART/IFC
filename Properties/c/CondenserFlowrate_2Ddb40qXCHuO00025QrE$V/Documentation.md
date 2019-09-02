@@ -1,1 +1,1 @@
-Flow rate of fluid through the condenser per manufacturer's listing (if available)
+Flow rate of fluid through the condenser.

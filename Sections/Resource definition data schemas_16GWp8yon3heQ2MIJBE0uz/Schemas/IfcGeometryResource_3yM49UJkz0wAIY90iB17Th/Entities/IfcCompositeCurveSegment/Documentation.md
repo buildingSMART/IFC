@@ -1,10 +1,9 @@
-**Definition from ISO/CD 10303-42:1992**: A composite curve segment (IfcCompositeCurveSegment) is a bounded curve together with transition information which is used to construct a composite curve (IfcCompositeCurve).
+An _IfcCompositeCurveSegment_ is a bounded curve constructed for the sole purpose to be a segment within an _IfcCompositeCurve_.
 
-The derived attribute Dim has been added (see also note at IfcGeometricRepresentationItem). The IfcCompositeCurveSegment is a subtype of IfcGeometricRepresentationItem (whereas in STEP P42 composite_curve_segment is not a subtype of geometric_representation_item, the proposed 2nd edition of P42 however proposes the subtype relationship).
+{ .extDef}
+> NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
+> A composite curve segment is a bounded curve together with transition information which is used to construct a composite curve.
 
-> <font color="#0000FF" size="-1">NOTE Corresponding STEP entity: composite_curve_segment. Please refer
-		  to ISO/IS 10303-42:1994, p.57 for the final definition of the formal standard.
-		  </font>
-> 
-> <font color="#0000FF" size="-1">HISTORY New class in IFC Release 1.0 </font>
->
+> NOTE&nbsp; Entity adapted from **composite_curve_segment** defined in ISO 10303-42.
+
+> HISTORY&nbsp; New entity in IFC1.0

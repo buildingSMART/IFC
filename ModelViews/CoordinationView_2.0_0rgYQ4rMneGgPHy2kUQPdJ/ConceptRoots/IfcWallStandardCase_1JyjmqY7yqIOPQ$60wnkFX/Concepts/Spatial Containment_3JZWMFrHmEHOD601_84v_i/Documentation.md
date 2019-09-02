@@ -1,1 +1,0 @@
-Specific to _IfcWallStandardCase_: The spatial containment shall be within _IfcSite_, _IfcBuilding_, or _IfcBuildingStorey_. The _IfcWallStandardCase_shall not be contained in an _IfcSpace_.

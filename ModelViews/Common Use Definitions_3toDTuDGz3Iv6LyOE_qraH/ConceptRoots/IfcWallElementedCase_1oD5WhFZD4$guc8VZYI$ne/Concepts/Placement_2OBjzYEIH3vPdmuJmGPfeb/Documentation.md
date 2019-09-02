@@ -1,0 +1,1 @@
+The use of local placement is defined at the supertype _IfcWall_. The local placement of the _IfcWallElementedCase_ defines the parent coordinate systems for the parts within the decomposition. All parts shall be positioned relative to the _IfcWallElementedCase_.

@@ -1,1 +1,0 @@
-Selection of the type of gas burner from the enumerated list of types

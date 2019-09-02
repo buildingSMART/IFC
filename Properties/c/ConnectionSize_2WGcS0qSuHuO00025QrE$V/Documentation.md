@@ -1,1 +1,1 @@
-Duct connection diameter
+Duct connection diameter.

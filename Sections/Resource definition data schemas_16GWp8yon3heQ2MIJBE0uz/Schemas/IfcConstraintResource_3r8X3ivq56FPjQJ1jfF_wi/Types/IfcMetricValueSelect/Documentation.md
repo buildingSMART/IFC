@@ -1,14 +1,15 @@
-An _IfcMetricValueSelect_ is a select type that enables selection of the data type for the value component of an _IfcMetric_.
+_IfcMetricValueSelect_ is a select type that enables selection of the data type for the value component of an _IfcMetric_.
 
-<font color="#0000FF" size="-1"> HISTORY: New type in IFC Release
-		2.0</font>
+Types are used as follows:
 
-**Select**
+* _IfcValue_: A constant value using project default units.
+* _IfcMeasureWithUnit_: A constant value using specified units.
+* _IfcAppliedValue_: A value calculated from a formula.
+* _IfcTable_: A value retrieved from a table.
+* _IfcTimeSeries_: A value that varies over time.
+* _IfcReference_: A value referenced on an object attribute.
 
-* _IfcCostValue_
-* _IfcDateTimeSelect_
-* _IfcMetricBoundedValue_
-* _IfcMeasureWithUnit_
-* _IfcTable_
-* _IfcText_
-* _IfcTimeSeries_
+> HISTORY&nbsp; New type in IFC2.0.
+
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; IfcValue added, which includes removed IfcDateTime and IfcText; IfcReference added.

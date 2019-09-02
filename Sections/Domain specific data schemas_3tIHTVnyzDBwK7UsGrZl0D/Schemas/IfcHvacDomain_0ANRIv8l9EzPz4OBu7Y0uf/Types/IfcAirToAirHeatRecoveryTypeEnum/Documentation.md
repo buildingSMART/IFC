@@ -1,8 +1,11 @@
-Defines general types of pumps. The _IfcPumpTypeEnum_ contains the following:
+Defines general types of air-to-air heat recovery devices.
 
-* **FIXEDPLATECOUNTERFLOWEXCHANGER**: Heat exchanger with moving parts and alternate layers of plates, separated and sealed from the exhaust and supply air stream passages with primary air enters at secondary air outlet location and exits at secondary air inlet location.
+{ .spec-head}
+Enumerated Item Definitions:
+
+* **FIXEDPLATECOUNTERFLOWEXCHANGER**: Heat exchanger with moving parts and alternate layers of plates, separated and sealed from the exhaust and supply air stream passages with primary air entering at secondary air outlet location and exiting at secondary air inlet location.
 * **FIXEDPLATECROSSFLOWEXCHANGER**: Heat exchanger with moving parts and alternate layers of plates, separated and sealed from the exhaust and supply air stream passages with secondary air flow in the direction perpendicular to primary air flow.
-* **FIXEDPLATEPARALLELFLOWEXCHANGER**: Heat exchanger with moving parts and alternate layers of plates, separated and sealed from the exhaust and supply air stream passages with primary air enters at secondary air inlet location and exits at secondary air outlet location.
+* **FIXEDPLATEPARALLELFLOWEXCHANGER**: Heat exchanger with moving parts and alternate layers of plates, separated and sealed from the exhaust and supply air stream passages with primary air entering at secondary air inlet location and exiting at secondary air outlet location.
 * **ROTARYWHEEL**: A heat wheel with a revolving cylinder filled with an air-permeable medium having a large internal surface area.
 * **RUNAROUNDCOILLOOP**: A typical coil energy recovery loop places extended surface, finned tube water coils in the supply and exhaust airstreams of a building.
 * **HEATPIPE**: A passive energy recovery device with a heat pipe divided into evaporator and condenser sections.
@@ -12,6 +15,4 @@ Defines general types of pumps. The _IfcPumpTypeEnum_ contains the following:
 * **USERDEFINED**: User-defined air to air heat recovery type.
 * **NOTDEFINED**: Undefined air to air heat recovery type.
 
-> <font color="#0000ff" size="-1">
-    	HISTORY: New enumeration in IFC R2x.<br>
-    	</font>
+> HISTORY&nbsp; New enumeration in IFC2x.

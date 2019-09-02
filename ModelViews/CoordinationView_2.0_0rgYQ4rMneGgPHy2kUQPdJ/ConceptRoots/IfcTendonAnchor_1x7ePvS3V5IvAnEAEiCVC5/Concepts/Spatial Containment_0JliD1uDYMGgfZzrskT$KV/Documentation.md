@@ -1,1 +1,0 @@
-Specific to IfcTendonAnchor: It shall not be provided, if the IfcTendonAnchor is part of an aggregation.

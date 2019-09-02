@@ -1,29 +1,57 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcApplication" UniqueId="88190cb4-3569-4c42-9b7d-8778145e179e" DiagramNumber="1" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Software-Programm" Locale="de" />
+		<DocLocalization Name="Application" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="706.94419" Y="1154.0365" Width="320.59609" Height="259.32663" />
 	<Attributes>
-		<DocAttribute Name="ApplicationDeveloper" UniqueId="3cc88833-4284-48e3-8942-9a3a7eb58407" DefinedType="IfcOrganization" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>Name of the application developer, being requested to be member of the IAI.</Documentation>
+		<DocAttribute Name="ApplicationDeveloper" UniqueId="3cc88833-4284-48e3-8942-9a3a7eb58407" DefinedType="IfcOrganization" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>Name of the application developer.</Documentation>
+			<DiagramLine>
+				<DocPoint X="867.24224" Y="1413.3632" />
+				<DocPoint X="867.24224" Y="1571.34228" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="727.88825" Y="1431.440191" Width="240" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Version" UniqueId="77ef51fd-a0e6-444c-aa70-72ffc5b971c7" DefinedType="IfcLabel" AttributeFlags="2" AggregationType="0" AggregationFlag="0">
 			<Documentation>The version number of this software as specified by the developer of the application.</Documentation>
+			<DiagramLine>
+				<DocPoint X="706.94419" Y="1343.7059" />
+				<DocPoint X="386.91353" Y="1343.7059" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="706.94419" Y="1343.7059" Width="100" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="ApplicationFullName" UniqueId="56e2f124-d545-40e2-b5d1-027b21693f30" DefinedType="IfcLabel" AttributeFlags="2" AggregationType="0" AggregationFlag="0">
 			<Documentation>The full name of the application as specified by the application developer.</Documentation>
+			<DiagramLine>
+				<DocPoint X="706.94419" Y="1227.832" />
+				<DocPoint X="544.85968" Y="1227.832" />
+				<DocPoint X="544.85968" Y="1227.83197149041" />
+				<DocPoint X="382.77517" Y="1227.83197149041" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="544.85968" Y="1227.832" Width="242" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="ApplicationIdentifier" UniqueId="1a43cdd1-0847-4fa0-b2ae-f0918196357c" DefinedType="IfcIdentifier" AttributeFlags="2" AggregationType="0" AggregationFlag="0">
 			<Documentation>Short identifying name for the application.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1027.5403" Y="1283.6998" />
+				<DocPoint X="1271.35731" Y="1283.6998" />
+				<DocPoint X="1271.35731" Y="1568.56057" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1048.059132" Y="1278.1840314" Width="232" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<UniqueRules>
 		<DocUniqueRule Name="UR1" UniqueId="e36bd730-bfde-4f0f-8f02-3fc52e210301">
 			<Items>
-				<DocUniqueRuleItem Name="ApplicationIdentifier" UniqueId="3zcbvrH8PExw9M1_FCDcXN" />
+				<DocUniqueRuleItem Name="ApplicationIdentifier" UniqueId="d73d8191-36d4-4abd-a5bd-010513576c61" />
 			</Items>
 		</DocUniqueRule>
 		<DocUniqueRule Name="UR2" UniqueId="a70f236a-f635-4123-9e35-2abeb992d8c7">
 			<Items>
-				<DocUniqueRuleItem Name="ApplicationFullName" UniqueId="2QTJs9nQv2dvZII84Tt2qD" />
-				<DocUniqueRuleItem Name="Version" UniqueId="0f0HnLeHXEsw_1DAcMDCB$" />
+				<DocUniqueRuleItem Name="ApplicationFullName" UniqueId="24f3ecec-3ab2-44c9-9f0a-d23bd6a888cf" />
+				<DocUniqueRuleItem Name="Version" UniqueId="e2ceab04-e169-4ce8-ad45-ea95cc166bcb" />
 			</Items>
 		</DocUniqueRule>
 	</UniqueRules>

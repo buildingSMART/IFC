@@ -1,36 +1,76 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBSplineCurve" UniqueId="b9435164-1687-4e0f-8afc-85feadf601cd" DiagramNumber="9" BaseDefinition="IfcBoundedCurve" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBSplineCurve" UniqueId="b9435164-1687-4e0f-8afc-85feadf601cd" DiagramNumber="7" BaseDefinition="IfcBoundedCurve" EntityFlags="205">
+	<Localization>
+		<DocLocalization Name="Bézier-Spline-Kurve" Locale="de" />
+		<DocLocalization Name="Courbe Bspline" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="9702.7533" Y="962.04" Width="359.9" Height="529.33333" />
 	<Subtypes>
-		<DocSubtype UniqueId="0LI8sGb39B6xe7buRB4kz1" DefinedType="IfcBezierCurve" />
+		<DocSubtype UniqueId="8ed946d7-ff6b-4cb2-8ff3-701093de30cf" DefinedType="IfcBSplineCurveWithKnots" />
 	</Subtypes>
 	<Attributes>
 		<DocAttribute Name="Degree" UniqueId="9215ef5b-0c61-4dd2-97ed-6c70dc669532" DefinedType="INTEGER" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The algebraic degree of the basis functions.</Documentation>
+			<DiagramLine>
+				<DocPoint X="10062.653" Y="998.27977" />
+				<DocPoint X="10764.95267" Y="998.27977" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="10062.653" Y="998.27977" Width="89" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="ControlPointsList" UniqueId="49ee485c-b8e8-460a-877e-a0df0214a5b9" DefinedType="IfcCartesianPoint" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="0">
 			<Documentation>The list of control points for the curve.</Documentation>
+			<DiagramLine>
+				<DocPoint X="10062.653" Y="1220.9512" />
+				<DocPoint X="10764.9527" Y="1220.9512" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="10062.653" Y="1218.2845333" Width="270" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="CurveForm" UniqueId="533eaddc-7020-4be6-bd8d-f8f6c4d72442" DefinedType="IfcBSplineCurveForm" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Used to identify particular types of curve; it is for information only.</Documentation>
+			<DiagramLine>
+				<DocPoint X="10062.653" Y="1294.5642" />
+				<DocPoint X="10764.8857" Y="1294.5642" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="10062.653" Y="1294.5642" Width="130" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="ClosedCurve" UniqueId="01035261-65db-467b-ad2b-1c4d21786723" DefinedType="LOGICAL" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Indication of whether the curve is closed; it is for information only.</Documentation>
+			<DiagramLine>
+				<DocPoint X="10062.653" Y="1069.4609" />
+				<DocPoint X="10764.95267" Y="1069.4609" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="10062.653" Y="1069.4609" Width="150" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="SelfIntersect" UniqueId="35b37f03-d9bc-4662-8c51-80a08918556a" DefinedType="LOGICAL" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Indication whether the curve self-intersects or not; it is for information only.</Documentation>
-		</DocAttribute>
-		<DocAttribute Name="ControlPoints" UniqueId="8eba8ab8-5ec9-4c72-99f7-782da1e6a008" DefinedType="IfcCartesianPoint" AttributeFlags="0" AggregationType="2" AggregationFlag="0" AggregationLower="0" AggregationUpper="255">
-			<Documentation>The array of control points used to define the geometry of the curve. This is derived from the list of control points.</Documentation>
-			<Derived>IfcListToArray(ControlPointsList,0,UpperIndexOnControlPoints)</Derived>
+			<DiagramLine>
+				<DocPoint X="10062.653" Y="1139.1663" />
+				<DocPoint X="10764.95267" Y="1139.1663" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="10062.653" Y="1139.1663" Width="144" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="UpperIndexOnControlPoints" UniqueId="4c2b99cb-7844-410e-9b24-d754bb7de440" DefinedType="INTEGER" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The upper index on the array of control points; the lower index is 0.
 This value is derived from the control points list.</Documentation>
 			<Derived>(SIZEOF(ControlPointsList) - 1)</Derived>
+			<DiagramLine>
+				<DocPoint X="10062.653" Y="1370.1198" />
+				<DocPoint X="10764.9187" Y="1370.1198" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="10065.9863333" Y="1363.4531333" Width="392" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="ControlPoints" UniqueId="8eba8ab8-5ec9-4c72-99f7-782da1e6a008" DefinedType="IfcCartesianPoint" AttributeFlags="0" AggregationType="2" AggregationFlag="0" AggregationLower="0" AggregationUpper="UpperIndexOnControlPoints">
+			<Documentation>The array of control points used to define the geometry of the curve. This is derived from the list of control points.</Documentation>
+			<Derived>IfcListToArray(ControlPointsList,0,UpperIndexOnControlPoints)</Derived>
+			<DiagramLine>
+				<DocPoint X="10062.653" Y="1441.4147" />
+				<DocPoint X="10764.9187" Y="1441.4147" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="10062.653" Y="1436.0813667" Width="605" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR41" UniqueId="1RDjj6utDAZwnUBnDlC2lT">
+		<DocWhereRule Name="SameDim" UniqueId="e274844f-3a1f-4f9e-99df-53d213096e08">
 			<Documentation>All control points shall have the same dimensionality.</Documentation>
 			<Expression>SIZEOF(QUERY(Temp &lt;* ControlPointsList |
   Temp.Dim &lt;&gt; ControlPointsList[1].Dim))

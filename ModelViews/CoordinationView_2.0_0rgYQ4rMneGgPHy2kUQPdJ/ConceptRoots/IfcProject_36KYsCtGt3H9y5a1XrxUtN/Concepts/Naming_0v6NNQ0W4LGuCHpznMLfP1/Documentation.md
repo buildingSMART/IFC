@@ -1,1 +1,0 @@
-Specific to IfcProject: Provision of a project number, name, and optional desription and project phase as attributes to the project

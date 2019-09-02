@@ -1,1 +1,1 @@
-Identifies preventive measures to be taken to mitigate risk
+Identifies preventive measures to be taken to mitigate risk.

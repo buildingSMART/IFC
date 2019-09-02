@@ -1,25 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBooleanResult" UniqueId="d78312f8-1bcd-4504-890e-d6fcdaab653c" DiagramNumber="2" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="109">
+	<Localization>
+		<DocLocalization Name="Boolesches Ergebnis" Locale="de" />
+		<DocLocalization Name="Résultat booléen" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1834.3667" Y="1691.6" Width="473.33333" Height="100" />
 	<Subtypes>
 		<DocSubtype UniqueId="8f32808e-282c-4d21-a563-2ca210fb5149" DefinedType="IfcBooleanClippingResult" />
 	</Subtypes>
 	<Attributes>
 		<DocAttribute Name="Operator" UniqueId="970f0683-6cee-4eb2-9e10-0b31f03b0528" DefinedType="IfcBooleanOperator" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The Boolean operator used in the operation to create the result.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1873.0333" Y="1791.6001" />
+				<DocPoint X="1873.0333" Y="1979.36003" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1813.699967" Y="1790.93343333" Width="105" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="FirstOperand" UniqueId="f51c36f8-0f38-4082-92d9-b168edd7afc6" DefinedType="IfcBooleanOperand" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The first operand to be operated upon by the Boolean operation.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2276.3667" Y="1791.6001" />
+				<DocPoint X="2276.3667" Y="1890.279451" />
+				<DocPoint X="2892.63603" Y="1890.279451" />
+				<DocPoint X="2892.63603" Y="1979.36" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2268.5806153" Y="1880.399451" Width="151" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="SecondOperand" UniqueId="aca2312f-8b6b-4323-9475-e793e362a83f" DefinedType="IfcBooleanOperand" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The second operand specified for the operation.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2227.0333" Y="1791.6001" />
+				<DocPoint X="2227.0333" Y="1945.06963" />
+				<DocPoint X="2743.30263" Y="1945.06963" />
+				<DocPoint X="2743.30263" Y="1979.359996" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2222.963527" Y="1937.18963" Width="188" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Dim" UniqueId="03027ef0-664e-4604-aeb7-80ba4e6e11eb" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The space dimensionality of this entity. It is identical with the space dimensionality of the first operand. A where rule ensures that both operands have the same space dimensionality.</Documentation>
 			<Derived>FirstOperand.Dim</Derived>
+			<DiagramLine>
+				<DocPoint X="2307.7" Y="1741.6" />
+				<DocPoint X="2691.99997" Y="1741.6" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2307.7" Y="1741.6" Width="125" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="0q6UZAieH5mwsTHu2Vkw4G">
+		<DocWhereRule Name="SameDim" UniqueId="4c692fb6-a702-487e-9698-521c2f738198">
 			<Documentation>The dimensionality of the first operand shall be the same as the dimensionality of the second operand.</Documentation>
 			<Expression>FirstOperand.Dim = SecondOperand.Dim</Expression>
 		</DocWhereRule>

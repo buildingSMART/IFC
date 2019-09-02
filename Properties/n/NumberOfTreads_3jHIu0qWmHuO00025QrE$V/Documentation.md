@@ -1,1 +1,1 @@
-Total number of treads included in the stair
+Total number of treads included in the stair.

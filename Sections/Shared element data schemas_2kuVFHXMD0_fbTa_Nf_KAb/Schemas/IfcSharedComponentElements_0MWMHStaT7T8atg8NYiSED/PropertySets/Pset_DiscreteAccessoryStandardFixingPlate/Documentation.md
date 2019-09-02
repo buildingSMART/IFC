@@ -1,1 +1,1 @@
-Properties specific to standard fixing plates.
+Definition from IAI: Properties specific to standard fixing plates.

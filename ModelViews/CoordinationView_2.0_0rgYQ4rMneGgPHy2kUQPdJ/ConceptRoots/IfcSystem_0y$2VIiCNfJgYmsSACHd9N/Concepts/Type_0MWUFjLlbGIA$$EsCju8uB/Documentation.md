@@ -1,1 +1,0 @@
-Specific to IfcSystem: The IfcSystem shall not have a type assigned.

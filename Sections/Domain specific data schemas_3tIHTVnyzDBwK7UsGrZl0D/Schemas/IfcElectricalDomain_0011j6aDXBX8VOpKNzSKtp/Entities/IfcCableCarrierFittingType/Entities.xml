@@ -1,12 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCableCarrierFittingType" UniqueId="fd9b5bec-e42a-4c5e-bc8a-bd72ae76b43a" DiagramNumber="2" BaseDefinition="IfcFlowFittingType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Kabelträger Passstück - Typ" Locale="de" />
+		<DocLocalization Name="Type de raccord de chemin de cable" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1694.9267" Y="1110.2999" Width="679.93333" Height="103.3" />
 	<Attributes>
 		<DocAttribute Name="PredefinedType" UniqueId="8608a724-6294-4993-ac2b-b30f39f1853a" DefinedType="IfcCableCarrierFittingTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Identifies the predefined types of cable carrier fitting from which the type required may be set.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1699.1058" Y="1213.5999" />
+				<DocPoint X="1699.1058" Y="1261.746632" />
+				<DocPoint X="2115.92666" Y="1261.746632" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1617.389133" Y="1254.3232657" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="2l9_KgaHn8cvnOtsl5ffBB">
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="bdf94334-538c-435b-93da-18de862a72fc">
 			<Expression>(PredefinedType &lt;&gt; IfcCableCarrierFittingTypeEnum.USERDEFINED) OR
 ((PredefinedType = IfcCableCarrierFittingTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
 		</DocWhereRule>

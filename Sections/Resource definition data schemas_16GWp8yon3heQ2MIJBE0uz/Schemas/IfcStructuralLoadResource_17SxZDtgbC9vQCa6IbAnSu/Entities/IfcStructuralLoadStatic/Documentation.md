@@ -1,10 +1,3 @@
-The abstract entity _IfcStructuralLoadStatic_ is the supertype of all static loads (actions or reactions) which can be defined.
+The abstract entity _IfcStructuralLoadStatic_ is the supertype of all static loads (actions or reactions) which can be defined. Within scope are single i.e. concentrated forces and moments, linear i.e. one-dimensionally distributed forces and moments, planar i.e. two-dimensionally distributed forces, furthermore displacements and temperature loads.
 
-> <font size="-1">NOTE: Within the scope of this IFC release static
-		  loads are currently distinguished between single, linear, planar and
-		  temperature loads.</font>
->
-
-> <font color="#0000FF" size="-1"> HISTORY: New entity in Release IFC2x
-		  edition 2. </font>
->
+> HISTORY&nbsp; New entity in IFC2x2.

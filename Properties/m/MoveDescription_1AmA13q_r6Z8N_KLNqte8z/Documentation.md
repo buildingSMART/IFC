@@ -1,1 +1,0 @@
-A textual description of the move required.

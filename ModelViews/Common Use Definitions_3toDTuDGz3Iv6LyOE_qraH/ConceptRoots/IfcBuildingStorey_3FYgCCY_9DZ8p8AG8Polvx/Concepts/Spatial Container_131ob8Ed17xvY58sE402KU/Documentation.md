@@ -1,0 +1,5 @@
+If there are building elements and/or other elements directly related to the _IfcBuildingStorey_ (like most building elements, such as walls, columns, etc.), they are associated with the _IfcBuildingStorey_ by using the objectified relationship _IfcRelContainedInSpatialStructure_. The _IfcBuildingStorey_ references them by its inverse relationship:
+
+* _IfcBuildingStorey.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.
+
+Elements can also be referenced in an _IfcBuildingStorey_, for example, if they span through several storeys. This is expressed by using the objectified relationship _IfcRelReferencedInSpatialStructure_. Systems, such as building service or electrical distribution systems, zonal systems, or structural analysis systems, relate to _IfcBuildingStorey_ by using the objectified relationship _IfcRelServicesBuildings_.

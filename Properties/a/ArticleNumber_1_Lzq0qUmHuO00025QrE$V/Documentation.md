@@ -1,1 +1,1 @@
-Article number or reference that may be applied to a product according to a standard scheme for article number definition (e.g. UN, EAN)
+Article number or reference that is be applied to a configured product according to a standard scheme for article number definition as defined by the manufacturer. It is often used as the purchasing number.

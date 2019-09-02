@@ -1,1 +1,0 @@
-Specific to IfcDoor: An IfcDoor be containied in IfcSite, IfcBuilding, IfcBuildingStory, or IfcSpace. It shall not be provided, if the IfcDoor is part of an aggregation.

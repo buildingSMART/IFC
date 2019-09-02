@@ -1,12 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSubContractResource" UniqueId="43fbb978-b475-40b1-8fa8-494040d73aa4" DiagramNumber="1" BaseDefinition="IfcConstructionResource" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSubContractResource" Name="IfcSubContractResource" UniqueId="43fbb978-b475-40b1-8fa8-494040d73aa4" DiagramNumber="1" BaseDefinition="IfcConstructionResource" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Unterauftragnehmer - Ressource" Locale="de" />
+		<DocLocalization Name="Ressource de sous-traitance" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="95.45326" Y="1620.6667" Width="658.16667" Height="100" />
 	<Attributes>
-		<DocAttribute Name="SubContractor" UniqueId="0pSsKXXxbBlf_XcsMaUAfR" DefinedType="IfcActorSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>The actor performing the role of the subcontracted resource.</Documentation>
-		</DocAttribute>
-		<DocAttribute Name="JobDescription" UniqueId="1AI3NRmr9BWfll6UM2A2Dh" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>The description of the jobs that this subcontract should complete.</Documentation>
+		<DocAttribute Name="PredefinedType" UniqueId="a02a4c25-90a4-46b2-93b8-146a851d4535" DefinedType="IfcSubContractResourceTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Defines types of subcontract resources.
+{ .change-ifc2x4}
+&gt; IFC4 New attribute.</Documentation>
+			<DiagramLine>
+				<DocPoint X="104.5366" Y="1720.6667" />
+				<DocPoint X="104.5366" Y="1767.973367" />
+				<DocPoint X="467.70001" Y="1767.973367" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="24.5366" Y="1762.6400336" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="a86c9b84-3dff-43c1-8bae-07f762781383">
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcSubContractResourceTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcSubContractResourceTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

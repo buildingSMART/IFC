@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPropertyTemplate" UniqueId="dfa52a71-6e64-4b4c-af07-d476c558c888" DiagramNumber="3" BaseDefinition="IfcPropertyTemplateDefinition" EntityFlags="197">
+	<Localization>
+		<DocLocalization Name="Merkmal - Vorlage" Locale="de" />
+		<DocLocalization Name="Modèle de propriété" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="3350.5867" Y="1043.28" Width="402.66667" Height="124" />
+	<Subtypes>
+		<DocSubtype UniqueId="1c16223d-9ad7-4da9-95b0-e4375ece0c64" DefinedType="IfcComplexPropertyTemplate" />
+		<DocSubtype UniqueId="b6a55d1d-e147-4550-a210-37b65f83b877" DefinedType="IfcSimplePropertyTemplate" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="PartOfComplexTemplate" UniqueId="c8bb95e2-205f-47e2-988e-debdc6a2ef7c" DefinedType="IfcComplexPropertyTemplate" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="HasPropertyTemplates">
+			<Documentation>Reference to a complex property templates. It should only be provided, if the _PropertyType_ of the referenced complex property template is set to &lt;small&gt;COMPLEX&lt;/small&gt;.</Documentation>
+			<DiagramLine>
+				<DocPoint X="4298.6533" Y="1097.28" />
+				<DocPoint X="3753.25337" Y="1097.28" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4303.2867067" Y="1142.279997" Width="421" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="PartOfPsetTemplate" UniqueId="8118417e-88aa-422d-889f-ee94c54dd384" DefinedType="IfcPropertySetTemplate" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="HasPropertyTemplates">
+			<Documentation>Reference to the _IfcPropertySetTemplate_ that defines the scope for the _IfcPropertyTemplate_. A single _IfcPropertyTemplate_ can be defined within the scope of zero, one or many _IfcPropertySetTemplate_&apos;.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3538.3334" Y="827.73333" />
+				<DocPoint X="3538.3334" Y="1043.27997" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3738.3334" Y="875.399995" Width="373" Height="35" />
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

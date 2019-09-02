@@ -1,0 +1,1 @@
+A work schedule can include other work schedules as sub-items. If not included in another work schedule it might be a part of a work plan (_IfcWorkPlan_) defined through _IfcRelAggregates_ relationship.

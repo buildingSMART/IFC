@@ -1,1 +1,0 @@
-Connection information between two <elements> with an optional connection geometry describing how the connection is geometrically resolved.</elements>

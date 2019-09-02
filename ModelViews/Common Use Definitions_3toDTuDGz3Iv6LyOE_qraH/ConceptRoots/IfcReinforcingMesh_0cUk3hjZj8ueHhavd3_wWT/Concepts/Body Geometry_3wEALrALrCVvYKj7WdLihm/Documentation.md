@@ -1,0 +1,1 @@
+The representation map referenced by a 'Body' 'MappedRepresentation' could contain a representation of type 'AdvancedSweptSolid' which holds an _IfcSweptDiskSolid_ (including subtype _IfcSweptDiskSolidPolygonal_). Multiple _IfcMappedItem_'s can be used to represent the bars within a mesh as one occurrence of _IfcReinforcingMesh_.

@@ -1,8 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSurfaceStyleWithTextures" UniqueId="8b1d947d-68b2-4aab-b866-8b1fb6d7e22a" DiagramNumber="7" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSurfaceStyleWithTextures" UniqueId="8b1d947d-68b2-4aab-b866-8b1fb6d7e22a" DiagramNumber="9" BaseDefinition="IfcPresentationItem" EntityFlags="237">
+	<Localization>
+		<DocLocalization Name="Oberflächenstil mit Texturen" Locale="de" />
+		<DocLocalization Name="Style de surface texturée" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="3392.8" Y="2535.8333" Width="260" Height="166.66667" />
 	<Attributes>
 		<DocAttribute Name="Textures" UniqueId="47570f00-dea1-42d6-bbf4-324f534be07d" DefinedType="IfcSurfaceTexture" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
-			<Documentation>The textures applied to the surface. Only one image map with the same image map type shall be applied.</Documentation>
+			<Documentation>The textures applied to the surface. In case of more than one surface texture is included, the _IfcSurfaceStyleWithTexture_ defines a multi texture.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3440.1334" Y="2702.5" />
+				<DocPoint X="3440.1334" Y="2991.46667" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3543.46673" Y="2757.316667" Width="180" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

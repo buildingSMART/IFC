@@ -1,1 +1,0 @@
-Properties related to the combustion of materials for purposes of assessing fire hazard.

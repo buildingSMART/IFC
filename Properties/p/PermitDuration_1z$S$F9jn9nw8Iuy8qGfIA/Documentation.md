@@ -1,1 +1,0 @@
-Permit duration.

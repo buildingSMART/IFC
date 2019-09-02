@@ -1,12 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcManifoldSolidBrep" UniqueId="a50d65b5-c2d5-47ea-a0a6-786fe005e10b" DiagramNumber="5" BaseDefinition="IfcSolidModel" EntityFlags="77">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcManifoldSolidBrep" UniqueId="a50d65b5-c2d5-47ea-a0a6-786fe005e10b" DiagramNumber="7" BaseDefinition="IfcSolidModel" EntityFlags="77">
+	<Localization>
+		<DocLocalization Name="Boundary Representation" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="10398.05" Y="264.5134" Width="445.66667" Height="100" />
 	<Subtypes>
 		<DocSubtype UniqueId="24817858-ea6b-4679-8714-dc2aaff8f1e0" DefinedType="IfcFacetedBrep" />
-		<DocSubtype UniqueId="1h_BK_VwX9Ng2wBUmwFGDM" DefinedType="IfcFacetedBrepWithVoids" />
+		<DocSubtype UniqueId="6afc2a4b-10ab-4a6a-8813-2d7e3c25dc35" DefinedType="IfcAdvancedBrep" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Outer" UniqueId="037a2664-7d98-4059-af1b-cf56b8255a6f" DefinedType="IfcClosedShell" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Outer" UniqueId="037a2664-7d98-4059-af1b-cf56b8255a6f" DefinedType="IfcClosedShell" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>A closed shell defining the exterior boundary of the solid. The shell normal shall point away from the interior of the solid.</Documentation>
+			<DiagramLine>
+				<DocPoint X="10398.05" Y="314.5134" />
+				<DocPoint X="10149.7666" Y="314.5134" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="10391.8362393" Y="309.4565452" Width="69" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

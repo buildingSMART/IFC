@@ -1,1 +1,0 @@
-Material from which the damping element of the vibration isolator is constructed.

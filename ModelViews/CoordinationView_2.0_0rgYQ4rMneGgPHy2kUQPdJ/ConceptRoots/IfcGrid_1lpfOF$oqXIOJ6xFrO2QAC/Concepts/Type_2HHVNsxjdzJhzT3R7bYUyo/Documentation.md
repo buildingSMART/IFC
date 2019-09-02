@@ -1,1 +1,0 @@
-Specific to IfcGrid: There shall be no assignement of a type to IfcGrid.

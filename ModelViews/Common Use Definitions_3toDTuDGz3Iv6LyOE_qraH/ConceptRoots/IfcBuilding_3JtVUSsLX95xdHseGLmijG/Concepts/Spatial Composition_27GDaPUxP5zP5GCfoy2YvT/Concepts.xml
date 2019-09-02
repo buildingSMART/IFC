@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Spatial Composition" UniqueId="8740d919-7bb6-45f5-9150-329cbc0a2e5d">
+	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+	<Items>
+		<DocTemplateItem UniqueId="ff632d2a-0b96-4255-bcb8-667a41f5fd38" RuleParameters="Spatial Composite=IfcProject;" Order="0">
+			<Documentation>Direct assignment to project, if the building is the outermost spatial container, and no site information is provided for building projects</Documentation>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="fd65acbb-1221-4bd4-be63-64665b2236b0" RuleParameters="Spatial Composite=IfcSite;" Order="0">
+			<Documentation>Assignment to site, if the building is the spatial container for the building project with site information</Documentation>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="e10c4325-a168-41d5-91dc-ef307f1e2253" RuleParameters="Spatial Composite=IfcBuilding;" Order="0">
+			<Documentation>Assignment to another building as spatial container, e.g. if this building represents a building section.</Documentation>
+		</DocTemplateItem>
+	</Items>
+</DocTemplateUsage>
+

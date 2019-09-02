@@ -1,1 +1,0 @@
-Category of space usage or utilization of the area. It is defined according to the presiding national building code.

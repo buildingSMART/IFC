@@ -1,0 +1,1 @@
+_IfcProcedure_ defines the anticipated or actual occurrence of any procedure; common information about procedure types is handled by _IfcProcedureType_.

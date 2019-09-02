@@ -1,1 +1,0 @@
-Indicates whether a means of being to visually ascertain whether the contacts are open or closed is fitted (= TRUE) or not (= FALSE)

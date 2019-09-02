@@ -1,1 +1,1 @@
-Thickness of the material from which the pipe bend is constructed
+Thickness of the material from which the pipe bend is constructed.

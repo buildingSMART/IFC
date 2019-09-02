@@ -1,1 +1,0 @@
-The gas concentration value to be sensed.

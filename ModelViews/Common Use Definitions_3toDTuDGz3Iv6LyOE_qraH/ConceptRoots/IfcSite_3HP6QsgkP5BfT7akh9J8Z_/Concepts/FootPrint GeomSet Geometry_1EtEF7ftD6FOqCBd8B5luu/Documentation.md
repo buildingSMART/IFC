@@ -1,0 +1,1 @@
+The foot print representation of _IfcSite_ is given by either a single 2D curve (such as _IfcPolyline_ or _IfcCompositeCurve_), or by a list of 2D curves (in case of inner boundaries).

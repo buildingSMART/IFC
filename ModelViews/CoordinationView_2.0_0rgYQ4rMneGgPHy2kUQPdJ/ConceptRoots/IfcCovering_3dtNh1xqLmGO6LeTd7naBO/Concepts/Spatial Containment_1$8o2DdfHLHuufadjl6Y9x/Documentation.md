@@ -1,1 +1,0 @@
-Specific to IfcCovering: The spatial containment shall be within IfcSite, IfcBuilding, or IfcBuildingStorey. The IfcCovering may also be contained in IfcSpace.

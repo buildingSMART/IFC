@@ -1,0 +1,1 @@
+An _IfcWorkSchedule_ controls a set of tasks and resources defined through _IfcRelAssignsToControl_. Additionally, through the _IfcWorkControl_ abstract supertype, the actors creating the schedule can be specified and schedule time information such as start time, finish time, and total float of the schedule can also be specified.

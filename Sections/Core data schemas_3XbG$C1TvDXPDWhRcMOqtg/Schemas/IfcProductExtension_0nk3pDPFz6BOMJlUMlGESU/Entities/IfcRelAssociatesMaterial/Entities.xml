@@ -1,23 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelAssociatesMaterial" UniqueId="68083c6e-1181-46f4-84da-7cd237846083" DiagramNumber="6" BaseDefinition="IfcRelAssociates" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelAssociatesMaterial" UniqueId="68083c6e-1181-46f4-84da-7cd237846083" DiagramNumber="10" BaseDefinition="IfcRelAssociates" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Ordnet Material zu - Relation" Locale="de" />
+		<DocLocalization Name="Association de matériau" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="4909.9835" Y="4009.0184" Width="494.96667" Height="100" />
 	<Attributes>
 		<DocAttribute Name="RelatingMaterial" UniqueId="463ce87e-d144-4166-8fe4-c3c46fd0dd1d" DefinedType="IfcMaterialSelect" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>Material definition (either a single material, a list of materials, or a set of material layers) assigned to the elements.</Documentation>
+			<Documentation>Material definition assigned to the elements or element types.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5157.4669" Y="4109.0184" />
+				<DocPoint X="5157.4669" Y="4298.528" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5056.12424" Y="4118.4398667" Width="185" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR21" UniqueId="0X31mISTP7guMVs4LkYoir">
+		<DocWhereRule Name="NoVoidElement" UniqueId="013badfa-b69c-467d-913e-ca2766d939ac">
 			<Documentation>The material information must not be associated to a substraction feature (such as an opening) or to a virtual element.</Documentation>
 			<Expression>SIZEOF(QUERY(temp &lt;* SELF\IfcRelAssociates.RelatedObjects | 
-(&apos;IFCPRODUCTEXTENSION.IFCFEATUREELEMENTSUBTRACTION&apos; IN TYPEOF(temp))
-  OR (&apos;IFCPRODUCTEXTENSION.IFCVIRTUALELEMENT&apos; IN TYPEOF(temp))
+  (&apos;IFCPRODUCTEXTENSION.IFCFEATUREELEMENTSUBTRACTION&apos; IN TYPEOF(temp)) OR 
+  (&apos;IFCPRODUCTEXTENSION.IFCVIRTUALELEMENT&apos; IN TYPEOF(temp)) 
 )) = 0</Expression>
 		</DocWhereRule>
-		<DocWhereRule Name="WR22" UniqueId="0vQjxdpff54fL2jdTAE3SX">
-			<Documentation>The material information, using _IfcMaterialSelect_ should be associated to a product occurrence or an product type.</Documentation>
-			<Expression>SIZEOF(QUERY(temp &lt;* SELF\IfcRelAssociates.RelatedObjects | 
-(NOT(&apos;IFCKERNEL.IFCPRODUCT&apos; IN TYPEOF(temp)) 
- AND NOT(&apos;IFCKERNEL.IFCTYPEPRODUCT&apos; IN TYPEOF(temp)))
+		<DocWhereRule Name="AllowedElements" UniqueId="397c05ff-baa1-4fcd-b1ea-de28aba00e32">
+			<Documentation>The material information, using _IfcMaterialSelect_ should be associated to an element occurrence (including structural members) or an element type (including the door and window styles). Also port can have assigned materials, here indicating the fluid flowing from the port.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* SELF\IfcRelAssociates.RelatedObjects | (
+  SIZEOF(TYPEOF(temp) * [   
+    &apos;IFCPRODUCTEXTENSION.IFCELEMENT&apos;, 
+    &apos;IFCPRODUCTEXTENSION.IFCELEMENTTYPE&apos;,
+    &apos;IFCSHAREDBLDGELEMENTS.IFCWINDOWSTYLE&apos;,
+    &apos;IFCSHAREDBLDGELEMENTS.IFCDOORSTYLE&apos;,
+    &apos;IFCSTRUCTURALANALYSISDOMAIN.IFCSTRUCTURALMEMBER&apos;,
+    &apos;IFCPRODUCTEXTENSION.IFCPORT&apos;]) = 0) 
 )) = 0</Expression>
 		</DocWhereRule>
 	</WhereRules>

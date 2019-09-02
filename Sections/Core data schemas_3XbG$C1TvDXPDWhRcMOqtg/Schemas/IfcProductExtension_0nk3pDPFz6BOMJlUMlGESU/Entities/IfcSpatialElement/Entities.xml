@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSpatialElement" Name="IfcSpatialElement" UniqueId="a77e2e44-45fd-486d-8869-116757040301" DiagramNumber="5" BaseDefinition="IfcProduct" EntityFlags="205">
+	<Localization>
+		<DocLocalization Name="Räumliches Element" Locale="de" />
+		<DocLocalization Name="Element spatial" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="6628.4375" Y="110.60937" Width="413.33333" Height="423.33333" />
+	<Subtypes>
+		<DocSubtype UniqueId="0ed853b4-90ea-4543-8134-fc97d0cb8032" DefinedType="IfcSpatialZone" />
+		<DocSubtype UniqueId="3c4af36b-6e02-48aa-9641-68a1f1ee9b01" DefinedType="IfcSpatialStructureElement" />
+		<DocSubtype UniqueId="03e6aa67-a633-48b1-b92e-52354eada0e2" DefinedType="IfcExternalSpatialStructureElement" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="LongName" UniqueId="2bcb01eb-ff5e-4e42-a804-13d6364682a1" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Long name for a spatial structure element, used for informal purposes. It should be used, if available, in conjunction with the inherited _Name_ attribute.
+&gt; NOTE&amp;nbsp; In many scenarios the _Name_ attribute refers to the short name or number of a spacial element, and the _LongName_ refers to the full descriptive name.</Documentation>
+			<DiagramLine>
+				<DocPoint X="7041.7708" Y="168.80757" />
+				<DocPoint X="7467.4982" Y="168.80757" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="7041.7708" Y="152.140903" Width="129" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="ContainsElements" UniqueId="ba25c1df-d29f-4d55-8f38-2390bf48ba41" DefinedType="IfcRelContainedInSpatialStructure" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingStructure">
+			<Documentation>Set of spatial containment relationships, that holds those elements, which are contained within this element of the project spatial structure.
+&gt; NOTE&amp;nbsp; The spatial containment relationship, established by _IfcRelContainedInSpatialStructure_, is required to be an hierarchical relationship, where each element can only be assigned to 0 or 1 spatial structure element.</Documentation>
+			<DiagramLine>
+				<DocPoint X="6845.3512" Y="533.9427" />
+				<DocPoint X="6845.3512" Y="705.76263" />
+				<DocPoint X="7472.93155" Y="705.76263" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="6852.8943575" Y="731.852663" Width="587" Height="70" />
+		</DocAttribute>
+		<DocAttribute Name="ServicedBySystems" UniqueId="15e959b7-d280-49c7-84da-b6470edf05ac" DefinedType="IfcRelServicesBuildings" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatedBuildings">
+			<Documentation>Set of relationships to systems, that provides a certain service to the spatial element for which it is defined. The relationship is handled by the objectified relationship _IfcRelServicesBuildings_.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; The inverse attribute has been promoted to the new supertype _IfcSpatialElement_ with upward compatibility for file based exchange.</Documentation>
+			<DiagramLine>
+				<DocPoint X="7041.7709" Y="491.85245" />
+				<DocPoint X="7656.53754" Y="491.85245" />
+				<DocPoint X="7656.53754" Y="540.60937" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="7011.7709" Y="520.519116" Width="463" Height="70" />
+		</DocAttribute>
+		<DocAttribute Name="ReferencesElements" UniqueId="b2b6b73c-8240-478f-94ac-454a8fb0cbd7" DefinedType="IfcRelReferencedInSpatialStructure" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingStructure">
+			<Documentation>Set of spatial reference relationships, that holds those elements, which are referenced, but not contained, within this element of the project spatial structure.
+{ .change-ifc2x4}
+&gt; NOTE&amp;nbsp; The spatial reference relationship, established by _IfcRelReferencedInSpatialStructure_, is not required to be an hierarchical relationship, i.e. each element can be assigned to 0, 1 or many spatial structure elements.
+
+&gt; EXAMPLE&amp;nbsp; A curtain wall maybe contained in the ground floor, but maybe referenced in all floors, it reaches.
+
+{ .change-ifc2x3}
+&gt; IFC2x3 CHANGE&amp;nbsp; The inverse attribute has been added with upward compatibility for file based exchange.
+
+{ .change-ifc2x4}
+&gt; Ø\X</Documentation>
+			<DiagramLine>
+				<DocPoint X="7041.7709" Y="294.56924" />
+				<DocPoint X="7722.2542" Y="294.56924" />
+				<DocPoint X="7722.2542" Y="350.60937" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="7044.1125667" Y="322.902573" Width="602" Height="70" />
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

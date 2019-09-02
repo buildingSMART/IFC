@@ -1,0 +1,1 @@
+If the _IfcRamp_ has no components defined (empty set of _SELF\IfcProduct.IsDecomposedBy_) then the _IfcRamp_ 'Body' geometry may be represented by an own _IfcShapeRepresentation_.

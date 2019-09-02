@@ -1,1 +1,1 @@
-Total area of the site - masured according to local building codes.
+Total planned area for the site. Used for programming the site space.

@@ -1,8 +1,7 @@
-A measure of the torque or moment of a couple.
+_IfcTorqueMeasure_ is a measure of the torque or moment of a couple.
 
 Usually measured in N m.
 
 Type: REAL
 
-> <font size="-1" color="#0000FF">HISTORY New type in IFC Release 2x.
-</font>
+> HISTORY&nbsp; New type in IFC2x.

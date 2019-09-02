@@ -1,1 +1,0 @@
-The material used to construct the frame of the sprinkler.

@@ -1,0 +1,1 @@
+The documents of the _IfcWorkSchedule_ can be referenced by the _IfcRelAssociatesDocuments_ relationship.

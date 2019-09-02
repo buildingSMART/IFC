@@ -1,4 +1,5 @@
 A panel dry type extended surface filter is a dry-type air filter with random fiber mats or blankets in the forms of pockets, V-shaped or radial pleats, and include the following:
+
 CoarseFilter: Filter with a efficiency lower than 30% for atmosphere dust-spot.
 CoarseMetalScreen: Filter made of metal screen.
 CoarseCellFoams: Filter made of cell foams.

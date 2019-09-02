@@ -1,1 +1,0 @@
-Identifies the predefined types of sources through which a request can be made.

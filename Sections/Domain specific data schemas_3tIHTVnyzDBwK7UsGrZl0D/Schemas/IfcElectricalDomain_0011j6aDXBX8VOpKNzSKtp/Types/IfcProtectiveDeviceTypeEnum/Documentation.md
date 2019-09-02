@@ -1,63 +1,16 @@
-The _IfcProtectiveDeviceTypeEnum_ defines the range of different types of protective device available.
+The _IfcProtectiveDeviceTypeEnum_ specifically defines the range of different breaker unit types that can be used in conjunction with protective device. Types may also be used as a reference to a complete protective device in circumstances where tripping units are not separately identified (typically expected to be the case during earlier stages of design).
 
-> <font color="#0000FF" size="-1"> HISTORY: New type in IFC
-		  2x2</font>
-> 
+> HISTORY&nbsp; New type in IFC2x2. Modified definition and usage in IFC4.
 
+{ .spec-head}
+Enumerated Item Definitions:
 
-**Enumeration**
-
-<table border="1"> 
-		<tr> 
-		  <td><i>Value</i></td> 
-		  <td><i>Definition</i></td> 
-		  <td><i>Pset</i></td> 
-		</tr> 
-		<tr> 
-		  <td>FUSEDISCONNECTOR</td> 
-		  <td>A device that will electrically open the circuit after a period of
-			 prolonged, abnormal current flow.</td> 
-		  <td>YES</td> 
-		</tr> 
-		<tr> 
-		  <td>CIRCUITBREAKER</td> 
-		  <td>A mechanical switching device capable of making, carrying, and
-			 breaking currents under normal circuit conditions and also making, carrying for
-			 a specified time and breaking, current under specified abnormal circuit
-			 conditions such as those of short circuit.</td> 
-		  <td>YES</td> 
-		</tr> 
-		<tr> 
-		  <td>EARTHFAILUREDEVICE</td> 
-		  <td>An earth failure device acts to protect people and equipment from
-			 the effects of current leakage.</td> 
-		  <td>YES</td> 
-		</tr> 
-		<tr> 
-		  <td>RESIDUALCURRENTCIRCUITBREAKER</td> 
-		  <td>A device that opens, closes or isolates a circuit and has short
-			 circuit and overload protection.</td> 
-		  <td>YES</td> 
-		</tr> 
-		<tr> 
-		  <td>RESIDUALCURRENTSWITCH</td> 
-		  <td>A device that opens, closes or isolates a circuit and has no short
-			 circuit or overload protection.</td> 
-		  <td>YES</td> 
-		</tr> 
-		<tr> 
-		  <td>VARISTOR</td> 
-		  <td>A high voltage surge protection device.</td> 
-		  <td>YES</td> 
-		</tr> 
-		<tr> 
-		  <td>USERDEFINED</td> 
-		  <td></td> 
-		  <td></td> 
-		</tr> 
-		<tr> 
-		  <td>NOTDEFINED</td> 
-		  <td></td> 
-		  <td></td> 
-		</tr> 
-	 </table>
+* **FUSEDISCONNECTOR**: A device that will electrically open the circuit after a period of prolonged, abnormal current flow.
+* **CIRCUITBREAKER**: A mechanical switching device capable of making, carrying, and breaking currents under normal circuit conditions and also making, carrying for a specified time and breaking, current under specified abnormal circuit conditions such as those of short circuit.
+* **EARTHINGSWITCH**: A safety device used to open or close a circuit when there is no current. Used to isolate a part of a circuit, a machine, a part of an overhead line or an underground line so that maintenance can be safely conducted.
+* **EARTHLEAKAGECIRCUITBREAKER**: A device that opens, closes, or isolates a circuit and has short circuit protection but no overload protection. It attempts to break the circuit when there is a leakage of current from phase to earth, by measuring voltage on the earth conductor.
+* **RESIDUALCURRENTCIRCUITBREAKER**: A device that opens, closes, or isolates a circuit and has short circuit and overload protection. It attempts to break the circuit when there is a difference in current between any two phases. May also be referred to as 'Ground Fault Interupter (GFI)' or 'Ground Fault Circuit Interuptor (GFCI)'
+* **RESIDUALCURRENTSWITCH**: A device that opens, closes or isolates a circuit and has no short circuit or overload protection. May also be identified as a 'ground fault switch'.
+* **VARISTOR**: A high voltage surge protection device.
+* **USERDEFINED**: User-defined type.
+* **NOTDEFINED**: Undefined type.

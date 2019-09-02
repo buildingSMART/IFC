@@ -1,47 +1,70 @@
-**Definition from ISO/CD 10303-42:1992:** A sphere is a CSG primitive with a spherical shape defined by a centre and a radius.
-
-&nbsp;The inherited _Position_ attribute defines the _IfcAxis2Placement3D_ and provides:
+The _IfcSphere_ is a Construction Solid Geometry (CSG) 3D primitive. It is a solid where all points at the surface have the same distance from the center point. The inherited _Position_ attribute defines the _IfcAxisPlacement3D_ and provides:
 
 * _SELF\IfcCsgPrimitive3D.Position_: The location and orientation of the axis system for the primitive.&nbsp;
-* _SELF\IfcCsgPrimitive3D.Position.Location_: The center of the sphere..
-* _SELF\IfcCsgPrimitive3D.Position.Position[3]:_The z axis points at its positve direction towards the north pole, and by its negative directions towards the south pole.
+* _SELF\IfcCsgPrimitive3D.Position.Location_: The center of the sphere.
+* _SELF\IfcCsgPrimitive3D.Position.Position[3]:_ The z axis points at its positve direction towards the north pole, and by its negative directions towards the south pole.
 
-<table cellpadding="2" cellspacing="2" width="100%">
-  <tbody>
-    <tr>
-      <td valign="top" width="420"><a href="drawings/IfcSphere-Layout1.dwf"><img alt="sphere" src="figures/IfcSphere-Layout1.png" border="0" height="300" width="400"></a></td>
-      <td colspan="1" rowspan="2" valign="top"><img alt="sphere" src="figures/IfcSphere.jpg" height="400" width="400"></td>
-    </tr>
-    <tr>
-      <td valign="top" width="420">The sphere is
-positioned within its
-own placement coordinate system. The origin is the center of the
-sphere.&nbsp;</td>
-    </tr>
-    <tr>
-      <td colspan="2" rowspan="1" valign="top" width="420">When a texture is applied to a sphere, the
-texture covers the entire surface, wrapping counterclockwise from the
-back of the sphere (i.e., longitudinal arc intersecting the +Y axis)
-when viewed from the top of the sphere. The texture has a seam at the
-back where the X=0 plane intersects the sphere and Y values are
-positive. Texture Transform affects the texture coordinates of the
-Sphere
-      <blockquote><small>NOTE &nbsp;see the Extensible
-3D (<a href="http://www.web3d.org/x3d/specifications/ISO-IEC-19775-X3DAbstractSpecification/Part01/components/geometry3D.html#Sphere">X3D</a>)
-definition for textures, please note, that all extrusions in IFC are
-into the positve z axis, whereas in X3D there are into the positive y
-axis.</small></blockquote>
-      </td>
-    </tr>
-  </tbody>
+&nbsp;
+
+<table summary="illustration">
+<tr>
+<td><img src="../../../figures/IfcSphere-Layout1.png" border="0" height="300" width="400" alt="sphere"></td>
+<td><blockquote class="example">EXAMPLE&nbsp; Figure 1 illustrates geometric parameters of the sphere. The sphere is positioned within its own placement
+coordiante system relative to the object coordinate system. The origin is the center of the sphere.</blockquote>
+</td></tr>
+<tr>
+<td>
+<p class="figure">Figure 1 &mdash; Sphere geometry</p>
+</td>
+</tr>
 </table>
 
-> <font color="#0000ff" size="-1">NOTE&nbsp;
-Corresponding STEP entity: sphere, the position attribute, including
-the centre point,&nbsp; has been promoted to the immediate
-supertype <i>IfcCsgPrimitive3D</i>. Please refer to ISO/IS
-10303-42:1994, p. 175 for the final definition of the formal standard. </font>
-> 
-> <font color="#0000ff" size="-1">HISTORY&nbsp;
-New entity in IFC2x Edition 3.</font>
->
+{ .extDef}
+> NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
+> A sphere is a CSG primitive with a spherical shape defined by a centre and a radius.
+
+> NOTE&nbsp; Entity adapted from **sphere** defined in ISO 10303-42.
+
+> HISTORY&nbsp; New entity in IFC2x3.
+
+{ .use-head}
+Texture Use Definition
+
+Textures are aligned facing upright with origin at the back (+Y direction) revolving counter-clockwise. Textures are stretched or repeated to the extent of the circumference at the equator according to RepeatS and RepeatT.
+
+Figure 2 illustrates default texture mapping with a clamped texture (RepeatS=False and RepeatT=False). The image on the left shows the texture where the S axis points to the right and the T axis points up. The image on the right shows the texture applied to the geometry where the X axis points back to the right, the Y axis points back to the left, and the Z axis points up.
+
+<table summary="texture" class="gridtable">
+<tr>
+<td><img src="../../../figures/IfcSphere-Texture.png" alt="texture"></td>
+</tr>
+<tr>
+<td>
+<table summary="texture" width="512" class="gridtable">
+<tr valign="top">
+<th>Side</th>
+<th>Normal</th>
+<th>Origin&nbsp;X</th>
+<th>Origin&nbsp;Y</th>
+<th>Origin&nbsp;Z</th>
+<th>S&nbsp;Axis</th>
+<th>T&nbsp;Axis</th>
+</tr>
+<tr valign="top">
+<td>Side</td>
+<td>+Y</td>
+<td>0</td>
+<td>+Radius</td>
+<td>0</td>
+<td>(-X, then curving counter-clockwise)</td>
+<td>(+Z, then curving towards top)</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<p class="figure">Figure 2 &mdash; Sphere textures</p>
+</td>
+</tr>
+</table>

@@ -1,1 +1,0 @@
-Specific to IfcBuildingStorey: There shall be no geomtric representation assigned to IfcBuildingStorey

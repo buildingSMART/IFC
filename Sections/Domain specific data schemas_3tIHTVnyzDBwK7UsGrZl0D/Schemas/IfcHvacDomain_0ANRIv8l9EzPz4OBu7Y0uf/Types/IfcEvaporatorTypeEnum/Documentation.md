@@ -1,5 +1,9 @@
-Enumeration defining the typical types of evaporators. The _IfcEvaporatorTypeEnum_ contains the following:
+Enumeration defining the typical types of evaporators.
 
+{ .spec-head}
+Enumerated Item Definitions:
+
+* **DIRECTEXPANSION**: Direct-expansion evaporator.
 * **DIRECTEXPANSIONSHELLANDTUBE**: Direct-expansion evaporator where a refrigerant evaporates inside a series of baffles that channel the fluid throughout the shell side.
 * **DIRECTEXPANSIONTUBEINTUBE**: Direct-expansion evaporator where a refrigerant evaporates inside one or more pairs of coaxial tubes.
 * **DIRECTEXPANSIONBRAZEDPLATE**: Direct-expansion evaporator where a refrigerant evaporates inside plates brazed or welded together to make up an assembly of separate channels.
@@ -8,6 +12,4 @@ Enumeration defining the typical types of evaporators. The _IfcEvaporatorTypeEnu
 * **USERDEFINED**: User-defined evaporator type.
 * **NOTDEFINED**: Undefined evaporator type.
 
-> <font color="#0000ff" size="-1">
-    	HISTORY: New enumeration in IFC 2x2.<br>
-    	</font>
+> HISTORY&nbsp; New enumeration in IFC2x2.

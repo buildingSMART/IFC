@@ -1,15 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPointOnCurve" UniqueId="48ccc19b-d9f1-4207-af14-8d7c8eafab3b" DiagramNumber="3" BaseDefinition="IfcPoint" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Punkt auf einer Kurve" Locale="de" />
+		<DocLocalization Name="Point de courbe" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="4060.6667" Y="1571.8333" Width="273.33333" Height="128" />
 	<Attributes>
-		<DocAttribute Name="BasisCurve" UniqueId="23610d14-c492-4d05-b307-e083998c52f8" DefinedType="IfcCurve" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="BasisCurve" UniqueId="23610d14-c492-4d05-b307-e083998c52f8" DefinedType="IfcCurve" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>The curve to which point parameter relates.</Documentation>
+			<DiagramLine>
+				<DocPoint X="4334" Y="1595.8333" />
+				<DocPoint X="4545.33333" Y="1595.8333" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4330" Y="1586.4999667" Width="132" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="PointParameter" UniqueId="5ee320ad-16c4-44d7-a272-c4c6f7d2deb2" DefinedType="IfcParameterValue" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The parameter value of the point location.</Documentation>
+			<DiagramLine>
+				<DocPoint X="4334" Y="1673.1667" />
+				<DocPoint X="4622.3" Y="1673.1667" />
+				<DocPoint X="4622.3" Y="1721.500033" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4311.333333" Y="1666.5000333" Width="178" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Dim" UniqueId="46656360-14de-4bbe-ac9f-e3771d59a218" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The space dimensionality of this class, determined by the space dimensionality of the basis curve.</Documentation>
 			<Derived>BasisCurve.Dim</Derived>
+			<DiagramLine>
+				<DocPoint X="4296" Y="1571.8333" />
+				<DocPoint X="4296" Y="1475.866633" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4370.666667" Y="1574.4999667" Width="125" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

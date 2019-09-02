@@ -1,1 +1,0 @@
-Material from which the casing of the pump is constructed

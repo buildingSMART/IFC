@@ -1,1 +1,1 @@
-The number of logical connections that can be made on an electrical device.
+The number of live lines that is intemnded to be handled by the device.

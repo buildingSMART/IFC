@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPipeFitting" Name="IfcPipeFitting" UniqueId="51ec480e-81a5-4667-96a8-af2d91f8dc79" DiagramNumber="2" BaseDefinition="IfcFlowFitting" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Rohrverbinder" Locale="de" />
+		<DocLocalization Name="Raccord de tuyauterie" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="2787.7588" Y="403.45703" Width="343.80613" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="9d3d9238-0a4a-4e50-88d6-e1577dfd7964" DefinedType="IfcPipeFittingTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<DiagramLine>
+				<DocPoint X="2787.7588" Y="453.45703" />
+				<DocPoint X="2547.25439" Y="453.45703" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2785.6181964" Y="446.3422642" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="307e98c0-46f9-4ff2-8028-a7038707fae6">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcPipeFittingType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcPipeFittingTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcPipeFittingTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="b3577652-ec69-4f54-a641-d441a9c219ca">
+			<Documentation>Either there is no pipe fitting type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcPipeFittingType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCHVACDOMAIN.IFCPIPEFITTINGTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

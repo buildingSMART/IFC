@@ -1,9 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStairFlightType" UniqueId="7116fa64-a466-426e-84ce-c82bc9a1a8c4" DiagramNumber="2" BaseDefinition="IfcBuildingElementType" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStairFlightType" Name="IfcStairFlightType" UniqueId="7116fa64-a466-426e-84ce-c82bc9a1a8c4" DiagramNumber="3" BaseDefinition="IfcBuildingElementType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Treppenlauf - Typ" Locale="de" />
+		<DocLocalization Name="Volée d&apos;escalier type" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="3629.65" Y="1185.9083" Width="326.6" Height="100" />
 	<Attributes>
 		<DocAttribute Name="PredefinedType" UniqueId="98a534c4-1869-4ab9-bce9-09a9d58b35de" DefinedType="IfcStairFlightTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Identifies the predefined types of a stair flight element from which the type required may be set.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3956.25" Y="1235.9083" />
+				<DocPoint X="4184.6333" Y="1235.9083" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3953.5833333" Y="1227.9083" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="dc31ee46-6bec-4fd5-8d99-19a0f118a727">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcStairFlightTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcStairFlightTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

@@ -1,1 +1,1 @@
-Total number of the risers included in the stair
+Total number of the risers included in the stair.

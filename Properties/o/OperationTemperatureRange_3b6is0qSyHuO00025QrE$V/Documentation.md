@@ -1,1 +1,1 @@
-Allowable operation ambient air temperature range
+Allowable operation ambient air temperature range.

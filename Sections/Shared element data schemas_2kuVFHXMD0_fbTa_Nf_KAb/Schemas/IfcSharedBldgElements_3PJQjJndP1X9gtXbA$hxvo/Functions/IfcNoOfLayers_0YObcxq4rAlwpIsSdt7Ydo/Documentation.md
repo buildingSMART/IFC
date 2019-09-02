@@ -1,1 +1,0 @@
-The function IfcNoOfLayers returns the number of layer from the material description attached to an element.

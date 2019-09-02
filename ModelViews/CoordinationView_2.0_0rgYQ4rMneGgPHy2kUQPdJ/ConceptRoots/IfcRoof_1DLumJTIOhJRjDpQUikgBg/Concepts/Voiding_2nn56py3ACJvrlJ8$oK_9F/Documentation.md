@@ -1,1 +1,0 @@
-Specific to IfcRoof: An IfcRoof shall not have voids, only the parts in an IfcRoof container may have voids.

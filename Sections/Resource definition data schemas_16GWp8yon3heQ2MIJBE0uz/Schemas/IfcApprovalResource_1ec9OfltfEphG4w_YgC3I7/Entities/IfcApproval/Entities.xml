@@ -1,36 +1,139 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcApproval" UniqueId="76476d02-0061-4539-81cf-c606a2acbe13" DiagramNumber="1" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Genehmigung" Locale="de" />
+		<DocLocalization Name="Approbation" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="42.566595" Y="306.62714" Width="286.28446" Height="1034.7065" />
 	<Attributes>
+		<DocAttribute Name="Identifier" UniqueId="a1fa1c90-f7b0-4cc3-ac7c-310cb59dc8ea" DefinedType="IfcIdentifier" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>A computer interpretable identifier by which the approval is known.</Documentation>
+			<DiagramLine>
+				<DocPoint X="328.85106" Y="351.08624" />
+				<DocPoint X="972.32751" Y="351.08624" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="289.592456" Y="339.413853" Width="102" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="Name" UniqueId="97065098-5b7a-4f0a-9047-84618567b028" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>A human readable name given to an approval.</Documentation>
+			<DiagramLine>
+				<DocPoint X="328.85106" Y="508.15618" />
+				<DocPoint X="972.39641" Y="508.15618" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="287.584068" Y="502.8027341" Width="73" Height="35" />
+		</DocAttribute>
 		<DocAttribute Name="Description" UniqueId="acec49a4-4798-47ce-b95a-36d2041a421d" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>A general textual description of a design, work task, plan, etc. that is being approved for.</Documentation>
+			<DiagramLine>
+				<DocPoint X="328.85106" Y="731.78217" />
+				<DocPoint X="972.36741" Y="731.78217" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="321.8566317" Y="724.9115332" Width="130" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ApprovalDateTime" UniqueId="2moomcmzf0XxFDx3$pJW55" DefinedType="IfcDateTimeSelect" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>Date and time when the result of the approval process is produced.</Documentation>
+		<DocAttribute Name="TimeOfApproval" UniqueId="998d7843-2f2d-4e56-a224-6d334af4ac2e" DefinedType="IfcDateTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Date and time when the result of the approval process is produced.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; Attribute data type changed to _IfcDateTime_ using ISO 8601 representation, renamed from ApprovalDateTime and made OPTIONAL.</Documentation>
+			<DiagramLine>
+				<DocPoint X="185.70883" Y="306.62714" />
+				<DocPoint X="185.70883" Y="172.59906" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="295.75189" Y="318.523687" Width="184" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ApprovalStatus" UniqueId="3yQ3ouUdn4KR7D$BUj22cR" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Status" UniqueId="2ee053bf-3553-49ee-9fd8-f253b1eafb26" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The result or current status of the approval, e.g. Requested, Processed, Approved, Not Approved.</Documentation>
+			<DiagramLine>
+				<DocPoint X="328.85106" Y="652.16218" />
+				<DocPoint X="972.39641" Y="652.16218" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="289.187918" Y="647.6927622" Width="77" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ApprovalLevel" UniqueId="3Y_UzdsUv4XQCravV0T4fq" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Level" UniqueId="201d349a-9ee9-4d16-a6de-17dc2f6d4e9d" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Level of the approval e.g. Draft v.s. Completed design.</Documentation>
+			<DiagramLine>
+				<DocPoint X="328.85106" Y="578.97228" />
+				<DocPoint X="972.39641" Y="578.97228" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="286.256912" Y="570.5710303" Width="66" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ApprovalQualifier" UniqueId="3QXY4AIBP22BziIrNKfSKX" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Qualifier" UniqueId="bbe34628-1287-4cd0-96f2-310cf5177c72" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Textual description of special constraints or conditions for the approval.</Documentation>
+			<DiagramLine>
+				<DocPoint X="328.85106" Y="809.10972" />
+				<DocPoint X="972.36741" Y="809.10972" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="303.75463" Y="803.9167983" Width="98" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Name" UniqueId="97065098-5b7a-4f0a-9047-84618567b028" DefinedType="IfcLabel" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>A human readable name given to an approval.</Documentation>
+		<DocAttribute Name="RequestingApproval" UniqueId="4b0f76d0-86d3-4da8-aa4a-be82b503cabb" DefinedType="IfcActorSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The actor that is acting in the role specified at _IfcOrganization_ or individually at _IfcPerson_ and requesting an approval.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; New attribute for approval request replacing IfcApprovalActorRelationship (being deleted).</Documentation>
+			<DiagramLine>
+				<DocPoint X="328.85106" Y="892.38555" />
+				<DocPoint X="972.2795" Y="892.38555" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="369.894146" Y="887.0321042" Width="230" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Identifier" UniqueId="a1fa1c90-f7b0-4cc3-ac7c-310cb59dc8ea" DefinedType="IfcIdentifier" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>A computer interpretable identifier by which the approval is known.</Documentation>
+		<DocAttribute Name="GivingApproval" UniqueId="56400bef-4db8-4c65-ad92-c61fc8ee4850" DefinedType="IfcActorSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The actor that is acting in the role specified at _IfcOrganization_ or individually at _IfcPerson_ and giving an approval.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; New attribute for approval provision replacing IfcApprovalActorRelationship (being deleted).</Documentation>
+			<DiagramLine>
+				<DocPoint X="328.85106" Y="981.60965" />
+				<DocPoint X="972.2795" Y="981.60965" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="337.77347" Y="976.2562042" Width="173" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Actors" UniqueId="1Oh6REjtX1$xjbNBhiru0m" DefinedType="IfcApprovalActorRelationship" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="Approval">
-			<Documentation>The set of relationships by which the actors acting in specified roles on this approval are known.</Documentation>
+		<DocAttribute Name="HasExternalReferences" UniqueId="8cd1b95c-03b1-4fbd-bb5e-86213dc0d6d2" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="32" AggregationType="3" AggregationFlag="0" Inverse="RelatedResourceObjects">
+			<Documentation>Reference to external references, e.g. library, classification, or document information, that are associated to the Approval.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; New inverse attribute.</Documentation>
+			<DiagramLine>
+				<DocPoint X="115.19655" Y="1341.3337" />
+				<DocPoint X="115.19655" Y="2047.24855" />
+				<DocPoint X="972.23124" Y="2047.24855" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="88.187653" Y="2082.415956" Width="411" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="IsRelatedWith" UniqueId="cf2deea0-6ee1-4f94-a3f9-d149fa54d64e" DefinedType="IfcApprovalRelationship" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatedApproval">
+		<DocAttribute Name="ApprovedObjects" UniqueId="1803bd98-5411-4c09-9660-d1c5beb99533" DefinedType="IfcRelAssociatesApproval" AttributeFlags="32" AggregationType="3" AggregationFlag="0" Inverse="RelatingApproval">
+			<Documentation>Reference to the _IfcRelAssociatesApproval_ instances associating this approval to objects (subtypes of _IfcRoot_</Documentation>
+			<DiagramLine>
+				<DocPoint X="55.739584" Y="1341.3337" />
+				<DocPoint X="55.739584" Y="2226.51068" />
+				<DocPoint X="972.282764" Y="2226.51068" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="31.691942" Y="2256.809918" Width="339" Height="70" />
+		</DocAttribute>
+		<DocAttribute Name="ApprovedResources" UniqueId="7c6e96b1-7bc8-42fb-b828-eac53994c387" DefinedType="IfcResourceApprovalRelationship" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="RelatingApproval">
+			<Documentation>The set of relationships by which resource objects that are are approved by this approval are known.</Documentation>
+			<DiagramLine>
+				<DocPoint X="196.32701" Y="1670.7469" />
+				<DocPoint X="196.32701" Y="1341.33367" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="401.3687" Y="1632.673969" Width="374" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="IsRelatedWith" UniqueId="cf2deea0-6ee1-4f94-a3f9-d149fa54d64e" DefinedType="IfcApprovalRelationship" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="RelatedApprovals">
 			<Documentation>The set of relationships by which this approval is related to others.</Documentation>
+			<DiagramLine>
+				<DocPoint X="972.38991" Y="1193.3349" />
+				<DocPoint X="328.85106" Y="1193.3349" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="951.971095" Y="1237.601823" Width="304" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Relates" UniqueId="65d560d3-2883-4606-a81c-802b6c633550" DefinedType="IfcApprovalRelationship" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatingApproval">
+		<DocAttribute Name="Relates" UniqueId="65d560d3-2883-4606-a81c-802b6c633550" DefinedType="IfcApprovalRelationship" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="RelatingApproval">
 			<Documentation>The set of relationships by which other approvals are related to this one.</Documentation>
+			<DiagramLine>
+				<DocPoint X="972.38991" Y="1076.7285" />
+				<DocPoint X="328.85106" Y="1076.7285" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="939.285021" Y="1116.349748" Width="234" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="HasIdentifierOrName" UniqueId="aff7e54e-b326-48e2-80ea-4869c9df5605">
+			<Documentation>Either Identifier or Name (or both) by which the approval is known shall be given.</Documentation>
+			<Expression>EXISTS (Identifier) OR EXISTS (Name)</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

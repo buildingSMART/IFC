@@ -1,1 +1,0 @@
-Specific to IfcElementAssembly: It shall not be provided, if the IfcElementAssembly is part of an aggregation.

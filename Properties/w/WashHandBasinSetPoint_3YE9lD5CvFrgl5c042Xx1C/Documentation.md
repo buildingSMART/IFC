@@ -1,1 +1,0 @@
-The CO2 value to be sensed.

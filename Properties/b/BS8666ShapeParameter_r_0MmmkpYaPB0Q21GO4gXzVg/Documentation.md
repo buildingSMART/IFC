@@ -1,1 +1,0 @@
-Bar shape parameter r. Used for bending radius.

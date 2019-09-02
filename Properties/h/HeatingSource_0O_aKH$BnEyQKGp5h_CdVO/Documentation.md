@@ -1,1 +1,0 @@
-Enumeration defining the heating source used by the space heater.

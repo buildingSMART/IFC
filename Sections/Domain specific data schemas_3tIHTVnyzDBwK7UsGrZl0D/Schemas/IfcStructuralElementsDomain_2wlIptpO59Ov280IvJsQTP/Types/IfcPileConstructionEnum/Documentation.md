@@ -1,10 +1,9 @@
 Enumeration defining the construction type for piles. The type is mainly based on how the piles are used and manufactured. Some material information is mixed in because this affects the way the piles are used.
 
-> <font color="#0000FF" size="-1"> HISTORY New type in IFC Release 2x2
-		  </font>
->
+> HISTORY&nbsp; New type in IFC2x2.
 
-ENUMERATION
+{ .spec-head}
+Enumerated Item Definitions:
 
 * **CAST_IN_PLACE** Piles and piers that are excavated and poured in place. 
 * **COMPOSITE** Piles that are a mix of components, such as a steel outer casing which is driven into the ground with a cast-in-place concrete core. 

@@ -1,1 +1,1 @@
-Color of the object
+Color of the object.

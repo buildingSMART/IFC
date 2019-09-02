@@ -1,8 +1,7 @@
-A measure of the absorbed radioactivity dose.
+_IfcAbsorbedDoseMeasure_ is a measure of the absorbed radioactivity dose.
 
 Usually measured in Gray (Gy, J/kg).
 
 Type: REAL
 
-> <font size="-1" color="#0000FF">HISTORY New type in IFC Release 2x.
-</font>
+> HISTORY&nbsp; New type in IFC2x.

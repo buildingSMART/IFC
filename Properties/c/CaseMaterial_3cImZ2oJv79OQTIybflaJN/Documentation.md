@@ -1,1 +1,0 @@
-Material from which the casing surrounding the distribution point is constructed.

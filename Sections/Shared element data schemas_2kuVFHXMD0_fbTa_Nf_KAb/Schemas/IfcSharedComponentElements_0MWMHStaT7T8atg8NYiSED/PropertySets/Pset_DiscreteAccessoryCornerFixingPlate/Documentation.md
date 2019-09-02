@@ -1,1 +1,1 @@
-Properties specific to corner fixing plates.
+Definition from IAI: Properties specific to corner fixing plates.

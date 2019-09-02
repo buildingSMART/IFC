@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcChimneyType" Name="IfcChimneyType" UniqueId="f041588e-11cf-4855-a436-a562724c8408" DiagramNumber="3" BaseDefinition="IfcBuildingElementType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Schornstein - Typ" Locale="de" />
+		<DocLocalization Name="Type de cheminée" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="3629.58" Y="1819.44" Width="326.6" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="47cbdf81-ca52-4762-8fab-f869e72a8172" DefinedType="IfcChimneyTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Identifies the predefined types of a chimney element from which the type required may be set.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3956.18" Y="1869.44" />
+				<DocPoint X="4184.6066" Y="1869.44" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3953.9199917" Y="1861.4649997" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="b84b0448-8894-4e72-9042-7063e04153e1">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcChimneyTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcChimneyTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

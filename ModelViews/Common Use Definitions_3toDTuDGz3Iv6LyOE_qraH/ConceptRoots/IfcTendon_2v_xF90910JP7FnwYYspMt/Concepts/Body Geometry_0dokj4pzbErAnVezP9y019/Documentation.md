@@ -1,0 +1,1 @@
+See supertype _IfcElementComponent_. This method of representation allows for several tendons represented by a single instance of _IfcTendon_. The representation map should contain one _IfcSweptDiskSolid_.

@@ -1,14 +1,18 @@
-**Definition
-from IAI**: The _IfcIShapeProfileDef_ defines a section profile that provides the defining parameters of a symmetrical 'I' section to be used by the swept surface geometry or the swept area solid. The I-shape profile has values for its overall depth, width and its web and flange thickness. Additionally a fillet radius may be given. It represents a I-section that is symmetrical about its major and minor axes; and that has both top and bottom flanges being equal and centred on the web.
+_IfcIShapeProfileDef_ defines a section profile that provides the defining parameters of an 'I' or 'H' section. The I-shape profile has values for its overall depth, width and its web and flange thicknesses. Additionally a fillet radius, flange edge radius, and flange slope may be given. This profile definition represents an I-section which is symmetrical about its major and minor axes; top and bottom flanges are equal and centred on the web.
 
-> <font color="#0000ff" size="-1">HISTORY: New entity
-in IFC Release 2x.</font>
+> HISTORY&nbsp; New entity in IFC2x.
 
-**Illustration**:
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; Type of _FilletRadius_ relaxed to allow for zero radius. Attributes _FlangeEdgeRadius_ and _FlangeSlope_ added.
+
+Figure 1 illustrates parameters of the I-shape profile definition.
+
+<table>
+<tr><td>
 <table border="1" cellpadding="2" cellspacing="2" frame="border" width="100%">
   <tbody>
     <tr>
-      <td width="420"><a href="drawings/IfcIShapeProfileDef-Layout1.dwf"><img src="figures/IfcIShapeProfileDef-Layout1.gif" alt="I-shape profile" border="0" height="300" width="400"></a></td>
+      <td width="420"><img src="../../../figures/IfcIShapeProfileDef-Layout1.gif" alt="I-shape profile" border="0" height="300" width="400"></td>
       <td align="left" valign="top" width="100%">
       <p><u>Position</u>
       <br>
@@ -32,7 +36,7 @@ below.</p>
       </td>
     </tr>
     <tr>
-      <td width="420"><a href="drawings/IfcIShapeProfileDef-Layout2.dwf"><img src="figures/IfcIShapeProfileDef-Layout2.gif" alt="I shape with fillet" border="0" height="300" width="400"></a><br>
+      <td width="420"><img src="../../../figures/IfcIShapeProfileDef-Layout2.gif" alt="I shape with fillet" border="0" height="300" width="400"><br>
       <font size="-1">Note:
 The black coordinate axes show the
 underlying coordinate system of the swept surface or swept area solid</font></td>
@@ -40,9 +44,9 @@ underlying coordinate system of the swept surface or swept area solid</font></td
       <p><u>Position</u>
       <br>
 The profile is inserted into the underlying
-coordinate system of the swept area solid by using the <i>Position</i>
+coordinate system of the swept area solid by using the <em>Position</em>
 attribute. In this example (cardinal point of lower left corner) the
-attribute values of <i>IfcAxis2Placement2D</i>
+attribute values of <em>IfcAxis2Placement2D</em>
 are:</p>
       <blockquote>
         <p> <tt>Location
@@ -51,12 +55,13 @@ OverallWidth&gt;,&lt;1/2 OverallDepth&gt;)<br>
 RefDirection = NIL (defaults to 1.,0.)</tt></p>
       </blockquote>
       <p><u>Parameter</u><br>
-If the <i>FilletRadius</i>
+If the <em>FilletRadius</em>
 is given, it is equally applied to all four corners created by the web
 and flanges.</p>
       </td>
     </tr>
   </tbody>
 </table>
-
-Table: Parameter of the I-shape profile definition
+</td></tr>
+<tr><td><p class="figure">Figure 1 &mdash; I-shape profile</p></td></tr>
+</table>

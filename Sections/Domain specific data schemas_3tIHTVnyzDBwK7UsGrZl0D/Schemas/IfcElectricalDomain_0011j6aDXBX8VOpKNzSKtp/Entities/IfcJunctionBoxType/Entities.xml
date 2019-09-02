@@ -1,9 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcJunctionBoxType" UniqueId="5b0765d7-22a3-4ba4-a259-32523ca4082c" DiagramNumber="2" BaseDefinition="IfcFlowFittingType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Verbindungsdose - Typ" Locale="de" />
+		<DocLocalization Name="Type de boite de jonction" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1697.4933" Y="1551.6013" Width="679.9" Height="103.3" />
 	<Attributes>
 		<DocAttribute Name="PredefinedType" UniqueId="3bba9337-756a-46d1-a706-78d461b878ae" DefinedType="IfcJunctionBoxTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Identifies the predefined types of junction boxes from which the type required may be set.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1700.9538" Y="1654.9013" />
+				<DocPoint X="1700.9538" Y="1703.188879" />
+				<DocPoint X="2118.63334" Y="1703.188879" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1614.338816" Y="1697.152146" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="fda9bf67-24b9-4276-b28e-0e438ed99241">
+			<Expression>(PredefinedType &lt;&gt; IfcJunctionBoxTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcJunctionBoxTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

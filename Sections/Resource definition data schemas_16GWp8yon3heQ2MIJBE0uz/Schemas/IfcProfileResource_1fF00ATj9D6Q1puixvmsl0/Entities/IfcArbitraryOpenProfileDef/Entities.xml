@@ -1,17 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcArbitraryOpenProfileDef" UniqueId="65ea2e1f-aa07-4338-9f78-43c237e707f8" DiagramNumber="6" BaseDefinition="IfcProfileDef" EntityFlags="109">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcArbitraryOpenProfileDef" UniqueId="65ea2e1f-aa07-4338-9f78-43c237e707f8" DiagramNumber="5" BaseDefinition="IfcProfileDef" EntityFlags="109">
+	<Localization>
+		<DocLocalization Name="Beliebiges offenes Profil" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="306.95" Y="2542.3" Width="544.7" Height="100" />
 	<Subtypes>
 		<DocSubtype UniqueId="ab3ad4b1-a8fa-446d-995f-2b640a76adcc" DefinedType="IfcCenterLineProfileDef" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Curve" UniqueId="a0dddda9-00b8-467a-9d3d-53cbc87fef54" DefinedType="IfcBoundedCurve" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Curve" UniqueId="a0dddda9-00b8-467a-9d3d-53cbc87fef54" DefinedType="IfcBoundedCurve" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>Open bounded curve defining the profile.</Documentation>
+			<DiagramLine>
+				<DocPoint X="851.65" Y="2592.3" />
+				<DocPoint X="1117.03329" Y="2592.3" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="816.05" Y="2588.7" Width="73" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
 		<DocWhereRule Name="WR11" UniqueId="aa795542-8a46-4e0b-bc26-0415f74b2d5e">
 			<Documentation>The profile type is a .CURVE., an open profile can only be used to define a swept surface.
-&gt; &lt;small&gt;Note6nbsp; This does not apply to the subtype &lt;i&gt;IfcCentreLineProfileDef&lt;/i&gt;.&lt;/small&gt;</Documentation>
+&gt; Note&amp;nbsp; This does not apply to the subtype _IfcCentreLineProfileDef_.</Documentation>
 			<Expression>(&apos;IFCPROFILERESOURCE.IFCCENTERLINEPROFILEDEF&apos; IN TYPEOF(SELF)) OR 
  (SELF\IfcProfileDef.ProfileType = IfcProfileTypeEnum.CURVE)</Expression>
 		</DocWhereRule>

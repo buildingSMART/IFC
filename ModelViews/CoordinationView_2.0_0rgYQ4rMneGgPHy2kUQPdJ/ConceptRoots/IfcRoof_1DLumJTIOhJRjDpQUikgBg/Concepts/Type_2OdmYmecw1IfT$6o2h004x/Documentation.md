@@ -1,1 +1,0 @@
-Specific to IfcRoof: There is no type information for IfcRoof (an IfcRoofType is not part of the IFC2x3 specification).

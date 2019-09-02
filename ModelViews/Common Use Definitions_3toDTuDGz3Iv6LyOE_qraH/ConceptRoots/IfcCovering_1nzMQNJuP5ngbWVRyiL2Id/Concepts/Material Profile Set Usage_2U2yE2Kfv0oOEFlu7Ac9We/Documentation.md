@@ -1,0 +1,1 @@
+Coverings for edges (MOLDING, SKIRTINGBOARD) may have materials defined according to profiles.

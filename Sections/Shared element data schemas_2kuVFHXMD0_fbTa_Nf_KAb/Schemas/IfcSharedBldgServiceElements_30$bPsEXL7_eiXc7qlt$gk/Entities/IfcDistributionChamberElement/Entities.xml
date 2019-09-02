@@ -1,3 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDistributionChamberElement" Name="IfcDistributionChamberElement" UniqueId="0ed9ba24-3b80-425e-989f-171cef0fce7a" DiagramNumber="1" BaseDefinition="IfcDistributionFlowElement" EntityFlags="101" />
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDistributionChamberElement" Name="IfcDistributionChamberElement" UniqueId="0ed9ba24-3b80-425e-989f-171cef0fce7a" DiagramNumber="1" BaseDefinition="IfcDistributionFlowElement" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Schacht / Graben / Revisionsschacht" Locale="de" />
+		<DocLocalization Name="Elément de chambre de distribution" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="180.07956" Y="1062.9358" Width="518.43546" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="a495b02a-3151-4111-88a8-f27d4e85c9bf" DefinedType="IfcDistributionChamberElementTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<DiagramLine>
+				<DocPoint X="698.51502" Y="1112.9358" />
+				<DocPoint X="939.97427" Y="1112.9358" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="705.2590714" Y="1094.480862" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="ea793543-2249-4739-bfe3-611f800adbe2">
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcDistributionChamberElementTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcDistributionChamberElementTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="46b7d97c-3fb9-45b2-806f-84ea418e81d3">
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+(&apos;IFCSHAREDBLDGSERVICEELEMENTS.IFCDISTRIBUTIONCHAMBERELEMENTTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
 

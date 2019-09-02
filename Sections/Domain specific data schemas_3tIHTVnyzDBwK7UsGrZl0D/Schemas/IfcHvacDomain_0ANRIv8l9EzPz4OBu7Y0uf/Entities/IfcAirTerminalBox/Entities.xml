@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcAirTerminalBox" Name="IfcAirTerminalBox" UniqueId="5c94650b-db68-4716-a299-3069c0a7a43b" DiagramNumber="4" BaseDefinition="IfcFlowController" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Volumenstromregler" Locale="de" />
+		<DocLocalization Name="Diffuseur d&apos;air" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="6016.212" Y="411.6905" Width="330.30065" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="5a851e83-1420-4838-b101-36c0f6996d1d" DefinedType="IfcAirTerminalBoxTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<DiagramLine>
+				<DocPoint X="6016.212" Y="461.6905" />
+				<DocPoint X="5764.81784" Y="461.6905" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="6016.212" Y="461.6905" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="6588dcc9-ed7e-41f0-8c09-da5c8b62eb19">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcAirTerminalBoxType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcAirTerminalBoxTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcAirTerminalBoxTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="320d51f6-d272-4814-a44c-d7b0b7f1360c">
+			<Documentation>Either there is no air terminal box type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcAirTerminalBoxType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCHVACDOMAIN.IFCAIRTERMINALBOXTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

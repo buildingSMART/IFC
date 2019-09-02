@@ -1,1 +1,0 @@
-Main fire use for the space which is assigned from the fire use classification table as given by the relevant national building code.

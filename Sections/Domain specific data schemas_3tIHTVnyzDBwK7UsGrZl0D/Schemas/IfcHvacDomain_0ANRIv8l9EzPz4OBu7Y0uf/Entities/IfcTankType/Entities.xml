@@ -1,12 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTankType" UniqueId="540199dc-befa-4477-9a3c-18a376ec1a11" DiagramNumber="4" BaseDefinition="IfcFlowStorageDeviceType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Tank - Typ" Locale="de" />
+		<DocLocalization Name="Type de réservoir" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="4842.254" Y="1509.3449" Width="362.55033" Height="100" />
 	<Attributes>
 		<DocAttribute Name="PredefinedType" UniqueId="5b6ea321-df4c-44d0-b5b1-4fb2fe31c4d5" DefinedType="IfcTankTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Defines the type of tank.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5204.8043" Y="1559.345" />
+				<DocPoint X="5458.91868" Y="1559.345" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5204.91636131" Y="1551.2919361" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="1J0KFQqFv2UPoQ$OzZ5tSV">
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="acaaabb4-bcea-47fd-8050-478f5e722ccc">
 			<Expression>(PredefinedType &lt;&gt; IfcTankTypeEnum.USERDEFINED) OR
 ((PredefinedType = IfcTankTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
 		</DocWhereRule>

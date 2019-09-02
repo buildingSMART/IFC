@@ -1,9 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcElectricApplianceType" UniqueId="d3f313a8-e9d6-4123-ae8c-91cb74d1eb3a" DiagramNumber="3" BaseDefinition="IfcFlowTerminalType" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcElectricApplianceType" UniqueId="d3f313a8-e9d6-4123-ae8c-91cb74d1eb3a" DiagramNumber="1" BaseDefinition="IfcFlowTerminalType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Elektrisches Gerät - Typ" Locale="de" />
+		<DocLocalization Name="Type d&apos;appareil électrique" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="85.2835" Y="918.40914" Width="679.83333" Height="100" />
 	<Attributes>
 		<DocAttribute Name="PredefinedType" UniqueId="7e22deff-65cd-48eb-8c95-7a08845da6e2" DefinedType="IfcElectricApplianceTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Identifies the predefined types of electrical appliance from which the type required may be set.</Documentation>
+			<DiagramLine>
+				<DocPoint X="86.533498" Y="1018.4091" />
+				<DocPoint X="86.533498" Y="1069.275733" />
+				<DocPoint X="500.516788" Y="1069.275733" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="-5.88311200000001" Y="1062.4924161" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="344a70e6-545f-413a-9ce9-d5d24ae9b1ec">
+			<Expression>(PredefinedType &lt;&gt; IfcElectricApplianceTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcElectricApplianceTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

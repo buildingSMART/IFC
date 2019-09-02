@@ -1,1 +1,0 @@
-Bar shape parameter b. Note: this parameter is also used for parameter b0 (shape codes C2 and C3)

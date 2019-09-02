@@ -1,1 +1,0 @@
-Measured electrical energy consumption properties.

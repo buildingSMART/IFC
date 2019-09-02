@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStructuralCurveReaction" Name="IfcStructuralCurveReaction" UniqueId="d85746e9-e456-40b1-9f23-87262b226375" DiagramNumber="4" BaseDefinition="IfcStructuralReaction" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="linienförmige Auflagerreaktion" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="5871.4141" Y="1620.6496" Width="302.02471" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="090260b8-a1fe-4aec-889e-d8fd90137b39" DefinedType="IfcStructuralCurveActivityTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Type of reaction according to its distribution of load values.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5936.4469" Y="1620.6496" />
+				<DocPoint X="5936.4469" Y="1525.100835" />
+				<DocPoint X="5844.539761" Y="1525.100835" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="6038.42282" Y="1639.184939" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="HasObjectType" UniqueId="ac713f6f-a30b-4b3a-8144-a3011432235c">
+			<Documentation>The attribute ObjectType shall be given if the predefined type is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcStructuralCurveActivityTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="SuitablePredefinedType" UniqueId="8bdaf406-2d50-408a-8824-ae9c0dc24a64">
+			<Documentation>The SINUS and PARABOLA distribution types are out of scope of structural curve reactions.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcStructuralCurveActivityTypeEnum.SINUS) AND (PredefinedType &lt;&gt; IfcStructuralCurveActivityTypeEnum.PARABOLA)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

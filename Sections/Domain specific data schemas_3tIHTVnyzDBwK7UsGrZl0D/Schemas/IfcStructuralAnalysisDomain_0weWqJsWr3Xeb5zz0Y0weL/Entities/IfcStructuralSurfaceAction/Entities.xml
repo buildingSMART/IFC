@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStructuralSurfaceAction" Name="IfcStructuralSurfaceAction" UniqueId="0f341f47-3c39-4147-931a-6c01a7e6d767" DiagramNumber="4" BaseDefinition="IfcStructuralAction" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="gleichmäßige / veränderliche Flächenlast" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="5056.6277" Y="2009.0511" Width="222.30602" Height="100" />
+	<Subtypes>
+		<DocSubtype UniqueId="8c035ad7-c41a-43fe-9758-c54864df56d5" DefinedType="IfcStructuralPlanarAction" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="ProjectedOrTrue" UniqueId="2cd91061-4164-40c9-9628-113db3c9b6a0" DefinedType="IfcProjectedOrTrueLengthEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Defines whether load values are given per true lengths of the surface on which they act, or per lengths of the projection of the surface in load direction.  The latter is only applicable to loads which act in global coordinate directions.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5096.8495" Y="2009.0511" />
+				<DocPoint X="5096.8495" Y="1891.91507" />
+				<DocPoint X="5309.63816" Y="1891.91507" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5101.2757891" Y="1941.690791" Width="189" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="PredefinedType" UniqueId="be3cd5a8-4ac3-41e2-ba09-caf52cea75aa" DefinedType="IfcStructuralSurfaceActivityTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Type of action according to its distribution of load values.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5099.8487" Y="2109.0511" />
+				<DocPoint X="5099.8487" Y="2197.303816" />
+				<DocPoint X="5310.60481" Y="2197.303816" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5090.2497141" Y="2247.06634" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="ProjectedIsGlobal" UniqueId="8fc3f0ec-028a-4c02-8d03-0e2386e68074">
+			<Documentation>A load can only be related to projected lengths if it was specified in global coordinate directions (i.e. in analysis model coordinate directions).  If a load was specified in local coordinate directions, it can only relate to true lengths.</Documentation>
+			<Expression>(NOT EXISTS(ProjectedOrTrue)) OR
+((ProjectedOrTrue &lt;&gt; PROJECTED_LENGTH) OR
+ (SELF\IfcStructuralActivity.GlobalOrLocal = GLOBAL_COORDS))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="HasObjectType" UniqueId="84860323-5e3e-470f-95e0-29b9c5586226">
+			<Documentation>The attribute ObjectType shall be given if the predefined type is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcStructuralSurfaceActivityTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

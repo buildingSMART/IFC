@@ -1,12 +1,8 @@
-**Definition from ISO/CD 10303-41:1992**: The position of the specified day in a month.
+_IfcDayInMonthNumber_ is an integer that defines the position of the specified day in a month.
 
 Type: INTEGER
 
-> <font size="-1">
-  NOTE Corresponding STEP name: day_in_month_number, please refer to ISO/IS 10303-41:1994
-  for the final definition of the formal standard.
-</font>
+> HISTORY&nbsp; New type in IFC1.5.1.
 
-> <font size="-1" color="#0000FF">
-  HISTORY New type in IFC Release 1.5.1.
-</font>
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; Where rule _ValidRange_ added.

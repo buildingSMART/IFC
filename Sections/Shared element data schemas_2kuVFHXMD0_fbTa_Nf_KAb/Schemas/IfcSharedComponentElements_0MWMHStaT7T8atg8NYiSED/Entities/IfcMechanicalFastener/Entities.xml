@@ -1,12 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcMechanicalFastener" Name="IfcMechanicalFastener" UniqueId="3f389407-9e81-4218-8102-56eb71651146" DiagramNumber="1" BaseDefinition="IfcFastener" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcMechanicalFastener" Name="IfcMechanicalFastener" UniqueId="3f389407-9e81-4218-8102-56eb71651146" DiagramNumber="1" BaseDefinition="IfcElementComponent" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Mechanisches Befestigungsmittel" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="153.11002" Y="846.37917" Width="438.39764" Height="208.84156" />
 	<Attributes>
 		<DocAttribute Name="NominalDiameter" UniqueId="58964986-572b-460b-8156-7b3fb1391575" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>The nominal diameter describing the cross-section size of the fastener.</Documentation>
+			<Documentation>The nominal diameter describing the cross-section size of the fastener type.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; Deprecated; the respective attribute of _IfcMechanicalFastenerType_ should be used instead.</Documentation>
+			<DiagramLine>
+				<DocPoint X="591.50766" Y="882.77397" />
+				<DocPoint X="1564.85579" Y="882.77397" />
+				<DocPoint X="1564.85579" Y="2283.26217" />
+				<DocPoint X="1468.29616" Y="2283.26217" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="724.05477" Y="878.2689891" Width="197" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="NominalLength" UniqueId="c2376fb0-5048-42ec-849f-fab982f91c21" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>The nominal length describing the longitudinal dimensions of the fastener.</Documentation>
+			<Documentation>The nominal length describing the longitudinal dimensions of the fastener type.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; Deprecated; the respective attribute of _IfcMechanicalFastenerType_ should be used instead.</Documentation>
+			<DiagramLine>
+				<DocPoint X="591.50766" Y="948.07891" />
+				<DocPoint X="1518.59813" Y="948.07891" />
+				<DocPoint X="1518.59813" Y="2217.95721" />
+				<DocPoint X="1468.296161" Y="2217.95721" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="710.44957" Y="943.5739291" Width="174" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="PredefinedType" UniqueId="7e80e1fd-a363-4d2b-aed4-5c611e85a6f5" DefinedType="IfcMechanicalFastenerTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Subtype of mechanical fastener</Documentation>
+			<DiagramLine>
+				<DocPoint X="591.50766" Y="1013.3838" />
+				<DocPoint X="1472.21963" Y="1013.3838" />
+				<DocPoint X="1472.21963" Y="2119.8705" />
+				<DocPoint X="1310.31759" Y="2119.8705" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="716.77231" Y="1007.2359369" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="4f64a809-7e2e-4db8-a020-e5860386e2f1">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcMechanicalFastenerType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+(PredefinedType &lt;&gt; IfcMechanicalFastenerTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcMechanicalFastenerTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="539e50d7-14fa-4649-bb1d-2ad876b419f2">
+			<Documentation>If this occurrence is defined by a type object, the latter has to be an _IfcMechanicalFastenerType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+(&apos;IFCSHAREDCOMPONENTELEMENTS.IFCMECHANICALFASTENERTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

@@ -1,20 +1,9 @@
-An _IfcJunctionBoxType_ defines a particular type of junction box which is a housing inside which cables from electrical components are connected electrically.
+The flow fitting type **IfcJunctionBoxType** defines commonly shared information for occurrences of junction boxs. The set of shared information may include:
 
-> <font color="#0000ff" size="-1">
-HISTORY: New entity in IFC 2x2</font>
-> 
+* common properties with shared property sets
+* common representations
+* common materials
+* common composition of elements
+* common ports
 
-
-****Use Definitions****
-
-An _IfcJunctionBoxType_ is a subtype of _IfcFlowFittingType_ and provides for all forms of junction boxes.
-
-Usage of _IfcJunctionBoxType_ defines the parameters for one or more occurrences of _IfcFlowFitting_.
-
-****Property Set Use Definition****:
-
-There are no property sets currently defined for _IfcJunctionBoxType_.
-
-****Geometry Use Definitions****
-
-Representations of the type are defined as representation maps (at the level of the supertype _IfcTypeProduct_). These are assigned at the occurrence through the _IfcShapeRepresentation.Item_ being an _IfcMappedItem_.
+It is used to define a junction box type specification indicating the specific product information that is common to all occurrences of that product type. The **IfcJunctionBoxType** may be declared within _IfcProject_ or _IfcProjectLibrary_ using _IfcRelDeclares_ and may be exchanged with or without occurrences of the type. Occurrences of **IfcJunctionBoxType** are represented by instances of _IfcJunctionBox_. Refer to the documentation at _IfcJunctionBox_ for supported property sets, materials, composition, and ports.

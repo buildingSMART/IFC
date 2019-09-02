@@ -1,0 +1,16 @@
+( B: IfcRationalBSplineSurfaceWithKnots) 
+: BOOLEAN;
+
+  LOCAL
+    Result : BOOLEAN := TRUE;
+  END_LOCAL;
+
+  REPEAT i := 0 TO B\IfcBSplineSurface.UUpper;
+    REPEAT j := 0 TO B\IfcBSplineSurface.VUpper;
+      IF (B.Weights[i][j] <= 0.0) THEN
+        Result := FALSE;
+        RETURN(Result);
+      END_IF;
+    END_REPEAT;
+  END_REPEAT;
+  RETURN(Result);

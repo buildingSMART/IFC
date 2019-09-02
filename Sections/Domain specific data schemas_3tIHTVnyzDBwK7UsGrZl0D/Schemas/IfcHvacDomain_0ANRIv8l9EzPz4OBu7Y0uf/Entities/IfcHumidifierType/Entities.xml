@@ -1,12 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcHumidifierType" UniqueId="f1983b1d-26af-43f3-ba7a-06e90feb52c8" DiagramNumber="1" BaseDefinition="IfcEnergyConversionDeviceType" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcHumidifierType" UniqueId="f1983b1d-26af-43f3-ba7a-06e90feb52c8" DiagramNumber="1" BaseDefinition="IfcEnergyConversionDeviceType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Befeuchter - Typ" Locale="de" />
+		<DocLocalization Name="Type d&apos;humidificateur" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="69.830445" Y="1750.0553" Width="401.58096" Height="102.64694" />
 	<Attributes>
 		<DocAttribute Name="PredefinedType" UniqueId="db14e4f6-f176-4771-81a6-cda2bc555751" DefinedType="IfcHumidifierTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Defines the type of humidifier.</Documentation>
+			<DiagramLine>
+				<DocPoint X="471.41141" Y="1801.3788" />
+				<DocPoint X="681.62973" Y="1801.3788" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="471.41141" Y="1801.3788" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="26FvF5nZr109KrS878Jw$9">
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="d9b17ca3-54ab-46fe-95f0-ed1b0e813175">
 			<Expression>(PredefinedType &lt;&gt; IfcHumidifierTypeEnum.USERDEFINED) OR
 ((PredefinedType = IfcHumidifierTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
 		</DocWhereRule>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCrewResourceType" UniqueId="7036c849-da9d-45cc-b0e7-a07e7e66f2c5" DiagramNumber="1" BaseDefinition="IfcConstructionResourceType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Mannschaft - Ressource -Typ" Locale="de" />
+		<DocLocalization Name="Équipe type" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="870.4" Y="1252.6133" Width="629.16667" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="f9939f7c-0af4-4687-a908-5b65c54becdd" DefinedType="IfcCrewResourceTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Defines types of crew resources.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1488.9833" Y="1352.6133" />
+				<DocPoint X="1488.9833" Y="1399.946633" />
+				<DocPoint X="1143.99997" Y="1399.946633" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1568.9833" Y="1394.6132997" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="73d260fe-c896-478c-8da4-658719b31f57">
+			<Expression>(PredefinedType &lt;&gt; IfcCrewResourceTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcCrewResourceTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcTypeResource.ResourceType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

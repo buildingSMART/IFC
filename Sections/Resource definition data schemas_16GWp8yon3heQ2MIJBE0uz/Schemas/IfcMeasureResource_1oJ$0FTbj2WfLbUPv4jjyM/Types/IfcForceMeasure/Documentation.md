@@ -1,8 +1,7 @@
-A measure of the force.
+_IfcForceMeasure_ is a measure of the force.
 
 Usually measured in Newton (N, kg m/s2).
 
 Type: REAL
 
-> <font size="-1" color="#0000FF">HISTORY New type in IFC Release 2x.
-</font>
+> HISTORY&nbsp; New type in IFC2x.

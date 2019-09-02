@@ -1,9 +1,9 @@
-If there are several instances of _IfcGeometricRepresentationContext_ within one project file, the XY plane of all _WorldCoordinateSystem_'s shall be coplanar and identical.
+**Definition from IAI**: If there are several instances of _IfcGeometricRepresentationContext_ within one project file, the XY plane of all _WorldCoordinateSystem_'s shall be coplanar and identical.
 
-> <small>NOTE&nbsp; The instances of <i>IfcGeometricRepresentationContext</i>
-do not define their own world coordinate system, the refer to
-the&nbsp;world coordinate system of the ParentContext.
-  </small>
+> <small>NOTE  The instances of
+<i>IfcGeometricRepresentationSubContext</i> do not define their
+own world coordinate system, they refer to the world coordinate
+system of the <i>ParentContext</i>.</small>
 
-> <small><font color="#0000ff">HISTORY&nbsp;
-New global rule in Release IFC2x</font></small>
+> <small><font color="#0000FF">HISTORY  New global rule
+in Release IFC2x</font></small>

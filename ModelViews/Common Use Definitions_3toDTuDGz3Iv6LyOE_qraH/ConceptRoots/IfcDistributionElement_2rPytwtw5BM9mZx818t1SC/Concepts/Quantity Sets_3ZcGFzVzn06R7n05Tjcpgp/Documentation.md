@@ -1,0 +1,1 @@
+The quantities relating to the _IfcDistributionElement_ are defined by the _IfcElementQuantity_ and attached by the _IfcRelDefinesByProperties_. A detailed specification for individual quantities is introduced at the level of subtypes of _IfcDistributionElement_.

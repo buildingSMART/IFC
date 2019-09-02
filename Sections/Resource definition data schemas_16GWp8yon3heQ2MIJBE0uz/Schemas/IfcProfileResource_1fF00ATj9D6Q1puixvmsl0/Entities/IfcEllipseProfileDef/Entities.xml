@@ -1,11 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcEllipseProfileDef" UniqueId="e019e0b0-86e1-4188-85b1-4d934b9a1046" DiagramNumber="2" BaseDefinition="IfcParameterizedProfileDef" EntityFlags="109">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcEllipseProfileDef" UniqueId="e019e0b0-86e1-4188-85b1-4d934b9a1046" DiagramNumber="2" BaseDefinition="IfcParameterizedProfileDef" EntityFlags="237">
+	<Localization>
+		<DocLocalization Name="ellipsoides Profil - parametrische Definition" Locale="de" />
+		<DocLocalization Name="Définition de profil ellipsoïdal" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1897.8834" Y="562.93164" Width="453.9" Height="193.76667" />
 	<Attributes>
 		<DocAttribute Name="SemiAxis1" UniqueId="0b55b950-eb03-41c2-94a3-3c86f780417f" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The first radius of the ellipse. It is measured along the direction of Position.P[1].</Documentation>
+			<DiagramLine>
+				<DocPoint X="2351.7834" Y="612.37937" />
+				<DocPoint X="2528.0667" Y="612.37937" />
+				<DocPoint X="2528.0667" Y="612.19829932" />
+				<DocPoint X="2704.35" Y="612.19829932" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2335.658418" Y="605.6560617" Width="121" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="SemiAxis2" UniqueId="1b240401-6d34-4234-bb82-3aa3883e0508" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The second radius of the ellipse. It is measured along the direction of Position.P[2].</Documentation>
+			<DiagramLine>
+				<DocPoint X="2351.7834" Y="721.00444" />
+				<DocPoint X="2704.4167" Y="721.00444" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2327.966733" Y="715.6711067" Width="121" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

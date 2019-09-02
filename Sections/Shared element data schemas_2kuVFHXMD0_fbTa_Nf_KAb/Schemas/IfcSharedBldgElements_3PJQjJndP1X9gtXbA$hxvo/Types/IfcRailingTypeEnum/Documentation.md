@@ -1,9 +1,9 @@
-Enumeration defining the valid types of railings that can be predefined using the enumeration values.
+This enumeration defines the different types of _IfcRailing_ or _IfcRailingType_ that can be predefined using the enumeration values.
 
-> <font size="-1" color="#0000FF">HISTORY: New Enumeration in IFC
-		Release 2.0 </font>
+> HISTORY&nbsp; New enumeration type in IFC2.0
 
-**Enumeration**
+{ .spec-head}
+Enumerated Item Definitions:
 
 * **HANDRAIL**: A type of railing designed to serve as an optional structural support for loads applied by human occupants (at hand height). Generally located adjacent to ramps and stairs. Generally floor or wall mounted.
 * **GUARDRAIL**: A type of railing designed to guard human occupants from falling off a stair, ramp or landing where there is a vertical drop at the edge of such floors/landings.

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcEvent" Name="IfcEvent" UniqueId="2d5e432b-e7f0-4c0d-8a56-abea523cfc61" DiagramNumber="1" BaseDefinition="IfcProcess" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Ereignis" Locale="de" />
+		<DocLocalization Name="Evènement" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="146.08334" Y="1013.7333" Width="265.96667" Height="462.26666" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="d38ae629-7960-4a14-beb5-e6d1a11097d4" DefinedType="IfcEventTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Identifies the predefined types of an event from which 
+    the type required may be set.</Documentation>
+			<DiagramLine>
+				<DocPoint X="412.05004" Y="1057.6128" />
+				<DocPoint X="1124.61667" Y="1057.6128" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="265.38337" Y="1044.279466" Width="182" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="EventTriggerType" UniqueId="a6bffe9c-b7a3-46d8-a8a9-f5a4e77906dc" DefinedType="IfcEventTriggerTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Identifies the predefined types of event trigger from which 
+    the type required may be set.</Documentation>
+			<DiagramLine>
+				<DocPoint X="412.05004" Y="1153.6667" />
+				<DocPoint X="1124.6834" Y="1153.6667" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="273.38337" Y="1145.6667" Width="203" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="UserDefinedEventTriggerType" UniqueId="d670c1b3-96ee-4dbc-af96-eb6097871532" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>A user defined event trigger type, the value of which is 
+    asserted when the value of an event trigger type is declared 
+    as USERDEFINED.</Documentation>
+			<DiagramLine>
+				<DocPoint X="412.05004" Y="1257.0798" />
+				<DocPoint X="1124.64997" Y="1257.0798" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="336.366672" Y="1246.413133" Width="341" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="EventOccurenceTime" UniqueId="ba8ea655-c837-44ec-b7ce-e7e45f796e64" DefinedType="IfcEventTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>The date and/or time at which an event occurs.</Documentation>
+			<DiagramLine>
+				<DocPoint X="412.05004" Y="1396.2" />
+				<DocPoint X="974.00004" Y="1396.2" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="362.17998" Y="1388.4666684" Width="243" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="39552c3c-402a-43d2-a032-6341c508cb4a">
+			<Documentation>Either the _PredefinedType_ attribute is unset, or the inherited attribute _ObjectType_ must be asserted when the value of _PredefinedType_ is set to _USERDEFINED_.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR (PredefinedType &lt;&gt; IfcEventTypeEnum.USERDEFINED) OR ((PredefinedType = IfcEventTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="a1a452df-ee24-4281-a215-399c7055171a">
+			<Documentation>Either the _EventTriggerType_ attribute is unset, or the attribute _UserDefinedEventTriggerType_ must be asserted when the value of _EventTriggerType_ is set to _USERDEFINED_.</Documentation>
+			<Expression>NOT(EXISTS(EventTriggerType)) OR (EventTriggerType &lt;&gt; IfcEventTriggerTypeEnum.USERDEFINED) OR ((EventTriggerType = IfcEventTriggerTypeEnum.USERDEFINED) AND EXISTS(UserDefinedEventTriggerType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

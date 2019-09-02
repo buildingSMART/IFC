@@ -1,22 +1,11 @@
-The _IfcAlarmType_ defines a device that signals the existence of a condition or situation that is outside the boundaries of normal expectation or that activates such a device.
+The distribution control element type **IfcAlarmType** defines commonly shared information for occurrences of alarms. The set of shared information may include:
 
-> <font color="#0000ff" size="-1">
-HISTORY: New entity in IFC 2x2</font>
-> 
+* common properties with shared property sets
+* common representations
+* common materials
+* common composition of elements
+* common ports
 
+It is used to define a alarm type specification indicating the specific product information that is common to all occurrences of that product type. The **IfcAlarmType** may be declared within _IfcProject_ or _IfcProjectLibrary_ using _IfcRelDeclares_ and may be exchanged with or without occurrences of the type. Occurrences of **IfcAlarmType** are represented by instances of _IfcAlarm_. Refer to the documentation at _IfcAlarm_ for supported property sets, materials, composition, and ports.
 
-****Use Definitions****
-
-An _IfcAlarmType_ may be included into the spatial context of the building model through an (or multiple) instances of _IfcDistributionControlElement_.
-
-Usage of _IfcAlarmType_ defines the parameters for one or more occurrences of _IfcDistributionControlElement_.
-
-Alarm types include the provision of break glass buttons and manual pull boxes that are used to activate alarms. These should be used for alarms rather than a 'user defined' type of _IfcSwitchingDevice_.
-
-****Property Set Use Definition****:
-
-There are no predefined property sets for _IfcAlarmType_ in this release
-
-****Geometry Use Definitions****
-
-Representations of the type are defined as representation maps (at the level of the supertype _IfcTypeProduct_). These are assigned at the occurrence through the _IfcShapeRepresentation.Item_ being an _IfcMappedItem_.
+> HISTORY&nbsp; New entity in IFC2x2

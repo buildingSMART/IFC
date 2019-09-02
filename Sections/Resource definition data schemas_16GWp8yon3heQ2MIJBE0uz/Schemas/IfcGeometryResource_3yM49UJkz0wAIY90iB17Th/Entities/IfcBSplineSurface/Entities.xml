@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBSplineSurface" UniqueId="6cc49723-24d6-446e-b2cc-fef52a6229c4" DiagramNumber="10" BaseDefinition="IfcBoundedSurface" EntityFlags="205">
+	<Localization>
+		<DocLocalization Name="Bézier-Spline-Fläche" Locale="de" />
+		<DocLocalization Name="Surface Bspline" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="14750.027" Y="300.44667" Width="338.66667" Height="504.58667" />
+	<Subtypes>
+		<DocSubtype UniqueId="76a5109a-bbae-4595-8a27-678a2f19edd1" DefinedType="IfcBSplineSurfaceWithKnots" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="UDegree" UniqueId="fa4795fe-5b45-439d-8feb-3e45270923c0" DefinedType="INTEGER" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Algebraic degree of basis functions in _u_.</Documentation>
+			<DiagramLine>
+				<DocPoint X="15088.693" Y="332.97733" />
+				<DocPoint X="15572.31967" Y="332.97733" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="15088.693" Y="329.5639967" Width="107" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="VDegree" UniqueId="519ed324-1b3a-4f12-b23a-87603ec0d73b" DefinedType="INTEGER" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Algebraic degree of basis functions in _v_.</Documentation>
+			<DiagramLine>
+				<DocPoint X="15088.693" Y="395.32053" />
+				<DocPoint X="15572.333" Y="395.32053" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="15088.693" Y="390.20053" Width="105" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="ControlPointsList" UniqueId="bc33338e-2b58-4a61-b633-ccf5c80fe59b" DefinedType="IfcCartesianPoint" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="0" XsdFormat="element">
+			<Documentation>This is a list of lists of control points.</Documentation>
+			<AggregationAttribute xsi:type="DocAttribute" UniqueId="625e183d-375b-4e04-9189-ce3d10771492" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="0" />
+			<DiagramLine>
+				<DocPoint X="15088.693" Y="474.00565" />
+				<DocPoint X="15572.33967" Y="474.00565" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="15090.3996667" Y="467.1789833" Width="340" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="SurfaceForm" UniqueId="1a4a38ca-a512-42d4-94f7-13932a6fc328" DefinedType="IfcBSplineSurfaceForm" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Indicator of special surface types.</Documentation>
+			<DiagramLine>
+				<DocPoint X="15088.694" Y="551.77893" />
+				<DocPoint X="15572.4088" Y="551.77893" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="15090.4006667" Y="546.65893" Width="149" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="UClosed" UniqueId="f2d1928f-a5de-487f-a35f-907192690a47" DefinedType="LOGICAL" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Indication of whether the surface is closed in the _u_ direction; this is for information only.</Documentation>
+			<DiagramLine>
+				<DocPoint X="15088.693" Y="626.4076" />
+				<DocPoint X="15572.39913" Y="626.4076" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="15088.693" Y="626.4076" Width="102" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="VClosed" UniqueId="b71632d8-d689-4f75-a1da-1192c00c2f21" DefinedType="LOGICAL" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Indication of whether the surface is closed in the _v_ direction; this is for information only.</Documentation>
+			<DiagramLine>
+				<DocPoint X="15088.693" Y="698.43643" />
+				<DocPoint X="15572.39913" Y="698.43643" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="15088.693" Y="696.7297633" Width="100" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="SelfIntersect" UniqueId="c4e7537e-84c5-49f8-9096-5fb6efa3c248" DefinedType="LOGICAL" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Flag to indicate whether, or not, surface is self-intersecting; this is for information only.</Documentation>
+			<DiagramLine>
+				<DocPoint X="15088.693" Y="766.98404" />
+				<DocPoint X="15572.39913" Y="766.98404" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="15088.693" Y="761.86404" Width="144" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="UUpper" UniqueId="5bcfe613-ccc4-459a-aa4a-82cd757cc49c" DefinedType="INTEGER" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Upper index on control points in _u_ direction.</Documentation>
+			<Derived>SIZEOF(ControlPointsList) - 1</Derived>
+			<DiagramLine>
+				<DocPoint X="15064.686" Y="805.03333" />
+				<DocPoint X="15064.686" Y="880.36933" />
+				<DocPoint X="15572.30507" Y="880.36933" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="15066.3926667" Y="873.5426633" Width="168" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="VUpper" UniqueId="cc88a114-1e8d-4dc0-83a8-ad42a486c168" DefinedType="INTEGER" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Upper index on control points in _v_ direction.</Documentation>
+			<Derived>SIZEOF(ControlPointsList[1]) - 1</Derived>
+			<DiagramLine>
+				<DocPoint X="15040.792" Y="805.03333" />
+				<DocPoint X="15040.792" Y="953.756" />
+				<DocPoint X="15572.3044" Y="953.756" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="15033.9653333" Y="946.9293333" Width="166" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="ControlPoints" UniqueId="82e4f976-41e3-454e-a2af-6ca023778218" DefinedType="IfcCartesianPoint" AttributeFlags="0" AggregationType="2" AggregationFlag="0" AggregationLower="0" AggregationUpper="UUpper">
+			<Documentation>Array (two-dimensional) of control points defining surface geometry. This array is constructed from the control points list.</Documentation>
+			<Derived>IfcMakeArrayOfArray(ControlPointsList,
+0,UUpper,0,VUpper)</Derived>
+			<AggregationAttribute xsi:type="DocAttribute" UniqueId="956fbbc8-71ad-4b81-8134-cc18460844a9" AttributeFlags="0" AggregationType="2" AggregationFlag="0" AggregationLower="0" AggregationUpper="VUpper" />
+			<DiagramLine>
+				<DocPoint X="15016.64" Y="805.03333" />
+				<DocPoint X="15016.64" Y="1046.72666" />
+				<DocPoint X="15572.22" Y="1046.72666" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="15011.52" Y="1041.60666" Width="523" Height="35" />
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

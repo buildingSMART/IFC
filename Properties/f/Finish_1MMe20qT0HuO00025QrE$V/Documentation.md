@@ -1,2 +1,2 @@
 Finish selection for this object.
-Here specification of the surface finish for informational purposes
+Here specification of the surface finish for informational purposes.

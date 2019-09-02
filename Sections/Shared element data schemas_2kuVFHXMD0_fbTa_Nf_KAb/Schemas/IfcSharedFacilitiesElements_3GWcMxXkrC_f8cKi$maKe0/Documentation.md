@@ -1,6 +1,5 @@
-The _IfcSharedFacilitiesElements_ Schema defines basic concepts in the facilities management (FM) domain. This schema, along with _IfcProcessExtension, IfcSharedMgmtElements_and _IfcFacilitiesMgmtDomain_, provide a set of models that can be used by applications needing share information concerning facilities management related issues.
+The _IfcSharedFacilitiesElements_ schema defines basic concepts in the facilities management (FM) domain. This schema, along with _IfcProcessExtension_ and _IfcSharedMgmtElements_, provide a set of models that can be used by applications needing to share information concerning facilities management related issues.
 
-### Scope
 The _IfcSharedFacilitiesElements_ schema supports ideas including:
 
 * Furniture. 
@@ -8,23 +7,27 @@ The _IfcSharedFacilitiesElements_ schema supports ideas including:
 * Asset identification. 
 * Inventory of objects (including asset, furniture and space objects within separate inventories).
 
-<table cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td width="41"><a href="./lexical/text/SharedFacilitiesElements-Usage.htm"><img src="./lexical/text/img/go.gif" alt="go" border="0" height="20" width="38"></a></td>
-      <td bgcolor="#c8c8c8">see attached document for more
-on facilities elements</td>
-    </tr>
-  </tbody>
-</table>
+### 6.4.1.1 Furniture and System Furniture
+In the _IfcProductExtension_ schema, the _IfcElement_ entity is decomposed into a number of subtypes. One of these is the _IfcFurnishingElement_ entity from the _IfcFurniture_ and _IfcSystemFurnitureElement_ entities are derived.
 
-****Property Set Use Definition****:
+Figure 1 illustrates a furniture object (instance of the _IfcFurniture_ entity, which is considered to be a discrete item of furniture in its own right (for example, a table or chair).
 
-In addition to the property sets that relate specifically to entities within this schema, the following property sets defined within this schema for support of general entities are part of this IFC release:
+!["Furniture"](../../figures/IfcSharedFacilitiesElements-Fig01.gif "Figure 1 &mdash; Furniture")
 
-* [Pset_ManufacturerOccurrence](../psd/IfcSharedFacilitiesElements/Pset_ManufacturerOccurrence.xml): property set for the properties that may be given by the manufacturer of individual occurrences of manufactured products (subtypes of _IfcElement_), if available 
-* [Pset_ManufacturerTypeInformation](../psd/IfcSharedFacilitiesElements/Pset_ManufacturerTypeInformation.xml): property set for the properties that may be given by the manufacturer of a type of manufactured products (subtypes of _IfcElement_ or of _IfcElementType_), if available 
-* [Pset_PropertyAgreement](../psd/IfcSharedFacilitiesElements/Pset_PropertyAgreement.xml): specific property set for the properties defined within a property agreement that may be associated with an occurrence of _IfcSpatialStructureElement_ 
-* [Pset_Reliability](../psd/IfcSharedFacilitiesElements/Pset_Reliability.xml): specific property set for the properties defining risk that may be associated with any occurrence of a subtype of _IfcProduct_, if available
-* [Pset_Risk](../psd/IfcSharedFacilitiesElements/Pset_Risk.xml): specific property set for the properties defining risk that may be associated with any occurrence of a subtype of _IfcObject_, if available 
-* [Pset_Warranty](../psd/IfcSharedFacilitiesElements/Pset_Warranty.xml): specific property set for the properties relating to a warranty or guarantee that may be associated with any occurrence of _IfcProduct_ or any occurrence of _IfcSystem_, if available
+Figure 2 illustrates a system furniture element object (instance of the _IfcSystemFurnitureElement_ entity), which is an identifiable item (such as a modesty panel, side, or desktop) that participates in the assembly of a discrete item of furniture.
+
+!["SystemFurnitureElements"](../../figures/IfcSharedFacilitiesElements-Fig02.gif "Figure 2 &mdash; System furniture element")
+
+Each _IfcFurniture_ object and each _IfcSystemFurnitureElement_ object is of a particular type. It may be a chair, desk, table etc for discrete furniture or modesty panel, side panel, desktop etc. for system furniture. Specification of the type is left to the user of the application providing the information. For applications however, there are a number of predefined property sets for types of furniture that can be assigned to furniture objects. Other property sets may be defined as necessary.
+
+### 6.4.1.2 Asset Identification
+An _IfcAsset_ allows for the grouping of objects to form a unit that has an identifiable financial value and/or upon which specific facilities management operations take place, as shown in Figure 146.
+
+Each asset carries a unique identifier, cost, ownership,location and other information that is required.
+
+!["Assets"](../../figures/IfcSharedFacilitiesElements-Fig03.gif "Figure 3 &mdash; Asset identification")
+
+### 6.4.1.3 Inventory
+An _IfcInventory_ provides a list of objects of a particular type, the type of objects that are contained being identified by the _IfcInventoryEnum_.
+
+Each inventory has one or more responsible persons and an organizational jurisdiction (which is valuable in facilities management situations where more than one functional group or organization is concerned).

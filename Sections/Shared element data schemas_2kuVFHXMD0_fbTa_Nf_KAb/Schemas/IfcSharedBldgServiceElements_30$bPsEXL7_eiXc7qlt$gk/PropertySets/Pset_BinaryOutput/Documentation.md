@@ -1,1 +1,0 @@
-Defines the characteristics of a binary output.

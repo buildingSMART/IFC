@@ -1,1 +1,0 @@
-The nominal length of a cable, busbar or tube.

@@ -1,14 +1,10 @@
 A named and structured grouping with a corporate identity.
 
-> <font size="-1">NOTE: The relationships between <i>IfcOrganizations</i>, like a Department 
-within a Company, can be expressed using <i>IfcOrganizationRelationship</i>.
-</font>
+> NOTE&nbsp; The relationships between _IfcOrganization_'s, like between department within a company, can be expressed using the objectified relationship _IfcOrganizationRelationship_.
 
-> <font size="-1">
-  NOTE Corresponding STEP name: organization, please refer to ISO/IS 10303-41:1994
-  for the final definition of the formal standard.
-</font>
+> NOTE&nbsp; Entity adapted from **organization** defined in ISO&nbsp;10303-41.
 
-> <font size="-1" color="#0000FF">
-  HISTORY New entity in IFC Release 1.5.1.
-</font>
+> HISTORY&nbsp; New entity in IFC1.5.1.
+
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; Attribute 'Id' renamed to _Identification_.

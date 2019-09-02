@@ -1,1 +1,0 @@
-The default aspect ratio

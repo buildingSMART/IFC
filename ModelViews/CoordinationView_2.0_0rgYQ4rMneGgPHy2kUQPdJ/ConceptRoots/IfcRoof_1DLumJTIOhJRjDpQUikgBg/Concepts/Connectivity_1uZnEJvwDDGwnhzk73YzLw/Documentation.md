@@ -1,1 +1,0 @@
-Specific to IfcRoof: The IfcRoof shall not have a connectivity information (aggregated parts of an IfcRoof container may have connectivity information).

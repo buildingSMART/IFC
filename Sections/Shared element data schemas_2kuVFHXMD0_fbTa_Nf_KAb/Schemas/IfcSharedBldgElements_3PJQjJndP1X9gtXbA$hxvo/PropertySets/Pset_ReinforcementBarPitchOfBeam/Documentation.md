@@ -1,1 +1,0 @@
-The ptich length information of reinforcement  bar with the beam.

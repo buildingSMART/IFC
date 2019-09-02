@@ -1,9 +1,8 @@
-An _IfcLibraryInformation_ is a class that describes a library where a library is a structured store of information, normally organized in a manner which allows information lookup through an index or reference value. _IfcLibraryInformation_ provides the library name and optional version, version date and publisher attributes.
+An _IfcLibraryInformation_ describes a library where a library is a structured store of information, normally organized in a manner which allows information lookup through an index or reference value. _IfcLibraryInformation_ provides the library _Name_ and optional _Description_, _Version_, _VersionDate_ and _Publisher_ attributes. A _Location_ may be added for electronic access to the library.
 
-> <font size="-1">NOTE: The complete definition of the information in an
-		  external library is out of scope in this IFC release. </font>
->
+In a broder sense, _IfcLibraryInformation_ includes the meta data for capture the revision information when checking in library and other data into a revision control system.
 
-> <font color="#0000FF" size="-1">HISTORY: New Entity in IFC
-		Release 2.0. Renamed from <i>IfcLibrary</i> to <i>IfcLibraryInformation</i> in
-		IFC 2x. </font>
+> HISTORY&nbsp; New entity in IFC2x.
+
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; _Location_ and _Description_ attributes added; _Publisher_ and _VersionDate_ data type changed; _HasLibraryReferences_ inverse attribute added (previous LibraryReference changed to inverse).

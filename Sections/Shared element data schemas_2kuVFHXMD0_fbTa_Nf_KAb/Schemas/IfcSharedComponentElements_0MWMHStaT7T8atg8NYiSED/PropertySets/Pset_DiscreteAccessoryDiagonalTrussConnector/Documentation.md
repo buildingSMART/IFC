@@ -1,1 +1,1 @@
-Shape properties specific to connecting accessories in truss form with diagonal cross-bars.
+Definition from IAI: Shape properties specific to connecting accessories in truss form with diagonal cross-bars.

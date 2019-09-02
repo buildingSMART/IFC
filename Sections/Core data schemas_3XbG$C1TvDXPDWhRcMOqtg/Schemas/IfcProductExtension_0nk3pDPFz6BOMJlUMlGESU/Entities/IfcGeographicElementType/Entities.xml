@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGeographicElementType" UniqueId="5f98c5aa-abaf-476a-b395-6e07f22724fc" DiagramNumber="3" BaseDefinition="IfcElementType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Geographisches Objekt - Typ" Locale="de" />
+		<DocLocalization Name="Type d&apos;élément géographique" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="3426.7625" Y="1406.5622" Width="439.20667" Height="119.96667" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="7de7050a-ee4b-401d-bdb3-71681626e5e7" DefinedType="IfcGeographicElementTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Predefined types to define the particular type of the geographic element. There may be property set definitions available for each predefined type.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3865.9692" Y="1466.5455" />
+				<DocPoint X="4112" Y="1466.5455" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3865.9692" Y="1458.5455" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="592562f4-4955-438d-94fe-3a692108f46e">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcGeographicElementTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcGeographicElementTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,12 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAirTerminalBoxType" UniqueId="bc242f20-3f8e-4532-91aa-3cc02ab65da4" DiagramNumber="4" BaseDefinition="IfcFlowControllerType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Volumenstromregler - Typ" Locale="de" />
+		<DocLocalization Name="Type de diffuseur d&apos;air" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="4847.601" Y="406.27662" Width="381.45241" Height="100" />
 	<Attributes>
 		<DocAttribute Name="PredefinedType" UniqueId="c02b5e63-acde-4c6c-8b33-c2027b182472" DefinedType="IfcAirTerminalBoxTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The air terminal box type.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5229.0534" Y="456.27662" />
+				<DocPoint X="5476.39476" Y="456.27662" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5230.4907646" Y="449.43045" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="25TWJwOLrAUvgzG1b30VLO">
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="6421b41c-a479-45e4-a4f0-c41d8e67a41d">
 			<Expression>(PredefinedType &lt;&gt; IfcAirTerminalBoxTypeEnum.USERDEFINED) OR
 ((PredefinedType = IfcAirTerminalBoxTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
 		</DocWhereRule>

@@ -1,1 +1,1 @@
-Inside dry bulb temperature for heating design
+Inside dry bulb temperature for heating design.

@@ -1,11 +1,19 @@
-**Definition from ISO/CD 10303-41:1992**: A label is the term by which something may be referred to. It is a string which represents the human-interpretable name of something and shall have a natural-language meaning.
+A label is the term by which something may be referred to. It is a string which represents the human-interpretable name of something and shall have a natural-language meaning.
 
-Type: STRING - it should be restricted to max. 255 characters.
+Type: STRING of up to 255 characters
 
-> <font size="-1">
-  NOTE Corresponding STEP name: label, please refer to ISO/IS 10303-41:1994
-  for the final definition of the formal standard.
-</font>
+> NOTE&nbsp; Type adapted from **label** defined in ISO 10303-41.
 
-> <font size="-1" color="#0000FF">HISTORY New type in IFC Release 2x.
-</font>
+> HISTORY&nbsp; New type in IFC2x.
+
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; Previously recommended size restriction of 255 characters is now mandatory.
+
+{ .use-head}
+Value restrictions
+
+As a human-readable string for naming purposes, a label is usually human-specified and locale-dependent (in contrast to purely machine-readable identifiers, _IfcIdentifier_).
+
+> NOTE&nbsp; The set of characters that may appear in STRINGs exchanged in the exchange structure as defined in ISO 10303.21 is provided in ISO 10646. The encoding of characters in case of file-based exchange is defined in ISO 10303-21 and ISO 10303-28. Among else, these specifications define the encoding of 8-bit characters from ISO 8859-1...-16 and of 2-byte and 4-byte Unicode characters from ISO 10646.
+
+> NOTE&nbsp; While _IfcIdentifier_ is restricted to 255 characters, the size in exchange files after encoding may be considerably larger than 255 octets, depending on the particular encoding and on the contents of the identifier.

@@ -1,14 +1,16 @@
-**Definition from ISO/CD 10303-42:1992**: This type is used to describe the preferred way of trimming a parametric curve where the trimming is multiply defined.
+The _IfcTrimmingPreference_ indicates the preferred way of trimming.
 
-> <font color="#0000FF" size="-1">NOTE Corresponding STEP type:
-		trimming_preference, please refer to ISO/IS 10303-42:1994, p. 18 for the final
-		definition of the formal standard. </font>
+{ .extDef}
+> NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
+> This type is used to describe the preferred way of trimming a parametric curve where the trimming is multiply defined.
 
-> <font color="#0000FF" size="-1">HISTORY New Type in IFC Release
-		1.0 </font>
+> NOTE&nbsp; Type adapted from **trimming_preference** defined in ISO 10303-42.
 
-ENUMERATION
+> HISTORY&nbsp; New Type in IFC1.0
 
-* **Cartesian** Indicates that trimming by Cartesian point is preferred.
-* **Parameter** Indicates the preference for the parameter value.
-* **Unspecified** Indicates that no preference is communicated.
+{ .spec-head}
+Enumerated Item Definitions:
+
+* **cartesian**: Indicates that trimming by Cartesian point is preferred.
+* **parameter**: Indicates the preference for the parameter value.
+* **unspecified**: Indicates that no preference is communicated.

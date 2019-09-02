@@ -1,1 +1,1 @@
-Shape properties common to wire loop joint connectors.
+Definition from IAI: Shape properties common to wire loop joint connectors.

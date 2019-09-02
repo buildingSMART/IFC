@@ -1,1 +1,1 @@
-The effective or actual volumetric capacity of the tank.
+The total effective or actual volumetric capacity of the tank.

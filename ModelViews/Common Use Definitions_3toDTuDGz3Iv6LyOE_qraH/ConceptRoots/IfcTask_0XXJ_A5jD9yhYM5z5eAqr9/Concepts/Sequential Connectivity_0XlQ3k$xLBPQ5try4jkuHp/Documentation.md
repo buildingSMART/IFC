@@ -1,0 +1,1 @@
+The relationship _IfcRelSequence_ is used to indicate control flow. An _IfcTask_ as a successor to an _IfcTask_ indicates logical sequence how these tasks should be performed. _IfcTask_'s can be triggered or can trigger _IfcEvent_'s, which is also defined through the relationship _IfcRelSequence_.

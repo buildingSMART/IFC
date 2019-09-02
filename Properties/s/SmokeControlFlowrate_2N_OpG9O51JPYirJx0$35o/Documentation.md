@@ -1,1 +1,0 @@
-Flowrate of fan while operating as a part of the smoke control system.

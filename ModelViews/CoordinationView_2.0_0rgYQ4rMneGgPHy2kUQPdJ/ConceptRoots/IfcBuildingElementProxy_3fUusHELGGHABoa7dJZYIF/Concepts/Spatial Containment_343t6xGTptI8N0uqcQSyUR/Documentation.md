@@ -1,1 +1,0 @@
-Specific to IfcBuildingElementProxy: It shall not be provided, if the IfcBuildingElementProxy is part of an aggregation.

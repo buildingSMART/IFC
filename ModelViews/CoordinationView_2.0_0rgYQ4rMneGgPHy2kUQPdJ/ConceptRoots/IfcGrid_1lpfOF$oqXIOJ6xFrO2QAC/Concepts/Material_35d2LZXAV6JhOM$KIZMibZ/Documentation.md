@@ -1,1 +1,0 @@
-Specific to IfcGrid:&nbsp; There shall be no material assigned to IfcGrid.

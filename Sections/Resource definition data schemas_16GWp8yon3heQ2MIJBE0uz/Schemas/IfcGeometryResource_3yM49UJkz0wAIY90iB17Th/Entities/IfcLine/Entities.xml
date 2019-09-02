@@ -1,16 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcLine" UniqueId="28220f1d-2ef9-48f4-9aa6-198f7af996d8" DiagramNumber="5" BaseDefinition="IfcCurve" EntityFlags="45">
+	<Localization>
+		<DocLocalization Name="Linie" Locale="de" />
+		<DocLocalization Name="Ligne" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="6506.3257" Y="1037.9448" Width="202" Height="102.63333" />
 	<Attributes>
-		<DocAttribute Name="Pnt" UniqueId="efe6be19-11b9-4b75-9821-ae20d1d465ad" DefinedType="IfcCartesianPoint" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>The location of the line.</Documentation>
+		<DocAttribute Name="Pnt" UniqueId="efe6be19-11b9-4b75-9821-ae20d1d465ad" DefinedType="IfcCartesianPoint" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>The location of the _IfcLine_.</Documentation>
+			<DiagramLine>
+				<DocPoint X="6539.9924" Y="1140.5781" />
+				<DocPoint X="6539.9924" Y="1442.02804" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="6579.9924" Y="1143.2447667" Width="44" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Dir" UniqueId="da76faa5-1c45-41b8-80ce-79d00d362cd1" DefinedType="IfcVector" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>The direction of the line, the magnitude and units of Dir affect the parameterization of the line.</Documentation>
+		<DocAttribute Name="Dir" UniqueId="da76faa5-1c45-41b8-80ce-79d00d362cd1" DefinedType="IfcVector" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>The direction of the _IfcLine_, the magnitude and units of _Dir_ affect the parameterization of the line.</Documentation>
+			<DiagramLine>
+				<DocPoint X="6607.3257" Y="1140.5781" />
+				<DocPoint X="6607.3257" Y="1196.032212" />
+				<DocPoint X="6764.35904" Y="1196.032212" />
+				<DocPoint X="6764.35904" Y="1251.486306" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="6607.3257" Y="1196.032212" Width="38" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="2CfLogewnE3A9DOXalwiND">
-			<Documentation>The dimensionality of the location (IfcCartesianPoint) shall be the same as of the direction (IfcVector).</Documentation>
+		<DocWhereRule Name="SameDim" UniqueId="5ad85b1b-5a3e-4d08-a9b2-8327fe7084c3">
+			<Documentation>The dimensionality of the _Pnt_, provided by _IfcCartesianPoint_, shall be the same as the dimensionality of the _Dir_, provided by _IfcVector_.</Documentation>
 			<Expression>Dir.Dim = Pnt.Dim</Expression>
 		</DocWhereRule>
 	</WhereRules>

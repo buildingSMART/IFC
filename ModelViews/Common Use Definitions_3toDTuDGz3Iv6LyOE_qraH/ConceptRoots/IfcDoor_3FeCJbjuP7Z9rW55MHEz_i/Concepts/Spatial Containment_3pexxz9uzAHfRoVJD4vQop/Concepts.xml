@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Spatial Containment" UniqueId="3pexxz9uzAHfRoVJD4vQop">
+	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Containment_3PeWY01HBmesKdP1dTP15" />
+	<Items>
+		<DocTemplateItem UniqueId="d2a0e5fb-b5ee-4923-8d32-f9e515cd2edb" RuleParameters="Structure=IfcBuildingStorey;" Order="0">
+			<Documentation>Default spatial container</Documentation>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="9a544bd2-38ce-4363-9f28-f355740e6795" RuleParameters="Structure=IfcBuilding;" Order="0">
+			<Documentation>Spatial container for the element if it cannot be assigned to a building storey</Documentation>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="c0a3200a-689d-42f9-a723-15cfcd499190" RuleParameters="Structure=IfcSite;" Order="0">
+			<Documentation>Spatial container for the element in case that it is placed on site (outside of building)</Documentation>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="ab708db1-f179-4587-8f87-a70d9c22ac90" RuleParameters="Structure=IfcSpace;" Order="0">
+			<Documentation>In particular use cases, a door maybe assigned directly to space</Documentation>
+		</DocTemplateItem>
+	</Items>
+</DocTemplateUsage>
+

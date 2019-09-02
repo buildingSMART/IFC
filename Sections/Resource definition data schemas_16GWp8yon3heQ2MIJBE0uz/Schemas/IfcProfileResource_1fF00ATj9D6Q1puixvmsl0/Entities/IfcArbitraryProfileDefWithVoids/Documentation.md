@@ -1,49 +1,19 @@
-**Definition
-from IAI**: The _IfcArbitraryProfileDefWithVoids_ defines an arbitrary closed two-dimensional profile with holes defined for the use for the swept area solid or a sectioned spine. It is given by an outer boundary and inner boundaries from with the solid the can be constructed.
+The _IfcArbitraryProfileDefWithVoids_ defines an arbitrary closed two-dimensional profile with holes. It is given by an outer boundary and inner boundaries. A common usage of _IfcArbitraryProfileDefWithVoids_ is as the cross section for the creation of swept surfaces or swept solids.
 
-> <font color="#0000ff" size="-1">HISTORY: New entity
-in IFC
-Release 2x.</font>
+> HISTORY&nbsp; New entity in IFC2x.
 
-**Informal
-propositions**:
+{ .spec-head}
+Informal Propositions:
 
 1. The outer curve and all inner curves shall be closed curves.
 2. The outer curve shall enclose all inner curves.
-3. No inner curve shall intersect with the outer curve or any other inner curve.
+3. No inner curve shall intersect with the outer curve or any other inner curve. That is, no two curves of the profile definition shall have a point or segment in common, taken into account the geometric precision factor of the geometric representation context. In other words, curves must neither cross nor touch each other.
 4. No inner curve may enclose another inner curve.
 
-**Illustration**:
+Figure 1 illustrates the arbitrary closed profile definition with voids. The _OuterCurve_, defined at the supertype _IfcArbitraryClosedProfileDef_ and the inner curves are defined in the same underlying coordinate system. The common underlying coordinate system is defined by the swept area solid that uses the profile definition. It is the xy plane of:
 
-<table style="width: 100%;" border="1" cellpadding="2" cellspacing="2" frame="border">
-  <tbody>
-    <tr>
-      <td align="left" valign="top" width="420"><a href="drawings/IfcArbitraryProfileDef-Layout2.dwf"><img src="figures/IfcArbitraryProfileDef-Layout2.gif" alt="arbitrary profile with inner boundaries" border="0" height="300" width="400"></a></td>
-      <td style="width: 100%; vertical-align: top; text-align: left;">
-      <p><u>Position</u>
-      <br>
-The <i>OuterCurve</i>,
-defined at the supertype <i>IfcArbitraryClosedProfileDef</i>
-and the inner curves are defined in the same underlying coordinate
-system. The common underlying
-coordinate system is defined by the swept area solid
-that uses the profile definition. It is the xy plane of: </p>
-      <ul>
-        <li style="font-style: italic;">IfcSweptAreaSolid.Position</li>
-      </ul>
-      <p>or in case of sectioned
-spines the xy plane of each list
-member of <span style="font-style: italic;">IfcSectionedSpine.CrossSectionPositions</span></p>
-      <p><span style="font-style: italic;"></span><u>Parameter</u>
-      <br>
-The <i>OuterCurve</i>
-attribute defines a two dimensional closed
-bounded curve, the <i>InnerCurves</i>
-define a set of two dimensional
-closed bounded curves.</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+* _IfcSweptAreaSolid.Position_
 
-Table: Definition of arbitrary closed profile definition with voids
+or in case of sectioned spines the xy plane of each list member of _IfcSectionedSpine.CrossSectionPositions_. The _OuterCurve_ attribute defines a two dimensional closed bounded curve, the _InnerCurves_ define a set of two dimensional closed bounded curves.
+
+!["arbitrary profile with inner boundaries"](../../../figures/IfcArbitraryProfileDef-Layout2.gif "Figure 1 &mdash; Arbitrary profile with voids")

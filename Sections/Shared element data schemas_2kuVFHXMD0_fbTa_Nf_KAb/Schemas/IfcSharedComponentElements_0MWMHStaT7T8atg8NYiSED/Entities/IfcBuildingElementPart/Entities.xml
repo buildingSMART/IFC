@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBuildingElementPart" UniqueId="a8383055-66b2-4dac-abe1-98562ba38cad" DiagramNumber="1" BaseDefinition="IfcElementComponent" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Teil eines Bauelements" Locale="de" />
+		<DocLocalization Name="Partie d&apos;élément de construction" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="147.6988" Y="418.51423" Width="438.38571" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="0da05a86-fc94-4001-9141-3943065bd488" DefinedType="IfcBuildingElementPartTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Subtype of building element part</Documentation>
+			<DiagramLine>
+				<DocPoint X="586.08451" Y="468.51423" />
+				<DocPoint X="1337.22888" Y="468.51423" />
+				<DocPoint X="1337.22888" Y="1682.04343" />
+				<DocPoint X="1307.618127" Y="1682.04343" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="706.11542" Y="463.8613667" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="c80adf4e-8515-40dc-98ff-24e2148568f3">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcBuildingElementPartType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+(PredefinedType &lt;&gt; IfcBuildingElementPartTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcBuildingElementPartTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="26a0b350-0e56-4a94-ac36-434250ac9ef4">
+			<Documentation>If this occurrence is defined by a type object, the latter has to be an _IfcBuildingElementPartType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+(&apos;IFCSHAREDCOMPONENTELEMENTS.IFCBUILDINGELEMENTPARTTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

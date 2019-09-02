@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcParameterizedProfileDef" UniqueId="eddbf896-fef4-49ba-b5c8-5315a44af82c" DiagramNumber="1" BaseDefinition="IfcProfileDef" EntityFlags="197">
+	<Localization>
+		<DocLocalization Name="Profil - parametrische Definition" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="396.66666" Y="1132.21" Width="280" Height="136.66666" />
 	<Subtypes>
 		<DocSubtype UniqueId="19a7e5d3-4d49-4fdf-a952-a8f1074b3e10" DefinedType="IfcIShapeProfileDef" />
 		<DocSubtype UniqueId="b7499e5f-b032-4a0a-8b90-1d90a08a8702" DefinedType="IfcLShapeProfileDef" />
@@ -7,16 +11,20 @@
 		<DocSubtype UniqueId="6d468ea2-009e-42cd-a733-c1c6e5f4d7f3" DefinedType="IfcCShapeProfileDef" />
 		<DocSubtype UniqueId="629220fc-6257-4f49-956a-46cf0e04231a" DefinedType="IfcZShapeProfileDef" />
 		<DocSubtype UniqueId="8c5d1eb9-d6f3-4bd8-9d5c-aa81eb1c1f16" DefinedType="IfcTShapeProfileDef" />
-		<DocSubtype UniqueId="2lVVstrmvChATyT03XbYoX" DefinedType="IfcCraneRailFShapeProfileDef" />
-		<DocSubtype UniqueId="16vuqgFZTDXgP6utO_evql" DefinedType="IfcCraneRailAShapeProfileDef" />
 		<DocSubtype UniqueId="8b52353c-9144-4016-aebe-6b373f4be6be" DefinedType="IfcCircleProfileDef" />
 		<DocSubtype UniqueId="a553d1a9-3238-4605-9125-5f9090a3de34" DefinedType="IfcEllipseProfileDef" />
 		<DocSubtype UniqueId="5412cafd-89e3-4033-abdf-6b014e925307" DefinedType="IfcRectangleProfileDef" />
 		<DocSubtype UniqueId="26653bd4-ea0b-40fc-bebb-96f151f7aff4" DefinedType="IfcTrapeziumProfileDef" />
+		<DocSubtype UniqueId="db841ee3-eca3-4a42-acee-b9b5f7b04211" DefinedType="IfcAsymmetricIShapeProfileDef" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Position" UniqueId="b7f101fa-76d8-4290-ac63-aa0b786f3592" DefinedType="IfcAxis2Placement2D" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>Position coordinate system of the parameterized profile definition.</Documentation>
+		<DocAttribute Name="Position" UniqueId="b7f101fa-76d8-4290-ac63-aa0b786f3592" DefinedType="IfcAxis2Placement2D" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>Position coordinate system of the parameterized profile definition. If unspecified, no translation and no rotation is applied.</Documentation>
+			<DiagramLine>
+				<DocPoint X="676.66666" Y="1200.5433" />
+				<DocPoint X="947.92996" Y="1200.5433" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="669.9999933" Y="1190.5433" Width="94" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

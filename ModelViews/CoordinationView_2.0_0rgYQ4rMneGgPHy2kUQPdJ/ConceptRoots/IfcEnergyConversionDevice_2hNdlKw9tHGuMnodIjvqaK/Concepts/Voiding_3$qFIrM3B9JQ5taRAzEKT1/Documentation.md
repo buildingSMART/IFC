@@ -1,1 +1,0 @@
-Specific to IfcEnergyConversionDevice: The IfcEnergyConversionDevice shall not have a voiding relationship. Voids in the shape of an IfcEnergyConversionDevice shall be already included in th shape representation (e.g. part of the xplicit shape).

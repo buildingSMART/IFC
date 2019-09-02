@@ -1,15 +1,15 @@
-Enumeration defining the functional types of air terminals. The _IfcAirTerminalTypeEnum_ contains the following:
+Enumeration defining the functional types of air terminals.
+
+{ .spec-head}
+Enumerated Item Definitions:
 
 * **GRILLE**: A covering for any area through which air passes.
 * **REGISTER**: A grille typically equipped with a damper or control valve.
 * **DIFFUSER**: An outlet discharging supply air in various directions and planes.
-* **EYEBALL**: A small, circular diffuser.
-* **IRIS**: An iris-shaped diffuser.
-* **LINEARGRILLE**: A rectilinear grille.
-* **LINEARDIFFUSER**: a rectilinear diffuser.
+* **LOUVRE**: A rectilinear louvre.
 * **USERDEFINED**: User-defined air terminal type.
 * **NOTDEFINED**: Undefined air terminal type.
 
-> <font color="#0000ff" size="-1">
-    	HISTORY: New enumeration in IFC R2x2.<br>
-    	</font>
+> NOTE&nbsp; Architectural louvres within doors or windows are defined by _IfcPermeableCoveringProperties_.
+
+> HISTORY&nbsp; New enumeration in IFC2x2. Modified in IFC4 to add LOUVRE and remove EYEBALL, IRIS, LINEARGRILLE, LINEARDIFFUSER.

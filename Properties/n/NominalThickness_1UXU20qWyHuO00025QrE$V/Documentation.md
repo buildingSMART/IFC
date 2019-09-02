@@ -1,1 +1,1 @@
-The nominal thickness of the panel
+The nominal thickness of the panel.

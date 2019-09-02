@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcConstructionProductResourceType" UniqueId="f91f11b0-b549-4807-8ebb-0801f1abe42a" DiagramNumber="1" BaseDefinition="IfcConstructionResourceType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Bauprodukt - Ressource -Typ" Locale="de" />
+		<DocLocalization Name="Type de ressource d&apos;un produit de construction" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="867.76667" Y="2176.6133" Width="629.2" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="c781b383-53af-42a9-8adc-fcc77aaea3d3" DefinedType="IfcConstructionProductResourceTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Defines types of construction product resources.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1486.3667" Y="2276.6133" />
+				<DocPoint X="1486.3667" Y="2323.2133" />
+				<DocPoint X="1143.9667" Y="2323.2133" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1566.3667" Y="2317.8799667" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="f265256b-959b-40ce-a5e0-bfe5c5b700ee">
+			<Expression>(PredefinedType &lt;&gt; IfcConstructionProductResourceTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcConstructionProductResourceTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcTypeResource.ResourceType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

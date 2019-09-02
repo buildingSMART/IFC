@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralLoadConfiguration" UniqueId="9918b5b5-eb80-483e-b901-d25ba01b4ae7" DiagramNumber="1" BaseDefinition="IfcStructuralLoad" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Lastanordnung" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="761.61856" Y="292.60355" Width="281.51945" Height="100" />
+	<Attributes>
+		<DocAttribute Name="Values" UniqueId="65672309-32e2-4f35-8595-23022508fe7d" DefinedType="IfcStructuralLoadOrResult" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+			<Documentation>List of load or result values.</Documentation>
+			<DiagramLine>
+				<DocPoint X="902.37829" Y="392.60355" />
+				<DocPoint X="902.37829" Y="457.240281" />
+				<DocPoint X="277.11168" Y="457.240281" />
+				<DocPoint X="277.11168" Y="407.200812" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="913.275313" Y="447.5054439" Width="159" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="Locations" UniqueId="d2c0264e-3df6-47e9-b75c-23ba83e2a29c" DefinedType="IfcLengthMeasure" AttributeFlags="1" AggregationType="1" AggregationFlag="2" AggregationLower="1" AggregationUpper="0" XsdFormat="element">
+			<Documentation>Locations of the load samples or result samples, given within the local coordinate system defined by the instance which uses this resource object.  Each item in the list of locations pertains to the values list item at the same list index.  This attribute is optional for configurations in which the locations are implicitly known from higher-level definitions.</Documentation>
+			<AggregationAttribute xsi:type="DocAttribute" UniqueId="91fdc1c5-1bb3-4c8d-b295-19fe769469f3" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="2" />
+			<DiagramLine>
+				<DocPoint X="1043.138" Y="342.60355" />
+				<DocPoint X="1380.63539" Y="342.60355" />
+				<DocPoint X="1380.63539" Y="386.65538" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1062.05419" Y="334.9611013" Width="270" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="ValidListSize" UniqueId="c504b262-6aa1-4271-87b1-b79b59e0e23c">
+			<Documentation>If locations are provided, there shall be as many location items as there are value items.</Documentation>
+			<Expression>NOT EXISTS(Locations) OR (SIZEOF(Locations) = SIZEOF(Values))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

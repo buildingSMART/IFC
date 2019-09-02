@@ -1,1 +1,0 @@
-Subtype of fitting (I.e., 5-gore, pleated, stamped, etc.)

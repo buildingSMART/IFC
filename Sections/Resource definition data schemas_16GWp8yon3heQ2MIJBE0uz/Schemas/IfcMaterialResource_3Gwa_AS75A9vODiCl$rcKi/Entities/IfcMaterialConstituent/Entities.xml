@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMaterialConstituent" UniqueId="beba5e9b-c73b-48e0-8a6d-b5d65ddbaaf1" DiagramNumber="4" BaseDefinition="IfcMaterialDefinition" EntityFlags="237">
+	<Localization>
+		<DocLocalization Name="Materialbestandteil" Locale="de" />
+		<DocLocalization Name="Matériau constitutif" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="5068.554" Y="612.05771" Width="457.29081" Height="474.3" />
+	<Attributes>
+		<DocAttribute Name="Name" UniqueId="cd111960-1bdc-4bb1-82cf-eb8857fc7dae" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The name by which the material constituent is known.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5525.8448" Y="660.52778" />
+				<DocPoint X="5911.88708" Y="660.52778" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5434.363622" Y="649.092633" Width="73" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="Description" UniqueId="ebe9ac22-8c7f-4eb2-a71e-4fd081367dcf" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Definition of the material constituent in descriptive terms.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5525.8448" Y="754.86774" />
+				<DocPoint X="5911.88708" Y="754.86774" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5462.95149" Y="743.432593" Width="130" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="Material" UniqueId="8f4bb525-9e74-4e8e-bc69-8cd29d76032e" DefinedType="IfcMaterial" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>Reference to the material from which the constituent is constructed.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5525.8448" Y="854.92528" />
+				<DocPoint X="5911.86933" Y="854.92528" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5442.939982" Y="843.490133" Width="94" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="Fraction" UniqueId="c7db76e7-d83a-421c-a53d-714aef504ca3" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Optional provision of a fraction of the total amount (volume or weight) that applies to the _IfcMaterialConstituentSet_ that is contributed by this _IfcMaterialConstituent_.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5525.8448" Y="957.84161" />
+				<DocPoint X="5911.86344" Y="957.84161" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5440.081195" Y="946.406463" Width="96" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="Category" UniqueId="e83b8380-8104-4922-8366-c2cda154c85c" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Category of the material constituent, e.g. the role it has in the constituent set it belongs to.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5525.8448" Y="1055.0404" />
+				<DocPoint X="5911.86344" Y="1055.0404" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5445.798769" Y="1043.605253" Width="108" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="ToMaterialConstituentSet" UniqueId="209ecc93-41cf-491d-b4e8-7e22cada303e" DefinedType="IfcMaterialConstituentSet" AttributeFlags="8" AggregationType="0" AggregationFlag="0" Inverse="MaterialConstituents">
+			<Documentation>Material constituent set in which this material constituent is included.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5124.2503" Y="358.7512" />
+				<DocPoint X="5124.2503" Y="612.05771" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5325.81235" Y="311.49335" Width="350" Height="35" />
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

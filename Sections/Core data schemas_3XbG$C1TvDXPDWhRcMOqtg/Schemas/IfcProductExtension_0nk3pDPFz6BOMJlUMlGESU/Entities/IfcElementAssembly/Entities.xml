@@ -1,17 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcElementAssembly" Name="IfcElementAssembly" UniqueId="80060d73-7260-4e2d-8f9b-46819d547abe" DiagramNumber="10" BaseDefinition="IfcElement" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcElementAssembly" Name="IfcElementAssembly" UniqueId="80060d73-7260-4e2d-8f9b-46819d547abe" DiagramNumber="2" BaseDefinition="IfcElement" EntityFlags="237">
+	<Localization>
+		<DocLocalization Name="zusammengesetztes Element" Locale="de" />
+		<DocLocalization Name="Assemblage d&apos;éléments" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1808.107" Y="1252.4734" Width="363.8411" Height="181.35152" />
 	<Attributes>
 		<DocAttribute Name="AssemblyPlace" UniqueId="1d9c3c37-5ade-4dce-84eb-639544d907bb" DefinedType="IfcAssemblyPlaceEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>A designation of where the assembly is intended to take place defined by an Enum.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2171.9481" Y="1385.8158" />
+				<DocPoint X="2694.58563" Y="1385.8158" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2169.4781483" Y="1380.8016327" Width="173" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="PredefinedType" UniqueId="52e54ce3-c706-4309-8db3-88ec5a4386ac" DefinedType="IfcElementAssemblyTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>Predefined generic types for a element assembly that are specified in an enumeration.</Documentation>
+		<DocAttribute Name="PredefinedType" UniqueId="52e54ce3-c706-4309-8db3-88ec5a4386ac" DefinedType="IfcElementAssemblyTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Predefined generic types for a element assembly that are specified in an enumeration. There might be property sets defined specifically for each predefined type.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; The attribute has been changed to be optional.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2171.9481" Y="1288.262" />
+				<DocPoint X="2694.5609" Y="1288.262" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2166.571165" Y="1274.971995" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="20uamnX8f8bO7VTe5djzAi">
-			<Documentation>The attribute ObjectType shall be given, if the predefined type is set to USERDEFINED.</Documentation>
-			<Expression>(PredefinedType &lt;&gt; IfcElementAssemblyTypeEnum.USERDEFINED) OR ((PredefinedType = IfcElementAssemblyTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType)) </Expression>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="ae3add8c-49b2-4dc3-aa68-f7d33d18c850">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcElementAssemblyType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+ (PredefinedType &lt;&gt; IfcElementAssemblyTypeEnum.USERDEFINED) OR
+ ((PredefinedType = IfcElementAssemblyTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="41cbbb20-4c8d-453a-9c13-3f9bcd605bb0">
+			<Documentation>Either there is no element assembly type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcElementAssemblyType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+  (&apos;IFCPRODUCTEXTENSION.IFCELEMENTASSEMBLYTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>

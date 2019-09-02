@@ -1,0 +1,1 @@
+The _IfcMemberStandardCase_ defines in addition that the _IfcMemberType_ should have a unique _IfcMaterialProfileSet_, that is referenced by the _IfcMaterialProfileSetUsage_ assigned to all occurrences of this _IfcMemberType_.

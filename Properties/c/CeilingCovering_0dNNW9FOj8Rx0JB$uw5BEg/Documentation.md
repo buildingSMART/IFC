@@ -1,1 +1,0 @@
-Label to indicate the material or finish of the space flooring. The label is used for room book information and often displayed in room stamp.

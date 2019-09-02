@@ -1,1 +1,0 @@
-Specific to IfcBuildingStorey: The usage of attributes is (1) Name being the building number or code, (2) LongName being the building name, (3) Description being any additional informative text, and (4) the CompositionType to indicate whether the building is a single building, or a building section.

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMapConversion" UniqueId="506c5de0-1239-4940-bf42-bab69e86f4fd" DiagramNumber="4" BaseDefinition="IfcCoordinateOperation" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Konvertierung in kartographische Koordinaten" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="5199.2842" Y="424.02627" Width="408.20339" Height="535.62556" />
+	<Attributes>
+		<DocAttribute Name="Eastings" UniqueId="90379900-4b34-4a0d-ac18-6252a9826f8d" DefinedType="IfcLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Specifies the location along the easting of the coordinate system of the target map coordinate reference system.
+&gt; NOTE&amp;nbsp; for right-handed Cartesian coordinate systems this would establish the location along the x axis.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5607.4876" Y="475.09908" />
+				<DocPoint X="6069.5194" Y="475.09908" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5607.4876" Y="475.09908" Width="101" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="Northings" UniqueId="5ecf06ef-a890-4175-bd87-5a66389c4a94" DefinedType="IfcLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Specifies the location along the northing of the coordinate system of the target map coordinate reference system.
+&gt; NOTE&amp;nbsp; for right-handed Cartesian coordinate systems this would establish the location along the y axis</Documentation>
+			<DiagramLine>
+				<DocPoint X="5607.4876" Y="550.55974" />
+				<DocPoint X="6069.52566" Y="550.55974" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5607.4876" Y="550.55974" Width="113" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="OrthogonalHeight" UniqueId="387d0354-e2c4-43ee-8794-44988ceda720" DefinedType="IfcLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Orthogonal height relativ to the vertical datum specified.
+&gt; NOTE&amp;nbsp; for right-handed Cartesian coordinate systems this would establish the location along the z axis</Documentation>
+			<DiagramLine>
+				<DocPoint X="5607.4876" Y="637.38585" />
+				<DocPoint X="6069.53818" Y="637.38585" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5607.4876" Y="637.38585" Width="202" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="XAxisAbscissa" UniqueId="fd51ced1-8bfd-4463-8c2d-da83ec682068" DefinedType="IfcReal" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Specifies the value along the easing axis of the end point of a vector indicating the position of the local x axis of the engineering coordinate reference system.
+&gt; NOTE&amp;nbsp;1 for right-handed Cartesian coordinate systems this would establish the location along the x axis
+
+&gt; NOTE&amp;nbsp;2 together with the _XAxisOrdinate_ it provides the direction of the local x axis within the horizontal plane of the map coordinate system</Documentation>
+			<DiagramLine>
+				<DocPoint X="5607.4876" Y="732.06529" />
+				<DocPoint X="6069.53818" Y="732.06529" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5607.4876" Y="732.06529" Width="165" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="XAxisOrdinate" UniqueId="7cbfb2eb-9b52-4866-9d87-da9d89a90495" DefinedType="IfcReal" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Specifies the value along the northing axis of the end point of a vector indicating the position of the local x axis of the engineering coordinate reference system.
+&gt; NOTE&amp;nbsp;1 for right-handed Cartesian coordinate systems this would establish the location along the y axis
+
+{ .note}
+&gt; 
+
+_XAxisAbscissa_ it provides the direction of the local x axis within the horizontal plane of the map coordinate system.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5607.4876" Y="818.58241" />
+				<DocPoint X="6069.54444" Y="818.58241" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5607.4876" Y="818.58241" Width="163" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="Scale" UniqueId="db27722d-93be-4e68-a96a-712ebbef1884" DefinedType="IfcReal" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Scale to be used, when the units of the CRS are not identical to the units of the engineering coordinate system. If omited, the value of 1.0 is assumed.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5607.4876" Y="906.5466" />
+				<DocPoint X="6069.56008" Y="906.5466" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5607.4876" Y="906.5466" Width="68" Height="35" />
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

@@ -1,1 +1,0 @@
-The volumetric flowrate of gas to the gas terminal.

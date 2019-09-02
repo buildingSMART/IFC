@@ -1,0 +1,1 @@
+The _IfcElementAssembly_ should have a relationship for its containment in the hierachical spatial structure of the project. Only if the _IfcElementAssembly_ is itself a part of another assembly this relationship should be omitted.

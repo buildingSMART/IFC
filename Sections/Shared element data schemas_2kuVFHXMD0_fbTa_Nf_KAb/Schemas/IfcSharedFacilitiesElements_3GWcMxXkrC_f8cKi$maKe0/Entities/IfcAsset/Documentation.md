@@ -1,29 +1,59 @@
-An _IfcAsset_ is a uniquely identifiable grouping of elements acting as a single entity that has a financial value
+An asset is a uniquely identifiable grouping of elements acting as a single entity that has a financial value or that can be operated on as a single unit.
 
-> <font color="#0000ff" size="-1">HISTORY
-New class in IFC 2x. Modified in IFC 2x2</font>
+An asset is generally the level of granularity at which maintenance operations are undertaken. An asset is a group that can contain one or more elements. Whilst the financial value of a component or element can be defined, financial value is also defined for accounting purposes at the level of the asset.  
+  
+There are a number of actors that can be associated with an asset, each actor having a role. Actors within the scope of the project are indicated using the [IfcRelAssignsToActor](../../ifckernel/lexical/ifcrelassignstoactor.htm) relationship in which case roles should be defined through the [IfcActorRole](../../ifcactorresource/lexical/ifcactorrole.htm) class; otherwise principal actors are identified as attributes of the class. In the existence of both, direct attributes take precedence.  
+  
+There are a number of costs that can be associated with an asset, each cost having a role. These are specified through the _OriginalValue_, _CurrentValue_, _TotalReplacementCost_ and _DepreciatedValue_ attributes.
 
-****Use Definitions****
+> HISTORY&nbsp; New entity in IFC2x.
 
-An asset is generally the level of granularity at which maintenance operations are undertaken. An asset is a group that can contain one or more elements. While the value of a component or element can be defined, value is also defined for accounting purposes at the level of the asset.
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; All attributes made optional and date values changed to use _IfcDate_.
 
-There are a number of actors that can be associated with an asset, each actor having a role. Principal actors are identified as attributes of the class. Additional actors can be specified through the relationship class _IfcRelAssignsToActor_ in which case roles should be defined through the _IfcActorRole_ class which must be asserted for each defined role.
+___
+## Common Use Definitions
+The following concepts are inherited at supertypes:
 
-There are a number of costs that can be associated with an asset, each cost having a role. Principal costs are identified as attributes of the class. Additional costs can be specified through the relationship class _IfcRelAssociatesCost_ in which case roles must be asserted.
+* _IfcRoot_: [Identity](../../templates/identity.htm), [Revision Control](../../templates/revision-control.htm)
 
-Service life data (expected life etc.) can be assigned for one or more assets as _IfcServiceLife_ through the relationship class _IfcRelAssignsToControl_.
+[![Image](../../../img/diagram.png)&nbsp;Instance diagram](../../../annex/annex-d/common-use-definitions/ifcasset.htm)
 
-The operating function of an asset within an organization may be particularly valuable in situations where one organization provides and maintains core services and another organization adds and maintains terminal services. It can classify who owns and is responsible for the asset. Operating function can be designated through the use of one or more classification notations which will be handled through the relationship class _IfcRelAssociatesClassification_.
+{ .use-head}
+Property Sets for Objects
 
-****Property Set Use Definition****:
+The [Property Sets for Objects](../../templates/property-sets-for-objects.htm) concept applies to this entity as shown in Table 1.
 
-The property sets relating to an _IfcAsset_are defined by the _IfcPropertySet_ and attached by the _IfcRelDefinesByProperties_ relationship. It is accessible by the inverse _IsDefinedBy_ relationship. The following property set definitions specific to an _IfcAsset_ are part of this IFC release:
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PredefinedType</b></th><th><b>Name</b></th></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_Asset.xml">Pset_Asset</a></td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 1 &mdash; IfcAsset Property Sets for Objects</p></td></tr></table>
 
-* [Pset_Asset](../../psd/IfcSharedFacilitiesElements/Pset_Asset.xml): specific property set for the properties of an asset, if available 
-* [Pset_Reliability](../../psd/IfcSharedFacilitiesElements/Pset_Reliability.xml): specific property set for the properties defining risk that may be associated with an asset or any occurrence of a subtype of _IfcProduct_, if available 
-* [Pset_Risk](../../psd/IfcSharedFacilitiesElements/Pset_Risk.xml): specific property set for the properties defining risk that may be associated with an asset or any occurrence of a subtype of _IfcObject_, if available 
-* [Pset_Warranty](../../psd/IfcSharedFacilitiesElements/Pset_Warranty.xml): specific property set for the properties relating to a warranty or guarantee that may be associated with an asset, any occurrence of _IfcProduct_ or any occurrence of _IfcSystem_, if available 
+  
+  
+{ .use-head}
+Object Classification
 
-****Geometry Use Definitions****
+The [Object Classification](../../templates/object-classification.htm) concept applies to this entity.
 
-The geometric representation of an _IfcAsset_ is determined by the geometric representations of the products that comprise the asset (since an asset is a subtype of _IfcGroup_)
+The operating function of an asset within an organization may be particularly valuable in situations where one organization provides and maintains core services and another organization adds and maintains terminal services. It can classify who owns and is responsible for the asset. Operating function can be designated through the use of one or more classification references.
+
+  
+  
+{ .use-head}
+Group Assignment
+
+The [Group Assignment](../../templates/group-assignment.htm) concept applies to this entity as shown in Table 2.
+
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Type</b></th><th><b>Description</b></th></tr>
+<tr><td><a href="../../ifcproductextension/lexical/ifcelement.htm">IfcElement</a></td><td>Physical elements that comprise the asset.</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 2 &mdash; IfcAsset Group Assignment</p></td></tr></table>

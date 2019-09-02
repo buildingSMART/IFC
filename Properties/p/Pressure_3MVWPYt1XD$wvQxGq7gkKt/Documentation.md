@@ -1,1 +1,0 @@
-Operating steam pressure.

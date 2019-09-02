@@ -1,1 +1,0 @@
-Material from which the impeller of the pump is constructed. In the case of a positive displacement pump, the piston acts as the impeller

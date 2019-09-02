@@ -1,1 +1,1 @@
-The accuracy of the sensor
+The accuracy of the sensor.

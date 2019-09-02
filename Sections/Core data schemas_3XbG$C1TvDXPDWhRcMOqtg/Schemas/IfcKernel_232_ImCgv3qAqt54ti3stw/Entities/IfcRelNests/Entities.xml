@@ -1,10 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelNests" UniqueId="a833ffe8-a590-4380-90b8-dd32167b36f6" DiagramNumber="5" BaseDefinition="IfcRelDecomposes" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelNests" UniqueId="a833ffe8-a590-4380-90b8-dd32167b36f6" DiagramNumber="6" BaseDefinition="IfcRelDecomposes" EntityFlags="237">
+	<Localization>
+		<DocLocalization Name="Teil zu Ganzes Beziehung geordnet - Relation" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="8963.95" Y="1588.6667" Width="453.96667" Height="100.66666" />
+	<Attributes>
+		<DocAttribute Name="RelatingObject" UniqueId="240bd13f-f0fa-45d0-81f6-b72e46d8ce4d" DefinedType="IfcObjectDefinition" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>The object definition, either an non-product object type or a non-product object occurrence, that represents the nest. It is the whole within the whole/part relationship.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; The attribute has been demoted from the supertype _IfcRelDecomposes_ and defines the ordered nesting relationship.</Documentation>
+			<DiagramLine>
+				<DocPoint X="9001.6" Y="1689.3334" />
+				<DocPoint X="9001.6" Y="1902.66674" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="9097.6" Y="1705.3334" Width="169" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="RelatedObjects" UniqueId="c36c3044-0ef2-4acb-ba8c-e40b8a465e33" DefinedType="IfcObjectDefinition" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+			<Documentation>The object definitions, either non-product object occurrences or non-product object types, that are being nestes. They are defined as the parts in the ordered whole/part relationship -  i.e. there is an implied order among the parts expressed by the position within the list of _RelatedObjects_.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; The attribute has been demoted from the supertype _IfcRelDecomposes_ and defines the ordered set of parts within the nest.</Documentation>
+			<DiagramLine>
+				<DocPoint X="9260.2667" Y="1689.3334" />
+				<DocPoint X="9260.2667" Y="1902.66674" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="9412.2667" Y="1710.666733" Width="253" Height="35" />
+		</DocAttribute>
+	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="2xs5_fFWfEqvr6sZqZlrYV">
-			<Documentation>The type of the RelatingObject shall always be the same as the type of each RelatedObject, i.e. the RelatingObject and all RelatedObject&apos;s are of the same type.</Documentation>
-			<Expression>SIZEOF(QUERY(Temp &lt;* SELF\IfcRelDecomposes.RelatedObjects | 
-  NOT(TYPEOF(SELF\IfcRelDecomposes.RelatingObject) = TYPEOF(Temp)))) = 0</Expression>
+		<DocWhereRule Name="NoSelfReference" UniqueId="8f29c2f4-c83f-4cc0-a317-4b3bd64b3a31">
+			<Documentation>The instance to with the relation points as provided by _RelatingObject_ shall not be contained in the list of _RelatedObjects_.</Documentation>
+			<Expression>SIZEOF(QUERY(Temp &lt;* RelatedObjects | RelatingObject :=: Temp)) = 0</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>

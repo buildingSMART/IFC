@@ -1,1 +1,0 @@
-The smoke concentration value to be sensed.

@@ -1,0 +1,1 @@
+This represents the 3D clearance volume of the item having RepresentationType of 'Surface3D'. Such clearance region indicates space that should not intersect with the 'Body' representation of other elements, though may intersect with the 'Clearance' representation of other elements. The particular use of clearance space may be for safety, maintenance, or other purposes.

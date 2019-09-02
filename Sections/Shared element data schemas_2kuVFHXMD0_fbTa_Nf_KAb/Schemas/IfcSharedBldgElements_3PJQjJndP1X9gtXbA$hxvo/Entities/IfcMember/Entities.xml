@@ -1,3 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcMember" Name="IfcMember" UniqueId="b752e035-e86a-47fe-9596-26982071dd71" DiagramNumber="1" BaseDefinition="IfcBuildingElement" EntityFlags="101" />
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcMember" Name="IfcMember" UniqueId="b752e035-e86a-47fe-9596-26982071dd71" DiagramNumber="1" BaseDefinition="IfcBuildingElement" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Stab / Stabträger" Locale="de" />
+		<DocLocalization Name="Membre" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="484.69333" Y="1035.12" Width="249.96667" Height="214.6" />
+	<Subtypes>
+		<DocSubtype UniqueId="d9aa11d9-125e-42f6-be3b-e9438113c804" DefinedType="IfcMemberStandardCase" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="da25064e-d324-4514-9b91-3e12adc9db3b" DefinedType="IfcMemberTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Predefined generic type for a member that is specified in an enumeration. There may be a property set given for the predefined types.
+&gt; NOTE&amp;nbsp; The _PredefinedType_ shall only be used, if no _IfcMemberType_ is assigned, providing its own _IfcMemberType.PredefinedType_.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE The attribute has been added at the end of the entity definition.</Documentation>
+			<DiagramLine>
+				<DocPoint X="734.66" Y="1193.0867" />
+				<DocPoint X="1113.9933" Y="1193.0867" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="734.66" Y="1182.420033" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="cf04e503-8cca-4753-96e5-6e878ff926bc">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcMemberType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+ (PredefinedType &lt;&gt; IfcMemberTypeEnum.USERDEFINED) OR
+ ((PredefinedType = IfcMemberTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="0d68144d-f89f-4e58-9d43-097e9b4eb42f">
+			<Documentation>Either there is no member type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcMemberType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+  (&apos;IFCSHAREDBLDGELEMENTS.IFCMEMBERTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
 

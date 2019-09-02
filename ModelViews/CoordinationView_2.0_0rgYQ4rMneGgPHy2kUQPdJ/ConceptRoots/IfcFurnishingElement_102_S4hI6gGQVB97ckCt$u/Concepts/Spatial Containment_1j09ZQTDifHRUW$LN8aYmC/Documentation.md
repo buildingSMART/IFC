@@ -1,1 +1,0 @@
-Specific to IfcFurnishingElement: It shall not be provided, if the IfcFurnishingElement is part of an aggregation.

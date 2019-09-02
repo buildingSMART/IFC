@@ -1,1 +1,0 @@
-The upper and lower bounds for operation of the heat sensor.

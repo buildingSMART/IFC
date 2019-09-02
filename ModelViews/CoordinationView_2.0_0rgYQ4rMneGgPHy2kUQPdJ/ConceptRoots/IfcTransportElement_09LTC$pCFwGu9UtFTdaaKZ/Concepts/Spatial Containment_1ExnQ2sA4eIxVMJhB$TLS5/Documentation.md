@@ -1,1 +1,0 @@
-Specific to IfcTransportElement: It shall not be provided, if the IfcTransportElement is part of an aggregation.

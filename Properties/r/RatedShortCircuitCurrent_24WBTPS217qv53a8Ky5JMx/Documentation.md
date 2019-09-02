@@ -1,1 +1,0 @@
-An overcurrent resulting from a fault of negligible impedance between live conductors having a difference in potential under normal operating conditions. (IEC 826-05-08)

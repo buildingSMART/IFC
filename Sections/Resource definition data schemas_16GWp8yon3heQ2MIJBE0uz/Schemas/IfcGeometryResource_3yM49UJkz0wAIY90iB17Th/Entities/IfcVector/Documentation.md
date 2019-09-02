@@ -1,18 +1,11 @@
-**Definition from ISO/CD 10303-42:1992**: The vector is defined in terms of the direction and magnitude of the vector. The value of the magnitude attribute defines the magnitude of the vector.
+An _IfcVector_ is a geometric representation item having both a magnitude and direction. The magnitude of the vector is solely defined by the _Magnitude_ attribute and the direction is solely defined by the _Orientation_ attribute.
 
-> <font size="-1">NOTE: The magnitude of the vector can not be reliable
-		  calculated from the components of the Orientation attribute. This form of
-		  representation was selected to reduce problems with numerical instability. For
-		  example a vector of magnitude 2.0 mm and equally inclined to the coordinate
-		  axes could be represented with Orientation attribute of (1.0,1.0,1.0).
-		  </font>
->
+> NOTE&nbsp; The _DirectionRatios_ of the _Orientation_ attribute are not used to define the magnitude.
 
-> <font size="-1" color="#0000FF">NOTE: Corresponding STEP entity:
-		  vector. Please refer to ISO/IS 10303-42:1994, p.27 for the final definition of
-		  the formal standard. The derived attribute <i>Dim</i> has been added (see also
-		  note at <i>IfcGeometricRepresentationItem</i>).</font>
-> 
-> <font size="-1" color="#0000FF">HISTORY: New entity in IFC Release 1.0
-		  </font>
->
+{ .extDef}
+> NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
+> The vector is defined in terms of the direction and magnitude of the vector. The value of the magnitude attribute defines the magnitude of the vector. The magnitude of the vector can not be reliable calculated from the components of the orientation attribute. This form of representation was selected to reduce problems with numerical instability. For example a vector of magnitude 2.0 mm and equally inclined to the coordinate axes could be represented with Orientation attribute of (1.0,1.0,1.0).
+
+> NOTE&nbsp; Entity adapted from **vector** defined in ISO 10303-42.
+
+> HISTORY&nbsp; New entity in IFC1.0

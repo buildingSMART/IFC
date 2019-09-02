@@ -1,41 +1,84 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGeometricRepresentationSubContext" UniqueId="2e4bdfcf-4532-4cf3-b45f-4372edb5bfb3" DiagramNumber="1" BaseDefinition="IfcGeometricRepresentationContext" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Geometrische Repräsentation - Unterkontext" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="117.40326" Y="1558.439" Width="439.89783" Height="501.19809" />
 	<Attributes>
-		<DocAttribute Name="ParentContext" UniqueId="7cb376a0-9c58-4443-96fa-afc3a59e7ba1" DefinedType="IfcGeometricRepresentationContext" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ParentContext" UniqueId="7cb376a0-9c58-4443-96fa-afc3a59e7ba1" DefinedType="IfcGeometricRepresentationContext" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="hidden">
 			<Documentation>Parent context from which the sub context derives its world coordinate system, precision, space coordinate dimension and true north.</Documentation>
+			<DiagramLine>
+				<DocPoint X="503.86444" Y="1558.439" />
+				<DocPoint X="503.86444" Y="1370.11757" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="606.36457" Y="1536.017097" Width="166" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="TargetScale" UniqueId="073455e4-1a2b-4354-9ff3-c1f32182a254" DefinedType="IfcPositiveRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The target &lt;font color=&quot;#ff0000&quot;&gt;plot&lt;/font&gt; scale of the representation 
 to which this representation context applies.
-&gt; &lt;font size=&quot;-1&quot;&gt; Scale indicates the target plot scale for
-the representation sub context, all annotation styles are given in plot
-dimensions according to this target plot scale.&lt;br&gt;
-If multiple instances of &lt;i&gt;IfcGeometricRepresentationSubContext&lt;/i&gt;
-are given having the same &lt;i&gt;TargetView&lt;/i&gt; value, the target plot scale 
-applies up to the next smaller scale, or up to unlimited small scale.
-  &lt;br&gt;
-  &lt;br&gt;
-Note: Scale 1:100 (given as 0.01 within &lt;i&gt;TargetScale&lt;/i&gt;)
-is bigger then 1:200 (given as 0.005 within &lt;i&gt;TargetScale&lt;/i&gt;).
-  &lt;/font&gt;</Documentation>
+&gt; NOTE&amp;nbsp; Scale indicates the target plot scale for the representation sub context, all annotation styles are given in plot dimensions according to this target plot scale.  
+&gt; If multiple instances of _IfcGeometricRepresentationSubContext_ are given having the same _TargetView_ value, the target plot scale applies up to the next smaller scale, or up to unlimited small scale.
+
+&gt; NOTE&amp;nbsp; Scale 1:100 (given as 0.01 within _TargetScale_) is bigger then 1:200 (given as 0.005 within _TargetScale_).</Documentation>
+			<DiagramLine>
+				<DocPoint X="295.71149" Y="2059.6371" />
+				<DocPoint X="295.71149" Y="2154.256368" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="398.21162" Y="2062.8401812" Width="140" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="TargetView" UniqueId="13b3e0ec-6a77-4adb-a4cb-5fc77d4a7644" DefinedType="IfcGeometricProjectionEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Target view of the representation to which this representation context applies.</Documentation>
+			<DiagramLine>
+				<DocPoint X="557.30109" Y="1917.3324" />
+				<DocPoint X="913.75106" Y="1917.3324" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="493.555954" Y="1907.119322" Width="132" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="UserDefinedTargetView" UniqueId="f9374710-c549-4fc2-be03-03bb62121bb5" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>User defined target view, this attribute value shall be given, if the TargetView attribute is set to USERDEFINED.</Documentation>
+			<DiagramLine>
+				<DocPoint X="557.30109" Y="1998.0227" />
+				<DocPoint X="913.77341" Y="1998.0227" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="555.4495071" Y="1989.6696821" Width="270" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="WorldCoordinateSystem" UniqueId="c8f73a88-7c4d-4d42-bbae-9363c1d37865" DefinedType="IfcAxis2Placement" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Derived>ParentContext.WorldCoordinateSystem</Derived>
+			<DiagramLine>
+				<DocPoint X="557.30109" Y="1657.3593" />
+				<DocPoint X="1519.0011" Y="1657.3593" />
+				<DocPoint X="1519.0011" Y="1075.33187" />
+				<DocPoint X="1413.85193" Y="1075.33187" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="320.09007" Y="1646.854324" Width="405" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="CoordinateSpaceDimension" UniqueId="cd762a80-b010-4136-a418-95b2fd925aa4" DefinedType="IfcDimensionCount" AttributeFlags="16" AggregationType="0" AggregationFlag="0" Inverse="IfcGeometricRepresentationContext">
 			<Derived>ParentContext.CoordinateSpaceDimension</Derived>
+			<DiagramLine>
+				<DocPoint X="557.30109" Y="1582.7374" />
+				<DocPoint X="1489.76756" Y="1582.7374" />
+				<DocPoint X="1489.76756" Y="1313.74383" />
+				<DocPoint X="1413.841148" Y="1313.74383" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="355.6188" Y="1575.325035" Width="446" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="TrueNorth" UniqueId="0535f9bb-ddbe-4d14-8f6e-f741ee3701bf" DefinedType="IfcDirection" AttributeFlags="16" AggregationType="0" AggregationFlag="0" Inverse="IfcGeometricRepresentationContext">
-			<Derived>NVL(ParentContext.TrueNorth,SELF.WorldCoordinateSystem.P[2])</Derived>
+			<Derived>NVL(ParentContext.TrueNorth, IfcConvertDirectionInto2D(SELF\IfcGeometricRepresentationContext.WorldCoordinateSystem.P[2]))</Derived>
+			<DiagramLine>
+				<DocPoint X="557.30109" Y="1736.2191" />
+				<DocPoint X="1550.14565" Y="1736.2191" />
+				<DocPoint X="1550.14565" Y="882.41756" />
+				<DocPoint X="1413.88656" Y="882.41756" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="725.77192" Y="1733.015971" Width="250" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Precision" UniqueId="8addeb83-c243-4dc6-a74e-7375d21c8eca" DefinedType="REAL" AttributeFlags="16" AggregationType="0" AggregationFlag="0" Inverse="IfcGeometricRepresentationContext">
 			<Derived>NVL(ParentContext.Precision,1.E-5)</Derived>
+			<DiagramLine>
+				<DocPoint X="557.30109" Y="1824.3631" />
+				<DocPoint X="913.75105" Y="1824.3631" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="544.48851" Y="1815.3578951" Width="238" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

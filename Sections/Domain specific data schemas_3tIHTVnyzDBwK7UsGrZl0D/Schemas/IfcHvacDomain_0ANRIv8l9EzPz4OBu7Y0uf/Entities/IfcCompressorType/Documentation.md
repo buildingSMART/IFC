@@ -1,23 +1,9 @@
-The element type _IfcCompressorType_ defines a list of commonly shared property set definitions of a compressor and an optional set of product representations. It is used to define a compressor specification (i.e. the specific product information, that is common to all occurrences of that product type).
+The flow moving device type **IfcCompressorType** defines commonly shared information for occurrences of compressors. The set of shared information may include:
 
-> <font size="-1">
-		NOTE: The product representations are defined as
-		representation maps (at the level of the supertype <i>IfcTypeProduct</i>, which
-		get assigned by an element occurrence instance through the
-		<i>IfcShapeRepresentation.Item[1]</i> being an
-		<i>IfcMappedItem</i>.
-    	</font>
+* common properties with shared property sets
+* common representations
+* common materials
+* common composition of elements
+* common ports
 
-A compressor type is used to define the common properties of a Compressor that may be applied to many occurrences of that type. A compressor is a device that compresses a fluid typically used in a refrigeration circuit. Compressor types (or the instantiable subtypes) may be exchanged without being already assigned to occurrences.
-
-The occurrences of the _IfcCompressorType_ are represented by instances of _IfcFlowMovingDevice_ or its subtypes.
-
-****Property Set Use Definition****:
-
-The property sets relating to this entity are defined by the _IfcPropertySet_ and attached by the _IfcRelDefinesByProperties_ relationship. It is accessible by the inverse _IsDefinedBy_ relationship. The following property set definitions specific to this entity are part of this IFC release:
-
-* [Pset_CompressorTypeCommon](../../psd/IfcHvacDomain/Pset_CompressorTypeCommon.xml){ target="SOURCE"}: common property set for all compressor types 
-
-> <font color="#0000ff" size="-1">
-    	HISTORY: New entity in IFC Release 2x2.<br>
-    	</font>
+It is used to define a compressor type specification indicating the specific product information that is common to all occurrences of that product type. The **IfcCompressorType** may be declared within _IfcProject_ or _IfcProjectLibrary_ using _IfcRelDeclares_ and may be exchanged with or without occurrences of the type. Occurrences of **IfcCompressorType** are represented by instances of _IfcCompressor_. Refer to the documentation at _IfcCompressor_ for supported property sets, materials, composition, and ports.

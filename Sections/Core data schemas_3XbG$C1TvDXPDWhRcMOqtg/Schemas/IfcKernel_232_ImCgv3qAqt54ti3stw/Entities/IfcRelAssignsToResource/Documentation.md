@@ -1,7 +1,5 @@
-This objectified relationship (_IfcRelAssignsToResource_) handles the assignment of objects (subtypes of _IfcObject_) to a resource (subtypes of _IfcResource_).
+The objectified relationship _IfcRelAssignsToResource_ handles the assignment of objects (as subtypes of _IfcObject_), acting as a resource usage or consumption, to a resource (as subtypes of _IfcResource_).
 
-> **For example**: The assignment of a resource (e.g. a labor resource - as subtype of _IfcResource_) to a construction process on site (process as subtype of _IfcObject_) , is an application of this generic relationship.
+> EXAMPLE&nbsp; The assignment of a resource usage to a construction resource is an application of this generic relationship. It could be an actor, as person or organization assigned to a labor resource, or a raw product assigned to a construction product or material resource).
 
-> <font color="#0000FF" size="-1">HISTORY New Entity in IFC Release 2x.
-		  </font>
->
+> HISTORY&nbsp; New entity in IFC2x.

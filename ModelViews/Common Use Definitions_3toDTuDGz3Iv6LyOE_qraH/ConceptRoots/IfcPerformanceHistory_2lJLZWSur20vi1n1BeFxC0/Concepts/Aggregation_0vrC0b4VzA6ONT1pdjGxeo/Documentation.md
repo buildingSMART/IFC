@@ -1,0 +1,1 @@
+_IfcPerformanceHistory_ may be decomposed into components using _IfcRelNests_ where _RelatingObject_ refers to the enclosing _IfcPerformanceHistory_ and _RelatedObjects_ contains one or more _IfcPerformanceHistory_ components. Composition indicates breakdown of further detail and may correspond to the hierarchy of objects it represents.

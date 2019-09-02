@@ -1,18 +1,20 @@
-The element type (_IfcTransportElementType_) defines a list of commonly shared property set definitions of an element and an optional set of product representations. It is used to define an element specification (i.e. the specific product information, that is common to all occurrences of that product type).
+The element type _IfcTransportElementType_ defines commonly shared information for occurrences of transport elements. The set of shared information may include:
 
-> <font size="-1">NOTE: The product representations are
-        defined as representation maps (at the level of the
-        supertype <i>IfcTypeProduct</i>, which gets assigned by
-        an element occurrence instance through the
-        <i>IfcShapeRepresentation.Item[1]</i> being an
-        <i>IfcMappedItem</i>.</font>
-> 
+* common properties within shared property sets
+* common material information
+* common shape representations
 
-
-A transport element type is used to define the common properties of a certain type of a transport element that may be applied to many instances of that type to assign a specific style. Transport element types (or the instantiable subtypes) may be exchanged without being already assigned to occurrences.
+It is used to define a transport element specification (i.e. the specific product information that is common to all occurrences of that beam type). Transport element types (or the instantiable subtypes) may be exchanged without being already assigned to occurrences.
 
 The occurrences of the _IfcTransportElementType_ are represented by instances of _IfcTransportElement_ (or its subtypes).
 
-> <font color="#0000FF" size="-1">HISTORY: New entity in
-        Release IFC2x Edition 2.</font>
->
+> HISTORY&nbsp; New entity in IFC2x2.
+
+{ .use-head}
+Geometry Use Definition
+
+The _IfcTransportElementType_ may define the shared geometric representation for all transport element occurrences. The _RepresentationMaps_ attribute refers to a list of _IfcRepresentationMap_'s, that allow for multiple geometric representations (e.g. with _IfcShaperepresentation_'s having an _RepresentationIdentifier_ 'Box', 'FootPrint', or 'Body').
+
+> NOTE&nbsp; The product shape representations are defined as _RepresentationMaps_ (attribute of the supertype _IfcTypeProduct_), which get assigned by an element occurrence instance through the _IfcShapeRepresentation.Item[n]_ being an _IfcMappedItem_. See _IfcTypeProduct_ for further information.
+
+> NOTE&nbsp; The values of attributes _RepresentationIdentifier_ and _RepresentationType_ of _IfcShapeRepresentation_ are restricted in the same way as those for _IfcTransportElementType_.

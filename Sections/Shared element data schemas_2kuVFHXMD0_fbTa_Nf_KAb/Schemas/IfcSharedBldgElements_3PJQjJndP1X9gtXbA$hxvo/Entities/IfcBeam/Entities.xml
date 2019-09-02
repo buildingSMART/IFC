@@ -1,3 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcBeam" Name="IfcBeam" UniqueId="7f07946e-f8d2-4f0f-a25c-5bae7d67f92a" DiagramNumber="1" BaseDefinition="IfcBuildingElement" EntityFlags="101" />
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcBeam" Name="IfcBeam" UniqueId="7f07946e-f8d2-4f0f-a25c-5bae7d67f92a" DiagramNumber="1" BaseDefinition="IfcBuildingElement" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Balken / Unterzug" Locale="de" />
+		<DocLocalization Name="Poutre" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="484.77504" Y="360.4283" Width="249.9" Height="227.96667" />
+	<Subtypes>
+		<DocSubtype UniqueId="6a1d8aa2-cdb8-4bab-afdb-3935056aebd1" DefinedType="IfcBeamStandardCase" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="7bb3f509-7b4f-4430-85ea-65881e1e03ea" DefinedType="IfcBeamTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Predefined generic type for a beam that is specified in an enumeration. There may be a property set given specificly for the predefined types.
+&gt; NOTE&amp;nbsp; The _PredefinedType_ shall only be used, if no _IfcBeamType_ is assigned, providing its own _IfcBeamType.PredefinedType_.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE The attribute has been added at the end of the entity definition.</Documentation>
+			<DiagramLine>
+				<DocPoint X="734.67504" Y="519.72882" />
+				<DocPoint X="1113.9084" Y="519.72882" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="732.0083733" Y="511.72882" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="a85ecbb1-f14c-45ea-b2d6-3aa676a82c59">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcBeamType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+ (PredefinedType &lt;&gt; IfcBeamTypeEnum.USERDEFINED) OR
+ ((PredefinedType = IfcBeamTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="cd2089fe-a22d-44ea-a43a-6df4d76d9e48">
+			<Documentation>Either there is no beam type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcBeamType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+  (&apos;IFCSHAREDBLDGELEMENTS.IFCBEAMTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
 

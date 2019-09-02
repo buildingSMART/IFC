@@ -1,0 +1,1 @@
+The material of the _IfcCoveringType_ is defined by _IfcMaterialLayerSet_ for layer-based coverings or as fall back by _IfcMaterial_ and attached by the _IfcRelAssociatesMaterial_._RelatingMaterial_. It is accessible by the inverse _HasAssociations_ relationship.

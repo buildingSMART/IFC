@@ -1,1 +1,0 @@
-Overall or average ratio of the visible spectral flux transmitted through a body to that incident upon it.

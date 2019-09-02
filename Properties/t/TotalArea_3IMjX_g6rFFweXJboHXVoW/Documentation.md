@@ -1,1 +1,0 @@
-Total exposed area of the roof

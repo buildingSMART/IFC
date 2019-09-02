@@ -1,11 +1,9 @@
-**Definition from ISO/CD 10303-42:1992**: A point defined by its coordinates in a two or three dimensional rectangular Cartesian coordinate system, or in a two dimensional parameter space. The entity is defined in a two or three dimensional space.
+An _IfcCartesianPoint_ defines a point by coordinates in an orthogonal, right-handed Cartesian coordinate system. For the purpose of this specification only two and three dimensional Cartesian points are used.
 
-The derived attribute _Dim_ has been added (see also note at _IfcGeometricRepresentationItem_). The WR1 was added to constrain the usage of _IfcCartesianPoint_ in the context of IFC geometry. For the purpose of defining geometry in IFC only two and three dimensional Cartesian points are used.
+{ .extDef}
+> NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
+> A cartesian_point is a point defined by its coordinates in a rectangular Cartesian coordinate system, or in a parameter space. The entity is defined in a one, two or three-dimensional space as determined by the number of coordinates in the list. Depending upon the geometric representation context in which the point is used the names of the coordinates may be (x,y,z), or (u,v), or any other chosen values.
 
-> <font size="-1" color="#0000FF">NOTE: Corresponding STEP entity :
-		  cartesian_point, please refer to ISO/IS 10303-42:1994, p. 23 for the final
-		  definition of the formal standard. </font>
-> 
-> <font size="-1" color="#0000FF">HISTORY: New entity in IFC Release 1.0
-		  </font>
->
+> NOTE&nbsp; Entity adapted from **cartesian_point** defined in ISO 10303-42
+
+> HISTORY&nbsp; New entity in IFC1.0

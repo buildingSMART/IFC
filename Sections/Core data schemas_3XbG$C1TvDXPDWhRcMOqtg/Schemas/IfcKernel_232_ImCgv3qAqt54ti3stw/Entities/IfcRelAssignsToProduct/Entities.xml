@@ -1,13 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelAssignsToProduct" UniqueId="72eec376-bbab-40d5-9342-93108c172713" DiagramNumber="5" BaseDefinition="IfcRelAssigns" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelAssignsToProduct" UniqueId="72eec376-bbab-40d5-9342-93108c172713" DiagramNumber="8" BaseDefinition="IfcRelAssigns" EntityFlags="237">
+	<Localization>
+		<DocLocalization Name="Weist Produkt zu - Relation" Locale="de" />
+		<DocLocalization Name="Assignation à produit" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="12287.985" Y="354.04582" Width="454.16667" Height="133.23333" />
 	<Attributes>
-		<DocAttribute Name="RelatingProduct" UniqueId="2daaadb6-2a0e-43bc-8f2b-5cdcdce021dd" DefinedType="IfcProduct" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>Reference to the Product to which the objects are assigned to.</Documentation>
+		<DocAttribute Name="RelatingProduct" UniqueId="2daaadb6-2a0e-43bc-8f2b-5cdcdce021dd" DefinedType="IfcProductSelect" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Reference to the product or product type to which the objects are assigned to.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE Datatype expanded to include _IfcProduct_ and _IfcTypeProduct_.</Documentation>
+			<DiagramLine>
+				<DocPoint X="12366.313" Y="487.27915" />
+				<DocPoint X="12366.313" Y="1241.89333" />
+				<DocPoint X="11505.974" Y="1241.89333" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="12267.646333" Y="540.58624" Width="183" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="1FNmdu9pP2DxL5lXX_taNv">
-			<Documentation>The instance to which the relation points (RelatingProduct) shall not be contained in the list of RelatedObjects.</Documentation>
+		<DocWhereRule Name="NoSelfReference" UniqueId="47b05abc-be1e-4eda-9c7f-73fa0e1c37c0">
+			<Documentation>The instance to which the relation points, as provided by _RelatingProduct_ shall not be contained in the set of _RelatedObjects_.</Documentation>
 			<Expression>SIZEOF(QUERY(Temp &lt;* SELF\IfcRelAssigns.RelatedObjects | RelatingProduct :=: Temp)) = 0</Expression>
 		</DocWhereRule>
 	</WhereRules>

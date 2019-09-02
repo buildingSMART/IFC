@@ -1,1 +1,0 @@
-Ancillary fire use for the building which is assigned from the fire use classification table as given by the relevant national building code.

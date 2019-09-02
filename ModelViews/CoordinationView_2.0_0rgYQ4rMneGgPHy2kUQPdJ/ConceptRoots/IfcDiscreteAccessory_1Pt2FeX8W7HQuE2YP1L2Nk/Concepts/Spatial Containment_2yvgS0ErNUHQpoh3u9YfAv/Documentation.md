@@ -1,1 +1,0 @@
-Specific to IfcDiscreteAccessory: It shall not be provided, if the IfcDiscreteAccessory is part of an aggregation.
