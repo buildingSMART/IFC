@@ -1,0 +1,1 @@
+The reinforcing bar is a ligature (link, stirrup).

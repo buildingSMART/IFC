@@ -1,0 +1,1 @@
+By using the inverse relationship _IfcSite.Decomposes_ it references _IfcProject_ || _IfcSite_ through _IfcRelAggregates.RelatingObject_, If it refers to another instance of _IfcSite_, the referenced _IfcSite_ needs to have a different and higher _CompositionType_, i.e. COMPLEX (if the other _IfcSite_ has ELEMENT), or ELEMENT (if the other _IfcSite_ has PARTIAL).

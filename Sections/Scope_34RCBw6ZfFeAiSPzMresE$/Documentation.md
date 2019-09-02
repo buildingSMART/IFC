@@ -1,60 +1,17 @@
-{ .std}
-This release of IFC specifies a conceptual data schema and an exchange file format for Building Information Model (BIM) data. The conceptual schema is defined in EXPRESS data specification language. The standard exchange file format for exchanging and sharing data according to the conceptual schema is using the Clear text encoding of the exchange structure. Alternative exchange file formats may be used if they conform to the conceptual schema.
+The Industry Foundation Classes, IFC, are an open international standard for Building Information Model (BIM) data that are exchanged and shared among software applications used by the various participants in the construction or facility management industry sector. The standard includes definitions that cover data required for buildings over their life cycle. This release, and upcoming releases, extend the scope to include data definitions for infrastructure assets over their life cycle as well.
 
-{ .std}
-This release of IFC represents an open international standard for BIM data that is exchanged and shared among software applications used by the various participants in a building construction or facility management project.
+The Industry Foundation Classes specify a data schema and an exchange file format structure. The data schema is defined in
 
-{ .std}
-This release of IFC consists of the data schema, represented as an EXPRESS schema specification and alternatively as an XML schema specification, and reference data, represented as definitions of property and quantity names and descriptions.
+* EXPRESS data specification language, defined in [ISO 10303-11](../schema/chapter-2.htm#iso-10303-11),
+* XML Schema definition language (XSD), defined in [XML Schema W3C Recommendation](../schema/chapter-2.htm#w3c-xml-schema-part-1),
 
-{ .std}
-A subset of the data schema and referenced data is referred to as a model view definition. A particular model view definition is defined to support one or many recognized workflows in the building construction and facility management industry sector. Each workflow identifies data exchange requirements for software applications. Conforming software applications need to identity the model view definition they conform to.
+whereas the EXPRESS schema definition is the source and the XML schema definition is generated from the EXPRESS schema according to the mapping rules defined in [ISO 10303-28](../schema/chapter-2.htm#iso-10303-28). The exchange file formats for exchanging and sharing data according to the conceptual schema are
 
-{ .std}
-&nbsp;
+* Clear text encoding of the exchange structure, defined in [ISO 10303-21](../schema/chapter-2.htm#iso-10303-21),
+* Extensible Markup Language (XML), defined in [XML W3C Recommendation](../schema/chapter-2.htm#w3c-xml).
 
-{ .std}
-The following are within the scope of this release of IFC:
+Alternative exchange file formats may be used if they conform to the data schemas.
 
-* BIM exchange format definitions that are required during the life cycle phases of buildings: 
-    * demonstrating the need; 
-    * conception of need; 
-    * outline feasibility; 
-    * substantive feasibility study and outline financial authority; 
-    * outline conceptual design; 
-    * full conceptual design; 
-    * coordinated design; 
-    * procurement and full financial authority; 
-    * production information; 
-    * construction; 
-    * operation and maintenance.       
-* BIM exchange format definitions that are required by the various disciplines involved within the life cycle phases: 
-    * architecture; 
-    * building service; 
-    * structural engineering; 
-    * procurement; 
-    * construction planning; 
-    * facility management; 
-    * project management; 
-    * client requirement management; 
-    * building authority for permits and approval.       
-* BIM exchange format definitions including: 
-    * project structure; 
-    * physical components; 
-    * spatial components; 
-    * analysis items; 
-    * processes; 
-    * resources; 
-    * controls; 
-    * actors; 
-    * context definition.  
+This release of IFC consists of the data schemas, represented as an EXPRESS schema and an XML schema, and reference data, represented as definitions of property and quantity names, and formal and informative descriptions.
 
-{ .std}
-&nbsp;
-
-{ .std}
-The following are outside the scope of this release of IFC:
-
-* exchange format definitions outside of the domain of construction and facility maintenance; 
-* full project structure and component breakdown structures outside of building engineering, but providing a baseline for civil engineering to be extended in future releases; 
-* behavioral aspects of components and other information items.
+A subset of the data schema and referenced data is referred to as a Model View Definition (MVD). A particular MVD is defined to support one or many recognized workflows in the construction and facility management industry sector. Each workflow identifies data exchange requirements for software applications. Conforming software applications need to identity the model view definition they conform to.

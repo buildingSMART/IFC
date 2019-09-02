@@ -1,17 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcShapeRepresentation" UniqueId="2f5eefcc-2d23-4bbf-89e3-b10ffc7e8889" DiagramNumber="2" BaseDefinition="IfcShapeModel" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcShapeRepresentation" Name="IfcShapeRepresentation" UniqueId="2f5eefcc-2d23-4bbf-89e3-b10ffc7e8889" DiagramNumber="2" BaseDefinition="IfcShapeModel" EntityFlags="229">
 	<Localization>
 		<DocLocalization Name="Form - Repräsentation" Locale="de" />
+		<DocLocalization Name="Shape Representation" Locale="en" />
 		<DocLocalization Name="Représentation de forme" Locale="fr" />
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="2513.0256" Y="1444.7484" Width="398.76558" Height="100.78123" />
 	<WhereRules>
-		<DocWhereRule Name="WR21" UniqueId="86c171c5-dc77-4241-ace8-c90f22adb825">
+		<DocWhereRule Name="CorrectContext" UniqueId="19551ca6-f3ab-4b1c-8b6e-b5187fb6e59b">
 			<Documentation>The context to which the IfcShapeRepresentation is assign, shall be of type IfcGeometricRepresentationContext.</Documentation>
 			<Expression>&apos;IFCREPRESENTATIONRESOURCE.IFCGEOMETRICREPRESENTATIONCONTEXT&apos; 
 IN TYPEOF(SELF\IfcRepresentation.ContextOfItems)</Expression>
 		</DocWhereRule>
-		<DocWhereRule Name="WR22" UniqueId="3c59a36a-b95c-4112-8e5e-2f340295d0a9">
+		<DocWhereRule Name="NoTopologicalItem" UniqueId="4de09ba6-e7fb-4930-bc06-12494e04c0f0">
 			<Documentation>No topological representation item shall be directly used for shape representations, with the exception of IfcVertexPoint, IfcEdgeCurve, IfcFaceSurface.</Documentation>
 			<Expression>SIZEOF(QUERY(temp &lt;* Items | 
   (&apos;IFCTOPOLOGYRESOURCE.IFCTOPOLOGICALREPRESENTATIONITEM&apos; IN TYPEOF(temp))
@@ -21,13 +22,17 @@ IN TYPEOF(SELF\IfcRepresentation.ContextOfItems)</Expression>
        &apos;IFCTOPOLOGYRESOURCE.IFCFACESURFACE&apos;] * TYPEOF(temp)) = 1))
 )) = 0</Expression>
 		</DocWhereRule>
-		<DocWhereRule Name="WR23" UniqueId="c172688e-0fae-4b36-b1ce-f755320bda0e">
-			<Documentation>A representation type should be given to the shape representation.</Documentation>
+		<DocWhereRule Name="HasRepresentationType" UniqueId="bccc8775-b85c-4922-85d6-b92216cf6cfb">
+			<Documentation>A representation type should be provided for the shape representation.</Documentation>
 			<Expression>EXISTS(SELF\IfcRepresentation.RepresentationType)</Expression>
 		</DocWhereRule>
-		<DocWhereRule Name="WR24" UniqueId="36d7c68f-ec55-44cb-9120-936b5887e475">
-			<Documentation>Checks the proper use of Items according to the RepresentationType.</Documentation>
+		<DocWhereRule Name="CorrectItemsForType" UniqueId="d41a6820-6a78-4f8b-a5a0-22bf059e6ca8">
+			<Documentation>Checks the proper use of _Items_ according to the _RepresentationType_.</Documentation>
 			<Expression>IfcShapeRepresentationTypes(SELF\IfcRepresentation.RepresentationType, SELF\IfcRepresentation.Items)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="HasRepresentationIdentifier" UniqueId="3fbb6794-9ce4-4e1e-828d-994814e8b934">
+			<Documentation>A representation identifier should be provided for the shape representation.</Documentation>
+			<Expression>EXISTS(SELF\IfcRepresentation.RepresentationIdentifier)</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>

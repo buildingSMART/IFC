@@ -1,0 +1,1 @@
+Removal or destruction of building elements.

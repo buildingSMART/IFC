@@ -1,0 +1,1 @@
+Special types of footings which meet specific local requirements.

@@ -1,0 +1,1 @@
+Door with two panels that both open to the right, one panel swings in one direction and the other panel swings in the opposite direction.

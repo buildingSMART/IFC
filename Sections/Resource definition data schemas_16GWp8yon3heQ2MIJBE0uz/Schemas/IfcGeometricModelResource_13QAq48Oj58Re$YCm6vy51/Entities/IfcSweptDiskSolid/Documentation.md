@@ -12,7 +12,7 @@ Figure 1 illustrates an example.
 
 > NOTE&nbsp; Although the example shows a _Directrix_ as a composite curve on a planar reference surface, the definition of _IfcSweptDiskSolid_ is not restricted to be based on planer curves. However view definitions or implementer agreements may provide restrictions.
 
-!["disk solid"](../../../figures/IfcSweptDiskSolid-Layout1.png "Figure 1 &mdash; Swept disk solid geometry")
+!["disk solid"](../../../figures/ifcsweptdisksolid-layout1.png "Figure 1 &mdash; Swept disk solid geometry")
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  

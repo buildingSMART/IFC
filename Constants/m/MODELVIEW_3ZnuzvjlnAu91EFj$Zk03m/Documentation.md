@@ -1,0 +1,1 @@
+A constraint whose objective is to ensure data conforms to a model view definition.

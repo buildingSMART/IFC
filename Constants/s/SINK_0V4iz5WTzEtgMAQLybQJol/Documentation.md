@@ -1,0 +1,1 @@
+A flow sink, where a substance flows into the connection.

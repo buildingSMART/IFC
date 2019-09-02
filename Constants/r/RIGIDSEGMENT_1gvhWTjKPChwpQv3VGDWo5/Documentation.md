@@ -1,0 +1,1 @@
+A rigid segment is continuous linear segment of pipe that cannot be deformed.

@@ -1,0 +1,1 @@
+The slab is used to represent a floor slab.

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="FootPrint GeomSet Geometry" UniqueId="fcddf0b1-ae2e-4ec0-855b-bc6e976107a8">
+	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="FootPrint_GeomSet_Geometry_2KLjRMfYf8jBhlYuukgoS" />
+	<Items>
+		<DocTemplateItem UniqueId="24ea9e87-4fc7-472a-af69-77e872ec036c" RuleParameters="Identifier=FootPrint;Type=Curve2D;Items=IfcBoundedCurve;" Order="0">
+			<Documentation>A single curve defining the outer boundary</Documentation>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="5ad5f770-c1f3-4782-9d02-db21967bbf11" RuleParameters="Identifier=FootPrint;Type=GeometricCurveSet;Items=IfcGeometricCurveSet;" Order="0">
+			<Documentation>Set of curves (outer and inner) representing the floor projection,</Documentation>
+		</DocTemplateItem>
+	</Items>
+	<Exchanges>
+		<DocExchangeItem Applicability="export" Requirement="optional">
+			<Exchange xsi:type="DocExchangeDefinition" xsi:nil="true" href="Reference_Exchange_3SsM4bYOvFyBAKwmAlwLEg" />
+		</DocExchangeItem>
+		<DocExchangeItem Applicability="import" Requirement="optional">
+			<Exchange xsi:type="DocExchangeDefinition" xsi:nil="true" href="Reference_Exchange_3SsM4bYOvFyBAKwmAlwLEg" />
+		</DocExchangeItem>
+	</Exchanges>
+</DocTemplateUsage>
+

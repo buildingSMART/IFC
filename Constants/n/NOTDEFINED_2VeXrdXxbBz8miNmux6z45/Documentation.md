@@ -1,0 +1,1 @@
+Undefined air to air heat recovery type.

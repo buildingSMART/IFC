@@ -1,0 +1,1 @@
+Socket for a light bulb, where the ConnectionSubtype identifies the base (though not necessarily the bulb shape or size).

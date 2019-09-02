@@ -1,0 +1,1 @@
+User defined permeable covering type.

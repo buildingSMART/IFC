@@ -1,0 +1,1 @@
+The time duration is undefined.

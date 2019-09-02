@@ -1,0 +1,1 @@
+A condenser in which heat is transferred to an air-stream.

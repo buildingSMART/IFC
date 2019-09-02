@@ -1,0 +1,10 @@
+(PointList : IfcCartesianPointList)
+           : IfcDimensionCount;
+
+  IF ('IFC4.IFCCARTESIANPOINTLIST2D' IN TYPEOF(PointList))
+    THEN RETURN(2);
+  END_IF;		   
+  IF ('IFC4.IFCCARTESIANPOINTLIST3D' IN TYPEOF(PointList))
+    THEN RETURN(3);
+  END_IF;		   
+  RETURN (?);

@@ -1,0 +1,1 @@
+A user defined specification is given by the value of the _UserDefinedTargetView_ attribute.

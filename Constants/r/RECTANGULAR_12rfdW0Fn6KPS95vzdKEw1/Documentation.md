@@ -1,0 +1,1 @@
+Rectangular shaped duct silencer type.

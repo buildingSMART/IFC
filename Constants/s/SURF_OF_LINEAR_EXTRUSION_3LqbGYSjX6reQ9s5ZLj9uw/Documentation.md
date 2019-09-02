@@ -1,0 +1,1 @@
+A bounded portion of a surface of linear extrusion represented by a B-spline surface of degree 1 in one of the parameters.

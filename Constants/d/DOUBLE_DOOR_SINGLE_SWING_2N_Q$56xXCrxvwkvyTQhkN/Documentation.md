@@ -1,0 +1,1 @@
+Door with two panels, one opens (swings) to the left the other opens (swings) to the right.

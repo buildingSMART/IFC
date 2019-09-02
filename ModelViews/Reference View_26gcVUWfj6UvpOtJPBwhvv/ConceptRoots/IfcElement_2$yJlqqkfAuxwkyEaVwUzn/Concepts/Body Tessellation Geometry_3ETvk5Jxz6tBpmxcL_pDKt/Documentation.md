@@ -1,0 +1,1 @@
+The default geometric representation of any _IfcElement_ within this model view is a single or multiple tessellated item. The supported tessellation is a triangulated face set, defined by indices into a Cartesian point list. Optionally normals per vertex can be included as well.

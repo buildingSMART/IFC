@@ -1,0 +1,1 @@
+A&nbsp;linear continuous horizontal element in wall framing, such as a head piece or a sole plate.

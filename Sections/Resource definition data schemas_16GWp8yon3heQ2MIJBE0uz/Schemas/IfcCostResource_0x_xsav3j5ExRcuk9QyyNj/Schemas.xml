@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCostResource" UniqueId="3bfbbda4-e43b-453b-b6e6-e2e25af3c5ed" DiagramPagesHorz="0" DiagramPagesVert="0">
+<DocSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCostResource" UniqueId="3bfbbda4-e43b-453b-b6e6-e2e25af3c5ed" DiagramPagesHorz="2" DiagramPagesVert="1">
 	<SchemaRefs>
 		<DocSchemaRef Name="IFCCONSTRAINTRESOURCE" UniqueId="b0281165-9a5f-4720-8fc5-e5e173acf9da">
 			<Definitions>
@@ -28,6 +28,16 @@
 				</DocDefinitionRef>
 				<DocDefinitionRef Name="IfcResourceLevelRelationship" UniqueId="3fcfd8e4-ea0a-4d53-970c-7200ebf13283" DiagramNumber="2">
 					<DiagramRectangle xsi:type="DocRectangle" X="1646.8" Y="95.2" Width="556" Height="228.33333" />
+					<Tree>
+						<DocLine>
+							<DiagramLine>
+								<DocPoint X="1891.4666" Y="323.53333" />
+								<DocPoint X="1891.4666" Y="418.500015" />
+								<DocPoint X="1891.555866667" Y="418.500015" />
+								<DocPoint X="1891.555866667" Y="513.4667" />
+							</DiagramLine>
+						</DocLine>
+					</Tree>
 				</DocDefinitionRef>
 			</Definitions>
 		</DocSchemaRef>
@@ -54,5 +64,15 @@
 			</Definitions>
 		</DocSchemaRef>
 	</SchemaRefs>
+	<Comments>
+		<DocComment UniqueId="5bcecdbb-4a7f-4de3-988f-22989ce71a4d" DiagramNumber="1">
+			<Documentation>IFC2X4: IfcAppliedValueSelect expanded to include IfcValue and IfcReference.</Documentation>
+			<DiagramRectangle xsi:type="DocRectangle" X="505.66666" Y="831.96667" Width="328.66667" Height="235.00001" />
+		</DocComment>
+		<DocComment UniqueId="ddde0966-a981-4a56-acb9-9a03ff543c13" DiagramNumber="1">
+			<Documentation>IFC2X4: IfcAppliedValue made non-abstract, attributes promoted from IfcCostValue, attributes added from IfcAppliedValueRelationship (now deleted).</Documentation>
+			<DiagramRectangle xsi:type="DocRectangle" X="40.333337" Y="2230.6333" Width="1543.3333" Height="87.666666" />
+		</DocComment>
+	</Comments>
 </DocSchema>
 

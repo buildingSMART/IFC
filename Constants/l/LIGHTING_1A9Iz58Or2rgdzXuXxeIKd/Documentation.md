@@ -1,0 +1,1 @@
+A circuit dedicated for lighting, such as a fixture having sockets for lamps.

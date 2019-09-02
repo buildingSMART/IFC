@@ -1,0 +1,1 @@
+Geometric display representation that shows an abstract, often 1D element representation, e.g. representing a wall by its axis line.

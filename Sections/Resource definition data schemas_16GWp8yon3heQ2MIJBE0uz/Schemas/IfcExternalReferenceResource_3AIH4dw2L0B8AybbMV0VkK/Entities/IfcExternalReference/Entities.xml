@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcExternalReference" UniqueId="89de2ef7-7bc1-4682-ac3b-f058ab404fad" DiagramNumber="1" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcExternalReference" Name="IfcExternalReference" UniqueId="89de2ef7-7bc1-4682-ac3b-f058ab404fad" DiagramNumber="1" EntityFlags="205">
 	<Localization>
 		<DocLocalization Name="Externer Bezug" Locale="de" />
+		<DocLocalization Name="External Reference" Locale="en" />
 		<DocLocalization Name="Référence externe" Locale="fr" />
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="372.01463" Y="256.58333" Width="350.66667" Height="250.66666" />
@@ -67,5 +68,33 @@ It may be human readable (such as a key) or not (such as a handle or uuid) depen
 			<Expression>EXISTS(Identification) OR EXISTS(Location) OR EXISTS(Name)</Expression>
 		</DocWhereRule>
 	</WhereRules>
+	<Tree>
+		<DocLine>
+			<DiagramLine>
+				<DocPoint X="550.43602" Y="507.24999" />
+				<DocPoint X="550.43602" Y="804.29167" />
+			</DiagramLine>
+			<Tree>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="233.16435" Y="804.29167" />
+						<DocPoint X="233.16435" Y="1391.89997" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="932.41463" Y="804.29167" />
+						<DocPoint X="932.41463" Y="668.49167" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="1360.3931" Y="804.29168" />
+						<DocPoint X="1360.3931" Y="668.49168" />
+					</DiagramLine>
+				</DocLine>
+			</Tree>
+		</DocLine>
+	</Tree>
 </DocEntity>
 

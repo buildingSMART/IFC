@@ -1,0 +1,1 @@
+The operation of constructing the regularized set theoretic union of the volumes defined by two solids.

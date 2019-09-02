@@ -1,0 +1,1 @@
+The tendon is a strand.

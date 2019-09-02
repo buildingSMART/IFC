@@ -1,0 +1,1 @@
+A stair flight with a straight walking line.

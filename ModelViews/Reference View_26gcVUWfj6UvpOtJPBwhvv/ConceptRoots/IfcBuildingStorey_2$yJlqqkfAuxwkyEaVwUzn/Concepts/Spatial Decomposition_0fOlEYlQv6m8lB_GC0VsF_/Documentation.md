@@ -1,0 +1,3 @@
+> NOTE&nbsp; By using the inverse relationship _IfcBuildingStorey.IsDecomposedBy_ it references _IfcBuildingStorey_ || _IfcSpace_ through _IfcRelAggregates.RelatedObjects_. If it refers to another instance of _IfcBuildingStorey_, the referenced _IfcBuildingStorey_ needs to have a different and lower _CompositionType_, i.e. ELEMENT (if the other _IfcBuildingStorey_ has COMPLEX), or PARTIAL (if the other _IfcBuildingStorey_ has ELEMENT).
+
+> NOTE&nbsp; Multi storey spaces shall be spatially contained by only a single building storey, usually it is the building storey where the base of the space lies.

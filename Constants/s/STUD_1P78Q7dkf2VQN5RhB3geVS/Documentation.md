@@ -1,0 +1,1 @@
+Vertical element in wall framing.

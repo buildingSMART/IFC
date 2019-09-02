@@ -28,25 +28,3 @@ Informal Propositions:
 3. If the surface action is of the predefined type DISCRETE, _SELF\IfcStructuralActivity.AppliedLoad_ shall be of type _IfcStructuralLoadConfiguration_ and shall contain two or more items with two-dimensional locations. 
 4. Point loads must be of type DISCRETE, thus contain two or more load points. (Single point loads are modeled by _IfcStructuralPointLoad_.)
 5. All items in _SELF\IfcStructuralActivity.AppliedLoad\IfcStructuralLoadConfiguration.Values_ shall be of the same entity type.
-
-___
-## Common Use Definitions
-The following concepts are inherited at supertypes:
-
-* _IfcRoot_: [Identity](../../templates/identity.htm), [Revision Control](../../templates/revision-control.htm)
-
-[![Image](../../../img/diagram.png)&nbsp;Instance diagram](../../../annex/annex-d/common-use-definitions/ifcstructuralsurfaceaction.htm)
-
-{ .use-head}
-Structural Activity
-
-The [Structural Activity](../../templates/structural-activity.htm) concept applies to this entity as shown in Table 1.
-
-<table>
-<tr><td>
-<table class="gridtable">
-<tr><th><b>AppliedLoad</b></th><th><b>RelatingElement</b></th><th><b>Description</b></th></tr>
-<tr><td><a href="../../ifcstructuralloadresource/lexical/ifcstructuralloadplanarforce.htm">IfcStructuralLoadPlanarForce</a></td><td><a href="../../ifcstructuralanalysisdomain/lexical/ifcstructuralsurfacemember.htm">IfcStructuralSurfaceMember</a></td><td>Force and moment within a surface member.</td></tr>
-</table>
-</td></tr>
-<tr><td><p class="table">Table 1 &mdash; IfcStructuralSurfaceAction Structural Activity</p></td></tr></table>

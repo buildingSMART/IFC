@@ -1,0 +1,1 @@
+Coaxial cable for high-speed communication

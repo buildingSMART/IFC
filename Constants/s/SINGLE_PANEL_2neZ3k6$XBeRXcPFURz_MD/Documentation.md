@@ -1,0 +1,1 @@
+Window with one panel.

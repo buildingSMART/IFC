@@ -1,0 +1,1 @@
+Object is in a Read-Write state. It may be modified by an application.

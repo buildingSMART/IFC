@@ -1,0 +1,1 @@
+Indoor or outdoor pool.

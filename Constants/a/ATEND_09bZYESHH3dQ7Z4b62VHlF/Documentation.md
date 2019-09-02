@@ -1,0 +1,1 @@
+Connection at the end of the connected element.

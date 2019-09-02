@@ -15,26 +15,19 @@ The basic structure provided with the sample IFC files include:
 
 <table summary="basic shape">
   <tr>
-    <td>
-    <img src="fig/basic_shape_fig-1.png" width="500" height="450" alt="basic_shape_fig-1.png 8,1 KB">
-    </td>
+    <td><img src="../../figures/examples/basic_shape_fig-1.png" width="500" height="450" alt="basic_shape_fig-1.png 8,1 KB"></td>
     <td style="vertical-align:bottom;">
   <blockquote class="example">
-  EXAMPLE&nbsp; The geometry of the proxy is a 3D block with
-  length=1m, width=1m and height=2m. It is positioned
-  with a local coordinate system at 10m,0m,0m from the
-  coordinate origin of the parent coordinate system of
-  the building. The local object coordinate system has
-  no rotation.<br>
+  EXAMPLE&nbsp; The geometry of the proxy is a 3D block with length=1m, width=1m and height=2m. It is positioned with a local coordinate system at 10m,0m,0m from the coordinate origin of the parent coordinate system of the building. The local object coordinate system has no rotation.<br>
   <br>
-  See Figure E1 for the geometric shape of the example.
+  See Figure 1 for the geometric shape of the example.
   </blockquote>
   </td>
  </tr>
  <tr style="height:20px;">
   <td>
   <p class="figure">
-  Figure E1 &mdash; Basic shape of the proxy being a block.
+  Figure 1 &mdash; Basic shape of the proxy being a block.
   </p>
  </td>
  <td>

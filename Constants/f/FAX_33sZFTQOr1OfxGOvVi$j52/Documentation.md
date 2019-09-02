@@ -1,0 +1,1 @@
+A machine that has the primary function of transmitting a facsimile copy of printed matter using a telephone line.

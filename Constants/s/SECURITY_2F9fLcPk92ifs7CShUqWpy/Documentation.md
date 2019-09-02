@@ -1,0 +1,1 @@
+A transport or network dedicated to security system usage.

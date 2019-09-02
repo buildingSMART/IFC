@@ -1,0 +1,1 @@
+Furniture for sleeping.

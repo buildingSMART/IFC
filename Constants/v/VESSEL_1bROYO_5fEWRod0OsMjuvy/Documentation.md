@@ -1,0 +1,1 @@
+An arbitrary closed tank type.

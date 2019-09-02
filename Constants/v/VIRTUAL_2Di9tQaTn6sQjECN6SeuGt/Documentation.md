@@ -1,0 +1,1 @@
+The space boundary is provided virtually (by a logical divider that has no physical manifestation).

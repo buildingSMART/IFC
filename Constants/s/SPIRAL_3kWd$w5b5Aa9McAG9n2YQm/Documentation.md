@@ -1,0 +1,1 @@
+A stair flight with a circular or elliptic walking line.

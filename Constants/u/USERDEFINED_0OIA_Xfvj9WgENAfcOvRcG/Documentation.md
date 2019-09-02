@@ -1,0 +1,1 @@
+A user-defined grade indicated by a separate attribute at the referencing entity.

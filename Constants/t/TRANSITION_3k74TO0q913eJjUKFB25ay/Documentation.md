@@ -1,0 +1,1 @@
+A fitting with typically two ports having different shapes or sizes. Can also be used to change the direction of flow between connected elements.

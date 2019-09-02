@@ -1,0 +1,1 @@
+The _IfcRampFlight_ shall only be used within the component breakdown structure of an _IfcRamp_.

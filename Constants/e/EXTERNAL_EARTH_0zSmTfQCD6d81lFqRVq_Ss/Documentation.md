@@ -1,0 +1,1 @@
+External volume covered by earth around the building.

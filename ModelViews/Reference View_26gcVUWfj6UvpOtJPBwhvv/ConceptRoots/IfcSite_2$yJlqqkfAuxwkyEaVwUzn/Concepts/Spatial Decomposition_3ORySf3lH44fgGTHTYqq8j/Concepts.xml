@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Spatial Decomposition" UniqueId="3ORySf3lH44fgGTHTYqq8j">
+	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Decomposition_1cVuH3xCvAZQOan_h15FW" />
+	<Items>
+		<DocTemplateItem UniqueId="02e16a38-a26c-483b-82a2-a154ddf676a5" RuleParameters="Spatial Parts=IfcBuilding;" Order="0">
+			<Documentation>Spatial decomposition into building.</Documentation>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="922052b2-2b66-452f-9fb6-86608955573c" RuleParameters="Spatial Parts=IfcSpace;" Order="0">
+			<Documentation>Spatial decomposition directly into spaces that are allocated at the site.</Documentation>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="62db7741-fa11-40ba-bc36-c29253c05d31" RuleParameters="Spatial Parts=IfcSpatialZone;" Order="0">
+			<Documentation>Spatial decomposition directly into spatial zones that are allocated at the site.</Documentation>
+		</DocTemplateItem>
+	</Items>
+	<Exchanges>
+		<DocExchangeItem Applicability="export" Requirement="optional">
+			<Exchange xsi:type="DocExchangeDefinition" xsi:nil="true" href="Reference_Exchange_3SsM4bYOvFyBAKwmAlwLEg" />
+		</DocExchangeItem>
+		<DocExchangeItem Applicability="import" Requirement="optional">
+			<Exchange xsi:type="DocExchangeDefinition" xsi:nil="true" href="Reference_Exchange_3SsM4bYOvFyBAKwmAlwLEg" />
+		</DocExchangeItem>
+	</Exchanges>
+</DocTemplateUsage>
+

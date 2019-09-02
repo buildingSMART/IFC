@@ -1,0 +1,1 @@
+Since the _IfcRampFlight_ is always a component of _IfcRamp_ it shall not have an independent spatial containment relationship to a spatial structure.

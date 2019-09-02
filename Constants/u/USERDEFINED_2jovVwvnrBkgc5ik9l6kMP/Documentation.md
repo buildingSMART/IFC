@@ -1,0 +1,1 @@
+User defined type spatial zone.

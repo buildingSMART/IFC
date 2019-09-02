@@ -1,1 +1,0 @@
-The refrigerant material used for heat transfer purposes.

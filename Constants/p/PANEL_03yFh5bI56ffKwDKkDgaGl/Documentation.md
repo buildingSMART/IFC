@@ -1,0 +1,1 @@
+Vertical panel used to divide work spaces.

@@ -20,7 +20,7 @@ Figure 1 illustrates examples of derived profiles.
     <tr>
       <td align="left" valign="top" width="405">
 
-<img src="../../../figures/IfcDerivedProfileDef-Layout1.gif" alt="uniform" border="0" height="300" width="400">
+<img src="../../../figures/ifcderivedprofiledef-layout1.gif" alt="uniform" border="0" height="300" width="400">
 
       </td>
       <td align="left" valign="top">
@@ -51,7 +51,7 @@ to match the lower-left cardinal point. The attributes of the CTO are:<br>
     <tr>
       <td align="left" valign="top" width="405">
 
-<img src="../../../figures/IfcDerivedProfileDef-Layout2.gif" alt="non uniform" border="0" height="300" width="400">
+<img src="../../../figures/ifcderivedprofiledef-layout2.gif" alt="non uniform" border="0" height="300" width="400">
 
       </td>
       <td align="left" valign="top">
@@ -80,7 +80,7 @@ to match the lower-left cardinal point. The attributes of the CTO are:</p>
     <tr>
       <td align="left" valign="top">
 
-<img alt="mirroring" src="../../../figures/IfcDerivedProfileDef-Layout3.gif" border="0" height="300" width="400">
+<img alt="mirroring" src="../../../figures/ifcderivedprofiledef-layout3.gif" border="0" height="300" width="400">
 
       </td>
       <td align="left" valign="top">

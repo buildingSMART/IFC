@@ -1,0 +1,1 @@
+The space boundary faces a physical or virtual element where there is an internal space on the other side.

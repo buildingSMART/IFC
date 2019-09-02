@@ -1,0 +1,1 @@
+An impervious layer that could be used for e.g. roof covering (below tiling - that may be known as sarking etc.) or as a damp proof course membrane.

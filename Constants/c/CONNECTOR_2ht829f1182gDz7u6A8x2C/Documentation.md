@@ -1,0 +1,1 @@
+Connector fitting, typically used to join two ports together within a flow distribution system (e.g., a coupling used to join two duct segments).

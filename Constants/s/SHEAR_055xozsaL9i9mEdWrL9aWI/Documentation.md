@@ -1,0 +1,1 @@
+A wall designed to withstand shear loads. Such shear walls are often designed having a non-rectangular cross section along the wall path. Also called retaining walls or supporting walls they are used to protect against soil layers behind.

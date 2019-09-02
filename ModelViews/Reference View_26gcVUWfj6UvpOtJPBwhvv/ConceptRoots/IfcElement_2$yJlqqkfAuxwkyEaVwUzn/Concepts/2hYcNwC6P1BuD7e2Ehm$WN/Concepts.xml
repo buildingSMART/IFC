@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UniqueId="ab8a65fa-3066-412f-8347-a023abc3f817">
+	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+	<Items>
+		<DocTemplateItem UniqueId="23720048-b673-4e08-b8ce-addc0cc17891" RuleParameters="Name=Pset_ManufacturerOccurrence;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Properties" UniqueId="fe5043f9-7d48-4868-ab28-6c9748103f2e">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
+					<Items>
+						<DocTemplateItem UniqueId="9373b843-2741-409b-8935-da3184ef60e2" RuleParameters="Name=AcquisitionDate;Value=IfcDate;" Order="0" />
+						<DocTemplateItem UniqueId="37d83801-e5df-4289-beae-714ecc39f05e" RuleParameters="Name=BarCode;Value=IfcIdentifier;" Order="0" />
+						<DocTemplateItem UniqueId="b24c5fe7-c496-4bc0-9fc6-24ed86c7654d" RuleParameters="Name=SerialNumber;Value=IfcIdentifier;" Order="0" />
+						<DocTemplateItem UniqueId="ae43f64e-9bcd-41f7-a81f-87b2b7a2961a" RuleParameters="Name=BatchReference;Value=IfcIdentifier;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Properties" UniqueId="49366b90-0e02-474a-89ac-33d7cfc9fb12">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
+					<Items>
+						<DocTemplateItem UniqueId="6ab50873-865f-440a-afe8-a3f9c78ad7ef" RuleParameters="Name=AssemblyPlace;Value=IfcLabel;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="29c799c9-e188-4de8-9a1e-64a404749ea6" RuleParameters="Name=Pset_ManufacturerTypeInformation;" Order="0">
+			<Concepts>
+				<DocTemplateUsage Name="Properties" UniqueId="9889e733-8e06-42d2-bddc-8ff509aef250">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
+					<Items>
+						<DocTemplateItem UniqueId="bff6b432-0c9d-4f4d-b96a-b1f029434621" RuleParameters="Name=GlobalTradeItemNumber;Value=IfcIdentifier;" Order="0" />
+						<DocTemplateItem UniqueId="28f3c524-4797-4c7d-9764-df41f503f4a7" RuleParameters="Name=ArticleNumber;Value=IfcIdentifier;" Order="0" />
+						<DocTemplateItem UniqueId="2f8a3635-5d57-4bb7-ac06-276b6677cf2a" RuleParameters="Name=ModelReference;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="bf692fb7-cbf1-4519-96d8-fa2fc88feeb5" RuleParameters="Name=ModelLabel;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="98156b36-ca7c-43a8-ab1b-d66893440270" RuleParameters="Name=Manufacturer;Value=IfcLabel;" Order="0" />
+						<DocTemplateItem UniqueId="82f068d5-432d-47bd-a30c-d6e514396880" RuleParameters="Name=ProductionYear;Value=IfcLabel;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Properties" UniqueId="c9f60d1a-07b2-48ad-81ce-0699ba3718d0">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
+					<Items>
+						<DocTemplateItem UniqueId="20618fa9-27bd-41d4-85e3-4ab83d4feef8" RuleParameters="Name=AssemblyPlace;Value=IfcLabel;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+		</DocTemplateItem>
+	</Items>
+	<Exchanges>
+		<DocExchangeItem Applicability="export" Requirement="optional">
+			<Exchange xsi:type="DocExchangeDefinition" xsi:nil="true" href="Reference_Exchange_3SsM4bYOvFyBAKwmAlwLEg" />
+		</DocExchangeItem>
+		<DocExchangeItem Applicability="import" Requirement="optional">
+			<Exchange xsi:type="DocExchangeDefinition" xsi:nil="true" href="Reference_Exchange_3SsM4bYOvFyBAKwmAlwLEg" />
+		</DocExchangeItem>
+	</Exchanges>
+</DocTemplateUsage>
+

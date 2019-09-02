@@ -1,0 +1,1 @@
+The main representation context defined at the _IfcProject_ shall be a 3D representation concept.

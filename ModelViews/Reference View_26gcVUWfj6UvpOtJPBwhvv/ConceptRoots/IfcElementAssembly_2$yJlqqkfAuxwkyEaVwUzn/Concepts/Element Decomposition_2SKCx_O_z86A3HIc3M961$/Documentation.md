@@ -1,0 +1,1 @@
+Any instance of _IfcElementAssembly_ shall be a composite, defining an assembly. Therefore the inverse relationship _IsDecomposedBy_ shall be used by at least one instance of _IfcRelAggregates_.

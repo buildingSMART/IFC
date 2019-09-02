@@ -1,0 +1,1 @@
+The following base quantities are defined for _IfcBuilding_.

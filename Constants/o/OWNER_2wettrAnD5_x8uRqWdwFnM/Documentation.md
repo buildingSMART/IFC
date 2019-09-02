@@ -1,0 +1,1 @@
+Actor that owns a property.

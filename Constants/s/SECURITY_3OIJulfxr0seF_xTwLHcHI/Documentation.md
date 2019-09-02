@@ -1,0 +1,1 @@
+The spatial zone is used to represent a zone for security planning and maintainance work.

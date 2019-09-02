@@ -2,28 +2,31 @@
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRationalBSplineSurfaceWithKnots" UniqueId="fa4d0f85-ebcc-4a94-aa4d-e9876009463c" DiagramNumber="10" BaseDefinition="IfcBSplineSurfaceWithKnots" EntityFlags="229">
 	<Localization>
 		<DocLocalization Name="Rationale Bézier-Spline - Oberfläche mit Kontrollpunkten" Locale="de" />
+		<DocLocalization Name="Rational BSpline Surface With Knots" Locale="en" />
 		<DocLocalization Name="Surfaces Bsplines rationnelles avec nœuds" Locale="fr" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="14750.096" Y="1882.3733" Width="313.6" Height="166.66667" />
+	<DiagramRectangle xsi:type="DocRectangle" X="15667.4283854167" Y="2146.37329101563" Width="313.6" Height="166.66667" />
 	<Attributes>
-		<DocAttribute Name="WeightsData" UniqueId="1140f72c-ae94-41b6-956b-58e9cb40cb9d" DefinedType="REAL" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="0" XsdFormat="element">
+		<DocAttribute Name="WeightsData" UniqueId="1140f72c-ae94-41b6-956b-58e9cb40cb9d" DefinedType="IfcReal" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="0" XsdFormat="element">
 			<Documentation>The weights associated with the control points in the rational case.</Documentation>
-			<AggregationAttribute xsi:type="DocAttribute" UniqueId="83d112f8-b5bb-4b9c-ab41-0812866cf62b" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="0" />
+			<AggregationAttribute xsi:type="DocAttribute" UniqueId="191bd546-892a-47ba-84e5-3ea53b476ead" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="0" />
 			<DiagramLine>
-				<DocPoint X="15063.696" Y="1910.24" />
-				<DocPoint X="15572.3024" Y="1910.24" />
+				<DocPoint X="15667.4283854167" Y="2174.8046875" />
+				<DocPoint X="15667.4283854167" Y="2174.8046875" />
+				<DocPoint X="15320.7623697917" Y="2174.8046875" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="15059.4293333" Y="1903.84" Width="296" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="15667.4283854167" Y="2154.8046875" Width="296" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Weights" UniqueId="d54fa1aa-6dd2-42bc-8f1a-94c4d2400891" DefinedType="REAL" AttributeFlags="0" AggregationType="2" AggregationFlag="0" AggregationLower="0" AggregationUpper="UUpper">
+		<DocAttribute Name="Weights" UniqueId="d54fa1aa-6dd2-42bc-8f1a-94c4d2400891" DefinedType="IfcReal" AttributeFlags="0" AggregationType="2" AggregationFlag="0" AggregationLower="0" AggregationUpper="UUpper">
 			<Documentation>Array (two-dimensional) of weight values constructed from the _WeightsData_.</Documentation>
 			<Derived>IfcMakeArrayOfArray(WeightsData,0,UUpper,0,VUpper)</Derived>
-			<AggregationAttribute xsi:type="DocAttribute" UniqueId="1386b0c0-c105-48b9-bfde-b4408a7eb175" AttributeFlags="0" AggregationType="2" AggregationFlag="0" AggregationLower="0" AggregationUpper="VUpper" />
+			<AggregationAttribute xsi:type="DocAttribute" UniqueId="6277afca-e76c-4ff5-9999-bf33fa042e26" AttributeFlags="0" AggregationType="2" AggregationFlag="0" AggregationLower="0" AggregationUpper="VUpper" />
 			<DiagramLine>
-				<DocPoint X="15063.696" Y="1984.9067" />
-				<DocPoint X="15572.3024" Y="1984.9067" />
+				<DocPoint X="15667.4283854167" Y="2281.70662434896" />
+				<DocPoint X="15667.4283854167" Y="2281.70662434896" />
+				<DocPoint X="15320.7620442708" Y="2281.70662434896" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="15063.696" Y="1974.773367" Width="464" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="15667.4283854167" Y="2261.70662434896" Width="464" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

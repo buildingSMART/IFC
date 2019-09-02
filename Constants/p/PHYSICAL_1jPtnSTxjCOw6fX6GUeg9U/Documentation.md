@@ -1,0 +1,1 @@
+The space boundary is provided physically (by a physical element).

@@ -1,0 +1,1 @@
+Type A is basically not used. For completeness the Type A Photometry equals the Type B rotated 90&deg; around the Z-Axis counter clockwise.

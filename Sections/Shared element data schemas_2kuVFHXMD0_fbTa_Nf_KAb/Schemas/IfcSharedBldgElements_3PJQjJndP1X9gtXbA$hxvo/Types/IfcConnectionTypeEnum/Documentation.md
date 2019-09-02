@@ -2,9 +2,6 @@ This enumeration defines the different ways how path based elements (such as _If
 
 > HISTORY&nbsp; New type in IFC2.0
 
-{ .spec-head}
-Enumerated Item Definitions:
-
 The enumerated items shall be used in the following combinations:
 
 <table>

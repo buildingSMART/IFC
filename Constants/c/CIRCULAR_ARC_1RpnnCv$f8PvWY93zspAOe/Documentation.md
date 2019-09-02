@@ -1,0 +1,1 @@
+An arc of a circle, or a complete circle represented by a B-spline curve.

@@ -1,0 +1,1 @@
+A tension member which is able to carry transverse loads only under large deflection.

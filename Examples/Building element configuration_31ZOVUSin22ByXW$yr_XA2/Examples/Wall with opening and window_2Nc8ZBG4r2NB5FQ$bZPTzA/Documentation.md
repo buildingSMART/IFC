@@ -3,8 +3,8 @@ The example demonstrates how a window can be placed inside a wall. The basic for
 To insert a window or door in a wall it is required to create an opening. The following entities are relevant:
 
 *  _IfcWall_ (or _IfcWallStandardCase_ if geometry representation allows for it); 
-*  _IfcOpeningElement;_ 
-*  _IfcWindow._ 
+*  _IfcOpeningElement_; 
+*  _IfcWindow_. 
 
 The three entity instances have to be connected in 2 different ways
 
@@ -22,29 +22,17 @@ The _IfcOpeningElement_ and _IfcWindow_ are connected via the objectified relati
 <table summary="wall example">
         <tr>
           <td>
-            <img src="fig/building_element_configuration_wall-1.png" width="526" height="690" alt="building_element_configuration_wall-1.png 29,1 KB">
+            <img src="../../figures/examples/building_element_configuration_wall-1.png" width="526" height="690" alt="building_element_configuration_wall-1.png 29,1 KB">
           </td>
           <td style=" vertical-align:bottom;">
             <p>
-              The Figure E15 shows the parameters used for creating the example data set.
+              The Figure 1 shows the parameters used for creating the example data set.
             </p>
-            <ul class="std">
-              <li class="std">
-                <a class="listing-link" href="ifc/building_element_configuration_wall.ifc.htm" target="info">Wall standard case with
-                opening and window with hyperlinks</a>
-              </li>
-              <li class="std">
-                <a class="listing-link" href="ifc/building_element_configuration_wall.ifc" target="info">Wall standard case with
-                opening and window source file</a>
-              </li>
-            </ul>
           </td>
         </tr>
         <tr>
           <td>
-            <p class="figure">
-              Figure E15 &mdash; Parameters of wall, opening and window
-            </p>
+            <p class="figure">Figure 1 &mdash; Parameters of wall, opening and window</p>
           </td>
           <td>
             &nbsp;
@@ -55,19 +43,15 @@ The _IfcOpeningElement_ and _IfcWindow_ are connected via the objectified relati
 <table summary="wall example">
         <tr>
           <td>
-            <img src="fig/building_element_configuration_wall-2.png" width="846" height="594" alt="building_element_configuration_wall-1.png 48,6 KB">
+            <img src="../../figures/examples/building_element_configuration_wall-2.png" width="846" height="594" alt="building_element_configuration_wall-1.png 48,6 KB">
           </td>
           <td style=" vertical-align:bottom;">
-            <p>
-              The Figure E16 shows the geometric representation of the example data set.
-            </p>
+            <p>Figure 2 shows the geometric representation of the example data set.</p>
           </td>
         </tr>
         <tr>
           <td>
-            <p class="figure">
-              Figure E16 &mdash; Geometric representation of wall, opening and window
-            </p>
+            <p class="figure">Figure 2 &mdash; Geometric representation of wall, opening and window</p>
           </td>
           <td>
             &nbsp;

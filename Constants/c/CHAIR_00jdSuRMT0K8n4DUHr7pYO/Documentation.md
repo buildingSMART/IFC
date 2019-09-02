@@ -1,0 +1,1 @@
+Furniture for seating a single person.

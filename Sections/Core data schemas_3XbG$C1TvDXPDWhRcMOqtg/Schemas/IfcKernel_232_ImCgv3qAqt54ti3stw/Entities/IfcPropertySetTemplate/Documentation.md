@@ -7,17 +7,12 @@ Property set templates can form part of a property library used and declared wit
 * "Pset_" - occurrences of _IfcPropertySet_
 * "QTO_" - occurrences of _IfcElementQuantity_
 
-> HISTORY&nbsp; New entity in IFC4.
+The inherited _HasContext_ inverse relation to _IfcRelDeclares_ is used to declare the _IfcPropertySetTemplate_ within a project library. If included in an exchange data set it can then be traversed through the _IfcProjectLibrary_. The _Defines_ inverse relation to _IfcRelDefinesByTemplate_ is provided to keep the definition relationship between the _IfcPropertySetTemplate_ and the one to many _IfcPropertySet_'s, for which it provides the template. Figure 1 illustrates relationships used for property set templates.
 
-{ .use-head}
-Relationship use definition
+&nbsp;
 
-The inherited _HasContext_ inverse relation to _IfcRelDeclares_ is used to declare the _IfcPropertySetTemplate_ within a project library. If included in an exchange data set it can then be traversed through the _IfcProjectLibrary_.
-
-The _Defines_ inverse relation to _IfcRelDefinesByTemplate_ is provided to keep the definition relationship between the _IfcPropertySetTemplate_ and the one to many _IfcPropertySet_'s, for which it provides the template.
+!["property set template"](../../../figures/ifcpropertysettemplate_fig-1.png "Figure 1 &mdash; Property set template relationships")
 
 Between _IfcProperty_'s within the _HasProperties_ set of _IfcPropertySet_ having the same _Name_ attribute value as the _IfcPropertyTemplate_'s within the _HasPropertyTemplates_ set of _IfcPropertySetTemplate_ an implicit definition relationship is established that assigns the template to the individual properties.
 
-Figure 1 illustrates relationships used for property set templates.
-
-!["property set template"](../../../figures/IfcPropertySetTemplate_fig-1.png "Figure 1 &mdash; Property set template relationships")
+> HISTORY&nbsp; New entity in IFC4.

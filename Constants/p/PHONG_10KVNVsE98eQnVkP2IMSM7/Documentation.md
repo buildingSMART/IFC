@@ -1,0 +1,1 @@
+A reflectance model conforming with the Phong model in which reflections are greatest in the `mirror' direction of a surface opposite the viewing direction with respect to the surface normal.

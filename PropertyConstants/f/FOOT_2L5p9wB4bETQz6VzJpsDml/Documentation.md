@@ -1,0 +1,1 @@
+Shallow bath for washing the feet.

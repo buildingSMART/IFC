@@ -1,0 +1,1 @@
+User-defined railing element, a term to identify the user type is given by the attribute _IfcRailing.ObjectType._

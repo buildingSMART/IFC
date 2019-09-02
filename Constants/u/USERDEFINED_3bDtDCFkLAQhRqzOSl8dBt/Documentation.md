@@ -1,0 +1,1 @@
+A user defined address type to be provided.

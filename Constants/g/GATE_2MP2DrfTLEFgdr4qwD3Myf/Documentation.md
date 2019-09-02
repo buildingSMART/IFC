@@ -1,0 +1,1 @@
+A gate is a point of entry to a property usually within an opening in a fence. Or as a "free standing" gate.

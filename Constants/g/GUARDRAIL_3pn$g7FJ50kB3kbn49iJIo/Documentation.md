@@ -1,0 +1,1 @@
+A type of railing designed to guard human occupants from falling off a stair, ramp or landing where there is a vertical drop at the edge of such floors/landings.

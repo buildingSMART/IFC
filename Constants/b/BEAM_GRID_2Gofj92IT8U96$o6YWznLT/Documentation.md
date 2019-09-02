@@ -1,0 +1,1 @@
+Interconnected beams, located in one (typically horizontal) plane.

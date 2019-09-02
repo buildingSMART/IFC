@@ -14,4 +14,4 @@ Object types may be exchanged without being already assigned to objects. An obje
 > IFC2x3 CHANGE&nbsp; The _IfcTypeObject_ is now subtyped from the new supertype _IfcObjectDefinition_, and the attribute _HasPropertySets_ has been changed from a LIST into a SET.
 
 { .change-ifc2x4}
-> IFC4 CHANGE&nbsp; (1) The entity _IfcTypeObject_ shall not be instantiated from IFC4 onwards. It will be changed into an ABSTRACT supertype in future releases of IFC. (2) The inverse attribute _Types_ has been renamed from _ObjectTypeOf_.
+> IFC4 CHANGE&nbsp; The entity _IfcTypeObject_ shall not be instantiated from IFC4 onwards. It will be changed into an ABSTRACT supertype in future releases of IFC. The inverse attribute _Types_ has been renamed from _ObjectTypeOf_.

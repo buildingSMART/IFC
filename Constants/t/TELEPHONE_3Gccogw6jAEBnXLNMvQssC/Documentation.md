@@ -1,0 +1,1 @@
+A transport or network dedicated to telephone system usage.

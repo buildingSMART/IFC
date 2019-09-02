@@ -1,0 +1,1 @@
+Compression type vibration isolator.

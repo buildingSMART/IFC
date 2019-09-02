@@ -1,1 +1,1 @@
-Definition from IAI: Properties common to different types of anchor bolts.
+Properties common to different types of anchor bolts.

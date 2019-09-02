@@ -1,0 +1,1 @@
+A fitting that joins two cable segments of the same connector type (though potentially different gender).

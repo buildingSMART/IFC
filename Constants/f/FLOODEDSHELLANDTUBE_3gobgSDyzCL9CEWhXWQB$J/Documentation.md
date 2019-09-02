@@ -1,0 +1,1 @@
+Evaporator in which refrigerant evaporates outside tubes.

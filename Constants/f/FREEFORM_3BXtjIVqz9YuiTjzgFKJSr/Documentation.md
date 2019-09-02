@@ -1,0 +1,1 @@
+A stair flight with a free form walking line (and outer boundaries).

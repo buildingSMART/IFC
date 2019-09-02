@@ -1,0 +1,1 @@
+A composition of resources performing administration work in an office.

@@ -1,0 +1,1 @@
+The following standard property sets are defined for _IfcBuilding_.

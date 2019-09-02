@@ -1,1 +1,0 @@
-Material from which the body of the valve is constructed.

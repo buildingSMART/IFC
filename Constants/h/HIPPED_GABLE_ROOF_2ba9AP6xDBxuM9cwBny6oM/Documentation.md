@@ -1,0 +1,1 @@
+A roof having a hipped end truncating a gable.

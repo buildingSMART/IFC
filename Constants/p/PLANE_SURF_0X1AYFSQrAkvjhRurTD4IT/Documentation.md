@@ -1,0 +1,1 @@
+A bounded portion of a plane represented by a B-spline surface of degree 1 in each parameter.

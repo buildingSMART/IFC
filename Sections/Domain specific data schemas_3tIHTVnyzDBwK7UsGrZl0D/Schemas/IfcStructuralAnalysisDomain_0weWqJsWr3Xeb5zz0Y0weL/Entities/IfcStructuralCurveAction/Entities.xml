@@ -2,29 +2,31 @@
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStructuralCurveAction" Name="IfcStructuralCurveAction" UniqueId="948541ee-3298-408e-a404-6fd5b84b81e9" DiagramNumber="4" BaseDefinition="IfcStructuralAction" EntityFlags="101">
 	<Localization>
 		<DocLocalization Name="veränderliche Linienlast" Locale="de" />
+		<DocLocalization Name="Structural Curve Action" Locale="en" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="5052.5727" Y="1622.1958" Width="215.20865" Height="100" />
+	<DiagramRectangle xsi:type="DocRectangle" X="4852.57259114583" Y="1350.19584147135" Width="377.875274658203" Height="100" />
 	<Subtypes>
+		<DocSubtype UniqueId="f8230c76-1527-4d80-9d37-835fe4140454" DefinedType="IfcStructuralLinearAction" />
 		<DocSubtype UniqueId="f8230c76-1527-4d80-9d37-835fe4140454" DefinedType="IfcStructuralLinearAction" />
 	</Subtypes>
 	<Attributes>
 		<DocAttribute Name="ProjectedOrTrue" UniqueId="de505213-6b85-43ed-83d1-cdf5251aec7b" DefinedType="IfcProjectedOrTrueLengthEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Defines whether load values are given per true length of the curve on which they act, or per length of the projection of the curve in load direction.  The latter is only applicable to loads which act in global coordinate directions.</Documentation>
 			<DiagramLine>
-				<DocPoint X="5099.0804" Y="1722.1958" />
-				<DocPoint X="5099.0804" Y="1859.99769" />
-				<DocPoint X="5309.63816" Y="1859.99769" />
+				<DocPoint X="5041.85596720378" Y="1450.19584147135" />
+				<DocPoint X="5041.85596720378" Y="1450.19584147135" />
+				<DocPoint X="5041.85596720378" Y="1606.56461588542" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5103.27309" Y="1836.929441" Width="189" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="5041.85596720378" Y="1586.56461588542" Width="189" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="PredefinedType" UniqueId="a0301c23-b88b-4a3c-bb49-e303eb4a0b69" DefinedType="IfcStructuralCurveActivityTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Type of action according to its distribution of load values.</Documentation>
 			<DiagramLine>
-				<DocPoint X="5101.7759" Y="1622.1958" />
-				<DocPoint X="5101.7759" Y="1523.795421" />
-				<DocPoint X="5311.44833" Y="1523.795421" />
+				<DocPoint X="5230.44786580404" Y="1450.19584147135" />
+				<DocPoint X="5230.44786580404" Y="1524.60666621094" />
+				<DocPoint X="5739.0143737793" Y="1524.60666621094" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5098.6592754" Y="1594.420967" Width="182" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="5230.44786580404" Y="1504.60666621094" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
@@ -43,5 +45,14 @@
 			<Expression>PredefinedType &lt;&gt; IfcStructuralCurveActivityTypeEnum.EQUIDISTANT</Expression>
 		</DocWhereRule>
 	</WhereRules>
+	<Tree>
+		<DocLine>
+			<DiagramLine>
+				<DocPoint X="5230.44786580404" Y="1400.19584147135" />
+				<DocPoint X="5230.44786580404" Y="1400.19584147135" />
+				<DocPoint X="5304.94401041667" Y="1400.19584147135" />
+			</DiagramLine>
+		</DocLine>
+	</Tree>
 </DocEntity>
 

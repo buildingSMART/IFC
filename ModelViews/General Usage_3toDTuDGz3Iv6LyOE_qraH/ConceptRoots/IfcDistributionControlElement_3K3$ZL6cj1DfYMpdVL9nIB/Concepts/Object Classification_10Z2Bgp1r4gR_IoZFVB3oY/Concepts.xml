@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Object Classification" UniqueId="10Z2Bgp1r4gR_IoZFVB3oY">
+	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Classification_Association_1A8aO9PNXCTQFYl_eRbxo" />
+	<Items>
+		<DocTemplateItem UniqueId="75372851-3506-4b5d-aa38-38fe13822643" RuleParameters="Source=ASHRAE;Name=BACnet;Tokens=(&apos;{D:0..65535},&apos;.&apos;,&apos;{D:0..65535}&apos;);" Order="0">
+			<Documentation>32-bit decimal BACnetObjectIdentifier indicating type ID and instance ID (e.g.&apos;12.15&apos; for Digital Input #15).</Documentation>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="3021b7e8-7c16-4470-8d9c-8996d606ae94" RuleParameters="Source=IETF;Name=IPv4;Tokens=(‘{D:0..255}’,’.’,’{D:0..255}’,’.’, ’{D:0..255}’,’.’, ’{D:0..255}’);" Order="0">
+			<Documentation>32-bit decimal address for an IPv4 network (e.g.&apos;192.168.1.1&apos;).</Documentation>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="394de2b0-fdcd-4e75-a072-2bd38af7e735" RuleParameters="Source=IETF;Name=IPv6;Tokens=(&apos;{X:0000..FFFF}&apos;,&apos;:&apos;,{X:0000..FFFF}&apos;,&apos;:&apos;,{X:0000..FFFF}&apos;,&apos;:&apos;,{X:0000..FFFF}&apos;,&apos;:&apos;,{X:0000..FFFF}&apos;,&apos;:&apos;,{X:0000..FFFF}&apos;,&apos;:&apos;,{X:0000..FFFF}&apos;,&apos;:&apos;,{X:0000..FFFF}&apos;);" Order="0">
+			<Documentation>128-bit hexadecimal address for an IPv6 network.</Documentation>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="7e954682-e978-467a-830e-6af3d983a64a" RuleParameters="Source=IETF;Name=MAC;Tokens=(‘{X:00..FF}’,’-‘,{X:00-FF}’, ’-‘,{X:00-FF}’, ’-‘,{X:00-FF}’, ’-‘,{X:00-FF}’, ’-‘,{X:00-FF}’);" Order="0">
+			<Documentation>48-bit hexadecimal form of MAC address.</Documentation>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="9ce400c2-80f4-43a1-8ef2-dc1abd76dec1" RuleParameters="Source=OPC Foundation;Name=OPC;Tokens=(’.’,’{S}’,’{*}’);" Order="0">
+			<Documentation>Hierarchical ItemID in alphanumeric form (i.e. &apos;B204.Tank2.Temperature)</Documentation>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="3659d42c-7b02-40f6-9686-a69e13093782" RuleParameters="Source=SmartLabs;Name=Insteon;Tokens=(&apos;{X:00..FF}&apos;,&apos;.&apos;,&apos;{X:00..FF}&apos;,&apos;.&apos;,&apos;{X:00..FF}&apos;);" Order="0">
+			<Documentation>24-bit hexadecimal instance address.</Documentation>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="59f9de38-42f2-4115-968f-7e2bc91eeaef" RuleParameters="Source=ISO/IEC;Name=LonTalk;Tokens=(&apos;{X:00..FF}&apos;,&apos;:&apos;,&apos;{X:00..FF}&apos;,&apos;:&apos;,&apos;{X:00..FF}&apos;,&apos;:&apos;,&apos;{X:00..FF}&apos;,&apos;:&apos;,&apos;{X:00..FF}&apos;,&apos;:&apos;,&apos;{X:00..FF}&apos;,&apos;:&apos;,&apos;{X:00..FF}&apos;);" Order="0">
+			<Documentation>48-bit hexadecimal neuron ID.</Documentation>
+		</DocTemplateItem>
+	</Items>
+</DocTemplateUsage>
+

@@ -1,0 +1,1 @@
+> NOTE&nbsp; The 'Axis' is not used to locate the material layer set, only the subtype _IfcWallStandardCase_ provides this capability.

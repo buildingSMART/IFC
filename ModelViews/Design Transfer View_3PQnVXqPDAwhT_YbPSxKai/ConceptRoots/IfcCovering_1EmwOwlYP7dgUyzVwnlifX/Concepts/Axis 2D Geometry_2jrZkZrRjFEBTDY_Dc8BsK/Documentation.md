@@ -1,0 +1,1 @@
+Vertical coverings such as for walls may be positioned according to an Axis representation. For the case of an enclosed space, such curve may be closed.

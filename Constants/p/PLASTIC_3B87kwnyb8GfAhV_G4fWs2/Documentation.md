@@ -1,0 +1,1 @@
+A reflectance model providing a specular effect which is similar to the Phong model.

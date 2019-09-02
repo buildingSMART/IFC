@@ -1,0 +1,1 @@
+A fitting with typically two ports used to obstruct or restrict flow between the connected elements (e.g., screen, perforated plate, etc.).

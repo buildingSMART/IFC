@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelAssignsToGroup" UniqueId="20dee03b-bfd0-4795-923f-4619fc628b6c" DiagramNumber="13" BaseDefinition="IfcRelAssigns" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelAssignsToGroup" Name="IfcRelAssignsToGroup" UniqueId="20dee03b-bfd0-4795-923f-4619fc628b6c" DiagramNumber="13" BaseDefinition="IfcRelAssigns" EntityFlags="237">
 	<Localization>
 		<DocLocalization Name="Weist Gruppe zu - Relation" Locale="de" />
+		<DocLocalization Name="Rel Assigns To Group" Locale="en" />
 		<DocLocalization Name="Assignation à groupe" Locale="fr" />
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="20084.47" Y="319.72393" Width="356.43333" Height="133.23333" />
@@ -24,5 +25,13 @@
 			<Expression>SIZEOF(QUERY(Temp &lt;* SELF\IfcRelAssigns.RelatedObjects | RelatingGroup :=: Temp)) = 0</Expression>
 		</DocWhereRule>
 	</WhereRules>
+	<Tree>
+		<DocLine>
+			<DiagramLine>
+				<DocPoint X="20262.686" Y="452.95726" />
+				<DocPoint X="20262.686" Y="628.47333" />
+			</DiagramLine>
+		</DocLine>
+	</Tree>
 </DocEntity>
 

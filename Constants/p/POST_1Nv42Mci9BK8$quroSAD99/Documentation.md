@@ -1,0 +1,1 @@
+A linear member (usually used vertically) within a roof structure to support purlins.

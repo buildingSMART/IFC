@@ -1,0 +1,1 @@
+An event trigger that is a message or set of information.

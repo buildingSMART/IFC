@@ -1,0 +1,1 @@
+A fitting with typically more than two ports used to redistribute flow among the ports and/or to change the direction of flow between connected elements (e.g, tee, cross, wye, etc.).

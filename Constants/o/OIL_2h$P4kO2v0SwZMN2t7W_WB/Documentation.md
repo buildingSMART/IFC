@@ -1,0 +1,1 @@
+One or more chambers arranged to prevent the ingress of oil to a drain or sewer that retains the oil for later removal.

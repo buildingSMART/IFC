@@ -2,19 +2,10 @@
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcBuildingElement" Name="IfcBuildingElement" UniqueId="a00e8863-dd67-4f4b-8e83-2c3ee0290740" DiagramNumber="2" BaseDefinition="IfcElement" EntityFlags="205">
 	<Localization>
 		<DocLocalization Name="Bauteil / Bauelement" Locale="de" />
+		<DocLocalization Name="Building Element" Locale="en" />
 		<DocLocalization Name="Elément de construction" Locale="fr" />
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="1810.8195" Y="126.88894" Width="363.9" Height="120" />
-	<Attributes>
-		<DocAttribute Name="HasCoverings" UniqueId="ef233e5d-6774-43dd-b247-e56915d81a52" DefinedType="IfcRelCoversBldgElements" AttributeFlags="32" AggregationType="3" AggregationFlag="0" Inverse="RelatingBuildingElement">
-			<Documentation>Reference to _IfcCovering_ by virtue of the objectified relationship _IfcRelCoversBldgElement_. It defines the concept of a building element having coverings associated.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2174.7195" Y="186.88894" />
-				<DocPoint X="2697.29997" Y="186.88894" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2185.386167" Y="216.222273" Width="305" Height="70" />
-		</DocAttribute>
-	</Attributes>
 	<WhereRules>
 		<DocWhereRule Name="MaxOneMaterialAssociation" UniqueId="fa36df67-4abc-4e2c-8e40-f09974b02f2d">
 			<Documentation>There should be only a maximum of one material association assigned to an building element.

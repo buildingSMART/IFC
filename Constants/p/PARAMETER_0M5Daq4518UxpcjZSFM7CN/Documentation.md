@@ -1,0 +1,1 @@
+A constraint whose objective is to calculate a value based on other referenced values.

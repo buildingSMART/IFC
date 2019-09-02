@@ -1,0 +1,1 @@
+This concepts utilizes the additional level of specializing objects. At the level of subtypes, an _PredefinedType_ enumeration attribute is introduced to select a more specific object occurrence category. If the current precompiled enumeration does not include the specific category, a user defined value can be set.

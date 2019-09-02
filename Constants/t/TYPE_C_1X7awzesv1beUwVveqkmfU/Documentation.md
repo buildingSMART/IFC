@@ -1,0 +1,1 @@
+Type C is the recommended standard system. The C-Plane system equals a globe with a vertical axis. C-Angles are valid from 0&deg; to 360&deg;, &#947;-Angles are valid from 0&deg; (south pole) to 180&deg; (north pole).

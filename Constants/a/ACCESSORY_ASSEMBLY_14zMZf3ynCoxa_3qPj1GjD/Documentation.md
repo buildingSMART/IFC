@@ -1,0 +1,1 @@
+Assembled accessories or components.

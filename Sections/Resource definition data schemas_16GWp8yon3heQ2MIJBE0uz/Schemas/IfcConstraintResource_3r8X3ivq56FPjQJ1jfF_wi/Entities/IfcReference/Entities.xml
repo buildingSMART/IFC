@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcReference" UniqueId="52a0c859-f1c0-4241-adbc-cefb7dba1a07" DiagramNumber="1" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcReference" Name="IfcReference" UniqueId="52a0c859-f1c0-4241-adbc-cefb7dba1a07" DiagramNumber="1" EntityFlags="237">
 	<Localization>
 		<DocLocalization Name="Bezug" Locale="de" />
+		<DocLocalization Name="Reference" Locale="en" />
 		<DocLocalization Name="Référence" Locale="fr" />
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="270.54647" Y="1927.9427" Width="241.85388" Height="344.68422" />
@@ -38,17 +39,18 @@ A null value indicates a reference to the type or entity itself, such as for ind
 			</DiagramLine>
 			<DiagramLabel xsi:type="DocRectangle" X="639.0655" Y="2090.0042668" Width="167" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ListPositions" UniqueId="dec4faf5-8fe8-497e-aa25-b29372c1a09e" DefinedType="INTEGER" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="ListPositions" UniqueId="dec4faf5-8fe8-497e-aa25-b29372c1a09e" DefinedType="IfcInteger" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Optionally identifies an instance within a collection according to position starting at 1.  For referencing single-level collections, this attribute contains a single member; for referencing multi-level collections, then this LIST attribute contains multiple members starting from the outer-most index.</Documentation>
 			<DiagramLine>
-				<DocPoint X="512.40035" Y="2174.6325" />
-				<DocPoint X="817.30791" Y="2174.6325" />
+				<DocPoint X="512.40035" Y="2173.7912" />
+				<DocPoint X="512.40035" Y="2173.7912" />
+				<DocPoint X="817.30791" Y="2173.7912" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="511.74870666" Y="2164.9504834" Width="221" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="512.40035" Y="2153.7912" Width="221" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="InnerReference" UniqueId="889b3f67-4f49-48f8-b360-d95b00381b6c" DefinedType="IfcReference" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
-			<Documentation>Optional reference to an inner value for ENTITY, SELECT, SET, or LIST attributes. A path may be formed by linking _IfcReference_ instances together.
-
+			<Documentation>Optional reference to an inner value for ENTITY, SELECT, SET, or LIST attributes.
+A path may be formed by linking _IfcReference_ instances together.
 &gt; EXAMPLE&amp;nbsp; A material layer thickness may be referenced using several instances: #1=IFCREFERENCE($,&apos;IfcSlab&apos;,&apos;HasAssociations&apos;,#2); #2=IFCREFERENCE($,&apos;IfcMaterialLayerSet&apos;,&apos;MaterialLayers&apos;,#3); #3=IFCREFERENCE(&apos;Core&apos;,&apos;IfcMaterialLayer&apos;,&apos;LayerThickness&apos;,$);</Documentation>
 			<DiagramLine>
 				<DocPoint X="512.40035" Y="2241.7341" />

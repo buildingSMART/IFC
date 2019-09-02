@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Constraint" UniqueId="0XRU61RGb2Ge$LGh4T_YmL">
+	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Constraint_Association_30YoPCzyP7dwzNMHS4mwe" />
+	<Items>
+		<DocTemplateItem UniqueId="cd2a098f-3034-40dd-a143-8322b4b15ba2" RuleParameters="Constrained Attribute=TaskTime.ScheduleDuration;" Order="0">
+			<Documentation>Indicate fixed duration of task with ConstraintGrade=HARD and Benchmark=EQUALTO such that changes to an assigned _IfcConstructionResource.ResourceTime.ScheduleWork_ should impact _IfcConstructionResource.ResourceTime.ScheduleUsage_, and vice-versa.</Documentation>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="8444e5e0-68f8-44ad-9966-dbb8d7a5ef91" RuleParameters="Constrained Attribute=TaskTime.ScheduleStart;" Order="0">
+			<Documentation>Indicate constrained start date with ConstraintGrade=HARD and Benchmark of EQUALTO, GREATERTHANOREQUALTO, or LESSTHANOREQUALTO to indicate &quot;must start on&quot;, &quot;start no earlier than&quot; or &quot;start no later than&quot; respectively where _IfcMetric.DataValue_ indicates the specific _IfcDateTime_. Use SOFT constraint having LESSTHAN benchmark to indicate &quot;start as soon as possible&quot;.</Documentation>
+		</DocTemplateItem>
+		<DocTemplateItem UniqueId="26199da9-db5d-4a07-8f75-e935eb1d4e15" RuleParameters="Constrained Attribute=TaskTime.ScheduleFinish;" Order="0">
+			<Documentation>Indicate constrained finish date with ConstraintGrade=HARD and Benchmark of EQUALTO, GREATERTHANOREQUALTO, or LESSTHANOREQUALTO to indicate &quot;must finish on&quot;, &quot;finish no earlier than&quot; or &quot;finish no later than&quot; respectively where _IfcMetric.DateValue_ indicates the specific _IfcDateTime_. Use SOFT constraint having GREATERTHAN benchmark to indicate &quot;finish as late as possible&quot;.</Documentation>
+		</DocTemplateItem>
+	</Items>
+</DocTemplateUsage>
+

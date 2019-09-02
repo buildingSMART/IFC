@@ -1,0 +1,1 @@
+A torus, or portion of a torus, represented by a B-spline surface.

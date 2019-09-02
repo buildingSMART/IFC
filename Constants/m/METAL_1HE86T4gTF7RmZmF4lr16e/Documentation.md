@@ -1,0 +1,1 @@
+A reflectance model providing a specular metallic appearance.

@@ -1,0 +1,1 @@
+A bounded portion of a surface of revolution.

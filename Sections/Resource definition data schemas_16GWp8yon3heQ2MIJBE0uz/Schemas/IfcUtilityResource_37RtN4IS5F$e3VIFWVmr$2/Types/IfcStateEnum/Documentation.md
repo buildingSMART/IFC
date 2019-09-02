@@ -2,12 +2,6 @@ The _IfcStateEnum_ enumeration identifies the state or accessibility of the obje
 
 Valid enumerations are:
 
-* READWRITE: Object is in a Read-Write state. It may be modified by an application.
-* READONLY: Object is in a Read-Only state. It may be viewed but not modified by an application.
-* LOCKED: Object is in a Locked state. It may not be accessed by an application.
-* READWRITELOCKED: Object is in a Read-Write-Locked state. It may not be accessed by an application.
-* READONLYLOCKED: Object is in a Read-Only-Locked state. It may not be accessed by an application.
-
 > HISTORY&nbsp; New enumeration in IFC2.0.
 
 { .change-ifc2x3}

@@ -1,0 +1,1 @@
+Ownership, history, and merge state is captured using _IfcOwnerHistory_.

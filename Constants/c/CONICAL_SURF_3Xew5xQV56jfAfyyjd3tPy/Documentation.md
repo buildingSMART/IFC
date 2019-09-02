@@ -1,0 +1,1 @@
+A bounded portion of the surface of a right circular cone.

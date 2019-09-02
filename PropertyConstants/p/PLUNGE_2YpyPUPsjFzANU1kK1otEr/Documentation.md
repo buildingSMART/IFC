@@ -1,0 +1,1 @@
+Bath, usually for more than one person at a time, into which the whole body can be easily immersed.

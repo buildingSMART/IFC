@@ -1,0 +1,1 @@
+A constraint whose objective is to indicate a limiting value beyond which the condition of an object requires a particular form of attention.

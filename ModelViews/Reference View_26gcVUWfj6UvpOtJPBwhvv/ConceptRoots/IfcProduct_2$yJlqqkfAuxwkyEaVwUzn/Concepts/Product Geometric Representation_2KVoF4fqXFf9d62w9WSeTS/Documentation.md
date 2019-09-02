@@ -1,0 +1,3 @@
+The geometric representation of any _IfcProduct_ is provided by the _IfcProductDefinitionShape_ allowing multiple geometric representations. It uses the _Product Placement_ concept utilizing _IfcLocalPlacement_ to establish an object coordinate system, within all geometric representations are founded.
+
+> NOTE&nbsp; A detailed specification of how to apply the local placement and which shape representaions are applicable is provided at the level of subtypes of _IfcProduct_ and is further determined by the model view definition and implementer agreements.

@@ -1,0 +1,1 @@
+Geometric display representation that shows a full 3D element representation, e.g. representing a wall by its volumetric body.

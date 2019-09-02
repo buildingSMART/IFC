@@ -1,0 +1,1 @@
+The load value is linearly distributed over the load's extent.

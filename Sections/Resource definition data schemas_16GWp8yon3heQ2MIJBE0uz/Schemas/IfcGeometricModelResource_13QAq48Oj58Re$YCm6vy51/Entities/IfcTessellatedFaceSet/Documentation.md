@@ -4,20 +4,20 @@ The _IfcTessellatedFaceSet_ is a boundary representation topological model limit
 
 The _IfcTessellatedFaceSet_ is an abstract supertype of tesselated face sets each imposing specific constraints on face generation for tessellation, such as triangulation (with or without strip and fans), or quadrilaterals.
 
-> NOTE&nbsp; Not all different constraints on face sets are already included as specific subtypes in this release.
+> NOTE&nbsp; Not all different constraints on face sets are included as specific subtypes in this release of the specification.
 
 The following attributes apply to all subtypes:
 
-* The _Coordinates_ are the ordered list of Cartesian points representing the vertices of the tessellated item. An index list, defined at the level of subtypes, uses the points, identified by index position, to construct the polylines that represent the faces. 
-* The _Normals_ are the ordered list of directions representing normals of the tessellated item. An index list, defined at the level of subtypes, uses the directions, identified by index position, to define the normals either by face or by edge. 
-* The _HasColours_ inverse relation provides an indexed colour map with an corresponding list of indices providing a colour for each face of the tessellated face set. 
-* The _HasTextures_ inverse relation provides an indexed texture map with an corresponding list of indices providing texture coordinates that map to the geometric coordinates of the polylines representing the faces. 
+* The _Coordinates_ are the ordered list of Cartesian points representing the vertices of the tessellated item. An index list, defined at the level of subtypes, uses the points, identified by index position, to construct the polylines that represent the faces.
+* The _Normals_ are the ordered list of directions representing normals of the tessellated item. An index list, defined at the level of subtypes, uses the directions, identified by index position, to define the normals either by face or by edge.
+* The _HasColours_ inverse relation provides an indexed colour map with an corresponding list of indices providing a colour for each face of the tessellated face set.
+* The _HasTextures_ inverse relation provides an indexed texture map with an corresponding list of indices providing texture coordinates that map to the geometric coordinates of the polylines representing the faces.
 
 Each face of the tessellated face set shall have:
 
-* at least three non-coincident vertices; 
-* vertices that define a planar polygon; 
-* vertices that define a non-self-intersecting polygon. 
+* at least three non-coincident vertices;
+* vertices that define a planar polygon;
+* vertices that define a non-self-intersecting polygon.
 
 > NOTE&nbsp; The definition of _IfcTessellatedFaceSet_ is based on the **indexedFaceSet** defined in ISO/IEC 19775-1
 

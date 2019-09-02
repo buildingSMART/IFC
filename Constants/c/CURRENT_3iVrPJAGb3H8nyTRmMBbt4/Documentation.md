@@ -1,0 +1,1 @@
+A transformer that changes the current between circuits.

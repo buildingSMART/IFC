@@ -1,0 +1,1 @@
+The anchor is used or can be used to prestress the tendon.

@@ -1,0 +1,1 @@
+Door with two panels, one is sliding to the left the other is sliding to the right.

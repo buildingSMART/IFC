@@ -1,0 +1,1 @@
+Plug for power using direct current (DC)

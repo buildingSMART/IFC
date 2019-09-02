@@ -1,0 +1,1 @@
+User-defined evaporative cooler type.

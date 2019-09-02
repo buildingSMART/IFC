@@ -1,0 +1,1 @@
+User-defined tank type.

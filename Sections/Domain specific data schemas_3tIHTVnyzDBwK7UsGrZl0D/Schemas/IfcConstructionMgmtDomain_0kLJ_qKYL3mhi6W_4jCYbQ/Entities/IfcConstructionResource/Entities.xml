@@ -2,6 +2,7 @@
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcConstructionResource" Name="IfcConstructionResource" UniqueId="8d7d96c2-5987-41a0-aa66-ab3c2f3443bf" DiagramNumber="1" BaseDefinition="IfcResource" EntityFlags="197">
 	<Localization>
 		<DocLocalization Name="Konstruktion - Ressource" Locale="de" />
+		<DocLocalization Name="Construction Resource" Locale="en" />
 		<DocLocalization Name="Ressource de construction" Locale="fr" />
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="30.640001" Y="218.66667" Width="256" Height="886.66667" />
@@ -28,7 +29,7 @@
 			<DiagramLabel xsi:type="DocRectangle" X="278.8366653" Y="262.19997" Width="79" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="BaseCosts" UniqueId="c897428f-689a-4abb-9fb4-b5dffaf945e6" DefinedType="IfcAppliedValue" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
-			<Documentation>Indicates the unit costs and environmental impacts for which accrued amounts should be calculated.  Such unit costs may be split into _Name_ designations (for example, &apos;Standard&apos;, &apos;Overtime&apos;), and may contain a hierarchy of cost values that apply at different dates (using _IfcCostValue.ApplicableDate_ and _IfcCostValue.FixedUntilDate_).
+			<Documentation>Indicates the unit costs for which accrued amounts should be calculated.  Such unit costs may be split into _Name_ designations (for example, &apos;Standard&apos;, &apos;Overtime&apos;), and may contain a hierarchy of cost values that apply at different dates (using _IfcCostValue.ApplicableDate_ and _IfcCostValue.FixedUntilDate_).
 
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute.</Documentation>
@@ -60,5 +61,51 @@ For product resources, this refers to _IfcQuantityCount_.
 			<DiagramLabel xsi:type="DocRectangle" X="314.186469" Y="656.3609976" Width="155" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<Tree>
+		<DocLine>
+			<DiagramLine>
+				<DocPoint X="54.904337" Y="1105.3333" />
+				<DocPoint X="54.9043375" Y="1105.3333" />
+			</DiagramLine>
+			<Tree>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="54.903337" Y="2041.3667" />
+						<DocPoint X="95.4" Y="2041.3667" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="54.903337" Y="1485.3334" />
+						<DocPoint X="95.4" Y="1485.3334" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="54.903337" Y="1302.6668" />
+						<DocPoint X="95.49999" Y="1302.6668" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="54.903337" Y="1670.6666" />
+						<DocPoint X="95.45326" Y="1670.6666" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="54.903337" Y="2226.6999" />
+						<DocPoint X="95.433367" Y="2226.6999" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="54.903337" Y="1856.0334" />
+						<DocPoint X="95.480003" Y="1856.0334" />
+					</DiagramLine>
+				</DocLine>
+			</Tree>
+		</DocLine>
+	</Tree>
 </DocEntity>
 

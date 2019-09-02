@@ -1,0 +1,1 @@
+A rigid frame with additional bracing members.

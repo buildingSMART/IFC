@@ -1,0 +1,5 @@
+Resources may be decomposed into allocation pools using the _IfcRelNests_ relationship as shown in Figure 181. For example, an _IfcLaborResource_ for "Electrician" may be decomposed into three task-specific _IfcLaborResource_ objects: "Electrical Rough-in", "First Floor Circuits", and "Second Floor Circuits". Both relating and related sides may represent the same _ResourceTime.ScheduleUsage_ quantity (for example, 6 workers time-shared), or the related side may break out _ResourceTime.ScheduleUsage_ quantities for reserved use (for example, 4 workers and 2 workers).
+
+A common scenario is two nesting levels where the first-level resources have no task assignments; while second-level resources have specific task assignments indicating that the resource is subdivided into allocations for specific tasks. While the model allows unlimited nesting of resources, implementer agreements may restrict to two nesting levels with task assignments specifically at the second level.
+
+!["Composition Use Definition"](../../../figures/ifcconstructionresource-composition.png "Figure 1 &mdash; Construction resource composition use")

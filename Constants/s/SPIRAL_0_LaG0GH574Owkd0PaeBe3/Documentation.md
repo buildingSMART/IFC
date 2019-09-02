@@ -1,0 +1,1 @@
+A ramp flight with a circular or elliptic walking line.

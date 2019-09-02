@@ -1,0 +1,1 @@
+Plug for power using alternating current (AC)

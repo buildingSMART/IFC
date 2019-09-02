@@ -1,0 +1,1 @@
+Connection to duct segment or fitting for distribution of air.

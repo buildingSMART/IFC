@@ -1,0 +1,1 @@
+The section is tapered in longitudinal direction.

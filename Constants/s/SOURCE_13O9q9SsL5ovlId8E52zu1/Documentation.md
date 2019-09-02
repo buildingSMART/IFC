@@ -1,0 +1,1 @@
+A flow source, where a substance flows out of the connection.

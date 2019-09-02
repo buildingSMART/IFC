@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMaterialProfile" UniqueId="b6fed4e6-ea5a-425b-a9b3-54d96e75f62b" DiagramNumber="3" BaseDefinition="IfcMaterialDefinition" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcMaterialProfile" Name="IfcMaterialProfile" UniqueId="b6fed4e6-ea5a-425b-a9b3-54d96e75f62b" DiagramNumber="3" BaseDefinition="IfcMaterialDefinition" EntityFlags="237">
 	<Localization>
 		<DocLocalization Name="Profil mit Material" Locale="de" />
+		<DocLocalization Name="Material Profile" Locale="en" />
 		<DocLocalization Name="Matériau de profil" Locale="fr" />
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="3403.2326" Y="1285.1019" Width="403.31633" Height="474.39206" />
@@ -41,17 +42,20 @@
 			</DiagramLine>
 			<DiagramLabel xsi:type="DocRectangle" X="3915.79723" Y="1417.429553" Width="76" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Priority" UniqueId="34b4027d-5a6d-4ca7-9e38-938813104361" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>The relative priority of the profile, expressed as ratio measure, normalised to 0..1. Controls how profiles intersect in connections and corners of building elements: A profile from one element protrudes into (i.e. displaces) a profile from another element in a joint of these elements if the former element&apos;s profile has higher priority than the latter. The priority value for a material profile in an element has to be set and maintained by software applications in relation to the material profiles in connected elements.</Documentation>
+		<DocAttribute Name="Priority" UniqueId="34b4027d-5a6d-4ca7-9e38-938813104361" DefinedType="IfcInteger" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The relative priority of the profile, expressed as normalised integer range [0..100]. Controls how profiles intersect in connections and corners of building elements: A profile from one element protrudes into (i.e. displaces) a profile from another element in a joint of these elements if the former element&apos;s profile has higher priority than the latter. The priority value for a material profile in an element has to be set and maintained by software applications in relation to the material profiles in connected elements.</Documentation>
 			<DiagramLine>
-				<DocPoint X="3690.7623" Y="1759.494" />
-				<DocPoint X="3690.7623" Y="1812.464824" />
-				<DocPoint X="4359.742" Y="1812.464824" />
+				<DocPoint X="3403.2326" Y="1759.49396" />
+				<DocPoint X="3403.2326" Y="1868.38380388802" />
+				<DocPoint X="3005.72379557292" Y="1868.38380388802" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3597.139908" Y="1800.273342" Width="82" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="3403.2326" Y="1848.38380388802" Width="82" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Category" UniqueId="1eae177e-bf43-4c31-8ee1-ead88a469691" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Category of the material profile, e.g. the role it has in the profile set it belongs to.</Documentation>
+			<Documentation>Category of the material profile, e.g. the role it has in the profile set it belongs to. The list of keywords might be extended by model view definitions, however the following keywords shall apply in general:
+* &apos;Load Bearing&apos; &amp;mdash; the material profile having a load bearing function.
+* &apos;Insulation&apos; &amp;mdash; the material profile having an insolating function.
+* &apos;Finish&apos; &amp;mdash; the material profile being the finish.</Documentation>
 			<DiagramLine>
 				<DocPoint X="3806.549" Y="1709.8982" />
 				<DocPoint X="4078.72765" Y="1709.8982" />
@@ -67,5 +71,19 @@
 			<DiagramLabel xsi:type="DocRectangle" X="3767.40464" Y="1058.192931" Width="293" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="NormalizedPriority" UniqueId="5402fa6e-a6e6-465a-8fa1-35a23136152c">
+			<Documentation>The _Property_ shall all be given as a normalized integer range [0..100], where 0 is the lowest and 100 the highest priority of the material profile.</Documentation>
+			<Expression>NOT(EXISTS(Priority)) OR {0 &lt;= Priority &lt;= 100}</Expression>
+		</DocWhereRule>
+	</WhereRules>
+	<Tree>
+		<DocLine>
+			<DiagramLine>
+				<DocPoint X="3604.8908" Y="1759.494" />
+				<DocPoint X="3604.8908" Y="2054.63024" />
+			</DiagramLine>
+		</DocLine>
+	</Tree>
 </DocEntity>
 

@@ -23,7 +23,7 @@ Figure 2 illustrates default texture mapping with a clamped texture (RepeatS=Fal
 
 <table summary="texture" class="gridtable">
 <tr valign="top">
-<td><img alt="texture" src="../../../figures/IfcRectangularPyramid-Texture.png"></td>
+<td><img alt="texture" src="../../../figures/ifcrectangularpyramid-texture.png"></td>
 </tr>
 <tr>
 <td>

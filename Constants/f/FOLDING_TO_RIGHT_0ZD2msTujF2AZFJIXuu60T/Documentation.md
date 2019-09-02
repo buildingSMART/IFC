@@ -1,0 +1,1 @@
+Door with one panel that is folding to the right.

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocModelView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Reference_View_26gcVUWfj6UvpOtJPBwhvv" Name="Reference View" UniqueId="26gcVUWfj6UvpOtJPBwhvv" Code="ReferenceView_V1" Version="1.0" Status="Official" XsdUri="http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1">
+	<Exchanges>
+		<DocExchangeDefinition id="Reference_Exchange_3SsM4bYOvFyBAKwmAlwLEg" Name="Reference Exchange" UniqueId="3SsM4bYOvFyBAKwmAlwLEg">
+			<Documentation>Data exchange requirements indicate required and optional values that may be set on object attributes, organized into concepts.
+
+The table that follows lists each entity, concepts applicable to each entity (and any subtypes within scope), and requirements of the concept for import (I) or export (E). Requirements for import and export are indicated using one of the following flags:
+
+&lt;table class=&quot;gridtable&quot;&gt;
+&lt;tr&gt;&lt;th&gt;Flag&lt;/th&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;R&lt;/td&gt;&lt;td&gt;Required&lt;/td&gt;&lt;td&gt;The attributes must be set as indicated.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;O&lt;/td&gt;&lt;td&gt;Optional&lt;/td&gt;&lt;td&gt;The attributes may be set as indicated or may be omitted.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;X&lt;/td&gt;&lt;td&gt;Excluded&lt;/td&gt;&lt;td&gt;The attributes must be omitted.&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+Export requirements may be tested against IFC files generated from applications. The _IfcDoc_ tool available at [www.buildingsmart-tech.org](http://www.buildingsmart-tech.org) may be used to validate such files and report any errors. Import requirements can only be tested manually by using target software applications. A mandatory import requirement means that the content retrieved from an IFC file must be present in the resulting user interface of the application.
+
+The listing of an entity below does not mean that instances of such entity must necessarily exist within a file, only that if any instances do exist, then they must conform to the indicated requirements. The only mandatory object instances are the single _IfcProject_ which must exist in any IFC file, and a single _IfcSite_, which is enforced by the &quot;spatial decomposition&quot; concept at _IfcProject_ within this model view. All other objects are then referenced directly or indirectly from these instances. The listing of an entity and its attributes does mean that any importing software must be able to read such file without error, but not necessarily retain the information unless specifically indicated.
+
+&gt; NOTE&amp;nbsp; Finalizing exchange requirements is an iterative process that involves balancing the goal of increased scope with the limits of what can be reasonably achieved by leading vendors. Implementers are encouraged to review each row and state whether they intend for software to support each row or not. For concepts marked mandatory that cannot be easily supported, it is requested that implementers provide commentary on why something cannot be supported. Based on such feedback, the standards committee may then vote on such requirements to be in or out of scope.
+
+General requirements of software implementing the Reference Exchange:
+
+* For import, the schema identifier and model view identifier must be read from the file, and if such identifiers are different than that in this specification (and are otherwise not recognized), then the following message must be displayed to the user (localized accordingly): &quot;The selected file contains functionality that is not supported by this application version. A list of applications supporting the functionality within this file may be found at http://www.buildingsmart-tech.org/apps/[SCHEMA_IDENTIFIER]/[MODELVIEW_IDENTIFIER]&quot;. Note that it is also possible for applications to dynamically discover model views by constructing the URL http://www.buildingsmart-tech.org/mvdxml/[SCHEMA_IDENTIFIER]/[MODELVIEW_IDENTIFIER], where such MVDXML file may be used to configure importing or exporting -- if such application understands the full IFC schema and mvdXML, then it would be possible for the application to support any model view arbitrarily.
+* For export, the schema identifier and model view identifier must be written to the file.
+* If an application supports both Reference View and Design Transfer View, then it must provide the user an option to choose which to export and display the following text to the user (localized accordingly): &quot;Reference View contains simplified geometry designed for viewing within the widest range of applications. Design Transfer View contains higher-level geometry designed for editing within design applications.&quot;. There is no requirement where such choice may be made; i.e. such option could be available every time the user exports a file, or such option could be a general application setting.</Documentation>
+			<Icon>"089504E470D0A1A0A0000000D4948445200000010000000100802000000909168360000000467414D410000B18F0BFC6105000000097048597300000EC300000EC301C76FA8640000006049444154384F95D2D10D00100C0450B512933187CDEC4485A4D150C7779F6B93231792FB799E875B2D3819E0CB2C801B01A0D900620450CCC83D5B0262F44A4FA3016F659B03B0CD1918E60A6E86B87C6097E66D56826AE4FC7724E055E5C90E4E1D281D264C695B0000000049454E44AE426082"</Icon>
+		</DocExchangeDefinition>
+	</Exchanges>
+	<Icon>"089504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF610000000467414D410000B18E7CFB5193000000206348524D00007A25000080830000F9FF000080E9000075300000EA6000003A980000176F925FC546000000097048597300000EC300000EC301C76FA8640000008749444154384FA593DD0D80300884C1B8AD3B98E80C3A6F0D4D6828F2676CD2A7F2DD1DB44538AE063F165605DABEBD6CF0BC61A9985B3073A900C3E466AD5480412F452A40AE9E7B3FD343F49C3C9155F645B02E8C0648EC68C183A3F824D013B08B76CBE0290115CB5D791F934015D075E9355AB39122A140068F77F0F5EE6582F26FF466F40043C236B4B35B7BBF0000000049454E44AE426082"</Icon>
+</DocModelView>
+

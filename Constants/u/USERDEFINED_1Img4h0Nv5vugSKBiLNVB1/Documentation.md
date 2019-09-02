@@ -1,0 +1,1 @@
+A user-defined type of voiding feature.

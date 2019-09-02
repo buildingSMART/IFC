@@ -1,0 +1,1 @@
+A rigid segment is a continuous linear segment of duct that cannot be deformed.

@@ -22,4 +22,4 @@ Figure 1 illustrates the center line profile definition. The _Curve_ is defined 
 
 The _Curve_ attribute defines a two dimensional open bounded curve. The _Thickness_ attribute defines a constant thickness along the curve.
 
-!["center line"](../../../figures/IfcArbitraryProfileDef-Layout4.gif "Figure 1 &mdash; Centerline profile")
+!["center line"](../../../figures/ifcarbitraryprofiledef-layout4.gif "Figure 1 &mdash; Centerline profile")

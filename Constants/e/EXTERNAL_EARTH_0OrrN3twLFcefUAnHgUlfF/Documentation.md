@@ -1,0 +1,1 @@
+The space boundary faces a physical or virtual element where there is earth (or terrain) on the other side.

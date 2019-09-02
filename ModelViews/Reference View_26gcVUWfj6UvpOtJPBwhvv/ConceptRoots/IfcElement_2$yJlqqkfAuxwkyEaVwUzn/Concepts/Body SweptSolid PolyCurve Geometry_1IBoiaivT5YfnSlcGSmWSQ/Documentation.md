@@ -1,0 +1,1 @@
+The _IfcElement_ can be geometrically represented by a single or multiple swept solid. In this case, both extruded and revolved solids are supported. The cross section of the swept solid is provided by a poly curve, having straight and circular arc segments. The cross section may have inner loops that result in holes of the resulting swept solid.

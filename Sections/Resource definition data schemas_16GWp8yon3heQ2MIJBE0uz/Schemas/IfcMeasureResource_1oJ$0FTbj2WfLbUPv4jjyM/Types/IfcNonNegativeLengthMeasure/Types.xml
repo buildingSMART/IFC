@@ -1,14 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocDefined xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcNonNegativeLengthMeasure" UniqueId="c561b140-ae11-4c30-a795-c1dddbbb9710" DiagramNumber="3" DefinedType="IfcLengthMeasure" Length="0">
 	<Localization>
+		<DocLocalization Name="Non Negative Length Measure" Locale="en" />
 		<DocLocalization Name="Mesure de longueur positive ou nulle" Locale="fr" />
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="3557.0069" Y="1222.3652" Width="439.71638" Height="55" />
+	<Definition xsi:type="DocDefined" xsi:nil="true" href="IfcLengthMeasure" />
 	<WhereRules>
-		<DocWhereRule Name="NotNegative" UniqueId="d55c7346-d6e3-43f3-b45a-a2b186c96df8">
+		<DocWhereRule Name="NotNegative" UniqueId="90986f33-ca05-4fab-9664-f35afa5a69b4">
 			<Documentation>A non-negative measure shall be greater than or equal to zero.</Documentation>
 			<Expression>SELF &gt;= 0.</Expression>
 		</DocWhereRule>
 	</WhereRules>
+	<DiagramLine>
+		<DocPoint X="3590.6577" Y="1222.3652" />
+		<DocPoint X="3590.6577" Y="1146.643066" />
+		<DocPoint X="3590.51161532" Y="1146.643066" />
+		<DocPoint X="3590.51161532" Y="1091.128509" />
+		<DocPoint X="3590.51161531999" Y="1091.128509" />
+		<DocPoint X="3590.51161531999" Y="1058.981102" />
+	</DiagramLine>
 </DocDefined>
 

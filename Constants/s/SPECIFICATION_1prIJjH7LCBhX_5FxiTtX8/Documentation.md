@@ -1,0 +1,1 @@
+A constraint whose objective is to ensure satisfaction of a specification provision.

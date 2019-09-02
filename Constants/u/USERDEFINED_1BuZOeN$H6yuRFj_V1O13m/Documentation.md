@@ -1,0 +1,1 @@
+User-defined space heater type.

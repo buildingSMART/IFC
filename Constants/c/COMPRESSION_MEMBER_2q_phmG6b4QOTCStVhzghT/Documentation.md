@@ -1,0 +1,1 @@
+A member without tensional stiffness.

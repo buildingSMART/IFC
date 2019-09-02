@@ -4,7 +4,7 @@ An advanced B-rep is a boundary representation model in which all faces, edges a
 
 <table summary="faceted brep" border="0">
 <tr>
-<td valign="top"><img src="../../../figures/IfcAdvancedBrep_01.png" alt="faceted brep instantiation" width="600" height="600"></td>
+<td valign="top"><img src="../../../figures/ifcadvancedbrep_01.png" alt="faceted brep instantiation" width="600" height="600"></td>
 <td style="vertical-align:bottom">
 <p>Figure 1 illustrates use of <em>IfcAdvancedBrep</em> for
 boundary representation models with b-spline surfaces. The diagram

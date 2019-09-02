@@ -1,0 +1,1 @@
+Set of fixed or movable strips of wood, metal, etc. arranged to let air in while keeping light or rain out.

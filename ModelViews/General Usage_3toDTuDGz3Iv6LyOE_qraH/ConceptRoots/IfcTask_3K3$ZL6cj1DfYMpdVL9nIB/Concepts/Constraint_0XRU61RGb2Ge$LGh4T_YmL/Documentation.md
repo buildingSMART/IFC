@@ -1,0 +1,1 @@
+Constraints may be applied to a task to indicate fixed task duration, fixed start or fixed finish, where _IfcMetric_.ReferencePath is set to the corresponding attribute on the _IfcTaskTime_ entity.

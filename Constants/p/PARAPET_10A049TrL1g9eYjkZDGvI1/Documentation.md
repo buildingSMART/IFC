@@ -1,0 +1,1 @@
+A wall-like barrier to protect human occupants from falling, or to prevent the spread of fires. Often designed at the edge of balconies, terraces or roofs.

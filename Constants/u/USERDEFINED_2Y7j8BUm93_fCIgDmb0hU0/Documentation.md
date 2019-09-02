@@ -1,0 +1,1 @@
+A grouping level which does not follow the standard hierarchy of load group types.

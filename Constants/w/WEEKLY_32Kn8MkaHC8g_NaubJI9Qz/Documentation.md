@@ -1,0 +1,1 @@
+WeekdayComponent, Interval, Occurrences

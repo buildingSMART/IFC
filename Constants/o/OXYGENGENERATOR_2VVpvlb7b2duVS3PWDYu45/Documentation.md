@@ -1,0 +1,1 @@
+Device that generates oxygen from air.

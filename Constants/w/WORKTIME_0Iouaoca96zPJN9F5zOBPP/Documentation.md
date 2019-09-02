@@ -1,0 +1,1 @@
+The time duration is based on work time (calendar-dependent).

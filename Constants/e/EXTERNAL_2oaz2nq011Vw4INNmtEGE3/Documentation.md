@@ -1,0 +1,1 @@
+A constraint whose objective is to synchronize data with an external source such as a file

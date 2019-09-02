@@ -1,0 +1,1 @@
+The resulting geometric item is of type surface. The resulting geometry after applying a sweeping operation is a swept solid with defined volume.

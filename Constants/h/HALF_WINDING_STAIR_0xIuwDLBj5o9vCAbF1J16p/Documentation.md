@@ -1,0 +1,1 @@
+A stair consisting of one flight with one half winder, which makes a 180&deg; turn. The orientation of the turn is determined by the walking line.

@@ -1,0 +1,1 @@
+The space boundary faces a physical or virtual element where there is water (water component of terrain) on the other side.

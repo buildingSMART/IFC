@@ -2,7 +2,7 @@ An _IfcCompositeCurve_ is a continuous curve composed of curve segments.
 
 Figure 1 illustrates an example of a composite curve.
 
-!["formula"](../../../figures/IfcCompositeCurve.png "Figure 1 &mdash; Composite curve")
+!["formula"](../../../figures/ifccompositecurve.png "Figure 1 &mdash; Composite curve")
 
 Consider an _IfcCompositeCurve_ having line segment and an arc segment. The line should be parameterized:
 
@@ -22,16 +22,16 @@ Then the parameterization of the composite curve is:
 > NOTE Definition according to ISO 10303-42:  
 > A composite curve is a collection of curves joined end-to-end. The individual segments of the curve are themselves defined as composite curve segments. The parameterization of the composite curve is an accumulation of the parametric ranges of the referenced bounded curves. The first segment is parameterized from _0_ to _l~<small>1</small>~_ and for _i__&le;__2_, the _i^<small>th</small>^_ segment is parameterized from:
 > 
->> ![formula](../../../figures/IfcCompositeCurve-Math1.gif)
+>> ![formula](../../../figures/ifccompositecurve-math1.gif)
 > where _l~<small>k</small>~_ is the parametric length (i.e., difference between maximum and minimum parameter values) of the curve underlying the _k^<small>th</small>^_ segment. Let _T_ denote the parameter for the composite curve. Then, if the _i_th segment is not a reparameterised composite curve segment, _T_ is related to the parameter _t~i~_; _t~i0~__&le;__t~i~__&le;__t~i1~_; for the _i_th segment by the equation:
 > 
->> ![formula](../../../figures/IfcCompositeCurve-Math2.gif) if _Segments[i].SameSense_ = TRUE;
+>> ![formula](../../../figures/ifccompositecurve-math2.gif) if _Segments[i].SameSense_ = TRUE;
 > or by the equation:
 > 
->> ![formula](../../../figures/IfcCompositeCurve-Math3.gif) if _Segments[i].SameSense_ = FALSE;
+>> ![formula](../../../figures/ifccompositecurve-math3.gif) if _Segments[i].SameSense_ = FALSE;
 > If the segments[i] is of type reparameterised composite curve segment,
 > 
->> ![formula](../../../figures/IfcCompositeCurve-Math4.gif) where _&tau;_ is defined at reparameterized composite curve segment (see _IfcReparameterizedCompositeCurveSegment_).
+>> ![formula](../../../figures/ifccompositecurve-math4.gif) where _&tau;_ is defined at reparameterized composite curve segment (see _IfcReparameterizedCompositeCurveSegment_).
 
 
 > 
@@ -43,8 +43,3 @@ Then the parameterization of the composite curve is:
 Informal Propositions:
 
 1. The _SameSense_ attribute of each segment correctly specifies the senses of the component curves. When traversed in the direction indicated by _SameSense_, the segments shall join end-to-end.
-
-___
-Figure 2 illustrates composite curve usage.
-
-!["usage"](../../../figures/ifccompositecurve.png "Figure 2 &mdash; Composite curve usage")

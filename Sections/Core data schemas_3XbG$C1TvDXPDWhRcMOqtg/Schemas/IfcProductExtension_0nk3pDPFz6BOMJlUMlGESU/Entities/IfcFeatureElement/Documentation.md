@@ -8,21 +8,3 @@ In contrary to the aggregation, as used in _IfcElementAssembly_, that defines th
 
 { .change-ifc2x2}
 > IFC2x2 CHANGE&nbsp; The entity is introduced as an upward compatible extension of the IFC2x platform. It is an intermediate abstract supertype without defining its own explicit attributes.
-
-___
-## Common Use Definitions
-The following concepts are inherited at supertypes:
-
-* _IfcRoot_: [Identity](../../templates/identity.htm), [Revision Control](../../templates/revision-control.htm)
-* _IfcElement_: [Property Sets for Objects](../../templates/property-sets-for-objects.htm), [Product Placement](../../templates/product-placement.htm), [Box Geometry](../../templates/box-geometry.htm), [FootPrint Geometry](../../templates/footprint-geometry.htm), [Body SurfaceOrSolidModel Geometry](../../templates/body-surfaceorsolidmodel-geometry.htm), [Body SurfaceModel Geometry](../../templates/body-surfacemodel-geometry.htm), [Body Tessellation Geometry](../../templates/body-tessellation-geometry.htm), [Body Brep Geometry](../../templates/body-brep-geometry.htm), [Body AdvancedBrep Geometry](../../templates/body-advancedbrep-geometry.htm), [Body CSG Geometry](../../templates/body-csg-geometry.htm), [Mapped Geometry](../../templates/mapped-geometry.htm)
-
-[![Image](../../../img/diagram.png)&nbsp;Instance diagram](../../../annex/annex-d/common-use-definitions/ifcfeatureelement.htm)
-
-{ .use-head}
-Spatial Containment
-
-The [Spatial Containment](../../templates/spatial-containment.htm) concept applies to this entity.
-
-As a subordinate part being fully dependent on the master element the _IfcFeatureElement_ shall have no independent containment relationship to the spatial structure.
-
-* The _SELF\IfcElement.ContainedInStructure_ relationship shall be NIL.

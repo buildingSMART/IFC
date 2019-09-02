@@ -1,0 +1,1 @@
+An arc of finite length of one branch of a hyperbola represented by a B-spline curve.

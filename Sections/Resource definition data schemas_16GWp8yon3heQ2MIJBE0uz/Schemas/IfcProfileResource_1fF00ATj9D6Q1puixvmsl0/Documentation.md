@@ -57,6 +57,6 @@ The use of coordinate axes in IFC is not identical with the general convention f
   </tbody>
 </table>
 
-!["coordinates in IFC and structural"](../../figures/IfcProfileResource-CoordinateSystem.gif "Figure 1 &mdash; Profile coordinate system")
+!["coordinates in IFC and structural"](../../figures/ifcprofileresource-coordinatesystem.gif "Figure 1 &mdash; Profile coordinate system")
 
 > HISTORY&nbsp; New schema in IFC2x, definitions had been part of the _IfcGeometryResource_ in earlier IFC Releases. _IfcProfilePropertyResource_ schema merged into _IfcProfileResource_ in IFC4.

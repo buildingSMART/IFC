@@ -3,7 +3,7 @@ An _IfcEdgeCurve_ defines two vertices being connected topologically including t
 &nbsp;
 
 <table>
-<tr><td><br><img src="../../../figures/IfcEdgeCurve.png" width="600" height="220" alt="example"></td>
+<tr><td><br><img src="../../../figures/ifcedgecurve.png" width="600" height="220" alt="example"></td>
 <td><blockquote class="example">EXAMPLE&nbsp; Figure 1 illustrates an example where the edge geometry is given by an unbounded curve, here <em>IfcCircle</em>. The bounds are provided by the <em>EdgeStart</em> and <em>EdgeEnd</em>, the topological direction of the <em>IfcEdgeCurve</em> opposes the direction of the <em>IfcCircle</em> by <em>SameSense</em> = FALSE.</blockquote></td>
 </tr>
 <tr><td><p class="figure">Figure 1 &mdash; Edge curve</p></td><td>&nbsp;</td><td>&nbsp;</td></tr>
@@ -29,8 +29,3 @@ Informal Propositions:
 5. The edge start is not a part of the edge domain.
 6. The edge end is not a part of the edge domain.
 7. Vertex geometry shall be consistent with edge geometry.
-
-___
-Figure 2 illustrates edge curve usage.
-
-!["usage"](../../../figures/ifcedgecurve.png "Figure 2 &mdash; Edge curve usage")

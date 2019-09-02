@@ -1,0 +1,1 @@
+Undefined evaporative cooler type.

@@ -1,0 +1,1 @@
+The space boundary faces a physical or virtual element where there is another building on the other side.

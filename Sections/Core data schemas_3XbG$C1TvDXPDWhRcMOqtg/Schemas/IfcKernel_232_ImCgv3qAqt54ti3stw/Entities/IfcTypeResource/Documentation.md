@@ -5,10 +5,3 @@ An _IfcTypeResource_ may have a list of property sets attached. Values of these 
 Subtypes of _IfcTypeResource_ may be exchanged without being already assigned to subtypes of _IfcResource_.
 
 > HISTORY&nbsp; New entity in IFC4.
-
-{ .use-head}
-Property set use definition
-
-An _IfcTypeResource_ may have a list of property sets attached, accessible by the attribute _SELF\IfcTypeObject.HasPropertySets_. Currently there are no predefined property sets defined as part of the IFC specification.
-
-> NOTE&nbsp; For property sets, a property within an occurrence property set that is assigned at the resource occurrence, overrides the same property assigned to the resource type.

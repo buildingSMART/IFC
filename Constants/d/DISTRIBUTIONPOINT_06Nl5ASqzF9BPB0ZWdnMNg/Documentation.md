@@ -1,0 +1,1 @@
+A postal distribution point address.

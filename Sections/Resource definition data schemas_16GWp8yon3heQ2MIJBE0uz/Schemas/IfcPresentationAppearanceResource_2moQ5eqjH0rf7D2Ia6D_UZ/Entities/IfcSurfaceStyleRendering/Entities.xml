@@ -1,69 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSurfaceStyleRendering" UniqueId="703b6da9-4562-41aa-a762-51f6dad09052" DiagramNumber="8" BaseDefinition="IfcSurfaceStyleShading" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSurfaceStyleRendering" Name="IfcSurfaceStyleRendering" UniqueId="703b6da9-4562-41aa-a762-51f6dad09052" DiagramNumber="8" BaseDefinition="IfcSurfaceStyleShading" EntityFlags="229">
 	<Localization>
 		<DocLocalization Name="Oberflächenstil - Rendering" Locale="de" />
+		<DocLocalization Name="Surface Style Rendering" Locale="en" />
 		<DocLocalization Name="Style de rendu de surface" Locale="fr" />
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="1846.3" Y="2782.88" Width="248" Height="1078.6667" />
 	<Attributes>
-		<DocAttribute Name="Transparency" UniqueId="8505eadf-a548-419c-a730-0fcfeb5ff815" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Definition from ISO/CD 10303-46: The degree of transparency is indicated by the percentage of light traversing the surface.
-Definition from VRML97 - ISO/IEC 14772-1:1997: The transparency field specifies how &quot;clear&quot; an object is, with 1.0 being completely transparent, and 0.0 completely opaque. If not given, the value 0.0 (opaque) is assumed.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2094.3" Y="2817.706" />
-				<DocPoint X="2601.0333" Y="2817.706" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2094.3" Y="2817.706" Width="158" Height="35" />
-		</DocAttribute>
 		<DocAttribute Name="DiffuseColour" UniqueId="4e708a5a-96ad-46f8-866d-2ebe5b9fd8bc" DefinedType="IfcColourOrFactor" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The diffuse part of the reflectance equation can be given as either a colour or a scalar factor.
 The diffuse colour field reflects all light sources depending on the angle of the surface with respect to the light source. The more directly the surface faces the light, the more diffuse light reflects.
 The diffuse factor field specifies how much diffuse light from light sources this surface shall reflect. Diffuse light depends on the angle of the surface with respect to the light source. The more directly the surface faces the light, the more diffuse light reflects. The diffuse colour is then defined by surface colour \* diffuse factor.</Documentation>
 			<DiagramLine>
-				<DocPoint X="2094.3" Y="2942.7548" />
-				<DocPoint X="2608.66663" Y="2942.7548" />
+				<DocPoint X="2094.3" Y="2956.27754720052" />
+				<DocPoint X="2094.3" Y="2956.27754720052" />
+				<DocPoint X="2552.66658528646" Y="2956.27754720052" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2090.9666667" Y="2936.0881333" Width="157" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="2094.3" Y="2936.27754720052" Width="157" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="TransmissionColour" UniqueId="d5148981-8280-4233-9da8-8fcdbcc4d44f" DefinedType="IfcColourOrFactor" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The transmissive part of the reflectance equation can be given as either a colour or a scalar factor. It only applies to materials which Transparency field is greater than zero.
 The transmissive colour field specifies the colour that passes through a transparant material (like the colour that shines through a glass).
 The transmissive factor defines the transmissive part, the transmissive colour is then defined by surface colour \* transmissive factor.</Documentation>
 			<DiagramLine>
-				<DocPoint X="2094.3" Y="3203.0272" />
-				<DocPoint X="2608.66663" Y="3203.0272" />
+				<DocPoint X="2094.3" Y="3049.888671875" />
+				<DocPoint X="2094.3" Y="3049.888671875" />
+				<DocPoint X="2552.66658528646" Y="3049.888671875" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2094.3" Y="3196.3605333" Width="225" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="2094.3" Y="3029.888671875" Width="225" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="DiffuseTransmissionColour" UniqueId="9ad06ca2-f147-423a-9eb2-b94eb9e5f2fc" DefinedType="IfcColourOrFactor" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The diffuse transmission part of the reflectance equation can be given as either a colour or a scalar factor. It only applies to materials whose Transparency field is greater than zero.
 The diffuse transmission colour specifies how much diffuse light is reflected at the opposite side of the material surface.
 The diffuse transmission factor field specifies how much diffuse light from light sources this surface shall reflect on the opposite side of the material surface. The diffuse transmissive colour is then defined by surface colour \* diffuse transmissive factor.</Documentation>
 			<DiagramLine>
-				<DocPoint X="2094.3" Y="3330.1388" />
-				<DocPoint X="2608.66663" Y="3330.1388" />
+				<DocPoint X="2094.3" Y="3143.49979654948" />
+				<DocPoint X="2094.3" Y="3143.49979654948" />
+				<DocPoint X="2552.66658528646" Y="3143.49979654948" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2094.3" Y="3323.4721333" Width="302" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="2094.3" Y="3123.49979654948" Width="302" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="ReflectionColour" UniqueId="87b370d9-9b2d-4bba-b774-16ba8e45a107" DefinedType="IfcColourOrFactor" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The reflection (or mirror) part of the reflectance equation can be given as either a colour or a scalar factor. Applies to &quot;glass&quot; and &quot;mirror&quot; reflection models.
 The reflection colour specifies the contribution made by light from the mirror direction, i.e. light being reflected from the surface.
 The reflection factor specifies the amount of contribution made by light from the mirror direction. The reflection colour is then defined by surface colour \* reflection factor.</Documentation>
 			<DiagramLine>
-				<DocPoint X="2094.3" Y="3065.5466" />
-				<DocPoint X="2608.66663" Y="3065.5466" />
+				<DocPoint X="2094.3" Y="3237.11092122396" />
+				<DocPoint X="2094.3" Y="3237.11092122396" />
+				<DocPoint X="2552.66658528646" Y="3237.11092122396" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2094.3" Y="3065.5466" Width="190" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="2094.3" Y="3217.11092122396" Width="190" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="SpecularColour" UniqueId="afa3c350-7f49-426b-909b-0e7082f40d8f" DefinedType="IfcColourOrFactor" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The specular part of the reflectance equation can be given as either a colour or a scalar factor.
 The specular colour determine the specular highlights (e.g., the shiny spots on an apple). When the angle from the light to the surface is close to the angle from the surface to the viewer, the specular colour is added to the diffuse and ambient colour calculations.
 The specular factor defines the specular part, the specular colour is then defined by surface colour \* specular factor.</Documentation>
 			<DiagramLine>
-				<DocPoint X="2094.3" Y="3460.9527" />
-				<DocPoint X="2608.66663" Y="3460.9527" />
+				<DocPoint X="2094.3" Y="3330.72204589844" />
+				<DocPoint X="2094.3" Y="3330.72204589844" />
+				<DocPoint X="2552.66658528646" Y="3330.72204589844" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2087.6333333" Y="3454.2860333" Width="177" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="2094.3" Y="3310.72204589844" Width="177" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="SpecularHighlight" UniqueId="c77e978f-d78a-450c-8ecb-9ab2c560fdc4" DefinedType="IfcSpecularHighlightSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The exponent or roughness part of the specular reflectance.</Documentation>

@@ -1,0 +1,1 @@
+A tripping unit activated by thermal action.

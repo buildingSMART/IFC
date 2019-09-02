@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPropertySetDefinition" UniqueId="dc96d6f9-b8ed-4899-979b-8cc86974ea2d" DiagramNumber="2" BaseDefinition="IfcPropertyDefinition" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPropertySetDefinition" Name="IfcPropertySetDefinition" UniqueId="dc96d6f9-b8ed-4899-979b-8cc86974ea2d" Status="H" DiagramNumber="2" BaseDefinition="IfcPropertyDefinition" EntityFlags="205">
 	<Localization>
 		<DocLocalization Name="Definition der Merkmalliste (allgemein)" Locale="de" />
+		<DocLocalization Name="Property Set Definition" Locale="en" />
 		<DocLocalization Name="Définition d&apos;ensemble de propriété" Locale="fr" />
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="1712.1308" Y="967.80079" Width="243.63333" Height="426.66667" />
@@ -33,7 +34,7 @@
 			</DiagramLine>
 			<DiagramLabel xsi:type="DocRectangle" X="1905.097533" Y="1197.538133" Width="529" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="DefinesOccurrence" UniqueId="74a32a1f-15b3-4366-a7ac-3776403dd4dd" DefinedType="IfcRelDefinesByProperties" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatingPropertyDefinition">
+		<DocAttribute Name="DefinesOccurrence" UniqueId="74a32a1f-15b3-4366-a7ac-3776403dd4dd" DefinedType="IfcRelDefinesByProperties" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatingPropertyDefinition">
 			<Documentation>Reference to the relation to one or many object occurrences that are characterized by the property set definition. A single property set can be assigned to multiple object occurrences using the objectified relationship _IfcRefDefinesByProperties_.
 { .change-ifc2x4}
 &gt; IFC4 CHANGE Inverse attribute renamed from PropertyDefinitionOf with upward compatibility for file-based exchange.</Documentation>
@@ -44,5 +45,33 @@
 			<DiagramLabel xsi:type="DocRectangle" X="1929.097433" Y="1341.134133" Width="597" Height="70" />
 		</DocAttribute>
 	</Attributes>
+	<Tree>
+		<DocLine>
+			<DiagramLine>
+				<DocPoint X="1753.8745" Y="1394.4675" />
+				<DocPoint X="1753.8745" Y="1617.92579" />
+			</DiagramLine>
+			<Tree>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="1753.2147" Y="1617.9257" />
+						<DocPoint X="1753.2147" Y="1677.117314" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="2368.3334" Y="1617.9257" />
+						<DocPoint X="2368.3334" Y="1677.13325" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="2893.3333" Y="1617.9257" />
+						<DocPoint X="2893.3333" Y="1677.15329" />
+					</DiagramLine>
+				</DocLine>
+			</Tree>
+		</DocLine>
+	</Tree>
 </DocEntity>
 

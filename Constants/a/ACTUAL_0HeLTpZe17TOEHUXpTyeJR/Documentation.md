@@ -1,0 +1,1 @@
+A control in which actual items undertaken are indicated.

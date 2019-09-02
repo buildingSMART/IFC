@@ -1,0 +1,1 @@
+The load is specified as a series of discrete load points.

@@ -1,0 +1,1 @@
+Door with one panel that is sliding to the left.

@@ -1,0 +1,1 @@
+An arbitrary open tank type.

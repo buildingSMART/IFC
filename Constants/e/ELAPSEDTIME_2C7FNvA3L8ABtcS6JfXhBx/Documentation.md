@@ -1,0 +1,1 @@
+The time duration is based on elapsed time (24 hours per day, independent of calendar).

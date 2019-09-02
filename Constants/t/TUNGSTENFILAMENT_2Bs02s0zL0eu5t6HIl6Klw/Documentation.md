@@ -1,0 +1,1 @@
+A lamp that emits light by passing an electrical current through a tungsten wire filament in a near vacuum.

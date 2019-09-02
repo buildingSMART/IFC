@@ -1,0 +1,1 @@
+Bath used for hydrotherapy purposes.

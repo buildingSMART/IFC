@@ -1,6 +1,13 @@
 (Properties : SET [1:?] OF IfcProperty)
-:BOOLEAN;
-LOCAL
-tmp : GENERIC;
-END_LOCAL;
-RETURN(tmp);
+ :LOGICAL;
+
+ LOCAL
+   Names : SET OF IfcIdentifier := [];
+ END_LOCAL;
+
+ REPEAT i:=1 TO HIINDEX(Properties);
+   Names := Names + Properties[i].Name;
+ END_REPEAT;
+
+ RETURN (SIZEOF(Names) = SIZEOF(Properties));   
+ 

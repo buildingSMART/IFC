@@ -1,1 +1,1 @@
-Maximum or Peak sensible thermal load contributed to return air plenum by the light fixture.
+Maximum or Peak sensible thermal load contributed to the conditioned space by the light fixture.

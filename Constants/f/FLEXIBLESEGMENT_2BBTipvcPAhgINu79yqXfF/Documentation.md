@@ -1,0 +1,1 @@
+A flexible segment is a continuous non-linear segment of duct that can be deformed and change the direction of flow.

@@ -1,0 +1,1 @@
+The material of the _IfcPlate_ is defined by _IfcMaterialLayerSet_, or by _IfcMaterial_, and it is attached either directly or at the _IfcPlateType_.

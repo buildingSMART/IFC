@@ -1,0 +1,1 @@
+System of all transport elements in a building that enables the transport of people or goods.

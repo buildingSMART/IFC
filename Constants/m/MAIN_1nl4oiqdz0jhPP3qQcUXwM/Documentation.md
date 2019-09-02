@@ -1,0 +1,1 @@
+The reinforcing bar is a main bar.

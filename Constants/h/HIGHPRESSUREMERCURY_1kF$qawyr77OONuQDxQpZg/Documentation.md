@@ -1,0 +1,1 @@
+A discharge lamp in which most of the light is emitted by exciting mercury at high pressure.

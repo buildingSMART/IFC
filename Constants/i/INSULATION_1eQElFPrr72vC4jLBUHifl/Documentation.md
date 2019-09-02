@@ -1,0 +1,1 @@
+The covering is used to insulate an element for thermal or acoustic purposes.

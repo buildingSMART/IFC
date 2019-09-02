@@ -1,1 +1,1 @@
-Definition from IAI: Common performance history attributes for a cooled beam.
+Common performance history attributes for a cooled beam.

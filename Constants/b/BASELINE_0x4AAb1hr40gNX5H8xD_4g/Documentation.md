@@ -1,0 +1,1 @@
+A control that is a baseline from which changes that are made later can be recognized.

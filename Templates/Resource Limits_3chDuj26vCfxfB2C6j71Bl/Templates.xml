@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Resource Limits" UniqueId="3chDuj26vCfxfB2C6j71Bl" Type="IfcResource">
+	<Templates>
+		<DocTemplateDefinition id="Resource_Cost_1dWH7vLbvC7RZ3qXZ4pD1M" Name="Resource Cost" UniqueId="1dWH7vLbvC7RZ3qXZ4pD1M" Type="IfcConstructionResource">
+			<Documentation>Resources can have associated costs indicating financial costs and environmental impacts incurred according to a specified base quantity.
+
+Each cost value may be defined using a constant amount or calculated according to specified formula.</Documentation>
+			<Rules>
+				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="BaseCosts" Identification="CostType">
+					<Rules>
+						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAppliedValue">
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="CostName">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="AppliedValue" Identification="ValueType" />
+							</Rules>
+						</DocModelRuleEntity>
+					</Rules>
+				</DocModelRuleAttribute>
+			</Rules>
+		</DocTemplateDefinition>
+		<DocTemplateDefinition id="Resource_Quantity_2WLzS88zH7qgXDYV9FOe" Name="Resource Quantity" UniqueId="2WLzS88zH7qgXDYV$9FO$e" Type="IfcConstructionResource">
+			<Documentation>Resources may be defined according to a base quantity, where assigned tasks consume such amount of resource relative to an output quantity.
+
+For work-based resources such as labor and equipment, quantities are based on time. For product-based resources, quantities are based on count. For material-based resources, quantities are based on volume.</Documentation>
+			<Rules>
+				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="BaseQuantity" Identification="QuantityType">
+					<Rules>
+						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPhysicalSimpleQuantity">
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="QuantityName">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocModelRuleEntity>
+					</Rules>
+				</DocModelRuleAttribute>
+			</Rules>
+		</DocTemplateDefinition>
+	</Templates>
+</DocTemplateDefinition>
+

@@ -1,0 +1,7 @@
+An _IfcCostItem_ can nest other instances of _IfcCostItem_ through its relationships to _IfcRelNests_. This can be used to enable the development of complex groups of costs as may be found in cost schedules through to pages, sections and complete cost schedules.
+
+There is always a summary cost item as the root item of the tree representing the cost item nesting. Subsequent instances of _IfcCostItem_ are assigned to the summary cost item using _IfcRelNests_. The summary cost item itself is assigned to _IfcCostSchedule_ through the _IfcRelAssignsToControl_ relationship.
+
+Figure 1 illustrates a cost item composition used for a cost schedule. Each line item has a quantity and separate unit costs where _IfcCostValue.CostType_ indicates the category of cost. The summary item has a hierarchy of costs calculated according to _IfcAppliedValueRelationship.ArithmeticOperator_, where _IfcCostValue.CostType_ identifies the category to be totalled. The Tax component has _IfcCostValue.CostType_ set to 'Material' which indicates it is the sum of all nested values of the 'Material' category ($3 x 3000 + $118 x 100 = $20800). The Subtotal component has _IfcCostValue.CostType_ set to an asterisk ('\*') which indicates it is the sum of all nested values of all categories.
+
+!["cost item"](../../../figures/ifccostitem-composition.png "Figure 1 &mdash; Cost composition")

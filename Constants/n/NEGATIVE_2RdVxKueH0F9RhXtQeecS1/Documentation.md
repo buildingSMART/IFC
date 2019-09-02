@@ -1,0 +1,1 @@
+The side of a surface which is in the opposite direction than the surface normal derived from the mathematical definition.

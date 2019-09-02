@@ -1,0 +1,1 @@
+The object has been deleted by the user and application defined by the LastModifyingUser and LastModifyingApplication respectively.

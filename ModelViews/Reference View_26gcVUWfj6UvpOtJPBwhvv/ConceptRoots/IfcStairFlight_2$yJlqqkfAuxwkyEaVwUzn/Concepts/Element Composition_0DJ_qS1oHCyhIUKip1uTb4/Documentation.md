@@ -1,0 +1,1 @@
+The _IfcStairFlight_ shall only be used within the component breakdown structure of an _IfcStair._

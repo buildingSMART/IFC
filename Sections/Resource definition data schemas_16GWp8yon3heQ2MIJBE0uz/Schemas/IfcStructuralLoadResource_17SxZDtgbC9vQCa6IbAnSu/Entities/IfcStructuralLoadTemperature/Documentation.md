@@ -2,4 +2,4 @@ An instance of the entity _IfcStructuralLoadTemperature_ shall be used to define
 
 > HISTORY&nbsp; New entity in IFC2x2.
 
-!(../../../figures/StructuralLoadTemperature.gif "Figure 1 &mdash; Structural load temperature")
+!(../../../figures/structuralloadtemperature.gif "Figure 1 &mdash; Structural load temperature")

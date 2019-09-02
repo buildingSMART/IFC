@@ -2,41 +2,46 @@
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcWindowType" Name="IfcWindowType" UniqueId="0b5e3044-5232-4561-be29-c49fef5969d5" DiagramNumber="4" BaseDefinition="IfcBuildingElementType" EntityFlags="237">
 	<Localization>
 		<DocLocalization Name="Fenster - Typ" Locale="de" />
+		<DocLocalization Name="Window Type" Locale="en" />
 		<DocLocalization Name="Type de fenêtre" Locale="fr" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="5082.1333" Y="1771.7" Width="279.93333" Height="297.33333" />
+	<DiagramRectangle xsi:type="DocRectangle" X="6072.16634114583" Y="1287.55338541667" Width="279.93333" Height="745.333343505859" />
 	<Attributes>
 		<DocAttribute Name="PredefinedType" UniqueId="39e590f0-e4d6-474b-b669-31d5c0b0ecd1" DefinedType="IfcWindowTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Identifies the predefined types of a window element from which the type required may be set.</Documentation>
 			<DiagramLine>
-				<DocPoint X="5362.0667" Y="1813.4613" />
-				<DocPoint X="5794.3467" Y="1813.4613" />
+				<DocPoint X="6072.16634114583" Y="1350.46655290104" />
+				<DocPoint X="6072.16634114583" Y="1350.46655290104" />
+				<DocPoint X="5756.01318692708" Y="1350.46655290104" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5338.733367" Y="1806.7946333" Width="182" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="6072.16634114583" Y="1330.46655290104" Width="182" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="PartitioningType" UniqueId="c6634212-c392-4071-bc8b-80093ab368e2" DefinedType="IfcWindowTypePartitioningEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Type defining the general layout of the window type in terms of the partitioning of panels.</Documentation>
 			<DiagramLine>
-				<DocPoint X="5362.0667" Y="1893.1445" />
-				<DocPoint X="5794.3333" Y="1893.1445" />
+				<DocPoint X="6072.16634114583" Y="1433.64057796615" />
+				<DocPoint X="6072.16634114583" Y="1433.64057796615" />
+				<DocPoint X="5844.26318692708" Y="1433.64057796615" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5338.733367" Y="1886.4778333" Width="185" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="6072.16634114583" Y="1413.64057796615" Width="185" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ParameterTakesPrecedence" UniqueId="fd185249-9123-4a84-95eb-c2d6323477c5" DefinedType="BOOLEAN" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ParameterTakesPrecedence" UniqueId="fd185249-9123-4a84-95eb-c2d6323477c5" DefinedType="IfcBoolean" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The Boolean value reflects, whether the parameter given in the attached lining and panel properties exactly define the geometry (TRUE), or whether the attached style shape take precedence (FALSE). In the last case the parameter have only informative value. If not provided, no such information can be infered.</Documentation>
 			<DiagramLine>
-				<DocPoint X="5362.0666" Y="1973.2293" />
-				<DocPoint X="5794.29994" Y="1973.2293" />
+				<DocPoint X="6072.16634114583" Y="1287.55338541667" />
+				<DocPoint X="5845.84635416667" Y="1287.55338541667" />
+				<DocPoint X="5845.84635416667" Y="1149.83333333333" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5356.7332667" Y="1967.8959667" Width="321" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="6072.16634114583" Y="1129.83333333333" Width="321" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="UserDefinedPartitioningType" UniqueId="3364027c-7696-47fe-93c8-4996a958bb20" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Designator for the user defined partitioning type, shall only be provided, if the value of _PartitioningType_ is set to USERDEFINED.</Documentation>
 			<DiagramLine>
-				<DocPoint X="5362.0666" Y="2048.405" />
-				<DocPoint X="5795.39993" Y="2048.405" />
+				<DocPoint X="6072.16634114583" Y="1612.50529459635" />
+				<DocPoint X="6072.16634114583" Y="1612.50529459635" />
+				<DocPoint X="5693.17985192708" Y="1612.50529459635" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5354.0666" Y="2040.405" Width="323" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="6072.16634114583" Y="1592.50529459635" Width="323" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

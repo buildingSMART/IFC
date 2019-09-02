@@ -1,0 +1,1 @@
+Indicates that no preference is communicated.

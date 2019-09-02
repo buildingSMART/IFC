@@ -1,0 +1,1 @@
+User-defined medical device type.

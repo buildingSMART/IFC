@@ -12,34 +12,3 @@ An _IfcMaterial_ may also have presentation information associated. Such present
 
 { .change-ifc2x4}
 > IFC4 CHANGE  The attributes _Description_ and _Category_ have been added.
-
-___
-## Common Use Definitions
-[![Image](../../../img/diagram.png)&nbsp;Instance diagram](../../../annex/annex-d/common-use-definitions/ifcmaterial.htm)
-
-{ .use-head}
-Property Sets for Objects
-
-The [Property Sets for Objects](../../templates/property-sets-for-objects.htm) concept applies to this entity as shown in Table 1.
-
-<table>
-<tr><td>
-<table class="gridtable">
-<tr><th><b>PredefinedType</b></th><th><b>Name</b></th></tr>
-<tr><td>&nbsp;</td><td>Pset_MaterialCombustion</td></tr>
-<tr><td>&nbsp;</td><td>Pset_MaterialCommon</td></tr>
-<tr><td>Concrete</td><td>Pset_MaterialConcrete</td></tr>
-<tr><td>&nbsp;</td><td>Pset_MaterialEnergy</td></tr>
-<tr><td>&nbsp;</td><td>Pset_MaterialFuel</td></tr>
-<tr><td>&nbsp;</td><td>Pset_MaterialHygroscopic</td></tr>
-<tr><td>&nbsp;</td><td>Pset_MaterialMechanical</td></tr>
-<tr><td>&nbsp;</td><td>Pset_MaterialOptical</td></tr>
-<tr><td>Steel</td><td>Pset_MaterialSteel</td></tr>
-<tr><td>&nbsp;</td><td>Pset_MaterialThermal</td></tr>
-<tr><td>&nbsp;</td><td>Pset_MaterialWater</td></tr>
-<tr><td>Wood</td><td>Pset_MaterialWood</td></tr>
-<tr><td>Wood</td><td>Pset_MaterialWoodBasedBeam</td></tr>
-<tr><td>Wood</td><td>Pset_MaterialWoodBasedPanel</td></tr>
-</table>
-</td></tr>
-<tr><td><p class="table">Table 1 &mdash; IfcMaterial Property Sets for Objects</p></td></tr></table>

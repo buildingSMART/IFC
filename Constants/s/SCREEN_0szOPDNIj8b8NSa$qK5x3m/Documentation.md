@@ -1,0 +1,1 @@
+Upright, fixed or movable, sometimes folding framework used for protection against heat, light, access or similar.

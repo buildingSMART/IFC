@@ -1,0 +1,1 @@
+Door with one panel that opens (swings) to the left. The hinges are on the left side as viewed in the direction of the positive y-axis.

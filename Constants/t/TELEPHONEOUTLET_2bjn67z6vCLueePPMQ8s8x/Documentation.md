@@ -1,0 +1,1 @@
+An outlet used for connecting telephone communications equipment.

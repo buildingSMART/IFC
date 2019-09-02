@@ -1,0 +1,1 @@
+The _Product Placement_ establishes the object coordinate system and is required, if a geometric shape representation is provided for this product.

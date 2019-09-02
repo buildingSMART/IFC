@@ -1,0 +1,1 @@
+Connection along the path of the connected element.

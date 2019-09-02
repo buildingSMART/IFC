@@ -1,0 +1,1 @@
+Connection at the start of the connected element.

@@ -1,0 +1,1 @@
+Identifies that a value must be equal to that set by the constraint.

@@ -1,0 +1,1 @@
+The covering is used to represent a flooring.

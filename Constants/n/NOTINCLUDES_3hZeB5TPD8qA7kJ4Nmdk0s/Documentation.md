@@ -1,0 +1,1 @@
+Identifies that an aggregation (set, list or table) must not include the value (individual item) set by the constraint.

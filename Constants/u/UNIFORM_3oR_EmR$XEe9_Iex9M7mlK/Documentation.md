@@ -1,0 +1,1 @@
+The section is uniform in longitudinal direction.

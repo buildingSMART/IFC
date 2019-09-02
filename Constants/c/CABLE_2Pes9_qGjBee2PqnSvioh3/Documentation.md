@@ -1,0 +1,1 @@
+Connection to cable segment or fitting for distribution of electricity.

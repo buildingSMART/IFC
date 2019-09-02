@@ -1,0 +1,1 @@
+An arc of an ellipse, or a complete ellipse, represented by a B-spline curve.

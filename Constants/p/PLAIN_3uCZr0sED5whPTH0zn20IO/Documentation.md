@@ -1,0 +1,1 @@
+The reinforcing bar surface is plain.

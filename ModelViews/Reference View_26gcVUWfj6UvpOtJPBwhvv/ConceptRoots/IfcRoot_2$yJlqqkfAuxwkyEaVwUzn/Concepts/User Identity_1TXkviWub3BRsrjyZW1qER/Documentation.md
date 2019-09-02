@@ -1,0 +1,1 @@
+A name and a description can be used for all subypes of _IfcRoot_

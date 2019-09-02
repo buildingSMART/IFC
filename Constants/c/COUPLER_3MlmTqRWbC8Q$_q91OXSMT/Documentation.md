@@ -1,0 +1,1 @@
+The anchor is an intermediate device which connects two tendons.

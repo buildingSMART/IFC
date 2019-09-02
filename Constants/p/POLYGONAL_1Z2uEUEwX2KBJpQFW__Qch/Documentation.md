@@ -1,0 +1,1 @@
+A polygonal wall, extruded vertically, where the wall thickness varies along the wall path.

@@ -1,1 +1,0 @@
-Radiation transmission coefficient of the outside shading device. It is a value without unit.

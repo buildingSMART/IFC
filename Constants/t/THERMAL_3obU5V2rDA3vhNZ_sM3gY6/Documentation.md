@@ -1,0 +1,1 @@
+The spatial zone is used to represent a thermal zone.

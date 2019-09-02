@@ -1,3 +1,0 @@
-For time series properties as shown in Figure 180, each _IfcTimeSeriesValue_ indicates a LIST of values, where the sequence of the value corresponds to the _IfcCostValue_ at _IfcConstructionResource.CostRatesConsumed_. For example, if _CostRatesConsumed_ has two _IfcCostValue_ items in the LIST, "Standard" and "Overtime", then _IfcTimeSeriesValue(IfcDuration('T8H0M0S'),IfcDuration('T2H0M0S'))_ would indicate 8 hours at Standard rate and 2 hours at Overtime rate. If the list of values at _IfcTimeSeriesValue.ListValues_ is less than the size of _CostRatesConsumed_, then subsequent values are considered to be zero.
-
-!["Time Series Use Definition"](../../../figures/IfcConstructionResource-TimeSeries.png "Figure 1 &mdash; Construction resource time series use")

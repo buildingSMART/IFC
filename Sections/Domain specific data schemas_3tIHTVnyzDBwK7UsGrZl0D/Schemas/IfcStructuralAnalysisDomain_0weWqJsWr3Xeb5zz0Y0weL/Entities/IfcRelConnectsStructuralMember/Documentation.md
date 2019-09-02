@@ -24,7 +24,7 @@ Figure 1 illustrates the appropriate definition of support lengths.
 <table border="0" cellpadding="2" cellspacing="0">
   <tr>
     <td>
-      <p><img src="../../../figures/IfcRelConnectsStructuralMember-Fig1.gif" alt="supported length" style="border: 0px solid ; width: 600px; height: 368px;" align="left"></p>
+      <p><img src="../../../figures/ifcrelconnectsstructuralmember-fig1.gif" alt="supported length" style="border: 0px solid ; width: 600px; height: 368px;" align="left"></p>
     </td>
   </tr>
   <tr>

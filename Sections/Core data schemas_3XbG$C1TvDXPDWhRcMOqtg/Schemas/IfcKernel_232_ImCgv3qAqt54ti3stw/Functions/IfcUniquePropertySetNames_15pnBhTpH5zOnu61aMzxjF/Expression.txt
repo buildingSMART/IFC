@@ -1,0 +1,17 @@
+(Properties : SET [1:?] OF IfcPropertySetDefinition)
+:LOGICAL;
+
+LOCAL
+  Names : SET OF IfcLabel := [];
+  Unnamed : INTEGER := 0;
+END_LOCAL;
+
+REPEAT i:=1 TO HIINDEX(Properties);
+  IF 'IFC4.IFCPROPERTYSET' IN TYPEOF(Properties[i]) THEN
+    Names := Names + Properties[i]\IfcRoot.Name;
+  ELSE
+    Unnamed := Unnamed + 1;
+  END_IF;
+END_REPEAT;
+
+RETURN (SIZEOF(Names) + Unnamed = SIZEOF(Properties));

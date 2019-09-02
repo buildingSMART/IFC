@@ -1,0 +1,1 @@
+Exit fitting, typically unconnected at one port and connected to a flow distribution system at the other (e.g., a hose bibb).

@@ -1,0 +1,1 @@
+System of building elements that transmit forces and stiffen the construction.

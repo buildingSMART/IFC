@@ -1,1 +1,0 @@
-The material from which the damper blades are constructed.

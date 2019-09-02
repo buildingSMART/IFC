@@ -1,0 +1,1 @@
+An undefined type of voiding feature.

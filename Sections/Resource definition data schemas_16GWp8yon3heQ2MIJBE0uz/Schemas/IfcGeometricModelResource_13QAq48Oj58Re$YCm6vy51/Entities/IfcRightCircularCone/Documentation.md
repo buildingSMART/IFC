@@ -6,7 +6,7 @@ The _IfcRightCircularCone_ is a Construction Solid Geometry (CSG) 3D primitive. 
 
 Figure 1 illustrates geometric parameters of the cone. The cone is positioned within its own placement coordinate system. The origin is the center of the bottom circular disk, that lies in the XY plane. The apex lies on the positive z axis at [0, 0, _Height_].
 
-!["cone1"](../../../figures/IfcRightCircularCone-Layout1.png "Figure 1 &mdash; Right circular cone geometry")
+!["cone1"](../../../figures/ifcrightcircularcone-layout1.png "Figure 1 &mdash; Right circular cone geometry")
 
 > NOTE&nbsp; Entity adapted from **right_circular_cone** defined in ISO 10303-42.
 
@@ -22,7 +22,7 @@ On the bottom face, textures are aligned facing front-to-back, with the center o
 Figure 2 illustrates default texture mapping with a clamped texture (RepeatS=False and RepeatT=False). The image on the left shows the texture where the S axis points to the right and the T axis points up. The image on the right shows the texture applied to the geometry where the X axis points back to the right, the Y axis points back to the left, and the Z axis points up.
 
 <table summary="texture" class="gridtable">
-<tr><td><img alt="texture" src="../../../figures/IfcRightCircularCone-Texture.png"></td></tr>
+<tr><td><img alt="texture" src="../../../figures/ifcrightcircularcone-texture.png"></td></tr>
 <tr><td>
 <table summary="texture" width="512" class="gridtable">
 <tr>

@@ -1,0 +1,1 @@
+External air space around the building.

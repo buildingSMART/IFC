@@ -1,0 +1,1 @@
+The predecessor task must finish before the successor task may finish.

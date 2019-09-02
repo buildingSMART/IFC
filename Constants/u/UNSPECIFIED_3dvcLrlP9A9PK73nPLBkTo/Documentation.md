@@ -1,0 +1,1 @@
+The type of knots is not specified. This includes the case of non uniform knots.

@@ -1,0 +1,1 @@
+Undefined vibration isolator type.

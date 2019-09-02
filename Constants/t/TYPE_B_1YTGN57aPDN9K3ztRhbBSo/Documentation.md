@@ -1,0 +1,1 @@
+Type B is sometimes used for floodlights. The B-Plane System has a horizontal axis. B-Angles are valid from -180&deg; to +180&deg; with B 0&deg; at the bottom and B180&deg;/B-180&deg; at the top, &#946;-Angles are valid from -90&deg; to +90&deg;.

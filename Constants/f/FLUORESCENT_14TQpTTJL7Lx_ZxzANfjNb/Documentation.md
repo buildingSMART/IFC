@@ -1,0 +1,1 @@
+A typically tubular discharge lamp in which most of the light is emitted by one or several layers of phosphors excited by ultraviolet radiation from the discharge.

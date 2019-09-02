@@ -1,0 +1,1 @@
+Undefined space heater type.

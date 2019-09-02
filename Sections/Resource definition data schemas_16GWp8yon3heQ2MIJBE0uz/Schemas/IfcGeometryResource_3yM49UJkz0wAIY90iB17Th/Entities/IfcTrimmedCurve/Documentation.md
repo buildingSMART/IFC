@@ -5,7 +5,7 @@ An _IfcTrimmedCurve_ is a bounded curve that is trimmed at both ends. The trimmi
 <table summary="illustration">
 <tbody>
 <tr>
-<td><img src="../../../figures/IfcTrimmedCurve_Parameterization.png" alt="curve parameterization" border="0" height="500" width="700"></td>
+<td><img src="../../../figures/ifctrimmedcurve_parameterization.png" alt="curve parameterization" border="0" height="500" width="700"></td>
 </tr>
 <tr><td><p class="figure">Figure 1 &mdash; Trimmed curve parameterization</p></td></tr>
 </tbody>

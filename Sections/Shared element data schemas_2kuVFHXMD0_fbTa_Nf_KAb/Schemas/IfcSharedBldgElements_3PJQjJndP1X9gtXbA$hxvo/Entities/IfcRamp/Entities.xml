@@ -2,6 +2,7 @@
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRamp" Name="IfcRamp" UniqueId="21ce7129-20ff-438a-bb0c-04ff211bddf4" DiagramNumber="2" BaseDefinition="IfcBuildingElement" EntityFlags="109">
 	<Localization>
 		<DocLocalization Name="Rampe" Locale="de" />
+		<DocLocalization Name="Ramp" Locale="en" />
 		<DocLocalization Name="Rampe" Locale="fr" />
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="1865.4334" Y="54.286667" Width="249.9" Height="100" />
@@ -20,23 +21,6 @@
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="CorrectShapeDecomposition" UniqueId="c65d5eb5-ad16-4436-ad3e-3f07bd3ca160">
-			<Documentation>Either the _IfcRamp_ is not decomposed into its flights and landings, then the _IfcRamp_ may have independent geometry. Or the _IfcRamp_ is decomposed into parts, then the _IfcRamp_ shall not have an own geometric shape representation of _RepresentationType_ = &apos;Body&apos;.</Documentation>
-			<Expression>(HIINDEX(SELF\IfcObjectDefinition.IsDecomposedBy) = 0) 
- OR 
-((HIINDEX(SELF\IfcObjectDefinition.IsDecomposedBy) = 1) 
-  AND 
-  ((NOT(EXISTS(SELF\IfcProduct.Representation))) 
-    OR
-    ((EXISTS(SELF\IfcProduct.Representation)) 
-      AND 
-      (SIZEOF(QUERY( temp &lt;* SELF\IfcProduct.Representation.Representations |
-        temp.RepresentationIdentifier = &apos;Body&apos;)) = 0
-      )
-    )
-  )
-)</Expression>
-		</DocWhereRule>
 		<DocWhereRule Name="CorrectPredefinedType" UniqueId="4f1663af-cb0e-4db6-a0fa-3532f8695918">
 			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcRampType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
 			<Expression>NOT(EXISTS(PredefinedType)) OR

@@ -1,0 +1,1 @@
+A reflectance model providing a constant colour. This model ignores the effect of all light sources.

@@ -1,0 +1,1 @@
+Object is in a Read-Write-Locked state. It may not be accessed by an application.

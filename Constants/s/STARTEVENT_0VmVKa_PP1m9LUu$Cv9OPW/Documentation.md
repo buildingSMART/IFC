@@ -1,0 +1,1 @@
+An initiating event of a process.

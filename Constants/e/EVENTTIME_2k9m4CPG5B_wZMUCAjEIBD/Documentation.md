@@ -1,0 +1,1 @@
+An event trigger that is at, or occurs after, a particular point in or period of time.

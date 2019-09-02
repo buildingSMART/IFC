@@ -1,0 +1,1 @@
+Output can be either on or off.

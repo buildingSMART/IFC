@@ -1,1 +1,0 @@
-The material from which the damper seals are constructed.

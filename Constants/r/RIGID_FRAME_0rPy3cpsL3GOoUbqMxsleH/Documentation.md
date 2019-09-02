@@ -1,0 +1,1 @@
+A structure built up of beams, columns, etc. with moment-resisting joints.

@@ -1,0 +1,1 @@
+A device that reads and displays the current flow in a circuit.

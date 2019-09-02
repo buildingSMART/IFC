@@ -1,0 +1,1 @@
+Not known whether grid conforms to any standard type.

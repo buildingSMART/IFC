@@ -1,0 +1,1 @@
+The form of knots appropriate for a uniform B-spline curve.

@@ -1,0 +1,1 @@
+The material of the _IfcWindow_ is defined by the _IfcMaterialConstituentSet_ or as fall back by _IfcMaterial_ and attached by the _IfcRelAssociatesMaterial_ relationship.

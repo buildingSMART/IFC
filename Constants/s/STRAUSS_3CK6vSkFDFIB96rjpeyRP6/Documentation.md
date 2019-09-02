@@ -1,0 +1,1 @@
+A reflectance model for metallic and non-metallic appearance based on a limited set of control parameter.

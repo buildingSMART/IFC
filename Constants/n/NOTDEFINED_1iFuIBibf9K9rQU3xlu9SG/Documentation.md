@@ -1,0 +1,1 @@
+Undefined air terminal type.

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcIndexedPolyCurve" UniqueId="6a61359a-e664-4f61-bb8c-2591f63d0f6d" DiagramNumber="26" BaseDefinition="IfcBoundedCurve" EntityFlags="32">
+	<DiagramRectangle xsi:type="DocRectangle" X="8031.99918619792" Y="645.332967122396" Width="343.999989827474" Height="100.000020345052" />
+	<Attributes>
+		<DocAttribute Name="Points" UniqueId="6fb9d816-9c8e-41ae-9189-8cf7c574a303" DefinedType="IfcCartesianPointList" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>A list of points, provided by a point list of either two, or three dimensions, that is used to define the poly curve. If the attribute _Segments_ is not provided, the poly curve is generated as a poly line by connecting the points in the order of their appearance in the point list. If the attribute _Segments_ is provided, the segments determine, how the points are to be used to create straigth and circular arc segments.</Documentation>
+			<DiagramLine>
+				<DocPoint X="8312.00048828125" Y="745.332987467448" />
+				<DocPoint X="8312.00048828125" Y="745.332987467448" />
+				<DocPoint X="8312.00048828125" Y="857.333170572917" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="8312.00048828125" Y="837.333170572917" Width="400" Height="100" />
+		</DocAttribute>
+		<DocAttribute Name="Segments" UniqueId="9bc9b862-82ed-4798-9a2a-b0db4138f62d" DefinedType="IfcSegmentIndexSelect" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="?">
+			<Documentation>List of straight line and circular arc segments, each providing a list of indices into the Cartesian point list. Indices should preserve consecutive connectivity between the segments, the start index of the next segment shall be identical with the end index of the previous segment.</Documentation>
+			<DiagramLine>
+				<DocPoint X="8173.33268229167" Y="745.332987467448" />
+				<DocPoint X="8173.33268229167" Y="745.332987467448" />
+				<DocPoint X="8173.33268229167" Y="1143.99983723958" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="8173.33268229167" Y="1123.99983723958" Width="400" Height="100" />
+		</DocAttribute>
+		<DocAttribute Name="SelfIntersect" UniqueId="8fe6fe4d-ed5b-4196-aa43-afe0c30eb2d0" DefinedType="IfcBoolean" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Indication of whether the curve intersects itself or not; this is for information only.</Documentation>
+			<DiagramLine>
+				<DocPoint X="8091.99918619792" Y="745.332987467448" />
+				<DocPoint X="8091.99918619792" Y="745.332987467448" />
+				<DocPoint X="8091.99918619792" Y="859.999633789063" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="8091.99918619792" Y="839.999633789063" Width="400" Height="100" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="Consecutive" UniqueId="47d3cc5d-c9a4-49c0-b82a-46025c9534d8">
+			<Documentation>If a list of indexed segments is provided, they need to be consecutive, meaning that the last index of all, but the last, segments shall be identical with the first index of the next segment.</Documentation>
+			<Expression>(SIZEOF(Segments) = 0) OR IfcConsecutiveSegments(Segments)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

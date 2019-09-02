@@ -1,0 +1,1 @@
+User-defined unitary equipment type.

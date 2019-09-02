@@ -1,0 +1,1 @@
+The type of footing is not defined.

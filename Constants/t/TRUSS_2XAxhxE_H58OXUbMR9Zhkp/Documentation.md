@@ -1,0 +1,1 @@
+A structure built up of members with (quasi) pinned joint.

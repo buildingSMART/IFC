@@ -1,14 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocDefined xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPositiveLengthMeasure" UniqueId="3a9ab3fb-6071-423b-afb3-b5d134501151" DiagramNumber="3" DefinedType="IfcLengthMeasure" Length="0">
 	<Localization>
+		<DocLocalization Name="Positive Length Measure" Locale="en" />
 		<DocLocalization Name="Mesure de longueur positive" Locale="fr" />
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="3622.0389" Y="1117.2627" Width="371.78432" Height="58.040113" />
+	<Definition xsi:type="DocDefined" xsi:nil="true" href="IfcLengthMeasure" />
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="a1f34272-5cb5-4852-b000-9749c916c4bb">
+		<DocWhereRule Name="WR1" UniqueId="439f3268-8a49-4f4c-9b16-ef5413383ca7">
 			<Documentation>A positive measure shall be greater than zero.</Documentation>
 			<Expression>SELF &gt; 0.</Expression>
 		</DocWhereRule>
 	</WhereRules>
+	<DiagramLine>
+		<DocPoint X="3807.931" Y="1117.2627" />
+		<DocPoint X="3807.931" Y="1058.981083" />
+	</DiagramLine>
 </DocDefined>
 

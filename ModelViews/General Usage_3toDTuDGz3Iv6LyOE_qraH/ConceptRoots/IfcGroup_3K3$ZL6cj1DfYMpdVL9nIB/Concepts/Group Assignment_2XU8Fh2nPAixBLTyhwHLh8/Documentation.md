@@ -1,0 +1,1 @@
+The _IfcGroup_ establishes an arbitrary collection of objects through utilizing this concept.

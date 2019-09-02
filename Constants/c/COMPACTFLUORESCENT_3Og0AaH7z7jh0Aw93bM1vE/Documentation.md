@@ -1,0 +1,1 @@
+A fluorescent lamp having a compact form factor produced by shaping the tube.

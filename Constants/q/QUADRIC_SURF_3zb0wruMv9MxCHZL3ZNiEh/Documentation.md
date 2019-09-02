@@ -1,0 +1,1 @@
+A bounded portion of one of the class of surfaces of degree 2 in the variables x, y and z.

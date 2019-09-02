@@ -1,0 +1,1 @@
+Any object occurrence can be typed by being assigned to a common object type utilizing this concept. A particular rule, restricting the applicable subtypes of _IfcTypeObject_ that can be assigned, is introduced by overriding this concept at the level of subtypes of _IfcObject_.

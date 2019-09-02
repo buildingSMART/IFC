@@ -1,0 +1,32 @@
+(Relations : SET [1:?] OF IfcRelDefinesByProperties)
+:LOGICAL;
+
+LOCAL
+  Definition : IfcPropertySetDefinitionSelect;
+  DefinitionSet : IfcPropertySetDefinitionSet;
+  Properties : SET OF IfcPropertySetDefinition := [];
+  Result : LOGICAL;
+END_LOCAL;
+
+IF SIZEOF(Relations) = 0 THEN
+  RETURN(TRUE);
+END_IF;
+
+REPEAT i:=1 TO HIINDEX(Relations);
+  Definition := Relations[i].RelatingPropertyDefinition;
+  IF 'IFC4.IFCPROPERTYSETDEFINITION' IN TYPEOF(Definition) THEN
+    Properties := Properties + Definition;
+  ELSE 
+    IF 'IFC4.IFCPROPERTYSETDEFINITIONSET' IN TYPEOF(Definition) THEN
+      BEGIN
+        DefinitionSet := Definition;
+        REPEAT j:= 1 TO HIINDEX(DefinitionSet);
+          Properties := Properties + DefinitionSet[j];
+        END_REPEAT;
+      END;
+	END_IF;
+  END_IF;
+END_REPEAT;
+
+Result := IfcUniquePropertySetNames(Properties);
+RETURN (Result);

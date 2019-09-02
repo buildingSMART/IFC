@@ -1,0 +1,1 @@
+The segments join but no condition on their tangents is implied.

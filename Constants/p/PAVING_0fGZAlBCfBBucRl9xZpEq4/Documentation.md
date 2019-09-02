@@ -1,0 +1,1 @@
+Roads or walkways such as asphalt or concrete.

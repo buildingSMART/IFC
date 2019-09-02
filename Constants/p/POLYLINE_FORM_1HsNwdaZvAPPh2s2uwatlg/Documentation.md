@@ -1,0 +1,1 @@
+A connected sequence of line segments represented by degree 1 B-spline basis functions.

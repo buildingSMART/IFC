@@ -1,0 +1,1 @@
+Both a source and sink, where a substance flows both into and out of the connection simultaneously.

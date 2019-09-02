@@ -1,0 +1,1 @@
+A reflectance model that supports an approximation of glass-like materials that have both reflective and transmissive properties.

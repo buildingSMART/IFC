@@ -1,0 +1,1 @@
+User-defined air to air heat recovery type.

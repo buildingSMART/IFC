@@ -16,7 +16,7 @@ Figure 1 illustrates parameters of the U-shape profile definition.
     <tr>
       <td valign="top" width="420">
 
-<img src="../../../figures/IfcUShapeProfileDef.gif" alt="U-shape profile" border="0" height="300" width="400">
+<img src="../../../figures/ifcushapeprofiledef.gif" alt="U-shape profile" border="0" height="300" width="400">
 
       </td>
       <td valign="top">

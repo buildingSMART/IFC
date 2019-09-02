@@ -1,0 +1,1 @@
+A group or aggregation of similar elements.

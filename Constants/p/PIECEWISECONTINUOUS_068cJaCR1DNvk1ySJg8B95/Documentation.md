@@ -1,0 +1,1 @@
+The time series data is piecewise continuous.

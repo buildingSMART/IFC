@@ -1,0 +1,1 @@
+User defined type of covering.

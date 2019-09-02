@@ -1,0 +1,1 @@
+Furniture with a countertop for multiple people.

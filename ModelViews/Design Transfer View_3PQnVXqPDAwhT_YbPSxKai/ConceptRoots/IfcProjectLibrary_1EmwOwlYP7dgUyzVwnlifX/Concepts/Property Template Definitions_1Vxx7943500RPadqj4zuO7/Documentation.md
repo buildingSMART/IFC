@@ -1,0 +1,1 @@
+If a project includes custom properties for which end users should be able to view and/or edit, then backing property templates must be defined. Such templates define applicable data types and values. Applications should not allow modification of any custom properties (other than those defined within this specification) for which no template is available.

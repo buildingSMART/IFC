@@ -1,0 +1,1 @@
+The material of the _IfcRailing_ is defined by the _IfcMaterialConstituent_ or as fallback by _IfcMaterial_, and it is attached either directly or at the _IfcRailingType_.

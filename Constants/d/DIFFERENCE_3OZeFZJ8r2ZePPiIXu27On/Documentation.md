@@ -1,0 +1,1 @@
+The regularised set theoretic difference between the volumes defined by two solids.

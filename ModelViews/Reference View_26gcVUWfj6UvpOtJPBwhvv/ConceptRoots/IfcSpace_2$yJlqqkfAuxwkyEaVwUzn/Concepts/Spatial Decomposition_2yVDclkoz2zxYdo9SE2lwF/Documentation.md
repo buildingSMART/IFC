@@ -1,0 +1,1 @@
+By using the inverse relationship _IfcSpace.Decomposes_ it references _IfcSite_ || _IfcBuildingStorey_ by _IfcRelAggregates.RelatingObject_.

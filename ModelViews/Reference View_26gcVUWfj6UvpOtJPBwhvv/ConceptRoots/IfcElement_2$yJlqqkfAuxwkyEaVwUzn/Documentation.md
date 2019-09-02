@@ -1,0 +1,1 @@
+All general-case subtypes of _IfcElement_ are included in this model view; standard-case and elemented-case subtypes are excluded.

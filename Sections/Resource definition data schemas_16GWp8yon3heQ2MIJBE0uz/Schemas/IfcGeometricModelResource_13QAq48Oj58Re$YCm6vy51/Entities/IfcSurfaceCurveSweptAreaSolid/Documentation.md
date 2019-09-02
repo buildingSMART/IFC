@@ -16,7 +16,7 @@ The resulting body of the swept solid is not repositioned if the inherited _Posi
 
 <table border="0" cellpadding="2" cellspacing="2" summary="surface curve wept area solid">
 <tr>
-<td><img src="../../../figures/IfcSurfaceCurveSweptAreaSolid_01.png" alt="surface curve wept area solid" width="600" height="450"></td>
+<td><img src="../../../figures/ifcsurfacecurvesweptareasolid_01.png" alt="surface curve wept area solid" width="600" height="450"></td>
 <td><blockquote class="example">EXAMPLE&nbsp; Figure 1 illustrates an example using a cylindrical reference surface and a p-curve for sweeping a rectangle. The <em>Postion</em> is not provided and therefore it does not reposition the resulting swept solid. Figure 2 shows the expected result.</blockquote>
 <blockquote class="note">NOTE&nbsp; The start of the directrix lies at the origin of the object coordinate system, as shown in the illustration,
 only by coincidence. The start of the directrix and thereby the start of the sweeping operation might be at any point within the object coordinate 
@@ -29,7 +29,7 @@ system and only depends on the position of the directrix.</blockquote></td>
 <td>&nbsp;</td>
 </tr>
 <tr>
-<td><img src="../../../figures/IfcSurfaceCurveSweptAreaSolid_02.png" alt="surface curve wept area solid" width="600" height="450"></td>
+<td><img src="../../../figures/ifcsurfacecurvesweptareasolid_02.png" alt="surface curve wept area solid" width="600" height="450"></td>
 </tr>
 <tr>
 <td>

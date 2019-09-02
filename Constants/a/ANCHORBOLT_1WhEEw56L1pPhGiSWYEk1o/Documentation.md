@@ -1,0 +1,1 @@
+A special bolt which is anchored into conrete, stone, or brickwork.

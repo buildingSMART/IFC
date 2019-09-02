@@ -1,0 +1,4 @@
+A door with a
+not defined operation type is
+considered as a door with a lining, but no panels. It is thereby always
+open.

@@ -1,0 +1,1 @@
+A constraint whose objective is to identify an agreement that code compliance requirements (the waiver) will not be enforced.

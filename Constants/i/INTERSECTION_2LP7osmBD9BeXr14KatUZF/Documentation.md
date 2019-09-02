@@ -1,0 +1,1 @@
+The operation of constructing the regularised set theoretic intersection of the volumes defined by two solids.

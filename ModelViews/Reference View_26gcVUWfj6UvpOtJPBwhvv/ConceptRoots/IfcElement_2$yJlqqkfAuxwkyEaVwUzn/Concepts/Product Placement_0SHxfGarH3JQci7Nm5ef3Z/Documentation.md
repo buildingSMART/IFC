@@ -1,0 +1,1 @@
+Placement of elements is defined relative to the spatial container (_IfcRelContainedInSpatialStructure_._RelatingSpatialStructure_), or if an aggregated part then relative to the parent aggregation element (_IfcRelAggregates_._RelatingObject_).

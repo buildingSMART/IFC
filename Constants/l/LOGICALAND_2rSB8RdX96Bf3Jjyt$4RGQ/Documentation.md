@@ -1,0 +1,1 @@
+Defines a relationship between operands whereby the result is true if all operands are true, and false if at least one operand is false.

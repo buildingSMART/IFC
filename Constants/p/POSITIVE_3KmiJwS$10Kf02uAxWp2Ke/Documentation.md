@@ -1,0 +1,1 @@
+The side of a surface which is in the same direction as the surface normal derived from the mathematical definition.

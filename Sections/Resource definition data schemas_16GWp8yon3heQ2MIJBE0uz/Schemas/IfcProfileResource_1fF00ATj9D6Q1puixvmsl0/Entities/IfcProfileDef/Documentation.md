@@ -42,7 +42,7 @@ Figure 1 illustrates use of parameterized profiles within a swept area solid.
     <tr valign="top">
       <td align="left" valign="top" width="420">
 
-<img src="../../../figures/IfcProfileDef-Layout1.gif" alt="Example of standard profile definition" border="0" height="300" width="400">
+<img src="../../../figures/ifcprofiledef-layout1.gif" alt="Example of standard profile definition" border="0" height="300" width="400">
 
       </td>
       <td align="left" valign="top">
@@ -67,7 +67,7 @@ that uses the profile definition. It is the xy plane</p>
     <tr>
       <td width="420">
 
-<img src="../../../figures/IfcProfileDef-Layout5.gif" alt="use within swept area solids" border="0" height="300" width="400">
+<img src="../../../figures/ifcprofiledef-layout5.gif" alt="use within swept area solids" border="0" height="300" width="400">
 
       </td>
       <td align="left" valign="top">
@@ -117,13 +117,13 @@ Results of the different usage of the _ProfileType_ attribute are demonstrated h
     <tr>
       <td width="420">
 
-<img src="../../../figures/IfcProfileDef-Layout3.gif" alt="area without thickness" height="225" width="300"><br>
+<img src="../../../figures/ifcprofiledef-layout3.gif" alt="area without thickness" height="225" width="300"><br>
 ProfileType = AREA
 
       </td>
       <td align="left" valign="top">
 
-<img src="../../../figures/IfcProfileDef-Layout4.gif" alt="closed curve" height="225" width="300"><br>
+<img src="../../../figures/ifcprofiledef-layout4.gif" alt="closed curve" height="225" width="300"><br>
 ProfileType = CURVE
 
       </td>
@@ -154,21 +154,3 @@ If an external reference is provided, sending systems shall ensure that the shap
 **Direct instances of _IfcProfileDef_**
 
 Usually, only subtypes of _IfcProfileDef_ should be instantiated. In some special cases, e.g. if the profile object is used for purposes other than geometric models (e.g. for structural analysis models), it may be possible to directly instantiate _IfcProfileDef_ and further specify the profile only by external reference or by profile properties. The latter are tracked by the inverse attribute _HasProperties_.
-
-___
-## Common Use Definitions
-[![Image](../../../img/diagram.png)&nbsp;Instance diagram](../../../annex/annex-d/common-use-definitions/ifcprofiledef.htm)
-
-{ .use-head}
-Property Sets for Objects
-
-The [Property Sets for Objects](../../templates/property-sets-for-objects.htm) concept applies to this entity as shown in Table 1.
-
-<table>
-<tr><td>
-<table class="gridtable">
-<tr><th><b>PredefinedType</b></th><th><b>Name</b></th></tr>
-<tr><td>&nbsp;</td><td>Pset_ProfileMechanical</td></tr>
-</table>
-</td></tr>
-<tr><td><p class="table">Table 1 &mdash; IfcProfileDef Property Sets for Objects</p></td></tr></table>

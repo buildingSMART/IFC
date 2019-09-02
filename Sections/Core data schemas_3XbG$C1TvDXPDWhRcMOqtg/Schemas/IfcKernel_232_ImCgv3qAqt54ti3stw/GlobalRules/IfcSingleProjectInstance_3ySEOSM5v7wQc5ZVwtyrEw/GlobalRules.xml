@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocGlobalRule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSingleProjectInstance" UniqueId="fc70e61c-585e-47e9-a985-8dfeb7f353ba" ApplicableEntity="IfcProject">
+	<Localization>
+		<DocLocalization Name="Single Project Instance" Locale="en" />
+	</Localization>
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="1a14da21-3c77-46ad-ba1a-635e55fc8343">
+		<DocWhereRule Name="WR1" UniqueId="f90bd034-2b9e-4a07-8563-f8fe571806e8">
 			<Expression>SIZEOF(IfcProject) &lt;= 1</Expression>
 		</DocWhereRule>
 	</WhereRules>

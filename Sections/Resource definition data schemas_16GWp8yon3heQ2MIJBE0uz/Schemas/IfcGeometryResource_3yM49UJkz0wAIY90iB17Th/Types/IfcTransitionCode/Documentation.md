@@ -6,7 +6,7 @@ Figure 1 illustrates transition types
 
 > NOTE&nbsp; The figure is quoted from ISO 10303-42.
 
-!["transition code"](../../../figures/IfcTransitionCode.gif "Figure 1 &mdash; Transition code")
+!["transition code"](../../../figures/ifctransitioncode.gif "Figure 1 &mdash; Transition code")
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
@@ -15,11 +15,3 @@ Figure 1 illustrates transition types
 > NOTE&nbsp; Type adapted from **transition_code** defined in ISO 10303-42.
 
 > HISTORY&nbsp; New Type in IFC1.0
-
-{ .spec-head}
-Enumerated Item Definitions:
-
-* **discontinuous**: The segments do not join. This is permitted only at the boundary of the curve or surface to indicate that it is not closed.
-* **continuous**: The segments join but no condition on their tangents is implied.
-* **contsamegradient**: The segments join and their tangent vectors or tangent planes are parallel and have the same direction at the joint: equality of derivatives is not required.
-* **contsamegradientsamecurvature**: For a curve, the segments join, their tangent vectors are parallel and in the same direction and their curvatures are equal at the joint: equality of derivatives is not required. For a surface this implies that the principle curvatures are the same and the principle directions are coincident along the common boundary.

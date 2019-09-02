@@ -1,0 +1,1 @@
+Indoor or outdoor pool designed for multiple people in which an integrated device agitates the water by pumped circulation or induction of water and/or air.

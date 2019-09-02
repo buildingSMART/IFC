@@ -1,0 +1,1 @@
+The material of the _IfcFooting_ is defined by the _IfcMaterialProfileSet_ or as fallback by _IfcMaterial_, and it is attached either directly or at the _IfcFootingType_.

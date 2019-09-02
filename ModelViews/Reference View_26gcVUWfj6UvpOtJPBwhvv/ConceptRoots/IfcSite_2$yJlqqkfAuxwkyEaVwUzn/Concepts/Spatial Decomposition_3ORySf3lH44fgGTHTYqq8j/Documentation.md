@@ -1,0 +1,1 @@
+By using the inverse relationship _IfcSite.IsDecomposedBy_ it references (em>IfcSite || _IfcBuilding_ || _IfcSpace_ by _IfcRelAggregates.RelatedObjects_. If it refers to another instance of _IfcSite_, the referenced _IfcSite_ needs to have a different and lower _CompositionType_, i.e. ELEMENT (if the other _IfcSite_ has COMPLEX), or PARTIAL (if the other _IfcSite_ has ELEMENT).

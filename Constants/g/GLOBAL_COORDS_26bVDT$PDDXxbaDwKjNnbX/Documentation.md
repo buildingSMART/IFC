@@ -1,0 +1,1 @@
+The global project coordinate system is used.

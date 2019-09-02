@@ -1,0 +1,1 @@
+A fitting that joins three or more segments of arbitrary connector types for signal splitting or multiplexing.

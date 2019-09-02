@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcContext" UniqueId="2ef4dae0-8e0d-4c3e-a179-bf7d2f279492" DiagramNumber="12" BaseDefinition="IfcObjectDefinition" EntityFlags="141">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcContext" Name="IfcContext" UniqueId="2ef4dae0-8e0d-4c3e-a179-bf7d2f279492" DiagramNumber="12" BaseDefinition="IfcObjectDefinition" EntityFlags="141">
 	<Localization>
 		<DocLocalization Name="Kontextinformation" Locale="de" />
+		<DocLocalization Name="Context" Locale="en" />
 		<DocLocalization Name="Contexte" Locale="fr" />
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="17752.056" Y="313.702" Width="200" Height="778.66667" />
@@ -11,7 +12,8 @@
 	</Subtypes>
 	<Attributes>
 		<DocAttribute Name="ObjectType" UniqueId="bb969c4a-579c-4aa1-be1f-9fb4bd873fad" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>The type denotes a particular type that indicates the object further. The use has to be established at the level of instantiable subtypes.</Documentation>
+			<Documentation>The object type denotes a particular type that indicates the object further. The use has to be established at the level of instantiable subtypes. 
+&gt; NOTE&amp;nbsp; Subtypes of _IfcContext_ do not introduce a _PredefinedType_ attribute, therefore the usage of _ObjectType_ is not bound to the selection of USERDEFINED within the _PredefinedType_ enumaration.</Documentation>
 			<DiagramLine>
 				<DocPoint X="17952.056" Y="335.26915" />
 				<DocPoint X="18290.65567" Y="335.26915" />
@@ -46,7 +48,7 @@
 		</DocAttribute>
 		<DocAttribute Name="UnitsInContext" UniqueId="59787a75-222f-48ec-a8d6-73733cf7c004" DefinedType="IfcUnitAssignment" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>Units globally assigned to measure types used within the context.
-{ .note}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute has been changed to be optional. Change made with upward compatibility for file based exchange.</Documentation>
 			<DiagramLine>
 				<DocPoint X="17952.056" Y="837.58555" />
@@ -54,7 +56,7 @@
 			</DiagramLine>
 			<DiagramLabel xsi:type="DocRectangle" X="17802.72267" Y="826.918883" Width="170" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="IsDefinedBy" UniqueId="7e8b25d6-0e9c-4e04-bc16-e08eea08f8ec" DefinedType="IfcRelDefinesByProperties" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatedObjects">
+		<DocAttribute Name="IsDefinedBy" UniqueId="7e8b25d6-0e9c-4e04-bc16-e08eea08f8ec" DefinedType="IfcRelDefinesByProperties" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatedObjects" XsdFormat="element">
 			<Documentation>Set of relationships to property set definitions attached to this context. Those statically or dynamically defined properties contain alphanumeric information content that further defines the context. 
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The data type has been changed from _IfcRelDefines_ to _IfcRelDefinesByProperties_ with upward compatibility for file based exchange.</Documentation>
@@ -64,7 +66,7 @@
 			</DiagramLine>
 			<DiagramLabel xsi:type="DocRectangle" X="17960.056" Y="1079.035333" Width="479" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="Declares" UniqueId="cd34747d-186f-4fe1-9267-19625144c9e6" DefinedType="IfcRelDeclares" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="RelatingContext">
+		<DocAttribute Name="Declares" UniqueId="cd34747d-186f-4fe1-9267-19625144c9e6" DefinedType="IfcRelDeclares" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="RelatingContext" XsdFormat="element">
 			<Documentation>Reference to the _IfcRelDeclares_ relationship that assigns the uppermost entities of includes hierarchies to this context instance.
 &gt; NOTE&amp;nbsp; The spatial hiearchy is assigned to _IfcProject_ using the _IfcRelAggregates_ relationship. This is a single exception due to compatibility reasons with earlier releases.</Documentation>
 			<DiagramLine>
@@ -75,5 +77,27 @@
 			<DiagramLabel xsi:type="DocRectangle" X="18619.9528333" Y="1477.180625" Width="247" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<Tree>
+		<DocLine>
+			<DiagramLine>
+				<DocPoint X="17790.722" Y="1092.3687" />
+				<DocPoint X="17790.722" Y="1602.83994" />
+			</DiagramLine>
+			<Tree>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="17790.603" Y="1602.84" />
+						<DocPoint X="17790.603" Y="1673.311267" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="18155.056" Y="1602.84" />
+						<DocPoint X="18155.056" Y="1673.316714" />
+					</DiagramLine>
+				</DocLine>
+			</Tree>
+		</DocLine>
+	</Tree>
 </DocEntity>
 

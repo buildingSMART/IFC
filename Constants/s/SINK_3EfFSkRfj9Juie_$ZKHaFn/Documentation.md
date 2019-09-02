@@ -1,0 +1,1 @@
+Waste water appliance for receiving, retaining or disposing of domestic, culinary, laboratory or industrial process liquids.

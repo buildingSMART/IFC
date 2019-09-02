@@ -1,0 +1,1 @@
+The load has a constant value over its entire extent.

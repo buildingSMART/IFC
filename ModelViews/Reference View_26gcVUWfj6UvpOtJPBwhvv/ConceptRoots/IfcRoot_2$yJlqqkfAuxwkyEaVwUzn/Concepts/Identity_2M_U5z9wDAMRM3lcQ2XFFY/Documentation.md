@@ -1,0 +1,1 @@
+_IfcRoot_ assigns the globally unique ID.

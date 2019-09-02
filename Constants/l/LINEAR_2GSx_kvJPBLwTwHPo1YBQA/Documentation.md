@@ -1,0 +1,1 @@
+Indicates that values between the defined values are to be found by linear interpolation.

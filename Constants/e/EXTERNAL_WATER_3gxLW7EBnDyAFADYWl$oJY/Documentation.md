@@ -1,0 +1,1 @@
+External volume covered with water around the building.

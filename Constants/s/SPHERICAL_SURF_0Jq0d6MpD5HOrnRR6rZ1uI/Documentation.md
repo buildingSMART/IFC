@@ -1,0 +1,1 @@
+A bounded portion of a sphere, or a complete sphere, represented by a B-spline surface.

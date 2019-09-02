@@ -11,4 +11,4 @@ Or in case of sectioned spines it is the xy plane of each list member of _IfcSec
 
 > NOTE&nbsp; The semi axes of the ellipse are rectangular to each other by definition.
 
-!["ellipse profile"](../../../figures/IfcEllipseProfileDef-Layout1.gif "Figure 1 &mdash; Ellipse profile")
+!["ellipse profile"](../../../figures/ifcellipseprofiledef-layout1.gif "Figure 1 &mdash; Ellipse profile")

@@ -1,0 +1,1 @@
+Spring type vibration isolator.

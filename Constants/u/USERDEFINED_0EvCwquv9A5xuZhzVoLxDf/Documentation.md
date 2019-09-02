@@ -1,0 +1,1 @@
+User-defined vibration isolator type.

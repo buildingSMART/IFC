@@ -1,0 +1,1 @@
+Controls have assignments from products, processes, or other objects by using the relationship object _IfcRelAssignsToControl_.

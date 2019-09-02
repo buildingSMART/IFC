@@ -1,0 +1,1 @@
+A fitting that begins a cable segment at a non-electrical element such as a grounding clamp attached to a pipe.

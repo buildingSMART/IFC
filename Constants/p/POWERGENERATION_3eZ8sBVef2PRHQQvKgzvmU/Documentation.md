@@ -1,0 +1,1 @@
+A path for power generation.

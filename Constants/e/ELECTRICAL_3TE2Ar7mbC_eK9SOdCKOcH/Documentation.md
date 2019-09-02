@@ -1,0 +1,1 @@
+A circuit for delivering electrical power.

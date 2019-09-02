@@ -1,0 +1,1 @@
+Water or steam heated from a boiler and circulated through radiators.

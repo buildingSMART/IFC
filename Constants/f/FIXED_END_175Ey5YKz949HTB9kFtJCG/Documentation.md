@@ -1,0 +1,1 @@
+The anchor fixes the end of a tendon.

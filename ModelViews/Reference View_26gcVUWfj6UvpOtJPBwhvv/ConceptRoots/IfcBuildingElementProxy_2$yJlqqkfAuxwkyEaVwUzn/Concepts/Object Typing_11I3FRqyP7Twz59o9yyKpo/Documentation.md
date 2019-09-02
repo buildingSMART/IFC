@@ -1,0 +1,3 @@
+> NOTE&nbsp; The _IfcBuildingElementProxyType_ can be used to share common information among many occurrences of the same proxy without establishing a particular semantic meaning of the type.
+
+If no _IfcBuildingElementProxyType_ is attached (i.e. if only occurrence information is available) the _PredefinedType_ should be provided. If set to .USERDEFINED. a user defined value has to be provided by the _ObjectType_ attribute.

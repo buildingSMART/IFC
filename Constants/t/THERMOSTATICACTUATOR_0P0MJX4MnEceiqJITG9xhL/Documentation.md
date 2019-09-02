@@ -1,0 +1,1 @@
+A device that thermostatically actuates a control element.
