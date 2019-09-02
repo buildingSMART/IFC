@@ -116,7 +116,7 @@ DATA;
 #289= IFCCARTESIANPOINT((0.,192.));
 #290= IFCCARTESIANPOINT((0.,0.));
 #291= IFCPOLYLINE((#286,#287,#288,#289,#290));
-#292= IFCSLABSTANDARDCASE('20WrgxqpbDtferON_k1P2X',#201,'Slab #1',$,$,#352,#302,$,.BASESLAB.);
+#292= IFCSLAB('20WrgxqpbDtferON_k1P2X',#201,'Slab #1',$,$,#352,#302,$,.BASESLAB.);
 #300= IFCGEOMETRICCURVESET((#291));
 #302= IFCPRODUCTDEFINITIONSHAPE($,$,(#304,#346));
 #304= IFCSHAPEREPRESENTATION(#204,'FootPrint','GeometricCurveSet',(#300));
@@ -148,7 +148,7 @@ DATA;
 
 /* Standard case walls #1 with axis and body geometry and material layer set defined ----------- */
 /* --------------------------------------------------------------------------------------------- */
-#356= IFCWALLSTANDARDCASE('26tmERtwL8G8UQn5BoglEh',#201,'Wall #1',$,$,#362,#379,$,.NOTDEFINED.);
+#356= IFCWALL('26tmERtwL8G8UQn5BoglEh',#201,'Wall #1',$,$,#362,#379,$,.NOTDEFINED.);
 #358= IFCRELCONNECTSELEMENTS('2ZHJEGFvL98QhEDnQsGNrK',#201,$,$,$,#292,#356);
 #359= IFCCARTESIANPOINT((0.,0.,6.));
 #360= IFCDIRECTION((0.,0.,1.));
@@ -180,7 +180,7 @@ DATA;
 
 /* Standard case walls #2 with axis and body geometry and material layer set defined ----------- */
 /* --------------------------------------------------------------------------------------------- */
-#385= IFCWALLSTANDARDCASE('2qqyx9mIf27vQuEGt7ts8$',#201,'Wall #2',$,$,#394,#401,$,.NOTDEFINED.);
+#385= IFCWALL('2qqyx9mIf27vQuEGt7ts8$',#201,'Wall #2',$,$,#394,#401,$,.NOTDEFINED.);
 #387= IFCRELCONNECTSELEMENTS('04lBS8dRv8082xho3Ve2L0',#201,$,$,$,#292,#385);
 #388= IFCRELCONNECTSPATHELEMENTS('2aU84ph_f2iwRK7mEx6APn',#201,$,$,$,#356,#385,(),(),.ATSTART.,.ATEND.);
 #391= IFCCARTESIANPOINT((0.,192.,6.));
@@ -207,7 +207,7 @@ DATA;
 
 /* Standard case walls #3 with axis and body geometry and material layer set defined ----------- */
 /* --------------------------------------------------------------------------------------------- */
-#407= IFCWALLSTANDARDCASE('0edwXkNgP03AySQjQQlat2',#201,'Wall #3',$,$,#416,#423,$,.NOTDEFINED.);
+#407= IFCWALL('0edwXkNgP03AySQjQQlat2',#201,'Wall #3',$,$,#416,#423,$,.NOTDEFINED.);
 #409= IFCRELCONNECTSELEMENTS('1_c3omXFD7UPfF9thiXwlM',#201,$,$,$,#292,#407);
 #410= IFCRELCONNECTSPATHELEMENTS('3cHo0l0vT7YecRcCZH80A_',#201,$,$,$,#385,#407,(),(),.ATSTART.,.ATEND.);
 #413= IFCCARTESIANPOINT((288.,192.,6.));
@@ -234,7 +234,7 @@ DATA;
 
 /* Standard case walls #4 with axis and body geometry and material layer set defined ----------- */
 /* --------------------------------------------------------------------------------------------- */
-#429= IFCWALLSTANDARDCASE('27D5wuD5z86hr07xvbZLKW',#201,'Wall #4',$,$,#438,#445,$,.NOTDEFINED.);
+#429= IFCWALL('27D5wuD5z86hr07xvbZLKW',#201,'Wall #4',$,$,#438,#445,$,.NOTDEFINED.);
 #431= IFCRELCONNECTSELEMENTS('2GwDyB_Xb1mBzqynA5hpmk',#201,$,$,$,#292,#429);
 #432= IFCRELCONNECTSPATHELEMENTS('0N2CJ8VSz1yx6iStYDzqLN',#201,$,$,$,#407,#429,(),(),.ATSTART.,.ATEND.);
 #435= IFCCARTESIANPOINT((288.,0.,6.));

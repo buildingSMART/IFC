@@ -1,0 +1,1 @@
+An attribute _Name_ and optionally _Description_ can be used for all subypes of _IfcObject_. For those subtypes, that have an object type definition, such as ifcBeam - IfcBeamType, the common _Name_ and optionally _Description_ is associated with the object type.

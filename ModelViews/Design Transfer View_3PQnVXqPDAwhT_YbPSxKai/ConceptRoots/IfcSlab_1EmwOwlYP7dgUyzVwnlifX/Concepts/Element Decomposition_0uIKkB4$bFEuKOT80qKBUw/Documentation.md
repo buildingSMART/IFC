@@ -1,0 +1,1 @@
+An slab may be decomposed into parts for particular components such as headers, joists, deck/subfloor, insulation, fasteners, and sealants. If a material layer set is defined, each _IfcElement_.Name shall match the corresponding _IfcMaterialLayer_.Name.

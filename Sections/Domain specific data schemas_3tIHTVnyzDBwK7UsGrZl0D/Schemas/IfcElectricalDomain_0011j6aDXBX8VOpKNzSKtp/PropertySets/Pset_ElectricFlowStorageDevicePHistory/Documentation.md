@@ -1,0 +1,1 @@
+Electric flow storage device performance history common attributes.

@@ -1,11 +1,12 @@
 The opening element stands for opening, recess or chase, all reflecting voids. It represents a void within any element that has physical manifestation. Openings can be inserted into walls, slabs, beams, columns, or other elements.
 
-The IFC specification provides two entities for opening elements:
+There are two main representations for opening elements:
 
-* _IfcOpeningStandardCase_ is used for all openings that have a constant profile along a linear extrusion. They are placed relative to the voided elements and the extrusion direction is perpendicular to the plane of the element (horizontally for walls, vertically for slabs). Only a single extrusion body is allowed. It cuts through the whole thickness of the voided element, i.e. it reflects a true opening.
+* Openings that have a constant profile along a linear extrusion. They are placed relative to the voided elements and the extrusion direction is perpendicular to the plane of the element (horizontally for walls, vertically for slabs). Only a single extrusion body is allowed. It cuts through the whole thickness of the voided element, i.e. it reflects a true opening. 
+>> NOTE&nbsp; The entity _IfcOpeningStandardCase_ has been deprecated. 
 * _IfcOpeningElement_ is used for all other occurrences of openings and in particular also for niches or recesses.
 
-> NOTE&nbsp; View definitions or implementer agreements may restrict the types of elements which can be voided by an _IfcOpeningElement_ or _IfcOpeningStandardCase_
+> NOTE&nbsp; Model View Definitions may restrict the types of elements which can be voided by an _IfcOpeningElement_
 
 There are two different types of opening elements:
 

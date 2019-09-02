@@ -1,0 +1,1 @@
+The nominal diameter defining the cross-section size of the reinforcing bar.

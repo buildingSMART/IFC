@@ -1,5 +1,7 @@
 The opening direction is determined by the local placement of _IfcDoor_ and the _OperationType_ of the _IfcDoorType_ as shown in Figure 1.
 
+The _IfcDoorTypeOperationEnum_ defines the general layout of the door type and its symbolic presentation. Depending on the enumerator, the appropriate instances of _IfcDoorLiningProperties_ and _IfcDoorPanelProperties_ are attached in the list of _HasPropertySets_. The _IfcDoorTypeOperationEnum_ mainly determines the hinge side (left hung, or right hung), the operation (swinging, sliding, folding, etc.) and the number of panels.
+
 > NOTE&nbsp; There are different definitions in various countries on what a left opening or left hung or left swing door is (same for right). Therefore the IFC definition may derivate from the local standard and need to be mapped appropriately.
 
 <table><tr><td>

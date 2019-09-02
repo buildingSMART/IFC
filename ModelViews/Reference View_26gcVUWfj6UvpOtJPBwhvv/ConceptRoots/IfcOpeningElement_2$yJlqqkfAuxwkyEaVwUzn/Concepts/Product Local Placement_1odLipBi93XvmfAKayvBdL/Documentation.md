@@ -1,3 +1,7 @@
-The local placement for _IfcOpeningElement_ is defined in its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_, which defines the local coordinate system that is referenced by all geometric representations.
+Placement of elements is defined by a local placement (a transformation matrix relative to):
 
-* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ should point to the local placement of the same element, which is voided by the opening, i.e. referred to by _VoidsElement_._RelatingBuildingElement_.
+* the element that is voided (if it is an aggregated part) 
+    * provided by the relationship _VoidsElement_._RelatingBuildingElement_
+    * being a subtype of _IfcElement_ 
+
+The local placement shall always be relative.

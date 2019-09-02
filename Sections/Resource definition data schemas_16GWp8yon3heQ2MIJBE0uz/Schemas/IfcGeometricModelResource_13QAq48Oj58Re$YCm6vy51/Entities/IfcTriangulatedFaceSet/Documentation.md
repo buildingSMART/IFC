@@ -39,7 +39,7 @@ Figure 4 shows the use of _IfcTriangulatedFaceSet_ without annotation. The diagr
  <tr><td style="width: 280px"><img src="../../../figures/ifctriangulatedfaceset_example-01.png" width="275" height="350" alt="IfcTriangulatedFaceSet_Example-01">
  </td>
  <td>
-  <p>Figure 168 shows an <em>IfcTriangulatedFaceSet</em> represented by<br><br></p>
+  <p>Figure 2 shows an <em>IfcTriangulatedFaceSet</em> represented by<br><br></p>
 <tt class="spf">
 <em>CoordIndex</em>: ((1,6,5), (1,2,6), (6,2,7), (7,2,3), (7,8,6), (6,8,5), (5,8,1), (1,8,4), (4,2,1), (2,4,3), (4,8,7), (7,3,4))<br>
 <em>IfcCartesianPointList3D</em>: ((0.,0.,0.), (1.,0.,0.), (1.,1.,0.), (0.,1.,0.), (0.,0.,2.), (1.,0.,2.), (1.,1.,2.), (0.,1.,2.))

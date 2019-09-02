@@ -3,4 +3,4 @@ A mechanical fasteners connecting building elements mechanically. A single insta
 > HISTORY&nbsp; New entity in IFC2x2
 
 { .change-ifc2x4}
-> IFC4 CHANGE&nbsp; Supertype changed from _IfcFastener_ to _IfcElementComponent_. Attribute _PredefinedType_ added. Attributes _NominalDiameter_ and _NominalLength_ deprecated.
+> IFC4 CHANGE&nbsp; Supertype changed from _IfcFastener_ to _IfcElementComponent_. Attribute _PredefinedType_ added. Attributes _NominalDiameter_ and _NominalLength_ are deprecated.

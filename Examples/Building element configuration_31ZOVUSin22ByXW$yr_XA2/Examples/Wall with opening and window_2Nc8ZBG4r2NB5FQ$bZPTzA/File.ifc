@@ -81,7 +81,7 @@ DATA;
 #44 = IFCRELCONTAINEDINSPATIALSTRUCTURE('0w_L$jTK98v8wOzKFGjTuo', #2, 'Default Building', 'Contents of Building Storey', (#45, #102), #38);
 
 /* the wall itself ----------------------------------------------------------------------------- */
-#45 = IFCWALLSTANDARDCASE('3ZYW59sxj8lei475l7EhLU', #2, 'Wall for Test Example', 'Description of Wall', $, #46, #48, $, $);
+#45 = IFCWALL('3ZYW59sxj8lei475l7EhLU', #2, 'Wall for Test Example', 'Description of Wall', $, #46, #48, $, $);
 #46 = IFCLOCALPLACEMENT(#39, #47);
 /* no rotation - z and x axes set to '$' are therefore identical to "world coordinate system" -- */
 #47 = IFCAXIS2PLACEMENT3D(#24, $, $);

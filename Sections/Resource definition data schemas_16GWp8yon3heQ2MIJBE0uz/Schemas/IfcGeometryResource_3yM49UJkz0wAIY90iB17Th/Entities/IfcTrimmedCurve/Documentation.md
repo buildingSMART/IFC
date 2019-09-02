@@ -4,14 +4,16 @@ An _IfcTrimmedCurve_ is a bounded curve that is trimmed at both ends. The trimmi
 
 <table summary="illustration">
 <tbody>
-<tr>
-<td><img src="../../../figures/ifctrimmedcurve_parameterization.png" alt="curve parameterization" border="0" height="500" width="700"></td>
-</tr>
-<tr><td><p class="figure">Figure 1 &mdash; Trimmed curve parameterization</p></td></tr>
+ <tr>
+  <td><img src="../../../figures/ifctrimmedcurve_parameterization.png" alt="curve parameterization" border="0" height="500" width="700"></td>
+ </tr>
+ <tr>
+  <td><p class="figure">Figure 1 &mdash; Trimmed curve parameterization</p></td>
+ </tr>
 </tbody>
 </table>
 
-Figure 1 shows the four arcs (dashed blue and green lines with arrow showing different orientations) that can be defined by the same _BasisCurve_ (of type _IfcCircle_) and the same trimming points (given by Cartesian points and parameter values) by using different assignments to _Trim1_ and _Trim2_ and _SenseAgreement_.
+> EXAMPLE&nbsp; Figure 1 shows the four arcs (dashed blue and green lines with arrow showing different orientations) that can be defined by the same _BasisCurve_ of type _IfcCircle_ and the same trimming points (given by Cartesian points and parameter values) by using different assignments to _Trim1_ and _Trim2_ and _SenseAgreement_. The trim 1 and trim 2 values for TrimmingPreference=.PARAMETER. are shown as degree values, which applies if the plane area measure is 'Degree', in case of plane area measure 'Radians' those would be &frac12;&pi; and &pi;.
 
 > NOTE&nbsp; Since the _BasisCurve_ is closed (type _IfcCircle_), the exception of the informal proposition IP3 applies, i.e. the sense flag is not required to be consistent with the parameter values of _Trim1_ and _Trim1_, so the rule (sense = parameter 1 &lt; parameter 2) may not be fulfilled.
 

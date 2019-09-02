@@ -157,12 +157,12 @@ If an element type is defined parametrically (such as a flow segment type defini
 																</DocModelRuleAttribute>
 																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationIdentifier">
 																	<Rules>
-																		<DocModelRuleEntity id="i44018" CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																		<DocModelRuleEntity id="i44136" CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
 																			<Rules>
 																				<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Description="Value=&apos;Surface&apos;">
 																					<Expression xsi:type="DocOpStatement" Operation="compareequal">
 																						<Reference xsi:type="DocOpReference">
-																							<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="i44018" />
+																							<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="i44136" />
 																						</Reference>
 																						<Value xsi:type="DocOpLiteral" Literal="&apos;Surface&apos;" />
 																					</Expression>
@@ -173,12 +173,12 @@ If an element type is defined parametrically (such as a flow segment type defini
 																</DocModelRuleAttribute>
 																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType">
 																	<Rules>
-																		<DocModelRuleEntity id="i44024" CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																		<DocModelRuleEntity id="i44142" CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
 																			<Rules>
 																				<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0" Description="Value=&apos;Tessellation&apos;">
 																					<Expression xsi:type="DocOpStatement" Operation="compareequal">
 																						<Reference xsi:type="DocOpReference">
-																							<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="i44024" />
+																							<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="i44142" />
 																						</Reference>
 																						<Value xsi:type="DocOpLiteral" Literal="&apos;Tessellation&apos;" />
 																					</Expression>
@@ -717,6 +717,108 @@ If an element type is defined parametrically (such as a flow segment type defini
 									</Rules>
 								</DocModelRuleAttribute>
 							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition Name="Type Body AdvancedSweptSolid Geometry" UniqueId="b27ddf91-d087-4ba7-ac90-13a88524ae4b" Type="IfcTypeProduct">
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationMaps">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRepresentationMap">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="MappedRepresentation">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+															<Rules>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationIdentifier">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																			<Rules>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Value=Body" Description="Value=Body" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="RepresentationType">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items" Identification="Geometry" />
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="MappingOrigin">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAxis2Placement3D" />
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAxis2Placement2D" />
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+							<Templates>
+								<DocTemplateDefinition id="Type_Body_Swept_Disk_Solid_Polygonal_Geometry_2Eub4qfD5IxDkcqzCrnPq" Name="Type Body Swept Disk Solid Polygonal Geometry" UniqueId="8ee3f944-d293-454b-b36e-9b4f4cd71674" Type="IfcTypeProduct">
+									<Rules>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationMaps">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRepresentationMap">
+													<Rules>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="MappedRepresentation">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcShapeRepresentation">
+																	<Rules>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextOfItems">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationIdentifier">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel">
+																					<Rules>
+																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Value=Body" Description="Value=Body" />
+																					</Rules>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationType" Identification="RepresentationType">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Items" Identification="Geometry">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcSweptDiskSolidPolygonal">
+																					<References>
+																						<DocTemplateDefinition xsi:nil="true" href="Swept_Disk_Solid_Polygonal_0s0GnJxGH7ARtn8lqhj_Vi" />
+																					</References>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="MappingOrigin">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAxis2Placement3D" />
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAxis2Placement2D" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocTemplateDefinition>
+							</Templates>
 						</DocTemplateDefinition>
 					</Templates>
 				</DocTemplateDefinition>

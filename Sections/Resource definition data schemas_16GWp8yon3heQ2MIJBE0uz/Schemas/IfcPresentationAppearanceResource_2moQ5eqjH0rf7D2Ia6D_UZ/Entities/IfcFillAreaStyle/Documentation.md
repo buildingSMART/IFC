@@ -40,6 +40,3 @@ An _IfcFillAreaStyle_ can be assigned to _IfcFillArea_ via the _IfcPresentationS
 > NOTE&nbsp; Corresponding ISO 10303 name: fill_area_style. Please refer to ISO/IS 10303-46:1994 for the final definition of the formal standard.
 
 > HISTORY&nbsp; New entity in IFC2x2.
-
-{ .deprecated}
-> DEPRECATION&nbsp; The use of IfcFillAreaStyleTiles is deprecated, as its definition might change is future releases.

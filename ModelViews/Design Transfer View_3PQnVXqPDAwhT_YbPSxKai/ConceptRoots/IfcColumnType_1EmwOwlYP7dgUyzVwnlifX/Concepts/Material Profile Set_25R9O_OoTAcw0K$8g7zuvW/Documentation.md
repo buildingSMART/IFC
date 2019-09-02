@@ -1,7 +1,3 @@
 The material of the _IfcColumnType_ is defined by the _IfcMaterialProfileSet_ or as fall back by _IfcMaterial_ and attached by the _IfcRelAssociatesMaterial_._RelatingMaterial_. It is accessible by the inverse _HasAssociations_ relationship.
 
-> NOTE&nbsp; It is illegal to assign an _IfcMaterial_ to an _IfcColumnType_, if there is at least one occurrences of _IfcColumnStandardCase_ for this type.
-
-The shared profile definition is defined by assigning an _IfcMaterialProfileSet_ (see material use definition above). The _IfcMaterialProfile_ refers to the subtype of _IfcProfileDef_ that is the common profile for all column occurrence, if used. It is only applicable if the _IfcColumnType_ has only occurrences of type _IfcColumnStandardCase_ (see definition of _IfcColumnStandardCase_ for further information).
-
 > NOTE&nbsp; The attribute _ProfileName_ of the _IfcProfileDef_ subtype, referenced in _IfcMaterialProfile_ should contain a standardized profile name according to local standards. However, an additional geometric representation of the profile is necessary (e.g. as _IfcExtrudedAreaSolid_). An importing application is allowed to check for the existence of the profile name: in case of identifying it as a standardized name, the corresponding profile geometry and possibly other cross sectional properties can be read from a library. Otherwise the geometric representation and possible non geometric _IfcProfileProperties_ have to be used.

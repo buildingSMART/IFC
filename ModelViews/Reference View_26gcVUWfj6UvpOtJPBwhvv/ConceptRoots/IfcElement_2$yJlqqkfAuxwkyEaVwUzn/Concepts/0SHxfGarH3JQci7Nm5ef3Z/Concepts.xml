@@ -2,19 +2,19 @@
 <DocTemplateUsage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UniqueId="0SHxfGarH3JQci7Nm5ef3Z">
 	<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 	<Items>
-		<DocTemplateItem UniqueId="f114e1ec-215e-4f81-b778-ae731c21d3ef" RuleParameters="HasPlacement=IfcLocalPlacement;RelativeTo=IfcLocalPlacement;" Order="0">
-			<Documentation>Placement relative to the position and rotation of the container.</Documentation>
+		<DocTemplateItem UniqueId="f114e1ec-215e-4f81-b778-ae731c21d3ef" RuleParameters="HasPlacement=IfcLocalPlacement;RelativeToElement=IfcSpatialElement;" Order="0">
+			<Documentation>Placement relative to the position and rotation of the spatial element.</Documentation>
 		</DocTemplateItem>
-		<DocTemplateItem UniqueId="beca31ce-1ae7-4e9f-a84d-24a03af98328" RuleParameters="HasPlacement=IfcLocalPlacement;" Order="0">
-			<Documentation>Absolute placement in the engineering coordinate system of the project.</Documentation>
+		<DocTemplateItem UniqueId="beca31ce-1ae7-4e9f-a84d-24a03af98328" RuleParameters="HasPlacement=IfcLocalPlacement;RelativeToElement=IfcElement;" Order="0">
+			<Documentation>Placement relative to the position and rotation of the container element.</Documentation>
 		</DocTemplateItem>
 	</Items>
 	<Exchanges>
 		<DocExchangeItem Applicability="export" Requirement="optional">
-			<Exchange xsi:type="DocExchangeDefinition" xsi:nil="true" href="Reference_Exchange_3SsM4bYOvFyBAKwmAlwLEg" />
+			<Exchange xsi:type="DocExchangeDefinition" xsi:nil="true" href="MEP_Reference_Exchange_3SsM4bYOvFyBAKwmAlwLEg" />
 		</DocExchangeItem>
 		<DocExchangeItem Applicability="import" Requirement="optional">
-			<Exchange xsi:type="DocExchangeDefinition" xsi:nil="true" href="Reference_Exchange_3SsM4bYOvFyBAKwmAlwLEg" />
+			<Exchange xsi:type="DocExchangeDefinition" xsi:nil="true" href="MEP_Reference_Exchange_3SsM4bYOvFyBAKwmAlwLEg" />
 		</DocExchangeItem>
 	</Exchanges>
 </DocTemplateUsage>
