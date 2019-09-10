@@ -30,14 +30,13 @@ an object coordinate system for instances of _IfcProduct_.
 			</DiagramLine>
 			<DiagramLabel xsi:type="DocRectangle" X="1204.26668127604" Y="302.950002034505" Width="294" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="ReferencedByPlacements" UniqueId="27fc033d-5ad5-4a3e-a8a8-5b74f2b80a81" DefinedType="IfcLocalPlacement" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="PlacementRelTo">
-			<Documentation>Placements that are given relative to this placement of an object.</Documentation>
+		<DocAttribute Name="PlacementRelTo" UniqueId="7bb09cb1-18c7-4ad5-a88d-f8ecccc28539" DefinedType="IfcObjectPlacement" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Reference to object placement that provides the relative placement with its placement in a grid, local coordinate system or linear referenced placement. If it is omitted, then in the case of linear placement it is established by the origin of horizontal alignment of the referenced IfcAlignment Axis. In the case of local placement it is established by the geometric representation context.</Documentation>
 			<DiagramLine>
-				<DocPoint X="1284.5135" Y="422.950002034505" />
-				<DocPoint X="1284.5135" Y="422.950002034505" />
-				<DocPoint X="1284.5135" Y="673.14999" />
+				<DocPoint X="1393.3135365804" Y="372.950002034505" />
+				<DocPoint X="932.713536580404" Y="372.950002034505" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1284.5135" Y="442.950002034505" Width="435" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="1393.3135365804" Y="372.950002034505" Width="400" Height="50" />
 		</DocAttribute>
 	</Attributes>
 	<Tree>

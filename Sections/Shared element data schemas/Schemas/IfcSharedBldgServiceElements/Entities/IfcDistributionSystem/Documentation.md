@@ -1,6 +1,6 @@
 ﻿A distribution system is a network designed to receive, store, maintain, distribute, or control the flow of a distribution media. A common example is a heating hot water system that consists of a pump, a tank, and an interconnected piping system for distributing hot water to terminals.
 
-The group _IfcDistributionSystem_ defines the occurrence of a specialized system for use within the context of building services.
+The group _IfcDistributionSystem_ defines the occurrence of a specialized system for use within the context of building services or utilities for built facilities.
 
 Important functionalities for the description of a distribution system are derived from existing IFC entities:
 

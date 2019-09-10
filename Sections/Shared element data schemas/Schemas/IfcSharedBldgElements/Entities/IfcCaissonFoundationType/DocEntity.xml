@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCaissonFoundationType" UniqueId="7c1d05fe-221c-4952-b734-33d5da5aa561" DiagramNumber="6" BaseDefinition="IfcDeepFoundationType" EntityFlags="32">
+	<DiagramRectangle xsi:type="DocRectangle" X="8826.66666666667" Y="813.333333333333" Width="400" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="de3bfe45-6a58-4d51-ac79-b512ae3d6205" DefinedType="IfcCaissonFoundationTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Identifies the predefined types of a caisson foundation element from which the type required may be set.</Documentation>
+			<DiagramLine>
+				<DocPoint X="9029.33349609375" Y="813.333333333333" />
+				<DocPoint X="9029.33349609375" Y="813.333333333333" />
+				<DocPoint X="9029.33349609375" Y="721.333312988281" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="9029.33349609375" Y="793.333333333333" Width="400" Height="50" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="e3e17718-11c4-4ff7-8087-ee32a1562062">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcCaissonFoundationTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcCaissonFoundationTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

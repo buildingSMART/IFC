@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralElementsDomain" UniqueId="babd2cf7-cd81-4963-9088-012e53d9a759" DiagramPagesHorz="4" DiagramPagesVert="1">
+<DocSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralElementsDomain" UniqueId="babd2cf7-cd81-4963-9088-012e53d9a759" DiagramPagesHorz="5" DiagramPagesVert="1">
 	<SchemaRefs>
 		<DocSchemaRef Name="IFCKERNEL" UniqueId="11c11a13-2a8c-490b-b55c-613ada5fdd2c">
 			<Definitions>
@@ -57,8 +57,9 @@
 							<Tree>
 								<DocLine>
 									<DiagramLine>
-										<DocPoint X="81.208093" Y="260.88769" />
-										<DocPoint X="135.209632" Y="260.88769" />
+										<DocPoint X="81.2087465" Y="163.24533" />
+										<DocPoint X="81.2087465" Y="261.022827148438" />
+										<DocPoint X="140.542973836263" Y="261.022827148438" />
 									</DiagramLine>
 								</DocLine>
 								<DocLine>
@@ -130,6 +131,34 @@
 				</DocDefinitionRef>
 				<DocDefinitionRef id="IfcReinforcingBarSurfaceEnum_0ud4ADZPD84RNzoceEOJKi" Name="IfcReinforcingBarSurfaceEnum" UniqueId="389c428d-8d93-4811-b5fd-ca6a0e61352c" DiagramNumber="4">
 					<DiagramRectangle xsi:type="DocRectangle" X="5589.8253" Y="842.58829" Width="707.76706" Height="124.98776" />
+				</DocDefinitionRef>
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCSHAREDBLDGELEMENTS" UniqueId="fc8874c4-571e-4609-971a-4017a974b617">
+			<Definitions>
+				<DocDefinitionRef Name="IfcDeepFoundation" UniqueId="9fc48ebf-350f-4ecd-8614-737060e87a90" DiagramNumber="1">
+					<DiagramRectangle xsi:type="DocRectangle" X="129.960688273112" Y="554.439493815104" Width="200" Height="100" />
+					<Tree>
+						<DocLine>
+							<DiagramLine>
+								<DocPoint X="235.29402" Y="554.439493815104" />
+								<DocPoint X="235.29402" Y="554.439493815104" />
+								<DocPoint X="235.29402" Y="499.77283" />
+							</DiagramLine>
+						</DocLine>
+					</Tree>
+				</DocDefinitionRef>
+				<DocDefinitionRef Name="IfcDeepFoundationType" UniqueId="a0334303-8f5a-4377-9650-0e1adadbb761" DiagramNumber="1">
+					<DiagramRectangle xsi:type="DocRectangle" X="1209.5577" Y="173.63156" Width="245.20578" Height="100" />
+					<Tree>
+						<DocLine>
+							<DiagramLine>
+								<DocPoint X="1332.16059" Y="273.63156" />
+								<DocPoint X="1332.16059" Y="273.63156" />
+								<DocPoint X="1332.16059" Y="373.63156" />
+							</DiagramLine>
+						</DocLine>
+					</Tree>
 				</DocDefinitionRef>
 			</Definitions>
 		</DocSchemaRef>
@@ -435,6 +464,22 @@
 			</Sources>
 			<Definition>
 				<DocSelect xsi:nil="true" href="IfcBendingParameterSelect" />
+			</Definition>
+		</DocPageTarget>
+		<DocPageTarget Name="5,1 IfcTendonConduit" UniqueId="627fa646-f775-4a25-a580-a6bca756fa45" DiagramNumber="5">
+			<DiagramRectangle xsi:type="DocRectangle" X="6583.99918619792" Y="101.333323160807" Width="133.33349609375" Height="100" />
+			<DiagramLine>
+				<DocPoint X="6717.33268229167" Y="151.333323160807" />
+				<DocPoint X="6842.66634114583" Y="151.333323160807" />
+				<DocPoint X="6842.66634114583" Y="151.333323160807" />
+			</DiagramLine>
+			<Sources>
+				<DocPageSource Name="5,1 IfcTendonConduit" UniqueId="26a26fff-3ab1-47a0-bea9-7cf56e0c685b" DiagramNumber="2">
+					<DiagramRectangle xsi:type="DocRectangle" X="2311.69571" Y="190.14171" Width="400" Height="100" />
+				</DocPageSource>
+			</Sources>
+			<Definition>
+				<DocEntity xsi:nil="true" href="IfcTendonConduit" />
 			</Definition>
 		</DocPageTarget>
 	</PageTargets>

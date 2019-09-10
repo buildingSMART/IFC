@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocModelView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Bridge_Reference_View_0i8CMLQoL4MvBrD__UiO9V" Name="Bridge Reference View" UniqueId="2c20c595-6b25-445b-92f5-37ef9eb1825f" Code="BridgeReferenceView_V0-1" Version="0.1" Status="Draft" BaseView="86aa67de-829b-467b-9cd8-dd364beabe79">
+	<Exchanges>
+		<DocExchangeDefinition Name="Bridge Reference Exchange" UniqueId="41afc7d6-399c-4250-9047-9b5000e233e4" Status="Proposal" />
+	</Exchanges>
+	<ConceptRoots>
+		<DocConceptRoot Name="IfcBearing" UniqueId="2bf28ceb-763d-48ce-9015-6f6e85916610" Status="Proposal">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBearing" />
+			<Concepts>
+				<DocTemplateUsage UniqueId="6545c9c4-181f-4a87-b2c4-eacb75eab5b4" Status="Draft">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem Name="Pset_BearingCommon" UniqueId="d633e5ca-be64-4a62-b38c-2aaa07bc9b02" RuleParameters="PsetName=Pset_BearingCommon;" Order="0">
+							<Concepts>
+								<DocTemplateUsage Name="Displacement Accomodated" UniqueId="7a969e67-6ae7-4293-94e1-18c436e5f001">
+									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="List_Value_2E4BQ8aNbEEesoQhogfKj" />
+									<Items>
+										<DocTemplateItem UniqueId="6b502d31-6a0b-4d1e-a143-ceceba504d8b" RuleParameters="PropertyName=DisplacementAccomodated;Value=IfcBoolean;" Order="0" />
+									</Items>
+								</DocTemplateUsage>
+								<DocTemplateUsage Name="Rotation Accomodated" UniqueId="1ff12d68-995f-4e94-981b-6cdeec44d865">
+									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="List_Value_2E4BQ8aNbEEesoQhogfKj" />
+									<Items>
+										<DocTemplateItem UniqueId="a99fddb5-519e-4feb-a4ad-d0453ce3bac0" RuleParameters="PropertyName=RotationAccomodated;Value=IfcBoolean;" Order="0" />
+									</Items>
+								</DocTemplateUsage>
+								<DocTemplateUsage Name="Properties" UniqueId="fe18485d-ff36-4a07-bc42-2b565acfd35e">
+									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
+								</DocTemplateUsage>
+								<DocTemplateUsage Name="Properties" UniqueId="1ec986b3-e450-40af-b884-1f4a678c9305">
+									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="List_Value_2E4BQ8aNbEEesoQhogfKj" />
+								</DocTemplateUsage>
+							</Concepts>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Object Predefined Type" UniqueId="3b6d4ec5-2d9a-49f4-b2c7-42b99bb71435">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+					<Items>
+						<DocTemplateItem UniqueId="5d10743a-bdfb-4874-b9ce-67494b3ed2bc" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Object Typing" UniqueId="26c26772-fdb5-410c-8fdb-d5f5c4290ee5">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Typing_0rek4E8Dz0zAilsiyAPqJq" />
+					<Items>
+						<DocTemplateItem UniqueId="210f3058-b6e0-43c7-8766-25e939c0027e" RuleParameters="RelatingType=IfcBearingType;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="a84051db-9083-4067-9e82-c78da7b05794" Type="IfcBearing" />
+		</DocConceptRoot>
+		<DocConceptRoot Name="IfcBridge" UniqueId="401c9be7-edf1-4a64-a89d-1bd315a88c41" Status="Draft">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridge" />
+			<Concepts>
+				<DocTemplateUsage Name="Spatial Composition" UniqueId="6952c6f8-03cd-4a45-b13f-8f5a9a242ca0">
+					<Documentation>&gt; NOTE&amp;nbsp; By using the inverse relationship _IfcBridge.Decomposes_ it references _IfcProject_ || _IfcSite_ || _IfcBridge_ through _IfcRelAggregates.RelatingObject_. If it refers to another instance of _IfcBridge_, the referenced _IfcBridge_ needs to have a different and higher _CompositionType_, i.e. COMPLEX (if the other _IfcBuilding_ has ELEMENT), or ELEMENT (if the other _IfcBridge_ has PARTIAL).</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Items>
+						<DocTemplateItem UniqueId="1c8e09b3-c381-4245-b7a7-5dcc407f8c0a" RuleParameters="RelatingObject=IfcProject;" Order="0">
+							<Documentation>Direct assignment to project, if the bridgeis the outermost spatial container, and no site information is provided for bridge projects</Documentation>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="fe54d10c-c9b7-43eb-ba9a-c423bd42d5a2" RuleParameters="RelatingObject=IfcSite;" Order="0">
+							<Documentation>Assignment to site, if the bridge is the spatial container for the bridge project with site information</Documentation>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="cea017cb-bd67-41e8-9410-7e176ec9637e" RuleParameters="RelatingObject=IfcBridge;" Order="0">
+							<Documentation>Assignment to another bridge as spatial container, e.g. if this bridge represents a bridge section.</Documentation>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="bd14b60a-3c94-4ed7-b315-8e3c641b5a21" RuleParameters="RelatingObject=IfcFacility;" Order="0">
+							<Documentation>Assignment to facilities as spatial container, e.g. if this bridge represents a facility section.</Documentation>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Spatial Decomposition" UniqueId="44124d9a-cfbc-44c4-a545-6b4fb0841995">
+					<Documentation>&gt; NOTE&amp;nbsp; By using the inverse relationship _IfcBridge.IsDecomposedBy_ it references _IfcBridge_ || _IfcBridgePart_ through _IfcRelAggregates.RelatedObjects_. If it refers to another instance of&amp;nbsp;_IfcBridge_, the referenced _IfcBridge_ needs to have a different and lower _CompositionType_, i.e. ELEMENT (if the other _IfcBridge_ has COMPLEX), or PARTIAL (if the other _IfcBridge_ has ELEMENT).</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Decomposition_1cVuH3xCvAZQOan_h15FW" />
+					<Items>
+						<DocTemplateItem UniqueId="c69d8069-f3e3-43c2-a67d-b3aa1a043b42" RuleParameters="RelatedObjects=IfcBridgePart;" Order="0">
+							<Documentation>Spatial decomposition into bridge parts</Documentation>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="d8b8829e-2f79-4fff-acda-b1136dfd45f2" RuleParameters="RelatedObjects=IfcBridge;" Order="0">
+							<Documentation>Spatial decomposition into other bridges, e.g. if this bridge represents a complex bridge that is subdivided into bridge sections.</Documentation>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Spatial Container" UniqueId="201e475d-2267-4e43-87a8-7523b18bd531">
+					<Documentation>&gt; NOTE&amp;nbsp; If there are building elements and/or other elements directly related to the _IfcBridge_, they are associated with the _IfcBridge_ by using the objectified relationship _IfcRelContainedInSpatialStructure_. The _IfcBridge_ references them by its inverse relationship: &gt; *  _IfcBridge.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
+					<Items>
+						<DocTemplateItem UniqueId="7bb436be-24ba-4355-99ed-b9804ca058f0" RuleParameters="Type=IfcElement;" Order="0">
+							<Documentation>Physical elements that are directly related to the building.</Documentation>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="2614fc20-4cb3-4604-bd68-4419869d2d0c" RuleParameters="Type=IfcAnnotation;" Order="0">
+							<Documentation>Annotations that are directly related to the building.</Documentation>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="df4ac39f-876b-4721-aeb6-40269b026705" RuleParameters="Type=IfcPositioningElement;" Order="0">
+							<Documentation>Positioning elements that are directly related to the building.</Documentation>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Product Local Placement" UniqueId="9a0582fd-3d2a-4e89-a3b6-dd681bcbb895">
+					<Documentation>The local placement for _IfcBridge_ is defined by its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_ or _IfcLinearPlacement_, which establishes the local coordinate system that is referenced by all geometric representations.
+
+* The _PlacementRelTo_ relationship of _IfcObjectPlacement_ shall point to the subtype of _IfcSpatialStructureElement_ that is referenced by the _Spatial Decomposition_ concept (usually of type _IfcSite_).
+* If the _IfcBridge_ is the uppermost spatial structure element, the _PlacementRelTo_ shall not be set.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
+					<Items>
+						<DocTemplateItem UniqueId="8bcaa939-1535-4093-a20b-37769f27f605" RuleParameters="HasPlacement=IfcLocalPlacement;" Order="0">
+							<Documentation>The _IfcBridge_ shall be placed relative to another _IfcBridge_ or an _IfcSite_.</Documentation>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Bridge Systems" UniqueId="2f6e31a8-287e-4ecb-b941-5c86566bd0a6">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Service_Connectivity_3ZHXQIzCLD_gZr1pIWQOzh" />
+					<Items>
+						<DocTemplateItem UniqueId="d8605040-8512-419f-a06d-fd9c35bcd03f" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Property Sets for Objects" UniqueId="01219037-8798-4787-854e-8547f7b3905c">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem Name="Pset_BridgeCommon" UniqueId="88edab4a-a68c-4f02-827d-e79e03d7a973" RuleParameters="PsetName=Pset_BridgeCommon;" Order="0">
+							<Concepts>
+								<DocTemplateUsage Name="Structure Indicator" UniqueId="c5429e2b-9a12-45b7-969c-8e221f12629a">
+									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
+									<Items>
+										<DocTemplateItem UniqueId="66a2ddda-f560-49b9-baf7-b712e85585b8" RuleParameters="PropertyName=StructureIndicator;Value=IfcLabel;" Order="0" />
+									</Items>
+								</DocTemplateUsage>
+							</Concepts>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="2c122782-d434-42f6-8122-c8ee83417606">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+					<Items>
+						<DocTemplateItem UniqueId="60bedcf6-032a-4aee-b841-e036ed440a21" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="93f7366f-b854-48e3-98b7-8c4a953955db" Type="IfcBridge" />
+		</DocConceptRoot>
+		<DocConceptRoot Name="IfcBridgePart" UniqueId="7ad18a64-e2bf-42f0-bc21-1cc74792d64c">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridgePart" />
+			<Concepts>
+				<DocTemplateUsage Name="Spatial Composition" UniqueId="ab48d9bc-b53a-401a-bfdd-02a85366f430">
+					<Documentation>&gt; NOTE&amp;nbsp; By using the inverse relationship _IfcBridgePart.Decomposes_ it references (_IfcBridge_ || _IfcBridgePart_) through _IfcRelAggregates.RelatingObject_IfcBridgePart_, the referenced 
+_IfcBridgePart_ needs to have a different and higher
+ _CompositionType_, i.e. COMPLEX (if the other _IfcBridgePart_ has ELEMENT), or ELEMENT (if the other
+ _IfcBridgePart_ has PARTIAL)._</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Items>
+						<DocTemplateItem UniqueId="49e9cfc4-42ad-48c0-970f-80bd2221258d" RuleParameters="RelatingObject=IfcBridge;" Order="0">
+							<Documentation>Assignment to the bridge, where the bridge part is a part of.</Documentation>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="81bf33a8-0686-42aa-abd5-e2bc36796bb4" RuleParameters="RelatingObject=IfcBridgePart;" Order="0">
+							<Documentation>Assignment to another bridge part, e.g. if this bridge part is a part that refers to another bridge part.</Documentation>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Spatial Decomposition" UniqueId="2408ee70-86e1-44d2-b3d5-d58b579f0c1a">
+					<Documentation>&gt; NOTE&amp;nbsp; By using the inverse relationship _IfcBridgePart.IsDecomposedBy_ it references _IfcBridgePart_ through _IfcRelAggregates.RelatedObjects_. If it refers to another instance of _IfcBridgePart_, the referenced _IfcBridgePart_ needs to have a different and lower _CompositionType_, i.e. ELEMENT (if the other _IfcBuildingStorey_ has COMPLEX), or PARTIAL (if the other _IfcBuildingStorey_ has ELEMENT).
+
+&gt; NOTE&amp;nbsp; Multi storey spaces shall be spatially contained by only a single building storey, usually it is the building storey where the base of the space lies.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Decomposition_1cVuH3xCvAZQOan_h15FW" />
+					<Items>
+						<DocTemplateItem UniqueId="9af78e47-cb5d-4934-92c0-3aeff3db4858" RuleParameters="RelatedObjects=IfcBridgePart;" Order="0">
+							<Documentation>Spatial decomposition into bridge parts, if this bridge part is a main bridge part having subdivisions.</Documentation>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Product Local Placement" UniqueId="77fb680e-090e-4a42-8c3f-3af4ed345b80">
+					<Documentation>The local placement for _IfcBridgePart_ is defined in its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_ or _IfcLinearPlacement_, which defines the local coordinate system that is referenced by all geometric representations.
+
+* The _PlacementRelTo_ relationship of _IfcObjectPlacement_ shall point (if relative placement is used) to the _IfcSpatialStructureElement_ of type _IfcBridge_, or of type _IfcBridgePart_ (e.g. to position a bridge part relative to a bridge part complex, or a partial bridge part to a bridge part).
+* If the relative placement is not used, the absolute placement is defined within the world coordinate system.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
+					<Items>
+						<DocTemplateItem UniqueId="bc36d2f6-3819-4625-95ff-385a05d40ea9" RuleParameters="HasPlacement=IfcLocalPlacement;" Order="0">
+							<Documentation>The _IfcBridgePart_ shall be placed relative to another _IfcBridgePart_ or an _IfcBridge_.</Documentation>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="7a78c09d-4887-499e-ace2-b89c0fd46681">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+					<Items>
+						<DocTemplateItem UniqueId="ecfcf214-9cc8-42c7-9132-215b738b342b" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Spatial Container" UniqueId="caea3e18-a921-4063-8697-749c69b48924">
+					<Documentation>&gt; NOTE&amp;nbsp; If there are building elements and/or other elements directly related to the _IfcBridge_, they are associated with the _IfcBridge_ by using the objectified relationship _IfcRelContainedInSpatialStructure_. The _IfcBridge_ references them by its inverse relationship: &gt; *  _IfcBridge.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
+					<Items>
+						<DocTemplateItem UniqueId="87ffd881-c34e-4a78-9bec-d651e196924c" RuleParameters="Type=IfcElement;" Order="0">
+							<Documentation>Physical elements that are directly related to the building.</Documentation>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="2dc486a8-1d60-4b87-9a22-4c7986063f63" RuleParameters="Type=IfcAnnotation;" Order="0">
+							<Documentation>Annotations that are directly related to the building.</Documentation>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="b3a63e42-5b1c-4ed7-8dcc-84993c86c015" RuleParameters="Type=IfcPositioningElement;" Order="0">
+							<Documentation>Positioning elements that are directly related to the building.</Documentation>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="2bf0a68e-d502-42a7-a355-ab3570501ef2" Type="IfcBridgePart" />
+		</DocConceptRoot>
+		<DocConceptRoot Name="IfcCaissonFoundation" UniqueId="36a72fac-ed32-409c-9dcb-c4109e94bf01" Status="Draft">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcCaissonFoundation" />
+			<Concepts>
+				<DocTemplateUsage UniqueId="dfc9cfdc-29b3-4f27-88cc-1463d08c7c61">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+					<Items>
+						<DocTemplateItem UniqueId="45ffa203-22d4-4c69-bf3e-b8bcc87ddfe0" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="b1aea595-9daa-49e7-93ff-9dee6b957df9" Type="IfcCaissonFoundation" />
+		</DocConceptRoot>
+		<DocConceptRoot Name="IfcFacility" UniqueId="b54a1de8-6fd3-4a6e-9aad-b81c068ba5ca">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcFacility" />
+			<Concepts>
+				<DocTemplateUsage Name="Spatial Composition" UniqueId="41d092e8-d6d0-4ee1-86e9-0288ea83d4a4">
+					<Documentation>&gt; NOTE&amp;nbsp; By using the inverse relationship _IfcFacility.Decomposes_ it references _IfcProject_ || _IfcSite_ || _IfcFacility_ through _IfcRelAggregates.RelatingObject_. If it refers to another instance of _IfcFacility_, the referenced _IfcFacility_ needs to have a different and higher _CompositionType_, i.e. COMPLEX (if the other _IfcBuilding_ has ELEMENT), or ELEMENT (if the other _IfcFacility_ has PARTIAL).</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Items>
+						<DocTemplateItem UniqueId="ec844f4c-c227-4dcb-9556-62aca65716b1" RuleParameters="RelatingObject=IfcProject;" Order="0">
+							<Documentation>Direct assignment to project, if the facility is the outermost spatial container, and no site information is provided for the building projects</Documentation>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="121c2def-a311-4c81-bd49-32fd90e83659" RuleParameters="RelatingObject=IfcSite;" Order="0">
+							<Documentation>Assignment to site, if the facility is the spatial container for the building project with site information</Documentation>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="9162fbdd-0da8-407a-b72a-a926f4f924eb" RuleParameters="RelatingObject=IfcFacility;" Order="0">
+							<Documentation>Assignment to another facility as spatial container, e.g. if this facility represents a facility section.</Documentation>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Spatial Decomposition" UniqueId="884f464a-6c35-4195-abe5-fe4c8d732dad">
+					<Documentation>&gt; NOTE&amp;nbsp; By using the inverse relationship _IfcFacility.IsDecomposedBy_ it references _IfcFacility_ || _IfcFacilityPart_ through _IfcRelAggregates.RelatedObjects_. If it refers to another instance of&amp;nbsp;_IfcFacility_, the referenced _IfcFacility_ needs to have a different and lower _CompositionType_, i.e. ELEMENT (if the other _IfcFacility_ has COMPLEX), or PARTIAL (if the other _IfcFacility_ has ELEMENT).</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Decomposition_1cVuH3xCvAZQOan_h15FW" />
+					<Items>
+						<DocTemplateItem UniqueId="ec56f6ec-076b-4275-b5e7-ee7b9ccbcca8" RuleParameters="RelatedObjects=IfcFacilityPart;" Order="0">
+							<Documentation>Spatial decomposition into facility parts.</Documentation>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="ffc52ee6-0fe5-45de-b4e1-f1ff8127ee05" RuleParameters="RelatedObjects=IfcFacility;" Order="0">
+							<Documentation>Spatial decomposition into other bridges, e.g. if this facility represents a complex facilitiy that is subdivided into facility sections.</Documentation>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="939eab53-a0de-4c6d-93d5-14030fabc89f" RuleParameters="RelatedObjects=IfcBridge;" Order="0">
+							<Documentation>Spatial decomposition into other bridges, e.g. if this facility represents a complex facilitiy that is subdivided into facility sections.</Documentation>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Spatial Container" UniqueId="f253d721-690b-4fef-bc1f-6247735caebb">
+					<Documentation>&gt; NOTE&amp;nbsp; If there are building elements and/or other elements directly related to the _IfcFacility_ (like a curtain wall spanning several stories), they are associated with the _IfcFacility_ by using the objectified relationship _IfcRelContainedInSpatialStructure_. The _IfcFacility_ references them by its inverse relationship: &gt; *  _IfcFacility.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
+					<Items>
+						<DocTemplateItem UniqueId="2fcccbdc-5674-432e-b7e2-7d455a3c860f" RuleParameters="Type=IfcElement;" Order="0">
+							<Documentation>Physical elements contained in the facility.</Documentation>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="726b2b5f-2584-4fe1-8526-443efab33de2" RuleParameters="Type=IfcAnnotation;" Order="0">
+							<Documentation>Annotations that are directly related to the facility.</Documentation>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="22bdae6a-8453-4e42-8d85-f334d76c0903" RuleParameters="Type=IfcPositioningElement;" Order="0">
+							<Documentation>Positioning elements that are directly related to the facility.</Documentation>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Product Local Placement" UniqueId="b7aa6c15-4396-461a-ac2c-5b62e55056bf">
+					<Documentation>The local placement for _IfcFacility_ is defined by its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_ or _IfcLinearPlacement_, which establishes the local coordinate system that is referenced by all geometric representations.
+
+* The _PlacementRelTo_ relationship of _IfcObjectPlacement_ shall point to the subtype of _IfcSpatialStructureElement_ that is referenced by the _Spatial Decomposition_ concept (usually of type _IfcSite_).
+* If the _IfcFacility_ is the uppermost spatial structure element, the _PlacementRelTo_ shall not be set.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
+					<Items>
+						<DocTemplateItem UniqueId="92bc1c63-23d0-455d-9ad8-c1e7e222880c" RuleParameters="HasPlacement=IfcLocalPlacement;" Order="0">
+							<Documentation>The _IfcFacility_ shall be placed relative to another _IfcFacility_ or an _IfcSite_.</Documentation>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Facility Service Connectivity" UniqueId="ed937659-bea5-42c4-9845-e96232dd6561">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Service_Connectivity_3ZHXQIzCLD_gZr1pIWQOzh" />
+					<Items>
+						<DocTemplateItem UniqueId="638c77aa-e554-43c4-ad00-ada6db0661b5" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="f249fdf6-d01d-4420-8f08-1f17e59e1d00" Type="IfcFacility" />
+		</DocConceptRoot>
+		<DocConceptRoot Name="IfcFacilityPart" UniqueId="b1bf6ae8-fba9-4c91-b917-4ef53753e8d1">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcFacilityPart" />
+			<Concepts>
+				<DocTemplateUsage Name="Spatial Composition" UniqueId="14675775-18ce-4b31-ab8c-2be71e0d5718">
+					<Documentation>&gt; NOTE&amp;nbsp; By using the inverse relationship _IfcFacility.Decomposes_ it references _IfcProject_ || _IfcSite_ || _IfcFacility_ through _IfcRelAggregates.RelatingObject_. If it refers to another instance of _IfcFacility_, the referenced _IfcFacility_ needs to have a different and higher _CompositionType_, i.e. COMPLEX (if the other _IfcBuilding_ has ELEMENT), or ELEMENT (if the other _IfcFacility_ has PARTIAL).</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Items>
+						<DocTemplateItem UniqueId="70bfca30-39ca-471b-a92a-28e070d0d795" RuleParameters="RelatingObject=IfcProject;" Order="0">
+							<Documentation>Direct assignment to project, if the facility is the outermost spatial container, and no site information is provided for the building projects</Documentation>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="11fcce3e-dd46-4f8d-bdea-0dccecd225cb" RuleParameters="RelatingObject=IfcSite;" Order="0">
+							<Documentation>Assignment to site, if the facility is the spatial container for the building project with site information</Documentation>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="b0f8e1c7-9019-4113-a838-11b8583d4b58" RuleParameters="RelatingObject=IfcFacility;" Order="0">
+							<Documentation>Assignment to another facility as spatial container, e.g. if this facility represents a facility section.</Documentation>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Spatial Decomposition" UniqueId="00ad6870-1cb1-42c0-aadd-cc5fce89ccd9">
+					<Documentation>&gt; NOTE&amp;nbsp; By using the inverse relationship _IfcFacilityPart.IsDecomposedBy_ it references _IfcFacilityPart_ through _IfcRelAggregates.RelatedObjects_. If it refers to another instance of _IfcFacilityPart_, the referenced _IfcFacilityPart_ needs to have a different and lower _CompositionType_, i.e. ELEMENT (if the other _IfcFacilityPart_ has COMPLEX), or PARTIAL (if the other _IfcFacilityPart_ has ELEMENT).</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Decomposition_1cVuH3xCvAZQOan_h15FW" />
+					<Items>
+						<DocTemplateItem UniqueId="3c941265-0560-4795-9363-f47e3be52e2d" RuleParameters="RelatedObjects=IfcFacilityPart;" Order="0">
+							<Documentation>Spatial decomposition into other facility parts, if this facility part is a main bridge part having subdivisions.</Documentation>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Product Local Placement" UniqueId="d552bdb1-7f7d-4595-9fd5-a583b149300a">
+					<Documentation>The local placement for _IfcFacilityPart_ is defined in its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_ or _IfcLinearPlacement_, which defines the local coordinate system that is referenced by all geometric representations.
+
+* The _PlacementRelTo_ relationship of _IfcObjectPlacement_ shall point (if relative placement is used) to the _IfcSpatialStructureElement_ of type _IfcBridge_, or of type _IfcFacilityPart_ (e.g. to position a facility part relative to a facility part complex, or a partial facility part to a facility part).
+* If the relative placement is not used, the absolute placement is defined within the world coordinate system.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
+					<Items>
+						<DocTemplateItem UniqueId="360215b9-d27f-4d62-8464-dbb24a30dc9a" RuleParameters="HasPlacement=IfcLocalPlacement;" Order="0">
+							<Documentation>The _IfcBridgePart_ shall be placed relative to another _IfcBridgePart_ or an _IfcBridge_.</Documentation>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Spatial Container" UniqueId="5dbfcbcf-5ea1-4ff6-8d1a-10d7c0bd1e44">
+					<Documentation>&gt; NOTE&amp;nbsp; If there are building elements and/or other elements directly related to the _IfcBridge_, they are associated with the _IfcBridge_ by using the objectified relationship _IfcRelContainedInSpatialStructure_. The _IfcBridge_ references them by its inverse relationship: &gt; *  _IfcBridge.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
+					<Items>
+						<DocTemplateItem UniqueId="1e3f372b-87da-4d13-bb56-b0dd9fa841cb" RuleParameters="Type=IfcElement;" Order="0">
+							<Documentation>Physical elements that are directly related to the building.</Documentation>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="295ba950-d7da-4c9e-a9f3-d7ac8c59d9bd" RuleParameters="Type=IfcAnnotation;" Order="0">
+							<Documentation>Annotations that are directly related to the building.</Documentation>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="b224e759-3fb4-4ad2-b8c9-da0c0fb29322" RuleParameters="Type=IfcPositioningElement;" Order="0">
+							<Documentation>Positioning elements that are directly related to the building.</Documentation>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="1b851970-c098-4bb7-b885-d4c1a4e9a477" Type="IfcFacilityPart" />
+		</DocConceptRoot>
+		<DocConceptRoot Name="IfcProjectionElement" UniqueId="25defcd6-ac2c-4b67-9bb8-3e5bf9462a9c" Status="Proposal">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcProjectionElement" />
+			<Concepts>
+				<DocTemplateUsage Name="Object Predefined Type" UniqueId="f1e48c20-502f-4961-8b5b-933ac69f0620">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+					<Items>
+						<DocTemplateItem UniqueId="3c7124c2-b539-44ae-8254-14bf54d244e4" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="419f8349-aa40-4789-a2d3-ca0fa2097076" Type="IfcProjectionElement" />
+		</DocConceptRoot>
+		<DocConceptRoot Name="IfcSurfaceFeature" UniqueId="50d3d41c-ac80-46b1-b7d6-5936d12837de">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcSurfaceFeature" />
+			<Concepts>
+				<DocTemplateUsage UniqueId="8f87ed01-8eb0-4574-bad3-a0fb6a4b5029">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+					<Items>
+						<DocTemplateItem UniqueId="efe19949-6e72-4b35-bbb7-0ca4a6edf461" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="53b9e35e-8d8b-4ad7-89ab-192adc7f973d" Type="IfcSurfaceFeature" />
+		</DocConceptRoot>
+		<DocConceptRoot Name="IfcTendonConduit" UniqueId="de6a7d84-0f4c-4374-924d-90e10f6211ac" Status="Draft">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcTendonConduit" />
+			<Concepts>
+				<DocTemplateUsage UniqueId="44bfb336-31eb-47e9-aea0-2bbfa20919ad">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Object Typing" UniqueId="93180411-4673-4327-a4a5-590ad5451c19">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Typing_0rek4E8Dz0zAilsiyAPqJq" />
+					<Items>
+						<DocTemplateItem UniqueId="ffcd833b-bf76-4d72-9c32-7a95f7670c0d" RuleParameters="RelatingType=IfcTendonConduitType;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" Name="Alignment Referent Nesting" UniqueId="198699f1-b6a3-4ae1-a710-cf5a670205ec" Type="IfcTendonConduit" />
+		</DocConceptRoot>
+		<DocConceptRoot Name="IfcVibrationDamper" UniqueId="eeb8c784-f917-4486-8246-3906ff7fc4be" Status="Draft">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcVibrationDamper" />
+			<Concepts>
+				<DocTemplateUsage UniqueId="af8f85f7-2f1d-4078-90b3-eb21e0646635">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+					<Items>
+						<DocTemplateItem UniqueId="fdac41b8-e2d5-48c8-b077-7dc1b0759e0b" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="d27305d0-75ae-42e3-999a-1be37e120405">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Typing_0rek4E8Dz0zAilsiyAPqJq" />
+					<Items>
+						<DocTemplateItem UniqueId="cbb08a93-4c1d-4a32-a1b2-ba62eaae1576" RuleParameters="RelatingType=IfcVibrationDamperType;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="6992c049-6292-40ec-82f0-7eae15af6220" Type="IfcVibrationDamper" />
+		</DocConceptRoot>
+	</ConceptRoots>
+</DocModelView>
+

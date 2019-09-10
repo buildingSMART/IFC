@@ -14,7 +14,7 @@ A new project library concept has been added that defines the register of all ty
 Product types can now be decomposed into parts and these declaring parts can be used to inform the parts of a decomposed occurrence, hence the concept of a deep copy of a type with decomposed part structure is supported.
 
 { .std}
-The IFC object definition (occurrence and type objects) inheritance tree is now synchronized and the concept of providing a predefined type enumeration is consistently applied  with only a few noted exceptions. The IFC object definition inheritance tree represents the in-built IFC object catalog (or classification) and can be used to map external classifications to and from.  The IFC object definitions for building service components and systems has been greatly unified and if necessary extended. If provides now a neutral catalog for building service design, commissioning and operation and maintenance.
+The IFC object definition (occurrence and type objects) inheritance tree is now synchronized and the concept of providing a predefined type enumeration is consistently applied with only a few noted exceptions. The IFC object definition inheritance tree represents the (in-built) IFC object catalog (or classification) and can be used to map external classifications to and from.  The IFC object definitions for building service components and systems has been greatly unified and if necessary extended. If provides now a neutral catalog for building service design, commissioning and operation and maintenance.
 
 { .std}
 &nbsp;
@@ -23,7 +23,7 @@ The IFC object definition (occurrence and type objects) inheritance tree is now 
 **Building Elements**
 
 { .std}
-Major subtypes of building element, slab, plate, beam, column, member, door and window, have been separated into a general definition and a specific specialization to represent the standard cases for a parametric exchange of its shape, material and underlying element type. For those elements there is now a separate standard case subtype available. For walls and slabs there is now in addition a subtype to handle the aggregated walls and slabs separately from the standard walls and slabs. It allows to add more control over the applicable aggregations. Element type definitions have been added for roof, stair and ramp. The chimney has been added as a new building element subtype.
+Major subtypes of building element, slab, plate, beam, column, member, door and window, have been separated into a general definition and a specific specialization to represent the standard cases for a parametric exchange of its shape, material and underlying element type. For those elements there is now a separate (standard case) subtype available. For walls and slabs there is now in addition a subtype to handle the aggregated walls and slabs separately from the standard walls and slabs. It allows to add more control over the applicable aggregations. Element type definitions have been added for roof, stair and ramp. The chimney has been added as a new building element subtype.
 
 { .std}
 The definition of material has been greatly enhanced to allow e.g. for wall layers to have vertical offsets, for beams, columns, and members to have a material definition of profiles and for supporting composite profile definitions (see Material below). The definitions of geometric representation items has been extended by new entities for tapered sweeps, by improved definitions for arbitrary sweeps and by an easier way to represent mirrored profiles (see Geometry below).
@@ -32,7 +32,7 @@ The definition of material has been greatly enhanced to allow e.g. for wall laye
 All longitudinal elements (beam, column, and member) can now carry an axis representation and a cardinal point to describe the position of the profile related to the axis. The shape representations have been extended to allow for advanced sweeps (along any directrix and with tapering). All planar elements (wall, slab, and plate) can now carry a surface representation.
 
 { .std}
-The parametric definitions for doors and windows is extended and a standard case door and window is provided as well. The quantity use definitions of all building elements have been updated to reflect the new agreements on base quantities.
+The parametric definitions for doors and windows is extended and a (standard case) door and window is provided as well. The quantity use definitions of all building elements have been updated to reflect the new agreements on base quantities.
 
 { .std}
 Provision for voids are supported by a special kind of proxy object and the interference relationship can be used to communicate the full or partial interference between elements.
@@ -277,7 +277,7 @@ Great effort has been spent to better document the dependencies and usage betwee
 &nbsp;
 
 { .std}
-_Disclaimer: The "What's New section of this IFC release is
+_Disclaimer: The "What's New" section of this IFC release is
 provided as an overview of changes. It is intended to be an informative summary
 and is not a complete listing of all changes made or a complete description of
 individual changes. For a detailed summary of all changes made, see the change

@@ -3,8 +3,14 @@
 A spatial project structure might define as many levels of decomposition as necessary for the building project. Elements within the spatial project structure are:
 
 * site as _IfcSite_
-* building as _IfcBuilding_
-* storey as _IfcBuildingStorey_
+* facility as _IfcFacility_, or specifically
+    * building as IfcBuilding
+    * bridge as IfcBridge
+
+* facility part as _IfcFacilityPart_, or specifically
+    * storey as IfcBuildingStorey 
+    * bridge part as IfcBridgePart
+
 * space as _IfcSpace_
 
 or aggregations or parts thereof. The composition type declares an element to be either an element itself, or an aggregation (complex) or a decomposition (part). The interpretation of these types is given at each subtype of _IfcSpatialStructureElement_.

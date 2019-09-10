@@ -36,7 +36,7 @@
 	<WhereRules>
 		<DocWhereRule Name="Consecutive" UniqueId="47d3cc5d-c9a4-49c0-b82a-46025c9534d8">
 			<Documentation>If a list of indexed segments is provided, they need to be consecutive, meaning that the last index of all, but the last, segments shall be identical with the first index of the next segment.</Documentation>
-			<Expression>(SIZEOF(Segments) = 0) OR IfcConsecutiveSegments(Segments)</Expression>
+			<Expression>NOT(EXISTS(Segments) ) OR IfcConsecutiveSegments(Segments)</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>

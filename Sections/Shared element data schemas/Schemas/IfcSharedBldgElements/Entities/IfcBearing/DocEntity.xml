@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcBearing" Name="IfcBearing" UniqueId="7feb8d20-acbe-4802-89c9-3f95ad2667e3" Status="Official" DiagramNumber="6" BaseDefinition="IfcBuildingElement" EntityFlags="32">
+	<DiagramRectangle xsi:type="DocRectangle" X="8205.33333333333" Y="205.333333333333" Width="400" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="38085f8f-852b-4366-8b0c-f65b4f0bd69d" DefinedType="IfcBearingTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Predefined generic type for a bearing that is specified in an enumeration. There may be a property set given specificly for the predefined types.
+&gt; NOTE&amp;nbsp; The _PredefinedType_ shall only be used, if no _IfcBearingType_ is assigned, providing its own _IfcBearingType.PredefinedType_.</Documentation>
+			<DiagramLine>
+				<DocPoint X="8605.33333333333" Y="247.333333333333" />
+				<DocPoint X="8605.33333333333" Y="247.333333333333" />
+				<DocPoint X="8837.33333333333" Y="247.333333333333" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="8605.33333333333" Y="227.333333333333" Width="400" Height="50" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="f83b958a-29a0-4325-b3e1-40befef40bdc">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcBearingType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+ (PredefinedType &lt;&gt; IfcBearingTypeEnum.USERDEFINED) OR
+ ((PredefinedType = IfcBearingTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="a3971436-b1ae-4fb2-837f-2c8f43fcf8eb">
+			<Documentation>Either there is no bearing type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcBearingType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+  (&apos;IFCSHAREDBLDGELEMENTS.IFCBEARINGTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

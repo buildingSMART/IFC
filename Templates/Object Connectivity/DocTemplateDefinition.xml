@@ -234,6 +234,24 @@
 				</DocModelRuleAttribute>
 			</Rules>
 		</DocTemplateDefinition>
+		<DocTemplateDefinition id="Product_Relative_Positioning_1jo2X5iK969AcbDz7acLTX" Name="Product Relative Positioning" UniqueId="6dc82845-b142-4624-a9a5-37d1e4995761" Type="IfcProduct">
+			<Documentation>An _IfcProduct_ can be placed relative to a positioning element such as _IfcAlignment_, _IfcGrid_ or _IfcReferent_.</Documentation>
+			<Rules>
+				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="PositionedRelativeTo">
+					<Rules>
+						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelPositions">
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingPositioningElement" Identification="PositioningElement">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositioningElement" />
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocModelRuleEntity>
+					</Rules>
+				</DocModelRuleAttribute>
+			</Rules>
+		</DocTemplateDefinition>
 		<DocTemplateDefinition id="Sequential_Connectivity_39yHY0ZFP7gki1SSxG46n" Name="Sequential Connectivity" UniqueId="39yHY0ZFP7$gki1SSxG46n" Type="IfcProcess">
 			<Documentation>Processes that occur in time use this relationship to indicate the order of occurrence, such as for tasks, procedures, and events.</Documentation>
 			<Rules>
