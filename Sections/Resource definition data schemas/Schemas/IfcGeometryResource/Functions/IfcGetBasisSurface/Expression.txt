@@ -9,19 +9,23 @@
   IF 'IFCGEOMETRYRESOURCE.IFCPCURVE' IN TYPEOF (C) THEN
     Surfs := [C\IfcPCurve.BasisSurface];
   ELSE
-    IF 'IFCGEOMETRYRESOURCE.IFCCOMPOSITECURVEONSURFACE' IN TYPEOF (C) THEN
+    IF 'IFCGEOMETRYRESOURCE.IFCSURFACECURVE' IN TYPEOF (C) THEN
+      N := SIZEOF(C\IfcSurfaceCurve.AssociatedGeometry);
+      REPEAT i := 1 TO N;
+      Surfs := Surfs + IfcAssociatedSurface(C\IfcSurfaceCurve.AssociatedGeometry[i]);
+      END_REPEAT;
+    END_IF;
+  END_IF;
+  IF 'IFCGEOMETRYRESOURCE.IFCCOMPOSITECURVEONSURFACE' IN TYPEOF (C) THEN
 
-    (* For an IfcCompositeCurveOnSurface the BasisSurface is the intersection
-       of the BasisSurface of all the segments. *)
+    (* For an IfcCompositeCurveOnSurface the BasisSurface is the intersection of the BasisSurface of all the segments. *)
 
     N := SIZEOF(C\IfcCompositeCurve.Segments);
     Surfs := IfcGetBasisSurface(C\IfcCompositeCurve.Segments[1].ParentCurve);
-    
-      IF N > 1 THEN
-        REPEAT i := 2 TO N;
-          Surfs := Surfs * IfcGetBasisSurface(C\IfcCompositeCurve.Segments[1].ParentCurve);
-        END_REPEAT;
-      END_IF;
+    IF N > 1 THEN
+      REPEAT i := 2 TO N;
+        Surfs := Surfs * IfcGetBasisSurface(C\IfcCompositeCurve.Segments[1].ParentCurve);
+      END_REPEAT;
     END_IF;
   END_IF;
   RETURN(Surfs);

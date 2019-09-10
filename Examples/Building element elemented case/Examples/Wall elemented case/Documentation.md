@@ -8,13 +8,15 @@ The wall has three layers: forward-facing drywall, framing, and rear-facing dryw
 * The 'Body' representations of the components is derived from the defined types, the axis path, and the order of the layer as defined by the material layer set.
 * The 'Surface' representation of the wall is derived from the boundaries of the component geometry.
 
-The particular rules defining layout of components of framed walls are out of scope of this specification.
+> NOTE&nbsp; The particular rules defining layout of components of framed walls are out of scope of this specification.
+
+The example in Figure 1 shows the solid representation of the elemented wall, the example in Figure 2 shows the same elemented wall in transparent mode.
 
 <table summary="elemented wall">
  <tr>
-  <td><img src="../../../../figures/examples/ifcwallelementedcase-solid.png" alt="elemented wall">
+  <td style="width:400px"><img src="../../../../figures/examples/ifcwallelementedcase-solid.png" alt="elemented wall" height="400" width="350">
   </td>
-  <td><img src="../../../../figures/examples/ifcwallelementedcase-trans.png" alt="elemented wall">
+  <td style="width:400px"><img src="../../../../figures/examples/ifcwallelementedcase-trans.png" alt="elemented wall" height="400" width="350">
   </td>
  </tr>
  <tr style="height:20px;">

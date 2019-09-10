@@ -5,65 +5,64 @@
 		<DocLocalization Name="Tessellated Face Set" Locale="en" />
 		<DocLocalization Name="Ensemble de faces tessellées" Locale="fr" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="12876.425" Y="478.853352864583" Width="353.6" Height="626.399983723958" />
+	<DiagramRectangle xsi:type="DocRectangle" X="12876.4248046875" Y="478.853363037109" Width="353.6" Height="626.399983723958" />
 	<Subtypes>
 		<DocSubtype UniqueId="35324f0e-ff5e-47d0-9bb4-9a1c2dbaa971" DefinedType="IfcTriangulatedFaceSet" />
 		<DocSubtype UniqueId="35324f0e-ff5e-47d0-9bb4-9a1c2dbaa971" DefinedType="IfcTriangulatedFaceSet" />
+		<DocSubtype UniqueId="435051c7-220d-4b62-9357-610a313a04f2" DefinedType="IfcFacetedFaceSet" />
 	</Subtypes>
 	<Attributes>
 		<DocAttribute Name="Coordinates" UniqueId="28b00035-2a37-4bda-aa0e-7845352fa060" DefinedType="IfcCartesianPointList3D" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>An ordered list of Cartesian points used by the coordinate index defined at the subtypes of _IfcTessellatedFaceSet_.</Documentation>
 			<DiagramLine>
-				<DocPoint X="12876.425" Y="621.119974772135" />
-				<DocPoint X="12876.425" Y="621.119974772135" />
-				<DocPoint X="12315.3540948958" Y="621.119974772135" />
+				<DocPoint X="12876.4248046875" Y="717.119995117188" />
+				<DocPoint X="12876.4248046875" Y="717.119995117188" />
+				<DocPoint X="12243.353769375" Y="717.119995117188" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="12876.425" Y="601.119974772135" Width="141" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="12876.4248046875" Y="697.119995117188" Width="141" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Normals" UniqueId="8e4fd2de-ce33-4f4b-b4e5-15461e76afa9" DefinedType="IfcParameterValue" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0" XsdFormat="content" XsdTagless="true">
-			<Documentation>An ordered list of directions used by the normal index defined at the subtypes of _IfcTessellatedFaceSet_. It is a two-dimensional list of directions provided by three parameter values.</Documentation>
-			<AggregationAttribute xsi:type="DocAttribute" UniqueId="fb69aa3e-5565-4692-805d-76a7aadc08bc" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="3" AggregationUpper="3" />
+		<DocAttribute Name="Dim" UniqueId="43876eff-5b1f-4247-b220-0e835e3f5f0e" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The space dimensionality of this geometric representation item, it is always 3.</Documentation>
+			<Derived>3</Derived>
 			<DiagramLine>
-				<DocPoint X="13230.025" Y="591.920033772786" />
-				<DocPoint X="13230.025" Y="591.920033772786" />
-				<DocPoint X="13718.9583333333" Y="591.920033772786" />
+				<DocPoint X="13230.0248046875" Y="478.853363037109" />
+				<DocPoint X="13230.0248046875" Y="324.950035" />
+				<DocPoint X="14512.333" Y="324.950035" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="13230.025" Y="571.920033772786" Width="245" Height="35" />
-		</DocAttribute>
-		<DocAttribute Name="Closed" UniqueId="c0e5ee61-3125-425f-830c-9f1da3637f80" DefinedType="IfcBoolean" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Indication whether the _IfcTessellatedFaceSet_ is a closed shell or not. If omited no such information can be provided.</Documentation>
-			<DiagramLine>
-				<DocPoint X="13230.025" Y="693.919911702474" />
-				<DocPoint X="13230.025" Y="693.919911702474" />
-				<DocPoint X="13718.9583333333" Y="693.919911702474" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="13230.025" Y="673.919911702474" Width="84" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="13230.0248046875" Y="478.853363037109" Width="400" Height="100" />
 		</DocAttribute>
 		<DocAttribute Name="HasColours" UniqueId="91135fdb-fb22-4f3b-8316-c13c64b911c0" DefinedType="IfcIndexedColourMap" AttributeFlags="32" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="MappedTo" XsdFormat="attribute">
 			<Documentation>Reference to the indexed colour map providing the corresponding colour RGB values to the faces of the subtypes of _IfcTessellatedFaceSet_.</Documentation>
 			<DiagramLine>
-				<DocPoint X="13230.025" Y="847.033365885417" />
-				<DocPoint X="13230.025" Y="847.033365885417" />
+				<DocPoint X="13230.0248046875" Y="847.033365885417" />
+				<DocPoint X="13230.0248046875" Y="847.033365885417" />
 				<DocPoint X="13718.9583333333" Y="847.033365885417" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="13230.025" Y="827.033365885417" Width="279" Height="70" />
+			<DiagramLabel xsi:type="DocRectangle" X="13230.0248046875" Y="827.033365885417" Width="279" Height="70" />
 		</DocAttribute>
 		<DocAttribute Name="HasTextures" UniqueId="bc9e2551-f6b9-4d6e-a1ea-83aa87876820" DefinedType="IfcIndexedTextureMap" AttributeFlags="32" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="MappedTo" XsdFormat="element">
 			<Documentation>Reference to the indexed texture map providing the corresponding texture coordinates to the vertices bounding the faces of the subtypes of _IfcTessellatedFaceSet_.</Documentation>
 			<DiagramLine>
-				<DocPoint X="13230.025" Y="1021.06673177083" />
-				<DocPoint X="13230.025" Y="1021.06673177083" />
+				<DocPoint X="13230.0248046875" Y="1021.06673177083" />
+				<DocPoint X="13230.0248046875" Y="1021.06673177083" />
 				<DocPoint X="13718.9583333333" Y="1021.06673177083" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="13230.025" Y="1001.06673177083" Width="290" Height="70" />
+			<DiagramLabel xsi:type="DocRectangle" X="13230.0248046875" Y="1001.06673177083" Width="290" Height="70" />
 		</DocAttribute>
 	</Attributes>
 	<Tree>
 		<DocLine>
 			<DiagramLine>
-				<DocPoint X="13050.5584635417" Y="1105.25333658854" />
-				<DocPoint X="13050.5584635417" Y="1105.25333658854" />
-				<DocPoint X="13050.5584635417" Y="1205.35994466146" />
+				<DocPoint X="13055.891796875" Y="1105.25334676107" />
+				<DocPoint X="13055.891796875" Y="1105.25334676107" />
+				<DocPoint X="13055.891796875" Y="1813.35998535156" />
+			</DiagramLine>
+		</DocLine>
+		<DocLine>
+			<DiagramLine>
+				<DocPoint X="13230.0248046875" Y="1105.25334676107" />
+				<DocPoint X="13230.0248046875" Y="1258" />
+				<DocPoint X="13730.666015625" Y="1258" />
 			</DiagramLine>
 		</DocLine>
 	</Tree>

@@ -21,22 +21,20 @@
 		<DocAttribute Name="FirstOperand" UniqueId="f51c36f8-0f38-4082-92d9-b168edd7afc6" DefinedType="IfcBooleanOperand" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The first operand to be operated upon by the Boolean operation.</Documentation>
 			<DiagramLine>
-				<DocPoint X="2276.3667" Y="1791.6001" />
-				<DocPoint X="2276.3667" Y="1890.279451" />
-				<DocPoint X="2892.63603" Y="1890.279451" />
-				<DocPoint X="2892.63603" Y="1979.36" />
+				<DocPoint X="2307.70003" Y="1948.02669270833" />
+				<DocPoint X="2307.70003" Y="1948.02669270833" />
+				<DocPoint X="2690.46923828125" Y="1948.02669270833" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2268.5806153" Y="1880.399451" Width="151" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="2307.70003" Y="1928.02669270833" Width="151" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="SecondOperand" UniqueId="aca2312f-8b6b-4323-9475-e793e362a83f" DefinedType="IfcBooleanOperand" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The second operand specified for the operation.</Documentation>
 			<DiagramLine>
-				<DocPoint X="2227.0333" Y="1791.6001" />
-				<DocPoint X="2227.0333" Y="1945.06963" />
-				<DocPoint X="2743.30263" Y="1945.06963" />
-				<DocPoint X="2743.30263" Y="1979.359996" />
+				<DocPoint X="2307.70003" Y="1975.36002604167" />
+				<DocPoint X="2307.70003" Y="1975.36002604167" />
+				<DocPoint X="2690.46923828125" Y="1975.36002604167" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2222.963527" Y="1937.18963" Width="188" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="2307.70003" Y="1955.36002604167" Width="188" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Dim" UniqueId="03027ef0-664e-4604-aeb7-80ba4e6e11eb" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The space dimensionality of this entity. It is identical with the space dimensionality of the first operand. A where rule ensures that both operands have the same space dimensionality.</Documentation>
@@ -52,6 +50,14 @@
 		<DocWhereRule Name="SameDim" UniqueId="4c692fb6-a702-487e-9698-521c2f738198">
 			<Documentation>The dimensionality of the first operand shall be the same as the dimensionality of the second operand.</Documentation>
 			<Expression>FirstOperand.Dim = SecondOperand.Dim</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="FirstOperandClosed" UniqueId="c4ef1e53-5fcb-4c99-b376-c7a996c2e23a">
+			<Documentation>If the _FirstOperand_ is of type _IfcTessellatedFaceSet_ it has to be a closed tessellation.</Documentation>
+			<Expression>NOT(&apos;IFCGEOMETRICMODELRESOURCE.IFCTESSELLATEDFACESET&apos; IN TYPEOF(FirstOperand)) OR (EXISTS(FirstOperand.Closed) AND FirstOperand.Closed)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="SecondOperandClosed" UniqueId="936da695-2834-4af5-8d0a-d04ef6e2683f">
+			<Documentation>If the _SecondOperand_ is of type _IfcTessellatedFaceSet_ it has to be a closed tessellation.</Documentation>
+			<Expression>NOT(&apos;IFCGEOMETRICMODELRESOURCE.IFCTESSELLATEDFACESET&apos; IN TYPEOF(SecondOperand)) OR (EXISTS(SecondOperand.Closed) AND SecondOperand.Closed)</Expression>
 		</DocWhereRule>
 	</WhereRules>
 	<Tree>

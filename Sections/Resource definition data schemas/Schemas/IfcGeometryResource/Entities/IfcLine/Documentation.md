@@ -8,6 +8,7 @@
 > 2. _IfcLine_ with _IfcVector_._Magnitude_: 1.0 AND _IfcTrimmedCurve_ with _Trim1_: 0. and _Trim2_: 2. (and trimming preference being parameter);
 > 3. _IfcLine_ AND _IfcTrimmedCurve_ with _Trim1_::_IfcCartesianPoint_ [0.,0.] and _Trim2_::_IfcCartesianPoint_ [0.,2.] (and trimming preference being Cartesian) - the _IfcVector_._Magnitude_ has no effect;
 > 4. _IfcPolyline_ with _Points[1]_ being 0.,0. and _Points[2]_ being 0.,2.
+> 5. _IfcIndexedPolyCurve_ with two indices, pointing into a point list providing the coordinates (0.,0.) and (0.,2.).
 
 !["line examples"](../../../../../../figures/ifcline-fig1.png "Figure 1 &mdash; Unbounded _IfcLine_ and bounded _IfcTrimmedCurve_")
 

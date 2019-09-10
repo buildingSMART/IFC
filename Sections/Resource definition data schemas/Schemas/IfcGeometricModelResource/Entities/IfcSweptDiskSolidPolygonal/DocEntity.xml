@@ -21,8 +21,9 @@
 			<Expression>NOT(EXISTS(FilletRadius)) OR (FilletRadius &gt;= SELF\IfcSweptDiskSolid.Radius)</Expression>
 		</DocWhereRule>
 		<DocWhereRule Name="DirectrixIsPolyline" UniqueId="cd1f2d6c-4613-4fd1-83db-4a90c7f5404b">
-			<Documentation>The _Directrix_ shall be of type _IfcPolyline_.</Documentation>
-			<Expression>&apos;IFCGEOMETRYRESOURCE.IFCPOLYLINE&apos; IN TYPEOF(SELF\IfcSweptDiskSolid.Directrix)</Expression>
+			<Documentation>The _Directrix_ shall be of type _IfcIndexedPolyCurve_ with no _Segments_, or of type _IfcPolyline_.</Documentation>
+			<Expression>(&apos;IFCGEOMETRYRESOURCE.IFCPOLYLINE&apos; IN TYPEOF(SELF\IfcSweptDiskSolid.Directrix)) OR
+((&apos;IFCGEOMETRYRESOURCE.IFCINDEXEDPOLYCURVE&apos; IN TYPEOF(SELF\IfcSweptDiskSolid.Directrix)) AND NOT(EXISTS(SELF\IfcSweptDiskSolid.Directrix.Segments)))</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>

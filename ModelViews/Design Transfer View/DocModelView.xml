@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocModelView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Design_Transfer_View_3PQnVXqPDAwhT_YbPSxKai" Name="Design Transfer View" UniqueId="3PQnVXqPDAwhT_YbPSxKai" Code="DesignTransferView_V1" Version="1.0" Status="Official" BaseView="86aa67de-829b-467b-9cd8-dd364beabe79" XsdUri="http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1">
+<DocModelView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Design_Transfer_View_3PQnVXqPDAwhT_YbPSxKai" Name="Design Transfer View" UniqueId="3PQnVXqPDAwhT_YbPSxKai" Code="DesignTransferView_V1-1" Version="1.1" Status="Proposal" Owner="bSI" Copyright="&amp;copy; 1996-2016 buildingSMART International Ltd." BaseView="86aa67de-829b-467b-9cd8-dd364beabe79" XsdUri="http://www.buildingsmart-tech.org/ifcXML/IFC4_ADD1">
 	<Exchanges>
 		<DocExchangeDefinition id="Design_Transfer_Exchange_34c6WDp8j0Cgdpp6il2Mz2" Name="Design Transfer Exchange" UniqueId="34c6WDp8j0Cgdpp6il2Mz2">
 			<Documentation>As the Design Transfer View is derived from the Reference View, all concepts listed in the Reference Exchange also apply to the Design Transfer Exchange, however for brevity that are not repeated within the table that follows.</Documentation>
@@ -32,7 +32,7 @@
 &lt;table&gt;
 
  &lt;tr&gt;
-  &lt;td&gt;&lt;img src=&quot;../../figures/ifcbeamstandardcase_cardinalpoint.png&quot; height=&quot;250&quot; width=&quot;500&quot; alt=&quot;Cardinal point usage&quot;&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;img src=&quot;../../figures/ifcbeamstandardcase_cardinalpoint.png&quot; width=&quot;675&quot; alt=&quot;Cardinal point usage&quot;&gt;&lt;/td&gt;
   &lt;td&gt;
 
     &lt;blockquote class=&quot;example&quot;&gt;EXAMPLE&amp;nbsp; Figure 2 illustrates alignment of cardinal points.&lt;/blockquote&gt;
@@ -86,7 +86,7 @@
 &lt;table border=&quot;0&quot; cellpadding=&quot;2&quot; cellspacing=&quot;2&quot; summary=&quot;Axis&quot;&gt;
 
 &lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;top&quot; width=&quot;350&quot;&gt;
-&lt;img src=&quot;../../figures/ifcbeamstandardcase_axis-01.png&quot; alt=&quot;Axis&quot; height=&quot;300&quot; width=&quot;400&quot; border=&quot;1&quot;&gt;&lt;/td&gt;
+&lt;img src=&quot;../../figures/ifcbeamstandardcase_axis-01.png&quot; alt=&quot;Axis&quot; height=&quot;280&quot; width=&quot;400&quot; border=&quot;1&quot;&gt;&lt;/td&gt;
 &lt;td&gt;&lt;blockquote class=&quot;example&quot;&gt;EXAMPLE&amp;nbsp; As shown in Figure 76, the axis shall be defined along the z axis of the object coordinate system. The axis representation can be used to represent the system length of a beam that may extent the body length of the beam.&lt;/blockquote&gt;
 
 &lt;/td&gt;
@@ -99,9 +99,9 @@
 &lt;table&gt;
 
 &lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;top&quot; width=&quot;350&quot;&gt;
-&lt;img src=&quot;../../figures/ifcbeamstandardcase_axis-02.png&quot; alt=&quot;Axis&quot; height=&quot;300&quot; width=&quot;400&quot; border=&quot;1&quot;&gt;&lt;/td&gt;
+&lt;img src=&quot;../../figures/ifcbeamstandardcase_axis-02.png&quot; alt=&quot;Axis&quot; height=&quot;290&quot; width=&quot;400&quot; border=&quot;1&quot;&gt;&lt;/td&gt;
 &lt;td&gt;&lt;blockquote class=&quot;example&quot;&gt;EXAMPLE&amp;nbsp; As shown in Figure 77, the axis representation shall be used to represent the cardinal point as the offset between the &apos;Axis&apos; and the extrusion path of the beam. The extrusion path is provided as &lt;em&gt;IfcExtrudedAreaSolid.ExtrudedDirection&lt;/em&gt; and should be parallel to the &apos;Axis&apos; and the z axis. It has to be guaranteed that the value provided by
-&lt;em&gt;IfcMaterialProfileSetUsage.CardinalPoint&lt;/em&gt; is consistent to the &lt;em&gt;IfcExtrudedAreaSolid.Position&lt;/em&gt;.&lt;/blockquote&gt;
+&lt;em&gt;IfcMaterialProfileSetUsage.CardinalPoint&lt;/em&gt; is consistent to the &lt;em&gt;IfcParameterizedProfileDef.Position&lt;/em&gt;.&lt;/blockquote&gt;
 
 &lt;/td&gt;
 &lt;/tr&gt;
@@ -245,10 +245,10 @@ The shared profile definition is defined by assigning an _IfcMaterialProfileSet_
 				<DocTemplateUsage Name="Port" UniqueId="172f08ce-3aeb-4d99-bf29-d7394fc162ec">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Port_Nesting_2w9EtqE92s8JFNQ8EuKWA" />
 					<Items>
-						<DocTemplateItem UniqueId="8a5c7e47-b0a8-42e0-9b1f-b224a854a698" RuleParameters="Name=Head;Flow=SINK;Type=NOTDEFINED;" Order="0">
+						<DocTemplateItem UniqueId="8a5c7e47-b0a8-42e0-9b1f-b224a854a698" RuleParameters="PortName=Head;Flow=SINK;SystemType=NOTDEFINED;" Order="0">
 							<Documentation>Head connection.</Documentation>
 						</DocTemplateItem>
-						<DocTemplateItem UniqueId="1cb49665-3a35-4a9f-a0df-d7fd31fca976" RuleParameters="Name=Tail;Type=NOTDEFINED;Flow=SOURCE" Order="0">
+						<DocTemplateItem UniqueId="1cb49665-3a35-4a9f-a0df-d7fd31fca976" RuleParameters="PortName=Tail;SystemType=NOTDEFINED;Flow=SOURCE;" Order="0">
 							<Documentation>Tail connection.</Documentation>
 						</DocTemplateItem>
 					</Items>
@@ -262,10 +262,10 @@ The shared profile definition is defined by assigning an _IfcMaterialProfileSet_
 				<DocTemplateUsage Name="Port" UniqueId="697110d7-7979-4123-8d10-648bfbdcff67">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Port_Nesting_2w9EtqE92s8JFNQ8EuKWA" />
 					<Items>
-						<DocTemplateItem UniqueId="609a5b8f-8824-42ec-923c-7cc09c701162" RuleParameters="Name=Input;Type=NOTDEFINED;Flow=SINK" Order="0">
+						<DocTemplateItem UniqueId="609a5b8f-8824-42ec-923c-7cc09c701162" RuleParameters="PortName=Input;SystemType=NOTDEFINED;Flow=SINK;" Order="0">
 							<Documentation>The input end of the cable. While many cables may be bidirectional, port direction is indicated for connectivity purposes.</Documentation>
 						</DocTemplateItem>
-						<DocTemplateItem UniqueId="6ace2a40-6556-4d59-8678-4966902a1a66" RuleParameters="Name=Output;Type=NOTDEFINED;Flow=SOURCE" Order="0">
+						<DocTemplateItem UniqueId="6ace2a40-6556-4d59-8678-4966902a1a66" RuleParameters="PortName=Output;SystemType=NOTDEFINED;Flow=SOURCE;" Order="0">
 							<Documentation>The output end of the cable. While many cables may be bidirectional, port direction is indicated for connectivity purposes.</Documentation>
 						</DocTemplateItem>
 					</Items>
@@ -593,10 +593,10 @@ height. Distance to the centre line of the transom.&lt;/li&gt;
 				<DocTemplateUsage Name="Port" UniqueId="c4dd0fe5-4948-4337-9de4-37f8422ab2bd">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Port_Nesting_2w9EtqE92s8JFNQ8EuKWA" />
 					<Items>
-						<DocTemplateItem UniqueId="948966c7-f1d9-438a-86c5-35c0e621d8c2" RuleParameters="Name=Inlet;Type=NOTDEFINED;Flow=SINK" Order="0">
+						<DocTemplateItem UniqueId="948966c7-f1d9-438a-86c5-35c0e621d8c2" RuleParameters="PortName=Inlet;SystemType=NOTDEFINED;Flow=SINK;" Order="0">
 							<Documentation>The flow inlet.</Documentation>
 						</DocTemplateItem>
-						<DocTemplateItem UniqueId="0343b867-5d6f-4a76-b953-e88bcecc97d2" RuleParameters="Name=Outlet;Type=NOTDEFINED;Flow=SOURCE" Order="0">
+						<DocTemplateItem UniqueId="0343b867-5d6f-4a76-b953-e88bcecc97d2" RuleParameters="PortName=Outlet;SystemType=NOTDEFINED;Flow=SOURCE;" Order="0">
 							<Documentation>The flow outlet.</Documentation>
 						</DocTemplateItem>
 					</Items>
@@ -695,7 +695,7 @@ Figure 2 illustrates an element assembly type used for wall framing.
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcElementType" />
 			<Concepts>
 				<DocTemplateUsage Name="Material Constituents" UniqueId="6ec6b5c3-af3f-4791-8d5d-a6e1aebaa167">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Constituents_3PRtzzvq9Dk9jT6ADgRVY4" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Constituent_Set_3PRtzzvq9Dk9jT6ADgRVY4" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Material Single" UniqueId="d59f0b28-eb83-4d79-b39c-e4b32c7c262e">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Single_1VEQWKHA1Fiut6tQe5OFnK" />
@@ -748,6 +748,9 @@ Figure 2 illustrates an element assembly type used for wall framing.
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Element Type Aggregation" UniqueId="d4e584cf-be32-4ed1-8f43-d63febc92e70">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Type_Element_Aggregation_2Vp5fc8gT1h9CeCNMOHT5I" />
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Property Sets for Types" UniqueId="2e2b6c5d-f0e1-4501-80a2-5cab74825cda">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Types_1Bup4gCPb9Bh84oi8YcfhU" />
 				</DocTemplateUsage>
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcElementType" />
@@ -1015,6 +1018,10 @@ The shared profile definition is defined by assigning an _IfcMaterialProfileSet_
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcMemberType" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="4ec3a63a-be26-479e-a7bc-f5feb1beca61">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcOpeningElement" />
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcOpeningElement" />
+		</DocConceptRoot>
+		<DocConceptRoot UniqueId="4ec3a63a-be26-479e-a7bc-f5feb1beca61">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcOpeningStandardCase" />
 			<Concepts>
 				<DocTemplateUsage Name="Body SweptSolid Geometry" UniqueId="e18806d9-0ccf-457e-88b0-bdb4181b5112">
@@ -1067,10 +1074,10 @@ The shared profile definition is defined by assigning an _IfcMaterialProfileSet_
 				<DocTemplateUsage Name="Port" UniqueId="d72b5121-09fb-44d1-90d5-6adb1685e5e9">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Port_Nesting_2w9EtqE92s8JFNQ8EuKWA" />
 					<Items>
-						<DocTemplateItem UniqueId="235782d6-3121-44b4-baf2-c7918cd00823" RuleParameters="Name=Inlet;Flow=SINK;Type=NOTDEFINED;" Order="0">
+						<DocTemplateItem UniqueId="235782d6-3121-44b4-baf2-c7918cd00823" RuleParameters="PortName=Inlet;Flow=SINK;SystemType=NOTDEFINED;" Order="0">
 							<Documentation>The flow inlet.</Documentation>
 						</DocTemplateItem>
-						<DocTemplateItem UniqueId="dc7eaa73-e66e-4a12-9839-dbdf51b4f1f1" RuleParameters="Name=Outlet;Type=NOTDEFINED;Flow=SOURCE" Order="0">
+						<DocTemplateItem UniqueId="dc7eaa73-e66e-4a12-9839-dbdf51b4f1f1" RuleParameters="PortName=Outlet;SystemType=NOTDEFINED;Flow=SOURCE;" Order="0">
 							<Documentation>The flow outlet.</Documentation>
 						</DocTemplateItem>
 					</Items>
@@ -1251,8 +1258,8 @@ The shared material layer set definition is defined by assigning an _IfcMaterial
 		<DocConceptRoot UniqueId="4ec3a63a-be26-479e-a7bc-f5feb1beca61">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcProject" />
 			<Concepts>
-				<DocTemplateUsage Name="Property Template Definitions" UniqueId="f7aa9726-a69e-4dde-b8cb-c6338cb5ad15">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Template_Definitions_3MxTphmG92Hux09EVKnTgR" />
+				<DocTemplateUsage Name="Project Template Definitions" UniqueId="f7aa9726-a69e-4dde-b8cb-c6338cb5ad15">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Project_Template_Definitions_3MxTphmG92Hux09EVKnTgR" />
 				</DocTemplateUsage>
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcProject" />
@@ -1272,11 +1279,11 @@ The shared material layer set definition is defined by assigning an _IfcMaterial
 					</Exchanges>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Object Type Definitions" UniqueId="7b2421bb-0311-414b-ae45-6a551c60e047">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Type_Definitions_1ZJYVtVjjE8hZC9V7DnsNE" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Project_Type_Definitions_1ZJYVtVjjE8hZC9V7DnsNE" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Property Template Definitions" UniqueId="5fefb1c9-1031-4001-b664-9f4b44f78607">
 					<Documentation>If a project includes custom properties for which end users should be able to view and/or edit, then backing property templates must be defined. Such templates define applicable data types and values. Applications should not allow modification of any custom properties (other than those defined within this specification) for which no template is available.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Template_Definitions_3MxTphmG92Hux09EVKnTgR" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Project_Template_Definitions_3MxTphmG92Hux09EVKnTgR" />
 				</DocTemplateUsage>
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcProjectLibrary" />

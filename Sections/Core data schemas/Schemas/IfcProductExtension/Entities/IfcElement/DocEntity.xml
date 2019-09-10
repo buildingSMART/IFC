@@ -71,7 +71,7 @@
 			</DiagramLine>
 			<DiagramLabel xsi:type="DocRectangle" X="459.760583" Y="2083.73898" Width="474" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="HasProjections" UniqueId="4faee8d9-3beb-4087-9728-11eb04b2e9dd" DefinedType="IfcRelProjectsElement" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingElement">
+		<DocAttribute Name="HasProjections" UniqueId="4faee8d9-3beb-4087-9728-11eb04b2e9dd" DefinedType="IfcRelProjectsElement" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingElement" XsdFormat="attribute">
 			<Documentation>Projection relationship that adds a feature (using a Boolean union) to the _IfcBuildingElement_.</Documentation>
 			<DiagramLine>
 				<DocPoint X="505.42725" Y="740.2962" />
@@ -93,7 +93,7 @@
 			</DiagramLine>
 			<DiagramLabel xsi:type="DocRectangle" X="538.76058" Y="1212.846217" Width="599" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="HasOpenings" UniqueId="887366e1-d446-4f3b-8643-605d00ce2c16" DefinedType="IfcRelVoidsElement" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingBuildingElement">
+		<DocAttribute Name="HasOpenings" UniqueId="887366e1-d446-4f3b-8643-605d00ce2c16" DefinedType="IfcRelVoidsElement" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="?" Inverse="RelatingBuildingElement" XsdFormat="attribute">
 			<Documentation>Reference to the _IfcRelVoidsElement_ relationship that creates an opening in an element. An element can incorporate zero-to-many openings. For each opening, that voids the element, a new relationship _IfcRelVoidsElement_ is generated.</Documentation>
 			<DiagramLine>
 				<DocPoint X="505.42725" Y="662.96288" />

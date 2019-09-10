@@ -5,7 +5,7 @@
   Result : BOOLEAN := TRUE;
  END_LOCAL;
 
-  REPEAT i := 1 to (HIINDEX(Segments)-1);
+  REPEAT i := 1 TO (HIINDEX(Segments)-1);
     IF Segments[i][HIINDEX(Segments[i])] <> Segments[i+1][1] THEN
       BEGIN
         Result := FALSE;
