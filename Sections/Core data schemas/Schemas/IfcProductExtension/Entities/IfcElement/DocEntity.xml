@@ -27,7 +27,7 @@
 			</DiagramLine>
 			<DiagramLabel xsi:type="DocRectangle" X="505.42725" Y="365.629547119141" Width="50" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="FillsVoids" UniqueId="013896b3-ab8f-4c8f-b6e5-b79d6fd26de9" DefinedType="IfcRelFillsElement" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatedBuildingElement">
+		<DocAttribute Name="FillsVoids" UniqueId="013896b3-ab8f-4c8f-b6e5-b79d6fd26de9" DefinedType="IfcRelFillsElement" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatedBuildingElement" XsdFormat="hidden">
 			<Documentation>Reference to the _IfcRelFillsElement_ Relationship that puts the element as a filling into the opening created within another element.</Documentation>
 			<DiagramLine>
 				<DocPoint X="505.42725" Y="702.9629" />
@@ -71,7 +71,7 @@
 			</DiagramLine>
 			<DiagramLabel xsi:type="DocRectangle" X="459.760583" Y="2083.73898" Width="474" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="HasProjections" UniqueId="4faee8d9-3beb-4087-9728-11eb04b2e9dd" DefinedType="IfcRelProjectsElement" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingElement" XsdFormat="attribute">
+		<DocAttribute Name="HasProjections" UniqueId="4faee8d9-3beb-4087-9728-11eb04b2e9dd" DefinedType="IfcRelProjectsElement" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingElement" XsdFormat="element">
 			<Documentation>Projection relationship that adds a feature (using a Boolean union) to the _IfcBuildingElement_.</Documentation>
 			<DiagramLine>
 				<DocPoint X="505.42725" Y="740.2962" />
@@ -93,7 +93,7 @@
 			</DiagramLine>
 			<DiagramLabel xsi:type="DocRectangle" X="538.76058" Y="1212.846217" Width="599" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="HasOpenings" UniqueId="887366e1-d446-4f3b-8643-605d00ce2c16" DefinedType="IfcRelVoidsElement" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="?" Inverse="RelatingBuildingElement" XsdFormat="attribute">
+		<DocAttribute Name="HasOpenings" UniqueId="887366e1-d446-4f3b-8643-605d00ce2c16" DefinedType="IfcRelVoidsElement" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="?" Inverse="RelatingBuildingElement" XsdFormat="element">
 			<Documentation>Reference to the _IfcRelVoidsElement_ relationship that creates an opening in an element. An element can incorporate zero-to-many openings. For each opening, that voids the element, a new relationship _IfcRelVoidsElement_ is generated.</Documentation>
 			<DiagramLine>
 				<DocPoint X="505.42725" Y="662.96288" />
@@ -141,7 +141,7 @@
 			</DiagramLine>
 			<DiagramLabel xsi:type="DocRectangle" X="573.187997" Y="1043.062884" Width="584" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="HasCoverings" UniqueId="e73f220c-19f9-4fbd-9302-9b407708ffdf" DefinedType="IfcRelCoversBldgElements" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingBuildingElement">
+		<DocAttribute Name="HasCoverings" UniqueId="e73f220c-19f9-4fbd-9302-9b407708ffdf" DefinedType="IfcRelCoversBldgElements" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingBuildingElement" XsdFormat="element">
 			<Documentation>Reference to _IfcCovering_ by virtue of the objectified relationship _IfcRelCoversBldgElement_. It defines the concept of an element having coverings associated.</Documentation>
 			<DiagramLine>
 				<DocPoint X="505.42725" Y="480.399912516276" />

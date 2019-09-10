@@ -1,1 +1,0 @@
-﻿The ratio of power generated divided by incident solar power.

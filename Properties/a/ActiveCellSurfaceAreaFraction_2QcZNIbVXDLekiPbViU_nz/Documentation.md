@@ -1,1 +1,0 @@
-﻿The percentage of surface area containing active solar cells. Note: the surface area may be provided at Qto_SolarDeviceBaseQuantities.GrossArea.

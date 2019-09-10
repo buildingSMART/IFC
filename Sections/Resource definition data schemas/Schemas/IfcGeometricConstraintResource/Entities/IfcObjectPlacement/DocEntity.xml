@@ -5,10 +5,11 @@
 		<DocLocalization Name="Object Placement" Locale="en" />
 		<DocLocalization Name="Positionnement d&apos;objet" Locale="fr" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="231.38021" Y="429.61667" Width="460.6" Height="100" />
+	<DiagramRectangle xsi:type="DocRectangle" X="932.713536580404" Y="322.950002034505" Width="460.6" Height="100" />
 	<Subtypes>
 		<DocSubtype UniqueId="3bbca550-f7f4-4674-a3c1-6505a15a9e12" DefinedType="IfcGridPlacement" />
 		<DocSubtype UniqueId="f3dc67eb-1ef4-4b77-bbc0-8bbc30e14c51" DefinedType="IfcLocalPlacement" />
+		<DocSubtype UniqueId="8200edef-bcea-4517-9b59-fbb49bcf03c7" DefinedType="IfcLinearPlacement" />
 	</Subtypes>
 	<Attributes>
 		<DocAttribute Name="PlacesObject" UniqueId="badd4380-1510-40db-86e6-386eac940e22" DefinedType="IfcProduct" AttributeFlags="32" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="ObjectPlacement">
@@ -23,25 +24,27 @@ an object coordinate system for instances of _IfcProduct_.
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The cardinality has changed to 0..n to allow reuse of instances of _IfcObjectPlacement_ as placement object in one to many products. It takes also into account that it can act as a placement for _IfcStructuralAnalysisModel_.</Documentation>
 			<DiagramLine>
-				<DocPoint X="461.68021" Y="429.61667" />
-				<DocPoint X="461.68021" Y="233.5" />
+				<DocPoint X="1204.26668127604" Y="322.950002034505" />
+				<DocPoint X="1204.26668127604" Y="322.950002034505" />
+				<DocPoint X="1204.26668127604" Y="172.166669209798" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="626.72031" Y="444.89167" Width="294" Height="70" />
+			<DiagramLabel xsi:type="DocRectangle" X="1204.26668127604" Y="302.950002034505" Width="294" Height="70" />
 		</DocAttribute>
 		<DocAttribute Name="ReferencedByPlacements" UniqueId="27fc033d-5ad5-4a3e-a8a8-5b74f2b80a81" DefinedType="IfcLocalPlacement" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="PlacementRelTo">
 			<Documentation>Placements that are given relative to this placement of an object.</Documentation>
 			<DiagramLine>
-				<DocPoint X="1454.5051" Y="673.14999" />
-				<DocPoint X="1454.5051" Y="479.61665" />
-				<DocPoint X="691.98021" Y="479.61665" />
+				<DocPoint X="1284.5135" Y="422.950002034505" />
+				<DocPoint X="1284.5135" Y="422.950002034505" />
+				<DocPoint X="1284.5135" Y="673.14999" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1469.674767" Y="527.71665" Width="435" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="1284.5135" Y="442.950002034505" Width="435" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<Tree>
 		<DocLine>
 			<DiagramLine>
-				<DocPoint X="461.68021" Y="529.61667" />
+				<DocPoint X="932.713536580404" Y="422.950002034505" />
+				<DocPoint X="932.713536580404" Y="612.627503" />
 				<DocPoint X="461.68021" Y="612.627503" />
 			</DiagramLine>
 			<Tree>
@@ -55,6 +58,13 @@ an object coordinate system for instances of _IfcProduct_.
 					<DiagramLine>
 						<DocPoint X="1105.2691" Y="612.6275" />
 						<DocPoint X="1105.2691" Y="673.14999" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="461.68021" Y="612.627503" />
+						<DocPoint X="450.666615168254" Y="612.627503" />
+						<DocPoint X="450.666615168254" Y="491.999969482422" />
 					</DiagramLine>
 				</DocLine>
 			</Tree>

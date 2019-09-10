@@ -1,1 +1,0 @@
-﻿The capacity for each battery module.

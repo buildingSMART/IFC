@@ -356,7 +356,7 @@ In scope of presentation capabilities for the appearance of model element shapes
 
 * "_Surface Style Shading_", applying a single coloring for each solid; 
 * "_Surface Style Rendering_", applying a single rendering (color, transparency, reflection, etc.) for each solid; 
-* "_Surface_", applying a single texture for each solid according to a texture mapping based on the solid type; 
+* "_Surface Style textures_", applying a single texture for each solid according to a texture mapping based on the solid type; 
 * "_Suface Style Tessellation_", applying a color and/or texture for each face of a tessellated solid. 
 
 The visually adaquate presentation of model elements is constraint by the shape representation

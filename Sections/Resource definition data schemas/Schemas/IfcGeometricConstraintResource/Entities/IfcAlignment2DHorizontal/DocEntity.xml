@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAlignment2DHorizontal" UniqueId="e57f51f6-a65e-414c-b15d-0bb4b722efd9" DiagramNumber="4" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="32">
+	<Localization>
+		<DocLocalization Name="Alignment Curve 2D Horizontal" Locale="en" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="5263.99967447917" Y="663.999979654948" Width="490.666656494141" Height="100" />
+	<Attributes>
+		<DocAttribute Name="StartDistAlong" UniqueId="7073082c-b2f5-42ba-ba62-83e97a2b6d55" DefinedType="IfcLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The value of the distance along at the start of the horizontal alignment. If omited (standard) it is set to zero.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5687.99951171875" Y="763.999979654948" />
+				<DocPoint X="5687.99951171875" Y="763.999979654948" />
+				<DocPoint X="5687.99951171875" Y="810.666687011719" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5687.99951171875" Y="783.999979654948" Width="0" Height="0" />
+		</DocAttribute>
+		<DocAttribute Name="Segments" UniqueId="50ecea80-5232-4b45-8228-ef320548a978" DefinedType="IfcAlignment2DHorizontalSegment" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="?">
+			<Documentation>An ordered list of unique horizontal alignment segments, each (but the last) are joint end to start</Documentation>
+			<DiagramLine>
+				<DocPoint X="5263.99967447917" Y="663.999979654948" />
+				<DocPoint X="5165.33399963379" Y="663.999979654948" />
+				<DocPoint X="5165.33399963379" Y="606.666646321615" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5263.99967447917" Y="643.999979654948" Width="400" Height="100" />
+		</DocAttribute>
+		<DocAttribute Name="ToAlignmentCurve" UniqueId="6d484e25-b8e9-44fa-8f25-c1ac72b9f48b" DefinedType="IfcAlignmentCurve" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="?" Inverse="Horizontal">
+			<DiagramLine>
+				<DocPoint X="5285.33333333333" Y="763.999979654948" />
+				<DocPoint X="5285.33333333333" Y="763.999979654948" />
+				<DocPoint X="5285.33333333333" Y="824.000244140625" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5285.33333333333" Y="783.999979654948" Width="400" Height="100" />
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

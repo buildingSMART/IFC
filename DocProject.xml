@@ -6,11 +6,11 @@
 
 Official schema publications for this release are at the following URLs:
 
-* **IFC EXPRESS**: [http://www.buildingsmart-tech.org/ifc/IFC4/Add2/IFC4_ADD2.exp](http://www.buildingsmart-tech.org/ifc/IFC4/Add2/IFC4_ADD2.exp){ target=&quot;_blank&quot;}
-* **ifcXML XSD**: [http://www.buildingsmart-tech.org/ifc/IFC4/Add2/IFC4_ADD2.xsd](http://www.buildingsmart-tech.org/ifc/IFC4/Add2/IFC4_ADD2.xsd){ target=&quot;_blank&quot;}
-* **ifcXML Config**: [http://www.buildingsmart-tech.org/ifc/IFC4/Add2/IFC4_ADD2_config.xml](http://www.buildingsmart-tech.org/ifc/IFC4/Add2/IFC4_ADD2_config.xml){ target=&quot;_blank&quot;}</Documentation>
+* **IFC EXPRESS**: [http://www.buildingsmart-tech.org/ifc/review/IFC4x1/RC3/IFC4x1_RC3.exp](http://www.buildingsmart-tech.org/ifc/review/IFC4x1/RC3/IFC4x1_RC3.exp){ target=&quot;_blank&quot;}
+* **ifcXML XSD**: [http://www.buildingsmart-tech.org/ifc/review/IFC4x1/RC3/IFC4x1_RC3.xsd](http://www.buildingsmart-tech.org/ifc/review/IFC4x1/RC3/IFC4x1_RC3.xsd){ target=&quot;_blank&quot;}
+* **ifcXML Config**: [http://www.buildingsmart-tech.org/ifc/review/IFC4x1/RC3/IFC4x1_RC3_config.xml](http://www.buildingsmart-tech.org/ifc/review/IFC4x1/RC3/IFC4x1_RC3_config.xml){ target=&quot;_blank&quot;}</Documentation>
 		</DocAnnex>
-		<DocAnnex Name="Alphabetical listings" UniqueId="65e0182b-6622-4757-a3d9-77225e2cb119" Code="IFC4">
+		<DocAnnex Name="Alphabetical listings" UniqueId="65e0182b-6622-4757-a3d9-77225e2cb119" Code="IFC4" Status="Candidate">
 			<Documentation>This annex contains listings of definitions an alphabetical order according to identifier and language-specific name.</Documentation>
 		</DocAnnex>
 		<DocAnnex Name="Inheritance listings" UniqueId="89866beb-9946-4e73-875e-18545783f5c6">
@@ -23,7 +23,24 @@ Official schema publications for this release are at the following URLs:
 			<Documentation>This annex contains examples that implement this specification.</Documentation>
 		</DocAnnex>
 		<DocAnnex Name="Change logs" UniqueId="6e2c10a0-0f1b-4502-9182-9f376a374ff8">
-			<Documentation>This annex contains change logs comparing this release with the IFC4 final release, and the IFC4 final to the previous version IFC2X3 TC1.</Documentation>
+			<Documentation>This annex contains change logs comparing this release with prior releases.
+
+#### Update Log
+Updates to this publication are described below.
+
+{ .gridtable}
+Date | Description
+---- | -----------
+2016-08-23 | Initial draft with proposed data types.
+2016-08-30 | Added referents and types to support variable cross sections.
+2016-10-10 | Added spatial entities for infrastructure.
+2016-11-16 | Added example for bridge geometry using alignment curves and string lines based on offset curves.
+2016-12-05 | Added IfcSectionedSolidHorizontal; removed IfcFixedDirectionSweptAreaSolid, IfcRelPositions, and spatial entities for infrastructure; updated examples to use new data types.
+2017-01-20 | Added and corrected new Where rules, removed Schramm transition curve type (identical to biquadratic parabola), documented transition curve types and triangulated irregular networks.
+2017-01-24 | Updated examples, corrected reported errors, added guidance for alignment curve types, added links for reporting issues.
+2017-01-26 | Added example for IfcLinearPlacement, marked as Release Candidate 3
+2017-03-02 | Deprecated IfcClothoidalArcSegment2D, corrected errors in examples, clarified descriptions for vertical curves.
+2017-03-10 | Replaced IfcCartesianPointList2DLabelled with TagList attributes at IfcCartesianPointList2D and IfcCartesianPointList3D, subtyped orphaned alignment definitions from IfcGeometricRepresentationItem, fixed formatting errors in rules and examples.</Documentation>
 		</DocAnnex>
 	</Annexes>
 	<NormativeReferences>
@@ -88,6 +105,9 @@ Official schema publications for this release are at the following URLs:
 		</DocReference>
 		<DocReference Name="ISO/IEC 8824-1" UniqueId="68060012-1926-4502-b5d2-0e1eb4054efe">
 			<Documentation>Information technology &amp;mdash; Abstract Syntax Notation One (ASN.1) &amp;mdash; Part 1: Specification of basic notation</Documentation>
+		</DocReference>
+		<DocReference Name="LandXML" UniqueId="e3dcb8fa-6730-43d5-b78f-e79d766d4033">
+			<Documentation>LandXML.org &amp;mdash; Transition Curves in Road Design</Documentation>
 		</DocReference>
 		<DocReference Name="RFC 3986" UniqueId="e03625a9-98bf-4d4d-a4bc-84f212ec2e5f">
 			<Documentation>Uniform Resource Identifier (URI): Generic Syntax &amp;mdash; Network Working Group NWG Standard</Documentation>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcReinforcingElement" Name="IfcReinforcingElement" UniqueId="ca6074f0-a8aa-4b5b-a402-931d20010f8b" DiagramNumber="2" BaseDefinition="IfcElementComponent" EntityFlags="197">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcReinforcingElement" Name="IfcReinforcingElement" UniqueId="ca6074f0-a8aa-4b5b-a402-931d20010f8b" Status="H" DiagramNumber="2" BaseDefinition="IfcElementComponent" EntityFlags="197">
 	<Localization>
 		<DocLocalization Name="Bewehrung" Locale="de" />
 		<DocLocalization Name="Reinforcing Element" Locale="en" />
@@ -13,8 +13,10 @@
 		<DocSubtype UniqueId="2d48ddb0-823a-4fa9-ae42-2a920e39d81a" DefinedType="IfcTendonAnchor" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="SteelGrade" UniqueId="cc4f684c-9582-4577-b0f1-3dceb69e65f9" Status="Deprecated" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>{ .change-ifc2x4}
+		<DocAttribute Name="SteelGrade" UniqueId="cc4f684c-9582-4577-b0f1-3dceb69e65f9" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Deprecated.
+
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; Attribute deprecated. Use material association at _IfcReinforcingElementType_ instead.</Documentation>
 			<DiagramLine>
 				<DocPoint X="1911.6957" Y="240.58965" />
