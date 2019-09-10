@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSeamCurve" UniqueId="b95f48a3-6b56-4eb3-90bf-c76eea036d6f" DiagramNumber="5" BaseDefinition="IfcSurfaceCurve" EntityFlags="32">
+	<DiagramRectangle xsi:type="DocRectangle" X="7114.66650390625" Y="1893.33337402344" Width="400" Height="100" />
+	<Subtypes>
+		<DocSubtype UniqueId="11892f71-8573-4d5d-96ba-3471c3cebfc6" DefinedType="IfcSeamCurve" />
+	</Subtypes>
+	<WhereRules>
+		<DocWhereRule Name="TwoPCurves" UniqueId="a77821ae-a71c-4ade-93d2-1209e105b3b8">
+			<Documentation>The intersection curve shall have precisely two associated geometry elements.</Documentation>
+			<Expression>SIZEOF(SELF\IfcSurfaceCurve.AssociatedGeometry) = 2</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="SameSurface" UniqueId="cd551675-c4e3-4aea-b97c-dacdc9855e9b">
+			<Documentation>The two associated geometries shall be related to the same surface.</Documentation>
+			<Expression>IfcAssociatedSurface(SELF\IfcSurfaceCurve.AssociatedGeometry[1]) = IfcAssociatedSurface(SELF\IfcSurfaceCurve.AssociatedGeometry[2])</Expression>
+		</DocWhereRule>
+	</WhereRules>
+	<Tree>
+		<DocLine>
+			<DiagramLine>
+				<DocPoint X="0" Y="0" />
+				<DocPoint X="0" Y="0" />
+				<DocPoint X="0" Y="0" />
+			</DiagramLine>
+		</DocLine>
+	</Tree>
+</DocEntity>
+

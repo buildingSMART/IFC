@@ -6,11 +6,13 @@ If the transitions between consecutive segments of the _Directrix_ are not tange
 
 Figure 1 illustrates an example.
 
-* _Directrix_ given as _IfcCompositeCurve_ being tangent continuous between its segments
+* _Directrix_ given as _IfcIndexedPolyCurve_, having linear and circular arc segments, that are tangent continuous between each segments
 * _Directrix_ being a bounded and open curve
 * No _StartParam_ and _EndParam_ are provided, start and end default to start and end of the bounded curve of the _Directrix_
 
-> NOTE&nbsp; Although the example shows a _Directrix_ as a composite curve on a planar reference surface, the definition of _IfcSweptDiskSolid_ is not restricted to be based on planer curves. However view definitions or implementer agreements may provide restrictions.
+> NOTE&nbsp; Although the example shows a _Directrix_ as a poly curve on a planar reference surface, the definition of _IfcSweptDiskSolid_ is not restricted to be based on planer curves. However view definitions or implementer agreements may provide restrictions.
+
+> NOTE&nbsp; The geometric item _IfcIndexedPolyCurve_ provides a more compact representation compared with _IfcCompositeCurve_ as is therefore the prefered curve representation for the _Directrix_.
 
 !["disk solid"](../../../../../../figures/ifcsweptdisksolid-layout1.png "Figure 1 &mdash; Swept disk solid geometry")
 

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcIntersectionCurve" UniqueId="2cdcc9f4-9e12-4da4-958c-a14cecfae81e" DiagramNumber="5" BaseDefinition="IfcSurfaceCurve" EntityFlags="32">
+	<DiagramRectangle xsi:type="DocRectangle" X="7375.99951171875" Y="2077.33325195313" Width="400" Height="100" />
+	<WhereRules>
+		<DocWhereRule Name="TwoPCurves" UniqueId="be9c210e-eab8-400c-9204-0fc187100b93">
+			<Documentation>The intersection curve shall have precisely two associated geometry elements.</Documentation>
+			<Expression>SIZEOF(SELF\IfcSurfaceCurve.AssociatedGeometry) = 2</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="DistinctSurfaces" UniqueId="fc4d5db9-b1cc-4088-911d-65d7fb4acbd3">
+			<Documentation>The two associated geometry elements shall be related to distinct surfaces. These are the surfaces which define the intersection curve.</Documentation>
+			<Expression>IfcAssociatedSurface(SELF\IfcSurfaceCurve.AssociatedGeometry[1]) &lt;&gt; IfcAssociatedSurface(SELF\IfcSurfaceCurve.AssociatedGeometry[2])</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

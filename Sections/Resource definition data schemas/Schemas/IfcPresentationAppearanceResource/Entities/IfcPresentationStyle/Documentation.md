@@ -8,6 +8,3 @@ The different styles may include length measures (directly as a length measure w
 Each subtype of&nbsp; _IfcPresentationStyle_ is assigned to the _IfcGeometricRepresentationItem_'s through an intermediate _IfcStyledItem_.
 
 > HISTORY&nbsp; New entity in IFC2x3.
-
-{ .change-ifc2x4}
-> IFC4 CHANGE&nbsp; Attribute _ModelOrDraughting_ added.

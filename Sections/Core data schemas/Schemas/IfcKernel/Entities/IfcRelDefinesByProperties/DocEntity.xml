@@ -9,7 +9,7 @@
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="4932.7454" Y="942.05707" Width="454" Height="192.53333" />
 	<Attributes>
-		<DocAttribute Name="RelatedObjects" UniqueId="bdb132c9-664c-4197-bf3d-a2f2c81af4cb" DefinedType="IfcObjectDefinition" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0" XsdFormat="hidden">
+		<DocAttribute Name="RelatedObjects" UniqueId="bdb132c9-664c-4197-bf3d-a2f2c81af4cb" DefinedType="IfcObjectDefinition" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="?" XsdFormat="hidden">
 			<Documentation>Reference to the objects (or single object) to which the property definition applies.
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; Data type promoted from subtype _IfcObject_.</Documentation>
@@ -28,5 +28,12 @@
 			<DiagramLabel xsi:type="DocRectangle" X="5507.94667" Y="1118.5904" Width="294" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="NoRelatedTypeObject" UniqueId="aa978135-56fc-4dfb-bdec-61ef80aa5a80">
+			<Documentation>There shall be no related object being of typy _IfcTypeObject_.
+&gt; NOTE&amp;nbsp; The relationship between a _IfcTypeObject_ and a _IfcPropertySet_ is handled through the direct relationship _HasPropertySets_ at _IfcTypeObject_.</Documentation>
+			<Expression>SIZEOF(QUERY(Types &lt;* SELF\IfcRelDefinesByProperties.RelatedObjects |  &apos;IFCKERNEL.IFCTYPEOBJECT&apos; IN TYPEOF(Types))) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

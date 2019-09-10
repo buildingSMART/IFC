@@ -1,1 +1,0 @@
-﻿The properties of the hydronic fluid used for heat transfer within the coil tubes.
