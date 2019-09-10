@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDistanceExpression" Name="IfcDistanceExpression" UniqueId="caafbf47-1549-4ca7-8916-a46b572cebd2" DiagramNumber="5" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="32">
+	<Localization>
+		<DocLocalization Name="Distance Expression" Locale="en" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="6447.99951171875" Y="1320.00012207031" Width="285.333312988281" Height="467.999989827474" />
+	<Attributes>
+		<DocAttribute Name="DistanceAlong" UniqueId="18b6b9c0-b07c-45ae-a56c-6f1d42c21487" DefinedType="IfcLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The distance along the basis curve, measured according to projection in the horizontal plane if AlongHorizontal is True, or according to 3D distance otherwise. If the basis curve refers to _IfcAlignmentCurve_ and AlongHorizontal is True, then this measurement directly corresponds to _IfcAlignment2DHorizontal_.</Documentation>
+			<DiagramLine>
+				<DocPoint X="6733.33282470703" Y="1362.66670735677" />
+				<DocPoint X="6733.33282470703" Y="1362.66670735677" />
+				<DocPoint X="6961.3330078125" Y="1362.66670735677" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="6733.33282470703" Y="1342.66670735677" Width="0" Height="0" />
+		</DocAttribute>
+		<DocAttribute Name="OffsetLateral" UniqueId="2dc0a52e-5a57-4e0b-952f-2fb5fa513a01" DefinedType="IfcLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Offset horizontally perpendicular to the basis curve, where positive values indicate to the left of the basis curve as facing in the direction of the basis curve, and negative values indicate to the right. If DistanceAlong coincides with a point of tangential discontinuity (within precision limits), then the tangent of the previous segment governs.</Documentation>
+			<DiagramLine>
+				<DocPoint X="6733.33282470703" Y="1462.66670735677" />
+				<DocPoint X="6733.33282470703" Y="1462.66670735677" />
+				<DocPoint X="6961.3330078125" Y="1462.66670735677" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="6733.33282470703" Y="1442.66670735677" Width="0" Height="0" />
+		</DocAttribute>
+		<DocAttribute Name="OffsetVertical" UniqueId="b5c9847d-6887-433d-b615-03a7a05d3d99" DefinedType="IfcLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Offset vertical to the basis curve where positive values indicate vertically upwards in global coordinates at DistanceAlong, regardless of the slope of the basis curve at such point.</Documentation>
+			<DiagramLine>
+				<DocPoint X="6733.33282470703" Y="1562.66670735677" />
+				<DocPoint X="6733.33282470703" Y="1562.66670735677" />
+				<DocPoint X="6961.3330078125" Y="1562.66670735677" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="6733.33282470703" Y="1542.66670735677" Width="0" Height="0" />
+		</DocAttribute>
+		<DocAttribute Name="OffsetLongitudinal" UniqueId="fef4d5ca-f3ce-42e3-98d2-7a4a81caa4a4" DefinedType="IfcLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Offset parallel to the basis curve after applying DistanceAlong, OffsetLateral, and OffsetVertical to reach locations for the case of a tangentially discontinuous basis curve.</Documentation>
+			<DiagramLine>
+				<DocPoint X="6733.33282470703" Y="1662.66670735677" />
+				<DocPoint X="6733.33282470703" Y="1662.66670735677" />
+				<DocPoint X="6961.3330078125" Y="1662.66670735677" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="6733.33282470703" Y="1642.66670735677" Width="0" Height="0" />
+		</DocAttribute>
+		<DocAttribute Name="AlongHorizontal" UniqueId="b328c25c-a4f1-4dd2-8e6b-2db7fe0a3a3c" DefinedType="IfcBoolean" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Indicates whether DistanceAlong is measured according to horizontal projection of distance (if True), or 3D distance (if False or unset).</Documentation>
+			<DiagramLine>
+				<DocPoint X="6733.33282470703" Y="1762.66670735677" />
+				<DocPoint X="6733.33282470703" Y="1762.66670735677" />
+				<DocPoint X="6961.3330078125" Y="1762.66670735677" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="6733.33282470703" Y="1742.66670735677" Width="0" Height="0" />
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

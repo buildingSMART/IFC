@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocPublication xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IFC4x1 Final" UniqueId="6a55aa78-7a6e-4627-898d-ca0b5a4848d6" Code="FINAL" Version="2017.06.08" Status="Official" Owner="bSI" Copyright="&amp;copy; 1996-2017 buildingSMART International Ltd." HtmlExamples="true">
+	<Views>
+		<DocModelView xsi:nil="true" href="General_Usage_3toDTuDGz3Iv6LyOE_qraH" />
+	</Views>
+	<Formats>
+		<DocFormat FormatType="xml" FormatOptions="examples" />
+		<DocFormat FormatType="step" FormatOptions="examples" />
+		<DocFormat FormatType="sql" />
+		<DocFormat FormatType="owl" />
+		<DocFormat FormatType="json" />
+		<DocFormat FormatType="cs" />
+	</Formats>
+	<Annotations>
+		<DocAnnotation Name="Foreword" UniqueId="e3cf7712-4832-4543-8047-d2b64088a0fe">
+			<Documentation>&lt;table style=&quot; border: none; width:100%;&quot; summary=&quot;vision &amp;amp; logo&quot;&gt;
+ &lt;tr style=&quot; vertical-align:top;&quot;&gt;
+  &lt;td&gt;
+   &lt;p&gt;buildingSMART International Limited is an international non-for-profit association of regional and national buildingSMART chapters.&lt;/p&gt;
+   &lt;p&gt;The vision of buildingSMART is:&lt;/p&gt;
+   &lt;blockquote class=&quot;std&quot;&gt;
+    &lt;em&gt;Sustainability by building SMARTER&lt;/em&gt;
+   &lt;/blockquote&gt;
+  &lt;/td&gt;
+  &lt;td&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+  &lt;td&gt;&lt;img src=&quot;img/buildingSMART_logo.png&quot; width=&quot;222&quot; height=&quot;40&quot; alt=&quot;buildingSMART_logo&quot;&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr style=&quot; vertical-align:top;&quot;&gt;
+  &lt;td&gt;
+   &lt;p&gt;The mission of buildingSMART is:&lt;/p&gt;
+   &lt;blockquote class=&quot;std&quot;&gt;
+    &lt;em&gt;Contribute to the sustainable built environment through SMARTER information sharing and communication using open international standards in the building and construction sector, private and public.&lt;/em&gt;
+   &lt;/blockquote&gt;
+  &lt;/td&gt;
+  &lt;td&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+  &lt;td style=&quot; text-align:right;&quot;&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;
+   &lt;p&gt;The association&apos;s values are:&lt;/p&gt;
+   &lt;ul&gt;
+    &lt;li&gt;Neutral and independent, and therefore not beholden to any group or company, whether software suppliers, building companies, architects or others, or indeed governments;&lt;/li&gt;
+    &lt;li&gt;Open and transparent, because the processes by which bSI operates need to be clear and understood by all to demonstrate its independence and neutrality;&lt;/li&gt;
+    &lt;li&gt;A not-for-profit organisation, meaning that any profits it might make from commercial or quasi-commercial activities are used for non-commercial purposes such as  developing standards.&lt;/li&gt;
+   &lt;/ul&gt;
+  &lt;/td&gt;
+  &lt;td&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+  &lt;td style=&quot;vertical-align:bottom; text-align:right;&quot; rowspan=&quot;3&quot;&gt;
+   &lt;img src=&quot;img/buildingSMART_standards_triangle.png&quot; width=&quot;250&quot; height=&quot;202&quot; alt=&quot;buildingSMART_standards_triangle&quot;&gt;
+  &lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;
+   &lt;p&gt;The association&apos;s goals in pursuit of its mission are:&lt;/p&gt;
+    &lt;ul&gt;
+     &lt;li&gt;To develop and maintain open international standards for Building Information Modelling (open BIM);&lt;/li&gt;
+     &lt;li&gt;To accelerate market assimilation of interoperability through successful sustainable projects;&lt;/li&gt;
+     &lt;li&gt;To provide networking opportunities, specifications and written guidance;&lt;/li&gt;
+     &lt;li&gt;To resolve high cost problems that hinder data sharing,&lt;/li&gt;
+     &lt;li&gt;To extend buildingSMART processes and technology to the whole built environment, over its lifecycle, and encompassing leadership, production, facilities management and engineering maintenance.&lt;/li&gt;
+    &lt;/ul&gt;
+   &lt;/td&gt;
+  &lt;td&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;
+   &lt;p&gt;buildingSMART develops open standards for Building Information Modeling, open BIM. The standards deal with data models, processes and terms. The &lt;em&gt;Industry Foundation Classes&lt;/em&gt; IFC specification constitutes buildingSMART&apos;s specification for the buildingSMART data model. Property terms, defined in IFC, are linked to terms defined in the buildingSMART data dictionary.&lt;/p&gt;
+   &lt;p&gt;buildingSMART liaises with the International Standardization Organization ISO, regional and national standardization bodies for developing international, regional and national standards. The &lt;em&gt;Industry Foundation Classes&lt;/em&gt; IFC specification is registered as ISO 16739. buildingSMART works actively as a A-liaison organization with ISO/TC 59/SC 13. Further editions of IFC will be submitted to ISO/TC 59/SC 13/JWG 12 for acceptance as next addendums or editions of ISO 16739.&lt;/p&gt;
+  &lt;/td&gt;
+  &lt;td&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+ &lt;/tr&gt;
+&lt;/table&gt;</Documentation>
+		</DocAnnotation>
+		<DocAnnotation Name="Introduction" UniqueId="96c39703-68f1-4b76-af8d-636045550107">
+			<Documentation>The _Industry Foundation Classes_ IFC represent an open specification for _Building Information Modeling_ BIM data that is exchanged and shared among the various participants in a building construction or facility management project. IFC&apos;s are the international openBIM standard.
+
+This document contains the specification of the IFC standard. The specification consists of the data schema, represented as an EXPRESS schema specification and alternatively as an XML Schema specification, and reference data, represented as XML definitions of property and quantity definitions.
+
+An conforming software application is required to support a well defined subset of the data schema and referenced data. The subset it refered to as a Model View Definition MVD. A particular model view definition is defined to support one or many recognized work flows in the building construction and facility management industry sector. Each work flow identifies data exchange requirements that are to be supported by the conforming software applications.
+
+buildingSMART International publishes official model view definitions and exchange requirements as related specifications. The official website for publication of this specification, related model view definitions and exchange requirements, and supporting materials such as implementer agreements, example data sets, references to development tools, discussion forum and issue database, and certification programs is [http://www.buildingSMART-tech.org](http://www.buildingSMART-tech.org){ .ext-ref target=&quot;_blank&quot;}
+
+&amp;nbsp;
+
+The IFC specification includes terms, concepts and data specification items that originate from use within disciplines, trades, and professions of the construction and facility management industry sector. Terms and concepts uses the plain English words, the data items within the data specification follow a naming convention.
+
+* the data item names for types, entities, rules and functions start with the prefix &quot;Ifc&quot; and continue with the English words in CamelCase naming convention (no underscore, first letter in word in upper case);
+* the attribute names within an entity follow the CamelCase nameing convention with no prefix;
+* the property set definitions that are part of this standard start with the prefix &quot;Pset_&quot; and continue with the English words in CamelCase naming convention;
+* the quantity set definitions that are part of this standard start with the prefix &quot;Qto_&quot; and continue with the English words in CamelCase naming convention.
+
+The data schema architecture of IFC defines four conceptual layers, each individual schema is assigned to exactly one conceptual layer. Figure 1 shows the schema architecture
+
+{ .top-center}
+![IFC4 layered architecture](./img/IFC4_layered_architecture.png)
+
+Figure 1 &amp;mdash; Data schema architecture with conceptual layers
+
+&amp;nbsp;
+
+1. **Resource layer** &amp;mdash; the lowest layer includes all individual schemas containing resource definitions, those definitions do not include an globally unique identifier and shall not be used independently of a definition declared at a higher layer;
+2. **Core layer** &amp;mdash; the next layer includes the kernel schema and the core extenstion schemas, containing the most general entity definitions, all entities defined at the core layer, or above carry a globally unique id and optionally owner and history information;
+3. **Interoperability layer** &amp;mdash; the next layer includes schemas containing entity definitions that are specific to a general product, process or resource specialization used across several disciplines, those definitions are typicly utilized for inter-domain exchange and sharing of construction information;
+4. **Domain layer** &amp;mdash; the highest layer includes schemas containing entity definitions that are specializations of products, processes or resources specific to a certain discipline, those definitions are typically utilized for intra-domain exchange and sharing of information.</Documentation>
+		</DocAnnotation>
+	</Annotations>
+</DocPublication>
+

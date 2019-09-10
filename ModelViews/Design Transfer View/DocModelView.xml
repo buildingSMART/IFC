@@ -8,16 +8,16 @@
 	</Exchanges>
 	<ConceptRoots>
 		<DocConceptRoot UniqueId="4ec3a63a-be26-479e-a7bc-f5feb1beca61">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBeam" />
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBeamStandardCase" />
 			<Concepts>
 				<DocTemplateUsage Name="Material Profile Set Usage" UniqueId="8085909e-d691-4b23-a98a-d41de4dcfdb7">
-					<Documentation>An _IfcBeam_ may be defined parametrically according to its cross section where the _IfcBeamType_ should have a unique _IfcMaterialProfileSet_, that is referenced by the _IfcMaterialProfileSetUsage_ that is assigned to all occurrences of this _IfcBeamType_.
+					<Documentation>The _IfcBeamStandardCase_ defines in addition that the _IfcBeamType_ should have a unique _IfcMaterialProfileSet_, that is referenced by the _IfcMaterialProfileSetUsage_ that is assigned to all occurrences of this _IfcBeamType_.
 
 &lt;table&gt;
 
  &lt;tr&gt;
   &lt;td&gt;&lt;img src=&quot;../../figures/ifcbeamstandardcase-01.png&quot; height=&quot;500&quot; width=&quot;500&quot; alt=&quot;Material profile set and usage&quot;&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;blockquote class=&quot;example&quot;&gt;EXAMPLE&amp;nbsp; Figure 1 illustrates assignment of &lt;em&gt;IfcMaterialProfileSetUsage&lt;/em&gt; and &lt;em&gt;IfcMaterialProfileSet&lt;/em&gt; to the &lt;em&gt;IfcBeam&lt;/em&gt; as the beam occurrence and to the &lt;em&gt;IfcBeamType&lt;/em&gt;. The same &lt;em&gt;IfcMaterialProfileSet&lt;/em&gt; shall be shared by many occurrences of &lt;em&gt;IfcMaterialProfileSetUsage&lt;/em&gt;. This relationship shall be consistent to the relationship between the &lt;em&gt;IfcBeamType&lt;/em&gt; and the &lt;em&gt;IfcBeam&lt;/em&gt;.&lt;/blockquote&gt;
+  &lt;td&gt;&lt;blockquote class=&quot;example&quot;&gt;EXAMPLE&amp;nbsp; Figure 1 illustrates assignment of &lt;em&gt;IfcMaterialProfileSetUsage&lt;/em&gt; and &lt;em&gt;IfcMaterialProfileSet&lt;/em&gt; to the &lt;em&gt;IfcBeamStandardCase&lt;/em&gt; as the beam occurrence and to the &lt;em&gt;IfcBeamType&lt;/em&gt;. The same &lt;em&gt;IfcMaterialProfileSet&lt;/em&gt; shall be shared by many occurrences of &lt;em&gt;IfcMaterialProfileSetUsage&lt;/em&gt;. This relationship shall be consistent to the relationship between the &lt;em&gt;IfcBeamType&lt;/em&gt; and the &lt;em&gt;IfcBeamStandardCase&lt;/em&gt;.&lt;/blockquote&gt;
 
  &lt;/td&gt;
  &lt;/tr&gt;
@@ -153,7 +153,7 @@ The following interpretation of dimension parameter applies for circular beams:
 * **Solid Position** : The _IfcSweptAreaSolid.Position_ shall exclusively been used to correspond to the cardinal point. The x/y offset of the _Position_ represents the cardinal point offset of the profile against the axis. No rotation shall be allowed.
 * **Profile**: all subtypes of _IfcProfileDef_ (with exception of _IfcArbitraryOpenProfileDef_)
 * **Profile Position** : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Advanced_Swept_Directrix_Geometry_1rhoOTsFz6le0t01amD9y7" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_AdvancedSwept_Directrix_Geometry_1rhoOTsFz6le0t01amD9y7" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Body AdvancedSwept Tapered Geometry" UniqueId="1f924cde-b215-478c-b416-8bf620132cc1">
 					<Documentation>The following additional constraints apply to the &apos;AdvancedSweptSolid&apos; representation type:
@@ -164,7 +164,7 @@ The following interpretation of dimension parameter applies for circular beams:
 * **Profile Position** : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.
 
 &gt; NOTE&amp;nbsp; Using _IfcExtrudedAreaSolidTapered_, or _IfcRevolvedAreaSolidTapered_ requires the use of two _IfcMaterialProfile_&apos;s within the _IfcMaterialProfileSetUsageTapering_ assinged to the _IfcBeamStandardCase_</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Advanced_Swept_Tapered_Geometry_1nHIAqI8v9NRg1yGfUGR7S" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_AdvancedSwept_Tapered_Geometry_1nHIAqI8v9NRg1yGfUGR7S" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Body Clipping Geometry" UniqueId="d637ed64-415e-43a1-b33c-bb4907381bd2">
 					<Documentation>The following constraints apply to the &apos;Clipping&apos; representation:
@@ -182,14 +182,48 @@ Figure 1 illustrates a &apos;Clipping&apos; geometric representation with use of
 ![&quot;clipped beam&quot;](../../figures/ifcbeamstandardcase_clipping-01.png &quot;Figure 1 &amp;mdash; Beam body clipping&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Clipping_Geometry_0isyBrcmn3wfqgdNBG57u0" />
 				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="f866d1ff-ac9b-4037-9826-eebbb9e62ae5" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Single_1VEQWKHA1Fiut6tQe5OFnK" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="a799e465-9887-4420-920c-d7417bcfd6fc" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Mapped_Geometry_3iTV8STL4dxyWvZebtBcw" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="3acdfbfd-4afd-46f6-9e67-b18d6e8d835d" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SweptSolid_PolyCurve_Geometry_0uSGpDZL1keQ23091w0k" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="aaedb76f-525a-4848-a7d8-92071f1ffe45" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Tessellation_Geometry_1SKG3PKLCRRmd2fMZq9bG" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="6ca75b2b-264e-4f1e-9edd-739184ff9e6a" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_CSG_Geometry_2WgtOmQML9NhwFqGRz9Pd2" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="b2acae73-8464-4ca7-b4e4-3bbd291f8744" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SurfaceModel_Geometry_0NqqeIb0D0zB_2PJcRuZnL" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="29090c0b-b481-48c2-90d3-fee88e2f12e0" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Profile_Set_12Ui1LAd52mgGZSMYVfrnP" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="93ab5778-dc63-45c1-be75-ed6425fdb494" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_2A9y5QnEfCgOpEVxkXoRpW" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="adc3654c-2dc8-4c64-8f0a-0652144ef3ac" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_AdvancedBrep_Geometry_3yTZLrKF5BmBloE2E05I17" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="7a5ea4d5-c528-4c52-8e60-07c9ad7e4b15" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Brep_Geometry_2FkIFrk2r8qgqfrdZAHpQ" />
+				</DocTemplateUsage>
 			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcBeam" />
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcBeamStandardCase" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="4ec3a63a-be26-479e-a7bc-f5feb1beca61">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBeamType" />
 			<Concepts>
 				<DocTemplateUsage Name="Material Profile Set" UniqueId="1c07d75c-8e12-43e0-a16a-bbca6550976b">
 					<Documentation>The material of the _IfcBeamType_ is defined by the _IfcMaterialProfileSet_ or as fall back by _IfcMaterial_ and attached by the _IfcRelAssociatesMaterial_._RelatingMaterial_. It is accessible by the inverse _HasAssociations_ relationship.
+
+&gt; NOTE&amp;nbsp; It is illegal to assign an _IfcMaterial_ to an _IfcBeamType_, if there is at least one occurrence of _IfcBeamStandardCase_ for this type.
+
+The shared profile definition is defined by assigning an _IfcMaterialProfileSet_ (see material use definition above). The _IfcMaterialProfile_ refers to the subtype of _IfcProfileDef_ that is the common profile for all beam occurrence, if used. It is only applicable if the _IfcBeamType_ has only occurrences of type _IfcBeamStandardCase_ (see definition of _IfcBeamStandardCase_ for further information).
 
 &gt; NOTE&amp;nbsp; The attribute _ProfileName_ of the _IfcProfileDef_ subtype, referenced in _IfcMaterialProfile_ should contain a standardized profile name according to local standards. However, an additional geometric representation of the profile is necessary (such as _IfcExtrudedAreaSolid_). An importing application is allowed to check for the existence of the profile name: in case of identifying it as a standardized name, the corresponding profile geometry and possibly other cross sectional properties can be read from a library. Otherwise the geometric representation and possible non geometric _IfcProfileProperties_ have to be used.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Profile_Set_12Ui1LAd52mgGZSMYVfrnP" />
@@ -240,12 +274,12 @@ Figure 1 illustrates a &apos;Clipping&apos; geometric representation with use of
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcCableSegment" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="4ec3a63a-be26-479e-a7bc-f5feb1beca61">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcColumn" />
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcColumnStandardCase" />
 			<Concepts>
 				<DocTemplateUsage Name="Material Profile Set Usage" UniqueId="dedce70c-2541-4425-a021-f8e6203e28e3">
-					<Documentation>An _IfcColumn_ may be defined parametrically according to its cross section where the _IfcColumnType_ should have a unique _IfcMaterialProfileSet_, that is referenced by the _IfcMaterialProfileSetUsage_ assigned to all occurrences of this _IfcColumnType_. Composite profile columns can be represented by refering to several _IfcMaterialProfile_&apos;s within the _IfcMaterialProfileSet_ that is referenced from the _IfcMaterialProfileSetUsage_.
+					<Documentation>The _IfcColumnStandardCase_ defines in addition that the _IfcColumnType_ should have a unique _IfcMaterialProfileSet_, that is referenced by the _IfcMaterialProfileSetUsage_ assigned to all occurrences of this _IfcColumnType_. Composite profile columns can be represented by refering to several _IfcMaterialProfile_&apos;s within the _IfcMaterialProfileSet_ that is referenced from the _IfcMaterialProfileSetUsage_.
 
-Figure 1 illustrates assignment of _IfcMaterialProfileSetUsage_ and _IfcMaterialProfileSet_ to the _IfcColumn_ as the column occurrence and to the _IfcColumnType_. The same _IfcMaterialProfileSet_ shall be shared by many occurrences of _IfcMaterialProfileSetUsage_. This relationship shall be consistent to the relationship between the _IfcColumnType_ and the _IfcColumn_.
+Figure 1 illustrates assignment of _IfcMaterialProfileSetUsage_ and _IfcMaterialProfileSet_ to the _IfcColumnStandardCase_ as the column occurrence and to the _IfcColumnType_. The same _IfcMaterialProfileSet_ shall be shared by many occurrences of _IfcMaterialProfileSetUsage_. This relationship shall be consistent to the relationship between the _IfcColumnType_ and the _IfcColumnStandardCase_.
 
 ![&quot;Material profile set and usage&quot;](../../figures/ifccolumnstandardcase-01.png &quot;Figure 1 &amp;mdash; Column profile usage&quot;)
 
@@ -355,7 +389,7 @@ The following interpretation of dimension parameter applies for circular columns
 * **Solid**: _IfcSurfaceCurveSweptAreaSolid_, _IfcFixedReferenceSweptAreaSolid_, shall be supported. 
 * **Profile**: all subtypes of _IfcProfileDef_ (with exception of _IfcArbitraryOpenProfileDef_)
 * **Profile Position** : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Advanced_Swept_Directrix_Geometry_1rhoOTsFz6le0t01amD9y7" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_AdvancedSwept_Directrix_Geometry_1rhoOTsFz6le0t01amD9y7" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Body AdvancedSwept Tapered Geometry" UniqueId="d6473840-b06f-476e-b550-8c13b76d6c2a">
 					<Documentation>The following additional constraints apply to the &apos;AdvancedSweptSolid&apos; representation type:
@@ -365,7 +399,7 @@ The following interpretation of dimension parameter applies for circular columns
 * **Profile Position** : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.
 
 &gt; NOTE&amp;nbsp; Using _IfcExtrudedAreaSolidTapered_, or _IfcRevolvedAreaSolidTapered_ requires the use of two _IfcMaterialProfile_&apos;s within the _IfcMaterialProfileSetUsageTapering_ assinged to the _IfcColumnStandardCase_</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Advanced_Swept_Tapered_Geometry_1nHIAqI8v9NRg1yGfUGR7S" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_AdvancedSwept_Tapered_Geometry_1nHIAqI8v9NRg1yGfUGR7S" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Body Clipping Geometry" UniqueId="42430896-d460-4183-8f42-d492db5d7ce4">
 					<Documentation>The following constraints apply to the &apos;Clipping&apos; representation:
@@ -382,14 +416,48 @@ Figure 1 illustrates a &apos;Clipping&apos; geometric representation with use of
 ![&quot;clipped column&quot;](../../figures/ifccolumnstandardcase_clipping-01.png &quot;Figure 1 &amp;mdash; Column body clipping&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Clipping_Geometry_0isyBrcmn3wfqgdNBG57u0" />
 				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="e611e104-e8a1-4af3-a263-58504cc2be7c" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Single_1VEQWKHA1Fiut6tQe5OFnK" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="6c2ef04e-e447-4706-8a28-eba7b55cb28d" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_2A9y5QnEfCgOpEVxkXoRpW" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="415aa731-db0e-45bf-91ec-e222e4db42b8" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Mapped_Geometry_3iTV8STL4dxyWvZebtBcw" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="26d69847-c582-4929-a771-af03ebcc847a" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SweptSolid_PolyCurve_Geometry_0uSGpDZL1keQ23091w0k" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="496bf84f-c576-4114-9d79-2a6e0b8429ca" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Tessellation_Geometry_1SKG3PKLCRRmd2fMZq9bG" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="acb10ce9-8129-4300-88fa-964b6c1e2f66" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_CSG_Geometry_2WgtOmQML9NhwFqGRz9Pd2" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="bbfac067-d718-4faa-8845-81d71e95685c" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SurfaceModel_Geometry_0NqqeIb0D0zB_2PJcRuZnL" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="b118047e-26f2-420d-8aed-b2fc24e56f20" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Profile_Set_12Ui1LAd52mgGZSMYVfrnP" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="c4c25b92-557c-4875-bd3d-379ad9e9d71f" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_AdvancedBrep_Geometry_3yTZLrKF5BmBloE2E05I17" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="642ae387-033c-47e8-8c4d-137c177b825a" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Brep_Geometry_2FkIFrk2r8qgqfrdZAHpQ" />
+				</DocTemplateUsage>
 			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcColumn" />
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcColumnStandardCase" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="4ec3a63a-be26-479e-a7bc-f5feb1beca61">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcColumnType" />
 			<Concepts>
 				<DocTemplateUsage Name="Material Profile Set" UniqueId="856c963e-6327-4a9b-a014-fc8a87f78e60">
 					<Documentation>The material of the _IfcColumnType_ is defined by the _IfcMaterialProfileSet_ or as fall back by _IfcMaterial_ and attached by the _IfcRelAssociatesMaterial_._RelatingMaterial_. It is accessible by the inverse _HasAssociations_ relationship.
+
+&gt; NOTE&amp;nbsp; It is illegal to assign an _IfcMaterial_ to an _IfcColumnType_, if there is at least one occurrences of _IfcColumnStandardCase_ for this type.
+
+The shared profile definition is defined by assigning an _IfcMaterialProfileSet_ (see material use definition above). The _IfcMaterialProfile_ refers to the subtype of _IfcProfileDef_ that is the common profile for all column occurrence, if used. It is only applicable if the _IfcColumnType_ has only occurrences of type _IfcColumnStandardCase_ (see definition of _IfcColumnStandardCase_ for further information).
 
 &gt; NOTE&amp;nbsp; The attribute _ProfileName_ of the _IfcProfileDef_ subtype, referenced in _IfcMaterialProfile_ should contain a standardized profile name according to local standards. However, an additional geometric representation of the profile is necessary (e.g. as _IfcExtrudedAreaSolid_). An importing application is allowed to check for the existence of the profile name: in case of identifying it as a standardized name, the corresponding profile geometry and possibly other cross sectional properties can be read from a library. Otherwise the geometric representation and possible non geometric _IfcProfileProperties_ have to be used.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Profile_Set_12Ui1LAd52mgGZSMYVfrnP" />
@@ -447,7 +515,7 @@ Figure 1 illustrates a &apos;Clipping&apos; geometric representation with use of
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcDistributionElementType" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="4ec3a63a-be26-479e-a7bc-f5feb1beca61">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcDoor" />
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcDoorStandardCase" />
 			<Concepts>
 				<DocTemplateUsage Name="Profile 3D Geometry" UniqueId="d0e968af-22c6-4d49-8d08-855b9709cd62">
 					<Documentation>The door profile is represented by a three-dimensional closed curve within a particular shape representation. The profile is used to apply the parameter of the parametric door representation. The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
@@ -517,7 +585,7 @@ height. Distance to the centre line of the transom.&lt;/li&gt;
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Profile_3D_Geometry_0TYN8WT0r7avgDNITqnxm0" />
 				</DocTemplateUsage>
 			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcDoor" />
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcDoorStandardCase" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="4ec3a63a-be26-479e-a7bc-f5feb1beca61">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcDuctSegment" />
@@ -755,10 +823,10 @@ The material is attached by the _RelatingMaterial_ attribute on the [IfcRelAssoc
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcFooting" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="4ec3a63a-be26-479e-a7bc-f5feb1beca61">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcMember" />
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcMemberStandardCase" />
 			<Concepts>
 				<DocTemplateUsage Name="Material Profile Set Usage" UniqueId="58daaf5a-9d06-4eca-8e07-ad19c2f64eb6">
-					<Documentation>Figure 1 illustrates assignment of _IfcMaterialProfileSetUsage_ and _IfcMaterialProfileSet_ to the _IfcMember_ as the member occurrence and to the _IfcMemberType_. The same _IfcMaterialProfileSet_ shall be shared by many occurrences of _IfcMaterialProfileSetUsage_. This relationship shall be consistent to the relationship between the _IfcMemberType_ and the _IfcMember_.
+					<Documentation>Figure 1 illustrates assignment of _IfcMaterialProfileSetUsage_ and _IfcMaterialProfileSet_ to the _IfcMemberStandardCase_ as the member occurrence and to the _IfcMemberType_. The same _IfcMaterialProfileSet_ shall be shared by many occurrences of _IfcMaterialProfileSetUsage_. This relationship shall be consistent to the relationship between the _IfcMemberType_ and the _IfcMemberStandardCase_.
 
 ![&quot;Material profile set and usage&quot;](../../figures/ifcmemberstandardcase-01.png &quot;Figure 1 &amp;mdash; Member profile usage&quot;)
 
@@ -766,7 +834,7 @@ Figure 2 illustrates assignment of a composite profile by using _IfcCompositePro
 
 ![&quot;Material profile set and usage&quot;](../../figures/ifcmemberstandardcase-02.png &quot;Figure 2 &amp;mdash; Member composite profiles&quot;)
 
-The material of the _IfcMember_ is defined by _IfcMaterialProfileSetUsage_ and attached by the _IfcRelAssociatesMaterial_._RelatingMaterial_. It is accessible by the inverse _HasAssociations_ relationship. Composite profile members can be represented by refering to several _IfcMaterialProfile_&apos;s within the _IfcMaterialProfileSet_ that is referenced from the _IfcMaterialProfileSetUsage_.
+The material of the _IfcMemberStandardCase_ is defined by _IfcMaterialProfileSetUsage_ and attached by the _IfcRelAssociatesMaterial_._RelatingMaterial_. It is accessible by the inverse _HasAssociations_ relationship. Composite profile members can be represented by refering to several _IfcMaterialProfile_&apos;s within the _IfcMaterialProfileSet_ that is referenced from the _IfcMaterialProfileSetUsage_.
 
 Material information can also be given at the _IfcMemberType_, defining the common attribute data for all occurrences of the same type. It is then accessible by the inverse _IsDefinedBy_ relationship pointing to _IfcMemberType.HasAssociations_ and via _IfcRelAssociatesMaterial.RelatingMaterial_. See **Type Use
 Definition** for additional agreements for standard members.</Documentation>
@@ -866,7 +934,7 @@ The following interpretation of dimension parameter applies for circular members
 * **Profile Position** : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.
 
 &gt; NOTE&amp;nbsp; Using _IfcExtrudedAreaSolidTapered_, or _IfcRevolvedAreaSolidTapered_ requires the use of two _IfcMaterialProfile_&apos;s within the _IfcMaterialProfileSetUsageTapering_ assinged to the _IfcMemberStandardCase_</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Advanced_Swept_Directrix_Geometry_1rhoOTsFz6le0t01amD9y7" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_AdvancedSwept_Directrix_Geometry_1rhoOTsFz6le0t01amD9y7" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Body AdvancedSwept Tapered Geometry" UniqueId="3ca529e8-5d72-4851-96eb-089cb3884868">
 					<Documentation>The following additional constraints apply to the &apos;AdvancedSweptSolid&apos; representation type:
@@ -876,7 +944,7 @@ The following interpretation of dimension parameter applies for circular members
 * **Profile Position** : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.
 
 &gt; NOTE&amp;nbsp; Using _IfcExtrudedAreaSolidTapered_, or _IfcRevolvedAreaSolidTapered_ requires the use of two _IfcMaterialProfile_&apos;s within the _IfcMaterialProfileSetUsageTapering_ assinged to the _IfcMemberStandardCase_</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Advanced_Swept_Tapered_Geometry_1nHIAqI8v9NRg1yGfUGR7S" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_AdvancedSwept_Tapered_Geometry_1nHIAqI8v9NRg1yGfUGR7S" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Body Clipping Geometry" UniqueId="affe7195-874c-438e-9de4-fda87a65368f">
 					<Documentation>The following constraints apply to the advanced representation:
@@ -892,14 +960,48 @@ Figure 1 illustrates an advanced geometric representation with use of _IfcBoolea
 ![&quot;clipped beam&quot;](../../figures/ifcbeamstandardcase_clipping-01.png &quot;Figure 1 &amp;mdash; Member body clipping&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Clipping_Geometry_0isyBrcmn3wfqgdNBG57u0" />
 				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="1ce789ea-8a2e-4e48-bccf-a0f4392f70da" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Single_1VEQWKHA1Fiut6tQe5OFnK" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="f783764f-fa96-4e6a-b15e-ab21302346b4" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_2A9y5QnEfCgOpEVxkXoRpW" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="905e7b4e-b5d6-4a07-bed1-8f3ee64b0a98" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Mapped_Geometry_3iTV8STL4dxyWvZebtBcw" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="f4ed79bb-b70f-462c-9b13-b15701295d7d" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SweptSolid_PolyCurve_Geometry_0uSGpDZL1keQ23091w0k" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="bb4085e8-40c8-45f5-bda9-4d52fd4ccad8" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Tessellation_Geometry_1SKG3PKLCRRmd2fMZq9bG" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="6f4974d4-946b-4015-9b55-377c7e64605e" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_CSG_Geometry_2WgtOmQML9NhwFqGRz9Pd2" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="ad98474b-5951-4e48-9bb6-bcf71ae1ab8f" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SurfaceModel_Geometry_0NqqeIb0D0zB_2PJcRuZnL" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="d4e929d1-f46b-4efe-b1d1-f65535631a78" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Profile_Set_12Ui1LAd52mgGZSMYVfrnP" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="4dfd18c3-f920-4b68-9bda-8dd34b751c1a" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_AdvancedBrep_Geometry_3yTZLrKF5BmBloE2E05I17" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="53fd6576-191c-48a4-922c-d73726cb8c83" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Brep_Geometry_2FkIFrk2r8qgqfrdZAHpQ" />
+				</DocTemplateUsage>
 			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcMember" />
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcMemberStandardCase" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="4ec3a63a-be26-479e-a7bc-f5feb1beca61">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcMemberType" />
 			<Concepts>
 				<DocTemplateUsage Name="Material Profile Set" UniqueId="1fc695b3-1f20-4a13-8ea8-e852d54bfd34">
 					<Documentation>The material of the _IfcMemberType_ is defined by the _IfcMaterialProfileSet_ or as fall back by _IfcMaterial_ and attached by the _IfcRelAssociatesMaterial_._RelatingMaterial_. It is accessible by the inverse _HasAssociations_ relationship.
+
+&gt; NOTE&amp;nbsp; It is illegal to assign an _IfcMaterial_ to an _IfcMemberType_, if there is at least one occurrences of _IfcMemberStandardCase_ for this type.
+
+The shared profile definition is defined by assigning an _IfcMaterialProfileSet_ (see material use definition above). The _IfcMaterialProfile_ refers to the subtype of _IfcProfileDef_ that is the common profile for all member occurrence, if used. It is only applicable if the _IfcMemberType_ has only occurrences of type _IfcMemberStandardCase_ (see definition of _IfcMemberStandardCase_ for further information).
 
 &gt; NOTE&amp;nbsp; The attribute _ProfileName_ of the _IfcProfileDef_ subtype, referenced in _IfcMaterialProfile_ should contain a standardized profile name according to local standards. However, an additional geometric representation of the profile is necessary (e.g. as _IfcExtrudedAreaSolid_). An importing application is allowed to check for the existence of the profile name: in case of identifying it as a standardized name, the corresponding profile geometry and possibly other cross sectional properties can be read from a library. Otherwise the geometric representation and possible non geometric _IfcProfileProperties_ have to be used.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Profile_Set_12Ui1LAd52mgGZSMYVfrnP" />
@@ -917,6 +1019,10 @@ Figure 1 illustrates an advanced geometric representation with use of _IfcBoolea
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="4ec3a63a-be26-479e-a7bc-f5feb1beca61">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcOpeningElement" />
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcOpeningElement" />
+		</DocConceptRoot>
+		<DocConceptRoot UniqueId="4ec3a63a-be26-479e-a7bc-f5feb1beca61">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcOpeningStandardCase" />
 			<Concepts>
 				<DocTemplateUsage Name="Body SweptSolid Geometry" UniqueId="e18806d9-0ccf-457e-88b0-bdb4181b5112">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SweptSolid_Geometry_3BV1ZwpuDDiRuRm1EwJjPo" />
@@ -945,7 +1051,7 @@ Figure 1 illustrates an advanced geometric representation with use of _IfcBoolea
 					</Exchanges>
 				</DocTemplateUsage>
 			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcOpeningElement" />
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcOpeningStandardCase" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="4ec3a63a-be26-479e-a7bc-f5feb1beca61">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcPile" />
@@ -980,7 +1086,7 @@ Figure 1 illustrates an advanced geometric representation with use of _IfcBoolea
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcPipeSegment" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="4ec3a63a-be26-479e-a7bc-f5feb1beca61">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcPlate" />
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcPlateStandardCase" />
 			<Concepts>
 				<DocTemplateUsage Name="Material Layer Set Usage" UniqueId="762d4deb-9d83-443e-87fe-ab206fa5fe7c">
 					<Documentation>The material of the _IfcPlateStandardCase_ is defined by _IfcMaterialLayerSetUsage_ and attached by the _IfcRelAssociatesMaterial_._RelatingMaterial_. It is accessible by the inverse _HasAssociations_ relationship. Multi-layer plates can be represented by refering to several _IfcMaterialLayer_&apos;s within the _IfcMaterialLayerSet_ that is referenced from the _IfcMaterialLayerSetUsage_.&amp;nbsp;
@@ -1092,8 +1198,38 @@ As shown in Figure 106, the following conventions shall be met:
 &lt;/table&gt;</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Clipping_Geometry_0isyBrcmn3wfqgdNBG57u0" />
 				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="61a3ade8-7796-4929-9147-7604cf90b5ea" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_2A9y5QnEfCgOpEVxkXoRpW" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="329b769c-ae1f-4a35-8e83-a6292ca1b02d" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Mapped_Geometry_3iTV8STL4dxyWvZebtBcw" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="a2c78c3b-0c0b-4f75-bbf5-4e2feaea178d" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SweptSolid_PolyCurve_Geometry_0uSGpDZL1keQ23091w0k" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="0c6c780e-1b39-4c4e-ac1e-9c0e201acbfa" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Tessellation_Geometry_1SKG3PKLCRRmd2fMZq9bG" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="d5076ed5-0abe-4e97-ac60-95857b1485c2" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_CSG_Geometry_2WgtOmQML9NhwFqGRz9Pd2" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="4b05d5ee-c298-47ca-a28a-7ae24f301b7f" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SurfaceModel_Geometry_0NqqeIb0D0zB_2PJcRuZnL" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="1c984871-a400-4a31-a7b0-44011c48cd8e" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Layer_Set_3VjREfKED6ueKO7mFdpzY6" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="c0f3e562-8f17-476d-ad43-e1af571c6cbb" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Single_1VEQWKHA1Fiut6tQe5OFnK" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="2ab5f29e-9b80-4b05-9c7c-161cd503b188" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_AdvancedBrep_Geometry_3yTZLrKF5BmBloE2E05I17" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="ff08071f-ae7b-4965-bb87-8a3e81f78ecc" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Brep_Geometry_2FkIFrk2r8qgqfrdZAHpQ" />
+				</DocTemplateUsage>
 			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcPlate" />
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcPlateStandardCase" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="4ec3a63a-be26-479e-a7bc-f5feb1beca61">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcPlateType" />
@@ -1157,15 +1293,6 @@ The shared material layer set definition is defined by assigning an _IfcMaterial
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcPropertySet" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="4ec3a63a-be26-479e-a7bc-f5feb1beca61">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcReinforcingBarType" />
-			<Concepts>
-				<DocTemplateUsage Name="Type Body Swept Disk Solid Polygonal Geometry" UniqueId="9b254830-2a1e-4f16-8a54-f303e015e043">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Type_Body_Swept_Disk_Solid_Polygonal_Geometry_2Eub4qfD5IxDkcqzCrnPq" />
-				</DocTemplateUsage>
-			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcReinforcingBarType" />
-		</DocConceptRoot>
-		<DocConceptRoot UniqueId="4ec3a63a-be26-479e-a7bc-f5feb1beca61">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcRelConnectsWithRealizingElements" />
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcRelConnectsWithRealizingElements" />
 		</DocConceptRoot>
@@ -1188,7 +1315,47 @@ The shared material layer set definition is defined by assigning an _IfcMaterial
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcRoot" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="4ec3a63a-be26-479e-a7bc-f5feb1beca61">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcSlab" />
+			<Documentation>Elemented slabs extend the concepts of standard slabs with the following features, as shown in Figure 234:
+
+* The slab has a type (_IfcSlabType_) that indicates material layers and corresponding elements to be placed parametrically.
+* The slab is decomposed into elements for part occurrences, each corresponding to parts defined at the slab type.
+* The relationship _IfcRelConnectsWithRealizingElements_ indicates how parts are connected.
+
+![&quot;voiding&quot;](../../figures/ifcslabelementedcase-floor.png &quot;Figure 1 &amp;mdash; Slab elemented case&quot;)</Documentation>
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcSlabElementedCase" />
+			<Concepts>
+				<DocTemplateUsage Name="Element Decomposition" UniqueId="87517f53-053d-43d0-9dda-fd74451ab243">
+					<Documentation>An elemented slab is decomposed into parts for particular components such as headers, joists, deck/subfloor, insulation, fasteners, and sealants. There must be an object corresponding to each type of part, however there may be single object instance indicating multiple placements (via mapping geometry) for each part, or multiple instances corresponding to each placement. For minimizing file size, it is recommended to use a single object with multiple placement unless there are specific connectivity relationships indicated (e.g. a duct connected to specific joists).</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_2A9y5QnEfCgOpEVxkXoRpW" />
+					<Items>
+						<DocTemplateItem UniqueId="4369f291-47d9-4c03-ad13-c34ffdc56094" RuleParameters="RelatedObjects=IfcPlateStandardCase;" Order="0">
+							<Documentation>Plywood for subfloor above.</Documentation>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="41c19990-f1f2-46a3-97e8-c30de4ac4eec" RuleParameters="RelatedObjects=IfcElementAssembly;" Order="0">
+							<Documentation>Frame containing headers, joists, and possibly insulation.</Documentation>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="abc20e57-9fb2-40a6-8f17-e3a0c174195d" RuleParameters="RelatedObjects=IfcBuildingElementPart;" Order="0">
+							<Documentation>Panels such as gypsum board for ceiling underneath.</Documentation>
+						</DocTemplateItem>
+					</Items>
+					<Exchanges>
+						<DocExchangeItem Applicability="export" Requirement="mandatory">
+							<Exchange xsi:type="DocExchangeDefinition" xsi:nil="true" href="Design_Transfer_Exchange_34c6WDp8j0Cgdpp6il2Mz2" />
+						</DocExchangeItem>
+						<DocExchangeItem Applicability="import" Requirement="mandatory">
+							<Exchange xsi:type="DocExchangeDefinition" xsi:nil="true" href="Design_Transfer_Exchange_34c6WDp8j0Cgdpp6il2Mz2" />
+						</DocExchangeItem>
+					</Exchanges>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Material Layer Set Usage" UniqueId="c580e1d9-2807-4e2f-b840-a55f326831ba">
+					<Documentation>Similar to standard slabs (_IfcSlabStandardCase_), elemented slabs are defined parametrically with _IfcMaterialLayerSetUsage_, but go into further detail, where each material layer corresponds to an aggregated part of a particular type, where such parts may be further decomposed and/or use parametric material definitions.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Layer_Set_Usage_1jNxXlFor9_vKe1tXLtSn7" />
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcSlabElementedCase" />
+		</DocConceptRoot>
+		<DocConceptRoot UniqueId="4ec3a63a-be26-479e-a7bc-f5feb1beca61">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcSlabStandardCase" />
 			<Concepts>
 				<DocTemplateUsage Name="Material Layer Set Usage" UniqueId="710de5cf-0908-44cc-a7bf-2808f7c38aed">
 					<Documentation>Multi-layer slabs can be represented by refering to several _IfcMaterialLayer_&apos;s within the _IfcMaterialLayerSet_ that is referenced from the _IfcMaterialLayerSetUsage_.&amp;nbsp;
@@ -1313,23 +1480,38 @@ Figure 2 illustrates slab material usage, where the following conventions shall 
 &lt;/table&gt;</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Clipping_Geometry_0isyBrcmn3wfqgdNBG57u0" />
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Element Decomposition" UniqueId="38494b8b-13f9-4f3b-8518-74803450b7ba">
-					<Documentation>An slab may be decomposed into parts for particular components such as headers, joists, deck/subfloor, insulation, fasteners, and sealants. If a material layer set is defined, each _IfcElement_.Name shall match the corresponding _IfcMaterialLayer_.Name.</Documentation>
+				<DocTemplateUsage UniqueId="f30500d2-df4a-494c-9d37-702979981633" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Single_1VEQWKHA1Fiut6tQe5OFnK" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="71e76971-bfa9-4162-9eb5-ebeee87aadce" Suppress="true">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_2A9y5QnEfCgOpEVxkXoRpW" />
-					<Items>
-						<DocTemplateItem UniqueId="65cdb3a1-3933-4a1f-9f4b-37d70143d494" RuleParameters="RelatedObjects=IfcPlate;" Order="0">
-							<Documentation>Plywood for subfloor above.</Documentation>
-						</DocTemplateItem>
-						<DocTemplateItem UniqueId="4561af6a-a017-4504-81d1-2aee57932a3f" RuleParameters="RelatedObjects=IfcElementAssembly;" Order="0">
-							<Documentation>Frame containing headers, joists, and possibly insulation.</Documentation>
-						</DocTemplateItem>
-						<DocTemplateItem UniqueId="d0580523-c853-4fa8-8c80-eef3fae8d123" RuleParameters="RelatedObjects=IfcBuildingElementPart;" Order="0">
-							<Documentation>Panels such as gypsum board for ceiling underneath.</Documentation>
-						</DocTemplateItem>
-					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="b36fe7ca-c9ff-4e57-8660-fa5addcbab27" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Mapped_Geometry_3iTV8STL4dxyWvZebtBcw" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="b974d711-eb45-4a5c-bec5-6be67b863a50" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SweptSolid_PolyCurve_Geometry_0uSGpDZL1keQ23091w0k" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="fc9a3b31-a628-4c48-b858-3849179dbe1c" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Tessellation_Geometry_1SKG3PKLCRRmd2fMZq9bG" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="e3b2424b-920e-4003-a180-8663bb54a567" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_CSG_Geometry_2WgtOmQML9NhwFqGRz9Pd2" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="704ec51a-579c-4d50-bb26-82e6e1948653" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SurfaceModel_Geometry_0NqqeIb0D0zB_2PJcRuZnL" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="27a225bb-583b-4661-b730-a8e10d6d0855" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Layer_Set_3VjREfKED6ueKO7mFdpzY6" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="00f2b422-c493-4952-8193-0ba5bdd31318" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_AdvancedBrep_Geometry_3yTZLrKF5BmBloE2E05I17" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="6161fa49-4929-413a-9f77-bbc85b3ae3c4" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Brep_Geometry_2FkIFrk2r8qgqfrdZAHpQ" />
 				</DocTemplateUsage>
 			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcSlab" />
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcSlabStandardCase" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="4ec3a63a-be26-479e-a7bc-f5feb1beca61">
 			<Documentation>Slab types may be described at several levels of detail to support the following slab occurrences:
@@ -1349,7 +1531,13 @@ As shown in Figure 1, each material layer may be elaborated into an element (whe
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcSlabType" />
 			<Concepts>
 				<DocTemplateUsage Name="Material Layer Set" UniqueId="6c178501-b085-4d01-8ed7-1dd80f4db792">
-					<Documentation>The material of the _IfcSlabType_ is defined by the _IfcMaterialLayerSet_ or as fall back by _IfcMaterial_ and attached by the _IfcRelAssociatesMaterial_._RelatingMaterial_. It is accessible by the inverse _HasAssociations_ relationship.</Documentation>
+					<Documentation>The material of the _IfcSlabType_ is defined by the _IfcMaterialLayerSet_ or as fall back by _IfcMaterial_ and attached by the _IfcRelAssociatesMaterial_._RelatingMaterial_. It is accessible by the inverse _HasAssociations_ relationship.
+
+&gt; NOTE&amp;nbsp; It is illegal to assign an _IfcMaterial_ to an _IfcSlabType_, if there is at least one occurrences. of _IfcSlabStandardCase_ for this type.
+
+The shared material layer set definition is defined by assigning an _IfcMaterialLayerSet_ (see material use definition above). The _IfcMaterialLayer_ refers to one or several of _IfcMaterial_ that is the common for all slab occurrence, if used. It is only applicable if the _IfcSlabType_ has only occurrences of type _IfcSlabStandardCase_ (see definition of _IfcSlabStandardCase_ for further information).
+
+&gt; NOTE&amp;nbsp; Since each individual instance of _IfcSlabStandardCase_ defines its own _IfcMaterialLayerSetUsage_ including the offset from the reference plane, the same _IfcSlabType_ can be used independently of the reference plane alignment of its occurrences.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Layer_Set_3VjREfKED6ueKO7mFdpzY6" />
 					<Exchanges>
 						<DocExchangeItem Applicability="export" Requirement="optional">
@@ -1374,6 +1562,106 @@ As shown in Figure 1, each material layer may be elaborated into an element (whe
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="4ec3a63a-be26-479e-a7bc-f5feb1beca61">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcWall" />
+			<Concepts>
+				<DocTemplateUsage Name="Axis 2D Geometry" UniqueId="3e9489c5-4072-40d7-aa68-940455be2576">
+					<Documentation>&gt; NOTE&amp;nbsp; The &apos;Axis&apos; is not used to locate the material layer set, only the subtype _IfcWallStandardCase_ provides this capability.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Axis_2D_Geometry_1u94Jere57Mf0qgUVrF6rb" />
+					<Items>
+						<DocTemplateItem UniqueId="a0f91a34-d50b-4ec2-b9c2-76dd1406d0ec" RuleParameters="Identifier=Axis;Type=Curve2D;Items=IfcBoundedCurve;" Order="0">
+							<Documentation>The wall axis of the wall.</Documentation>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Path Connectivity" UniqueId="69ecde9e-2199-4690-94b7-eedc1e88a758">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Path_Connectivity_1G5mELXyP9BgRydr_42n5F" />
+					<Items>
+						<DocTemplateItem UniqueId="a109a6bc-aaa7-435b-bb22-903ee8280536" RuleParameters="RelatedElement=IfcWall;" Order="0">
+							<Documentation>Walls with equal or lower priority are connected at RelatedElement.</Documentation>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcWall" />
+		</DocConceptRoot>
+		<DocConceptRoot UniqueId="4ec3a63a-be26-479e-a7bc-f5feb1beca61">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcWallElementedCase" />
+			<Concepts>
+				<DocTemplateUsage Name="Element Decomposition" UniqueId="2193a8c8-63e5-4625-8e44-2ec9ac40635a">
+					<Documentation>An elemented wall is decomposed into parts for particular components such as framing and panels on each side. There must be an object corresponding to each type of part, however there may be single object instance indicating multiple placements (via mapping geometry) for each part, or multiple instances corresponding to each placement. For minimizing file size, it is recommended to use a single object with multiple placement unless there are specific connectivity relationships indicated (e.g. a junction box connected to a specific stud).</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_2A9y5QnEfCgOpEVxkXoRpW" />
+					<Items>
+						<DocTemplateItem UniqueId="146f304f-b18d-4afc-971c-4954e79d3a19" RuleParameters="RelatedObjects=IfcElementAssembly;" Order="0">
+							<Documentation>Frame containing studs, tracks, and possibly insulation</Documentation>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="204036b7-9825-4b7f-a445-6f13af4e5e98" RuleParameters="RelatedObjects=IfcBuildingElementPart;" Order="0">
+							<Documentation>Panels on each side such as gypsum (drywall) or cement board (tile backing) with fasteners</Documentation>
+						</DocTemplateItem>
+					</Items>
+					<Exchanges>
+						<DocExchangeItem Applicability="export" Requirement="mandatory">
+							<Exchange xsi:type="DocExchangeDefinition" xsi:nil="true" href="Design_Transfer_Exchange_34c6WDp8j0Cgdpp6il2Mz2" />
+						</DocExchangeItem>
+						<DocExchangeItem Applicability="import" Requirement="mandatory">
+							<Exchange xsi:type="DocExchangeDefinition" xsi:nil="true" href="Design_Transfer_Exchange_34c6WDp8j0Cgdpp6il2Mz2" />
+						</DocExchangeItem>
+					</Exchanges>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Material Layer Set Usage" UniqueId="b049741f-7515-461c-aecb-09438a854734">
+					<Documentation>Similar to standard walls (_IfcWallStandardCase_), elemented walls are defined parametrically with _IfcMaterialLayerSetUsage_, but go into further detail, where each material layer corresponds to an aggregated part of a particular type, where such parts may be further decomposed and/or use parametric material definitions.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Layer_Set_Usage_1jNxXlFor9_vKe1tXLtSn7" />
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Axis 2D Geometry" UniqueId="2ae73f28-4064-4b13-acf1-78bac1b3827c">
+					<Documentation>The wall axis is represented by a two-dimensional open curve within a particular shape representation. The wall axis is used to apply the material layer set usage parameter to the wall geometry.
+
+* _Axis_ 
+    * _IfcPolyline_ having two _Points_, or _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcLine_ for the &apos;SweptSolid&apos; provided as _IfcExtrudedAreaSolid_. The axis curve lies on the x/y plane and is parallel to the x-axis of the object coordinate system.
+    * _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcCircle_ for &apos;SweptSolid&apos; provided as _IfcExtrudedAreaSolid_. The axis curve lies on the x/y plane of the object coordinate system, the tangent at the start is along the positive x-axis. 
+
+&amp;nbsp;
+
+&lt;table cellpadding=&quot;2&quot; cellspacing=&quot;2&quot;&gt;
+
+ &lt;tr&gt;
+
+  &lt;td align=&quot;left&quot; valign=&quot;top&quot;&gt;&lt;img src=&quot;../../figures/ifcwallstandard_straigthwall_01-layout1.gif&quot; alt=&quot;straight wall axis&quot; border=&quot;0&quot; height=&quot;299&quot; width=&quot;393&quot;&gt;&lt;/td&gt;
+
+  &lt;td&gt;&lt;blockquote class=&quot;example&quot;&gt;EXAMPLE&amp;nbsp; Figure 1 illustrates an axis representation for a straight wall. In case of a straight wall, the set of items shall
+include a single geometric representation item of type &lt;em&gt;IfcPolyline&lt;/em&gt; or &lt;em&gt;IfcTrimmedCurve&lt;/em&gt; with the &lt;em&gt;BasisCurve&lt;/em&gt; being an &lt;em&gt;IfcLine&lt;/em&gt;. The &lt;em&gt;IfcPolyline&lt;/em&gt; or &lt;em&gt;IfcTrimmedCurve&lt;/em&gt; shall be parallel (here in a special case co-linear) to the x-axis
+of the object coordinate system. The direction shall be identical to the direction of the x-axis.&lt;/blockquote&gt;
+
+ &lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td width=&quot;393&quot;&gt;&lt;p class=&quot;figure&quot;&gt;Figure 1 &amp;mdash; Wall axis straight&lt;/p&gt;&lt;/td&gt;
+
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+ &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;table cellpadding=&quot;2&quot; cellspacing=&quot;2&quot;&gt;
+
+ &lt;tr&gt;
+
+  &lt;td align=&quot;left&quot; valign=&quot;top&quot;&gt;&lt;img src=&quot;../../figures/ifcwallstandard_curvedwall_01-layout1.gif&quot; alt=&quot;curved wall axis&quot; border=&quot;0&quot; height=&quot;299&quot; width=&quot;393&quot;&gt;&lt;/td&gt;
+
+  &lt;td&gt;&lt;blockquote class=&quot;example&quot;&gt;EXAMPLE&amp;nbsp; Figure 2 illustrates an axis representation for a curved wall. In case of a curved wall, the set of items shall include
+a single geometric representation item of type &lt;em&gt;IfcTrimmedCurve&lt;/em&gt;. The curve shall have a &lt;em&gt;BasisCurve&lt;/em&gt; of type &lt;em&gt;IfcCircle&lt;/em&gt;. The tangent of the &lt;em&gt;IfcTrimmedCurve&lt;/em&gt; shall be parallel at start to the x-axis of the object coordinate system. The direction shall be identical to the direction of the x-axis.&lt;/blockquote&gt;
+ &lt;/td&gt;&lt;/tr&gt;
+ 
+&lt;tr&gt;
+  &lt;td width=&quot;393&quot;&gt;&lt;p class=&quot;figure&quot;&gt;Figure 2 &amp;mdash; Wall axis curved&lt;/p&gt;&lt;/td&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+ 
+&lt;/tr&gt;
+
+&lt;/table&gt;</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Axis_2D_Geometry_1u94Jere57Mf0qgUVrF6rb" />
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcWallElementedCase" />
+		</DocConceptRoot>
+		<DocConceptRoot UniqueId="4ec3a63a-be26-479e-a7bc-f5feb1beca61">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcWallStandardCase" />
 			<Concepts>
 				<DocTemplateUsage Name="Material Layer Set Usage" UniqueId="6874146b-e77b-426f-89c1-e88d9dbc9dd0">
 					<Documentation>Multi-layer walls can be represented by refering to several _IfcMaterialLayer_&apos;s within the _IfcMaterialLayerSet_ that is referenced from the _IfcMaterialLayerSetUsage_.&amp;nbsp;
@@ -1527,43 +1815,32 @@ Figure 2 illustrates a clipping for a curved wall using an _IfcHalfSpaceSolid_ a
 &lt;/table&gt;</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Clipping_Geometry_0isyBrcmn3wfqgdNBG57u0" />
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Element Decomposition" UniqueId="a114832c-1b08-4548-aa71-61c6fa78e254">
-					<Documentation>A wall may be decomposed into parts for particular components such as framing and panels on each side. If a material layer set is defined, each _IfcElement_.Name shall match the corresponding _IfcMaterialLayer_.Name.</Documentation>
+				<DocTemplateUsage UniqueId="d9fcd025-318b-410f-b131-9a8ce3393a6d" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_CSG_Geometry_2WgtOmQML9NhwFqGRz9Pd2" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="9e1d04b6-aac0-4f21-9ca9-0fdf2343dff5" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Mapped_Geometry_3iTV8STL4dxyWvZebtBcw" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="7fb8d403-b77f-46f9-bf5c-eaae967baa73" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SweptSolid_PolyCurve_Geometry_0uSGpDZL1keQ23091w0k" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="cc4ef20e-c2e9-472b-9c0e-af85200879e9" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Tessellation_Geometry_1SKG3PKLCRRmd2fMZq9bG" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="d45528e9-455d-4d4f-8e6c-e58915f3a467" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Single_1VEQWKHA1Fiut6tQe5OFnK" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="500ecc77-f237-4246-8e30-de95cbadc66e" Suppress="true">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_2A9y5QnEfCgOpEVxkXoRpW" />
-					<Items>
-						<DocTemplateItem UniqueId="39a50939-37b4-4b7a-951d-57a244f77af1" RuleParameters="RelatedObjects=IfcElementAssembly;" Order="0">
-							<Documentation>Frame containing studs, tracks, and possibly insulation</Documentation>
-						</DocTemplateItem>
-						<DocTemplateItem UniqueId="31f20a1c-81cd-41e3-83e3-056c289cd269" RuleParameters="RelatedObjects=IfcBuildingElementPart;" Order="0">
-							<Documentation>Panels on each side such as gypsum (drywall) or cement board (tile backing) with fasteners</Documentation>
-						</DocTemplateItem>
-					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="d132987d-a9c8-4ee3-a3a6-bceb069d2c96" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_AdvancedBrep_Geometry_3yTZLrKF5BmBloE2E05I17" />
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="7b23283d-2c56-4262-b1ae-bc2823aee71d" Suppress="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Brep_Geometry_2FkIFrk2r8qgqfrdZAHpQ" />
 				</DocTemplateUsage>
 			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcWall" />
-		</DocConceptRoot>
-		<DocConceptRoot UniqueId="4ec3a63a-be26-479e-a7bc-f5feb1beca61">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcWall" />
-			<Concepts>
-				<DocTemplateUsage Name="Axis 2D Geometry" UniqueId="3e9489c5-4072-40d7-aa68-940455be2576">
-					<Documentation>&gt; NOTE&amp;nbsp; The &apos;Axis&apos; is not used to locate the material layer set, only the subtype _IfcWallStandardCase_ provides this capability.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Axis_2D_Geometry_1u94Jere57Mf0qgUVrF6rb" />
-					<Items>
-						<DocTemplateItem UniqueId="a0f91a34-d50b-4ec2-b9c2-76dd1406d0ec" RuleParameters="Identifier=Axis;Type=Curve2D;Items=IfcBoundedCurve;" Order="0">
-							<Documentation>The wall axis of the wall.</Documentation>
-						</DocTemplateItem>
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Path Connectivity" UniqueId="69ecde9e-2199-4690-94b7-eedc1e88a758">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Path_Connectivity_1G5mELXyP9BgRydr_42n5F" />
-					<Items>
-						<DocTemplateItem UniqueId="a109a6bc-aaa7-435b-bb22-903ee8280536" RuleParameters="RelatedElement=IfcWall;" Order="0">
-							<Documentation>Walls with equal or lower priority are connected at RelatedElement.</Documentation>
-						</DocTemplateItem>
-					</Items>
-				</DocTemplateUsage>
-			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcWall" />
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcWallStandardCase" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="4ec3a63a-be26-479e-a7bc-f5feb1beca61">
 			<Documentation>Wall types may be described at several levels of detail to support the following wall occurrences:
@@ -1585,9 +1862,31 @@ As shown in Figure 1, each material layer may be elaborated into an element (whe
 				<DocTemplateUsage Name="Material Layer Set" UniqueId="992ef032-ae4b-481b-bb61-8bda2db409a5">
 					<Documentation>The material of the _IfcWallType_ is defined by the _IfcMaterialLayerSet_ or as fall back by _IfcMaterial_ and attached by the _IfcRelAssociatesMaterial_._RelatingMaterial_. It is accessible by the inverse _HasAssociations_ relationship.
 
-The shared material layer set definition is defined by assigning an _IfcMaterialLayerSet_ (see material use definition above). The _IfcMaterialLayer_ refers to one or several of _IfcMaterialLayer_ that is the common for all wall occurrence, if used.
+&gt; NOTE&amp;nbsp; It is illegal to assign an _IfcMaterial_ to an _IfcWallType_, if there is at least one occurrence of _IfcWallStandardCase_ for this type.
 
-If a wall type is decomposed into parts, then material layers of the _IfcWallType_ may be driven by corresponding material layers and profiles of components, where _IfcMaterialLayer_.Name refers to _IfcElement_.Name. The ordering of layers is preserved by the layer set, while the thicknesses of each layer are calculated according to the material layer/profile geometry of the parts.</Documentation>
+The shared material layer set definition is defined by assigning an _IfcMaterialLayerSet_ (see material use definition above). The _IfcMaterialLayer_ refers to one or several of _IfcMaterialLayer_ that is the common for all wall occurrence, if used. It is only applicable if the _IfcWallType_ has only occurrences of type _IfcWallStandardCase_ (see definition of _IfcWallStandardCase_ for further information).
+
+&gt; NOTE&amp;nbsp; Since each individual instance of _IfcWallStandardCase_ defines its own _IfcMaterialLayerSetUsage_ including the offset from the wall axis, the same _IfcWallType_ can be used independently of the axis alignment of its occurrences.
+
+If a wall type is decomposed into parts, then material layers of the _IfcWallType_ may be driven by corresponding material layers and profiles of components, where _IfcMaterialLayer_.Name refers to _IfcElement_.Name. The ordering of layers is preserved by the layer set, while the thicknesses of each layer are calculated according to the material layer/profile geometry of the parts.
+
+The following is an example of a framed wall composition, where layers are ordered in the direction away from the viewer facing the right side of the wall:
+
+{ .gridtable}
+&lt;table class=&quot;gridtable&quot;&gt;
+&lt;tr&gt;&lt;th&gt;#&lt;/th&gt;&lt;th&gt;Layer/Element Name&lt;/th&gt;&lt;th&gt;Element Type&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;Forward Panels&lt;/td&gt;&lt;td&gt;&lt;i&gt;IfcPlate&lt;/i&gt;&lt;/td&gt;&lt;td&gt;Panels on right side of wall (looking in direction of axis) such as gypsum board or cement board.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;Frame&lt;/td&gt;&lt;td&gt;&lt;i&gt;IfcElementAssembly&lt;/i&gt;&lt;/td&gt;&lt;td&gt;Framing, which is decomposed into tracks, studs, and insulation. The thickness of the layer is determined according to the greatest extent by superimposing the material layers and profiles of all aggregated objects (in the absense of this &lt;i&gt;IfcElementAssembly&lt;/i&gt; having its own &lt;i&gt;IfcMaterialLayerSet&lt;/i&gt; defining sequential positioning of elements).&lt;br&gt;
+&lt;table class=&quot;gridtable&quot;&gt;
+&lt;tr&gt;&lt;th&gt;Element Name&lt;/th&gt;&lt;th&gt;Element Type&lt;/th&gt;&lt;th&gt;Material&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Track&lt;/td&gt;&lt;td&gt;&lt;i&gt;IfcMemberStandardCase&lt;/i&gt;&lt;/td&gt;&lt;td&gt;&lt;i&gt;IfcMaterialProfileSetUsage&lt;/i&gt;&lt;/td&gt;&lt;td&gt;Track at base and top of frame.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Stud&lt;/td&gt;&lt;td&gt;&lt;i&gt;IfcMemberStandardCase&lt;/i&gt;&lt;/td&gt;&lt;td&gt;&lt;i&gt;IfcMaterialProfileSetUsage&lt;/i&gt;&lt;/td&gt;&lt;td&gt;Studs, where &lt;i&gt;IfcMaterialProfileSetUsage&lt;/i&gt;.ReferenceExtent defines the maximum height and &lt;i&gt;IfcMaterialProfileWithOffsets&lt;/i&gt;.Offsets defines the stud spacing.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Insulation&lt;/td&gt;&lt;td&gt;&lt;i&gt;IfcBuildingElementPart&lt;/i&gt;&lt;/td&gt;&lt;td&gt;&lt;i&gt;IfcMaterialLayerSet&lt;/i&gt;&lt;/td&gt;&lt;td&gt;Insulation.&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;Reverse Panels&lt;/td&gt;&lt;td&gt;&lt;i&gt;IfcPlate&lt;/i&gt;&lt;/td&gt;&lt;td&gt;Panels on left side of wall (looking in direction of axis) such as gypsum board or cement board.&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Layer_Set_3VjREfKED6ueKO7mFdpzY6" />
 					<Exchanges>
 						<DocExchangeItem Applicability="export" Requirement="optional">
@@ -1602,7 +1901,7 @@ If a wall type is decomposed into parts, then material layers of the _IfcWallTyp
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcWallType" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="4ec3a63a-be26-479e-a7bc-f5feb1beca61">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcWindow" />
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcWindowStandardCase" />
 			<Concepts>
 				<DocTemplateUsage Name="Profile Geometry" UniqueId="6359e739-90d9-4845-b5bd-f8eb3f884dd2">
 					<Documentation>The following additional constraints apply to the &apos;Profile&apos; representation type:
@@ -1630,7 +1929,7 @@ As shown in Figure 1, the profile defines the outer boundary to which the window
 					</Exchanges>
 				</DocTemplateUsage>
 			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcWindow" />
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="ca72de08-cab5-40db-8d10-90d22bbdc2f4" Type="IfcWindowStandardCase" />
 		</DocConceptRoot>
 	</ConceptRoots>
 	<Icon>"089504E470D0A1A0A0000000D4948445200000010000000100802000000909168360000000467414D410000B18F0BFC6105000000097048597300000EC300000EC301C76FA8640000008749444154384F9552DB1180200CA3AEA493E91C6EE64E5A2E5C89A520FA8531AF5624AD7BFAF3880AEEEB94ED3095BEE26C20230BBE196432B6E07311388D32D8822B944AA13178AE704D68BBB56CE554413B22E676E3BD12C61A287DA5CF1C2F08D7CFADEA9678D9BC65870709BDDF0CBC2B08BB65107769E6FAA1DB28C1B9C03727CCD81BE7010F395301E94440CD0000000049454E44AE426082"</Icon>

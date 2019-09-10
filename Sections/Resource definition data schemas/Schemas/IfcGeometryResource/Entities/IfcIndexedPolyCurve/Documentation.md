@@ -5,11 +5,11 @@ In the case that the list of _Segments_ is provided, it is interpreted as such:
 * Segment of type _IfcLineIndex_: The first index is the start point of the poly line segment, the last index is the end point of the poly line segment. If more than two indices are included, then all intermediate indices define intermediate points of the polyline connected in the order of appearance of the indices; 
 * Segment of type _IfcArcIndex_: The first index is the start point of the circular arc, the second index is a point on arc, the third index is the end point of the circular arc. The three points shall not be co-linear. In case that this informal proposition is not maintained, the arc segment shall be treated as a polyline segment.
 
-> EXAMPLE&nbsp; Figure 2 illustrates a bounded open _IfcIndexedPolyCurve_ having straight and arc segments. In this example, the straight segments only have two points and one edge, however more then two indices into the Cartesian point list can be includes, defining a multi edge polyline segment. The parametric length of the total poly curve is the sum of the parametric length of its segments, the parametric length of the arc segments are shown in radians, which applies, if the plane angle measure of the data set is Radians. In case that the plane angle measure is Degree, the parametric length of the arc segments has degree values with 90. being the parametric length of a quarter circle.
+> EXAMPLE&nbsp; Figure 2 illustrates a bounded open _IfcIndexedPolyCurve_ having straight and arc segments. In this example, the straight segments only have two points and one edge, however more then two indices into the Cartesian point list can be includes, defining a multi edge polyline segment.
 
 !["poly curve with arcs examples"](../../../../../../figures/ifcindexedpolycurve-fig1.png "Figure 2 &mdash; Bounded open _IfcIndexedPolyCurve_ with straight and arc segments")
 
-> EXAMPLE&nbsp; Figure 2 illustrates a bounded open _IfcIndexedPolyCurve_ having only straight segments. In this example, no list of _Segments_ is provided, hence the points are drawn in the order of their appearance in the _IfcCartesianPointList_. The parametric length of the total poly curve is the sum of the parametric length of its segments, with each line segment having the parametric length of 1.0.
+> EXAMPLE&nbsp; Figure 2 illustrates a bounded open _IfcIndexedPolyCurve_ having only straight segments. In this example, no list of _Segments_ is provided, hence the points are drawn in the order of their appearance in the _IfcCartesianPointList_.
 
 !["poly curve examples"](../../../../../../figures/ifcindexedpolycurve-fig2.png "Figure 2 &mdash; Bounded open _IfcIndexedPolyCurve_ with only straight segments")
 

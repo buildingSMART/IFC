@@ -15,6 +15,26 @@ Occurrences of the _IfcWindowType_ within building models are represented by ins
 > HISTORY&nbsp; New entity in IFC4. The entity _IfcWindowType_ replaces the previous definition _IfcWindowStyle_ (which is deprecated in IFC4).
 
 { .use-head}
+Partitioning type use definition
+
+The _IfcWindowTypePartitioningEnum_ defines the general layout of the window type and its symbolic presentation. Depending on the enumerator, the appropriate instances of _IfcWindowLiningProperties_ and _IfcWindowPanelProperties_ are attached in the list of _HasPropertySets_. The _IfcWindowTypePartitioningEnum_ mainly determines the way of partitioning the window into individual window panels and thereby number and position of window panels.
+
+See geometry use definitions at _IfcWindowTypePartitioningEnum_ for the correct usage of panel partitioning and _IfcWindowPanelProperties_ for the opening symbols for different panel operation types.
+
+{ .use-head}
+Material Use Definition
+
+The material of the _IfcWindowType_ is defined by the _IfcMaterialConstituentSet_ or as fall back by _IfcMaterial_ and attached by the _IfcRelAssociatesMaterial_._RelatingMaterial_. It is accessible by the inverse _HasAssociations_ relationship.
+
+The following keywords for _IfcMaterialConstituentSet.MaterialConstituents[n].Name_ shall be used:
+
+* 'Lining' - to indicate that the material constituent applies to to the window lining
+* 'Framing' - to indicate that the material constituent applies to to the window panels, if not provided, the 'Lining' material information applied to panels as well
+* 'Glazing' - to indicate that the material constituent applies to to the glazing part
+
+If the fall back single _IfcMaterial_ is referenced, it applies to the lining and framing of the window.
+
+{ .use-head}
 Geometry Use Definitions:
 
 The _IfcWindowType_ may define the common shape of window occurrences. The common shape can be defined by

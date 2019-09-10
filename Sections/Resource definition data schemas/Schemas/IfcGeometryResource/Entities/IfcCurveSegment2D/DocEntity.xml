@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCurveSegment2D" Name="IfcCurveSegment2D" UniqueId="2cdcfc96-4005-494f-a43e-fde05a9d10e4" DiagramNumber="13" BaseDefinition="IfcBoundedCurve" EntityFlags="0">
+	<Localization>
+		<DocLocalization Name="Curve Segment 2D" Locale="en" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="19282.66796875" Y="242.666687011719" Width="402.666656494141" Height="324" />
+	<Subtypes>
+		<DocSubtype UniqueId="2bbda4fc-a999-4291-8433-73f062d9e285" DefinedType="IfcLineSegment2D" />
+		<DocSubtype UniqueId="154be5c6-72e8-4074-8943-5d905865f851" DefinedType="IfcCircularArcSegment2D" />
+		<DocSubtype UniqueId="9cd96790-8974-48a1-8f2d-c769dd7cd171" DefinedType="IfcTransitionCurveSegment2D" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="StartPoint" UniqueId="791d257d-ebdb-42b7-9918-a85e6427f2d5" DefinedType="IfcCartesianPoint" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The start point of the 2D curve as x/y coordinates defined by a 2D Cartesian point.</Documentation>
+			<DiagramLine>
+				<DocPoint X="19685.3346252441" Y="258.666687011719" />
+				<DocPoint X="19685.3346252441" Y="258.666687011719" />
+				<DocPoint X="20236.001953125" Y="258.666687011719" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="19685.3346252441" Y="238.666687011719" Width="0" Height="0" />
+		</DocAttribute>
+		<DocAttribute Name="StartDirection" UniqueId="c9a6d612-bd50-4f57-96c6-282d0093a7df" DefinedType="IfcPlaneAngleMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The direction of the tangent at the start point. Direction value 0. indicates a curve with a start tangent along the positive x-axis. Values increases counter-clockwise, and decreases clockwise. Depending on the plane angle unit, either degree or radians, the sensible range is -360° ≤ n ≤ 360° (or -2π ≤ n ≤ 2π). Values larger then a full circle (&gt;|360°| or &gt;|2 π| shall not be used.</Documentation>
+			<DiagramLine>
+				<DocPoint X="19685.3346252441" Y="390.333366394043" />
+				<DocPoint X="19685.3346252441" Y="390.333366394043" />
+				<DocPoint X="20236.001953125" Y="390.333366394043" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="19685.3346252441" Y="370.333366394043" Width="400" Height="50" />
+		</DocAttribute>
+		<DocAttribute Name="SegmentLength" UniqueId="18864611-0853-4312-b9a2-b927b6c759ac" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The length along the curve</Documentation>
+			<DiagramLine>
+				<DocPoint X="19685.3346252441" Y="514.666717529297" />
+				<DocPoint X="19685.3346252441" Y="514.666717529297" />
+				<DocPoint X="20236.001953125" Y="514.666717529297" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="19685.3346252441" Y="494.666717529297" Width="0" Height="0" />
+		</DocAttribute>
+	</Attributes>
+	<Tree>
+		<DocLine>
+			<DiagramLine>
+				<DocPoint X="19349.333984375" Y="566.666687011719" />
+				<DocPoint X="19349.333984375" Y="566.666687011719" />
+				<DocPoint X="19349.333984375" Y="621.333312988281" />
+			</DiagramLine>
+			<Tree>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="19349.333984375" Y="621.333312988281" />
+						<DocPoint X="19349.333984375" Y="868.666687011719" />
+						<DocPoint X="19461.333984375" Y="868.666687011719" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="19349.333984375" Y="621.333312988281" />
+						<DocPoint X="19349.333984375" Y="660.666687011719" />
+						<DocPoint X="19461.333984375" Y="660.666687011719" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="19349.333984375" Y="621.333312988281" />
+						<DocPoint X="19349.333984375" Y="1683.3333384196" />
+						<DocPoint X="19461.333984375" Y="1683.3333384196" />
+					</DiagramLine>
+				</DocLine>
+			</Tree>
+		</DocLine>
+	</Tree>
+</DocEntity>
+

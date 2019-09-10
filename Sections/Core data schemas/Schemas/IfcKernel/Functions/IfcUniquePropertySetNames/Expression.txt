@@ -7,7 +7,7 @@ LOCAL
 END_LOCAL;
 
 REPEAT i:=1 TO HIINDEX(Properties);
-  IF 'IFC4.IFCPROPERTYSET' IN TYPEOF(Properties[i]) THEN
+  IF 'IFCKERNEL.IFCPROPERTYSET' IN TYPEOF(Properties[i]) THEN
     Names := Names + Properties[i]\IfcRoot.Name;
   ELSE
     Unnamed := Unnamed + 1;

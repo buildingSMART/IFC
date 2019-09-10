@@ -44,28 +44,28 @@ All geometry is supported in the Design Transfer View, including Constructive So
 
 The Design Transfer View derives from the Reference View, such that it is a superset of the Reference View. It is valid to include geometry defined within the Design Transfer View (e.g. CSG) along with geometry defined within the Reference View (e.g. tessellation). Reference View geometry may also be omitted, as it is defined as optional.
 
-The IFC data model provides constructs for implicit and explicit parametric modeling. Explicit parametric behavior may be represented with the IFC constraint model (_IfcRelAssociatesConstraint_) to indicate product configuration tables and geometric formulas, which is out of scope for this model view. Implicit parametric behavior is based on defined rules for common elements defined by an axis path or footprint area.
+The IFC data model provides constructs for implicit and explicit parametric modeling. Explicit parametric behavior may be represented with the IFC constraint model (_IfcRelAssociatesConstraint_) to indicate product configuration tables and geometric formulas, which is out of scope for this model view. Implicit parametric behavior is based on defined rules for common elements defined by an axis path or footprint area, and may be modelled by _standard-case_ and _elemented-case_ entities.
 
-Elements may have parametric behaviors defined by material configuration at type definitions (either _IfcMaterialLayerSet_, _IfcMaterialProfileSet_, or _IfcMaterialConstituentSet_, which are applied to an axis path or footprint area. Material profiles define cross sections of materials that are swept along a curve. Material layers define thicknesses of materials that fill a bounded area. Applicable entities include the following:
+_Standard-case_ entities are defined by material configuration at type definitions (either _IfcMaterialLayerSet_, _IfcMaterialProfileSet_, or _IfcMaterialConstituentSet_, which are applied to an axis path or footprint area. Material profiles define cross sections of materials that are swept along a curve. Material layers define thicknesses of materials that fill a bounded area. _Standard-case_ entities include the following:
 
 { .gridtable}
 Entity | Material | Representation
 ------ | -------- | --------------
-_IfcSlab_ | _IfcMaterialLayerSetUsage_ | 'Footprint'
-_IfcPlate_ | _IfcMaterialLayerSetUsage_ | 'Footprint'
-_IfcWall_ | _IfcMaterialLayerSetUsage_ | 'Axis'
-_IfcColumn_ | _IfcMaterialProfileSetUsage_ | 'Axis'
-_IfcBeam_ | _IfcMaterialProfileSetUsage_ | 'Axis'
-_IfcMember_ | _IfcMaterialProfileSetUsage_ | 'Axis'
-_IfcDoor_ | _IfcMaterialConstituentSet_ | 'Profile'
-_IfcWindow_ | _IfcMaterialConstituentSet_ | 'Profile'
-_IfcOpeningElement_ | - | 'Profile'
+_IfcSlabStandardCase_ | _IfcMaterialLayerSetUsage_ | 'Footprint'
+_IfcPlateStandardCase_ | _IfcMaterialLayerSetUsage_ | 'Footprint'
+_IfcWallStandardCase_ | _IfcMaterialLayerSetUsage_ | 'Axis'
+_IfcColumnStandardCase_ | _IfcMaterialProfileSetUsage_ | 'Axis'
+_IfcBeamStandardCase_ | _IfcMaterialProfileSetUsage_ | 'Axis'
+_IfcMemberStandardCase_ | _IfcMaterialProfileSetUsage_ | 'Axis'
+_IfcDoorStandardCase_ | _IfcMaterialConstituentSet_ | 'Profile'
+_IfcWindowStandardCase_ | _IfcMaterialConstituentSet_ | 'Profile'
+_IfcOpeningStandardCase_ | _IfcMaterialConstituentSet_ | 'Profile'
 
 
-Elements may be further described by compositions of parts, where each composed element is defined by material configuration at type definitions. Applicable entities include the following:
+_Elemented-case_ entities are defined by compositions of elements, where each composed element is defined by material configuration at type definitions. _Elemented-case_ entities include the following:
 
 { .gridtable}
 Entity | Components
 ------ | ----------
-_IfcSlab_ | _IfcPlate_ (subfloor)<br/>_IfcElementAssembly_ (joists)<br/>_IfcBuildingElementPart_ (ceiling drywall)
-_IfcWall_ | _IfcBuildingElementPart_ (panels on forward side)<br/>_IfcElementAssembly_ (studs, track, insulation)<br/>_IfcBuildingElementPart_ (panels on reverse side)
+_IfcSlabElementedCase_ | _IfcPlateStandardCase_ (subfloor)<br/>_IfcElementAssembly_ (joists)<br/>_IfcBuildingElementPart_ (ceiling drywall)
+_IfcWallElementedCase_ | _IfcBuildingElementPart_ (panels on forward side)<br/>_IfcElementAssembly_ (studs, track, insulation)<br/>_IfcBuildingElementPart_ (panels on reverse side)

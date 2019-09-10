@@ -16,4 +16,4 @@ Informal Propositions:
 2. The fbsm faces have dimensionality 2.
 
 { .deprecated}
-> IFC4 CHANGE&nbsp; The entity has been deprecated and shall not be used. The entity _IfcShellBasedSurfaceModel_ for open shells and _IfcFacetedBrep_ for closed shells shall be used instead.
+> IFC4 CHANGE&nbsp; The entity has been deprecated and shall not be used. The entity _IfcFacetedBrep_ shall be used instead.

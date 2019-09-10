@@ -23,7 +23,7 @@
 
 The classification information can either be provided as an external classification reference, only refering to an _IfcClassification_, that holds the classification name, edition and a resource location, or to an _IfcClassification_ containing the _IfcClassificationReference_&apos;s as the classification notations, and thereby allowing to include the classification system structure within the exchange structure.</Documentation>
 			<Localization>
-				<DocLocalization Name="AUTOMATIC" Locale="tt">
+				<DocLocalization Locale="tt">
 					<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
 	&lt;TemplateRule Parameters=&quot;ClassificationSource[Value]=&apos;DIN&apos; AND ClassificationName[Value]=&apos;DIN 276&apos;&quot;/&gt;
 &lt;/TemplateRules&gt;</Documentation>
@@ -258,8 +258,9 @@ The classification information can either be provided as an external classificat
 
 &gt; HISTORY&amp;nbsp; New concept template enabled by schema enhancements in IFC4.</Documentation>
 					<Localization>
-						<DocLocalization Name="AUTOMATIC" Locale="tt">
+						<DocLocalization Locale="tt">
 							<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+	&lt;!-- Check existence of RelatedDefinitions reference and the type of referenced elements --&gt;
 	&lt;TemplateRule Parameters=&quot;RelatedTypes[Type]=&apos;IfcBeamType&apos; AND RelatedTypes[Size]=3&quot;/&gt;
 &lt;/TemplateRules&gt;</Documentation>
 						</DocLocalization>
@@ -363,7 +364,7 @@ The classification information can either be provided as an external classificat
 
 &gt; HISTORY&amp;nbsp; New concept template enabled by schema enhancements in IFC4.</Documentation>
 			<Localization>
-				<DocLocalization Name="AUTOMATIC" Locale="tt">
+				<DocLocalization Locale="tt">
 					<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
 	&lt;TemplateRule Parameters=&quot;HasGlobalPosition[Exists]=TRUE&quot;/&gt;
 	&lt;TemplateRule Parameters=&quot;CRSName[Value]=EPSG:5555&quot;/&gt;
@@ -442,11 +443,6 @@ The classification information can either be provided as an external classificat
 																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="MapZone">
 																	<Rules>
 																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
-																	</Rules>
-																</DocModelRuleAttribute>
-																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="MapUnit">
-																	<Rules>
-																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcNamedUnit" />
 																	</Rules>
 																</DocModelRuleAttribute>
 															</Rules>
@@ -718,12 +714,12 @@ application/step | IFC-SPF</Documentation>
 										</DocModelRuleAttribute>
 										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="CoordinateSpaceDimension">
 											<Rules>
-												<DocModelRuleEntity id="i44615" CardinalityMin="0" CardinalityMax="0" Name="IfcDimensionCount">
+												<DocModelRuleEntity id="i44321" CardinalityMin="0" CardinalityMax="0" Name="IfcDimensionCount">
 													<Rules>
 														<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0">
 															<Expression xsi:type="DocOpStatement" Operation="compareequal">
 																<Reference xsi:type="DocOpReference">
-																	<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="i44615" />
+																	<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="i44321" />
 																</Reference>
 																<Value xsi:type="DocOpLiteral" Operation="loadstring" Literal="2" />
 															</Expression>
@@ -820,7 +816,7 @@ application/step | IFC-SPF</Documentation>
 
 &gt; NOTE&amp;nbsp; The 3D shape representations with the representation identifier &quot;Body&quot; are linked to the 3D geometric representation subset with context identifier &quot;Body&quot; and context type &quot;Model&quot;.</Documentation>
 					<Localization>
-						<DocLocalization Name="AUTOMATIC" Locale="tt">
+						<DocLocalization Locale="tt">
 							<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
 	&lt;TemplateRule Parameters=&quot;ContextIdentifier[Value]=&apos;Model&apos; AND ContextType[Value]=&apos;Body&apos; AND SubContextIdentifier[Value]=&apos;Model&apos;&quot;/&gt;
 &lt;/TemplateRules&gt;</Documentation>
@@ -843,12 +839,12 @@ application/step | IFC-SPF</Documentation>
 										</DocModelRuleAttribute>
 										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="CoordinateSpaceDimension">
 											<Rules>
-												<DocModelRuleEntity id="i44658" CardinalityMin="0" CardinalityMax="0" Name="IfcDimensionCount">
+												<DocModelRuleEntity id="i44364" CardinalityMin="0" CardinalityMax="0" Name="IfcDimensionCount">
 													<Rules>
 														<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0">
 															<Expression xsi:type="DocOpStatement" Operation="compareequal">
 																<Reference xsi:type="DocOpReference">
-																	<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="i44658" />
+																	<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="i44364" />
 																</Reference>
 																<Value xsi:type="DocOpLiteral" Operation="loadstring" Literal="3" />
 															</Expression>
@@ -946,9 +942,9 @@ application/step | IFC-SPF</Documentation>
 		<DocTemplateDefinition id="Project_Units_1CogmCYFXC7P7z8XJGvHF4" Name="Project Units" UniqueId="1CogmCYFXC7P7z8XJGvHF4" Type="IfcContext">
 			<Documentation>The project context includes the definition of the default units within the IFC data set. They are declared once for the context of the whole data set. Default units are those units that apply:
 
-* to all geometric representation items within the geometric representation contexts;
-* to all attributes with a defined datatype indicating a measure datatype;
-* to all properties and quantities with a defined datatype indicating a measure datatype and with no local unit definitions provided.
+* to all geometric representation items within the geometric representation contexts; 
+* to all attributes with a defined datatype indicating a measure datatype; 
+* to all properties and quantities with a defined datatype indicating a measure datatype and with no local unit definitions provided. 
 
 Default units are defined as either:
 
@@ -959,12 +955,13 @@ Default units are defined as either:
 
 &gt; EXAMPLE&amp;nbsp; Meter is an SI unit without prefix, milli meter is an SI unit with prefix, inch and foot are conversion based units to be declared with a converstion factor to the SI unit (here meter), heat flux density (W/m2) is a derived unit with the unit elements Power (W) and Area (m2), and Euro is a monetary unit.</Documentation>
 			<Localization>
-				<DocLocalization Name="AUTOMATIC" Locale="tt">
+				<DocLocalization Locale="tt">
 					<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
-                &lt;TemplateRule Parameters=&quot;HasUnits[Exists]=TRUE&quot;/&gt;
-                &lt;TemplateRule Parameters=&quot;SIUnitType[Value]=&apos;LENGTHUNIT&apos; AND SIUnitName[Value]=&apos;METRE&apos;&quot;/&gt;
-                &lt;TemplateRule Parameters=&quot;ConversionUnitType[Value]=&apos;PLANEANGLEUNIT&apos; AND ConversionUnitName[Value]=&apos;degree&apos;&quot;/&gt;
-                &lt;TemplateRule Parameters=&quot;DerivedUnitType[Value]=&apos;MASSDENSITYUNIT&apos;&quot;/&gt;
+	&lt;!-- Check existence of HasUnits reference and existence of different SI, Derived and Conversion-based units --&gt;
+	&lt;TemplateRule Parameters=&quot;HasUnits[Exists]=TRUE&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;SIUnitType[Value]=&apos;LENGTHUNIT&apos; AND SIUnitName[Value]=&apos;SQUARE_METRE&apos;&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;ConversionUnitType[Value]=&apos;PLANEANGLEUNIT&apos; AND ConversionUnitName[Value]=&apos;degree&apos;&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;DerivedUnitType[Value]=&apos;MASSDENSITYUNIT&apos;&quot;/&gt;
 &lt;/TemplateRules&gt;</Documentation>
 				</DocLocalization>
 			</Localization>

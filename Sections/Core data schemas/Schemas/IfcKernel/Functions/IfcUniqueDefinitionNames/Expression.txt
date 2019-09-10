@@ -14,10 +14,10 @@ END_IF;
 
 REPEAT i:=1 TO HIINDEX(Relations);
   Definition := Relations[i].RelatingPropertyDefinition;
-  IF 'IFC4.IFCPROPERTYSETDEFINITION' IN TYPEOF(Definition) THEN
+  IF 'IFCKERNEL.IFCPROPERTYSETDEFINITION' IN TYPEOF(Definition) THEN
     Properties := Properties + Definition;
   ELSE 
-    IF 'IFC4.IFCPROPERTYSETDEFINITIONSET' IN TYPEOF(Definition) THEN
+    IF 'IFCKERNEL.IFCPROPERTYSETDEFINITIONSET' IN TYPEOF(Definition) THEN
       BEGIN
         DefinitionSet := Definition;
         REPEAT j:= 1 TO HIINDEX(DefinitionSet);

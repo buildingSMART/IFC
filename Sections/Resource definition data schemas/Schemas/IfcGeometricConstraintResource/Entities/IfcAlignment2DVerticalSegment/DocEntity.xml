@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAlignment2DVerticalSegment" UniqueId="d613fd75-12a2-490c-901a-ecaa23332f7f" DiagramNumber="4" BaseDefinition="IfcAlignment2DSegment" EntityFlags="0">
+	<Localization>
+		<DocLocalization Name="Alignment 2D Vertical Segment" Locale="en" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="4936.00032552083" Y="1178.66666666667" Width="466.666656494141" Height="470.666656494141" />
+	<Subtypes>
+		<DocSubtype UniqueId="80c6330f-0ce2-47d8-9c06-d1f48824ea02" DefinedType="IfcAlignment2DVerSegLine" />
+		<DocSubtype UniqueId="976affd7-a804-4380-b89e-8e049fa694fa" DefinedType="IfcAlignment2DVerSegCircularArc" />
+		<DocSubtype UniqueId="9aab9644-5cca-473d-bfdf-10675d655148" DefinedType="IfcAlignment2DVerSegParabolicArc" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="StartDistAlong" UniqueId="a5165aa6-73ca-44ed-83b6-cc71447a6f7a" DefinedType="IfcLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Distance along the horizontal alignment, measured along the _IfcAlignment2DHorizontal_ given in the length unit of the global _IfcUnitAssignment_.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5402.66698201497" Y="1222.33341217041" />
+				<DocPoint X="5402.66698201497" Y="1222.33341217041" />
+				<DocPoint X="5833.33284505208" Y="1222.33341217041" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5402.66698201497" Y="1202.33341217041" Width="0" Height="0" />
+		</DocAttribute>
+		<DocAttribute Name="HorizontalLength" UniqueId="a2fe23af-c8fa-4aab-9e63-c03f98770570" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Length measured as distance along the horizontal alignment of the segment.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5402.66698201497" Y="1354.33341217041" />
+				<DocPoint X="5402.66698201497" Y="1354.33341217041" />
+				<DocPoint X="5833.33284505208" Y="1354.33341217041" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5402.66698201497" Y="1334.33341217041" Width="400" Height="50" />
+		</DocAttribute>
+		<DocAttribute Name="StartHeight" UniqueId="794b3cc4-cf59-4f6d-b090-699a8fb08638" DefinedType="IfcLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Elevation in Z of the start point relative to the IfcAlignment coordinate system.
+&gt; NOTE&amp;nbsp; It is strongly advised to not offset the IfcAlignment coordinate system from the project engineering coordinate system.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5402.66698201497" Y="1481.00003814697" />
+				<DocPoint X="5402.66698201497" Y="1481.00003814697" />
+				<DocPoint X="5833.33284505208" Y="1481.00003814697" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5402.66698201497" Y="1461.00003814697" Width="0" Height="0" />
+		</DocAttribute>
+		<DocAttribute Name="StartGradient" UniqueId="4c28f1e4-ef03-421a-a559-862cc0c31b7f" DefinedType="IfcRatioMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Gradient of the tangent of the vertical segment at the start point. It is provided as a ratio measure. The ratio is percentage/100 (0.1 is equal to 10%). It has a theoretical range of -∞ &lt; n &lt; ∞ using a ratio measure. The equivalent range measured in degree is -90° &lt; n &lt; 90°.
+&gt; NOTE&amp;nbsp; For practical application of start gradient, the range of the ratio measure should be within the limits of -1 ≤ n ≤ 1 (equivalent in degree -45° ≤ n ≤ 45°). However larger limits might apply for particular usages.
+
+Positive gradient means an increasing height at the start (or uphill), a negative gradient means decreasing height at the start (or downhill).</Documentation>
+			<DiagramLine>
+				<DocPoint X="5402.66698201497" Y="1605.00003814697" />
+				<DocPoint X="5402.66698201497" Y="1605.00003814697" />
+				<DocPoint X="5833.33284505208" Y="1605.00003814697" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5402.66698201497" Y="1585.00003814697" Width="400" Height="50" />
+		</DocAttribute>
+		<DocAttribute Name="ToVertical" UniqueId="32441d0d-e5aa-4d5d-ab82-335fe53717f5" DefinedType="IfcAlignment2DVertical" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="1" Inverse="Segments">
+			<DiagramLine>
+				<DocPoint X="5402.66698201497" Y="1178.66666666667" />
+				<DocPoint X="5407.9996693929" Y="1178.66666666667" />
+				<DocPoint X="5407.9996693929" Y="1105.33335367839" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5402.66698201497" Y="1158.66666666667" Width="400" Height="100" />
+		</DocAttribute>
+	</Attributes>
+	<Tree>
+		<DocLine>
+			<DiagramLine>
+				<DocPoint X="5005.33333333333" Y="1649.33332316081" />
+				<DocPoint X="5005.33333333333" Y="1649.33332316081" />
+				<DocPoint X="5005.33333333333" Y="1664" />
+			</DiagramLine>
+			<Tree>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="5005.33333333333" Y="1664" />
+						<DocPoint X="5005.33333333333" Y="2202.00012207031" />
+						<DocPoint X="5071.99983723958" Y="2202.00012207031" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="5005.33333333333" Y="1664" />
+						<DocPoint X="5005.33333333333" Y="1943.33325195313" />
+						<DocPoint X="5071.99983723958" Y="1943.33325195313" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="5005.33333333333" Y="1664" />
+						<DocPoint X="5005.33333333333" Y="1735.33341471354" />
+						<DocPoint X="5077.33333333333" Y="1735.33341471354" />
+					</DiagramLine>
+				</DocLine>
+			</Tree>
+		</DocLine>
+	</Tree>
+</DocEntity>
+

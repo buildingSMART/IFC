@@ -38,7 +38,7 @@ The grouping relationship does not apply any other meaning then grouping objects
 				<DocTemplateDefinition id="Component_to_Distribution_System_1onvxOOUP93vJsvqrxspFX" Name="Component to Distribution System" UniqueId="72c79ed8-61e6-490f-94f6-e74d7bdb33e1" Type="IfcDistributionElement">
 					<Documentation>The _Component to Distribution System_ assignment</Documentation>
 					<Localization>
-						<DocLocalization Name="AUTOMATIC" Locale="tt">
+						<DocLocalization Locale="tt">
 							<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
     &lt;!-- Check assignement to IfcDistributionSystem --&gt;
     &lt;TemplateRule Parameters=&quot;IsAssigned[Size]&gt;0 AND SystemName[Value]=&apos;WWS_1&apos;&quot;/&gt;
@@ -72,7 +72,7 @@ The grouping relationship does not apply any other meaning then grouping objects
 				<DocTemplateDefinition id="Port_to_Distribution_System_0bzWNJWzHC4A90p5chgeC" Name="Port to Distribution System" UniqueId="25f605d3-83d4-4c10-a240-cc59abaa8fcc" Type="IfcDistributionPort">
 					<Documentation>The _Port to Distribution System_ assignment</Documentation>
 					<Localization>
-						<DocLocalization Name="AUTOMATIC" Locale="tt">
+						<DocLocalization Locale="tt">
 							<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
     &lt;!-- Check assignement to IfcDistributionSystem --&gt;
     &lt;TemplateRule Parameters=&quot;IsAssigned[Size]&gt;0 AND SystemName[Value]=&apos;WWS_1&apos;&quot;/&gt;
@@ -135,9 +135,10 @@ The _Group Assignment_ concept establish a given object as being the group colle
 
 &gt; EXAMPLE&amp;nbsp; An air handler belonging to an air conditioning system is an example of such group assignment.</Documentation>
 			<Localization>
-				<DocLocalization Name="AUTOMATIC" Locale="tt">
+				<DocLocalization Locale="tt">
 					<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
-                &lt;TemplateRule Parameters=&quot;IsGrouped[Size]&gt;1 AND RelatedObjects[Size]&gt;4&quot;/&gt;
+    &lt;!-- Check existence of Group members --&gt;
+    &lt;TemplateRule Parameters=&quot;IsGrouped[Size]&gt;0 AND RelatedObjects[Size]&gt;0&quot;/&gt;
 &lt;/TemplateRules&gt;</Documentation>
 				</DocLocalization>
 			</Localization>

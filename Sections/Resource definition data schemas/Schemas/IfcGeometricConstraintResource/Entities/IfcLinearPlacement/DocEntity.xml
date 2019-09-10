@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcLinearPlacement" UniqueId="0a5f39b5-87f9-40b5-bd87-15f624b84dd0" DiagramNumber="1" BaseDefinition="IfcObjectPlacement" EntityFlags="32">
+	<Localization>
+		<DocLocalization Name="Linear Placement" Locale="en" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="37.3332614898682" Y="415.999979654948" Width="826.666707356771" Height="75.9999898274739" />
+	<Attributes>
+		<DocAttribute Name="PlacementRelTo" UniqueId="2758b73a-4868-4d7d-bfe8-d70f2911006f" DefinedType="IfcCurve" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The curve used as the basis for positioning parameters.</Documentation>
+			<DiagramLine>
+				<DocPoint X="863.999968846639" Y="1954.73327636719" />
+				<DocPoint X="1060.6708984375" Y="1954.73327636719" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="863.999968846639" Y="1954.73327636719" Width="400" Height="50" />
+		</DocAttribute>
+		<DocAttribute Name="Distance" UniqueId="8567b7f1-9a00-4631-a603-3e0cd846fc4b" DefinedType="IfcDistanceExpression" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The position relative to the referenced curve.</Documentation>
+			<DiagramLine>
+				<DocPoint X="225.333302815755" Y="415.999979654948" />
+				<DocPoint X="225.333302815755" Y="415.999979654948" />
+				<DocPoint X="225.333302815755" Y="335.999974568685" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="225.333302815755" Y="395.999979654948" Width="400" Height="50" />
+		</DocAttribute>
+		<DocAttribute Name="Orientation" UniqueId="c4b9caac-fb98-41a8-a57e-da810c0a69d7" DefinedType="IfcOrientationExpression" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Rotation of the object in the horizontal plane and vertical axis (after applying DistanceAlong, OffsetLateral, OffsetVertical, and OffsetLongitudinal).</Documentation>
+			<DiagramLine>
+				<DocPoint X="651.99994913737" Y="415.999979654948" />
+				<DocPoint X="651.99994913737" Y="415.999979654948" />
+				<DocPoint X="651.99994913737" Y="331.999956766764" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="651.99994913737" Y="395.999979654948" Width="400" Height="50" />
+		</DocAttribute>
+		<DocAttribute Name="CartesianPosition" UniqueId="f8d7e56b-5255-4bba-9c62-a7f44ef1c042" DefinedType="IfcAxis2Placement3D" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Indicates the calculated global location and orientation in Cartesian coordinates as a fallback which may be used by applications that do not support linear placement.</Documentation>
+			<DiagramLine>
+				<DocPoint X="222.666604995728" Y="491.999969482422" />
+				<DocPoint X="222.666604995728" Y="491.999969482422" />
+				<DocPoint X="222.666604995728" Y="553.333333333333" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="222.666604995728" Y="511.999969482422" Width="400" Height="50" />
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

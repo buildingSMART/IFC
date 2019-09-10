@@ -62,7 +62,8 @@
 			<Documentation>Category of the material layer, e.g. the role it has in the layer set it belongs to (such as &apos;load bearing&apos;, &apos;thermal insulation&apos; etc.). The list of keywords might be extended by model view definitions, however the following keywords shall apply in general:
 * &apos;LoadBearing&apos; &amp;mdash; for all material layers having a load bearing function.
 * &apos;Insulation&apos; &amp;mdash; for all material layers having an insolating function. 
-* &apos;Finish&apos; &amp;mdash; for the material layer being the inner or outer finish.</Documentation>
+* &apos;Inner finish&apos; &amp;mdash; for the material layer being the inner finish.
+* &apos;Outer finish&apos; &amp;mdash; for the material layer being the outer finish.</Documentation>
 			<DiagramLine>
 				<DocPoint X="2099.9433" Y="1746.65" />
 				<DocPoint X="2519.4668" Y="1746.65" />
@@ -95,13 +96,5 @@
 			<Expression>NOT(EXISTS(Priority)) OR {0 &lt;= Priority &lt;= 100}</Expression>
 		</DocWhereRule>
 	</WhereRules>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="1912.757" Y="1908.3113" />
-				<DocPoint X="1912.757" Y="2084.36141" />
-			</DiagramLine>
-		</DocLine>
-	</Tree>
 </DocEntity>
 
