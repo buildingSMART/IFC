@@ -246,7 +246,7 @@ Only the following spatial structure elements _IfcSite_, _IfcBuilding_, _IfcBuil
 All model elements, listed in the previous section, are defined by several generic and direct object attributes, some specific model elements do carry additional direct attributes. The usage of the direct generic attributes is defined within the following concept templates (see also Chapter 4 "fundamental concepts and assumptions"):
 
 * "_Software Identity_", it defines how to apply the Globally Unique Id and how to compress it during exchange; 
-* "_User Identity_", it defins the meaning of _Name_, _Description_, _LongName_and _Tag_attributes; 
+* "_User Identity_", it defines the meaning of _Name_, _Description_, _LongName_and _Tag_attributes; 
 * "_Object Occurrence Predefined Type_", it defines how to use the _PredefinedType_and in case of user defined types, how to assign the user defined type information within the _ObjectType_attribute for occurrences of model elements; 
 * "_Element Type Predefined Type_" it defines how to use the _PredefinedType_and in case of user defined types, how to assign the user defined type information within the _ElementType_attribute for types of model elements. 
 
