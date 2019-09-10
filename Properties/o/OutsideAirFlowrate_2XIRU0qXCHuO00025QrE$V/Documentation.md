@@ -1,1 +1,1 @@
-﻿Flow rate of outside air entering the PackagedACUnit per the manufacturer's listing (if available)
+﻿Flow rate of outside air entering the unit.

@@ -1,19 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSurfaceOfLinearExtrusion" UniqueId="de606da2-a6cd-4560-a4c7-0e89276bc4ca" DiagramNumber="8" BaseDefinition="IfcSweptSurface" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSurfaceOfLinearExtrusion" UniqueId="de606da2-a6cd-4560-a4c7-0e89276bc4ca" DiagramNumber="11" BaseDefinition="IfcSweptSurface" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Oberfläche - Entlang einem Vektor extrudiert" Locale="de" />
+		<DocLocalization Name="Extrusion linéaire ou surfacique" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="16196.294" Y="961.01876" Width="463.33333" Height="100" />
 	<Attributes>
-		<DocAttribute Name="ExtrudedDirection" UniqueId="0f7fc3fd-9211-4ce1-8cc9-408ea774da47" DefinedType="IfcDirection" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ExtrudedDirection" UniqueId="0f7fc3fd-9211-4ce1-8cc9-408ea774da47" DefinedType="IfcDirection" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>The direction of the extrusion.</Documentation>
+			<DiagramLine>
+				<DocPoint X="16567.96" Y="1061.0188" />
+				<DocPoint X="16567.96" Y="1224.2854" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="16681.29333" Y="1093.652135" Width="203" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Depth" UniqueId="4a50c089-187a-47a1-bae2-528540dc9218" DefinedType="IfcLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The depth of the extrusion, it determines the parameterization.</Documentation>
+			<DiagramLine>
+				<DocPoint X="16291.96" Y="1061.0188" />
+				<DocPoint X="16291.96" Y="1224.35207" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="16342.626667" Y="1098.352117" Width="74" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="ExtrusionAxis" UniqueId="d6df0744-f821-4cb7-8ccf-c3dacd8a9690" DefinedType="IfcVector" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The extrusion axis defined as vector.</Documentation>
 			<Derived>IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcVector (ExtrudedDirection, Depth)</Derived>
+			<DiagramLine>
+				<DocPoint X="16290.461" Y="961.01876" />
+				<DocPoint X="16290.461" Y="742.95212" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="16423.79433" Y="940.185427" Width="229" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR41" UniqueId="1aPynEHZ53NAEI9p0OPuAq">
+		<DocWhereRule Name="DepthGreaterZero" UniqueId="a179fcd8-1fc5-4d09-a876-635847e42f3d">
 			<Expression>Depth &gt; 0.</Expression>
 		</DocWhereRule>
 	</WhereRules>

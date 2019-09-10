@@ -1,0 +1,1 @@
+﻿Shear strength in torsion.

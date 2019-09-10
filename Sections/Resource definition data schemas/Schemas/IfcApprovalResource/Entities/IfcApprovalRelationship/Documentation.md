@@ -1,4 +1,6 @@
-﻿An _IfcApprovalRelationship_ associates two approvals, having e.g. different status or level as approval process or the approved objects evolve.
+﻿An _IfcApprovalRelationship_ associates approvals (one relating approval and one or more related approvals), each having different status or level as the approval process or the approved objects evolve.
 
-> <font size="-1" color="#0000FF">HISTORY: New entity in Release IFC2x Edition 2.</font>
->
+> HISTORY&nbsp; New entity in IFC2x2.
+
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; Subtyped from _IfcResourceLevelRelationship_, order of attributes changed.

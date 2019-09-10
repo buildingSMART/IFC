@@ -1,16 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCurve" UniqueId="e39241f5-7436-4f04-91f5-7a80393f242d" DiagramNumber="5" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="13">
+	<Localization>
+		<DocLocalization Name="Kurve" Locale="de" />
+		<DocLocalization Name="Courbe" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="7183.7057" Y="448.54479" Width="202" Height="100" />
 	<Subtypes>
 		<DocSubtype UniqueId="c1c0f7ae-4e31-4912-9b07-7d3080132caf" DefinedType="IfcBoundedCurve" />
 		<DocSubtype UniqueId="0e92f170-da26-49e2-b8fb-d421eaf4df18" DefinedType="IfcConic" />
 		<DocSubtype UniqueId="af89f43d-30b8-42a0-95c6-ed6f8e9d8cf1" DefinedType="IfcLine" />
 		<DocSubtype UniqueId="a053f77b-888f-41a7-8739-cc3e88d50b85" DefinedType="IfcOffsetCurve2D" />
 		<DocSubtype UniqueId="0265bbc4-43a5-4837-977e-d756a6598447" DefinedType="IfcOffsetCurve3D" />
+		<DocSubtype UniqueId="aa1f7361-3ce5-47f8-833f-3dd88731e275" DefinedType="IfcPcurve" />
 	</Subtypes>
 	<Attributes>
 		<DocAttribute Name="Dim" UniqueId="ac570a55-8169-4098-82e0-7c5fdb6c597a" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The space dimensionality of this abstract class, defined differently for all subtypes, i.e. for IfcLine, IfcConic and IfcBoundedCurve.</Documentation>
 			<Derived>IfcCurveDim(SELF)</Derived>
+			<DiagramLine>
+				<DocPoint X="7183.7057" Y="468.54479" />
+				<DocPoint X="7165.809265" Y="468.54479" />
+				<DocPoint X="7165.809265" Y="279.77813" />
+				<DocPoint X="7147.91283" Y="279.77813" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="7080.424149" Y="466.2781217" Width="125" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

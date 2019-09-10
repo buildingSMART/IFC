@@ -1,18 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcOffsetCurve2D" UniqueId="f5ea20e7-98db-4aeb-b0f8-03ac3e6d947c" DiagramNumber="5" BaseDefinition="IfcCurve" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Versetzte Kurve im zweidimensionalen Raum (2D)" Locale="de" />
+		<DocLocalization Name="Décalage de courbe 2D" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="7551.8" Y="614.5" Width="384.63333" Height="100" />
 	<Attributes>
-		<DocAttribute Name="BasisCurve" UniqueId="99888d7b-4079-40f5-9de9-5f4048ee8964" DefinedType="IfcCurve" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="BasisCurve" UniqueId="99888d7b-4079-40f5-9de9-5f4048ee8964" DefinedType="IfcCurve" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>The curve that is being offset.</Documentation>
+			<DiagramLine>
+				<DocPoint X="7607.4362" Y="614.5" />
+				<DocPoint X="7607.4362" Y="498.54479" />
+				<DocPoint X="7385.70573" Y="498.54479" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="7651.951442" Y="485.889062" Width="132" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Distance" UniqueId="4214b648-a464-4af2-ba65-3c2ac259bd4a" DefinedType="IfcLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The distance of the offset curve from the basis curve. distance may be positive, negative or zero. A positive value of distance defines an offset in the direction which is normal to the curve in the sense of an anti-clockwise rotation through 90 degrees from the tangent vector T at the given point. (This is in the direction of orthogonal complement(T).)</Documentation>
+			<DiagramLine>
+				<DocPoint X="7744.1167" Y="614.5" />
+				<DocPoint X="7744.1167" Y="329.6" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="7814.1167" Y="571.166667" Width="103" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="SelfIntersect" UniqueId="7b9a922b-dd34-4353-b3d4-a230b9dc5dcb" DefinedType="LOGICAL" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>An indication of whether the offset curve self-intersects; this is for information only.</Documentation>
+			<DiagramLine>
+				<DocPoint X="7744.1167" Y="714.5" />
+				<DocPoint X="7744.1167" Y="784.201829" />
+				<DocPoint X="7845.9667" Y="784.201829" />
+				<DocPoint X="7845.9667" Y="812.23333" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="7734.1167" Y="762.548506" Width="144" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="2VqqvysJL9aeZP6QUNVR$j">
+		<DocWhereRule Name="DimIs2D" UniqueId="8aa819a1-12cf-498e-ad6d-d30530c54d6d">
 			<Documentation>The underlying curve shall be defined in two-dimensional space.</Documentation>
 			<Expression>BasisCurve.Dim = 2</Expression>
 		</DocWhereRule>

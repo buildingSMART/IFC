@@ -1,6 +1,9 @@
-﻿Enumeration defining the typical types of humidifiers. The _IfcHumidifierTypeEnum_ contains the following:
+﻿Enumeration defining the typical types of humidifiers.
 
-* **STEAMINJECTION**: Water vapor is added into the airstream through direction steam injection.
+{ .spec-head}
+Enumerated Item Definitions:
+
+* **STEAMINJECTION**: Water vapor is added into the airstream through direct steam injection.
 * **ADIABATICAIRWASHER**: Water vapor is added into the airstream through adiabatic evaporation using an air washing element.
 * **ADIABATICPAN**: Water vapor is added into the airstream through adiabatic evaporation using a pan.
 * **ADIABATICWETTEDELEMENT**: Water vapor is added into the airstream through adiabatic evaporation using a wetted element.
@@ -16,6 +19,4 @@
 * **USERDEFINED**: User-defined humidifier type.
 * **NOTDEFINED**: Undefined humidifier type.
 
-> <font color="#0000ff" size="-1">
-    	HISTORY: New enumeration in IFC 2x2.<br>
-    	</font>
+> HISTORY&nbsp; New enumeration in IFC2x2.

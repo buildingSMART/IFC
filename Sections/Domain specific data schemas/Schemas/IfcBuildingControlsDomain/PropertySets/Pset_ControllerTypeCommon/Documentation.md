@@ -1,1 +1,1 @@
-﻿Properties for signal handling for an analog controller taking disparate valued multiple inputs and creating a single valued output.
+﻿Controller type common attributes.

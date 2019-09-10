@@ -1,14 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMetric" UniqueId="80e1bafe-6a4a-46c1-9f7d-1c432b1ad3f8" DiagramNumber="1" BaseDefinition="IfcConstraint" EntityFlags="165">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMetric" UniqueId="80e1bafe-6a4a-46c1-9f7d-1c432b1ad3f8" DiagramNumber="1" BaseDefinition="IfcConstraint" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Metrik" Locale="de" />
+		<DocLocalization Name="Métrique" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="269.7782" Y="1584.9469" Width="241.85388" Height="228.78116" />
 	<Attributes>
 		<DocAttribute Name="Benchmark" UniqueId="f6bf2afd-66d2-4ca3-8497-049c6de0448b" DefinedType="IfcBenchmarkEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Enumeration that identifies the type of benchmark data.</Documentation>
+			<DiagramLine>
+				<DocPoint X="511.63208" Y="1616.2015" />
+				<DocPoint X="817.40335" Y="1616.2015" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="533.292529" Y="1609.9419721" Width="131" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="ValueSource" UniqueId="b72c1003-2c12-4c5f-89f0-a650f7725700" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Reference source for data values.</Documentation>
+			<Documentation>Reference source for data values. 
+
+If _DataValue_ refers to an _IfcTable_, this attribute identifies the relevent column identified by _IfcTableColumn_._Name_.</Documentation>
+			<DiagramLine>
+				<DocPoint X="511.63208" Y="1676.3387" />
+				<DocPoint X="1442.84781" Y="1676.3387" />
+				<DocPoint X="1442.84781" Y="1250.58405" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="621.94644" Y="1671.6384586" Width="148" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="DataValue" UniqueId="23f467e3-d669-4627-b39a-f3ea04867950" DefinedType="IfcMetricValueSelect" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>Value with data type defined by the DataType enumeration.</Documentation>
+			<Documentation>The value to be compared on associated objects.</Documentation>
+			<DiagramLine>
+				<DocPoint X="511.63208" Y="1746.1015" />
+				<DocPoint X="817.4091" Y="1746.1015" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="613.27031" Y="1742.2380654" Width="123" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="ReferencePath" UniqueId="78456c1f-276f-4b88-807b-5f5009c06e6d" DefinedType="IfcReference" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>Optional path to an attribute to be constrained on associated objects. If provided, the metric may be validated by resolving the path to the current value on associated object(s), and comparing such value with _DataValue_ according to the _Benchmark_.</Documentation>
+			<DiagramLine>
+				<DocPoint X="390.70514" Y="1813.7281" />
+				<DocPoint X="390.70514" Y="1927.94274" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="507.83382" Y="1811.7355558" Width="173" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

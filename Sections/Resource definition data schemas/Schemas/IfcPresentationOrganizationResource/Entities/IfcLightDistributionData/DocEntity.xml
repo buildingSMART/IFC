@@ -1,16 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcLightDistributionData" UniqueId="cffe9f24-4de2-4238-8448-856d95446876" DiagramNumber="3" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Daten der Lichtverteilung" Locale="de" />
+		<DocLocalization Name="Donnée de distribution lumineuse" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="4371.5667" Y="1304.1667" Width="310" Height="100.6" />
 	<Attributes>
 		<DocAttribute Name="MainPlaneAngle" UniqueId="8bfeda5d-d746-43d6-9ae7-6099d937f490" DefinedType="IfcPlaneAngleMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The main plane angle (A, B or C angles, according to the light distribution curve chosen).</Documentation>
+			<DiagramLine>
+				<DocPoint X="4418.7167" Y="1404.7667" />
+				<DocPoint X="4418.7167" Y="1552.13337" />
+				<DocPoint X="4134.20003" Y="1552.13337" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4435.1417" Y="1540.03337" Width="186" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="SecondaryPlaneAngle" UniqueId="3fbe74a3-c4b3-4987-8774-375df54d71eb" DefinedType="IfcPlaneAngleMeasure" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The list of secondary plane angles (the &amp;#945;, &amp;#946; or &amp;#947; angles) according to the light distribution curve chosen.
 
-&gt; NOTE: The _SecondaryPlaneAngle_ and _LuminousIntensity_ lists are corresponding lists.</Documentation>
+&gt; NOTE&amp;nbsp; The _SecondaryPlaneAngle_ and _LuminousIntensity_ lists are corresponding lists.</Documentation>
+			<DiagramLine>
+				<DocPoint X="4525.3833" Y="1404.7667" />
+				<DocPoint X="4525.3833" Y="1638.80003" />
+				<DocPoint X="4134.19997" Y="1638.80003" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4536.8083" Y="1628.366697" Width="328" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="LuminousIntensity" UniqueId="226abcef-3fd3-4a2c-a02c-653dc392ba82" DefinedType="IfcLuminousIntensityDistributionMeasure" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The luminous intensity distribution measure for this pair of main and secondary plane angles according to the light distribution curve chosen.</Documentation>
+			<DiagramLine>
+				<DocPoint X="4629.9" Y="1404.7667" />
+				<DocPoint X="4629.9" Y="1857.50003" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4483.23333" Y="1330.0667" Width="283" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

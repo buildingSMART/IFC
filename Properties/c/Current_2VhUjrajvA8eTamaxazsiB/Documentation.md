@@ -1,0 +1,1 @@
+﻿Log of electrical current.

@@ -1,1 +1,1 @@
-﻿The nominal height of the segment
+﻿The nominal height of the segment.

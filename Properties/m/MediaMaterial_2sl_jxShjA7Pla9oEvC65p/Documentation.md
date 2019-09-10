@@ -1,1 +1,0 @@
-﻿Filter media material.

@@ -1,15 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBoxedHalfSpace" UniqueId="6d52ef81-4176-4ab5-a2d3-39b86c31c378" DiagramNumber="3" BaseDefinition="IfcHalfSpaceSolid" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Eingerahmter Halbraum" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="4264.17" Y="1320.0333" Width="380.66667" Height="100" />
 	<Attributes>
-		<DocAttribute Name="Enclosure" UniqueId="1dfdfca3-ec6b-45af-8bdf-d2bdffe279bc" DefinedType="IfcBoundingBox" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>The box which bounds the half space for computational purposes only.</Documentation>
+		<DocAttribute Name="Enclosure" UniqueId="1dfdfca3-ec6b-45af-8bdf-d2bdffe279bc" DefinedType="IfcBoundingBox" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>The box which bounds the resulting solid of the Boolean operation involving the half space solid for computational purposes only.</Documentation>
+			<DiagramLine>
+				<DocPoint X="4574.5366" Y="1320.0333" />
+				<DocPoint X="4574.5366" Y="885.50003" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4498.759933" Y="1261.42499" Width="116" Height="35" />
 		</DocAttribute>
 	</Attributes>
-	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="3WlUcv7fHE9OgLBIs2AVqO">
-			<Documentation>The BaseSurface defining the half space shall not be a bounded surface.</Documentation>
-			<Expression>NOT (&apos;IFCGEOMETRYRESOURCE.IFCCURVEBOUNDEDPLANE&apos; IN TYPEOF(SELF\IfcHalfSpaceSolid.BaseSurface))</Expression>
-		</DocWhereRule>
-	</WhereRules>
 </DocEntity>
 

@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralReaction" UniqueId="f0e940ad-cfed-49d8-a850-023bd268a88a" DiagramNumber="4" BaseDefinition="IfcStructuralActivity" EntityFlags="141">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralReaction" UniqueId="f0e940ad-cfed-49d8-a850-023bd268a88a" DiagramNumber="4" BaseDefinition="IfcStructuralActivity" EntityFlags="133">
+	<Localization>
+		<DocLocalization Name="Auflagerreaktion / Schnittkraft (allgemein)" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="6147.472" Y="1114.4384" Width="200" Height="124.71406" />
 	<Subtypes>
 		<DocSubtype UniqueId="af18b839-96bc-4a1f-9314-59380475e15d" DefinedType="IfcStructuralPointReaction" />
+		<DocSubtype UniqueId="73afcfa9-9110-4182-9a0e-8761ef9aef06" DefinedType="IfcStructuralCurveReaction" />
+		<DocSubtype UniqueId="cafacc2f-9172-4ff4-93dd-df87413e0ad5" DefinedType="IfcStructuralSurfaceReaction" />
 	</Subtypes>
-	<Attributes>
-		<DocAttribute Name="Causes" UniqueId="1jH8FO1dj5Su0vlN40YSkl" DefinedType="IfcStructuralAction" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="CausedBy">
-			<Documentation>Optional reference to instances of IfcStructuralAction which directly depend on this reaction. This reference is only needed if dependencies between structural analysis models must be captured.</Documentation>
-		</DocAttribute>
-	</Attributes>
 </DocEntity>
 

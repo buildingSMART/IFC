@@ -1,11 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMaterialClassificationRelationship" UniqueId="5b9df3e2-be80-4922-9a85-8f8fb6e9cbef" DiagramNumber="1" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMaterialClassificationRelationship" UniqueId="5b9df3e2-be80-4922-9a85-8f8fb6e9cbef" DiagramNumber="5" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Materialklassifikation - Relation" Locale="de" />
+		<DocLocalization Name="Assignation de classification à un matériau" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="6915.6303" Y="1837.5501" Width="379.10481" Height="177.18725" />
 	<Attributes>
-		<DocAttribute Name="MaterialClassifications" UniqueId="21ad3946-1327-4f45-b1c7-b34782cb57a2" DefinedType="IfcClassificationNotationSelect" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="MaterialClassifications" UniqueId="21ad3946-1327-4f45-b1c7-b34782cb57a2" DefinedType="IfcClassificationSelect" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The material classifications identifying the type of material.</Documentation>
+			<DiagramLine>
+				<DocPoint X="7105.1827" Y="2014.7374" />
+				<DocPoint X="7105.1827" Y="2095.274644" />
+				<DocPoint X="7656.64098" Y="2095.274644" />
+				<DocPoint X="7656.64098" Y="2065.078622" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="7139.186499" Y="2146.04019" Width="329" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ClassifiedMaterial" UniqueId="2cb7cbb7-27a9-41ee-bb2f-4a418429e5e7" DefinedType="IfcMaterial" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ClassifiedMaterial" UniqueId="2cb7cbb7-27a9-41ee-bb2f-4a418429e5e7" DefinedType="IfcMaterial" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>Material being classified.</Documentation>
+			<DiagramLine>
+				<DocPoint X="7030.8543" Y="2014.7374" />
+				<DocPoint X="7030.8543" Y="2145.87368" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="6919.36159" Y="2036.079708" Width="200" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

@@ -1,21 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPresentationLayerWithStyle" UniqueId="d58d8ae7-e309-454d-b3f1-2b58ce4d583d" DiagramNumber="1" BaseDefinition="IfcPresentationLayerAssignment" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Zuordnung zu Präsentations-Layer mit Stilvorgaben" Locale="de" />
+		<DocLocalization Name="Assignation de calque avec style" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1131.5933" Y="1313.04" Width="336" Height="436.66667" />
 	<Attributes>
 		<DocAttribute Name="LayerOn" UniqueId="c35508db-bb0f-4b65-8ebe-1263d8d30880" DefinedType="LOGICAL" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>A logical setting, TRUE indicates that the layer is set to &apos;On&apos;, FALSE that the layer is set to &apos;Off&apos;, UNKNOWN that such information is not available.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1131.5933" Y="1539.533" />
+				<DocPoint X="784.56666" Y="1539.533" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1108.126633" Y="1535.2663333" Width="102" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="LayerFrozen" UniqueId="cd1d47f4-0d9b-443b-99a8-e11337ce2807" DefinedType="LOGICAL" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>A logical setting, TRUE indicates that the layer is set to &apos;Frozen&apos;, FALSE that the layer is set to &apos;Not frozen&apos;, UNKNOWN that such information is not available.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1131.5933" Y="1629.3667" />
+				<DocPoint X="784.56666" Y="1629.3667" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1133.7266333" Y="1622.9667" Width="146" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="LayerBlocked" UniqueId="30057b28-65bc-49de-8333-f563a5910322" DefinedType="LOGICAL" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>A logical setting, TRUE indicates that the layer is set to &apos;Blocked&apos;, FALSE that the layer is set to &apos;Not blocked&apos;, UNKNOWN that such information is not available.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1131.5933" Y="1716.6308" />
+				<DocPoint X="784.56666" Y="1716.6308" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1137.9933" Y="1712.3641333" Width="156" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LayerStyles" UniqueId="e8b3dbe7-1765-4f94-95ef-729981109562" DefinedType="IfcPresentationStyleSelect" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0">
+		<DocAttribute Name="LayerStyles" UniqueId="e8b3dbe7-1765-4f94-95ef-729981109562" DefinedType="IfcPresentationStyle" AttributeFlags="0" AggregationType="3" AggregationFlag="0">
 			<Documentation>Assignment of presentation styles to the layer to provide a default style for representation items.
-&gt; &lt;small&gt;
-NOTE&amp;nbsp; In most cases the assignment of styles to a layer is restricted to an &lt;i&gt;IfcCurveStyle&lt;/i&gt; representing the layer curve colour, layer curve thickness, and layer curve type.
-&lt;/small&gt;</Documentation>
+&gt; NOTE&amp;nbsp; In most cases the assignment of styles to a layer is restricted to an _IfcCurveStyle_ representing the layer curve colour, layer curve thickness, and layer curve type.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; The data type has been changed from _IfcPresentationStyleSelect_ (now deprecated) to _IfcPresentationStyle_.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1131.5933" Y="1368.04" />
+				<DocPoint X="784.56667" Y="1368.04" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1144.926633" Y="1361.3733333" Width="214" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="ApplicableOnlyToItems" UniqueId="15b49b88-7a97-4508-afed-63832bc8c23a">
+			<Documentation>The _IfcPresentationLayerWithStyle_ shall only be used to assign subtypes of _IfcGeometricRepresentationItem_&apos;s and to _IfcMappedItem_. There shall be no instance of subtypes of _IfcRepresentation_ in the set of _AssignedItem_&apos;s.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; New where rule.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* AssignedItems | (
+  SIZEOF(TYPEOF(temp) * [
+    &apos;IFCGEOMETRYRESOURCE.IFCGEOMETRICREPRESENTATIONITEM&apos;,
+    &apos;IFCGEOMETRYRESOURCE.IFCMAPPEDITEM&apos;]) = 1)
+)) = SIZEOF(AssignedItems)</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

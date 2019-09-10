@@ -1,1 +1,0 @@
-﻿The duct segment material.

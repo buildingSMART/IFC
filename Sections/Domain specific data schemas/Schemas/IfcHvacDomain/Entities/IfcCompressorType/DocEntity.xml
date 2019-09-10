@@ -1,12 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCompressorType" UniqueId="7da5429d-8a3e-4380-bd61-3b719dbfeebd" DiagramNumber="3" BaseDefinition="IfcFlowMovingDeviceType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Kompressor - Typ" Locale="de" />
+		<DocLocalization Name="Type de compresseur" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="3261.2386" Y="402.62937" Width="381.40066" Height="100" />
 	<Attributes>
 		<DocAttribute Name="PredefinedType" UniqueId="ffbabe3c-9c16-47e1-ac44-bc3c7f0c6e62" DefinedType="IfcCompressorTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Defines the type of compressor (e.g., hermetic, reciprocating, etc.).</Documentation>
+			<DiagramLine>
+				<DocPoint X="3642.6393" Y="452.62936" />
+				<DocPoint X="3851.7326" Y="452.62936" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3637.8701154" Y="444.5762961" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="1kUTxd8ojEXQ_ok2Ja5cAB">
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="f0da2446-b067-4591-9760-358b7580a2d0">
 			<Expression>(PredefinedType &lt;&gt; IfcCompressorTypeEnum.USERDEFINED) OR
 ((PredefinedType = IfcCompressorTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
 		</DocWhereRule>

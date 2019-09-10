@@ -1,1 +1,0 @@
-﻿Material used to construct the shell of the heat exchanger.

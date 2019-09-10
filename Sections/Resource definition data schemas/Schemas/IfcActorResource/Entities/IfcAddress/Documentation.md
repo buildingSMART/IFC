@@ -1,4 +1,5 @@
-﻿An abstract entity type for various kinds of postal and telecom addresses.
+﻿This abstract entity represents various kinds of postal and telecom addresses.
 
-> <font size="-1" color="#0000FF">HISTORY New entity in IFC Release 1.5.1.
-</font>
+> NOTE&nbsp; Entity adapted from **address** defined in ISO&nbsp;10303-41.
+
+> HISTORY&nbsp; New entity in IFC1.5.1.

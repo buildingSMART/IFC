@@ -1,0 +1,11 @@
+﻿(Properties : SET [1:?] OF IfcPhysicalQuantity)
+:LOGICAL;
+
+LOCAL
+  Names : SET OF IfcLabel := [];
+END_LOCAL;
+
+REPEAT i:=1 TO HIINDEX(Properties);
+  Names := Names + Properties[i].Name;
+END_REPEAT;
+RETURN (SIZEOF(Names) = SIZEOF(Properties));

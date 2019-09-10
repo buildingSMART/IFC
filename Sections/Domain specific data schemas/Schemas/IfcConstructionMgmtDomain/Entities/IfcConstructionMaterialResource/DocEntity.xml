@@ -1,22 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcConstructionMaterialResource" UniqueId="7a284148-2d7a-4765-b4e6-59fd177792f3" DiagramNumber="1" BaseDefinition="IfcConstructionResource" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcConstructionMaterialResource" Name="IfcConstructionMaterialResource" UniqueId="7a284148-2d7a-4765-b4e6-59fd177792f3" DiagramNumber="1" BaseDefinition="IfcConstructionResource" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Baumaterial - Ressource" Locale="de" />
+		<DocLocalization Name="Matériaux de construction" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="95.480003" Y="1806.0334" Width="658.26666" Height="100" />
 	<Attributes>
-		<DocAttribute Name="Suppliers" UniqueId="0XJkWj4zj2WQQ6R7QKKbbG" DefinedType="IfcActorSelect" AttributeFlags="1" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
-			<Documentation>Possible suppliers of the type of materials.</Documentation>
-		</DocAttribute>
-		<DocAttribute Name="UsageRatio" UniqueId="2IExSeMjb7beuhTKbfnS7j" DefinedType="IfcRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>The ratio of the amount of a construction material used to the amount provided (determined as a quantity)</Documentation>
+		<DocAttribute Name="PredefinedType" UniqueId="ebc589df-50eb-4ae8-9581-ccadc54d6260" DefinedType="IfcConstructionMaterialResourceTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Defines types of construction material resources.
+{ .change-ifc2x4}
+&gt; IFC4 New attribute.</Documentation>
+			<DiagramLine>
+				<DocPoint X="104.61333" Y="1906.0334" />
+				<DocPoint X="104.61333" Y="1956.656717" />
+				<DocPoint X="467.7" Y="1956.656717" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="24.61333" Y="1948.656717" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="1N67Y9V459zBz38gJgvX6A">
-			<Documentation>There should only be a single relationship, assigning products to the material resource.</Documentation>
-			<Expression>SIZEOF(SELF\IfcResource.ResourceOf) &lt;=1</Expression>
-		</DocWhereRule>
-		<DocWhereRule Name="WR2" UniqueId="2QlZbXUQT07hr$uc$p165P">
-			<Documentation>If a reference to a resource is given, then through the IfcRelAssignsToResource relationship with the RelatedObjectType PRODUCT.</Documentation>
-			<Expression>NOT(EXISTS(SELF\IfcResource.ResourceOf[1])) OR
-(SELF\IfcResource.ResourceOf[1].RelatedObjectsType = IfcObjectTypeEnum.PRODUCT)</Expression>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="c8d45166-eb90-44df-a8eb-d9ba7ce319a7">
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcConstructionMaterialResourceTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcConstructionMaterialResourceTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>

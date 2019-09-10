@@ -1,1 +1,1 @@
-﻿The number of separate internal compartments within the trunking
+﻿The number of separate internal compartments within the trunking.

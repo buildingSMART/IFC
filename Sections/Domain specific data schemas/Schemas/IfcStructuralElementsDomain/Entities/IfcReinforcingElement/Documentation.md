@@ -1,14 +1,11 @@
-﻿Bars, wires, strands, and other slender members embedded in concrete in such a manner that the reinforcement and the concrete act together in resisting forces.
+﻿A reinforcing element represents bars, wires, strands, meshes, tendons, and other components embedded in concrete in such a manner that the reinforcement and the concrete act together in resisting forces.
 
-> <font color="#0000FF" size="-1"> HISTORY New entity in IFC
-		Release 2x2 </font>
+{ .extDef}
+> NOTE&nbsp; Definition according to ISO 6707-1: rod(s), bar(s), fabric, fibres, wires and cable(s) added to give additional strength or support to a material or component.
 
-**Geometry Use Definitions:**
+One or several instances of subtypes of _IfcReinforcingElement_ should always be accompanied by a defining instance of a respective subtype of _IfcReinforcingElementType_. The type object holds shape and material information.
 
-The geometric representation of _IfcReinforcingElement_ is given by the _IfcProductDefinitionShape_, allowing multiple geometric representations. Included are:
+> HISTORY&nbsp; New entity in IFC2x2
 
-**Local Placement**  
-The use of local placement is defined at the supertype _IfcBuildingElementComponent_.
-
-**Standard Geometric Representation**  
-The use of Standard Geometric Representations is defined at the supertype _IfcBuildingElementComponent_. Further constraints on the geometric representation may be defined in subtypes.
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; Attribute _SteelGrade_ deprecated.

@@ -67,7 +67,7 @@ CASE m OF
       ELSE RETURN(FALSE);
     END_IF;
   ELECTRICCAPACITANCEUNIT : IF
-    Dim = (IfcDimensionalExponents (-2, 1, 4, 1, 0, 0, 0))
+    Dim = (IfcDimensionalExponents (-2, -1, 4, 2, 0, 0, 0))
       THEN RETURN(TRUE);
       ELSE RETURN(FALSE);
     END_IF;

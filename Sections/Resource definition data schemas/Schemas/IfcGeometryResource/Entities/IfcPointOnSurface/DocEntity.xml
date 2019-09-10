@@ -1,18 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPointOnSurface" UniqueId="a7b0a4ed-3952-415a-b428-67b95e5273cd" DiagramNumber="3" BaseDefinition="IfcPoint" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Punkt auf einer Oberfläche" Locale="de" />
+		<DocLocalization Name="Point de surface" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="3765.3333" Y="2019.8333" Width="333.33333" Height="261.33333" />
 	<Attributes>
-		<DocAttribute Name="BasisSurface" UniqueId="3415acd6-19b0-4948-8be2-d4f419ace10a" DefinedType="IfcSurface" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="BasisSurface" UniqueId="3415acd6-19b0-4948-8be2-d4f419ace10a" DefinedType="IfcSurface" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>The surface to which the parameter values relate.</Documentation>
+			<DiagramLine>
+				<DocPoint X="4098.6667" Y="2041.1667" />
+				<DocPoint X="4353.33337" Y="2041.1667" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4098.6667" Y="2041.1667" Width="151" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="PointParameterU" UniqueId="62ebc5bd-a118-4934-ba4c-12ee902e0f49" DefinedType="IfcParameterValue" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The first parameter value of the point location.</Documentation>
+			<DiagramLine>
+				<DocPoint X="4098.6667" Y="2150.5" />
+				<DocPoint X="4353.40003" Y="2150.5" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4098.6667" Y="2150.5" Width="196" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="PointParameterV" UniqueId="8e50f05b-a118-43a2-89da-73538af766d3" DefinedType="IfcParameterValue" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The second parameter value of the point location.</Documentation>
+			<DiagramLine>
+				<DocPoint X="4098.6667" Y="2254.5" />
+				<DocPoint X="4353.33337" Y="2254.5" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4096.0000333" Y="2249.1666667" Width="194" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Dim" UniqueId="dc74b17c-6d54-4257-9dea-ce9933fd62a9" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The space dimensionality of this class, determined by the space dimensionality of the basis surface.</Documentation>
 			<Derived>BasisSurface.Dim</Derived>
+			<DiagramLine>
+				<DocPoint X="3868" Y="2019.8333" />
+				<DocPoint X="3868" Y="1896.6333" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3798.666667" Y="2033.166633" Width="125" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

@@ -1,17 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAnnotationFillArea" UniqueId="7acedf96-0cb4-4829-86d1-d848d4577671" DiagramNumber="2" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAnnotationFillArea" UniqueId="7acedf96-0cb4-4829-86d1-d848d4577671" DiagramNumber="1" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Gefüllte (schraffierte) Fläche" Locale="de" />
+		<DocLocalization Name="Zone de remplissage d&apos;annotation" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="112.7" Y="833.54668" Width="363.33333" Height="100" />
 	<Attributes>
-		<DocAttribute Name="OuterBoundary" UniqueId="02811150-4de5-4f4f-8175-289ca39326a2" DefinedType="IfcCurve" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="OuterBoundary" UniqueId="02811150-4de5-4f4f-8175-289ca39326a2" DefinedType="IfcCurve" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>A closed curve that defines the outer boundary of the fill area. The areas defined by the outer boundary (minus potentially defined inner boundaries) is filled by the fill area style.
-&gt; &lt;small&gt;&lt;font color=&quot;#ff0000&quot;&gt;
-  IFC2x Edition 3 CHANGE&amp;nbsp; The two new attributes &lt;i&gt;OuterBoundary&lt;/i&gt; and &lt;i&gt;InnerBoundaries&lt;/i&gt; replace the old single attribute Boundaries.
-&lt;/font&gt;&lt;/small&gt;</Documentation>
+{ .change-ifc2x3}
+&gt; IFC2x3 CHANGE&amp;nbsp; The two new attributes _OuterBoundary_ and _InnerBoundaries_ replace the old single attribute Boundaries.</Documentation>
+			<DiagramLine>
+				<DocPoint X="131.7" Y="933.54671" />
+				<DocPoint X="131.7" Y="1192.60006" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="237.03333" Y="974.213376" Width="175" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="InnerBoundaries" UniqueId="472c05cc-8e55-4527-bbd6-6ce26e081b5e" DefinedType="IfcCurve" AttributeFlags="1" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
 			<Documentation>A set of inner curves that define the inner boundaries of the fill area. The areas defined by the inner boundaries are excluded from applying the fill area style.
-&gt; &lt;small&gt;&lt;font color=&quot;#ff0000&quot;&gt;
-  IFC2x Edition 3 CHANGE&amp;nbsp; The two new attributes &lt;i&gt;OuterBoundary&lt;/i&gt; and &lt;i&gt;InnerBoundaries&lt;/i&gt; replace the old single attribute Boundaries.
-&lt;/font&gt;&lt;/small&gt;</Documentation>
+{ .note}
+&gt; IFC2x3 CHANGE&amp;nbsp; The two new attributes _OuterBoundary_ and _InnerBoundaries_ replace the old single attribute Boundaries.</Documentation>
+			<DiagramLine>
+				<DocPoint X="414.3667" Y="933.54671" />
+				<DocPoint X="414.3667" Y="1192.60006" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="561.03337" Y="972.880044" Width="268" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

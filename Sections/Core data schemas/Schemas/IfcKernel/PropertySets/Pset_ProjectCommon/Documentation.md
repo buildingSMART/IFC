@@ -1,1 +1,0 @@
-﻿Common properties for a building project.

@@ -1,5 +1,4 @@
-﻿**Definition
-from IAI**: The _IfcTopologyRepresentation_ represents the concept of a particular topological representation of a product or a product component within a representation context. This representation context does not need to be (but may be) a geometric representation context. Several representation types for shape representation are included as predefined types:
+﻿_IfcTopologyRepresentation_ represents the concept of a particular topological representation of a product or a product component within a representation context. This representation context does not need to be (but may be) a geometric representation context. Several representation types for shape representation are included as predefined types:
 
 <table>
   <tbody>
@@ -37,5 +36,4 @@ representation (with or without assigned geometry)</td>
 
 The representation type is given as a string value at the inherited attribute '_RepresentationType_'.
 
-> <font color="#0000ff" size="-1">HISTORY: New entity
-in Release IFC 2x Edition 2. </font>
+> HISTORY&nbsp; New entity in IFC2x2.

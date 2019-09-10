@@ -10,7 +10,7 @@
         RETURN(TRUE);
       END_IF;
       IF ('IFCGEOMETRYRESOURCE.IFCAXIS2PLACEMENT3D' IN TYPEOF(AxisPlacement)) THEN
-        IF (RelPlacement.RelativePlacement.Dim = 3) THEN
+        IF (RelPlacement\IfcLocalPlacement.RelativePlacement.Dim = 3) THEN
           RETURN(TRUE);
         ELSE
           RETURN(FALSE);

@@ -1,9 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRailingType" UniqueId="9f5e37e7-709e-46f6-aa16-7ce984b35c92" DiagramNumber="2" BaseDefinition="IfcBuildingElementType" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRailingType" Name="IfcRailingType" UniqueId="9f5e37e7-709e-46f6-aa16-7ce984b35c92" DiagramNumber="3" BaseDefinition="IfcBuildingElementType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Geländer - Typ" Locale="de" />
+		<DocLocalization Name="Type de garde corps" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="3629.5833" Y="932.5583" Width="326.6" Height="100" />
 	<Attributes>
 		<DocAttribute Name="PredefinedType" UniqueId="07835b3b-3d85-4552-97ee-27905ee63e86" DefinedType="IfcRailingTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Identifies the predefined types of a railing element from which the type required may be set.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3956.1833" Y="982.55833" />
+				<DocPoint X="4184.6499" Y="982.55833" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3950.8499667" Y="974.55833" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="fef2e864-d218-4bf1-a0b3-7b0df3c9a66a">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcRailingTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcRailingTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

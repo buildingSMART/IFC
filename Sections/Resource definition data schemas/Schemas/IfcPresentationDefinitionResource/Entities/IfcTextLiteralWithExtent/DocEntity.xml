@@ -1,17 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTextLiteralWithExtent" UniqueId="4ab54421-83da-48e9-9931-2e0f8051029b" DiagramNumber="3" BaseDefinition="IfcTextLiteral" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTextLiteralWithExtent" UniqueId="4ab54421-83da-48e9-9931-2e0f8051029b" DiagramNumber="2" BaseDefinition="IfcTextLiteral" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Text - Buchstabensymbole mit geometrischer Ausdehnung" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1901.9634" Y="812.16663" Width="390.00001" Height="100" />
 	<Attributes>
-		<DocAttribute Name="Extent" UniqueId="2f249a57-152d-4616-af5b-ba3c4b2d9f54" DefinedType="IfcPlanarExtent" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Extent" UniqueId="2f249a57-152d-4616-af5b-ba3c4b2d9f54" DefinedType="IfcPlanarExtent" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>The extent in the x and y direction of the text literal.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2096.9634" Y="912.16663" />
+				<DocPoint X="2096.9634" Y="1304.63333" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2152.9634" Y="972.399978" Width="77" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="BoxAlignment" UniqueId="10d84bed-12f2-4bf3-8e3c-5e87145f7132" DefinedType="IfcBoxAlignment" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The alignment of the text literal relative to its position.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2291.9634" Y="862.16663" />
+				<DocPoint X="2653.89668" Y="862.16663" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2291.9634" Y="862.16663" Width="158" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
 		<DocWhereRule Name="WR31" UniqueId="e78a658c-3a1e-496a-bcac-19fc152090cf">
 			<Documentation>The subtype of _IfcPlanarExtent_, _IfcPlanarBox_, should not be used to represent an _Extent_ for the text literal.</Documentation>
-			<Expression>NOT(&apos;IFCPRESENTATIONRESOURCE.IFCPLANARBOX&apos; IN TYPEOF(Extent))</Expression>
+			<Expression>NOT(&apos;IFCPRESENTATIONDEFINITIONRESOURCE.IFCPLANARBOX&apos; IN TYPEOF(Extent))</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>

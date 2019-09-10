@@ -1,1 +1,1 @@
-﻿Properties common to the definition of all occurrences of IfcTransportElement.
+﻿Properties common to the definition of all occurrences of IfcTransportElement or IfcTransportElementType

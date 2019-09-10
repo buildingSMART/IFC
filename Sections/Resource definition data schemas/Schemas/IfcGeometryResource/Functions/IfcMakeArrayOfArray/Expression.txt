@@ -1,0 +1,25 @@
+﻿(Lis : LIST[1:?] OF LIST [1:?] OF GENERIC : T;
+ Low1, U1, Low2, U2 : INTEGER):
+ARRAY [Low1:U1] OF ARRAY [Low2:U2] OF GENERIC : T;
+
+  LOCAL
+    Res : ARRAY[Low1:U1] OF ARRAY [Low2:U2] OF GENERIC : T;
+  END_LOCAL;
+
+  (* Check input dimensions for consistency *)
+  IF (U1-Low1+1) <> SIZEOF(Lis) THEN
+    RETURN (?);
+  END_IF;
+  IF (U2 - Low2 + 1 ) <> SIZEOF(Lis[1]) THEN
+    RETURN (?) ;
+  END_IF;
+
+  (* Initialise Res with values from Lis[1] *)
+  Res := [IfcListToArray(Lis[1], Low2, U2) : (U1-Low1 + 1)];
+  REPEAT i := 2 TO HIINDEX(Lis);
+    IF (U2-Low2+1) <> SIZEOF(Lis[i]) THEN
+      RETURN (?);
+    END_IF;
+    Res[Low1+i-1] := IfcListToArray(Lis[i], Low2, U2);
+  END_REPEAT;
+  RETURN (Res);

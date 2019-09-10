@@ -1,1 +1,0 @@
-﻿The angular difference between two waveforms of the same frequency

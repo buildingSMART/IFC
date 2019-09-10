@@ -1,1 +1,0 @@
-﻿The actual outer diameter of the pipe. Refer to NominalDiameter for comments about interpretation of multiple items in the list.

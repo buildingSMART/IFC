@@ -1,1 +1,1 @@
-﻿Date on which the agreement terminates
+﻿Date on which the agreement terminates.

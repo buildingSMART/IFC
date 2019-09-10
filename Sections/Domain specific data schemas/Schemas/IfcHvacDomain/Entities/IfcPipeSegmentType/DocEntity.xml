@@ -1,12 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPipeSegmentType" UniqueId="6ff8bb62-5b12-4204-85f9-d8aea8bb8b00" DiagramNumber="2" BaseDefinition="IfcFlowSegmentType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Rohr - Typ" Locale="de" />
+		<DocLocalization Name="Type de tronçon de tuyauterie" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1672.4425" Y="1201.8694" Width="343.8" Height="100" />
 	<Attributes>
 		<DocAttribute Name="PredefinedType" UniqueId="7cf082e3-2380-49ba-be0e-eae30275e85d" DefinedType="IfcPipeSegmentTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The type of pipe segment.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2016.2425" Y="1251.8694" />
+				<DocPoint X="2250.74807" Y="1251.8694" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2015.7343374" Y="1242.9794692" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="2sGwMOja9BNAXW2UELybZx">
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="1061dd44-ebf9-4bf3-a4cb-f25073bdc29f">
 			<Expression>(PredefinedType &lt;&gt; IfcPipeSegmentTypeEnum.USERDEFINED) OR
 ((PredefinedType = IfcPipeSegmentTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
 		</DocWhereRule>

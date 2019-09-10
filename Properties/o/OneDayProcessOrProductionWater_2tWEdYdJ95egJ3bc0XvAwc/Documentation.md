@@ -1,1 +1,0 @@
-﻿The volume of water that needs to be stored to supply water for process or production requirements in a building for one day in the event of water supply failure.

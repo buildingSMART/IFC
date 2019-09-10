@@ -1,8 +1,7 @@
-﻿A measure of moment of inertia.
+﻿_IfcMomentOfInertiaMeasure_ is a measure of moment of inertia.
 
 Usually measured in m4.
 
 Type: REAL
 
-> <font size="-1" color="#0000FF">HISTORY New type in IFC Release 2x.
-</font>
+> HISTORY&nbsp; New type in IFC2x.

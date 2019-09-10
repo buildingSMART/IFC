@@ -1,18 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocPropertySet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Pset_SpaceCommon" UniqueId="2Vni80qWWHuO00025QrE$V" PropertySetType="PSET_TYPEDRIVENOVERRIDE">
+<DocPropertySet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Pset_SpaceCommon" UniqueId="2Vni80qWWHuO00025QrE$V" ApplicableType="IfcSpace" PropertySetType="PSET_TYPEDRIVENOVERRIDE">
+	<Localization>
+		<DocLocalization Locale="fr-FR">
+			<Documentation>Définition de l&apos;IAI : propriétés communes à la définition de toutes les instances de la classe IfcSpace. Veuillez noter que plusieurs attributs sont portés par l&apos;instance IfcSpace : le numéro de la pièce ou le nom court (IfcSpace.Name), le nom ou nom long (IfcSpace:LongName) et la description ou des commentaires (IfcSpace.Description). Les quantités comme le périmètre, la surface et le volume de la pièce sont fournis par des instances de IfcElementQuantity, et la référence à une classification nationale par IfcClassificationReference. L&apos;élévation de la dalle relativement au niveau de référence du bâtiment est fourni par IfcBuildingStorey.Elevation.  L&apos;élévation du plancher relativement au niveau de référence du bâtiment est fourni par IfcSpace.ElevationWithFlooring.</Documentation>
+		</DocLocalization>
+		<DocLocalization Locale="ja-JP">
+			<Documentation>IfcSpaceに関する共通プロパティセット定義。以下の属性値に関しては、IfcSpaceオブジェクトの属性に設定する。部屋番号はIfcSite.Name、部屋名称はIfcSite.LongName、部屋に関する記述はIfcSite.Description。部屋（空間）に関する周囲長、面積、体積などの数量値は、IfcElementQuantitiesによって設定する。部屋（空間）に関する分類コードはIfcClassificationReferenceによって設定する。スラブに対するレベルはIfcBuildingStorey.Elevationによって与えられる。床仕上げに対するレベルはIfcSpace.ElevationWithFlooringによって与えられる。</Documentation>
+		</DocLocalization>
+	</Localization>
 	<Properties>
 		<DocProperty xsi:nil="true" href="Reference_2e7lq0qWWHuO00025QrEV" />
-		<DocProperty xsi:nil="true" href="Category_3W_jyJL31FZghZdo246sX6" />
-		<DocProperty xsi:nil="true" href="FloorCovering_22Cb7dO2H248WbED3mYPBu" />
-		<DocProperty xsi:nil="true" href="WallCovering_2i82OVd095MvXjMgUaWrH4" />
-		<DocProperty xsi:nil="true" href="CeilingCovering_0dNNW9FOj8Rx0JBuw5BEg" />
-		<DocProperty xsi:nil="true" href="SkirtingBoard_3Rv38RPFv7ge8NaGdxJEad" />
+		<DocProperty xsi:nil="true" href="IsExternal_3tSG0qWWHuO00025QrEV" />
 		<DocProperty xsi:nil="true" href="GrossPlannedArea_00xfM0qWaHuO00025QrEV" />
 		<DocProperty xsi:nil="true" href="NetPlannedArea_06v7Q0qWaHuO00025QrEV" />
 		<DocProperty xsi:nil="true" href="PubliclyAccessible_0DSku0qWaHuO00025QrEV" />
 		<DocProperty xsi:nil="true" href="HandicapAccessible_0KcVm0qWaHuO00025QrEV" />
-		<DocProperty xsi:nil="true" href="ConcealedFlooring_2ZBWMpPar9FPZrUS8dQTS4" />
-		<DocProperty xsi:nil="true" href="ConcealedCeiling_3VpxDcMjrDKQHzpOlOLh4W" />
 	</Properties>
 </DocPropertySet>
 

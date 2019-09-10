@@ -1,4 +1,3 @@
-﻿The address for delivery of paper based mail.
+﻿This entity represents an address for delivery of paper based mail and other postal deliveries.
 
-> <font size="-1" color="#0000FF">HISTORY New entity in IFC Release 2x.
-</font>
+> HISTORY&nbsp; New entity in IFC2x.

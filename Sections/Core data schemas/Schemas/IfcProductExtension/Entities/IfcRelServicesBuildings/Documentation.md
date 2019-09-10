@@ -1,17 +1,13 @@
-﻿An objectified relationship that defines the relationship between a system and the sites, buildings, storeys or spaces, it serves. Examples of systems are:
+﻿The _IfcRelServicesBuildings_ is an objectified relationship that defines the relationship between a system and the sites, buildings, storeys, spaces, or spatial zones, it serves. Examples of systems are:
 
-* building service systems (heating, cooling, waste water system) represented by instances of _IfcSystem_ 
-* idealized structural analysis systems represented by instances of _IfcStructuralAnalysisSystem_ 
+* building service systems (heating, cooling, waste water system) represented by instances of _IfcDistributionSystem_; 
+* building systems (fenestration, shading) represented by instances of _IfcBuildingSystem_; 
+* zones as collection of logically grouped spaces represented by instances of _IfcZone_ 
+* idealized structural analysis systems represented by instances of _IfcStructuralAnalysisModel_. 
 
-> <small><font color="#0000FF">HISTORY New entity in IFC
-        Release 1.0</font></small>
-> 
+> NOTE&nbsp; The name _IfcRelServicesBuildings_ is a known anomaly, as the relationship is not restricted to buildings anymore.
 
+> HISTORY&nbsp; New entity in IFC1.0.
 
-> <small><font color="#FF0000">IFC2x PLATFORM CHANGE  The
-      data type of the attribute<i>RelatedBuildings</i> has been
-      changed from <i>IfcBuilding</i> to its supertype
-      <i>IfcSpatialStructureElement</i> with upward compatibility
-      for file based exchange. The name
-      <i>IfcRelServicesBuildings</i> is a known anomaly, as the
-      relationship is not restricted to buildings anymore.</font></small>
+{ .change-ifc2x}
+> IFC2x CHANGE&nbsp; The data type of the attribute _RelatedBuildings_ has been changed from _IfcBuilding_ to its supertype _IfcSpatialStructureElement_ with upward compatibility for file based exchange.

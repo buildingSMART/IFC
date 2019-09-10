@@ -1,1 +1,0 @@
-﻿Normal operating temperature for the cable, busbar.

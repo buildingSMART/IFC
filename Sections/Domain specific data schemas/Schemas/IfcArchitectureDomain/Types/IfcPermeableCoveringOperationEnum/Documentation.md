@@ -1,6 +1,9 @@
-﻿Enumeration defining the valid types of permeable coverings.
+﻿This enumeration defines the valid types of permeable coverings.
 
-**Enumeration**:
+> HISTORY&nbsp; New enumeration in IFC2.0.
+
+{ .spec-head}
+Enumerated Item Definitions:
 
 <table>
 		<tr>
@@ -26,6 +29,3 @@
 		  <td>no information available</td>
 		</tr>
 	 </table>
-
-> <font size="-1" color="#0000FF">HISTORY: New Enumeration in IFC
-		Release 2.0 </font>

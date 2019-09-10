@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcWindowPanelProperties" UniqueId="f4aaef0e-c0aa-4a75-9bad-670fdf12d4e4" DiagramNumber="2" BaseDefinition="IfcPreDefinedPropertySet" EntityFlags="237">
+	<Localization>
+		<DocLocalization Name="Festdefinierte Merkmale der Fensterfüllung / des Fensterflügels" Locale="de" />
+		<DocLocalization Name="Propriétés des panneaux de fenêtre" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1645.0066" Y="1836.9999" Width="454.8" Height="336.5" />
+	<Attributes>
+		<DocAttribute Name="OperationType" UniqueId="33dbee10-d91a-4bec-9c65-60b5a130376c" DefinedType="IfcWindowPanelOperationEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Types of window panel operations. Also used to assign standard symbolic presentations according to national building standards.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2099.8066" Y="1854.3049" />
+				<DocPoint X="2402.00623" Y="1854.3049" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2077.133587" Y="1840.971567" Width="171" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="PanelPosition" UniqueId="ed81b5ba-ad8b-4a14-942e-bbe59ab8f65e" DefinedType="IfcWindowPanelPositionEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Position of this panel within the overall window style.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2099.8066" Y="1938.0549" />
+				<DocPoint X="2401.9593" Y="1938.0549" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2070.473267" Y="1932.721567" Width="157" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="FrameDepth" UniqueId="19f2e6ca-8d92-4ec8-a726-c4d44a0d2853" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Depth of panel frame, measured from front face to back face horizontally (i.e. perpendicular to the window (elevation) plane.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2099.8066" Y="2139.1074" />
+				<DocPoint X="2402.0066" Y="2139.1074" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2073.139933" Y="2128.440733" Width="145" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="FrameThickness" UniqueId="27ea5ee4-1d5f-49c7-b4d6-d708649bb38a" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Width of panel frame, measured from inside of panel (at glazing) to outside of panel (at lining), i.e. parallel to the window (elevation) plane.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2099.8066" Y="2042.5833" />
+				<DocPoint X="2401.93993" Y="2042.5833" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2099.8066" Y="2042.5833" Width="188" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="ShapeAspectStyle" UniqueId="30f9cacc-5e45-4f58-97ac-de69bd4490e0" DefinedType="IfcShapeAspect" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>Optional link to a shape aspect definition, which points to the part of the geometric representation of the window style, which is used to represent the panel.
+{ .deprecated}
+&gt; DEPRECATION&amp;nbsp; The attribute is deprecated and shall no longer be used, i.e. the value shall be NIL ($).</Documentation>
+			<DiagramLine>
+				<DocPoint X="2037.74" Y="1836.9999" />
+				<DocPoint X="2037.74" Y="1525.2499" />
+				<DocPoint X="2297.27333" Y="1525.2499" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2029.74" Y="1509.2499" Width="208" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="ApplicableToType" UniqueId="8bc68e4f-7262-49d5-bcf6-2317ff8e76cf">
+			<Documentation>The _IfcWindowPanelProperties_ shall only be used in the context of an _IfcDoorType_.
+&gt; NOTE&amp;nbsp; The deprecated entity _IfcWindowStyle_ is applicable as well.</Documentation>
+			<Expression>(EXISTS(SELF\IfcPropertySetDefinition.DefinesType[1])) 
+AND 
+(
+ (&apos;IFCSHAREDBLDGELEMENTS.IFCWINDOWTYPE&apos; IN TYPEOF(SELF\IfcPropertySetDefinition.DefinesType[1]))
+  OR
+ (&apos;IFCARCHITECTUREDOMAIN.IFCWINDOWSTYLE&apos; IN TYPEOF(SELF\IfcPropertySetDefinition.DefinesType[1]))
+)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

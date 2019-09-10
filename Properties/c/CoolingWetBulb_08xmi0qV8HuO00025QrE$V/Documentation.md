@@ -1,1 +1,1 @@
-﻿Outside wet bulb temperature for cooling design
+﻿Outside wet bulb temperature for cooling design.

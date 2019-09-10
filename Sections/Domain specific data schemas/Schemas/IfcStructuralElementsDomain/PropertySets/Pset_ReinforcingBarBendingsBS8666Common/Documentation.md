@@ -1,1 +1,0 @@
-﻿Properties expressing the bending information of non-prestressed reinforcing bars. The properties in this Pset are largely defined according to BS8666. It is presumed that a single standard for defining the bar bending is used throughout the project and that this standard is referenced from the IfcProject object through the IfcDocumentReference mechanism.

@@ -1,11 +1,11 @@
-﻿<body> 
-	 <p>A geotechnical measure describing
-		interaction between foundation structures and the soil. May also be known as
-		bedding measure. </p> 
-	 <p> Usually measured in N/m3. </p> 
-	 <p> Type: REAL </p> 
-	 <blockquote> <font size="-1" color="#0000FF">HISTORY New type in IFC
-		Release 2x. </font> </blockquote> 
-	 <p><u>Illustration</u>:</p> 
-	 <p><img src="figures/ifcmodulusofsubgradereactionmeasure.gif" width="471" height="301" border="0"><br> Figure: Elastic support of a planar member.</p>
-	 </body>
+﻿_IfcModulusOfSubgradeReactionMeasure_ is a geotechnical measure describing interaction between foundation structures and the soil. May also be known as bedding measure.
+
+Usually measured in N/m3.
+
+Type: REAL
+
+> HISTORY&nbsp; New type in IFC2x.
+
+Figure 1 illustrates elastic support of a planar member.
+
+!(../../../../../../figures/ifcmodulusofsubgradereactionmeasure.gif "Figure 1 &mdash; Modulus of subgrade reaction measure")

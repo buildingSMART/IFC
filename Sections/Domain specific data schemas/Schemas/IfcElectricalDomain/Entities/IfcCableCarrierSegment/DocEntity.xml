@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCableCarrierSegment" Name="IfcCableCarrierSegment" UniqueId="cbe43c1f-9ddd-4279-bb40-699045a1e748" DiagramNumber="2" BaseDefinition="IfcFlowSegment" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Kabelträgersegment" Locale="de" />
+		<DocLocalization Name="Segment de chemin de cable" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="2453.3667" Y="518.33333" Width="679.86667" Height="103.2" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="5801fc0e-a0ce-4891-b588-7510f5b9f78d" DefinedType="IfcCableCarrierSegmentTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Identifies the predefined types of cable carrier segment from which the type required may be set.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3127.8267" Y="621.53333" />
+				<DocPoint X="3127.8267" Y="662.878299" />
+				<DocPoint X="2690.90011" Y="662.878299" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3032.03007" Y="618.8666633" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="607cdc8f-09a8-4531-816d-cc4173789279">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcCableCarrierSegmentType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcCableCarrierSegmentTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcCableCarrierSegmentTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="f32a4c9e-7c82-4355-bca2-f1ff30bff53a">
+			<Documentation>Either there is no cable carrier segment type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcCableCarrierSegmentType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCELECTRICALDOMAIN.IFCCABLECARRIERSEGMENTTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

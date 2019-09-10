@@ -1,3 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPlate" Name="IfcPlate" UniqueId="2b32e8c1-898b-46b1-a578-df08e1db3c6b" DiagramNumber="1" BaseDefinition="IfcBuildingElement" EntityFlags="101" />
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPlate" Name="IfcPlate" UniqueId="2b32e8c1-898b-46b1-a578-df08e1db3c6b" DiagramNumber="1" BaseDefinition="IfcBuildingElement" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Platte / Paneel" Locale="de" />
+		<DocLocalization Name="Plaque" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="484.69574" Y="1372.3574" Width="249.9" Height="214.6" />
+	<Subtypes>
+		<DocSubtype UniqueId="6478f697-99ce-4282-bd27-c36ba662d83c" DefinedType="IfcPlateStandardCase" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="4b413560-ba7d-4a7c-b5d9-d3bf64f0b896" DefinedType="IfcPlateTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Predefined generic type for a plate that is specified in an enumeration. There may be a property set given specificly for the predefined types.
+&gt; NOTE&amp;nbsp; The _PredefinedType_ shall only be used, if no _IfcPlateType_ is assigned, providing its own _IfcPlateType.PredefinedType_.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE The attribute has been added at the end of the entity definition.</Documentation>
+			<DiagramLine>
+				<DocPoint X="734.59574" Y="1527.6574" />
+				<DocPoint X="1113.9624" Y="1527.6574" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="729.2624067" Y="1519.6574" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="8dfcb2b7-b055-4935-9c45-9fdfbc6a77f1">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcPlateType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+ (PredefinedType &lt;&gt; IfcPlateTypeEnum.USERDEFINED) OR
+ ((PredefinedType = IfcPlateTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="44cb1ee3-302f-4b4e-aed5-6e5b5d1e6a51">
+			<Documentation>Either there is no plate type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcPlateType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+  (&apos;IFCSHAREDBLDGELEMENTS.IFCPLATETYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
 

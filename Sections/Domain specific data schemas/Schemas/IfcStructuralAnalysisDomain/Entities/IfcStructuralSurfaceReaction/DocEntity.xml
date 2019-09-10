@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStructuralSurfaceReaction" Name="IfcStructuralSurfaceReaction" UniqueId="e9d95f21-bd10-40ff-ada5-a024a15bf019" DiagramNumber="4" BaseDefinition="IfcStructuralReaction" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="flächenförmige Auflagerreaktion" Locale="de">
+			<Documentation>z.B. Auflagerverformung und -pressung</Documentation>
+		</DocLocalization>
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="5853.1978" Y="2007.4407" Width="324.20399" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="af39cd66-ebd2-471d-9517-590a0858c616" DefinedType="IfcStructuralSurfaceActivityTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Type of reaction according to its distribution of load values.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5932.5647" Y="2107.4407" />
+				<DocPoint X="5932.5647" Y="2201.111872" />
+				<DocPoint X="5849.146013" Y="2201.111872" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="6031.872247" Y="2124.872893" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="HasPredefinedType" UniqueId="15dc95b1-3173-4719-9e78-597a8a5d73ef">
+			<Documentation>The attribute ObjectType shall be given if the predefined type is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcStructuralSurfaceActivityTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

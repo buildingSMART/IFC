@@ -1,87 +1,169 @@
-﻿An _IfcPlate_ is a planar and often flat part with constant thickness. A plate can be a structural part carrying loads between or beyond points of support, however it is not required to be load bearing.&nbsp;The location of the plate (being horizontal, vertical or sloped) is not relevant to its definition (in contrary to _IfcWall_ and _IfcSlab_ (as floor slab)).&nbsp;
+﻿An _IfcPlate_ is a planar and often flat part with constant thickness. A plate may carry loads between or beyond points of support, or provide stiffening. The location of the plate (being horizontal, vertical or sloped) is not relevant to its definition (in contrary to _IfcWall_ and _IfcSlab_ (as floor slab)).
 
-> <small>NOTE &nbsp;Plates are&nbsp;normally
-made of steel, other metallic material, or by glass panels. However the
-definition of <i>IfcPlate</i> is material independent and
-specific material information shall be handled by using <i>IfcAssociatesMaterial</i>
-to assign a material specification to the <i>IfcPlate</i>.&nbsp;</small>
-> 
-> <small>NOTE &nbsp;Although not necessarily, plates
-are often add-on parts. This
-is represented by
-the <i>IfcRelAggregates</i> decomposition
-mechanism used to aggregate parts, such as <i>IfcPlate</i>,
-into a container element, e.g. <i>IfcElementAssembly</i>,
-or <i>IfcCurtainWall</i>.&nbsp;</small>
-> 
+{ .extDef}
+> NOTE&nbsp; Definition according to ISO 6707-1: thin, rigid, flat, metal product, of a thickness greater than that of a sheet.
 
+Plates are normally made of steel, other metallic material, or by glass panels. However the definition of _IfcPlate_ is material independent and specific material information shall be handled by using _IfcAssociatesMaterial_ to assign a material specification to the _IfcPlate_.
+
+> NOTE&nbsp; Although not necessarily, plates are often add-on parts. This is represented by the _IfcRelAggregates_ decomposition mechanism used to aggregate parts, such as _IfcPlate_, into a container element such as _IfcElementAssembly_ or _IfcCurtainWall_.
+
+> NOTE&nbsp; The representation of a plate in a structural analysis model is provided by _IfcStructuralSurfaceMember_ being part of an _IfcStructuralAnalysisModel_.
 
 An instance _IfcPlate_ should preferably get its geometric representation and material assignment through the type definition by _IfcPlateType_ assigned using the _IfcRelDefinesByType_ relationship. This allows identical plates in a construction to be represented by the same instance of _IfcPlateType_.
 
-> <font color="#0000ff"><small>
-HISTORY New entity in IFC
-Release 2x2 </small></font>
+A plate may have openings, such as voids or recesses. They are defined by an _IfcOpeningElement_ attached to the plate using the inverse relationship _HasOpenings_ pointing to _IfcRelVoidsElement_. The position number of a plate as often used in steel construction is assigned through the attribute _IfcElement.Tag_
 
-****Property Set Use Definition****:
+The IFC specification provides two entities for plate occurrences:
 
-The property sets relating to the _IfcPlate_ are defined by the _IfcPropertySet_ and attached by the _IfcRelDefinesByProperties_ relationship. It is accessible by the inverse _IsDefinedBy_ relationship. The following property set definitions specific to the _IfcPlate_ are part of this IFC release:
+* _IfcPlateStandardCase_ used for all occurrences of plates, that are prismatic and where the thickness parameter can be fully described by the _IfcMaterialLayerSetUsage_. These plates are always represented geometrically by a 'SweptSolid' geometry (or by a 'Clipping' geometry based on 'SweptSolid'), if a 3D geometric representation is assigned. In addition they have to have a corresponding _IfcMaterialLayerSetUsage_ assigned.
+* _IfcPlate_ used for all other occurrences of plates, particularly for plates with changing thickness, or plates with non planar surfaces, and plates having only 'SurfaceModel' or 'Brep' geometry.
 
-* [Pset_PlateCommon](../../psd/IfcSharedBldgElements/Pset_PlateCommon.xml){ target="SOURCE"}: common property set for all plate occurrences 
+> HISTORY&nbsp; New entity in IFC2x2
 
-****Containment Use Definitions****
+**_Geometric Representation_**
 
-The _IfcPlate_, as any subtype of _IfcBuildingElement_, may participate in two different containment relationships. The first (and in most implementation scenarios mandatory) relationship is the hierachical spatial containment, the second relationship is the aggregation within an&nbsp;element assembly.
+Currently, the <font color="#0000FF">'Surface'</font>, <font color="#0000FF">'FootPrint'</font>, 'Body', and 'Box' representations are supported. The 'Box' representation includes the representation type 'BoundingBox' and is explained at _IfcBuildingElement_.
 
-* The&nbsp;_IfcPlate_ is placed within the project spatial hierarchy using the objectified relationship _IfcRelContainedInSpatialStructure_, referring to it by its inverse attribute _SELF\IfcElement.ContainedInStructure_. Subtypes of&nbsp;_IfcSpatialStructureElement_ are valid spatial containers, with _IfcBuildingStorey_ being the default container.
-* The&nbsp;_IfcPlate_ may be aggregated into an element assembly using the objectified relationship _IfcRelAggregates_, referring to it by its inverse attribute _SELF\IfcObjectDefinition.Decomposes_. Any subtype of _IfcElement_ can be an element assembly, with _IfcElementAssembly_ as a special focus subtype. In this case, no additional relationship to the spatial hierarchy shall be given (i.e.&nbsp;_SELF\IfcElement.ContainedInStructure_ = NIL), the relationship to the spatial container is handled by the element assembly.__ 
+___
+## Common Use Definitions
+The following concepts are inherited at supertypes:
 
-****Geometry use definition****The geometric representation of _Ifc__Plate_ is given by the _IfcProductDefinitionShape_, allowing multiple geometric representations. Included are:
+* _IfcRoot_: [Identity](../../templates/identity.htm), [Revision Control](../../templates/revision-control.htm)
+* _IfcElement_: [Product Placement](../../templates/product-placement.htm), [Box Geometry](../../templates/box-geometry.htm), [FootPrint Geometry](../../templates/footprint-geometry.htm), [Body SurfaceOrSolidModel Geometry](../../templates/body-surfaceorsolidmodel-geometry.htm), [Body SurfaceModel Geometry](../../templates/body-surfacemodel-geometry.htm), [Body Tessellation Geometry](../../templates/body-tessellation-geometry.htm), [Body Brep Geometry](../../templates/body-brep-geometry.htm), [Body AdvancedBrep Geometry](../../templates/body-advancedbrep-geometry.htm), [Body CSG Geometry](../../templates/body-csg-geometry.htm), [Mapped Geometry](../../templates/mapped-geometry.htm)
 
-**Local Placement**
+[![Image](../../../img/diagram.png)&nbsp;Instance diagram](../../../annex/annex-d/common-use-definitions/ifcplate.htm)
 
-The local placement for _Ifc__Plate_ is defined in its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_, which defines the local coordinate system that is referenced by all geometric representations.
+{ .use-head}
+Object Typing
 
-* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point (if given) to the local placement of the same _IfcSpatialStructureElement_, which is used in the _ContainedInStructure_ inverse attribute, or to a spatial structure element at a higher level, referenced by that.
-    * If the _IfcPlate_ is part of an assembly, the _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point to the local placement of the container element, e.g. _&nbsp;IfcElementAssembly_, 
+The [Object Typing](../../templates/object-typing.htm) concept applies to this entity as shown in Table 1.
 
-* If the relative placement is not used, the absolute placement is defined within the world coordinate system.
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Type</b></th></tr>
+<tr><td><a href="../../ifcsharedbldgelements/lexical/ifcplatetype.htm">IfcPlateType</a></td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 1 &mdash; IfcPlate Object Typing</p></td></tr></table>
 
-**_Geometric Representations_**
+  
+  
+{ .use-head}
+Property Sets for Objects
 
-Currently, the use of 'SweptSolid', 'Clipping', 'Brep' and 'MappedRepresentation' representations is supported. In addition the general representation types 'SurfaceModel' and 'BoundingBox' are allowed. The geometry use definition for 'BoundingBox', 'SurfaceModel' and 'Brep' is explained at _IfcBuildingElement_.
+The [Property Sets for Objects](../../templates/property-sets-for-objects.htm) concept applies to this entity as shown in Table 2.
 
-**SweptSolid Representation**  
-The standard geometric representation of _IfcPlate_ is defined using the 'SweptSolid' representation. The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PredefinedType</b></th><th><b>Name</b></th></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedbldgelements/Pset_PlateCommon.xml">Pset_PlateCommon</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcstructuralelementsdomain/Pset_ConcreteElementGeneral.xml">Pset_ConcreteElementGeneral</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcstructuralelementsdomain/Pset_PrecastConcreteElementFabrication.xml">Pset_PrecastConcreteElementFabrication</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcstructuralelementsdomain/Pset_PrecastConcreteElementGeneral.xml">Pset_PrecastConcreteElementGeneral</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_Condition.xml">Pset_Condition</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcproductextension/Pset_EnvironmentalImpactIndicators.xml">Pset_EnvironmentalImpactIndicators</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcproductextension/Pset_EnvironmentalImpactValues.xml">Pset_EnvironmentalImpactValues</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_ManufacturerOccurrence.xml">Pset_ManufacturerOccurrence</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_ManufacturerTypeInformation.xml">Pset_ManufacturerTypeInformation</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedmgmtelements/Pset_PackingInstructions.xml">Pset_PackingInstructions</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_ServiceLife.xml">Pset_ServiceLife</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_Warranty.xml">Pset_Warranty</a></td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 2 &mdash; IfcPlate Property Sets for Objects</p></td></tr></table>
 
-* _RepresentationIdentifier_ : 'Body'
-* _RepresentationType_ : 'SweptSolid'
+  
+  
+{ .use-head}
+Quantity Sets
 
-**Clipping Representation**  
-The advanced geometric representation of _IfcMember_is defined using the 'Clipping' geometry. The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
+The [Quantity Sets](../../templates/quantity-sets.htm) concept applies to this entity as shown in Table 3.
 
-* _RepresentationIdentifier_ : 'Body'
-* _RepresentationType_ : 'Clipping'
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Name</b></th></tr>
+<tr><td><a href="../../qto/ifcsharedbldgelements/Qto_PlateBaseQuantities.xml">Qto_PlateBaseQuantities</a></td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3 &mdash; IfcPlate Quantity Sets</p></td></tr></table>
 
-**MappedRepresentation**  
-In addition to the standard geometric representation of _Ifc__Plate_ that is defined using the 'SweptSolid' or 'Clipping' geometry, also the 'MappedRepresentation' shall be supported as it allows for reusing the geometry definition of the member type at all occurrences of the same type. The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
+  
+  
+{ .use-head}
+Material Layer Set
 
-* _RepresentationIdentifier_ : 'Body'
-* _RepresentationType_ : 'MappedRepresentation'
+The [Material Layer Set](../../templates/material-layer-set.htm) concept applies to this entity.
 
-The same constraints, as given for the standard 'SweptSolid' and the advanced 'SweptSolid' and 'Clipping' geometric representation, shall apply to the _MappedRepresentation_ of the _IfcRepresentationMap_.
+The material of the _IfcPlate_ is defined by _IfcMaterialLayerSet_, or _IfcMaterial_, and it is attached either directly or at the _IfcPlateType_.
 
-****Use definition for steel members****
+> NOTE&nbsp; It is illegal to assign an _IfcMaterialLayerSetUsage_ to an _IfcPlate_. Only the subtype _IfcPlateStandardCase_ supports this concept.
 
-When using the _IfcPlate_ for steel members in steel construction applications the following additional conventions apply:
+  
+  
+{ .use-head}
+Spatial Containment
 
-**Definition by non-geometric properties**  
-Additional non-geometric properties can be specified through the class _IfcPropertySet_, which is attached to the inverse attribute _IfcObject.IsDefinedBy_ through the objectified relationship _IfcRelDefinesByProperties_. This allows for attaching country-specific information to structural members.
+The [Spatial Containment](../../templates/spatial-containment.htm) concept applies to this entity as shown in Table 4.
 
-**Decomposition**  
-An instance of _IfcPlate_ can be part of a decomposition through the _IfcRelAggregates_ relationship - both as sub-ordinate or as a super-ordinate component.
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Structure</b></th><th><b>Description</b></th></tr>
+<tr><td><a href="../../ifcproductextension/lexical/ifcbuildingstorey.htm">IfcBuildingStorey</a></td><td>Default spatial container </td></tr>
+<tr><td><a href="../../ifcproductextension/lexical/ifcbuilding.htm">IfcBuilding</a></td><td>Spatial container for the element if it cannot be assigned to a building storey</td></tr>
+<tr><td><a href="../../ifcproductextension/lexical/ifcsite.htm">IfcSite</a></td><td>Spatial container for the element in case that it is placed on site (outside of building)</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 4 &mdash; IfcPlate Spatial Containment</p></td></tr></table>
 
-* If the _IfcPlate_ instance is a sub-ordinate component (i.e. the plate is an add-on part), its local placement shall be relative to that of the super-ordinate instance. 
-* As a super-ordinate component, the sub-ordinates of _IfcPlate_ can be other plates or instances of _IfcProxy_, or _IfcDiscreteAccessory_ (like _IfcFastener_). 
+The _IfcPlate_, as any subtype of _IfcBuildingElement_, may participate alternatively in one of the two different containment relationships:
 
-**Position number**  
-The position number is assigned through the attribute _IfcElement.Tag_
+* the _Spatial Containment_ (defined here), or
+* the _Element Composition_.
+
+  
+  
+{ .use-head}
+Surface 3D Geometry
+
+The [Surface 3D Geometry](../../templates/surface-3d-geometry.htm) concept applies to this entity.
+
+> NOTE&nbsp; The 'Surface' can be used to define a surfacic model of the building (e.g. for analytical purposes, or for reduced Level of Detail representation).
+
+  
+  
+{ .use-head}
+Body SweptSolid Geometry
+
+The [Body SweptSolid Geometry](../../templates/body-sweptsolid-geometry.htm) concept applies to this entity.
+
+The following additional constraints apply to the 'SweptSolid' representation:
+
+* **Solid**: _IfcExtrudedAreaSolid_ is required,
+* **Profile**: _IfcArbitraryClosedProfileDef, IfcArbitraryProfileDefWithVoids, IfcRectangleProfileDef, IfcCircleProfileDef, IfcEllipseProfileDef_ shall be supported.
+* **Extrusion**: The profile can be extruded perpendicularly or non-perpendicularly to the plane of the swept profile.
+
+{ .use-head}
+Body Clipping Geometry
+
+The [Body Clipping Geometry](../../templates/body-clipping-geometry.htm) concept applies to this entity.
+
+  
+  
+{ .use-head}
+Product Assignment
+
+The [Product Assignment](../../templates/product-assignment.htm) concept applies to this entity as shown in Table 5.
+
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Type</b></th><th><b>Description</b></th></tr>
+<tr><td><a href="../../ifcstructuralanalysisdomain/lexical/ifcstructuralsurfacemember.htm">IfcStructuralSurfaceMember</a></td><td>An idealized structural member corresponding to the plate.</td></tr>
+<tr><td><a href="../../ifcprocessextension/lexical/ifctask.htm">IfcTask</a></td><td>A task for operating on the plate.</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 5 &mdash; IfcPlate Product Assignment</p></td></tr></table>

@@ -1,1 +1,1 @@
-﻿Indication whether this object is sprinkler protected (true) or not (false).
+﻿Indication whether this object is sprinkler protected (TRUE) or not (FALSE).

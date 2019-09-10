@@ -1,13 +1,11 @@
-﻿**Definition from ISO/CD 10303-41:1992**: A text is an alphanumeric string of characters which is intended to be read and understood by a human being. It is for information purposes only.
+﻿An _IfcText_ is an alphanumeric string of characters which is intended to be read and understood by a human being. It is for information purposes only.
 
+Type: STRING
 
+> NOTE&nbsp; Type adapted from **text** defined in ISO 10303-41.
 
-Type: STRING 
+> HISTORY&nbsp; New type in IFC2x.
 
-> <font size="-1">
-  NOTE Corresponding STEP name: text, please refer to ISO/IS 10303-41:1994
-  for the final definition of the formal standard.
-</font>
+> NOTE&nbsp; The set of characters that may appear in STRINGs exchanged in the exchange structure as defined in ISO 10303.21 is provided in ISO 10646. The encoding of characters in case of file-based exchange is defined in ISO 10303-21 and ISO 10303-28. Among else, these specifications define the encoding of 8-bit characters from ISO 8859-1...-16 and of 2-byte and 4-byte Unicode characters from ISO 10646.
 
-> <font size="-1" color="#0000FF">HISTORY New type in IFC Release 2x.
-</font>
+> Note that while _IfcText_ is not formally restricted in length, the size of a string in ISO 10303-21 conforming exchange files must not exceed 32767 octets after encoding and escaping.

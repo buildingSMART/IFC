@@ -1,36 +1,83 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTask" UniqueId="1cd0905c-9f60-44f9-9f06-d4cefbc96a5b" DiagramNumber="3" BaseDefinition="IfcProcess" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcTask" Name="IfcTask" UniqueId="1cd0905c-9f60-44f9-9f06-d4cefbc96a5b" DiagramNumber="1" BaseDefinition="IfcProcess" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Aufgabe" Locale="de" />
+		<DocLocalization Name="Tâche" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="146.01164" Y="1573.1365" Width="266" Height="645.96668" />
 	<Attributes>
-		<DocAttribute Name="TaskId" UniqueId="1oirDPyDr4IQG16ackg5dt" DefinedType="IfcIdentifier" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>An identifying designation given to a task.</Documentation>
-		</DocAttribute>
 		<DocAttribute Name="Status" UniqueId="24dad4d8-59a7-4a3c-9f09-a69c43924da4" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Current status of the task.
-NOTE: Particular values for status are not specified, these should be determined and agreed by local usage. Examples of possible status values include &apos;Not Yet Started&apos;, &apos;Started&apos;, &apos;Completed&apos;.</Documentation>
+    
+&gt; NOTE&amp;nbsp; Particular values for status are not specified, these should be determined and agreed by local usage. Examples of possible status values include &apos;Not Yet Started&apos;, &apos;Started&apos;, &apos;Completed&apos;.</Documentation>
+			<DiagramLine>
+				<DocPoint X="412.01164" Y="1719.9887" />
+				<DocPoint X="1124.67827" Y="1719.9887" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="243.9783" Y="1713.5887" Width="77" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="WorkMethod" UniqueId="17ff6383-1e7f-4b76-9767-c81157032a92" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>The method of work used in carrying out a task.</Documentation>
+			<Documentation>The method of work used in carrying out a task.
+    
+&gt; NOTE&amp;nbsp; This attribute should not be used if the work method is specified for the _IfcTaskType_</Documentation>
+			<DiagramLine>
+				<DocPoint X="412.01164" Y="1608.0578" />
+				<DocPoint X="1124.645" Y="1608.0578" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="274.87831" Y="1600.4783713" Width="147" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="IsMilestone" UniqueId="7b39e6b5-1058-483b-b41a-aa6262a8d52e" DefinedType="BOOLEAN" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>Identifies whether a task is a milestone task (=TRUE) or not (= FALSE).
-NOTE: In small project planning applications, a milestone task may be understood to be a task having no duration. As such, it represents a singular point in time.</Documentation>
+			<Documentation>Identifies whether a task is a milestone task (=TRUE) or not
+    (= FALSE).
+    
+&gt; NOTE&amp;nbsp; In small project planning applications, a milestone task may be understood to be a task having no duration. As such, it represents a singular point in time.</Documentation>
+			<DiagramLine>
+				<DocPoint X="412.01164" Y="1831.2943" />
+				<DocPoint X="1124.67843" Y="1831.2943" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="271.28669" Y="1818.710941" Width="131" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Priority" UniqueId="1bdb7742-02a5-4935-816c-f448d784924b" DefinedType="INTEGER" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>A value that indicates the relative priority of the task (in comparison to the priorities of other tasks).</Documentation>
+			<Documentation>A value that indicates the relative priority of the task (in
+    comparison to the priorities of other tasks).</Documentation>
+			<DiagramLine>
+				<DocPoint X="412.01164" Y="1936.7748" />
+				<DocPoint X="1124.57917" Y="1936.7748" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="245.46204" Y="1928.7747996" Width="82" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="TaskTime" UniqueId="c9eb8ec9-2781-4a95-bb1c-e76c1befbe06" DefinedType="IfcTaskTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>Time related information for the task.
+    
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE Attribute added</Documentation>
+			<DiagramLine>
+				<DocPoint X="412.01164" Y="2162.5193" />
+				<DocPoint X="1124.57827" Y="2162.5193" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="263.01164" Y="2151.852633" Width="114" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="PredefinedType" UniqueId="02327d6b-da53-4a13-b62d-f958e4f6badf" DefinedType="IfcTaskTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Identifies the predefined types of a task from which 
+    the type required may be set.
+    
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE Attribute added</Documentation>
+			<DiagramLine>
+				<DocPoint X="412.01164" Y="2051.8653" />
+				<DocPoint X="1124.645" Y="2051.8653" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="293.34497" Y="2042.5319666" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="3Soyz9K4LBNPO5tJGPg7gL">
-			<Documentation>Restrict the relationship &apos;Nests&apos; inherited from IfcObject to IfcRelNestsProcesses.</Documentation>
-			<Expression>SIZEOF(QUERY(temp &lt;* SELF\IfcObjectDefinition.Decomposes | NOT(&apos;IFCKERNEL.IFCRELNESTS&apos; IN TYPEOF(temp)))) = 0</Expression>
-		</DocWhereRule>
-		<DocWhereRule Name="WR2" UniqueId="1dC6$8gujC6u30eXPXg1mw">
-			<Documentation>Restrict the relationship &apos;IsNestedBy&apos; inherited from IfcObject to IfcRelNestsProcesses.</Documentation>
-			<Expression>SIZEOF(QUERY(temp &lt;* SELF\IfcObjectDefinition.IsDecomposedBy | NOT(&apos;IFCKERNEL.IFCRELNESTS&apos; IN TYPEOF(temp)))) = 0</Expression>
-		</DocWhereRule>
-		<DocWhereRule Name="WR3" UniqueId="2Unv5yWyXAEvzSjwYgN0Vc">
+		<DocWhereRule Name="HasName" UniqueId="6390d8db-db3f-4a21-9ce8-d2fd49166dee">
 			<Documentation>The Name attribute should be inserted to describe the task name.</Documentation>
 			<Expression>EXISTS(SELF\IfcRoot.Name)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="9dac127b-4185-4b57-a8fa-902f21d255a5">
+			<Documentation>The attribute ObjectType must be asserted when the value of PredefinedType is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR (PredefinedType &lt;&gt; IfcTaskTypeEnum.USERDEFINED) OR ((PredefinedType = IfcTaskTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>

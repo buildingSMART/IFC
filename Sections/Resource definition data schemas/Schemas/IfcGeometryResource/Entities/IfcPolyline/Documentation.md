@@ -1,17 +1,16 @@
-﻿**Definition from ISO/CD 10303-42:1992**: An IfcPolyline is a bounded curve of n -1 linear segments, defined by a list of n points, P1, P2 ... Pn. The curve is parameterized as follows:
+﻿The _IfcPolyline_ is a bounded curve with only linear segments defined by a list of Cartesian points. If the first and the last Cartesian point in the list are identical, then the polyline is a closed curve, otherwise it is an open curve.
 
-> 
->> ![Image](../../../../../../figures/ifcpolyline-math1.gif)
->>
+> EXAMPLE&nbsp; Figure 1 illustrates a bounded _IfcPolyline_ and shows the parametric length of each segment and of the total polyline.
 
+!["polyline examples"](../../../../../../figures/ifcpolyline-fig1.png "Figure 1 &mdash; Bounded _IfcPolyline_ with parametric length")
 
-> 
-_for_1_<font face="Symbol">&pound;</font>_i_<font face="Symbol">&pound;</font>_n -_ 1_,_where _i_-1 <font face="Symbol">&pound;</font>_u_<font face="Symbol">&pound;</font>_i_ and with parametric range of 0 <font face="Symbol">&pound;</font>_u_<font face="Symbol">&pound;</font>_n_- 1.__
+{ .extDef}
+> NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
+> A polyline is a bounded curve of _n_ - 1 linear segments, defined by a list of _n_ points, P~1~, P~2~ ... P~n~. The _i_th segment of the curve is parameterized as follows: 
+{ .extDef}
+>> ![Image](../../../../../../figures/ifcpolyline-math1.gif)&nbsp;&nbsp;&nbsp; _for_ 1 &le; _i_ &le; _n_ - 1
+>  where _i_ - 1 &le; _u_ &le; _i_ and with parametric range of 0 <&le; _u_ &le; _n_ - 1.
 
-> <font size="-1" color="#0000FF">NOTE Corresponding STEP entity:
-		  polyline. Please refer to ISO/IS 10303-42:1994, p. 45 for the final definition
-		  of the formal standard. </font>
-> 
-> <font size="-1" color="#0000FF">HISTORY New class in IFC Release 1.0
-		  </font>
->
+> NOTE&nbsp; Entity adapted from **polyline** in ISO 10303-42.
+
+> HISTORY&nbsp; New entity in IFC1.0

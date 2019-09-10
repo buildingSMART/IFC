@@ -1,0 +1,11 @@
+﻿    (Direction : IfcDirection)
+    : IfcDirection;
+	
+  LOCAL
+    Direction2D : IfcDirection := IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([0.,1.]);
+  END_LOCAL;
+  
+  Direction2D.DirectionRatios[1] := Direction.DirectionRatios[1];
+  Direction2D.DirectionRatios[2] := Direction.DirectionRatios[2];
+  
+  RETURN (Direction2D);

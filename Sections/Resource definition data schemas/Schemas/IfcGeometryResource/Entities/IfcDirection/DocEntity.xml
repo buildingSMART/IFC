@@ -1,13 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcDirection" UniqueId="c9a6fe1f-b072-45ab-ba40-8c1f8c01e132" DiagramNumber="3" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="109">
+	<Localization>
+		<DocLocalization Name="Richtung" Locale="de" />
+		<DocLocalization Name="Direction" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="3288.7854" Y="951.47137" Width="684.66667" Height="100" />
 	<Attributes>
 		<DocAttribute Name="DirectionRatios" UniqueId="c10df008-c6c7-4ceb-8a7b-e5696975a354" DefinedType="REAL" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="3">
 			<Documentation>The components in the direction of X axis (DirectionRatios[1]), of Y axis (DirectionRatios[2]), and of Z axis (DirectionRatios[3])</Documentation>
+			<DiagramLine>
+				<DocPoint X="3404.3995" Y="1051.4714" />
+				<DocPoint X="3404.3995" Y="1190.80473" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3538.39949" Y="1052.8047337" Width="251" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Dim" UniqueId="653facbb-d98b-49fd-af21-ec73baa0d051" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The space dimensionality of this class, defined by the number of real in the list of DirectionRatios.</Documentation>
 			<Derived>HIINDEX(DirectionRatios)</Derived>
+			<DiagramLine>
+				<DocPoint X="3716.1385" Y="1051.4714" />
+				<DocPoint X="3716.1385" Y="1165.838" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3802.805167" Y="1063.4714" Width="125" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="MagnitudeGreaterZero" UniqueId="a13e3b00-1707-408a-9f02-cd5f91b31062">
+			<Documentation>The magnitude of the direction vector shall be greater than zero.</Documentation>
+			<Expression>SIZEOF(QUERY(Tmp &lt;* DirectionRatios | Tmp &lt;&gt; 0.0)) &gt; 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

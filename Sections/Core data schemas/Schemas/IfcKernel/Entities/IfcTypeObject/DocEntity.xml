@@ -1,20 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTypeObject" UniqueId="1d05673d-0b58-4733-862e-d6626abd1efb" DiagramNumber="1" BaseDefinition="IfcObjectDefinition" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTypeObject" UniqueId="1d05673d-0b58-4733-862e-d6626abd1efb" DiagramNumber="7" BaseDefinition="IfcObjectDefinition" EntityFlags="237">
+	<Localization>
+		<DocLocalization Name="Objekt (allgemein) - Typ" Locale="de" />
+		<DocLocalization Name="Définition d&apos;un type d&apos;objet type" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="10828.423" Y="388.77577" Width="273.33333" Height="250.66666" />
 	<Subtypes>
 		<DocSubtype UniqueId="eb311362-23a8-451e-975a-d7313d037638" DefinedType="IfcTypeProduct" />
+		<DocSubtype UniqueId="6b04c3f5-296e-43e5-b634-d60924303562" DefinedType="IfcTypeProcess" />
+		<DocSubtype UniqueId="41661549-d007-43f8-b89f-a67c030c428e" DefinedType="IfcTypeResource" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="ApplicableOccurrence" UniqueId="e324aef5-b4aa-4e62-86f1-0c332beee624" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>The attribute optionally defines the data type of the occurrence object, to which the assigned type object can relate. If not present, no instruction is given to which occurrence object the type object is applicable.</Documentation>
+		<DocAttribute Name="ApplicableOccurrence" UniqueId="e324aef5-b4aa-4e62-86f1-0c332beee624" DefinedType="IfcIdentifier" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The attribute optionally defines the data type of the occurrence object, to which the assigned type object can relate. If not present, no instruction is given to which occurrence object the type object is applicable. The following conventions are used:
+* The IFC entity name of the applicable occurrence using the IFC naming convention, CamelCase with IFC prefix
+* It can be optionally followed by the predefined type after the separator &quot;/&quot; (forward slash), using Uupper case
+* If one type object is applicable to many occurrence objects, then those occurrence object names should be separate by comma &quot;,&quot; forming a comma separated string. 
+
+&gt; EXAMPLE Refering to a furniture as applicable occurrence entity would be expressed as &apos;IfcFurnishingElement&apos;, refering to a brace as applicable entity would be expressed as &apos;IfcMember/BRACE&apos;, refering to a wall and wall standard case would be expressed as &apos;IfcWall, IfcWallStandardCase&apos;.</Documentation>
+			<DiagramLine>
+				<DocPoint X="10828.423" Y="452.03357" />
+				<DocPoint X="9919.82303" Y="452.03357" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="10896.423" Y="442.03357" Width="247" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="HasPropertySets" UniqueId="2513ab6d-af8f-4320-b951-1ce016a15208" DefinedType="IfcPropertySetDefinition" AttributeFlags="1" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Set ~~list~~ of unique property sets, that are associated with the object type and are common to all object occurrences referring to this object type.
-&gt; &lt;small&gt;&lt;font color=&quot;#ff0000&quot;&gt;
-  IFC2x Edition 3 CHANGE&amp;nbsp; The attribute aggregate type has been changed from LIST to SET.
-&lt;/font&gt;&lt;/small&gt;</Documentation>
+{ .change-ifc2x3}
+&gt; IFC2x3 CHANGE&amp;nbsp; The attribute aggregate type has been changed from LIST to SET.</Documentation>
+			<DiagramLine>
+				<DocPoint X="10828.423" Y="575.21107" />
+				<DocPoint X="10074.7897" Y="575.21107" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="10823.7563337" Y="563.21107" Width="272" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ObjectTypeOf" UniqueId="3HhycrAubCXOejLy3sDguY" DefinedType="IfcRelDefinesByType" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatingType">
+		<DocAttribute Name="Types" UniqueId="b9f6a3c9-d5d6-4a7a-8d44-116f467fda32" DefinedType="IfcRelDefinesByType" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatingType">
 			<Documentation>Reference to the relationship IfcRelDefinedByType and thus to those occurrence objects, which are defined by this type.</Documentation>
+			<DiagramLine>
+				<DocPoint X="10861.422" Y="639.44247" />
+				<DocPoint X="10861.422" Y="693.309157" />
+				<DocPoint X="10045.82203" Y="693.309157" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="10846.172001" Y="724.74248" Width="399" Height="70" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

@@ -1,23 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPhysicalComplexQuantity" UniqueId="b98590b4-3769-4d15-88cf-7716e2c2bada" DiagramNumber="1" BaseDefinition="IfcPhysicalQuantity" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Komplexe physikalische Größe" Locale="de" />
+		<DocLocalization Name="Quantité physique complexe" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="93.46667" Y="619.33333" Width="320" Height="216.63333" />
 	<Attributes>
 		<DocAttribute Name="HasQuantities" UniqueId="614df993-7616-44d2-be2a-d4cf9aafa52a" DefinedType="IfcPhysicalQuantity" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Set of physical quantities that are grouped by this complex physical quantity according to a given discrimination.</Documentation>
+			<DiagramLine>
+				<DocPoint X="152.52753" Y="619.33333" />
+				<DocPoint X="152.52753" Y="394.7183" />
+				<DocPoint X="512.66666" Y="394.7183" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="117.560864" Y="381.176633" Width="241" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Discrimination" UniqueId="255d3f36-39db-4848-a022-f6a547983e93" DefinedType="IfcLabel" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Identification of the discrimination by which this physical complex property is distinguished. Examples of discriminations are &apos;layer&apos;, &apos;steel bar diameter&apos;, etc.</Documentation>
+			<DiagramLine>
+				<DocPoint X="236.07536" Y="835.96666" />
+				<DocPoint X="236.07536" Y="929.983327" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="135.4087" Y="852.29166" Width="160" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Quality" UniqueId="88ec8e96-7f5a-4b88-b912-235f95a7d465" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Additional indication of a quality of the quantities that are grouped under this physical complex quantity.</Documentation>
+			<DiagramLine>
+				<DocPoint X="316.07536" Y="835.96666" />
+				<DocPoint X="316.07536" Y="1093.41666" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="259.408693" Y="810.29166" Width="83" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Usage" UniqueId="72695135-81f8-47a6-91d6-04e5db515b5b" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Additional indication of a usage type of the quantities that are grouped under this physical complex quantity.</Documentation>
+			<DiagramLine>
+				<DocPoint X="396.07536" Y="835.96666" />
+				<DocPoint X="396.07536" Y="1256.78332" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="343.408694" Y="811.624994" Width="79" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR21" UniqueId="3SP5CMgLH8CfrCULXsl_$4">
-			<Documentation>The IfcPhysicalComplexQuantity should not reference itself within the list of HasQuantities.</Documentation>
+		<DocWhereRule Name="NoSelfReference" UniqueId="4eae8cd7-238b-4156-9c30-02b89cd28a1e">
+			<Documentation>The _IfcPhysicalComplexQuantity_ should not reference itself within the list of _HasQuantities_.</Documentation>
 			<Expression>SIZEOF(QUERY(temp &lt;* HasQuantities | SELF :=: temp)) = 0</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="UniqueQuantityNames" UniqueId="cf5fd72c-45f7-4556-a2ea-8c20b2e5fd1d">
+			<Documentation>Every individual _IfcPhysicalQuantity_ within the set _HasQuantities_ shall have a unique _Name_ attribute value.
+&gt; HISTORY&amp;nbsp; New rule in IFC4</Documentation>
+			<Expression>IfcUniqueQuantityNames(HasQuantities)</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>

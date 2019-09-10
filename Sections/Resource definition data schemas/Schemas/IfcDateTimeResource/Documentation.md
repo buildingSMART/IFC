@@ -1,9 +1,18 @@
-﻿The _IfcDateTimeResource_ schema defines dates and times that may be applied. The date and times include specifying a calendar date, a local time with possible daylight saving offset compared to solar time, the local time offset to coordinated universal time, and complete specification of combined date and time.   
-  
-_IfcDateTimeResource_ schema is defined following an adaptation of date_time schema contained in the ISO/CD 10303-41:1992, Industrial Automation Systems and Integration: Product Data Representation and Exchange Part 41: Integrated generic resources: Fundamentals of product description and support. For more information on the definitions as defined in the formal ISO standard please refer to: ISO/IS 10303-41:1994. The formal standard can be obtained through the local publishers of standards in each individual country. The definitions are also based on ISO 8601:1988/2000 Data elements and interchange formats - Information interchange - Representation of dates and times, which among other things define Gregorian calendar.   
-  
-Amendments and extensions to the schema have been defined to meet the requirements of IAI defined business processes in AEC/FM design, construction and facilities management operations.
+﻿The _IfcDateTimeResource_ schema defines several generic date and time specific concepts that can be used to identify context within calendars, schedules, and time series. These concepts include:
 
-> <font size="-1" color="#0000FF">HISTORY This schema was introduced in IFC R2.0. Its entities were formerly
-part of <i>IfcPropertyResource</i>.
-</font>
+*  _IfcDate_, _IfcTime_, _IfcDateTime_ and _IfcDuration_. All given values should be provided in context and converted into a Gregorian date context and be shall be processable by a receiving application. 
+* Time series, which are a set of discrete data each with an associated date and time stamp, allowing a natural association of data collected over intervals of time. Time series data can be represented using the following entities: 
+    *  _IfcRegularTimeSeries_: Time series data arrive predictably at predefined intervals and are represented by the entity, and 
+    *  _IfcIrregularTimeSeries_: some or all time stamps do not follow a repetitive pattern and unpredictable bursts of data may arrive at unspecified points in time.  Time series data must be normalized using the following rules: 
+    * All time (universal, local, daylight savings, and solar) is normalized against the ISO 8601 standard GMT/UTC (Universal Coordinated Time). 
+    * The normalized data refer to the preceding time unit. 
+    * Any rollover is handled by the application providing the data. Rollover occurs, for example, when the measurement device resets itself while measuring and the recording data do not include the data measured before the reset. 
+    * Only the time when data are taken is recorded. 
+* Time associated with processes such as resource allocation (_IfcResourceTime_), time for task completion (_IfcTaskTime_), work patterns (_IfcWorkTime_), and scheduled events (_IfcEventTime_). 
+
+> NOTE&nbsp; The schema _IfcDateTimeResource_ includes definitions that are based on [ISO 8601](../../bibliography.htm#iso-8601){ .int-ref}
+
+> HISTORY&nbsp; This schema has been significantly modified in IFC4. The original concepts of _IfcDateTimeResource_ and _IfcTimeSeriesResource_ were introduced in IFC2.0 and IFC2x2 and merged into the _IfcDateTimeResource_ in IFC4.
+
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; The new types _IfcDate_, _IfcTime_, _IfcDateTime_ and _IfcDuration_ cancel and replace the previous entities _IfcCalendarDate_, _IfcDateAndTime_, _IfcLocalTime_, and _IfcCoordinatedUniversalTimeOffset_.

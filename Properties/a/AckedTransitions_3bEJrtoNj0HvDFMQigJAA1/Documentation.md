@@ -1,1 +1,0 @@
-﻿Enumeration that defines the type of transition acknowledgement

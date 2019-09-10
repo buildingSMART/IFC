@@ -1,1 +1,0 @@
-﻿Indicates whether there is a cover associated with the toilet seat

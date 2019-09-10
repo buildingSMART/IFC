@@ -1,19 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralPlanarAction" UniqueId="5b95095d-4d9c-4dd1-a2ae-b405d104fffe" DiagramNumber="4" BaseDefinition="IfcStructuralAction" EntityFlags="101">
-	<Subtypes>
-		<DocSubtype UniqueId="0rMtmra7v0pOhBlfn3DAFd" DefinedType="IfcStructuralPlanarActionVarying" />
-	</Subtypes>
-	<Attributes>
-		<DocAttribute Name="ProjectedOrTrue" UniqueId="1bwBjuwln8SRw3RO9JbGKg" DefinedType="IfcProjectedOrTrueLengthEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>Defines if the load values are given by using the length of the member on which they act (true length) or by using the projected length resulting from the loaded member and the global project coordinate system. It is only considered if the global project coordinate system is used, and if the action is of type IfcStructuralLinearAction or IfcStructuralPlanarAction.</Documentation>
-		</DocAttribute>
-	</Attributes>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralPlanarAction" UniqueId="5b95095d-4d9c-4dd1-a2ae-b405d104fffe" DiagramNumber="4" BaseDefinition="IfcStructuralSurfaceAction" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="gleichmäßige Flächenlast" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="5374.444" Y="2008.9651" Width="219.31499" Height="100" />
 	<WhereRules>
-		<DocWhereRule Name="WR61" UniqueId="2CsagqSBn9t9rqTNJ23270">
-			<Documentation>A planar action should place either a planar force or a temperature force.</Documentation>
-			<Expression>SIZEOF([&apos;IFCSTRUCTURALLOADRESOURCE.IFCSTRUCTURALLOADPLANARFORCE&apos;,
-        &apos;IFCSTRUCTURALLOADRESOURCE.IFCSTRUCTURALLOADTEMPERATURE&apos;]
-* TYPEOF(SELF\IfcStructuralActivity.AppliedLoad)) = 1</Expression>
+		<DocWhereRule Name="SuitableLoadType" UniqueId="d4c48e38-4ddb-4775-b7d3-ea7c27db20fb">
+			<Documentation>A planar action shall place either a planar force or a temperature load.</Documentation>
+			<Expression>SIZEOF([&apos;IFCSTRUCTURALLOADRESOURCE.IFCSTRUCTURALLOADPLANARFORCE&apos;, &apos;IFCSTRUCTURALLOADRESOURCE.IFCSTRUCTURALLOADTEMPERATURE&apos;] * TYPEOF(SELF\IfcStructuralActivity.AppliedLoad)) = 1</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="ConstPredefinedType" UniqueId="636a8b44-3f5b-45ab-bec0-9c7ffd7613b1">
+			<Documentation>This surface action subtype is restricted to constant load distribution over its domain.</Documentation>
+			<Expression>SELF\IfcStructuralSurfaceAction.PredefinedType = IfcStructuralSurfaceActivityTypeEnum.CONST</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>

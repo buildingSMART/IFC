@@ -1,33 +1,76 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCartesianTransformationOperator" UniqueId="da40a055-7f34-44ae-85cb-40b20d82ae5a" DiagramNumber="4" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="205">
+	<Localization>
+		<DocLocalization Name="Kartesische Transformation" Locale="de" />
+		<DocLocalization Name="Opérateur de transformation cartésienne" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="5366.8485" Y="400.02396" Width="445.95833" Height="125" />
 	<Subtypes>
 		<DocSubtype UniqueId="ed7227df-031c-479a-885f-6d454562803f" DefinedType="IfcCartesianTransformationOperator2D" />
 		<DocSubtype UniqueId="67551319-1c66-4347-b401-c8286930a1a4" DefinedType="IfcCartesianTransformationOperator3D" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Axis1" UniqueId="77d3a933-8ecd-40ec-a018-58dcd07018c7" DefinedType="IfcDirection" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Axis1" UniqueId="77d3a933-8ecd-40ec-a018-58dcd07018c7" DefinedType="IfcDirection" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>The direction used to determine U[1], the derived X axis direction.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5503.1993" Y="525.02396" />
+				<DocPoint X="5503.1993" Y="579.416711" />
+				<DocPoint X="5415.515145" Y="579.416711" />
+				<DocPoint X="5415.515145" Y="610.55729" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5510.5326333" Y="570.0833777" Width="66" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Axis2" UniqueId="c87eb32c-c021-4fa9-888e-27a2a2d49f73" DefinedType="IfcDirection" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Axis2" UniqueId="c87eb32c-c021-4fa9-888e-27a2a2d49f73" DefinedType="IfcDirection" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>The direction used to determine U[2], the derived Y axis direction.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5736.013" Y="525.02396" />
+				<DocPoint X="5736.013" Y="580.793657" />
+				<DocPoint X="5852.8485" Y="580.793657" />
+				<DocPoint X="5852.8485" Y="610.62396" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5741.3463333" Y="572.793657" Width="66" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LocalOrigin" UniqueId="c81e6d3a-d622-4443-a670-a2c528ea33dc" DefinedType="IfcCartesianPoint" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LocalOrigin" UniqueId="c81e6d3a-d622-4443-a670-a2c528ea33dc" DefinedType="IfcCartesianPoint" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>The required translation, specified as a cartesian point. The actual translation included in the transformation is from the geometric origin to the local origin.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5366.8485" Y="419.19063" />
+				<DocPoint X="5279.16517" Y="419.19063" />
+				<DocPoint X="5279.16517" Y="322.590631" />
+				<DocPoint X="5191.48184" Y="322.590631" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5295.831837" Y="407.507297" Width="131" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Scale" UniqueId="3240216d-4df6-4546-a6f0-58d59fa41159" DefinedType="REAL" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The scaling value specified for the transformation.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5812.8068" Y="419.19063" />
+				<DocPoint X="5947.01364" Y="419.19063" />
+				<DocPoint X="5947.01364" Y="357.144796" />
+				<DocPoint X="6088.66406" Y="357.144796" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5961.54052" Y="399.19063" Width="68" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Scl" UniqueId="1d03e053-7d65-4017-9fdd-fd78322d198e" DefinedType="REAL" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The derived scale S of the transformation, equal to scale if that exists, or 1.0 otherwise.</Documentation>
 			<Derived>NVL(Scale, 1.0)</Derived>
+			<DiagramLine>
+				<DocPoint X="5812.8068" Y="462.52396" />
+				<DocPoint X="6088.63073" Y="462.52396" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5819.4734667" Y="505.857293" Width="115" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Dim" UniqueId="e1598a19-e317-4923-a3b3-5620c6f57ec6" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The space dimensionality of this class, determined by the space dimensionality of the local origin.</Documentation>
 			<Derived>LocalOrigin.Dim</Derived>
+			<DiagramLine>
+				<DocPoint X="5366.8485" Y="462.52396" />
+				<DocPoint X="5212.31516" Y="462.52396" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5353.665167" Y="505.857293" Width="125" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="2iHfOsDKPC68ZxH2Q1e7Yu">
+		<DocWhereRule Name="ScaleGreaterZero" UniqueId="7b26d3af-cf86-4aaa-b8f9-fec810bfe9fe">
 			<Documentation>The derived scaling Scl shall be greater than zero.</Documentation>
 			<Expression>Scl &gt; 0.0</Expression>
 		</DocWhereRule>

@@ -1,4 +1,7 @@
-﻿This enumeration is used to identify the primary purpose of a duct fitting. This is a very basic categorization mechanism to generically identify the duct fitting type. Subcategories of duct fittings are not enumerated. The _IfcDuctFittingTypeEnum_ contains the following:
+﻿This enumeration is used to identify the primary purpose of a duct fitting. This is a very basic categorization mechanism to generically identify the duct fitting type. Subcategories of duct fittings are not enumerated.
+
+{ .spec-head}
+Enumerated Item Definitions:
 
 * **BEND**: A fitting with typically two ports used to change the direction of flow between connected elements.
 * **CONNECTOR**: Connector fitting, typically used to join two ports together within a flow distribution system (e.g., a coupling used to join two duct segments).
@@ -10,6 +13,4 @@
 * **USERDEFINED**: User-defined fitting.
 * **NOTDEFINED**: Undefined fitting.
 
-> <font color="#0000ff" size="-1">
-    	HISTORY: New enumeration in IFC 2x2<br>
-    	</font>
+> HISTORY&nbsp; New enumeration in IFC2x2.

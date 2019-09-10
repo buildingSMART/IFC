@@ -1,8 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcDistributionPort" UniqueId="1b957306-e396-43ea-b6ee-e7e28d37f9e9" DiagramNumber="3" BaseDefinition="IfcPort" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDistributionPort" Name="IfcDistributionPort" UniqueId="1b957306-e396-43ea-b6ee-e7e28d37f9e9" DiagramNumber="3" BaseDefinition="IfcPort" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Anschluss / Port" Locale="de" />
+		<DocLocalization Name="Port de distribution" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="3265.4605" Y="1153.5841" Width="561.90684" Height="331.52558" />
 	<Attributes>
 		<DocAttribute Name="FlowDirection" UniqueId="a44dc32a-3cf7-492e-98af-13a4db7286bf" DefinedType="IfcFlowDirectionEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Enumeration that identifies if this port is a Sink (inlet), a Source (outlet) or both a SinkAndSource.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3827.3674" Y="1235.0027" />
+				<DocPoint X="3955.89901" Y="1235.0027" />
+				<DocPoint X="3955.89901" Y="1234.45962795" />
+				<DocPoint X="4084.4306" Y="1234.45962795" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3801.185864" Y="1227.0474817" Width="156" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="PredefinedType" UniqueId="05f9c057-d349-4b93-91f9-6f8288935c79" DefinedType="IfcDistributionPortTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<DiagramLine>
+				<DocPoint X="3827.3673" Y="1319.3469" />
+				<DocPoint X="4079.66486" Y="1319.3469" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3811.261172" Y="1319.3469" Width="182" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="SystemType" UniqueId="d0969115-9b35-4d3f-b259-e5c103df1863" DefinedType="IfcDistributionSystemEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Enumeration that identifies the system type.  If a system type is defined, the port may only be connected to other ports having the same system type.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3827.3674" Y="1412.995" />
+				<DocPoint X="3891.030322" Y="1412.995" />
+				<DocPoint X="3891.030322" Y="1411.9658796" />
+				<DocPoint X="4729.222372" Y="1411.9658796" />
+				<DocPoint X="4729.222372" Y="513.7641996" />
+				<DocPoint X="4683.081181" Y="513.7641996" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3920.852619" Y="1406.2841135" Width="143" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

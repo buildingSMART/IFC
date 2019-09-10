@@ -1,1 +1,1 @@
-﻿Percentage of vacancy found in the particular category currently
+﻿Percentage of vacancy found in the particular category currently.

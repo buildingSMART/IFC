@@ -1,27 +1,79 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralLoadGroup" UniqueId="eda81530-0687-4842-bde0-d6567c6ba98b" DiagramNumber="5" BaseDefinition="IfcGroup" EntityFlags="165">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStructuralLoadGroup" Name="IfcStructuralLoadGroup" UniqueId="eda81530-0687-4842-bde0-d6567c6ba98b" DiagramNumber="1" BaseDefinition="IfcGroup" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Lastgruppe / Lastkombination" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="120.3175" Y="1047.4622" Width="215.20865" Height="637.4518" />
+	<Subtypes>
+		<DocSubtype UniqueId="f0baf40b-89ad-4737-880b-bacce70cae15" DefinedType="IfcStructuralLoadCase" />
+	</Subtypes>
 	<Attributes>
 		<DocAttribute Name="PredefinedType" UniqueId="5663480e-3310-47cf-9895-b66f3b6bc6fc" DefinedType="IfcLoadGroupTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>Selects a predefined type for the load group. It can be differentiated between load groups, load cases, load combination groups (a necessary construct for the description of load combinations) and load combinations.</Documentation>
+			<Documentation>Selects a predefined type for the load group.  It can be differentiated between load groups, load cases, load combinations, or userdefined grouping levels.</Documentation>
+			<DiagramLine>
+				<DocPoint X="335.52615" Y="1075.4448" />
+				<DocPoint X="691.04962" Y="1075.4448" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="278.747183" Y="1075.4448" Width="182" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="ActionType" UniqueId="aef5596c-d11b-4db0-a46f-35343620887f" DefinedType="IfcActionTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>Type of actions in the group. Normally needed if &apos;PredefinedType&apos; specifies a LOAD_COMBINATION_GROUP.</Documentation>
+			<Documentation>Type of actions in the group. Normally needed if &apos;PredefinedType&apos; specifies a LOAD_CASE.</Documentation>
+			<DiagramLine>
+				<DocPoint X="335.52615" Y="1167.2892" />
+				<DocPoint X="691.0606" Y="1167.2892" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="258.215504" Y="1162.980082" Width="130" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="ActionSource" UniqueId="448bc4ea-6678-4bdf-aa0a-b668235e13ff" DefinedType="IfcActionSourceTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Source of actions in the group. Normally needed if &apos;PredefinedType&apos; specifies a LOAD_CASE.</Documentation>
+			<DiagramLine>
+				<DocPoint X="335.52615" Y="1263.8656" />
+				<DocPoint X="690.98842" Y="1263.8656" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="267.969236" Y="1258.5322667" Width="153" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Coefficient" UniqueId="aa87d543-3486-4d44-8480-cb94601a2fc7" DefinedType="IfcRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Load factor. If omitted, a factor is not yet known or not specified. A load factor of 1.0 shall be explicitly exported as Coefficient = 1.0.</Documentation>
+			<DiagramLine>
+				<DocPoint X="335.52615" Y="1386.3883" />
+				<DocPoint X="503.81333" Y="1386.3883" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="329.3143561" Y="1384.7360304" Width="124" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Purpose" UniqueId="fd3c9364-c459-4be9-bd2f-25e1b39b4957" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Description of the purpose of this instance. Among else, possible values of the Purpose of load combinations are &apos;SLS&apos;, &apos;ULS&apos;, &apos;ALS&apos; to indicate serviceability, ultimate, or accidental limit state.</Documentation>
+			<DiagramLine>
+				<DocPoint X="335.52615" Y="1540.4539" />
+				<DocPoint X="503.84978" Y="1540.4539" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="330.4565994" Y="1532.8495741" Width="99" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="SourceOfResultGroup" UniqueId="cc5325c9-4d29-44d1-b97c-63725962202d" DefinedType="IfcStructuralResultGroup" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="ResultForLoadGroup">
 			<Documentation>Results which were computed using this load group.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1183.3217" Y="1659.5998" />
+				<DocPoint X="335.52619" Y="1659.5998" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1193.592693" Y="1699.405568" Width="393" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LoadGroupFor" UniqueId="4da738a4-3225-4f05-895a-6c91c1c53f79" DefinedType="IfcStructuralAnalysisModel" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="LoadedBy">
+		<DocAttribute Name="LoadGroupFor" UniqueId="4da738a4-3225-4f05-895a-6c91c1c53f79" DefinedType="IfcStructuralAnalysisModel" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="LoadedBy">
 			<Documentation>Analysis models in which this load group is used.</Documentation>
+			<DiagramLine>
+				<DocPoint X="153.47639" Y="632.33587" />
+				<DocPoint X="153.47639" Y="1047.46215" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="323.87927" Y="716.050944" Width="312" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="HasObjectType" UniqueId="1698343e-d9af-499e-a73a-1798c02a536c">
+			<Documentation>The attribute ObjectType shall be given if the predefined type, action type, or action source is set to USERDEFINED.</Documentation>
+			<Expression>(
+  (PredefinedType &lt;&gt; IfcLoadGroupTypeEnum.USERDEFINED) AND
+  (ActionType &lt;&gt; IfcActionTypeEnum.USERDEFINED) AND
+  (ActionSource &lt;&gt; IfcActionSourceTypeEnum.USERDEFINED)
+) OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

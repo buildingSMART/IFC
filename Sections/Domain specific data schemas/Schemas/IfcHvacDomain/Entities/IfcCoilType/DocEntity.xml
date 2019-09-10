@@ -1,12 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCoilType" UniqueId="8eddad0b-39d9-48df-b854-7ff316225c5a" DiagramNumber="1" BaseDefinition="IfcEnergyConversionDeviceType" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCoilType" UniqueId="8eddad0b-39d9-48df-b854-7ff316225c5a" DiagramNumber="1" BaseDefinition="IfcEnergyConversionDeviceType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Heiz-Kühlelemente - Typ" Locale="de" />
+		<DocLocalization Name="Type de bobine" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="69.849405" Y="888.23349" Width="401.51903" Height="102.11007" />
 	<Attributes>
 		<DocAttribute Name="PredefinedType" UniqueId="f6e3036c-6fcd-410a-8c52-1f404f3bb682" DefinedType="IfcCoilTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Defines typical types of coils (e.g., Cooling, Heating, etc.)</Documentation>
+			<DiagramLine>
+				<DocPoint X="471.36844" Y="936.99307" />
+				<DocPoint X="681.64273" Y="936.99307" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="471.36844" Y="936.99307" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="0heLzvS3548O2b6Vl5qeJ4">
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="015a67fc-4732-43f9-ab53-3cfbe825e30a">
 			<Expression>(PredefinedType &lt;&gt; IfcCoilTypeEnum.USERDEFINED) OR
 ((PredefinedType = IfcCoilTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
 		</DocWhereRule>

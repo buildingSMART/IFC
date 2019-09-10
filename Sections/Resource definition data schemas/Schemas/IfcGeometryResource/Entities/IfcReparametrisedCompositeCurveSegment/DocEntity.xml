@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcReparametrisedCompositeCurveSegment" UniqueId="73dcb7dc-33d9-44b6-9ff1-1c8ded7c722d" DiagramNumber="6" BaseDefinition="IfcCompositeCurveSegment" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Reparametrisiertes Segment einer zusammengesetzten Kurve" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="8471.3667" Y="2110.96" Width="464" Height="100" />
+	<Attributes>
+		<DocAttribute Name="ParamLength" UniqueId="c5577010-d8c0-41e0-b393-c30f401114a2" DefinedType="IfcParameterValue" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<DiagramLine>
+				<DocPoint X="8935.3667" Y="2160.96" />
+				<DocPoint X="9237.0667" Y="2160.96" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="8940.7000333" Y="2155.6266667" Width="156" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="PositiveLengthParameter" UniqueId="342f39c6-c776-4dd8-94d3-103c3d04aece">
+			<Documentation>The _ParamLength_ shall be greater than zero.</Documentation>
+			<Expression>ParamLength &gt; 0.0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,15 +1,9 @@
-﻿**Definition from ISO/CD 10303-42:1992:** A solid model is a complete representation of the nominal shape of a product such that all points in the interior are connected. Any point can be classified as being inside, outside, or on the boundary of a solid. There are several different types of solid model representations.
+﻿An _IfcSolidModel_ represents the 3D shape by different types of solid model representations. It is the common abstract supertype of Boundary representation, CSG representation, Sweeping representation and other suitable solid representation schemes.
 
-> <font color="#0000FF" size="-1">NOTE: Corresponding STEP entity:
-		  solid_model, only three subtypes have been incorporated into the current IFC
-		  Release - subset of manifold_solid_brep (<i>IfcManifoldSolidBrep</i>,
-		  constraint to faceted B-rep), swept_area_solid (<i>IfcSweptAreaSolid</i>), the
-		  swept_disk_solid (<i>IfcSweptDiskSolid</i>) and subset of csg_solid
-		  (<i>IfcCsgSolid</i>). The derived attribute <i>Dim</i> has been added at this
-		  level and was therefore demoted from the geometric_representation_item. Please
-		  refer to ISO/IS 10303-42:1994, p. 170 for the final definition of the formal
-		  standard. </font>
-> 
-> <font color="#0000FF" size="-1">HISTORY: New entity in IFC Release
-		  1.5</font>
->
+{ .extDef}
+> NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
+> A solid model is a complete representation of the nominal shape of a product such that all points in the interior are connected. Any point can be classified as being inside, outside, or on the boundary of a solid. There are several different types of solid model representations.
+
+> NOTE&nbsp; Entity adapted from **solid_model** defined in ISO 10303-42.
+
+> HISTORY&nbsp; New entity in IFC1.5

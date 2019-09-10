@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTextureMap" UniqueId="d3acf0b2-2c3f-4fc7-afb8-e82f32d6fa12" DiagramNumber="10" BaseDefinition="IfcTextureCoordinate" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Texturmapping" Locale="de" />
+		<DocLocalization Name="Image de texture" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="5033.1249" Y="3928.65" Width="333.26667" Height="100" />
+	<Attributes>
+		<DocAttribute Name="Vertices" UniqueId="03815b41-69d3-4f06-8e96-0e5ac53ab8c1" DefinedType="IfcTextureVertex" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="3" AggregationUpper="0">
+			<Documentation>List of texture coordinate vertices that are applied to the corresponding points of the polyloop defining a face bound.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5073.9735" Y="4028.65" />
+				<DocPoint X="5073.9735" Y="4200.9833" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5185.9735" Y="4006.483333" Width="172" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="MappedTo" UniqueId="21dc192f-d35b-4f70-8f37-5c46b77243b4" DefinedType="IfcFace" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>The face that defines the corresponding list of points along the bounding poly loop of the face outer bound.
+&gt; NOTE&amp;nbsp; The face may have additional inner loops. The _IfcTextureMap_ and its _Vertices_ only correspond with the coordinates of the _IfcPolyloop_ representing the outer bound.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5366.3916" Y="3978.65" />
+				<DocPoint X="5793.6666" Y="3978.65" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5339.724933" Y="3967.983333" Width="126" Height="35" />
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

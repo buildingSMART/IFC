@@ -1,17 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPile" Name="IfcPile" UniqueId="986bf516-0c1c-465d-992a-2150e7aabe95" DiagramNumber="1" BaseDefinition="IfcBuildingElement" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPile" Name="IfcPile" UniqueId="986bf516-0c1c-465d-992a-2150e7aabe95" DiagramNumber="1" BaseDefinition="IfcBuildingElement" EntityFlags="37">
+	<Localization>
+		<DocLocalization Name="Fundament / Tiefgründung" Locale="de" />
+		<DocLocalization Name="Pieu" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="135.29402" Y="399.77283" Width="200" Height="100" />
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="d2a4fc10-ab8a-4025-a09e-59889c12124b" DefinedType="IfcPileTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>The predefined generic type of the pile according to function.</Documentation>
+		<DocAttribute Name="PredefinedType" UniqueId="d2a4fc10-ab8a-4025-a09e-59889c12124b" DefinedType="IfcPileTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The predefined generic type of the pile according to function.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; Attribute made optional. Type information can be provided by _IfcRelDefinesByType_ and _IfcPileType_.</Documentation>
+			<DiagramLine>
+				<DocPoint X="335.29402" Y="414.81191" />
+				<DocPoint X="597.89673" Y="414.81191" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="319.769499" Y="403.655765" Width="182" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="ConstructionType" UniqueId="68d7f08c-9d56-4f95-ae87-2f3278162109" DefinedType="IfcPileConstructionEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>General designator for how the pile is constructed.</Documentation>
+			<Documentation>Deprecated.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; Material profile association capability by means of _IfcRelAssociatesMaterial_ has been added. The attribute _ConstructionType_ should not be used whenever its information can be provided by a material profile set, either associated with the _IfcPile_ object or, if present, with a corresponding instance of _IfcPileType_.</Documentation>
+			<DiagramLine>
+				<DocPoint X="335.29402" Y="483.99609" />
+				<DocPoint X="597.94583" Y="483.99609" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="326.9278661" Y="476.3701077" Width="201" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="2z3P9Uczj9AhwtJv5XzI0d">
-			<Documentation>The attribute ObjectType shall be given, if the predefined type is set to USERDEFINED.</Documentation>
-			<Expression>(PredefinedType &lt;&gt; IfcPileTypeEnum.USERDEFINED) OR ((PredefinedType = IfcPileTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType)) </Expression>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="fba20422-9a96-489c-9b65-d348aa8a1327">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcPileType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT EXISTS(PredefinedType) OR
+(PredefinedType &lt;&gt; IfcPileTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcPileTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="c136b28d-4404-4c8a-8b4b-18579759df51">
+			<Documentation>If this occurrence is defined by a type object, the latter has to be an _IfcPileType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+(&apos;IFCSTRUCTURALELEMENTSDOMAIN.IFCPILETYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>

@@ -1,1 +1,0 @@
-﻿String value to be displayed in an inactive, off, or idle state

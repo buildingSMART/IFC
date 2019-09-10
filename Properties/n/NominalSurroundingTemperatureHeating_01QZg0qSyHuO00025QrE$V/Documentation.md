@@ -1,1 +1,1 @@
-﻿Nominal surrounding temperature (refers to nominal heating capacity)
+﻿Nominal surrounding temperature (refers to nominal heating capacity).

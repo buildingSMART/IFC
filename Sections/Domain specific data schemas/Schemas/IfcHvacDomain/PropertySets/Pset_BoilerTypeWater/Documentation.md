@@ -1,0 +1,1 @@
+﻿Water boiler type common attributes.

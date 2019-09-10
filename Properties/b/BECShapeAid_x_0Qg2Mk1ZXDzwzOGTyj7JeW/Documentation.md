@@ -1,1 +1,0 @@
-﻿Bar shape measure aid x.

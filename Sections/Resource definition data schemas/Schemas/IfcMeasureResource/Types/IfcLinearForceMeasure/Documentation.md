@@ -1,8 +1,7 @@
-﻿A measure of linear force.
+﻿_IfcLinearForceMeasure_ is a measure of linear force.
 
 Usually measured in N/m.
 
 Type: REAL
 
-> <font size="-1" color="#0000FF">HISTORY New type in IFC Release 2x.
-</font>
+> HISTORY&nbsp; New type in IFC2x.

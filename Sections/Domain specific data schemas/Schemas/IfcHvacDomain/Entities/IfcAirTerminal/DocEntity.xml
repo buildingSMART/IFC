@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcAirTerminal" Name="IfcAirTerminal" UniqueId="d5bfe2e5-0796-4a25-98a1-7484e7d2f7e8" DiagramNumber="3" BaseDefinition="IfcFlowTerminal" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Luftauslass" Locale="de" />
+		<DocLocalization Name="Entrée ou sortie d&apos;air" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="4435.503" Y="1506.4228" Width="322.2" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="432c2a57-b9c5-4706-9f86-8efe65b36e79" DefinedType="IfcAirTerminalTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<DiagramLine>
+				<DocPoint X="4435.503" Y="1556.4228" />
+				<DocPoint X="4245.93261" Y="1556.4228" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4434.67021951" Y="1543.069322" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="b0322c4d-85ec-40bf-9641-d0398d0c1ab5">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcAirTerminalType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcAirTerminalTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcAirTerminalTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="6cc58a85-70ed-4156-9db8-0a49c0f36d51">
+			<Documentation>Either there is no air terminal type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcAirTerminalType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCHVACDOMAIN.IFCAIRTERMINALTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,18 +1,11 @@
-﻿**Definition
-from IAI:** The entity _IfcBoundaryFaceCondition_ describes boundary conditions that can be applied to structural face connections, either directly for the connection (e.g. the connecting face) or for the relation between a structural member and the connection.
+﻿Describes linearly elastic support conditions or connection conditions.
 
-The following conventions to the values of the _LinearStiffnessByArea[X,Y,Z]_ apply:
+Applicability:
 
-* value (-1.) represents an infinitive large value &ndash; or a fixed connectivity with infinitive stiffness
-* value zero (0.), represents no stiffness or a free connectivity
-* any other value represents a finitive stiffness or spring connectivity in that direction or rotation
-* value NIL ($) represents an unknown connectivity condition
+* Surface supports and connections.
 
-> <font size="-1">NOTE: Instances of the entity <i>IfcBoundaryFaceCondition</i>
-are used e.g., to define the boundary condition for instances of <i>IfcStructuralFaceConnection</i>
-or <i>IfcRelConnectsStructuralMember</i>
-pointing to a structural face connection. </font>
+> HISTORY&nbsp; New entity in IFC2x2.  
+> IFC 2x4 change: Attributes _LinearStiffnessX/Y/Z_ renamed to _TranslationalStiffnessX/Y/Z_.
 
-> <font color="#0000ff" size="-1">HISTORY: New entity
-in Release IFC2x edition 2. </font>
->
+{ .change-ifc2x4}
+> IFC4 change All attribute data types changed from numeric to SELECT between Boolean and numeric. Stiffnesses may now also be negative, for example to capture destabilizing effects in boundary conditions. The IFC2x3 convention of -1. representing infinite stiffness is no longer valid and must not be used. Infinite stiffness, i.e. fixed supports, are now modeled by the Boolean value TRUE.

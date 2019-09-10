@@ -1,0 +1,1 @@
+﻿Lighting loads.

@@ -1,1 +1,1 @@
-﻿The shape of the conduit segment
+﻿The shape of the conduit segment.

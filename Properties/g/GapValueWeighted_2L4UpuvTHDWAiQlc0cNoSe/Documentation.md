@@ -1,1 +1,0 @@
-﻿Difference determined between the topic demand value and the topic supply evaluation value, weighted for topic demand importance value.

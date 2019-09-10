@@ -1,15 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcElementarySurface" UniqueId="dab568ba-aad6-4d74-963d-d3f397cfcea1" DiagramNumber="7" BaseDefinition="IfcSurface" EntityFlags="69">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcElementarySurface" UniqueId="dab568ba-aad6-4d74-963d-d3f397cfcea1" DiagramNumber="8" BaseDefinition="IfcSurface" EntityFlags="197">
+	<Localization>
+		<DocLocalization Name="elementare Fläche" Locale="de" />
+		<DocLocalization Name="Surface élémentaire" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="11923.567" Y="759.81143" Width="386.4" Height="177.33333" />
 	<Subtypes>
 		<DocSubtype UniqueId="8a825a54-0de3-4445-82fd-b47b0026a084" DefinedType="IfcPlane" />
+		<DocSubtype UniqueId="9b7c0c6a-bf5d-48bf-aa7e-72a1ee23c793" DefinedType="IfcCylindricalSurface" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Position" UniqueId="f91d2366-0868-4189-a462-5254202e97dc" DefinedType="IfcAxis2Placement3D" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Position" UniqueId="f91d2366-0868-4189-a462-5254202e97dc" DefinedType="IfcAxis2Placement3D" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>The position and orientation of the surface. This attribute is used in the definition of the parameterization of the surface.</Documentation>
-		</DocAttribute>
-		<DocAttribute Name="Dim" UniqueId="1HowbxtqfBzv49$jtTJOv6" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>The space dimensionality of this class, derived from the dimensionality of the Position.</Documentation>
-			<Derived>Position.Dim</Derived>
+			<DiagramLine>
+				<DocPoint X="11923.567" Y="901.81143" />
+				<DocPoint X="11646.03366" Y="901.81143" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="11950.725569" Y="895.661398" Width="94" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

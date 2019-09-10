@@ -1,0 +1,47 @@
+﻿( Degree, UpKnots, UpCp : INTEGER;
+  KnotMult : LIST OF INTEGER;
+  Knots : LIST OF IfcParameterValue ) 
+: BOOLEAN;
+
+
+  LOCAL
+    Result : BOOLEAN := TRUE;
+    K, Sum : INTEGER;
+  END_LOCAL;
+
+  (* Find sum of knot multiplicities. *)
+  Sum := KnotMult[1];
+  REPEAT i := 2 TO UpKnots;
+    Sum := Sum + KnotMult[i];
+  END_REPEAT;
+
+  (* Check limits holding for all B-spline parametrisations *)
+  IF (Degree < 1) OR (UpKnots < 2) OR (UpCp < Degree) OR
+    (Sum <> (Degree + UpCp + 2)) THEN
+    Result := FALSE;
+    RETURN(Result);
+  END_IF;
+
+  K := KnotMult[1];
+  IF (K < 1) OR (K > Degree + 1) THEN
+    Result := FALSE;
+    RETURN(Result);
+  END_IF;
+
+  REPEAT i := 2 TO UpKnots;
+    IF (KnotMult[i] < 1) OR (Knots[i] <= Knots[i-1]) THEN
+      Result := FALSE;
+      RETURN(Result);
+    END_IF;
+    K := KnotMult[i];
+    IF (i < UpKnots) AND (K > Degree) THEN
+      Result := FALSE;
+      RETURN(Result);
+    END_IF;
+    IF (i = UpKnots) AND (K > Degree + 1) THEN
+      Result := FALSE;
+      RETURN(Result);
+    END_IF;
+  END_REPEAT;
+
+  RETURN(result);

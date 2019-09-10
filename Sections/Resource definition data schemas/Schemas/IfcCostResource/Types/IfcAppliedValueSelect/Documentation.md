@@ -1,18 +1,15 @@
-﻿The _IfcAppliedValueSelect_ defines the selection of whether a value (expressed as a ratio) or an amount should be used as the value for an _IfcAppliedValue_.
+﻿_IfcAppliedValueSelect_ defines a value to be calculated within a formula.
 
-**Select from:**
+Types are used as follows:
 
-* IfcMeasureWithUnit
-* IfcMonetaryMeasure
-* IfcRatioMeasure
+* _IfcValue_: A constant value using project default units.
+* _IfcMeasureWithUnit_: A constant value using specified units.
+* _IfcReference_: A value referenced on an object attribute.
 
-> <font size="-1" color="#0000FF">HISTORY: New SELECT type in IFC
-		2x2.</font>
+For cost values, the following guidance applies:
 
-**Use Definitions**
+* _IfcMeasureWithUnit_ allows the specification of both the actual figure for the value together with the currency in which the value is represented.
+* Selecting _IfcMonetaryMeasure_ allows the specification only of the value, the currency being as set by the global context.
+* Selecting _IfcRatioMeasure_ assumes that the amount is a percentage or other REAL number. Note that if the amount is normally specified as -20%, then this figure will need to be converted to a multiplier of 0.8 
 
-Selecting _IfcMeasureWithUnit_ allows the specification of both the actual figure for the value together with the currency (for a cost value) or an environmental measurement unit (in the case of an environmental impact value) in which the value is represented.
-
-Selecting _IfcMonetaryMeasure_ allows the specification only of the value, the currency being as set by the global context
-
-Selecting _IfcRatioMeasure_ assumes that the amount is a percentage or other REAL number. Note that if the amount is normally specified as -20%, then this figure will need to be converted to a multiplier of 0.8
+> HISTORY&nbsp; New select type in IFC2x2.

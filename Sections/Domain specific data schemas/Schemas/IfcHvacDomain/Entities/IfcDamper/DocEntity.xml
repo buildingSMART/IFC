@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDamper" Name="IfcDamper" UniqueId="2b00b91e-76da-42f7-9746-994039edb1c4" DiagramNumber="4" BaseDefinition="IfcFlowController" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Regelklappe" Locale="de" />
+		<DocLocalization Name="Détecteur d&apos;incendie" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="6018.859" Y="559.50823" Width="325.00274" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="a66e6586-fecb-44b3-b66d-1455e7cf9842" DefinedType="IfcDamperTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<DiagramLine>
+				<DocPoint X="6018.859" Y="609.50823" />
+				<DocPoint X="5795.68231" Y="609.50823" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="6018.859" Y="609.50823" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="cb8cf7cb-7731-49c0-8be4-344a8993c10c">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcDamperType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcDamperTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcDamperTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="2ec66812-c850-4676-8ae7-b72dbfed0c8a">
+			<Documentation>Either there is no damper type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcDamperType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCHVACDOMAIN.IFCDAMPERTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

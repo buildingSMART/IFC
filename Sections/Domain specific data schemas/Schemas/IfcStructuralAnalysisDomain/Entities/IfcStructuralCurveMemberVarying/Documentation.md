@@ -1,47 +1,18 @@
-﻿**Definition
-from IAI:** Instances of the entity _IfcStructuralCurveMemberVarying_ shall be used to describe linear structural elements with varying profile properties.
+﻿This entity describes edge members with varying profile properties. Each instance of _IfcStructuralCurveMemberVarying_ is composed of two or more instances of _IfcStructuralCurveMember_ with differing profile properties. These subordinate members relate to the instance of _IfcStructuralCurveMemberVarying_ by _IfcRelAggregates_.
 
-The varying profile properties are assigned through the _IfcRelAssociatesProfileProperties_ with an additional link to the _IfcShapeAspect_, which relates the profile properties to the different vertices of the structural curve member.
+> NOTE&nbsp; A curve member whose variation of profile properties can be sufficiently described by a start profile and an end profile (e.g. tapers) shall be modeled as a single direct instance of the supertype _IfcStructuralCurveMember_.
 
-> <font color="#0000ff" size="-1"> HISTORY: New entity
-in Release IFC2x Edition 2. </font>
-> 
+> NOTE&nbsp; It is recommended that structural activities (actions or reactions) are not connected with aggregated _IfcStructuralCurveMemberVarying_ but only with the _IfcStructuralCurveMember_s in the aggregation. That way, difficulties in interpretation of local coordinates are avoided.
 
+> HISTORY&nbsp; New entity in IFC2x2.
 
-****Use
-Definition****
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; Use definition changed.
 
-<table border="1" cellpadding="2" cellspacing="2" width="100%">
-  <tbody>
-    <tr>
-      <td><img alt="fig 1" src="figures/ifcstructuralcurvemembervarying-fig1.gif" height="525" width="632"></td>
-      <td valign="top">The
-varying profiles along the longitudinal axis are assigned by using
-several relationships of <i>IfcRelAssociatesProfileProperties</i>,
-each assigning one profile definition (<i>IfcProfileProperties</i>
-optionally referencing one <i>IfcProfileDef</i>)
-to a vertex along the longitudinal axis.<br>
-      <br>
-The topological representation is an <i>IfcEdge</i>,
-decomposed into <i>IfcSubEdge</i>'s,
-a changing profile definition is associated to the start or end vertex
-of the <i>IfcSubEdge</i>.</td>
-    </tr>
-  </tbody>
-</table>
+****Coordinate Systems****:
 
-****Topology
-Use Definition****
+See definitions at _IfcStructuralItem_ and _IfcStructuralCurveMember_. The local coordinates of the aggregate are derived from those of its parts. Length measures in local x direction of the aggregate depend on continuity and lengths of the parts. The _Axis_ of the aggregate shal be the same as the _Axis_ of the part at the start of the aggregate.
 
-Instances of _IfcStructuralCurveMemberVarying_ shall have a topology representation. It includes a placement and a product representation. The _IfcProductRepresentation_ shall be given by an item of _Representations_ being of type "_IfcTopologyRepresentation_".
+****Material Use Definition****
 
-The guidelines on using the location and topological representation capabilities are identical with the supertype _IfcStructuralCurveMember_. The additional requirement is that if the varying profile not only has different (morphing) profiles at the start and end edge, then the _IfcTopologyRepresentation.Item[1]_shall be an _IfcEdge_ (or _IfcEdgeCurve_, _IfcOrientedEdge_) that is referenced by the _Parent_ attribute of at least two _IfcSubedge_'s.
-
-****Shape
-Aspect Use Definition****
-
-The attribute _HasAssociations_ references a set of _IfcRelAssociatesProfileProperties_, each referring to an _IfcShapeAspect_, that has a list of _ShapeRepresentations_. Each individual _IfcShapeRepresentation_ within that list shall have a single (or two) item(s) within its list of _Items_. The type of the item shall be:
-
-* _IfcVertexPoint_
-
-It references either a start or an end vertex (or both) to which the profile properties apply.
+Only the individual parts (direct instances of _IfcStructuralCurveMember_) carry material and profile information.

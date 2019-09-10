@@ -1,3 +1,3 @@
-﻿The _IfcControlExtension_ schema in the core layer declares basic classes for relating constraints and approvals to any object in the IFC model derived from _IfcRoot_ and instantiating life cycle information or time series schedules related to any object derived from _IfcObject_.
+﻿The _IfcControlExtension_ schema in the core layer declares basic classes for control objects (_IfcControl_, _IfcPerformanceHistory_) and assignment of these (_IfcRelAssignsToControl_) to any object derived from _IfcObjectDefinition_. Also, it declares the classes to associate resource level objects of controlling nature to any subtype of _IfcRoot_, using _IfcRelAssociatesConstraint_ and _IfcRelAssociatesApproval_.
 
-> <font size="-1" color="#0000FF">HISTORY New schema in IFC Release 2.0.</font>
+> HISTORY&nbsp; New schema in IFC2.0.

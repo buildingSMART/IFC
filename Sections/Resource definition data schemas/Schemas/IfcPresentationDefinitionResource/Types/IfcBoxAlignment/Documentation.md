@@ -1,5 +1,4 @@
-﻿**Definition
-from IAI**: The box alignment specifies the alignment of the text box relative to its position. The following string values shall be used:
+﻿The box alignment specifies the alignment of the text box relative to its position. The following string values shall be used:
 
 * top-left
 * top-middle
@@ -7,34 +6,21 @@ from IAI**: The box alignment specifies the alignment of the text box relative t
 * middle-left
 * center
 * middle-right
-* bottom-left   
+* bottom-left
 * bottom-middle
 * bottom-right
 
-> <font size="-1">NOTE: The top-left is the default value.<br>
-  </font>
+> NOTE&nbsp; The top-left is the default value.
 
-<table border="0" cellpadding="2" cellspacing="2" width="100%">
-  <tbody>
-    <tr>
-      <td width="510"><img alt="9 alignment values" src="figures/ifcboxalignment_fig1.gif" height="250" width="400"></td>
-      <td align="left" valign="bottom">Figure:
-Definition of the
-alignment values</td>
-    </tr>
-    <tr>
-      <td width="510"><img alt="use with planar extent" src="figures/ifcboxalignment_fig2.gif" height="300" width="500"></td>
-      <td align="left" valign="bottom">Figure:
-Examples of the use of
-alignment values together with the placement and planar extent.<br>
-      </td>
-    </tr>
-  </tbody>
-</table>
+Figure 1 illustrates alignment values.
 
-  
-> <small><font color="#0000ff">HISTORY&nbsp; New type in Release
-IFC2x Edition2 Addendum2.<br>
-  </font><font color="#ff0000">IFC2x
-Edition 3 CHANGE&nbsp; The <i>IfcBoxAlignment</i>
-has been added.</font></small>
+!["9 alignment values"](../../../../../../figures/ifcboxalignment_fig1.gif "Figure 1 &mdash; Box alignment values")
+
+Figure 2 illustrates use of alignment values together with the placement and planar extent.
+
+!["use with planar extent"](../../../../../../figures/ifcboxalignment_fig2.gif "Figure 2 &mdash; Box alignment examples")
+
+> HISTORY&nbsp; New type in IFC2x2 Addendum2.
+
+{ .change-ifc2x3}
+> IFC2x3 CHANGE&nbsp; The _IfcBoxAlignment_ has been added.

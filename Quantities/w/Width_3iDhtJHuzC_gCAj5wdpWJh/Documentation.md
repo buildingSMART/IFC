@@ -1,0 +1,1 @@
+﻿Total nominal width (or thickness) of the footing. For strip footings it is measured perpendicular to the footing path (or longitudial axis). For other footings it is one of the horizontal dimensions. It should only be provided, if it is constant.

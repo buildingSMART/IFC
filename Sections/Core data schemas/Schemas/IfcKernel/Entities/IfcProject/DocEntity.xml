@@ -1,33 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcProject" Name="IfcProject" UniqueId="eff34c4d-41a1-48b3-badc-950cf6816a7b" DiagramNumber="8" BaseDefinition="IfcObject" EntityFlags="173">
-	<Attributes>
-		<DocAttribute Name="LongName" UniqueId="0uQRrX$uHE0gQpz$qhW05f" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Long name for the project as used for reference purposes.</Documentation>
-		</DocAttribute>
-		<DocAttribute Name="Phase" UniqueId="127DQ5sF555P_AUE1ay3Gi" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Current project phase, open to interpretation for all project partner, therefore given as IfcString.</Documentation>
-		</DocAttribute>
-		<DocAttribute Name="RepresentationContexts" UniqueId="2OmiP8McP16wp12N_tdPAX" DefinedType="IfcRepresentationContext" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
-			<Documentation>Context of the representations used within the project. When the project includes shape representations for its components, one or several geometric representation contexts need to be included that define e.g. the world coordinate system, the coordinate space dimensions, and/or the precision factor.</Documentation>
-		</DocAttribute>
-		<DocAttribute Name="UnitsInContext" UniqueId="0Srb73pr17iAYTq1axrwHw" DefinedType="IfcUnitAssignment" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>Units globally assigned to measure types used within the context of this project.</Documentation>
-		</DocAttribute>
-	</Attributes>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcProject" Name="IfcProject" UniqueId="eff34c4d-41a1-48b3-badc-950cf6816a7b" DiagramNumber="12" BaseDefinition="IfcContext" EntityFlags="165">
+	<Localization>
+		<DocLocalization Name="Projekt" Locale="de" />
+		<DocLocalization Name="Projet" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="17751.937" Y="1673.3112" Width="200" Height="172.66667" />
 	<WhereRules>
-		<DocWhereRule Name="WR31" UniqueId="1sIsLZJOb90vT5mGGyLhKs">
-			<Documentation>The _Name_ attribute has to be provided for the project. It is the short name for the project.</Documentation>
+		<DocWhereRule Name="HasName" UniqueId="cf80b3ff-dd52-438a-bcde-95318cf1df7b">
+			<Documentation>The _Name_ attribute has to be provided for _IfcProject_. It is the short name for the project.</Documentation>
 			<Expression>EXISTS(SELF\IfcRoot.Name)</Expression>
 		</DocWhereRule>
-		<DocWhereRule Name="WR32" UniqueId="1g_76NIxDA0vCcPiihqvyo">
-			<Documentation>There shall be no instance of _IfcGeometricRepresentationSubContext_ directly included in the set of _RepresentationContexts_.</Documentation>
-			<Expression>SIZEOF(QUERY(Temp &lt;* RepresentationContexts |
+		<DocWhereRule Name="CorrectContext" UniqueId="4a1ebb22-f191-4bc1-8084-e9590ecd8ae1">
+			<Documentation>If a _RepresentationContexts_ relation is provided then there shall be no instance of _IfcGeometricRepresentationSubContext_ directly included in the set of _RepresentationContexts_.</Documentation>
+			<Expression>NOT(EXISTS(SELF\IfcContext.RepresentationContexts)) OR
+(SIZEOF(QUERY(Temp &lt;* SELF\IfcContext.RepresentationContexts |
  &apos;IFCREPRESENTATIONRESOURCE.IFCGEOMETRICREPRESENTATIONSUBCONTEXT&apos; IN TYPEOF(Temp)
-)) = 0 </Expression>
+  )) = 0)</Expression>
 		</DocWhereRule>
-		<DocWhereRule Name="WR33" UniqueId="3u5W3oCqL2XPdU$nNcLgtX">
+		<DocWhereRule Name="NoDecomposition" UniqueId="858783f2-8bb3-4d9a-b751-10ac2dc8516c">
 			<Documentation>The _IfcProject_ represents the root of the any decomposition tree. It shall therefore not be used to decompose any other object definition.</Documentation>
 			<Expression>SIZEOF(SELF\IfcObjectDefinition.Decomposes) = 0</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="HasOwnerHistory" UniqueId="75f1820f-38d9-4c2d-b15e-2b1ad8a1736f">
+			<Documentation>The _OwnerHistory_ attribute has to be provided for _IfcProject_. It provides the minimum of owner information for the project data set and the last change action, that applied to the whole data set.
+&gt; NOTE&amp;nbsp; Each individual data item, that derives from _IfcRoot_ may have an individual _OwnerHistory_. It then overrides the common ownership and chance action information provided at the single _IfcProject_ instance in an IFC data set.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE New where rule.</Documentation>
+			<Expression>EXISTS(SELF\IfcRoot.OwnerHistory)</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>

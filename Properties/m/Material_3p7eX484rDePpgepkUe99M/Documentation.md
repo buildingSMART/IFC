@@ -1,1 +1,0 @@
-﻿Primary construction material.

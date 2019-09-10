@@ -1,4 +1,6 @@
-﻿Relationship assigning classifications to materials.
+﻿_IfcMaterialClassificationRelationship_ is a relationship assigning classifications to materials.
 
-> <font color="#0000FF" size="-1">HISTORY: New entity in Release IFC2x.</font>
->
+> HISTORY  New entity in IFC2x.
+
+{ .change-ifc2x4}
+> IFC4 CHANGE  The entity _IfcMaterialClassificationRelationship_ is deprecated since IFC4 and shall no longer be used. Use _IfcExternalReferenceRelationship_ instead.

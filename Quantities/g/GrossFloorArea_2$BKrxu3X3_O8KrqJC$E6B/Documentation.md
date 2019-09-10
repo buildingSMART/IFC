@@ -1,0 +1,1 @@
+﻿Sum of all gross areas of spaces within the building. It includes the area of construction elements within the building. May be provided in addition to the quantities of the spaces and the construction elements assigend to the building. In case of inconsistencies, the individual quantities of spaces and construction elements take precedence.

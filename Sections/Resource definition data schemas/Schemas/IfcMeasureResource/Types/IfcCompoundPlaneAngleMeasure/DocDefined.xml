@@ -1,23 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocDefined xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCompoundPlaneAngleMeasure" UniqueId="6b5c667d-bed9-4b77-ba0b-039cef56680c" DiagramNumber="3" DefinedType="INTEGER" Length="0">
+<DocDefined xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCompoundPlaneAngleMeasure" UniqueId="6b5c667d-bed9-4b77-ba0b-039cef56680c" DiagramNumber="4" DefinedType="INTEGER" Length="0">
+	<Localization>
+		<DocLocalization Name="Mesure composée d&apos;angle plan" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="5057.8563" Y="255.64024" Width="529.22365" Height="54.923051" />
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="1NTJOH6GP0RxkUGEbuKwPx">
-			<Documentation>The first measure (degrees) shall be between -360 and 360 degree.</Documentation>
-			<Expression>{ -360 &lt;= SELF[1] &lt; 360 }</Expression>
+		<DocWhereRule Name="MinutesInRange" UniqueId="0c31c30c-1da4-425a-93c1-a0baf28128a0">
+			<Documentation>The second measure (minutes) shall be between -60 exclusive and 60 exclusive.</Documentation>
+			<Expression>ABS(SELF[2]) &lt; 60</Expression>
 		</DocWhereRule>
-		<DocWhereRule Name="WR2" UniqueId="2TM_9CTLrFOOIwpTajs0nl">
-			<Documentation>The second measure (minutes) shall be between -60 and 60.</Documentation>
-			<Expression>{ -60 &lt;= SELF[2] &lt; 60 }</Expression>
+		<DocWhereRule Name="SecondsInRange" UniqueId="37cfc53e-0a88-4e31-973f-7a6dad1b9860">
+			<Documentation>The third measure (seconds) shall be between -60 exclusive and 60 exclusive.</Documentation>
+			<Expression>ABS(SELF[3]) &lt; 60</Expression>
 		</DocWhereRule>
-		<DocWhereRule Name="WR3" UniqueId="1fW6ORzZn2kfj64b4O50pI">
-			<Documentation>The third measure (seconds) shall be between -60 and 60.</Documentation>
-			<Expression>{ -60 &lt;= SELF[3] &lt; 60 }</Expression>
+		<DocWhereRule Name="MicrosecondsInRange" UniqueId="49e31ea3-19fa-4dca-b97f-6389c8689c2b">
+			<Documentation>The forth measure (millionth-seconds), if asserted, shall be between -1e6 exclusive and 1e6 exclusive.</Documentation>
+			<Expression>(SIZEOF(SELF) = 3) OR (ABS(SELF[4]) &lt; 1000000)</Expression>
 		</DocWhereRule>
-		<DocWhereRule Name="WR4" UniqueId="1oBsggl05E_BVHSBnOVemF">
-			<Documentation>The measure components shall have the same sign (positive or negative).</Documentation>
-			<Expression>((SELF[1] &gt;= 0) AND (SELF[2] &gt;= 0) AND (SELF[3] &gt;= 0)) OR ((SELF[1] &lt;= 0) AND (SELF[2] &lt;= 0) AND (SELF[3] &lt;= 0))</Expression>
+		<DocWhereRule Name="ConsistentSign" UniqueId="2b3a2ff3-a00f-4805-8afb-65d80a2e6b43">
+			<Documentation>All non-zero measure components shall have the same sign (positive or negative).</Documentation>
+			<Expression>((SELF[1] &gt;= 0) AND (SELF[2] &gt;= 0) AND (SELF[3] &gt;= 0) AND ((SIZEOF(SELF) = 3) OR (SELF[4] &gt;= 0)))
+OR
+((SELF[1] &lt;= 0) AND (SELF[2] &lt;= 0) AND (SELF[3] &lt;= 0) AND ((SIZEOF(SELF) = 3) OR (SELF[4] &lt;= 0)))</Expression>
 		</DocWhereRule>
 	</WhereRules>
-	<Aggregation xsi:type="DocAttribute" UniqueId="1wswUb6Uj0Uhmcwqici3vV" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="3" AggregationUpper="4" />
+	<Aggregation xsi:type="DocAttribute" UniqueId="9c1b0647-b96a-4e91-aecd-eada80a7a7ca" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="3" AggregationUpper="4" />
 </DocDefined>
 

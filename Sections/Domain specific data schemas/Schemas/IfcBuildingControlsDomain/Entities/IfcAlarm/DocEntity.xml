@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcAlarm" Name="IfcAlarm" UniqueId="90995dc8-ff72-4331-bff5-af4591a13d27" DiagramNumber="1" BaseDefinition="IfcDistributionControlElement" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Alarm / Gefahrenmelder" Locale="de" />
+		<DocLocalization Name="Alarme" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="865.66667" Y="1143.7533" Width="674.6" Height="108" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="48e60449-60db-442b-9dda-c0a083a70b41" DefinedType="IfcAlarmTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<DiagramLine>
+				<DocPoint X="1533.6333" Y="1251.7533" />
+				<DocPoint X="1533.6333" Y="1298.5999" />
+				<DocPoint X="1095.07994" Y="1298.5999" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1442.35662" Y="1246.4199667" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="e334f43f-4c33-492b-9d9c-9d79d14ea95c">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcAlarmType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcAlarmTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcAlarmTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="58bab91e-5a68-4820-bda1-8a7442aa6670">
+			<Documentation>Either there is no alarm type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcAlarmType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+(&apos;IFCBUILDINGCONTROLSDOMAIN.IFCALARMTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

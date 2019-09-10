@@ -1,9 +1,11 @@
-﻿The _IfcJunctionBoxTypeEnum_ defines the range of types of junction boxes available.
+﻿The _IfcJunctionBoxTypeEnum_ defines different types of junction boxes.
 
-> <font size="-1">NOTE: This enumeration has been introduced to
-		allow further detailing of the type information in future releases of
-		IFC.</font>
+> HISTORY&nbsp; New type in IFC2x2. Values added in IFC4.
 
-> <font color="#0000FF" size="-1"> HISTORY: New type in IFC 2x2
-		  </font>
->
+{ .spec-head}
+Enumerated Item Definitions:
+
+* **POWER**: Contains cables, outlets, and/or switches for electrical power.
+* **DATA**: Contains cables, outlets, and/or switches for communications use.
+* **USERDEFINED**: User-defined type.
+* **NOTDEFINED**: Undefined type.

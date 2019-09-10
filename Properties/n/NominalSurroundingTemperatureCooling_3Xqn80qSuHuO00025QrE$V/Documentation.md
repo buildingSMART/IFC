@@ -1,1 +1,1 @@
-﻿Nominal surrounding temperature (refers to nominal cooling capacity)
+﻿Nominal surrounding temperature (refers to nominal cooling capacity).

@@ -1,1 +1,2 @@
-﻿Connection information between two <elements> with an optional connection geometry describing how the connection is geometrically resolved.</elements>
+﻿{ .std}
+Objects may participate in various connectivity relationships with other objects.

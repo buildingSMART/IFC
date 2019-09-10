@@ -1,1 +1,0 @@
-﻿General description of the privacy requirement for the space (in addition to the security requirement)

@@ -1,1 +1,0 @@
-﻿The pipe fitting material.

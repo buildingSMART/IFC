@@ -1,1 +1,0 @@
-﻿General description of the Furniture, Fixtures and Equipment requirement for this space.

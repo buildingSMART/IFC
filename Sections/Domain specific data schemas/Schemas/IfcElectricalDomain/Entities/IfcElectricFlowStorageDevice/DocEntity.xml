@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcElectricFlowStorageDevice" Name="IfcElectricFlowStorageDevice" UniqueId="f2443c0e-5c57-46d2-83fe-668bd3d3367a" DiagramNumber="2" BaseDefinition="IfcFlowStorageDevice" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Elektrisches Speichergerät" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="2453.3" Y="2082.2333" Width="679.93333" Height="103.2" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="ee7ce2c1-5eae-4e1b-a1d8-6d432d9b8136" DefinedType="IfcElectricFlowStorageDeviceTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<DiagramLine>
+				<DocPoint X="3129.0342" Y="2185.4333" />
+				<DocPoint X="3129.0342" Y="2233.899633" />
+				<DocPoint X="2687.62601" Y="2233.899633" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3029.245159" Y="2179.8168001" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="3432f6bd-0420-44c8-b37f-255a3b4e0625">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcElectricFlowStorageDeviceType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcElectricFlowStorageDeviceTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcElectricFlowStorageDeviceTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="c3d17aad-c5f8-4d93-90f0-1f5f73c74329">
+			<Documentation>Either there is no electric flow storage device type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcElectricFlowStorageDeviceType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCELECTRICALDOMAIN.IFCELECTRICFLOWSTORAGEDEVICETYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

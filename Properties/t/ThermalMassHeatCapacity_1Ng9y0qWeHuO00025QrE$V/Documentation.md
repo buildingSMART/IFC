@@ -1,1 +1,1 @@
-﻿Product of component mass and specific heat
+﻿Product of component mass and specific heat.

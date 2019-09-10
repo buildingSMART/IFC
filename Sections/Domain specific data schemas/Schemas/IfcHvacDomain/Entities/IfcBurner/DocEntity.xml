@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcBurner" Name="IfcBurner" UniqueId="8801203d-3144-4447-8539-793ff1689a2d" DiagramNumber="1" BaseDefinition="IfcEnergyConversionDevice" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Brenner" Locale="de" />
+		<DocLocalization Name="Brûleur" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1220.3618" Y="646.14161" Width="334.1" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="531547e0-f15b-4808-965e-2210f3ede44a" DefinedType="IfcBurnerTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<DiagramLine>
+				<DocPoint X="1220.3618" Y="696.14161" />
+				<DocPoint X="1008.20769" Y="696.14161" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1220.3618" Y="696.14161" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="2943e565-cca5-4baa-9df0-d25e57774808">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcBurnerType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcBurnerTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcBurnerTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="f45361a9-0e8e-48ac-b042-0982cc986eb7">
+			<Documentation>Either there is no burner type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcBurnerType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCHVACDOMAIN.IFCBURNERTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

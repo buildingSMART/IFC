@@ -1,0 +1,1 @@
+﻿A set of general material properties.

@@ -1,29 +1,246 @@
-﻿_IfcLogicalOperatorEnum_ is an enumeration that defines the logical operators that may be applied for the satisfaction of more than one constraint at a time.
+﻿_IfcLogicalOperatorEnum_ is an enumeration that defines the logical operators that may be applied for the satisfaction of one or more operands (_IfcConstraint_) at a time.
 
-> <font color="#0000FF" size="-1"> HISTORY: New type in IFC Release 2.0.
-		  Renamed from IfcConstraintSAggregatorEnum in IFC 2x2 </font>
-> 
+Table 1 illustrates application of _IfcLogicalOperatorEnum_ in a case of three operands, A, B and C, for each operator.
 
+<table><tr><td>
 
-**Enumeration**
+<table border="1" cellspacing="0" cellpadding="0">
+<th align="left" colspan="9">LOGICALAND(A,B,C)</th>
+<tr>
+<td><b>A</b></td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+</tr>
+<tr>
+<td><b>B</b></td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">T</td>
+</tr><tr>
+<td><b>C</b></td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+</tr>
+<tr>
+<td><b>RESULT</b></td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">T</td>
+</tr>
+<th align="left" colspan="9">LOGICALOR(A,B,C)</th>
+<tr>
+<td><b>A</b></td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+</tr>
+<tr>
+<td><b>B</b></td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">T</td>
+</tr><tr>
+<td><b>C</b></td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+</tr>
+<tr>
+<td><b>RESULT</b></td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+</tr>
+<th align="left" colspan="9">LOGICALXOR(A,B,C)</th>
+<tr>
+<td><b>A</b></td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+</tr>
+<tr>
+<td><b>B</b></td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">T</td>
+</tr><tr>
+<td><b>C</b></td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+</tr>
+<tr>
+<td><b>RESULT</b></td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">F</td>
+</tr>
+<th align="left" colspan="9">LOGICALNOTAND(A,B,C)</th>
+<tr>
+<td><b>A</b></td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+</tr>
+<tr>
+<td><b>B</b></td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">T</td>
+</tr><tr>
+<td><b>C</b></td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+</tr>
+<tr>
+<td><b>RESULT</b></td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">F</td>
+</tr>
+<th align="left" colspan="9">LOGICALNOTOR(A,B,C)</th>
+<tr>
+<td><b>A</b></td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+</tr>
+<tr>
+<td><b>B</b></td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">T</td>
+</tr><tr>
+<td><b>C</b></td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+</tr>
+<tr>
+<td><b>RESULT</b></td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">F</td>
+</tr>
+</table>
 
-<table border="1"> 
-		<tr> 
-		  <td><i>Value</i></td> 
-		  <td><i>Definition</i></td> 
-		</tr> 
-		<tr> 
-		  <td>LOGICALAND</td> 
-		  <td>Defines a relationship between constraints whereby the provisions
-			 of all constraints must be satisfied simultaneously (e.g. constraint A AND
-			 constraint B must both be satisfied for the constraint as a whole to be
-			 satisfied).</td> 
-		</tr> 
-		<tr> 
-		  <td>LOGICALOR</td> 
-		  <td>Defines a relationship between constraints whereby the provisions
-			 of at least one of the constraints must be satisfied (e.g. constraint A OR
-			 constraint B or the provisions of both may be satisfied for the constraint as a
-			 whole to be satisfied).</td> 
-		</tr> 
-	 </table>
+</td></tr>
+<tr><td><p class="table">Table 1 &mdash; Logical operators</p></td></tr>
+</table>
+
+> HISTORY&nbsp; New enumeration in IFC2.0.
+
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; Extended to include LOGICALXOR, LOGICALNOTAND and LOGICALNOTOR.
+
+{ .spec-head}
+Enumerated Item Definitions:
+
+* **LOGICALAND**: Defines a relationship between operands whereby the result is true if all operands are true, and false if at least one operand is false.
+* **LOGICALOR**: Defines a relationship between operands whereby the result is true if at least one operand is true, and false if all operands are false.
+* **LOGICALXOR**: Defines a relationship between operands whereby the result is true if exactly one operand is true (exclusive or).
+* **LOGICALNOTAND**: Defines a relationship between operands whereby the result is true if at least one operand is false, and false if all operands are true.
+* **LOGICALNOTOR**: Defines a relationship between operands whereby the result is true if all operands are false, and false if at least one operand is true.

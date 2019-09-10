@@ -1,40 +1,37 @@
-﻿**Definition from ISO/CD 10303-42:1992**: This entity is a subtype of the half space solid which is trimmed by a surrounding rectangular box. The box has its edges parallel to the coordinate axes of the geometric coordinate system.
+﻿The _IfcBoxedHalfSpace_ is used (as its supertype _IfcHalfSpaceSolid_) only within Boolean operations. It divides the domain into exactly two subsets, where the domain in question is that of the attribute _Enclosure_.
 
-> <font size="-1">NOTE: The purpose of the box is to facilitate CSG
-		  computations by producing a solid of finite size.</font>
->
+The purpose of the attribute _Enclosure_ is to provide a search box for the other operand in the Boolean operation. It shall be sufficiently large to fully enclose the resulting solid after the Boolean operation with the half space. It however does not alter the final result. The result of the Boolean operation would be the same, as if executed by the supertype _IfcHalfSpaceSolid_. See Figure 1 below.
 
-The _IfcBoxedHalfSpace_ (from ISO 10303-42:1994 boxed_half_space) is used (as its supertype _IfcHalfSpaceSolid_) only within Boolean operations. It divides the domain into exactly two subsets, where the domain in question is that of the attribute _Enclosure_.
+!["correct use of enclosure"](../../../../../../figures/ifcboxedhalfspace_01.png "Figure 1 &mdash; Boxed half space operands")
 
-> <font color="#0000FF" size="-1">NOTE: Corresponding STEP entity :
-		  boxed_half_space, please refer to ISO/IS 10303-42:1994, p. 185 for the final
-		  definition of the formal standard. The IFC class <i>IfcBoundingBox</i> is used
-		  for the definition of the enclosure, providing the same definition as
-		  box_domain. </font>
-> 
-> <font color="#0000FF" size="-1">HISTORY: New entity in IFC Release
-		  1.5.1, improved documentation available in IFC Release
-		  2x.</font>
->
+The _IfcBoundingBox_ that provides the enclosure is given for the convenience of the receiving application to enable the use of size box comparison for efficiency (for example, to check first whether size boxes intersect, if not no calculations has to be done to check whether the solids of the entities intersect).
 
-**Illustration:**
+<table summary="boxed half space">
+<tr>
+<td width="600" valign="top" align="left"><img src="../../../../../../figures/ifcboxedhalfspace-layout1.png" border="0" height="480" width="600" alt="boxed half space"></td>
+<td>The <em>Enclosure</em> therefore helps to prevent dealing with infinite-size related issues. The enclosure box is
+positioned within the object coordinate system, established by the <em>ObjectPlacement</em> of the element represented
+(for example, by <em>IfcLocalPlacement</em>). Figure 2 shows the <em>Enclosure</em> box being sufficiently large to
+fully enclose the Boolean result.</td>
+</tr>
+<tr>
+<td>
+<p class="figure">Figure 2 &mdash; Boxed half space geometry</p>
+</td>
+<td>&nbsp;</td>
+</tr>
+</table>
 
-<table frame="BORDER" width="100%"> 
-		<tr> 
-		  <td width="420" valign="TOP" align="LEFT"><a href="drawings/IfcBoxedHalfSpace-Layout1.dwf"><img src="figures/ifcboxedhalfspace-layout1.gif" border="0" height="300" width="400"></a></td> 
-		  <td align="LEFT" valign="TOP" width="100%"> 
-			 <p><font size="-1"><u>Purpose</u> <br>The <i>IfcBoundingBox</i>
-				(relating to ISO 10303-42:1994 box_domain) that provides the enclosure is given
-				for the convenience of the receiving application to enable the use of size box
-				comparison for efficiency (e.g., to check first whether size boxes intersect,
-				if not no calculations has to be done to check whether the solids of the
-				entities intersect).</font></p> 
-			 <p><font size="-1"><u>Parameter</u> <br>The <i>Enclosure</i>
-				therefore helps to prevent dealing with infinite-size related issues. The
-				enclosure box is positioned within the positioning coordinate system of the
-				unbounded surface, given by the attribute <i>BaseSurface</i> (see
-				<i>IfcElementarySurface.Position</i>). The <i>AgreementFlag</i> defines whether
-				the box is defined into the direction of the positive z axis (FALSE) or in the
-				direction of the negative z axis (TRUE).</font></p></td> 
-		</tr> 
-	 </table>
+&nbsp;
+
+{ .extDef}
+> NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
+> This entity is a subtype of the half space solid which is trimmed by a surrounding rectangular box. The box has its edges parallel to the coordinate axes of the geometric coordinate system.  
+> The purpose of the box is to facilitate CSG computations by producing a solid of finite size.
+
+> NOTE&nbsp; Entity adapted from **boxed_half_space** defined in ISO 10303-42.
+
+> HISTORY&nbsp; New entity in IFC1.5.1
+
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; Usage correct, position coordinate system for _Enclosure_ is the object coordinate system.

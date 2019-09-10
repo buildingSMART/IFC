@@ -1,269 +1,188 @@
-﻿The opening element stands for opening, recess or chase, all reflecting voids. It represents a void within any element that has physical manifestation. Openings must be handled by all sectors and disciplines in AEC/FM industry, therefore the interoperability for opening elements is provided at this high level.
+﻿The opening element stands for opening, recess or chase, all reflecting voids. It represents a void within any element that has physical manifestation. Openings can be inserted into walls, slabs, beams, columns, or other elements.
+
+The IFC specification provides two entities for opening elements:
+
+* _IfcOpeningStandardCase_ is used for all openings that have a constant profile along a linear extrusion. They are placed relative to the voided elements and the extrusion direction is perpendicular to the plane of the element (horizontally for walls, vertically for slabs). Only a single extrusion body is allowed. It cuts through the whole thickness of the voided element, i.e. it reflects a true opening.
+* _IfcOpeningElement_ is used for all other occurrences of openings and in particular also for niches or recesses.
+
+> NOTE&nbsp; View definitions or implementer agreements may restrict the types of elements which can be voided by an _IfcOpeningElement_ or _IfcOpeningStandardCase_
 
 There are two different types of opening elements:
 
-* an opening, where the thickness of the opening is greater or equal to the thickness of the element; 
-* a recess or niche, where the thickness of the recess is smaller than the thickness of the element. 
+* an opening, where the thickness of the opening is greater or equal to the thickness of the element;
+* a recess or niche, where the thickness of the recess is smaller than the thickness of the element.
 
-The inherited attribute _ObjectType_ should be used to capture the differences,
+The attribute _PredefinedType_ should be used to capture the differences,
 
-* the attribute is set to '**Opening**' for an opening or 
-* the attribute is set to '**Recess**' for a recess or niche. 
-* If the value for _ObjectType_ is omitted, opening is assumed. 
+* the attribute is set to OPENING for an opening or
+* the attribute is set to RECESS for a recess or niche.
+* If the value for _PredefinedType_ is omitted, or the value is set to NOTDEFINED, no specific information of whether it is an opening or recess shall be assumed.
 
-An _IfcOpeningElement_ has to be inserted into a building element (all subtypes of _IfcBuildingElement_) by using the _IfcRelVoidsElement_ relationship. ~~It is also
-      directly linked to the spatial structure of the project
-      (and here normally to the _IfcBuildingStorey_) by
-      using the _IfcRelContainedInSpatialStructure_
-      relationship~~. <font color="#0000FF">It should not
-      be linked directly to the spatial structure of the project,
-      i.e. the inverse relationship <i>ContainedInStructure</i>
-      shall be NIL. It is assigned to the spatial structure
-      through the elements it penetrates</font>.
+An _IfcOpeningElement_ has to be inserted into an _IfcElement_ by using the _IfcRelVoidsElement_ relationship. The relationship implies a Boolean subtraction operation between the volume of the voided element and the volume of the opening. It may be filled by an _IfcDoor_, _IfcWind_ow, or another filling element by using the relationship _IfcRelFillsElements_.
 
-> <font color="#0000FF" size="-1">HISTORY New entity in IFC
-      Release 1.0</font>
+> HISTORY&nbsp; New entity in IFC1.0
 
-> <font color="#FF0000" size="-1">IFC2x PLATFORM CHANGE: The
-      intermediate ABSTRACT supertypes <i>IfcFeatureElement</i>
-      and <i>IfcFeatureSubtraction</i> have been added between
-      <i>IfcElement</i> and <i>IfcOpeningElement</i> with upward
-      compatibility.</font>
+{ .change-ifc2x}
+> IFC2x CHANGE&nbsp; The intermediate ABSTRACT supertypes _IfcFeatureElement_ and _IfcFeatureSubtraction_ have been added.
 
-****Property Set Use Definition****:
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; The attribute _PredefinedType_ has been added at the end of attribute list. It should be used instead of the inherited attribute _ObjectType_ from now on.
 
-The property sets relating to the _IfcOpeningElement_ are defined by the _IfcPropertySet_ and attached by the _IfcRelDefinesByProperties_ relationship. It is accessible by the inverse _IsDefinedBy_ relationship. The following property set definitions specific to the _IfcOpeningElement_ are part of this IFC release:
+{ .use-head}
+Containment Use Definition
 
-*  [Pset_OpeningElementCommon](../../psd/IfcProductExtension/Pset_OpeningElementCommon.xml){ target="SOURCE"}: common property set for all opening occurrences 
+The _IfcOpeningElement_ shall not participate in the containment relationship, i.e. it is not linked directly to the spatial structure of the project. It has a mandatory _VoidsElements_ inverse relationship pointing to the _IfcElement_ that is contained in the spatial structure.
 
-****Quantity Use Definition****:
+* The inverse relationship _ContainedInStructure_ shall be NIL.
 
-The quantities relating to the _IfcOpeningElement_ are defined by the _IfcElementQuantity_ and attached by the _IfcRelDefinesByProperties_. The following quantities are foreseen, but will be subjected to the local standard of measurement:
+> NOTE&nbsp; See _IfcRelVoidsElement_ for a diagram on how to apply spatial containment and the voiding relationship.
 
-<table border="1" cellpadding="2" cellspacing="2">
-      <tbody>
-        <tr valign="top">
-          <td align="left" valign="top">
-            <font size="-1"><i><b>Name</b></i></font>
-          </td>
-          <td align="left" valign="top" width="60%">
-            <font size="-1"><i><b>Description</b></i></font>
-          </td>
-          <td align="left" valign="top">
-            <font size="-1"><i><b>Value Type</b></i></font>
-          </td>
-        </tr>
-        <tr>
-          <td align="left" valign="top">
-            <font size="-1">NominalArea</font>
-          </td>
-          <td align="left" valign="top" width="60%">
-            <font size="-1">Area of the opening as viewed by an
-            elevation view (for wall openings) or as viewed by a
-            ground floor view (for floor openings). The exact
-            definition and calculation rules depend on the method
-            of measurement used.</font>
-          </td>
-          <td align="left" valign="top">
-            <font size="-1"><i>IfcQuantityArea</i></font>
-          </td>
-        </tr>
-        <tr>
-          <td align="left" valign="top">
-            <font size="-1">NominalVolume</font>
-          </td>
-          <td align="left" valign="top" width="60%">
-            <font size="-1">Volume of the opening. The exact
-            definition and calculation rules depend on the method
-            of measurement used.</font>
-          </td>
-          <td align="left" valign="top">
-            <font size="-1"><i>IfcQuantityVolume</i></font>
-          </td>
-        </tr>
-			</tbody>
-    </table>
+___
+## Common Use Definitions
+The following concepts are inherited at supertypes:
 
-****Geometry Use Definitions****
+* _IfcRoot_: [Identity](../../templates/identity.htm), [Revision Control](../../templates/revision-control.htm)
+* _IfcElement_: [Box Geometry](../../templates/box-geometry.htm), [FootPrint Geometry](../../templates/footprint-geometry.htm), [Body SurfaceOrSolidModel Geometry](../../templates/body-surfaceorsolidmodel-geometry.htm), [Body SurfaceModel Geometry](../../templates/body-surfacemodel-geometry.htm), [Body Tessellation Geometry](../../templates/body-tessellation-geometry.htm), [Body Brep Geometry](../../templates/body-brep-geometry.htm), [Body AdvancedBrep Geometry](../../templates/body-advancedbrep-geometry.htm), [Body CSG Geometry](../../templates/body-csg-geometry.htm), [Mapped Geometry](../../templates/mapped-geometry.htm)
+* _IfcFeatureElement_: [Spatial Containment](../../templates/spatial-containment.htm)
 
-The geometric representation of _IfcOpeningElement_ is given by the _IfcProductDefinitionShape_ and _IfcLocalPlacement_ allowing multiple geometric representations.
+[![Image](../../../img/diagram.png)&nbsp;Instance diagram](../../../annex/annex-d/common-use-definitions/ifcopeningelement.htm)
 
-**Local Placement**
+{ .use-head}
+Property Sets for Objects
+
+The [Property Sets for Objects](../../templates/property-sets-for-objects.htm) concept applies to this entity as shown in Table 1.
+
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PredefinedType</b></th><th><b>Name</b></th></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcproductextension/Pset_OpeningElementCommon.xml">Pset_OpeningElementCommon</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_Condition.xml">Pset_Condition</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcproductextension/Pset_EnvironmentalImpactIndicators.xml">Pset_EnvironmentalImpactIndicators</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcproductextension/Pset_EnvironmentalImpactValues.xml">Pset_EnvironmentalImpactValues</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_ManufacturerOccurrence.xml">Pset_ManufacturerOccurrence</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_ManufacturerTypeInformation.xml">Pset_ManufacturerTypeInformation</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedmgmtelements/Pset_PackingInstructions.xml">Pset_PackingInstructions</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_ServiceLife.xml">Pset_ServiceLife</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_Warranty.xml">Pset_Warranty</a></td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 1 &mdash; IfcOpeningElement Property Sets for Objects</p></td></tr></table>
+
+  
+  
+{ .use-head}
+Quantity Sets
+
+The [Quantity Sets](../../templates/quantity-sets.htm) concept applies to this entity as shown in Table 2.
+
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Name</b></th></tr>
+<tr><td><a href="../../qto/ifcproductextension/Qto_OpeningElementBaseQuantities.xml">Qto_OpeningElementBaseQuantities</a></td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 2 &mdash; IfcOpeningElement Quantity Sets</p></td></tr></table>
+
+  
+  
+{ .use-head}
+Element Filling
+
+The [Element Filling](../../templates/element-filling.htm) concept applies to this entity.
+
+  
+  
+{ .use-head}
+Product Placement
+
+The [Product Placement](../../templates/product-placement.htm) concept applies to this entity as shown in Table 3.
+
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Type</b></th><th><b>Relative</b></th><th><b>Description</b></th></tr>
+<tr><td><a href="../../ifcgeometricconstraintresource/lexical/ifclocalplacement.htm">IfcLocalPlacement</a></td><td><a href="../../ifcgeometricconstraintresource/lexical/ifclocalplacement.htm">IfcLocalPlacement</a></td><td>Relative placement according to position and rotation relative to container.</td></tr>
+<tr><td><a href="../../ifcgeometricconstraintresource/lexical/ifclocalplacement.htm">IfcLocalPlacement</a></td><td>&nbsp;</td><td>Absolute placement according to position and rotation of world coordinate system.</td></tr>
+<tr><td><a href="../../ifcgeometricconstraintresource/lexical/ifcgridplacement.htm">IfcGridPlacement</a></td><td>&nbsp;</td><td>Placement according to grid intersection.</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3 &mdash; IfcOpeningElement Product Placement</p></td></tr></table>
 
 The local placement for _IfcOpeningElement_ is defined in its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_, which defines the local coordinate system that is referenced by all geometric representations.
 
-* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ should point to the local placement of the same element, which is voided by the opening, i.e. referred to by _VoidsElement.RelatingBuildingElement_. 
+* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ should point to the local placement of the same element, which is voided by the opening, i.e. referred to by _VoidsElement.RelatingBuildingElement_.
 
-**_Geometric Representation_**
+  
+  
+{ .use-head}
+Body Geometry
 
-Currently, the use of 'SweptSolid', 'Brep', and 'MappedRepresentation' representation is supported.
+The [Body Geometry](../../templates/body-geometry.htm) concept applies to this entity as shown in Table 4.
 
-**Swept Solid Representation with Horizontal
-      Extrusion**  
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Identifier</b></th><th><b>Type</b></th><th><b>Items</b></th></tr>
+<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 4 &mdash; IfcOpeningElement Body Geometry</p></td></tr></table>
+
+Currently, the 'Body', and 'Box' representations are supported. The 'Box' representation includes the representation type 'BoundingBox' and is explained at _IfcFeatureElement_.
+
+The 'Body' representation of _IfcOpeningElement_ can be represented using the representation types 'SweptSolid', and 'Brep'. The representation type 'Brep' is explained at _IfcFeatureElement_
+
+_Swept Solid Representation Type with Horizontal
+Extrusion_
+
 The 'SweptSolid' geometric representation of _IfcOpeningElement_, using horizontal extrusion direction (for walls), is defined using the swept area solid geometry. The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-*  _RepresentationIdentifier_ : 'Body' 
-*  _RepresentationType_ : 'SweptSolid' 
+* _RepresentationIdentifier_ : 'Body'
+* _RepresentationType_ : 'SweptSolid'
 
 The following additional constraints apply to the swept solid representation:
 
-<ul>
-      <li>
-        <u>Solid</u>: <i>IfcExtrudedAreaSolid</i> is required,
-        <font color="#0000FF">the set of
-        <i>IfcShapeRepresentation.Items</i> may include a single,
-        or multiple, instances of
-        <i>IfcExtrudedAreaSolid</i>.</font>
-      </li>
-      <li>
-        <u>Profile</u>: <i>IfcRectangleProfileDef</i>,
-        <i>IfcCircleProfileDef</i> and
-        <i>IfcArbitraryClosedProfileDef</i> shall be supported.
-      </li>
-      <li>
-        <u>Extrusion</u>: The profile shall be extruded
-        horizontally (i.e. perpendicular to the extrusion
-        direction of the voided element), e.g. for wall openings,
-        or vertically (i.e. in the extrusion direction of the
-        voided element), e.g., for floor openings. <font color="#0000FF">If multiple instances of
-        <i>IfcExtrudedAreaSolid</i> are used, the extrusion
-        direction should be equal.</font>
-      </li>
-    </ul>
-Special agreement for defining openings in round building elements, e.g., in round walls. The opening width, in case of a rectangular opening equal with the _IfcRectangleProfileDef.XDim_, is defined as the straight line distance between two parallel jambs. If the jambs are defined radial (to the center of the arc used to define the round wall) then the opening width is defined to be the outer arc length.
+* **Solid**: _IfcExtrudedAreaSolid_ is required, the set of _IfcShapeRepresentation.Items_ may include a single, or multiple, instances of _IfcExtrudedAreaSolid_.
+* **Profile**: _IfcRectangleProfileDef_, _IfcCircleProfileDef_ and _IfcArbitraryClosedProfileDef_ shall be supported.
+* **Extrusion**: The profile shall be extruded horizontally (perpendicular to the extrusion direction of the voided element such as for wall openings), or vertically (in the extrusion direction of the voided element such as for for floor openings). If multiple instances of _IfcExtrudedAreaSolid_ are used, the extrusion direction of each extrusion should be equal.
 
-> <font size="-1">NOTE: In case of non-parallel jambs,
-        <font color="#0000FF">the shape representation shall be a
-        'SweptSolid' representation with vertical
-        extrusion.</font></font>
-> 
+> NOTE&nbsp; In case of non-parallel jambs, the shape representation shall be a 'SweptSolid' representation with vertical extrusion.
 
+Figure 1 illustrates an opening with horizontal extrusion.
 
-EXAMPLE for openings
+> NOTE&nbsp; The local placement directions for the _IfcOpeningElement_ are only given as an example, other directions are valid as well.
 
-<table cellpadding="2" cellspacing="2" width="80%">
-      <tbody>
-        <tr valign="top">
-          <td align="left" valign="top" width="400">
-            <a href="drawings/IfcOpeningElement-Layout1.dwf"><img src="figures/ifcopeningelement-layout1.gif" alt="standard opening" border="0" height="300" width="400"></a>
-          </td>
-          <td align="left" valign="top" width="530">
-            <p>
-              <small>The following interpretation of dimension
-              parameter applies for rectangular openings:</small>
-            </p>
-            <ul>
-              <li>
-                <small><i>IfcRectangleProfileDef.YDim</i>
-                interpreted as opening width</small>
-              </li>
-              <li>
-                <small><i>IfcRectangleProfileDef.XDim</i>
-                interpreted as opening height</small>
-              </li>
-            </ul>
-            <p>
-              <small>NOTE: Rectangles are now defined centric,
-              the placement location has to be set:</small>
-            </p>
-            <ul>
-              <li>
-                <i><small>IfcCartesianPoint(XDim/2,YDim/2)</small></i>
-              </li>
-            </ul>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+!["standard opening"](../../../../../../figures/ifcopeningelement_horizontal-layout1.png "Figure 1 &mdash; Opening with full extrusion")
 
-EXAMPLE for recesses
+Figure 2 illustrates an opening for a recess.
 
-<table cellpadding="2" cellspacing="2" width="80%">
-      <tbody>
-        <tr valign="top">
-          <td align="left" valign="top">
-            <a href="drawings/IfcOpeningElement-Recess-Layout1.dwf"><img src="figures/ifcopeningelement-recess-layout1.png" alt="recess" border="0" height="300" width="400"></a>
-          </td>
-          <td align="left" valign="top">
-            <p>
-              <small>The following interpretation of dimension
-              parameter applies for rectangular recess:</small>
-            </p>
-            <ul>
-              <li>
-                <small><i>IfcRectangleProfileDef.YDim</i>
-                interpreted as recess width</small>
-              </li>
-              <li>
-                <small><i>IfcRectangleProfileDef.XDim</i>
-                interpreted as recess height</small>
-              </li>
-              <li>
-                <small><i>IfcExtrudedAreaSolid.Depth</i> is
-                interpreted as recess depth</small>
-              </li>
-            </ul>
-            <p>
-              <small>NOTE: Rectangles are now defined centric,
-              the placement location has to be set:</small>
-            </p>
-            <ul>
-              <li>
-                <small><i>IfcCartesianPoint</i>(XDim/2,YDim/2)</small>
-              </li>
-            </ul>
-            <p>
-              <small>NOTE: The local placement directions for the
-              <i>IfcOpeningElement</i> are only given as an
-              example, other directions are valid as
-              well.</small>
-            </p>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+> NOTE&nbsp; The local placement directions for the _IfcOpeningElement_ are only given as an example, other directions are valid as well.
 
-> <small>NOTE  In case of recesses also profiles of type
-        <i>IfcArbitraryProfileDefWithVoid</i> shall be supported
-        as a 'SweptSolid' representation.</small>
-> 
+> NOTE&nbsp; Rectangles are now defined centric, the placement location has to be set:
 
+* _IfcCartesianPoint_(XDim/2,YDim/2)
 
-**Swept Solid Representation with Vertical
-      Extrusion**  
+!["recess"](../../../../../../figures/ifcopeningelement_recess-layout1.png "Figure 2 &mdash; Opening with recess extrusion")
+
+_Swept Solid Representation with Vertical Extrusion_
+
 The 'SweptSolid' geometric representation of _IfcOpeningElement_, using vertical extrusion direction (for walls), is defined using the swept area solid geometry, however the extrusion direction may be vertical, i.e. in case of a wall opening, the extrusion would be in the direction of the wall height. The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-*  _RepresentationIdentifier_ : 'Body' 
-*  _RepresentationType_ : 'SweptSolid' 
+* _RepresentationIdentifier_ : 'Body'
+* _RepresentationType_ : 'SweptSolid'
 
 The following additional constraints apply to the swept solid representation:
 
-<ul>
-      <li>
-        <u>Solid</u>: <i>IfcExtrudedAreaSolid</i> is required,
-        <font color="#0000FF">the set of
-        <i>IfcShapeRepresentation.Items</i> may include a single,
-        or multiple, instances of
-        <i>IfcExtrudedAreaSolid</i>.</font>
-      </li>
-      <li>
-        <u>Profile</u>: <i>IfcRectangleProfileDef</i>,
-        <i>IfcCircleProfileDef</i> and
-        <i>IfcArbitraryClosedProfileDef</i> shall be supported.
-      </li>
-      <li>
-        <u>Extrusion</u>: The profile shall be extruded
-        vertically, i.e. for wall openings along the extrusion
-        direction of the voided element.  <font color="#0000FF">If multiple instances of
-        <i>IfcExtrudedAreaSolid</i> are used, the extrusion
-        direction should be equal.</font>
-      </li>
-    </ul>
-Vertical extrusions shall be used when an opening or
-    recess has a non rectangular foot print geometry that does
-    not change along the height of the opening or recess.  
-**Brep Representation**  
-The general b-rep geometric representation of _IfcOpeningElement_ is defined using the Brep geometry. The Brep representation allows for the representation of complex element shape. The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
+* **Solid**: _IfcExtrudedAreaSolid_ is required, the set of _IfcShapeRepresentation.Items_ may include a single, or multiple, instances of _IfcExtrudedAreaSolid_.
+* **Profile**: _IfcRectangleProfileDef_, _IfcCircleProfileDef_ and _IfcArbitraryClosedProfileDef_ shall be supported.
+* **Extrusion**: The profile shall be extruded vertically, i.e. for wall openings along the extrusion direction of the voided element.  If multiple instances of _IfcExtrudedAreaSolid_ are used, the extrusion direction should be equal.
 
-*  _RepresentationIdentifier_ : 'Body' 
-*  _RepresentationType_ : 'Brep'
+Vertical extrusions shall be used when an opening or recess has a non rectangular foot print geometry that does not change along the height of the opening or recess.
+
+Figure 3 shows a vertical extrusion with multiple extrusion bodies for the opening. Each extrusion body has a different extrusion lenght.
+
+> NOTE&nbsp; The local placement directions for the _IfcOpeningElement_ are only given as an example, other directions are valid as well.
+
+!["vertical extrusion"](../../../../../../figures/ifcopeningelement_vertical-layout1.png "Figure 3 &mdash; Opening with multiple extrusions")

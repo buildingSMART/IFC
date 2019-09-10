@@ -1,1 +1,0 @@
-﻿The amount of heat output per unit area of heat emitter.

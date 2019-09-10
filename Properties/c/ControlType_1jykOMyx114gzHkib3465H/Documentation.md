@@ -1,1 +1,0 @@
-﻿The type of signal modification effected

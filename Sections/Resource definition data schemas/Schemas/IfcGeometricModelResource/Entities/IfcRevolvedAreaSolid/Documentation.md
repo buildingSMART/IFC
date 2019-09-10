@@ -1,51 +1,95 @@
-﻿A revolved area solid (_IfcRevolvedAreaSolid_) is a solid created by revolving a planar bounded surface about an axis. Both, the axis and planar bounded surface shall be in the same plane and the axis shall not intersect the interior of the swept area. If the swept area has inner boundaries, i.e. holes defined, then those holes shall be swept into holes of the solid. The direction of revolution is clockwise when viewed along the axis in the positive direction.
+﻿An _IfcRevolvedAreaSolid_ is a solid created by revolving a cross section provided by a profile definition about an axis.
 
-> <font size="-1">NOTE: The <i>IfcRevolvedAreaSolid</i> now directly
-		  defines the revolution of a cross section (also referred to as profile). It
-		  thereby combines the functionality of the previous IfcAttDrivenRevolvedSegment
-		  entity. In contrary to the previous IfcAttDrivenRevolvedSegment, the additional
-		  start angle attribute has been omitted. The axis is required to lie in the xy
-		  plane of the position coordinate system.</font>
->
+The resulting solid is positioned by the _IfcSweptAreaSolid_._Position_ relative to the object coordinate system. If provided, it allows to reposition the revolved solid. If not provided, it defaults to the current object coordinate system. The axis and the cross section shall be in the same plane, prior to any repositioning.
 
-> <font color="#0000FF" size="-1">NOTE: Corresponding STEP entity:
-		  revolved_area_solid. Please refer to ISO/IS 10303-42:1994, p. 184 for the final
-		  definition of the formal standard. The data type of the inherited
-		  <i>SweptArea</i> attribute is different, i.e. of type <i>IfcProfileDef</i>. The
-		  position attribute has been added to position the cross section used for the
-		  revolution. </font>
-> 
-> <font color="#0000FF" size="-1">HISTORY: New entity in IFC Release
-		  1.5, capabilities of this entity have been enhanced in IFC Release 2x.
-		  </font>
-> 
+> NOTE&nbsp; Both the axis and the cross section are required to lie in the xy plane of the object position coordinate system.
 
+<table summary="revolved solid geometry" cellpadding="2" cellspacing="2" border="0">
+<tr>
+<td><img src="../../../../../../figures/ifcrevolvedareasolid-fig1.png" alt="revolved area solid" border="0"></td>
+<td><blockquote class="example">EXAMPLE&nbsp; Figure 1 illustrates geometric parameters of the revolved solid. The revolved area solid defines the revolution of a 2D area (given by a profile definition) by an axis and angle. The result is a solid. The swept area is given by a
+profile definition.</blockquote>
+<blockquote>
+<ul>
+<li class="small">The profile is defined:<ul>
+ <li class="small">as a 2D primitive, here <em>IfcRectangleProfileDef</em>, that is placed relative to the xy plane of object coordinate system</li>
+ <li class="small">since no 2D profile position coordinate system is provided, here <em>IfcParameterizedProfileDef</em>.<em>Position</em> = NIL, the profile is positioned without transformation into the xy plane of the object coordinate system (by default, centric at 0.,0. with no rotation)</li>
+</ul>
+<li class="small">The resulting swept solid is not repositioned, as no position coordinate system is provided, here IfcSweptAreaSolid.<em>Position</em> = NIL.</li>
+</ul>
+</blockquote>
+<blockquote class="example">The <em>AxisLine</em> can have any orientation within the XY plane, it does not have to be parallel to the y-axis as
+shown in the illustration.</blockquote>
+</td>
+</tr>
+<tr>
+<td>
+<p class="figure">Figure 1 &mdash; Revolved area solid geometry</p>
+</td>
+</tr>
+</table>
 
-**Informal propositions:**
+<table summary="revolved solid geometry repositioning" cellpadding="2" cellspacing="2" border="0">
+<tr>
+<td><img src="../../../../../../figures/ifcrevolvedareasolid-fig2.png" alt="revolved area solid" border="0"></td>
+<td><blockquote class="example">EXAMPLE&nbsp; Figure 1 illustrates geometric parameters and additional positioning parameters of the revolved area solid. The revolved area solid defines the rotation of a 2D area by an axis and angle. The 2D area, provided by a parameterized profile definition, can be positioned relative to the object coordinate system (other then by default at 0.,0. with no rotation). The result is a solid that can be repositioned within the object coordinate system.</blockquote>
+<blockquote><ul>
+<li class="small">The profile to be swept is defined:
+<ul>
+ <li class="small">as a 2D primitive, here <em>IfcRectangleProfileDef</em>, that is placed relative to the xy plane of object coordinate system</li>
+ <li class="small">a 2D profile position coordinate system is provided that positions the profile relative to the xy plane (here at a corner of the rectangle)</li>
+</ul></li>
+<li class="small">The resulting swept solid is repositioned, here it is moved into local z and rotated by 15' along the x axis.</li>
+</ul></blockquote>
+</td>
+</tr>
+<tr>
+<td>
+<p class="figure">Figure 2 &mdash; Repositioned revolved area solid geometry</p>
+</td>
+</tr>
+</table>
+
+{ .extDef}
+> NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
+> A revolved area solid is a solid formed by revolving a planar bounded surface about an axis. The axis shall be in the plane of the surface and the axis shall not intersect the interior of the bounded surface. The bounded surface may have holes which will sweep into holes in the solid. The direction of revolution is clockwise when viewed along the axis in the positive direction. More precisely if **A** is the axis location and **d** is the axis direction and **C** is an arc on the surface of revolution generated by an arbitrary point **p** on the boundary of the swept area, then **C** leaves **p** in direction **d** x (**p** - **A**) as the area is revolved.
+
+> NOTE&nbsp; Entity adapted from **revolved_area_solid** defined in ISO 10303-42.
+
+> HISTORY&nbsp; New entity in IFC1.5
+
+{ .spec-head}
+Informal Propositions:
 
 1. The _AxisLine_ shall lie in the plane of the _SweptArea_ (as defined at supertype _IfcSweptAreaSolid_).
 2. The _AxisLine_ shall not intersect the interior of the _SweptArea_ (as defined at supertype _IfcSweptAreaSolid_).
-3. The _Angle_ shall be between 0&deg; and 360&deg;, or 0 and 2<font face="Symbol">p</font> (depending on the unit type for _IfcPlaneAngleMeasure_).
+3. The _Angle_ shall be between 0&deg; and 360&deg;, or 0 and 2&pi; (depending on the unit type for _IfcPlaneAngleMeasure_).
 
-**Illustration**:
+{ .use-head}
+Texture Use Definition
 
-<table cellpadding="2" cellspacing="2" border="0"> 
-		<tr> 
-		  <td valign="TOP" align="LEFT"><a href="drawings/IfcRevolvedAreaSolid-Layout1.dwf"><img src="figures/ifcrevolvedareasolid-layout1.gif" alt="revolved area solid" width="400" height="300" border="0"></a></td> 
-		  <td valign="TOP" align="LEFT"> 
-			 <p><font size="-1"><u>Purpose</u><br>The revolved area solid defines
-				the revolution of a 2D area (given by a profile definition) by an axis and
-				angle. The result is a solid.</font></p> 
-			 <p><font size="-1"><u>Parameter</u><br>The swept area is given by a
-				profile definition. This profile is defined </font></p> 
-			 <ul> 
-				<li><font size="-1">as a 2D bounded curve within the xy plane of
-				  the position coordinate system, </font></li> 
-				<li><font size="-1">as a 2D bounded curve with holes within the xy
-				  plane of the position coordinate system, </font></li> 
-				<li><font size="-1">or as a 2D primitive, defined within a 2D
-				  position coordinate system, that is placed relative to the xy plane of the
-				  position coordinate system</font></li> 
-			 </ul></td> 
-		</tr> 
-	 </table>
+For side faces, textures are aligned facing upright along the sides with origin at the first point of an arbitrary profile, and following the outer bound of the profile counter-clockwise (as seen from above). For parameterized profiles, the origin is defined at the +Y extent for rounded profiles (having no sharp edge) and the first sharp edge counter-clockwise from the +Y extent for all other profiles. Textures are stretched or repeated on each side along the outer boundary of the profile according to _RepeatS_. Textures are stretched or repeated on each side along the outermost (longest) revolution path according to _RepeatT_, where coordinates are compressed towards the axis of revolution.
+
+For top and bottom caps, textures are aligned facing front-to-back, with the origin at the minimum X and Y extent. Textures are stretched or repeated on the top and bottom to the extent of each face according to _RepeatS_ and _RepeatT_.
+
+For profiles with voids, textures are aligned facing upright along the inner side with origin at the first point of an arbitrary profile, and following the inner bound of the profile clockwise (as seen from above). For parameterized profiles, the origin of inner sides is defined at the +Y extent for rounded profiles (having no sharp edge such as hollow ellipses or rounded rectangles) and the first sharp edge clockwise from the +Y extent for all other profiles.
+
+<table summary="texture">
+<tr>
+<td><img src="../../../../../../figures/ifcrevolvedareasolid-texture.png" alt="texture"></td>
+<td>
+<blockquote class="example">Figure 3 illustrates default texture mapping with a repeated texture (RepeatS=True and RepeatT=True). The image on
+the left shows the texture where the S axis points to the right and the T axis points up. The image on the right shows
+the texture applied to the geometry where the X axis points back to the right, the Y axis points back to the left, and
+the Z axis points up. For an <em>IfcRevolvedAreaSolid</em> having a profile of <em>IfcTShapeProfileDef</em> and
+revolved at 22.5 degrees, the side texture coordinate origin is the first corner counter-clockwise from the +Y axis,
+which equals <br><br>(-0.5*IfcTShapeProfileDef.OverallWidth, +0.5*IfcTShapeProfileDef.OverallDepth),<br><br> while the top (end cap)
+texture coordinates start at <br><br>(-0.5*IfcTShapeProfileDef.OverallWidth, -0.5*IfcTShapeProfileDef.OverallDepth).</blockquote>
+</td>
+</tr>
+<tr>
+<td>
+<p class="figure">Figure 3 &mdash; Revolved area solid textures</p>
+</td>
+</tr>
+</table>

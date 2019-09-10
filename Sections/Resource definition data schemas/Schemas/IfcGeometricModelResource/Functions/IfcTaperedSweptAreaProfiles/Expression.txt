@@ -1,0 +1,22 @@
+﻿(StartArea, EndArea : IfcProfileDef)
+ : LOGICAL;
+
+LOCAL
+   Result : LOGICAL := FALSE;
+END_LOCAL;
+   
+IF ('IFCPROFILERESOURCE.IFCPARAMETERIZEDPROFILEDEF' IN TYPEOF(StartArea)) THEN
+   IF ('IFCPROFILERESOURCE.IFCDERIVEDPROFILEDEF' IN TYPEOF(EndArea)) THEN
+      Result := (StartArea :=: EndArea\IfcDerivedProfileDef.ParentProfile);
+   ELSE
+      Result := (TYPEOF(StartArea) = TYPEOF(EndArea));
+   END_IF;
+ELSE
+   IF ('IFCPROFILERESOURCE.IFCDERIVEDPROFILEDEF' IN TYPEOF(EndArea)) THEN
+      Result := (StartArea :=: EndArea\IfcDerivedProfileDef.ParentProfile);
+   ELSE
+      Result := FALSE;
+   END_IF;
+END_IF;
+
+RETURN(Result);

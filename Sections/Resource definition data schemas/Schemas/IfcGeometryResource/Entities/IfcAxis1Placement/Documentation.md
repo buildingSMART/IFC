@@ -1,20 +1,24 @@
-﻿**Definition from ISO/CD 10303-42:1992**: The direction and location in three dimensional space of a single axis. An axis1_placement is defined in terms of a locating point (inherited from placement supertype) and an axis direction: this is either the direction of axis or defaults to (0.0,0.0,1.0). The actual direction for the axis placement is given by the derived attribute z (Z).
+﻿The _IfcAxis1Placement_ provides location and direction of a single axis.
 
-> <font color="#0000FF" size="-1">NOTE: Corresponding STEP name:
-		  axis1_placement, please refer to ISO/IS 10303-42:1994, p. 28 for the final
-		  definition of the formal standard. </font>
-> 
-> <font color="#0000FF" size="-1">HISTORY: New entity in IFC Release 1.5
-		  </font>
->
+<table>
+ <tr>
+  <td><img src="../../../../../../figures/ifcaxis1placement-layout1.gif" alt="axis1 placement" width="400" height="300" border="0">
+  </td>
+  <td style="vertical-align:bottom"><blockquote class="note">
+   Figure 1 illustrates the definition of the <em>IfcAxis1Placement</em> within the parent three-dimensional coordinate system.
+   </blockquote>
+  </td>
+ </tr>
+ <tr>
+  <td><p class="figure">Figure 1 &mdash; Axis1 placement</p>
+  </td>
+ </tr>
+</table>
 
-**Illustration**:
+{ .extDef}
+> NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
+> The direction and location in three dimensional space of a single axis. An axis1_placement is defined in terms of a locating point (inherited from placement supertype) and an axis direction: this is either the direction of axis or defaults to (0.0,0.0,1.0). The actual direction for the axis placement is given by the derived attribute z.
 
-<table cellpadding="2" cellspacing="2"> 
-		<tr> 
-		  <td><a href="drawings/IfcAxis1Placement-Layout1.dwf"><img src="figures/ifcaxis1placement-layout1.gif" alt="axis1 placement" width="400" height="300" border="0"></a></td> 
-		  <td valign="TOP" align="LEFT"><font size="-1">Definition of the
-			 <i>IfcAxis1Placement</i> within the three-dimensional coordinate
-			 system.</font></td> 
-		</tr> 
-	 </table>
+> NOTE&nbsp; Entity adapted from **axis1_placement** defined in ISO10303-42.
+
+> HISTORY&nbsp; New entity in IFC1.5

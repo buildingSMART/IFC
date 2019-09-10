@@ -1,3 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcWorkPlan" UniqueId="1802d7e1-8d28-4916-80dd-a5f0a21f588b" DiagramNumber="1" BaseDefinition="IfcWorkControl" EntityFlags="165" />
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcWorkPlan" Name="IfcWorkPlan" UniqueId="1802d7e1-8d28-4916-80dd-a5f0a21f588b" DiagramNumber="3" BaseDefinition="IfcWorkControl" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Arbeitsplan" Locale="de" />
+		<DocLocalization Name="Planning de travail" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="3361.7625" Y="1361.523" Width="205.33333" Height="125.96667" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="d78ca6cb-0dfb-4ca5-acbb-8dd5ea6f5a0e" DefinedType="IfcWorkPlanTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Identifies the predefined types of a work plan from which 
+    the type required may be set.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3464.4292" Y="1487.4897" />
+				<DocPoint X="3464.4292" Y="1580.206228" />
+				<DocPoint X="3464.51116667" Y="1580.206228" />
+				<DocPoint X="3464.51116667" Y="1672.922826" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3570.90488" Y="1580.206228" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="aafa28f8-1397-4f57-8d60-c85819da78a0">
+			<Documentation>The attribute ObjectType must be asserted when the value of the IfcWorkPlanTypeEnum is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR (PredefinedType &lt;&gt; IfcWorkPlanTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcWorkPlanTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
 

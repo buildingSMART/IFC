@@ -1,0 +1,1 @@
+﻿The (thermal) upper testing current limit in [x In], indicating that for currents larger than I2, the tripping time shall be shorter than the associated tripping time, T2.

@@ -1,1 +1,1 @@
-﻿Type of power driving the compressor
+﻿Type of power driving the compressor.

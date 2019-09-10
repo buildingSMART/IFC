@@ -1,1 +1,1 @@
-﻿Nominal water flow (refers to nominal heating capacity)
+﻿Nominal water flow (refers to nominal heating capacity).

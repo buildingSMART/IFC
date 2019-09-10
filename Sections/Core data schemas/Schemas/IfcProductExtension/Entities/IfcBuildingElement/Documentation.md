@@ -1,185 +1,167 @@
-﻿**Definition from ISO 6707-1:1989**: Major functional part of a building, examples are foundation, floor, roof, wall.
+﻿The building element comprises all elements that are primarily part of the construction of a building, i.e., its structural and space separating system.
 
-The building element comprises all elements that are primarily part of the construction of a building, i.e., its structural and space separating system.
+{ .extDef}
+> "Major functional part of a building, examples are foundation, floor, roof, wall." ISO 6707-1
 
-> <small>EXAMPLEs of building elements are walls, beams, or
-      doors, they are all physically existent and tangible
-      things.</small>
+> EXAMPLE&nbsp; Building elements are walls, beams, or doors, they are all physically existent and tangible things.
 
 The _IfcBuildingElement_ utilizes the following capabilities mainly through inverse attributes referencing objectified relationships:
 
+> NOTE&nbsp; View definitions and implementer agreements will determine those relationships that have to be supported in actual exchange.
+
 1. Grouping - being part of a logical group of objects 
-    * objectified relationship: _IfcRelAssignsToGroup_ 
+    * objectified relationship: _IfcRelAssignsToGroup_
+    * object referenced by relationship: _IfcGroup_ (and subtypes)
     * inverse attribute: _HasAssignment_ 
 2. Work processes - reference to work tasks, in which this building element is used 
-    * objectified relationship: _IfcRelAssignsToProcess_ 
+    * objectified relationship: _IfcRelAssignsToProcess_
+    * object referenced by relationship: _IfcProcess_ (and subtypes)
     * inverse attribute: _HasAssignments_ 
-3. Aggregation - aggregated together with other elements to form an aggregate 
-    * objectified relationship: _IfcRelAggregates_ 
-    * inverse attribute (for container): _IsDecomposedBy_ 
+3. Structural member reference - information whether the building element is represented in a structural analysis model by a structural member 
+    * objectified relationship: _IfcRelAssignsToProduct_
+    * object referenced by relationship: _IfcStructuralMember_ (and by default _IfcStructuralCurveMember_)
+    * inverse attribute: _HasAssignments_ 
+4. Aggregation - aggregated together with other elements to form an aggregate 
+    * objectified relationship: _IfcRelAggregates_
+    * object referenced by relationship: _IfcElement_ (and subtypes)
+    * inverse attribute (for container): _IsDecomposedBy_
     * inverse attribute (for contained parts): _Decomposes_ 
-4. Material - assignment of material used by this building element 
-    * objectified relationship: _IfcRelAssociatesMaterial_ 
+5. Material - assignment of material used by this building element 
+    * objectified relationship: _IfcRelAssociatesMaterial_
+    * object referenced by relationship: _IfcMaterialSelect_ (and selected items)
     * inverse attribute: _HasAssociations_ 
-5. Classification - assigned reference to an external classification 
-    * objectified relationship: _IfcRelAssociatesClassification_ 
+6. Classification - assigned reference to an external classification 
+    * objectified relationship: _IfcRelAssociatesClassification_
+    * object referenced by relationship: _IfcClassificationNotationSelect_ (and selected items, default _IfcClassificationReference_)
     * inverse attribute: _HasAssociations_ 
-6. Documentation - assigned reference to an external documentation 
-    * objectified relationship: _IfcRelAssociatesDocumentation_ 
+7. Library - assigned reference to an external library item reference 
+    * objectified relationship: _IfcRelAssociatesClassification_
+    * object referenced by relationship: _IfcLibrarySelect_ (and selected items, default _IfcLibraryReference_)
     * inverse attribute: _HasAssociations_ 
-7. Type - reference to the common product type information for the element occurrence 
-    * objectified relationship: _IfcRelDefinesByType_ 
+8. Documentation - assigned reference to an external documentation 
+    * objectified relationship: _IfcRelAssociatesDocumentation_
+    * object referenced by relationship: _IfcDocumentSelect_ (and selected items, default _IfcDocumentReference_)
+    * inverse attribute: _HasAssociations_ 
+9. Type - reference to the common product type information for the element occurrence 
+    * objectified relationship: _IfcRelDefinesByType_
+    * object referenced by relationship: _IfcBuildingElementType_ (and subtypes)
+    * inverse attribute: <font color="#0000FF"><em>IsTypedBy</em></font> 
+10. Properties - reference to all attached properties, including quantities 
+    * objectified relationship: _IfcRelDefinesByProperties_
+    * object referenced by relationship: _IfcPropertySetDefinition_ (default _IfcPropertySet_)
     * inverse attribute: _IsDefinedBy_ 
-8. Properties - reference to all attached properties, including quantities 
-    * objectified relationship: _IfcRelDefinesByProperties_ 
-    * inverse attribute: _IsDefinedBy_ 
-9. Connection - connectivity to other elements, including the definition of the joint 
-    * objectified relationship: _IfcRelConnectsElements_ 
-    * inverse attribute: _ConnectedTo_ 
+11. Connection - connectivity to other elements, including the definition of the joint 
+    * objectified relationship: _IfcRelConnectsElements_
+    * object referenced by relationship: _IfcElement_
+    * inverse attribute: _ConnectedTo_
     * inverse attribute: _ConnectedFrom_ 
-10. Realization - information, whether the building element is used to realize a connection (e.g. as a weld in a connection between two members) 
-    * objectified relationship: _IfcRelConnectsWithRealizingElements_ 
+12. Realization - information, whether the building element is used to realize a connection (e.g. as a weld in a connection between two members) 
+    * objectified relationship: _IfcRelConnectsWithRealizingElements_
+    * object referenced by relationship: _IfcElement_
     * inverse attribute: _IsConnectionRealization_ 
-11. Ports - information, whether the building element has ports for system connections (note: normally not used, this relationship is inherited from _IfcElement_ and mainly applicable to _IfcDistributionElement_'s) 
-    * objectified relationship: _IfcRelConnectsPortToElement_ 
-    * inverse attribute: _HasPorts_ 
-12. Assignment to spatial structure - hierarchical assignment to the right level within the spatial structure 
-    * objectified relationship: _IfcRelContainedInSpatialStructure_ 
+13. Assignment to spatial structure - hierarchical assignment to the right level within the spatial structure 
+    * objectified relationship: _IfcRelContainedInSpatialStructure_
+    * object referenced by relationship: _IfcSpatialStructureElement_
     * inverse attribute: _ContainedInStructure_ 
-13. Reference to spatial structure(s) - non hierarchical reference to one or more elements within the spatial structure (e.g. a curtain wall, being contained in the building, references several stories) 
-    * objectified relationship: _IfcRelContainedInSpatialStructure_ 
-    * inverse attribute: _ContainedInStructure_ 
-14. Boundary - provision of space boundaries by this building element 
-    * objectified relationship: _IfcRelSpaceBoundary_ 
+14. Reference to spatial structure(s) - non hierarchical reference to one or more elements within the spatial structure (e.g. a curtain wall, being contained in the building, references several stories) 
+    * objectified relationship: _IfcRelReferencedInSpatialStructure_
+    * object referenced by relationship: _IfcSpatialElement_
+    * inverse attribute: _ReferencedInStructure_ 
+15. Boundary - provision of space boundaries by this building element 
+    * objectified relationship: _IfcRelSpaceBoundary_
+    * object referenced by relationship: _IfcSpace_
     * inverse attribute: _ProvidesBoundaries_ 
-15. Coverings - assignment of covering elements to this building element (note: normally covering elements are assigned to the space, only used for special cases) 
-    * objectified relationship: _IfcRelCoversBldgElements_ 
+16. Coverings - assignment of covering elements to this building element (note: normally covering elements are assigned to the space, only used for special cases) 
+    * objectified relationship: _IfcRelCoversBldgElements_
+    * object referenced by relationship: _IfcCovering_
     * inverse attribute: _HasCoverings_ 
-16. Voids - information, whether the building element includes openings, recesses or other voids 
-    * objectified relationship: _IfcRelVoidsElement_ 
+17. Voids - information, whether the building element includes openings, recesses or other voids 
+    * objectified relationship: _IfcRelVoidsElement_
+    * object referenced by relationship: _IfcFeatureElementSubtraction_ (default _IfcOpeningElement_)
     * inverse attribute: _HasOpenings_ 
-17. Projection - information, whether the building element has projections (such as a fascia) 
-    * objectified relationship: _IfcRelProjectsElement_ 
+18. Projection - information, whether the building element has projections (such as a fascia) 
+    * objectified relationship: _IfcRelProjectsElement_
+    * object referenced by relationship: _IfcFeatureElementAddition_ (default _IfcProjectionElement_)
     * inverse attribute: _HasProjections_ 
-18. Filling - information whether the building element is used to fill openings 
-    * objectified relationship: _IfcRelFillsElement_ 
+19. Filling - information whether the building element is used to fill openings 
+    * objectified relationship: _IfcRelFillsElement_
+    * object referenced by relationship: _IfcOpeningElement_
     * inverse attribute: _FillsVoids_ 
-19. Structural member reference - information whether the building element is represented in a structural analysis model by a structural member 
-    * objectified relationship: _IfcRelConnectsStructuralElement_ 
-    * inverse attribute: _HasStructuralMember_ 
 
-> <font color="#0000FF" size="-1">HISTORY New entity in IFC
-        Release 1.0</font>
-> 
+> HISTORY&nbsp; New entity in IFC1.0
 
+___
+## Common Use Definitions
+The following concepts are inherited at supertypes:
 
-****Quantity Use Definition****:
+* _IfcRoot_: [Identity](../../templates/identity.htm), [Revision Control](../../templates/revision-control.htm)
+* _IfcElement_: [Product Placement](../../templates/product-placement.htm), [Box Geometry](../../templates/box-geometry.htm), [FootPrint Geometry](../../templates/footprint-geometry.htm), [Body SurfaceOrSolidModel Geometry](../../templates/body-surfaceorsolidmodel-geometry.htm), [Body SurfaceModel Geometry](../../templates/body-surfacemodel-geometry.htm), [Body Tessellation Geometry](../../templates/body-tessellation-geometry.htm), [Body Brep Geometry](../../templates/body-brep-geometry.htm), [Body AdvancedBrep Geometry](../../templates/body-advancedbrep-geometry.htm), [Body CSG Geometry](../../templates/body-csg-geometry.htm), [Mapped Geometry](../../templates/mapped-geometry.htm)
 
-The quantities relating to the _IfcBuildingElement_ are defined by the _IfcElementQuantity_ and attached by the _IfcRelDefinesByProperties_. A detailed specification for individual quantities is introduced at the level of subtypes of _IfcBuildingElement_.
+[![Image](../../../img/diagram.png)&nbsp;Instance diagram](../../../annex/annex-d/common-use-definitions/ifcbuildingelement.htm)
 
-****Geometry Use Definitions****
+{ .use-head}
+Property Sets for Objects
 
-The geometric representation of any _IfcBuildingElement_ is given by the _IfcProductDefinitionShape_ and _IfcLocalPlacement_ allowing multiple geometric representations.
-
-**Local Placement**
-
-The local placement for any _IfcBuildingElement_ is defined in its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_, which defines the local coordinate system that is referenced by all geometric representations. Further constraints are defined at the level of its subtypes.
-
-**_Geometric Representations_**
-
-Any _IfcBuildingElement_ can be represented by one or several geometric representations. A detailed specification is introduced at the level of subtypes. Only the general representation types 'BoundingBox', 'SurfaceModel', 'Brep', and 'MappedRepresentation' are defined here.
-
-**Bounding Box Representation**
-
-Any _IfcBuildingElement_ may be represented as a bounding box, which shows the maximum extend of the body within the coordinated system established by the _IfcLocalPlacement_. The bounding box representation is the simplest geometric representation available. The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
-
-*  _RepresentationIdentifier_ : 'Box' ~~Body~~ 
-*  _RepresentationType_ : 'BoundingBox' 
+The [Property Sets for Objects](../../templates/property-sets-for-objects.htm) concept applies to this entity as shown in Table 1.
 
 <table>
-      <tbody>
-        <tr valign="top">
-          <td align="left" valign="top">
-            <a href="drawings/IfcBuildingElement-BoundingBox-Layout1.dwf">
-            <img src="figures/ifcbuildingelement-boundingbox-layout1.gif" alt="bounding box" border="0" height="275" width="400"></a>
-          </td>
-          <td align="left" valign="top">
-            <p>
-              <font size="-1">The bounding box representation is
-              given by an <i>IfcShapeRepresentation</i>, which
-              includes a single item, an
-              <i>IfcBoundingBox</i>.</font>
-            </p>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PredefinedType</b></th><th><b>Name</b></th></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcstructuralelementsdomain/Pset_ConcreteElementGeneral.xml">Pset_ConcreteElementGeneral</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcstructuralelementsdomain/Pset_PrecastConcreteElementFabrication.xml">Pset_PrecastConcreteElementFabrication</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcstructuralelementsdomain/Pset_PrecastConcreteElementGeneral.xml">Pset_PrecastConcreteElementGeneral</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_Condition.xml">Pset_Condition</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcproductextension/Pset_EnvironmentalImpactIndicators.xml">Pset_EnvironmentalImpactIndicators</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcproductextension/Pset_EnvironmentalImpactValues.xml">Pset_EnvironmentalImpactValues</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_ManufacturerOccurrence.xml">Pset_ManufacturerOccurrence</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_ManufacturerTypeInformation.xml">Pset_ManufacturerTypeInformation</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedmgmtelements/Pset_PackingInstructions.xml">Pset_PackingInstructions</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_ServiceLife.xml">Pset_ServiceLife</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_Warranty.xml">Pset_Warranty</a></td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 1 &mdash; IfcBuildingElement Property Sets for Objects</p></td></tr></table>
 
-**SurfaceModel Representation**
+  
+  
+{ .use-head}
+Product Assignment
 
-Any _IfcBuildingElement_ (so far no further constraints are defined at the level of its subtypes) may be represented as a single or multiple surface models, based on either shell or face based models. The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
-
-*  _RepresentationIdentifier_ : 'Body' 
-*  _RepresentationType_ : 'SurfaceModel' 
-
-In some cases it may be useful to also expose a simple representation as a bounding box representation of the same complex shape.
+The [Product Assignment](../../templates/product-assignment.htm) concept applies to this entity as shown in Table 2.
 
 <table>
-      <tbody>
-        <tr valign="top">
-          <td align="left" valign="top">
-            <a href="drawings/IfcBuildingElement-SurfaceModel-Layout1.dwf">
-            <img src="figures/ifcbuildingelement-surfacemodel-layout1.gif" alt="bounding box" border="0" height="275" width="400"></a>
-          </td>
-          <td align="left" valign="top">
-            <p>
-              <font size="-1">The surface model representation is
-              given by an IfcShapeRepresentation, which includes
-              a single item, which is either:</font>
-            </p>
-            <ul>
-              <li>
-                <font size="-1"><i>IfcShellBasedSurfaceModel</i>,
-                or</font>
-              </li>
-              <li>
-                <font size="-1"><i>IfcFaceBasedSurfaceModel</i>.</font>
-              </li>
-            </ul>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Type</b></th><th><b>Description</b></th></tr>
+<tr><td><a href="../../ifcprocessextension/lexical/ifctask.htm">IfcTask</a></td><td>Task for operating upon the building element.</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 2 &mdash; IfcBuildingElement Product Assignment</p></td></tr></table>
 
-**Brep Representation**
+  
+  
+{ .use-head}
+Spatial Containment
 
-Any _IfcBuildingElement_ (so far no further constraints are defined at the level of its subtypes) may be represented as a single or multiple Boundary Representation elements (which are restricted to faceted Brep with or without voids). The Brep representation allows for the representation of complex element shape. The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
+The [Spatial Containment](../../templates/spatial-containment.htm) concept applies to this entity as shown in Table 3.
 
-*  _RepresentationIdentifier_ : 'Body' 
-*  _RepresentationType_ : 'Brep' 
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Structure</b></th></tr>
+<tr><td><a href="../../ifcproductextension/lexical/ifcbuildingstorey.htm">IfcBuildingStorey</a></td></tr>
+<tr><td><a href="../../ifcproductextension/lexical/ifcbuilding.htm">IfcBuilding</a></td></tr>
+<tr><td><a href="../../ifcproductextension/lexical/ifcsite.htm">IfcSite</a></td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3 &mdash; IfcBuildingElement Spatial Containment</p></td></tr></table>
 
-In some cases it may be useful to also expose a simple representation as a bounding box representation of the same complex shape.
+  
+  
+{ .use-head}
+Surface 3D Geometry
 
-<table cellpadding="2" cellspacing="2">
-      <tbody>
-        <tr valign="top">
-          <td align="left" valign="top">
-            <a href="drawings/IfcBuildingElement-BRep-Layout1.dwf"><img src="figures/ifcbuildingelement-brep-layout1.gif" alt="Brep representation" border="0" height="275" width="400"></a>
-          </td>
-          <td align="left" valign="top">
-            TheBrep representation is given by an
-            IfcShapeRepresentation, which includes one or more
-            items, all of type IfcManifoldSolidBrep.
-          </td>
-        </tr>
-      </tbody>
-    </table>
+The [Surface 3D Geometry](../../templates/surface-3d-geometry.htm) concept applies to this entity.
 
-**MappedRepresentation**
-
-Any _IfcBuildingElement_ (so far no further constraints are defined at the level of its subtypes) may be represented using the MappedRepresentation. This shall be supported as it allows for reusing the geometry definition of a type at all occurrences of the same type. The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
-
-*  _RepresentationIdentifier_ : 'Body' 
-*  _RepresentationType_ : 'MappedRepresentation' 
-
-The same constraints, as given for the 'SurfaceModel' and the 'Brep' geometric representation, shall apply to the _MappedRepresentation_ of the _IfcRepresentationMap_.
+Some _IfcBuildingElement_ may be represented by an surface as an abstract geometric representation. See each subtype for specific guidance.

@@ -1,30 +1,74 @@
-﻿Instances of the entity _IfcStructuralSurfaceMember_ shall be used to describe planar structural elements.
+﻿Instances of _IfcStructuralSurfaceMember_ describe face members, that is, structural analysis idealizations of slabs, walls, and shells. Surface members may be planar or curved.
 
-The material properties are defined by _IfcMechanicalMaterialProperties_ (and subtypes) and they are connected through _IfcMaterial_ and _IfcRelAssociatesMaterial_ and are accessible via the inherited inverse relationship _HasAssociations_.
+> HISTORY&nbsp; New entity in IFC2x2.
 
-> <font color="#0000FF" size="-1"> HISTORY: New entity in Release IFC2x
-		  Edition 2. </font>
-> 
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; Use definitions changed, WHERE rule added.
 
+****Coordinate Systems****:
 
-****Topology Use Definition****
+See definitions at _IfcStructuralItem_. The local coordinate system is established by the reference surface given by topology representation.
 
-Instances of _IfcStructuralSurfaceMember_ shall have a topology representation. It includes a placement and a product representation. The _IfcProductRepresentation_ shall be given by an item of _Representations_ being of type "_IfcTopologyRepresentation_".
+****Material Use Definition****
 
-**Placement**
+The material of direct instances _IfcStructuralSurfaceMember_ (in contrast to instances of the subtype _IfcStructuralSurfaceMemberVarying_) is defined by _IfcMaterial_ and attached by the _IfcRelAssociatesMaterial.RelatingMaterial_. It is accessible by the inverse _HasAssociations_ relationship.
 
-The placement for _IfcStructuralSurfaceMember_ is determined at its supertype _IfcProduct_. It is defined by the optional _IfcObjectPlacement_, referenced by _ObjectPlacement_ at _IfcProduct_, which establishes, if given, the object coordinate system that is referenced by all topological representations of that product.
+The material is specified minimally by a name which corresponds with an agreed upon standardized structural material designation. An external reference to the source which specifies the material designation should be provided. Alternatively, structural material properties may be provided by means of _IfcMechanicalMaterialProperties_ and _IfcExtendedMaterialProperties_.
 
-* If the _ObjectPlacement_ attribute is omitted, then all topological representations are given directly in world coordinates.
-* If the _ObjectPlacement_ attribute is provided, then it establishes an object coordinate system for all topological representations which are given object coordinates. 
-    * If the _PlacementRelTo_ relationship of _IfcLocalPlacement_ is omitted, the object coordinate system is established within the world coordinate system.
-    * If the _PlacementRelTo_ relationship of _IfcLocalPlacement_ is given, it shall point to the local placement of the same _IfcSpatialStructureElement_, which is used in the _ContainedInStructure_ inverse attribute, or to a spatial structure element at a higher level, referenced by that. 
+Direct instances of _IfcStructuralSurfaceMember_ are assumed to be located centrically relative to their reference surface. Their depth is provided in the attribute _Thickness_.
 
-**Topology Representation**
+___
+## Common Use Definitions
+The following concepts are inherited at supertypes:
 
-Instances of _IfcStructuralSurfaceMember_ shall have a topology representation given by a face with an optional additional geometric representation of the included surface. It can be provided by either
+* _IfcRoot_: [Identity](../../templates/identity.htm), [Revision Control](../../templates/revision-control.htm)
 
-* _IfcFace_
-* _IfcFaceSurface_
+[![Image](../../../img/diagram.png)&nbsp;Instance diagram](../../../annex/annex-d/common-use-definitions/ifcstructuralsurfacemember.htm)
 
-which should be the single item of _IfcTopologyRepresentation.Items_.
+{ .use-head}
+Material Layer Set Usage
+
+The [Material Layer Set Usage](../../templates/material-layer-set-usage.htm) concept applies to this entity.
+
+The material of direct instances _IfcStructuralSurfaceMember_ (in contrast to instances of the subtype _IfcStructuralSurfaceMemberVarying_) is defined by _IfcMaterialLayerSetUsage_ and attached by the _IfcRelAssociatesMaterial.RelatingMaterial_. It is accessible by the inverse _HasAssociations_ relationship.
+
+The material is specified minimally by a name which corresponds with an agreed upon standardized structural material designation. An external reference to the source which specifies the material designation should be provided. Alternatively, structural material properties may be provided by means of _IfcMaterialProperties_.
+
+In the absense of material layer set usage, direct instances of _IfcStructuralSurfaceMember_ are assumed to be located centrically relative to their reference surface. Their depth is provided in the attribute _Thickness_.
+
+  
+  
+{ .use-head}
+Reference Topology
+
+The [Reference Topology](../../templates/reference-topology.htm) concept applies to this entity as shown in Table 1.
+
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>RepresentationType</b></th><th><b>Topology</b></th></tr>
+<tr><td>Face</td><td><a href="../../ifctopologyresource/lexical/ifcfacesurface.htm">IfcFaceSurface</a></td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 1 &mdash; IfcStructuralSurfaceMember Reference Topology</p></td></tr></table>
+
+Direct instances of _IfcStructuralSurfaceMember_ shall have a topology representation which consists of one _IfcFaceSurface_, representing the reference surface of the surface member. See definitions at _IfcStructuralItem_ for further specifications.
+
+The local coordinate system is established by the reference surface given by topology representation.
+
+  
+  
+{ .use-head}
+Structural Connectivity
+
+The [Structural Connectivity](../../templates/structural-connectivity.htm) concept applies to this entity as shown in Table 2.
+
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>StructuralConnection</b></th><th><b>Description</b></th></tr>
+<tr><td><a href="../../ifcstructuralanalysisdomain/lexical/ifcstructuralcurveconnection.htm">IfcStructuralCurveConnection</a></td><td>Connections to curve members along edge(s) of surface.</td></tr>
+<tr><td><a href="../../ifcstructuralanalysisdomain/lexical/ifcstructuralsurfaceconnection.htm">IfcStructuralSurfaceConnection</a></td><td>Connections to surface members within face(s) of surface.</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 2 &mdash; IfcStructuralSurfaceMember Structural Connectivity</p></td></tr></table>

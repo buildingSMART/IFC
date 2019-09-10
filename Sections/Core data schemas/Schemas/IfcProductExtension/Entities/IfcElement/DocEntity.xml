@@ -1,56 +1,143 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcElement" UniqueId="9ab3f33b-7e80-4290-afe5-1e7a055cd3ac" DiagramNumber="1" BaseDefinition="IfcProduct" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcElement" Name="IfcElement" UniqueId="9ab3f33b-7e80-4290-afe5-1e7a055cd3ac" DiagramNumber="1" BaseDefinition="IfcProduct" EntityFlags="205">
+	<Localization>
+		<DocLocalization Name="Element (allgemein)" Locale="de" />
+		<DocLocalization Name="Élément" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="248.76058" Y="402.62955" Width="256.66667" Height="483.33333" />
 	<Subtypes>
 		<DocSubtype UniqueId="8c9040da-d2f2-4d62-aeb1-7236c7b09a12" DefinedType="IfcBuildingElement" />
 		<DocSubtype UniqueId="002ab573-355f-40d4-9350-10c9419afcec" DefinedType="IfcFurnishingElement" />
-		<DocSubtype UniqueId="2p_1L0bfPAR8GKC7DZd7pV" DefinedType="IfcElectricalElement" />
 		<DocSubtype UniqueId="06c99e85-450e-42be-94da-d337ae0bf1cb" DefinedType="IfcDistributionElement" />
 		<DocSubtype UniqueId="12e8a915-7bfc-45f0-91ab-f245250df0dd" DefinedType="IfcTransportElement" />
-		<DocSubtype UniqueId="05c1SJsJL32fOVBQqCKnAk" DefinedType="IfcEquipmentElement" />
 		<DocSubtype UniqueId="c371bf34-b334-44ad-8a21-2e6cd7c1dcfc" DefinedType="IfcFeatureElement" />
 		<DocSubtype UniqueId="4df49aa9-7098-4ac4-bfb9-7b9520ab6bc3" DefinedType="IfcElementAssembly" />
 		<DocSubtype UniqueId="6d8f6504-a71c-4379-ab06-7768772b6aa2" DefinedType="IfcVirtualElement" />
+		<DocSubtype UniqueId="912913e0-34ab-4160-b27c-f75de437b6bf" DefinedType="IfcGeographicElement" />
+		<DocSubtype UniqueId="221a2ec2-146f-4239-a7f7-7d8365dab37b" DefinedType="IfcCivilElement" />
 	</Subtypes>
 	<Attributes>
 		<DocAttribute Name="Tag" UniqueId="dcdb600f-7074-41a2-b876-9fb8a9bdb8ec" DefinedType="IfcIdentifier" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The tag (or label) identifier at the particular instance of a product, e.g. the serial number, or the position number. It is the identifier at the occurrence level.</Documentation>
+			<DiagramLine>
+				<DocPoint X="505.42725" Y="421.45728" />
+				<DocPoint X="1309.06053" Y="421.45728" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="595.42725" Y="404.790613" Width="50" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="HasStructuralMember" UniqueId="18z88g8X12Dg8eSXNyL1jQ" DefinedType="IfcRelConnectsStructuralElement" AttributeFlags="32" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatingElement" />
 		<DocAttribute Name="FillsVoids" UniqueId="013896b3-ab8f-4c8f-b6e5-b79d6fd26de9" DefinedType="IfcRelFillsElement" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatedBuildingElement">
-			<Documentation>Reference to the Fills Relationship that puts the Element into the Opening within another Element.</Documentation>
+			<Documentation>Reference to the _IfcRelFillsElement_ Relationship that puts the element as a filling into the opening created within another element.</Documentation>
+			<DiagramLine>
+				<DocPoint X="505.42725" Y="702.9629" />
+				<DocPoint X="573.537345" Y="702.9629" />
+				<DocPoint X="573.537345" Y="1599.59624" />
+				<DocPoint X="1100.693905" Y="1599.59624" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="595.328191" Y="1586.929574" Width="481" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="ConnectedTo" UniqueId="5cf4ed22-8e56-4d03-b682-58bb0794ddac" DefinedType="IfcRelConnectsElements" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatingElement">
+		<DocAttribute Name="ConnectedTo" UniqueId="5cf4ed22-8e56-4d03-b682-58bb0794ddac" DefinedType="IfcRelConnectsElements" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="RelatingElement">
 			<Documentation>Reference to the element connection relationship. The relationship then refers to the other element to which this element is connected to.</Documentation>
+			<DiagramLine>
+				<DocPoint X="4995.1416" Y="2765.5249" />
+				<DocPoint X="4995.1416" Y="3052.18487" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5161.90715" Y="2816.644898" Width="300" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="HasCoverings" UniqueId="0N9ishOED2LuK4h3yqWUlm" DefinedType="IfcRelCoversBldgElements" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatingBuildingElement">
-			<Documentation>Reference to _IfcCovering_ by virtue of the objectified relationship _IfcRelCoversBldgElement_. It defines the concept of an element having coverings attached.</Documentation>
+		<DocAttribute Name="IsInterferedByElements" UniqueId="3c54bf0c-7ae9-4dc5-ab08-97a56e21f509" DefinedType="IfcRelInterferesElements" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatedElement">
+			<Documentation>Reference to the interference relationship to indicate the element that is interfered. The relationship, if provided, indicates that this element has an interference with one or many other elements.
+&gt; NOTE&amp;nbsp; There is no indication of precedence between _IsInterferedByElements_ and _InterferesElements_.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE New inverse relationship.</Documentation>
+			<DiagramLine>
+				<DocPoint X="497.09392" Y="885.96288" />
+				<DocPoint X="497.09392" Y="1934.79618" />
+				<DocPoint X="1168.39334" Y="1934.79618" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="481.09392" Y="1921.462847" Width="469" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="HasProjections" UniqueId="4faee8d9-3beb-4087-9728-11eb04b2e9dd" DefinedType="IfcRelProjectsElement" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatingElement">
+		<DocAttribute Name="InterferesElements" UniqueId="458d5013-ddf1-45f7-b9e5-f043c827ad9c" DefinedType="IfcRelInterferesElements" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingElement">
+			<Documentation>Reference to the interference relationship to indicate the element that interferes. The relationship, if provided, indicates that this element has an interference with one or many other elements.
+&gt; NOTE&amp;nbsp; There is no indication of precedence between _IsInterferedByElements_ and _InterferesElements_.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE New inverse relationship.</Documentation>
+			<DiagramLine>
+				<DocPoint X="470.42725" Y="885.96288" />
+				<DocPoint X="470.42725" Y="2099.73898" />
+				<DocPoint X="1168.33997" Y="2099.73898" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="459.760583" Y="2083.73898" Width="474" Height="70" />
+		</DocAttribute>
+		<DocAttribute Name="HasProjections" UniqueId="4faee8d9-3beb-4087-9728-11eb04b2e9dd" DefinedType="IfcRelProjectsElement" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingElement">
 			<Documentation>Projection relationship that adds a feature (using a Boolean union) to the _IfcBuildingElement_.</Documentation>
+			<DiagramLine>
+				<DocPoint X="505.42725" Y="740.2962" />
+				<DocPoint X="547.366936" Y="740.2962" />
+				<DocPoint X="547.366936" Y="1769.7883" />
+				<DocPoint X="1100.666596" Y="1769.7883" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="548.11693603" Y="1756.693274" Width="445" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="ReferencedInStructures" UniqueId="f72e6148-b614-4908-b276-5d15ac3222ce" DefinedType="IfcRelReferencedInSpatialStructure" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatedElements">
-			<Documentation>Reference relationship to the spatial structure element, to which the element is additionally associated.
-&gt; &lt;font color=&quot;#ff0000&quot;&gt;&lt;small&gt;
-IFC2x Edition 3 CHANGE&amp;nbsp; The inverse attribute has been added with upward compatibility for file based exchange.
-&lt;small&gt;&lt;/small&gt;&lt;/small&gt;&lt;/font&gt;</Documentation>
+		<DocAttribute Name="ReferencedInStructures" UniqueId="f72e6148-b614-4908-b276-5d15ac3222ce" DefinedType="IfcRelReferencedInSpatialStructure" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatedElements">
+			<Documentation>Reference relationship to the spatial structure element, to which the element is additionally associated. This relationship may not be hierarchical, an element may be referenced by zero, one or many spatial structure elements.
+{ .change-ifc2x3}
+&gt; IFC2x3 CHANGE&amp;nbsp; The inverse attribute has been added with upward compatibility for file based exchange.</Documentation>
+			<DiagramLine>
+				<DocPoint X="505.42725" Y="628.29621" />
+				<DocPoint X="625.76058" Y="628.29621" />
+				<DocPoint X="625.76058" Y="1269.02955" />
+				<DocPoint X="1012.76058" Y="1269.02955" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="538.76058" Y="1212.846217" Width="599" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="HasPorts" UniqueId="2q1j8hd4zDnQun6zR8mgvB" DefinedType="IfcRelConnectsPortToElement" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatedElement">
-			<Documentation>Reference to the element to port connection relationship. The relationship then refers to the port which is contained in this element.</Documentation>
+		<DocAttribute Name="HasOpenings" UniqueId="887366e1-d446-4f3b-8643-605d00ce2c16" DefinedType="IfcRelVoidsElement" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingBuildingElement">
+			<Documentation>Reference to the _IfcRelVoidsElement_ relationship that creates an opening in an element. An element can incorporate zero-to-many openings. For each opening, that voids the element, a new relationship _IfcRelVoidsElement_ is generated.</Documentation>
+			<DiagramLine>
+				<DocPoint X="505.42725" Y="662.96288" />
+				<DocPoint X="598.754052" Y="662.96288" />
+				<DocPoint X="598.754052" Y="1432.62955" />
+				<DocPoint X="1100.627202" Y="1432.62955" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="632.289038" Y="1419.296217" Width="505" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="HasOpenings" UniqueId="887366e1-d446-4f3b-8643-605d00ce2c16" DefinedType="IfcRelVoidsElement" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatingBuildingElement">
-			<Documentation>Reference to the Voids Relationship that creates an opening in an element. An element can incorporate zero-to-many openings.</Documentation>
+		<DocAttribute Name="IsConnectionRealization" UniqueId="093ff6ec-c8af-4a34-8578-91694c1273f1" DefinedType="IfcRelConnectsWithRealizingElements" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RealizingElements">
+			<Documentation>Reference to the connection relationship with realizing element. The relationship, if provided, assigns this element as the realizing element to the connection, which provides the physical manifestation of the connection relationship.</Documentation>
+			<DiagramLine>
+				<DocPoint X="505.42725" Y="557.62954" />
+				<DocPoint X="678.83627" Y="557.62954" />
+				<DocPoint X="678.83627" Y="928.46287" />
+				<DocPoint X="1012.6939" Y="928.46287" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="644.502937" Y="874.429537" Width="646" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="IsConnectionRealization" UniqueId="093ff6ec-c8af-4a34-8578-91694c1273f1" DefinedType="IfcRelConnectsWithRealizingElements" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RealizingElements">
-			<Documentation>Reference to the connection relationship with realizing element. The relationship then refers to the realizing element which provides the physical manifestation of the connection relationship.</Documentation>
+		<DocAttribute Name="ProvidesBoundaries" UniqueId="94ab1bc4-3273-4afe-998f-9be7c26a2294" DefinedType="IfcRelSpaceBoundary" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatedBuildingElement">
+			<Documentation>Reference to space boundaries by virtue of the objectified relationship _IfcRelSpaceBoundary_. It defines the concept of an element bounding spaces.</Documentation>
+			<DiagramLine>
+				<DocPoint X="505.42725" Y="496.23169" />
+				<DocPoint X="709.40257" Y="496.23169" />
+				<DocPoint X="709.40257" Y="747.17127" />
+				<DocPoint X="1012.693" Y="747.17127" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="697.822297" Y="686.043856" Width="525" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="ProvidesBoundaries" UniqueId="94ab1bc4-3273-4afe-998f-9be7c26a2294" DefinedType="IfcRelSpaceBoundary" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatedBuildingElement">
-			<Documentation>Reference to Space Boundaries by virtue of the objectified relationship IfcRelSeparatesSpaces. It defines the concept of an Building Element bounding Spaces.</Documentation>
-		</DocAttribute>
-		<DocAttribute Name="ConnectedFrom" UniqueId="2bd302cf-6ded-4b81-ae7b-34c479d3014c" DefinedType="IfcRelConnectsElements" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatedElement">
+		<DocAttribute Name="ConnectedFrom" UniqueId="2bd302cf-6ded-4b81-ae7b-34c479d3014c" DefinedType="IfcRelConnectsElements" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="RelatedElement">
 			<Documentation>Reference to the element connection relationship. The relationship then refers to the other element that is connected to this element.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5318.4749" Y="2765.5249" />
+				<DocPoint X="5318.4749" Y="3052.25157" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5500.10729" Y="2816.956345" Width="328" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="ContainedInStructure" UniqueId="e0676768-f79e-407b-9147-49374bb82e14" DefinedType="IfcRelContainedInSpatialStructure" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatedElements">
-			<Documentation>Containment relationship to the spatial structure element, to which the element is primarily associated.</Documentation>
+			<Documentation>Containment relationship to the spatial structure element, to which the element is primarily associated. This containment relationship has to be hierachical, i.e. an element may only be assigned directly to zero or one spatial structure.</Documentation>
+			<DiagramLine>
+				<DocPoint X="505.42725" Y="594.96288" />
+				<DocPoint X="651.57133" Y="594.96288" />
+				<DocPoint X="651.57133" Y="1099.72955" />
+				<DocPoint X="1012.6939" Y="1099.72955" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="573.187997" Y="1043.062884" Width="584" Height="70" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

@@ -1,14 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralLoadTemperature" UniqueId="a5520d12-ec69-4ee1-85ae-cce5fdfdec16" DiagramNumber="2" BaseDefinition="IfcStructuralLoadStatic" EntityFlags="237">
+	<Localization>
+		<DocLocalization Name="Temperaturlast" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1836.6353" Y="2007.57" Width="466.66667" Height="213.33333" />
 	<Attributes>
-		<DocAttribute Name="DeltaT_Constant" UniqueId="0bd8pxq6P69PcL3m4LSHPy" DefinedType="IfcThermodynamicTemperatureMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Temperature change which is applied to the complete section of the structural member. A positive value describes an increase in temperature.</Documentation>
+		<DocAttribute Name="DeltaTConstant" UniqueId="8eed99bf-afb7-4901-987c-79c8f2db4a8f" DefinedType="IfcThermodynamicTemperatureMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Temperature change which affects the complete section of the structural member, or the uniform portion of a non-uniform temperature change.
+
+&gt; NOTE&amp;nbsp; A positive value describes an increase in temperature. I.e. a positive constant temperature change causes elongation of a member, or compression in the member if there are respective restraints.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2303.302" Y="2044.2366" />
+				<DocPoint X="2587.6597" Y="2044.2366" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2303.302" Y="2040.9032667" Width="180" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="DeltaT_Y" UniqueId="0xgtiawQHEcQ5A81VFpo0n" DefinedType="IfcThermodynamicTemperatureMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Temperature change which is applied to the outer fiber of the positive Y-direction. A positive value describes an increase in temperature.</Documentation>
+		<DocAttribute Name="DeltaTY" UniqueId="88453b8b-b391-4621-9721-0560f4706228" DefinedType="IfcThermodynamicTemperatureMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Non-uniform temperature change, specified as the difference of the temperature change at the outer fibre of the positive y direction minus the temperature change at the outer fibre of the negative y direction of the analysis member.
+
+&gt; NOTE&amp;nbsp; A positive non-uniform temperature change in y induces a negative curvature of the member about z, or a positive bending moment about z if there are respective restraints. y and z are local member axes.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2303.302" Y="2110.9033" />
+				<DocPoint X="2587.6597" Y="2110.9033" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2303.302" Y="2104.2366333" Width="96" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="DeltaT_Z" UniqueId="2BrsvnXkrDrBXdOl7sqXNN" DefinedType="IfcThermodynamicTemperatureMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Temperature change which is applied to the outer fiber of the positive Z-direction. A positive value describes an increase in temperature.</Documentation>
+		<DocAttribute Name="DeltaTZ" UniqueId="80c8cbce-08ae-4f55-a98f-2ca70bbc7dd6" DefinedType="IfcThermodynamicTemperatureMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Non-uniform temperature change, specified as the difference of the temperature change at the outer fibre of the positive z direction minus the temperature change at the outer fibre of the negative z direction of the analysis member.
+
+&gt; NOTE&amp;nbsp; A positive non-uniform temperature change in z induces a positive curvature of the member about y, or a negative bending moment about y if there are respective restraints. y and z are local member axes.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2303.302" Y="2177.57" />
+				<DocPoint X="2587.6597" Y="2177.57" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2303.302" Y="2170.9033333" Width="95" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

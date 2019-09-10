@@ -1,8 +1,9 @@
-﻿**Definition from ISO/CD 10303-42:1992**: This select type identifies the types of entities which can occur in a geometric set.
+﻿The _IfcGeometricSetSelect_ includes the geometric representation items applicable to be part of the geometric set.
 
-> <font color="#0000FF" size="-1">NOTE: Corresponding STEP type:
-		geometric_set_select. Please refer to ISO/IS 10303-42:1994, p. 169 for the
-		final definition of the formal standard. </font>
+{ .extDef}
+> NOTE&nbsp; Definition from ISO10303-42:  
+> This select type identifies the types of entities which can occur in a geometric set.
 
-> <font size="-1" color="#0000FF">HISTORY: New type in IFC
-		Release 2x.</font>
+> NOTE&nbsp; Corresponding STEP type **geometric_set_select** defined in ISO 10303-42.
+
+> HISTORY&nbsp; New type in IFC2x.

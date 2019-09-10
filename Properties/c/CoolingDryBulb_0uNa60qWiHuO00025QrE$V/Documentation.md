@@ -1,1 +1,1 @@
-﻿Inside dry bulb temperature for cooling design
+﻿Inside dry bulb temperature for cooling design.

@@ -1,1 +1,1 @@
-﻿Nominal heating capacity
+﻿Nominal heating capacity.

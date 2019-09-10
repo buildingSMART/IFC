@@ -1,8 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcControl" UniqueId="5cc95018-83bd-4c3b-ba54-1475cf5cbdb7" DiagramNumber="7" BaseDefinition="IfcObject" EntityFlags="141">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcControl" UniqueId="5cc95018-83bd-4c3b-ba54-1475cf5cbdb7" DiagramNumber="11" BaseDefinition="IfcObject" EntityFlags="141">
+	<Localization>
+		<DocLocalization Name="Steuerung / Regelung / Einschränkung (allgemein)" Locale="de" />
+		<DocLocalization Name="Contrôle" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="16247.277" Y="363.86326" Width="200" Height="346.63333" />
 	<Attributes>
-		<DocAttribute Name="Controls" UniqueId="ace46949-187f-4f1b-b666-1deba88f9136" DefinedType="IfcRelAssignsToControl" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatingControl">
+		<DocAttribute Name="Identification" UniqueId="5e07c327-7005-44be-babc-5f04a40d37cd" DefinedType="IfcIdentifier" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>An identifying designation given to a control
+    It is the identifier at the occurrence level. 
+    
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE Attribute unified by promoting from various subtypes of _IfcControl_.</Documentation>
+			<DiagramLine>
+				<DocPoint X="16447.277" Y="633.84659" />
+				<DocPoint X="16930.277" Y="633.84659" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="16447.277" Y="623.84659" Width="146" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="Controls" UniqueId="ace46949-187f-4f1b-b666-1deba88f9136" DefinedType="IfcRelAssignsToControl" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="RelatingControl">
 			<Documentation>Reference to the relationship that associates the control to the object(s) being controlled.</Documentation>
+			<DiagramLine>
+				<DocPoint X="16930.212" Y="430.42393" />
+				<DocPoint X="16447.277" Y="430.42393" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="16941.160043" Y="472.512597" Width="242" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

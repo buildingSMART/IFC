@@ -1,11 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSurfaceStyleRefraction" UniqueId="c43b29f0-fa72-4a7c-a838-670ae11ec004" DiagramNumber="5" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSurfaceStyleRefraction" UniqueId="c43b29f0-fa72-4a7c-a838-670ae11ec004" DiagramNumber="7" BaseDefinition="IfcPresentationItem" EntityFlags="237">
+	<Localization>
+		<DocLocalization Name="Oberflächenstil - Lichtbrechung" Locale="de" />
+		<DocLocalization Name="Style de réfraction de surface" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="92.266667" Y="4381.7334" Width="416.66666" Height="183.33333" />
 	<Attributes>
 		<DocAttribute Name="RefractionIndex" UniqueId="035b433b-0466-46cf-83b3-4e3de00b6b6e" DefinedType="IfcReal" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The index of refraction for all wave lengths of light. The refraction index is the ratio between the speed of light in a vacuum and the speed of light in the medium. E.g. glass has a refraction index of 1.5, whereas water has an index of 1.33</Documentation>
+			<DiagramLine>
+				<DocPoint X="508.93334" Y="4430.0667" />
+				<DocPoint X="991.13334" Y="4430.0667" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="508.93334" Y="4423.4000333" Width="181" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="DispersionFactor" UniqueId="585e3a86-97ad-43a4-8af6-abf2bb251fc7" DefinedType="IfcReal" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The Abbe constant given as a fixed ratio between the refractive indices of the material at different wavelengths. A low Abbe number means a high dispersive power. In general this translates to a greater angular spread of the emergent spectrum.</Documentation>
+			<DiagramLine>
+				<DocPoint X="508.93334" Y="4513.4" />
+				<DocPoint X="991.10001" Y="4513.4" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="508.93334" Y="4506.7333333" Width="193" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

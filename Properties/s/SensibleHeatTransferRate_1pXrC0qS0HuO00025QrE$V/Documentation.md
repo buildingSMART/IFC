@@ -1,0 +1,1 @@
+﻿Sensible heat transfer rate.

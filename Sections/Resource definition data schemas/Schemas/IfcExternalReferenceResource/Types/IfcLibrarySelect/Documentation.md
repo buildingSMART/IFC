@@ -1,9 +1,6 @@
-﻿An _IfcLibrarySelect_ enables selection of whether library information is to be contained within an IFC model or is to be referenced from an external source.
+﻿The _IfcLibrarySelect_ enables selection of whether library information is to be contained within an IFC model or is to be referenced from an external source.
 
-> <font size="-1" color="#0000FF">HISTORY: New Select Type in IFC
-		2x </font>
+{ .note}
+> It is expected that selection will be _IfcLibraryReference_ and only rarely _IfcLibraryInformation_. _IfcLibraryInformation_ should only be selected in circumstances where there could be a need to indicate the libraries that will be used without making individual references. This may occur for higher level objects such as a _IfcProject_ or _IfcBuilding_.
 
-**Select From:**
-
-* _IfcLibraryInformation_ (for library information) 
-* _IfcLibraryReference_ (for reference into a library of information by location)
+> HISTORY&nbsp; New select type in IFC2x

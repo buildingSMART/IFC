@@ -1,25 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcLightSourcePositional" UniqueId="32a170a7-e0ba-48c0-9f27-f2a1df1265d0" DiagramNumber="2" BaseDefinition="IfcLightSource" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Lichtquelle - lagenbezogen" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1837.8333" Y="1097.7334" Width="233.33333" Height="460" />
 	<Subtypes>
 		<DocSubtype UniqueId="30af9057-6d2e-4b79-a49e-91688266d890" DefinedType="IfcLightSourceSpot" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Position" UniqueId="b14f2740-7faa-41bf-b16f-b3811cd24338" DefinedType="IfcCartesianPoint" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Position" UniqueId="b14f2740-7faa-41bf-b16f-b3811cd24338" DefinedType="IfcCartesianPoint" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>Definition from ISO/CD 10303-46:1992: The Cartesian point indicates the position of the light source.
 Definition from VRML97 - ISO/IEC 14772-1:1997: A Point light node illuminates geometry within radius of its location.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2071.1667" Y="1138.8428" />
+				<DocPoint X="2684.9" Y="1138.8428" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2074.5000333" Y="1135.5094667" Width="94" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Radius" UniqueId="e32ed7f9-1e64-44f1-890b-6a5b3397c943" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The maximum distance from the light source for a surface still to be illuminated.
 Definition from VRML97 - ISO/IEC 14772-1:1997: A Point light node illuminates geometry within radius of its location.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2071.1667" Y="1233.0727" />
+				<DocPoint X="2684.8667" Y="1233.0727" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2071.1667" Y="1233.0727" Width="84" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="ConstantAttenuation" UniqueId="2effff58-264e-4ab4-9648-ba2409c15b7c" DefinedType="IfcReal" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Definition from ISO/CD 10303-46:1992: This real indicates the value of the attenuation in the lighting equation that is constant.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2071.1667" Y="1327.6352" />
+				<DocPoint X="2684.8667" Y="1327.6352" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2074.5000333" Y="1324.3018667" Width="233" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="DistanceAttenuation" UniqueId="04cd93af-8e0e-4e24-bfeb-14b008f4908c" DefinedType="IfcReal" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Definition from ISO/CD 10303-46:1992: This real indicates the value of the attenuation in the lighting equation that proportional to the distance from the light source.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2071.1667" Y="1426.1486" />
+				<DocPoint X="2684.8667" Y="1426.1486" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2071.1667" Y="1419.4819333" Width="229" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="QuadricAttenuation" UniqueId="1cda05dc-8988-4938-babb-95a4caa843f7" DefinedType="IfcReal" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>Definition from the IAI: This real indicates the value of the attenuation in the lighting equation that proportional to the square value of the distance from the light source.</Documentation>
+			<Documentation>This real indicates the value of the attenuation in the lighting equation that proportional to the square value of the distance from the light source.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2071.1667" Y="1518.9463" />
+				<DocPoint X="2684.8667" Y="1518.9463" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2071.1667" Y="1512.2796333" Width="219" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

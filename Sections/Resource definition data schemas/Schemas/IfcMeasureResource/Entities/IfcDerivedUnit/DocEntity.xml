@@ -1,16 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcDerivedUnit" UniqueId="2923468f-7a3d-4521-9900-c76a41447138" DiagramNumber="1" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Abgeleitete Einheit" Locale="de" />
+		<DocLocalization Name="Unité dérivée" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="25.809081" Y="257.68245" Width="292.65365" Height="132" />
 	<Attributes>
 		<DocAttribute Name="Elements" UniqueId="e72142b9-ee3d-4bf3-8cbc-1a1c4506f9d8" DefinedType="IfcDerivedUnitElement" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The group of units and their exponents that define the derived unit.</Documentation>
+			<DiagramLine>
+				<DocPoint X="264.57041" Y="389.68245" />
+				<DocPoint X="264.57041" Y="481.818482" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="400.28992" Y="400.305035" Width="188" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="UnitType" UniqueId="df3cb14f-4bb8-4ed8-a79c-92221b2c5710" DefinedType="IfcDerivedUnitEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Name of the derived unit chosen from an enumeration of derived unit types for use in IFC models.</Documentation>
+			<DiagramLine>
+				<DocPoint X="92.986223" Y="257.68245" />
+				<DocPoint X="92.986223" Y="137.66859" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="157.05307" Y="251.7417198" Width="106" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="UserDefinedType" UniqueId="ad069c40-59ef-46b3-ba34-ad6fd730e7dc" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0" />
+		<DocAttribute Name="UserDefinedType" UniqueId="ad069c40-59ef-46b3-ba34-ad6fd730e7dc" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<DiagramLine>
+				<DocPoint X="318.46273" Y="323.68245" />
+				<DocPoint X="428.3593" Y="323.68245" />
+				<DocPoint X="428.3593" Y="323.68245" />
+				<DocPoint X="538.25588" Y="323.68245" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="315.9752653" Y="311.245127" Width="200" Height="35" />
+		</DocAttribute>
 		<DocAttribute Name="Dimensions" UniqueId="4c2d2a13-ce40-4488-a908-26365ac47c40" DefinedType="IfcDimensionalExponents" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Dimensional exponents derived using the function IfcDerivedDimensionalExponents using (SELF) as the input value.</Documentation>
 			<Derived>IfcDeriveDimensionalExponents(Elements)</Derived>
+			<DiagramLine>
+				<DocPoint X="94.18818" Y="389.68245" />
+				<DocPoint X="94.18818" Y="649.46789" />
+				<DocPoint X="761.4683" Y="649.46789" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="215.43403" Y="368.49986" Width="210" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

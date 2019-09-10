@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcBeamStandardCase" Name="IfcBeamStandardCase" UniqueId="0c0c0768-e0cc-41a0-82cb-ddb450b56e95" DiagramNumber="1" BaseDefinition="IfcBeam" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Balken / Unterzug - Standard" Locale="de" />
+		<DocLocalization Name="Poutre standard" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1114" Y="357.05333" Width="438.63333" Height="100" />
+	<WhereRules>
+		<DocWhereRule Name="HasMaterialProfileSetUsage" UniqueId="4c834c12-aeb9-4a15-856b-88ee40b7c7f2">
+			<Documentation>A valid instance of _IfcBeamStandardCase_ relies on the provision of an _IfcMaterialProfileSetUsage_.</Documentation>
+			<Expression>SIZEOF (QUERY(temp &lt;* USEDIN(SELF, &apos;IFCKERNEL.IFCRELASSOCIATES.RELATEDOBJECTS&apos;) |
+              (&apos;IFCPRODUCTEXTENSION.IFCRELASSOCIATESMATERIAL&apos; IN TYPEOF(temp)) AND
+              (&apos;IFCMATERIALRESOURCE.IFCMATERIALPROFILESETUSAGE&apos; IN TYPEOF(temp.RelatingMaterial))
+              )) = 1</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

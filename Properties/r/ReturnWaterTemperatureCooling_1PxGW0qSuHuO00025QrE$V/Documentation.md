@@ -1,1 +1,1 @@
-﻿Return water temperature in cooling mode
+﻿Return water temperature in cooling mode.

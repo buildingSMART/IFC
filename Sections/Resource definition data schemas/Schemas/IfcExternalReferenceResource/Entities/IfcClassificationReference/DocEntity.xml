@@ -1,8 +1,63 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcClassificationReference" UniqueId="d6845f56-93c2-41ea-bd7e-edbfea1e9068" DiagramNumber="2" BaseDefinition="IfcExternalReference" EntityFlags="109">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcClassificationReference" UniqueId="d6845f56-93c2-41ea-bd7e-edbfea1e9068" DiagramNumber="2" BaseDefinition="IfcExternalReference" EntityFlags="237">
+	<Localization>
+		<DocLocalization Name="Klassifikationseintrag" Locale="de" />
+		<DocLocalization Name="Référence de classification" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1764.6707" Y="586.4604" Width="483.33333" Height="238.66666" />
 	<Attributes>
-		<DocAttribute Name="ReferencedSource" UniqueId="4bb1e966-6ba7-4148-bab9-33623a5c9511" DefinedType="IfcClassification" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>The classification system or source that is referenced.</Documentation>
+		<DocAttribute Name="ReferencedSource" UniqueId="4bb1e966-6ba7-4148-bab9-33623a5c9511" DefinedType="IfcClassificationReferenceSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The classification system or source that is referenced.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; Data type changed to _IfcClassificationReferenceSelect_.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1833.004" Y="825.12706" />
+				<DocPoint X="1833.004" Y="1031.38666" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1958.33733" Y="819.7937267" Width="214" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="Description" UniqueId="845d48a5-3d35-4d28-81cf-d0819a0660f0" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Description of the classification reference for informational purposes.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; New attribute added at the end of the attribute list.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2248.004" Y="616.80686" />
+				<DocPoint X="2745.3373" Y="616.80686" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2253.3373333" Y="606.140193" Width="130" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="Sort" UniqueId="5fcf5d22-605e-4ade-97d7-a582739f6d22" DefinedType="IfcIdentifier" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Optional identifier to sort the set of classification references within the referenced source (either a classification facet of higher level, or the classification system itself).
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; New attribute added at the end of the attribute list.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2248.004" Y="684.4604" />
+				<DocPoint X="2698.404" Y="684.4604" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2240.004" Y="673.793733" Width="52" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="ClassificationRefForObjects" UniqueId="3d62bf91-0b17-40a0-80f8-79ba693f2372" DefinedType="IfcRelAssociatesClassification" AttributeFlags="32" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatingClassification">
+			<Documentation>The classification reference with which objects are associated.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; New inverse attribute.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1878.3374" Y="586.4604" />
+				<DocPoint X="1878.3374" Y="342.39371" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2162.76341" Y="682.127084" Width="453" Height="70" />
+		</DocAttribute>
+		<DocAttribute Name="HasReferences" UniqueId="cd72476e-c741-4de9-8ab5-603aacea15d6" DefinedType="IfcClassificationReference" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="ReferencedSource">
+			<Documentation>The parent classification references to which this child classification reference applies. It can either be the final classification item leaf node, or an intermediate classification item.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE New inverse attribute.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2201.004" Y="825.12706" />
+				<DocPoint X="2201.004" Y="892.460393" />
+				<DocPoint X="2638.004" Y="892.460393" />
+				<DocPoint X="2638.004" Y="782.460393" />
+				<DocPoint X="2248.004" Y="782.460393" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2228.503999" Y="974.460393" Width="515" Height="70" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

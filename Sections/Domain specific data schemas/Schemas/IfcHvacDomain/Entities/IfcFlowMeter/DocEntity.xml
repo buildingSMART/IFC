@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcFlowMeter" Name="IfcFlowMeter" UniqueId="b4df44ca-8253-4baf-a10c-f783b0ca3c80" DiagramNumber="4" BaseDefinition="IfcFlowController" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Zähler (allgemein)" Locale="de" />
+		<DocLocalization Name="Appareil de mesure de débit" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="6016.2807" Y="718.12257" Width="325.01291" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="8399b678-597b-45d1-bcae-3e2ab882497f" DefinedType="IfcFlowMeterTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<DiagramLine>
+				<DocPoint X="6016.2807" Y="768.12257" />
+				<DocPoint X="5795.69969" Y="768.12257" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="6016.2807" Y="768.12257" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="a6f675c4-ce4b-4e08-b9ac-dd31baad5c31">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcFlowMeterType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcFlowMeterTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcFlowMeterTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="a3050f28-bfa0-4fe1-8c79-1a16b3ab3303">
+			<Documentation>Either there is no flow meter type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcFlowMeterType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCHVACDOMAIN.IFCFLOWMETERTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

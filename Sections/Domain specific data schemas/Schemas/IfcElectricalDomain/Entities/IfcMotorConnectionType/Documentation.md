@@ -1,20 +1,9 @@
-﻿An _IfcMotorConnectionType_ provides the means for connecting a motor as the driving device to the driven device.
+﻿The energy conversion device type **IfcMotorConnectionType** defines commonly shared information for occurrences of motor connections. The set of shared information may include:
 
-> <font color="#0000ff" size="-1">
-HISTORY: New entity in IFC 2x2 </font>
-> 
+* common properties with shared property sets
+* common representations
+* common materials
+* common composition of elements
+* common ports
 
-
-****Use Definitions****
-
-An _IfcMotorConnectionType_ is a subtype of IfcEnergyConversionDeviceType that provides for various forms of connection mechanism.
-
-Usage of _IfcMotorConnectionType_ defines the parameters for one or more occurrences of _IfcEnergyConversionDevice_. Parameters are specified through property sets that are enumerated in the _IfcMotorConnectionTypeEnum_ data type.
-
-****Property Set Use Definition****:
-
-There are no property sets currently defined for _IfcMotorConnectionType_.
-
-****Geometry Use Definitions****
-
-Representations of the type are defined as representation maps (at the level of the supertype _IfcTypeProduct_). These are assigned at the occurrence through the _IfcShapeRepresentation.Item_ being an _IfcMappedItem_.
+It is used to define a motor connection type specification indicating the specific product information that is common to all occurrences of that product type. The **IfcMotorConnectionType** may be declared within _IfcProject_ or _IfcProjectLibrary_ using _IfcRelDeclares_ and may be exchanged with or without occurrences of the type. Occurrences of **IfcMotorConnectionType** are represented by instances of _IfcMotorConnection_. Refer to the documentation at _IfcMotorConnection_ for supported property sets, materials, composition, and ports.

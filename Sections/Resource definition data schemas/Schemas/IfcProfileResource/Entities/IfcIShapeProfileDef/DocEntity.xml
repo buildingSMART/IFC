@@ -1,36 +1,79 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcIShapeProfileDef" UniqueId="254749ac-db77-4f69-a8a0-b4cc5d5e66fa" DiagramNumber="3" BaseDefinition="IfcParameterizedProfileDef" EntityFlags="237">
-	<Subtypes>
-		<DocSubtype UniqueId="2cuhPIfBrF2RL1g1_WDPP2" DefinedType="IfcAsymmetricIShapeProfileDef" />
-	</Subtypes>
+	<Localization>
+		<DocLocalization Name="I-Profil - parametrische Definition" Locale="de" />
+		<DocLocalization Name="Définition de section d&apos;un profil en I" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="3431.2563" Y="134.85629" Width="348.66667" Height="641.51066" />
 	<Attributes>
 		<DocAttribute Name="OverallWidth" UniqueId="d3377243-e50b-4612-9cb4-4b5a82a792cd" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Total extent of the width, defined parallel to the x axis of the position coordinate system.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3779.923" Y="175.30037" />
+				<DocPoint X="4249.75626" Y="175.30037" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3745.789667" Y="171.0337033" Width="147" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="OverallDepth" UniqueId="be006822-4c89-400b-82a0-017a9d9e5a7a" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Total extent of the depth, defined parallel to the y axis of the position coordinate system.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3779.923" Y="270.43015" />
+				<DocPoint X="4249.79093" Y="270.43015" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3749.523" Y="264.03015" Width="151" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="WebThickness" UniqueId="efeab8f4-6c72-4e05-8423-5c9226da4164" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Thickness of the web of the I-shape. The web is centred on the x-axis and the y-axis of the position coordinate system.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3779.923" Y="359.48494" />
+				<DocPoint X="4249.72427" Y="359.48494" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3758.589667" Y="355.2182733" Width="168" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="FlangeThickness" UniqueId="6139d968-6b28-4734-af17-2a8b3447dcd7" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Flange thickness of the I-shape. Both, the upper and the lower flanges have the same thickness and they are centred on the y-axis of the position coordinate system.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3779.923" Y="453.74456" />
+				<DocPoint X="4249.65767" Y="453.74456" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3771.3896667" Y="447.34456" Width="193" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="FilletRadius" UniqueId="5f4d9acf-d5cd-4bdc-a4b6-8b5b7288da52" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>The fillet between the web and the flange, if not given, zero is assumed.</Documentation>
+		<DocAttribute Name="FilletRadius" UniqueId="5f4d9acf-d5cd-4bdc-a4b6-8b5b7288da52" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The fillet between the web and the flange.  0 if sharp-edged, omitted if unknown.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3779.923" Y="547.51724" />
+				<DocPoint X="4249.65767" Y="547.51724" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3744.422999" Y="542.4255717" Width="135" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="FlangeEdgeRadius" UniqueId="e6d064b0-e764-412c-a164-30bea7e98f76" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Radius of the lower edges of the top flange and the upper edges of the bottom flange.  0 if sharp-edged, omitted if unknown.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3779.9229" Y="639.14716" />
+				<DocPoint X="4249.75757" Y="639.14716" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3779.9229" Y="639.14716" Width="218" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="FlangeSlope" UniqueId="78bd552f-462b-4bb7-9795-8ba9b2ece37a" DefinedType="IfcPlaneAngleMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Slope of the lower faces of the top flange and of the upper faces of the bottom flange.  Non-zero in case of tapered flanges, 0 in case of parallel flanges, omitted if unknown.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3779.9229" Y="732.77429" />
+				<DocPoint X="4249.84023" Y="732.77429" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3742.8189" Y="724.58229" Width="146" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="3hmu4msEj80hatCRG3_C_B">
-			<Documentation>The thickness of the flange shall be less than half of the overall depth.</Documentation>
-			<Expression>FlangeThickness &lt; (OverallDepth / 2.)</Expression>
+		<DocWhereRule Name="ValidFlangeThickness" UniqueId="78f9746c-a851-41fd-bc9d-1453e9e6980b">
+			<Documentation>The sum of flange thicknesses shall be less than the overall depth.</Documentation>
+			<Expression>(2. * FlangeThickness) &lt; OverallDepth</Expression>
 		</DocWhereRule>
-		<DocWhereRule Name="WR2" UniqueId="2LK_1yPd5D4ePuSAvMRoZo">
-			<Documentation>The web thickness shall be less then the overall width.</Documentation>
+		<DocWhereRule Name="ValidWebThickness" UniqueId="0238794f-5cd0-4a24-9708-a00ca9e498e5">
+			<Documentation>The web thickness shall be less then the flange width.</Documentation>
 			<Expression>WebThickness &lt; OverallWidth</Expression>
 		</DocWhereRule>
-		<DocWhereRule Name="WR3" UniqueId="2YSgci$f16Qh204kYNgaaU">
-			<Documentation>The FilletRadius, if given, should be within the range of allowed values.</Documentation>
+		<DocWhereRule Name="ValidFilletRadius" UniqueId="69178d55-f279-458c-93f1-aef915e5d81d">
+			<Documentation>The FilletRadius, if given, shall be within the range of allowed values.</Documentation>
 			<Expression>NOT(EXISTS(FilletRadius)) OR
 ((FilletRadius &lt;= (OverallWidth - WebThickness)/2.) AND 
  (FilletRadius &lt;= (OverallDepth - (2. * FlangeThickness))/2.))</Expression>

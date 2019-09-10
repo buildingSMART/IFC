@@ -1,16 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocPropertySet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Pset_BuildingCommon" UniqueId="3hy1C0qSGHuO00025QrE$V" PropertySetType="PSET_TYPEDRIVENOVERRIDE">
+<DocPropertySet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Pset_BuildingCommon" UniqueId="3hy1C0qSGHuO00025QrE$V" ApplicableType="IfcBuilding" PropertySetType="PSET_TYPEDRIVENOVERRIDE">
+	<Localization>
+		<DocLocalization Locale="de-DE">
+			<Documentation>Property Set Definition in German</Documentation>
+		</DocLocalization>
+		<DocLocalization Locale="fr-FR">
+			<Documentation>Définition de l&apos;IAI : propriétés communes à la définition de toutes les instances de la classe IfcBuilding. Veuillez noter que plusieurs attributs sont portés directement par l&apos;instance IfcBuilding : le numéro du bâtiment ou nom court (IfcBuilding.Name), le nom ou nom long (IfcBuilding.LongName), et la description ou des commentaires (IfcBuilding.Description). Les quantités réelles du site comme le périmètre, la superficie et le volume du bâtiment sont fournis par des instances de IfcElementQuantity, et la référence à une classification nationale par IfcClassificationReference.</Documentation>
+		</DocLocalization>
+		<DocLocalization Locale="ja-JP">
+			<Documentation>IfcBuildingオブジェクトに関する共通プロパティセット定義。建物ナンバーはIfcBuilding.Name、建物名称はIfcBuilding.LondName、そして記述またはコメントはIfcBuilding.Descriptionで設定する。実際の建物に関する数量、例えば建物周囲長、建物面積、建物体積等はIfcElementQuantityで設定する。また、建築基準法の建物分類に関しては、IfcClassificationReferenceで設定する。</Documentation>
+		</DocLocalization>
+	</Localization>
 	<Properties>
+		<DocProperty xsi:nil="true" href="Reference_3mjCS0qSGHuO00025QrEV" />
 		<DocProperty xsi:nil="true" href="BuildingID_3rUNi0qSGHuO00025QrEV" />
 		<DocProperty xsi:nil="true" href="IsPermanentID_3wFYy0qSGHuO00025QrEV" />
-		<DocProperty xsi:nil="true" href="MainFireUse_2ZoE6K_tD5Wvml7hCcb8Lr" />
-		<DocProperty xsi:nil="true" href="AncillaryFireUse_2xkqV2ng1FywU3p68cW5H3" />
+		<DocProperty xsi:nil="true" href="ConstructionMethod_30kC0qSGHuO00025QrEV" />
+		<DocProperty xsi:nil="true" href="FireProtectionClass_03Bm20qSKHuO00025QrEV" />
 		<DocProperty xsi:nil="true" href="SprinklerProtection_07Mnu0qSKHuO00025QrEV" />
 		<DocProperty xsi:nil="true" href="SprinklerProtectionAutomatic_0C7z80qSKHuO00025QrEV" />
 		<DocProperty xsi:nil="true" href="OccupancyType_0GI__0qSKHuO00025QrEV" />
 		<DocProperty xsi:nil="true" href="GrossPlannedArea_0L4AE0qSKHuO00025QrEV" />
+		<DocProperty xsi:nil="true" href="NetPlannedArea_0PFC40qSKHuO00025QrEV" />
 		<DocProperty xsi:nil="true" href="NumberOfStoreys_0TQDw0qSKHuO00025QrEV" />
 		<DocProperty xsi:nil="true" href="YearOfConstruction_0XbFm0qSKHuO00025QrEV" />
+		<DocProperty xsi:nil="true" href="YearOfLastRefurbishment_0cMR00qSKHuO00025QrEV" />
 		<DocProperty xsi:nil="true" href="IsLandmarked_0gXSs0qSKHuO00025QrEV" />
 	</Properties>
 </DocPropertySet>

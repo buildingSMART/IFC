@@ -1,1 +1,0 @@
-﻿Categorization of the required properties of an entity that are used to determine what the level of the requirement is, to enable its performance/quality to be determined, assessed, or measured, and compared against the requirement, and then to analyze whether the entity is suitable for use within a given context..

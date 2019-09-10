@@ -1,19 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralLinearAction" UniqueId="8db6f32f-4084-4717-8dfb-ad3400beaf4c" DiagramNumber="4" BaseDefinition="IfcStructuralAction" EntityFlags="229">
-	<Subtypes>
-		<DocSubtype UniqueId="0npmMx7ZvEahqZuBmQ4g5h" DefinedType="IfcStructuralLinearActionVarying" />
-	</Subtypes>
-	<Attributes>
-		<DocAttribute Name="ProjectedOrTrue" UniqueId="2PE9peNmvBhRgsROJ$NbR_" DefinedType="IfcProjectedOrTrueLengthEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>Defines if the load values are given by using the length of the member on which they act (true length) or by using the projected length resulting from the loaded member and the global project coordinate system. It is only considered if the global project coordinate system is used, and if the action is of type IfcStructuralLinearAction or IfcStructuralPlanarAction.</Documentation>
-		</DocAttribute>
-	</Attributes>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralLinearAction" UniqueId="8db6f32f-4084-4717-8dfb-ad3400beaf4c" DiagramNumber="4" BaseDefinition="IfcStructuralCurveAction" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="gleichmäßige Linienlast" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="5376.9437" Y="1622.2363" Width="224.2578" Height="100" />
 	<WhereRules>
-		<DocWhereRule Name="WR61" UniqueId="0veAwBdvz18BIftY1Wxpb9">
-			<Documentation>A linear action should place either a linear force or a temperature force.</Documentation>
-			<Expression>SIZEOF([&apos;IFCSTRUCTURALLOADRESOURCE.IFCSTRUCTURALLOADLINEARFORCE&apos;,
-        &apos;IFCSTRUCTURALLOADRESOURCE.IFCSTRUCTURALLOADTEMPERATURE&apos;]
-* TYPEOF(SELF\IfcStructuralActivity.AppliedLoad)) = 1</Expression>
+		<DocWhereRule Name="SuitableLoadType" UniqueId="a69ea701-c378-456d-8595-4bbfec56bd21">
+			<Documentation>A linear action shall place either a linear force or a temperature load.</Documentation>
+			<Expression>SIZEOF([&apos;IFCSTRUCTURALLOADRESOURCE.IFCSTRUCTURALLOADLINEARFORCE&apos;, &apos;IFCSTRUCTURALLOADRESOURCE.IFCSTRUCTURALLOADTEMPERATURE&apos;] * TYPEOF(SELF\IfcStructuralActivity.AppliedLoad)) = 1</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="ConstPredefinedType" UniqueId="92d46c7f-76c9-40e7-b309-6a8e9c9587b1">
+			<Documentation>This curve action subtype is restricted to constant load distribution over its domain.</Documentation>
+			<Expression>SELF\IfcStructuralCurveAction.PredefinedType = IfcStructuralCurveActivityTypeEnum.CONST</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
