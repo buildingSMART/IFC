@@ -9,7 +9,7 @@ It is used to define a mechanical fastener type specification indicating the spe
 
 > HISTORY&nbsp; New entity in IFC2x2
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Supertype changed from _IfcFastenerType_ to _IfcElementComponentType_. Attributes _PredefinedType_, _NominalDiameter_, _NominalLength_ added.
 
 { .use-head}

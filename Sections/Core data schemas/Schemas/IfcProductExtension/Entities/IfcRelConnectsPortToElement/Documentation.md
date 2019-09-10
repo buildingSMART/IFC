@@ -6,5 +6,5 @@ Ports contained in different elements are connected to each other using the _Ifc
 
 > HISTORY&nbsp; New entity in IFC2x2.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The objectified relation _IfcRelConnectsPortToElement_ is now specialized for use of dynamically connected ports. For fixed ports, use _IfcRelNests_ instead. Previously this objectified relationship _IfcRelConnectsPortToElement_ defined the relationship that is made between a port and the _IfcElement_ in which it is contained. It is a 1 to 1 relationship. The _IfcRelConnectsPortToElement_ established a whole part relationship between the element and its port. The port is used as the means to connect to other ports in other elements.

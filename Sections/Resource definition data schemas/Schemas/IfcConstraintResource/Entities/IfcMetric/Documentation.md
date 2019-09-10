@@ -6,5 +6,5 @@ The aim of _IfcMetric_ is to capture the quantitative aspects of a constraint.
 
 > HISTORY&nbsp; New entity in IFC2.0.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; ReferencePath attribute added for indicating the value to be constrained along a path of attribute references.

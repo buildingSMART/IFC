@@ -33,7 +33,7 @@
 		</DocAttribute>
 		<DocAttribute Name="TimeOfApproval" UniqueId="998d7843-2f2d-4e56-a224-6d334af4ac2e" DefinedType="IfcDateTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Date and time when the result of the approval process is produced.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; Attribute data type changed to _IfcDateTime_ using ISO 8601 representation, renamed from ApprovalDateTime and made OPTIONAL.</Documentation>
 			<DiagramLine>
 				<DocPoint X="185.70883" Y="306.62714" />
@@ -67,7 +67,7 @@
 		</DocAttribute>
 		<DocAttribute Name="RequestingApproval" UniqueId="4b0f76d0-86d3-4da8-aa4a-be82b503cabb" DefinedType="IfcActorSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The actor that is acting in the role specified at _IfcOrganization_ or individually at _IfcPerson_ and requesting an approval.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute for approval request replacing IfcApprovalActorRelationship (being deleted).</Documentation>
 			<DiagramLine>
 				<DocPoint X="328.85106" Y="892.38555" />
@@ -77,7 +77,7 @@
 		</DocAttribute>
 		<DocAttribute Name="GivingApproval" UniqueId="56400bef-4db8-4c65-ad92-c61fc8ee4850" DefinedType="IfcActorSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The actor that is acting in the role specified at _IfcOrganization_ or individually at _IfcPerson_ and giving an approval.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute for approval provision replacing IfcApprovalActorRelationship (being deleted).</Documentation>
 			<DiagramLine>
 				<DocPoint X="328.85106" Y="981.60965" />
@@ -87,7 +87,7 @@
 		</DocAttribute>
 		<DocAttribute Name="HasExternalReferences" UniqueId="8cd1b95c-03b1-4fbd-bb5e-86213dc0d6d2" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="32" AggregationType="3" AggregationFlag="0" Inverse="RelatedResourceObjects">
 			<Documentation>Reference to external references, e.g. library, classification, or document information, that are associated to the Approval.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New inverse attribute.</Documentation>
 			<DiagramLine>
 				<DocPoint X="115.19655" Y="1341.3337" />

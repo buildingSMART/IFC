@@ -14,5 +14,5 @@ The _IfcRoof_ shall either be represented:
 
 > HISTORY&nbsp; New entity in IFC2.0.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Attribute _ShapeType_ renamed to _PredefinedType_.

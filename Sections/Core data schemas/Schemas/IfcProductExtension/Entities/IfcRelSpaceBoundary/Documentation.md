@@ -97,5 +97,5 @@ The following constraints apply to the 2D curve representation:
 { .change-ifc2x}
 > IFC2x CHANGE The data type of the attribute_RelatedBuildingElement_ has been changed from _IfcBuildingElement_ to its supertype _IfcElement_. The data type of the attribute _ConnectionGeometry_ has been changed from _IfcConnectionSurfaceGeometry_ to its supertype _IfcConnectionGeometry_.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE The attribute _RelatedBuildingElement_ has been made mandatory. For virtual boundaries the reference to _IfcVirtualElement_ is now mandatory.

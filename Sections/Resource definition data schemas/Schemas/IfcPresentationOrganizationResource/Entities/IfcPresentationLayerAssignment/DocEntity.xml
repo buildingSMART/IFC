@@ -51,7 +51,7 @@
 	<WhereRules>
 		<DocWhereRule Name="ApplicableItems" UniqueId="10cf5a0c-f690-4dd1-aa55-ff6327d6f97e">
 			<Documentation>The items within the set of _AssignedItems_ that can be assigned to a presentation layer shall be geometric shape representation or representation items.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The where rule has been added.</Documentation>
 			<Expression>SIZEOF(QUERY(temp &lt;* AssignedItems | (
   SIZEOF(TYPEOF(temp) * [

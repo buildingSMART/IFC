@@ -6,5 +6,5 @@ The aim of _IfcObjective_ is to specify the purpose for which the constraint is 
 
 > HISTORY&nbsp; New entity in IFC2.0.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Attribute _BenchmarkValues_ modified to be a LIST of _IfcConstraint_, attribute _ResultValues_ replaced with _IfcLogicalOperatorEnum_.

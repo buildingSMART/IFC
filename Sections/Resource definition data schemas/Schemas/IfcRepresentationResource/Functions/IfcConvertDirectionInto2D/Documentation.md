@@ -2,4 +2,4 @@
 
 > NOTE&nbsp; This functions is currently solely used to determine the _TrueNorth_ direction in _IfcGeometricRepresentationSubContext_.
 
-> HISTORY&nbsp; New function in IFC2x4.
+> HISTORY&nbsp; New function in IFC4.

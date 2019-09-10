@@ -2,5 +2,5 @@
 
 > HISTORY&nbsp; New entity in IFC2x.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Added attribute _MessagingIDs_. Type of attribute _WWWHomePageURL_ compatibly changed from _IfcLabel_ to _IfcURIReference_.

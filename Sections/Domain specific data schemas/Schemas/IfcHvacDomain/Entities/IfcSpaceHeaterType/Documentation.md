@@ -8,5 +8,5 @@
 
 It is used to define a space heater type specification indicating the specific product information that is common to all occurrences of that product type. The **IfcSpaceHeaterType** may be declared within _IfcProject_ or _IfcProjectLibrary_ using _IfcRelDeclares_ and may be exchanged with or without occurrences of the type. Occurrences of **IfcSpaceHeaterType** are represented by instances of _IfcSpaceHeater_. Refer to the documentation at _IfcSpaceHeater_ for supported property sets, materials, composition, and ports.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE &nbsp;Supertype changed from _IfcEnergyConversionDeviceType_ to _IfcFlowTerminalType_

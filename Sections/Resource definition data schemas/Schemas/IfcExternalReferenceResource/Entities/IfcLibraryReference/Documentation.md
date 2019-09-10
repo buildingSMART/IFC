@@ -4,5 +4,5 @@ The _ifcLibraryReference_ additionally provides the capability to handle multili
 
 > HISTORY&nbsp; New entity in IFC2.0.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; _Description_ and _Language_ attribute added; _ReferencedLibrary_ attribute added (reversing previous ReferenceIntoLibrary inverse relationship).

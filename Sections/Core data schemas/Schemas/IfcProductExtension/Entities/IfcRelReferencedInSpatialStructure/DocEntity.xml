@@ -17,7 +17,7 @@
 		</DocAttribute>
 		<DocAttribute Name="RelatingStructure" UniqueId="8f9271fa-45d6-475e-a698-053883f165f4" DefinedType="IfcSpatialElement" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="hidden">
 			<Documentation>Spatial structure element, within which the element is referenced. Any element can be contained within zero, one or many elements of the project spatial and zoning structure.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute _RelatingStructure_ as been promoted to the new supertype _IfcSpatialElement_ with upward compatibility for file based exchange.</Documentation>
 			<DiagramLine>
 				<DocPoint X="4557.0636" Y="3710.0901" />
@@ -29,7 +29,7 @@
 	<WhereRules>
 		<DocWhereRule Name="AllowedRelatedElements" UniqueId="b358baba-d6d1-4723-98da-2c668760c1e6">
 			<Documentation>The relationship object shall not be used to include other spatial structure elements into a spatial structure element. The hierarchy of the spatial structure is defined using _IfcRelAggregates_. Exception: an _IfcSpace_ can be referenced by another spatial structure element, in particular by an _IfcSpatialZone_.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The relaxation to allow _IfcSpace_ has been included.</Documentation>
 			<Expression>SIZEOF(QUERY(temp &lt;* RelatedElements | (&apos;IFCPRODUCTEXTENSION.IFCSPATIALSTRUCTUREELEMENT&apos; IN TYPEOF(temp)) AND (NOT (&apos;IFCPRODUCTEXTENSION.IFCSPACE&apos; IN TYPEOF(temp)))
 )) = 0</Expression>

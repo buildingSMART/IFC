@@ -6,5 +6,5 @@ An _IfcCostItem_ can link one or many _IfcCostValue_'s representing a unit cost,
 
 > HISTORY&nbsp; New entity in IFC2.0.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Attribute _PredefinedType_, _CostValues_, and _CostQuantities_ added.

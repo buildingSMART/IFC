@@ -6,5 +6,5 @@ The source for the currency exchange is defined as an instance of _IfcLibraryInf
 
 > HISTORY&nbsp; New entity in IFC2x2.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Subtyped from _IfcResourceLevelRelationship_, attribute order changed.

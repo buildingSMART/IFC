@@ -2,5 +2,5 @@
 
 > HISTORY&nbsp; New enumeration in IFC2x2.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Renamed from _IfcStructuralCurveTypeEnum_.

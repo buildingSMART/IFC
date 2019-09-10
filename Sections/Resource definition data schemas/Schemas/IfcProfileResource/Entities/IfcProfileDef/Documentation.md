@@ -7,7 +7,7 @@
 
 > HISTORY&nbsp; New entity in IFC1.5, the capabilities have been extended in IFC2x. Profiles can now support swept surfaces and swept area solids with inner boundaries. It had been renamed from IfcAttDrivenProfileDef.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Changed from ABSTRACT to non-abstract for uses which do not require an explicitly defined geometry. Added inverse attributes _HasProperties_ and _HasExternalReference_.
 
 **Use in material association**

@@ -71,7 +71,7 @@ The _IfcPropertyBoundedValue_ allows for the specification of an interval for th
 { .change-ifc2x2}
 > IFC2x2 CHANGE&nbsp; The attribute type of the attribute _UpperBoundValue_ and _LowerBoundValue_ has been made optional with upward compatibility for file based exchange.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The attribute _SetPointValue_ has been added.
 
 { .spec-head}

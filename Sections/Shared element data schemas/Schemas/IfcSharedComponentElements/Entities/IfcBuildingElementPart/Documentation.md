@@ -4,5 +4,5 @@ The kind of building element part is further specified by a corresponding instan
 
 > HISTORY&nbsp; New entity in IFC2x2.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Moved from _IfcStructuralElementsDomain_ schema to _IfcSharedComponentElements_ schema, compatible change of supertype, attribute _PredefinedType_ added.

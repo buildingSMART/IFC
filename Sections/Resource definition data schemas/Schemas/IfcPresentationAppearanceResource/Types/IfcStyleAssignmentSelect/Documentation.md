@@ -5,7 +5,7 @@
 
 > HISTORY&nbsp; New select type in IFC4.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The select type has been introduced to provide an upward compatible improvement for assigning styles to a styled items.
 
 { .deprecated}

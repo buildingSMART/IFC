@@ -8,5 +8,5 @@ Decompositions imply a dependency, implying that the whole depends on the defini
 
 > HISTORY&nbsp; New entity in IFC2x.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE The attributes _RelatingObject_ and _RelatedObjects_ are demoted from the supertype _IfcRelDecomposes_.

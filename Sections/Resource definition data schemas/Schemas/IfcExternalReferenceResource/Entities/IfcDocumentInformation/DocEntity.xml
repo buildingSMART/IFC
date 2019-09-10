@@ -9,7 +9,7 @@
 	<Attributes>
 		<DocAttribute Name="Identification" UniqueId="fdc5fbd6-5bb9-4f9c-b478-d0ed07773f1f" DefinedType="IfcIdentifier" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Identifier that uniquely identifies a document.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; Attribute renamed from _DocumentId_.</Documentation>
 			<DiagramLine>
 				<DocPoint X="3876.3167" Y="1209.5134" />
@@ -35,7 +35,7 @@
 		</DocAttribute>
 		<DocAttribute Name="Location" UniqueId="494ea53e-4ee5-4c89-a31e-0732cd47caa0" DefinedType="IfcURIReference" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Resource identifier or locator, provided as URI, URN or URL, of the document information for online references.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute added at the place of the removed attribute _DocumentReferences_.</Documentation>
 			<DiagramLine>
 				<DocPoint X="3918.8635" Y="1799.7499" />
@@ -98,7 +98,7 @@
 		</DocAttribute>
 		<DocAttribute Name="CreationTime" UniqueId="6741b5b9-5fc6-4d0d-9d0b-735b3a4b1c71" DefinedType="IfcDateTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Date and time stamp when the document was originally created.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE The data type has been changed to _IfcDateTime_, the date time string according to ISO8601.</Documentation>
 			<DiagramLine>
 				<DocPoint X="4246.3167" Y="1534.0833" />
@@ -108,7 +108,7 @@
 		</DocAttribute>
 		<DocAttribute Name="LastRevisionTime" UniqueId="92c6d656-53f9-42d6-b541-130b4d316672" DefinedType="IfcDateTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Date and time stamp when this document version was created.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE The data type has been changed to _IfcDateTime_, the date time string according to ISO8601.</Documentation>
 			<DiagramLine>
 				<DocPoint X="4246.3167" Y="1627.4166" />
@@ -122,7 +122,7 @@
 
 &gt; EXAMPLE&amp;nbsp; &apos;image/png&apos; denotes an image type of png (Portable Network Graphics) subtype, &apos;application/pdf&apos; denotes an application specific type of pdf (Portable Document Format) subtype
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The data type has been changed from entity data type to _IfcIdentifier_.</Documentation>
 			<DiagramLine>
 				<DocPoint X="4061.3167" Y="1799.7499" />
@@ -133,7 +133,7 @@
 		</DocAttribute>
 		<DocAttribute Name="ValidFrom" UniqueId="260e8ab8-7a90-4161-bcac-6b2489ad061d" DefinedType="IfcDate" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Date when the document becomes valid.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE The data type has been changed to _IfcDate_, the date string according to ISO8601.</Documentation>
 			<DiagramLine>
 				<DocPoint X="3876.3167" Y="1531.4166" />
@@ -143,7 +143,7 @@
 		</DocAttribute>
 		<DocAttribute Name="ValidUntil" UniqueId="e572dd75-4081-4bab-bde6-f0ac7f237d08" DefinedType="IfcDate" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Date until which the document remains valid.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE The data type has been changed to _IfcDate_, the date string according to ISO8601.</Documentation>
 			<DiagramLine>
 				<DocPoint X="3876.3167" Y="1630.0833" />
@@ -174,7 +174,7 @@
 		</DocAttribute>
 		<DocAttribute Name="DocumentInfoForObjects" UniqueId="999d5137-72f3-4f77-84c9-a46462336d47" DefinedType="IfcRelAssociatesDocument" AttributeFlags="32" AggregationType="3" AggregationFlag="0" Inverse="RelatingDocument">
 			<Documentation>The document information with which objects are associated.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New inverse attribute.</Documentation>
 			<DiagramLine>
 				<DocPoint X="4234.0732" Y="1172.4166" />

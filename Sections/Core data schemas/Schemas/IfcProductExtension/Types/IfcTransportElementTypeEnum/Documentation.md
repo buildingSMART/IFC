@@ -2,5 +2,5 @@
 
 > HISTORY&nbsp; New enumeration in IFC2x.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; New enumerators CRANEWAY and LIFTINGGEAR added in IFC4.

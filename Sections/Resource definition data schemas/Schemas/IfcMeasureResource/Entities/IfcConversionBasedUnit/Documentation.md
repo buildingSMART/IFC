@@ -56,5 +56,5 @@
 { .change-ifc2x3}
 > IFC2x3 CHANGE&nbsp; Standard names of typical units added.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Further names added: square inch, square foot, square mile, square yard, cubic inch, cubic foot, cubic yard, fluid ounce UK/US, ton UK/US, degree.

@@ -37,7 +37,7 @@ A grid may support a rectangular layout as shown in Figure 1, a radial layout as
 
 > HISTORY&nbsp; New entity in IFC1.0.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The attribute _PredefinedType_ has been added at the end of the attribute list.
 
 &nbsp;
