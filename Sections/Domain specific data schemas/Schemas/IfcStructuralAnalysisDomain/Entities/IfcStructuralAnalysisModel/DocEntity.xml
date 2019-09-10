@@ -1,18 +1,72 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralAnalysisModel" UniqueId="2e087fc5-d46f-48f2-82c1-7c7b5162f4c3" DiagramNumber="5" BaseDefinition="IfcSystem" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStructuralAnalysisModel" Name="IfcStructuralAnalysisModel" UniqueId="2e087fc5-d46f-48f2-82c1-7c7b5162f4c3" DiagramNumber="1" BaseDefinition="IfcSystem" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Statisches Modell" Locale="de">
+			<Documentation>Idealisierung zur Berechnung der Auflagerreaktionen und des Kräfteverlaufs</Documentation>
+		</DocLocalization>
+		<DocLocalization Name="Modèle d&apos;analyse structurelle" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="127.75781" Y="261.09838" Width="338.40288" Height="371.23749" />
 	<Attributes>
 		<DocAttribute Name="PredefinedType" UniqueId="aaf6e058-ebfd-4b13-9c28-9e2226a7cd29" DefinedType="IfcAnalysisModelTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Defines the type of the structural analysis model.</Documentation>
+			<DiagramLine>
+				<DocPoint X="466.16069" Y="301.6655" />
+				<DocPoint X="724.86176" Y="301.6655" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="466.16069" Y="301.6655" Width="182" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="OrientationOf2DPlane" UniqueId="3d198530-7da9-431b-a6f6-2a133dfe8481" DefinedType="IfcAxis2Placement3D" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>If the selected model type (PredefinedType) describes a 2D system the orientation is needed to define the upright direction to the focused plane (z-axes). This is needed because all data for the structural analysis model (structural members, structural activities) are defined by using 3-D space. The orientation is given in relation to the coordinate system of the project. By 3D systems this value is not asserted.</Documentation>
+		<DocAttribute Name="OrientationOf2DPlane" UniqueId="3d198530-7da9-431b-a6f6-2a133dfe8481" DefinedType="IfcAxis2Placement3D" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>If the selected model type (_PredefinedType_) describes a 2D system, the orientation defines
+the analysis plane (P[1], P[2]) and the normal to the analysis plane (P[3]).  This is needed because
+structural items and activities are always defined in three-dimensional space even if they are
+meant to be analysed in a two-dimensional manner.
+
+* In case of predefined type IN_PLANE_LOADING_2D, the analysis is to be performed within the projection into the P[1], P[2] plane.
+* In case of predefined type OUT_PLANE_LOADING_2D, only the P[3] component of loads and their effects is meant to be analyzed. This is used for beam grids and for typical slab analyses.
+* In case of predefined type LOADING_3D, _OrientationOf2DPlane_ shall be omitted.</Documentation>
+			<DiagramLine>
+				<DocPoint X="466.16069" Y="418.95989" />
+				<DocPoint X="724.89114" Y="418.95989" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="460.8273567" Y="410.95989" Width="249" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="LoadedBy" UniqueId="db84f7ed-e47b-43d7-a93c-f42d6aa1eda4" DefinedType="IfcStructuralLoadGroup" AttributeFlags="1" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
 			<Documentation>References to all load groups to be analyzed.</Documentation>
+			<DiagramLine>
+				<DocPoint X="153.47639" Y="632.33587" />
+				<DocPoint X="153.47639" Y="1047.46215" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="268.14306" Y="670.779975" Width="198" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="HasResults" UniqueId="a3f409db-16db-429e-8788-f03d45464f8a" DefinedType="IfcStructuralResultGroup" AttributeFlags="1" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
 			<Documentation>References to all result groups available for this structural analysis model.</Documentation>
+			<DiagramLine>
+				<DocPoint X="440.44207" Y="632.33587" />
+				<DocPoint X="440.44207" Y="831.59029" />
+				<DocPoint X="1225.26198" Y="831.59029" />
+				<DocPoint X="1225.26198" Y="1476.1884" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="440.44207" Y="819.920019" Width="212" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="SharedPlacement" UniqueId="49d1b310-6cdc-4f50-8efa-70ff55bba65e" DefinedType="IfcObjectPlacement" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>Object placement which shall be common to all items and activities which are grouped into this instance of _IfcStructuralAnalysisModel_.  This placement establishes a coordinate system which is referred to as &apos;global coordinate system&apos; in use definitions of various classes of structural items and activities.
+
+&gt; NOTE&amp;nbsp; Most commonly, but not necessarily, the _SharedPlacement_ is an _IfcLocalPlacement_ whose z axis is parallel with the z axis of the _IfcProject_&apos;s world coordinate system and directed like the WCS z axis (i.e. pointing &quot;upwards&quot;) or directed against the WCS z axis (i.e. points &quot;downwards&quot;).
+
+&gt; NOTE&amp;nbsp; Per informal proposition, this attribute is **not optional** as soon as at least one _IfcStructuralItem_ is grouped into the instance of _IfcStructuralAnalysisModel_.</Documentation>
+			<DiagramLine>
+				<DocPoint X="466.16069" Y="568.29609" />
+				<DocPoint X="724.82214" Y="568.29609" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="461.0911394" Y="565.7613147" Width="203" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="HasObjectType" UniqueId="a24457b5-3bb3-4650-8328-b144afbdebad">
+			<Documentation>The attribute ObjectType shall be given if the predefined type is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcAnalysisModelTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

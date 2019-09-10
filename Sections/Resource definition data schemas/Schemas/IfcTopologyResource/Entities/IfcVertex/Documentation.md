@@ -1,14 +1,13 @@
-﻿**Definition from ISO/CD 10303-42:1992**: A vertex is the topological construct corresponding to a point. It has dimensionality 0 and extent 0. The domain of a vertex, if present, is a point in m dimensional real space _R^M^_; this is represented by the vertex point subtype.
+﻿{ .extDef}
+> NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
+> A vertex is the topological construct corresponding to a point. It has dimensionality 0 and extent 0. The domain of a vertex, if present, is a point in m dimensional real space _R^M^_; this is represented by the vertex point subtype.
 
-> <font color="#0000FF" size="-1">NOTE Corresponding STEP entity:
-		  vertex. Please refer to ISO/IS 10303-42:1994, p. 129 for the final definition
-		  of the formal standard. </font>
-> 
-> <font color="#0000FF" size="-1">HISTORY New Entity in IFC Release 2.0
-		  </font>
->
+> NOTE&nbsp; Entity adapted from **vertex** defined in ISO 10303-42.
 
-**Informal proposition**:
+> HISTORY&nbsp; New entity in IFC2.0
+
+{ .spec-head}
+Informal Propositions:
 
 1. The vertex has dimensionality 0. This is a fundamental property of the vertex.
 2. The extent of a vertex is defined to be zero.

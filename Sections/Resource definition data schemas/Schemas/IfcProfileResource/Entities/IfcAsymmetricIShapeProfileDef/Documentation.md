@@ -1,54 +1,25 @@
-﻿**Definition
-from IAI**: The _IfcAsymmetricIShapeProfileDef_ defines a section profile that provides the defining parameters of an asymmetric I-shaped section to be used by the swept area solid. The bottom flange is always wider than the top flange. Its parameters and orientation relative to the position coordinate system are according to the following illustration. The centre of the position coordinate system is in the profiles centre of the <span style="text-decoration: line-through;">gravity</span> bounding box.
+﻿_IfcAsymmetricIShapeProfileDef_ defines a section profile that provides the defining parameters of a singly symmetric I-shaped section. Its parameters and orientation relative to the position coordinate system are according to the following illustration. The centre of the position coordinate system is in the profile's centre of the bounding box.
 
-The centre of gravity, if given, is located in x direction within the center of the bounding box, and in y-direction along the negative y axis, the offset value is given by the offset parameter<span style="font-style: italic;"> </span>_CentreOfGravityInY._
+The overall width of the profile is implicitly given by the maximum of the bottom flange width and the top flange width.
 
-> <font size="-1">NOTE: The inherited
-attributes </font><font size="-1">are used to
-define:<br>
-  </font><ul>
-    <li><font size="-1"><i>OverallWidth -- </i></font><font size="-1"><i>BottomFlangeWidth</i></font></li>
-    <li><font size="-1"><i>FlangeThickness</i>
--- </font><font size="-1"><i>BottomFlangeThickness</i></font></li>
-    <li><font size="-1"><i>FilletRadius</i>
--- <i>BottomFlangeFilletRadius</i>.</font></li>
-  </ul>
+_IfcAsymmetricIShapeProfileDef_ can also be used to model rail profiles if the application scenario does not require a full explicit shape model of the rail profile. Alternatively, _IfcArbitraryClosedProfileDef_ can be used to provide the exact shape of rail profiles. Either way, a reference to an external document or library should be provided to further define the profile as described at _IfcProfileDef_.
 
-> <small><font color="#0000ff">HISTORY&nbsp;
-New entity in Release IFC2x Edition 2.</font></small>  
->   
-> <small><font color="#ff0000">IFC2x Edition 3 CHANGE&nbsp; All profile
-origins are now in the center of the bounding box. The attribute <i>CentreOfGravityInY</i>
-has been made OPTIONAL. Upward compatibility for file based exchange is
-guaranteed.</font></small>
+> HISTORY&nbsp; New entity in IFC2x2.
 
-**Illustration**:
+{ .change-ifc2x3}
+> IFC2x3 CHANGE&nbsp; All profile origins are now in the center of the bounding box. The attribute _CentreOfGravityInY_ has been made OPTIONAL.
 
-<table style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; text-align: left; width: 420px;"><a href="drawings/IfcAsymmetricIShapeProfileDef.dwf"><span style="text-decoration: underline;"><img style="border: 0px solid ; width: 400px; height: 300px;" alt="asymmetric I shape profile" src="figures/ifcasymmetricishapeprofiledef.gif"></span></a></td>
-      <td style="vertical-align: top; text-align: left;">
-      <p><u>Position</u> <br>
-The parameterized profile defines its own position coordinate system.
-The underlying
-coordinate system is defined by the swept area solid
-that uses the profile definition. It is the xy plane of:</p>
-      <ul>
-        <li><i>IfcSweptAreaSolid.Position</i></li>
-      </ul>
-by using offsets of the position location,
-the parameterized profile
-can be positioned centric (using x,y offsets = 0.), or at any position
-relative to the profile. Explicit coordinate offsets are used to define
-cardinal points (e.g. upper-left bound).<span style="font-style: italic;"></span>
-      <p><u>Parameter</u> <br>
-The parameterized profile
-is defined by a set of parameter attributes, see attribute definition
-below.</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; Supertype changed from _IfcIShapeProfileDef_ to _IfcParameterizedProfileDef_. Attributes which were inherited from _IfcIShapeProfileDef_ are now defined directly at _IfcAsymmetricIShapeProfileDef_ and have been partially renamed but were not reordered.  
+> Bottom flange may be narrower than top flange.  
+> Type of _TopFlangeFilletRadius_ relaxed to allow for zero radius.  
+> Trailing attribute _CentreOfGravityInY_ deleted, use respective property in _IfcExtendedProfileProperties_ instead.  
+> Attributes _BottomFlangeEdgeRadius_, _BottomFlangeSlope_, _TopFlangeEdgeRadius_, _TopFlangeSlope_ added.
 
-Table: Parameters of asymmetric I-shaped section definition
+Figure 1 illustrates parameters of the asymmetric I-shaped section definition. The parameterized profile defines its own position coordinate system. The underlying coordinate system is defined by the swept area solid that uses the profile definition. It is the xy plane of:
+
+* _IfcSweptAreaSolid.Position_
+
+By using offsets of the position location, the parameterized profile can be positioned centric (using x,y offsets = 0.), or at any position relative to the profile. The parameterized profile is defined by a set of parameter attributes. In the illustrated example, the 'CentreOfGravityInY' property in _IfcExtendedProfileProperties_, if provided, is negative.
+
+!["asymmetric I shape profile"](../../../../../../figures/ifcasymmetricishapeprofiledef.gif "Figure 1 &mdash; Assymetric I-shape profile")

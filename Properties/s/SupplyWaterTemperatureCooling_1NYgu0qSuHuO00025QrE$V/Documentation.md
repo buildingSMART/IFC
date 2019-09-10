@@ -1,1 +1,1 @@
-﻿Supply water temperature in cooling mode
+﻿Supply water temperature in cooling mode.

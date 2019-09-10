@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSurfaceReinforcementArea" UniqueId="5c929647-20a8-4225-a930-0d718d2b60e1" DiagramNumber="2" BaseDefinition="IfcStructuralLoadOrResult" EntityFlags="237">
+	<Localization>
+		<DocLocalization Name="Oberfläche - Bewehrungsfläche" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1836.7328" Y="224.15491" Width="400.43595" Height="269.84069" />
+	<Attributes>
+		<DocAttribute Name="SurfaceReinforcement1" UniqueId="1659501c-1100-4ab7-b15a-c0365324dcb9" DefinedType="IfcLengthMeasure" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="3">
+			<Documentation>Reinforcement at the face of the member which is located at the side of the positive local z direction of the surface member.  Specified as area per length, e.g. square metre per metre (hence length measure, e.g. metre).  The reinforcement area may be specified for two or three directions of reinforcement bars.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2237.1688" Y="257.78932" />
+				<DocPoint X="2763.48095" Y="257.78932" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2179.755468" Y="248.8731297" Width="344" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="SurfaceReinforcement2" UniqueId="515bb7dd-3c55-498f-b0c9-0ac79b544936" DefinedType="IfcLengthMeasure" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="3">
+			<Documentation>Reinforcement at the face of the member which is located at the side of the negative local z direction of the surface member.  Specified as area per length, e.g. square metre per metre (hence length measure, e.g. metre).  The reinforcement area may be specified for two or three directions of reinforcement bars.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2237.1688" Y="355.4633" />
+				<DocPoint X="2763.43346" Y="355.4633" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2186.124176" Y="350.4082658" Width="344" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="ShearReinforcement" UniqueId="dd92eb3e-9d3f-4315-abb6-94152ed4c09f" DefinedType="IfcRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Shear reinforcement.  Specified as area per area, e.g. square metre per square metre (hence ratio measure, i.e. unitless).</Documentation>
+			<DiagramLine>
+				<DocPoint X="2237.1688" Y="453.28851" />
+				<DocPoint X="2548.2679" Y="453.28851" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2237.33757046" Y="449.6920424" Width="234" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="SurfaceAndOrShearAreaSpecified" UniqueId="414313d0-7902-4e69-9f80-c6f1a5603b76">
+			<Documentation>At least one of the reinforcement area attributes shall be specified.</Documentation>
+			<Expression>EXISTS(SurfaceReinforcement1) OR EXISTS(SurfaceReinforcement2) OR EXISTS(ShearReinforcement)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="NonnegativeArea1" UniqueId="3802c361-3db7-4dec-8d95-183bba58e4cc">
+			<Documentation>Surface reinforcement area must not be less than 0.</Documentation>
+			<Expression>(NOT EXISTS(SurfaceReinforcement1)) OR (
+    (SurfaceReinforcement1[1] &gt;= 0.) AND
+    (SurfaceReinforcement1[2] &gt;= 0.) AND
+    ((SIZEOF(SurfaceReinforcement1) = 1) OR (SurfaceReinforcement1[1] &gt;= 0.))
+)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="NonnegativeArea2" UniqueId="e8de28a7-458c-4899-b802-a872f6016d84">
+			<Documentation>Surface reinforcement area must not be less than 0.</Documentation>
+			<Expression>(NOT EXISTS(SurfaceReinforcement2)) OR (
+    (SurfaceReinforcement2[1] &gt;= 0.) AND
+    (SurfaceReinforcement2[2] &gt;= 0.) AND
+    ((SIZEOF(SurfaceReinforcement2) = 1) OR (SurfaceReinforcement2[1] &gt;= 0.))
+)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="NonnegativeArea3" UniqueId="2ee3b061-f84e-4847-a1c3-4859020aac94">
+			<Documentation>Shear reinforcement area must not be less than 0.</Documentation>
+			<Expression>(NOT EXISTS(ShearReinforcement)) OR (ShearReinforcement &gt;= 0.)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

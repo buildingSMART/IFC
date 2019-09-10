@@ -1,11 +1,9 @@
-﻿**Definition from ISO/CD 10303-41:1992**: An SI unit is the fixed quantity used as a standard in terms of which items are measured as defined by ISO 1000 (clause 2).
+﻿The _IfcSIUnit_ covers both standard base SI units such as meter and second, and derived SI units such as Pascal, square meter and cubic meter.
 
-_IfcSIUnit_ covers both standard base SI units, like meter and second, and derived SI units, like Pascal, square meter and cubic meter.
+{ .extDef}
+> NOTE&nbsp; Definition according to ISO/CD 10303-41:1992  
+> An SI unit is the fixed quantity used as a standard in terms of which items are measured as defined by ISO 1000 (clause 2).
 
-> <font size="-1">
-  NOTE Corresponding STEP name: SI-unit, please refer to ISO/IS 10303-41:1994
-  for the final definition of the formal standard.
-</font>
+> NOTE&nbsp; Corresponding ISO 10303 name: si_unit, please refer to ISO/IS 10303-41 for the final definition of the formal standard.
 
-> <font size="-1" color="#0000FF">HISTORY New entity in IFC Release 1.5.1.
-</font>
+> HISTORY&nbsp; New entity in IFC1.5.1.

@@ -1,55 +1,67 @@
-﻿Generalization of all transport related objects that move people, animals or goods within a building or building complex. The _IfcTransportElement_ defines the occurrence of a covering type, that (if given) is expressed by the _IfcTransportElementType_.
+﻿A transport element is a generalization of all transport related objects that move people, animals or goods within a building or building complex. The _IfcTransportElement_ defines the occurrence of a transport element, that (if given), is expressed by the _IfcTransportElementType_.
 
-> <font size="-1">EXAMPLE: Transportation elements include
-      elevator (lift), escalator, moving walkway, etc.</font>
+> EXAMPLE&nbsp; Transportation elements include elevator (lift), escalator, moving walkway, etc.
 
-> <font color="#FF0000" size="-1">IFC2x PLATFORM CHANGE: The
-      attribute <i>OperationType</i> is now optional and should
-      only be inserted when there is no type information, given
-      by <i>IfcTransportElementType</i>, is assigned to the
-      <i>IfcTransportElement</i> occurrence by
-      <i>IfcRelDefinesByType</i>.</font>
+> NOTE&nbsp; More detailed equipment that may be a part of a transportation device, like a lifting hook, is defined as _IfcDiscreteAccessory_. It maybe included as a part of the _IfcTransportElement_ by virtue of the objectified relationship _IfcRelAggregates_.
 
-> <font color="#0000FF" size="-1">HISTORY New entity in IFC
-        Release 2x.</font>
-> 
+Depending on local classification systems transport elements and transportation systems in buildings are either considered as part of a building system, or as part of a building service system. Within IFC they are considered as part of a building system and may have to be mapped appropriately.
 
+> HISTORY&nbsp; New entity in IFC2x.
 
-****Property Set Use Definition****:
+{ .change-ifc2x}
+> IFC2x CHANGE&nbsp; The attribute _PredefinedType_ (previously OperationType) is made optional.
 
-The property sets relating to the _IfcTransportElement_ are defined by the _IfcPropertySet_ and attached by the _IfcRelDefinesByProperties_ relationship. It is accessible by the inverse _IsDefinedBy_ relationship. The following property set definitions specific to the _IfcTransportElement_ are part of this IFC release:
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; The last attributes CapacityByWeight and CapacityByNumber are removed, use Pset_TransportElementCommon instead.
 
-*  [Pset_TransportElementCommon](../../psd/IfcProductExtension/Pset_TransportElementCommon.xml){ target="SOURCE"}: common property set for all transport element occurrences 
-*  [Pset_TransportElementElevator](../../psd/IfcProductExtension/Pset_TransportElementElevator.xml){ target="SOURCE"}: specific property set for all occurrences of transport elements with the _PredefinedType_: ELEVATOR 
+___
+## Common Use Definitions
+The following concepts are inherited at supertypes:
 
-****Geometry Use Definitions****:
+* _IfcRoot_: [Identity](../../templates/identity.htm), [Revision Control](../../templates/revision-control.htm)
+* _IfcElement_: [Product Placement](../../templates/product-placement.htm), [Box Geometry](../../templates/box-geometry.htm), [FootPrint Geometry](../../templates/footprint-geometry.htm), [Body SurfaceOrSolidModel Geometry](../../templates/body-surfaceorsolidmodel-geometry.htm), [Body SurfaceModel Geometry](../../templates/body-surfacemodel-geometry.htm), [Body Tessellation Geometry](../../templates/body-tessellation-geometry.htm), [Body Brep Geometry](../../templates/body-brep-geometry.htm), [Body AdvancedBrep Geometry](../../templates/body-advancedbrep-geometry.htm), [Body CSG Geometry](../../templates/body-csg-geometry.htm), [Mapped Geometry](../../templates/mapped-geometry.htm)
 
-The geometric representation of _IfcTransportElement_ is given by the _IfcProductDefinitionShape_, allowing multiple geometric representation.
+[![Image](../../../img/diagram.png)&nbsp;Instance diagram](../../../annex/annex-d/common-use-definitions/ifctransportelement.htm)
 
-**Local Placement**
+{ .use-head}
+Object Typing
 
-The local placement for _IfcTransportElement_ is defined in its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_, which defines the local coordinate system that is referenced by all geometric representations.
+The [Object Typing](../../templates/object-typing.htm) concept applies to this entity.
 
-* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point (if given) to the local placement of the same _IfcSpatialStructureElement_ , which is used in the _ContainedInStructure_ inverse attribute, or to a spatial structure element at a higher level, referenced by that. 
-* If the relative placement is not used, the absolute placement is defined within the world coordinate system. 
+_IfcTransportElement_ defines the occuurence of any transportation device, common information about transportation device types (or styles) is handled by _IfcTransportElementType_. The _IfcTransportElementType_ (if present) may establish the common&nbsp;type name, usage (or predefined) type, common material layer set, common set of properties and common shape representations (using _IfcRepresentationMap_). The _IfcTransportElementType_ is attached using the _IfcRelDefinedByType.RelatingType_ objectified relationship and is accessible by the inverse _<font color="#0000FF">IsTypedBy</font>_ attribute.
 
-**SurfaceModel Representation**
+If no _IfcTransportElementType_ is attached&nbsp;(i.e. if only occurrence information is given) the _PredefinedType_ should be provided. If set to .USERDEFINED. a user defined value can be provided by the _ObjectType_ attribute.
 
-Any _IfcTransportElement_ (so far no further constraints are defined at the level of its subtypes) may be represented as a single or multiple surface models, based on either shell or face based models. Then the following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
+  
+  
+{ .use-head}
+Property Sets for Objects
 
-*  _RepresentationIdentifier_ : 'Body' 
-*  _RepresentationType_ : 'SurfaceModel' 
+The [Property Sets for Objects](../../templates/property-sets-for-objects.htm) concept applies to this entity as shown in Table 1.
 
-**Brep Representation**
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PredefinedType</b></th><th><b>Name</b></th></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcproductextension/Pset_TransportElementCommon.xml">Pset_TransportElementCommon</a></td></tr>
+<tr><td><a href="../../ifcproductextension/lexical/ifctransportelementtypeenum.htm">ELEVATOR</a></td><td><a href="../../psd/ifcproductextension/Pset_TransportElementElevator.xml">Pset_TransportElementElevator</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_Condition.xml">Pset_Condition</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcproductextension/Pset_EnvironmentalImpactIndicators.xml">Pset_EnvironmentalImpactIndicators</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcproductextension/Pset_EnvironmentalImpactValues.xml">Pset_EnvironmentalImpactValues</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_ManufacturerOccurrence.xml">Pset_ManufacturerOccurrence</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_ManufacturerTypeInformation.xml">Pset_ManufacturerTypeInformation</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedmgmtelements/Pset_PackingInstructions.xml">Pset_PackingInstructions</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_ServiceLife.xml">Pset_ServiceLife</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_Warranty.xml">Pset_Warranty</a></td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 1 &mdash; IfcTransportElement Property Sets for Objects</p></td></tr></table>
 
-Any _IfcTransportElement_ (so far no further constraints are defined at the level of its subtypes) may be represented as a single or multiple Boundary Representation elements (which are restricted to faceted Brep with or without voids). Then the following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
+  
+  
+{ .use-head}
+Spatial Containment
 
-*  _RepresentationIdentifier_ : 'Body' 
-*  _RepresentationType_ : 'Brep' 
+The [Spatial Containment](../../templates/spatial-containment.htm) concept applies to this entity.
 
-**MappedRepresentation**
-
-The new mapped item, _IfcMappedItem_, should be used if appropriate as it allows for reusing the geometry definition of the property element type at occurrences of the same equipment type. Then the following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
-
-*  _RepresentationIdentifier_ : 'Body' 
-*  _RepresentationType_ : 'MappedRepresentation'
+* The _IfcTransportElement_ is placed within the project spatial hierarchy using the objectified relationship _IfcRelContainedInSpatialStructure_, refering to it by its inverse attribute _SELF\IfcElement.ContainedInStructure_. Subtypes of&nbsp;_IfcSpatialStructureElement_ are valid spatial containers, with _IfcBuilding_ being the default container.

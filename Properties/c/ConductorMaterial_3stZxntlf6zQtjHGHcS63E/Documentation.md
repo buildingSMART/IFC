@@ -1,1 +1,0 @@
-﻿Type of material from which the conductor is constructed. Such as Aluminium or Copper

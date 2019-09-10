@@ -1,1 +1,1 @@
-﻿Level of the lowest part of the cross section. (BS6100 250 8001)
+﻿Level of the lowest part of the cross section as measured from ground level.

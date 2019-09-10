@@ -1,20 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAxis1Placement" UniqueId="c8b3d74c-f4b5-470f-9869-a0abb477b699" DiagramNumber="3" BaseDefinition="IfcPlacement" EntityFlags="109">
+	<Localization>
+		<DocLocalization Name="Einfügepunkt mit einer Achse" Locale="de" />
+		<DocLocalization Name="Position et direction d&apos;un axe" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="3288.8655" Y="610.07136" Width="360.66667" Height="100" />
 	<Attributes>
-		<DocAttribute Name="Axis" UniqueId="c014a489-c24c-47b9-980e-1ccb8510c66b" DefinedType="IfcDirection" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Axis" UniqueId="c014a489-c24c-47b9-980e-1ccb8510c66b" DefinedType="IfcDirection" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>The direction of the local Z axis.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3451.4974" Y="710.07136" />
+				<DocPoint X="3451.4974" Y="951.47137" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3494.164067" Y="667.404693" Width="52" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Z" UniqueId="a00a3506-65a7-4932-9af4-43e2d794394c" DefinedType="IfcDirection" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The normalized direction of the local Z axis. It is either identical with the Axis value, if given, or it defaults to [0.,0.,1.]</Documentation>
 			<Derived>NVL (IfcNormalise(Axis), IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([0.0,0.0,1.0]))</Derived>
+			<DiagramLine>
+				<DocPoint X="3534.4871" Y="710.07136" />
+				<DocPoint X="3534.4871" Y="951.47137" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3603.820433" Y="720.738027" Width="97" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="3lhnaNUef5v8MrxjNc22Jy">
+		<DocWhereRule Name="AxisIs3D" UniqueId="86d7df19-d6d5-4531-add1-3f79cf4254aa">
 			<Documentation>The Axis when given should only reference a three-dimensional IfcDirection.</Documentation>
 			<Expression>(NOT (EXISTS (Axis))) OR (Axis.Dim = 3)</Expression>
 		</DocWhereRule>
-		<DocWhereRule Name="WR2" UniqueId="1S9nYFh_D3RQuEgzW7STD9">
+		<DocWhereRule Name="LocationIs3D" UniqueId="800f9182-3262-4615-95c0-4e23d5896f7c">
 			<Documentation>The Cartesian point defining the Location shall have the dimensionality of 3.</Documentation>
 			<Expression>SELF\IfcPlacement.Location.Dim = 3</Expression>
 		</DocWhereRule>

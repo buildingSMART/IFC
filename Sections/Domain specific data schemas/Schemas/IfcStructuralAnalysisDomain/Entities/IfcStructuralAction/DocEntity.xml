@@ -1,16 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralAction" UniqueId="773e5eda-f463-41ec-a0f4-14681750a780" DiagramNumber="4" BaseDefinition="IfcStructuralActivity" EntityFlags="141">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralAction" UniqueId="773e5eda-f463-41ec-a0f4-14681750a780" DiagramNumber="4" BaseDefinition="IfcStructuralActivity" EntityFlags="133">
+	<Localization>
+		<DocLocalization Name="Belastung / Einwirkung (allgemein)" Locale="de" />
+		<DocLocalization Name="Action structurelle" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="4863.5274" Y="1116.1291" Width="200" Height="123.80154" />
 	<Subtypes>
 		<DocSubtype UniqueId="b48ff75f-886d-4b06-9bcb-5d8a3ce5f0bc" DefinedType="IfcStructuralPointAction" />
-		<DocSubtype UniqueId="2V0x50MLPChx0Pg7sAnPcF" DefinedType="IfcStructuralLinearAction" />
-		<DocSubtype UniqueId="1b8CLiyfjA$PINz9tL9Pe9" DefinedType="IfcStructuralPlanarAction" />
+		<DocSubtype UniqueId="269c03e1-3e51-4753-9842-a5551dcb0ccc" DefinedType="IfcStructuralCurveAction" />
+		<DocSubtype UniqueId="e6e38c48-2fd2-402f-874b-ade7e40c0702" DefinedType="IfcStructuralSurfaceAction" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="DestabilizingLoad" UniqueId="7e7162c0-17e9-4165-9c29-294aefb1216b" DefinedType="BOOLEAN" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="DestabilizingLoad" UniqueId="7e7162c0-17e9-4165-9c29-294aefb1216b" DefinedType="BOOLEAN" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Indicates if this action may cause a stability problem. If it is &apos;FALSE&apos;, no further investigations regarding stability problems are necessary.</Documentation>
-		</DocAttribute>
-		<DocAttribute Name="CausedBy" UniqueId="1O6GDuuRr8afVU8Y21VjPH" DefinedType="IfcStructuralReaction" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Optional reference to an instance of IfcStructuralReaction representing a result of another structural analysis model which creates this action upon the considered structural analysis model.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5063.5274" Y="1178.1963" />
+				<DocPoint X="5298.68399" Y="1178.1963" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5060.2383671" Y="1172.8585993" Width="202" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

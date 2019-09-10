@@ -1,8 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcOpeningElement" UniqueId="20f5b3eb-0852-4587-a1e1-bb91ca98bc61" DiagramNumber="4" BaseDefinition="IfcFeatureElementSubtraction" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcOpeningElement" Name="IfcOpeningElement" UniqueId="20f5b3eb-0852-4587-a1e1-bb91ca98bc61" DiagramNumber="8" BaseDefinition="IfcFeatureElementSubtraction" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Öffnung" Locale="de" />
+		<DocLocalization Name="Ouverture" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="2457.8805" Y="3261.7223" Width="387.66667" Height="115.83333" />
+	<Subtypes>
+		<DocSubtype UniqueId="3cf7a043-3feb-43ea-82ed-a0a240fe6435" DefinedType="IfcOpeningStandardCase" />
+	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="HasFillings" UniqueId="16a97fe9-fc69-447a-8c26-9004dcc23f09" DefinedType="IfcRelFillsElement" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatingOpeningElement">
+		<DocAttribute Name="PredefinedType" UniqueId="6367f4bf-61d9-41b7-8019-be8f7f63fc6b" DefinedType="IfcOpeningElementTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Predefined generic type for an opening that is specified in an enumeration. There may be a property set given specificly for the predefined types.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE The attribute has been added at the end of the entity definition.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2771.7138" Y="3261.7223" />
+				<DocPoint X="2771.7138" Y="3221.278478" />
+				<DocPoint X="3020.63047" Y="3221.278478" />
+				<DocPoint X="3020.63047" Y="3261.672298" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2773.5054671" Y="3209.628478" Width="182" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="HasFillings" UniqueId="16a97fe9-fc69-447a-8c26-9004dcc23f09" DefinedType="IfcRelFillsElement" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="RelatingOpeningElement">
 			<Documentation>Reference to the Filling Relationship that is used to assign Elements as Fillings for this Opening Element. The Opening Element can be filled with zero-to-many Elements.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2115.4138" Y="3588.9223" />
+				<DocPoint X="2498.76755" Y="3588.9223" />
+				<DocPoint X="2498.76755" Y="3377.55563" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2129.674019" Y="3626.405625" Width="269" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

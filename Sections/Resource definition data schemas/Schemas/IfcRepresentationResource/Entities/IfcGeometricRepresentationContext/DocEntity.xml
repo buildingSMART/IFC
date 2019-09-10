@@ -1,30 +1,62 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGeometricRepresentationContext" UniqueId="0eca3f63-ee99-4b79-bd1a-4602d00d24d9" DiagramNumber="1" BaseDefinition="IfcRepresentationContext" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGeometricRepresentationContext" UniqueId="0eca3f63-ee99-4b79-bd1a-4602d00d24d9" DiagramNumber="1" BaseDefinition="IfcRepresentationContext" EntityFlags="237">
+	<Localization>
+		<DocLocalization Name="Geometrische Repräsentation - Kontext" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="117.37586" Y="759.21845" Width="446.25498" Height="610.89908" />
 	<Subtypes>
 		<DocSubtype UniqueId="11431988-40cb-4dc2-b0c8-dde156b8d20f" DefinedType="IfcGeometricRepresentationSubContext" />
 	</Subtypes>
 	<Attributes>
 		<DocAttribute Name="CoordinateSpaceDimension" UniqueId="9b485f73-0c6c-43ff-81b5-d7c39ee5ee67" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The integer dimension count of the coordinate space modeled in a geometric representation context.</Documentation>
+			<DiagramLine>
+				<DocPoint X="563.63084" Y="1244.0432" />
+				<DocPoint X="913.7203" Y="1244.0432" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="558.9665284" Y="1233.127048" Width="315" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Precision" UniqueId="382390c9-360a-42c7-a7a3-700fefef9737" DefinedType="REAL" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Value of the model precision for geometric models. It is a double value (REAL), typically in 1E-5 to 1E-8 range, that indicates the tolerance under which two given points are still assumed to be identical. The value can be used e.g. to sets the maximum distance from an edge curve to the underlying face surface in brep models.</Documentation>
+			<DiagramLine>
+				<DocPoint X="563.63084" Y="780.74135" />
+				<DocPoint X="913.76262" Y="780.74135" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="570.2975067" Y="764.074683" Width="107" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="WorldCoordinateSystem" UniqueId="e0225b8f-ba56-4539-bc5f-7bfffbe8edc1" DefinedType="IfcAxis2Placement" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="WorldCoordinateSystem" UniqueId="e0225b8f-ba56-4539-bc5f-7bfffbe8edc1" DefinedType="IfcAxis2Placement" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="element">
 			<Documentation>Establishment of the engineering coordinate system (often referred to as the world coordinate system in CAD) for all representation contexts used by the project. 
-&gt; &lt;small&gt; 
-Note&amp;nbsp; it can be used to provide better numeric stability if the placement of the building(s) is far away from the origin. In most cases however it would be set to origin: (0.,0.,0.) and directions x(1.,0.,0.), y(0.,1.,0.), z(0.,0.,1.).
-&lt;/small&gt;</Documentation>
+&gt; NOTE&amp;nbsp; It can be used to provide better numeric stability if the placement of the building(s) is far away from the origin. In most cases however it would be set to origin: (0.,0.,0.) and directions x(1.,0.,0.), y(0.,1.,0.), z(0.,0.,1.).</Documentation>
+			<DiagramLine>
+				<DocPoint X="563.63084" Y="1064.668" />
+				<DocPoint X="913.74305" Y="1064.668" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="560.4850229" Y="1060.1399722" Width="274" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="TrueNorth" UniqueId="b64811d8-8918-4d38-b58f-7a8bc6f03c0f" DefinedType="IfcDirection" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Direction of the true north relative to the underlying coordinate system as established by the attribute _WorldCoordinateSystem_. It is given by a direction within the xy-plane of the underlying coordinate system. If not given, it defaults to the positive direction of the y-axis of the _WorldCoordinateSystem_.</Documentation>
+		<DocAttribute Name="TrueNorth" UniqueId="b64811d8-8918-4d38-b58f-7a8bc6f03c0f" DefinedType="IfcDirection" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>Direction of the true north, or geographic northing direction, relative to the underlying project coordinate system. It is given by a 2 dimensional direction within the xy-plane of the project coordinate system. If not present, it defaults to 0. 1., meaning that the positive Y axis of the project coordinate system equals the geographic northing direction.</Documentation>
+			<DiagramLine>
+				<DocPoint X="563.63084" Y="879.13167" />
+				<DocPoint X="913.74965" Y="879.13167" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="558.5058336" Y="871.4441603" Width="119" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="HasSubContexts" UniqueId="2af7d963-9ff0-43fe-a2b2-e2766bb83443" DefinedType="IfcGeometricRepresentationSubContext" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="ParentContext">
+		<DocAttribute Name="HasSubContexts" UniqueId="2af7d963-9ff0-43fe-a2b2-e2766bb83443" DefinedType="IfcGeometricRepresentationSubContext" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="ParentContext" XsdFormat="element">
 			<Documentation>The set of _IfcGeometricRepresentationSubContexts_ that refer to this _IfcGeometricRepresentationContext_.
-&gt; &lt;small&gt;
-  &lt;font color=&quot;#FF0000&quot;&gt;IFC2x Edition 3 CHANGE&amp;nbsp; New inverse attribute.&lt;/font&gt;
-&lt;/small&gt;</Documentation>
+{ .change-ifc2x3}
+&gt; IFC2x3 CHANGE&amp;nbsp; New inverse attribute</Documentation>
+			<DiagramLine>
+				<DocPoint X="503.86444" Y="1558.439" />
+				<DocPoint X="503.86444" Y="1370.11757" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="686.4428" Y="1580.626484" Width="336" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR11" UniqueId="353d3533-b044-4672-bfac-1dfa115a0728">
+			<Documentation>The _TrueNorth_ direction, if provided, shall be a two-dimensional direction.</Documentation>
+			<Expression>NOT(EXISTS(TrueNorth)) OR (HIINDEX(TrueNorth.DirectionRatios) = 2)</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

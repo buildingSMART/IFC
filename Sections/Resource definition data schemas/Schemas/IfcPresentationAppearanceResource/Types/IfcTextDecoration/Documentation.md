@@ -1,21 +1,10 @@
-﻿**Definition
-from CSS1 (W3C
-Recommendation)**: This property describes decorations that are added to the text of an element. A value of 'blink' causes the text to blink.. Values are:
+﻿The _IfcTextDecoration_ describes decorations that are added to the text of an element. Values are:
 
 * none
 * underline
 * overline
 * line-through
-* blink
 
+> NOTE&nbsp; Type adopted from **text-decoration** defined in [CSS-1](../../../bibliography.htm#CSS1).
 
-User agents must recognize the keyword 'blink', but are not required to
-support the blink effect.
-> <small><font color="#0000ff">NOTE&nbsp;
-Corresponding CSS1 definition is text-decoration.</font>
-  </small>
-
-> <small>
-  <font color="#0000ff">HISTORY&nbsp;
-New type in Release IFC2x Edition 3.</font>
-  </small>
+> HISTORY&nbsp; New type in IFC2x3.

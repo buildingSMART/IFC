@@ -1,1 +1,1 @@
-﻿Level of the highest internal part of the cross section. (BS6100 250 8002)
+﻿Level of the highest internal part of the cross section as measured from ground level.

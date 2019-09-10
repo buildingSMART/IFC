@@ -1,3 +1,68 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcHvacDomain" UniqueId="0a5db4b9-22f2-4ef5-9f44-60be07880e29" DiagramPagesHorz="0" DiagramPagesVert="0" />
+<DocSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcHvacDomain" UniqueId="0a5db4b9-22f2-4ef5-9f44-60be07880e29" DiagramPagesHorz="0" DiagramPagesVert="0">
+	<SchemaRefs>
+		<DocSchemaRef Name="IFCSHAREDBLDGSERVICEELEMENTS" UniqueId="0595711f-f533-4267-9638-8427767fddff">
+			<Definitions>
+				<DocDefinitionRef Name="IfcEnergyConversionDeviceType" UniqueId="1a4528d6-7a18-4abb-b16f-199ad87b9583" DiagramNumber="1">
+					<DiagramRectangle xsi:type="DocRectangle" X="22.488117" Y="24.148806" Width="609.30786" Height="226.83575" />
+				</DocDefinitionRef>
+				<DocDefinitionRef Name="IfcFlowMovingDeviceType" UniqueId="13c0a581-c4cd-42d6-822b-f7532ea97f13" DiagramNumber="3">
+					<DiagramRectangle xsi:type="DocRectangle" X="3229.039" Y="33.90322" Width="611.99321" Height="229.63575" />
+				</DocDefinitionRef>
+				<DocDefinitionRef Name="IfcFlowControllerType" UniqueId="8c41c006-6cc6-4b4f-a9f3-99cf13ff01ac" DiagramNumber="4">
+					<DiagramRectangle xsi:type="DocRectangle" X="4826.0568" Y="36.244388" Width="542.58371" Height="226.83575" />
+				</DocDefinitionRef>
+				<DocDefinitionRef Name="IfcFlowFittingType" UniqueId="4739a116-df55-4d03-beb6-e983261a132e" DiagramNumber="2">
+					<DiagramRectangle xsi:type="DocRectangle" X="1621.3546" Y="31.006801" Width="542.09386" Height="229.62011" />
+				</DocDefinitionRef>
+				<DocDefinitionRef Name="IfcFlowStorageDeviceType" UniqueId="1102bdd0-ede4-4fb6-97e7-d8b0cc0559b4" DiagramNumber="4">
+					<DiagramRectangle xsi:type="DocRectangle" X="4831.3751" Y="1203.6175" Width="545.93914" Height="234.21772" />
+				</DocDefinitionRef>
+				<DocDefinitionRef Name="IfcFlowTerminalType" UniqueId="ef1eabcd-6001-4249-b7bc-782148249529" DiagramNumber="3">
+					<DiagramRectangle xsi:type="DocRectangle" X="3234.3704" Y="1197.82" Width="542.99221" Height="228.17793" />
+				</DocDefinitionRef>
+				<DocDefinitionRef Name="IfcFlowTreatmentDeviceType" UniqueId="e322d923-d66a-40f5-aecf-bf20ee5f8a55" DiagramNumber="2">
+					<DiagramRectangle xsi:type="DocRectangle" X="1624.148" Y="1595.4519" Width="542.20678" Height="227.48031" />
+				</DocDefinitionRef>
+				<DocDefinitionRef Name="IfcFlowSegmentType" UniqueId="eaf9e872-18a9-49d6-93b1-4c5fa986285f" DiagramNumber="2">
+					<DiagramRectangle xsi:type="DocRectangle" X="1624.0808" Y="828.67446" Width="541.13266" Height="229.01874" />
+				</DocDefinitionRef>
+				<DocDefinitionRef Name="IfcFlowFitting" UniqueId="c949cde8-b280-4016-8b70-6545f2df5cd5" DiagramNumber="2">
+					<DiagramRectangle xsi:type="DocRectangle" X="2637.3871" Y="32.098561" Width="542.16532" Height="229.68983" />
+				</DocDefinitionRef>
+				<DocDefinitionRef Name="IfcFlowSegment" UniqueId="bce05a33-5833-47a9-87e8-c2216492af11" DiagramNumber="2">
+					<DiagramRectangle xsi:type="DocRectangle" X="2634.6218" Y="832.1129" Width="543.84628" Height="229.68983" />
+				</DocDefinitionRef>
+				<DocDefinitionRef Name="IfcFlowTreatmentDevice" UniqueId="40635dab-6056-4603-b907-267b8cf24c30" DiagramNumber="2">
+					<DiagramRectangle xsi:type="DocRectangle" X="2625.6609" Y="1602.1463" Width="552.9442" Height="227.48031" />
+				</DocDefinitionRef>
+				<DocDefinitionRef Name="IfcFlowMovingDevice" UniqueId="1a8265fa-4d0d-4c65-a310-d1965ddde184" DiagramNumber="3">
+					<DiagramRectangle xsi:type="DocRectangle" X="4234.111" Y="32.614211" Width="542.47484" Height="229.68983" />
+				</DocDefinitionRef>
+				<DocDefinitionRef Name="IfcFlowTerminal" UniqueId="7876ca91-5330-4338-903c-320f2fd84190" DiagramNumber="3">
+					<DiagramRectangle xsi:type="DocRectangle" X="4220.7111" Y="1202.9932" Width="542.53064" Height="229.68983" />
+				</DocDefinitionRef>
+				<DocDefinitionRef Name="IfcFlowController" UniqueId="6c303c5d-b489-48dd-a552-d4ec5542d01e" DiagramNumber="4">
+					<DiagramRectangle xsi:type="DocRectangle" X="5833.6571" Y="27.328812" Width="543.79322" Height="229.68983" />
+				</DocDefinitionRef>
+				<DocDefinitionRef Name="IfcFlowStorageDevice" UniqueId="60f13b76-6f07-40f7-a3c1-aecf677afbb7" DiagramNumber="4">
+					<DiagramRectangle xsi:type="DocRectangle" X="5824.3" Y="1203" Width="542.42177" Height="229.68983" />
+				</DocDefinitionRef>
+				<DocDefinitionRef Name="IfcEnergyConversionDevice" UniqueId="cfe24c99-d9de-48cb-8714-f8b6ed399e2d" DiagramNumber="1">
+					<DiagramRectangle xsi:type="DocRectangle" X="1035.1169" Y="27.299217" Width="544.68162" Height="229.68983" />
+				</DocDefinitionRef>
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCSHAREDCOMPONENTELEMENTS" UniqueId="9e6648e2-d646-486e-b0be-db1fa890487c">
+			<Definitions>
+				<DocDefinitionRef Name="IfcElementComponentType" UniqueId="cf1aa815-7323-41e9-8972-76826c1191b5" DiagramNumber="4">
+					<DiagramRectangle xsi:type="DocRectangle" X="4828.7144" Y="1790.6677" Width="545.86151" Height="229.01874" />
+				</DocDefinitionRef>
+				<DocDefinitionRef Name="IfcElementComponent" UniqueId="24650fff-21a1-4fa5-9873-35ba124a2e98" DiagramNumber="4">
+					<DiagramRectangle xsi:type="DocRectangle" X="5838.9284" Y="1790.7666" Width="527.73742" Height="229.68983" />
+				</DocDefinitionRef>
+			</Definitions>
+		</DocSchemaRef>
+	</SchemaRefs>
+</DocSchema>
 

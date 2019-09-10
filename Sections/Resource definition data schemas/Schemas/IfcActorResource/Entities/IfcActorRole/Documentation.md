@@ -1,15 +1,7 @@
-﻿A role which is performed by an actor, either a person, an organization or a person related to an organization.
+﻿This entity indicates a role which is performed by an actor, either a person, an organization or a person related to an organization.
 
-> <font size="-1">NOTE: The list of roles of the enumeration values of the <i>Role</i> attribute can never
-be complete. Therefore using enumeration value USERDEFINED, the user can provide his/her own role as a value 
-of the attribute <i>UserDefinedRole</i>.
-</font>
+> NOTE&nbsp; The list of roles of the enumeration values of the _Role_ attribute can never be complete. Therefore using enumeration value USERDEFINED, the user can provide any role as a value of the attribute _UserDefinedRole_.
 
-> <font size="-1">
-  NOTE Corresponds to STEP names: organization_role and person_role, please refer to ISO/IS 10303-41:1994
-  for the final definition of the formal standard.
-</font>
+> NOTE&nbsp; Entity adapted from **organization_role** and **person_role** defined in ISO&nbsp;10303-41.
 
-> <font size="-1" color="#0000FF">
-  HISTORY New entity in IFC Release 1.5.1
-</font>
+> HISTORY&nbsp; New entity in IFC1.5.1.

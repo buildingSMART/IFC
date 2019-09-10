@@ -1,1 +1,0 @@
-﻿Value of the subject matter above or below which a special significance is attached.

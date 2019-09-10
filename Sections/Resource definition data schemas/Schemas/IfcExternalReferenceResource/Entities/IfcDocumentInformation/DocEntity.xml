@@ -1,66 +1,217 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcDocumentInformation" UniqueId="ece4dd99-11bc-4dbb-b170-998764abc239" DiagramNumber="3" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcDocumentInformation" UniqueId="ece4dd99-11bc-4dbb-b170-998764abc239" DiagramNumber="3" BaseDefinition="IfcExternalInformation" EntityFlags="237">
+	<Localization>
+		<DocLocalization Name="Dokumenteninformation" Locale="de" />
+		<DocLocalization Name="Métadonnées de document" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="3876.3167" Y="1172.4166" Width="370" Height="627.33333" />
 	<Attributes>
-		<DocAttribute Name="DocumentId" UniqueId="2Orl3Bre59e9Bgvu50In_I" DefinedType="IfcIdentifier" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>Identifier that uniquely identifies a document.</Documentation>
+		<DocAttribute Name="Identification" UniqueId="fdc5fbd6-5bb9-4f9c-b478-d0ed07773f1f" DefinedType="IfcIdentifier" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Identifier that uniquely identifies a document.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; Attribute renamed from _DocumentId_.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3876.3167" Y="1209.5134" />
+				<DocPoint X="3526.61669" Y="1209.5134" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3874.3167" Y="1201.5134" Width="146" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Name" UniqueId="f308e9ce-8a5e-4408-b3c5-c20a7b5ee6de" DefinedType="IfcLabel" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>File name or document name assigned by owner.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3876.3167" Y="1317.6823" />
+				<DocPoint X="3526.5451" Y="1317.6823" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3845.471292" Y="1306.6473" Width="73" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Description" UniqueId="1c47a9d6-a070-4fe8-b9f9-02166afad5fe" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Description of document and its content.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3876.3167" Y="1426.8351" />
+				<DocPoint X="3526.55006" Y="1426.8351" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3877.983367" Y="1414.3351" Width="130" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="DocumentReferences" UniqueId="1m$aRSl718E8OIyzAoSOzS" DefinedType="IfcDocumentReference" AttributeFlags="1" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
-			<Documentation>Information on the referenced document.</Documentation>
+		<DocAttribute Name="Location" UniqueId="494ea53e-4ee5-4c89-a31e-0732cd47caa0" DefinedType="IfcURIReference" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Resource identifier or locator, provided as URI, URN or URL, of the document information for online references.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; New attribute added at the place of the removed attribute _DocumentReferences_.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3918.8635" Y="1799.7499" />
+				<DocPoint X="3918.8635" Y="1833.249841" />
+				<DocPoint X="3526.6167" Y="1833.249841" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3885.696833" Y="1825.0831735" Width="101" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Purpose" UniqueId="fa3fb19b-ade1-49bb-a0e9-41dc3a6a9a5f" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Purpose for this document.</Documentation>
+			<DiagramLine>
+				<DocPoint X="4246.3168" Y="1314.1872" />
+				<DocPoint X="4541.58325" Y="1314.1872" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4238.3168" Y="1308.8538667" Width="99" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="IntendedUse" UniqueId="0575ec79-04c4-4e71-addf-9dce898e9c47" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Intended use for this document.</Documentation>
+			<DiagramLine>
+				<DocPoint X="4246.3168" Y="1423.014" />
+				<DocPoint X="4541.58328" Y="1423.014" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4259.650133" Y="1420.3473333" Width="149" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Scope" UniqueId="7ab8afff-250a-44d3-8895-cfcb053690f0" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Scope for this document.</Documentation>
+			<DiagramLine>
+				<DocPoint X="4246.3168" Y="1202.8121" />
+				<DocPoint X="4541.48338" Y="1202.8121" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4230.441825" Y="1197.4787667" Width="77" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Revision" UniqueId="9ed3c975-1786-4e96-b1fa-20975a8ba03f" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Document revision designation</Documentation>
+			<Documentation>Document revision designation.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3876.3167" Y="1730.0202" />
+				<DocPoint X="3526.65" Y="1730.0202" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3863.3667" Y="1717.353533" Width="101" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="DocumentOwner" UniqueId="367ff740-dff6-404a-99c1-be90ed51e36e" DefinedType="IfcActorSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Information about the person and/or organization acknowledged as the &apos;owner&apos; of this document. In some contexts, the document owner determines who has access to or editing right to the document.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3960.466" Y="1799.75" />
+				<DocPoint X="3960.466" Y="1969.80779" />
+				<DocPoint X="3318.49844" Y="1969.80779" />
+				<DocPoint X="3318.49844" Y="2173.6" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3940.269405" Y="1955.328722" Width="193" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Editors" UniqueId="fc5bb815-364c-4a26-8200-68836084fc25" DefinedType="IfcActorSelect" AttributeFlags="1" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The persons and/or organizations who have created this document or contributed to it.</Documentation>
+			<DiagramLine>
+				<DocPoint X="4002.6012" Y="1799.75" />
+				<DocPoint X="4002.6012" Y="2062.74239" />
+				<DocPoint X="3744.91077" Y="2062.74239" />
+				<DocPoint X="3744.91077" Y="2173.6" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3990.610743" Y="2053.1352393" Width="162" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="CreationTime" UniqueId="6741b5b9-5fc6-4d0d-9d0b-735b3a4b1c71" DefinedType="IfcDateAndTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Date and time stamp when the document was originally created.</Documentation>
+		<DocAttribute Name="CreationTime" UniqueId="6741b5b9-5fc6-4d0d-9d0b-735b3a4b1c71" DefinedType="IfcDateTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Date and time stamp when the document was originally created.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE The data type has been changed to _IfcDateTime_, the date time string according to ISO8601.</Documentation>
+			<DiagramLine>
+				<DocPoint X="4246.3167" Y="1534.0833" />
+				<DocPoint X="4541.5167" Y="1534.0833" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4219.650033" Y="1523.416633" Width="155" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LastRevisionTime" UniqueId="92c6d656-53f9-42d6-b541-130b4d316672" DefinedType="IfcDateAndTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Date and time stamp when this document version was created.</Documentation>
+		<DocAttribute Name="LastRevisionTime" UniqueId="92c6d656-53f9-42d6-b541-130b4d316672" DefinedType="IfcDateTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Date and time stamp when this document version was created.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE The data type has been changed to _IfcDateTime_, the date time string according to ISO8601.</Documentation>
+			<DiagramLine>
+				<DocPoint X="4246.3167" Y="1627.4166" />
+				<DocPoint X="4541.48337" Y="1627.4166" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4246.3167" Y="1616.749933" Width="202" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ElectronicFormat" UniqueId="fe0f622f-5a17-47b2-b996-a8c4d6b55c46" DefinedType="IfcDocumentElectronicFormat" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Describes the electronic format of the document being referenced, providing the file extension and the manner in which the content is provided.</Documentation>
+		<DocAttribute Name="ElectronicFormat" UniqueId="fe0f622f-5a17-47b2-b996-a8c4d6b55c46" DefinedType="IfcIdentifier" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Describes the media type used in various internet protocols, also referred to as &quot;Content-type&quot;, or &quot;MIME-type (Multipurpose Internet Mail Extension), of the document being referenced. It is composed of (at least) two parts, a type and a subtype.
+&gt; NOTE&amp;nbsp; The iana (Internet Assigned Numbers Authority) published the media types.
+
+&gt; EXAMPLE&amp;nbsp; &apos;image/png&apos; denotes an image type of png (Portable Network Graphics) subtype, &apos;application/pdf&apos; denotes an application specific type of pdf (Portable Document Format) subtype
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; The data type has been changed from entity data type to _IfcIdentifier_.</Documentation>
+			<DiagramLine>
+				<DocPoint X="4061.3167" Y="1799.7499" />
+				<DocPoint X="4061.3167" Y="2061.58323" />
+				<DocPoint X="4551.65003" Y="2061.58323" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4018.650033" Y="2048.249897" Width="192" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ValidFrom" UniqueId="260e8ab8-7a90-4161-bcac-6b2489ad061d" DefinedType="IfcCalendarDate" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Date, when the document becomes valid.</Documentation>
+		<DocAttribute Name="ValidFrom" UniqueId="260e8ab8-7a90-4161-bcac-6b2489ad061d" DefinedType="IfcDate" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Date when the document becomes valid.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE The data type has been changed to _IfcDate_, the date string according to ISO8601.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3876.3167" Y="1531.4166" />
+				<DocPoint X="3526.7167" Y="1531.4166" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3870.9833667" Y="1518.083267" Width="118" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ValidUntil" UniqueId="e572dd75-4081-4bab-bde6-f0ac7f237d08" DefinedType="IfcCalendarDate" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Date until which the document remains valid.</Documentation>
+		<DocAttribute Name="ValidUntil" UniqueId="e572dd75-4081-4bab-bde6-f0ac7f237d08" DefinedType="IfcDate" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Date until which the document remains valid.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE The data type has been changed to _IfcDate_, the date string according to ISO8601.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3876.3167" Y="1630.0833" />
+				<DocPoint X="3526.7167" Y="1630.0833" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3868.3167" Y="1619.416633" Width="110" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Confidentiality" UniqueId="ac2eb5cd-ebea-4b73-a63c-bfa90f00eeb5" DefinedType="IfcDocumentConfidentialityEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The level of confidentiality of the document.</Documentation>
+			<DiagramLine>
+				<DocPoint X="4111.1147" Y="1799.75" />
+				<DocPoint X="4111.1147" Y="1876.814983" />
+				<DocPoint X="4379.02083" Y="1876.814983" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4108.249075" Y="1861.296666" Width="162" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Status" UniqueId="203167c2-5361-4ade-bec8-aca347ca45b4" DefinedType="IfcDocumentStatusEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>The current status of the document. Examples of status values that might be used for a document information status include:
-- DRAFT
-- FINAL DRAFT
-- FINAL
+			<Documentation>The current status of the document. Examples of status values that might be used for a document information status include:  
+- DRAFT  
+- FINAL DRAFT  
+- FINAL  
 - REVISION</Documentation>
+			<DiagramLine>
+				<DocPoint X="4246.3167" Y="1768.7499" />
+				<DocPoint X="4489.0334" Y="1768.7499" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4212.104208" Y="1762.374885" Width="77" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="IsPointedTo" UniqueId="c07ff305-e30a-4c6e-913b-81d830965461" DefinedType="IfcDocumentInformationRelationship" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatedDocuments">
-			<Documentation>An inverse relationship from the IfcDocumentInformationRelationship to the related documents.</Documentation>
+		<DocAttribute Name="DocumentInfoForObjects" UniqueId="999d5137-72f3-4f77-84c9-a46462336d47" DefinedType="IfcRelAssociatesDocument" AttributeFlags="32" AggregationType="3" AggregationFlag="0" Inverse="RelatingDocument">
+			<Documentation>The document information with which objects are associated.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; New inverse attribute.</Documentation>
+			<DiagramLine>
+				<DocPoint X="4234.0732" Y="1172.4166" />
+				<DocPoint X="4234.0732" Y="1038.50685" />
+				<DocPoint X="4693.31678" Y="1038.50685" />
+				<DocPoint X="4693.31678" Y="609.74994" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4244.739867" Y="1064.50685" Width="425" Height="70" />
+		</DocAttribute>
+		<DocAttribute Name="HasDocumentReferences" UniqueId="d8bda5e9-e1b0-4528-93ef-de597e59496e" DefinedType="IfcDocumentReference" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="ReferencedDocument">
+			<Documentation>The document references to which the document applies</Documentation>
+			<DiagramLine>
+				<DocPoint X="3243.5642" Y="407.00666" />
+				<DocPoint X="3243.5642" Y="913.07677" />
+				<DocPoint X="3916.34223" Y="913.07677" />
+				<DocPoint X="3916.34223" Y="1172.41663" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3239.6879608" Y="961.871784" Width="434" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="IsPointedTo" UniqueId="c07ff305-e30a-4c6e-913b-81d830965461" DefinedType="IfcDocumentInformationRelationship" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="RelatedDocuments">
+			<Documentation>An inverse relationship from the IfcDocumentInformationRelationship to the related documents./EPM-HTML&gt;</Documentation>
+			<DiagramLine>
+				<DocPoint X="4369.3" Y="407.03333" />
+				<DocPoint X="4369.3" Y="867.8627" />
+				<DocPoint X="4196.73524" Y="867.8627" />
+				<DocPoint X="4196.73524" Y="1172.41663" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4349.684287" Y="451.03333" Width="282" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="IsPointer" UniqueId="0f32d29f-9d4e-4b4f-b971-762eaf28ea39" DefinedType="IfcDocumentInformationRelationship" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatingDocument">
 			<Documentation>An inverse relationship from the IfcDocumentInformationRelationship to the relating document.</Documentation>
+			<DiagramLine>
+				<DocPoint X="4307.9667" Y="407.03333" />
+				<DocPoint X="4307.9667" Y="659.49546" />
+				<DocPoint X="4146.16402" Y="659.49546" />
+				<DocPoint X="4146.16402" Y="1172.41663" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4340.86804" Y="634.162127" Width="247" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralPointReaction" UniqueId="0eabb0d2-3913-4a31-90cd-48eaf1a17f6b" DiagramNumber="4" BaseDefinition="IfcStructuralReaction" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStructuralPointReaction" Name="IfcStructuralPointReaction" UniqueId="0eabb0d2-3913-4a31-90cd-48eaf1a17f6b" DiagramNumber="4" BaseDefinition="IfcStructuralReaction" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Auflagerreaktion" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="5883.3571" Y="1334.0472" Width="292.83926" Height="122.17928" />
 	<WhereRules>
-		<DocWhereRule Name="WR61" UniqueId="1TMSkmb_T1eAZdMej6au8V">
-			<Documentation>A structural point reaction should have as a result either a single force, or a single displacement.</Documentation>
-			<Expression>SIZEOF([&apos;IFCSTRUCTURALLOADRESOURCE.IFCSTRUCTURALLOADSINGLEFORCE&apos;,
-        &apos;IFCSTRUCTURALLOADRESOURCE.IFCSTRUCTURALLOADSINGLEDISPLACEMENT&apos;]
-* TYPEOF(SELF\IfcStructuralActivity.AppliedLoad)) = 1</Expression>
+		<DocWhereRule Name="SuitableLoadType" UniqueId="4e3ee013-33ac-4063-b8c0-35f22f7dacf4">
+			<Documentation>A structural point reaction shall have as a result either a single force or a single displacement.</Documentation>
+			<Expression>SIZEOF([&apos;IFCSTRUCTURALLOADRESOURCE.IFCSTRUCTURALLOADSINGLEFORCE&apos;, &apos;IFCSTRUCTURALLOADRESOURCE.IFCSTRUCTURALLOADSINGLEDISPLACEMENT&apos;] * TYPEOF(SELF\IfcStructuralActivity.AppliedLoad)) = 1</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>

@@ -1,7 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcFastener" Name="IfcFastener" UniqueId="f7f5c079-1ef8-4a9e-a64c-86800f526d37" DiagramNumber="1" BaseDefinition="IfcElementComponent" EntityFlags="229">
-	<Subtypes>
-		<DocSubtype UniqueId="0_bGOuqrX26f9YpFTfIAxa" DefinedType="IfcMechanicalFastener" />
-	</Subtypes>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcFastener" Name="IfcFastener" UniqueId="f7f5c079-1ef8-4a9e-a64c-86800f526d37" DiagramNumber="1" BaseDefinition="IfcElementComponent" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Befestigungsmittel" Locale="de" />
+		<DocLocalization Name="Elément d&apos;assemblage" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="150.39776" Y="707.45555" Width="438.36886" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="662a3ac7-815a-445d-a564-413f149a45af" DefinedType="IfcFastenerTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Subtype of fastener</Documentation>
+			<DiagramLine>
+				<DocPoint X="588.76662" Y="757.45555" />
+				<DocPoint X="1426.79938" Y="757.45555" />
+				<DocPoint X="1426.79938" Y="1982.62255" />
+				<DocPoint X="1310.20921" Y="1982.62255" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="720.97491" Y="751.2203515" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="e629f242-b4c7-4420-9236-46b8e79eead1">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcFastenerType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+(PredefinedType &lt;&gt; IfcFastenerTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcFastenerTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="dc1c589c-d027-491f-be19-1d44571cb0c1">
+			<Documentation>If this occurrence is defined by a type object, the latter has to be an _IfcFastenerType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+(&apos;IFCSHAREDCOMPONENTELEMENTS.IFCFASTENERTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

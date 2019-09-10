@@ -1,21 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPresentationLayerAssignment" UniqueId="1021fba4-3bfe-4e0a-b0b5-662a3498c052" DiagramNumber="1" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Zuordnung zu Präsentations-Layer" Locale="de" />
+		<DocLocalization Name="Assignation de calque" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1131.5" Y="804.06663" Width="330" Height="281.46667" />
 	<Subtypes>
 		<DocSubtype UniqueId="521d82d8-ad9d-44da-aa0f-4d9e022493ea" DefinedType="IfcPresentationLayerWithStyle" />
 	</Subtypes>
 	<Attributes>
 		<DocAttribute Name="Name" UniqueId="87af29d2-be1e-4b15-b9ad-c509d2b4f7fa" DefinedType="IfcLabel" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Name of the layer.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1131.5" Y="845.24089" />
+				<DocPoint X="786.76667" Y="845.24089" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1126.1666667" Y="837.24089" Width="73" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Description" UniqueId="8a982d79-1717-4d47-928c-6f0d31346142" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Additional description of the layer.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1131.5" Y="949.602" />
+				<DocPoint X="786.76667" Y="949.602" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1128.1666667" Y="942.9353333" Width="130" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="AssignedItems" UniqueId="e05d7922-970e-4100-b3e7-bd5a77d73c09" DefinedType="IfcLayeredItem" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The set of layered items, which are assigned to this layer.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1296.5" Y="804.06663" />
+				<DocPoint X="1296.5" Y="574.16666" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1443.15" Y="821.56663" Width="247" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Identifier" UniqueId="c3bbf33f-c067-4501-bfe8-2c9da90c9b22" DefinedType="IfcIdentifier" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>An (internal) identifier assigned to the layer.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1131.5" Y="1056.0599" />
+				<DocPoint X="786.7" Y="1056.0599" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1131.5" Y="1049.3932333" Width="102" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="ApplicableItems" UniqueId="10cf5a0c-f690-4dd1-aa55-ff6327d6f97e">
+			<Documentation>The items within the set of _AssignedItems_ that can be assigned to a presentation layer shall be geometric shape representation or representation items.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; The where rule has been added.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* AssignedItems | (
+  SIZEOF(TYPEOF(temp) * [
+    &apos;IFCREPRESENTATIONRESOURCE.IFCSHAPEREPRESENTATION&apos;,
+    &apos;IFCGEOMETRYRESOURCE.IFCGEOMETRICREPRESENTATIONITEM&apos;,
+    &apos;IFCGEOMETRYRESOURCE.IFCMAPPEDITEM&apos;]) = 1)
+)) = SIZEOF(AssignedItems)</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

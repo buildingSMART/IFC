@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSanitaryTerminal" Name="IfcSanitaryTerminal" UniqueId="3aeeb853-9edd-40a5-a6e2-a836653ac710" DiagramNumber="1" BaseDefinition="IfcFlowTerminal" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Sanitäreinrichtung" Locale="de" />
+		<DocLocalization Name="Equipement sanitaire" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="863.04666" Y="613" Width="649.93333" Height="110.6" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="c07c360f-6347-43e0-96b7-758b6c8b635a" DefinedType="IfcSanitaryTerminalTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<DiagramLine>
+				<DocPoint X="1508.2091" Y="723.6" />
+				<DocPoint X="1508.2091" Y="786.013333" />
+				<DocPoint X="1070.06005" Y="786.013333" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1414.875767" Y="723.10218914" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="30bfb6c2-6aea-44ef-9343-7cc2964fff00">
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcSanitaryTerminalTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcSanitaryTerminalTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="85e704b4-0fab-48e0-b685-4616bfec01bc">
+			<Documentation>Either there is no sanitary terminal type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcSanitaryTerminalType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCPLUMBINGFIREPROTECTIONDOMAIN.IFCSANITARYTERMINALTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

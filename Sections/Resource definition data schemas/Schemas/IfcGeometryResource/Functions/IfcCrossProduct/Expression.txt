@@ -11,8 +11,9 @@ END_LOCAL;
     RETURN(?);
   ELSE
     BEGIN
-      V1  := IfcNormalise(Arg1).DirectionRatios;
-      V2  := IfcNormalise(Arg2).DirectionRatios;
+      V1  := IfcNormalise(Arg1)\IfcDirection.DirectionRatios;
+
+      V2  := IfcNormalise(Arg2)\IfcDirection.DirectionRatios;
       Res := IfcRepresentationItem() || IfcGeometricRepresentationItem () 
              || IfcDirection([(V1[2]*V2[3] - V1[3]*V2[2]), (V1[3]*V2[1] - V1[1]*V2[3]), (V1[1]*V2[2] - V1[2]*V2[1])]);
       Mag := 0.0;

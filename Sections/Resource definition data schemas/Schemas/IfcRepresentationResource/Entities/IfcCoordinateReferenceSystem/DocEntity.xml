@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCoordinateReferenceSystem" UniqueId="55d837bf-64b2-4c83-9324-044e57cbaa9f" DiagramNumber="4" EntityFlags="197">
+	<Localization>
+		<DocLocalization Name="Koordinatenbezugssystem" Locale="de" />
+		<DocLocalization Name="Système de coordonnées de référence" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="4917.3816" Y="1478.9897" Width="366.56271" Height="362.65658" />
+	<Subtypes>
+		<DocSubtype UniqueId="065cabab-0e6e-4c55-92fa-b7a1fcf53185" DefinedType="IfcProjectedCRS" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="Name" UniqueId="c63d80a5-78a4-45e3-bf15-d9302cdb83f2" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Name by which the coordinate reference system is identified.
+&gt; NOTE&amp;nbsp; The name shall be taken from the list recognized by the European Petroleum Survey Group EPSG.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5283.9443" Y="1530.5777" />
+				<DocPoint X="5835.66372" Y="1530.5777" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5283.9443" Y="1530.5777" Width="73" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="Description" UniqueId="57c4c379-aba3-4224-8587-dca78467e649" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Informal description of this coordinate reference system.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5283.9443" Y="1626.3869" />
+				<DocPoint X="5835.66997" Y="1626.3869" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5283.9443" Y="1626.3869" Width="130" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="GeodeticDatum" UniqueId="f0796f25-9125-47e1-9c5f-3e9ed0ed75d1" DefinedType="IfcIdentifier" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Name by which this datum is identified. The geodetic datum is associated with the coordinate reference system and indicates the shape and size of the rotation ellipsoid and this ellipsoid&apos;s connection and orientation to the actual globe/earth. Examples for geodetic datums include:
+* ED50
+* EUREF89
+* WSG84</Documentation>
+			<DiagramLine>
+				<DocPoint X="5283.9443" Y="1718.993" />
+				<DocPoint X="5835.66679" Y="1718.993" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5283.9443" Y="1718.993" Width="179" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="VerticalDatum" UniqueId="bb23b255-0bb4-42f6-b611-ac08f796ce77" DefinedType="IfcIdentifier" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Name by which the vertical datum is identified. The vertical datum is associated with the height axis of the coordinate reference system and indicates the reference plane and fundamental point defining the origin of a height system. Examples for vertical datums include:
+* height above mean sea level at Dover in 1952
+* other sea levels</Documentation>
+			<DiagramLine>
+				<DocPoint X="5283.9443" Y="1816.9499" />
+				<DocPoint X="5835.66998" Y="1816.9499" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5283.9411709786" Y="1810.543642" Width="161" Height="35" />
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

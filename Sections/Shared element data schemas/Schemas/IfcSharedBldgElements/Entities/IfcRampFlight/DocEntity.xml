@@ -1,3 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRampFlight" UniqueId="b22a442d-98eb-4579-80cf-dc1054cbb509" DiagramNumber="1" BaseDefinition="IfcBuildingElement" EntityFlags="101" />
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRampFlight" Name="IfcRampFlight" UniqueId="b22a442d-98eb-4579-80cf-dc1054cbb509" DiagramNumber="2" BaseDefinition="IfcBuildingElement" EntityFlags="109">
+	<Localization>
+		<DocLocalization Name="Rampenlauf" Locale="de" />
+		<DocLocalization Name="Volée" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1865.3934" Y="180.07341" Width="249.9" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="14de555e-b478-4d05-91bc-19cad9fa65f2" DefinedType="IfcRampFlightTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Predefined generic type for a ramp flight that is specified in an enumeration. There may be a property set given specificly for the predefined types.
+&gt; NOTE&amp;nbsp; The _PredefinedType_ shall only be used, if no _IfcRampFlightType_ is assigned, providing its own _IfcRampFlightType.PredefinedType_.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE The attribute has been added at the end of the entity definition.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2115.2934" Y="222.07341" />
+				<DocPoint X="2509.3267" Y="222.07341" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2112.6267333" Y="211.406743" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="49eb4420-e6c2-4fd7-8a2c-cb13958e2493">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcRampFlightType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+ (PredefinedType &lt;&gt; IfcRampFlightTypeEnum.USERDEFINED) OR
+ ((PredefinedType = IfcRampFlightTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="fbe455ed-1d58-412f-acdd-31df8ed3f602">
+			<Documentation>Either there is no ramp flight type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcRampFlightType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+  (&apos;IFCSHAREDBLDGELEMENTS.IFCRAMPFLIGHTTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
 

@@ -1,12 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPolyLoop" UniqueId="606bfe59-169d-4543-89a1-60d81d609835" DiagramNumber="2" BaseDefinition="IfcLoop" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Polygonale Schleife - Topologie" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1904.323" Y="1836.7166" Width="283.23333" Height="130" />
 	<Attributes>
 		<DocAttribute Name="Polygon" UniqueId="5e26e14f-8764-4e28-93e9-b88049eac2d2" DefinedType="IfcCartesianPoint" AttributeFlags="0" AggregationType="1" AggregationFlag="2" AggregationLower="3" AggregationUpper="0">
 			<Documentation>List of points defining the loop. There are no repeated points in the list.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2051.2001" Y="1966.7166" />
+				<DocPoint X="2051.2001" Y="2079.0666" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2158.36677" Y="1972.0499333" Width="183" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR21" UniqueId="3Of0Ig4V1ADw7wrJA484Xc">
+		<DocWhereRule Name="AllPointsSameDim" UniqueId="433a5fab-615f-4853-ba23-5ded00e5ea21">
 			<Documentation>The space dimensionality of all Points shall be the same.</Documentation>
 			<Expression>SIZEOF(QUERY(Temp &lt;* Polygon | Temp.Dim &lt;&gt; Polygon[1].Dim)) = 0</Expression>
 		</DocWhereRule>

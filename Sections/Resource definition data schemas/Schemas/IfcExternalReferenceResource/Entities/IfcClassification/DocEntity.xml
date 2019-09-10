@@ -1,22 +1,111 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcClassification" UniqueId="86dd2655-910b-4394-9cd1-3478de9e1798" DiagramNumber="2" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcClassification" UniqueId="86dd2655-910b-4394-9cd1-3478de9e1798" DiagramNumber="2" BaseDefinition="IfcExternalInformation" EntityFlags="237">
+	<Localization>
+		<DocLocalization Name="Klassifikationssystem" Locale="de" />
+		<DocLocalization Name="Classification" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1979.4373" Y="1248.4272" Width="411.16667" Height="726.49999" />
 	<Attributes>
-		<DocAttribute Name="Source" UniqueId="9e6953d3-314a-47fc-b390-73bf49075875" DefinedType="IfcLabel" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>Source (or publisher) for this classification.</Documentation>
+		<DocAttribute Name="Source" UniqueId="9e6953d3-314a-47fc-b390-73bf49075875" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Source (or publisher) for this classification.
+&gt; NOTE&amp;nbsp; that the source of the classification means the person or organization that was the original author or the person or organization currently acting as the publisher.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2390.604" Y="1702.6384" />
+				<DocPoint X="2796.67066" Y="1702.6384" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2307.312316" Y="1691.229541" Width="85" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Edition" UniqueId="d1895997-09d2-4095-803d-a71ad237c6de" DefinedType="IfcLabel" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>The edition or version of the classification system from which the classification notation is derived.</Documentation>
+		<DocAttribute Name="Edition" UniqueId="d1895997-09d2-4095-803d-a71ad237c6de" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The edition or version of the classification system from which the classification notation is derived.
+&gt; NOTE&amp;nbsp; the version labeling system is specific to the classification system.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE The attribute has been changed to be optional.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2390.604" Y="1494.3438" />
+				<DocPoint X="2796.6707" Y="1494.3438" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2306.978983" Y="1483.443274" Width="82" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="EditionDate" UniqueId="f59698df-a014-4cac-9b67-5ca649051dfa" DefinedType="IfcCalendarDate" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="EditionDate" UniqueId="f59698df-a014-4cac-9b67-5ca649051dfa" DefinedType="IfcDate" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The date on which the edition of the classification used became valid.
-NOTE: The indication of edition may be sufficient to identify the classification source uniquely but the edition date is provided as an optional attribute to enable more precise identification where required.</Documentation>
+&gt; NOTE&amp;nbsp; The indication of edition may be sufficient to identify the classification source uniquely but the edition date is provided as an optional attribute to enable more precise identification where required.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE The data type has been changed to _IfcDate_, the date string according to ISO8601.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2390.604" Y="1595.6772" />
+				<DocPoint X="2796.63733" Y="1595.6772" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2331.937333" Y="1587.6771997" Width="135" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Name" UniqueId="85cb5672-fa71-455e-b1ab-7ab4259f6b9c" DefinedType="IfcLabel" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The name or label by which the classification used is normally known.
-NOTE: Examples of names include CI/SfB, Masterformat, BSAB, Uniclass, STABU etc.</Documentation>
+&gt; NOTE&amp;nbsp; Examples of names include CI/SfB, Masterformat, BSAB, Uniclass, STABU, DIN276, DIN277 etc.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2390.604" Y="1281.0105" />
+				<DocPoint X="2796.60403" Y="1281.0105" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2301.510086" Y="1269.577684" Width="73" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Contains" UniqueId="2Y2QZFPhbBbPV5dW0tf04b" DefinedType="IfcClassificationItem" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="ItemOf">
-			<Documentation>Classification items that are classified by the classification.</Documentation>
+		<DocAttribute Name="Description" UniqueId="60678a0a-cb22-4814-a99e-b13fb1a3eb07" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Additional description provided for the classification.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; New attribute added at the end of the attribute list.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2390.604" Y="1385.0105" />
+				<DocPoint X="2796.504" Y="1385.0105" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2329.407658" Y="1373.873" Width="130" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="Location" UniqueId="420c7a7d-5921-456f-b645-20a0b62bf121" DefinedType="IfcURIReference" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Resource identifier or locator, provided as URI, URN or URL, of the classification.  
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; New attribute added at the end of the attribute list.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2390.604" Y="1803.3634" />
+				<DocPoint X="2796.61863" Y="1803.3634" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2318.687347" Y="1789.696729" Width="101" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="ReferenceTokens" UniqueId="fa9292d9-ac78-4c50-9cca-c5c5171cdbe1" DefinedType="IfcIdentifier" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0" XsdFormat="element">
+			<Documentation>The delimiter tokens that are used to mark the boundaries of individual facets (substrings) in a classification reference.
+  
+  
+This typically applies then the _IfcClassification_ is used in
+conjuction with _IfcClassificationReference_&apos;s. If only one _ReferenceToken_ is provided, it applies to all boundaries of individual facets, if more than one _ReferenceToken_ are provided, the first token applies to the first boundary, the second token to the second boundary, and the n^th^ token to the n^th^ and any additional boundary. 
+
+&gt; NOTE&amp;nbsp; Tokens are typically recommended within the classification itself and each token will have a particular role.
+
+&gt; EXAMPLE&amp;nbsp;1 To indicate that the facet delimiter used for DIN277-2 reference key &quot;2.1&quot; (&quot;Office rooms&quot;) is &quot;.&quot;, a single _ReferenceToken_ [&apos;.&apos;] is provided. To indicate that the facet delimiter used for Omniclass Table 13 (space by function) reference key &quot;13-15 11 34 11&quot; (&quot;Office&quot;) are &quot;-&quot; and &quot; &quot;, two _ReferenceToken_&apos;s [&apos;-&apos;, &apos; &apos;] are provided.
+
+&gt; EXAMPLE&amp;nbsp;2 The use of _ReferenceTokens_ can also be extended to include masks. The use need to be agreed in view definitions or implementer agreements that stipulates a &quot;mask syntax&quot; that should be used.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; New attribute added at the end of the attribute list.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2390.604" Y="1905.6721" />
+				<DocPoint X="2796.7" Y="1905.6721" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2411.286315" Y="1899.657604" Width="280" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="ClassificationForObjects" UniqueId="4d93c948-effe-49fa-b9d7-d6aaae000629" DefinedType="IfcRelAssociatesClassification" AttributeFlags="32" AggregationType="3" AggregationFlag="0" Inverse="RelatingClassification">
+			<Documentation>The classification with which objects are associated.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; New inverse attribute.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2057.0207" Y="1974.9272" />
+				<DocPoint X="2057.0207" Y="2121.76054" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1830.354" Y="1940.1772" Width="414" Height="70" />
+		</DocAttribute>
+		<DocAttribute Name="HasReferences" UniqueId="35467369-dd27-41ae-99ba-466f5c1e23ab" DefinedType="IfcClassificationReference" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="ReferencedSource">
+			<Documentation>The classification references to which the classification applies. It can either be the final classification notation, or an intermediate classification item.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2161.0206" Y="1248.4272" />
+				<DocPoint X="2161.0206" Y="825.1271" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2434.34561" Y="1326.098637" Width="515" Height="70" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

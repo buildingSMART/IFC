@@ -1,1 +1,1 @@
-﻿Supply air temperature in cooling mode
+﻿Supply air temperature in cooling mode.

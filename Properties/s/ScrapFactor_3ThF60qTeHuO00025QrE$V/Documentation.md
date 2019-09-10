@@ -1,0 +1,1 @@
+﻿Sheet metal scrap factor.

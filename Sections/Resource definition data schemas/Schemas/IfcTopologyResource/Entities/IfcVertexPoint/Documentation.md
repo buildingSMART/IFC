@@ -1,14 +1,12 @@
-﻿**Definition from ISO/CD 10303-42:1992**: A vertex point is a vertex which has its geometry defined as a point.
+﻿{ .extDef}
+> NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
+> A vertex point is a vertex which has its geometry defined as a point.
 
-> <font color="#0000FF" size="-1">NOTE: Corresponding STEP
-		entity: vertex_point. Please refer to ISO/IS 10303-42:1994, p. 130 for the
-		final definition of the formal standard. Due to the general IFC model
-		specification rule not to use multiple inheritance, the subtype relationship to
-		geometric_representation_item is not included.</font>
+> NOTE&nbsp; Entity adapted from **vertex_point** defined in ISO 10303-42.
 
-> <font color="#0000FF" size="-1"> HISTORY: New Entity in IFC
-		Release 2x.</font>
+> HISTORY&nbsp; New entity in IFC2x.
 
-**Informal proposition**:
+{ .spec-head}
+Informal Propositions:
 
 1. The domain of the vertex is formally defined to be the domain of its vertex point.

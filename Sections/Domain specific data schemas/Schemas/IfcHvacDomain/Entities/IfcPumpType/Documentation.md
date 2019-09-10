@@ -1,23 +1,9 @@
-﻿The element type _IfcPumpType_ defines a list of commonly shared property set definitions of a pump and an optional set of product representations. It is used to define a pump specification (i.e. the specific product information, that is common to all occurrences of that product type).
+﻿The flow moving device type **IfcPumpType** defines commonly shared information for occurrences of pumps. The set of shared information may include:
 
-> <font size="-1">
-		NOTE: The product representations are defined as
-		representation maps (at the level of the supertype <i>IfcTypeProduct</i>, which
-		get assigned by an element occurrence instance through the
-		<i>IfcShapeRepresentation.Item[1]</i> being an
-		<i>IfcMappedItem</i>.
-    	</font>
+* common properties with shared property sets
+* common representations
+* common materials
+* common composition of elements
+* common ports
 
-A pump type is used to define the common properties of a pump that may be applied to many occurrences of that type. A pump is a device which imparts mechanical work on a liquid. A typical use of a pump is to circulate chilled water or heating hot water in a building services distribution system. Pump types (or the instantiable subtypes) may be exchanged without being already assigned to occurrences.
-
-The occurrences of the _IfcPumpType_ are represented by instances of _IfcFlowMovingDevice_ or its subtypes.
-
-****Property Set Use Definition****:
-
-The property sets relating to this entity are defined by the _IfcPropertySet_ and attached by the _IfcRelDefinesByProperties_ relationship. It is accessible by the inverse _IsDefinedBy_ relationship. The following property set definitions specific to this entity are part of this IFC release:
-
-* [Pset_PumpTypeCommon](../../psd/IfcHvacDomain/Pset_PumpTypeCommon.xml){ target="SOURCE"}: common property set for all pump types 
-
-> <font color="#0000ff" size="-1">
-    	HISTORY: New entity in IFC Release 2x2.<br>
-    	</font>
+It is used to define a pump type specification indicating the specific product information that is common to all occurrences of that product type. The **IfcPumpType** may be declared within _IfcProject_ or _IfcProjectLibrary_ using _IfcRelDeclares_ and may be exchanged with or without occurrences of the type. Occurrences of **IfcPumpType** are represented by instances of _IfcPump_. Refer to the documentation at _IfcPump_ for supported property sets, materials, composition, and ports.

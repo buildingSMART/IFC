@@ -1,0 +1,1 @@
+﻿Thermal conductivity temperature derivative.

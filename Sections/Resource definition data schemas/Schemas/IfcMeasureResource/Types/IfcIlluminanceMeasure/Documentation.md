@@ -1,8 +1,7 @@
-﻿A measure of the illuminance.
+﻿_IfcIlluminanceMeasure_ is a measure of the illuminance.
 
 Usually measured in Lux (lx, Lumen/m2 = Candela Steradian/m2).
 
 Type: REAL
 
-> <font size="-1" color="#0000FF">HISTORY New type in IFC Release 2x.
-</font>
+> HISTORY&nbsp; New type in IFC2x.

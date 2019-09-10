@@ -1,5 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocPropertySet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Pset_DoorWindowGlazingType" UniqueId="3cdiA0qTmHuO00025QrE$V" PropertySetType="PSET_TYPEDRIVENOVERRIDE">
+<DocPropertySet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Pset_DoorWindowGlazingType" UniqueId="3cdiA0qTmHuO00025QrE$V" ApplicableType="IfcDoor, IfcWindow" PropertySetType="PSET_TYPEDRIVENOVERRIDE">
+	<Localization>
+		<DocLocalization Locale="fr-FR">
+			<Documentation>Définition de l&apos;IAI : propriétés communes à la définition du composant vitrage des instances des classes IfcDoor et IfcWindow, utilisées pour des calculs thermiques et d&apos;éclairage.</Documentation>
+		</DocLocalization>
+		<DocLocalization Locale="ja-JP">
+			<Documentation>IfcDoorとIfcWindowにあるガラス部品に関する共通プロパティセット定義。熱と明るさの計算に用いる。</Documentation>
+		</DocLocalization>
+		<DocLocalization Locale="zh-CN">
+			<Documentation>IfcDoor和IfcWindow实例的玻璃构件定义中通用的属性，用于热工和采光计算。</Documentation>
+		</DocLocalization>
+	</Localization>
 	<Properties>
 		<DocProperty xsi:nil="true" href="GlassLayers_0DzO_0qTqHuO00025QrEV" />
 		<DocProperty xsi:nil="true" href="GlassThickness1_0QUUW0qTqHuO00025QrEV" />
@@ -11,10 +22,13 @@
 		<DocProperty xsi:nil="true" href="IsLaminated_1Tr5Q0qTqHuO00025QrEV" />
 		<DocProperty xsi:nil="true" href="IsCoated_1f9u80qTqHuO00025QrEV" />
 		<DocProperty xsi:nil="true" href="IsWired_1o65E0qTqHuO00025QrEV" />
-		<DocProperty xsi:nil="true" href="Translucency_0WhaiY50n9gwS3YWDrUTi" />
-		<DocProperty xsi:nil="true" href="Reflectivity_3jXBDVOJv9AAvLLAMzeHQ" />
-		<DocProperty xsi:nil="true" href="BeamRadiationTransmittance_1WNWkWif9P9oh7i5NIrvP" />
+		<DocProperty xsi:nil="true" href="VisibleLightReflectance_1wS8w0qTqHuO00025QrEV" />
+		<DocProperty xsi:nil="true" href="VisibleLightTransmittance_20Pc_0qTqHuO00025QrEV" />
+		<DocProperty xsi:nil="true" href="SolarAbsorption_24aeq0qTqHuO00025QrEV" />
+		<DocProperty xsi:nil="true" href="SolarReflectance_28lgg0qTqHuO00025QrEV" />
+		<DocProperty xsi:nil="true" href="SolarTransmittance_2CwiW0qTqHuO00025QrEV" />
 		<DocProperty xsi:nil="true" href="SolarHeatGainTransmittance_2Hhtm0qTqHuO00025QrEV" />
+		<DocProperty xsi:nil="true" href="ShadingCoefficient_2Lsvc0qTqHuO00025QrEV" />
 		<DocProperty xsi:nil="true" href="ThermalTransmittanceSummer_2Q1xS0qTqHuO00025QrEV" />
 		<DocProperty xsi:nil="true" href="ThermalTransmittanceWinter_2UCzI0qTqHuO00025QrEV" />
 	</Properties>

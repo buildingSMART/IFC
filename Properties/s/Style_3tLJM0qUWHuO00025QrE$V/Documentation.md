@@ -1,1 +1,1 @@
-﻿Description of the furniture style
+﻿Description of the furniture style.

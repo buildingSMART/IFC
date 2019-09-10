@@ -1,1 +1,0 @@
-﻿Maximum design operational temperature.

@@ -1,48 +1,24 @@
-﻿The element type (_IfcMechanicalFastenerType_) defines a list of commonly shared property set definitions of a fastener and an optional set of product representations. It is used to define mechanical fasteners mainly within structural and building services domains (i.e. the specific type information common to all occurrences of that type).
+﻿The element component type **IfcMechanicalFastenerType** defines commonly shared information for occurrences of mechanical fasteners. The set of shared information may include:
 
-The occurrences of the _IfcMechanicalFastenerType_ are represented by instances of _IfcMechanicalFastener_.
+* common properties with shared property sets
+* common representations
+* common materials
+* common composition of elements
 
-> <font color="#0000FF" size="-1">
-            HISTORY New entity in IFC Release 2x2
-</font>
+It is used to define a mechanical fastener type specification indicating the specific product information that is common to all occurrences of that product type. The **IfcMechanicalFastenerType** may be declared within _IfcProject_ or _IfcProjectLibrary_ using _IfcRelDeclares_ and may be exchanged with or without occurrences of the type. Occurrences of **IfcMechanicalFastenerType** are represented by instances of _IfcMechanicalFastener_.
 
-**General usage**
+> HISTORY&nbsp; New entity in IFC2x2
 
-The exact type information of the _IfcMechanicalFastenerType_ is given in the _ElementType_ attribute inherited from _IfcElementType_. Standard type designations are provided for guideline below.
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; Supertype changed from _IfcFastenerType_ to _IfcElementComponentType_. Attributes _PredefinedType_, _NominalDiameter_, _NominalLength_ added.
 
-<table border="1">
+{ .use-head}
+Classification Use Definition
 
-   <tr>
-       <td><i><b>Standard mechanical fastener type designation</b></i></td>
-       <td><i><b>Description</b></i></td>
-   </tr>
-   <tr>
-       <td>'Bolt'</td>
-       <td>A threaded cylindrical rod that engages with a similarly threaded hole
-           in a nut or any other part to form a fastener.</td>
-   </tr>
-   <tr>
-       <td>'Nut'</td>
-       <td>A small square or hexagonal metal block with internal screw thread to be fitted onto a bolt.</td>
-   </tr>
-   <tr>
-       <td>'Washer'</td>
-       <td>A disk, as of metal, plastic, rubber, or other material, placed beneath a nut
-           or at an axle bearing or a joint to relieve friction, prevent leakage, or
-           distribute pressure.</td>
-   </tr>
-   <tr>
-       <td>'Screw'</td>
-       <td>A fastener with a tapered threaded shank and a slotted head.</td>
-   </tr>
-   <tr>
-       <td>'Nail'</td>
-       <td>A thin pointed piece of metal that is hammered into materials as a fastener.</td>
-   </tr>
-   <tr>
-       <td>'Rivet'</td>
-       <td>A fastening part having a head at one end and the other end being hammered
-           flat after being passed through holes in the pieces that are fastened together.</td>
-   </tr>
+Mechanical fasteners, especially bolts, are often standardized. To refer to a formal fastener designation according to a standard (a product norm), _IfcRelAssociatesClassification_ together with _IfcClassificationReference_ should be used.
 
-</table>
+* _IfcClassificationReference.Identification_ contains a machine-readable form of the formal fastener designation from the norm. Example: 'M16X80-10.9-HV' for a high-strength structural bolting assembly for preloading with hexagon bolt and nut. (On the other hand, _IfcMechanicalFastenerType.Name_ contains a displayable name which may not necessarily be the same as the formal designation.)
+* _IfcClassificationReference.Name_ carries the short name of the fastener norm. Example: 'EN 14399-4' as the respective European standard for high-strength hexagon bolts.
+* Optionally, the norm can be further described by _IfcClassificationReference.ReferencedSource_, including information like publisher and date of issue of the norm.
+
+Furthermore, _IfcRelAssociatesLibrary_ together with _IfcLibraryReference_ may be used to refer to a library which contains fastener definitions.

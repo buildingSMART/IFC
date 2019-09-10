@@ -1,8 +1,9 @@
-﻿**Definition from ISO/CD 10303-42:1992**: This select type identifies the two possible ways of trimming a parametric curve; by a Cartesian point on the curve, or by a REAL number defining a parameter value within the parametric range of the curve.
+﻿The IfcTrimmingSelect allows for a choice between two ways of trimming a curve.
 
-> <font color="#0000FF" size="-1">NOTE Corresponding STEP type:
-		trimming_select, please refer to ISO/IS 10303-42:1994, p. 20 for the final
-		definition of the formal standard. </font>
+{ .extDef}
+> NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
+> This select type identifies the two possible ways of trimming a parametric curve; by a Cartesian point on the curve, or by a REAL number defining a parameter value within the parametric range of the curve.
 
-> <font color="#0000FF" size="-1">HISTORY New Type in IFC Release
-		1.0</font>
+> NOTE&nbsp; Type adapted from **trimming_select** defined in ISO 10303-42.
+
+> HISTORY&nbsp; New Type in IFC1.0

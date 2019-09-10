@@ -1,9 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSanitaryTerminalType" UniqueId="3e6d6990-982c-4e43-a72e-52557bdc1ac3" DiagramNumber="1" BaseDefinition="IfcFlowTerminalType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Sanitäreinrichtung - Typ" Locale="de" />
+		<DocLocalization Name="Type d&apos;équipement sanitaire" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="75.760007" Y="613.0133" Width="650" Height="110.6" />
 	<Attributes>
 		<DocAttribute Name="PredefinedType" UniqueId="1e4ce0fe-9a0e-4b63-85a0-96729bee115b" DefinedType="IfcSanitaryTerminalTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Identifies the predefined types of sanitary terminal from which the type required may be set.</Documentation>
+			<DiagramLine>
+				<DocPoint X="78.001388" Y="723.6133" />
+				<DocPoint X="78.001388" Y="786.01333" />
+				<DocPoint X="491.560028" Y="786.01333" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="-22.111262" Y="781.4799816" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="9aa43d32-d922-451c-85bd-56cc2fd0fbae">
+			<Expression>(PredefinedType &lt;&gt; IfcSanitaryTerminalTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcSanitaryTerminalTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

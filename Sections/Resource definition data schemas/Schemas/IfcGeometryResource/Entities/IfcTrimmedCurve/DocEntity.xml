@@ -1,33 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTrimmedCurve" UniqueId="ba9fc3b6-e728-4ad6-be84-9a7975944d33" DiagramNumber="6" BaseDefinition="IfcBoundedCurve" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTrimmedCurve" UniqueId="ba9fc3b6-e728-4ad6-be84-9a7975944d33" DiagramNumber="6" BaseDefinition="IfcBoundedCurve" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Begrenzte Kurve" Locale="de" />
+		<DocLocalization Name="Courbe de rognage" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="8610.3482" Y="448.4552" Width="353.33333" Height="254.66667" />
 	<Attributes>
-		<DocAttribute Name="BasisCurve" UniqueId="e2455642-0894-4cbf-ba52-1acb4f6c4715" DefinedType="IfcCurve" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="BasisCurve" UniqueId="e2455642-0894-4cbf-ba52-1acb4f6c4715" DefinedType="IfcCurve" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>The curve to be trimmed. For curves with multiple representations any parameter values given as Trim1 or Trim2 refer to the master representation of the BasisCurve only.</Documentation>
+			<DiagramLine>
+				<DocPoint X="8963.6815" Y="483.0726" />
+				<DocPoint X="9336.34824" Y="483.0726" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="8952.348177" Y="466.672607" Width="132" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Trim1" UniqueId="58e41bff-104e-4220-bbdf-7b4a2098b9a3" DefinedType="IfcTrimmingSelect" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="2">
 			<Documentation>The first trimming point which may be specified as a Cartesian point, as a real parameter or both.</Documentation>
+			<DiagramLine>
+				<DocPoint X="8631.0149" Y="703.12187" />
+				<DocPoint X="8631.0149" Y="799.12188" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="8717.414933" Y="665.788536" Width="148" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Trim2" UniqueId="86e14707-9230-456e-b901-560cadf72284" DefinedType="IfcTrimmingSelect" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="2">
 			<Documentation>The second trimming point which may be specified as a Cartesian point, as a real parameter or both.</Documentation>
+			<DiagramLine>
+				<DocPoint X="8891.0148" Y="703.12187" />
+				<DocPoint X="8891.0148" Y="799.12188" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="8987.681466" Y="715.288532" Width="148" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="SenseAgreement" UniqueId="46ffc35f-be5c-4de9-8f14-2900fade3416" DefinedType="BOOLEAN" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Flag to indicate whether the direction of the trimmed curve agrees with or is opposed to the direction of the basis curve.</Documentation>
+			<DiagramLine>
+				<DocPoint X="8963.6815" Y="557.00066" />
+				<DocPoint X="9335.68147" Y="557.00066" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="8953.597463" Y="547.1673266" Width="198" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="MasterRepresentation" UniqueId="fc7412a9-6e7e-4f16-bf76-cb309218dbbb" DefinedType="IfcTrimmingPreference" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Where both parameter and point are present at either end of the curve this indicates the preferred form.</Documentation>
+			<DiagramLine>
+				<DocPoint X="8963.6815" Y="615.91785" />
+				<DocPoint X="9333.78138" Y="615.91785" />
+				<DocPoint X="9333.78138" Y="659.788538" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="8979.181486" Y="606.584517" Width="251" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR41" UniqueId="1soydPn$LEPBuaiT04$n8g">
+		<DocWhereRule Name="Trim1ValuesConsistent" UniqueId="9646fc32-d054-4662-9f08-b87b8e4e63ac">
 			<Documentation>Either a single value is specified for Trim1, or the two trimming values are of different type (point and parameter)</Documentation>
 			<Expression>(HIINDEX(Trim1) = 1) OR (TYPEOF(Trim1[1]) &lt;&gt; TYPEOF(Trim1[2]))</Expression>
 		</DocWhereRule>
-		<DocWhereRule Name="WR42" UniqueId="23NxfyZr91cftb3gih2sGL">
+		<DocWhereRule Name="Trim2ValuesConsistent" UniqueId="94dde442-8707-4e72-aa5b-08208970ac6b">
 			<Documentation>Either a single value is specified for Trim2, or the two trimming values are of different type (point and parameter)</Documentation>
 			<Expression>(HIINDEX(Trim2) = 1) OR (TYPEOF(Trim2[1]) &lt;&gt; TYPEOF(Trim2[2]))</Expression>
 		</DocWhereRule>
-		<DocWhereRule Name="WR43" UniqueId="2OuSSM8O1DuBrzkpWWEd9l">
-			<Documentation>Only line and conic curves should be trimmed, not other bounded curves. NOTE: This is an additional constraint of IFC.</Documentation>
+		<DocWhereRule Name="NoTrimOfBoundedCurves" UniqueId="84051f90-7894-4dc1-88c6-83060302f4e4">
+			<Documentation>Already bounded curves shall not be trimmed.</Documentation>
 			<Expression>NOT(&apos;IFCGEOMETRYRESOURCE.IFCBOUNDEDCURVE&apos; IN TYPEOF(BasisCurve))</Expression>
 		</DocWhereRule>
 	</WhereRules>

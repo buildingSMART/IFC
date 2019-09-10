@@ -1,234 +1,201 @@
-﻿**Definition from ISO 6707-1:1989**: Construction work that has the provision of shelter for its occupants or contents as one of its main purpose and is normally designed to stand permanently in one place.
+﻿A building represents a structure that provides shelter for its occupants or contents and stands in one place. The building is also used to provide a basic element within the spatial structure hierarchy for the components of a building project (together with site, storey, and space).
 
-A building represents a structure that provides shelter for its occupants or contents and stands in one place. The building is also used to provide a basic element within the spatial structure hierarchy for the components of a building project (together with site, storey, and space).
+{ .extDef}
+> NOTE&nbsp; Definition from ISO 6707-1:  
+> Construction work that has the provision of shelter for its occupants or contents as one of its main purpose and is normally designed to stand permanently in one place.
 
 A building is (if specified) associated to a site. A building may span over several connected or disconnected buildings. Therefore building complex provides for a collection of buildings included in a site. A building can also be decomposed in (vertical) parts, where each part defines a building section. This is defined by the composition type attribute of the supertype _IfcSpatialStructureElements_ which is interpreted as follow:
 
-* COMPLEX = building complex 
-* ELEMENT = building 
-* PARTIAL = building section 
+* **COMPLEX**: building complex
+* **ELEMENT**: building
+* **PARTIAL**: building section
 
-> <font color="#0000FF"><small>HISTORY New entity in
-        IFC Release 1.0.</small></font>
-> 
+The _IfcBuilding_ is used to build the spatial structure of a building (that serves as the primary project breakdown and is required to be hierarchical). The spatial structure elements are linked together by using the objectified relationship _IfcRelAggregates_.
 
+> HISTORY&nbsp; New entity in IFC1.0.
 
-****Property Set Use Definition****:
+Figure 1 shows the _IfcBuilding_ as part of the spatial structure. It also serves as the spatial container for building and other elements.
 
-The property sets relating to the _IfcBuilding_ are defined by the _IfcPropertySet_ and attached by the _IfcRelDefinesByProperties_ relationship. It is accessible by the inverse _IsDefinedBy_ relationship. The following property set definitions specific to the _IfcBuilding_ are part of this IFC release:
+> NOTE&nbsp; Detailed requirements on mandatory element containment and placement structure relationships are given in view definitions and implementer agreements.
 
-*  [Pset_BuildingCommon](../../psd/IfcProductExtension/Pset_BuildingCommon.xml){ target="SOURCE"}: common property set for all types of buildings 
-*  [Pset_BuildingWaterStorage](../../psd/IfcProductExtension/Pset_BuildingWaterStorage.xml){ target="SOURCE"}: specific property set for buildings to capture the water supply requirements 
-*  [Pset_BuildingUse](../../psd/IfcProductExtension/Pset_BuildingUse.xml){ target="SOURCE"}: specific property set for buildings to capture the current and anticipated real estate context. 
-*  [Pset_BuildingUseAdjacent](../../psd/IfcProductExtension/Pset_BuildingUseAdjacent.xml){ target="SOURCE"}: specific property set for buildings to capture the use information about the adjacent buildings. 
+!["IfcBuildingStorey as part of a spatial structure"](../../../../../../figures/ifcbuilding-spatialstructure.png "Figure 1 &mdash; Building composition")
 
-****Quantity Use Definition****:
+Systems, such as building service or electrical distribution systems, zonal systems, or structural analysis systems, relate to _IfcBuilding_ by using the objectified relationship _IfcRelServicesBuildings_.
 
-The quantities relating to the _IfcBuilding_ are defined by the _IfcElementQuantity_ and attached by the _IfcRelDefinesByProperties_. The following quantities are foreseen, but will be subjected to the local standard of measurement:
+{ .use-head}
+Attribute Use Definition
 
-<table border="1" cellpadding="2" cellspacing="2">
+Figure 2 describes the heights and elevations of the _IfcBuilding_. It is used to provide the height above sea level of the project height datum for this building, that is, the internal height 0.00. The height 0.00 is often used as a building internal reference height and equal to the floor finish level of the ground floor.
+
+* base elevation of building provided by: _IfcBuilding.ElevationOfRefHeight_, it is usually the top of construction slab 
+* base elevation of terrain at the perimeter of the building provided by: _IfcBuilding.ElevationOfTerrain_, it is usually the minimum elevation is sloped terrain 
+* total height of building, also referred to as ridge height (top of roof structure, e.g the ridge against terrain): provided by BaseQuantity with Name="TotalHeight" 
+* eaves height of building (base of roof structure, e.g the eaves against terrain): provided by BaseQuantity with Name="EavesHeight" 
+
+<table border="0" cellpadding="2" cellspacing="2">
       <tbody>
         <tr valign="top">
           <td align="left" valign="top">
-            <font size="-1"><i><b>Name</b></i></font>
-          </td>
-          <td align="left" valign="top" width="60%">
-            <font size="-1"><i><b>Description</b></i></font>
-          </td>
-          <td align="left" valign="top">
-            <font size="-1"><i><b>Value Type</b></i></font>
+            <img src="../../../../../../figures/ifcbuilding_heights.png" alt="building heights" border="0" height="420" width="800">&nbsp;
           </td>
         </tr>
-        <tr valign="top">
-          <td align="left" valign="top">
-            <font size="-1">NominalHeight</font>
-          </td>
-          <td align="left" valign="top" width="60%">
-            <font size="-1">Calculated height of the
-            building, measured from the level of terrain to the
-            top part of the building. The exact
-            definition and calculation rules depend on the method
-            of measurement used.</font>
-          </td>
-          <td align="left" valign="top">
-            <font size="-1"><i>IfcQuantityLength</i></font>
-          </td>
-        </tr>
-        <tr valign="top">
-          <td align="left" valign="top">
-            <font size="-1">NominalArea</font>
-          </td>
-          <td align="left" valign="top" width="60%">
-            <font size="-1">Calculated coverage of the 
-            site area that is occupied by the building (also
-            referred to as footprint). The exact definition 
-            and calculation rules depend on the method
-            of measurement used.</font>
-          </td>
-          <td align="left" valign="top">
-            <font size="-1"><i>IfcQuantityArea</i></font>
-          </td>
-        </tr>
-        <tr valign="top">
-          <td align="left" valign="top">
-            <font size="-1">GrossFloorArea</font>
-          </td>
-          <td align="left" valign="top" width="60%">
-            <font size="-1">Calculated sum of all areas covered
-            by the building</font> <font size="-1">(normally
-            including the area of construction
-            elements)</font><font size="-1">. The exact
-            definition and calculation rules depend on the method
-            of measurement used.</font>
-          </td>
-          <td align="left" valign="top">
-            <font size="-1"><i>IfcQuantityArea</i></font>
-          </td>
-        </tr>
-        <tr valign="top">
-          <td align="left" valign="top">
-            <font size="-1">NetFloorArea</font>
-          </td>
-          <td align="left" valign="top" width="60%">
-            <font size="-1">Calculated sum of all usable areas
-            covered by the building (normally excluding the area
-            of construction elements). The exact definition and
-            calculation rules depend on the method of measurement
-            used.</font>
-          </td>
-          <td align="left" valign="top">
-            <font size="-1"><i>IfcQuantityArea</i> </font>
-          </td>
-        </tr>
-        <tr valign="top">
-          <td align="left" valign="top">
-            <font size="-1">GrossVolume</font>
-          </td>
-          <td align="left" valign="top" width="60%">
-            <font size="-1">Calculated gross volume of all areas
-            enclosed by the building</font> <font size="-1">(normally including the area of construction
-            elements)</font><font size="-1">. The exact
-            definition and calculation rules depend on the method
-            of measurement used.</font>
-          </td>
-          <td align="left" valign="top">
-            <font size="-1"><i>IfcQuantityVolume</i></font>
-          </td>
-        </tr>
-        <tr valign="top">
-          <td align="left" valign="top">
-            <font size="-1">NetVolume</font>
-          </td>
-          <td align="left" valign="top" width="60%">
-            <font size="-1">Calculated net volume of all areas
-            enclosed by the building</font> <font size="-1">(normally excluding the area of construction
-            elements)</font><font size="-1">. The exact
-            definition and calculation rules depend on the method
-            of measurement used.</font>
-          </td>
-          <td align="left" valign="top">
-            <font size="-1"><i>IfcQuantityVolume</i></font>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-
-****Spatial Structure Use Definition****
-
-The _IfcBuilding_ is used to build the spatial structure of a building (that serves as the primary project breakdown and is required to be hierarchical). The spatial structure elements are linked together by using the objectified relationship _IfcRelAggregates_. The _IfcBuilding_ references them by its inverse relationships:
-
-*  _IfcBuilding.Decomposes_ -- referencing (_IfcSite_ || _IfcBuilding_) by _IfcRelAggregates.RelatingObject_, If it refers to another instance of _IfcBuilding_, the referenced _IfcBuilding_ needs to have a different and higher _CompositionType_, i.e. COMPLEX (if the other _IfcBuilding_ has ELEMENT), or ELEMENT (if the other _IfcBuilding_ has PARTIAL). 
-*  _IfcBuilding.IsDecomposedBy_ -- referencing (_IfcBuilding_ || _IfcBuildingStorey_) by _IfcRelAggregates.RelatedObjects_. If it refers to another instance of _IfcBuilding_, the referenced _IfcBuilding_ needs to have a different and lower CompositionType, i.e. ELEMENT (if the other _IfcBuilding_ has COMPLEX), or PARTIAL (if the other _IfcBuilding_ has ELEMENT). 
-
-If there are building elements and/or other elements
-    directly related to the _IfcBuilding_ (like a curtain
-    wall spanning several stories), they are associated with the
-    _IfcBuilding_ by using the objectified relationship
-    _IfcRelContainedInSpatialStructure_. The
-    _IfcBuilding_ references them by its inverse
-    relationship:  
-*  _IfcBuilding.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_. 
-
-<table summary="Spatial structure">
-      <tr>
-        <td valign="top">
-          <img src="figures/ifcbuilding-spatialstructure.png" alt="IfcBuilding as part of a spatial structure" width="501" height="451" border="0">
-        </td>
-        <td valign="top">
-          <p>
-            <small>Figure shows the <i>IfcBuilding</i> as
-            part of the spatial structure. In this example, both
-						the <i>IfcBuilding</i> and the referenced 
-						<i>IfcBuildingStorey</i> have products contained.
-						There is no definition on the level of product subtypes
-						about which particular element can (only) be assigned
-						to an <i>IfcBuilding</i> or an <i>IfcBuildingStorey</i></small>
-          </p>
-        </td>
-      </tr>
-    </table>
-
-****Attribute Use Definition****:
-
-<table border="1" cellpadding="2" cellspacing="2">
-      <tbody>
-        <tr valign="top">
-          <td align="left" valign="top">
-            <img src="figures/ifcbuilding-fig1.gif" alt="building heights" border="0" height="280" width="350"> 
-          </td>
-          <td align="left" valign="top">
-            <p>
-              <font size="-1">The heated space within a Building
-              shall be handled by the <i>IfcZone</i>, including
-              the property for overall height of the heated space
-              in the Building. The following figure shall define
-              the interpretation of building heights and
-              elevations for <i>IfcBuilding</i>.</font>
-            </p>
-            <p>
-              <font size="-1">The <i>ElevationOfRefHeight</i> is
-              used to give the height above sea level of the
-              internal height 0.00. The height 0.00 is often used
-              as a building internal reference height and equal
-              to the floor finish level of the ground
-              floor.</font>
+        <tr>
+          <td>
+            <p class="figure">Figure 2 &mdash; Building elevations
             </p>
           </td>
         </tr>
       </tbody>
     </table>
 
-****Geometry Use Definitions****:
+___
+## Common Use Definitions
+The following concepts are inherited at supertypes:
 
-The geometric representation of _IfcBuilding_ is given by the _IfcProductDefinitionShape_ and _IfcLocalPlacement_, allowing multiple geometric representation.
+* _IfcRoot_: [Identity](../../templates/identity.htm), [Revision Control](../../templates/revision-control.htm)
 
-**Local Placement**
+[![Image](../../../img/diagram.png)&nbsp;Instance diagram](../../../annex/annex-d/common-use-definitions/ifcbuilding.htm)
+
+{ .use-head}
+Spatial Composition
+
+The [Spatial Composition](../../templates/spatial-composition.htm) concept applies to this entity as shown in Table 1.
+
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Spatial Composite</b></th><th><b>Description</b></th></tr>
+<tr><td><a href="../../ifckernel/lexical/ifcproject.htm">IfcProject</a></td><td>Direct assignment to project, if the building is the outermost spatial container, and no site information is provided for building projects</td></tr>
+<tr><td><a href="../../ifcproductextension/lexical/ifcsite.htm">IfcSite</a></td><td>Assignment to site, if the building is the spatial container for the building project with site information </td></tr>
+<tr><td><a href="../../ifcproductextension/lexical/ifcbuilding.htm">IfcBuilding</a></td><td>Assignment to another building as spatial container, e.g. if this building represents a building section.</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 1 &mdash; IfcBuilding Spatial Composition</p></td></tr></table>
+
+> NOTE&nbsp; By using the inverse relationship _IfcBuilding.Decomposes_ it references _IfcProject_ || _IfcSite_ || _IfcBuilding_ through _IfcRelAggregates.RelatingObject_. If it refers to another instance of _IfcBuilding_, the referenced _IfcBuilding_ needs to have a different and higher _CompositionType_, i.e. COMPLEX (if the other _IfcBuilding_ has ELEMENT), or ELEMENT (if the other _IfcBuilding_ has PARTIAL).
+
+  
+  
+{ .use-head}
+Spatial Decomposition
+
+The [Spatial Decomposition](../../templates/spatial-decomposition.htm) concept applies to this entity as shown in Table 2.
+
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Spatial Parts</b></th><th><b>Description</b></th></tr>
+<tr><td><a href="../../ifcproductextension/lexical/ifcbuildingstorey.htm">IfcBuildingStorey</a></td><td>Spatial decomposition into building stories.</td></tr>
+<tr><td><a href="../../ifcproductextension/lexical/ifcbuilding.htm">IfcBuilding</a></td><td>Spatial decomposition into other buildings, e.g. if this building represents a complex building that is subdivided into building sections. </td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 2 &mdash; IfcBuilding Spatial Decomposition</p></td></tr></table>
+
+> NOTE&nbsp; By using the inverse relationship _IfcBuilding.IsDecomposedBy_ it references _IfcBuilding_ || _IfcBuildingStorey_ through _IfcRelAggregates.RelatedObjects_. If it refers to another instance of&nbsp;_IfcBuilding_, the referenced _IfcBuilding_ needs to have a different and lower _CompositionType_, i.e. ELEMENT (if the other _IfcBuilding_ has COMPLEX), or PARTIAL (if the other _IfcBuilding_ has ELEMENT).
+
+  
+  
+{ .use-head}
+Spatial Container
+
+The [Spatial Container](../../templates/spatial-container.htm) concept applies to this entity as shown in Table 3.
+
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Contained elements</b></th><th><b>Description</b></th></tr>
+<tr><td><a href="../../ifcproductextension/lexical/ifcelement.htm">IfcElement</a></td><td>Physical elements contained in the building.</td></tr>
+<tr><td><a href="../../ifcproductextension/lexical/ifcannotation.htm">IfcAnnotation</a></td><td>Annotations that are directly related to the building.</td></tr>
+<tr><td><a href="../../ifcproductextension/lexical/ifcgrid.htm">IfcGrid</a></td><td>Grids that are directly related to the building.</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3 &mdash; IfcBuilding Spatial Container</p></td></tr></table>
+
+> NOTE&nbsp; If there are building elements and/or other elements directly related to the _IfcBuilding_ (like a curtain wall spanning several stories), they are associated with the _IfcBuilding_ by using the objectified relationship _IfcRelContainedInSpatialStructure_. The _IfcBuilding_ references them by its inverse relationship: > *  _IfcBuilding.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.
+
+  
+  
+{ .use-head}
+Property Sets for Objects
+
+The [Property Sets for Objects](../../templates/property-sets-for-objects.htm) concept applies to this entity as shown in Table 4.
+
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PredefinedType</b></th><th><b>Name</b></th></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcproductextension/Pset_BuildingCommon.xml">Pset_BuildingCommon</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcproductextension/Pset_BuildingUse.xml">Pset_BuildingUse</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcproductextension/Pset_BuildingUseAdjacent.xml">Pset_BuildingUseAdjacent</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedbldgserviceelements/Pset_OutsideDesignCriteria.xml">Pset_OutsideDesignCriteria</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedbldgserviceelements/Pset_UtilityConsumptionPHistory.xml">Pset_UtilityConsumptionPHistory</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_PropertyAgreement.xml">Pset_PropertyAgreement</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedbldgserviceelements/Pset_AirSideSystemInformation.xml">Pset_AirSideSystemInformation</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcproductextension/Pset_SpaceFireSafetyRequirements.xml">Pset_SpaceFireSafetyRequirements</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcproductextension/Pset_SpaceLightingRequirements.xml">Pset_SpaceLightingRequirements</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcproductextension/Pset_SpaceOccupancyRequirements.xml">Pset_SpaceOccupancyRequirements</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcproductextension/Pset_SpaceThermalRequirements.xml">Pset_SpaceThermalRequirements</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedbldgserviceelements/Pset_ThermalLoadAggregate.xml">Pset_ThermalLoadAggregate</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedbldgserviceelements/Pset_ThermalLoadDesignCriteria.xml">Pset_ThermalLoadDesignCriteria</a></td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 4 &mdash; IfcBuilding Property Sets for Objects</p></td></tr></table>
+
+  
+  
+{ .use-head}
+Quantity Sets
+
+The [Quantity Sets](../../templates/quantity-sets.htm) concept applies to this entity as shown in Table 5.
+
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Name</b></th></tr>
+<tr><td><a href="../../qto/ifcproductextension/Qto_BuildingBaseQuantities.xml">Qto_BuildingBaseQuantities</a></td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 5 &mdash; IfcBuilding Quantity Sets</p></td></tr></table>
+
+  
+  
+{ .use-head}
+Product Placement
+
+The [Product Placement](../../templates/product-placement.htm) concept applies to this entity.
 
 The local placement for _IfcBuilding_ is defined in its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_, which defines the local coordinate system that is referenced by all geometric representations.
 
 * The _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point (if relative placement is used) to the _IfcSpatialStructureElement_ of type _IfcSite_, or of type _IfcBuilding_ (e.g. to position a building relative to a building complex, or a building section to a building). 
 * If the relative placement is not used, the absolute placement is defined within the world coordinate system. 
 
-**_Geometric Representations_**
+  
+  
+{ .use-head}
+FootPrint GeomSet Geometry
 
-Currently, the use of a 2D 'FootPrint' representation of type 'GeometricCurveSet' and a 3D 'Body' representation of type 'Brep' is supported.
+The [FootPrint GeomSet Geometry](../../templates/footprint-geomset-geometry.htm) concept applies to this entity as shown in Table 6.
 
-**Foot Print Representation**
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Identifier</b></th><th><b>Type</b></th><th><b>Items</b></th><th><b>Description</b></th></tr>
+<tr><td>FootPrint</td><td>GeometricCurveSet</td><td><a href="../../ifcgeometricmodelresource/lexical/ifcgeometriccurveset.htm">IfcGeometricCurveSet</a></td><td>Set of curves (outer and inner) representing the floor projection,</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 6 &mdash; IfcBuilding FootPrint GeomSet Geometry</p></td></tr></table>
 
 The foot print representation of _IfcBuilding_ is given by either a single 2D curve (such as _IfcPolyline_ or _IfcCompositeCurve_), or by a list of 2D curves (in case of inner boundaries), if the building has an independent geometric representation.
 
-The representation identifier and type of this geometric representation of _IfcBuilding_ is:
+> NOTE&nbsp; The independent geometric representation of _IfcBuilding_ may not be allowed in certain model view definitions. In those cases only the contained elements and spaces have an independent geometric representation.
 
-*  _IfcShapeRepresentation.RepresentationIdentifier_ = 'FootPrint' 
-*  _IfcShapeRepresentation.RepresentationType_ = 'GeometricCurveSet' 
+  
+  
+{ .use-head}
+Body Geometry
 
-**Body Representation**
+The [Body Geometry](../../templates/body-geometry.htm) concept applies to this entity.
 
 The body (or solid model) geometric representation (if the building has an independent geometric representation) of _IfcBuilding_ is defined using faceted B-Rep capabilities (with or without voids), based on the _IfcFacetedBrep_ or on the _IfcFacetedBrepWithVoids_.
 
-The representation identifier and type of this representation of _IfcBuilding_ is:
-
-*  _IfcShapeRepresentation.RepresentationIdentifier_ = 'Body' 
-*  _IfcShapeRepresentation.RepresentationType_ = 'Brep' 
-
-Since the building shape is usually described by the exterior building elements, an independent shape representation shall only be given, if the building is exposed independently from its constituting elements.
+> NOTE&nbsp; Since the building shape is usually described by the exterior building elements, an independent shape representation shall only be given, if the building is exposed independently from its constituting elements and such independent geometric representation may be prohibited in model view definitions.

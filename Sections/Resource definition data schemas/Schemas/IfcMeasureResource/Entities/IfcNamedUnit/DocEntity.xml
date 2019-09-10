@@ -1,16 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcNamedUnit" UniqueId="feff0f85-92ea-4f67-8748-661f27621758" DiagramNumber="1" EntityFlags="197">
+	<Localization>
+		<DocLocalization Name="Benannte Einheit" Locale="de" />
+		<DocLocalization Name="Unité nommée" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1276.5589" Y="1174.3802" Width="274" Height="137.33333" />
 	<Subtypes>
 		<DocSubtype UniqueId="ff164269-51c9-4fa5-b5da-d799a49266af" DefinedType="IfcContextDependentUnit" />
 		<DocSubtype UniqueId="6cdc4101-442b-401d-91b0-63e734f6d402" DefinedType="IfcConversionBasedUnit" />
 		<DocSubtype UniqueId="0d0c003b-61af-4913-9a99-fc9711be51ab" DefinedType="IfcSIUnit" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Dimensions" UniqueId="55ff10f6-6fd1-45cd-a53c-2707349993cb" DefinedType="IfcDimensionalExponents" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Dimensions" UniqueId="55ff10f6-6fd1-45cd-a53c-2707349993cb" DefinedType="IfcDimensionalExponents" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>The dimensional exponents of the SI base units by which the named unit is defined.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1313.4003" Y="1174.3802" />
+				<DocPoint X="1313.4003" Y="905.75904" />
+				<DocPoint X="1002.55882" Y="905.75904" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1233.289706" Y="1103.261491" Width="135" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="UnitType" UniqueId="9621fcc5-c1bf-463f-9fa4-c55d0fe7849e" DefinedType="IfcUnitEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The type of the unit.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1276.5589" Y="1243.0468" />
+				<DocPoint X="1112.9514" Y="1243.0468" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1281.5446909" Y="1235.1128708" Width="106" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

@@ -1,9 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcElectricTimeControlType" UniqueId="2bb86abe-9d7d-49e5-8a0e-89e7617eddf6" DiagramNumber="3" BaseDefinition="IfcFlowControllerType" EntityFlags="109">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcElectricTimeControlType" UniqueId="2bb86abe-9d7d-49e5-8a0e-89e7617eddf6" DiagramNumber="3" BaseDefinition="IfcFlowControllerType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Elektrische Zeitsteuerung - Typ" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="3278.6635" Y="934.96251" Width="679.8" Height="103.2" />
 	<Attributes>
 		<DocAttribute Name="PredefinedType" UniqueId="6390956e-1cd2-4033-9c94-ea41642eeaa8" DefinedType="IfcElectricTimeControlTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Identifies the predefined types of electrical time control from which the type required may be set.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3282.5635" Y="1038.1625" />
+				<DocPoint X="3282.5635" Y="1060.235299" />
+				<DocPoint X="3284.5256199" Y="1060.235299" />
+				<DocPoint X="3284.5256199" Y="1097.145826" />
+				<DocPoint X="3714.3968299" Y="1097.145826" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3383.1089499" Y="1053.9747726" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="66f4ba37-bdde-47ea-b7d0-152759440fa0">
+			<Expression>(PredefinedType &lt;&gt; IfcElectricTimeControlTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcElectricTimeControlTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

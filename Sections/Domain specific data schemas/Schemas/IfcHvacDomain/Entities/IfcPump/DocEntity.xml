@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPump" Name="IfcPump" UniqueId="da626cac-98fb-4f4c-8d4a-c8c4bac3a68d" DiagramNumber="3" BaseDefinition="IfcFlowMovingDevice" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Pumpe" Locale="de" />
+		<DocLocalization Name="Pompe" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="4432.8186" Y="714.53822" Width="322.2442" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="f3a4f34f-67bd-4977-b1ac-23f5004f8536" DefinedType="IfcPumpTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<DiagramLine>
+				<DocPoint X="4432.8186" Y="764.53822" />
+				<DocPoint X="4240.0329" Y="764.53822" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4435.5029546" Y="748.432092" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="29596e30-4b39-417c-b5f4-de45dad40815">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcPumpType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcPumpTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcPumpTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="74432786-bfd2-4727-8328-c00efc4637f7">
+			<Documentation>Either there is no pump type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcPumpType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCHVACDOMAIN.IFCPUMPTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

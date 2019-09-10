@@ -1,18 +1,36 @@
-﻿An _IfcCostSchedule_ brings together instances of _IfcCostItem_ either for the purpose of identifying purely cost information as in an estimate for constructions costs, bill of quantities etc. or for including cost information within another presentation form such as an order (of whatever type)
+﻿An _IfcCostSchedule_ brings together instances of _IfcCostItem_ either for the purpose of identifying purely cost information as in an estimate for constructions costs or for including cost information within another presentation form such as a work order.
 
-> <font color="#0000FF" size="-1">HISTORY: New Entity in IFC
-		Release 2.0. Modified in IFC 2x2</font>
+> HISTORY&nbsp; New entity in IFC2.0.
 
-**Use Definitions**
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; Attribute _ID_ renamed to _Identification_ and promoted to supertype _IfcControl_, _PredefinedType_ made optional, attributes _PreparedBy_, _SubmittedBy_, _TargetUsers_ removed.
 
-An _IfcCostSchedule_ is ultimately a subtype of _IfcRoot_ and consequently inherits its identifying, naming and description attributes.
+___
+## Common Use Definitions
+The following concepts are inherited at supertypes:
 
-In addition to the global unique identifier, an _IfcCostSchedule_ may be assigned a specific local unique identifier.
+* _IfcRoot_: [Identity](../../templates/identity.htm), [Revision Control](../../templates/revision-control.htm)
 
-The name attribute may be used to give an overall title or name to the _IfcCostSchedule_.
+[![Image](../../../img/diagram.png)&nbsp;Instance diagram](../../../annex/annex-d/common-use-definitions/ifccostschedule.htm)
 
-The description attribute may be used to provide further descriptive narrative. This may include specific comments that can be applied.
+{ .use-head}
+Object Approval
 
-An _IfcCostSchedule_ may be assigned a status that determines its current level of development or agreement. In the case of an 'APPROVED' status, this should only be set after an approval has been given through the association of an instance of _IfcApproval_.
+The [Object Approval](../../templates/object-approval.htm) concept applies to this entity.
 
-An _IfcCostSchedule_ may also be declared as being of a particular type. A number of predefined types are included through the _IfcCostScheduleTypeEnum_ enumeration.
+Approvals may be associated to indicate the status of acceptance or rejection using the [IfcRelAssociatesApproval](../../ifccontrolextension/lexical/ifcrelassociatesapproval.htm) relationship where _RelatingApproval_ refers to an [IfcApproval](../../ifcapprovalresource/lexical/ifcapproval.htm) and _RelatedObjects_ contains the **IfcCostSchedule**. Approvals may be split into sub-approvals using [IfcApprovalRelationship](../../ifcapprovalresource/lexical/ifcapprovalrelationship.htm) to track approval status separately for each party where _RelatingApproval_ refers to the higher-level approval and _RelatedApprovals_ contains one or more lower-level approvals. The hierarchy of approvals implies sequencing such that a higher-level approval is not executed until all of its lower-level approvals have been accepted.
+
+  
+  
+{ .use-head}
+Control Assignment
+
+The [Control Assignment](../../templates/control-assignment.htm) concept applies to this entity.
+
+The **IfcCostSchedule** may be assigned to the following entities using relationships as indicated:
+
+* [IfcActor](../../ifckernel/lexical/ifcactor.htm) ([IfcRelAssignsToActor](../../ifckernel/lexical/ifcrelassignstoactor.htm)): Persons and organizations involved in the preparation, submittal, and as target users.
+
+The **IfcCostSchedule** may have assignments of its own using the [IfcRelAssignsToControl](../../ifckernel/lexical/ifcrelassignstocontrol.htm) relationship where _RelatingControl_ refers to the **IfcCostSchedule** and _RelatedObjects_ contains one or more objects of the following types:
+
+* [IfcCostItem](../../ifcsharedmgmtelements/lexical/ifccostitem.htm): Indicates costs published within this cost schedule, typically a single root cost item forming a hierarchy of nested cost items.

@@ -1,17 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPlacement" UniqueId="1313c1ee-f455-43d1-99a2-89dea63a0fca" DiagramNumber="3" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="205">
+	<Localization>
+		<DocLocalization Name="Positionierung" Locale="de" />
+		<DocLocalization Name="Positionnement" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="3691.0521" Y="225.40469" Width="283.33333" Height="233.33333" />
 	<Subtypes>
 		<DocSubtype UniqueId="0afa44b1-ccbc-4abe-ad21-72786fad536b" DefinedType="IfcAxis1Placement" />
 		<DocSubtype UniqueId="d598b72a-afe0-4d6d-8a84-c8282eba3231" DefinedType="IfcAxis2Placement2D" />
 		<DocSubtype UniqueId="a2aa4535-1401-4cdc-bf3b-af32df6b5f08" DefinedType="IfcAxis2Placement3D" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Location" UniqueId="23629b11-592b-4e99-bb5e-62ab0cfc52c2" DefinedType="IfcCartesianPoint" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Location" UniqueId="23629b11-592b-4e99-bb5e-62ab0cfc52c2" DefinedType="IfcCartesianPoint" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>The geometric position of a reference point, such as the center of a circle, of the item to be located.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3974.3854" Y="270.07135" />
+				<DocPoint X="4724.14398" Y="270.07135" />
+				<DocPoint X="4724.14398" Y="1294.50335" />
+				<DocPoint X="3631.11878" Y="1294.50335" />
+				<DocPoint X="3631.11878" Y="1571.83797" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3826.55207" Y="266.67135" Width="101" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Dim" UniqueId="8e771ee6-0f6b-4e31-ad58-fbe8fa4e28de" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The space dimensionality of this class, derived from the dimensionality of the location.</Documentation>
 			<Derived>Location.Dim</Derived>
+			<DiagramLine>
+				<DocPoint X="3691.0521" Y="330.73802" />
+				<DocPoint X="3578.6521" Y="330.73802" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3683.8521" Y="317.404686" Width="125" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

@@ -1,12 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTubeBundleType" UniqueId="a152e66f-594f-4779-90f7-092829204b79" DiagramNumber="1" BaseDefinition="IfcEnergyConversionDeviceType" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTubeBundleType" UniqueId="a152e66f-594f-4779-90f7-092829204b79" DiagramNumber="1" BaseDefinition="IfcEnergyConversionDeviceType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Rohrbündel - Typ" Locale="de" />
+		<DocLocalization Name="Type de faisceau tubulaire" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="69.753635" Y="1873.6481" Width="401.58096" Height="102.64694" />
 	<Attributes>
 		<DocAttribute Name="PredefinedType" UniqueId="b68c7534-05cc-4f1a-8a8d-a1551285c2ee" DefinedType="IfcTubeBundleTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Defines the type of tube bundle.</Documentation>
+			<DiagramLine>
+				<DocPoint X="471.3346" Y="1927.4229" />
+				<DocPoint X="681.57953" Y="1927.4229" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="471.3346" Y="1927.4229" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="1L$_bkCmn5p9SErr8qO0bG">
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="76f93094-f9b8-4722-b3e1-6b6c108671a1">
 			<Expression>(PredefinedType &lt;&gt; IfcTubeBundleTypeEnum.USERDEFINED) OR
 ((PredefinedType = IfcTubeBundleTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
 		</DocWhereRule>

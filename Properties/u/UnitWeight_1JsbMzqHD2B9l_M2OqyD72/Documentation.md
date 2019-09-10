@@ -1,1 +1,0 @@
-﻿Weight per unit length.

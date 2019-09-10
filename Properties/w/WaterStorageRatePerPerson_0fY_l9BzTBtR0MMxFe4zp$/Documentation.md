@@ -1,1 +1,0 @@
-﻿The volume of domestic water that needs to be stored per person.

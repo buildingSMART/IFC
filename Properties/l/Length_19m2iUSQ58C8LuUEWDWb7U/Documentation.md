@@ -1,1 +1,0 @@
-﻿Length of the pipe segment.

@@ -1,29 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcProjectOrder" UniqueId="893d5903-b4b9-47a6-b246-30c5ec310142" DiagramNumber="1" BaseDefinition="IfcControl" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcProjectOrder" Name="IfcProjectOrder" UniqueId="893d5903-b4b9-47a6-b246-30c5ec310142" DiagramNumber="1" BaseDefinition="IfcControl" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Projektanweisung" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="210.3176" Y="239.00679" Width="305.94728" Height="310.04993" />
 	<Attributes>
-		<DocAttribute Name="ID" UniqueId="2poa5g$bf28e3_Ew9E6sT6" DefinedType="IfcIdentifier" AttributeFlags="2" AggregationType="0" AggregationFlag="0">
-			<Documentation>A unique identification assigned to a project order that enables its differentiation from other project orders.</Documentation>
-		</DocAttribute>
-		<DocAttribute Name="PredefinedType" UniqueId="6ceee77b-7d56-4a99-a3c8-e0c2298be9ce" DefinedType="IfcProjectOrderTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>The type of project order.</Documentation>
+		<DocAttribute Name="PredefinedType" UniqueId="6ceee77b-7d56-4a99-a3c8-e0c2298be9ce" DefinedType="IfcProjectOrderTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Predefined generic type for a project order that is specified in an enumeration. There may be a property set given specificly for the predefined types.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE The attribute has been made optional.</Documentation>
+			<DiagramLine>
+				<DocPoint X="516.26488" Y="265.20037" />
+				<DocPoint X="645.65942" Y="265.20037" />
+				<DocPoint X="645.65942" Y="267.0514113" />
+				<DocPoint X="775.05396" Y="267.0514113" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="616.298036" Y="257.115433" Width="182" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Status" UniqueId="f98e043a-2c58-46e0-b878-56b709b5bab9" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The current status of a project order.Examples of status values that might be used for a project order status include:
-- PLANNED
-- REQUESTED
-- APPROVED
-- ISSUED
-- STARTED
-- DELAYED
-- DONE</Documentation>
+* PLANNED
+* REQUESTED
+* APPROVED
+* ISSUED
+* STARTED
+* DELAYED
+* DONE</Documentation>
+			<DiagramLine>
+				<DocPoint X="516.26488" Y="363.14075" />
+				<DocPoint X="772.36777" Y="363.14075" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="558.588118" Y="358.5576993" Width="77" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="LongDescription" UniqueId="f531fcc3-faf7-4b0e-8ee9-41c2e6ab71f6" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>A detailed description of the project order describing the work to be completed.</Documentation>
+			<DiagramLine>
+				<DocPoint X="516.26488" Y="497.9726" />
+				<DocPoint X="743.45468" Y="497.9726" />
+				<DocPoint X="743.45468" Y="499.1051145" />
+				<DocPoint X="773.579218" Y="499.1051145" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="503.144589" Y="489.9982804" Width="186" Height="35" />
 		</DocAttribute>
 	</Attributes>
-	<UniqueRules>
-		<DocUniqueRule Name="UR2" UniqueId="20xjo84Hn0rvSytjhpNWR1">
-			<Items>
-				<DocUniqueRuleItem Name="ID" UniqueId="1cj3e$x013owDUs9efVdXJ" />
-			</Items>
-		</DocUniqueRule>
-	</UniqueRules>
 </DocEntity>
 

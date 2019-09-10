@@ -1,3 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCrewResource" UniqueId="3770d6cc-7b84-41f9-b413-dd23f8cab584" DiagramNumber="1" BaseDefinition="IfcConstructionResource" EntityFlags="101" />
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCrewResource" Name="IfcCrewResource" UniqueId="3770d6cc-7b84-41f9-b413-dd23f8cab584" DiagramNumber="1" BaseDefinition="IfcConstructionResource" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Mannschaft - Ressource" Locale="de" />
+		<DocLocalization Name="Équipe" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="95.49999" Y="1252.6668" Width="658.2" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="fd0a2ad8-3efa-46e5-a534-fefe0d6f9bce" DefinedType="IfcCrewResourceTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Defines types of crew resources.
+{ .change-ifc2x4}
+&gt; IFC4 New attribute.</Documentation>
+			<DiagramLine>
+				<DocPoint X="101.93332" Y="1352.6668" />
+				<DocPoint X="101.93332" Y="1397.30675" />
+				<DocPoint X="467.73333" Y="1397.30675" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="20.599987" Y="1394.6400833" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="39d65b2b-6a43-4383-b27b-b284990574b4">
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcCrewResourceTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcCrewResourceTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
 

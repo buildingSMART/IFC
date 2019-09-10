@@ -1,0 +1,1 @@
+﻿Indicates switch positions or levels over time, such as for energy management or surveillance.

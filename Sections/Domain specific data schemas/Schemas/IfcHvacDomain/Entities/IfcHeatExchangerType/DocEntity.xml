@@ -1,12 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcHeatExchangerType" UniqueId="b7c407fd-4201-4501-a40d-db22371e0cd8" DiagramNumber="1" BaseDefinition="IfcEnergyConversionDeviceType" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcHeatExchangerType" UniqueId="b7c407fd-4201-4501-a40d-db22371e0cd8" DiagramNumber="1" BaseDefinition="IfcEnergyConversionDeviceType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Wärmetauscher - Typ" Locale="de" />
+		<DocLocalization Name="Type d&apos;échangeur de chaleur" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="69.825655" Y="1626.5156" Width="401.58023" Height="102.64694" />
 	<Attributes>
 		<DocAttribute Name="PredefinedType" UniqueId="d9f9c23d-4ba6-4171-867c-a1831a73633f" DefinedType="IfcHeatExchangerTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Defines the basic types of heat exchanger (e.g., plate, shell and tube, etc.).</Documentation>
+			<DiagramLine>
+				<DocPoint X="471.40588" Y="1675.0179" />
+				<DocPoint X="681.62872" Y="1675.0179" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="470.42209568" Y="1678.2345523" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="1aYAMVxSL6MB8r7ctp6V64">
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="1755dc9c-cd09-4424-bbb9-1566fa843621">
 			<Expression>(PredefinedType &lt;&gt; IfcHeatExchangerTypeEnum.USERDEFINED) OR
 ((PredefinedType = IfcHeatExchangerTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
 		</DocWhereRule>

@@ -1,34 +1,68 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPostalAddress" UniqueId="8a2c94a5-2ae6-4e52-b758-77ba7af2a9b1" DiagramNumber="2" BaseDefinition="IfcAddress" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Postalische Adresse" Locale="de" />
+		<DocLocalization Name="Addresse postale" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="2089.3127" Y="551.55468" Width="327.33333" Height="829.2364" />
 	<Attributes>
 		<DocAttribute Name="InternalLocation" UniqueId="70967c62-3fd1-4cc4-ba6b-14392c4b6f22" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>An organization defined address for internal mail delivery.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2416.646" Y="606.49142" />
+				<DocPoint X="2911.34464" Y="606.49142" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2431.314809" Y="593.373926" Width="184" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="AddressLines" UniqueId="cda33540-f636-4465-9867-3429456e0ddc" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="AddressLines" UniqueId="cda33540-f636-4465-9867-3429456e0ddc" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0" XsdFormat="element">
 			<Documentation>The postal address.
-&gt; &lt;font size=&quot;-1&quot;&gt;NOTE: A postal address may occupy several lines (or elements) when recorded. 
-It is expected that normal usage will incorporate relevant elements of the following address concepts: 
-A location within a building (e.g. 3rd Floor) Building name (e.g. Interoperability House) Street number 
-(e.g. 6400) Street name (e.g. Alliance Boulevard). Typical content of address lines may vary in different 
-countries.
-&lt;/font&gt;</Documentation>
+&gt; NOTE&amp;nbsp; A postal address may occupy several lines (or elements) when recorded. It is expected that normal usage will incorporate relevant elements of the following address concepts: A location within a building (e.g. 3rd Floor) Building name (e.g. Interoperability House) Street number (e.g. 6400) Street name (e.g. Alliance Boulevard). Typical content of address lines may vary in different countries.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2416.646" Y="717.40997" />
+				<DocPoint X="2911.32224" Y="717.40997" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2451.483113" Y="713.9161418" Width="233" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="PostalBox" UniqueId="daae8135-852e-4b66-b5c2-4f48ab9e2c55" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>An address that is implied by an identifiable mail drop.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2416.646" Y="850.16835" />
+				<DocPoint X="2911.32754" Y="850.16835" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2398.962474" Y="841.7394653" Width="117" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Town" UniqueId="046c6230-7287-4095-b5a2-7e79394162fa" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The name of a town.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2416.646" Y="1087.6002" />
+				<DocPoint X="2911.29064" Y="1087.6002" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2378.68182" Y="1081.3748218" Width="68" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Region" UniqueId="3db96e1a-a47d-4ab7-aef3-20e0393693ee" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The name of a region.
-&gt; &lt;font size=&quot;-1&quot;&gt;NOTE: The counties of the United Kingdom and the states of North America are examples of regions.
-&lt;/font&gt;</Documentation>
+&gt; NOTE&amp;nbsp; The counties of the United Kingdom and the states of North America are examples of regions.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2416.646" Y="1212.3555" />
+				<DocPoint X="2911.33294" Y="1212.3555" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2387.479552" Y="1203.6061672" Width="86" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="PostalCode" UniqueId="c968eede-3374-4c93-9f2d-34004505076c" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The code that is used by the country&apos;s postal service.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2416.646" Y="964.3405" />
+				<DocPoint X="2911.31204" Y="964.3405" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2411.2194995" Y="956.7878308" Width="135" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Country" UniqueId="30b91ac3-acff-466f-84db-0ba77430f15d" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The name of a country.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2416.646" Y="1328.3601" />
+				<DocPoint X="2911.32224" Y="1328.3601" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2390.17092" Y="1317.696422" Width="94" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

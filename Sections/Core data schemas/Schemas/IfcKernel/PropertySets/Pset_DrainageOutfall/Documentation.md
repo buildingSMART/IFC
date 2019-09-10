@@ -1,1 +1,0 @@
-﻿Structure through which water is discharged into a watercourse or body of water (BS6100). Used as a non type driven property set in conjunction with an instance of IfcProxy that is identified as an outfall using the inherited IfcRoot.Name attribute.

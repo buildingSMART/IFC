@@ -1,5 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAddress" UniqueId="a2354718-4c92-40a9-b220-50e7c23e5faf" DiagramNumber="2" EntityFlags="205">
+	<Localization>
+		<DocLocalization Name="Adresse" Locale="de" />
+		<DocLocalization Name="Adresse" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1917.3609" Y="169.97806" Width="497.94038" Height="242.14093" />
 	<Subtypes>
 		<DocSubtype UniqueId="e703e877-8b1c-4ceb-8410-c494ec086816" DefinedType="IfcPostalAddress" />
 		<DocSubtype UniqueId="40c9139d-e6c7-4866-b4a7-2229763caa53" DefinedType="IfcTelecomAddress" />
@@ -7,21 +12,46 @@
 	<Attributes>
 		<DocAttribute Name="Purpose" UniqueId="6717ebb1-12ab-48aa-9124-de2c4c2117b5" DefinedType="IfcAddressTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Identifies the logical location of the address.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2415.3013" Y="207.03557" />
+				<DocPoint X="2782.60292" Y="207.03557" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2349.37805" Y="188.957382" Width="99" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Description" UniqueId="4e2e9f3c-9dd8-48fe-b139-72e2861e6d26" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Text that relates the nature of the address.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2415.3013" Y="384.34266" />
+				<DocPoint X="2783.124" Y="384.34266" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2369.501215" Y="374.7458446" Width="130" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="UserDefinedPurpose" UniqueId="4d473e59-c1ff-46d0-bc94-ddf22c5761c6" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Allows for specification of user specific purpose of the address beyond the 
 enumeration values provided by Purpose attribute of type IfcAddressTypeEnum. 
 When a value is provided for attribute UserDefinedPurpose, in parallel the 
 attribute Purpose shall have enumeration value USERDEFINED.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2415.3013" Y="299.82451" />
+				<DocPoint X="2782.5462" Y="299.82451" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2415.83401686" Y="290.4950966" Width="237" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="OfPerson" UniqueId="a2566a22-ad93-4b14-92e4-7c905751de4a" DefinedType="IfcPerson" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="Addresses">
+		<DocAttribute Name="OfPerson" UniqueId="a2566a22-ad93-4b14-92e4-7c905751de4a" DefinedType="IfcPerson" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="Addresses">
 			<Documentation>The inverse relationship to Person to whom address is associated.</Documentation>
+			<DiagramLine>
+				<DocPoint X="781.70952" Y="679.292" />
+				<DocPoint X="781.70952" Y="647.222142" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1138.66265" Y="882.69861" Width="254" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="OfOrganization" UniqueId="049b4ec2-3343-44d9-98fb-a8366b4313c7" DefinedType="IfcOrganization" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="Addresses">
+		<DocAttribute Name="OfOrganization" UniqueId="049b4ec2-3343-44d9-98fb-a8366b4313c7" DefinedType="IfcOrganization" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="Addresses">
 			<Documentation>The inverse relationship to Organization to whom address is associated.</Documentation>
+			<DiagramLine>
+				<DocPoint X="567.10903" Y="1834.7065" />
+				<DocPoint X="567.10903" Y="1802.636602" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="895.62466" Y="1966.23014" Width="316" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

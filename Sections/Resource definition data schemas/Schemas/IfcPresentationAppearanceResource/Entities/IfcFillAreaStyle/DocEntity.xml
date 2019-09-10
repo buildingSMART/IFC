@@ -1,26 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcFillAreaStyle" UniqueId="8495cfb3-40da-4a4e-8481-67e0000fb8d2" DiagramNumber="4" BaseDefinition="IfcPresentationStyle" EntityFlags="109">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcFillAreaStyle" UniqueId="8495cfb3-40da-4a4e-8481-67e0000fb8d2" DiagramNumber="6" BaseDefinition="IfcPresentationStyle" EntityFlags="109">
+	<Localization>
+		<DocLocalization Name="Füllflächenstil" Locale="de" />
+		<DocLocalization Name="Style de remplissage de surface" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="8813.1675" Y="109.95469" Width="283.26667" Height="100" />
 	<Attributes>
 		<DocAttribute Name="FillStyles" UniqueId="9ba1f4aa-4f50-46ae-89ec-64982a7b1746" DefinedType="IfcFillStyleSelect" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The set of fill area styles to use in presenting visible curve segments, annotation fill areas or surfaces.</Documentation>
+			<DiagramLine>
+				<DocPoint X="8954.8009" Y="209.95469" />
+				<DocPoint X="8954.8009" Y="318.65469" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="9064.79725" Y="222.638023" Width="182" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="ModelorDraughting" UniqueId="b8e3fc01-58d7-4b36-9005-6d26c38ffaea" DefinedType="BOOLEAN" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Indication whether the length measures provided for the presentation style are model based, or draughting based.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; New attribute.</Documentation>
+			<DiagramLine>
+				<DocPoint X="8813.1675" Y="159.95469" />
+				<DocPoint X="8502.72" Y="159.95469" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="8829.1675" Y="149.288023" Width="218" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR11" UniqueId="0vKIV3tSH2Ag8Y3cAXbODT">
+		<DocWhereRule Name="MaxOneColour" UniqueId="571a6f0d-c07a-4bfd-befe-4b9b6f62ffd4">
 			<Documentation>There shall be a maximum of one colour assignment to the fill area style.</Documentation>
 			<Expression>SIZEOF(QUERY(Style &lt;* SELF.FillStyles |
-  &apos;IFCPRESENTATIONRESOURCE.IFCCOLOUR&apos; IN
+  &apos;IFCPRESENTATIONAPPEARANCERESOURCE.IFCCOLOUR&apos; IN
    TYPEOF(Style)
   )) &lt;= 1</Expression>
 		</DocWhereRule>
-		<DocWhereRule Name="WR12" UniqueId="1MS1ETlSL9NuyzV3JHmnE5">
+		<DocWhereRule Name="MaxOneExtHatchStyle" UniqueId="f2f7b7fa-ce36-4cad-99b6-2889933d74c1">
 			<Documentation>There shall be a maximum of one externally defined hatch style assignment to the fill area style.</Documentation>
 			<Expression>SIZEOF(QUERY(Style &lt;* SELF.FillStyles |
   &apos;IFCPRESENTATIONAPPEARANCERESOURCE.IFCEXTERNALLYDEFINEDHATCHSTYLE&apos; IN
    TYPEOF(Style)
   )) &lt;= 1</Expression>
 		</DocWhereRule>
-		<DocWhereRule Name="WR13" UniqueId="2LQKA2njT7mwMiiHFMN$FZ">
+		<DocWhereRule Name="ConsistentHatchStyleDef" UniqueId="62a72800-27e9-4df8-9f76-1fca12fe7278">
 			<Documentation>Either the fill area style contains a definition from an externally defined hatch style, or from (one or many) fill area style hatchings or from (one or many) fill area style tiles, but not a combination of those three types.</Documentation>
 			<Expression>IfcCorrectFillAreaStyle(SELF.FillStyles)</Expression>
 		</DocWhereRule>

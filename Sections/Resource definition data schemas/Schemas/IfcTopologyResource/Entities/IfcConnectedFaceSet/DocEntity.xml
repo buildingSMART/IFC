@@ -1,5 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcConnectedFaceSet" UniqueId="00739840-0188-4605-bb14-19851c954616" DiagramNumber="2" BaseDefinition="IfcTopologicalRepresentationItem" EntityFlags="109">
+	<Localization>
+		<DocLocalization Name="Gruppe verbundender Flächen" Locale="de" />
+		<DocLocalization Name="Ensemble de faces connectées" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1904.3229" Y="98.050013" Width="416" Height="100" />
 	<Subtypes>
 		<DocSubtype UniqueId="2cc135c6-093a-4b8f-a2a3-4d485df71a7a" DefinedType="IfcClosedShell" />
 		<DocSubtype UniqueId="87d283ce-5317-45c3-a938-4aa2e6261044" DefinedType="IfcOpenShell" />
@@ -7,6 +12,11 @@
 	<Attributes>
 		<DocAttribute Name="CfsFaces" UniqueId="1fabb589-8fee-4286-8be7-1f8643ec33b7" DefinedType="IfcFace" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The set of faces arcwise connected along common edges or vertices.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1973.6563" Y="198.05001" />
+				<DocPoint X="1973.6563" Y="651.04999" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2091.1563" Y="200.8833433" Width="190" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

@@ -1,24 +1,62 @@
-﻿The _IfcRelConnectsPathElements_ relationship provides the connectivity information between two elements, which have a path information. Currently it is applied to _IfcWall_ and _IfcWallStandardCase_.
+﻿The _IfcRelConnectsPathElements_ relationship provides the connectivity information between two elements, which have path information.
 
-The objectified relationship provides all additional information required to describe the connection between two path based elements that might have single or multiple layers of material. The connection type specifies where at the path based element a connection is given (at the start, in the middle or at the end).
+The objectified relationship provides the additional information required to describe the connection between two path based elements that might have single or multiple layers of material. The connection type specifies where at the path based element a connection is given (at the start, in the middle or at the end).
 
-> <font size="-1" color="#0000FF">HISTORY: New entity in IFC Release
-		  1.5.</font>
->
+The connection is described by a connection geometry, given within the object coordinate systems of the _RelatingElement_ and of the _RelatedElement_. In case of _IfcWallStandardCase_ as the _RelatingElement_ and _RelatedElement_ the connection geometry is provided by the subtype _IfcConnectionCurveGeometry_. Both curves indicate the so called "end cap", i.e. the curve that trims the wall outer edges (being parallel along the wall axis) at the end.
 
-**Illustration**:
+> HISTORY&nbsp; New entity in IFC1.5.
 
-The following figure shows the application of _IfcRelConnectsPathElements_ with the _ConnectionGeometry_ of type _IfcConnectionCurveGeometry_.
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; The data type of _RelatingPriorities_ and _RelatedPriorities_ has been changed to NUMBER and its usage to a normalized ratio measure.
 
-<table cellpadding="2" cellspacing="2"> 
-		<tr valign="TOP"> 
-		  <td valign="TOP" align="LEFT"><a href="drawings/IfcRelConnectsPathElements-Layout1.dwf"><img src="figures/ifcrelconnectspathelements-layout1.gif" alt="wall connection" width="393" height="299" border="0"></a></td> 
-		  <td valign="TOP" align="LEFT"> 
-			 <p><font size="-1">The example shows the connection relationship
-				between two instances of <i>IfcWallStandardCase</i> using the
-				<i>IfcRelConnectsPathElements</i> relationship. </font></p> 
-			 <p><font size="-1">The <i>ConnectionGeometry</i> defines the
-				CurveOnRelatingElement and CurveOnRelatedElement, both are of type
-				<i>IfcPolyline</i>.</font></p></td> 
-		</tr> 
-	 </table>
+&nbsp;
+
+<table cellpadding="2" cellspacing="2">
+      <tr valign="top">
+        <td valign="top" align="left" width="410">
+          <img src="../../../../../../figures/ifcrelconnectspathelements-fig1.png" alt="wall connection" width="400" height="300" border="0">
+        </td>
+				<td>Figure 1 shows the application of
+      <em>IfcRelConnectsPathElements</em> with the
+      <em>ConnectionGeometry</em> of type
+      <em>IfcConnectionCurveGeometry</em>. The example shows the
+      connection relationship between two instances of
+      <em>IfcWallStandardCase</em> using the
+      <em>IfcRelConnectsPathElements</em> relationship. The
+      <em>ConnectionCurveGeometry</em> defines the
+      <em>CurveOnReleatingElement</em> and
+      <em>CurveOnRelatedElement</em>, both are of type
+      <em>IfcPolyline</em>.</td>
+      </tr>
+      <tr>
+        <td>
+          <p class="figure">Figure 1 &mdash; Path connection geometry</p>
+        </td>
+        <td></td>
+      </tr>
+    </table>
+
+<table cellpadding="2" cellspacing="2">
+      <tr valign="top">
+        <td valign="top" align="left" width="410">
+          <img src="../../../../../../figures/ifcrelconnectspathelements-fig3.png" alt="wall connection" width="400" height="260" border="0">
+        </td>
+        <td valign="top" align="left">
+          &nbsp;<img src="../../../../../../figures/ifcrelconnectspathelements-fig2.png" alt="wall connection" width="320" height="200" border="0">
+        </td>
+      </tr>
+      <tr valign="top">
+        <td valign="top" align="left" width="410">
+          <p class="figure">Figure 2 &mdash; Path connection T-Type</p>
+        </td>
+        <td valign="top" align="left" width="400">
+          <p class="figure">Figure 3 &mdash; Path connection L-Type</p>
+        </td>
+      </tr>
+    </table>
+
+Figure 2 illustrates using the _IfcRelConnectsPathElements_ for a "T" type connection between two instances of _IfcWallStandardCase_.
+
+Figure 3 illustrates using the _IfcRelConnectsPathElements_ for a "L" type connection between two instances of _IfcWallStandardCase_.
+
+> NOTE&nbsp; The two wall axes connect in each case.

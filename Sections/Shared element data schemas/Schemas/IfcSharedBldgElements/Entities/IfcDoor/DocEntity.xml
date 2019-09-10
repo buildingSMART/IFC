@@ -1,18 +1,78 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDoor" Name="IfcDoor" UniqueId="70b10571-8732-44f7-a5b2-3fdb229d547b" DiagramNumber="3" BaseDefinition="IfcBuildingElement" EntityFlags="173">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDoor" Name="IfcDoor" UniqueId="70b10571-8732-44f7-a5b2-3fdb229d547b" DiagramNumber="4" BaseDefinition="IfcBuildingElement" EntityFlags="173">
+	<Localization>
+		<DocLocalization Name="Tür" Locale="de" />
+		<DocLocalization Name="Porte" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="5085.5167" Y="106.97" Width="200" Height="345.93334" />
+	<Subtypes>
+		<DocSubtype UniqueId="5078ba5e-37ce-44ee-a144-570e7a3e93f7" DefinedType="IfcDoorStandardCase" />
+	</Subtypes>
 	<Attributes>
 		<DocAttribute Name="OverallHeight" UniqueId="82f1996a-2267-42e4-9a5b-d4f2a6e4f8e8" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Overall measure of the height, it reflects the Z Dimension of a bounding box, enclosing the ~~body of the~~ door opening. If omitted, the _OverallHeight_ should be taken from the geometric representation of the _IfcOpening_ in which the door is inserted. 
   
-&gt; &lt;small&gt;
-NOTE&amp;nbsp; The body of the door might be taller then the door opening (e.g. in cases where the door lining includes a casing). In these cases the &lt;i&gt;OverallHeight&lt;/i&gt; shall still be given as the door opening height, and not as the total height of the door lining.&lt;/small&gt;</Documentation>
+&gt; NOTE&amp;nbsp; The body of the door might be taller then the door opening (e.g. in cases where the door lining includes a casing). In these cases the _OverallHeight_ shall still be given as the door opening height, and not as the total height of the door lining.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5285.5167" Y="142.14122" />
+				<DocPoint X="5794.34003" Y="142.14122" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5285.5167" Y="142.14122" Width="156" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="OverallWidth" UniqueId="646a9c81-0757-404c-9c64-84e003fede0a" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Overall measure of the width, it reflects the X Dimension of a bounding box, enclosing the ~~body of the~~ door opening. If omitted, the _OverallWidth_ should be taken from the geometric representation of the _IfcOpening_ in which the door is inserted. 
   
-&gt; &lt;small&gt;
-NOTE&amp;nbsp; The body of the door might be wider then the door opening (e.g. in cases where the door lining includes a casing). In these cases the &lt;i&gt;OverallWidth&lt;/i&gt; shall still be given as the door opening width, and not as the total width of the door lining.&lt;/small&gt;</Documentation>
+&gt; NOTE&amp;nbsp; The body of the door might be wider then the door opening (e.g. in cases where the door lining includes a casing). In these cases the _OverallWidth_ shall still be given as the door opening width, and not as the total width of the door lining.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5285.5167" Y="226.52942" />
+				<DocPoint X="5794.37333" Y="226.52942" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5281.5167" Y="221.1960867" Width="147" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="PredefinedType" UniqueId="a4378e60-7e89-4d23-840a-b63a2e39ea45" DefinedType="IfcDoorTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Predefined generic type for a door that is specified in an enumeration. There may be a property set given specificly for the predefined types.
+&gt; NOTE&amp;nbsp; The _PredefinedType_ shall only be used, if no _IfcDoorType_ is assigned, providing its own _IfcDoorType.PredefinedType_.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE The attribute has been added at the end of the entity definition.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5285.5167" Y="357.56922" />
+				<DocPoint X="6174.59837" Y="357.56922" />
+				<DocPoint X="6174.59837" Y="745.3" />
+				<DocPoint X="6089.346703" Y="745.3" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5103.39087" Y="352.1304009" Width="182" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="OperationType" UniqueId="6bdfd4d0-3ffa-4da5-98bd-95b065f45793" DefinedType="IfcDoorTypeOperationEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Type defining the general layout and operation of the door type in terms of the partitioning of panels and panel operations. 
+&gt; NOTE&amp;nbsp; The _OperationType_ shall only be used, if no type object _IfcDoorType_ is assigned, providing its own _IfcDoorType.OperationType_.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE The attribute has been added at the end of the entity definition.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5285.5167" Y="293.42948" />
+				<DocPoint X="6275.37099" Y="293.42948" />
+				<DocPoint X="6275.37099" Y="837.97669" />
+				<DocPoint X="6232.94003" Y="837.97669" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5051.57253" Y="284.1161662" Width="171" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="UserDefinedOperationType" UniqueId="5c07c222-8576-4936-ab56-4f4b1a9eb05a" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Designator for the user defined operation type, shall only be provided, if the value of _OperationType_ is set to USERDEFINED.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5285.5167" Y="429.27" />
+				<DocPoint X="5796.18337" Y="429.27" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5352.183367" Y="418.603333" Width="309" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectStyleAssigned" UniqueId="b7748894-a3c9-4c8a-bd60-e6b1c6d81251">
+			<Documentation>Either there is no door type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcDoorType_.
+&gt; NOTEnbsp; The deprecated type _IfcDoorStyle_ is still included for backward compatibility reasons.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) 
+OR (&apos;IFCSHAREDBLDGELEMENTS.IFCDOORTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

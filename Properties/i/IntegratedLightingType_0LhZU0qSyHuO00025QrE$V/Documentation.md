@@ -1,1 +1,1 @@
-﻿Integrated lighting in cooled beam
+﻿Integrated lighting in cooled beam.

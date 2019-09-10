@@ -1,1 +1,0 @@
-﻿The primary media material used for heat transfer.

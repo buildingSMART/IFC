@@ -1,37 +1,15 @@
-﻿The _IfcLightFixtureTypeEnum_ defines the range of different types of light fixture available.
+﻿The _IfcLightFixtureTypeEnum_ defines the different types of light fixtures.
 
-> <font color="#0000FF" size="-1"> HISTORY: New type in IFC 2x Edition
-		  2< </font>
-> 
+> HISTORY&nbsp; New type in IFC2x2.
 
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; SECURITYLIGHTING added
 
-**Enumeration**
+{ .spec-head}
+Enumerated Item Definitions:
 
-<table border="1"> 
-		<tr> 
-		  <td><i>Value</i></td> 
-		  <td><i>Definition</i></td> 
-		  <td><i>Pset</i></td> 
-		</tr> 
-		<tr> 
-		  <td>POINTSOURCE</td> 
-		  <td>A light fixture that is considered to emit light at a point.</td> 
-		  <td>NO</td> 
-		</tr> 
-		<tr> 
-		  <td>DIRECTIONSOURCE</td> 
-		  <td>A light fixture that is considered to emit light from a linear or
-			 area face and in a direction.</td> 
-		  <td>NO</td> 
-		</tr> 
-		<tr> 
-		  <td>USERDEFINED</td> 
-		  <td></td> 
-		  <td></td> 
-		</tr> 
-		<tr> 
-		  <td>NOTDEFINED</td> 
-		  <td></td> 
-		  <td></td> 
-		</tr> 
-	 </table>
+* **POINTSOURCE**: A light fixture that is considered to have negligible area and that emit light with approximately equal intensity in all directions. A light fixture containing a tungsten, halogen or similar bulb is an example of a point source.
+* **DIRECTIONSOURCE**: A light fixture that is considered to have a length or surface area from which it emits light in a direction. A light fixture containing one or more fluorescent lamps is an example of a direction source. 
+* **SECURITYLIGHTING**: A light fixture having specific purpose of directing occupants in an emergency, such as an illuminated exit sign or emergency flood light.
+* **USERDEFINED**: User-defined type.
+* **NOTDEFINED**: Undefined type.

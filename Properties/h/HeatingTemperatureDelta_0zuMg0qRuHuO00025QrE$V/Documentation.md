@@ -1,1 +1,1 @@
-﻿Heating temperature difference for calculating space air flow rates
+﻿Heating temperature difference for calculating space air flow rates.

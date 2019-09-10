@@ -1,1 +1,0 @@
-﻿Properties that characterize an illuminated exit sign

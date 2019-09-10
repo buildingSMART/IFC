@@ -1,17 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPropertySet" UniqueId="a6744c81-6540-4918-b206-1d28320b2ee7" DiagramNumber="2" BaseDefinition="IfcPropertySetDefinition" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="frei definierbare Merkmalsliste" Locale="de" />
+		<DocLocalization Name="Ensemble de propriétés" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1687.5147" Y="1677.1174" Width="265" Height="133.3" />
 	<Attributes>
 		<DocAttribute Name="HasProperties" UniqueId="b3ed731c-b093-44bc-80d6-6fbd6cb54326" DefinedType="IfcProperty" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Contained set of properties. For property sets defined as part of the IFC Object model, the property objects within a property set are defined as part of the standard. If a property is not contained within the set of predefined properties, its value has not been set at this time.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1820.0147" Y="1810.4174" />
+				<DocPoint X="1820.0147" Y="1961.21068" />
+				<DocPoint X="2193.41357" Y="1961.21068" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1801.814186" Y="1951.010663" Width="242" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR31" UniqueId="0Mi3NE$PH5pQWx481rUpJ1">
-			<Documentation>The Name attribute has to be provided. The attribute is used to specify the type of the property set definition. The property set structure for particular property sets may be given within the property set definition part of the IFC specification.</Documentation>
+		<DocWhereRule Name="ExistsName" UniqueId="fee9acee-e90a-402e-9cd2-daefce02859b">
+			<Documentation>The _Name_ attribute has to be provided. The attribute is used to specify the signifier of the property set. The properties that are allowed to be attached to a particular property set may be given within the property set definition part of the IFC specification. Those property set definitions are references in the semantic definition section of the individal subtypes of _IfcObjectDefinition_.</Documentation>
 			<Expression>EXISTS(SELF\IfcRoot.Name)</Expression>
 		</DocWhereRule>
-		<DocWhereRule Name="WR32" UniqueId="2d_6AgIOHBK9ZGcjNtByRW">
-			<Documentation>Every property within the property set shall have a unique name attribute value.</Documentation>
+		<DocWhereRule Name="UniquePropertyNames" UniqueId="c05ac4c2-e472-4160-a5d2-3d53a973a423">
+			<Documentation>Every individual subtype of _IfcProperty_ within the property set shall have a unique _Name_ attribute value.</Documentation>
 			<Expression>IfcUniquePropertyName(HasProperties)</Expression>
 		</DocWhereRule>
 	</WhereRules>

@@ -1,11 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSurfaceStyleShading" UniqueId="4d15ed6e-2d9b-4101-a12a-055e03cab045" DiagramNumber="6" EntityFlags="109">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSurfaceStyleShading" UniqueId="4d15ed6e-2d9b-4101-a12a-055e03cab045" DiagramNumber="8" BaseDefinition="IfcPresentationItem" EntityFlags="109">
+	<Localization>
+		<DocLocalization Name="Oberflächenstil - Tönung" Locale="de" />
+		<DocLocalization Name="Style d&apos;ombrage de surface" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1846.3933" Y="2563.9467" Width="248" Height="100" />
 	<Subtypes>
 		<DocSubtype UniqueId="87fdddd6-30e5-46ee-a991-07c5ce5f9db2" DefinedType="IfcSurfaceStyleRendering" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="SurfaceColour" UniqueId="a2fe2d3a-9a84-4326-9016-dae00e0d0af9" DefinedType="IfcColourRgb" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="SurfaceColour" UniqueId="a2fe2d3a-9a84-4326-9016-dae00e0d0af9" DefinedType="IfcColourRgb" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>The colour used to render the surface. The surface colour for visualisation is defined by specifying the intensity of red, green and blue.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2094.3933" Y="2613.9467" />
+				<DocPoint X="2596.52663" Y="2613.9467" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2094.3933" Y="2613.9467" Width="165" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

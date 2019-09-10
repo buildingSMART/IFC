@@ -1,1 +1,1 @@
-﻿Overall diameter of the flange
+﻿Overall diameter of the flange.

@@ -1,20 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCurveStyleFontPattern" UniqueId="da500633-fe56-47a8-9405-98c6a95e757b" DiagramNumber="2" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCurveStyleFontPattern" UniqueId="da500633-fe56-47a8-9405-98c6a95e757b" DiagramNumber="3" BaseDefinition="IfcPresentationItem" EntityFlags="237">
+	<Localization>
+		<DocLocalization Name="Linienstilsatz - Muster" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="3750.2759" Y="2133.9713" Width="227.5" Height="176.66667" />
 	<Attributes>
 		<DocAttribute Name="VisibleSegmentLength" UniqueId="bf5fb00d-16e8-4146-a8f3-e125fa492723" DefinedType="IfcLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The length of the visible segment in the pattern definition.
-&gt; &lt;small&gt;
-  NOTE&amp;nbsp; For a visible segment representing a point, the value 0. should be assigned.&lt;br&gt;
-&lt;font color=&quot;#FF0000&quot;&gt;
-  IFC2x Edition 3 CHANGE&amp;nbsp; The datatype has been changed to IfcLengthMeasure with upward compatibility for file-based exchange.
-&lt;/font&gt;&lt;/small&gt;</Documentation>
+&gt; NOTE&amp;nbsp; For a visible segment representing a point, the value 0. should be assigned.
+
+{ .change-ifc2x3}
+&gt; IFC2x3 CHANGE&amp;nbsp; The datatype has been changed to IfcLengthMeasure with upward compatibility for file-based exchange.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3977.7759" Y="2252.3047" />
+				<DocPoint X="4335.30924" Y="2252.3047" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3974.4425667" Y="2245.6380333" Width="254" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="InvisibleSegmentLength" UniqueId="317e8bab-7743-45d9-bda6-e034d1b74450" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The length of the invisible segment in the pattern definition.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3977.7759" Y="2165.6379" />
+				<DocPoint X="4335.24247" Y="2165.6379" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3979.7759" Y="2157.6379" Width="271" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR01" UniqueId="3aZHwzu$93wx1oGJhQbVaM">
+		<DocWhereRule Name="VisibleLengthGreaterEqualZero" UniqueId="ef5983db-5b43-49d5-8c8d-56918bbdedb2">
 			<Documentation>The value of a visible pattern length shall be equal or greater then zero.</Documentation>
 			<Expression>VisibleSegmentLength &gt;= 0.</Expression>
 		</DocWhereRule>

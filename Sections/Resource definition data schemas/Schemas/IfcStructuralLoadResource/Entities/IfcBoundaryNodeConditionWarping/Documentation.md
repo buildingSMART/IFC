@@ -1,13 +1,10 @@
-﻿_IfcBoundaryNodeConditionWarping_ inherits all attributes from _IfcBoundaryNodeCondition_ and includes additionally the possibility to define a value describing the warping stiffness.
+﻿Describes linearly elastic support conditions or connection conditions, including linearly elastic warping restraints.
 
-If a warping stiffness value is needed, an instance of this entity must be used. Otherwise, an instance of _IfcBoundaryNodeCondition_ is adequate.
+Applicability:
 
-> <font size="-1">NOTE: Instances of the entity
-		<i>IfcBoundaryNodeConditionWarping</i> are used e.g., to define the boundary
-		condition for instances of <i>IfcStructuralPointConnection</i> or
-		<i>IfcRelConnectsStructuralMember</i> pointing to a structural node connection.
-		</font>
+* Point supports and connections.
 
-> <font color="#0000FF" size="-1">HISTORY: New entity in Release IFC2x
-		  edition 2. </font>
->
+> HISTORY&nbsp; New entity in IFC2x2.
+
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; All attribute data types changed from numeric to SELECT between Boolean and numeric. Stiffnesses may now also be negative, for example to capture destabilizing effects in boundary conditions. The IFC2x3 convention of -1. representing infinite stiffness is no longer valid and must not be used. Infinite stiffness, i.e. fixed supports, are now modeled by the Boolean value TRUE.

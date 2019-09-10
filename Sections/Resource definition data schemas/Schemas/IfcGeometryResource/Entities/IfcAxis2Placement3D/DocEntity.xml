@@ -1,36 +1,61 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAxis2Placement3D" UniqueId="26b1240c-4ac9-469d-8fd3-861653fa5f75" DiagramNumber="3" BaseDefinition="IfcPlacement" EntityFlags="109">
+	<Localization>
+		<DocLocalization Name="Einfügepunkt mit zwei Achsen - dreidimensionaler Raum (3D)" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="3986.9988" Y="610.03802" Width="408.66667" Height="100" />
 	<Attributes>
-		<DocAttribute Name="Axis" UniqueId="29674702-70eb-4659-a721-8fbac8556be2" DefinedType="IfcDirection" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Axis" UniqueId="29674702-70eb-4659-a721-8fbac8556be2" DefinedType="IfcDirection" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>The exact direction of the local Z Axis.</Documentation>
+			<DiagramLine>
+				<DocPoint X="4310.4335" Y="710.03802" />
+				<DocPoint X="4310.4335" Y="867.62921" />
+				<DocPoint X="3852.68541" Y="867.62921" />
+				<DocPoint X="3852.68541" Y="951.471353" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4310.4335" Y="867.62921" Width="52" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RefDirection" UniqueId="469b612b-d3e6-4c60-b682-830211fd3c06" DefinedType="IfcDirection" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RefDirection" UniqueId="469b612b-d3e6-4c60-b682-830211fd3c06" DefinedType="IfcDirection" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>The direction used to determine the direction of the local X Axis. If necessary an adjustment is made to maintain orthogonality to the Axis direction. If Axis and/or RefDirection is omitted, these directions are taken from the geometric coordinate system.</Documentation>
+			<DiagramLine>
+				<DocPoint X="4191.3321" Y="710.03802" />
+				<DocPoint X="4191.3321" Y="816.47937" />
+				<DocPoint X="3785.70014" Y="816.47937" />
+				<DocPoint X="3785.70014" Y="951.47136" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4191.3321" Y="813.8127033" Width="143" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="P" UniqueId="53799898-8478-414f-9c4f-71cf6fe9fcc3" DefinedType="IfcDirection" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="3" AggregationUpper="3">
 			<Documentation>The normalized directions of the placement X Axis (P[1]) and the placement Y Axis (P[2]) and the placement Z Axis (P[3]).</Documentation>
 			<Derived>IfcBuildAxes(Axis, RefDirection)</Derived>
+			<DiagramLine>
+				<DocPoint X="4048.4104" Y="710.03802" />
+				<DocPoint X="4048.4104" Y="768.246896" />
+				<DocPoint X="3725.10422" Y="768.246896" />
+				<DocPoint X="3725.10422" Y="951.471336" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4033.743733" Y="762.6135627" Width="175" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="0DHpj3ReL2u88yuLTuu5KX">
+		<DocWhereRule Name="LocationIs3D" UniqueId="31ea4b56-524a-49bb-98ee-ccb856c73eee">
 			<Documentation>The dimensionality of the placement location shall be 3.</Documentation>
 			<Expression>SELF\IfcPlacement.Location.Dim = 3</Expression>
 		</DocWhereRule>
-		<DocWhereRule Name="WR2" UniqueId="31DfIYN$z4Z9$0wIyYBNsL">
+		<DocWhereRule Name="AxisIs3D" UniqueId="86b08f92-0094-49d7-8f2f-fe740f82ddf1">
 			<Documentation>The Axis when given should only reference a three-dimensional IfcDirection.</Documentation>
 			<Expression>(NOT (EXISTS (Axis))) OR (Axis.Dim = 3)</Expression>
 		</DocWhereRule>
-		<DocWhereRule Name="WR3" UniqueId="0vXleglKHDOQiqCIZyIbTT">
+		<DocWhereRule Name="RefDirIs3D" UniqueId="77b9263b-d56b-42e6-b75e-6380620605d1">
 			<Documentation>The RefDirection when given should only reference a three-dimensional IfcDirection.</Documentation>
 			<Expression>(NOT (EXISTS (RefDirection))) OR (RefDirection.Dim = 3)</Expression>
 		</DocWhereRule>
-		<DocWhereRule Name="WR4" UniqueId="2yv7bel6f1nQsRBNgrNipp">
-			<Documentation>The Axis and RefDirection shall not be parallel or anti-parallel.</Documentation>
+		<DocWhereRule Name="AxisToRefDirPosition" UniqueId="d1f08150-30a6-4e05-ac16-5d8a26e83575">
+			<Documentation>The _Axis_ and _RefDirection_ shall not be parallel or anti-parallel.</Documentation>
 			<Expression>(NOT (EXISTS (Axis))) OR (NOT (EXISTS (RefDirection))) OR (IfcCrossProduct(Axis,RefDirection).Magnitude &gt; 0.0)</Expression>
 		</DocWhereRule>
-		<DocWhereRule Name="WR5" UniqueId="050quSJzb7iPSdiJl16Fv6">
-			<Documentation>Either both (Axis and RefDirection) are not given and therefore defaulted, or both shall be given. This is a further constraint in IFC Release 1.5.</Documentation>
+		<DocWhereRule Name="AxisAndRefDirProvision" UniqueId="5648e4e3-2de1-4dc5-aef6-184b5fa68a75">
+			<Documentation>Either both, _Axis_ and _RefDirection_ are not given and therefore defaulted, or both shall be given.</Documentation>
 			<Expression>NOT ((EXISTS (Axis)) XOR (EXISTS (RefDirection)))</Expression>
 		</DocWhereRule>
 	</WhereRules>

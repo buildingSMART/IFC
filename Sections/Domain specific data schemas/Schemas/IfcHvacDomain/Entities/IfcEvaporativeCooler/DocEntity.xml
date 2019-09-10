@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcEvaporativeCooler" Name="IfcEvaporativeCooler" UniqueId="00254f70-e0ef-4d79-91de-eade9f1c10c5" DiagramNumber="1" BaseDefinition="IfcEnergyConversionDevice" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Verdunstungskühler" Locale="de" />
+		<DocLocalization Name="Refroidisseur évaporatif" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1220.3618" Y="1378.0806" Width="334.1" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="5235d6fd-e834-4f07-bc90-c52223140472" DefinedType="IfcEvaporativeCoolerTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<DiagramLine>
+				<DocPoint X="1220.3618" Y="1428.0806" />
+				<DocPoint X="1008.17307" Y="1428.0806" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1220.3618" Y="1428.0806" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="1323597a-e148-42ce-b940-abb63210ef1b">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcEvaporativeCoolerType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcEvaporativeCoolerTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcEvaporativeCoolerTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="4fdf0fc6-857d-45c9-b216-501c9d11c3fa">
+			<Documentation>Either there is no evaporative cooler type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcEvaporativeCoolerType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCHVACDOMAIN.IFCEVAPORATIVECOOLERTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

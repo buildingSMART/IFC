@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBoundaryCurve" UniqueId="cfe5f36c-5489-4523-98cb-705240b9ba86" DiagramNumber="7" BaseDefinition="IfcCompositeCurveOnSurface" EntityFlags="109">
+	<Localization>
+		<DocLocalization Name="Begrenzungskurve" Locale="de" />
+		<DocLocalization Name="Courbe limite" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="9702.7" Y="445.11333" Width="359.83333" Height="100" />
+	<Subtypes>
+		<DocSubtype UniqueId="3d6eb90b-2f40-4ebc-bde5-5689d2cbed5a" DefinedType="IfcOuterBoundaryCurve" />
+	</Subtypes>
+	<WhereRules>
+		<DocWhereRule Name="IsClosed" UniqueId="0872e04f-62a6-46a4-b04e-79601fce54cc">
+			<Documentation>The derived _ClosedCurve_ attribute of _IfcCompositeCurve_ supertype shall be TRUE.</Documentation>
+			<Expression>SELF\IfcCompositeCurve.ClosedCurve</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

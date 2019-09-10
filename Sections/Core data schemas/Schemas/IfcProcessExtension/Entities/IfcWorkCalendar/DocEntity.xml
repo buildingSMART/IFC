@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcWorkCalendar" Name="IfcWorkCalendar" UniqueId="d05923c3-37a8-444a-b811-bf0709bab84f" DiagramNumber="3" BaseDefinition="IfcControl" EntityFlags="237">
+	<Localization>
+		<DocLocalization Name="Arbeitskalender" Locale="de" />
+		<DocLocalization Name="Calendrier de travail" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="3236.5201" Y="1991.9867" Width="455.96667" Height="249.26667" />
+	<Attributes>
+		<DocAttribute Name="WorkingTimes" UniqueId="f600c372-69d7-44f2-ad5a-450a9dd1e34a" DefinedType="IfcWorkTime" AttributeFlags="1" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Set of times periods that are regarded as an initial set-up
+    of working times. Exception times can then further restrict
+    these working times.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3692.4868" Y="2030.468" />
+				<DocPoint X="4081.74666" Y="2030.468" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3694.7834667" Y="2019.701333" Width="242" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="ExceptionTimes" UniqueId="2a68f57c-be31-4ee2-acee-aa80e15467f6" DefinedType="IfcWorkTime" AttributeFlags="1" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Set of times periods that define exceptions (non-working
+    times) for the given working times including the base
+    calendar, if provided.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3692.4868" Y="2096.4995" />
+				<DocPoint X="4081.74666" Y="2096.4995" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3690.5984492" Y="2087.1436794" Width="260" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="PredefinedType" UniqueId="4343392e-ed01-4af4-931f-7be994806a87" DefinedType="IfcWorkCalendarTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Identifies the predefined types of a work calendar from which 
+    the type required may be set.
+    
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE Attribute added</Documentation>
+			<DiagramLine>
+				<DocPoint X="3692.4868" Y="2209.9533" />
+				<DocPoint X="3887.1656" Y="2209.9533" />
+				<DocPoint X="3887.1656" Y="2209.08946517" />
+				<DocPoint X="4081.84447" Y="2209.08946517" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3876.498933" Y="2202.3852174" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="4b8a0393-835a-4257-9bc0-941a60f3392d">
+			<Documentation>The attribute ObjectType must be asserted when the value of the IfcWorkCalendarTypeEnum is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR (PredefinedType &lt;&gt; IfcWorkCalendarTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcWorkCalendarTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

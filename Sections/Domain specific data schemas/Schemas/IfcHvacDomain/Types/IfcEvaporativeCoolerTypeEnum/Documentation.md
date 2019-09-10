@@ -1,4 +1,7 @@
-﻿Enumeration defining the typical types of evaporative coolers. The _IfcEvaporativeCoolerTypeEnum_ contains the following:
+﻿Enumeration defining the typical types of evaporative coolers.
+
+{ .spec-head}
+Enumerated Item Definitions:
 
 * **DIRECTEVAPORATIVERANDOMMEDIAAIRCOOLER**: Direct evaporative random media air cooler: Cools the air stream by evaporating water dircectly into the air stream using coolers with evaporative pads, usually of aspen wood or plastic fiber/foam.
 * **DIRECTEVAPORATIVERIGIDMEDIAAIRCOOLER**: Direct evaporative rigid media air cooler: Cools the air stream by evaporating water dircectly into the air stream using coolers with sheets of rigid, corrugated material as the wetted surface.
@@ -12,6 +15,4 @@
 * **USERDEFINED**: User-defined evaporative cooler type.
 * **NOTDEFINED**: Undefined evaporative cooler type.
 
-> <font color="#0000ff" size="-1">
-    	HISTORY: New enumeration in IFC 2x2.<br>
-    	</font>
+> HISTORY&nbsp; New enumeration in IFC2x2.

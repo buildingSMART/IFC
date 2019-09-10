@@ -1,5 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcProductRepresentation" UniqueId="ebb1e658-5b55-4231-9e88-68b1c85889f8" DiagramNumber="3" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcProductRepresentation" UniqueId="ebb1e658-5b55-4231-9e88-68b1c85889f8" DiagramNumber="3" EntityFlags="205">
+	<Localization>
+		<DocLocalization Name="Produkt - Repräsentation" Locale="de" />
+		<DocLocalization Name="Représentation du produit" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="4180.6094" Y="287.94067" Width="439" Height="236.61468" />
 	<Subtypes>
 		<DocSubtype UniqueId="ebcb6bd3-eefc-4fb2-9824-dd9ec519f161" DefinedType="IfcProductDefinitionShape" />
 		<DocSubtype UniqueId="f423f22c-eca2-49f8-ab59-8cb07d0507cf" DefinedType="IfcMaterialDefinitionRepresentation" />
@@ -7,12 +12,27 @@
 	<Attributes>
 		<DocAttribute Name="Name" UniqueId="f47b1b8e-d821-4937-b8de-911c6c320a28" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The word or group of words by which the product representation is known.</Documentation>
+			<DiagramLine>
+				<DocPoint X="4563.4427" Y="524.55535" />
+				<DocPoint X="4563.4427" Y="658.19596" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4522.791678" Y="541.482425" Width="73" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Description" UniqueId="0d99362e-99b1-4477-801c-27e86defe648" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The word or group of words that characterize the product representation. It can be used to add additional meaning to the name of the product representation.</Documentation>
+			<DiagramLine>
+				<DocPoint X="4316.828" Y="524.55535" />
+				<DocPoint X="4316.828" Y="658.23815" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4243.156033" Y="543.774124" Width="130" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Representations" UniqueId="77687142-9fb0-4bc9-ace5-e6f4b7ed1f47" DefinedType="IfcRepresentation" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Contained list of representations (including shape representations). Each member defines a valid representation of a particular type within a particular representation context.</Documentation>
+			<DiagramLine>
+				<DocPoint X="4180.6094" Y="454.29495" />
+				<DocPoint X="3692.95256" Y="454.29495" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4180.6094" Y="447.888692" Width="265" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

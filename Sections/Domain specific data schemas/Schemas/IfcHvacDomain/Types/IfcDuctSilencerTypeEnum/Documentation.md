@@ -1,4 +1,7 @@
-﻿Enumeration defining the typical types of duct silencers. The _IfcDuctSilencerTypeEnum_ contains the following:
+﻿Enumeration defining the typical types of duct silencers.
+
+{ .spec-head}
+Enumerated Item Definitions:
 
 * **FLATOVAL**: Flat-oval shaped duct silencer type.
 * **RECTANGULAR**: Rectangular shaped duct silencer type.
@@ -6,6 +9,4 @@
 * **USERDEFINED**: User-defined duct silencer type.
 * **NOTDEFINED**: Undefined duct silencer type.
 
-> <font color="#0000ff" size="-1">
-    	HISTORY: New enumeration in IFC 2x2.<br>
-    	</font>
+> HISTORY&nbsp; New enumeration in IFC2x2.

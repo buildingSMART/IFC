@@ -1,0 +1,1 @@
+﻿The electromagnetic testing time in [s] associated with the testing currents I4 and I5, i.e. electromagnetic tripping time

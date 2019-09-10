@@ -1,18 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCurveBoundedPlane" UniqueId="49f23ea3-63e5-4868-bb6d-dc7fe2e9d879" DiagramNumber="7" BaseDefinition="IfcBoundedSurface" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCurveBoundedPlane" UniqueId="49f23ea3-63e5-4868-bb6d-dc7fe2e9d879" DiagramNumber="9" BaseDefinition="IfcBoundedSurface" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Durch Kurven begrenzte Ebene" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="13077.511" Y="840.4063" Width="383.33333" Height="100" />
 	<Attributes>
-		<DocAttribute Name="BasisSurface" UniqueId="e3507105-8eae-42eb-9122-b8f9474b2507" DefinedType="IfcPlane" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="BasisSurface" UniqueId="e3507105-8eae-42eb-9122-b8f9474b2507" DefinedType="IfcPlane" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>The surface to be bound.</Documentation>
+			<DiagramLine>
+				<DocPoint X="13341.177" Y="840.4063" />
+				<DocPoint X="13341.177" Y="699.73963" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="13261.177" Y="843.0729667" Width="151" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="OuterBoundary" UniqueId="d59dedb7-409b-40f2-b7f6-780fbf45198e" DefinedType="IfcCurve" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="OuterBoundary" UniqueId="d59dedb7-409b-40f2-b7f6-780fbf45198e" DefinedType="IfcCurve" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>The outer boundary of the surface.</Documentation>
+			<DiagramLine>
+				<DocPoint X="13105.844" Y="940.4063" />
+				<DocPoint X="13105.844" Y="1048.07297" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="13011.177333" Y="957.406298" Width="175" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="InnerBoundaries" UniqueId="33e2f437-e02b-4345-af76-39640de58ff3" DefinedType="IfcCurve" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0">
+		<DocAttribute Name="InnerBoundaries" UniqueId="33e2f437-e02b-4345-af76-39640de58ff3" DefinedType="IfcCurve" AttributeFlags="0" AggregationType="3" AggregationFlag="0">
 			<Documentation>An optional set of inner boundaries. They shall not intersect each other or the outer boundary.</Documentation>
-		</DocAttribute>
-		<DocAttribute Name="Dim" UniqueId="01S4mOzBX2i8I$bopkjABj" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>The space dimensionality of this class, defined by the dimensionality of the basis surface.</Documentation>
-			<Derived>BasisSurface.Dim</Derived>
+			<DiagramLine>
+				<DocPoint X="13339.177" Y="940.4063" />
+				<DocPoint X="13339.177" Y="1048.0063" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="13289.177" Y="956.772967" Width="268" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

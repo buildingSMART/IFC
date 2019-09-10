@@ -1,9 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSlabType" UniqueId="c5119b23-0614-4223-839d-d6e3f491a378" DiagramNumber="2" BaseDefinition="IfcBuildingElementType" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSlabType" Name="IfcSlabType" UniqueId="c5119b23-0614-4223-839d-d6e3f491a378" DiagramNumber="3" BaseDefinition="IfcBuildingElementType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Decke / Dachfläche / Bodenplatte - Typ" Locale="de" />
+		<DocLocalization Name="Type de dalle" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="3629.5834" Y="805.80833" Width="326.6" Height="100" />
 	<Attributes>
 		<DocAttribute Name="PredefinedType" UniqueId="ce96f799-1e75-4c3d-a10e-ea5f31bda91e" DefinedType="IfcSlabTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>Type of the slab.</Documentation>
+			<Documentation>Identifies the predefined types of a slab element from which the type required may be set.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3956.1834" Y="855.80833" />
+				<DocPoint X="4184.6165" Y="855.80833" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3956.1834" Y="850.4749967" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="6f6b860a-a9ff-496c-bce3-c550375007bd">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcSlabTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcSlabTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

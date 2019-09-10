@@ -1,1 +1,1 @@
-﻿The operating pressure of the fluid upstream of the pressure reducing valve
+﻿The operating pressure of the fluid upstream of the pressure reducing valve.

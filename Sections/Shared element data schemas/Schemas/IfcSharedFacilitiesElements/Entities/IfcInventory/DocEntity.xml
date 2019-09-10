@@ -1,34 +1,69 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcInventory" UniqueId="73471cd5-1296-4091-bcc3-f7f5e32ff3de" DiagramNumber="1" BaseDefinition="IfcGroup" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcInventory" Name="IfcInventory" UniqueId="73471cd5-1296-4091-bcc3-f7f5e32ff3de" DiagramNumber="2" BaseDefinition="IfcGroup" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Inventar" Locale="de" />
+		<DocLocalization Name="Inventaire" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1799.1616" Y="1369.0291" Width="288.88063" Height="338.88257" />
 	<Attributes>
-		<DocAttribute Name="InventoryType" UniqueId="0BC85a5U9Few$gRgF0n7td" DefinedType="IfcInventoryTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>A list of the types of inventories from which that required may be selected.</Documentation>
+		<DocAttribute Name="PredefinedType" UniqueId="8dedffaa-456f-48c2-a583-e63978378160" DefinedType="IfcInventoryTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>A list of the types of inventories from which that required may be selected.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE Attribute made optional.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2088.0422" Y="1395.141" />
+				<DocPoint X="2379.06842" Y="1395.141" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2093.6852816" Y="1390.1154311" Width="182" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Jurisdiction" UniqueId="6f479fad-d27e-4644-876a-6711e2ff021c" DefinedType="IfcActorSelect" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Jurisdiction" UniqueId="6f479fad-d27e-4644-876a-6711e2ff021c" DefinedType="IfcActorSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The organizational unit to which the inventory is applicable.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2088.0422" Y="1538.4704" />
+				<DocPoint X="2944.98982" Y="1538.4704" />
+				<DocPoint X="2944.98982" Y="861.10635" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2225.61434" Y="1531.6733732" Width="129" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ResponsiblePersons" UniqueId="d23c5d1f-1727-46f3-968f-018a51799fa6" DefinedType="IfcPerson" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="ResponsiblePersons" UniqueId="d23c5d1f-1727-46f3-968f-018a51799fa6" DefinedType="IfcPerson" AttributeFlags="1" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Persons who are responsible for the inventory.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2088.0422" Y="1474.6885" />
+				<DocPoint X="2865.39462" Y="1474.6885" />
+				<DocPoint X="2865.39462" Y="946.40009" />
+				<DocPoint X="2809.263347" Y="946.40009" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1928.07223" Y="1463.093955" Width="312" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LastUpdateDate" UniqueId="fe41de34-a4d1-4bcb-ab62-89f0068aaf9c" DefinedType="IfcCalendarDate" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>The date on which the last update of the inventory was carried out.</Documentation>
+		<DocAttribute Name="LastUpdateDate" UniqueId="fe41de34-a4d1-4bcb-ab62-89f0068aaf9c" DefinedType="IfcDate" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The date on which the last update of the inventory was carried out.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE Type changed from IfcDateTimeSelect.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1903.1661" Y="1369.0291" />
+				<DocPoint X="1903.1661" Y="1260.82705" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2011.39174" Y="1374.0266275" Width="188" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="CurrentValue" UniqueId="264bcae7-f4a5-4147-9961-fc38405ff8b6" DefinedType="IfcCostValue" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="CurrentValue" UniqueId="264bcae7-f4a5-4147-9961-fc38405ff8b6" DefinedType="IfcCostValue" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>An estimate of the current cost value of the inventory.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2088.0422" Y="1598.8954" />
+				<DocPoint X="3041.49262" Y="1598.8954" />
+				<DocPoint X="3041.49262" Y="682.23974" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2237.51289" Y="1590.3797775" Width="153" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="OriginalValue" UniqueId="412fe95f-936f-4dde-a82c-f8e9f305b952" DefinedType="IfcCostValue" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="OriginalValue" UniqueId="412fe95f-936f-4dde-a82c-f8e9f305b952" DefinedType="IfcCostValue" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>An estimate of the original cost value of the inventory.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2088.0422" Y="1662.6774" />
+				<DocPoint X="3122.3644" Y="1662.6774" />
+				<DocPoint X="3122.3644" Y="682.23978" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2240.62334" Y="1655.4059575" Width="154" Height="35" />
 		</DocAttribute>
 	</Attributes>
-	<WhereRules>
-		<DocWhereRule Name="WR41" UniqueId="0Ap1TiZ3v7uu_Z0fBqpnVv">
-			<Documentation>Constrains the type of objects that can be contained within an IfcInventory.</Documentation>
-			<Expression>SIZEOF(QUERY(temp &lt;* SELF\IfcGroup.IsGroupedBy.RelatedObjects |
-    NOT( (&apos;IFCPRODUCTEXTENSION.IFCSPACE&apos; IN TYPEOF (temp)) OR 
-         (&apos;IFCSHAREDFACILITIESELEMENTS.IFCASSET&apos; IN TYPEOF (temp)) OR
-         (&apos;IFCSHAREDFACILITIESELEMENTS.IFCFURNISHINGELEMENT&apos; IN TYPEOF (temp))
-    ))) = 0</Expression>
-		</DocWhereRule>
-	</WhereRules>
 </DocEntity>
 

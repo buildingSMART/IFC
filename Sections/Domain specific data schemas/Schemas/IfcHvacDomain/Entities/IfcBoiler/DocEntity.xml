@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcBoiler" Name="IfcBoiler" UniqueId="bf8bb360-a4b6-4854-88b5-78c7f9524139" DiagramNumber="1" BaseDefinition="IfcEnergyConversionDevice" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Heizkessel" Locale="de" />
+		<DocLocalization Name="Chaudière" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1220.3618" Y="523.22049" Width="334.1" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="dcce598a-edcb-438b-a65f-0d4084ac2a8f" DefinedType="IfcBoilerTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<DiagramLine>
+				<DocPoint X="1220.3618" Y="573.22049" />
+				<DocPoint X="1008.20037" Y="573.22049" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1220.3618" Y="573.22049" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="f86e2f14-1a73-4b22-aad6-1eb3fd404d93">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcBoilerType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcBoilerTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcBoilerTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="5cdde4c3-5821-4f79-b7fb-253a60f9dbc2">
+			<Documentation>Either there is no boiler type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcBoilerType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCHVACDOMAIN.IFCBOILERTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

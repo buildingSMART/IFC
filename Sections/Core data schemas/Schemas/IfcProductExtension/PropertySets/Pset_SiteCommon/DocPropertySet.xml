@@ -1,9 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocPropertySet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Pset_SiteCommon" UniqueId="3AP4i0qWSHuO00025QrE$V" PropertySetType="PSET_TYPEDRIVENOVERRIDE">
+<DocPropertySet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Pset_SiteCommon" UniqueId="3AP4i0qWSHuO00025QrE$V" ApplicableType="IfcSite" PropertySetType="PSET_TYPEDRIVENOVERRIDE">
+	<Localization>
+		<DocLocalization Locale="de-DE">
+			<Documentation>Property Set Definition in German</Documentation>
+		</DocLocalization>
+		<DocLocalization Locale="fr-FR">
+			<Documentation>Définition de l&apos;IAI : propriétés communes à la définition de toutes les instances de IfcSite. Veuillez noter que plusieurs attributs sont portés par l&apos;instance IfcSite : le numéro du site ou nom court (IfcSite.Name), le nom ou nom long (IfcSite.LongName), et la description ou des commentaires (IfcSite.Description). Le numéro de référence du foncier est donné par l&apos;attribut IfcSite.LandTitleNumber. Les quantités du site comme le périmètre et la superficie sont fournis par des instances de IfcElementQuantity et la référence à une classification nationale par IfcClassificationReference. La position du site en termes de longitude, latitude et altitude est donnée par IfcSite.RefLongitude, IfcSite.RefLatitude, IfcSite.RefElevation et l&apos;adresse postale par IfcSite.SiteAddress.</Documentation>
+		</DocLocalization>
+		<DocLocalization Locale="ja-JP">
+			<Documentation>IfcSiteに関する共通プロパティセット定義。以下の属性値に関しては、IfcSiteオブジェクトの属性に設定する。敷地番号はIfcSite.Name、敷地名称はIfcSite.LongName、敷地に関する記述はIfcSite.Description。敷地に関する周囲長、面積、体積などの数量値は、IfcElementQuantityによって設定する。地理情報に関する緯度・経度・標高値はＩfcSite.RefLongitude, IfcSite.RefLatitude, IfcSite.RefElevationによって設定し、郵便住所はIfcSite.SiteAddressによって設定する。</Documentation>
+		</DocLocalization>
+	</Localization>
 	<Properties>
+		<DocProperty xsi:nil="true" href="Reference_3DNpk0qWSHuO00025QrEV" />
 		<DocProperty xsi:nil="true" href="BuildableArea_3JLHo0qWSHuO00025QrEV" />
-		<DocProperty xsi:nil="true" href="TotalArea_3gb0e0qWSHuO00025QrEV" />
+		<DocProperty xsi:nil="true" href="SiteCoverageRatio_3O6T20qWSHuO00025QrEV" />
+		<DocProperty xsi:nil="true" href="FloorAreaRatio_3TTni0qWSHuO00025QrEV" />
 		<DocProperty xsi:nil="true" href="BuildingHeightLimit_3Yr6M0qWSHuO00025QrEV" />
+		<DocProperty xsi:nil="true" href="TotalArea_3gb0e0qWSHuO00025QrEV" />
 	</Properties>
 </DocPropertySet>
 

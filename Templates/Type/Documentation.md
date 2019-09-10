@@ -1,1 +1,0 @@
-﻿Provision of an association of an "element" type that provides common information for all "element" occurrences having same type.

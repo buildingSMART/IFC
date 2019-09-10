@@ -1,1 +1,0 @@
-﻿The nominal efficiency of the boiler as defined by the manufacturer. For water boilers, a function of inlet versus outlet temperature. For steam boilers, a function of inlet temperature versus steam pressure.

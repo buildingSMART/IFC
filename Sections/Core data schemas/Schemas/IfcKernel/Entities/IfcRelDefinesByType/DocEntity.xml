@@ -1,8 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelDefinesByType" UniqueId="92a2c20b-4c2f-4ed2-a2f1-5d0591fa26b2" DiagramNumber="3" BaseDefinition="IfcRelDefines" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelDefinesByType" UniqueId="92a2c20b-4c2f-4ed2-a2f1-5d0591fa26b2" DiagramNumber="4" BaseDefinition="IfcRelDefines" EntityFlags="237">
+	<Localization>
+		<DocLocalization Name="Definiert durch Typ - Relation" Locale="de">
+			<Documentation>Relation zwischen einem Objekt und dessen Typ</Documentation>
+		</DocLocalization>
+		<DocLocalization Name="Définition par type" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="5264.2667" Y="648.6667" Width="454" Height="198.93333" />
 	<Attributes>
-		<DocAttribute Name="RelatingType" UniqueId="4e3abe9a-b836-4453-bf32-432fd0f9e654" DefinedType="IfcTypeObject" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RelatedObjects" UniqueId="afa4df1e-7a6e-4b91-9f0a-ce4a0fcf0a0a" DefinedType="IfcObject" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+			<DiagramLine>
+				<DocPoint X="5718.2667" Y="699.0667" />
+				<DocPoint X="6030.2667" Y="699.0667" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5718.2667" Y="688.400033" Width="255" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="RelatingType" UniqueId="4e3abe9a-b836-4453-bf32-432fd0f9e654" DefinedType="IfcTypeObject" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>Reference to the type (or style) information for that object or set of objects.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5718.2667" Y="805.73337" />
+				<DocPoint X="6027.59997" Y="805.73337" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5739.583367" Y="795.73337" Width="153" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

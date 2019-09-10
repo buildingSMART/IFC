@@ -1,1 +1,1 @@
-﻿Maximum input power requirement
+﻿Maximum input power requirement.

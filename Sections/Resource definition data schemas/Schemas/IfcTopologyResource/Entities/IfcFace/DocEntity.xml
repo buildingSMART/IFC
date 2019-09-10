@@ -1,17 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcFace" UniqueId="30261543-34bc-4fcc-bd68-c6643fc090c9" DiagramNumber="2" BaseDefinition="IfcTopologicalRepresentationItem" EntityFlags="45">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcFace" UniqueId="30261543-34bc-4fcc-bd68-c6643fc090c9" DiagramNumber="2" BaseDefinition="IfcTopologicalRepresentationItem" EntityFlags="109">
+	<Localization>
+		<DocLocalization Name="Fläche - Topologie" Locale="de" />
+		<DocLocalization Name="Face" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1904.3563" Y="651.05" Width="283.3" Height="100" />
 	<Subtypes>
 		<DocSubtype UniqueId="b9d64425-37d9-4d0d-847d-e6891f7d83c8" DefinedType="IfcFaceSurface" />
 	</Subtypes>
 	<Attributes>
 		<DocAttribute Name="Bounds" UniqueId="35969d0d-9b89-4823-9320-b7dc72f3ab94" DefinedType="IfcFaceBound" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Boundaries of the face.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1969.2063" Y="751.05" />
+				<DocPoint X="1969.2063" Y="1358.11663" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2088.79476" Y="671.05002" Width="170" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="HasTextureMaps" UniqueId="f4c1aa64-ef3e-4267-a0e3-47c4bfc89b38" DefinedType="IfcTextureMap" AttributeFlags="32" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="MappedTo">
+			<DiagramLine>
+				<DocPoint X="2134.9215" Y="751.05" />
+				<DocPoint X="2134.9215" Y="1104.29655" />
+				<DocPoint X="2487.52" Y="1104.29655" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2107.955583" Y="1132.964883" Width="338" Height="70" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="2lgoqoKWLDEBzeT092SW9J">
-			<Documentation>At most one of the bounds shall be of the type IfcFaceOuterBound</Documentation>
-			<Expression>SIZEOF(QUERY(temp &lt;* Bounds | &apos;IFCGEOMETRYRESOURCE.IFCFACEOUTERBOUND&apos; IN TYPEOF(temp))) &lt;= 1</Expression>
+		<DocWhereRule Name="HasOuterBound" UniqueId="2528251f-ac51-4d04-8585-b601d89f4545">
+			<Documentation>At most one of the bounds shall be of the type _IfcFaceOuterBound_.
+&gt; NOTE&amp;nbsp; If the _IfcFace_ is used within an _IfcFacetedBrep_, where all faces are implicitly planar and having a disctinct outer bound, exactly one of the bounds shall be of the type _IfcFaceOuterBound_.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* Bounds | &apos;IFCTOPOLOGYRESOURCE.IFCFACEOUTERBOUND&apos; IN TYPEOF(temp))) &lt;= 1</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcLightFixture" Name="IfcLightFixture" UniqueId="4b24357d-355f-45c6-a45d-60de71e8c1fb" DiagramNumber="1" BaseDefinition="IfcFlowTerminal" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Leuchte" Locale="de" />
+		<DocLocalization Name="Fixation de lampe" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="844.42667" Y="513.78667" Width="679.9" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="b9ba9222-79a3-484d-9292-e20d220e15ea" DefinedType="IfcLightFixtureTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<DiagramLine>
+				<DocPoint X="1517.71" Y="613.78667" />
+				<DocPoint X="1517.71" Y="662.946637" />
+				<DocPoint X="1094.2201" Y="662.946637" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1423.298383" Y="608.4533367" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="62e815fb-fc7d-44f4-8361-6c2fe21277f5">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcLightFixtureType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcLightFixtureTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcLightFixtureTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="1aa9a0ee-f667-4ec0-8b4a-bb9eae761034">
+			<Documentation>Either there is no light fixture type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcLightFixtureType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCELECTRICALDOMAIN.IFCLIGHTFIXTURETYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

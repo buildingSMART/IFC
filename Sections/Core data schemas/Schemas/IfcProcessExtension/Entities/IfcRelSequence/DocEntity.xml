@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelSequence" UniqueId="99cd2ac0-7e3f-4393-bf5a-fbd991bf194b" DiagramNumber="1" BaseDefinition="IfcRelConnects" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Abfolgebeziehung zwischen Prozessen - Relation" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="552.38747" Y="216.1795" Width="303.66667" Height="137.29999" />
+	<Attributes>
+		<DocAttribute Name="RelatingProcess" UniqueId="22284f64-9b1c-42ca-ad5b-c1332fc7f416" DefinedType="IfcProcess" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>Reference to the process, that is the predecessor.</Documentation>
+			<DiagramLine>
+				<DocPoint X="552.38747" Y="327.43105" />
+				<DocPoint X="356.4694" Y="327.43105" />
+				<DocPoint X="356.4694" Y="493.30993" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="552.38747" Y="319.0977167" Width="186" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="RelatedProcess" UniqueId="0512a983-f4fe-4536-8095-7defbd21c65b" DefinedType="IfcProcess" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>Reference to the process, that is the successor.</Documentation>
+			<DiagramLine>
+				<DocPoint X="552.38747" Y="245.04887" />
+				<DocPoint X="116.74213" Y="245.04887" />
+				<DocPoint X="116.74213" Y="493.30993" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="552.38747" Y="232.54887" Width="181" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="TimeLag" UniqueId="94d09d41-3b26-40a2-803f-92dc47187a91" DefinedType="IfcLagTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>Time duration of the sequence, it is the time lag between the
+    predecessor and the successor as specified by the
+    SequenceType.</Documentation>
+			<DiagramLine>
+				<DocPoint X="704.22076" Y="353.47949" />
+				<DocPoint X="704.22076" Y="493.21333" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="770.887427" Y="364.146157" Width="103" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="SequenceType" UniqueId="b73f79bf-ab44-454c-9180-a11e3cf40323" DefinedType="IfcSequenceEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The way in which the time lag applies to the sequence.</Documentation>
+			<DiagramLine>
+				<DocPoint X="856.05417" Y="246.49823" />
+				<DocPoint X="1195.8967" Y="246.49823" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="845.411231" Y="236.216082" Width="174" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="UserDefinedSequenceType" UniqueId="2514fd3f-d851-4771-a4ec-5e55b283085a" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Allows for specification of user defined type of the sequence
+    beyond the enumeration values (START_START, START_FINISH,
+    FINISH_START, FINISH_FINISH) provided by _SequenceType_
+    attribute of type _IfcSequenceEnum_. When a value is
+    provided for attribute _UserDefinedSequenceType_ in
+    parallel the attribute _SequenceType_ shall have
+    enumeration value USERDEFINED.
+    
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE Attribute added</Documentation>
+			<DiagramLine>
+				<DocPoint X="856.05417" Y="331.60796" />
+				<DocPoint X="1197.71953" Y="331.60796" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="855.387535" Y="312.885395" Width="312" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="AvoidInconsistentSequence" UniqueId="cad447bd-ce86-4987-9f66-97bcefe9a53d">
+			<Documentation>The RelatingProcess shall not point to the same instance as the RelatedProcess.</Documentation>
+			<Expression>RelatingProcess :&lt;&gt;: RelatedProcess</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectSequenceType" UniqueId="ebc148ee-c36e-46da-b4b3-e84632e5d60a">
+			<Documentation>The attribute UserDefinedSequenceType must be asserted when the value of SequenceType is set to USERDEFINED.</Documentation>
+			<Expression>(SequenceType &lt;&gt; IfcSequenceEnum.USERDEFINED) OR ((SequenceType = IfcSequenceEnum.USERDEFINED) AND EXISTS(UserDefinedSequenceType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcTransformer" Name="IfcTransformer" UniqueId="328058af-09ed-4f92-a541-5232e28d6f02" DiagramNumber="4" BaseDefinition="IfcEnergyConversionDevice" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Transformator" Locale="de" />
+		<DocLocalization Name="Transformateur" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="5636.2133" Y="305.38667" Width="679.66667" Height="103.2" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="10a2e1d6-97a4-4744-a279-02cce93bdaac" DefinedType="IfcTransformerTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<DiagramLine>
+				<DocPoint X="6306.7133" Y="408.58667" />
+				<DocPoint X="6306.7133" Y="464.043287" />
+				<DocPoint X="5858.76667" Y="464.043287" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="6306.7133" Y="464.043287" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="4f3a3618-d539-46aa-91a2-738e5d7cf1fd">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcTransformerType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcTransformerTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcTransformerTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="75b0f680-06c7-44ef-9309-04bc68af656b">
+			<Documentation>Either there is no transformer type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcTransformerType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCELECTRICALDOMAIN.IFCTRANFORMERTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

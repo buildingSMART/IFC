@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcUnitaryControlElementType" UniqueId="60a3dc52-6b9a-4ad6-9d45-9ba50c6958e3" DiagramNumber="1" BaseDefinition="IfcDistributionControlElementType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Einheitsregler - Typ" Locale="de" />
+		<DocLocalization Name="Type d&apos;élément de contrôle unitaire" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="77.533337" Y="1359.2666" Width="674.66667" Height="108" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="2f4bb150-03fc-4936-95e8-bab9df94e95c" DefinedType="IfcUnitaryControlElementTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Identifies the predefined types of unitary control element from which the type required may be set.</Documentation>
+			<DiagramLine>
+				<DocPoint X="79.679693" Y="1467.2666" />
+				<DocPoint X="79.679693" Y="1510.766633" />
+				<DocPoint X="501.400003" Y="1510.766633" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="173.988028" Y="1464.5332335" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="e94f79a6-3108-42c5-8b10-30244f8f2f32">
+			<Expression>(PredefinedType &lt;&gt; IfcUnitaryControlElementTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcUnitaryControlElementTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

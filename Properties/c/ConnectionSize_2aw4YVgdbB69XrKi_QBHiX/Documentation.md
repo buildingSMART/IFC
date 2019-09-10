@@ -1,1 +1,0 @@
-﻿Pipe connection diameter

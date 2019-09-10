@@ -1,8 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcGroup" Name="IfcGroup" UniqueId="e991a118-741e-4598-a023-d9ad58f0f717" DiagramNumber="7" BaseDefinition="IfcObject" EntityFlags="173">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcGroup" Name="IfcGroup" UniqueId="e991a118-741e-4598-a023-d9ad58f0f717" DiagramNumber="13" BaseDefinition="IfcObject" EntityFlags="173">
+	<Localization>
+		<DocLocalization Name="Gruppe (allgemein)" Locale="de" />
+		<DocLocalization Name="Groupe" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="19395.769" Y="319.77993" Width="200" Height="133.16667" />
 	<Attributes>
-		<DocAttribute Name="IsGroupedBy" UniqueId="d62fb122-4977-4bdd-9663-ff15e288c506" DefinedType="IfcRelAssignsToGroup" AttributeFlags="8" AggregationType="0" AggregationFlag="0" Inverse="RelatingGroup">
-			<Documentation>Contains the relationship that assigns the group members to the group object.</Documentation>
+		<DocAttribute Name="IsGroupedBy" UniqueId="d62fb122-4977-4bdd-9663-ff15e288c506" DefinedType="IfcRelAssignsToGroup" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="RelatingGroup">
+			<Documentation>Reference to the relationship _IfcRelAssignsToGroup_ that assigns the one to many group members to the _IfcGroup_ object.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; The cardinality has been changed from 1..1 to 0..? in order to allow the exchange of a group concept without having already group members assigned. It now also allows the use of many instances of _IfcRelAssignsToGroup_ to assign the group members. The change has been done with upward compatibility for file based exchange.</Documentation>
+			<DiagramLine>
+				<DocPoint X="20084.47" Y="386.34063" />
+				<DocPoint X="19595.769" Y="386.34063" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="20111.969163" Y="432.612963" Width="294" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

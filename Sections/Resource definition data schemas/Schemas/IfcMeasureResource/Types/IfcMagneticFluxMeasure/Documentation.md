@@ -1,8 +1,7 @@
-﻿A measure of the magnetic flux.
+﻿_IfcMagneticFluxMeasure_ is a measure of the magnetic flux.
 
 Usually measured in Weber (Wb, V s).
 
 Type: REAL
 
-> <font size="-1" color="#0000FF">HISTORY New type in IFC Release 2x.
-</font>
+> HISTORY&nbsp; New type in IFC2x.

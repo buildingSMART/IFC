@@ -1,1 +1,1 @@
-﻿Total planned area for the space. Used for programming the space.
+﻿Total planned gross area for the space. Used for programming the space.

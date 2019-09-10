@@ -1,1 +1,0 @@
-﻿The electrical standard used as a reference when preparing data for the device.

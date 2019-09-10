@@ -1,12 +1,16 @@
-﻿This type definition is used to distinguish between different kinds and purposes of load grouping. It allows to differentiate between load groups, load cases, load combination groups and load combinations. Normally, these enumeration types shall be used in the following context :
+﻿This enumeration is used to distinguish between different levels of load grouping. It allows to differentiate between load groups, load cases, and load combinations.
 
-* LOAD_GROUP groups instances of _IfcStructuralAction_ or its subclasses. It shall be used as a container for loads grouped together for specific purposes. Optionally, an overall load factor can be assigned. 
-* LOAD_CASE groups LOAD_GROUPs and instances of _IfcStructuralAction_ or its subclasses. It shall be used as a container for loads with the same origin, and to assign a common load factor. 
-* LOAD_COMBINATION_GROUP shall be used to group LOAD_CASEs and to assign a common load combination factor. The grouping of LOAD_GROUPs and instances of _IfcStructuralAction_ or its subclasses is also possible, but off the traditional way. 
-* LOAD_COMBINATION shall be used to group all loads belonging to a specific load combination. Normally only LOAD_COMBINATION_GROUPs with all needed load factors are used to create load combinations. 
+> HISTORY&nbsp; New enumeration in IFC2x2.
 
-The _IfcLoadGroupTypeEnum_ type is referenced by the entity _IfcStructuralLoadGroup_.
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; LOAD_COMBINATION_GROUP deprecated. Load cases are directly assigned to load combinations with different factors for each load case&mdash;load combination pair by means of _IfcRelAssignsToGroupByFactor_.
 
-> <font color="#0000FF" size="-1">HISTORY: New type in Release IFC2x
-		  Edition 2. </font>
->
+{ .spec-head}
+Enumerated Item Definitions:
+
+* **LOAD_GROUP**: groups instances of subtypes of _IfcStructuralAction_. It shall be used as a container for loads grouped together for specific purposes, such as loads which are part of a special load pattern.
+* **LOAD_CASE**: groups LOAD_GROUPs and instances of subtypes of _IfcStructuralAction_. It should be used as a container for loads with the same origin.
+* **LOAD_COMBINATION_GROUP**: an intermediate level between LOAD_CASE and LOAD_COMBINATION. This level is obsolete and deprecated. Before the introduction of _IfcRelAssignsToGroupByFactor_, the purpose of this level was to provide a factor with which one or more LOAD_CASEs occur in a LOAD_COMBINATION. 
+* **LOAD_COMBINATION**: used to group load cases which act together into a load combination.
+* **USERDEFINED**: A grouping level which does not follow the standard hierarchy of load group types.
+* **NOTDEFINED**: The grouping level is not yet known.

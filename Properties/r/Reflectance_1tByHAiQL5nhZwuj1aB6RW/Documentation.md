@@ -1,1 +1,0 @@
-﻿The ratio of reflected power to incident power.

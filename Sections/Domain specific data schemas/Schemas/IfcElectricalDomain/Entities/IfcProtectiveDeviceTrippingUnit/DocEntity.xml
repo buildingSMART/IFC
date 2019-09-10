@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcProtectiveDeviceTrippingUnit" Name="IfcProtectiveDeviceTrippingUnit" UniqueId="a8488154-175e-4eda-b9b6-157a9fa9cafe" DiagramNumber="3" BaseDefinition="IfcDistributionControlElement" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Sicherungsschalter" Locale="de" />
+		<DocLocalization Name="Unité de déclenchement d&apos;équipement de protection" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="4136.7467" Y="2084.5867" Width="589.93333" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="6801c27d-267c-44ff-a462-840addfa2cc5" DefinedType="IfcProtectiveDeviceTrippingUnitTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<DiagramLine>
+				<DocPoint X="4722.38" Y="2184.5867" />
+				<DocPoint X="4722.38" Y="2229.50335" />
+				<DocPoint X="4287.1133" Y="2229.50335" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="4722.38" Y="2229.50335" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="53b282a4-872e-4b06-81fe-5c055f4a865f">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcProtectiveDeviceTrippingUnitType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcProtectiveDeviceTrippingUnitTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcProtectiveDeviceTrippingUnitTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="5fabf200-a7d7-4780-ba55-23ccbb0538a2">
+			<Documentation>Either there is no protective device tripping unit type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcProtectiveDeviceTrippingUnitType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCELECTRICALDOMAIN.IFCPROTECTIVEDEVICETRIPPINGUNITTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

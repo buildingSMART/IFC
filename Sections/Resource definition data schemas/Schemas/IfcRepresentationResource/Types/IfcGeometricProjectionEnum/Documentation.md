@@ -1,5 +1,9 @@
-﻿**Definition
-from IAI**: The _IfcGeometricProjectionEnum_ defines the various representation types that can be semantically distinguished. Often different levels of detail of the shape representation are controlled by the representation type.
+﻿_IfcGeometricProjectionEnum_ defines the various representation types that can be semantically distinguished. Often different levels of detail of the shape representation are controlled by the representation type.
+
+> HISTORY&nbsp; New enumeration in IFC2x2.
+
+{ .spec-head}
+Enumerated Item Definitions:
 
 * **GRAPH_VIEW**: Geometric display representation that shows an abstract, often 1D element representation, e.g. representing a wall by its axis line.
 * **SKETCH_VIEW**: Geometric display representation that shows an abstract, often 2D element representation, e.g. representing a wall by its two foot print edges, surpressing any inner layer representation.
@@ -10,6 +14,3 @@ from IAI**: The _IfcGeometricProjectionEnum_ defines the various representation 
 * **ELEVATION_VIEW**: Geometric display representation that shows a full 2D element representation, the level of detail often depends on the target scale, e.g. representing a wall by its bounding edges if the element is within an elevation view.
 * **USERDEFINED**: A user defined specification is given by the value of the _UserDefinedTargetView_ attribute.
 * **NOTDEFINED**: No specification given.
-
-> <font color="#0000ff" size="-1">HISTORY: New Type in
-Release IFC 2x Edition 2.</font>

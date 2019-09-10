@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStackTerminal" Name="IfcStackTerminal" UniqueId="c9e33dba-b4d1-4962-ba22-bf85a030a835" DiagramNumber="1" BaseDefinition="IfcFlowTerminal" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Rohrabdeckung" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="862.98" Y="890.26667" Width="649.93333" Height="110.6" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="fe795606-d857-4989-9954-1dac6e946004" DefinedType="IfcStackTerminalTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<DiagramLine>
+				<DocPoint X="1508.1266" Y="1000.8667" />
+				<DocPoint X="1508.1266" Y="1061.5067" />
+				<DocPoint X="1072.85999" Y="1061.5067" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1412.1266" Y="999.2400334" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="153ba4c9-5b35-4076-8bc2-357b0ac807ba">
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcStackTerminalTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcStackTerminalTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="97bd33df-dc58-440f-bfdf-1a2187ece895">
+			<Documentation>Either there is no stack terminal type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcStackTerminalType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCPLUMBINGFIREPROTECTIONDOMAIN.IFCSTACKTERMINALTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,19 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTextLiteral" UniqueId="fff1fb35-13c2-4e24-92f4-c2bfd5a9ba17" DiagramNumber="3" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTextLiteral" UniqueId="fff1fb35-13c2-4e24-92f4-c2bfd5a9ba17" DiagramNumber="2" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="237">
+	<Localization>
+		<DocLocalization Name="Text - Buchstabensymbole" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1994.2633" Y="317.5" Width="205.33333" Height="310" />
 	<Subtypes>
 		<DocSubtype UniqueId="0f94e73e-d5ba-42e4-a381-d0f80b328145" DefinedType="IfcTextLiteralWithExtent" />
 	</Subtypes>
 	<Attributes>
 		<DocAttribute Name="Literal" UniqueId="55eb2d39-e680-4ba3-9d6a-8daf9dde4691" DefinedType="IfcPresentableText" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The text literal to be presented.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2199.5966" Y="559.98334" />
+				<DocPoint X="2326.14667" Y="559.98334" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2206.1382325" Y="545.008339" Width="74" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Placement" UniqueId="eaf62d6a-c033-4077-8aa5-7a11008ec5c5" DefinedType="IfcAxis2Placement" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>An _IfcAxis2Placement_ that determines the placement and orientation of the presented string.
-&gt; &lt;small&gt;When used with a text style based on &lt;i&gt;IfcTextStyleWithBoxCharacteristics&lt;/i&gt; then the y-axis is taken as the reference direction for the box rotation angle and the box slant angle.
-&lt;/small&gt;</Documentation>
+			<Documentation>An _IfcAxis2Placement_ that determines the placement and orientation of the presented string.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2199.5966" Y="339.83333" />
+				<DocPoint X="2476.94667" Y="339.83333" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2189.5966003" Y="325.166663" Width="123" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Path" UniqueId="5d004ead-6e33-418a-b7b0-5e97200cc4b0" DefinedType="IfcTextPath" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The writing direction of the text literal.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2199.5966" Y="449.16667" />
+				<DocPoint X="2651.2967" Y="449.16667" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2306.77999" Y="439.16667" Width="58" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

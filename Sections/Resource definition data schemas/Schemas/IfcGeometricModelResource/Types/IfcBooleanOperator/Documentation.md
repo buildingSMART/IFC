@@ -1,13 +1,11 @@
-﻿**Definition from ISO/CD 10303-42:1992**: This type defines the three Boolean operators used in the definition of CSG solids.
+﻿Boolean operators that apply to the first and second Boolean operands.
 
-* **Union**: The operation of constructing the regularized set theoretic union of the volumes defined by two solids. 
-* **Intersection**: The set theoretic difference between volumes defined by two solids. 
-* **Difference**: The operation of constructing the regularized set theoretic intersection of the volumes defined by two solids. 
+{ .extDef}
+> NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
+> This type defines the three Boolean operators used in the definition of CSG solids. > * UNION: The operation of constructing the regularized set theoretic union of the volumes defined by two solids. 
+> * INTERSECTION: The operation of constructing the regularised set theoretic intersection of the volumes defined by two solids. 
+> * DIFFERENCE: The regularised set theoretic difference between the volumes defined by two solids.
 
-> <font color="#0000FF" size="-1">NOTE Corresponding STEP type:
-		  boolean_operator, please refer to ISO/IS 10303-42:1994, p.167 for the final
-		  definition of the formal standard. </font>
-> 
-> <font color="#0000FF" size="-1"> HISTORY New Type in IFC Release
-		  1.5.1.</font>
->
+> NOTE&nbsp; Entity adapted from **boolean_operator** defined in ISO 10303-42.
+
+> HISTORY&nbsp; New entity in IFC1.5.1.

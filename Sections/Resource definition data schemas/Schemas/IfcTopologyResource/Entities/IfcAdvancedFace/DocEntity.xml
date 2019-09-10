@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAdvancedFace" UniqueId="6c23b448-71b0-4236-9351-383aca8d452c" DiagramNumber="2" BaseDefinition="IfcFaceSurface" EntityFlags="101">
+	<Localization>
+		<DocLocalization Name="Fläche - komplex" Locale="de" />
+		<DocLocalization Name="Face avancée" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="2484.9854" Y="455.63733" Width="287.46667" Height="100" />
+	<WhereRules>
+		<DocWhereRule Name="ApplicableSurface" UniqueId="bdb32ee6-1359-4c1a-8cbd-a79872e15a8e">
+			<Documentation>The geometry used in the definition of the face shall be restricted. The face geometry shall be an _IfcElementarySurface_, _IfcSweptSurface_, or _IfcBSplineSurface_.</Documentation>
+			<Expression>SIZEOF (
+[&apos;IFCGEOMETRYRESOURCE.IFCELEMENTARYSURFACE&apos;,
+ &apos;IFCGEOMETRYRESOURCE.IFCSWEPTSURFACE&apos;,
+ &apos;IFCGEOMETRYRESOURCE.IFCBSPLINESURFACE&apos;] *
+TYPEOF(SELF\IfcFaceSurface.FaceSurface)) = 1</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="RequiresEdgeCurve" UniqueId="67bdc6fc-26a6-478d-b39c-e7bfef9d278a">
+			<Documentation>The geometry of all bounding edges of the face shall be fully defined as _IfcEdgeCurve_&apos;s.</Documentation>
+			<Expression>SIZEOF(QUERY (ElpFbnds &lt;* 
+  QUERY (Bnds &lt;* SELF\IfcFace.Bounds |
+    &apos;IFCTOPOLOGYRESOURCE.IFCEDGELOOP&apos; IN TYPEOF(Bnds.Bound)) |
+     NOT (SIZEOF (QUERY (Oe &lt;* ElpFbnds.Bound\IfcEdgeLoop.EdgeList |
+       NOT(&apos;IFCTOPOLOGYRESOURCE.IFCEDGECURVE&apos; IN 
+       TYPEOF(Oe\IfcOrientedEdge.EdgeElement)
+  ))) = 0
+))) = 0</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="ApplicableEdgeCurves" UniqueId="7367e758-b475-4fe8-97d7-11d53afc31b2">
+			<Documentation>The types of curve used to define the geometry of edges shall be restricted to _IfcLine_, _IfcConic_, _IfcPolyline_, or _IfcBSplineCurve_.</Documentation>
+			<Expression>SIZEOF(QUERY (ElpFbnds &lt;* 
+  QUERY (Bnds &lt;* SELF\IfcFace.Bounds |
+    &apos;IFCTOPOLOGYRESOURCE.IFCEDGELOOP&apos; IN TYPEOF(Bnds.Bound)) |
+     NOT (SIZEOF (QUERY (Oe &lt;* ElpFbnds.Bound\IfcEdgeLoop.EdgeList |
+       NOT (SIZEOF ([&apos;IFCGEOMETRYRESOURCE.IFCLINE&apos;,
+                     &apos;IFCGEOMETRYRESOURCE.IFCCONIC&apos;,
+                     &apos;IFCGEOMETRYRESOURCE.IFCPOLYLINE&apos;,
+                     &apos;IFCGEOMETRYRESOURCE.IFCBSPLINECURVE&apos;] *
+         TYPEOF(Oe\IfcOrientedEdge.EdgeElement\IfcEdgeCurve.EdgeGeometry)) = 1 )
+  )) = 0
+))) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

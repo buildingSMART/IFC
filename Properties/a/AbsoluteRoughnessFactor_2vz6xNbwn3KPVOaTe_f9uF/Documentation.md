@@ -1,1 +1,0 @@
-﻿The absolute roughness factor of the duct fitting.

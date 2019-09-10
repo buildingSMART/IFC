@@ -1,0 +1,1 @@
+﻿Reference ID for this specific instance of a distribution system, or sub-system (e.g. 'WWS/VS1', which indicates the system to be WWS, subsystems VSI/400). The reference values depend on the local code of practice.

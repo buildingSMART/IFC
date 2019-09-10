@@ -1,13 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelAssignsToControl" UniqueId="142af641-3046-4e25-8652-dbf0d05c61da" DiagramNumber="7" BaseDefinition="IfcRelAssigns" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelAssignsToControl" UniqueId="142af641-3046-4e25-8652-dbf0d05c61da" DiagramNumber="11" BaseDefinition="IfcRelAssigns" EntityFlags="237">
+	<Localization>
+		<DocLocalization Name="Weist Steuerung / Regelung / Einschränkung zu - Relation" Locale="de" />
+		<DocLocalization Name="Assignation à contrôle" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="16930.212" Y="363.77393" Width="452.5" Height="133.3" />
 	<Attributes>
-		<DocAttribute Name="RelatingControl" UniqueId="e7033623-d7b9-406d-8aae-46c7501560e6" DefinedType="IfcControl" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>Reference to the control that applies an control about objects.</Documentation>
+		<DocAttribute Name="RelatingControl" UniqueId="e7033623-d7b9-406d-8aae-46c7501560e6" DefinedType="IfcControl" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>Reference to the _IfcControl_ that applies a control upon objects.</Documentation>
+			<DiagramLine>
+				<DocPoint X="16930.212" Y="430.42393" />
+				<DocPoint X="16447.277" Y="430.42393" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="16907.826709" Y="413.512596" Width="178" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="3mslFR$wH1Wgl9Ld1bUqmi">
-			<Documentation>The instance to with the relation points shall not be contained in the List of RelatedObjects.</Documentation>
+		<DocWhereRule Name="NoSelfReference" UniqueId="cb1ac615-4cda-4896-b01b-34d9a2122565">
+			<Documentation>The instance to with the relation points shall not be contained in the set of _RelatedObjects_.</Documentation>
 			<Expression>SIZEOF(QUERY(Temp &lt;* SELF\IfcRelAssigns.RelatedObjects | RelatingControl :=: Temp)) = 0</Expression>
 		</DocWhereRule>
 	</WhereRules>

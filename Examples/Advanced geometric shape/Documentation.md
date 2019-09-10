@@ -1,0 +1,1 @@
+﻿The examples demonstrate the use of various geometric shape representation types to express a simple geometric form of a building element proxy. The examples of advanced geometric shape deal with advanced swept solid and advanced brep representations.

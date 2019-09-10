@@ -1,8 +1,7 @@
-﻿A measure of thermal conductivity.
+﻿_IfcThermalConductivityMeasure_ is a measure of thermal conductivity.
 
 Usually measured in Watt / m Kelvin.
 
 Type: REAL
 
-> <font size="-1" color="#0000FF">HISTORY New type in IFC Release 2x.
-</font>
+> HISTORY&nbsp; New type in IFC2x.

@@ -2,21 +2,20 @@
 
 The light distribution provides the luminous intensity distribution according to some standardized light distribution curves.
 
-**Select:**
+SELECT
 
 <table> 
 		<tr> 
-		  <td><i>Type</i></td> 
-		  <td><i>Definition</i></td> 
+		  <td><em>Type</em></td> 
+		  <td><em>Definition</em></td> 
 		</tr> 
 		<tr> 
-		  <td valign="TOP"><i>IfcExternalReference</i></td> 
-		  <td valign="TOP">Light distribution is represented by a standard
-			 photometric data file such as Eulumdat, IES, CIBSE TM14. </td> 
+		  <td valign="top"><em>IfcExternalReference</em></td> 
+		  <td valign="top">Light distribution is represented by a standard photometric data file such as Eulumdat, IES, CIBSE TM14. </td> 
 		</tr> 
 		<tr> 
-		  <td valign="TOP"><i>IfcLightIntensityDistribution</i></td> 
-		  <td valign="TOP">For representing a light distribution directly the
+		  <td valign="top"><em>IfcLightIntensityDistribution</em></td> 
+		  <td valign="top">For representing a light distribution directly the
 			 following values needs to be given in a table like structure with column and
 			 row headings. These headings should contain the angles (C/&#947; or B/&#946; )
 			 and the table body contains the intensity values, (normally normalized to
@@ -26,6 +25,4 @@ The light distribution provides the luminous intensity distribution according to
 		</tr> 
 	 </table>
 
-> <font size="-1" color="#0000FF">HISTORY New type in IFC Release 2x
-		  Edition 2. </font>
->
+> HISTORY&nbsp; New type in IFC2x2.

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelCoversSpaces" UniqueId="d7038275-a6b7-4293-86c1-f69337a29534" DiagramNumber="5" BaseDefinition="IfcRelConnects" EntityFlags="237">
+	<Localization>
+		<DocLocalization Name="Ordnet Bekleidung / Belag einem Raum zu - Relation" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="6657.3399" Y="1431.2666" Width="436.6" Height="168.26667" />
+	<Attributes>
+		<DocAttribute Name="RelatingSpace" UniqueId="934695b7-b499-4d39-a698-18b232840eaf" DefinedType="IfcSpace" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>Relationship to the space object that is covered.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; The attribute name has been changed from _RelatedSpace_ to _RelatingSpace_ with upward compatibility for file based exchange.</Documentation>
+			<DiagramLine>
+				<DocPoint X="7093.9399" Y="1515.4" />
+				<DocPoint X="7343.07996" Y="1515.4" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="7100.1932668" Y="1504.759967" Width="168" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="RelatedCoverings" UniqueId="18964ad6-f7f4-49e7-b15b-0b72b0b504e5" DefinedType="IfcCovering" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Relationship to the set of coverings covering that cover surfaces of this space.</Documentation>
+			<DiagramLine>
+				<DocPoint X="6726.3066" Y="1599.5332" />
+				<DocPoint X="6726.3066" Y="1748.36656" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="6880.97327" Y="1604.8665333" Width="283" Height="35" />
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

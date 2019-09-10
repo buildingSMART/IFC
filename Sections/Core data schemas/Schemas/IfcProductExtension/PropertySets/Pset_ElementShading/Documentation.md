@@ -1,1 +1,0 @@
-﻿Shading device properties associated with an element that represents a shading device, e.g. an IfcBuildingElementProxy or any other building element.

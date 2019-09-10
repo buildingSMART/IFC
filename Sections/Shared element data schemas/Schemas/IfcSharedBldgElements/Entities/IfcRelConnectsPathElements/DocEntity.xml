@@ -1,18 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelConnectsPathElements" UniqueId="801d751c-7dbf-4a3c-a799-223323377272" DiagramNumber="5" BaseDefinition="IfcRelConnectsElements" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Verbindet Elemente mit Pfaddefinition - Relation" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="6657.367" Y="754.18337" Width="463.33333" Height="169.83334" />
 	<Attributes>
-		<DocAttribute Name="RelatingPriorities" UniqueId="875ef649-a65e-40cd-970a-b99ead08ca9f" DefinedType="INTEGER" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="0" AggregationUpper="0">
-			<Documentation>Priorities for connection. It refers to the layers of the RelatingObject.</Documentation>
+		<DocAttribute Name="RelatingPriorities" UniqueId="875ef649-a65e-40cd-970a-b99ead08ca9f" DefinedType="NUMBER" AttributeFlags="0" AggregationType="1" AggregationFlag="0">
+			<Documentation>Overriding priorities at this connection. It overrides the standard priority given at the wall layer provided by _IfcMaterialLayer_._Priority_. The list of _RelatingProperties_ corresponds to the list of _IfcMaterialLayerSet_._MaterialLayers_ of the element referenced by _RelatingObject_.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; Data type changed to NUMBER and usage to hold a normalized ratio measure [0..1].</Documentation>
+			<DiagramLine>
+				<DocPoint X="7120.7003" Y="790.07993" />
+				<DocPoint X="7578.41591" Y="790.07993" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="7117.3669667" Y="783.4132633" Width="269" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RelatedPriorities" UniqueId="7362235e-2a0d-4f5e-af69-482fd8dacac7" DefinedType="INTEGER" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="0" AggregationUpper="0">
-			<Documentation>Priorities for connection. It refers to the layers of the RelatedObject.</Documentation>
+		<DocAttribute Name="RelatedPriorities" UniqueId="7362235e-2a0d-4f5e-af69-482fd8dacac7" DefinedType="NUMBER" AttributeFlags="0" AggregationType="1" AggregationFlag="0">
+			<Documentation>Overriding priorities at this connection. It overrides the standard priority given at the wall layer provided by _IfcMaterialLayer_._Priority_. The list of _RelatedProperties_ corresponds to the list of _IfcMaterialLayerSet_._MaterialLayers_ of the element referenced by _RelatedObject_.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; Data type changed to NUMBER and usage to hold a normalized ratio measure [0..1].</Documentation>
+			<DiagramLine>
+				<DocPoint X="7120.7003" Y="879.54801" />
+				<DocPoint X="7578.41591" Y="879.54801" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="7117.3669667" Y="872.8813433" Width="264" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="RelatedConnectionType" UniqueId="add30ef4-48b3-4bba-9732-f682f23c1293" DefinedType="IfcConnectionTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Indication of the connection type in relation to the path of the RelatingObject.</Documentation>
+			<DiagramLine>
+				<DocPoint X="7061.7" Y="924.0167" />
+				<DocPoint X="7061.7" Y="1034.18325" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="7208.36667" Y="944.0167" Width="274" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="RelatingConnectionType" UniqueId="f9db190a-4cfc-4840-9fda-0fbdb3adda53" DefinedType="IfcConnectionTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Indication of the connection type in relation to the path of the RelatingObject.</Documentation>
+			<DiagramLine>
+				<DocPoint X="6695.7" Y="924.0167" />
+				<DocPoint X="6695.7" Y="1034.18325" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="6855.7" Y="920.6833663" Width="279" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="NormalizedRelatingPriorities" UniqueId="a74ba276-9ea2-4b9f-aa39-c3cbf8017e77">
+			<Documentation>The _RelatingProperties_ shall all be given as a normalized ratio measure [0..1].</Documentation>
+			<Expression>(SIZEOF(RelatingPriorities) = 0)
+OR
+(SIZEOF (QUERY (temp &lt;* RelatingPriorities
+  | {0.0 &lt;= temp &lt;= 1.0}
+  )) = SIZEOF(RelatingPriorities))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="NormalizedRelatedPriorities" UniqueId="151ddce0-0083-4db6-930a-f61bf56a2a44">
+			<Documentation>The _RelatedProperties_ shall all be given as a normalized ratio measure [0..1].</Documentation>
+			<Expression>(SIZEOF(RelatedPriorities) = 0)
+OR
+(SIZEOF (QUERY (temp &lt;* RelatedPriorities
+  | {0.0 &lt;= temp &lt;= 1.0}
+  )) = SIZEOF(RelatedPriorities))</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

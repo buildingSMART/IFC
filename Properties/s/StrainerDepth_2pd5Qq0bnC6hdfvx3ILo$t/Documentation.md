@@ -1,1 +1,0 @@
-﻿Depth, measured in elevation view, of the strainer basket.

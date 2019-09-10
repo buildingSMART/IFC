@@ -1,0 +1,1 @@
+﻿Specific heat temperature derivative.

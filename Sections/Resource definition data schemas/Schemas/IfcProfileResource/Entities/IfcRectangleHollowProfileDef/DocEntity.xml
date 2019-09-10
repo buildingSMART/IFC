@@ -1,33 +1,53 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRectangleHollowProfileDef" UniqueId="19db74b8-9bbd-4310-a2b8-d47984481a40" DiagramNumber="2" BaseDefinition="IfcRectangleProfileDef" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRectangleHollowProfileDef" UniqueId="19db74b8-9bbd-4310-a2b8-d47984481a40" DiagramNumber="2" BaseDefinition="IfcRectangleProfileDef" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Rechteckprofil hohl - parametrische Definition" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1893.9492" Y="1440.7839" Width="517.80667" Height="282.61333" />
 	<Attributes>
 		<DocAttribute Name="WallThickness" UniqueId="e469897c-3e73-451f-9c72-a373783992ba" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Thickness of the material.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2411.7559" Y="1486.5173" />
+				<DocPoint X="2704.3341" Y="1486.5173" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2400.445243" Y="1483.4376047" Width="164" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="InnerFilletRadius" UniqueId="5aa6d217-3f48-4fbb-9145-55601b62701b" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Radius of the circular arcs, by which all four corners of the outer contour of rectangle are equally rounded. If not given, zero (= no rounding arcs) applies.</Documentation>
+		<DocAttribute Name="InnerFilletRadius" UniqueId="5aa6d217-3f48-4fbb-9145-55601b62701b" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Inner corner radius.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2411.7559" Y="1576.6293" />
+				<DocPoint X="2704.4252" Y="1576.6293" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2558.08923" Y="1573.8986333" Width="192" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="OuterFilletRadius" UniqueId="493f68ea-2c2e-44f2-bef4-d2c48668cc91" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Radius of the circular arcs, by which all four corners of the outer contour of rectangle are equally rounded. If not given, zero (= no rounding arcs) applies.</Documentation>
+		<DocAttribute Name="OuterFilletRadius" UniqueId="493f68ea-2c2e-44f2-bef4-d2c48668cc91" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Outer corner radius.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2411.7559" Y="1668.7573" />
+				<DocPoint X="2704.3559" Y="1668.7573" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2417.8852333" Y="1664.0586333" Width="197" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR31" UniqueId="3gGbC_eaP0MOtsFhYfIbNI">
-			<Documentation>The wall thickness shall be smaller than the X and Y dimension of the rectangle.</Documentation>
+		<DocWhereRule Name="ValidWallThickness" UniqueId="9249fff2-6fd9-453c-ab37-9f2c52593245">
+			<Documentation>The wall thickness shall be smaller than half of the X and Y dimension of the rectangle.</Documentation>
 			<Expression>(WallThickness &lt; (SELF\IfcRectangleProfileDef.XDim/2.)) AND 
 (WallThickness &lt; (SELF\IfcRectangleProfileDef.YDim/2.))</Expression>
 		</DocWhereRule>
-		<DocWhereRule Name="WR32" UniqueId="01FHpTZ0D5YBiN7s3ICCOn">
-			<Documentation>The outer fillet radius (if given) shall be smaller than or equal to the X and Y dimension of the rectangle.</Documentation>
+		<DocWhereRule Name="ValidInnerRadius" UniqueId="5d2f4036-9558-47c1-8440-5822d69e408f">
+			<Documentation>The inner fillet radius (if given) shall be small enough to fit into the void.</Documentation>
+			<Expression>NOT(EXISTS(InnerFilletRadius)) OR 
+((InnerFilletRadius &lt;= (SELF\IfcRectangleProfileDef.XDim/2. - WallThickness)) AND 
+ (InnerFilletRadius &lt;= (SELF\IfcRectangleProfileDef.YDim/2. - WallThickness)))
+</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="ValidOuterRadius" UniqueId="6ac1c1f7-65c1-491d-9bf6-a11bf87cb16a">
+			<Documentation>The outer fillet radius (if given) shall be small enough to fit into the bounding box.</Documentation>
 			<Expression>NOT(EXISTS(OuterFilletRadius)) OR 
 ((OuterFilletRadius &lt;= (SELF\IfcRectangleProfileDef.XDim/2.)) AND 
  (OuterFilletRadius &lt;= (SELF\IfcRectangleProfileDef.YDim/2.)))</Expression>
-		</DocWhereRule>
-		<DocWhereRule Name="WR33" UniqueId="0shOc_wRX8Lhxpro3Gn5wn">
-			<Documentation>The inner fillet radius (if given) shall be smaller than or equal to the X and Y dimension of the rectangle minus the wall thickness.</Documentation>
-			<Expression>NOT(EXISTS(InnerFilletRadius)) OR 
-((InnerFilletRadius &lt;= (SELF\IfcRectangleProfileDef.XDim/2. - WallThickness)) AND 
- (InnerFilletRadius &lt;= (SELF\IfcRectangleProfileDef.YDim/2. - WallThickness)))</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>

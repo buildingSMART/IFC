@@ -1,33 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcProcedure" UniqueId="0cce4f12-90b1-4e02-a09b-0dab4f9a731c" DiagramNumber="3" BaseDefinition="IfcProcess" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcProcedure" Name="IfcProcedure" UniqueId="0cce4f12-90b1-4e02-a09b-0dab4f9a731c" DiagramNumber="1" BaseDefinition="IfcProcess" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Vorgehen" Locale="de" />
+		<DocLocalization Name="Procédure" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="145.99504" Y="712.64793" Width="265.96667" Height="266.4" />
 	<Attributes>
-		<DocAttribute Name="ProcedureID" UniqueId="3kXEZo7rLCxQsgiRVPJCp2" DefinedType="IfcIdentifier" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>An identifying designation given to a procedure.</Documentation>
-		</DocAttribute>
-		<DocAttribute Name="ProcedureType" UniqueId="0c8gbxxw9BygS1A9K3U43Z" DefinedType="IfcProcedureTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>Predefined procedure types from which that required may be set.</Documentation>
-		</DocAttribute>
-		<DocAttribute Name="UserDefinedProcedureType" UniqueId="0skfr8AovFmOcc8eJs0Uxd" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>A user defined procedure type.</Documentation>
+		<DocAttribute Name="PredefinedType" UniqueId="3f02d565-aa4a-4a70-9763-24f2ee9e0e79" DefinedType="IfcProcedureTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Identifies the predefined types of a procedure from which 
+    the type required may be set.</Documentation>
+			<DiagramLine>
+				<DocPoint X="411.96174" Y="778.38933" />
+				<DocPoint X="1124.62851" Y="778.38933" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="271.5034" Y="763.055996" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="33C4FTADb6RR07fc$7gXCE">
-			<Documentation>Restrict the relationship &apos;Nests&apos; inherited from IfcObject to IfcRelNests.</Documentation>
-			<Expression>SIZEOF(QUERY(temp &lt;* SELF\IfcObjectDefinition.Decomposes | NOT(&apos;IFCKERNEL.IFCRELNESTS&apos; IN TYPEOF(temp)))) = 0</Expression>
-		</DocWhereRule>
-		<DocWhereRule Name="WR2" UniqueId="2MpTFf_wHA$wi9XcdKfQsn">
-			<Documentation>Restrict the relationship &apos;IsNestedBy&apos; inherited from IfcObject to IfcRelNests.</Documentation>
-			<Expression>SIZEOF(QUERY(temp &lt;* SELF\IfcObjectDefinition.IsDecomposedBy | NOT(&apos;IFCKERNEL.IFCRELNESTS&apos; IN TYPEOF(temp)))) = 0</Expression>
-		</DocWhereRule>
-		<DocWhereRule Name="WR3" UniqueId="1MnYe2zgXCZuqq2cMzvc6p">
+		<DocWhereRule Name="HasName" UniqueId="e83ef098-16cd-4bb9-8836-4820cc6195d5">
 			<Documentation>The Name attribute should be inserted to describe the task name.</Documentation>
 			<Expression>EXISTS(SELF\IfcRoot.Name)</Expression>
 		</DocWhereRule>
-		<DocWhereRule Name="WR4" UniqueId="1qMFOc4MT6JwBOvFXX_0AR">
-			<Documentation>The attribute UserDefinedProcedureType must be asserted when the value of the IfcProcedureTypeEnum is set to USERDEFINED.</Documentation>
-			<Expression>(ProcedureType &lt;&gt; IfcProcedureTypeEnum.USERDEFINED) OR
-((ProcedureType = IfcProcedureTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcProcedure.UserDefinedProcedureType))</Expression>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="26b16182-9011-4f44-9941-b6f99073b755">
+			<Documentation>Either the _PredefinedType_ attribute is unset, or the inherited attribute _ObjectType_ must be asserted when the value of _PredefinedType_ is set to _USERDEFINED_.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR (PredefinedType &lt;&gt; IfcProcedureTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcProcedureTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>

@@ -1,7 +1,5 @@
-﻿A sound power measure is a measure of total radiated noise with units of decibels with a reference value of picowatts.
+﻿A sound power measure is a measure of total radiated noise with units of watts (sonic energy per time unit).
 
 Type: REAL
 
-> <font size="-1" color="#0000FF">HISTORY New type in IFC Release 2x2.
-   </font>
->
+> HISTORY&nbsp; New type in IFC2x2, changed in IFC4. See also _IfcSoundPowerLevelMeasure_ for using the unit decibel.

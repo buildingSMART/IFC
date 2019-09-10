@@ -1,0 +1,1 @@
+﻿The making capacity in [A] for a circuit breaker or motor protection device tested in accordance with the IEC 60947 series.

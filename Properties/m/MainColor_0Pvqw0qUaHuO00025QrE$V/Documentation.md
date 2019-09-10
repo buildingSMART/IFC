@@ -1,1 +1,1 @@
-﻿The main color of the furniture of this type
+﻿The main color of the furniture of this type.

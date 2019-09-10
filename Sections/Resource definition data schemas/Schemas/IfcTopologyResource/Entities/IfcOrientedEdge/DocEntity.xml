@@ -1,25 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcOrientedEdge" UniqueId="a0cbcd65-91d4-42a9-ba31-58d592875aa7" DiagramNumber="1" BaseDefinition="IfcEdge" EntityFlags="109">
+	<Localization>
+		<DocLocalization Name="Gerichtete Kante - Topologie" Locale="de" />
+		<DocLocalization Name="Arête orientée" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="969.1917" Y="1983.1667" Width="575.33333" Height="100" />
 	<Attributes>
-		<DocAttribute Name="EdgeElement" UniqueId="c7122e72-f5c7-4ed0-97e7-f3feadf775d9" DefinedType="IfcEdge" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="EdgeElement" UniqueId="c7122e72-f5c7-4ed0-97e7-f3feadf775d9" DefinedType="IfcEdge" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>Edge entity used to construct this oriented edge.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1102.0583" Y="1983.1667" />
+				<DocPoint X="1102.0583" Y="1334.75" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1200.5583" Y="1991.8375003" Width="155" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Orientation" UniqueId="6fa9df70-e436-49e6-860f-f18263e0e214" DefinedType="BOOLEAN" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>BOOLEAN, If TRUE the topological orientation as used coincides with the orientation from start vertex to end vertex of the edge element. If FALSE otherwise.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1254.3256" Y="2083.1667" />
+				<DocPoint X="1254.3256" Y="2212.4333" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1347.3256" Y="2077.3333667" Width="128" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="EdgeStart" UniqueId="544bff9c-509b-4884-b08c-fcfb142238f3" DefinedType="IfcVertex" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The start vertex of the oriented edge. It derives from the vertices of the edge element after taking account of the orientation.</Documentation>
 			<Derived>IfcBooleanChoose 
 (Orientation, EdgeElement.EdgeStart, EdgeElement.EdgeEnd)</Derived>
+			<DiagramLine>
+				<DocPoint X="1468.6755" Y="1983.1667" />
+				<DocPoint X="1468.6755" Y="1026.78188" />
+				<DocPoint X="1276.5584" Y="1026.78188" />
+				<DocPoint X="1276.5584" Y="846.35" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1512.600713" Y="1008.411048" Width="248" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="EdgeEnd" UniqueId="7148a307-6944-41cb-914c-1c404c45b642" DefinedType="IfcVertex" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The end vertex of the oriented edge. It derives from the vertices of the edge element after taking account of the orientation.</Documentation>
 			<Derived>IfcBooleanChoose 
 (Orientation, EdgeElement.EdgeEnd, EdgeElement.EdgeStart)</Derived>
+			<DiagramLine>
+				<DocPoint X="1371.5835" Y="1983.1667" />
+				<DocPoint X="1371.5835" Y="1130.54678" />
+				<DocPoint X="1198.95827" Y="1130.54678" />
+				<DocPoint X="1198.95827" Y="846.35004" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1342.4835" Y="1962.395865" Width="240" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="13_ttrm7TFIekNpqJnBX1J">
+		<DocWhereRule Name="EdgeElementNotOriented" UniqueId="304247a5-9657-4bd4-b2d9-0b57ae0ac48c">
 			<Documentation>The edge element shall not be an oriented edge.</Documentation>
 			<Expression>NOT(&apos;IFCTOPOLOGYRESOURCE.IFCORIENTEDEDGE&apos; IN TYPEOF(EdgeElement))</Expression>
 		</DocWhereRule>

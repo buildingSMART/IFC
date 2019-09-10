@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcController" Name="IfcController" UniqueId="7afb752b-f1c9-4813-83a7-ed6599f5cfa0" DiagramNumber="1" BaseDefinition="IfcDistributionControlElement" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Regler" Locale="de" />
+		<DocLocalization Name="Organe de contrôle" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="865.66667" Y="719.45333" Width="674.6" Height="108" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="08d1cfc4-3698-4d47-bf23-c6df04a69ff9" DefinedType="IfcControllerTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<DiagramLine>
+				<DocPoint X="1533.6333" Y="827.45333" />
+				<DocPoint X="1533.6333" Y="876.89996" />
+				<DocPoint X="1092.38667" Y="876.89996" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1438.343317" Y="824.7866633" Width="182" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="08589cb0-43ff-4e6a-9d7e-cb449a00f20c">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcControllerType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcControllerTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcControllerTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="16aa5c0e-2ebe-4bc2-bb8c-b45a3c4f1b5b">
+			<Documentation>Either there is no controller type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcControllerType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+(&apos;IFCBUILDINGCONTROLSDOMAIN.IFCCONTROLLERTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

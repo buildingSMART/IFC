@@ -1,30 +1,55 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCompositeCurve" UniqueId="ebd15e62-e09c-44c3-8e9c-7f8840bebed8" DiagramNumber="6" BaseDefinition="IfcBoundedCurve" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCompositeCurve" UniqueId="ebd15e62-e09c-44c3-8e9c-7f8840bebed8" DiagramNumber="6" BaseDefinition="IfcBoundedCurve" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Zusammengesetzte Kurve" Locale="de" />
+		<DocLocalization Name="Courbe composite" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="8609.6814" Y="1115.7219" Width="372.33333" Height="255.33334" />
 	<Subtypes>
-		<DocSubtype UniqueId="1J2$x1IW94VPXombaAamNE" DefinedType="Ifc2DCompositeCurve" />
+		<DocSubtype UniqueId="e6a62b32-4227-4659-94ed-0e46d5f68fbd" DefinedType="IfcCompositeCurveOnSurface" />
 	</Subtypes>
 	<Attributes>
 		<DocAttribute Name="Segments" UniqueId="b32453c8-8375-4bc7-8758-86e6097c7709" DefinedType="IfcCompositeCurveSegment" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The component bounded curves, their transitions and senses. The transition attribute for the last segment defines the transition between the end of the last segment and the start of the first; this transition attribute may take the value discontinuous, which indicates an open curve.</Documentation>
+			<DiagramLine>
+				<DocPoint X="8726.5147" Y="1371.0552" />
+				<DocPoint X="8726.5147" Y="1702.98839" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="8845.84803" Y="1269.45522" Width="195" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="SelfIntersect" UniqueId="8e53369e-bae8-4a7e-81e4-370b1cb785b8" DefinedType="LOGICAL" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Indication of whether the curve intersects itself or not; this is for information only.</Documentation>
+			<DiagramLine>
+				<DocPoint X="8982.0148" Y="1331.3565" />
+				<DocPoint X="9320.04807" Y="1331.3565" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="8923.348133" Y="1322.0231666" Width="144" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="NSegments" UniqueId="46f28929-2534-4105-9848-5cbcd99dd9c4" DefinedType="INTEGER" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The number of component curves.</Documentation>
 			<Derived>SIZEOF(Segments)</Derived>
+			<DiagramLine>
+				<DocPoint X="8982.0148" Y="1160.0552" />
+				<DocPoint X="9320.01477" Y="1160.0552" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="8964.681467" Y="1150.7218667" Width="211" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="ClosedCurve" UniqueId="dc317cb3-07cf-46d5-8531-b7b35a80248f" DefinedType="LOGICAL" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Indication whether the curve is closed or not; this is derived from the transition code of the last segment.</Documentation>
 			<Derived>Segments[NSegments].Transition &lt;&gt; Discontinuous</Derived>
+			<DiagramLine>
+				<DocPoint X="8982.0148" Y="1246.0552" />
+				<DocPoint X="9320.01477" Y="1246.0552" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="8965.348133" Y="1234.0552" Width="225" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR41" UniqueId="3kQ3BOPGnCPwzyQ93Lp9H8">
+		<DocWhereRule Name="CurveContinuous" UniqueId="ec4c92e1-2bed-4f4d-92c7-104271983180">
 			<Documentation>No transition code should be Discontinuous, except for the last code of an open curve.</Documentation>
 			<Expression>((NOT ClosedCurve) AND (SIZEOF(QUERY(Temp &lt;* Segments | Temp.Transition = Discontinuous)) = 1)) OR ((ClosedCurve) AND (SIZEOF(QUERY(Temp &lt;* Segments | Temp.Transition = Discontinuous)) = 0))</Expression>
 		</DocWhereRule>
-		<DocWhereRule Name="WR42" UniqueId="3gg513WOb4qf8kIIiVtKbI">
+		<DocWhereRule Name="SameDim" UniqueId="191230e1-194a-45e5-bcf4-a25b1c658906">
 			<Documentation>Ensures, that all segments used in the curve have the same dimensionality.</Documentation>
 			<Expression>SIZEOF( QUERY( Temp &lt;* Segments | Temp.Dim &lt;&gt; Segments[1].Dim)) = 0</Expression>
 		</DocWhereRule>

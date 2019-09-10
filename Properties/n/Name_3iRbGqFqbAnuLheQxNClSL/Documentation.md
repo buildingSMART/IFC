@@ -1,1 +1,0 @@
-﻿Subject matter for which a value is to be reported.

@@ -1,1 +1,1 @@
-﻿Properties common to the definition of all occurrences of IfcColumn.
+﻿Properties common to the definition of all occurrence and type objects of column.

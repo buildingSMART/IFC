@@ -1,1 +1,0 @@
-﻿Bar shape parameter d. Note: this parameter is also used for parameter d0 (shape code B3)

@@ -1,3 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralPointConnection" UniqueId="f8d48d8e-a2e9-4035-bba5-7b4e3b7f75d9" DiagramNumber="3" BaseDefinition="IfcStructuralConnection" EntityFlags="237" />
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStructuralPointConnection" Name="IfcStructuralPointConnection" UniqueId="f8d48d8e-a2e9-4035-bba5-7b4e3b7f75d9" DiagramNumber="3" BaseDefinition="IfcStructuralConnection" EntityFlags="237">
+	<Localization>
+		<DocLocalization Name="Knoten" Locale="de">
+			<Documentation>punktförmige Verbindung</Documentation>
+		</DocLocalization>
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="3498.9841" Y="307.65046" Width="290.98414" Height="124" />
+	<Attributes>
+		<DocAttribute Name="ConditionCoordinateSystem" UniqueId="2816879e-a513-4b46-982c-30f51576ad62" DefinedType="IfcAxis2Placement3D" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>Defines a coordinate system used for the description of the support condition properties in _SELF\IfcStructuralConnection.SupportCondition_, specified relative to the global coordinate system (global to the structural analysis model) established by _SELF.\IfcProduct.ObjectPlacement_.  If left unspecified, the placement _IfcAxis2Placement3D_((x,y,z), ?, ?) is implied with x,y,z being the coordinates of the reference point of this _IfcStructuralPointConnection_ and the default axes directions being in parallel with the global axes.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3789.9683" Y="369.65046" />
+				<DocPoint X="4240.8801" Y="369.65046" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3789.9683" Y="362.0461341" Width="315" Height="35" />
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
 

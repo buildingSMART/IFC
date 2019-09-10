@@ -1,152 +1,192 @@
-﻿A slab is a component of the construction that normally encloses a space vertically. The slab may provide the lower support (floor) or upper construction (roof slab) in any space in a building. It shall be noted, that only the core or constructional part of this construction is considered to be a slab. The upper finish (flooring, roofing) and the lower finish (ceiling, suspended ceiling) are considered to be coverings. A special type of slab is the landing, described as a floor section to which one or more stair flights or ramp flights connect. May or may not be adjacent to a building storey floor.
+﻿A slab is a component of the construction that normally encloses a space vertically. The slab may provide the lower support (floor) or upper construction (roof slab) in any space in a building.
+
+{ .extDef}
+> NOTE&nbsp; Definition according to ISO 6707-1  
+> thick, flat or shaped component, usually larger than 300 mm square, used to form a covering or projecting from a building.
+
+Only the core or constructional part of this construction is considered to be a slab. The upper finish (flooring, roofing) and the lower finish (ceiling, suspended ceiling) are considered to be coverings. A special type of slab is the landing, described as a floor section to which one or more stair flights or ramp flights connect.
+
+> NOTE&nbsp; There is a representation of slabs for structural analysis provided by a proper subtype of _IfcStructuralMember_ being part of the _IfcStructuralAnalysisModel_.
+
+> NOTE&nbsp; An arbitrary planar element to which this semantic information is not applicable or irrelevant shall be modeled as _IfcPlate_.
 
 A slab may have openings, such as floor openings, or recesses. They are defined by an _IfcOpeningElement_ attached to the slab using the inverse relationship _HasOpenings_ pointing to _IfcRelVoidsElement_.
 
-A particular usage type for the _IfcSlab_ can be given (if type information is available) by referring to the type object _IfcSlabType_, using the _IfcRelDefinesByType_ relationship, or (if only occurrence information is given) by using the _PredefinedType_ attribute. Values of the enumeration are 'Floor' (the default), 'Roof', 'Landing', 'Baseslab', 'Notdefined'. If the value 'UserDefined' is chosen, the user defined value needs to be given at the attribute _ObjectType_.&nbsp;
+There are three entities for slab occurrences:
 
-> <font color="#0000ff" size="-1">HISTORY: New entity in IFC
-Release 2.0, it is a merger of the two previous entities IfcFloor,
-IfcRoofSlab, introduced in IFC Release 1.0 </font>
+* _IfcSlabStandardCase_ used for all occurrences of slabs, that are prismatic and where the thickness parameter can be fully described by the _IfcMaterialLayerSetUsage_. These slabs are always represented geometrically by a 'SweptSolid' geometry (or by a 'Clipping' geometry based on 'SweptSolid'), if a 3D geometric representation is assigned. In addition they have to have a corresponding _IfcMaterialLayerSetUsage_ assigned.
+* _IfcSlabElementedCase_ used for occurrences of slabs which are aggregated from subordinate elements, following specific decomposition rules expressed by the mandatory use of _IfcRelAggregates_ relationship.
+* _IfcSlab_ used for all other occurrences of slabs, particularly for slabs with changing thickness, or slabs with non planar surfaces, and slabs having only 'SweptSolid' or 'Brep' geometry.
 
-****Type Use Definition****
+> HISTORY&nbsp; New entity in IFC2.0; it is a merger of the two previous entities IfcFloor, IfcRoofSlab, introduced in IFC1.0
 
-The _IfcSlab_ defines the occuurence of any slab, common information about slab types (or styles) is handled by _IfcSlabType_. The _IfcSlabType_ (if present) may establish the common&nbsp;type name, usage (or predefined) type, common set of properties, common material layer set, and common shape representations (using _IfcRepresentationMap_). The _IfcSlabType_ is attached using the _IfcRelDefinedByType.RelatingType_ objectified relationship and is accessible by the inverse _IsDefinedBy_ attribute.
+___
+## Common Use Definitions
+The following concepts are inherited at supertypes:
 
-As an additional use agreement for standard slabs (i.e. slabs with constant thickness along the extrusion direction), the _IfcSlabType_ should have a unique _IfcMaterialLayerSet_, that is referenced by the&nbsp;_IfcMaterialLayerSetUsage_ assigned to all occurrences of this slab type.
+* _IfcRoot_: [Identity](../../templates/identity.htm), [Revision Control](../../templates/revision-control.htm)
+* _IfcElement_: [Product Placement](../../templates/product-placement.htm), [Box Geometry](../../templates/box-geometry.htm), [FootPrint Geometry](../../templates/footprint-geometry.htm), [Body SurfaceOrSolidModel Geometry](../../templates/body-surfaceorsolidmodel-geometry.htm), [Body SurfaceModel Geometry](../../templates/body-surfacemodel-geometry.htm), [Body Tessellation Geometry](../../templates/body-tessellation-geometry.htm), [Body Brep Geometry](../../templates/body-brep-geometry.htm), [Body AdvancedBrep Geometry](../../templates/body-advancedbrep-geometry.htm), [Body CSG Geometry](../../templates/body-csg-geometry.htm), [Mapped Geometry](../../templates/mapped-geometry.htm)
+* _IfcBuildingElement_: [Surface 3D Geometry](../../templates/surface-3d-geometry.htm)
 
-<table border="0" cellpadding="2" cellspacing="2" width="100%"><tbody><tr><td><p><img alt="Material layer set and usage" src="figures/ifcslab_materialusage-01.png" height="220" width="501">&nbsp;</p></td><td align="left" valign="top"><p><small>Assignment
-of <i>IfcMaterialLayerSetUsage</i> and <i>IfcMaterialLayerSet</i>
-to the slab type and the slab occurrence.</small></p></td></tr></tbody></table>
+[![Image](../../../img/diagram.png)&nbsp;Instance diagram](../../../annex/annex-d/common-use-definitions/ifcslab.htm)
 
-****Property Set Use Definition****:
+{ .use-head}
+Object Typing
 
-The property sets relating to the _IfcSlab_ are defined by the _IfcPropertySet_ and attached by the _IfcRelDefinesByProperties_ relationship. It is accessible by the inverse _IsDefinedBy_ relationship. The following property set definitions specific to the _IfcSlab_ are part of this IFC release:
+The [Object Typing](../../templates/object-typing.htm) concept applies to this entity as shown in Table 1.
 
-* [Pset_SlabCommon](../../psd/IfcSharedBldgElements/Pset_SlabCommon.xml){ target="SOURCE"}: common property set for all slab occurrences
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Type</b></th></tr>
+<tr><td><a href="../../ifcsharedbldgelements/lexical/ifcslabtype.htm">IfcSlabType</a></td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 1 &mdash; IfcSlab Object Typing</p></td></tr></table>
 
-****Material
-Use Definition****
+  
+  
+{ .use-head}
+Property Sets for Objects
 
-The material of the _IfcSlab_ is defined by _IfcMaterial_ and attached by the _IfcRelAssociatesMaterial_._RelatingMaterial_. It is accessible by the inverse _HasAssociations_ relationship. For prismatic slabs, where the main face of the slab is extruded along the slab thickness, the material shall be defined by&nbsp;_IfcMaterialLayerSetUsage_. Multi-layer slabs can be represented by referring to several _IfcMaterialLayer_'s within the _IfcMaterialLayerSet_.&nbsp;
+The [Property Sets for Objects](../../templates/property-sets-for-objects.htm) concept applies to this entity as shown in Table 2.
 
-Material information can also be given at the _IfcSlabType_, defining the common attribute data for all occurrences of the same type.&nbsp;It is then accessible by the inverse _IsDefinedBy_ relationship pointing to_IfcSlabType.HasAssociations_ and via _IfcRelAssociatesMaterial.RelatingMaterial_. See Type Use Definition for additional agreements for standard slabs.
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PredefinedType</b></th><th><b>Name</b></th></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcstructuralelementsdomain/Pset_PrecastSlab.xml">Pset_PrecastSlab</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcstructuralelementsdomain/Pset_ReinforcementBarPitchOfSlab.xml">Pset_ReinforcementBarPitchOfSlab</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedbldgelements/Pset_SlabCommon.xml">Pset_SlabCommon</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcstructuralelementsdomain/Pset_ConcreteElementGeneral.xml">Pset_ConcreteElementGeneral</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcstructuralelementsdomain/Pset_PrecastConcreteElementFabrication.xml">Pset_PrecastConcreteElementFabrication</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcstructuralelementsdomain/Pset_PrecastConcreteElementGeneral.xml">Pset_PrecastConcreteElementGeneral</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_Condition.xml">Pset_Condition</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcproductextension/Pset_EnvironmentalImpactIndicators.xml">Pset_EnvironmentalImpactIndicators</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcproductextension/Pset_EnvironmentalImpactValues.xml">Pset_EnvironmentalImpactValues</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_ManufacturerOccurrence.xml">Pset_ManufacturerOccurrence</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_ManufacturerTypeInformation.xml">Pset_ManufacturerTypeInformation</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedmgmtelements/Pset_PackingInstructions.xml">Pset_PackingInstructions</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_ServiceLife.xml">Pset_ServiceLife</a></td></tr>
+<tr><td>&nbsp;</td><td><a href="../../psd/ifcsharedfacilitieselements/Pset_Warranty.xml">Pset_Warranty</a></td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 2 &mdash; IfcSlab Property Sets for Objects</p></td></tr></table>
 
-****Quantity Use Definition****
+  
+  
+{ .use-head}
+Quantity Sets
 
-The quantities relating to the _IfcSlab_ are defined by the _IfcElementQuantity_ and attached by the _IfcRelDefinesByProperties_. The following quantities are foreseen, but will be subjected to the local standard of measurement:
+The [Quantity Sets](../../templates/quantity-sets.htm) concept applies to this entity as shown in Table 3.
 
-<table border="1" cellpadding="2" cellspacing="2"> <tbody> <tr valign="top">
-<td align="left" valign="top"><font size="-1"><i><b>Name</b></i></font></td>
-<td align="left" valign="top" width="60%"><font size="-1"><i><b>Description</b></i></font></td>
-<td align="left" valign="top"><font size="-1"><i><b>Value
-Type</b></i></font></td> </tr> <tr>
-<td valign="top"><font size="-1">NominalWidth</font></td>
-<td valign="top"><font size="-1">Total
-nominal (or average) width (or thickness) of the slab. The exact
-definition and calculation rules depend on the method of measurement
-used.</font></td> <td valign="top"><font size="-1"><i>IfcQuantityLength</i></font></td>
-</tr> <tr> <td align="left" valign="top"><font size="-1">Perimeter</font></td> <td align="left" valign="top" width="60%"><font size="-1">Perimeter measured along the outer boundaries of
-the slab. The exact definition and calculation rules depend on the
-method of measurement used.</font></td> <td align="left" valign="top"><font size="-1"><i>IfcQuantityLength</i></font></td>
-</tr> <tr> <td align="left" valign="top"><font size="-1">GrossArea</font></td> <td align="left" valign="top" width="60%"><font size="-1">Total area of the extruded area of
-the slab. The exact definition and calculation rules depend on the
-method of measurement used.</font></td> <td align="left" valign="top"><font size="-1"><i>IfcQuantityArea</i></font></td>
-</tr> <tr> <td valign="top"><font size="-1">NetArea</font></td> <td valign="top"><font size="-1">Total area of the
-extruded area of the slab, taking into account possible
-slab openings. The exact definition and calculation rules depend on the
-method of measurement used.</font></td> <td valign="top"><font size="-1"><i>IfcQuantityArea</i></font></td>
-</tr> <tr> <td align="left" valign="top"><font size="-1">GrossVolume</font></td> <td align="left" valign="top" width="60%"><font size="-1">Total gross volume of the slab, not taking into
-account possible openings and recesses. The exact definition and
-calculation rules depend on the method of measurement used.</font></td>
-<td align="left" valign="top"><font size="-1"><i>IfcQuantityVolume</i></font></td>
-</tr> <tr> <td align="left" valign="top"><font size="-1">NetVolume</font></td> <td align="left" valign="top" width="60%"><font size="-1">Total net volume of the slab, taking into account
-possible openings and recesses. The exact definition and calculation
-rules depend on the method of measurement used.</font></td>
-<td align="left" valign="top"><font size="-1"><i>IfcQuantityVolume</i></font></td>
-</tr> <tr> <td align="left" valign="top"><font size="-1">GrossWeight</font></td> <td align="left" valign="top" width="60%"><font size="-1"> Total gross weight of the slab, not taking into
-account possible openings and recesses or projections. The exact
-definition and calculation rules depend on the method of measurement
-used.</font></td> <td align="left" valign="top"><font size="-1"><i>IfcQuantityWeight</i></font></td>
-</tr> <tr> <td align="left" valign="top"><font size="-1">NetWeight</font></td> <td align="left" valign="top" width="60%"><font size="-1"> Total net weight of the slab, taking into account
-possible openings and recesses or projections. The exact definition and
-calculation rules depend on the method of measurement used.</font></td>
-<td align="left" valign="top"><font size="-1"><i>IfcQuantityWeight</i></font></td>
-</tr> </tbody></table>
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Name</b></th></tr>
+<tr><td><a href="../../qto/ifcsharedbldgelements/Qto_SlabBaseQuantities.xml">Qto_SlabBaseQuantities</a></td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3 &mdash; IfcSlab Quantity Sets</p></td></tr></table>
 
-****Containment
-Use Definition****
+  
+  
+{ .use-head}
+Material Layer Set
 
-The _IfcSlab_, as any subtype of _IfcBuildingElement_, may participate in two different containment relationships. The first (and in most implementation scenarios mandatory) relationship is the hierachical spatial containment, the second (optional) relationship is the aggregation within an&nbsp;element assembly.
+The [Material Layer Set](../../templates/material-layer-set.htm) concept applies to this entity.
 
-* The&nbsp;_IfcSlab_ is placed within the project spatial hierarchy using the objectified relationship _IfcRelContainedInSpatialStructure_, referring to it by its inverse attribute _SELF\IfcElement.ContainedInStructure_. Subtypes of&nbsp;_IfcSpatialStructureElement_ are valid spatial containers, with _IfcBuildingStorey_ being the default container.
-* The&nbsp;_IfcSlab__may be aggregated into an element assembly using the objectified relationship _IfcRelAggregates_, referring to it by its inverse attribute _SELF\IfcObjectDefinition.Decomposes_. Any subtype of _IfcElement_ can be an element assembly, with _IfcElementAssembly_ as a special focus subtype.    In this case it should not be additionally contained in the project spatial hierarchy, i.e.&nbsp;_SELF\IfcElement.ContainedInStructure_should be _NIL._
+The material of the _IfcSlab_ is defined by _IfcMaterialLayerSet_, or as fallback by _IfcMaterial_, and it is attached either directly or at the _IfcSlabType_.
 
-The _IfcSlab__&nbsp;_may also be an aggregate i.e. being composed by other elements and acting as an assembly using the objectified relationship _IfcRelAggregates_, referring to it by its inverse attribute _SELF\IfcObjectDefinition.IsDecomposedBy_. Components of a slab are described by instances of subtypes of _IfcBuildingElement_, with _IfcBuildingElementPart_ as a special focus subtype that are aggregated to form a complex slab. In this case, the contained elements should not be additionally contained in the project spatial hierarchy, i.e. the inverse attribute _SELF\IfcElement.ContainedInStructure_of _IfcBuildingElementPart_ (or other subtypes of _IfcBuildingElement_) should be _NIL._
+> NOTE&nbsp; It is illegal to assign an _IfcMaterialLayerSetUsage_ to an _IfcSlab_. Only the subtype _IfcSlabStandardCase_ supports this concept.
 
-****Geometry Use Definitions****The geometric representation of _IfcSlab_ is given by the _IfcProductDefinitionShape_, allowing multiple geometric representations. Included are:
+  
+  
+{ .use-head}
+Spatial Containment
 
-> <font size="-1">NOTE. If the <i>IfcSlab</i>
-is of type Landing and is used within an <i>IfcStair</i>
-or <i>IfcRamp</i>, the special agreements to handle stair
-and ramp geometry will also affect the geometric representation of the <i>IfcSlab</i>.</font>
-> 
+The [Spatial Containment](../../templates/spatial-containment.htm) concept applies to this entity as shown in Table 4.
 
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Structure</b></th><th><b>Description</b></th></tr>
+<tr><td><a href="../../ifcproductextension/lexical/ifcbuildingstorey.htm">IfcBuildingStorey</a></td><td>Default spatial container</td></tr>
+<tr><td><a href="../../ifcproductextension/lexical/ifcbuilding.htm">IfcBuilding</a></td><td>Spatial container for the element if it cannot be assigned to a building storey</td></tr>
+<tr><td><a href="../../ifcproductextension/lexical/ifcsite.htm">IfcSite</a></td><td>Spatial container for the element in case that it is placed on site (outside of building)</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 4 &mdash; IfcSlab Spatial Containment</p></td></tr></table>
 
-**Local Placement**
+The _IfcSlab_, as any subtype of _IfcBuildingElement_, may participate alternatively in one of the two different containment relationships:
 
-The local placement for _IfcSlab_ is defined in its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_, which defines the local coordinate system that is referenced by all geometric representations.
+* the _Spatial Containment_ (defined here), or
+* the _Element Composition_.
 
-* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point (if given) to the placement of the local placement of the same _IfcSpatialStructureElement_ that is used in the _ContainedInStructure_ inverse attribute or to a referenced spatial structure element at a higher level.
-* If the _IfcSlab_ is of type Landing and is used by an _IfcStair_ or _IfcRamp_, and this container class defines its own local placement, then the _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point (if given) to the local placement of the aggregate.
-* If the relative placement is not used, the absolute placement is defined within the world coordinate system. 
+  
+  
+{ .use-head}
+Surface Geometry
 
-**_Geometric
-Representations_**
+The [Surface Geometry](../../templates/surface-geometry.htm) concept applies to this entity.
 
-Currently, the use of 'SweptSolid', 'Clipping', 'Brep' and 'MappedRepresentation' representations is supported. In addition the general representation type 'BoundingBox' is allowed. The geometry use definitions for 'BoundingBox', and 'Brep' are explained at _IfcBuildingElement_.
+> NOTE&nbsp; The 'Surface' can be used to define a surfacic model of the building (e.g. for analytical purposes, or for reduced Level of Detail representation).
 
-**SweptSolid Representation**
+  
+  
+{ .use-head}
+Body SweptSolid Geometry
 
-The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used for the 'SweptSolid' representation:
-
-* _RepresentationIdentifier_ : 'Body'
-* _RepresentationType_ : 'SweptSolid'
+The [Body SweptSolid Geometry](../../templates/body-sweptsolid-geometry.htm) concept applies to this entity.
 
 The following additional constraints apply to the swept solid representation:
 
 * **Solid**: _IfcExtrudedAreaSolid_ is required,
-* **Profile**: _IfcArbitraryClosedProfileDef, IfcRectangleProfileDef, IfcCircleProfileDef, IfcEllipseProfileDef_ shall be supported. 
-* **Extrusion**: The profile can be extruded perpendicularly or non-perpendicularly to the plane of the swept profile. ~~The extrusion axis shall be perpendicular to the swept profile, i.e. pointing into the direction of the z-axis of the _Position_ of the _IfcExtrudedAreaSolid_~~.
+* **Profile**: _IfcArbitraryClosedProfileDef, IfcRectangleProfileDef, IfcCircleProfileDef, IfcEllipseProfileDef_ shall be supported.
+* **Extrusion**: The profile can be extruded perpendicularly or non-perpendicularly to the plane of the swept profile.
 
-> EXAMPLE for standard geometric representation.
+Figure 1 illustrates a 'SweptSolid' geometric representation.
 
-<table cellpadding="2" cellspacing="2"> <tbody> <tr valign="top">
-<td align="left" valign="top"><a href="drawings/IfcSlab_Standard-Layout1.dwf"><img src="figures/ifcslab_standard-layout1.gif" alt="standard slab" border="0" height="274" width="399"></a></td><td align="left" valign="top"> <blockquote> <p>NOTE
-The following interpretation of dimension parameter applies for
-polygonal slabs (in ground floor view): </p> <ul> <li><i>IfcArbitraryClosedProfileDef
-.OuterCurve</i>: closed bounded curve interpreted as area (or
-foot print) of the slab. </li> </ul> </blockquote>
-</td> </tr> </tbody></table>
+> NOTE&nbsp; The following interpretation of dimension parameter applies for polygonal slabs (in ground floor view): > * _IfcArbitraryClosedProfileDef.OuterCurve_: closed bounded curve interpreted as area (or foot print) of the slab.
 
-**Clipping
-representation**
+!["standard slab"](../../../../../../figures/ifcslab_standard-layout1.gif "Figure 1 &mdash; Slab body extrusion")
 
-The advanced geometric representation of _IfcSlab_ is defined using the swept area geometry with additional clippings applied. The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
+  
+  
+{ .use-head}
+Body Clipping Geometry
 
-* _RepresentationIdentifier_ : 'Body'
-* _RepresentationType_ : 'Clipping'
+The [Body Clipping Geometry](../../templates/body-clipping-geometry.htm) concept applies to this entity.
 
-The following constraints apply to the advanced representation:
+The following constraints apply to the 'Clipping' representation:
 
-* **Solid**: see 'SweptSolid' shape representation, 
-* **Profile**:&nbsp;see 'SweptSolid' shape representation, 
-* **Extrusion**:&nbsp;see 'SweptSolid' shape representation, 
-* **Boolean result**: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_. 
+* **Solid**: see 'SweptSolid' shape representation,
+* **Profile**: see 'SweptSolid' shape representation,
+* **Extrusion**: see 'SweptSolid' shape representation,
+* **Boolean result**: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_.
 
-> EXAMPLE for advanced geometric representation.
+Figure 2 illustrates a 'Clipping' geometric representation with definition of a roof slab using advanced geometric representation. The profile is extruded non-perpendicular and the slab body is clipped at the eave.
 
-<table cellpadding="2" cellspacing="2"> <tbody><tr valign="top"> <td align="left" valign="top"><a href="drawings/IfcSlab_Advanced-Layout1.dwf"><img src="figures/ifcslab_advanced-layout1.gif" alt="advanced slab" border="0" height="274" width="399"></a></td>
-<td align="left" valign="top">Definition of a roof
-slab using advanced geometric representation. The profile is extruded
-non-perpendicular and the slab body is clipped at the eave.</td> </tr>
-</tbody></table>
+!["advanced slab"](../../../../../../figures/ifcslab_advanced-layout1.gif "Figure 2 &mdash; Slab body clipping")
+
+  
+  
+{ .use-head}
+Element Voiding
+
+The [Element Voiding](../../templates/element-voiding.htm) concept applies to this entity as shown in Table 168.
+
+{ .use-head}
+Product Assignment
+
+The [Product Assignment](../../templates/product-assignment.htm) concept applies to this entity as shown in Table 5.
+
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Type</b></th><th><b>Description</b></th></tr>
+<tr><td><a href="../../ifcstructuralanalysisdomain/lexical/ifcstructuralsurfacemember.htm">IfcStructuralSurfaceMember</a></td><td>An idealized structural member corresponding to the slab.</td></tr>
+<tr><td><a href="../../ifcprocessextension/lexical/ifctask.htm">IfcTask</a></td><td>A task for operating on the slab.</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 5 &mdash; IfcSlab Product Assignment</p></td></tr></table>

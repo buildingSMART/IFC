@@ -1,1 +1,0 @@
-﻿Material used for construction of the tubes.

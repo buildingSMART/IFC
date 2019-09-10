@@ -1,5 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSpatialStructureElement" UniqueId="061ba193-076d-4292-a0ce-c96d7aba692e" DiagramNumber="2" BaseDefinition="IfcProduct" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSpatialStructureElement" Name="IfcSpatialStructureElement" UniqueId="061ba193-076d-4292-a0ce-c96d7aba692e" DiagramNumber="5" BaseDefinition="IfcSpatialElement" EntityFlags="197">
+	<Localization>
+		<DocLocalization Name="Räumliches Strukturelement" Locale="de" />
+		<DocLocalization Name="Elément de la structure spatiale" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="6625.6982" Y="1270.4294" Width="515.66667" Height="123.33333" />
 	<Subtypes>
 		<DocSubtype UniqueId="ae2170bb-ceb9-4c49-8ff9-845a434b1169" DefinedType="IfcBuilding" />
 		<DocSubtype UniqueId="f270dacf-366f-4ffe-9b9b-f9c781521fef" DefinedType="IfcBuildingStorey" />
@@ -7,30 +12,15 @@
 		<DocSubtype UniqueId="b18c05d7-6169-4317-b902-ee339352f9a0" DefinedType="IfcSite" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="LongName" UniqueId="2Ux9nb7YjBsO96uXD9T$ty" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Long name for a spatial structure element, used for informal purposes. Maybe used in conjunction with the inherited Name attribute.</Documentation>
-		</DocAttribute>
-		<DocAttribute Name="CompositionType" UniqueId="726de67f-b56e-4031-b779-84330e1d0483" DefinedType="IfcElementCompositionEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>Denotes, whether the predefined spatial structure element represents itself, or an aggregate (complex) or a part (part). The interpretation is given separately for each subtype of spatial structure element.</Documentation>
-		</DocAttribute>
-		<DocAttribute Name="ReferencesElements" UniqueId="2jrE5tMcHFs9QuTz09XRcp" DefinedType="IfcRelReferencedInSpatialStructure" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatingStructure">
-			<Documentation>Set of spatial reference relationships, that holds those elements, which are referenced, but not contained, within this element of the project spatial structure.
-&gt; &lt;small&gt;
-NOTE&amp;nbsp; The spatial reference relationship, established by &lt;i&gt;IfcRelReferencedInSpatialStructure&lt;/i&gt;, is not required to be an hierarchical relationship, i.e. each element can be assigned to 0, 1 or many spatial structure elements.&lt;br&gt;
-EXAMPLE&amp;nbsp; A curtain wall maybe contained in the ground floor, but maybe referenced in all floors, it reaches.&lt;br&gt;&lt;br&gt;
-&lt;font color=&quot;#ff0000&quot;&gt;
-IFC2x Edition 3 CHANGE&amp;nbsp; The inverse attribute has been added with upward compatibility for file based exchange.
-&lt;/font&gt;
-&lt;/small&gt;</Documentation>
-		</DocAttribute>
-		<DocAttribute Name="ServicedBySystems" UniqueId="2_VHJXwrrBURmv$RyEUWTf" DefinedType="IfcRelServicesBuildings" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatedBuildings">
-			<Documentation>Set of relationships to Systems, that provides a certain service to the Building. The relationship is handled by the objectified relationship IfcRelServicesBuildings.</Documentation>
-		</DocAttribute>
-		<DocAttribute Name="ContainsElements" UniqueId="0zP4Dah7nFj9T5es5a4V6V" DefinedType="IfcRelContainedInSpatialStructure" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatingStructure">
-			<Documentation>Set of spatial containment relationships, that holds those elements, which are contained within this element of the project spatial structure.
-&gt; &lt;small&gt;
-NOTE&amp;nbsp; The spatial containment relationship, established by &lt;i&gt;IfcRelContainedInSpatialStructure&lt;/i&gt;, is required to be an hierarchical relationship, i.e. each element can only be assigned to 0 or 1 spatial structure element.
-&lt;/small&gt;</Documentation>
+		<DocAttribute Name="CompositionType" UniqueId="726de67f-b56e-4031-b779-84330e1d0483" DefinedType="IfcElementCompositionEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Denotes, whether the predefined spatial structure element represents itself, or an aggregate (complex) or a part (part). The interpretation is given separately for each subtype of spatial structure element. If no _CompositionType_ is asserted, the dafault value &apos;ELEMENT&apos; applies.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; Attribute made optional.</Documentation>
+			<DiagramLine>
+				<DocPoint X="7141.3649" Y="1329.4437" />
+				<DocPoint X="7464.8083" Y="1329.4437" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="7144.6982333" Y="1316.110367" Width="199" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

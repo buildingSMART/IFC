@@ -1,14 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcFaceBound" UniqueId="57c11bcb-98a6-432c-af6d-cb98d7020755" DiagramNumber="2" BaseDefinition="IfcTopologicalRepresentationItem" EntityFlags="109">
+	<Localization>
+		<DocLocalization Name="Flächenbegrenzung - Topologie" Locale="de" />
+		<DocLocalization Name="Contour de face" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1904.3563" Y="1358.1166" Width="283.33333" Height="100" />
 	<Subtypes>
 		<DocSubtype UniqueId="1d6b586e-5ab6-4710-9a40-06024f34b6cf" DefinedType="IfcFaceOuterBound" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Bound" UniqueId="851ba2e0-700c-4bb5-b663-1806386b9710" DefinedType="IfcLoop" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Bound" UniqueId="851ba2e0-700c-4bb5-b663-1806386b9710" DefinedType="IfcLoop" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>The loop which will be used as a face boundary.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1964.9563" Y="1458.1166" />
+				<DocPoint X="1964.9563" Y="1586.4853" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2025.243075" Y="1447.4161" Width="79" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Orientation" UniqueId="8014ce9a-263c-4cf4-84b2-42ab6328c830" DefinedType="BOOLEAN" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>This indicated whether (TRUE) or not (FALSE) the loop has the same sense when used to bound the face as when first defined. If sense is FALSE the senses of all its component oriented edges are implicitly reversed when used in the face.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2165.3563" Y="1458.1166" />
+				<DocPoint X="2165.3563" Y="1539.249983" />
+				<DocPoint X="2487.58973" Y="1539.249983" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2206.60635" Y="1530.3595613" Width="128" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

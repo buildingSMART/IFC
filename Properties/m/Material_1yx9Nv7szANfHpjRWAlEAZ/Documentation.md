@@ -1,1 +1,0 @@
-﻿Material from which the tank is constructed.

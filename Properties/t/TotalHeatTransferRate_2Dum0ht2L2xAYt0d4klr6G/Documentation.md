@@ -1,1 +1,0 @@
-﻿Total heat transfer rate

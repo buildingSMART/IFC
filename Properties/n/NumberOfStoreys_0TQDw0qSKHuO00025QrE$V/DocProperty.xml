@@ -1,3 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocProperty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="NumberOfStoreys_0TQDw0qSKHuO00025QrEV" Name="NumberOfStoreys" UniqueId="0TQDw0qSKHuO00025QrE$V" PrimaryDataType="IfcInteger" />
+<DocProperty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="NumberOfStoreys_0TQDw0qSKHuO00025QrEV" Name="NumberOfStoreys" UniqueId="0TQDw0qSKHuO00025QrE$V" PrimaryDataType="IfcInteger">
+	<Localization>
+		<DocLocalization Name="Geschossanzahl" Locale="de-DE">
+			<Documentation>Anzahl der Vollgeschosse des Gebäudes. 
+
+Dieses Attribute soll nur dann eingefügt werden, wenn keine Geschosse als Objekte, IfcBuildingStorey, beinhaltet sind. Bei Unstimmigkeiten hat die Anzahl der IfcBuildingStorey Objekte Priorität.</Documentation>
+		</DocLocalization>
+		<DocLocalization Name="NombreNiveaux" Locale="fr-FR">
+			<Documentation>Le nombre de niveaux dans un bâtiment, à indiquer lorsque la classe IfcBuildingStorey n&apos;est pas  utilisée. Il est préférable de créer des instances d&apos;IfcBuildingStorey et d&apos;en déduire le nombre de niveaux plutôt que de saisir cette propriété.</Documentation>
+		</DocLocalization>
+		<DocLocalization Name="階数" Locale="ja-JP">
+			<Documentation>建物階の数。IfcBuildingStoreyの数とは関係なく扱う。</Documentation>
+		</DocLocalization>
+		<DocLocalization Name="층 수" Locale="ko-KR">
+			<Documentation>건물 층 수. IfcBuildingStorey 수와 관계없이 취급한다.</Documentation>
+		</DocLocalization>
+	</Localization>
+</DocProperty>
 

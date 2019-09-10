@@ -1,64 +1,82 @@
-﻿**Definition
-from IAI:** Instances of the entity _IfcStructuralCurveMember_ shall be used to describe linear structural elements. Profile and material properties are defined by using objectified relationships:
+﻿Instances of _IfcStructuralCurveMember_ describe edge members, i.e. structural analysis idealizations of beams, columns, rods etc.. Curve members may be straight or curved.
 
-* The material properties are defined by _IfcMechanicalMaterialProperties_ (and subtypes), they are connected through _IfcMaterial_ and _IfcRelAssociatesMaterial_ and are accessible via the inherited inverse relationship _HasAssociations_.
-* The profile properties are defined by _IfcMechanicalProfileProperties_ (and subtypes), they are connected through _IfcRelAssociatesProfileProperties_ and are accessible via the inherited inverse relationship _HasAssociations_.
+> HISTORY&nbsp; New entity in IFC2x2.
 
-> <font color="#0000ff" size="-1"> HISTORY: New entity
-in Release
-IFC2x Edition 2. </font>
-> 
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; Attribute _Axis_ and WHERE rule added. Use definitions changed.
 
+****Coordinate Systems****:
 
-****Use
-Definition****
+See definitions at _IfcStructuralItem_. The local coordinate system is established by the reference curve given by topology representation and by the attribute _Axis_. The local x axis is parallel with the tangent on the reference curve. The local z axis is located in the surface which is created by sweeping _Axis_ along the reference curve and is directed according to _Axis_. The local y axis is directed such that x,y,z form a right-handed Cartesian coordinate system.
 
-<table border="1" cellpadding="2" cellspacing="2" width="100%">
-  <tbody>
-    <tr>
-      <td><img alt="curve member" src="figures/ifcstructuralcurvemember-fig1.gif" height="380" width="580"><br>
-      </td>
-      <td valign="top">The
-topological (or axis) representation of the
-structural curve member is given by assigning an edge through the
-general <i>Representation</i>
-capability inherited by <i>IfcProduct</i>.<br>
-      <br>
-For linear structural curve members the use of <i>IfcEdge</i>
-is
-sufficient, since a linear interpolation between the two vertices is
-assumed, if the structural curve member is an arc, or other non-linear
-form, the <i>IfcEdgeCurve</i>
-needs to be used instead, having the
-geometric form of the curve between the two vertices fully defined.<br>
-      <br>
-A single, constant, profile definition is assigned to the structural
-curve member through the <i>IfcRelAssociatedProfileProperties</i>.</td>
-    </tr>
-  </tbody>
+___
+## Common Use Definitions
+The following concepts are inherited at supertypes:
+
+* _IfcRoot_: [Identity](../../templates/identity.htm), [Revision Control](../../templates/revision-control.htm)
+
+[![Image](../../../img/diagram.png)&nbsp;Instance diagram](../../../annex/annex-d/common-use-definitions/ifcstructuralcurvemember.htm)
+
+{ .use-head}
+Structural Connectivity
+
+The [Structural Connectivity](../../templates/structural-connectivity.htm) concept applies to this entity as shown in Table 1.
+
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>StructuralConnection</b></th><th><b>Description</b></th></tr>
+<tr><td><a href="../../ifcstructuralanalysisdomain/lexical/ifcstructuralpointconnection.htm">IfcStructuralPointConnection</a></td><td>Point connections at each end of the member.</td></tr>
 </table>
+</td></tr>
+<tr><td><p class="table">Table 1 &mdash; IfcStructuralCurveMember Structural Connectivity</p></td></tr></table>
 
-****Topology
-Use Definition****
+  
+  
+{ .use-head}
+Material Profile Set Usage
 
-Instances of _IfcStructuralCurveMember_ shall have a topology representation. It includes a placement and a product representation. The _IfcProductRepresentation_ shall be given by an item of _Representations_ being of type "_IfcTopologyRepresentation_".
+The [Material Profile Set Usage](../../templates/material-profile-set-usage.htm) concept applies to this entity.
 
-**Placement**
+The material of direct instances _IfcStructuralCurveMember_ (in contrast to instances of the subtype _IfcStructuralCurveMemberVarying_) is defined by _IfcMaterialProfileSetUsage_ and attached by the _IfcRelAssociatesMaterial.RelatingMaterial_. It is accessible by the inverse _HasAssociations_ relationship. Composite profile beams can be represented by refering to several _IfcMaterialProfile_s within the _IfcMaterialProfileSet_ that is referenced from the _IfcMaterialProfileSetUsage_. In case of tapered members, the material profile usage subtype _IfcMaterialProfileSetUsageDual_ is used which specifies _IfcMaterialProfileSet_s separately at the start and the end of the tapered member.
 
-The placement for _IfcStructuralCurveMember_ is determined at its supertype _IfcProduct_. It is defined by the optional _IfcObjectPlacement_, referenced by _ObjectPlacement_ at _IfcProduct_, which establishes, if given, the object coordinate system that is referenced by all topological representations of that product.
+The material (_IfcMaterial_) in each _IfcMaterialProfile_(_Set_) is specified minimally by a name which corresponds with an agreed upon standardized structural material designation. An external reference to the source which specifies the material designation should be provided. Alternatively, structural material properties may be provided by means of _IfcMechanicalMaterialProperties_ and _IfcExtendedMaterialProperties_.
 
-* If the _ObjectPlacement_ attribute is omitted, then all topological representations are given directly in world coordinates. This is the preferred representation.
-* If the _ObjectPlacement_ attribute is provided, then it establishes an object coordinate system for all topological representations which are given object coordinates. 
-    * If the _PlacementRelTo_ relationship of _IfcLocalPlacement_ is omitted, the object coordinate system is established within the world coordinate system.
-    * If the _PlacementRelTo_ relationship of _IfcLocalPlacement_ is given, it shall point to the local placement of the same _IfcSpatialStructureElement_, which is used in the _ContainedInStructure_ inverse attribute, or to a spatial structure element at a higher level, referenced by that. 
+The profile (_IfcProfileDef_) in each _IfcMaterialProfile_(_Set_) is specified minimally by a name which corresponds with an agreed upon standardized structural profile designation. An external reference to the source which specifies the profile designation should be provided. Alternatively or additionally, explicit profile geometry should be provided by using respective subtypes of _IfcProfileDef_. Alternatively or additionally, structural profile properties may be provided by means of subtypes of _IfcProfileProperties_.
 
-**Topology
-Representation**
+An _IfcProfileDef_ is a two-dimensional geometric object with a x~p~,y~p~ coordinate system. The profile is inserted into the curve member model thus that the origin of x~p~,y~p~ is located at the member's reference curve and that x~p~,y~p~ are parallel with and directed like the local y,z.
 
-Instances of _IfcStructuralCurveMember_ shall have a topology representation given by an edge with an optional additional geometric representation of the included curve. It can be provided by either
+> NOTE&nbsp; Due to convention in structural mechanics, axis names of _IfcStructuralCurveMember_ differ from axis names of building elements like _IfcBeamStandardCase_: The extrusion axis of _IfcStructuralCurveMember_ is called x while the extrusion axis of _IfcBeamStandardCase_ is called z. Hence x,y,z of _IfcStructuralCurveMember_ correspond with z,x,y of _IfcBeamStandardCase_.
 
-* _IfcEdge_
-* _IfcOrientedEdge_
-* _IfcEdgeCurve_
+If the profile is meant to be inserted centrically in terms of structural section properties, it is necessary that the origin of x~p~,y~p~ is identical with the geometric centroid of the profile (commonly also called centre of gravity). If subtypes of _IfcParameterizedProfileDef_ are used which are only singly symmetric or are asymmetric, an explicit translation by _IfcParameterizedProfileDef.Position.Location_ is required then.
 
-which should be the single item of _IfcTopologyRepresentation.Items_. The _IfcEdge_ might be referenced by two or many _IfcSubedge_, representing sections of the _IfcStructuralCurveMember_ with changing properties. See subtype _IfcStructuralCurveMemberVarying_ for the use definition.
+If the profile is inserted at its geometric centroid, _IfcMaterialProfileSetUsage.CardinalPoint_ shall be set to 10.
+
+Otherwise, the profile is inserted eccentrically and a different cardinal point should be set accordingly.
+
+> NOTE&nbsp; Another eccentricity model is available independently of eccentric profile specification: The reference curve of the member may be located eccentrically relative to the reference points of the connected _IfcStructuralPointConnection_s. The connection relationship is then established by _IfcRelConnectsWithEccentricity_. Whether one or the other or both eccentricity models may be used is subject to information requirements and local agreements.
+
+  
+  
+{ .use-head}
+Reference Topology
+
+The [Reference Topology](../../templates/reference-topology.htm) concept applies to this entity as shown in Table 2.
+
+<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>RepresentationType</b></th><th><b>Topology</b></th></tr>
+<tr><td>Edge</td><td><a href="../../ifctopologyresource/lexical/ifcedge.htm">IfcEdge</a></td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 2 &mdash; IfcStructuralCurveMember Reference Topology</p></td></tr></table>
+
+Direct instances of _IfcStructuralCurveMember_ shall have a topology representation which consists of one instance of _IfcEdge_ or a subtype, representing the reference curve of the curve member. See definitions at _IfcStructuralItem_ for further specifications.
+
+{ .spec-head}
+Informal Propositions:
+
+1. The reference curve must not be parallel with _Axis_ at any point within the curve member's domain.
+
+The local coordinate system is established by the reference curve given by topology representation and by the attribute _Axis_. The local x axis is parallel with the tangent on the reference curve. The local z axis is located in the surface which is created by sweeping _Axis_ along the reference curve and is directed according to _Axis_. The local y axis is directed such that x,y,z form a right-handed Cartesian coordinate system.

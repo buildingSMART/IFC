@@ -1,18 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPropertyEnumeratedValue" UniqueId="0d3d63a5-9a73-4f49-a809-6383082c2216" DiagramNumber="2" BaseDefinition="IfcSimpleProperty" EntityFlags="109">
+	<Localization>
+		<DocLocalization Name="Merkmal mit Aufzählungswert" Locale="de" />
+		<DocLocalization Name="Propriété à valeur issue d&apos;un énumération" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1900.1999" Y="368.66665" Width="542.66667" Height="100" />
 	<Attributes>
-		<DocAttribute Name="EnumerationValues" UniqueId="7f2fce6a-1d45-497e-82f3-61ce510951fe" DefinedType="IfcValue" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
-			<Documentation>Enumeration values, which shall be listed in the referenced IfcPropertyEnumeration, if such a reference is provided.</Documentation>
+		<DocAttribute Name="EnumerationValues" UniqueId="7f2fce6a-1d45-497e-82f3-61ce510951fe" DefinedType="IfcValue" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Enumeration values, which shall be listed in the referenced _IfcPropertyEnumeration_, if such a reference is provided.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; The attribute has been made optional with upward compatibility for file based exchange.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2442.8666" Y="418.66665" />
+				<DocPoint X="2879.8333" Y="418.66665" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2442.8666" Y="405.333317" Width="299" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="EnumerationReference" UniqueId="5fbe4df2-d945-4c3c-8826-2a4f7ca6549e" DefinedType="IfcPropertyEnumeration" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="EnumerationReference" UniqueId="5fbe4df2-d945-4c3c-8826-2a4f7ca6549e" DefinedType="IfcPropertyEnumeration" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>Enumeration from which a enumeration value has been selected. The referenced enumeration also establishes the unit of the enumeration value.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1979.1697" Y="468.66665" />
+				<DocPoint X="1979.1697" Y="579.59996" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2133.1697" Y="480.999985" Width="262" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR1" UniqueId="3CZvBsS_D3KOOgOZaCLd5Q">
-			<Documentation>Each enumeration value shall be a member of the list of EnumerationValues at the referenced IfcPropertyEnumeration (if given).</Documentation>
-			<Expression>NOT(EXISTS(EnumerationReference)) OR 
-   (SIZEOF(QUERY(temp &lt;* EnumerationValues |
+		<DocWhereRule Name="WR21" UniqueId="8f133ebc-13fd-4594-939a-14c00b5bf658">
+			<Documentation>Each value within the list of _EnumerationValues_ shall be a member of the list of _EnumerationValues_ at the referenced _IfcPropertyEnumeration_ (provided that both, the _EnumerationValues_ and _EnumerationReference_, are asserted).</Documentation>
+			<Expression>NOT(EXISTS(EnumerationReference)) 
+OR  NOT(EXISTS(EnumerationValues)) 
+OR  (SIZEOF(QUERY(temp &lt;* EnumerationValues |
     temp IN EnumerationReference.EnumerationValues))
     = SIZEOF(EnumerationValues))</Expression>
 		</DocWhereRule>

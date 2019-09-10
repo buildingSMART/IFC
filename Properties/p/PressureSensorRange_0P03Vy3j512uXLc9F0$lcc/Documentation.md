@@ -1,1 +1,0 @@
-﻿The upper and lower bounds of pressure value for operation of the pressure sensor.

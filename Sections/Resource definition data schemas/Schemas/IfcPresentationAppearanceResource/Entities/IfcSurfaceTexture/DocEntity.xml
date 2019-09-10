@@ -1,5 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSurfaceTexture" UniqueId="7ea0af80-1628-45aa-92a8-1fdb01644edc" DiagramNumber="7" EntityFlags="197">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSurfaceTexture" UniqueId="7ea0af80-1628-45aa-92a8-1fdb01644edc" DiagramNumber="9" BaseDefinition="IfcPresentationItem" EntityFlags="205">
+	<Localization>
+		<DocLocalization Name="Oberflächentextur" Locale="de" />
+		<DocLocalization Name="Texture de surface" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="3392.8667" Y="2991.4667" Width="326.66667" Height="313.63334" />
 	<Subtypes>
 		<DocSubtype UniqueId="938dd83a-bdd0-4bd8-9fec-f4f764d2a76c" DefinedType="IfcPixelTexture" />
 		<DocSubtype UniqueId="05e1bef1-0dca-44b9-b273-3300acace959" DefinedType="IfcImageTexture" />
@@ -7,16 +12,73 @@
 	</Subtypes>
 	<Attributes>
 		<DocAttribute Name="RepeatS" UniqueId="083fc47c-3ee1-47b5-8bd3-40c028d4e31f" DefinedType="BOOLEAN" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>The RepeatS field specifies how the texture wraps in the S direction. If RepeatS is TRUE (the default), the texture map is repeated outside the [0.0, 1.0] texture coordinate range in the S direction so that it fills the shape. If repeatS is FALSE, the texture coordinates are clamped in the S direction to lie within the [0.0, 1.0] range.</Documentation>
+			<Documentation>The _RepeatS_ field specifies how the texture wraps in the S direction. If _RepeatS_ is TRUE (the default), the texture map is repeated outside the [0.0, 1.0] texture coordinate range in the S direction so that it fills the shape. If _RepeatS_ is FALSE, the texture coordinates are clamped in the S direction to lie within the [0.0, 1.0] range.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3719.5334" Y="3019.5589" />
+				<DocPoint X="4146.0667" Y="3019.5589" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3711.5334" Y="3011.5589" Width="104" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="RepeatT" UniqueId="b78c2d1e-ade1-4cfe-9ad0-600ac9e65db1" DefinedType="BOOLEAN" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>The RepeatT field specifies how the texture wraps in the T direction. If RepeatT is TRUE (the default), the texture map is repeated outside the [0.0, 1.0] texture coordinate range in the T direction so that it fills the shape. If repeatT is FALSE, the texture coordinates are clamped in the T direction to lie within the [0.0, 1.0] range.</Documentation>
+			<Documentation>The _RepeatT_ field specifies how the texture wraps in the T direction. If _RepeatT_ is TRUE (the default), the texture map is repeated outside the [0.0, 1.0] texture coordinate range in the T direction so that it fills the shape. If _RepeatT_ is FALSE, the texture coordinates are clamped in the T direction to lie within the [0.0, 1.0] range.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3719.5334" Y="3095.2517" />
+				<DocPoint X="4146.0667" Y="3095.2517" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3708.866733" Y="3087.2517" Width="103" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="TextureType" UniqueId="1ULc0bFL92ewQ2kqMregsC" DefinedType="IfcSurfaceTextureEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>Identifies the predefined types of image map from which the type required may be set.</Documentation>
+		<DocAttribute Name="Mode" UniqueId="5e362a12-f3aa-4a27-8041-36d45f41f8cf" DefinedType="IfcIdentifier" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The _Mode_ attribute is provided to control the appearance of a multi textures. The mode then controls the type of blending operation. The mode includes a MODULATE for a lit appearance, a REPLACE for a unlit appearance, and variations of the two.
+&gt; NOTE&amp;nbsp; The applicable values for the _Mode_ attribute are determined by view definitions or implementer agreements. It is recommended to use the modes described in ISO/IES 19775-1.2:2008 X3D Architecture and base components Edition 2, Part 1. See [18.4.3 MultiTexture](http://www.web3d.org/x3d/specifications/ISO-IEC-19775-1.2-X3D-AbstractSpecification/Part01/components/texturing.html#MultiTexture) for recommended values.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; New attribute replacing previous TextureType.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3719.5334" Y="3194.6985" />
+				<DocPoint X="4145.9667" Y="3194.6985" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3692.866733" Y="3184.031833" Width="69" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="TextureTransform" UniqueId="c1cd6b51-2e24-4a4e-a44f-8b9143988a34" DefinedType="IfcCartesianTransformationOperator2D" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>These parameters support changes to the size, orientation, and position of textures on shapes. Note that these operations appear reversed when viewed on the surface of geometry. For example, a scale value of (2 2) will scale the texture coordinates and have the net effect of shrinking the texture size by a factor of 2 (texture coordinates are twice as large and thus cause the texture to repeat). A translation of (0.5 0.0) translates the texture coordinates +.5 units along the S-axis and has the net effect of translating the texture -0.5 along the S-axis on the geometry&apos;s surface. A rotation of PI/2 of the texture coordinates results in a -PI/2 rotation of the texture on the geometry.</Documentation>
+		<DocAttribute Name="TextureTransform" UniqueId="c1cd6b51-2e24-4a4e-a44f-8b9143988a34" DefinedType="IfcCartesianTransformationOperator2D" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>The _TextureTransform_ defines a 2D transformation that is applied to the texture coordinates. It affects the way texture coordinates are applied to the surfaces of geometric representation itesm. The 2D transformation supports changes to the size, orientation, and position of textures on shapes. Mirroring is not allowed to be used in the _IfcCarteesianTransformationOperator_</Documentation>
+			<DiagramLine>
+				<DocPoint X="3666.2" Y="2991.4667" />
+				<DocPoint X="3666.2" Y="2880.4667" />
+				<DocPoint X="4406.16666" Y="2880.4667" />
+				<DocPoint X="4406.16666" Y="2769.4667" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3602.883337" Y="2874.633368" Width="203" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="Parameter" UniqueId="28993d40-b769-4a0e-ac66-25d2f615f04b" DefinedType="IfcIdentifier" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0" XsdFormat="element">
+			<Documentation>The _Parameter_ attribute is provided to control the appearance of a multi textures. The applicable parameters depend on the value of the _Mode_ attribute.
+&gt; NOTE&amp;nbsp; The applicable values for the list of _Parameter_ attributes are determined by view definitions or implementer agreements. It is recommended to use the source and the function fields described in ISO/IES 19775-1.2:2008 X3D Architecture and base components Edition 2, Part 1. See [18.4.3 MultiTexture](http://www.web3d.org/x3d/specifications/ISO-IEC-19775-1.2-X3D-AbstractSpecification/Part01/components/texturing.html#MultiTexture) for recommended values.  
+&gt; By convention, _Parameter[1]_ shall then hold the source value, _Parameter[2]_ the function value, _Parameter[3]_ the base RGB color for select operations, and _Parameter[4]_ the alpha value for select operations.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; New attribute added at the end of the attribute list.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3719.5334" Y="3286.95" />
+				<DocPoint X="4145.9667" Y="3286.95" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3756.866733" Y="3276.283333" Width="199" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="IsMappedBy" UniqueId="7207873e-b05f-4ab2-9ec8-f54a10670e4d" DefinedType="IfcTextureCoordinate" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="Maps">
+			<Documentation>Texture coordinates, either provided by a corresponding list of texture vertices to vertex-based geometric items or by a texture coordinate generator, that applies the surface texture to the surfaces of the geometric items.
+&gt; &lt;span &quot;style:font-size:smaller;color:red&quot;=&quot;&quot;&gt;IFC4 CHANGE&amp;nbsp; New attribute added at the end of the attribute list.&lt;/span&gt;
+&gt;</Documentation>
+			<DiagramLine>
+				<DocPoint X="3662.8667" Y="3305.1" />
+				<DocPoint X="3662.8667" Y="3409.61666" />
+				<DocPoint X="4144.8667" Y="3409.61666" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3685.8667" Y="3440.024995" Width="315" Height="70" />
+		</DocAttribute>
+		<DocAttribute Name="UsedInStyles" UniqueId="a01b593c-80bc-4abc-851a-3da9bfb93c5d" DefinedType="IfcSurfaceStyleWithTextures" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="Textures">
+			<DiagramLine>
+				<DocPoint X="3440.1334" Y="2702.5" />
+				<DocPoint X="3440.1334" Y="2991.46667" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="3602.1334" Y="2655.833332" Width="295" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

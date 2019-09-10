@@ -1,17 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelVoidsElement" UniqueId="5307e7a4-2270-4ad7-9e3c-ba76198cc09e" DiagramNumber="4" BaseDefinition="IfcRelConnects" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelVoidsElement" UniqueId="5307e7a4-2270-4ad7-9e3c-ba76198cc09e" DiagramNumber="8" BaseDefinition="IfcRelDecomposes" EntityFlags="237">
+	<Localization>
+		<DocLocalization Name="Abzug / Subtraktion von Teil aus Element - Relation" Locale="de" />
+		<DocLocalization Name="Relation de percement" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1838.1806" Y="2903.0556" Width="323.23333" Height="103.33333" />
 	<Attributes>
-		<DocAttribute Name="RelatingBuildingElement" UniqueId="6088c92a-4578-4341-b20d-3690feb149af" DefinedType="IfcElement" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>Reference to ~~building~~ element in which a void is created by associated ~~opening~~ feature subtraction element.
-&gt; &lt;small&gt;&lt;font color=&quot;#ff0000&quot;&gt;
-IFC2x PLATFORM CHANGE: The data type has been changed from &lt;i&gt;IfcBuildingElement&lt;/i&gt; to &lt;i&gt;IfcElement&lt;/i&gt; with upward compatibility for file based exchange.
-&lt;/font&gt;&lt;/small&gt;</Documentation>
+		<DocAttribute Name="RelatingBuildingElement" UniqueId="6088c92a-4578-4341-b20d-3690feb149af" DefinedType="IfcElement" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>Reference to element in which a void is created by associated feature subtraction element.
+{ .change-ifc2x}
+&gt; IFC2x CHANGE&amp;nbsp; The data type has been changed from _IfcBuildingElement_ to _IfcElement_ with upward compatibility for file based exchange.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2119.7972" Y="2903.0556" />
+				<DocPoint X="2119.7972" Y="2677.7223" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2274.46387" Y="2958.722267" Width="275" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RelatedOpeningElement" UniqueId="edbe00f6-c081-41e2-a32e-32ab51af7a0a" DefinedType="IfcFeatureElementSubtraction" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>Reference to the ~~opening~~ feature subtraction element which defines a void in the associated ~~opening~~ element.
-&gt; &lt;small&gt;&lt;font color=&quot;#ff0000&quot;&gt;
-IFC2x PLATFORM CHANGE&amp;nbsp; The data type has been changed from &lt;i&gt;IfcOpeningElement&lt;/i&gt; to &lt;i&gt;IfcFeatureElementSubtraction&lt;/i&gt; with upward compatibility for file based exchange.
-&lt;/font&gt;&lt;/small&gt;</Documentation>
+		<DocAttribute Name="RelatedOpeningElement" UniqueId="edbe00f6-c081-41e2-a32e-32ab51af7a0a" DefinedType="IfcFeatureElementSubtraction" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>Reference to the feature subtraction element which defines a void in the associated element.
+{ .change-ifc2x}
+&gt; IFC2x CHANGE&amp;nbsp; The data type has been changed from _IfcOpeningElement_ to _IfcFeatureElementSubtraction_ with upward compatibility for file based exchange.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2161.414" Y="2954.7223" />
+				<DocPoint X="2685.8871" Y="2954.7223" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2161.414" Y="2944.7223" Width="277" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

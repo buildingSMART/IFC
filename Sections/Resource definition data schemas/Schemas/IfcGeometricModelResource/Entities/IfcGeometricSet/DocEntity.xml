@@ -1,19 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGeometricSet" UniqueId="fee86dc6-fa63-40dc-b7c9-cde3957f7e9e" DiagramNumber="6" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="109">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGeometricSet" UniqueId="fee86dc6-fa63-40dc-b7c9-cde3957f7e9e" DiagramNumber="8" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="109">
+	<Localization>
+		<DocLocalization Name="Geometrische Gruppe" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="11838.533" Y="657.35" Width="366.66667" Height="100" />
 	<Subtypes>
 		<DocSubtype UniqueId="5f087410-2258-43f9-897a-8192bfe0203f" DefinedType="IfcGeometricCurveSet" />
 	</Subtypes>
 	<Attributes>
 		<DocAttribute Name="Elements" UniqueId="2fbfb910-86f0-40a1-bc8c-23b799cd1b0c" DefinedType="IfcGeometricSetSelect" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The geometric elements which make up the geometric set, these may be points, curves or surfaces; but are required to be of the same coordinate space dimensionality.</Documentation>
+			<DiagramLine>
+				<DocPoint X="12021.866" Y="757.35" />
+				<DocPoint X="12021.866" Y="834.133333" />
+				<DocPoint X="12021.866" Y="834.133333" />
+				<DocPoint X="12021.866" Y="910.91666" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="12135.19933" Y="767.35" Width="188" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Dim" UniqueId="e7a44607-b2bd-4ca1-bba8-6981a1cc90b7" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The space dimensionality of this class, it is identical to the first element in the set. A where rule ensures that all elements have the same dimensionality.</Documentation>
 			<Derived>Elements[1].Dim</Derived>
+			<DiagramLine>
+				<DocPoint X="11838.533" Y="707.35" />
+				<DocPoint X="11638" Y="707.35" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="11838.533" Y="697.35" Width="125" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR21" UniqueId="3su0Ta0T90HhR_kI8sufz$">
+		<DocWhereRule Name="ConsistentDim" UniqueId="028ef707-00c6-4378-a778-8cbeb949ad06">
 			<Documentation>All elements within a geometric set shall have the same dimensionality.</Documentation>
 			<Expression>SIZEOF(QUERY(Temp &lt;* Elements |
   Temp.Dim &lt;&gt; Elements[1].Dim))

@@ -1,9 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCableSegmentType" UniqueId="6ed8eee1-4ef5-4084-99db-457ee2e6431a" DiagramNumber="2" BaseDefinition="IfcFlowSegmentType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Kabelsegment - Typ" Locale="de" />
+		<DocLocalization Name="Type de segment de câble" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1697.5" Y="307.46663" Width="679.93333" Height="103.33333" />
 	<Attributes>
 		<DocAttribute Name="PredefinedType" UniqueId="5eb0680e-2b1f-4c6a-83ec-db45bf36cf4e" DefinedType="IfcCableSegmentTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Identifies the predefined types of cable segment from which the type required may be set.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1699.9569" Y="410.79996" />
+				<DocPoint X="1699.9569" Y="460.090622" />
+				<DocPoint X="2118.56669" Y="460.090622" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1611.990234" Y="454.3739372" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="ab66e30d-2fae-4452-a322-051bbb16992c">
+			<Expression>(PredefinedType &lt;&gt; IfcCableSegmentTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcCableSegmentTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

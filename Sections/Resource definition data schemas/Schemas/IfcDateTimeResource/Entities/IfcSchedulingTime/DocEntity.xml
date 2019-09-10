@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSchedulingTime" UniqueId="b80d3213-eccf-4e8a-84a3-21c1381ff3cc" DiagramNumber="2" EntityFlags="197">
+	<Localization>
+		<DocLocalization Name="Festgelegte Zeit" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="1750.3682" Y="120.15747" Width="429.85816" Height="309.68764" />
+	<Subtypes>
+		<DocSubtype UniqueId="55e767bc-024e-41b0-8023-bc93c8ae1295" DefinedType="IfcLagTime" />
+		<DocSubtype UniqueId="7d353c45-a99c-48a5-b3d9-50792641252e" DefinedType="IfcTaskTime" />
+		<DocSubtype UniqueId="cba8e0e1-5a6f-4041-81ab-025be3b8d705" DefinedType="IfcResourceTime" />
+		<DocSubtype UniqueId="93bd734a-6699-4f3d-bf53-2cf268d48905" DefinedType="IfcEventTime" />
+		<DocSubtype UniqueId="88f4971f-b850-4396-ba89-da94fb2b9a93" DefinedType="IfcWorkTime" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="Name" UniqueId="9ce7ee5d-0c3d-4394-9ba0-4cd0ff38d925" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Optional name for the time definition.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2180.2264" Y="188.01282" />
+				<DocPoint X="2738.40723" Y="188.01282" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2138.970713" Y="177.963864" Width="73" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="DataOrigin" UniqueId="a82843cd-7cb9-4fac-b255-c3bf8dfcfcc1" DefinedType="IfcDataOriginEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Specifies the origin of the scheduling time entity. It currently
+    differentiates between predicted, simulated, measured, and user defined values.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2180.2264" Y="268.61484" />
+				<DocPoint X="2738.38423" Y="268.61484" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2158.799695" Y="261.3402442" Width="125" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="UserDefinedDataOrigin" UniqueId="9619b2c7-3037-4380-8c25-83f4ded0ab84" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Value of the data origin if DataOrigin attribute is USERDEFINED.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2180.2264" Y="355.97965" />
+				<DocPoint X="2738.44863" Y="355.97965" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2226.524739" Y="349.0205725" Width="263" Height="35" />
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

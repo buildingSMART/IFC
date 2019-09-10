@@ -1,22 +1,9 @@
-﻿An _IfcElectricTimeControlType_ is a device that applies control to the provision or flow of electrical energy over time.
+﻿The flow controller type **IfcElectricTimeControlType** defines commonly shared information for occurrences of electric time controls. The set of shared information may include:
 
-> <font color="#0000ff" size="-1">
-HISTORY: New entity in IFC 2x2</font>
-> 
+* common properties with shared property sets
+* common representations
+* common materials
+* common composition of elements
+* common ports
 
-
-****Use Definitions****
-
-An _IfcElectricTimeControlType_ is a subtype of _IfcFlowControllerType_.
-
-Usage of _IfcElectricTimeControlType_ defines the parameters for one or more occurrences of _IfcFlowController_.
-
-****Property Set Use Definition****:
-
-The property sets relating to the _IfcElectricTimeControlType_are defined by the _IfcPropertySet_ and attached by the _IfcRelDefinesByType_ relationship. It is accessible by the inverse _IsDefinedBy_ relationship. The following property set definitions specific to an _IfcElectricTimeControlType_ are part of this IFC release:
-
-* [Pset_ElectricalDeviceCommon](../../psd/IfcElectricalDomain/Pset_ElectricalDeviceCommon.xml): property set for properties that are common to all types of electrical devices, if available
-
-****Geometry Use Definitions****
-
-Representations of the type are defined as representation maps (at the level of the supertype _IfcTypeProduct_). These are assigned at the occurrence through the _IfcShapeRepresentation.Item_ being an _IfcMappedItem_.
+It is used to define a electric time control type specification indicating the specific product information that is common to all occurrences of that product type. The **IfcElectricTimeControlType** may be declared within _IfcProject_ or _IfcProjectLibrary_ using _IfcRelDeclares_ and may be exchanged with or without occurrences of the type. Occurrences of **IfcElectricTimeControlType** are represented by instances of _IfcElectricTimeControl_. Refer to the documentation at _IfcElectricTimeControl_ for supported property sets, materials, composition, and ports.

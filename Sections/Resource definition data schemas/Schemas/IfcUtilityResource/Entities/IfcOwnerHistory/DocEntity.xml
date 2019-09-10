@@ -1,30 +1,85 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcOwnerHistory" UniqueId="6ef8f949-8689-4582-bbae-9259e7c2d559" DiagramNumber="1" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Angabe zu Autor und Zeit des letzten Objektzugriffs" Locale="de" />
+		<DocLocalization Name="Historique des actions sur l&apos;objet" Locale="fr" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="706.88077" Y="495.80074" Width="320.66667" Height="239.64128" />
 	<Attributes>
-		<DocAttribute Name="OwningUser" UniqueId="6cfcdb94-5c37-4ad5-a156-a9253abf000b" DefinedType="IfcPersonAndOrganization" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="OwningUser" UniqueId="6cfcdb94-5c37-4ad5-a156-a9253abf000b" DefinedType="IfcPersonAndOrganization" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>Direct reference to the end user who currently &quot;owns&quot; this object. Note that IFC includes the concept of ownership transfer from one user to another and therefore distinguishes between the Owning User and Creating User.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1027.5474" Y="672.52374" />
+				<DocPoint X="1267.27158" Y="672.52374" />
+				<DocPoint X="1267.27158" Y="810.34551" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1062.167098" Y="659.753378" Width="143" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="OwningApplication" UniqueId="313e24f2-1770-4142-a154-4fa5a9f412a1" DefinedType="IfcApplication" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>Direct reference to the application which currently &quot;Owns&quot; this object on behalf of the owning user, who uses this application. Note that IFC includes the concept of ownership transfer from one app to another and therefore distinguishes between the Owning Application and Creating Application.</Documentation>
+		<DocAttribute Name="OwningApplication" UniqueId="313e24f2-1770-4142-a154-4fa5a9f412a1" DefinedType="IfcApplication" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>Direct reference to the application which currently &quot;owns&quot; this object on behalf of the owning user of the application. Note that IFC includes the concept of ownership transfer from one application to another and therefore distinguishes between the Owning Application and Creating Application.</Documentation>
+			<DiagramLine>
+				<DocPoint X="738.04514" Y="735.44202" />
+				<DocPoint X="738.04514" Y="1154.0365" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="862.19576" Y="814.070745" Width="211" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="State" UniqueId="87eb8e3b-53d4-484e-96d0-6679f05c16a4" DefinedType="IfcStateEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Enumeration that defines the current access state of the object.</Documentation>
+			<DiagramLine>
+				<DocPoint X="706.88077" Y="673.10895" />
+				<DocPoint X="280.25445" Y="673.10895" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="711.5883414" Y="667.0433393" Width="65" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ChangeAction" UniqueId="d7091627-4214-4138-a242-e352fecf5106" DefinedType="IfcChangeActionEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ChangeAction" UniqueId="d7091627-4214-4138-a242-e352fecf5106" DefinedType="IfcChangeActionEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Enumeration that defines the actions associated with changes made to the object.</Documentation>
+			<DiagramLine>
+				<DocPoint X="706.88077" Y="550.60098" />
+				<DocPoint X="406.54143" Y="550.60098" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="718.023451" Y="540.572896" Width="163" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="LastModifiedDate" UniqueId="baa5cff9-e806-4374-9847-36815a46c2bb" DefinedType="IfcTimeStamp" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Date and Time at which the last modification occurred.</Documentation>
+			<Documentation>Date and Time expressed in UTC (Universal Time Coordinated, formerly Greenwich Mean Time or GMT) at which the last modification was made by LastModifyingUser and LastModifyingApplication.</Documentation>
+			<DiagramLine>
+				<DocPoint X="924.11648" Y="495.80074" />
+				<DocPoint X="924.11648" Y="359.66677" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1040.09163" Y="496.53389089" Width="200" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LastModifyingUser" UniqueId="496aebe5-e9a5-40c0-bd10-29750cbba3da" DefinedType="IfcPersonAndOrganization" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>User who carried out the last modification.</Documentation>
+		<DocAttribute Name="LastModifyingUser" UniqueId="496aebe5-e9a5-40c0-bd10-29750cbba3da" DefinedType="IfcPersonAndOrganization" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>User who carried out the last modification using LastModifyingApplication.</Documentation>
+			<DiagramLine>
+				<DocPoint X="1027.5474" Y="553.54607" />
+				<DocPoint X="1412.61742" Y="553.54607" />
+				<DocPoint X="1412.61742" Y="810.34551" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1023.9127101" Y="544.1460984" Width="211" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LastModifyingApplication" UniqueId="5f65c380-d809-4fa5-bd22-2e8ba56edfc8" DefinedType="IfcApplication" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Application used to carry out the last modification.</Documentation>
+		<DocAttribute Name="LastModifyingApplication" UniqueId="5f65c380-d809-4fa5-bd22-2e8ba56edfc8" DefinedType="IfcApplication" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>Application used to make the last modification.</Documentation>
+			<DiagramLine>
+				<DocPoint X="983.08801" Y="735.44202" />
+				<DocPoint X="983.08801" Y="1154.0365" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="1146.81164" Y="660.497091" Width="279" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="CreationDate" UniqueId="6797cdbc-3f8e-4e99-a976-fab71013a3bf" DefinedType="IfcTimeStamp" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<Documentation>Time and date of creation.</Documentation>
+			<Documentation>The date and time expressed in UTC (Universal Time Coordinated, formerly Greenwich Mean Time or GMT) when first created by the original OwningApplication. Once defined this value remains unchanged through the lifetime of the entity.</Documentation>
+			<DiagramLine>
+				<DocPoint X="784.44703" Y="495.80074" />
+				<DocPoint X="784.44703" Y="359.66677" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="701.781122" Y="502.0948053" Width="154" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectChangeAction" UniqueId="ce5d5139-07e4-40ca-836f-4243e6b4e5ed">
+			<Documentation>If ChangeAction is asserted and LastModifiedDate is not defined, ChangeAction must be set to NOTDEFINED</Documentation>
+			<Expression>(EXISTS(LastModifiedDate)) OR
+(NOT(EXISTS(LastModifiedDate)) AND NOT(EXISTS(ChangeAction))) OR
+(NOT(EXISTS(LastModifiedDate)) AND EXISTS(ChangeAction) AND ((ChangeAction = IfcChangeActionEnum.NOTDEFINED) OR (ChangeAction = IfcChangeActionEnum.NOCHANGE)))</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBSplineCurveWithKnots" UniqueId="5cf374d3-9550-4d89-8870-9e50d9d4d7f6" DiagramNumber="7" BaseDefinition="IfcBSplineCurve" EntityFlags="229">
+	<Localization>
+		<DocLocalization Name="Bézier-Spline-Kurve mit (gegebenen) Kontrollpunkten" Locale="de" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="9702.7127" Y="1649.72" Width="346.52667" Height="286.02667" />
+	<Subtypes>
+		<DocSubtype UniqueId="e35b3255-9ed7-4da1-ba1c-9f904973ded3" DefinedType="IfcRationalBSplineCurveWithKnots" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="KnotMultiplicities" UniqueId="4dae82bb-9535-43aa-a1a7-baf777ce6fda" DefinedType="INTEGER" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="0">
+			<Documentation>The multiplicities of the knots. This list defines the number of times each knot in the knots list is to be repeated in constructing the knot array.</Documentation>
+			<DiagramLine>
+				<DocPoint X="10049.239" Y="1684.2819" />
+				<DocPoint X="10764.93742" Y="1684.2819" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="10049.239" Y="1676.2819" Width="265" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="Knots" UniqueId="44c6204a-ed46-49b4-a5ef-200b9dd80f13" DefinedType="IfcParameterValue" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="0">
+			<Documentation>The list of distinct knots used to define the B-spline basis functions.</Documentation>
+			<DiagramLine>
+				<DocPoint X="10049.239" Y="1763.5582" />
+				<DocPoint X="10764.8853" Y="1763.5582" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="10049.239" Y="1758.2248667" Width="147" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="KnotSpec" UniqueId="fe56ab5c-8a68-43ab-820c-5c7f6d9f1111" DefinedType="IfcKnotType" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The description of the knot type. This is for information only.</Documentation>
+			<DiagramLine>
+				<DocPoint X="10049.239" Y="1848.6695" />
+				<DocPoint X="10764.86809" Y="1848.6695" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="10045.7770633" Y="1845.5152833" Width="114" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="UpperIndexOnKnots" UniqueId="99709d59-8d7c-46e9-8e1b-a9f219b95e18" DefinedType="INTEGER" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The upper index on the knot arrays; the lower index is 1.</Documentation>
+			<Derived>SIZEOF(Knots)</Derived>
+			<DiagramLine>
+				<DocPoint X="10049.239" Y="1917.32" />
+				<DocPoint X="10764.85463" Y="1917.32" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="10049.239" Y="1909.32" Width="307" Height="35" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="ConsistentBSpline" UniqueId="7eb54fad-4212-42e4-b1fe-f5371bb1bad3">
+			<Documentation>The function IfcConstraintsParamBSpline returns TRUE if no inconsistencies in the parametrisation of the
+B-spline are found.</Documentation>
+			<Expression>IfcConstraintsParamBSpline(Degree, UpperIndexOnKnots,
+UpperIndexOnControlPoints, KnotMultiplicities, Knots)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrespondingKnotLists" UniqueId="44d3ea58-9435-4d3d-99d7-306e659bec55">
+			<Documentation>The number of elements in the knot multiplicities list shall be equal to the number of elements in the knots list.</Documentation>
+			<Expression>SIZEOF(KnotMultiplicities) = UpperIndexOnKnots</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+
