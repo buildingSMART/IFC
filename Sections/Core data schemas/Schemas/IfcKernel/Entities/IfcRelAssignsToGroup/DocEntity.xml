@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelAssignsToGroup" UniqueId="20dee03b-bfd0-4795-923f-4619fc628b6c" DiagramNumber="7" BaseDefinition="IfcRelAssigns" EntityFlags="237">
+	<Attributes>
+		<DocAttribute Name="RelatingGroup" UniqueId="1f95caf1-2cb2-4b4d-aaf4-d03e95cb784b" DefinedType="IfcGroup" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Reference to group that finally contains all assigned group members.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="2_dDO0Rb96N8Jj22$tvoFZ">
+			<Documentation>The instance to with the relation points shall not be contained in the List of RelatedObjects.</Documentation>
+			<Expression>SIZEOF(QUERY(Temp &lt;* SELF\IfcRelAssigns.RelatedObjects | RelatingGroup :=: Temp)) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

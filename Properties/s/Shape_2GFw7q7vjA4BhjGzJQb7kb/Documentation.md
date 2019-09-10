@@ -1,0 +1,1 @@
+﻿Cross sectional shape.

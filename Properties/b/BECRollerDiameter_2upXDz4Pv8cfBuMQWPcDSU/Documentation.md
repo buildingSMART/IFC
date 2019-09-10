@@ -1,0 +1,1 @@
+﻿Diameter of bending roller.

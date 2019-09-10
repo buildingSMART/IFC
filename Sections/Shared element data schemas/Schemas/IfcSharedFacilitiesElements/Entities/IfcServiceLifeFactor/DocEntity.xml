@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcServiceLifeFactor" UniqueId="3KUMruS5f1GvNmqyqqO3sb" DiagramNumber="2" BaseDefinition="IfcPropertySetDefinition" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="2WYIYG8Dv8Ugotv$BFxAmz" DefinedType="IfcServiceLifeFactorTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Predefined service life factor types from which that required may be set.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="UpperValue" UniqueId="0_3rz6ynb0ORKldYm3g6WG" DefinedType="IfcMeasureValue" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Upper of the three values assigned to the service life factor.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="MostUsedValue" UniqueId="1ggqGZ1vvDkvWhQEkdyxt2" DefinedType="IfcMeasureValue" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Most used of the three values assigned to the service life factor.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LowerValue" UniqueId="1rZqPNGFr7G86pgNi71j0V" DefinedType="IfcMeasureValue" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Lower of the three values assigned to the service life factor.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR31" UniqueId="1lChOFP6fF1OqkrH9t4XSw">
+			<Documentation>The attribute UserDefinedFactor must be asserted when the value of the IfcServiceLifeFactorEnum is set to USERDEFINED.</Documentation>
+			<Expression>NOT(PredefinedType = IfcServiceLifeFactorTypeEnum.USERDEFINED)
+OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

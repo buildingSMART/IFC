@@ -1,0 +1,1 @@
+﻿Cross section area of the cable

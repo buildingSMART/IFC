@@ -1,0 +1,23 @@
+﻿	(cp1, cp2 : IfcCartesianPoint; Epsilon : REAL)
+	: LOGICAL;
+  
+  LOCAL
+    cp1x : REAL := cp1.Coordinates[1];
+    cp1y : REAL := cp1.Coordinates[2];
+    cp1z : REAL := 0;
+    cp2x : REAL := cp2.Coordinates[1];
+    cp2y : REAL := cp2.Coordinates[2];
+    cp2z : REAL := 0;
+  END_LOCAL;
+
+  IF (SIZEOF(cp1.Coordinates) > 2) THEN
+    cp1z := cp1.Coordinates[3];
+  END_IF;
+
+  IF (SIZEOF(cp2.Coordinates) > 2) THEN
+    cp2z := cp2.Coordinates[3];
+  END_IF;
+
+  RETURN (IfcSameValue(cp1x,cp2x,Epsilon) AND
+          IfcSameValue(cp1y,cp2y,Epsilon) AND
+          IfcSameValue(cp1z,cp2z,Epsilon));

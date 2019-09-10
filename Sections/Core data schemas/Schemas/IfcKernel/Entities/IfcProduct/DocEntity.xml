@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcProduct" UniqueId="ed1b8d59-300e-45f5-b8df-fd0e833a761e" DiagramNumber="5" BaseDefinition="IfcObject" EntityFlags="205">
+	<Subtypes>
+		<DocSubtype UniqueId="db048e60-831b-4fab-90e8-a45d39fa6975" DefinedType="IfcProxy" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="ObjectPlacement" UniqueId="d2d0a44a-3717-40dd-8034-5278124028b2" DefinedType="IfcObjectPlacement" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Placement of the product in space, the placement can either be absolute (relative to the world coordinate system), relative (relative to the object placement of another product), or constraint (e.g. relative to grid axes). It is determined by the various subtypes of IfcObjectPlacement, which includes the axis placement information to determine the  transformation for the object coordinate system.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Representation" UniqueId="dc4c6d0f-4308-4e92-8224-93d3b8194102" DefinedType="IfcProductRepresentation" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Reference to the representations of the product, being either a representation (IfcProductRepresentation) or as a special case a shape representations (IfcProductDefinitionShape). The product definition shape provides for multiple geometric representations of the shape property of the object within the same object coordinate system, defined by the object placement.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ReferencedBy" UniqueId="4672f05f-d72b-42d4-880c-01367391c23f" DefinedType="IfcRelAssignsToProduct" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatingProduct">
+			<Documentation>Reference to the IfcRelAssignsToProduct relationship, by which other subtypes of IfcObject can be related to the product.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="2ixv6AbIbD18w3UaAMBMWD">
+			<Documentation>If an Representation is given, then also a LocalPlacement has to be given.</Documentation>
+			<Expression>(EXISTS(Representation) AND EXISTS(ObjectPlacement))
+            OR (EXISTS(Representation) AND 
+               (NOT(&apos;IFCREPRESENTATIONRESOURCE.IFCPRODUCTDEFINITIONSHAPE&apos; IN TYPEOF(Representation))))
+            OR (NOT(EXISTS(Representation)))
+</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

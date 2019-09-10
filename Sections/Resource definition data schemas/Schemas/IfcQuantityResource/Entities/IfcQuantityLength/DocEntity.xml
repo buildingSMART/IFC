@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcQuantityLength" UniqueId="4e958bba-84fa-45d3-bf26-9b6b72632919" DiagramNumber="1" BaseDefinition="IfcPhysicalSimpleQuantity" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="LengthValue" UniqueId="7f243ac1-2a97-4752-b2e2-8f8b9d39d18a" DefinedType="IfcLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Length measure value of this quantity.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR21" UniqueId="c303f8d2-3427-44a1-85f6-3190d3224b08">
+			<Documentation>If a unit is given, the unit type shall be a length unit.</Documentation>
+			<Expression>NOT(EXISTS(SELF\IfcPhysicalSimpleQuantity.Unit)) OR
+   (SELF\IfcPhysicalSimpleQuantity.Unit.UnitType = IfcUnitEnum.LENGTHUNIT)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR22" UniqueId="aa8f331c-b351-4cf2-981d-36fb7822322b">
+			<Documentation>A valid length quantity shall be greater than or equal to zero.</Documentation>
+			<Expression>LengthValue &gt;= 0.</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

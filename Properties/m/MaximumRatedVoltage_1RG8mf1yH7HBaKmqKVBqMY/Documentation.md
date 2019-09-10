@@ -1,0 +1,1 @@
+﻿Maximum rated voltage

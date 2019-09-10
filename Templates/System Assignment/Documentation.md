@@ -1,0 +1,1 @@
+﻿Provision of a relationships between a system specific grouping, represented by _IfcSystem_, that services a spatial structure element (a site, building, building storey, or space).

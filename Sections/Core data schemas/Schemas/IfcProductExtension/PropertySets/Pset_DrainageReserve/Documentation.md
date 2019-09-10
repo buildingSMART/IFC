@@ -1,0 +1,1 @@
+﻿Area exclusively reserved for the routing of drainage services. Used as a non type driven property set in conjunction with an appropriate instance of IfcSpatialStructureElement that is identified as a drainage reserve using the inherited IfcRoot.Name attribute.

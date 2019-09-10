@@ -1,0 +1,46 @@
+﻿  (Arg1, Arg2 : IfcVectorOrDirection)
+    : IfcVector;
+LOCAL
+  Result : IfcVector;
+  Res, Vec1, Vec2 : IfcDirection;
+  Mag, Mag1, Mag2 : REAL;
+  Ndim : INTEGER;
+END_LOCAL;
+
+  IF ((NOT EXISTS (Arg1)) OR (NOT EXISTS (Arg2))) OR (Arg1.Dim <> Arg2.Dim) THEN
+    RETURN (?) ;
+  ELSE
+    BEGIN
+      IF 'IFCGEOMETRYRESOURCE.IFCVECTOR' IN TYPEOF(Arg1) THEN
+        Mag1 := Arg1\IfcVector.Magnitude;
+        Vec1 := Arg1\IfcVector.Orientation;
+      ELSE
+        Mag1 := 1.0;
+        Vec1 := Arg1;
+      END_IF;
+      IF 'IFCGEOMETRYRESOURCE.IFCVECTOR' IN TYPEOF(Arg2) THEN
+        Mag2 := Arg2\IfcVector.Magnitude;
+        Vec2 := Arg2\IfcVector.Orientation;
+      ELSE
+        Mag2 := 1.0;
+        Vec2 := Arg2;
+      END_IF;
+      Vec1 := IfcNormalise (Vec1);
+      Vec2 := IfcNormalise (Vec2);
+      Ndim := SIZEOF(Vec1.DirectionRatios);
+      Mag  := 0.0;
+      Res  := IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([0.0:Ndim]);
+
+      REPEAT i := 1 TO Ndim;
+        Res.DirectionRatios[i] := Mag1*Vec1.DirectionRatios[i] - Mag2*Vec2.DirectionRatios[i];
+        Mag := Mag + (Res.DirectionRatios[i]*Res.DirectionRatios[i]);
+      END_REPEAT;
+
+      IF (Mag > 0.0 ) THEN
+        Result := IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcVector( Res, SQRT(Mag));
+      ELSE
+        Result := IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcVector( Vec1, 0.0);
+      END_IF;
+    END;
+  END_IF;
+  RETURN (Result);

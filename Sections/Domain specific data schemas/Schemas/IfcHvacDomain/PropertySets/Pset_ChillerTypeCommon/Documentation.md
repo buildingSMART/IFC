@@ -1,0 +1,1 @@
+﻿Chiller type common attributes.

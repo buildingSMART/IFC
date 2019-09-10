@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPropertySetDefinition" UniqueId="dc96d6f9-b8ed-4899-979b-8cc86974ea2d" DiagramNumber="2" BaseDefinition="IfcPropertyDefinition" EntityFlags="205">
+	<Subtypes>
+		<DocSubtype UniqueId="ac371977-a633-4911-8ef3-5fd156b7fb59" DefinedType="IfcPropertySet" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="PropertyDefinitionOf" UniqueId="01GGJmvJ5EyxmxS7pueoJv" DefinedType="IfcRelDefinesByProperties" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatingPropertyDefinition">
+			<Documentation>Reference to the relation to one or many objects that are characterized by the property definition. The reference may be omitted, if the property definition is used to define a style library and no instances, to which the particular style of property set is associated, exist yet.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="DefinesType" UniqueId="5aee7ab3-dcb7-4abe-8fa5-d2b2f2c37083" DefinedType="IfcTypeObject" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="HasPropertySets">
+			<Documentation>The property style to which the property set might belong.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

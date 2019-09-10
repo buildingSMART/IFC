@@ -1,0 +1,1 @@
+﻿The material used to construct the fan housing.

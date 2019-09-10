@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcFillAreaStyle" UniqueId="8495cfb3-40da-4a4e-8481-67e0000fb8d2" DiagramNumber="4" BaseDefinition="IfcPresentationStyle" EntityFlags="109">
+	<Attributes>
+		<DocAttribute Name="FillStyles" UniqueId="9ba1f4aa-4f50-46ae-89ec-64982a7b1746" DefinedType="IfcFillStyleSelect" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+			<Documentation>The set of fill area styles to use in presenting visible curve segments, annotation fill areas or surfaces.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR11" UniqueId="0vKIV3tSH2Ag8Y3cAXbODT">
+			<Documentation>There shall be a maximum of one colour assignment to the fill area style.</Documentation>
+			<Expression>SIZEOF(QUERY(Style &lt;* SELF.FillStyles |
+  &apos;IFCPRESENTATIONRESOURCE.IFCCOLOUR&apos; IN
+   TYPEOF(Style)
+  )) &lt;= 1</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR12" UniqueId="1MS1ETlSL9NuyzV3JHmnE5">
+			<Documentation>There shall be a maximum of one externally defined hatch style assignment to the fill area style.</Documentation>
+			<Expression>SIZEOF(QUERY(Style &lt;* SELF.FillStyles |
+  &apos;IFCPRESENTATIONAPPEARANCERESOURCE.IFCEXTERNALLYDEFINEDHATCHSTYLE&apos; IN
+   TYPEOF(Style)
+  )) &lt;= 1</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR13" UniqueId="2LQKA2njT7mwMiiHFMN$FZ">
+			<Documentation>Either the fill area style contains a definition from an externally defined hatch style, or from (one or many) fill area style hatchings or from (one or many) fill area style tiles, but not a combination of those three types.</Documentation>
+			<Expression>IfcCorrectFillAreaStyle(SELF.FillStyles)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,1 @@
+﻿The illuminance value to be sensed.

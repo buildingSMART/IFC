@@ -1,0 +1,1 @@
+﻿Length of the duct segment.

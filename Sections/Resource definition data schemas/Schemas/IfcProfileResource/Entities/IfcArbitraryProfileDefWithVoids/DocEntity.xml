@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcArbitraryProfileDefWithVoids" UniqueId="ebffea85-6601-4032-8540-a094ef46f7cb" DiagramNumber="6" BaseDefinition="IfcArbitraryClosedProfileDef" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="InnerCurves" UniqueId="f5a968fa-e9ba-423c-9752-52657d57b5bc" DefinedType="IfcCurve" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Set of bounded curves, defining the inner boundaries of the arbitrary profile.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="5efe8c09-595b-4844-a56e-68eead9b8f2e">
+			<Documentation>The type of the profile shall be AREA, as it can only be involved in the definition of a swept area.</Documentation>
+			<Expression>SELF\IfcProfileDef.ProfileType = AREA</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR2" UniqueId="2b645ecb-8022-4cb9-aea0-680098343710">
+			<Documentation>All inner curves shall have the dimensionality of 2.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* InnerCurves | temp.Dim &lt;&gt; 2)) = 0</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR3" UniqueId="15877a75-a918-4d65-b468-b8be22dc4dd8">
+			<Documentation>None of the inner curves shall by of type IfcLine, as an IfcLine can not be a closed curve.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* InnerCurves | &apos;IFCGEOMETRYRESOURCE.IFCLINE&apos; IN TYPEOF(temp))) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

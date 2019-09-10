@@ -1,0 +1,1 @@
+﻿Common data for light fixtures.

@@ -1,0 +1,1 @@
+﻿Steam boiler type common attributes.

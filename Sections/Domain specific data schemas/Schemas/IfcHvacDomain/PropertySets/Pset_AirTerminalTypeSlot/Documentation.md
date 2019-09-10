@@ -1,0 +1,1 @@
+﻿Slot air terminal type attributes.

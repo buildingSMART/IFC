@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcDocumentInformation" UniqueId="ece4dd99-11bc-4dbb-b170-998764abc239" DiagramNumber="3" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="DocumentId" UniqueId="2Orl3Bre59e9Bgvu50In_I" DefinedType="IfcIdentifier" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Identifier that uniquely identifies a document.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Name" UniqueId="f308e9ce-8a5e-4408-b3c5-c20a7b5ee6de" DefinedType="IfcLabel" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>File name or document name assigned by owner.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Description" UniqueId="1c47a9d6-a070-4fe8-b9f9-02166afad5fe" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Description of document and its content.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="DocumentReferences" UniqueId="1m$aRSl718E8OIyzAoSOzS" DefinedType="IfcDocumentReference" AttributeFlags="1" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Information on the referenced document.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Purpose" UniqueId="fa3fb19b-ade1-49bb-a0e9-41dc3a6a9a5f" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Purpose for this document.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="IntendedUse" UniqueId="0575ec79-04c4-4e71-addf-9dce898e9c47" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Intended use for this document.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Scope" UniqueId="7ab8afff-250a-44d3-8895-cfcb053690f0" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Scope for this document.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Revision" UniqueId="9ed3c975-1786-4e96-b1fa-20975a8ba03f" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Document revision designation</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="DocumentOwner" UniqueId="367ff740-dff6-404a-99c1-be90ed51e36e" DefinedType="IfcActorSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Information about the person and/or organization acknowledged as the &apos;owner&apos; of this document. In some contexts, the document owner determines who has access to or editing right to the document.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Editors" UniqueId="fc5bb815-364c-4a26-8200-68836084fc25" DefinedType="IfcActorSelect" AttributeFlags="1" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+			<Documentation>The persons and/or organizations who have created this document or contributed to it.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="CreationTime" UniqueId="6741b5b9-5fc6-4d0d-9d0b-735b3a4b1c71" DefinedType="IfcDateAndTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Date and time stamp when the document was originally created.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LastRevisionTime" UniqueId="92c6d656-53f9-42d6-b541-130b4d316672" DefinedType="IfcDateAndTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Date and time stamp when this document version was created.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ElectronicFormat" UniqueId="fe0f622f-5a17-47b2-b996-a8c4d6b55c46" DefinedType="IfcDocumentElectronicFormat" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Describes the electronic format of the document being referenced, providing the file extension and the manner in which the content is provided.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ValidFrom" UniqueId="260e8ab8-7a90-4161-bcac-6b2489ad061d" DefinedType="IfcCalendarDate" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Date, when the document becomes valid.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ValidUntil" UniqueId="e572dd75-4081-4bab-bde6-f0ac7f237d08" DefinedType="IfcCalendarDate" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Date until which the document remains valid.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Confidentiality" UniqueId="ac2eb5cd-ebea-4b73-a63c-bfa90f00eeb5" DefinedType="IfcDocumentConfidentialityEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The level of confidentiality of the document.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Status" UniqueId="203167c2-5361-4ade-bec8-aca347ca45b4" DefinedType="IfcDocumentStatusEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The current status of the document. Examples of status values that might be used for a document information status include:
+- DRAFT
+- FINAL DRAFT
+- FINAL
+- REVISION</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="IsPointedTo" UniqueId="c07ff305-e30a-4c6e-913b-81d830965461" DefinedType="IfcDocumentInformationRelationship" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatedDocuments">
+			<Documentation>An inverse relationship from the IfcDocumentInformationRelationship to the related documents.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="IsPointer" UniqueId="0f32d29f-9d4e-4b4f-b971-762eaf28ea39" DefinedType="IfcDocumentInformationRelationship" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatingDocument">
+			<Documentation>An inverse relationship from the IfcDocumentInformationRelationship to the relating document.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

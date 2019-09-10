@@ -1,0 +1,8 @@
+﻿  (Axis, RefDirection : IfcDirection) 
+    : LIST [3:3] OF IfcDirection;
+LOCAL
+  D1, D2 : IfcDirection;
+END_LOCAL;
+  D1 := NVL(IfcNormalise(Axis), IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([0.0,0.0,1.0]));
+  D2 := IfcFirstProjAxis(D1, RefDirection);
+  RETURN ([D2, IfcNormalise(IfcCrossProduct(D1,D2))\IfcVector.Orientation, D1]);

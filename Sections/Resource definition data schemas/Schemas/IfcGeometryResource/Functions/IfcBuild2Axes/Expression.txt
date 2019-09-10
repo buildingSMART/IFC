@@ -1,0 +1,7 @@
+﻿  (RefDirection : IfcDirection)
+    : LIST [2:2] OF IfcDirection;
+LOCAL
+  D : IfcDirection := NVL(IfcNormalise(RefDirection),
+      IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([1.0,0.0]));
+END_LOCAL;
+  RETURN([D, IfcOrthogonalComplement(D)]);

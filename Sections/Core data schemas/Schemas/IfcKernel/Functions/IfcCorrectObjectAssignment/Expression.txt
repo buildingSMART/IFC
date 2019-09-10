@@ -1,0 +1,50 @@
+﻿  (Constraint: IfcObjectTypeEnum; Objects : SET[1:?] OF IfcObjectDefinition)
+  : LOGICAL ;
+  
+LOCAL
+  Count : INTEGER := 0;
+END_LOCAL;
+
+    IF NOT(EXISTS(Constraint)) THEN 
+      RETURN(TRUE);
+    END_IF;
+  
+    CASE Constraint OF
+      IfcObjectTypeEnum.NOTDEFINED : RETURN(TRUE);
+      IfcObjectTypeEnum.PRODUCT :
+        BEGIN
+          Count := SIZEOF(QUERY(temp <* Objects | NOT('IFCKERNEL.IFCPRODUCT' IN TYPEOF(temp))));
+          RETURN(Count = 0);
+        END;
+      IfcObjectTypeEnum.PROCESS :
+        BEGIN
+          Count := SIZEOF(QUERY(temp <* Objects | NOT('IFCKERNEL.IFCPROCESS' IN TYPEOF(temp))));
+          RETURN(Count = 0);
+        END;
+      IfcObjectTypeEnum.CONTROL :
+        BEGIN
+          Count := SIZEOF(QUERY(temp <* Objects | NOT('IFCKERNEL.IFCCONTROL' IN TYPEOF(temp))));
+          RETURN(Count = 0);
+        END;
+      IfcObjectTypeEnum.RESOURCE :
+        BEGIN
+          Count := SIZEOF(QUERY(temp <* Objects | NOT('IFCKERNEL.IFCRESOURCE' IN TYPEOF(temp))));
+          RETURN(Count = 0);
+        END;
+      IfcObjectTypeEnum.ACTOR :
+        BEGIN
+          Count := SIZEOF(QUERY(temp <* Objects | NOT('IFCKERNEL.IFCACTOR' IN TYPEOF(temp))));
+          RETURN(Count = 0);
+        END;
+      IfcObjectTypeEnum.GROUP :
+        BEGIN
+          Count := SIZEOF(QUERY(temp <* Objects | NOT('IFCKERNEL.IFCGROUP' IN TYPEOF(temp))));
+          RETURN(Count = 0);
+        END;
+      IfcObjectTypeEnum.PROJECT :
+        BEGIN
+          Count := SIZEOF(QUERY(temp <* Objects | NOT('IFCKERNEL.IFCPROJECT' IN TYPEOF(temp))));
+          RETURN(Count = 0);
+        END;
+      OTHERWISE : RETURN(?);
+    END_CASE;

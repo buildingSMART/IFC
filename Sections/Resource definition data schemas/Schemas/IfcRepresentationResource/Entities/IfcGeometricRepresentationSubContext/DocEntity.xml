@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGeometricRepresentationSubContext" UniqueId="2e4bdfcf-4532-4cf3-b45f-4372edb5bfb3" DiagramNumber="1" BaseDefinition="IfcGeometricRepresentationContext" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="ParentContext" UniqueId="7cb376a0-9c58-4443-96fa-afc3a59e7ba1" DefinedType="IfcGeometricRepresentationContext" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Parent context from which the sub context derives its world coordinate system, precision, space coordinate dimension and true north.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="TargetScale" UniqueId="073455e4-1a2b-4354-9ff3-c1f32182a254" DefinedType="IfcPositiveRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The target &lt;font color=&quot;#ff0000&quot;&gt;plot&lt;/font&gt; scale of the representation 
+to which this representation context applies.
+&gt; &lt;font size=&quot;-1&quot;&gt; Scale indicates the target plot scale for
+the representation sub context, all annotation styles are given in plot
+dimensions according to this target plot scale.&lt;br&gt;
+If multiple instances of &lt;i&gt;IfcGeometricRepresentationSubContext&lt;/i&gt;
+are given having the same &lt;i&gt;TargetView&lt;/i&gt; value, the target plot scale 
+applies up to the next smaller scale, or up to unlimited small scale.
+  &lt;br&gt;
+  &lt;br&gt;
+Note: Scale 1:100 (given as 0.01 within &lt;i&gt;TargetScale&lt;/i&gt;)
+is bigger then 1:200 (given as 0.005 within &lt;i&gt;TargetScale&lt;/i&gt;).
+  &lt;/font&gt;</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="TargetView" UniqueId="13b3e0ec-6a77-4adb-a4cb-5fc77d4a7644" DefinedType="IfcGeometricProjectionEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Target view of the representation to which this representation context applies.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="UserDefinedTargetView" UniqueId="f9374710-c549-4fc2-be03-03bb62121bb5" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>User defined target view, this attribute value shall be given, if the TargetView attribute is set to USERDEFINED.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="WorldCoordinateSystem" UniqueId="c8f73a88-7c4d-4d42-bbae-9363c1d37865" DefinedType="IfcAxis2Placement" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Derived>ParentContext.WorldCoordinateSystem</Derived>
+		</DocAttribute>
+		<DocAttribute Name="CoordinateSpaceDimension" UniqueId="cd762a80-b010-4136-a418-95b2fd925aa4" DefinedType="IfcDimensionCount" AttributeFlags="16" AggregationType="0" AggregationFlag="0" Inverse="IfcGeometricRepresentationContext">
+			<Derived>ParentContext.CoordinateSpaceDimension</Derived>
+		</DocAttribute>
+		<DocAttribute Name="TrueNorth" UniqueId="0535f9bb-ddbe-4d14-8f6e-f741ee3701bf" DefinedType="IfcDirection" AttributeFlags="16" AggregationType="0" AggregationFlag="0" Inverse="IfcGeometricRepresentationContext">
+			<Derived>NVL(ParentContext.TrueNorth,SELF.WorldCoordinateSystem.P[2])</Derived>
+		</DocAttribute>
+		<DocAttribute Name="Precision" UniqueId="8addeb83-c243-4dc6-a74e-7375d21c8eca" DefinedType="REAL" AttributeFlags="16" AggregationType="0" AggregationFlag="0" Inverse="IfcGeometricRepresentationContext">
+			<Derived>NVL(ParentContext.Precision,1.E-5)</Derived>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR31" UniqueId="270cf900-d4e8-41e3-8694-5db492271895">
+			<Documentation>The parent context shall not be another geometric representation sub context.</Documentation>
+			<Expression>NOT(&apos;IFCREPRESENTATIONRESOURCE.IFCGEOMETRICREPRESENTATIONSUBCONTEXT&apos; IN TYPEOF(ParentContext))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR32" UniqueId="597eb6ef-053b-4647-aa8c-331f2e61bc9e">
+			<Documentation>The attribute _UserDefinedTargetView_ shall be given, if the attribute _TargetView_ is set to USERDEFINED.</Documentation>
+			<Expression> (TargetView &lt;&gt; IfcGeometricProjectionEnum.USERDEFINED) OR 
+((TargetView =  IfcGeometricProjectionEnum.USERDEFINED) AND 
+ EXISTS(UserDefinedTargetView)) </Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

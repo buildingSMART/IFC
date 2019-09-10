@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcClassification" UniqueId="86dd2655-910b-4394-9cd1-3478de9e1798" DiagramNumber="2" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="Source" UniqueId="9e6953d3-314a-47fc-b390-73bf49075875" DefinedType="IfcLabel" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Source (or publisher) for this classification.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Edition" UniqueId="d1895997-09d2-4095-803d-a71ad237c6de" DefinedType="IfcLabel" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The edition or version of the classification system from which the classification notation is derived.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="EditionDate" UniqueId="f59698df-a014-4cac-9b67-5ca649051dfa" DefinedType="IfcCalendarDate" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The date on which the edition of the classification used became valid.
+NOTE: The indication of edition may be sufficient to identify the classification source uniquely but the edition date is provided as an optional attribute to enable more precise identification where required.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Name" UniqueId="85cb5672-fa71-455e-b1ab-7ab4259f6b9c" DefinedType="IfcLabel" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The name or label by which the classification used is normally known.
+NOTE: Examples of names include CI/SfB, Masterformat, BSAB, Uniclass, STABU etc.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Contains" UniqueId="2Y2QZFPhbBbPV5dW0tf04b" DefinedType="IfcClassificationItem" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="ItemOf">
+			<Documentation>Classification items that are classified by the classification.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

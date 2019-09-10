@@ -1,0 +1,1 @@
+﻿Bar bending angle parameter u.

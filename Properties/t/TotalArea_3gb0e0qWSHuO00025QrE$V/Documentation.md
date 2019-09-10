@@ -1,0 +1,1 @@
+﻿Total area of the site - masured according to local building codes.

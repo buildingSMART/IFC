@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSIUnit" UniqueId="9cc2c277-dce2-45a4-83ff-50f25a31ece8" DiagramNumber="1" BaseDefinition="IfcNamedUnit" EntityFlags="101">
+	<Attributes>
+		<DocAttribute Name="Prefix" UniqueId="c6aeb01b-30d3-4137-9930-4aceeb9c4a67" DefinedType="IfcSIPrefix" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The SI Prefix for defining decimal multiples and submultiples of the unit.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Name" UniqueId="9bd1e5c7-5ab3-4539-b399-fadb389a68f6" DefinedType="IfcSIUnitName" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The word, or group of words, by which the SI unit is referred to.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Dimensions" UniqueId="8f83f9ce-c8dc-4813-aa51-9612b907a5c8" DefinedType="IfcDimensionalExponents" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The dimensional exponents of SI units are derived by function _IfcDimensionsForSiUnit_.</Documentation>
+			<Derived>IfcDimensionsForSiUnit (SELF.Name)</Derived>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

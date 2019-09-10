@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcConstraintAggregationRelationship" UniqueId="3TY6VF$JbExheZZWvAE3vp" DiagramNumber="1" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="Name" UniqueId="015D2er2b4mhYoJmWRfxtR" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>A name used to identify or qualify the constraint aggregation.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Description" UniqueId="2rYhlrLjDDD8QuIYdu7FYT" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>A description that may apply additional information about a constraint aggregation.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="RelatingConstraint" UniqueId="0_gxL5xDn6SeXBkK6PNi_Q" DefinedType="IfcConstraint" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Constraint to which the other Constraints are associated.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="RelatedConstraints" UniqueId="0lV3LjTU527BIm3x2p1zE6" DefinedType="IfcConstraint" AttributeFlags="0" AggregationType="1" AggregationFlag="2" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Constraints that are aggregated in using the LogicalAggregator.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LogicalAggregator" UniqueId="0$WYIR3F15ff8EeF0ntSn3" DefinedType="IfcLogicalOperatorEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Enumeration that identifies the logical type of aggregation.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR11" UniqueId="0Z88nrUt1F3RS7sfvdmASU">
+			<Documentation>The instance to which the relation RelatingConstraint points shall not be the same as the RelatedConstraint.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* RelatedConstraints | 
+  temp :=: RelatingConstraint
+  )) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRepresentationContext" UniqueId="38217e82-b534-4baa-87a6-49402ed0a52c" DiagramNumber="1" EntityFlags="237">
+	<Subtypes>
+		<DocSubtype UniqueId="ca7761a8-39dd-45b5-97d6-1f3abfa6fea7" DefinedType="IfcGeometricRepresentationContext" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="ContextIdentifier" UniqueId="98c7faf4-7709-4f0a-9ab4-c1e8c7d0f012" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The optional identifier of the representation context as used within a project.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ContextType" UniqueId="60350fff-c598-4635-a106-9b50ce5ec88c" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The description of the type of a representation context. The supported values for context type are to be specified by implementers agreements.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="RepresentationsInContext" UniqueId="1e0f4b5c-3ad8-4ee7-8998-0a6b915be556" DefinedType="IfcRepresentation" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="ContextOfItems">
+			<Documentation>All shape representations that are defined in the same representation context.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

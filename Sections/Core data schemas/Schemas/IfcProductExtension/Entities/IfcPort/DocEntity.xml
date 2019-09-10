@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPort" UniqueId="032e8ec4-b702-496b-b1c7-582032fc9a31" DiagramNumber="9" BaseDefinition="IfcProduct" EntityFlags="77">
+	<Attributes>
+		<DocAttribute Name="ContainedIn" UniqueId="36e82fa5-2db1-4c7a-8ef6-45624460a621" DefinedType="IfcRelConnectsPortToElement" AttributeFlags="8" AggregationType="0" AggregationFlag="0" Inverse="RelatingPort">
+			<Documentation>Reference to the element to port connection relationship. The relationship then refers to the element in which this port is contained.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ConnectedFrom" UniqueId="1bb39505-d966-41c3-af7f-7fb70e99a055" DefinedType="IfcRelConnectsPorts" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatedPort">
+			<Documentation>Reference to a port that is connected by the objectified relationship.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ConnectedTo" UniqueId="ab8ec2a9-69ab-4668-b82d-b20d591cbd40" DefinedType="IfcRelConnectsPorts" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatingPort">
+			<Documentation>Reference to the port connection relationship. The relationship then refers to the other port to which this port is connected.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

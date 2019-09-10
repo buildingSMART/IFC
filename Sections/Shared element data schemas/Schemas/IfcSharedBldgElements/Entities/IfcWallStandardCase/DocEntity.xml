@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcWallStandardCase" Name="IfcWallStandardCase" UniqueId="10baa357-63e9-4702-b89f-c213d62d63b2" DiagramNumber="1" BaseDefinition="IfcWall" EntityFlags="101">
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="2TTzHf9AD12OCAnaj0ZlOg">
+			<Documentation>The IfcWallStandard relies on the provision of an IfcMaterialLayerSetUsage.</Documentation>
+			<Expression>SIZEOF (QUERY(temp &lt;* USEDIN(SELF, &apos;IFCKERNEL.IFCRELASSOCIATES.RELATEDOBJECTS&apos;) |
+              (&apos;IFCPRODUCTEXTENSION.IFCRELASSOCIATESMATERIAL&apos; IN TYPEOF(temp)) AND
+              (&apos;IFCMATERIALRESOURCE.IFCMATERIALLAYERSETUSAGE&apos; IN TYPEOF(temp.RelatingMaterial))
+              )) = 1</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

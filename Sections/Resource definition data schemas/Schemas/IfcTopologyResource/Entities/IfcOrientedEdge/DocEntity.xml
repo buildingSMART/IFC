@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcOrientedEdge" UniqueId="a0cbcd65-91d4-42a9-ba31-58d592875aa7" DiagramNumber="1" BaseDefinition="IfcEdge" EntityFlags="109">
+	<Attributes>
+		<DocAttribute Name="EdgeElement" UniqueId="c7122e72-f5c7-4ed0-97e7-f3feadf775d9" DefinedType="IfcEdge" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Edge entity used to construct this oriented edge.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Orientation" UniqueId="6fa9df70-e436-49e6-860f-f18263e0e214" DefinedType="BOOLEAN" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>BOOLEAN, If TRUE the topological orientation as used coincides with the orientation from start vertex to end vertex of the edge element. If FALSE otherwise.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="EdgeStart" UniqueId="544bff9c-509b-4884-b08c-fcfb142238f3" DefinedType="IfcVertex" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The start vertex of the oriented edge. It derives from the vertices of the edge element after taking account of the orientation.</Documentation>
+			<Derived>IfcBooleanChoose 
+(Orientation, EdgeElement.EdgeStart, EdgeElement.EdgeEnd)</Derived>
+		</DocAttribute>
+		<DocAttribute Name="EdgeEnd" UniqueId="7148a307-6944-41cb-914c-1c404c45b642" DefinedType="IfcVertex" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The end vertex of the oriented edge. It derives from the vertices of the edge element after taking account of the orientation.</Documentation>
+			<Derived>IfcBooleanChoose 
+(Orientation, EdgeElement.EdgeEnd, EdgeElement.EdgeStart)</Derived>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="13_ttrm7TFIekNpqJnBX1J">
+			<Documentation>The edge element shall not be an oriented edge.</Documentation>
+			<Expression>NOT(&apos;IFCTOPOLOGYRESOURCE.IFCORIENTEDEDGE&apos; IN TYPEOF(EdgeElement))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

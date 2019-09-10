@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcInventory" UniqueId="73471cd5-1296-4091-bcc3-f7f5e32ff3de" DiagramNumber="1" BaseDefinition="IfcGroup" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="InventoryType" UniqueId="0BC85a5U9Few$gRgF0n7td" DefinedType="IfcInventoryTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>A list of the types of inventories from which that required may be selected.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Jurisdiction" UniqueId="6f479fad-d27e-4644-876a-6711e2ff021c" DefinedType="IfcActorSelect" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The organizational unit to which the inventory is applicable.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ResponsiblePersons" UniqueId="d23c5d1f-1727-46f3-968f-018a51799fa6" DefinedType="IfcPerson" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Persons who are responsible for the inventory.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LastUpdateDate" UniqueId="fe41de34-a4d1-4bcb-ab62-89f0068aaf9c" DefinedType="IfcCalendarDate" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The date on which the last update of the inventory was carried out.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="CurrentValue" UniqueId="264bcae7-f4a5-4147-9961-fc38405ff8b6" DefinedType="IfcCostValue" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>An estimate of the current cost value of the inventory.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="OriginalValue" UniqueId="412fe95f-936f-4dde-a82c-f8e9f305b952" DefinedType="IfcCostValue" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>An estimate of the original cost value of the inventory.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR41" UniqueId="0Ap1TiZ3v7uu_Z0fBqpnVv">
+			<Documentation>Constrains the type of objects that can be contained within an IfcInventory.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* SELF\IfcGroup.IsGroupedBy.RelatedObjects |
+    NOT( (&apos;IFCPRODUCTEXTENSION.IFCSPACE&apos; IN TYPEOF (temp)) OR 
+         (&apos;IFCSHAREDFACILITIESELEMENTS.IFCASSET&apos; IN TYPEOF (temp)) OR
+         (&apos;IFCSHAREDFACILITIESELEMENTS.IFCFURNISHINGELEMENT&apos; IN TYPEOF (temp))
+    ))) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

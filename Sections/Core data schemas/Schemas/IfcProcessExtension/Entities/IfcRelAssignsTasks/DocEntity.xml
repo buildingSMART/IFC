@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelAssignsTasks" UniqueId="3Sj8M2WrDCWBmFca6KuBSb" DiagramNumber="2" BaseDefinition="IfcRelAssignsToControl" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="TimeForTask" UniqueId="3n6$X95A913Rj3SJoHeBZT" DefinedType="IfcScheduleTimeControl" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Contained object for the time related information for the work schedule element.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="0okPtqn_D3J9W1XDSHG2bA">
+			<Documentation>There shall only be one single object in the set of relates objects, since the IfcRelAssignsTask establishes an one-to-one relationship.</Documentation>
+			<Expression>HIINDEX(SELF\IfcRelAssigns.RelatedObjects) = 1</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR2" UniqueId="0rseLnHrb6GRmrTONlgxwM">
+			<Documentation>The related object should be on type IfcTask.</Documentation>
+			<Expression>&apos;IFCPROCESSEXTENSION.IFCTASK&apos; IN TYPEOF(SELF\IfcRelAssigns.RelatedObjects[1])</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR3" UniqueId="0MYBxY91H4YQbmRWF7xBQO">
+			<Documentation>The relating control should be on type IfcWorkControl.</Documentation>
+			<Expression>&apos;IFCPROCESSEXTENSION.IFCWORKCONTROL&apos; IN TYPEOF(SELF\IfcRelAssignsToControl.RelatingControl)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

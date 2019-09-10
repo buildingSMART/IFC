@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSlab" Name="IfcSlab" UniqueId="8f561139-3792-4723-b343-700785092d40" DiagramNumber="1" BaseDefinition="IfcBuildingElement" EntityFlags="101">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="5f3dcc3b-0c4a-4603-b6c1-2aa940b83049" DefinedType="IfcSlabTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Predefined generic types for a slab that are specified in an enumeration. There may be a property set given for the predefined types.
+&gt; &lt;font size=&quot;-1&quot;&gt;NOTE: The use of the predefined type directly at the occurrence object level of &lt;i&gt;IfcSlab&lt;/i&gt; is only permitted, if no type object &lt;i&gt;IfcSlabType&lt;/i&gt; is assigned.&lt;/font&gt;
+
+&gt; &lt;font color=&quot;#FF0000&quot; size=&quot;-1&quot;&gt;IFC2x PLATFORM CHANGE: The attribute has been changed into an OPTIONAL attribute. &lt;/font&gt;</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR61" UniqueId="2CPvR1dU9EZfro3tyYYK41">
+			<Documentation>Either the PredefinedType attribute is unset (e.g. because an IfcSlabType is associated), or the inherited attribute ObjectType shall be given, if the PredefinedType is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+ (PredefinedType &lt;&gt; IfcSlabTypeEnum.USERDEFINED) OR
+ ((PredefinedType = IfcSlabTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

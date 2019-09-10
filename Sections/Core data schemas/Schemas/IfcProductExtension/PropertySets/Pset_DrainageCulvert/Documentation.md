@@ -1,0 +1,1 @@
+﻿Covered channel or large pipe that forms a watercourse below ground level, usually under a road or railway (BS6100). Used as a non type driven property set in conjunction with an instance of IfcSystem that is classified as a culvert.

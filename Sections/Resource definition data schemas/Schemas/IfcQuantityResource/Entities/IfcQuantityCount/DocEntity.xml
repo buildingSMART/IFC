@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcQuantityCount" UniqueId="ee55f63f-35e6-4be8-a374-c3e1d4aa9d1c" DiagramNumber="1" BaseDefinition="IfcPhysicalSimpleQuantity" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="CountValue" UniqueId="c99711b7-fd92-47cc-8140-90c5c2bef60e" DefinedType="IfcCountMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Count measure value of this quantity.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR21" UniqueId="aa959d08-bbb9-4290-a1c6-2190087bcfb6">
+			<Documentation>The value of the count shall be greater than or equal to zero.</Documentation>
+			<Expression>CountValue &gt;= 0.</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

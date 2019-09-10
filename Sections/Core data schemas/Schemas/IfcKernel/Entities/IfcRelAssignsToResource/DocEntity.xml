@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelAssignsToResource" UniqueId="8e3fe369-7b2f-42e1-ba03-10771a673e88" DiagramNumber="7" BaseDefinition="IfcRelAssigns" EntityFlags="237">
+	<Attributes>
+		<DocAttribute Name="RelatingResource" UniqueId="72a6ed25-a274-4a9c-a9ac-7e183ce5c24c" DefinedType="IfcResource" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Reference to the resource to which the objects are assigned to.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="3Q7dTTmVT8iwhWNfbn3PBH">
+			<Documentation>The instance to with the relation points shall not be contained in the List of RelatedObjects.</Documentation>
+			<Expression>SIZEOF(QUERY(Temp &lt;* SELF\IfcRelAssigns.RelatedObjects | RelatingResource :=: Temp)) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

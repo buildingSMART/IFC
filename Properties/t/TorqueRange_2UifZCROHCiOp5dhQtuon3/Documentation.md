@@ -1,0 +1,1 @@
+﻿Torque range.

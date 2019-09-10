@@ -1,0 +1,1 @@
+﻿Provision of presentation information (line color, surface color and rendering information) for the shape of an _element_. It could either be provided by a direct assignment of styled items to the geometric items representing the shapes, or the assignment of styled items to the material information of the _element_.

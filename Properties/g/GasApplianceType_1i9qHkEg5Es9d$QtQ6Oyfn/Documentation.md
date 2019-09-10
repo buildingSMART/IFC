@@ -1,0 +1,1 @@
+﻿Selection of the type of gas appliance from the enumerated list of types.

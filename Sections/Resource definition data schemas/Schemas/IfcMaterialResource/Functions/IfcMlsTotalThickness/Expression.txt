@@ -1,0 +1,11 @@
+﻿(LayerSet : IfcMaterialLayerSet) : IfcLengthMeasure;
+  LOCAL
+    Max : IfcLengthMeasure := LayerSet.MaterialLayers[1].LayerThickness;    
+  END_LOCAL;
+
+  IF SIZEOF(LayerSet.MaterialLayers) > 1 THEN
+    REPEAT i := 2 TO HIINDEX(LayerSet.MaterialLayers);
+       Max := Max + LayerSet.MaterialLayers[i].LayerThickness;
+    END_REPEAT;
+  END_IF;
+  RETURN (Max);

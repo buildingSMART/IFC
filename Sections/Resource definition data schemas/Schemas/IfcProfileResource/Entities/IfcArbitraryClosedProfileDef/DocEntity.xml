@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcArbitraryClosedProfileDef" UniqueId="b6ccca8d-998a-47ed-beac-ef1b44ee5681" DiagramNumber="6" BaseDefinition="IfcProfileDef" EntityFlags="109">
+	<Subtypes>
+		<DocSubtype UniqueId="e1f99bb3-d228-419d-bcce-0238b78e97b3" DefinedType="IfcArbitraryProfileDefWithVoids" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="OuterCurve" UniqueId="e5eb7078-ed29-401a-9e78-e38beec339ff" DefinedType="IfcCurve" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Bounded curve, defining the outer boundaries of the arbitrary profile.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="b22f0d8f-55d1-409b-ac84-e52241250b28">
+			<Documentation>The curve used for the outer curve definition shall have the dimensionality of 2.</Documentation>
+			<Expression>OuterCurve.Dim = 2</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR2" UniqueId="19a316ee-6ff3-4214-b33e-2e2e5ac3de3f">
+			<Documentation>The outer curve shall not be of type IfcLine as IfcLine is not a closed curve.</Documentation>
+			<Expression>NOT(&apos;IFCGEOMETRYRESOURCE.IFCLINE&apos; IN TYPEOF(OuterCurve))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR3" UniqueId="a4aa1749-6355-48b0-afd6-cf31d751b973">
+			<Documentation>The outer curve shall not be of type IfcOffsetCurve2D as it should not be defined as an offset of another curve.</Documentation>
+			<Expression>NOT(&apos;IFCGEOMETRYRESOURCE.IFCOFFSETCURVE2D&apos; IN TYPEOF(OuterCurve))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

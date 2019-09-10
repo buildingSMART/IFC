@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcWall" Name="IfcWall" UniqueId="6cb09e6f-b387-44bc-afcc-563e5b5b5ead" DiagramNumber="1" BaseDefinition="IfcBuildingElement" EntityFlags="229">
+	<Subtypes>
+		<DocSubtype UniqueId="6d91798f-350e-4e74-9e7a-5dc82f29824a" DefinedType="IfcWallStandardCase" />
+	</Subtypes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="1nhDt_zGbDixtSdSztWayW">
+			<Documentation>There should be only a maximum of one material information of a wall.</Documentation>
+			<Expression>SIZEOF (QUERY(temp &lt;* SELF\IfcObjectDefinition.HasAssociations |
+  &apos;IFCPRODUCTEXTENSION.IFCRELASSOCIATESMATERIAL&apos; IN TYPEOF(temp)
+  )) &lt;= 1</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

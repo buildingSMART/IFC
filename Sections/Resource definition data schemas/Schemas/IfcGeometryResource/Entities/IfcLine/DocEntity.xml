@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcLine" UniqueId="28220f1d-2ef9-48f4-9aa6-198f7af996d8" DiagramNumber="5" BaseDefinition="IfcCurve" EntityFlags="45">
+	<Attributes>
+		<DocAttribute Name="Pnt" UniqueId="efe6be19-11b9-4b75-9821-ae20d1d465ad" DefinedType="IfcCartesianPoint" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The location of the line.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Dir" UniqueId="da76faa5-1c45-41b8-80ce-79d00d362cd1" DefinedType="IfcVector" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The direction of the line, the magnitude and units of Dir affect the parameterization of the line.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="2CfLogewnE3A9DOXalwiND">
+			<Documentation>The dimensionality of the location (IfcCartesianPoint) shall be the same as of the direction (IfcVector).</Documentation>
+			<Expression>Dir.Dim = Pnt.Dim</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,1 @@
+﻿Maximum number of occupants for the designed usage of the space.

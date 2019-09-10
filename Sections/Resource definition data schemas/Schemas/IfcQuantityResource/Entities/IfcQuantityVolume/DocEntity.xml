@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcQuantityVolume" UniqueId="3b86c373-401a-48f2-a1e3-c6a078202bf9" DiagramNumber="1" BaseDefinition="IfcPhysicalSimpleQuantity" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="VolumeValue" UniqueId="8ece699a-8cbf-4a26-9fc3-68778f530a8f" DefinedType="IfcVolumeMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Volume measure value of this quantity.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR21" UniqueId="a1849080-b07b-407d-a835-80d59d5043e1">
+			<Documentation>If a unit is given, the unit type shall be volume unit.</Documentation>
+			<Expression>NOT(EXISTS(SELF\IfcPhysicalSimpleQuantity.Unit)) OR
+   (SELF\IfcPhysicalSimpleQuantity.Unit.UnitType = IfcUnitEnum.VOLUMEUNIT)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR22" UniqueId="bf548942-b482-4adf-8fdf-930bbcdc510a">
+			<Documentation>A valid volume quantity shall be greater than or equal to zero.</Documentation>
+			<Expression>VolumeValue &gt;= 0.</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

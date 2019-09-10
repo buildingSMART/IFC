@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPixelTexture" UniqueId="13c24361-dbc0-44fd-93e3-7772371d47b4" DiagramNumber="7" BaseDefinition="IfcSurfaceTexture" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="Width" UniqueId="c1053d5b-168b-4e18-b506-7f86295a5034" DefinedType="IfcInteger" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The number of pixels in width (S) direction.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Height" UniqueId="a3532256-2664-419d-969d-74405b430ee1" DefinedType="IfcInteger" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The number of pixels in height (T) direction.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ColourComponents" UniqueId="08c0022b-a713-47e4-9ab3-dd65531b1ddd" DefinedType="IfcInteger" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Indication whether the pixel values contain a 1, 2, 3, or 4 colour component.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Pixel" UniqueId="1a84a3b7-3dbb-4e1d-8775-f1a24ef74498" DefinedType="BINARY (32)" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Flat list of hexadecimal values, each describing one pixel by 1, 2, 3, or 4 components.
+&gt; &lt;small&gt;&lt;font color&quot;#ff0000&quot;=&quot;&quot;&gt;
+IFC2x Edition 3 CHANGE&amp;nbsp; The data type has been changed from STRING to BINARY.
+&lt;/font&gt;&lt;/small&gt;</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR21" UniqueId="2bbUPROlnB2RbvBdPi$e9o">
+			<Documentation>The minimum number of pixel in width (S coordinate) direction shall be 1.</Documentation>
+			<Expression>Width &gt;= 1</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR22" UniqueId="1nGOfqQFH13ghaX$BKTPX9">
+			<Documentation>The minimum number of pixel in height (T coordinate) direction shall be 1.</Documentation>
+			<Expression>Height &gt;= 1</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR23" UniqueId="1gEhgVlMn3bhKfAZYWvc73">
+			<Documentation>The number of color components shall be either 1, 2, 3, or 4.</Documentation>
+			<Expression>{1 &lt;= ColourComponents &lt;= 4}</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR24" UniqueId="3_va1G9gHEoO7kqzZw8jAO">
+			<Documentation>The list of pixel shall have exactly width\*height members.</Documentation>
+			<Expression>SIZEOF(Pixel) = (Width * Height)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

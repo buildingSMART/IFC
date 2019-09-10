@@ -1,0 +1,1 @@
+﻿Enumeration defining the feedback value from the control system element

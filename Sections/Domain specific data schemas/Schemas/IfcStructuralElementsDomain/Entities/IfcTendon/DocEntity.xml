@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTendon" UniqueId="33cccfc5-2da4-42df-8cac-9c14b6d955a6" DiagramNumber="3" BaseDefinition="IfcReinforcingElement" EntityFlags="237">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="8bf9e3ad-01c9-436e-a415-02119d9e681e" DefinedType="IfcTendonTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Predefined generic types for a tendon.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="NominalDiameter" UniqueId="769d5dcc-353b-448a-a5f9-3ff7b462d814" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The nominal diameter defining the cross-section size of the tendon.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="CrossSectionArea" UniqueId="f2710ff8-a1a9-46f2-bbc1-5b12b313be27" DefinedType="IfcAreaMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The effective cross-section area of the tendon.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="TensionForce" UniqueId="361cb1c1-156f-4fd7-b742-88f20ba76a5d" DefinedType="IfcForceMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The maximum allowed tension force that can be applied on the tendon.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="PreStress" UniqueId="c7b0f979-558e-49ac-bf39-9fd037774d51" DefinedType="IfcPressureMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The prestress to be applied on the tendon.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="FrictionCoefficient" UniqueId="8b3dbb92-6ef8-4fa8-bce3-8fe156c01557" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The friction coefficient for the bond between the tendon and the surrounding concrete.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="AnchorageSlip" UniqueId="723e9da1-873b-41c5-8865-674d57ab2356" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The deformation of an anchor or slippage of tendons when the prestressing device is released.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="MinCurvatureRadius" UniqueId="b99f7bfe-1105-4b52-b367-038790040da0" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The smallest curvature radius calculated on the whole effective length of the tendon where the tension properties are still valid.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="1p5c5FgN5By8Uh4k51iyMN">
+			<Documentation>The attribute ObjectType shall be given, if the predefined type is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcTendonTypeEnum.USERDEFINED) OR ((PredefinedType = IfcTendonTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType)) </Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

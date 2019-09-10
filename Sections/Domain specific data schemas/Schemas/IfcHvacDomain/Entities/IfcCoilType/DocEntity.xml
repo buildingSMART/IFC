@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCoilType" UniqueId="8eddad0b-39d9-48df-b854-7ff316225c5a" DiagramNumber="1" BaseDefinition="IfcEnergyConversionDeviceType" EntityFlags="101">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="f6e3036c-6fcd-410a-8c52-1f404f3bb682" DefinedType="IfcCoilTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Defines typical types of coils (e.g., Cooling, Heating, etc.)</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="0heLzvS3548O2b6Vl5qeJ4">
+			<Expression>(PredefinedType &lt;&gt; IfcCoilTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcCoilTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

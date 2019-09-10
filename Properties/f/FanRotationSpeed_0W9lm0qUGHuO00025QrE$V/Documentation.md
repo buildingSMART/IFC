@@ -1,0 +1,1 @@
+﻿Fan rotation speed.

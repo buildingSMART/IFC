@@ -1,0 +1,1 @@
+﻿The building permit identifier for the written authorization required by building authorities before construction on a specific project can begin.

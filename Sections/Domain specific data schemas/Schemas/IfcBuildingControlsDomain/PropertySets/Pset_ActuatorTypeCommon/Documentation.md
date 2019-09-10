@@ -1,0 +1,1 @@
+﻿Actuator type common attributes.

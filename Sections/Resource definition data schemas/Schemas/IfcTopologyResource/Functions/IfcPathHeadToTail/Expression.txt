@@ -1,0 +1,11 @@
+﻿(APath : IfcPath) : LOGICAL;
+   LOCAL
+     N : INTEGER := 0;
+     P : LOGICAL := UNKNOWN;
+   END_LOCAL;
+     N := SIZEOF (APath.EdgeList);
+   REPEAT i := 2 TO N;
+      P := P AND (APath.EdgeList[i-1].EdgeEnd :=:
+                  APath.EdgeList[i].EdgeStart);
+   END_REPEAT;
+   RETURN (P);

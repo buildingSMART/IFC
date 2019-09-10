@@ -1,0 +1,19 @@
+﻿  (ZAxis, XAxis, Arg: IfcDirection) 
+    : IfcDirection;
+LOCAL
+  YAxis : IfcVector;
+  V     : IfcDirection;
+  Temp  : IfcVector;
+END_LOCAL;
+
+  IF NOT EXISTS(Arg) THEN
+    V := IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([0.0,1.0,0.0]);
+  ELSE
+    V := Arg;
+  END_IF;
+  Temp  := IfcScalarTimesVector(IfcDotProduct(V, ZAxis), ZAxis);
+  YAxis := IfcVectorDifference(V, Temp);
+  Temp  := IfcScalarTimesVector(IfcDotProduct(V, XAxis), XAxis);
+  YAxis := IfcVectorDifference(YAxis, Temp);
+  YAxis := IfcNormalise(YAxis);
+  RETURN(YAxis.Orientation);

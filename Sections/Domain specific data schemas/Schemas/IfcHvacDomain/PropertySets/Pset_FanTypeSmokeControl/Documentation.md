@@ -1,0 +1,1 @@
+﻿Smoke control attributes of a fan participating as part of a smoke control system.

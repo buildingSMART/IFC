@@ -1,0 +1,1 @@
+﻿Nominal fan power rate.

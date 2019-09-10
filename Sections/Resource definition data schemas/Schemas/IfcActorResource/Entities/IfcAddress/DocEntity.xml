@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAddress" UniqueId="a2354718-4c92-40a9-b220-50e7c23e5faf" DiagramNumber="2" EntityFlags="205">
+	<Subtypes>
+		<DocSubtype UniqueId="e703e877-8b1c-4ceb-8410-c494ec086816" DefinedType="IfcPostalAddress" />
+		<DocSubtype UniqueId="40c9139d-e6c7-4866-b4a7-2229763caa53" DefinedType="IfcTelecomAddress" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="Purpose" UniqueId="6717ebb1-12ab-48aa-9124-de2c4c2117b5" DefinedType="IfcAddressTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Identifies the logical location of the address.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Description" UniqueId="4e2e9f3c-9dd8-48fe-b139-72e2861e6d26" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Text that relates the nature of the address.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="UserDefinedPurpose" UniqueId="4d473e59-c1ff-46d0-bc94-ddf22c5761c6" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Allows for specification of user specific purpose of the address beyond the 
+enumeration values provided by Purpose attribute of type IfcAddressTypeEnum. 
+When a value is provided for attribute UserDefinedPurpose, in parallel the 
+attribute Purpose shall have enumeration value USERDEFINED.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="OfPerson" UniqueId="a2566a22-ad93-4b14-92e4-7c905751de4a" DefinedType="IfcPerson" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="Addresses">
+			<Documentation>The inverse relationship to Person to whom address is associated.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="OfOrganization" UniqueId="049b4ec2-3343-44d9-98fb-a8366b4313c7" DefinedType="IfcOrganization" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="Addresses">
+			<Documentation>The inverse relationship to Organization to whom address is associated.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="89a16048-9221-447e-bdf8-23d462fd5b3f">
+			<Documentation>Either attribute value Purpose is not given, or
+when attribute Purpose has enumeration value USERDEFINED
+then attribute UserDefinedPurpose shall also have a value.</Documentation>
+			<Expression>(NOT(EXISTS(Purpose))) OR
+((Purpose &lt;&gt; IfcAddressTypeEnum.USERDEFINED) OR
+((Purpose = IfcAddressTypeEnum.USERDEFINED) AND
+  EXISTS(SELF.UserDefinedPurpose)))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

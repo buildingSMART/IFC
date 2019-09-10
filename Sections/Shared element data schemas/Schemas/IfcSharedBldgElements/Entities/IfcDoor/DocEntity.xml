@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDoor" Name="IfcDoor" UniqueId="70b10571-8732-44f7-a5b2-3fdb229d547b" DiagramNumber="3" BaseDefinition="IfcBuildingElement" EntityFlags="173">
+	<Attributes>
+		<DocAttribute Name="OverallHeight" UniqueId="82f1996a-2267-42e4-9a5b-d4f2a6e4f8e8" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Overall measure of the height, it reflects the Z Dimension of a bounding box, enclosing the ~~body of the~~ door opening. If omitted, the _OverallHeight_ should be taken from the geometric representation of the _IfcOpening_ in which the door is inserted. 
+  
+&gt; &lt;small&gt;
+NOTE&amp;nbsp; The body of the door might be taller then the door opening (e.g. in cases where the door lining includes a casing). In these cases the &lt;i&gt;OverallHeight&lt;/i&gt; shall still be given as the door opening height, and not as the total height of the door lining.&lt;/small&gt;</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="OverallWidth" UniqueId="646a9c81-0757-404c-9c64-84e003fede0a" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Overall measure of the width, it reflects the X Dimension of a bounding box, enclosing the ~~body of the~~ door opening. If omitted, the _OverallWidth_ should be taken from the geometric representation of the _IfcOpening_ in which the door is inserted. 
+  
+&gt; &lt;small&gt;
+NOTE&amp;nbsp; The body of the door might be wider then the door opening (e.g. in cases where the door lining includes a casing). In these cases the &lt;i&gt;OverallWidth&lt;/i&gt; shall still be given as the door opening width, and not as the total width of the door lining.&lt;/small&gt;</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

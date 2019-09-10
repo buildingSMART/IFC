@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDistributionFlowElement" Name="IfcDistributionFlowElement" UniqueId="63ee3d6e-fbeb-4c25-a0a5-13c7bceed367" DiagramNumber="1" BaseDefinition="IfcDistributionElement" EntityFlags="229">
+	<Subtypes>
+		<DocSubtype UniqueId="f2761e58-8ea6-4ce7-89c7-eeda7044812c" DefinedType="IfcFlowFitting" />
+		<DocSubtype UniqueId="b3056760-9469-4687-a002-37c3164e4e42" DefinedType="IfcFlowSegment" />
+		<DocSubtype UniqueId="3a2223c8-1521-4df3-b288-5886f3c4f536" DefinedType="IfcFlowController" />
+		<DocSubtype UniqueId="efe79e52-2cad-4d4d-aaac-267360c98de9" DefinedType="IfcFlowTerminal" />
+		<DocSubtype UniqueId="87402b05-1309-4a8c-a9d5-c1dc3a9a0cab" DefinedType="IfcFlowMovingDevice" />
+		<DocSubtype UniqueId="bba649ff-aefa-4262-9be3-1e4d187ea17b" DefinedType="IfcEnergyConversionDevice" />
+		<DocSubtype UniqueId="8303935c-bd1f-4dd6-9fcf-91e860f452c8" DefinedType="IfcFlowStorageDevice" />
+		<DocSubtype UniqueId="fa4c6461-8722-44cd-92b3-7a471e3d2cde" DefinedType="IfcFlowTreatmentDevice" />
+		<DocSubtype UniqueId="195a5bc5-edd4-4e44-a306-e8d5cc845ecb" DefinedType="IfcDistributionChamberElement" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="HasControlElements" UniqueId="7b76723e-76d9-4d81-906b-eb95f697c628" DefinedType="IfcRelFlowControlElements" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatingFlowElement">
+			<Documentation>Reference to the relationship object that relates control elements.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

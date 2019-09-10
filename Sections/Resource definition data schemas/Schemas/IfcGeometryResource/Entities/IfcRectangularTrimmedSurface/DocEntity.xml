@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRectangularTrimmedSurface" UniqueId="25bb1436-242e-4954-a716-597d8e9ba615" DiagramNumber="7" BaseDefinition="IfcBoundedSurface" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="BasisSurface" UniqueId="2b292506-6136-479a-9255-a02ef4d16fa9" DefinedType="IfcSurface" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Surface being trimmed.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="U1" UniqueId="15237180-8fcc-4bed-a1ef-26b540fe861e" DefinedType="IfcParameterValue" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>First u parametric value.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="V1" UniqueId="f0aaaef2-f79e-42d5-85f8-c8494f5a575b" DefinedType="IfcParameterValue" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>First v parametric value.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="U2" UniqueId="1f5188e3-40dc-4708-9067-d8ce2a75609e" DefinedType="IfcParameterValue" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Second u parametric value.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="V2" UniqueId="fdec4f9a-ac75-4d58-8ca8-70266df5c502" DefinedType="IfcParameterValue" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Second v parametric value.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Usense" UniqueId="84dd552c-ed43-4b01-ad77-9d47469c7b67" DefinedType="BOOLEAN" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Flag to indicate whether the direction of the first parameter of the trimmed surface agrees with or opposes the sense of u in the basis surface.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Vsense" UniqueId="3236b0bf-0d50-4b41-a891-8356e96558f8" DefinedType="BOOLEAN" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Flag to indicate whether the direction of the second parameter of the trimmed surface agrees with or opposes the sense of v in the basis surface.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Dim" UniqueId="0RfQuzol98egzH6x61GwC5" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Derived>BasisSurface.Dim</Derived>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="1StSb_enn9ZQ3iYmi8x_Cp">
+			<Documentation>U1 and U2 shall have different values.</Documentation>
+			<Expression>U1 &lt;&gt; U2</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR2" UniqueId="05HivxusTC0xC4dBnsfgX9">
+			<Documentation>V1 and V2 shall have different values.</Documentation>
+			<Expression>V1 &lt;&gt; V2</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR3" UniqueId="2IUq_samn6VAfJC68RZItW">
+			<Documentation>With exception of those surfaces closed in the U parameter, direction Usense shall be compatible with the ordered parameter values for U.</Documentation>
+			<Expression>((&apos;IFCGEOMETRYRESOURCE.IFCELEMENTARYSURFACE&apos; IN TYPEOF(BasisSurface)) AND
+         (NOT (&apos;IFCGEOMETRYRESOURCE.IFCPLANE&apos; IN TYPEOF(BasisSurface)))) OR
+         (&apos;IFCGEOMETRYRESOURCE.IFCSURFACEOFREVOLUTION&apos; IN TYPEOF(BasisSurface)) OR
+         (Usense = (U2 &gt; U1))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR4" UniqueId="2xy9F0mfLDFxDTTX2mJjFg">
+			<Documentation>Vsense shall be compatible with the ordered parameter values for V.</Documentation>
+			<Expression>Vsense = (V2 &gt; V1)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

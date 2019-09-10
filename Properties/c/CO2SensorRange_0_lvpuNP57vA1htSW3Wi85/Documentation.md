@@ -1,0 +1,1 @@
+﻿The upper and lower bounds for operation of the CO2 sensor.

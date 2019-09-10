@@ -1,0 +1,1 @@
+﻿General description of the required location for the space (e.g. "third floor south")

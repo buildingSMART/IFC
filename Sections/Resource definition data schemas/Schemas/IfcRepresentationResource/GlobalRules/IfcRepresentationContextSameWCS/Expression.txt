@@ -1,0 +1,19 @@
+﻿LOCAL
+  IsDifferent  : LOGICAL := FALSE;
+END_LOCAL;
+  IF (SIZEOF(IfcGeometricRepresentationContext) > 1)
+  THEN
+    REPEAT i := 2 TO HIINDEX(IfcGeometricRepresentationContext);
+      IF (IfcGeometricRepresentationContext[1].WorldCoordinateSystem :<>: IfcGeometricRepresentationContext[i].WorldCoordinateSystem)
+      THEN
+        IsDifferent := (NOT(IfcSameValidPrecision(IfcGeometricRepresentationContext[1].Precision,
+                                                  IfcGeometricRepresentationContext[i].Precision)))
+                    OR (NOT(IfcSameAxis2Placement(IfcGeometricRepresentationContext[1].WorldCoordinateSystem,
+                                                  IfcGeometricRepresentationContext[i].WorldCoordinateSystem,
+                                                  IfcGeometricRepresentationContext[1].Precision)));
+        IF (IsDifferent = TRUE) THEN
+          ESCAPE;
+        END_IF;
+      END_IF;
+    END_REPEAT;
+  END_IF;

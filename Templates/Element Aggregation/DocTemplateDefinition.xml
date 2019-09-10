@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Element Aggregation" UniqueId="2s59cVRHhrHPtOD0RAw9Cz" Version="0.3" Status="draft" Owner="buildingSMART International">
+	<Templates>
+		<DocTemplateDefinition Name="Element Composition" UniqueId="3GTTqnyY3aGR_ao0XrQwC7" Version="0.3" Status="draft" Owner="buildingSMART International" Type="IfcRelAggregates">
+			<Documentation>Provision of an aggregation structure where the _element_ is part of another element representing the composite. The _element_ then provides the partial shape representation and it is positioned relative to the aggregate.
+
+The default requirements stipulated by this **concept template** are:
+
+*  the shape representation of the part has to be provided, the part shall have an own shape representation with the representation type &amp;#39;Body&amp;#39;
+*  the part shall have an own material assignment, either directly assigned to the part, or to the part type.
+
+A **model view definitio**n shall clearly define any further restriction to the applicability of assigning shape representation and material to either the composite, or the part, if it differs from the default.</Documentation>
+		</DocTemplateDefinition>
+		<DocTemplateDefinition Name="Element Decomposition" UniqueId="1RC1lU4BceGfS19GKxDcVB" Version="0.3" Status="draft" Owner="buildingSMART International" Type="IfcRelAggregates">
+			<Documentation>Provision of an aggregation structure where the _element_, representing the composite, is decomposed into parts represented by other elements. The _element_ establishes the common object coordinate system to which the parts are placed relative. The _element_ shape representation is constructed out of the shape representations of its parts.
+
+Note: On import the decomposition structure may not need to be preserved. The parts may either merged into the _&quot;element&quot;_, or may become independent parts. The shape representation and property information however has to be preserved.
+
+The default requirements stipulated by this **concept template** are:
+
+*  the shape representation of the composite is constructed from the sum of the shape representations of the parts.
+*  the composite shall not have an own shape representation with the representation type &amp;#39;Body&amp;#39;, it may have a shape representation with representation type &amp;#39;Axis&amp;#39;, or &amp;#39;Box&amp;#39;.
+*  the composite shall not have an own material assignment, material is assigned to the parts.
+
+A **model view definitio**n shall clearly define any further restriction to the applicability of assigning shape representation and material to either the composite, or the part, if it differs from the default.</Documentation>
+		</DocTemplateDefinition>
+		<DocTemplateDefinition Name="Port Assignment" UniqueId="3JdWwqxahBI8Xeq5uiWEp2" Version="0.3" Status="draft" Owner="buildingSMART International" Type="IfcRelConnectsPortToElement">
+			<Documentation>Provision of an assignment of ports to the _element_. The assignment relationship _IfcRelConnectsPortToElement_is an one-to-one relationship, the assignment of many ports to the _element_has to be represented by many _IfcRelConnectsPortToElement_relationships.</Documentation>
+		</DocTemplateDefinition>
+	</Templates>
+</DocTemplateDefinition>
+

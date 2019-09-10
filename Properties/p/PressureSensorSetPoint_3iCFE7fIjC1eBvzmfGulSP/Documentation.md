@@ -1,0 +1,1 @@
+﻿The pressure value to be sensed.

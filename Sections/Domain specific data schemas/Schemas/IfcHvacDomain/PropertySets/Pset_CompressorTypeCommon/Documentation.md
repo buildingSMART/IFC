@@ -1,0 +1,1 @@
+﻿Compressor type common attributes.

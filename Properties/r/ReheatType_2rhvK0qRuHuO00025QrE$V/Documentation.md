@@ -1,0 +1,1 @@
+﻿Terminal box reheat type.

@@ -1,0 +1,1 @@
+﻿Measured steam energy consumption properties.

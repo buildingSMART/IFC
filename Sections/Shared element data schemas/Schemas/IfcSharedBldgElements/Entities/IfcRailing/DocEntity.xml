@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRailing" Name="IfcRailing" UniqueId="39b687ba-1327-4a70-927b-47733d3e370b" DiagramNumber="1" BaseDefinition="IfcBuildingElement" EntityFlags="101">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="a41e385b-cc54-4bd0-a2e7-bdc2cd206b45" DefinedType="IfcRailingTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Predefined generic types for a railing that are specified in an enumeration. There may be a property set given for the predefined types.
+&gt; &lt;font size=&quot;-1&quot;&gt;NOTE: The use of the predefined type directly at the occurrence object level of &lt;i&gt;IfcRailing&lt;/i&gt; is only permitted, if no type object &lt;i&gt;IfcRailingType&lt;/i&gt; is assigned.&lt;/font&gt;
+
+&gt; &lt;font color=&quot;#FF0000&quot; size=&quot;-1&quot;&gt;IFC2x PLATFORM CHANGE: The attribute has been changed into an OPTIONAL attribute. &lt;/font&gt;</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR61" UniqueId="0qmcMVHdv9Tx5ht_iCMhQj">
+			<Documentation>Either the PredefinedType attribute is unset (e.g. because an IfcRailingType is associated), or the inherited attribute ObjectType shall be given, if the PredefinedType is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+ (PredefinedType &lt;&gt; IfcRailingTypeEnum.USERDEFINED) OR
+ ((PredefinedType = IfcRailingTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

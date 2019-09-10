@@ -1,0 +1,1 @@
+﻿A curve giving the time, e.g. prearcing time or operating time, as a function of the protective current under stated conditions of operation.

@@ -1,0 +1,26 @@
+﻿  (Arg1, Arg2 : IfcDirection) 
+    : REAL;
+LOCAL
+  Scalar : REAL;
+  Vec1, Vec2 : IfcDirection;
+  Ndim   : INTEGER;
+END_LOCAL;
+
+  IF NOT EXISTS (Arg1) OR NOT EXISTS (Arg2) THEN
+    Scalar := ?;
+  ELSE
+    IF (Arg1.Dim <> Arg2.Dim) THEN
+      Scalar := ?;
+    ELSE
+      BEGIN
+        Vec1 := IfcNormalise(Arg1);
+        Vec2 := IfcNormalise(Arg2);
+        Ndim := Arg1.Dim;
+        Scalar := 0.0;
+        REPEAT i := 1 TO Ndim;
+          Scalar := Scalar + Vec1.DirectionRatios[i]*Vec2.DirectionRatios[i];
+        END_REPEAT;
+      END;
+    END_IF;
+  END_IF;
+  RETURN (Scalar);

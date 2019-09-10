@@ -1,0 +1,1 @@
+﻿Fire hazard code of the space. The coding depends on the national fire safety regulations.

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcDimensionCalloutRelationship" UniqueId="2Xm40OoR16wfr7OMCPqdID" DiagramNumber="1" BaseDefinition="IfcDraughtingCalloutRelationship" EntityFlags="229">
+	<WhereRules>
+		<DocWhereRule Name="WR11" UniqueId="0BgCKqVpvAvOtJp8FH8Q$q">
+			<Documentation>The name of the relationship shall either be &quot;primary&quot; or &quot;secondary&quot;.</Documentation>
+			<Expression>SELF\IfcDraughtingCalloutRelationship.Name IN [&apos;primary&apos;,&apos;secondary&apos;]</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR12" UniqueId="1KtqUMoln9k8UvAdgl2CGJ">
+			<Documentation>The relating draughting callout shall be a dimension (linear, diameter, radius, or angular).</Documentation>
+			<Expression>SIZEOF(TYPEOF(SELF\IfcDraughtingCalloutRelationship.RelatingDraughtingCallout) * [
+     &apos;IFCPRESENTATIONDIMENSIONINGRESOURCE.IFCANGULARDIMENSION&apos;,
+     &apos;IFCPRESENTATIONDIMENSIONINGRESOURCE.IFCDIAMETERDIMENSION&apos;,
+     &apos;IFCPRESENTATIONDIMENSIONINGRESOURCE.IFCLINEARDIMENSION&apos;,
+     &apos;IFCPRESENTATIONDIMENSIONINGRESOURCE.IFCRADIUSDIMENSION&apos;]) = 1</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR13" UniqueId="0VMA3fUlHCNPuGGrj6fiaf">
+			<Documentation>The related draughting callout shall not be a dimension (linear, diameter, radius, or angular)</Documentation>
+			<Expression>NOT (&apos;IFCPRESENTATIONDIMENSIONINGRESOURCE.IFCDIMENSIONCURVEDIRECTEDCALLOUT&apos;
+  IN TYPEOF (SELF\IfcDraughtingCalloutRelationship.RelatedDraughtingCallout))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,1 @@
+﻿Thickness of the material from which the tank is constructed

@@ -1,0 +1,1 @@
+﻿The amount of heat output per unit length of heat emitter.

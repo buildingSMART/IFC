@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcVibrationIsolatorType" UniqueId="55bfbb42-1d61-499e-857c-b1dd3128361c" DiagramNumber="4" BaseDefinition="IfcDiscreteAccessoryType" EntityFlags="101">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="bfcb4cfa-5d6a-4b93-967d-744c1b1bc404" DefinedType="IfcVibrationIsolatorTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Defines the type of vibration isolator.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="2V0vEg_enBPx3z_yivuQuX">
+			<Expression>(PredefinedType &lt;&gt; IfcVibrationIsolatorTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcVibrationIsolatorTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

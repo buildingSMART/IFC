@@ -1,0 +1,1 @@
+﻿The upper and lower bounds of gas concentration for operation of the gas sensor.
