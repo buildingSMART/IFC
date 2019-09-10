@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcProject" Name="IfcProject" UniqueId="eff34c4d-41a1-48b3-badc-950cf6816a7b" DiagramNumber="8" BaseDefinition="IfcObject" EntityFlags="173">
+	<Attributes>
+		<DocAttribute Name="LongName" UniqueId="0uQRrX$uHE0gQpz$qhW05f" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Long name for the project as used for reference purposes.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Phase" UniqueId="127DQ5sF555P_AUE1ay3Gi" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Current project phase, open to interpretation for all project partner, therefore given as IfcString.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="RepresentationContexts" UniqueId="2OmiP8McP16wp12N_tdPAX" DefinedType="IfcRepresentationContext" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Context of the representations used within the project. When the project includes shape representations for its components, one or several geometric representation contexts need to be included that define e.g. the world coordinate system, the coordinate space dimensions, and/or the precision factor.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="UnitsInContext" UniqueId="0Srb73pr17iAYTq1axrwHw" DefinedType="IfcUnitAssignment" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Units globally assigned to measure types used within the context of this project.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR31" UniqueId="1sIsLZJOb90vT5mGGyLhKs">
+			<Documentation>The _Name_ attribute has to be provided for the project. It is the short name for the project.</Documentation>
+			<Expression>EXISTS(SELF\IfcRoot.Name)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR32" UniqueId="1g_76NIxDA0vCcPiihqvyo">
+			<Documentation>There shall be no instance of _IfcGeometricRepresentationSubContext_ directly included in the set of _RepresentationContexts_.</Documentation>
+			<Expression>SIZEOF(QUERY(Temp &lt;* RepresentationContexts |
+ &apos;IFCREPRESENTATIONRESOURCE.IFCGEOMETRICREPRESENTATIONSUBCONTEXT&apos; IN TYPEOF(Temp)
+)) = 0 </Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR33" UniqueId="3u5W3oCqL2XPdU$nNcLgtX">
+			<Documentation>The _IfcProject_ represents the root of the any decomposition tree. It shall therefore not be used to decompose any other object definition.</Documentation>
+			<Expression>SIZEOF(SELF\IfcObjectDefinition.Decomposes) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

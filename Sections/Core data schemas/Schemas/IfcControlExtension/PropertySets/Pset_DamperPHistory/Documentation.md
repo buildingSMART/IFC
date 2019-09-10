@@ -1,0 +1,1 @@
+﻿Damper performance history attributes.

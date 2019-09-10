@@ -1,0 +1,1 @@
+﻿An electrical conductor is a single linear element with the specific purpose to lead electric current. The core of one lead is normally single wired or multiwired which are intertwined.

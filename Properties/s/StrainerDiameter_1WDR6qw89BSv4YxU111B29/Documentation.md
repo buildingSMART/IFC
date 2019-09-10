@@ -1,0 +1,1 @@
+﻿Diameter, measured in plan view, of the strainer basket.

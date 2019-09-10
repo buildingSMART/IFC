@@ -1,0 +1,1 @@
+﻿Chamber, on the line of a drain or discharge pipe, that prevents grease passing into a drainage system (BS6100 330 6205).

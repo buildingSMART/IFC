@@ -1,0 +1,1 @@
+﻿Blue component of the RGB colour specification given by an integer of 0..257

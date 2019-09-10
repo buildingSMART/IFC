@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCovering" Name="IfcCovering" UniqueId="71cd9964-d26e-4857-81b8-de24c4651a85" DiagramNumber="10" BaseDefinition="IfcBuildingElement" EntityFlags="109">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="1c0df8fd-2a8e-4b75-a68e-22fa8c279270" DefinedType="IfcCoveringTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Predefined types to define the particular type of the covering. There may be property set definitions available for each predefined type.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="CoversSpaces" UniqueId="84a19b72-c5f8-40f0-8380-e4989bb7d407" DefinedType="IfcRelCoversSpaces" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatedCoverings" />
+		<DocAttribute Name="Covers" UniqueId="1uwObdDFjFfOYHqGOdJCkk" DefinedType="IfcRelCoversBldgElements" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatedCoverings">
+			<Documentation>Reference to the objectified relationship that handles the relationship of the covering to the covered space.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR61" UniqueId="3T940TMHn7dvHnhJxzfhk3">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcCoveringType_ is associated), or the inherited attribute _ObjectType_ shall be given, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcCoveringTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcCoveringTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

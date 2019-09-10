@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCartesianPoint" UniqueId="2ddee6ae-615d-41ff-baa2-ba51d50e78c2" DiagramNumber="3" BaseDefinition="IfcPoint" EntityFlags="237">
+	<Attributes>
+		<DocAttribute Name="Coordinates" UniqueId="4a8b21fa-0aa6-4d2a-b0ce-55d5777e3b0f" DefinedType="IfcLengthMeasure" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="3">
+			<Documentation>The first, second, and third coordinate of the point location. If placed in a two or three dimensional rectangular Cartesian coordinate system, Coordinates[1] is the X coordinate, Coordinates[2] is the Y coordinate, and Coordinates[3] is the Z coordinate.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Dim" UniqueId="c2afcb8b-ad08-4d95-85a2-a02e4d8a7167" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The space dimensionality of this class, determined by the number of coordinates in the List of Coordinates.</Documentation>
+			<Derived>HIINDEX(Coordinates)</Derived>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="2zz5LwxDLA$h6EDg7xRQxe">
+			<Documentation>Only two or three dimensional points shall be used for the purpose of defining geometry in this IFC Resource.</Documentation>
+			<Expression>HIINDEX(Coordinates) &gt;= 2</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

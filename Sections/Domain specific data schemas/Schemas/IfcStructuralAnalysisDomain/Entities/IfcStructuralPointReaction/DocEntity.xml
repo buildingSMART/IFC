@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralPointReaction" UniqueId="0eabb0d2-3913-4a31-90cd-48eaf1a17f6b" DiagramNumber="4" BaseDefinition="IfcStructuralReaction" EntityFlags="101">
+	<WhereRules>
+		<DocWhereRule Name="WR61" UniqueId="1TMSkmb_T1eAZdMej6au8V">
+			<Documentation>A structural point reaction should have as a result either a single force, or a single displacement.</Documentation>
+			<Expression>SIZEOF([&apos;IFCSTRUCTURALLOADRESOURCE.IFCSTRUCTURALLOADSINGLEFORCE&apos;,
+        &apos;IFCSTRUCTURALLOADRESOURCE.IFCSTRUCTURALLOADSINGLEDISPLACEMENT&apos;]
+* TYPEOF(SELF\IfcStructuralActivity.AppliedLoad)) = 1</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

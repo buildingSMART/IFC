@@ -1,0 +1,1 @@
+﻿The nominal or design volumetric capacity of the tank.

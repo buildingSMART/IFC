@@ -1,0 +1,1 @@
+﻿Total extended media area.

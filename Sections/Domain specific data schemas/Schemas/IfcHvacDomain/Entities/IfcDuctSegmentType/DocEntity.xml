@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcDuctSegmentType" UniqueId="01ccdf98-70c1-44aa-a133-0a4bbf9ff7d5" DiagramNumber="2" BaseDefinition="IfcFlowSegmentType" EntityFlags="101">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="83db28de-1f7c-4123-bbb4-88e0f6421773" DefinedType="IfcDuctSegmentTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The type of duct segment.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="1jWjbs7tn6uxilxczsLG8J">
+			<Expression>(PredefinedType &lt;&gt; IfcDuctSegmentTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcDuctSegmentTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

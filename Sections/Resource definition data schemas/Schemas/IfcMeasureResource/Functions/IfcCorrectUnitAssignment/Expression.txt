@@ -1,0 +1,25 @@
+﻿  (Units : SET [1:?] OF IfcUnit)
+   : LOGICAL;
+
+  LOCAL
+    NamedUnitNumber    : INTEGER := 0;
+    DerivedUnitNumber  : INTEGER := 0;
+    MonetaryUnitNumber : INTEGER := 0;
+    NamedUnitNames     : SET OF IfcUnitEnum := [];
+    DerivedUnitNames   : SET OF IfcDerivedUnitEnum := [];
+  END_LOCAL;
+
+  NamedUnitNumber    := SIZEOF(QUERY(temp <* Units | ('IFCMEASURERESOURCE.IFCNAMEDUNIT' IN TYPEOF(temp)) AND NOT(temp\IfcNamedUnit.UnitType = IfcUnitEnum.USERDEFINED)));
+  DerivedUnitNumber  := SIZEOF(QUERY(temp <* Units | ('IFCMEASURERESOURCE.IFCDERIVEDUNIT' IN TYPEOF(temp)) AND NOT(temp\IfcDerivedUnit.UnitType = IfcDerivedUnitEnum.USERDEFINED)));
+  MonetaryUnitNumber := SIZEOF(QUERY(temp <* Units |  'IFCMEASURERESOURCE.IFCMONETARYUNIT' IN TYPEOF(temp)));
+
+  REPEAT i := 1 TO SIZEOF(Units);
+    IF (('IFCMEASURERESOURCE.IFCNAMEDUNIT' IN TYPEOF(Units[i])) AND NOT(Units[i]\IfcNamedUnit.UnitType = IfcUnitEnum.USERDEFINED)) THEN
+        NamedUnitNames := NamedUnitNames + Units[i]\IfcNamedUnit.UnitType;
+    END_IF;
+    IF (('IFCMEASURERESOURCE.IFCDERIVEDUNIT' IN TYPEOF(Units[i])) AND NOT(Units[i]\IfcDerivedUnit.UnitType = IfcDerivedUnitEnum.USERDEFINED)) THEN
+        DerivedUnitNames := DerivedUnitNames + Units[i]\IfcDerivedUnit.UnitType;
+    END_IF;
+  END_REPEAT;
+
+  RETURN((SIZEOF(NamedUnitNames) = NamedUnitNumber) AND (SIZEOF(DerivedUnitNames) = DerivedUnitNumber) AND (MonetaryUnitNumber <= 1));

@@ -1,0 +1,1 @@
+﻿Filter performance history attributes.

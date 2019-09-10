@@ -1,0 +1,22 @@
+﻿	(dir1, dir2 : IfcDirection; Epsilon : REAL)
+	: LOGICAL;
+  LOCAL
+    dir1x : REAL := dir1.DirectionRatios[1];
+    dir1y : REAL := dir1.DirectionRatios[2];
+    dir1z : REAL := 0;
+    dir2x : REAL := dir2.DirectionRatios[1];
+    dir2y : REAL := dir2.DirectionRatios[2];
+    dir2z : REAL := 0;
+  END_LOCAL;
+
+  IF (SIZEOF(dir1.DirectionRatios) > 2) THEN
+    dir1z := dir1.DirectionRatios[3];
+  END_IF;
+
+  IF (SIZEOF(dir2.DirectionRatios) > 2) THEN
+    dir2z := dir2.DirectionRatios[3];
+  END_IF;
+  
+  RETURN (IfcSameValue(dir1x,dir2x,Epsilon) AND
+          IfcSameValue(dir1y,dir2y,Epsilon) AND
+          IfcSameValue(dir1z,dir2z,Epsilon));

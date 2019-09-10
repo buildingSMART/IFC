@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcChillerType" UniqueId="5135d731-a436-4d43-8c92-3f797d30f85e" DiagramNumber="1" BaseDefinition="IfcEnergyConversionDeviceType" EntityFlags="101">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="4f08183e-f36c-478b-82ce-51dca0c28e34" DefinedType="IfcChillerTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Defines the typical types of chillers (e.g., air-cooled, water-cooled, etc.).</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="1HazHPa_r9IxbFYEzQXDaW">
+			<Expression>(PredefinedType &lt;&gt; IfcChillerTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcChillerTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

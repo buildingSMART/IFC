@@ -1,0 +1,1 @@
+﻿The maximum temperature at which the sheath retains its integrity.

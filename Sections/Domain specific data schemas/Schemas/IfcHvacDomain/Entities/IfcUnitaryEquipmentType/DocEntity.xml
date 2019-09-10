@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcUnitaryEquipmentType" UniqueId="9ad0a30e-c8f8-4b10-a580-7fe63adeee83" DiagramNumber="1" BaseDefinition="IfcEnergyConversionDeviceType" EntityFlags="101">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="72298c6a-62aa-4795-8440-09510e987809" DefinedType="IfcUnitaryEquipmentTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The type of unitary equipment.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="0ewHeySoDD9QcmP1PF1FfZ">
+			<Expression>(PredefinedType &lt;&gt; IfcUnitaryEquipmentTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcUnitaryEquipmentTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

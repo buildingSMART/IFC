@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCartesianTransformationOperator" UniqueId="da40a055-7f34-44ae-85cb-40b20d82ae5a" DiagramNumber="4" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="205">
+	<Subtypes>
+		<DocSubtype UniqueId="ed7227df-031c-479a-885f-6d454562803f" DefinedType="IfcCartesianTransformationOperator2D" />
+		<DocSubtype UniqueId="67551319-1c66-4347-b401-c8286930a1a4" DefinedType="IfcCartesianTransformationOperator3D" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="Axis1" UniqueId="77d3a933-8ecd-40ec-a018-58dcd07018c7" DefinedType="IfcDirection" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The direction used to determine U[1], the derived X axis direction.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Axis2" UniqueId="c87eb32c-c021-4fa9-888e-27a2a2d49f73" DefinedType="IfcDirection" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The direction used to determine U[2], the derived Y axis direction.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LocalOrigin" UniqueId="c81e6d3a-d622-4443-a670-a2c528ea33dc" DefinedType="IfcCartesianPoint" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The required translation, specified as a cartesian point. The actual translation included in the transformation is from the geometric origin to the local origin.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Scale" UniqueId="3240216d-4df6-4546-a6f0-58d59fa41159" DefinedType="REAL" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The scaling value specified for the transformation.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Scl" UniqueId="1d03e053-7d65-4017-9fdd-fd78322d198e" DefinedType="REAL" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The derived scale S of the transformation, equal to scale if that exists, or 1.0 otherwise.</Documentation>
+			<Derived>NVL(Scale, 1.0)</Derived>
+		</DocAttribute>
+		<DocAttribute Name="Dim" UniqueId="e1598a19-e317-4923-a3b3-5620c6f57ec6" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The space dimensionality of this class, determined by the space dimensionality of the local origin.</Documentation>
+			<Derived>LocalOrigin.Dim</Derived>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="2iHfOsDKPC68ZxH2Q1e7Yu">
+			<Documentation>The derived scaling Scl shall be greater than zero.</Documentation>
+			<Expression>Scl &gt; 0.0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

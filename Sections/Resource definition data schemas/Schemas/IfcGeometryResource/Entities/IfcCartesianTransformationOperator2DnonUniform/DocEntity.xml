@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCartesianTransformationOperator2DnonUniform" UniqueId="f45b9882-e0fb-41eb-9b0a-805615a37351" DiagramNumber="4" BaseDefinition="IfcCartesianTransformationOperator2D" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="Scale2" UniqueId="b428bab1-b9bc-4f46-abce-c63c47f01e4c" DefinedType="REAL" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The scaling value specified for the transformation along the axis 2. This is normally the y scale factor.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Scl2" UniqueId="74fa5661-c33f-4fdd-9c32-512f0cdc9336" DefinedType="REAL" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The derived scale S(2) of the transformation along the axis 2 (normally the y axis), equal to Scale2 if that exists, or equal to the derived Scl1 (normally the x axis scale factor) otherwise.</Documentation>
+			<Derived>NVL(Scale2, SELF\IfcCartesianTransformationOperator.Scl)</Derived>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="2aKC5Ne8n8Ifh5LuCHT8MZ">
+			<Documentation>The derived scaling Scl2 shall be greater than zero.</Documentation>
+			<Expression>Scl2 &gt; 0.0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

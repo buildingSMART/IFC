@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcValveType" UniqueId="bc7e1649-6634-4653-947b-036b7b3af5bd" DiagramNumber="4" BaseDefinition="IfcFlowControllerType" EntityFlags="101">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="64e1374c-df50-4f51-8439-a60368207f3d" DefinedType="IfcValveTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The type of valve.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="2NxQQkDCD9QfATqlq71tK8">
+			<Expression>(PredefinedType &lt;&gt; IfcValveTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcValveTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

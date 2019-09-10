@@ -1,0 +1,33 @@
+﻿  (ZAxis, Arg : IfcDirection) : IfcDirection;
+LOCAL
+  XAxis : IfcDirection;
+  V     : IfcDirection;
+  Z     : IfcDirection;
+  XVec  : IfcVector;
+END_LOCAL;
+
+  IF (NOT EXISTS(ZAxis)) THEN
+    RETURN (?) ;
+  ELSE
+    Z := IfcNormalise(ZAxis);
+    IF NOT EXISTS(Arg) THEN
+      IF (Z.DirectionRatios <> [1.0,0.0,0.0]) THEN
+        V := IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([1.0,0.0,0.0]);
+      ELSE
+        V := IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([0.0,1.0,0.0]);
+      END_IF;
+    ELSE
+      IF (Arg.Dim <> 3) THEN
+        RETURN (?) ;
+      END_IF;
+      IF ((IfcCrossProduct(Arg,Z).Magnitude) = 0.0) THEN
+        RETURN (?);
+      ELSE
+        V := IfcNormalise(Arg);
+      END_IF;
+    END_IF;
+    XVec  := IfcScalarTimesVector(IfcDotProduct(V, Z), Z);
+    XAxis := IfcVectorDifference(V, XVec).Orientation;
+    XAxis := IfcNormalise(XAxis);
+  END_IF;
+  RETURN(XAxis);

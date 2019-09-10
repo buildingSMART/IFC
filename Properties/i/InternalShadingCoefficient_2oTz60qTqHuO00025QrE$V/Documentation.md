@@ -1,0 +1,1 @@
+﻿Radiation transmission coefficient of the inside shading device, symbol "b-value". It is a value without unit.

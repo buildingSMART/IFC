@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPropertyEnumeratedValue" UniqueId="0d3d63a5-9a73-4f49-a809-6383082c2216" DiagramNumber="2" BaseDefinition="IfcSimpleProperty" EntityFlags="109">
+	<Attributes>
+		<DocAttribute Name="EnumerationValues" UniqueId="7f2fce6a-1d45-497e-82f3-61ce510951fe" DefinedType="IfcValue" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Enumeration values, which shall be listed in the referenced IfcPropertyEnumeration, if such a reference is provided.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="EnumerationReference" UniqueId="5fbe4df2-d945-4c3c-8826-2a4f7ca6549e" DefinedType="IfcPropertyEnumeration" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Enumeration from which a enumeration value has been selected. The referenced enumeration also establishes the unit of the enumeration value.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="3CZvBsS_D3KOOgOZaCLd5Q">
+			<Documentation>Each enumeration value shall be a member of the list of EnumerationValues at the referenced IfcPropertyEnumeration (if given).</Documentation>
+			<Expression>NOT(EXISTS(EnumerationReference)) OR 
+   (SIZEOF(QUERY(temp &lt;* EnumerationValues |
+    temp IN EnumerationReference.EnumerationValues))
+    = SIZEOF(EnumerationValues))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

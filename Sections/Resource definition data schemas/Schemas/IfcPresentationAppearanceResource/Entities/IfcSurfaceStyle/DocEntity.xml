@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSurfaceStyle" UniqueId="359b755a-e87c-418d-bb14-8b2fd007e3ba" DiagramNumber="5" BaseDefinition="IfcPresentationStyle" EntityFlags="237">
+	<Attributes>
+		<DocAttribute Name="Side" UniqueId="71fe440e-530e-4206-b288-06ae88a7976e" DefinedType="IfcSurfaceSide" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>An indication of which side of the surface to apply the style.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Styles" UniqueId="7501c93b-df89-434a-a8f8-9720a08bb372" DefinedType="IfcSurfaceStyleElementSelect" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="5">
+			<Documentation>A collection of different surface styles.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR11" UniqueId="1WRDLjxFvCahSk8vgb1M6z">
+			<Documentation>Each select item of _IfcSurfaceStyleSelect_ within the _Styles_ shall only be used maximum once.</Documentation>
+			<Expression>SIZEOF(QUERY(Style &lt;* SELF.Styles |
+  &apos;IFCPRESENTATIONAPPEARANCERESOURCE.IFCSURFACESTYLESHADING&apos; IN
+   TYPEOF(Style)
+  )) &lt;= 1</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR12" UniqueId="1wVfttG8z6qAy_xiZu3qiK">
+			<Documentation>The _IfcSurfaceStyleLighting_ shall only be used zero or one time within the set of _Styles_.</Documentation>
+			<Expression>SIZEOF(QUERY(Style &lt;* SELF.Styles |
+  &apos;IFCPRESENTATIONAPPEARANCERESOURCE.IFCSURFACESTYLELIGHTING&apos; IN
+   TYPEOF(Style)
+  )) &lt;= 1</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR13" UniqueId="2YFSngZVX2nwDaaNDzByjj">
+			<Documentation>The _IfcSurfaceStyleRefraction_ shall only be used zero or one time within the set of _Styles_.</Documentation>
+			<Expression>SIZEOF(QUERY(Style &lt;* SELF.Styles |
+  &apos;IFCPRESENTATIONAPPEARANCERESOURCE.IFCSURFACESTYLEREFRACTION&apos; IN
+   TYPEOF(Style)
+  )) &lt;= 1</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR14" UniqueId="3hVjVKwqn80OG2BV4$cnkJ">
+			<Documentation>The _IfcSurfaceStyleWithTextures_ shall only be used zero or one time within the set of _Styles_.</Documentation>
+			<Expression>SIZEOF(QUERY(Style &lt;* SELF.Styles |
+  &apos;IFCPRESENTATIONAPPEARANCERESOURCE.IFCSURFACESTYLEWITHTEXTURES&apos; IN
+   TYPEOF(Style)
+  )) &lt;= 1</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR15" UniqueId="18oy0aibD04xIvgvHuAt2Q">
+			<Documentation>The _IfcExternallyDefinedSurfaceStyle_ shall only be used zero or one time within the set of _Styles_.</Documentation>
+			<Expression>SIZEOF(QUERY(Style &lt;* SELF.Styles |
+  &apos;IFCPRESENTATIONAPPEARANCERESOURCE.IFCEXTERNALLYDEFINEDSURFACESTYLE&apos; IN
+   TYPEOF(Style)
+  )) &lt;= 1</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

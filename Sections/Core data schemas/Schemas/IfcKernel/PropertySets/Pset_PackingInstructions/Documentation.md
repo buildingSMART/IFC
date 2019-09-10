@@ -1,0 +1,1 @@
+﻿Packing instructions are specific instructions relating to the packing that is required for an artefact (instance of IfcProduct) in the event of a move (where the product is related to an instance of IfcMove).

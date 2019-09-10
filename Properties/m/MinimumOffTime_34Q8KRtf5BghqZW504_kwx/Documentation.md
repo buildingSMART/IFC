@@ -1,0 +1,1 @@
+﻿Minimum off time

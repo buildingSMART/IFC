@@ -1,0 +1,38 @@
+﻿  (Dim : INTEGER; 
+   Axis1, Axis2, Axis3 : IfcDirection) 
+    : LIST [2:3] OF IfcDirection;
+
+LOCAL
+  U : LIST [2:3] OF IfcDirection;
+  Factor : REAL;
+  D1, D2 : IfcDirection;
+END_LOCAL;
+
+  IF (Dim = 3) THEN 
+    D1 := NVL(IfcNormalise(Axis3), IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([0.0,0.0,1.0]));
+    D2 := IfcFirstProjAxis(D1, Axis1);
+    U  := [D2, IfcSecondProjAxis(D1, D2, Axis2), D1];
+  ELSE
+    IF EXISTS(Axis1) THEN
+      D1 := IfcNormalise(Axis1);
+      U  := [D1, IfcOrthogonalComplement(D1)];
+      IF EXISTS(Axis2) THEN
+        Factor := IfcDotProduct(Axis2, U[2]);
+        IF (Factor < 0.0) THEN
+          U[2].DirectionRatios[1] := -U[2].DirectionRatios[1];
+          U[2].DirectionRatios[2] := -U[2].DirectionRatios[2];
+        END_IF;
+      END_IF;
+    ELSE
+      IF EXISTS(Axis2) THEN
+        D1 := IfcNormalise(Axis2);
+        U  := [IfcOrthogonalComplement(D1), D1];
+        U[1].DirectionRatios[1] := -U[1].DirectionRatios[1];
+        U[1].DirectionRatios[2] := -U[1].DirectionRatios[2];
+        ELSE
+          U := [IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([1.0, 0.0]), 
+                IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([0.0, 1.0])];
+      END_IF;
+    END_IF;
+  END_IF;
+  RETURN(U);

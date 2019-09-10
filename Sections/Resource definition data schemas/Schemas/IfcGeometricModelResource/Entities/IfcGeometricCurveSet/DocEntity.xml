@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGeometricCurveSet" UniqueId="0a5d42f4-d5ec-40b1-9227-3fdb4692e2eb" DiagramNumber="6" BaseDefinition="IfcGeometricSet" EntityFlags="101">
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="37Dwleym56EeT5pF3FSAFj">
+			<Documentation>No surface shall be included in this geometric set.</Documentation>
+			<Expression>SIZEOF(QUERY(Temp &lt;* SELF\IfcGeometricSet.Elements |
+&apos;IFCGEOMETRYRESOURCE.IFCSURFACE&apos; IN TYPEOF(Temp))) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

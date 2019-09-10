@@ -1,0 +1,1 @@
+﻿Value of the subject matter as determined using an agreed scale for what is provided, or capable of being provided.

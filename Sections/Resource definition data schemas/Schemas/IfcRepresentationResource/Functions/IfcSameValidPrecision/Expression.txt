@@ -1,0 +1,12 @@
+﻿   (Epsilon1, Epsilon2 : REAL) : LOGICAL ;
+  LOCAL
+    ValidEps1, ValidEps2 : REAL;
+    DefaultEps           : REAL := 0.000001;
+    DerivationOfEps      : REAL := 1.001;
+    UpperEps             : REAL := 1.0;
+  END_LOCAL;
+  
+    ValidEps1 := NVL(Epsilon1, DefaultEps);
+    ValidEps2 := NVL(Epsilon2, DefaultEps);
+    RETURN ((0.0 < ValidEps1) AND (ValidEps1 <= (DerivationOfEps * ValidEps2)) AND 
+            (ValidEps2 <= (DerivationOfEps * ValidEps1)) AND (ValidEps2 < UpperEps));

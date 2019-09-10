@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcHumidifierType" UniqueId="f1983b1d-26af-43f3-ba7a-06e90feb52c8" DiagramNumber="1" BaseDefinition="IfcEnergyConversionDeviceType" EntityFlags="101">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="db14e4f6-f176-4771-81a6-cda2bc555751" DefinedType="IfcHumidifierTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Defines the type of humidifier.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="26FvF5nZr109KrS878Jw$9">
+			<Expression>(PredefinedType &lt;&gt; IfcHumidifierTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcHumidifierTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

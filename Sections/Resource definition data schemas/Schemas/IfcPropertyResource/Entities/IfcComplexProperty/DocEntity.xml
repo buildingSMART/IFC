@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcComplexProperty" UniqueId="c8722acc-8737-44f1-b24d-0eb804a9a4da" DiagramNumber="1" BaseDefinition="IfcProperty" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="UsageName" UniqueId="f21a5e51-7581-416f-943f-25398d2e3c4d" DefinedType="IfcIdentifier" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Usage description of the _IfcComplexProperty_ within the property set which references the _IfcComplexProperty_.
+&gt; &lt;font size=&quot;-1&quot;&gt;NOTE: Consider a complex property for glazing properties. The &lt;i&gt;Name&lt;/i&gt; attribute of the &lt;i&gt;IfcComplexProperty&lt;/i&gt; could be &lt;i&gt;Pset_GlazingProperties&lt;/i&gt;, and the UsageName attribute could be &lt;i&gt;OuterGlazingPane&lt;/i&gt;.&lt;/font&gt;</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="HasProperties" UniqueId="6321203a-4666-4064-aa58-167b85c5935f" DefinedType="IfcProperty" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Set of properties that can be used within this complex property (may include other complex properties).</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR21" UniqueId="dfc2f681-6143-4a35-ad63-66079ddc33b1">
+			<Documentation>The IfcComplexProperty should not reference itself within the list of HasProperties.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* HasProperties | SELF :=: temp)) = 0</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR22" UniqueId="feef33e5-30ad-4420-88b0-02801c0f5167">
+			<Documentation>Each property within the complex property shall have a unique name attribute.</Documentation>
+			<Expression>IfcUniquePropertyName(HasProperties)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

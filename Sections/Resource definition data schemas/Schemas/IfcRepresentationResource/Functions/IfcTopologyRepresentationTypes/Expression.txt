@@ -1,0 +1,37 @@
+﻿(RepType : IfcLabel; Items : SET OF IfcRepresentationItem) : LOGICAL;
+    
+    LOCAL
+      Count : INTEGER := 0;
+    END_LOCAL;
+
+    CASE RepType OF 
+    'Vertex' :
+      BEGIN 
+        Count := SIZEOF(QUERY(temp <* Items | 
+                  ('IFCTOPOLOGYRESOURCE.IFCVERTEX' IN TYPEOF(temp))));
+      END;
+    'Edge' : 
+      BEGIN 
+        Count := SIZEOF(QUERY(temp <* Items | 
+                  ('IFCTOPOLOGYRESOURCE.IFCEDGE' IN TYPEOF(temp))));
+      END;
+    'Path' : 
+      BEGIN 
+        Count := SIZEOF(QUERY(temp <* Items | 
+                  ('IFCTOPOLOGYRESOURCE.IFCPATH' IN TYPEOF(temp))));
+      END;
+    'Face' : 
+      BEGIN 
+        Count := SIZEOF(QUERY(temp <* Items | 
+                  ('IFCTOPOLOGYRESOURCE.IFCFACE' IN TYPEOF(temp))));
+      END;
+    'Shell' :
+      BEGIN
+        Count := SIZEOF(QUERY(temp <* Items | 
+                  ('IFCTOPOLOGYRESOURCE.IFCOPENSHELL' IN TYPEOF(temp))
+                    OR ('IFCTOPOLOGYRESOURCE.IFCCLOSEDSHELL' IN TYPEOF(temp))));
+      END;
+    'Undefined': RETURN(TRUE);
+     OTHERWISE : RETURN(?);
+    END_CASE;
+    RETURN (Count = SIZEOF(Items));

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBoilerType" UniqueId="c87227ad-0a1d-4c30-a4a2-fe16fb058634" DiagramNumber="1" BaseDefinition="IfcEnergyConversionDeviceType" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="99850f73-da5b-40ff-9529-8a3816e83b04" DefinedType="IfcBoilerTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Defines types of boilers.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="3U6MS0eJv6xuWenJrsBc79">
+			<Expression>(PredefinedType &lt;&gt; IfcBoilerTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcBoilerTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

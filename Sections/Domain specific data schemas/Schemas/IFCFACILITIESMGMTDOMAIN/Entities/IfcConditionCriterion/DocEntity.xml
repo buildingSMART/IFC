@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcConditionCriterion" UniqueId="125q3Q_5j3Aw_gPWADoFxM" DiagramNumber="2" BaseDefinition="IfcControl" EntityFlags="237">
+	<Attributes>
+		<DocAttribute Name="Criterion" UniqueId="1waAmhDXfELhmjwUGq$fAC" DefinedType="IfcConditionCriterionSelect" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The measured or assessed value of a criterion.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="CriterionDateTime" UniqueId="2ScavkJcXDl8z0MOUOmBcy" DefinedType="IfcDateTimeSelect" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The time and/or date at which the criterion is determined.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="23hoe8PQT1CgXaiJIWO_FG">
+			<Documentation>The Name attribute has to be provided for the condition criterion.</Documentation>
+			<Expression>EXISTS(SELF\IfcRoot.Name)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

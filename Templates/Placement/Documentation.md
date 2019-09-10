@@ -1,0 +1,1 @@
+﻿Provision of an object coordinate system for the geometry items of the _element_. The geometric representation items of the shape representation of the _element_are placed relative to the object coordinate system.

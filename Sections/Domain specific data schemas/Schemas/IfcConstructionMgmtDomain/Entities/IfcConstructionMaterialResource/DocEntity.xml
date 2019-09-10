@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcConstructionMaterialResource" UniqueId="7a284148-2d7a-4765-b4e6-59fd177792f3" DiagramNumber="1" BaseDefinition="IfcConstructionResource" EntityFlags="101">
+	<Attributes>
+		<DocAttribute Name="Suppliers" UniqueId="0XJkWj4zj2WQQ6R7QKKbbG" DefinedType="IfcActorSelect" AttributeFlags="1" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Possible suppliers of the type of materials.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="UsageRatio" UniqueId="2IExSeMjb7beuhTKbfnS7j" DefinedType="IfcRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The ratio of the amount of a construction material used to the amount provided (determined as a quantity)</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="1N67Y9V459zBz38gJgvX6A">
+			<Documentation>There should only be a single relationship, assigning products to the material resource.</Documentation>
+			<Expression>SIZEOF(SELF\IfcResource.ResourceOf) &lt;=1</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR2" UniqueId="2QlZbXUQT07hr$uc$p165P">
+			<Documentation>If a reference to a resource is given, then through the IfcRelAssignsToResource relationship with the RelatedObjectType PRODUCT.</Documentation>
+			<Expression>NOT(EXISTS(SELF\IfcResource.ResourceOf[1])) OR
+(SELF\IfcResource.ResourceOf[1].RelatedObjectsType = IfcObjectTypeEnum.PRODUCT)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

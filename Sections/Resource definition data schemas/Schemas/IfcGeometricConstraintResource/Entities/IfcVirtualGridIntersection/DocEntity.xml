@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcVirtualGridIntersection" UniqueId="f63d89d0-3786-4462-861e-92b27070fde7" DiagramNumber="1" EntityFlags="101">
+	<Attributes>
+		<DocAttribute Name="IntersectingAxes" UniqueId="f48a97d0-61c3-4c40-99c4-36a4506a6ffc" DefinedType="IfcGridAxis" AttributeFlags="0" AggregationType="1" AggregationFlag="2" AggregationLower="2" AggregationUpper="2">
+			<Documentation>Two grid axes which intersects at exactly one intersection (see also informal proposition at IfcGrid). If attribute OffsetDistances is omitted, the intersection defines the placement or ref direction of a grid placement directly. If OffsetDistances are given, the intersection is defined by the offset curves to the grid axes.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="OffsetDistances" UniqueId="97ec914d-8dfe-4ce4-ad64-add422bb66ce" DefinedType="IfcLengthMeasure" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="3">
+			<Documentation>Offset distances to the grid axes. If given, it defines virtual offset curves to the grid axes. The intersection of the offset curves specify the virtual grid intersection.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

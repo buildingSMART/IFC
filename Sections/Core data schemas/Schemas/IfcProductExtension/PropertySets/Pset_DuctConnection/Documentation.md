@@ -1,0 +1,1 @@
+﻿This property set is used to define the various types of duct connections. It is applied to occurrences of duct segments and fittings.

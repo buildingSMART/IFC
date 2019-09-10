@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcShapeModel" UniqueId="96fc3c5f-dd42-4a80-aea3-295fbe743fa9" DiagramNumber="2" BaseDefinition="IfcRepresentation" EntityFlags="197">
+	<Subtypes>
+		<DocSubtype UniqueId="fe948891-ecb4-44f3-9bfa-ef2cff5ee112" DefinedType="IfcShapeRepresentation" />
+		<DocSubtype UniqueId="bc3960f4-14b5-44c7-9d74-cb9ab5b662b9" DefinedType="IfcTopologyRepresentation" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="OfShapeAspect" UniqueId="917251e4-e944-4d8c-adbb-eecf72e4e71c" DefinedType="IfcShapeAspect" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="ShapeRepresentations">
+			<Documentation>Reference to the shape aspect, for which it is the shape representation.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR11" UniqueId="6d14dd4a-3621-4bfc-8a31-57a6ff3f7fd1">
+			<Documentation>The _IfcShapeModel_ shall be used by an _IfcProductRepresentation_, by an _IfcRepresentationMap_ or by an _IfcShapeAspect_.</Documentation>
+			<Expression>(SIZEOF(SELF\IfcRepresentation.OfProductRepresentation) = 1) XOR 
+(SIZEOF(SELF\IfcRepresentation.RepresentationMap) = 1) XOR
+(SIZEOF(OfShapeAspect) = 1)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

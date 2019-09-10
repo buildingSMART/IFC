@@ -1,0 +1,1 @@
+﻿Friction heat gain.

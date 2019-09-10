@@ -1,0 +1,1 @@
+﻿Hinged seat that fits on the top of a water closet (WC) pan. (BS6100 330 1401)

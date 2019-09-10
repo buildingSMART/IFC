@@ -1,0 +1,1 @@
+﻿A complete unit on which or in which a flame is maintained through the provision of a gas supply.

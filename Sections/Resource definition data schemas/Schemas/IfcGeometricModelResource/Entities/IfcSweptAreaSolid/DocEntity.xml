@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSweptAreaSolid" UniqueId="1bfb8302-5211-4de4-a3b9-20e200cf1097" DiagramNumber="4" BaseDefinition="IfcSolidModel" EntityFlags="205">
+	<Subtypes>
+		<DocSubtype UniqueId="212829ea-be2a-41ae-882d-cbcbcc89af9c" DefinedType="IfcExtrudedAreaSolid" />
+		<DocSubtype UniqueId="00e87347-436b-41b3-bfab-c09477823008" DefinedType="IfcRevolvedAreaSolid" />
+		<DocSubtype UniqueId="b8aa1c27-902d-49aa-8fa5-f8769c608c0e" DefinedType="IfcSurfaceCurveSweptAreaSolid" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="SweptArea" UniqueId="1c1cfe35-c525-4b8e-967a-78258ff390f3" DefinedType="IfcProfileDef" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The surface defining the area to be swept. It is given as a profile definition within the xy plane of the position coordinate system.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Position" UniqueId="fccab43b-72fa-486a-b491-6d2133f1474b" DefinedType="IfcAxis2Placement3D" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Position coordinate system for the swept area.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR22" UniqueId="06lzUJTqbBSBODOyrV$OHG">
+			<Documentation>The profile definition for the swept area solid shall be of type AREA.</Documentation>
+			<Expression>SweptArea.ProfileType = IfcProfileTypeEnum.Area</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBooleanClippingResult" UniqueId="a6eb852d-2266-484e-b385-16dab2770609" DiagramNumber="2" BaseDefinition="IfcBooleanResult" EntityFlags="101">
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="1xooWJRWH5iPDXM18uVnxe">
+			<Documentation>The first operand of the Boolean clipping operation shall be either an IfcSweptAreaSolid or (in case of more than one clipping) an IfcBooleanResult.</Documentation>
+			<Expression>(&apos;IFCGEOMETRICMODELRESOURCE.IFCSWEPTAREASOLID&apos; IN TYPEOF(FirstOperand)) OR (&apos;IFCGEOMETRICMODELRESOURCE.IFCBOOLEANCLIPPINGRESULT&apos; IN TYPEOF(FirstOperand))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR2" UniqueId="0gMzhw6kL7YgoeohVxlQ8a">
+			<Documentation>The second operand of the Boolean clipping operation shall be an IfcHalfSpaceSolid.</Documentation>
+			<Expression>(&apos;IFCGEOMETRICMODELRESOURCE.IFCHALFSPACESOLID&apos; IN TYPEOF(SecondOperand))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR3" UniqueId="0JmlX$an1B0e3b2VM5SNrN">
+			<Documentation>The Boolean operator for clipping is always &quot;Difference&quot;.</Documentation>
+			<Expression>Operator = DIFFERENCE</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

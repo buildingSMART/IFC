@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRoof" Name="IfcRoof" UniqueId="54499bfa-3796-45d8-870a-1357fd0e960f" DiagramNumber="1" BaseDefinition="IfcBuildingElement" EntityFlags="101">
+	<Attributes>
+		<DocAttribute Name="ShapeType" UniqueId="2FVo63Dar43heWDr8TNYsb" DefinedType="IfcRoofTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Predefined shape types for a roof that are specified in an enumeration.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="27yP5lGCv3GupDYYGRHIxO">
+			<Documentation>Either the roof is not decomposed into its roof slabs (the roof can have independent geometry), or the geometry shall not be given at IfcRoof directly.</Documentation>
+			<Expression>(HIINDEX(SELF\IfcObjectDefinition.IsDecomposedBy) = 0) OR 
+((HIINDEX(SELF\IfcObjectDefinition.IsDecomposedBy) = 1) AND (NOT(EXISTS(SELF\IfcProduct.Representation))))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

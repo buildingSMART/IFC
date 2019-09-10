@@ -1,0 +1,1 @@
+﻿Heat exchanger media material.

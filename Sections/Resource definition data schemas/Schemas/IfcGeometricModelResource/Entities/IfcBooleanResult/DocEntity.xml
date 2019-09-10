@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBooleanResult" UniqueId="d78312f8-1bcd-4504-890e-d6fcdaab653c" DiagramNumber="2" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="109">
+	<Subtypes>
+		<DocSubtype UniqueId="8f32808e-282c-4d21-a563-2ca210fb5149" DefinedType="IfcBooleanClippingResult" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="Operator" UniqueId="970f0683-6cee-4eb2-9e10-0b31f03b0528" DefinedType="IfcBooleanOperator" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The Boolean operator used in the operation to create the result.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="FirstOperand" UniqueId="f51c36f8-0f38-4082-92d9-b168edd7afc6" DefinedType="IfcBooleanOperand" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The first operand to be operated upon by the Boolean operation.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="SecondOperand" UniqueId="aca2312f-8b6b-4323-9475-e793e362a83f" DefinedType="IfcBooleanOperand" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The second operand specified for the operation.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Dim" UniqueId="03027ef0-664e-4604-aeb7-80ba4e6e11eb" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The space dimensionality of this entity. It is identical with the space dimensionality of the first operand. A where rule ensures that both operands have the same space dimensionality.</Documentation>
+			<Derived>FirstOperand.Dim</Derived>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="0q6UZAieH5mwsTHu2Vkw4G">
+			<Documentation>The dimensionality of the first operand shall be the same as the dimensionality of the second operand.</Documentation>
+			<Expression>FirstOperand.Dim = SecondOperand.Dim</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

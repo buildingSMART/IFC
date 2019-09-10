@@ -1,0 +1,3 @@
+﻿A list of the different materials that are used in an element.
+
+> <font size="-1">NOTE: The class <i>IfcMaterialList</i> will normally be used where an element is described at a more abstract level. For example, for an architectural specification writer, the only information that may be needed about a concrete column is that it contains concrete, reinforcing steel and mild steel ligatures. It shall not be used for elements consisting of material layers when the different layers can be defined and the class <i>IfcMaterialLayerSet</i> can be used. Also, <i>IfcMaterialList</i> shall not be used for elements consisting of a single identifiable material, (e.g. to represent anisotropic material).</font>

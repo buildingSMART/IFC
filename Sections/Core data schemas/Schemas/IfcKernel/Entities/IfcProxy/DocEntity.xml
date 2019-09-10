@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcProxy" UniqueId="71ecd3f4-0c37-4779-a722-9dddefe6a6bf" DiagramNumber="5" BaseDefinition="IfcProduct" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="ProxyType" UniqueId="7c83d5c4-1b38-400e-8d64-cbbcb8893211" DefinedType="IfcObjectTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>High level (and only) semantic meaning attached to the IfcProxy, defining the basic construct type behind the Proxy, e.g. Product or Process.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Tag" UniqueId="d45cbd31-dd92-4820-9238-63d0fd345dc6" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The tag (or label) identifier at the particular instance of a product, e.g. the serial number, or the position number. It is the identifier at the occurrence level.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="102d1b50-8859-4bcf-b8dd-fa8f0e52d0d6">
+			<Documentation>The Name attribute has to be provided for a proxy.</Documentation>
+			<Expression>EXISTS(SELF\IfcRoot.Name)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

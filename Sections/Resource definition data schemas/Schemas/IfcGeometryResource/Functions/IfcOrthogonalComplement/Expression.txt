@@ -1,0 +1,11 @@
+﻿  (Vec : IfcDirection) 
+    : IfcDirection;
+LOCAL
+  Result : IfcDirection ;
+END_LOCAL;
+  IF NOT EXISTS (Vec) OR (Vec.Dim <> 2) THEN
+    RETURN(?);
+  ELSE
+    Result := IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([-Vec.DirectionRatios[2], Vec.DirectionRatios[1]]);
+    RETURN(Result);
+  END_IF;

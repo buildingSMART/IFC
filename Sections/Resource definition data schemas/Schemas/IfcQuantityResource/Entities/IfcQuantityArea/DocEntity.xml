@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcQuantityArea" UniqueId="bb60eefd-5d19-4646-9795-6bda10980402" DiagramNumber="1" BaseDefinition="IfcPhysicalSimpleQuantity" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="AreaValue" UniqueId="01ac60b8-6a0e-4713-b657-70c3f0bb6c39" DefinedType="IfcAreaMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Area measure value of this quantity.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR21" UniqueId="c3e8bd71-3722-4542-8263-3b03c7b79b99">
+			<Documentation>If a unit is given, the unit type shall be area unit.</Documentation>
+			<Expression>NOT(EXISTS(SELF\IfcPhysicalSimpleQuantity.Unit)) OR
+   (SELF\IfcPhysicalSimpleQuantity.Unit.UnitType = IfcUnitEnum.AREAUNIT)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR22" UniqueId="f2770c55-2e71-4f14-b04c-254e733d9be1">
+			<Documentation>A valid area quantity shall be greater than or equal to zero.</Documentation>
+			<Expression>AreaValue &gt;= 0.</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

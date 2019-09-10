@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcGrid" Name="IfcGrid" UniqueId="25379845-b692-4288-a06e-0e6782212371" DiagramNumber="6" BaseDefinition="IfcProduct" EntityFlags="237">
+	<Attributes>
+		<DocAttribute Name="UAxes" UniqueId="52e8b76f-1753-4f63-bec2-8c5baf34e010" DefinedType="IfcGridAxis" AttributeFlags="0" AggregationType="1" AggregationFlag="2" AggregationLower="1" AggregationUpper="0">
+			<Documentation>List of grid axes defining the first row of grid lines.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="VAxes" UniqueId="4db57570-5afe-44ca-acac-ab9ca9b30e78" DefinedType="IfcGridAxis" AttributeFlags="0" AggregationType="1" AggregationFlag="2" AggregationLower="1" AggregationUpper="0">
+			<Documentation>List of grid axes defining the second row of grid lines.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="WAxes" UniqueId="7c8b1731-f15b-4944-8503-27030ed23f78" DefinedType="IfcGridAxis" AttributeFlags="1" AggregationType="1" AggregationFlag="2" AggregationLower="1" AggregationUpper="0">
+			<Documentation>List of grid axes defining the third row of grid lines. It may be given in the case of a triangular grid.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ContainedInStructure" UniqueId="eab7c659-344b-47a3-82ed-2c7243b71a28" DefinedType="IfcRelContainedInSpatialStructure" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatedElements">
+			<Documentation>Relationship to a spatial structure element, to which the grid is primarily associated.
+&gt; &lt;small&gt;&lt;font color=&quot;#FF0000&quot;&gt;IFC2x PLATFORM CHANGE&amp;nbsp; The inverse relationship has been added to &lt;i&gt;IfcGrid&lt;/i&gt; with upward compatibility&lt;/font&gt;
+&lt;/small&gt;</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR41" UniqueId="2peyPNIafDYhL2CdQepuvf">
+			<Documentation>The placement for the grid has to be given.</Documentation>
+			<Expression>EXISTS(SELF\IfcProduct.ObjectPlacement)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

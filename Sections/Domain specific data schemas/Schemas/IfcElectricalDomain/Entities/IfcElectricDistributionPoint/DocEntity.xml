@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcElectricDistributionPoint" UniqueId="0h3jQpF0P8VAV21mPsXj_7" DiagramNumber="2" BaseDefinition="IfcFlowController" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="DistributionPointFunction" UniqueId="0h6kswFqrB9BMk4Q78Y28C" DefinedType="IfcElectricDistributionPointFunctionEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Identifies the functions or purposes that a distribution point may fulfill from which that required may be selected.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="UserDefinedFunction" UniqueId="0plI_W0UP8Wg4Kn6rnsbJP" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR31" UniqueId="2yFozfdybBgv$1RzSJ7oXQ">
+			<Documentation>The attribute UserDefinedFunction must be asserted when the value of the IfcElectricDistributionPointFunctionEnum is set to USERDEFINED.</Documentation>
+			<Expression>(DistributionPointFunction &lt;&gt; IfcElectricDistributionPointFunctionEnum.USERDEFINED) OR
+((DistributionPointFunction = IfcElectricDistributionPointFunctionEnum.USERDEFINED) AND EXISTS(SELF\IfcElectricDistributionPoint.UserDefinedFunction))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

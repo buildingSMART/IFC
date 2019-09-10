@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcArbitraryOpenProfileDef" UniqueId="65ea2e1f-aa07-4338-9f78-43c237e707f8" DiagramNumber="6" BaseDefinition="IfcProfileDef" EntityFlags="109">
+	<Subtypes>
+		<DocSubtype UniqueId="ab3ad4b1-a8fa-446d-995f-2b640a76adcc" DefinedType="IfcCenterLineProfileDef" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="Curve" UniqueId="a0dddda9-00b8-467a-9d3d-53cbc87fef54" DefinedType="IfcBoundedCurve" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Open bounded curve defining the profile.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR11" UniqueId="aa795542-8a46-4e0b-bc26-0415f74b2d5e">
+			<Documentation>The profile type is a .CURVE., an open profile can only be used to define a swept surface.
+&gt; &lt;small&gt;Note6nbsp; This does not apply to the subtype &lt;i&gt;IfcCentreLineProfileDef&lt;/i&gt;.&lt;/small&gt;</Documentation>
+			<Expression>(&apos;IFCPROFILERESOURCE.IFCCENTERLINEPROFILEDEF&apos; IN TYPEOF(SELF)) OR 
+ (SELF\IfcProfileDef.ProfileType = IfcProfileTypeEnum.CURVE)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR12" UniqueId="e7d8e99e-04e6-4f01-a1f7-fd0b00461741">
+			<Documentation>The dimensionality of the curve shall be 2.</Documentation>
+			<Expression>Curve.Dim = 2</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCalendarDate" UniqueId="32L0gFI41ASuuLqWZY2PUV" DiagramNumber="1" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="DayComponent" UniqueId="2C8A4bvtvDnBRKvXiFJWAZ" DefinedType="IfcDayInMonthNumber" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The day element of the calendar date.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="MonthComponent" UniqueId="1bKXyjCGD7agUy8c1bkJWN" DefinedType="IfcMonthInYearNumber" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The month element of the calendar date.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="YearComponent" UniqueId="1$sf8iKvT8QPJTFraOFW0f" DefinedType="IfcYearNumber" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The year element of the calendar date.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR21" UniqueId="06lC8s4TjDRRBYt6i76_$A">
+			<Documentation>Checks that calendar date has a valid value with regard to the number of days
+in a month including special cases of leap years.</Documentation>
+			<Expression>IfcValidCalendarDate (SELF)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

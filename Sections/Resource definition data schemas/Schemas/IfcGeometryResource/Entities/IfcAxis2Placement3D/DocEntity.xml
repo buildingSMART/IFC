@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAxis2Placement3D" UniqueId="26b1240c-4ac9-469d-8fd3-861653fa5f75" DiagramNumber="3" BaseDefinition="IfcPlacement" EntityFlags="109">
+	<Attributes>
+		<DocAttribute Name="Axis" UniqueId="29674702-70eb-4659-a721-8fbac8556be2" DefinedType="IfcDirection" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The exact direction of the local Z Axis.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="RefDirection" UniqueId="469b612b-d3e6-4c60-b682-830211fd3c06" DefinedType="IfcDirection" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The direction used to determine the direction of the local X Axis. If necessary an adjustment is made to maintain orthogonality to the Axis direction. If Axis and/or RefDirection is omitted, these directions are taken from the geometric coordinate system.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="P" UniqueId="53799898-8478-414f-9c4f-71cf6fe9fcc3" DefinedType="IfcDirection" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="3" AggregationUpper="3">
+			<Documentation>The normalized directions of the placement X Axis (P[1]) and the placement Y Axis (P[2]) and the placement Z Axis (P[3]).</Documentation>
+			<Derived>IfcBuildAxes(Axis, RefDirection)</Derived>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="0DHpj3ReL2u88yuLTuu5KX">
+			<Documentation>The dimensionality of the placement location shall be 3.</Documentation>
+			<Expression>SELF\IfcPlacement.Location.Dim = 3</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR2" UniqueId="31DfIYN$z4Z9$0wIyYBNsL">
+			<Documentation>The Axis when given should only reference a three-dimensional IfcDirection.</Documentation>
+			<Expression>(NOT (EXISTS (Axis))) OR (Axis.Dim = 3)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR3" UniqueId="0vXleglKHDOQiqCIZyIbTT">
+			<Documentation>The RefDirection when given should only reference a three-dimensional IfcDirection.</Documentation>
+			<Expression>(NOT (EXISTS (RefDirection))) OR (RefDirection.Dim = 3)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR4" UniqueId="2yv7bel6f1nQsRBNgrNipp">
+			<Documentation>The Axis and RefDirection shall not be parallel or anti-parallel.</Documentation>
+			<Expression>(NOT (EXISTS (Axis))) OR (NOT (EXISTS (RefDirection))) OR (IfcCrossProduct(Axis,RefDirection).Magnitude &gt; 0.0)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR5" UniqueId="050quSJzb7iPSdiJl16Fv6">
+			<Documentation>Either both (Axis and RefDirection) are not given and therefore defaulted, or both shall be given. This is a further constraint in IFC Release 1.5.</Documentation>
+			<Expression>NOT ((EXISTS (Axis)) XOR (EXISTS (RefDirection)))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

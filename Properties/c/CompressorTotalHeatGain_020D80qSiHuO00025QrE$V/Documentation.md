@@ -1,0 +1,1 @@
+﻿Compressor total heat gain.

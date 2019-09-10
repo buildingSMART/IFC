@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPointOnSurface" UniqueId="a7b0a4ed-3952-415a-b428-67b95e5273cd" DiagramNumber="3" BaseDefinition="IfcPoint" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="BasisSurface" UniqueId="3415acd6-19b0-4948-8be2-d4f419ace10a" DefinedType="IfcSurface" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The surface to which the parameter values relate.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="PointParameterU" UniqueId="62ebc5bd-a118-4934-ba4c-12ee902e0f49" DefinedType="IfcParameterValue" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The first parameter value of the point location.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="PointParameterV" UniqueId="8e50f05b-a118-43a2-89da-73538af766d3" DefinedType="IfcParameterValue" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The second parameter value of the point location.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Dim" UniqueId="dc74b17c-6d54-4257-9dea-ce9933fd62a9" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The space dimensionality of this class, determined by the space dimensionality of the basis surface.</Documentation>
+			<Derived>BasisSurface.Dim</Derived>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

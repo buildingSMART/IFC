@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTubeBundleType" UniqueId="a152e66f-594f-4779-90f7-092829204b79" DiagramNumber="1" BaseDefinition="IfcEnergyConversionDeviceType" EntityFlags="101">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="b68c7534-05cc-4f1a-8a8d-a1551285c2ee" DefinedType="IfcTubeBundleTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Defines the type of tube bundle.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="1L$_bkCmn5p9SErr8qO0bG">
+			<Expression>(PredefinedType &lt;&gt; IfcTubeBundleTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcTubeBundleTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

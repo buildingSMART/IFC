@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCompositeProfileDef" UniqueId="f27d7589-d76f-4bdd-9102-d6fee84cd2a1" DiagramNumber="6" BaseDefinition="IfcProfileDef" EntityFlags="237">
+	<Attributes>
+		<DocAttribute Name="Profiles" UniqueId="b0a0408a-c633-4045-ac25-f4c080cd3c6b" DefinedType="IfcProfileDef" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="2" AggregationUpper="0">
+			<Documentation>The profiles which are used to define the composite profile.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Label" UniqueId="0f23f815-2fda-49a3-a4d6-a788b8a249ba" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The name by which the composition may be referred to. The actual meaning of the name has to be defined in the context of applications.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="3$OVeiOCr1yPKtv6HNXKlY">
+			<Documentation>Either all profiles are areas or all profiles are curves.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* Profiles | temp.ProfileType &lt;&gt; Profiles[1].ProfileType)) = 0</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR2" UniqueId="2OxMWX7dT3M9ybd_Pueup0">
+			<Documentation>A composite profile should not include another composite profile, i.e. no recursive definitions should be allowed.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* Profiles | &apos;IFCPROFILERESOURCE.IFCCOMPOSITEPROFILEDEF&apos; IN TYPEOF(temp))) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

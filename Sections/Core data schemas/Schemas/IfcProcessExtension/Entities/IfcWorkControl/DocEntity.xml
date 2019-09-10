@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcWorkControl" UniqueId="d247df5b-2f6d-4ef6-bca1-19a0283512e0" DiagramNumber="1" BaseDefinition="IfcControl" EntityFlags="197">
+	<Subtypes>
+		<DocSubtype UniqueId="e4c0c418-1d37-4f1b-a39b-2421690fff8e" DefinedType="IfcWorkPlan" />
+		<DocSubtype UniqueId="3d4168a1-8435-4dc0-87e2-93f3e4088a2b" DefinedType="IfcWorkSchedule" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="Identifier" UniqueId="1uVJVUeSH6nh4QrCLGs1If" DefinedType="IfcIdentifier" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Identifier of the work plan, given by user.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="CreationDate" UniqueId="0a22762a-7121-44bd-92cb-3bbd2bc1e0e2" DefinedType="IfcDateTimeSelect" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The date that the plan is created.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Creators" UniqueId="fed840b2-43b1-4d71-a833-6854015a193b" DefinedType="IfcPerson" AttributeFlags="1" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+			<Documentation>The authors of the work plan.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Purpose" UniqueId="8c118d77-09d3-47b2-a847-5b113d037d15" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>A description of the purpose of the work schedule.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Duration" UniqueId="e0b21a3a-7521-46f1-8fc4-4bf3f214537f" DefinedType="IfcTimeMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The total duration of the entire work schedule.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="TotalFloat" UniqueId="67a16ba6-45d6-4997-bd66-2e4ea6494da8" DefinedType="IfcTimeMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The total time float of the entire work schedule.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="StartTime" UniqueId="0ff50aa4-80b0-42b6-94a8-8738e35d9864" DefinedType="IfcDateTimeSelect" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The start time of the schedule.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="FinishTime" UniqueId="eb43d20b-df3a-48f8-81f4-bf103d0f01b1" DefinedType="IfcDateTimeSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The finish time of the schedule.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="WorkControlType" UniqueId="022abKH6D64gTogIsnLAm1" DefinedType="IfcWorkControlTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Predefined work control types from which that required may be set.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="UserDefinedControlType" UniqueId="3hmW89aG1Dy8hqDNKX1JSi" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>A user defined work control type.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="2dgDZnW_PCOBqo8cgC8L9L">
+			<Documentation>The attribute UserDefinedControlType must be asserted when the value of the IfcWorkControlTypeEnum is set to USERDEFINED.</Documentation>
+			<Expression>(WorkControlType &lt;&gt; IfcWorkControlTypeEnum.USERDEFINED) OR
+((WorkControlType = IfcWorkControlTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcWorkControl.UserDefinedControlType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

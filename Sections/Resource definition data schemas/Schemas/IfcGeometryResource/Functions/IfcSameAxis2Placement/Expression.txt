@@ -1,0 +1,6 @@
+﻿  (ap1, ap2 : IfcAxis2Placement; Epsilon : REAL)
+  : LOGICAL ;
+
+  RETURN (IfcSameDirection(ap1.P[1],ap2.P[1],Epsilon) AND
+          IfcSameDirection(ap1.P[2],ap2.P[2],Epsilon) AND
+          IfcSameCartesianPoint(ap1.Location,ap1.Location,Epsilon));

@@ -1,0 +1,1 @@
+﻿This property set is used to define the various types of pipe connections. It is applied to occurrences of pipe segments and fittings.

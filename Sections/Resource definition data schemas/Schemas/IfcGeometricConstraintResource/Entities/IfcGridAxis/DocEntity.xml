@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGridAxis" UniqueId="c88238d9-0400-4b8f-846c-03fd460a7fa9" DiagramNumber="1" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="AxisTag" UniqueId="f222aeae-6918-400f-8a3a-d30bc1517fdd" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The tag or name for this grid axis.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="AxisCurve" UniqueId="589c5a86-2e76-4350-a83e-c51111d24192" DefinedType="IfcCurve" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Underlying curve which provides the geometry for this grid axis.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="SameSense" UniqueId="64d5940a-89dc-4943-b2bb-32f8fabbef9c" DefinedType="IfcBoolean" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Defines whether the original sense of curve is used or whether it is reversed in the context of the grid axis.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="PartOfW" UniqueId="37f2104e-edaa-42e5-9169-517462c7484e" DefinedType="IfcGrid" AttributeFlags="32" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="WAxes">
+			<Documentation>If provided, the _IfcGridAxis_ is part of the _WAxes_ of _IfcGrid_.
+&gt; &lt;small&gt;
+  &lt;font color=&quot;#FF0000&quot;&gt;IFC2x Edition 3 CHANGE&amp;nbsp; New inverse attribute.&lt;/font&gt;
+&lt;/small&gt;</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="PartOfV" UniqueId="2d9d9cfa-15a7-4eba-9d29-d6c6b56c8ca7" DefinedType="IfcGrid" AttributeFlags="32" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="VAxes">
+			<Documentation>If provided, the _IfcGridAxis_ is part of the _VAxes_ of _IfcGrid_.
+&gt; &lt;small&gt;
+  &lt;font color=&quot;#FF0000&quot;&gt;IFC2x Edition 3 CHANGE&amp;nbsp; New inverse attribute.&lt;/font&gt;
+&lt;/small&gt;</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="PartOfU" UniqueId="a67ae0fa-6b90-407b-a0af-d5724a050f0d" DefinedType="IfcGrid" AttributeFlags="32" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="UAxes">
+			<Documentation>If provided, the _IfcGridAxis_ is part of the _UAxes_ of _IfcGrid_.
+&gt; &lt;small&gt;
+  &lt;font color=&quot;#FF0000&quot;&gt;IFC2x Edition 3 CHANGE&amp;nbsp; New inverse attribute.&lt;/font&gt;
+&lt;/small&gt;</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="HasIntersections" UniqueId="351beb68-0443-424d-8205-71b6086c5eb7" DefinedType="IfcVirtualGridIntersection" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="IntersectingAxes">
+			<Documentation>The reference to a set of &lt;IfcVirtualGridIntersection&apos;s, that connect other grid axes to this grid axis.
+&gt; &lt;small&gt;
+  &lt;font color=&quot;#FF0000&quot;&gt;IFC2x3 CHANGE&amp;nbsp; New inverse attribute.&lt;/font&gt;
+&lt;/small&gt;</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="0fd32b9d-fce5-4505-8caf-23975f35d27a">
+			<Documentation>The dimensionality of the grid axis is 2.</Documentation>
+			<Expression>AxisCurve.Dim = 2</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR2" UniqueId="4fd0b532-1700-4550-a83d-4d0da28f8626">
+			<Documentation>The _IfcGridAxis_ needs to be used by exactly one of the three attributes of _IfcGrid_:
+* _UAxes_
+* _VAxes_
+* _WAxes_
+
+
+i.e. it can only refer to a single instance of _IfcGrid_ in one of the three list of axes.</Documentation>
+			<Expression>(SIZEOF(PartOfU) = 1) XOR (SIZEOF(PartOfV) = 1) XOR (SIZEOF(PartOfW) = 1)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

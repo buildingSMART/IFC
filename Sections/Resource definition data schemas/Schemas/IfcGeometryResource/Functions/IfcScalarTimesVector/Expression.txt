@@ -1,0 +1,27 @@
+﻿  (Scalar : REAL; Vec : IfcVectorOrDirection)
+    : IfcVector;
+LOCAL
+  V : IfcDirection;
+  Mag : REAL;
+  Result : IfcVector;
+END_LOCAL;
+
+  IF NOT EXISTS (Scalar) OR NOT EXISTS (Vec) THEN
+    RETURN (?) ;
+  ELSE
+    IF 'IFCGEOMETRYRESOURCE.IFCVECTOR' IN TYPEOF (Vec) THEN
+      V := Vec\IfcVector.Orientation;
+      Mag := Scalar * Vec\IfcVector.Magnitude;
+    ELSE
+      V := Vec;
+      Mag := Scalar;
+    END_IF;
+    IF (Mag < 0.0 ) THEN
+      REPEAT i := 1 TO SIZEOF(V.DirectionRatios);
+        V.DirectionRatios[i] := -V.DirectionRatios[i];
+      END_REPEAT;
+      Mag := -Mag;
+    END_IF;
+    Result := IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcVector(IfcNormalise(V), Mag);
+  END_IF;
+  RETURN (Result);

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAnnotationSurfaceOccurrence" UniqueId="0tE5Q3maD2POkXfkbMIZkp" DiagramNumber="1" BaseDefinition="IfcAnnotationOccurrence" EntityFlags="229">
+	<WhereRules>
+		<DocWhereRule Name="WR31" UniqueId="0tlrb$yRT70OBqz52azbJJ">
+			<Documentation>The _Item_ that is styled by an _IfcAnnotationSurfaceOccurrence_ relation shall be (if provided) a subtype of _IfcSurface, IfcSolidModel, IfcShellBasedSurfaceModel, IfcFaceBasedSurfaceModel_.
+&gt; &lt;small&gt;NOTE&amp;nbsp; If no &lt;i&gt;Item&lt;/i&gt; is provided, the &lt;i&gt;IfcAnnotationSurfaceOccurrence&lt;/i&gt; is used to provide a surface style to a material dependent presentation.
+&lt;/small&gt;</Documentation>
+			<Expression>NOT(EXISTS(SELF\IfcStyledItem.Item)) OR 
+(SIZEOF(
+ [&apos;IFCGEOMETRYRESOURCE.IFCSURFACE&apos;,
+  &apos;IFCGEOMETRICMODELRESOURCE.IFCFACEBASEDSURFACEMODEL&apos;,
+  &apos;IFCGEOMETRICMODELRESOURCE.IFCSHELLBASEDSURFACEMODEL&apos;,
+  &apos;IFCGEOMETRICMODELRESOURCE.IFCSOLIDMODEL&apos;] *
+ TYPEOF(SELF\IfcStyledItem.Item)) &gt; 0)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

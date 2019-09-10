@@ -1,0 +1,17 @@
+﻿(Lis : LIST [0:?] OF GENERIC : T;
+       Low,U : INTEGER) : ARRAY OF GENERIC : T;
+   LOCAL
+     N   : INTEGER;
+     Res : ARRAY [Low:U] OF GENERIC : T;
+   END_LOCAL;
+      
+   N := SIZEOF(Lis);
+   IF (N <> (U-Low +1)) THEN
+     RETURN(?);
+   ELSE
+     Res := [Lis[1] : N];
+     REPEAT i := 2 TO N;
+       Res[Low+i-1] := Lis[i];
+     END_REPEAT;
+     RETURN(Res);
+   END_IF;

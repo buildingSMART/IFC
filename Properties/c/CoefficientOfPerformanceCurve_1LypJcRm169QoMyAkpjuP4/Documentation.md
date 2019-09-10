@@ -1,0 +1,1 @@
+﻿Chiller coefficient of performance (COP) is function of condensing temperature and evaporating temperature, data is in table form,  COP= f (TempCon, TempEvp),  COP = a2+b2\*Tei+c2\*Tei\^2+d2\*Tci+e2\*Tci\^2+f2\*Tei\*Tci

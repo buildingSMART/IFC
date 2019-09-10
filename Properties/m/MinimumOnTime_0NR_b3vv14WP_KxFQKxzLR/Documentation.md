@@ -1,0 +1,1 @@
+﻿Minimum on time

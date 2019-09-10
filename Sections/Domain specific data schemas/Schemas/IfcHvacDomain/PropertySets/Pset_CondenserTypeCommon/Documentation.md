@@ -1,0 +1,1 @@
+﻿Condenser type common attributes.

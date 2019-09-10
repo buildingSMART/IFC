@@ -1,0 +1,1 @@
+﻿Properties related to the comfort requirements for thermal and other  thermal related performances of spaces that apply to the occurrences of IfcSpace or IfcZone. This includes the required design temperature, humidity, and air conditioning.

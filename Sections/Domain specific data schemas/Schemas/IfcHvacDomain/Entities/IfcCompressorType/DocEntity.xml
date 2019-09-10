@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCompressorType" UniqueId="7da5429d-8a3e-4380-bd61-3b719dbfeebd" DiagramNumber="3" BaseDefinition="IfcFlowMovingDeviceType" EntityFlags="101">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="ffbabe3c-9c16-47e1-ac44-bc3c7f0c6e62" DefinedType="IfcCompressorTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Defines the type of compressor (e.g., hermetic, reciprocating, etc.).</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="1kUTxd8ojEXQ_ok2Ja5cAB">
+			<Expression>(PredefinedType &lt;&gt; IfcCompressorTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcCompressorTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

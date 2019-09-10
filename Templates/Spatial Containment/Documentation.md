@@ -1,0 +1,1 @@
+﻿Provision of a logical assignment of the "element" to the spatial project structure (to the containing site, building, story, or space object).

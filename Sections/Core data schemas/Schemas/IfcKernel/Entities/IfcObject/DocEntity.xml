@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcObject" UniqueId="03ad1d5a-0288-44a7-b612-096bd45ae66b" DiagramNumber="1" BaseDefinition="IfcObjectDefinition" EntityFlags="205">
+	<Subtypes>
+		<DocSubtype UniqueId="98e18a22-dc53-48f4-a980-3e0269144315" DefinedType="IfcActor" />
+		<DocSubtype UniqueId="3527e2dc-dcbc-44db-b9b8-fa0a79fb75a3" DefinedType="IfcControl" />
+		<DocSubtype UniqueId="63fda257-a063-4d05-9139-a046dc6e78ea" DefinedType="IfcGroup" />
+		<DocSubtype UniqueId="11d9972f-dc24-4fc8-b730-8694b23a23fe" DefinedType="IfcProcess" />
+		<DocSubtype UniqueId="3fafd594-f504-4bb5-b2cf-ef02ebb71f40" DefinedType="IfcProduct" />
+		<DocSubtype UniqueId="3Xyd5ozA152P1pfnnKuJhj" DefinedType="IfcProject" />
+		<DocSubtype UniqueId="5ef6060a-53b7-4bcb-a425-2e400f21551b" DefinedType="IfcResource" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="ObjectType" UniqueId="a2a49b49-46e4-4a0d-a311-916cc1dd4a25" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The type denotes a particular type that indicates the object further. The use has to be established at the level of instantiable subtypes. In particular it holds the user defined type, if the enumeration of the attribute _PredefinedType_ is set to USERDEFINED.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="IsDefinedBy" UniqueId="e2315ec5-85ce-457d-b508-07be258c2138" DefinedType="IfcRelDefines" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatedObjects">
+			<Documentation>Set of relationships to type or property (statically or dynamically defined) information that further define the object. In case of type information, the associated _IfcTypeObject_ contains the specific information (or type, or style), that is common to all instances of _IfcObject_ referring to the same type.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="1LzEa6b3f3NQgG_gNbpO8F">
+			<Documentation>Only maximum of one relationship to an underlying type (by an _IfcRelDefinesByType_ relationship) should be given for an object instance.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* IsDefinedBy | &apos;IFCKERNEL.IFCRELDEFINESBYTYPE&apos; IN TYPEOF(temp))) &lt;= 1</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

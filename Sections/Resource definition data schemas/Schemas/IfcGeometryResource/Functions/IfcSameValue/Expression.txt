@@ -1,0 +1,9 @@
+﻿	(Value1, Value2 : REAL; Epsilon : REAL)
+	: LOGICAL;
+  LOCAL
+    ValidEps    : REAL;
+    DefaultEps  : REAL := 0.000001;
+  END_LOCAL;
+  
+  ValidEps := NVL(Epsilon, DefaultEps);
+  RETURN ((Value1 + ValidEps > Value2) AND (Value1 < Value2 + ValidEps));

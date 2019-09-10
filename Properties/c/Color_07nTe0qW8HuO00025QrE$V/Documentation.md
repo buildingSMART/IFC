@@ -1,0 +1,1 @@
+﻿Principal color of the object.

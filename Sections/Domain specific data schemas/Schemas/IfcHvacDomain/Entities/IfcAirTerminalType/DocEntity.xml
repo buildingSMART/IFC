@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAirTerminalType" UniqueId="cf1c47c5-d381-48b1-a302-0b1cd5558409" DiagramNumber="3" BaseDefinition="IfcFlowTerminalType" EntityFlags="101">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="2d695211-8a80-4cd1-add4-873b49fe778e" DefinedType="IfcAirTerminalTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="1YkHGqnM58Suv_MIqj0ugA">
+			<Expression>(PredefinedType &lt;&gt; IfcAirTerminalTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcAirTerminalTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,1 @@
+﻿Soil appliance that receives urine and directs it to a waste outlet (BS6100)

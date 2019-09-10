@@ -1,0 +1,1 @@
+﻿Total planned area for the building  Used for programming the building.

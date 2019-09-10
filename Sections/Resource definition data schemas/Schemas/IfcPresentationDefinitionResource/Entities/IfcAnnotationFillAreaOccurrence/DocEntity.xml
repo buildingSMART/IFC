@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAnnotationFillAreaOccurrence" UniqueId="3S2O5U92H2QeKtLYzLeMjh" DiagramNumber="1" BaseDefinition="IfcAnnotationOccurrence" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="FillStyleTarget" UniqueId="34YFiT6_j8KOvmHZYGTypZ" DefinedType="IfcPoint" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The point that specifies the starting location for the fill area style assigned to the annotation fill area occurrence. Depending on the attribute _GlobalOrLocal_ the point is either given within the world coordinate system of the project or within the object coordinate system of the element or annotation. If the _FillStyleTarget_ is not given, it defaults to 0.,0.
+  
+&gt; &lt;small&gt;&lt;font color=&quot;#ff0000&quot;&gt;
+IFC2x Edition 3 CHANGE&amp;nbsp; The attribute has been made OPTIONAL.
+  &lt;/font&gt;&lt;/small&gt;</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="GlobalOrLocal" UniqueId="0iF8PTCj5Awg1$PUYByx_U" DefinedType="IfcGlobalOrLocalEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The coordinate system in which the _FillStyleTarget_ point is given. Depending on the attribute _GlobalOrLocal_ the point is either given within the world coordinate system of the project or within the object coordinate system of the element or annotation. If not given, the hatch style is directly applied to the parameterization of the geometric representation item, e.g. to the surface coordinate sytem, defined by the surface normal.
+  
+&gt; &lt;small&gt;&lt;font color=&quot;#ff0000&quot;&gt;
+IFC2x Edition 3 CHANGE&amp;nbsp; The attribute has been added.
+  &lt;/font&gt;&lt;/small&gt;</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR31" UniqueId="3$Dx3aWx9F3ue02lNt4DXv">
+			<Documentation>The _Item_ that is styled by an _IfcAnnotationFillAreaOccurrence_ relation shall be (if provided) an _IfcAnnotationFillArea_.
+&gt; &lt;small&gt;NOTE&amp;nbsp; If no &lt;i&gt;Item&lt;/i&gt; is provided, the &lt;i&gt;IfcAnnotationFillAreaOccurrence&lt;/i&gt; is used to provide a fill area style to a material dependent presentation.
+&lt;/small&gt;</Documentation>
+			<Expression>NOT(EXISTS(SELF\IfcStyledItem.Item)) OR
+(&apos;IFCPRESENTATIONDEFINITIONRESOURCE.IFCANNOTATIONFILLAREA&apos; IN TYPEOF (SELF\IfcStyledItem.Item))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

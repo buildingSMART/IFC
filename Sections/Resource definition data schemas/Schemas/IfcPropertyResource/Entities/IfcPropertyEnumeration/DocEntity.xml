@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPropertyEnumeration" UniqueId="95f63d3d-7d92-449b-89e3-626dfacc0648" DiagramNumber="2" EntityFlags="229">
+	<Attributes>
+		<DocAttribute Name="Name" UniqueId="e64d7c48-2084-49bc-97e3-b1caa44a5567" DefinedType="IfcLabel" AttributeFlags="2" AggregationType="0" AggregationFlag="0">
+			<Documentation>Name of this enumeration.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="EnumerationValues" UniqueId="4de323e5-9f21-42b4-bb59-93e3f65054fe" DefinedType="IfcValue" AttributeFlags="0" AggregationType="1" AggregationFlag="2" AggregationLower="1" AggregationUpper="0">
+			<Documentation>List of values that form the enumeration.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Unit" UniqueId="49677ec8-ed2f-47c0-9fc4-ff28957e44c6" DefinedType="IfcUnit" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Unit for the enumerator values, if not given, the default value for the measure type (given by the TYPE of nominal value) is used as defined by the global unit assignment at IfcProject.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<UniqueRules>
+		<DocUniqueRule Name="UR1" UniqueId="e44b6f8d-7dda-412d-a982-565d0c6aa010">
+			<Items>
+				<DocUniqueRuleItem Name="Name" UniqueId="0mS69G0xz6UvVMmCf1jmH9" />
+			</Items>
+		</DocUniqueRule>
+	</UniqueRules>
+	<WhereRules>
+		<DocWhereRule Name="WR01" UniqueId="162e6eb9-035c-437c-9fa2-af285fd98cec">
+			<Documentation>All values within the list of _EnumerationValues_ shall be of the same measure type.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* SELF.EnumerationValues | 
+  NOT(TYPEOF(SELF.EnumerationValues[1]) = TYPEOF(temp))
+  )) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+
