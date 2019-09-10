@@ -2,13 +2,17 @@
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcProjectedCRS" UniqueId="03421a5b-09f0-4284-a397-06d83f4f7684" DiagramNumber="4" BaseDefinition="IfcCoordinateReferenceSystem" EntityFlags="229">
 	<Localization>
 		<DocLocalization Name="Projiziertes Koordinatenreferenzsystem" Locale="de" />
+		<DocLocalization Name="Projected CRS" Locale="en" />
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="4917.3782" Y="1946.0048" Width="293.6751" Height="263.35958" />
 	<Attributes>
 		<DocAttribute Name="MapProjection" UniqueId="9e324f9a-8d48-45d4-8936-f526297f87af" DefinedType="IfcIdentifier" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Name by which the map projection is identified.
-* UTM
-* Gaus-Krueger</Documentation>
+
+{ .examples}
+&gt; EXAMPLE&amp;nbsp; map projects include: { .note}
+&gt; * UTM
+&gt; * Gaus-Krueger</Documentation>
 			<DiagramLine>
 				<DocPoint X="5211.0533" Y="2074.4815" />
 				<DocPoint X="5835.7572" Y="2074.4815" />
@@ -16,9 +20,12 @@
 			<DiagramLabel xsi:type="DocRectangle" X="5211.0533" Y="2074.4815" Width="164" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="MapZone" UniqueId="599648d5-3488-4334-b78f-7d9a11dfccc4" DefinedType="IfcIdentifier" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Name by which the map zone, relating to the _MapProjection_, is identified. Examples are
-* for UTM, the zone number, like 32 for UTM32
-* for Gaus-Krueger, the zones of longitudinal width, like 3&apos;</Documentation>
+			<Documentation>Name by which the map zone, relating to the _MapProjection_, is identified. 
+
+{ .examples}
+&gt; EXAMPLE&amp;nbsp; { .note}
+&gt; * for UTM, the zone number, like 32 for UTM32
+&gt; * for Gaus-Krueger, the zones of longitudinal width, like 3&apos;</Documentation>
 			<DiagramLine>
 				<DocPoint X="5211.0533" Y="1981.5907" />
 				<DocPoint X="5835.74781" Y="1981.5907" />
@@ -36,7 +43,7 @@
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="WR11" UniqueId="11a4e55f-8343-4688-b550-610e9f02c02c">
+		<DocWhereRule Name="IsLengthUnit" UniqueId="d422dca1-419e-4f59-998a-5c063594a9fe">
 			<Documentation>The map unit shall be given, if present, as a length unit.</Documentation>
 			<Expression>NOT(EXISTS(MapUnit)) OR (MapUnit.UnitType = IfcUnitEnum.LENGTHUNIT)</Expression>
 		</DocWhereRule>

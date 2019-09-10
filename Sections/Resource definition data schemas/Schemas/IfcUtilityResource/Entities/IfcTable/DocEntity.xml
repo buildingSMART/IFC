@@ -2,65 +2,66 @@
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTable" UniqueId="a998a201-457f-4f17-9337-b5f2acb084d8" DiagramNumber="2" EntityFlags="229">
 	<Localization>
 		<DocLocalization Name="Tabelle" Locale="de" />
+		<DocLocalization Name="Table" Locale="en" />
 		<DocLocalization Name="Table" Locale="fr" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1759.6349" Y="926.09959" Width="359.90156" Height="336.4714" />
+	<DiagramRectangle xsi:type="DocRectangle" X="36.9682223002116" Y="920.766235351563" Width="325.234883626302" Height="1397.80478922526" />
 	<Attributes>
 		<DocAttribute Name="Name" UniqueId="9abc07c5-b708-450e-a8bd-c055f3dd735e" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<DiagramLine>
-				<DocPoint X="2119.5365" Y="971.47791" />
-				<DocPoint X="3148.761" Y="971.47791" />
-				<DocPoint X="3148.761" Y="1594.02315" />
-				<DocPoint X="3150.9427536" Y="1594.02315" />
-				<DocPoint X="3150.9427536" Y="1987.72049" />
-				<DocPoint X="2900.6804536" Y="1987.72049" />
+				<DocPoint X="362.203105926514" Y="927.720598004557" />
+				<DocPoint X="362.203105926514" Y="927.720598004557" />
+				<DocPoint X="597.102233886719" Y="927.720598004557" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2192.857542" Y="963.5707862" Width="73" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="362.203105926514" Y="907.720598004557" Width="73" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Rows" UniqueId="7022ee4b-bd52-48f7-9edb-ef5c09c44206" DefinedType="IfcTableRow" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Reference to information content of rows.</Documentation>
 			<DiagramLine>
-				<DocPoint X="1927.1706" Y="1262.571" />
-				<DocPoint X="1927.1706" Y="1495.59359" />
+				<DocPoint X="362.203105926514" Y="1875.96751658122" />
+				<DocPoint X="362.203105926514" Y="1875.96751658122" />
+				<DocPoint X="604.091247558594" Y="1875.96751658122" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2017.190649" Y="1256.3454082" Width="146" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="362.203105926514" Y="1855.96751658122" Width="146" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Columns" UniqueId="6290f013-626e-4be6-a71e-0133059ad85e" DefinedType="IfcTableColumn" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The column information associated with this table.</Documentation>
 			<DiagramLine>
-				<DocPoint X="1933.3782" Y="926.09959" />
-				<DocPoint X="1933.3782" Y="847.278332" />
-				<DocPoint X="1933.330795493" Y="847.278332" />
-				<DocPoint X="1933.330795493" Y="768.457074" />
+				<DocPoint X="362.203105926514" Y="1348.3051961263" />
+				<DocPoint X="362.203105926514" Y="1348.3051961263" />
+				<DocPoint X="601.424580891927" Y="1348.3051961263" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2039.91711" Y="945.756771" Width="181" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="362.203105926514" Y="1328.3051961263" Width="181" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="NumberOfCellsInRow" UniqueId="a079c8cc-df08-4b62-b081-51e8572745d1" DefinedType="INTEGER" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="NumberOfCellsInRow" UniqueId="a079c8cc-df08-4b62-b081-51e8572745d1" DefinedType="IfcInteger" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The number of cells in each row, this complies to the number of columns in a table. See WR2 that ensures that each row has the same number of cells. The actual value is derived from the first member of the Rows list.</Documentation>
 			<Derived>HIINDEX(Rows[1].RowCells)</Derived>
 			<DiagramLine>
-				<DocPoint X="2119.5365" Y="1054.8201" />
-				<DocPoint X="2596.23917" Y="1054.8201" />
+				<DocPoint X="362.203105926514" Y="2126.36938889821" />
+				<DocPoint X="362.203105926514" Y="2126.36938889821" />
+				<DocPoint X="1215.54047680013" Y="2126.36938889821" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2129.861176" Y="1048.7403527" Width="321" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="362.203105926514" Y="2106.36938889821" Width="321" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="NumberOfHeadings" UniqueId="f715f965-b239-42f1-b0c7-fd99d00ea73a" DefinedType="INTEGER" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="NumberOfHeadings" UniqueId="f715f965-b239-42f1-b0c7-fd99d00ea73a" DefinedType="IfcInteger" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The number of headings in a table. This is restricted by WR3 to max. one.</Documentation>
 			<Derived>SIZEOF(QUERY( Temp &lt;* Rows | Temp.IsHeading))</Derived>
 			<DiagramLine>
-				<DocPoint X="2119.5365" Y="1147.4878" />
-				<DocPoint X="2596.27257" Y="1147.4878" />
+				<DocPoint X="362.203105926514" Y="2185.0109945933" />
+				<DocPoint X="362.203105926514" Y="2185.0109945933" />
+				<DocPoint X="1215.54047680013" Y="2185.0109945933" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2116.4690044" Y="1136.922916" Width="301" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="362.203105926514" Y="2165.0109945933" Width="301" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="NumberOfDataRows" UniqueId="c5f803f8-2be0-441c-9417-3e937fb62764" DefinedType="INTEGER" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="NumberOfDataRows" UniqueId="c5f803f8-2be0-441c-9417-3e937fb62764" DefinedType="IfcInteger" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The number of rows in a table that contains data, i.e. total number of rows minus number of heading rows in table.</Documentation>
 			<Derived>SIZEOF(QUERY( Temp &lt;* Rows | NOT(Temp.IsHeading)))</Derived>
 			<DiagramLine>
-				<DocPoint X="2119.5365" Y="1228.9238" />
-				<DocPoint X="2596.27257" Y="1228.9238" />
+				<DocPoint X="362.203105926514" Y="2243.65260028839" />
+				<DocPoint X="362.203105926514" Y="2243.65260028839" />
+				<DocPoint X="1215.54047680013" Y="2243.65260028839" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2127.1145641" Y="1215.264631" Width="311" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="362.203105926514" Y="2223.65260028839" Width="311" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

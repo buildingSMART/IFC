@@ -35,22 +35,6 @@ The following keywords for _IfcMaterialConstituentSet.MaterialConstituents[n].Na
 If the fall back single _IfcMaterial_ is referenced, it applies to the lining and framing of the window.
 
 { .use-head}
-Property Set Use Definition:
-
-The shared property sets relating to the _IfcWindowType_ are defined by the _IfcPropertySet_ and are attached by the _HasPropertySets_ attribute. The following property set definitions specific to the _IfcWindowType_ are part of this IFC release:
-
-> NOTE&nbsp; There is no differentiation between properties within the property set that are only assignable to _IfcWindowType_ and those that are only assignable to _IfcWindow_. If the same property is assigned to the _IfcWindowType_ and the _IfcWindow_ being an occurrence of the _IfcWindowType_, then the occurrence property overrides the type property.
-
-* [Pset_WindowCommon](../../psd/IfcSharedBldgElements/Pset_WindowCommon.xml){ target="SOURCE"}: common property set for all window types.
-* [Pset_DoorWindowGlazingType](../../psd/IfcSharedBldgElements/Pset_DoorWindowGlazingType.xml){ target="SOURCE"}: specific property set for the glazing properties of the door type glazing
-* [Pset_DoorWindowShadingType](../../psd/IfcSharedBldgElements/Pset_DoorWindowShadingType.xml){ target="SOURCE"}: specific property set for the shading properties of the door type shading
-
-Two subtypes of _IfcPreDefinedPropertySet_ are applicable to _IfcWindowType_:
-
-* _IfcWindowLiningProperties_ - a single instance to define the shape parameters of the window lining
-* _IfcWindowPanelProperties_ - one or several instances to define the shape parameters of the window panel(s)
-
-{ .use-head}
 Geometry Use Definitions:
 
 The _IfcWindowType_ may define the common shape of window occurrences. The common shape can be defined by
@@ -58,17 +42,4 @@ The _IfcWindowType_ may define the common shape of window occurrences. The commo
 * applying shape parameters defined within the associated _IfcWindowLiningProperties_ and _IfcWindowPanelProperties_ applied to the 'Profile' geometric representation. It is only applicable if the _IfcWindowType_ has only occurrences of type _IfcWindowStandardCase_ (See geometric use definition of _IfcWindowStandardCase_ for further information).
 * applying the _RepresentationMaps_ attribute to refer to a list of _IfcRepresentationMap_'s, that allow for multiple geometric representations (e.g. with _IfcShapeRepresentation_'s having an _RepresentationIdentifier_ 'Box', 'Profile', 'FootPrint', or 'Body') 
 >> NOTE&nbsp; The product shape representations are defined as _RepresentationMaps_ (attribute of the supertype _IfcTypeProduct_), which get assigned by an element occurrence instance through the _IfcShapeRepresentation.Item[n]_ being an _IfcMappedItem_. See _IfcTypeProduct_ for further information. 
->> NOTE&nbsp; The values of attributes _RepresentationIdentifier_ and _RepresentationType_ of _IfcShapeRepresentation_ are restricted in the same way as those for _IfcWindow_ and _IfcWindowStandardCase_ 
-
-___
-## Common Use Definitions
-The following concepts are inherited at supertypes:
-
-* _IfcRoot_: [Identity](../../templates/identity.htm), [Revision Control](../../templates/revision-control.htm)
-
-[![Image](../../../img/diagram.png)&nbsp;Instance diagram](../../../annex/annex-d/common-use-definitions/ifcwindowtype.htm)
-
-{ .use-head}
-Type Body Geometry
-
-The [Type Body Geometry](../../templates/type-body-geometry.htm) concept applies to this entity.
+>> NOTE&nbsp; The values of attributes _RepresentationIdentifier_ and _RepresentationType_ of _IfcShapeRepresentation_ are restricted in the same way as those for _IfcWindow_ and _IfcWindowStandardCase_

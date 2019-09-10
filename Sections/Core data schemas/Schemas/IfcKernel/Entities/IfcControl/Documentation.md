@@ -6,8 +6,3 @@
 
 { .change-ifc2x4}
 > IFC4 CHANGE&nbsp; Attribute _Identification_ added.
-
-{ .use-head}
-Generic relationship use definition
-
-Controls have assignments from products, processes, or other objects by using the relationship object _IfcRelAssignsToControl_.

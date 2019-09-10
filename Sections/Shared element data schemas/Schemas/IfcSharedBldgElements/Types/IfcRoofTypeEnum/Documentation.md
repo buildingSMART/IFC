@@ -4,24 +4,21 @@ Roofs which are subdivided into more than these basic shapes or roofs with non-r
 
 > HISTORY&nbsp; New enumeration in IFC2x.
 
-{ .spec-head}
-Enumerated Item Definitions:
-
 <table>
 <tr>
 <td>
 <table class="gridtable">
 <tr valign="top">
-<th width="30%" valign="top" align="left"><em>Enumerator</em></th>
-<th width="46%" valign="top" align="left"><em>Description</em></th>
-<th width="23%" valign="top" align="left"><em>Figure</em></th>
+<th width="30%" valign="top" align="left"><i>Enumerator</i></th>
+<th width="46%" valign="top" align="left"><i>Description</i></th>
+<th width="23%" valign="top" align="left"><i>Figure</i></th>
 </tr>
 <tr valign="top">
 <td width="30%" valign="top" align="left">FLAT_ROOF</td>
 <td width="46%" valign="top" align="left">A roof having no slope, or one with only a slight pitch so as to drain
 rainwater.</td>
 <td width="23%" valign="top" align="left"><img src="../../../../../../figures/ifcrooftypeenum-fig01-flatroof.gif" alt="FlatRoof" width="242" height="143" border="0"></td>
-</tr>
+</tr>0
 <tr valign="top">
 <td width="30%" valign="top" align="left">SHED_ROOF</td>
 <td width="46%" valign="top" align="left">A roof having a single slope.</td>

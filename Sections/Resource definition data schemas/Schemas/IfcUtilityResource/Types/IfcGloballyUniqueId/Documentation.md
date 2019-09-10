@@ -12,6 +12,6 @@
 
 The resulting string is a fixed 22 character length string to be exchanged within the IFC exchange file structure.
 
-Refer to the BuildingSMART website ([www.buildingsmart-tech.org](http://www.buildingsmart-tech.org)) for more information and sample encoding algorithms.
+> NOTE&nbsp; Refer to the BuildingSMART website ([www.buildingsmart-tech.org](http://www.buildingsmart-tech.org)) for more information and sample encoding algorithms.
 
 > HISTORY&nbsp; New type in IFC1.5.1.

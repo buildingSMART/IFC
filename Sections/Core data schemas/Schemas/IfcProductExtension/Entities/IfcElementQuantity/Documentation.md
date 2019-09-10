@@ -8,7 +8,7 @@ The name attribute, given at the individual _Quantities_ provides a recognizable
 
 > EXAMPLE&nbsp; To exchange the net floor area of spaces in the German region (as _IfcSpace_), the name might be 'Netto-Grundfl&auml;che' (net floor area), and the method of measurement might be accordingly 'DIN277-2' (German industry norm no. 277 edition 2).
 
-> EXAMPLE&nbsp; The same instance of _IfcSpace_ may have a different area measure assigned in the German region according to a housing regulation, the name would be 'Wohnfl&auml;che' and the method of measurement would be '2.BV'. It would be attached to the _IfcSpace_ by a separate _IfcRelDefinesByProperties_ relationship.&lt;
+> EXAMPLE&nbsp; The same instance of _IfcSpace_ may have a different area measure assigned in the German region according to a housing regulation, the name would be 'Wohnfl&auml;che' and the method of measurement would be '2.BV'. It would be attached to the _IfcSpace_ by a separate _IfcRelDefinesByProperties_ relationship.
 
 The _IfcElementQuantity_ can have the following subtypes of _IfcPhysicalQuantity_ within its SET of _Quantities_, which count for the basis measure types used:
 
@@ -19,18 +19,15 @@ The _IfcElementQuantity_ can have the following subtypes of _IfcPhysicalQuantity
 * volume measure
 * time measure
 
-> HISTORY&nbsp; New entity in IFC2x.
-
-{ .change-ifc2x4}
-> IFC4 CHANGE&nbsp; Subtyped from new intermediate_IfcQuantitySet_ supertype.
-
-{ .use-head}
-Quantity Use Defintion
-
 Base quantities are quantity definitions that are independent of a particular method of measurement and therefore internationally applicable. Base quantities are defined as gross and net values and provided by measurement of the correct geometric shape representation of the element. This specification includes a set of base quantity definition. See each subtype of _IfcElement_ for applicable base quantities.
 
 The following general agreements apply for each base quantity set
 
-*  _IfcElementQuantity.Name_ = &lt;name of the qto definition template&gt; 
-*  _IfcElementQuantity.MethodOfMeasurement_ = 'BaseQuantities' 
-*  _IfcElementQuantity.Quantities_ = SET of subtypes of _IfcPhysicalSimpleQuantity_ with values for the _Name_ attribute as published as part of this specifciation.
+* _IfcElementQuantity.Name_ = &lt;name of the qto definition template&gt;
+* _IfcElementQuantity.MethodOfMeasurement_ = 'BaseQuantities'
+* _IfcElementQuantity.Quantities_ = SET of subtypes of _IfcPhysicalSimpleQuantity_ with values for the _Name_ attribute as published as part of this specifciation.
+
+> HISTORY&nbsp; New entity in IFC2x.
+
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; Subtyped from new intermediate _IfcQuantitySet_ supertype.

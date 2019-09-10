@@ -14,3 +14,6 @@ Informal Propositions:
 
 1. The connected face sets shall not overlap or intersect except at common faces, edges or vertices.
 2. The fbsm faces have dimensionality 2.
+
+{ .deprecated}
+> IFC4 CHANGE&nbsp; The entity has been deprecated and shall not be used. The entity _IfcFacetedBrep_ shall be used instead.

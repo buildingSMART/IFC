@@ -2,19 +2,14 @@
 
 Windows which are subdivided into more than three panels have to be defined by the geometry only. The type of such windows is USERDEFINED.
 
-> HISTORY&nbsp; New Enumeration in IFC2.0.
-
-{ .spec-head}
-Enumerated Item Definitions:
-
 <table>
 <tr>
 <td>
 <table class="gridtable">
 <tr valign="top">
-<th width="30%" valign="top" align="left"><em>Enumerator</em></th>
-<th width="46%" valign="top" align="left"><em>Description</em></th>
-<th width="23%" valign="top" align="left"><em>Figure</em></th>
+<th width="30%" valign="top" align="left"><i>Enumerator</i></th>
+<th width="46%" valign="top" align="left"><i>Description</i></th>
+<th width="23%" valign="top" align="left"><i>Figure</i></th>
 </tr>
 <tr valign="top">
 <td width="30%" valign="top" align="left">SinglePanel</td>
@@ -88,6 +83,8 @@ the third one is vertically at the right hand side.<br></td>
 </td>
 </tr>
 </table>
+
+> HISTORY&nbsp; New Enumeration in IFC2.0.
 
 NOTE
 

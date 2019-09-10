@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRepresentation" UniqueId="487b5a0c-6904-49ae-b622-ec42a5535b20" DiagramNumber="2" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRepresentation" Name="IfcRepresentation" UniqueId="487b5a0c-6904-49ae-b622-ec42a5535b20" DiagramNumber="2" EntityFlags="205">
 	<Localization>
 		<DocLocalization Name="Repräsentation" Locale="de" />
+		<DocLocalization Name="Representation" Locale="en" />
 		<DocLocalization Name="Représentation" Locale="fr" />
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="1685.4836" Y="476.8461" Width="446.23333" Height="492.08378" />
@@ -48,10 +49,11 @@ The supported values for context type are to be specified by implementers agreem
 { .change-ifc2x3}
 &gt; IFC2x3 CHANGE&amp;nbsp; The inverse attribute _LayerAssignments_ has been added</Documentation>
 			<DiagramLine>
-				<DocPoint X="1703.6" Y="476.8461" />
-				<DocPoint X="1703.6" Y="294.54055" />
+				<DocPoint X="1849.44668" Y="476.8461" />
+				<DocPoint X="1849.44668" Y="476.8461" />
+				<DocPoint X="1849.44668" Y="281.207219441732" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1886.17835" Y="492.861745" Width="367" Height="70" />
+			<DiagramLabel xsi:type="DocRectangle" X="1849.44668" Y="261.207219441732" Width="367" Height="70" />
 		</DocAttribute>
 		<DocAttribute Name="LayerAssignments" UniqueId="25d8e6f0-a248-4327-97e1-5cfd45416980" DefinedType="IfcPresentationLayerAssignment" AttributeFlags="32" AggregationType="3" AggregationFlag="0" Inverse="AssignedItems">
 			<Documentation>Assignment of the whole representation to a single or multiple layer(s). The _LayerAssigments_ can be overridden by _LayerAssigments_ of the _IfcRepresentationItem_&apos;s within the list of _Items_.
@@ -60,10 +62,11 @@ The supported values for context type are to be specified by implementers agreem
 { .change-ifc2x3}
 &gt; IFC2x3 CHANGE&amp;nbsp; The inverse attribute _LayerAssignments_ has been added</Documentation>
 			<DiagramLine>
-				<DocPoint X="2108.4755" Y="476.8461" />
-				<DocPoint X="2108.4755" Y="294.53311" />
+				<DocPoint X="2131.71693" Y="476.8461" />
+				<DocPoint X="2131.71693" Y="210.116374454915" />
+				<DocPoint X="2490.11246744792" Y="210.116374454915" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2292.97573" Y="493.502371" Width="352" Height="70" />
+			<DiagramLabel xsi:type="DocRectangle" X="2131.71693" Y="190.116374454915" Width="352" Height="70" />
 		</DocAttribute>
 		<DocAttribute Name="OfProductRepresentation" UniqueId="c55fb5c3-aac5-47ac-adf5-5afc03392f9b" DefinedType="IfcProductRepresentation" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="Representations">
 			<Documentation>Reference to the product representations to which this individual representation applies. In most cases it is the reference to one or many product shapes, to which this shape representation is applicable.
@@ -76,5 +79,27 @@ The supported values for context type are to be specified by implementers agreem
 			<DiagramLabel xsi:type="DocRectangle" X="2134.920029" Y="618.283094" Width="484" Height="70" />
 		</DocAttribute>
 	</Attributes>
+	<Tree>
+		<DocLine>
+			<DiagramLine>
+				<DocPoint X="1908.6003" Y="968.92988" />
+				<DocPoint X="1908.6003" Y="1055.548396" />
+			</DiagramLine>
+			<Tree>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="1908.4308" Y="1055.5484" />
+						<DocPoint X="1908.4308" Y="1187.01072" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="2542.6691" Y="1055.5484" />
+						<DocPoint X="2542.6691" Y="1187.03575" />
+					</DiagramLine>
+				</DocLine>
+			</Tree>
+		</DocLine>
+	</Tree>
 </DocEntity>
 

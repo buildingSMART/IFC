@@ -2,8 +2,9 @@
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcFaceSurface" UniqueId="d6ead809-0b4d-450c-af17-45d526239263" DiagramNumber="2" BaseDefinition="IfcFace" EntityFlags="101">
 	<Localization>
 		<DocLocalization Name="Fläche - Topologie mit expliziter Geometrie" Locale="de" />
+		<DocLocalization Name="Face Surface" Locale="en" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="2484.9" Y="651.15" Width="287.36667" Height="100" />
+	<DiagramRectangle xsi:type="DocRectangle" X="2367.56656901042" Y="648.483357747396" Width="287.36667" Height="302.666666666667" />
 	<Subtypes>
 		<DocSubtype UniqueId="bce0b4c9-6566-410f-a46e-3d99a2d0dd29" DefinedType="IfcAdvancedFace" />
 	</Subtypes>
@@ -11,20 +12,30 @@
 		<DocAttribute Name="FaceSurface" UniqueId="7626166a-83c4-45cd-aaeb-d26d2f7279a4" DefinedType="IfcSurface" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>The surface which defines the internal shape of the face. This surface may be unbounded. The domain of the face is defined by this surface and the bounding loops in the inherited attribute SELF\FaceBounds.</Documentation>
 			<DiagramLine>
-				<DocPoint X="2628.5834" Y="751.15" />
-				<DocPoint X="2628.5834" Y="827.233327" />
+				<DocPoint X="2654.93323901042" Y="861.900007883708" />
+				<DocPoint X="2654.93323901042" Y="861.900007883708" />
+				<DocPoint X="2822.966796875" Y="861.900007883708" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2723.750067" Y="759.2083333" Width="147" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="2654.93323901042" Y="841.900007883708" Width="147" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="SameSense" UniqueId="330e740a-dd30-4ff0-ad4a-713fed936b0b" DefinedType="BOOLEAN" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="SameSense" UniqueId="330e740a-dd30-4ff0-ad4a-713fed936b0b" DefinedType="IfcBoolean" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>This flag indicates whether the sense of the surface normal agrees with (TRUE), or opposes (FALSE), the sense of the topological normal to the face.</Documentation>
 			<DiagramLine>
-				<DocPoint X="2772.2667" Y="701.15" />
-				<DocPoint X="3023.5445" Y="701.15" />
-				<DocPoint X="3023.5445" Y="827.14666" />
+				<DocPoint X="2654.93323901042" Y="753.150024414063" />
+				<DocPoint X="2654.93323901042" Y="753.150024414063" />
+				<DocPoint X="2820.89982096354" Y="753.150024414063" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2818.522365" Y="693.2983333" Width="141" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="2654.93323901042" Y="733.150024414063" Width="141" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<Tree>
+		<DocLine>
+			<DiagramLine>
+				<DocPoint X="2628.5833" Y="648.483357747396" />
+				<DocPoint X="2628.5833" Y="648.483357747396" />
+				<DocPoint X="2628.5833" Y="555.637333" />
+			</DiagramLine>
+		</DocLine>
+	</Tree>
 </DocEntity>
 

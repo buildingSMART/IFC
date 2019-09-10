@@ -2,6 +2,6 @@
 
 Type: _IfcPlaneAngleMeasure_
 
-> NOTE&nbsp; Type adapted from **positive_plane_angle_measure** defined in ISO 10303-41.
+> NOTE&nbsp; Type adapted from **positive_plane_angle_measure** defined in ISO10303-41.
 
 > HISTORY&nbsp; New type in IFC1.5.1.

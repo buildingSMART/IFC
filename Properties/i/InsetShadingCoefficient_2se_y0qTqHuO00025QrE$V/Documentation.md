@@ -1,1 +1,0 @@
-﻿Radiation transmission coefficient of the shading device inside the glazing, symbol "b-value". It is a value without unit.

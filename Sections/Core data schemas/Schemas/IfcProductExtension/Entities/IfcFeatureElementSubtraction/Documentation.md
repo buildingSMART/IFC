@@ -4,22 +4,11 @@
 
 The voiding relationship between a master element and a subtraction feature is geometrically resolved by a Boolean difference operation.
 
-> HISTORY&nbsp; New entity in IFC2x2.
-
-{ .change-ifc2x2}
-> IFC2x2 CHANGE&nbsp; The entity is introduced as an upward compatible extension of the IFC2x platform. It is an intermediate abstract supertype without defining its own explicit attributes.
-
-{ .use-head}
-Geometry Use Definitions
-
-The geometric representation of _IfcFeatureElementSubtraction_ is given by the _IfcProductDefinitionShape_, allowing multiple geometric representations.
-
-**Local Placement**
-
 The local placement for _IfcFeatureElementSubtraction_ is defined in its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_, which defines the local coordinate system that is referenced by all geometric representations. The local placement is always defined in relation to the local placement of the building element from which the feature element substration is substracted:
 
 * The _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point (if given) to the local placement of the same _IfcElement_, which is used in the _VoidsElements.RelatingElement_ inverse attribute.
 
-**Shape Representation**
+> HISTORY&nbsp; New entity in IFC2x2.
 
-The geometry use definitions for the shape representation of the _IfcFeatureElementSubtraction_ is given at the level of its subtypes.
+{ .change-ifc2x2}
+> IFC2x2 CHANGE&nbsp; The entity is introduced as an upward compatible extension of the IFC2x platform. It is an intermediate abstract supertype without defining its own explicit attributes.

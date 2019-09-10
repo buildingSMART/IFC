@@ -1,17 +1,12 @@
-﻿This enumeration defines the basic ways to describe how window panels operate, as shown in Figure 1.
-
-> HISTORY&nbsp; New enumeration in IFC2.0.
-
-{ .spec-head}
-Enumerated Item Definitions:
+﻿This enumeration defines the basic ways to describe how window panels operate, as shown in Figure 2.
 
 <table><tr><td>
-	 <table class="gridtable"> 
-		<tr valign="top"> 
-		  <th width="30%" valign="top" align="left"><em>Enumerator</em></th> 
-		  <th width="50%" valign="top" align="left"><em>Description</em></th> 
-		  <th width="20%" valign="top" align="left"><em>Figure</em></th> 
-		</tr> 
+ <table class="gridtable"> 
+  <tr valign="top"> 
+   <th width="30%" valign="top" align="left"><i>Enumerator</i></th> 
+   <th width="50%" valign="top" align="left"><i>Description</i></th>
+   <th width="20%" valign="top" align="left"><i>Figure</i></th> 
+  </tr> 
 		<tr valign="top"> 
 		  <td width="30%" valign="top" align="left">SideHungRightHand</td> 
 		  <td width="50%" valign="top" align="left">panel that opens to the right
@@ -104,3 +99,5 @@ NOTE
 3. These figures are only shown as illustrations
 
 !["opening direction"](../../../../../../figures/ifcwindowpaneloperationenum-fig13.gif "Figure 2 &mdash; Window panel directions")
+
+> HISTORY&nbsp; New enumeration in IFC2.0.

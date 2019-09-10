@@ -43,8 +43,3 @@ Then the parameterization of the composite curve is:
 Informal Propositions:
 
 1. The _SameSense_ attribute of each segment correctly specifies the senses of the component curves. When traversed in the direction indicated by _SameSense_, the segments shall join end-to-end.
-
-___
-Figure 2 illustrates composite curve usage.
-
-!["usage"](../../../../../../figures/ifccompositecurve.png "Figure 2 &mdash; Composite curve usage")

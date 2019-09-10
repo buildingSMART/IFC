@@ -21,7 +21,7 @@ Figure 2 illustrates a system furniture element object (instance of the _IfcSyst
 Each _IfcFurniture_ object and each _IfcSystemFurnitureElement_ object is of a particular type. It may be a chair, desk, table etc for discrete furniture or modesty panel, side panel, desktop etc. for system furniture. Specification of the type is left to the user of the application providing the information. For applications however, there are a number of predefined property sets for types of furniture that can be assigned to furniture objects. Other property sets may be defined as necessary.
 
 ### 6.4.1.2 Asset Identification
-An _IfcAsset_ allows for the grouping of objects to form a unit that has an identifiable financial value and/or upon which specific facilities management operations take place, as shown in Figure 146.
+An _IfcAsset_ allows for the grouping of objects to form a unit that has an identifiable financial value and/or upon which specific facilities management operations take place, as shown in Figure 3.
 
 Each asset carries a unique identifier, cost, ownership,location and other information that is required.
 

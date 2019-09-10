@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcClassification" UniqueId="86dd2655-910b-4394-9cd1-3478de9e1798" DiagramNumber="2" BaseDefinition="IfcExternalInformation" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcClassification" Name="IfcClassification" UniqueId="86dd2655-910b-4394-9cd1-3478de9e1798" DiagramNumber="2" BaseDefinition="IfcExternalInformation" EntityFlags="237">
 	<Localization>
 		<DocLocalization Name="Klassifikationssystem" Locale="de" />
+		<DocLocalization Name="Classification" Locale="en" />
 		<DocLocalization Name="Classification" Locale="fr" />
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="1979.4373" Y="1248.4272" Width="411.16667" Height="726.49999" />
@@ -99,7 +100,7 @@ conjuction with _IfcClassificationReference_&apos;s. If only one _ReferenceToken
 			</DiagramLine>
 			<DiagramLabel xsi:type="DocRectangle" X="1830.354" Y="1940.1772" Width="414" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="HasReferences" UniqueId="35467369-dd27-41ae-99ba-466f5c1e23ab" DefinedType="IfcClassificationReference" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="ReferencedSource">
+		<DocAttribute Name="HasReferences" UniqueId="35467369-dd27-41ae-99ba-466f5c1e23ab" DefinedType="IfcClassificationReference" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="ReferencedSource" XsdFormat="element">
 			<Documentation>The classification references to which the classification applies. It can either be the final classification notation, or an intermediate classification item.</Documentation>
 			<DiagramLine>
 				<DocPoint X="2161.0206" Y="1248.4272" />

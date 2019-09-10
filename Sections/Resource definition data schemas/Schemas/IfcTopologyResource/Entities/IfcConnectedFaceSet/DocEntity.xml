@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcConnectedFaceSet" UniqueId="00739840-0188-4605-bb14-19851c954616" DiagramNumber="2" BaseDefinition="IfcTopologicalRepresentationItem" EntityFlags="109">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcConnectedFaceSet" Name="IfcConnectedFaceSet" UniqueId="00739840-0188-4605-bb14-19851c954616" DiagramNumber="2" BaseDefinition="IfcTopologicalRepresentationItem" EntityFlags="109">
 	<Localization>
 		<DocLocalization Name="Gruppe verbundender Flächen" Locale="de" />
+		<DocLocalization Name="Connected Face Set" Locale="en" />
 		<DocLocalization Name="Ensemble de faces connectées" Locale="fr" />
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="1904.3229" Y="98.050013" Width="416" Height="100" />
@@ -13,11 +14,34 @@
 		<DocAttribute Name="CfsFaces" UniqueId="1fabb589-8fee-4286-8be7-1f8643ec33b7" DefinedType="IfcFace" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The set of faces arcwise connected along common edges or vertices.</Documentation>
 			<DiagramLine>
-				<DocPoint X="1973.6563" Y="198.05001" />
-				<DocPoint X="1973.6563" Y="651.04999" />
+				<DocPoint X="2046.0063" Y="198.050013" />
+				<DocPoint X="2046.0063" Y="198.050013" />
+				<DocPoint X="2046.0063" Y="651.05" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2091.1563" Y="200.8833433" Width="190" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="2046.0063" Y="631.05" Width="190" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<Tree>
+		<DocLine>
+			<DiagramLine>
+				<DocPoint X="2256.3229" Y="198.05001" />
+				<DocPoint X="2256.3229" Y="245.366701" />
+			</DiagramLine>
+			<Tree>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="2899.5894" Y="245.36668" />
+						<DocPoint X="2899.5894" Y="301.450007" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="2583.8999" Y="245.36668" />
+						<DocPoint X="2583.8999" Y="301.483327" />
+					</DiagramLine>
+				</DocLine>
+			</Tree>
+		</DocLine>
+	</Tree>
 </DocEntity>
 

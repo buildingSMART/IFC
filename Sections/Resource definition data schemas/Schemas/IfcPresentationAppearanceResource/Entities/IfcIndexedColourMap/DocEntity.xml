@@ -1,42 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcIndexedColourMap" UniqueId="72a45e5a-521d-4b77-ba81-0938e73dffff" DiagramNumber="11" BaseDefinition="IfcPresentationItem" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcIndexedColourMap" Name="IfcIndexedColourMap" UniqueId="72a45e5a-521d-4b77-ba81-0938e73dffff" DiagramNumber="11" BaseDefinition="IfcPresentationItem" EntityFlags="237">
 	<Localization>
 		<DocLocalization Name="Liste von Indizes für Farbwerte" Locale="de" />
+		<DocLocalization Name="Indexed Colour Map" Locale="en" />
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="6597.6627" Y="3827.44" Width="374.93333" Height="186.4" />
 	<Attributes>
 		<DocAttribute Name="MappedTo" UniqueId="46f7bd1c-d9b3-427b-b0c8-c3d9bcc29edd" DefinedType="IfcTessellatedFaceSet" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="hidden">
-			<Documentation>Reference to the _IfcTessellatedFaceSet_ to which it applies the colours.</Documentation>
+			<Documentation>Reference to the _IfcTessellatedFaceSet_ to which it applies the colours and alpha channel.</Documentation>
 			<DiagramLine>
-				<DocPoint X="6785.1293" Y="4013.84" />
-				<DocPoint X="6785.1293" Y="4339.30667" />
+				<DocPoint X="6772.8291015625" Y="4013.84" />
+				<DocPoint X="6772.8291015625" Y="4013.84" />
+				<DocPoint X="6772.8291015625" Y="4341.97330729167" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="6865.1293" Y="3976.44" Width="126" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="6772.8291015625" Y="4321.97330729167" Width="126" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Overrides" UniqueId="a960b458-8975-495f-8045-bfb3400357b7" DefinedType="IfcSurfaceStyleShading" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
-			<Documentation>Indication that the _IfcIndexedColourMap_ overrides the surface colour information that might be assigned as an _IfcStyledItem_ to the _IfcTessellatedFaceSet_.</Documentation>
+		<DocAttribute Name="Opacity" UniqueId="95d4d17c-ac0b-4a8d-9c90-545c63064df1" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+			<Documentation>The the opacity value, that applies equaly to all faces of the tessellated face set. 1.0 means opaque, and 0.0 completely transparent. If not provided, 1.0 is assumed (all colours are opque).
+
+&gt; NOTE&amp;nbsp; The definition of the alpha channel component for opacity follows the new definitions in image processing, where 0.0 means full transparency and 1.0 (or 2^bit depths^ -1) means fully opaque. This is contrary to the definition of transparency in _IfcSurfaceStyleShading_.</Documentation>
 			<DiagramLine>
-				<DocPoint X="6972.596" Y="3854.2994" />
-				<DocPoint X="7317.12933" Y="3854.2994" />
+				<DocPoint X="6972.59603" Y="4013.84" />
+				<DocPoint X="6972.59603" Y="4063.84" />
+				<DocPoint X="6997.6627" Y="4063.84" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="6917.662667" Y="3842.032733" Width="113" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="6972.59603" Y="4043.84" Width="113" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Colours" UniqueId="9098328d-ff84-4d4a-a892-224c18ad3d85" DefinedType="IfcColourRgbList" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
-			<Documentation>Indexable list of RGB colours.</Documentation>
+			<Documentation>Indexable list of lists of quadruples, representing RGB colours.</Documentation>
 			<DiagramLine>
-				<DocPoint X="6873.7647" Y="4013.84" />
-				<DocPoint X="6873.7647" Y="4183.68" />
-				<DocPoint X="7314.50003" Y="4183.68" />
+				<DocPoint X="6972.59603" Y="4013.84" />
+				<DocPoint X="6972.59603" Y="4175.68017578125" />
+				<DocPoint X="7309.16666666667" Y="4175.68017578125" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="6867.1803667" Y="4177.4266667" Width="92" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="6972.59603" Y="4155.68017578125" Width="92" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ColourIndex" UniqueId="f4863512-f7e4-43f8-8add-5f016ad7c46d" DefinedType="INTEGER" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
-			<Documentation>Index into the _IfcColourRgbList_ for each face of the _IfcTriangulatedFaceSet_. The colour is applied uniformly to the face.</Documentation>
+		<DocAttribute Name="ColourIndex" UniqueId="f4863512-f7e4-43f8-8add-5f016ad7c46d" DefinedType="IfcPositiveInteger" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Index into the _IfcColourRgbList_ for each face of the _IfcTriangulatedFaceSet_. The colour is applied uniformly to the indexed face.</Documentation>
 			<DiagramLine>
-				<DocPoint X="6972.596" Y="3971.3067" />
-				<DocPoint X="7314.46667" Y="3971.3067" />
+				<DocPoint X="6972.59603" Y="3837.43994140625" />
+				<DocPoint X="6972.59603" Y="3837.43994140625" />
+				<DocPoint X="7306.99593098958" Y="3837.43994140625" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="6972.596" Y="3963.3067" Width="218" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="6972.59603" Y="3817.43994140625" Width="218" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

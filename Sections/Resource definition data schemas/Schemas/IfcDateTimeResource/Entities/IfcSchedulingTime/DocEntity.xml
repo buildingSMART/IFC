@@ -2,8 +2,9 @@
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSchedulingTime" UniqueId="b80d3213-eccf-4e8a-84a3-21c1381ff3cc" DiagramNumber="2" EntityFlags="197">
 	<Localization>
 		<DocLocalization Name="Festgelegte Zeit" Locale="de" />
+		<DocLocalization Name="Scheduling Time" Locale="en" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1750.3682" Y="120.15747" Width="429.85816" Height="309.68764" />
+	<DiagramRectangle xsi:type="DocRectangle" X="1619.70145670573" Y="16.1574694315592" Width="429.85816" Height="221.687652587891" />
 	<Subtypes>
 		<DocSubtype UniqueId="55e767bc-024e-41b0-8023-bc93c8ae1295" DefinedType="IfcLagTime" />
 		<DocSubtype UniqueId="7d353c45-a99c-48a5-b3d9-50792641252e" DefinedType="IfcTaskTime" />
@@ -15,28 +16,77 @@
 		<DocAttribute Name="Name" UniqueId="9ce7ee5d-0c3d-4394-9ba0-4cd0ff38d925" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Optional name for the time definition.</Documentation>
 			<DiagramLine>
-				<DocPoint X="2180.2264" Y="188.01282" />
-				<DocPoint X="2738.40723" Y="188.01282" />
+				<DocPoint X="2049.55961670573" Y="67.017884572347" />
+				<DocPoint X="2049.55961670573" Y="67.017884572347" />
+				<DocPoint X="2421.07397460938" Y="67.017884572347" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2138.970713" Y="177.963864" Width="73" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="2049.55961670573" Y="47.017884572347" Width="73" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="DataOrigin" UniqueId="a82843cd-7cb9-4fac-b255-c3bf8dfcfcc1" DefinedType="IfcDataOriginEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Specifies the origin of the scheduling time entity. It currently
     differentiates between predicted, simulated, measured, and user defined values.</Documentation>
 			<DiagramLine>
-				<DocPoint X="2180.2264" Y="268.61484" />
-				<DocPoint X="2738.38423" Y="268.61484" />
+				<DocPoint X="2049.55961670573" Y="142.357340494792" />
+				<DocPoint X="2049.55961670573" Y="142.357340494792" />
+				<DocPoint X="2421.05102539063" Y="142.357340494792" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2158.799695" Y="261.3402442" Width="125" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="2049.55961670573" Y="122.357340494792" Width="125" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="UserDefinedDataOrigin" UniqueId="9619b2c7-3037-4380-8c25-83f4ded0ab84" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Value of the data origin if DataOrigin attribute is USERDEFINED.</Documentation>
 			<DiagramLine>
-				<DocPoint X="2180.2264" Y="355.97965" />
-				<DocPoint X="2738.44863" Y="355.97965" />
+				<DocPoint X="2049.55961670573" Y="209.01503499349" />
+				<DocPoint X="2049.55961670573" Y="209.01503499349" />
+				<DocPoint X="2421.115234375" Y="209.01503499349" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2226.524739" Y="349.0205725" Width="263" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="2049.55961670573" Y="189.01503499349" Width="263" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<Tree>
+		<DocLine>
+			<DiagramLine>
+				<DocPoint X="1621.33333333333" Y="237.84512201945" />
+				<DocPoint X="1621.33333333333" Y="237.84512201945" />
+				<DocPoint X="1621.33333333333" Y="1749.33333333333" />
+			</DiagramLine>
+			<Tree>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="1621.33333333333" Y="1749.33333333333" />
+						<DocPoint X="1621.33333333333" Y="333.174275716146" />
+						<DocPoint X="1649.23311360677" Y="333.174275716146" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="1621.33333333333" Y="1749.33333333333" />
+						<DocPoint X="1621.33333333333" Y="1370.40650431315" />
+						<DocPoint X="2973.3681640625" Y="1370.40650431315" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="1621.33333333333" Y="1749.33333333333" />
+						<DocPoint X="1621.33333333333" Y="1752.5777" />
+						<DocPoint X="1755.4576" Y="1752.5777" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="1621.33333333333" Y="1749.33333333333" />
+						<DocPoint X="1621.33333333333" Y="1491.77103424072" />
+						<DocPoint X="1649.23311360677" Y="1491.77103424072" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="1621.33333333333" Y="1749.33333333333" />
+						<DocPoint X="1621.33333333333" Y="1752.48914082845" />
+						<DocPoint X="1649.23315429688" Y="1752.48914082845" />
+					</DiagramLine>
+				</DocLine>
+			</Tree>
+		</DocLine>
+	</Tree>
 </DocEntity>
 

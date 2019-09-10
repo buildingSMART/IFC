@@ -109,7 +109,7 @@
     'SurfaceOrSolidModel' :
       BEGIN
         Count := SIZEOF(QUERY(temp <* Items | SIZEOF([
-                   'IFCGEOMETRICMODELRESOURCE.IFCTESSELATEDITEM',
+                   'IFCGEOMETRICMODELRESOURCE.IFCTESSELLATEDITEM',
                    'IFCGEOMETRICMODELRESOURCE.IFCSHELLBASEDSURFACEMODEL',
                    'IFCGEOMETRICMODELRESOURCE.IFCFACEBASEDSURFACEMODEL',
                    'IFCGEOMETRICMODELRESOURCE.IFCSOLIDMODEL'] * TYPEOF(temp)) >= 1
@@ -161,7 +161,10 @@
 
     'Clipping' :
       BEGIN
-        Count := SIZEOF(QUERY(temp <* Items | ('IFCGEOMETRICMODELRESOURCE.IFCBOOLEANCLIPPINGRESULT' IN TYPEOF(temp))));            
+        Count := SIZEOF(QUERY(temp <* Items | SIZEOF([
+                   'IFCGEOMETRICMODELRESOURCE.IFCCSGSOLID',
+                   'IFCGEOMETRICMODELRESOURCE.IFCBOOLEANCLIPPINGRESULT'] * TYPEOF(temp)) >= 1
+                 )); 
       END;
 
     'Brep' :

@@ -7,10 +7,3 @@
 > NOTE&nbsp; Type adapted from **trimming_preference** defined in ISO 10303-42.
 
 > HISTORY&nbsp; New Type in IFC1.0
-
-{ .spec-head}
-Enumerated Item Definitions:
-
-* **cartesian**: Indicates that trimming by Cartesian point is preferred.
-* **parameter**: Indicates the preference for the parameter value.
-* **unspecified**: Indicates that no preference is communicated.

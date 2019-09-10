@@ -2,6 +2,7 @@
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcElement" Name="IfcElement" UniqueId="9ab3f33b-7e80-4290-afe5-1e7a055cd3ac" DiagramNumber="1" BaseDefinition="IfcProduct" EntityFlags="205">
 	<Localization>
 		<DocLocalization Name="Element (allgemein)" Locale="de" />
+		<DocLocalization Name="Element" Locale="en" />
 		<DocLocalization Name="Élément" Locale="fr" />
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="248.76058" Y="402.62955" Width="256.66667" Height="483.33333" />
@@ -20,10 +21,11 @@
 		<DocAttribute Name="Tag" UniqueId="dcdb600f-7074-41a2-b876-9fb8a9bdb8ec" DefinedType="IfcIdentifier" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The tag (or label) identifier at the particular instance of a product, e.g. the serial number, or the position number. It is the identifier at the occurrence level.</Documentation>
 			<DiagramLine>
-				<DocPoint X="505.42725" Y="421.45728" />
-				<DocPoint X="1309.06053" Y="421.45728" />
+				<DocPoint X="505.42725" Y="402.62955" />
+				<DocPoint X="505.42725" Y="385.629547119141" />
+				<DocPoint X="794.393859863281" Y="385.629547119141" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="595.42725" Y="404.790613" Width="50" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="505.42725" Y="365.629547119141" Width="50" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="FillsVoids" UniqueId="013896b3-ab8f-4c8f-b6e5-b79d6fd26de9" DefinedType="IfcRelFillsElement" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatedBuildingElement">
 			<Documentation>Reference to the _IfcRelFillsElement_ Relationship that puts the element as a filling into the opening created within another element.</Documentation>
@@ -139,6 +141,79 @@
 			</DiagramLine>
 			<DiagramLabel xsi:type="DocRectangle" X="573.187997" Y="1043.062884" Width="584" Height="70" />
 		</DocAttribute>
+		<DocAttribute Name="HasCoverings" UniqueId="e73f220c-19f9-4fbd-9302-9b407708ffdf" DefinedType="IfcRelCoversBldgElements" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingBuildingElement">
+			<Documentation>Reference to _IfcCovering_ by virtue of the objectified relationship _IfcRelCoversBldgElement_. It defines the concept of an element having coverings associated.</Documentation>
+			<DiagramLine>
+				<DocPoint X="505.42725" Y="480.399912516276" />
+				<DocPoint X="505.42725" Y="480.399912516276" />
+				<DocPoint X="1123.96671549479" Y="480.399912516276" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="505.42725" Y="460.399912516276" Width="400" Height="100" />
+		</DocAttribute>
 	</Attributes>
+	<Tree>
+		<DocLine>
+			<DiagramLine>
+				<DocPoint X="437.06505" Y="885.96288" />
+				<DocPoint X="437.0650505" Y="885.96288" />
+			</DiagramLine>
+			<Tree>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="437.06381" Y="970.17033" />
+						<DocPoint X="419.167045" Y="970.17033" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="437.06381" Y="1206.6933" />
+						<DocPoint X="419.092262" Y="1206.6933" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="437.06381" Y="1088.4765" />
+						<DocPoint X="419.142266" Y="1088.4765" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="437.06381" Y="1433.2765" />
+						<DocPoint X="419.075595" Y="1433.2765" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="437.06381" Y="1669.8566" />
+						<DocPoint X="419.197148" Y="1669.8566" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="437.0639" Y="1551.5305" />
+						<DocPoint X="419.19724" Y="1551.5305" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="437.06451" Y="1788.1667" />
+						<DocPoint X="419.230972" Y="1788.1667" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="437.06458" Y="1324.9812" />
+						<DocPoint X="419.197918" Y="1324.9812" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="437.065" Y="1906.5333" />
+						<DocPoint X="419.331667" Y="1906.5333" />
+					</DiagramLine>
+				</DocLine>
+			</Tree>
+		</DocLine>
+	</Tree>
 </DocEntity>
 

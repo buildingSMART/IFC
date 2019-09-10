@@ -21,27 +21,3 @@ If connected with a curve item or surface item, instances of _IfcStructuralPoint
 
 Special Case 2:  
 If not connected with a structural item (which may happen in an incomplete or conceptual model), a point action should have an _ObjectPlacement_ and _Representation_, containing an _IfcVertexPoint_. See _IfcStructuralActivity_ for further definitions.
-
-___
-## Common Use Definitions
-The following concepts are inherited at supertypes:
-
-* _IfcRoot_: [Identity](../../templates/identity.htm), [Revision Control](../../templates/revision-control.htm)
-
-[![Image](../../../img/diagram.png)&nbsp;Instance diagram](../../../annex/annex-d/common-use-definitions/ifcstructuralpointaction.htm)
-
-{ .use-head}
-Structural Activity
-
-The [Structural Activity](../../templates/structural-activity.htm) concept applies to this entity as shown in Table 1.
-
-<table>
-<tr><td>
-<table class="gridtable">
-<tr><th><b>AppliedLoad</b></th><th><b>RelatingElement</b></th><th><b>Description</b></th></tr>
-<tr><td><a href="../../ifcstructuralloadresource/lexical/ifcstructuralloadsingleforce.htm">IfcStructuralLoadSingleForce</a></td><td><a href="../../ifcstructuralanalysisdomain/lexical/ifcstructuralcurveconnection.htm">IfcStructuralCurveConnection</a></td><td>Point force and moment at a point connection.</td></tr>
-<tr><td><a href="../../ifcstructuralloadresource/lexical/ifcstructuralloadsingleforce.htm">IfcStructuralLoadSingleForce</a></td><td><a href="../../ifcstructuralanalysisdomain/lexical/ifcstructuralcurvemember.htm">IfcStructuralCurveMember</a></td><td>Point force and moment positioned within a curve member.</td></tr>
-<tr><td><a href="../../ifcstructuralloadresource/lexical/ifcstructuralloadsingleforce.htm">IfcStructuralLoadSingleForce</a></td><td><a href="../../ifcstructuralanalysisdomain/lexical/ifcstructuralsurfacemember.htm">IfcStructuralSurfaceMember</a></td><td>Point force and moment positioned within a surface member.</td></tr>
-</table>
-</td></tr>
-<tr><td><p class="table">Table 1 &mdash; IfcStructuralPointAction Structural Activity</p></td></tr></table>

@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcObjectDefinition" UniqueId="40ee8a1b-c5dc-4107-8d14-cb784713b9e5" DiagramNumber="1" BaseDefinition="IfcRoot" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcObjectDefinition" Name="IfcObjectDefinition" UniqueId="40ee8a1b-c5dc-4107-8d14-cb784713b9e5" DiagramNumber="1" BaseDefinition="IfcRoot" EntityFlags="205">
 	<Localization>
 		<DocLocalization Name="Objektdefinition" Locale="de" />
+		<DocLocalization Name="Object Definition" Locale="en" />
 		<DocLocalization Name="Définition d&apos;objet" Locale="fr" />
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="92.646667" Y="636.66667" Width="312" Height="589.06667" />
@@ -19,7 +20,7 @@
 			</DiagramLine>
 			<DiagramLabel xsi:type="DocRectangle" X="399.7133367" Y="698.134803" Width="340" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="Nests" UniqueId="c991dcb4-4357-4933-b45c-77eb14c59839" DefinedType="IfcRelNests" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatedObjects">
+		<DocAttribute Name="Nests" UniqueId="c991dcb4-4357-4933-b45c-77eb14c59839" DefinedType="IfcRelNests" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatedObjects" XsdFormat="hidden">
 			<Documentation>References to the decomposition relationship being a nesting. It determines that this object definition is a part within an ordered whole/part decomposition relationship. An object occurrence or type can only be part of a single decomposition (to allow hierarchical strutures only).
 
 { .change-ifc2x4}
@@ -30,7 +31,7 @@
 			</DiagramLine>
 			<DiagramLabel xsi:type="DocRectangle" X="404.64667" Y="1156.0591" Width="318" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="IsNestedBy" UniqueId="f61c2101-dddb-4f80-bfe6-e83bea5a1603" DefinedType="IfcRelNests" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingObject">
+		<DocAttribute Name="IsNestedBy" UniqueId="f61c2101-dddb-4f80-bfe6-e83bea5a1603" DefinedType="IfcRelNests" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingObject" XsdFormat="element">
 			<Documentation>References to the decomposition relationship being a nesting. It determines that this object definition is the whole within an ordered whole/part decomposition relationship. An object or object type can be nested by several other objects (occurrences or types).
 
 { .change-ifc2x4}
@@ -52,7 +53,7 @@
 			</DiagramLine>
 			<DiagramLabel xsi:type="DocRectangle" X="415.313337" Y="1243.200033" Width="384" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="IsDecomposedBy" UniqueId="090a480e-fb85-4fdd-b904-d720ea0009c9" DefinedType="IfcRelAggregates" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingObject">
+		<DocAttribute Name="IsDecomposedBy" UniqueId="090a480e-fb85-4fdd-b904-d720ea0009c9" DefinedType="IfcRelAggregates" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingObject" XsdFormat="element">
 			<Documentation>References to the decomposition relationship being an aggregation. It determines that this object definition is whole within an unordered whole/part decomposition relationship. An object definitions can be aggregated by several other objects (occurrences or parts).
 
 { .change-ifc2x4}
@@ -63,7 +64,7 @@
 			</DiagramLine>
 			<DiagramLabel xsi:type="DocRectangle" X="407.3133367" Y="884.17639" Width="375" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="Decomposes" UniqueId="e138d591-4c0a-492f-9738-23a2b9d31c1a" DefinedType="IfcRelAggregates" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatedObjects">
+		<DocAttribute Name="Decomposes" UniqueId="e138d591-4c0a-492f-9738-23a2b9d31c1a" DefinedType="IfcRelAggregates" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatedObjects" XsdFormat="hidden">
 			<Documentation>References to the decomposition relationship being an aggregation. It determines that this object definition is a part within an unordered whole/part decomposition relationship. An object definitions can only be part of a single decomposition (to allow hierarchical strutures only).
 
 { .change-ifc2x4}
@@ -83,5 +84,33 @@
 			<DiagramLabel xsi:type="DocRectangle" X="404.64667" Y="783.858987" Width="373" Height="70" />
 		</DocAttribute>
 	</Attributes>
+	<Tree>
+		<DocLine>
+			<DiagramLine>
+				<DocPoint X="348.91333" Y="1225.7333" />
+				<DocPoint X="348.91333" Y="1289.232313" />
+			</DiagramLine>
+			<Tree>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="546.1" Y="1289.2325" />
+						<DocPoint X="546.1" Y="1485.23327" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="1304.4984" Y="1289.2324" />
+						<DocPoint X="1304.4984" Y="1325.199097" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="1026.9734" Y="1289.2324" />
+						<DocPoint X="1026.9734" Y="1325.2324" />
+					</DiagramLine>
+				</DocLine>
+			</Tree>
+		</DocLine>
+	</Tree>
 </DocEntity>
 

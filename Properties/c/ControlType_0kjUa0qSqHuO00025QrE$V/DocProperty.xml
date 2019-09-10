@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocProperty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="ControlType_0kjUa0qSqHuO00025QrEV" Name="ControlType" UniqueId="0kjUa0qSqHuO00025QrE$V" PropertyType="p_enumeratedvalue" PrimaryDataType="IfcLabel">
 	<Localization>
+		<DocLocalization Name="Control Type" Locale="en" />
 		<DocLocalization Name="FLOATING 유형" Locale="ko-KR">
 			<Documentation>컨트롤러는 항상 하나의 출력 포트와 가변 입력 포트 유형에 따라있는 한결 : output = SignalOffset 수정자 : output = input * SignalFactor + SignalOffset 절대치 : output = | input | 역수 : output = 1.0 / input 지연 : output = 지연 (input, SignalTime 후) 이동 평균 : output = 평균 (inputN, SignalTime 사이) 미분 : output = 미분 (inputN, SignalTime 사이) 적분 : output = 적분 (inputN, SignalTime 사이) 바이너리 : output = SignalOffset ※ input = TRUE의 경우 누적 : output = accumulator       ※ accumulator = 펄스 카운트 * SignalOffset       ※ if (accumulator&gt; SignalFactor) accumulator - = SignalFactor       ??? 펄스 카운터 : output = input * SignalMultiplier       ※ input 펄스 카운트, SignalMultiplier은 원인 불명       ??? 총 : output = input1 + input2 뺄셈 : output = input1 - input2 적립 : output = input1 * input2 나누기 : output = input1 / input2 평균 : output = (input1 + input2) / 2 최대 : output = input1 or input2 ※보다 큰 최소 : output = input1 or input2 ※보다 작은</Documentation>
 		</DocLocalization>

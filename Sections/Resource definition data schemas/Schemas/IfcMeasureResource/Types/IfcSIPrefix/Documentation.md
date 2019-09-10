@@ -6,24 +6,4 @@
 
 > NOTE&nbsp; Type adapted from **si_prefix** defined in ISO 10303-41.
 
-{ .spec-head}
-Enumerated Item Definitions:
-
-* EXA: 10\^18.
-* PETA: 10\^15.
-* TERA: 10\^12.
-* GIGA: 10\^9.
-* MEGA: 10\^6.
-* KILO: 10\^3.
-* HECTO: 10\^2.
-* DECA: 10.
-* DECI: 10\^-1.
-* CENTI: 10\^-2.
-* MILLI: 10\^-3.
-* MICRO: 10\^-6.
-* NANO: 10\^-9.
-* PICO: 10\^-12.
-* FEMTO: 10\^-15.
-* ATTO: 10\^-18.
-
 > HISTORY&nbsp; New entity in IFC1.5.1.

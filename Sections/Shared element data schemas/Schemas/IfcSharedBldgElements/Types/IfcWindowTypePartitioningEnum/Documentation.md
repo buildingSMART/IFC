@@ -4,15 +4,12 @@ Windows which are subdivided into more than three panels have to be defined by t
 
 > HISTORY&nbsp; New Enumeration in IFC4. The new _IfcWindowTypePartitioningEnum_ replaces the use of _IfcWindowStyleOperationEnum_ that is deprecated from IFC4 onwards.
 
-{ .spec-head}
-Enumerated Item Definitions:
-
 <table><tr><td>
 <table class="gridtable">
 <tr valign="top">
-<th width="30%" valign="top" align="left"><em>Enumerator</em></th>
-<th width="46%" valign="top" align="left"><em>Description</em></th>
-<th width="23%" valign="top" align="left"><em>Figure</em></th>
+<th width="30%" valign="top" align="left"><i>Enumerator</i></th>
+<th width="46%" valign="top" align="left"><i>Description</i></th>
+<th width="23%" valign="top" align="left"><i>Figure</i></th>
 </tr>
 <tr valign="top">
 <td width="30%" valign="top" align="left">SinglePanel</td>
@@ -80,12 +77,12 @@ third one is vertically at the right hand side.<br></td>
 <td width="30%" valign="top" align="left">UserDefined</td>
 <td width="46%" valign="top" align="left">user defined operation
 type</td>
-<td width="23%" valign="top" align="left"> </td>
+<td width="23%" valign="top" align="left"> </td>
 </tr>
 <tr valign="top">
 <td width="30%" valign="top" align="left">NotDefined</td>
-<td width="46%" valign="top" align="left"> </td>
-<td width="23%" valign="top" align="left"> </td>
+<td width="46%" valign="top" align="left"> </td>
+<td width="23%" valign="top" align="left"> </td>
 </tr>
 </table>
 </td></tr>

@@ -28,8 +28,3 @@ Informal Propositions:
 
 1. The edge has dimensionality 1.
 2. The extent of an edge shall be finite and nonzero.
-
-___
-Figure 2 illustrates edge usage.
-
-!["usage"](../../../../../../figures/ifcedge.png "Figure 2 &mdash; Edge usage")

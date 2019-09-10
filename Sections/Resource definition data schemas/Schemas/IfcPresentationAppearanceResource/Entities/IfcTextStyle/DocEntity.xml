@@ -1,20 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTextStyle" UniqueId="a79b1274-8b81-4827-baa7-03f278dc7a39" DiagramNumber="4" BaseDefinition="IfcPresentationStyle" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcTextStyle" Name="IfcTextStyle" UniqueId="a79b1274-8b81-4827-baa7-03f278dc7a39" DiagramNumber="4" BaseDefinition="IfcPresentationStyle" EntityFlags="237">
 	<Localization>
 		<DocLocalization Name="Textstil" Locale="de" />
+		<DocLocalization Name="Text Style" Locale="en" />
 		<DocLocalization Name="Style de texte" Locale="fr" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="5199.6676" Y="169.62136" Width="472" Height="121.33333" />
+	<DiagramRectangle xsi:type="DocRectangle" X="4887.66748046875" Y="254.954686482747" Width="296" Height="572" />
 	<Attributes>
 		<DocAttribute Name="TextCharacterAppearance" UniqueId="f5bd01b9-4639-4066-8a62-d1d8a355a2f5" DefinedType="IfcTextStyleForDefinedFont" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>A character style to be used for presented text.
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; Superfluous select type IfcCharacterStyleSelect has been removed.</Documentation>
 			<DiagramLine>
-				<DocPoint X="5601.1503" Y="290.95469" />
-				<DocPoint X="5601.1503" Y="605.47136" />
+				<DocPoint X="5183.66748046875" Y="470.138042845052" />
+				<DocPoint X="5183.66748046875" Y="470.138042845052" />
+				<DocPoint X="5537.130859375" Y="470.138042845052" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5767.75195" Y="226.87969" Width="298" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="5183.66748046875" Y="450.138042845052" Width="298" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="TextStyle" UniqueId="edc9e2db-5005-4bcf-ac88-0a7ee0830fe0" DefinedType="IfcTextStyleTextModel" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>The style applied to the text block for its visual appearance.
@@ -24,10 +26,11 @@
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The IfcTextStyleWithBoxCharacteristics and the now superfluous select type IfcTextStyleSelect have been removed.</Documentation>
 			<DiagramLine>
-				<DocPoint X="5373.2676" Y="290.95469" />
-				<DocPoint X="5373.2676" Y="1016.138" />
+				<DocPoint X="5035.66748046875" Y="826.954686482747" />
+				<DocPoint X="5035.66748046875" Y="826.954686482747" />
+				<DocPoint X="5035.66748046875" Y="965.471232096354" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5445.2676" Y="381.546343" Width="109" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="5035.66748046875" Y="945.471232096354" Width="109" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="TextFontStyle" UniqueId="c335c62d-bf07-439a-afb9-033418fa2050" DefinedType="IfcTextFontSelect" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The style applied to the text font for its visual appearance. It defines the font family, font style, weight and size.
@@ -35,20 +38,22 @@
 { .change-ifc2x2}
 &gt; IFC2x2 Add2 CHANGE The attribute _TextFontStyle_ is a new attribute attached to _IfcTextStyle_.</Documentation>
 			<DiagramLine>
-				<DocPoint X="5671.6676" Y="230.28803" />
-				<DocPoint X="5905.00094" Y="230.28803" />
+				<DocPoint X="5183.66748046875" Y="302.288029988607" />
+				<DocPoint X="5183.66748046875" Y="302.288029988607" />
+				<DocPoint X="5905.0009765625" Y="302.288029988607" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5666.667599" Y="219.621363" Width="159" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="5183.66748046875" Y="282.288029988607" Width="159" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ModelOrDraughting" UniqueId="de6e20b2-8381-4b2e-b44e-399c8a61345d" DefinedType="BOOLEAN" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ModelOrDraughting" UniqueId="de6e20b2-8381-4b2e-b44e-399c8a61345d" DefinedType="IfcBoolean" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Indication whether the length measures provided for the presentation style are model based, or draughting based.
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute.</Documentation>
 			<DiagramLine>
-				<DocPoint X="5251.6676" Y="290.95469" />
-				<DocPoint X="5251.6676" Y="610.53333" />
+				<DocPoint X="5183.66748046875" Y="751.621378580729" />
+				<DocPoint X="5183.66748046875" Y="751.621378580729" />
+				<DocPoint X="5522.33414713542" Y="751.621378580729" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5126.33427" Y="226.95469" Width="223" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="5183.66748046875" Y="731.621378580729" Width="223" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

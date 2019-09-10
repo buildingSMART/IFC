@@ -3,30 +3,18 @@
 <table summary="mapped without transformation">
  <tr>
   <td>
-   <img src="fig/mapped_shape_representation-1.png" width="400" height="350" alt="mapped_shape_representation-1.png 6 KB">
+   <img src="../../../../figures/examples/mapped_shape_representation-1.png" width="400" height="350" alt="mapped_shape_representation-1.png 6 KB">
   </td>
-  <td style=" vertical-align:bottom;">
+  <td style="vertical-align:bottom;">
    <p>
     The representation map, being a simple block, is inserted as a mapped item for the building element proxy within its local object 
-    coordinate system without any transformation. See Figure E8.
+    coordinate system without any transformation. See Figure 1.
    </p>
-   <ul class="std">
-    <li class="std">
-     <a class="listing-link" href="ifc/mapped_shape_representation.ifc.htm" target="info">Proxy with
-       mapped representation without transformation with hyperlinks</a>
-    </li>
-    <li class="std">
-     <a class="listing-link" href="ifc/mapped_shape_representation.ifc" target="info">Proxy with
-       mapped representation without transformation source file</a>
-    </li>
-   </ul>
   </td>	
  </tr>
  <tr style="height:20px;">
   <td style=" vertical-align:bottom;">
-   <p class="figure">
-     Figure E8 &mdash; Mapped representation without transformation
-   </p>
+   <p class="figure">Figure 1 &mdash; Mapped representation without transformation</p>
   </td>
   <td>&nbsp;</td>
  </tr>

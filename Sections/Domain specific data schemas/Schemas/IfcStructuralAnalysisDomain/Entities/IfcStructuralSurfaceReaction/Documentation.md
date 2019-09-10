@@ -23,24 +23,3 @@ Informal Propositions:
   </li>
   <li>All items in <em>SELF\IfcStructuralActivity.AppliedLoad\IfcStructuralLoadConfiguration.Values</em> shall be of the same entity type.</li>
 </ol>
-___
-## Common Use Definitions
-The following concepts are inherited at supertypes:
-
-* _IfcRoot_: [Identity](../../templates/identity.htm), [Revision Control](../../templates/revision-control.htm)
-
-[![Image](../../../img/diagram.png)&nbsp;Instance diagram](../../../annex/annex-d/common-use-definitions/ifcstructuralsurfacereaction.htm)
-
-{ .use-head}
-Structural Activity
-
-The [Structural Activity](../../templates/structural-activity.htm) concept applies to this entity as shown in Table 1.
-
-<table>
-<tr><td>
-<table class="gridtable">
-<tr><th><b>AppliedLoad</b></th><th><b>RelatingElement</b></th><th><b>Description</b></th></tr>
-<tr><td><a href="../../ifcstructuralloadresource/lexical/ifcstructuralloadconfiguration.htm">IfcStructuralLoadConfiguration</a></td><td><a href="../../ifcstructuralanalysisdomain/lexical/ifcstructuralsurfacemember.htm">IfcStructuralSurfaceMember</a></td><td>Resulting stresses within a surface member.</td></tr>
-</table>
-</td></tr>
-<tr><td><p class="table">Table 1 &mdash; IfcStructuralSurfaceReaction Structural Activity</p></td></tr></table>

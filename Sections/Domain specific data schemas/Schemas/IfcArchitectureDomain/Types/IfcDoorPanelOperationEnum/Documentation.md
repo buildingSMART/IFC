@@ -1,16 +1,8 @@
 ﻿This enumeration defines the basic ways how individual door panels operate as shown in Figure 1.
 
-> HISTORY&nbsp; New enumeration in IFC2.0.
-
-{ .change-ifc2x4}
-> IFC4 CHANGE&nbsp; Enumerator FIXEDPANEL added.
-
-{ .spec-head}
-Enumerated Item Definitions:
-
 <table>
  <tr>
-  
+  <td>
    <table class="gridtable">
     <tr>
      <th width="162">Enumerator</th>
@@ -43,27 +35,31 @@ Enumerated Item Definitions:
     <tr>
      <td width="162">FixedPanel</td>
      <td width="189"><img src="../../../../../../figures/ifcdoorpaneloperationenum-fig07.gif" width="134" height="48" border="0">
-      <blockquote class="change-ifc2x4">NOTE&nbsp; Enumerator added in IFC4.</blockquote>
      </td>
     </tr>
     <tr>
      <td width="162">UserDefined</td>
-     <td width="189"> </td>
+     <td width="189"> </td>
     </tr>
     <tr>
      <td width="162">NotDefined</td>
-     <td width="189"> </td>
+     <td width="189"> </td>
     </tr>
    </table>
-  
+  </td>
  </tr>
  <tr>
  <td><p class="figure">Figure 1 &mdash; Door operations</p></td>
  </tr>
 </table>
 
-The opening direction of the door panels is given by the local placement of the _IfcDoor_. The positive y-axis determines the direction as shown in Figure 157.
+The opening direction of the door panels is given by the local placement of the _IfcDoor_. The positive y-axis determines the direction as shown in Figure 2.
 
 !["panel direction"](../../../../../../figures/ifcdoorpaneloperationenum-fig10.gif "Figure 2 &mdash; Door panel operations")
 
 > NOTE&nbsp; Figures (symbolic representation) depend on the national building code. These figures are only shown as illustrations
+
+> HISTORY&nbsp; New enumeration in IFC2.0.
+
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; Enumerator FIXEDPANEL added.

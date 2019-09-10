@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMaterialLayer" UniqueId="1550d694-6c4a-46c4-9661-12b1956f035d" DiagramNumber="2" BaseDefinition="IfcMaterialDefinition" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcMaterialLayer" Name="IfcMaterialLayer" UniqueId="1550d694-6c4a-46c4-9661-12b1956f035d" DiagramNumber="2" BaseDefinition="IfcMaterialDefinition" EntityFlags="237">
 	<Localization>
 		<DocLocalization Name="Materialschicht" Locale="de" />
+		<DocLocalization Name="Material Layer" Locale="en" />
 		<DocLocalization Name="Couche de matériau" Locale="fr" />
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="1810.8281" Y="1229.407" Width="289.1152" Height="678.90433" />
@@ -58,20 +59,27 @@
 			<DiagramLabel xsi:type="DocRectangle" X="2081.765957" Y="1644.2156998" Width="130" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Category" UniqueId="9675de3e-375b-4012-ad71-905a53587020" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Category of the material layer, e.g. the role it has in the layer set it belongs to (such as &apos;load bearing&apos;, &apos;thermal insulation&apos; etc.).</Documentation>
+			<Documentation>Category of the material layer, e.g. the role it has in the layer set it belongs to (such as &apos;load bearing&apos;, &apos;thermal insulation&apos; etc.). The list of keywords might be extended by model view definitions, however the following keywords shall apply in general:
+* &apos;Load Bearing&apos; &amp;mdash; for all material layers having a load bearing function.
+* &apos;Insulation&apos; &amp;mdash; for all material layers having an insolating function. 
+* &apos;Inner finish&apos; &amp;mdash; for the material layer being the inner finish.
+* &apos;Outer finish&apos; &amp;mdash; for the material layer being the outer finish.</Documentation>
 			<DiagramLine>
 				<DocPoint X="2099.9433" Y="1746.65" />
 				<DocPoint X="2519.4668" Y="1746.65" />
 			</DiagramLine>
 			<DiagramLabel xsi:type="DocRectangle" X="2069.205585" Y="1737.8362226" Width="108" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Priority" UniqueId="4c9dfd48-454b-4406-93cb-179480e17654" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>The relative priority of the layer, expressed as ratio measure, normalised to 0..1. Controls how layers intersect in connections and corners of building elements: a layer from one element protrudes into (i.e. displaces) a layer from another element in a joint of these elements if the former element&apos;s layer has higher priority than the latter. The priority value for a material layer in an element has to be set and maintained by software applications in relation to the material layers in connected elements.</Documentation>
+		<DocAttribute Name="Priority" UniqueId="4c9dfd48-454b-4406-93cb-179480e17654" DefinedType="IfcInteger" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>The relative priority of the layer, expressed as normalised integer range [0..100]. Controls how layers intersect in connections and corners of building elements: a layer from one element protrudes into (i.e. displaces) a layer from another element in a joint of these elements if the former element&apos;s layer has higher priority than the latter. The priority value for a material layer in an element has to be set and maintained by software applications in relation to the material layers in connected elements.
+
+&gt; NOTE&amp;nbsp; The layer priority at a connection may be overridden by the priority attributes of _IfcRelConnectsPathElements_ if that relationship is used to establish a logical connection between two building elements having a layer structure.</Documentation>
 			<DiagramLine>
-				<DocPoint X="2099.9433" Y="1844.6297" />
-				<DocPoint X="2519.3904" Y="1844.6297" />
+				<DocPoint X="2099.9433" Y="1868.38380388802" />
+				<DocPoint X="2099.9433" Y="1868.38380388802" />
+				<DocPoint X="2524.72379557292" Y="1868.38380388802" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2057.686421" Y="1834.58079" Width="82" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="2099.9433" Y="1848.38380388802" Width="82" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="ToMaterialLayerSet" UniqueId="f2c9c962-d35f-4ea5-b566-2dba24893f5a" DefinedType="IfcMaterialLayerSet" AttributeFlags="8" AggregationType="0" AggregationFlag="0" Inverse="MaterialLayers">
 			<Documentation>Reference to the _IfcMaterialLayerSet_ in which the material layer is included.</Documentation>
@@ -82,5 +90,19 @@
 			<DiagramLabel xsi:type="DocRectangle" X="1789.78214" Y="1060.03766" Width="286" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="NormalizedPriority" UniqueId="3e6d9768-4bea-46ec-b8af-ddc7b2dae453">
+			<Documentation>The _Property_ shall all be given as a normalized integer range [0..100], where 0 is the lowest and 100 the highest priority of the material layer.</Documentation>
+			<Expression>NOT(EXISTS(Priority)) OR {0 &lt;= Priority &lt;= 100}</Expression>
+		</DocWhereRule>
+	</WhereRules>
+	<Tree>
+		<DocLine>
+			<DiagramLine>
+				<DocPoint X="1912.757" Y="1908.3113" />
+				<DocPoint X="1912.757" Y="2084.36141" />
+			</DiagramLine>
+		</DocLine>
+	</Tree>
 </DocEntity>
 

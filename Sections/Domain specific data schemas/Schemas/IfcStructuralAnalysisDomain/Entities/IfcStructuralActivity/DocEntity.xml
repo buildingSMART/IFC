@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralActivity" UniqueId="367339a3-2c53-452e-880f-d16b0575c0c3" DiagramNumber="4" BaseDefinition="IfcProduct" EntityFlags="141">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStructuralActivity" Name="IfcStructuralActivity" UniqueId="367339a3-2c53-452e-880f-d16b0575c0c3" DiagramNumber="4" BaseDefinition="IfcProduct" EntityFlags="141">
 	<Localization>
 		<DocLocalization Name="Einwirkungen / Reaktionen des Tragwerks" Locale="de" />
+		<DocLocalization Name="Structural Activity" Locale="en" />
 		<DocLocalization Name="Activité structurelle" Locale="fr" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="5787.2652" Y="422.93809" Width="200" Height="155.23333" />
+	<DiagramRectangle xsi:type="DocRectangle" X="6131.26497395833" Y="316.271418253581" Width="261.333396614583" Height="155.23333" />
 	<Subtypes>
 		<DocSubtype UniqueId="ed6dec8f-c417-4aee-93ac-88d568889bee" DefinedType="IfcStructuralAction" />
 		<DocSubtype UniqueId="4a849529-1603-4d99-b9e9-015bf87ff19b" DefinedType="IfcStructuralReaction" />
@@ -15,11 +16,11 @@
 
 In case of activities which are variably distributed over curves or surfaces, _IfcStructuralLoadConfiguration_ is used which provides a list of load samples and their locations within the load distribution, measured in local coordinates of the curve or surface on which this activity acts. The contents of this load or result distribution may be further restricted by definitions at subtypes of _IfcStructuralActivity_.</Documentation>
 			<DiagramLine>
-				<DocPoint X="5987.2652" Y="500.55475" />
-				<DocPoint X="6163.39889" Y="500.55475" />
-				<DocPoint X="6163.39889" Y="268.45157" />
+				<DocPoint X="6131.26497395833" Y="471.504748253581" />
+				<DocPoint X="6131.26497395833" Y="666.831258138021" />
+				<DocPoint X="5947.01411708333" Y="666.831258138021" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5987.61951818" Y="492.1423954" Width="174" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="6131.26497395833" Y="646.831258138021" Width="174" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="GlobalOrLocal" UniqueId="830a06f0-c7f3-4922-adc8-1ae743e63028" DefinedType="IfcGlobalOrLocalEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Indicates whether the load directions refer to the global coordinate system (global to
@@ -31,19 +32,46 @@ an explicit or implied representation and its parameter space).
 
 &gt; NOTE&amp;nbsp; In the scope of _IfcStructuralActivity.GlobalOrLocal_, the meaning of GLOBAL_COORDS is therefore not to be taken as world coordinate system but as the analysis model specific shared coordinate system. In contrast, LOCAL_COORDS is to be taken as coordinates which are local to individual structural items and activities, as established by subclass-specific geometry use definitions.</Documentation>
 			<DiagramLine>
-				<DocPoint X="5943.0302" Y="578.17142" />
-				<DocPoint X="5943.0302" Y="703.74715" />
+				<DocPoint X="6131.26497395833" Y="471.504748253581" />
+				<DocPoint X="6131.26497395833" Y="538.06320699056" />
+				<DocPoint X="5911.94453609375" Y="538.06320699056" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="6038.084273" Y="592.550163" Width="198" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="6131.26497395833" Y="518.06320699056" Width="198" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="AssignedToStructuralItem" UniqueId="972e6dd1-44d3-4eae-8b18-92babea8b77f" DefinedType="IfcRelConnectsStructuralActivity" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatedStructuralActivity">
 			<Documentation>Reference to the _IfcRelConnectsStructuralActivity_ relationship by which activities are connected with structural items.</Documentation>
 			<DiagramLine>
-				<DocPoint X="5302.2266" Y="487.28363" />
-				<DocPoint X="5787.26521" Y="487.28363" />
+				<DocPoint X="6131.26497395833" Y="457.950296852214" />
+				<DocPoint X="6131.26497395833" Y="457.950296852214" />
+				<DocPoint X="5342.2265769043" Y="457.950296852214" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5299.8954516" Y="523.10811" Width="433" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="6131.26497395833" Y="437.950296852214" Width="433" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<Tree>
+		<DocLine>
+			<DiagramLine>
+				<DocPoint X="6245.33333333333" Y="471.504748253581" />
+				<DocPoint X="6245.33333333333" Y="471.504748253581" />
+				<DocPoint X="6245.33333333333" Y="989.333333333333" />
+			</DiagramLine>
+			<Tree>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="6245.33333333333" Y="989.333333333333" />
+						<DocPoint X="6245.33333333333" Y="1003.36320519206" />
+						<DocPoint X="5052.86083984375" Y="1003.36320519206" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="6245.33333333333" Y="989.333333333333" />
+						<DocPoint X="6246.13858789062" Y="989.333333333333" />
+						<DocPoint X="6246.13858789062" Y="1042.43839518229" />
+					</DiagramLine>
+				</DocLine>
+			</Tree>
+		</DocLine>
+	</Tree>
 </DocEntity>
 

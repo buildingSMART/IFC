@@ -1,14 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocDefined xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcDayInWeekNumber" UniqueId="155e77e5-f61e-487c-9e36-b6255b586646" DiagramNumber="5" DefinedType="INTEGER" Length="0">
 	<Localization>
+		<DocLocalization Name="Day In Week Number" Locale="en" />
 		<DocLocalization Name="Numéro du jour de la semaine" Locale="fr" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="7367.0885" Y="987.36996" Width="344.76371" Height="58.403148" />
+	<DiagramRectangle xsi:type="DocRectangle" X="2644.43310546875" Y="1847.8057047526" Width="312.77945" Height="58.403148" />
+	<Definition xsi:type="DocPrimitive" xsi:nil="true" href="INTEGER_3zVfmb7DP1RPb9bVPO2XuE" />
 	<WhereRules>
-		<DocWhereRule Name="ValidRange" UniqueId="0bd810c7-4cbe-47dc-ba8e-9fc464d65e0d">
+		<DocWhereRule Name="ValidRange" UniqueId="35baa8f3-d43c-4715-b06e-4bc95424f5c9">
 			<Documentation>The valid range for positioning a day in a week is min inclusive = 1 and max inclusive = 7.</Documentation>
 			<Expression>{1 &lt;= SELF &lt;= 7}</Expression>
 		</DocWhereRule>
 	</WhereRules>
+	<DiagramLine>
+		<DocPoint X="2644.43310546875" Y="1906.2088527526" />
+		<DocPoint X="2644.43310546875" Y="1918.84375" />
+		<DocPoint X="2579.36801147461" Y="1918.84375" />
+	</DiagramLine>
 </DocDefined>
 

@@ -16,25 +16,3 @@ Informal Propositions:
 2. Load groups of type LOAD_CASE shall always be instantiated from the subtype _IfcStructuralLoadCase_, not directly from the generic type _IfcStructuralLoadGroup_ itself.
 3. Instances of _IfcStructuralLoadCase_ shall only contain instances of _IfcStructuralAction_ or/ and instances of _IfcStructuralLoadGroup_ of type LOAD_GROUP.
 4. Load groups of type LOAD_COMBINATION shall only contain instances of _IfcStructuralLoadCase_.
-
-___
-## Common Use Definitions
-The following concepts are inherited at supertypes:
-
-* _IfcRoot_: [Identity](../../templates/identity.htm), [Revision Control](../../templates/revision-control.htm)
-
-[![Image](../../../img/diagram.png)&nbsp;Instance diagram](../../../annex/annex-d/common-use-definitions/ifcstructuralloadgroup.htm)
-
-{ .use-head}
-Group Assignment
-
-The [Group Assignment](../../templates/group-assignment.htm) concept applies to this entity as shown in Table 1.
-
-<table>
-<tr><td>
-<table class="gridtable">
-<tr><th><b>Type</b></th><th><b>Description</b></th></tr>
-<tr><td><a href="../../ifcstructuralanalysisdomain/lexical/ifcstructuralloadcase.htm">IfcStructuralLoadCase</a></td><td>Structural load cases applicable to the load group.</td></tr>
-</table>
-</td></tr>
-<tr><td><p class="table">Table 1 &mdash; IfcStructuralLoadGroup Group Assignment</p></td></tr></table>
