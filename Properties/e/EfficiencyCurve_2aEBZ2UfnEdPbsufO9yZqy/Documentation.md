@@ -1,0 +1,1 @@
+﻿The ratio of power transformed according to fractional load, where the first value indicates the load percentage and the second value indicates the efficiency of power transformation.

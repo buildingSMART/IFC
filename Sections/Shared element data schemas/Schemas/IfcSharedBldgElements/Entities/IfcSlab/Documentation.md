@@ -10,12 +10,12 @@ Only the core or constructional part of this construction is considered to be a 
 
 > NOTE&nbsp; An arbitrary planar element to which this semantic information is not applicable or irrelevant shall be modeled as _IfcPlate_.
 
-A slab may have openings, such as floor openings, or recesses. They are defined by an _IfcOpeningElement_ attached to the slab using the inverse relationship _HasOpenings_ pointing to _IfcRelVoidsElement_.
+There are two main representations for slab occurrences:
 
-There are three entities for slab occurrences:
+* _IfcSlab_ with _IfcMaterialLayerSetUsage_ is used for all occurrences of slabs, that are prismatic and where the thickness parameter can be fully described by the _IfcMaterialLayerSetUsage_. These slabs are always represented geometrically by a 'SweptSolid' geometry (or by a 'Clipping' geometry based on 'SweptSolid'), if a 3D geometric representation is assigned. 
+>> NOTE&nbsp; The entity _IfcSlabStandardCase_ has been deprecated, _IfcSlab_ with _IfcMaterialLayerSetUsage_ is used instead. 
+* _IfcSlab_ without _IfcMaterialLayerSetUsage_ is used for all other occurrences of slabs, particularly for slabs with changing thickness, or slabs with non planar surfaces, and slabs having only 'SweptSolid' or 'Brep' geometry, or if a more parametric representation is not intended.
 
-* _IfcSlabStandardCase_ used for all occurrences of slabs, that are prismatic and where the thickness parameter can be fully described by the _IfcMaterialLayerSetUsage_. These slabs are always represented geometrically by a 'SweptSolid' geometry (or by a 'Clipping' geometry based on 'SweptSolid'), if a 3D geometric representation is assigned. In addition they have to have a corresponding _IfcMaterialLayerSetUsage_ assigned.
-* _IfcSlabElementedCase_ used for occurrences of slabs which are aggregated from subordinate elements, following specific decomposition rules expressed by the mandatory use of _IfcRelAggregates_ relationship.
-* _IfcSlab_ used for all other occurrences of slabs, particularly for slabs with changing thickness, or slabs with non planar surfaces, and slabs having only 'SweptSolid' or 'Brep' geometry.
+> NOTE&nbsp; The entity _IfcSlabElementedCase_ has been deprecated, _IfcSlab>_ with _IfcRelAggregates_ is used to describe occurrences of slabs which are aggregated from subordinate elements,.
 
 > HISTORY&nbsp; New entity in IFC2.0; it is a merger of the two previous entities IfcFloor, IfcRoofSlab, introduced in IFC1.0

@@ -18,116 +18,17 @@
 		</DocModelRuleAttribute>
 	</Rules>
 	<Templates>
-		<DocTemplateDefinition id="Global_Positioning_3J9e0D0k14GeJdkFjFtWG0" Name="Global Positioning" UniqueId="d326800d-02e0-4442-84e7-b8fb4fde0400" Type="IfcContext">
-			<Documentation>Adding a geospatial coordinate reference, using an recognized coordinate reference system, to the geometric representation context. It allows to position the project coordinate system on earth (normally using eastings, northings, elevation about datum, and orientation).
-
-&gt; HISTORY&amp;nbsp; New concept template enabled by schema enhancements in IFC4.</Documentation>
-			<Rules>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationContexts">
-					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext">
-							<Rules>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasCoordinateOperation" Identification="HasGlobalPosition">
-									<Rules>
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMapConversion">
-											<Rules>
-												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Eastings" Identification="Eastings">
-													<Rules>
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLengthMeasure" />
-													</Rules>
-												</DocModelRuleAttribute>
-												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Northings" Identification="Northings">
-													<Rules>
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLengthMeasure" />
-													</Rules>
-												</DocModelRuleAttribute>
-												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="OrthogonalHeight" Identification="OrthogonalHeight">
-													<Rules>
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLengthMeasure" />
-													</Rules>
-												</DocModelRuleAttribute>
-												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="XAxisAbscissa" Identification="XAxisAbscissa">
-													<Rules>
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcReal" />
-													</Rules>
-												</DocModelRuleAttribute>
-												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="XAxisOrdinate" Identification="XAxisOrdinate">
-													<Rules>
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcReal" />
-													</Rules>
-												</DocModelRuleAttribute>
-												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Scale">
-													<Rules>
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcReal" />
-													</Rules>
-												</DocModelRuleAttribute>
-												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="TargetCRS">
-													<Rules>
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProjectedCRS">
-															<Rules>
-																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="CRSName">
-																	<Rules>
-																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
-																	</Rules>
-																</DocModelRuleAttribute>
-																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
-																	<Rules>
-																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
-																	</Rules>
-																</DocModelRuleAttribute>
-																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="GeodeticDatum">
-																	<Rules>
-																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
-																	</Rules>
-																</DocModelRuleAttribute>
-																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="VerticalDatum">
-																	<Rules>
-																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
-																	</Rules>
-																</DocModelRuleAttribute>
-																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="MapProjection">
-																	<Rules>
-																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
-																	</Rules>
-																</DocModelRuleAttribute>
-																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="MapZone">
-																	<Rules>
-																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
-																	</Rules>
-																</DocModelRuleAttribute>
-															</Rules>
-														</DocModelRuleEntity>
-													</Rules>
-												</DocModelRuleAttribute>
-											</Rules>
-										</DocModelRuleEntity>
-									</Rules>
-								</DocModelRuleAttribute>
-							</Rules>
-						</DocModelRuleEntity>
-					</Rules>
-				</DocModelRuleAttribute>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Phase">
-					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
-					</Rules>
-				</DocModelRuleAttribute>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ObjectType">
-					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
-					</Rules>
-				</DocModelRuleAttribute>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="LongName">
-					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
-					</Rules>
-				</DocModelRuleAttribute>
-			</Rules>
-		</DocTemplateDefinition>
 		<DocTemplateDefinition id="Project_Classification_Information_21ZAMZHNH9iPbHhdkjN3D1" Name="Project Classification Information" UniqueId="21ZAMZHNH9iPbHhdkjN3D1" Type="IfcContext">
 			<Documentation>Projects may define classification structures, which may be used to classify objects contained within the same project, or other referencing projects (incorporating the current project as _IfcProjectLibrary_).
 
 The classification information can either be provided as an external classification reference, only refering to an _IfcClassification_, that holds the classification name, edition and a resource location, or to an _IfcClassification_ containing the _IfcClassificationReference_&apos;s as the classification notations, and thereby allowing to include the classification system structure within the exchange structure.</Documentation>
+			<Localization>
+				<DocLocalization Name="AUTOMATIC" Locale="tt">
+					<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+	&lt;TemplateRule Parameters=&quot;ClassificationSource[Value]=&apos;DIN&apos; AND ClassificationName[Value]=&apos;DIN 276&apos;&quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+				</DocLocalization>
+			</Localization>
 			<Rules>
 				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasAssociations">
 					<Rules>
@@ -356,6 +257,13 @@ The classification information can either be provided as an external classificat
 					<Documentation>Declaration of object types, such as element types utilized by the element occurrences within this project, within the context of the project. It provides a directory of all object types independently if and where they are used by object occurrences.
 
 &gt; HISTORY&amp;nbsp; New concept template enabled by schema enhancements in IFC4.</Documentation>
+					<Localization>
+						<DocLocalization Name="AUTOMATIC" Locale="tt">
+							<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+	&lt;TemplateRule Parameters=&quot;RelatedTypes[Type]=&apos;IfcBeamType&apos; AND RelatedTypes[Size]=3&quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+						</DocLocalization>
+					</Localization>
 					<Rules>
 						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Declares">
 							<Rules>
@@ -423,6 +331,126 @@ The classification information can either be provided as an external classificat
 												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
 													<Rules>
 														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocModelRuleEntity>
+					</Rules>
+				</DocModelRuleAttribute>
+				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Phase">
+					<Rules>
+						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+					</Rules>
+				</DocModelRuleAttribute>
+				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ObjectType">
+					<Rules>
+						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+					</Rules>
+				</DocModelRuleAttribute>
+				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="LongName">
+					<Rules>
+						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+					</Rules>
+				</DocModelRuleAttribute>
+			</Rules>
+		</DocTemplateDefinition>
+		<DocTemplateDefinition id="Project_Global_Positioning_3J9e0D0k14GeJdkFjFtWG0" Name="Project Global Positioning" UniqueId="d326800d-02e0-4442-84e7-b8fb4fde0400" Type="IfcContext">
+			<Documentation>Adding a geospatial coordinate reference, using an recognized coordinate reference system, to the geometric representation context. It allows to position the project coordinate system on earth (normally using eastings, northings, elevation about datum, and orientation).
+
+&gt; HISTORY&amp;nbsp; New concept template enabled by schema enhancements in IFC4.</Documentation>
+			<Localization>
+				<DocLocalization Name="AUTOMATIC" Locale="tt">
+					<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+	&lt;TemplateRule Parameters=&quot;HasGlobalPosition[Exists]=TRUE&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;CRSName[Value]=EPSG:5555&quot;/&gt;
+	&lt;!-- Other checking parameters: Eastings[Value], Northings[Value], OrthogonalHeight[Value], XaxisAbscissa[Value], XAxisOrdinate[Value] --&gt;
+&lt;/TemplateRules&gt;</Documentation>
+				</DocLocalization>
+			</Localization>
+			<Rules>
+				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationContexts">
+					<Rules>
+						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationContext">
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasCoordinateOperation" Identification="HasGlobalPosition">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMapConversion">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Eastings" Identification="Eastings">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLengthMeasure" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Northings" Identification="Northings">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLengthMeasure" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="OrthogonalHeight" Identification="OrthogonalHeight">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLengthMeasure" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="XAxisAbscissa" Identification="XAxisAbscissa">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcReal" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="XAxisOrdinate" Identification="XAxisOrdinate">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcReal" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Scale">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcReal" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="TargetCRS">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProjectedCRS">
+															<Rules>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="CRSName">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="GeodeticDatum">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="VerticalDatum">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="MapProjection">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="MapZone">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="MapUnit">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcNamedUnit" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocModelRuleEntity>
 													</Rules>
 												</DocModelRuleAttribute>
 											</Rules>
@@ -617,7 +645,7 @@ application/step | IFC-SPF</Documentation>
 								</DocModelRuleAttribute>
 								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasSubContexts">
 									<Rules>
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationSubContext" Identification="SubContextIdentifier">
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationSubContext">
 											<Rules>
 												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContextIdentifier" Identification="SubContextIdentifier">
 													<Rules>
@@ -690,12 +718,12 @@ application/step | IFC-SPF</Documentation>
 										</DocModelRuleAttribute>
 										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="CoordinateSpaceDimension">
 											<Rules>
-												<DocModelRuleEntity id="i44261" CardinalityMin="0" CardinalityMax="0" Name="IfcDimensionCount">
+												<DocModelRuleEntity id="i44615" CardinalityMin="0" CardinalityMax="0" Name="IfcDimensionCount">
 													<Rules>
 														<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0">
 															<Expression xsi:type="DocOpStatement" Operation="compareequal">
 																<Reference xsi:type="DocOpReference">
-																	<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="i44261" />
+																	<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="i44615" />
 																</Reference>
 																<Value xsi:type="DocOpLiteral" Operation="loadstring" Literal="2" />
 															</Expression>
@@ -734,7 +762,7 @@ application/step | IFC-SPF</Documentation>
 										</DocModelRuleAttribute>
 										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasSubContexts">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationSubContext" Identification="SubContextIdentifier">
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationSubContext">
 													<Rules>
 														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="TargetScale">
 															<Rules>
@@ -791,6 +819,13 @@ application/step | IFC-SPF</Documentation>
 					<Documentation>The main geometric representation context that is created for 3D representations, it can be further refined using geometric representation sub contexts for specific 3D contexts.
 
 &gt; NOTE&amp;nbsp; The 3D shape representations with the representation identifier &quot;Body&quot; are linked to the 3D geometric representation subset with context identifier &quot;Body&quot; and context type &quot;Model&quot;.</Documentation>
+					<Localization>
+						<DocLocalization Name="AUTOMATIC" Locale="tt">
+							<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+	&lt;TemplateRule Parameters=&quot;ContextIdentifier[Value]=&apos;Model&apos; AND ContextType[Value]=&apos;Body&apos; AND SubContextIdentifier[Value]=&apos;Model&apos;&quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+						</DocLocalization>
+					</Localization>
 					<Rules>
 						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RepresentationContexts">
 							<Rules>
@@ -808,12 +843,12 @@ application/step | IFC-SPF</Documentation>
 										</DocModelRuleAttribute>
 										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="CoordinateSpaceDimension">
 											<Rules>
-												<DocModelRuleEntity id="i44303" CardinalityMin="0" CardinalityMax="0" Name="IfcDimensionCount">
+												<DocModelRuleEntity id="i44658" CardinalityMin="0" CardinalityMax="0" Name="IfcDimensionCount">
 													<Rules>
 														<DocModelRuleConstraint CardinalityMin="0" CardinalityMax="0">
 															<Expression xsi:type="DocOpStatement" Operation="compareequal">
 																<Reference xsi:type="DocOpReference">
-																	<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="i44303" />
+																	<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="i44658" />
 																</Reference>
 																<Value xsi:type="DocOpLiteral" Operation="loadstring" Literal="3" />
 															</Expression>
@@ -852,7 +887,7 @@ application/step | IFC-SPF</Documentation>
 										</DocModelRuleAttribute>
 										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasSubContexts">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationSubContext" Identification="SubContextIdentifier">
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcGeometricRepresentationSubContext">
 													<Rules>
 														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="TargetScale">
 															<Rules>
@@ -911,9 +946,9 @@ application/step | IFC-SPF</Documentation>
 		<DocTemplateDefinition id="Project_Units_1CogmCYFXC7P7z8XJGvHF4" Name="Project Units" UniqueId="1CogmCYFXC7P7z8XJGvHF4" Type="IfcContext">
 			<Documentation>The project context includes the definition of the default units within the IFC data set. They are declared once for the context of the whole data set. Default units are those units that apply:
 
-* to all geometric representation items within the geometric representation contexts; 
-* to all attributes with a defined datatype indicating a measure datatype; 
-* to all properties and quantities with a defined datatype indicating a measure datatype and with no local unit definitions provided. 
+* to all geometric representation items within the geometric representation contexts;
+* to all attributes with a defined datatype indicating a measure datatype;
+* to all properties and quantities with a defined datatype indicating a measure datatype and with no local unit definitions provided.
 
 Default units are defined as either:
 
@@ -923,6 +958,16 @@ Default units are defined as either:
 * Monetary unit as a special case of a unit to hold the currency name
 
 &gt; EXAMPLE&amp;nbsp; Meter is an SI unit without prefix, milli meter is an SI unit with prefix, inch and foot are conversion based units to be declared with a converstion factor to the SI unit (here meter), heat flux density (W/m2) is a derived unit with the unit elements Power (W) and Area (m2), and Euro is a monetary unit.</Documentation>
+			<Localization>
+				<DocLocalization Name="AUTOMATIC" Locale="tt">
+					<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+                &lt;TemplateRule Parameters=&quot;HasUnits[Exists]=TRUE&quot;/&gt;
+                &lt;TemplateRule Parameters=&quot;SIUnitType[Value]=&apos;LENGTHUNIT&apos; AND SIUnitName[Value]=&apos;METRE&apos;&quot;/&gt;
+                &lt;TemplateRule Parameters=&quot;ConversionUnitType[Value]=&apos;PLANEANGLEUNIT&apos; AND ConversionUnitName[Value]=&apos;degree&apos;&quot;/&gt;
+                &lt;TemplateRule Parameters=&quot;DerivedUnitType[Value]=&apos;MASSDENSITYUNIT&apos;&quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+				</DocLocalization>
+			</Localization>
 			<Rules>
 				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="UnitsInContext" Identification="HasUnits">
 					<Rules>
