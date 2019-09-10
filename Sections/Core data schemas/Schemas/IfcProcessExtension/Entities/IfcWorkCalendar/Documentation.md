@@ -9,18 +9,3 @@ The definition of time periods can be derived from a base calendar and/or modifi
 Figure 1 shows the definition of a work calendar, which is defined by a set of work times and exception times. The work times are defined as recurring patterns with optional boundaries (applying from and/or to a specific date). The shown example defines a simple work calendar with working times Monday to Thursday 8:00 to 12:00 and 13:00 to 17:00, Friday 8:00 to 14:00 and as exception every 1st Monday in a month the work starts one hour later - i.e. the working time on every 1st Monday in a month is overriden to be 9:00 to 12:00 and 13:00 to 17:00. Both the working time and the exception time is valid for the period of 01.09.2010 till 30.08.2011.
 
 !["task type instantiation diagram"](../../../../../../figures/ifcworkcalendar_instantiation_diagram.png "Figure 1 &mdash; Work calendar instantiation")
-
-___
-## Common Use Definitions
-The following concepts are inherited at supertypes:
-
-* _IfcRoot_: [Identity](../../templates/identity.htm), [Revision Control](../../templates/revision-control.htm)
-
-[![Image](../../../img/diagram.png)&nbsp;Instance diagram](../../../annex/annex-d/common-use-definitions/ifcworkcalendar.htm)
-
-{ .use-head}
-Control Assignment
-
-The [Control Assignment](../../templates/control-assignment.htm) concept applies to this entity.
-
-The base calendar of a work calendar is defined by _IfcRelAssignsToControl_, where _IfcRelAssignsToControl.RelatingControl_ is linked with the base calendar and _IfcRelAssignsToControl.RelatedObjects_ is linked with work calendars that are derived from the base calendar. Although not restricted by the _IfcRelAssignsToControl_ relationship it is only allowed to have one base calendar.

@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSweptAreaSolid" UniqueId="1bfb8302-5211-4de4-a3b9-20e200cf1097" DiagramNumber="4" BaseDefinition="IfcSolidModel" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSweptAreaSolid" Name="IfcSweptAreaSolid" UniqueId="1bfb8302-5211-4de4-a3b9-20e200cf1097" DiagramNumber="4" BaseDefinition="IfcSolidModel" EntityFlags="205">
 	<Localization>
 		<DocLocalization Name="Festkörper - Entlang einem Pfad extrudiert" Locale="de" />
+		<DocLocalization Name="Swept Area Solid" Locale="en" />
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="4905.8834" Y="270.29167" Width="486.63333" Height="256.66667" />
 	<Subtypes>
@@ -36,5 +37,39 @@
 			<Expression>SweptArea.ProfileType = IfcProfileTypeEnum.Area</Expression>
 		</DocWhereRule>
 	</WhereRules>
+	<Tree>
+		<DocLine>
+			<DiagramLine>
+				<DocPoint X="4977.7961" Y="526.95837" />
+				<DocPoint X="4977.7961" Y="819.29163" />
+			</DiagramLine>
+			<Tree>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="5029.9837" Y="819.29174" />
+						<DocPoint X="5029.9837" Y="890.45834" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="5770.6732" Y="819.29174" />
+						<DocPoint X="5770.6732" Y="888.391737" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="6030.5333" Y="819.29163" />
+						<DocPoint X="6030.5333" Y="737.924977" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="5470.6" Y="819.29163" />
+						<DocPoint X="5470.6" Y="737.958297" />
+					</DiagramLine>
+				</DocLine>
+			</Tree>
+		</DocLine>
+	</Tree>
 </DocEntity>
 

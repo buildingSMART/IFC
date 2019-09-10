@@ -2,6 +2,7 @@
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSpatialElement" Name="IfcSpatialElement" UniqueId="a77e2e44-45fd-486d-8869-116757040301" DiagramNumber="5" BaseDefinition="IfcProduct" EntityFlags="205">
 	<Localization>
 		<DocLocalization Name="Räumliches Element" Locale="de" />
+		<DocLocalization Name="Spatial Element" Locale="en" />
 		<DocLocalization Name="Element spatial" Locale="fr" />
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="6628.4375" Y="110.60937" Width="413.33333" Height="423.33333" />
@@ -20,7 +21,7 @@
 			</DiagramLine>
 			<DiagramLabel xsi:type="DocRectangle" X="7041.7708" Y="152.140903" Width="129" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ContainsElements" UniqueId="ba25c1df-d29f-4d55-8f38-2390bf48ba41" DefinedType="IfcRelContainedInSpatialStructure" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingStructure">
+		<DocAttribute Name="ContainsElements" UniqueId="ba25c1df-d29f-4d55-8f38-2390bf48ba41" DefinedType="IfcRelContainedInSpatialStructure" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingStructure" XsdFormat="element">
 			<Documentation>Set of spatial containment relationships, that holds those elements, which are contained within this element of the project spatial structure.
 &gt; NOTE&amp;nbsp; The spatial containment relationship, established by _IfcRelContainedInSpatialStructure_, is required to be an hierarchical relationship, where each element can only be assigned to 0 or 1 spatial structure element.</Documentation>
 			<DiagramLine>
@@ -61,5 +62,33 @@
 			<DiagramLabel xsi:type="DocRectangle" X="7044.1125667" Y="322.902573" Width="602" Height="70" />
 		</DocAttribute>
 	</Attributes>
+	<Tree>
+		<DocLine>
+			<DiagramLine>
+				<DocPoint X="6795.1041" Y="533.94271" />
+				<DocPoint X="6795.1041" Y="789.27604" />
+			</DiagramLine>
+			<Tree>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="7519.2042" Y="789.27604" />
+						<DocPoint X="7519.2042" Y="850.109374" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="7073.5315" Y="789.27604" />
+						<DocPoint X="7073.5315" Y="1270.42937" />
+					</DiagramLine>
+				</DocLine>
+				<DocLine>
+					<DiagramLine>
+						<DocPoint X="6793.7333" Y="789.27604" />
+						<DocPoint X="6793.7333" Y="850.05333" />
+					</DiagramLine>
+				</DocLine>
+			</Tree>
+		</DocLine>
+	</Tree>
 </DocEntity>
 

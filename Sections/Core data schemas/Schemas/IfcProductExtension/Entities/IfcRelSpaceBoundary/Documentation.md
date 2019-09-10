@@ -12,48 +12,27 @@ Space boundaries are always defined as seen from the space. In general two basic
     * 2^<small>nd</small>^ level type A: There is a space on the other side.
     * 2^<small>nd</small>^ level type B: There is a building element on the other side. 
 
-> <small>The exact definition of how space boundaries
-are broken down depends on the view definition, more detailed
-conventions on how space boundaries are decomposed can only be
-given at the domain or application type level.</small><ul>
-<li><small>In an architectural or FM related view, a space
-boundary is defined totally from inside the space. This is a
-1<sup><small>st</small></sup> level space boundary.</small></li>
-<li><small>In a thermal view, the decomposition of the space
-boundary depends on the material of the providing building
-element and the adjacent spaces behind. This is a
-2<sup><small>nd</small></sup> level space boundary.</small></li>
-</ul>
+> <small>The exact definition of how space boundaries are broken down depends on the view definition, more detailed conventions on how space boundaries are decomposed can only be given at the domain or application type level.</small>> * <small>In an architectural or FM related view, a space boundary is defined totally from inside the space. This is a 1<sup><small>st</small></sup> level space boundary.</small>
+> * <small>In a thermal view, the decomposition of the space boundary depends on the material of the providing building element and the adjacent spaces behind. This is a 2<sup><small>nd</small></sup> level space boundary.</small>
 
 <table summary="space boundary types" border="0">
 <tr>
-<td><img src="../../../../../../figures/ifcrelspaceboundary_1stlevel.png" alt="1st level"></td>
-<td><img src="../../../../../../figures/ifcrelspaceboundary_2ndlevel.png" alt="2nd level"></td>
+ <td><img src="../../../../../../figures/ifcrelspaceboundary_1stlevel.png" alt="1st level"></td>
+ <td><img src="../../../../../../figures/ifcrelspaceboundary_2ndlevel.png" alt="2nd level"></td>
 </tr>
 <tr>
-<td><p class="figure">Figure 1 &mdash; Space boundary at first level</p></td>
-<td><p class="figure">Figure 2 &mdash; Space boundary at second level</p></td>
+ <td><p class="figure">Figure 1 &mdash; Space boundary at first level</p></td>
+ <td><p class="figure">Figure 2 &mdash; Space boundary at second level</p></td>
 </tr>
 <tr>
-<td><img src="../../../../../../figures/ifcrelspaceboundary_2ndlevel_typea.png" alt="2nd level type a"></td>
-<td><img src="../../../../../../figures/ifcrelspaceboundary_2ndlevel_typeb.png" alt="2nd level type b"></td>
+ <td><img src="../../../../../../figures/ifcrelspaceboundary_2ndlevel_typea.png" alt="2nd level type a"></td>
+ <td><img src="../../../../../../figures/ifcrelspaceboundary_2ndlevel_typeb.png" alt="2nd level type b"></td>
 </tr>
 <tr>
-<td><p class="figure">Figure 3 &mdash; Space boundary at second level type A</p></td>
-<td><p class="figure">Figure 4 &mdash; Space boundary at second level type B</p></td>
+ <td><p class="figure">Figure 3 &mdash; Space boundary at second level type A</p></td>
+ <td><p class="figure">Figure 4 &mdash; Space boundary at second level type B</p></td>
 </tr>
 </table>
-
-> HISTORY&nbsp; New entity in IFC1.5, the entity has been modified in IFC2x.
-
-{ .change-ifc2x}
-> IFC2x CHANGE The data type of the attribute_RelatedBuildingElement_ has been changed from _IfcBuildingElement_ to its supertype _IfcElement_. The data type of the attribute _ConnectionGeometry_ has been changed from _IfcConnectionSurfaceGeometry_ to its supertype _IfcConnectionGeometry_.
-
-{ .change-ifc2x4}
-> IFC4 CHANGE The attribute _RelatedBuildingElement_ has been made mandatory. For virtual boundaries the reference to _IfcVirtualElement_ is now mandatory.
-
-{ .use-head}
-Attribute Use Definitions
 
 The differences between the 1^<small>st</small>^ and 2^<small>nd</small>^ level space boundaries is identified by:
 
@@ -71,9 +50,6 @@ As shown in Figure 41, if the _IfcRelSpaceBoundary_ is used to express a virtual
 As shown in Figure 42, if the _IfcRelSpaceBoundary_ is used to express a physical boundary between two spaces, the attribute _PhysicalOrVirtualBoundary_ has to be set to PHYSICAL. The attribute _RelatedBuildingElement_ has to be given and points to the element providing the space boundary. The attribute _ConnectionGeometry_ may be inserted, in this case it describes the physical space boundary geometically, or it may be omited, in that case it describes a physical space boundary logically.
 
 !["IfcRelSpaceBoundary_physical (35K)"](../../../../../../figures/ifcrelspaceboundary_physical.png "Figure 6 &mdash; Space boundary of physical element")
-
-{ .use-head}
-Geometry Use Definitions
 
 The _IfcRelSpaceBoundary_ may have geometry attached. If geometry is not attached, the relationship between space and building element is handled only on a logical level. If geometry is attached, it is given within the local coordinate systems of the space.
 
@@ -115,3 +91,11 @@ The following constraints apply to the surface connection geometry representatio
 The following constraints apply to the 2D curve representation:
 
 * Curve: _IfcPolyline_, _IfcTrimmedCurve_ or _IfcCompositeCurve_
+
+> HISTORY&nbsp; New entity in IFC1.5, the entity has been modified in IFC2x.
+
+{ .change-ifc2x}
+> IFC2x CHANGE The data type of the attribute_RelatedBuildingElement_ has been changed from _IfcBuildingElement_ to its supertype _IfcElement_. The data type of the attribute _ConnectionGeometry_ has been changed from _IfcConnectionSurfaceGeometry_ to its supertype _IfcConnectionGeometry_.
+
+{ .change-ifc2x4}
+> IFC4 CHANGE The attribute _RelatedBuildingElement_ has been made mandatory. For virtual boundaries the reference to _IfcVirtualElement_ is now mandatory.

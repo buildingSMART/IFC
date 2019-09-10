@@ -29,8 +29,3 @@ Informal Propositions:
 5. The edge start is not a part of the edge domain.
 6. The edge end is not a part of the edge domain.
 7. Vertex geometry shall be consistent with edge geometry.
-
-___
-Figure 2 illustrates edge curve usage.
-
-!["usage"](../../../../../../figures/ifcedgecurve.png "Figure 2 &mdash; Edge curve usage")

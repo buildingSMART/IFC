@@ -38,22 +38,6 @@ The following keywords for _IfcMaterialConstituentSet.MaterialConstituents[n].Na
 If the fall back single _IfcMaterial_ is referenced, it applies to the lining and framing of the door.
 
 { .use-head}
-Property Set Use Definition:
-
-The shared property sets relating to the _IfcDoorType_ are defined by the _IfcPropertySet_ and are attached by the _HasPropertySets_ attribute. The following property set definitions specific to the _IfcDoorType_ are part of this IFC release:
-
-> NOTE&nbsp; There is no differentiation between properties within the property set that are only assignable to _IfcDoorType_ and those that are only assignable to _IfcDoor_. If the same property is assigned to the _IfcDoorType_ and the _IfcDoor_ being an occurrence of the _IfcDoorType_, then the occurrence property overrides the type property.
-
-* [Pset_DoorCommon](../../psd/IfcSharedBldgElements/Pset_DoorCommon.xml){ target="SOURCE"}: common property set for all door types.
-* [Pset_DoorWindowGlazingType](../../psd/IfcSharedBldgElements/Pset_DoorWindowGlazingType.xml){ target="SOURCE"}: specific property set for the glazing properties of the door type glazing
-* [Pset_DoorWindowShadingType](../../psd/IfcSharedBldgElements/Pset_DoorWindowShadingType.xml){ target="SOURCE"}: specific property set for the shading properties of the door type shading
-
-Two subtypes of _IfcPreDefinedPropertySet_ are applicable to _IfcDoorType_:
-
-* _IfcDoorLiningProperties_ - a single instance to define the shape parameters of the door lining
-* _IfcDoorPanelProperties_ - one or several instances to define the shape parameters of the door panel(s)
-
-{ .use-head}
 Geometry Use Definitions:
 
 The _IfcDoorType_ may define the common shape of door occurrences. The common shape can be defined by
@@ -61,17 +45,4 @@ The _IfcDoorType_ may define the common shape of door occurrences. The common sh
 * applying shape parameters defined within the associated _IfcDoorLiningProperties_ and _IfcDoorPanelProperties_ applied to the 'Profile' geometric representation. It is only applicable if the _IfcDoorType_ has only occurrences of type _IfcDoorStandardCase_ (See geometric use definition of _IfcDoorStandardCase_ for further information).
 * applying the _RepresentationMaps_ attribute to refer to a list of _IfcRepresentationMap_'s, that allow for multiple geometric representations (e.g. with _IfcShapeRepresentation_'s having an _RepresentationIdentifier_ 'Box', 'Profile', 'FootPrint', or 'Body') 
 >> NOTE&nbsp; The product shape representations are defined as _RepresentationMaps_ (attribute of the supertype _IfcTypeProduct_), which get assigned by an element occurrence instance through the _IfcShapeRepresentation.Item[n]_ being an _IfcMappedItem_. See _IfcTypeProduct_ for further information. 
->> NOTE&nbsp; The values of attributes _RepresentationIdentifier_ and _RepresentationType_ of _IfcShapeRepresentation_ are restricted in the same way as those for _IfcDoor_ and _IfcDoorStandardCase_ 
-
-___
-## Common Use Definitions
-The following concepts are inherited at supertypes:
-
-* _IfcRoot_: [Identity](../../templates/identity.htm), [Revision Control](../../templates/revision-control.htm)
-
-[![Image](../../../img/diagram.png)&nbsp;Instance diagram](../../../annex/annex-d/common-use-definitions/ifcdoortype.htm)
-
-{ .use-head}
-Type Body Geometry
-
-The [Type Body Geometry](../../templates/type-body-geometry.htm) concept applies to this entity.
+>> NOTE&nbsp; The values of attributes _RepresentationIdentifier_ and _RepresentationType_ of _IfcShapeRepresentation_ are restricted in the same way as those for _IfcDoor_ and _IfcDoorStandardCase_

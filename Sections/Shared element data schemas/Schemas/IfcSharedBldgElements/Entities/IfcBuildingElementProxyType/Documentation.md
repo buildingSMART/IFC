@@ -9,16 +9,3 @@ A building element proxy type is used to define the common properties of a certa
 The occurrences of the _IfcBuildingElementProxyType_ are represented by instances of _IfcBuildingElementProxy_.
 
 > HISTORY&nbsp; New entity in IFC2x3.
-
-___
-## Common Use Definitions
-The following concepts are inherited at supertypes:
-
-* _IfcRoot_: [Identity](../../templates/identity.htm), [Revision Control](../../templates/revision-control.htm)
-
-[![Image](../../../img/diagram.png)&nbsp;Instance diagram](../../../annex/annex-d/common-use-definitions/ifcbuildingelementproxytype.htm)
-
-{ .use-head}
-Type Body Geometry
-
-The [Type Body Geometry](../../templates/type-body-geometry.htm) concept applies to this entity.

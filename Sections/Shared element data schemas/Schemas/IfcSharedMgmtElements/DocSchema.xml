@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSharedMgmtElements" UniqueId="fa1b3845-a9a3-4c33-97fc-b4fc8fc8e9b4" DiagramPagesHorz="0" DiagramPagesVert="0">
+<DocSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSharedMgmtElements" UniqueId="fa1b3845-a9a3-4c33-97fc-b4fc8fc8e9b4" DiagramPagesHorz="1" DiagramPagesVert="1">
 	<SchemaRefs>
 		<DocSchemaRef Name="IFCACTORRESOURCE" UniqueId="c5e395a7-05d0-424e-850a-8687cc6fe98a" />
 		<DocSchemaRef Name="IFCCOSTRESOURCE" UniqueId="1f174302-0ef8-4bf9-8c99-b93231882361">
@@ -20,6 +20,46 @@
 			<Definitions>
 				<DocDefinitionRef Name="IfcControl" UniqueId="df5e5752-b080-4a15-a196-0f11f0680ecd" DiagramNumber="1">
 					<DiagramRectangle xsi:type="DocRectangle" X="40.271094" Y="36.415436" Width="367" Height="139.55941" />
+					<Tree>
+						<DocLine>
+							<DiagramLine>
+								<DocPoint X="160.42816" Y="175.97485" />
+								<DocPoint X="160.4281605" Y="175.97485" />
+							</DiagramLine>
+							<Tree>
+								<DocLine>
+									<DiagramLine>
+										<DocPoint X="160.42594" Y="1842.9569" />
+										<DocPoint X="210.379759" Y="1842.9569" />
+									</DiagramLine>
+								</DocLine>
+								<DocLine>
+									<DiagramLine>
+										<DocPoint X="160.42558" Y="394.03169" />
+										<DocPoint X="210.317599" Y="394.03169" />
+									</DiagramLine>
+								</DocLine>
+								<DocLine>
+									<DiagramLine>
+										<DocPoint X="160.42603" Y="2176.4991" />
+										<DocPoint X="210.299298" Y="2176.4991" />
+									</DiagramLine>
+								</DocLine>
+								<DocLine>
+									<DiagramLine>
+										<DocPoint X="160.42733" Y="756.34952" />
+										<DocPoint X="207.622908" Y="756.34952" />
+									</DiagramLine>
+								</DocLine>
+								<DocLine>
+									<DiagramLine>
+										<DocPoint X="160.42733" Y="1124.87" />
+										<DocPoint X="207.507213" Y="1124.87" />
+									</DiagramLine>
+								</DocLine>
+							</Tree>
+						</DocLine>
+					</Tree>
 				</DocDefinitionRef>
 			</Definitions>
 		</DocSchemaRef>
@@ -41,5 +81,19 @@
 			</Definitions>
 		</DocSchemaRef>
 	</SchemaRefs>
+	<Comments>
+		<DocComment UniqueId="216cef9f-0fd5-4657-9535-b5e4d04dbb12" DiagramNumber="1">
+			<Documentation>IFC2x4 CHANGE Entities IfcFurnitureStandard and IfcEquipmentStandard deleted; use IfcFurnitureType (subtypes) and IfcDistributionElement (subtypes) with IfcConstraint instead.  IfcMove deleted and replaced by IfcTask with PredefinedType=MOVE.  IfcCondition and IfcConditionCriterion deleted and replaced by Pset_Condition.</Documentation>
+			<DiagramRectangle xsi:type="DocRectangle" X="182.02846" Y="1461.4443" Width="1330.272" Height="184.21336" />
+		</DocComment>
+		<DocComment UniqueId="540bb42d-85a4-493f-bdc7-30e35c29460a" DiagramNumber="1">
+			<Documentation>IFC2x4 CHANGE Former schema IfcFacilitiesMgmtDomain merged into this schema to include entities IfcPermit and IfcActionRequest.</Documentation>
+			<DiagramRectangle xsi:type="DocRectangle" X="504.38332" Y="36.519987" Width="1014.3899" Height="103.69246" />
+		</DocComment>
+		<DocComment UniqueId="7bb7d781-4864-4158-92ac-93fff78d0dad" DiagramNumber="1">
+			<Documentation>IFC2x4 CHANGE  Entities IfcProjectOrderRecord, IfcRelAssignsToProjectOrder and IfcRelSchedulesCostItems deleted. Use the general IfcRelAssignsToControl relationship.  IfcRelAssociatesAppliedValue deleted; use direct attribute at IfcCostItem instead.</Documentation>
+			<DiagramRectangle xsi:type="DocRectangle" X="178.05904" Y="1294.1207" Width="1316.9787" Height="185.774" />
+		</DocComment>
+	</Comments>
 </DocSchema>
 

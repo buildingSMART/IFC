@@ -30,26 +30,3 @@ Informal Propositions:
 5. In case of types LINEAR, POLYGONAL, and DISCRETE, the load items shall have one-dimensional _IfcStructuralLoadConfiguration.Locations_, defining the location of the load samples in local coordinates of the curve action. The load items shall be provided in ascending order according to their locations. The first and the last load item define the extent of the load distribution. 
 6. Point actions must be of type DISCRETE, thus contain two or more load points. (Single point loads are modeled by _IfcStructuralPointAction_.)
 7. All items in _SELF\IfcStructuralActivity.AppliedLoad\IfcStructuralLoadConfiguration.Values_ shall be of the same entity type.
-
-___
-## Common Use Definitions
-The following concepts are inherited at supertypes:
-
-* _IfcRoot_: [Identity](../../templates/identity.htm), [Revision Control](../../templates/revision-control.htm)
-
-[![Image](../../../img/diagram.png)&nbsp;Instance diagram](../../../annex/annex-d/common-use-definitions/ifcstructuralcurveaction.htm)
-
-{ .use-head}
-Structural Activity
-
-The [Structural Activity](../../templates/structural-activity.htm) concept applies to this entity as shown in Table 1.
-
-<table>
-<tr><td>
-<table class="gridtable">
-<tr><th><b>AppliedLoad</b></th><th><b>RelatingElement</b></th><th><b>Description</b></th></tr>
-<tr><td><a href="../../ifcstructuralloadresource/lexical/ifcstructuralloadlinearforce.htm">IfcStructuralLoadLinearForce</a></td><td><a href="../../ifcstructuralanalysisdomain/lexical/ifcstructuralcurvemember.htm">IfcStructuralCurveMember</a></td><td>Linear force and moment along a curve member.</td></tr>
-<tr><td><a href="../../ifcstructuralloadresource/lexical/ifcstructuralloadlinearforce.htm">IfcStructuralLoadLinearForce</a></td><td><a href="../../ifcstructuralanalysisdomain/lexical/ifcstructuralsurfacemember.htm">IfcStructuralSurfaceMember</a></td><td>Linear force and moment positioned within a surface member.</td></tr>
-</table>
-</td></tr>
-<tr><td><p class="table">Table 1 &mdash; IfcStructuralCurveAction Structural Activity</p></td></tr></table>

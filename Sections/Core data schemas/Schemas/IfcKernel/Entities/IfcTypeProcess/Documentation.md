@@ -5,10 +5,3 @@ An _IfcTypeProcess_ may have a list of property set attached. Values of these pr
 Subtypes of _IfcTypeProcess_ may be exchanged without being already assigned to subtypes of _IfcProcess_.
 
 > HISTORY&nbsp; New entity in IFC4.
-
-{ .use-head}
-Property set use definition
-
-An _IfcTypeProcess_ may have a list of property sets attached, accessible by the attribute _SELF\IfcTypeObject.HasPropertySets_. Currently there are no predefined property sets defined as part of the IFC specification.
-
-> NOTE&nbsp; For property sets, a property within an occurrence property set that is assigned at the process occurrence, overrides the same property assigned to the process type.

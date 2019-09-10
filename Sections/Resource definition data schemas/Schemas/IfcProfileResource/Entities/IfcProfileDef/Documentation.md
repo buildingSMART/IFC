@@ -154,21 +154,3 @@ If an external reference is provided, sending systems shall ensure that the shap
 **Direct instances of _IfcProfileDef_**
 
 Usually, only subtypes of _IfcProfileDef_ should be instantiated. In some special cases, e.g. if the profile object is used for purposes other than geometric models (e.g. for structural analysis models), it may be possible to directly instantiate _IfcProfileDef_ and further specify the profile only by external reference or by profile properties. The latter are tracked by the inverse attribute _HasProperties_.
-
-___
-## Common Use Definitions
-[![Image](../../../img/diagram.png)&nbsp;Instance diagram](../../../annex/annex-d/common-use-definitions/ifcprofiledef.htm)
-
-{ .use-head}
-Property Sets for Objects
-
-The [Property Sets for Objects](../../templates/property-sets-for-objects.htm) concept applies to this entity as shown in Table 1.
-
-<table>
-<tr><td>
-<table class="gridtable">
-<tr><th><b>PredefinedType</b></th><th><b>Name</b></th></tr>
-<tr><td>&nbsp;</td><td>Pset_ProfileMechanical</td></tr>
-</table>
-</td></tr>
-<tr><td><p class="table">Table 1 &mdash; IfcProfileDef Property Sets for Objects</p></td></tr></table>

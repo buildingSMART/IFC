@@ -2,26 +2,29 @@
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRationalBSplineCurveWithKnots" UniqueId="3f24b989-aa9e-461e-b6d2-1dd3dabb466b" DiagramNumber="7" BaseDefinition="IfcBSplineCurveWithKnots" EntityFlags="229">
 	<Localization>
 		<DocLocalization Name="Rationale Bézier-Spline - Kurve mit Kontrollpunkten" Locale="de" />
+		<DocLocalization Name="Rational BSpline Curve With Knots" Locale="en" />
 		<DocLocalization Name="Courbes Bsplines rationnelles avec nœuds" Locale="fr" />
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="9702.7533" Y="2073.0533" Width="359.82" Height="153.33333" />
 	<Attributes>
-		<DocAttribute Name="WeightsData" UniqueId="04f8a0e1-3151-4303-acd6-e6f73ec881c3" DefinedType="REAL" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="0">
+		<DocAttribute Name="WeightsData" UniqueId="04f8a0e1-3151-4303-acd6-e6f73ec881c3" DefinedType="IfcReal" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="0">
 			<Documentation>The supplied values of the weights.</Documentation>
 			<DiagramLine>
-				<DocPoint X="10062.573" Y="2107.0533" />
-				<DocPoint X="10764.90537" Y="2107.0533" />
+				<DocPoint X="10062.5733" Y="2137.61995442708" />
+				<DocPoint X="10062.5733" Y="2137.61995442708" />
+				<DocPoint X="10647.5524088542" Y="2137.61995442708" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="10057.2396667" Y="2099.0533" Width="226" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="10062.5733" Y="2117.61995442708" Width="226" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Weights" UniqueId="069949af-bc3a-4318-a19a-5fe2d5956af9" DefinedType="REAL" AttributeFlags="0" AggregationType="2" AggregationFlag="0" AggregationLower="0" AggregationUpper="UpperIndexOnControlPoints">
+		<DocAttribute Name="Weights" UniqueId="069949af-bc3a-4318-a19a-5fe2d5956af9" DefinedType="IfcReal" AttributeFlags="0" AggregationType="2" AggregationFlag="0" AggregationLower="0" AggregationUpper="UpperIndexOnControlPoints">
 			<Documentation>The array of weights associated with the control points. This is derived from the weights data.</Documentation>
 			<Derived>IfcListToArray(WeightsData,0,SELF\IfcBSplineCurve.UpperIndexOnControlPoints)</Derived>
 			<DiagramLine>
-				<DocPoint X="10062.573" Y="2181.7199" />
-				<DocPoint X="10764.87237" Y="2181.7199" />
+				<DocPoint X="10062.5733" Y="2203.28662109375" />
+				<DocPoint X="10062.5733" Y="2203.28662109375" />
+				<DocPoint X="10647.5524088542" Y="2203.28662109375" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="10065.2396667" Y="2171.053233" Width="546" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="10062.5733" Y="2183.28662109375" Width="546" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

@@ -5,8 +5,6 @@
 Any element can be referenced to zero, one or several levels of the spatial structure. Whereas the _IfcRelContainsInSpatialStructure_ relationship is required to be hierarchical (an element can only be contained in exactly one spatial structure element), the _IfcRelReferencedInSpatialStructure_ is not restricted to be hierarchical.
 
 > EXAMPLE&nbsp; A wall might be normally contained within a storey, and since it does not span through several stories, it is not referenced in any additional storey. However a curtain wall might span through several stories, in this case it can be contained within the ground floor, but it would be referenced by all additional stories, it spans.
-> 
-
 
 Predefined spatial structure elements to which elements can be assigned are
 
@@ -16,13 +14,6 @@ Predefined spatial structure elements to which elements can be assigned are
 * space as _IfcSpace_ 
 
 Elements can also be references in a spatial zone that is provided as _IfcSpatialZone_.
-
-The same element can be assigned to different spatial structure elements depending on the context.
-
-> HISTORY&nbsp; New entity in IFC2x3.
-
-{ .use-head}
-Use Definition
 
 Figure 1 shows the use of _IfcRelContainedInSpatialStructure_ and _IfcRelReferencedInSpatialStructure_ to assign an _IfcCurtainWall_ to two different levels within the spatial structure. It is primarily contained within the ground floor, and additionally referenced within the first and second floor.
 
@@ -37,3 +28,5 @@ Figure 1 shows the use of _IfcRelContainedInSpatialStructure_ and _IfcRelReferen
         </tr>
       </tbody>
     </table>
+
+> HISTORY&nbsp; New entity in IFC2x3.

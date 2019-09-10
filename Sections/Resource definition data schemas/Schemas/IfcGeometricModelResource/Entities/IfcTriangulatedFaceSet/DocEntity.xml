@@ -2,43 +2,45 @@
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTriangulatedFaceSet" UniqueId="f8ed7699-eae0-403b-a7a3-79679b07189f" DiagramNumber="9" BaseDefinition="IfcTessellatedFaceSet" EntityFlags="229">
 	<Localization>
 		<DocLocalization Name="tesselliertes Element aus Dreiecksflächen" Locale="de" />
+		<DocLocalization Name="Triangulated Face Set" Locale="en" />
 		<DocLocalization Name="Ensemble de faces triangulées" Locale="fr" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="13059.371" Y="1186.6934" Width="238.4" Height="163.46667" />
+	<DiagramRectangle xsi:type="DocRectangle" X="12873.7584635417" Y="1205.35994466146" Width="353.6" Height="350.133341471354" />
 	<Attributes>
-		<DocAttribute Name="CoordIndex" UniqueId="9a0699f0-dcdd-4fa1-8373-7b1a46293902" DefinedType="INTEGER" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0" XsdFormat="content" XsdTagless="true">
+		<DocAttribute Name="CoordIndex" UniqueId="9a0699f0-dcdd-4fa1-8373-7b1a46293902" DefinedType="IfcPositiveInteger" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0" XsdFormat="content" XsdTagless="true">
 			<Documentation>Two-dimensional list, where the first dimension represents the triangles (from 1 to N) and the second dimension the indices to
 three points defining the vertices (from 1 to 3).
 &gt; NOTE&amp;nbsp; The coordinates of the vertices are provided by the indexed list of _SELF\IfcTessellatedFaceSet.Coordinates.CoordList_.</Documentation>
-			<AggregationAttribute xsi:type="DocAttribute" UniqueId="75f6f288-7423-40fa-a295-48591a36bc6c" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="3" AggregationUpper="3" />
+			<AggregationAttribute xsi:type="DocAttribute" UniqueId="e35b8c9b-877e-42fa-a88a-d7e6fe7ef0c6" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="3" AggregationUpper="3" />
 			<DiagramLine>
-				<DocPoint X="13096.768" Y="1350.16" />
-				<DocPoint X="13096.768" Y="1540.82663" />
+				<DocPoint X="13227.3584635417" Y="1356.48665364583" />
+				<DocPoint X="13227.3584635417" Y="1356.48665364583" />
+				<DocPoint X="13713.6246744792" Y="1356.48665364583" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="13251.43467" Y="1321.493353" Width="283" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="13227.3584635417" Y="1336.48665364583" Width="283" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="NormalIndex" UniqueId="3d3f022d-8122-46c6-9ac8-db032b84b55d" DefinedType="INTEGER" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0" XsdFormat="content" XsdTagless="true">
+		<DocAttribute Name="NormalIndex" UniqueId="3d3f022d-8122-46c6-9ac8-db032b84b55d" DefinedType="IfcPositiveInteger" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0" XsdFormat="content" XsdTagless="true">
 			<Documentation>Two-dimensional list, where the first dimension represents the triangle (from 1 to N) and the second dimension the indices to
 three normals (from 1 to 3) corresponding to the vertices.
 { .note}
-&gt; The directions of the normals are provided by the indexed list of _SELF\IfcTessellatedFaceSet.Normals.DirectionList_.</Documentation>
-			<AggregationAttribute xsi:type="DocAttribute" UniqueId="41098405-975c-44c5-80f4-1cebaba3748a" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="3" AggregationUpper="3" />
+&gt; The directions of the normals are provided by the indexed list of _SELF\IfcTessellatedFaceSet.Normals_.</Documentation>
+			<AggregationAttribute xsi:type="DocAttribute" UniqueId="a9a9ec3f-c296-4997-b562-3f27a9676c8a" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="3" AggregationUpper="3" />
 			<DiagramLine>
-				<DocPoint X="13163.418" Y="1350.16" />
-				<DocPoint X="13163.418" Y="1443.498719" />
-				<DocPoint X="13461.81854" Y="1443.498719" />
-				<DocPoint X="13461.81854" Y="1540.819963" />
+				<DocPoint X="13227.3584635417" Y="1438.81998697917" />
+				<DocPoint X="13227.3584635417" Y="1438.81998697917" />
+				<DocPoint X="13713.6246744792" Y="1438.81998697917" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="13624.48521" Y="1464.832052" Width="294" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="13227.3584635417" Y="1418.81998697917" Width="294" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="NumberOfTriangles" UniqueId="f5a29a45-fdb2-4307-8e3a-419f11e39751" DefinedType="INTEGER" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="NumberOfTriangles" UniqueId="f5a29a45-fdb2-4307-8e3a-419f11e39751" DefinedType="IfcInteger" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>Derived number of triangles used for this triangulation.</Documentation>
 			<Derived>SIZEOF(CoordIndex)</Derived>
 			<DiagramLine>
-				<DocPoint X="13297.771" Y="1319.34" />
-				<DocPoint X="13633.557" Y="1319.34" />
+				<DocPoint X="13031.7910054525" Y="1555.49328613281" />
+				<DocPoint X="13031.7910054525" Y="1555.49328613281" />
+				<DocPoint X="13031.7910054525" Y="1655.48661295573" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="13297.7709999667" Y="1300.673334" Width="297" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="13031.7910054525" Y="1635.48661295573" Width="297" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

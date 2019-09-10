@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCompositeCurveSegment" UniqueId="baf231ed-97be-4368-a9f9-10ae70bad78e" DiagramNumber="6" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="109">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCompositeCurveSegment" Name="IfcCompositeCurveSegment" UniqueId="baf231ed-97be-4368-a9f9-10ae70bad78e" DiagramNumber="6" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="109">
 	<Localization>
 		<DocLocalization Name="Segment einer zusammengesetzten Kurve" Locale="de" />
+		<DocLocalization Name="Composite Curve Segment" Locale="en" />
 		<DocLocalization Name="Segment de courbe composite" Locale="fr" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="8465.9949" Y="1702.9885" Width="513.96667" Height="100" />
+	<DiagramRectangle xsi:type="DocRectangle" X="8465.9951171875" Y="1830.98852539063" Width="513.96667" Height="100" />
 	<Subtypes>
 		<DocSubtype UniqueId="bd454c89-dfe6-4f2d-8a45-35be91c45588" DefinedType="IfcReparametrisedCompositeCurveSegment" />
 	</Subtypes>
@@ -12,44 +13,49 @@
 		<DocAttribute Name="Transition" UniqueId="67cb0bf1-ea16-4e1b-b20a-aed69f9f06fe" DefinedType="IfcTransitionCode" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The state of transition (i.e., geometric continuity from the last point of this segment to the first point of the next segment) in a composite curve.</Documentation>
 			<DiagramLine>
-				<DocPoint X="8723.7972" Y="1802.9885" />
-				<DocPoint X="8723.7972" Y="1995.78857" />
+				<DocPoint X="8825.814865" Y="1930.98852539063" />
+				<DocPoint X="8825.814865" Y="1930.98852539063" />
+				<DocPoint X="8825.814865" Y="1995.7885" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="8795.797201" Y="1752.321833" Width="115" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="8825.814865" Y="1975.7885" Width="115" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="SameSense" UniqueId="5fada968-7c27-4344-9a3a-39128e5d33e9" DefinedType="BOOLEAN" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="SameSense" UniqueId="5fada968-7c27-4344-9a3a-39128e5d33e9" DefinedType="IfcBoolean" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>An indicator of whether or not the sense of the segment agrees with, or opposes, that of the parent curve. If _SameSense_ is false, the point with highest parameter value is taken as the first point of the segment.
 &gt; NOTE&amp;nbsp; If the datatype of _ParentCurve_ is _IfcTrimmedCurve_, the value of _SameSense_ overrides the value of _IfcTrimmedCurve.SenseAgreement_</Documentation>
 			<DiagramLine>
-				<DocPoint X="8890.8052" Y="1802.9885" />
-				<DocPoint X="8890.8052" Y="1894.521933" />
+				<DocPoint X="8979.9617871875" Y="1830.98852539063" />
+				<DocPoint X="8979.9617871875" Y="1767.65519205729" />
+				<DocPoint X="9230.62890625" Y="1767.65519205729" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="8975.71353" Y="1823.421884" Width="141" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="8979.9617871875" Y="1747.65519205729" Width="141" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="ParentCurve" UniqueId="88a9a6ec-70af-43d3-a2cc-d43758ecd898" DefinedType="IfcCurve" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>The bounded curve which defines the geometry of the segment.</Documentation>
 			<DiagramLine>
-				<DocPoint X="8465.9949" Y="1752.9885" />
-				<DocPoint X="8283.22816" Y="1752.9885" />
+				<DocPoint X="8465.9951171875" Y="1930.98852539063" />
+				<DocPoint X="8465.9951171875" Y="1979.22179345312" />
+				<DocPoint X="8253.89495442708" Y="1979.22179345312" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="8465.9949" Y="1747.6551667" Width="146" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="8465.9951171875" Y="1959.22179345312" Width="146" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Dim" UniqueId="10f49af9-52f4-4cda-8581-c02909ff5e0e" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The space dimensionality of this class, defined by the dimensionality of the first ParentCurve.</Documentation>
 			<Derived>ParentCurve.Dim</Derived>
 			<DiagramLine>
-				<DocPoint X="8979.9616" Y="1752.9885" />
-				<DocPoint X="9229.05487" Y="1752.9885" />
+				<DocPoint X="8979.9617871875" Y="1879.15522444271" />
+				<DocPoint X="8979.9617871875" Y="1879.15522444271" />
+				<DocPoint X="9231.72135416667" Y="1879.15522444271" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="8979.9616" Y="1739.655167" Width="125" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="8979.9617871875" Y="1859.15522444271" Width="125" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="UsingCurves" UniqueId="1cede6f4-cc66-4b43-8893-d6a8a6afe94a" DefinedType="IfcCompositeCurve" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0" Inverse="Segments">
 			<Documentation>The set of composite curves which use this composite curve segment as a segment. This set shall not be empty.</Documentation>
 			<DiagramLine>
-				<DocPoint X="8726.5147" Y="1371.0552" />
-				<DocPoint X="8726.5147" Y="1702.98839" />
+				<DocPoint X="8795.848305625" Y="1830.98852539063" />
+				<DocPoint X="8795.848305625" Y="1830.98852539063" />
+				<DocPoint X="8795.848305625" Y="1371.05526382812" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="8897.44804" Y="1313.521886" Width="291" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="8795.848305625" Y="1351.05526382812" Width="291" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
@@ -58,5 +64,14 @@
 			<Expression>(&apos;IFCGEOMETRYRESOURCE.IFCBOUNDEDCURVE&apos; IN TYPEOF(ParentCurve))</Expression>
 		</DocWhereRule>
 	</WhereRules>
+	<Tree>
+		<DocLine>
+			<DiagramLine>
+				<DocPoint X="8528.3116" Y="1930.98852539063" />
+				<DocPoint X="8528.3116" Y="1930.98852539063" />
+				<DocPoint X="8528.3116" Y="2110.96003" />
+			</DiagramLine>
+		</DocLine>
+	</Tree>
 </DocEntity>
 

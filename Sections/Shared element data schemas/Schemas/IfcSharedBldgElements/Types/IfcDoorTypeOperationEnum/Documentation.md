@@ -9,29 +9,23 @@ In the most common case of swinging doors the _IfcDoorTypeOperationEnum_ defined
 { .change-ifc2x4}
 > IFC4 CHANGE&nbsp; The new _IfcDoorTypeOperationEnum_ replaces the use of _IfcDoorStyleOperationEnum_ that is deprecated from IFC4 onwards.
 
-{ .spec-head}
-Enumerated Item Definitions:
-
 <table><tr><td>
 
 <table class="gridtable">
 <tbody>
 <tr>
-<th valign="top" width="20%"><em>Enumerator</em></th>
-<th valign="top" width="40%"><em>Description</em></th>
-<th valign="top" width="20%"><em>Figures</em></th>
-<th> </th>
+<th valign="top" width="20%"><i>Enumerator</i></th>
+<th valign="top" width="40%"><i>Description</i></th>
+<th valign="top" width="20%"><i>Figures</i></th>
+<th> </th>
 </tr>
 <tr>
 <td valign="top" width="20%">
 SINGLE_SWING_LEFT
 </td>
-<td valign="top" width="40%">Door with one panel that opens
-(swings) to the left. The hinges are on the left side as viewed
+<td valign="top" width="40%">Door with one panel that opens (swings) to the left. The hinges are on the left side as viewed
 in the direction of the positive y-axis.<br>
-<blockquote class="note">NOTE&nbsp; Direction of swing (whether in or out)
-is determined at the <em>IfcDoor</em> or
-<em>IfcDoorStandardCase</em>.<br>
+<blockquote class="note">NOTE&nbsp; Direction of swing (whether in or out) is determined at the <em>IfcDoor</em> or <em>IfcDoorStandardCase</em>.<br>
 <br></blockquote>
 </td>
 <td valign="top" width="20%"><img src="../../../../../../figures/ifcdoortypeenum-fig01.gif" alt="single swing left " border="0"></td>
@@ -44,9 +38,8 @@ SINGLE_SWING_RIGHT
 <td valign="top" width="40%">Door with one panel that opens
 (swings) to the right. The hinges are on the right side as viewed
 in the direction of the positive y-axis.<br>
-<blockquote class="note">NOTE&nbsp; Direction of swing (whether in or out)
-is determined at the <em>IfcDoor</em> or
-<em>IfcDoorStandardCase</em>.<br></blockquote>
+<blockquote class="note">NOTE&nbsp; Direction of swing (whether in or out) is determined at the <em>IfcDoor</em> or <em>IfcDoorStandardCase</em>.<br>
+<br></blockquote>
 </td>
 <td valign="top" width="20%"><img src="../../../../../../figures/ifcdoortypeenum-fig02.gif" alt="single swing right" border="0"></td>
 <td><img src="../../../../../../figures/ifcdoortypeenum-fig02b.gif" alt="single swing right" border="0"></td>
@@ -58,9 +51,8 @@ SINGLE_SWING
 </td>
 <td valign="top" width="40%">Door with two panels, one opens
 (swings) to the left the other opens (swings) to the right.<br>
-<blockquote class="note">NOTE&nbsp; Direction of swing (whether in or out)
-is determined at the <em>IfcDoor</em> or
-<em>IfcDoorStandardCase</em>.<br></blockquote>
+<blockquote class="note">NOTE&nbsp; Direction of swing (whether in or out) is determined at the <em>IfcDoor</em> or <em>IfcDoorStandardCase</em>.<br>
+<br></blockquote>
 </td>
 <td valign="top" width="20%"><img src="../../../../../../figures/ifcdoortypeenum-fig03.gif" alt="double swing" border="0"></td>
 <td><img src="../../../../../../figures/ifcdoortypeenum-fig03b.gif" alt="double swing" border="0"></td>
@@ -72,9 +64,8 @@ DOUBLE_SWING_LEFT
 <td valign="top" width="40%">Door with one panel that swings in
 both directions and to the left in the main trafic direction.
 Also called double acting door.<br>
-<blockquote class="note">NOTE&nbsp; Direction of main swing (whether in or
-out) is determined at the <em>IfcDoor</em> or
-<em>IfcDoorStandardCase</em>. <br></blockquote>
+<blockquote class="note">NOTE&nbsp; Direction of swing (whether in or out) is determined at the <em>IfcDoor</em> or <em>IfcDoorStandardCase</em>.<br>
+<br></blockquote>
 </td>
 <td valign="top" width="20%"><img src="../../../../../../figures/ifcdoortypeenum-fig04.gif" alt="double swing left" border="0"></td>
 <td><img src="../../../../../../figures/ifcdoortypeenum-fig04b.gif" alt="double swing left" border="0"></td>
@@ -86,9 +77,8 @@ DOUBLE_SWING_RIGHT
 <td valign="top" width="40%">Door with one panel that swings in
 both directions and to the right in the main trafic direction.
 Also called double acting door.<br>
-<blockquote class="note">NOTE&nbsp; Direction of main swing (whether in or
-out) is determined at the <em>IfcDoor</em> or
-<em>IfcDoorStandardCase</em>.<br></blockquote>
+<blockquote class="note">NOTE&nbsp; Direction of swing (whether in or out) is determined at the <em>IfcDoor</em> or <em>IfcDoorStandardCase</em>.<br>
+<br></blockquote>
 </td>
 <td valign="top" width="20%"><img src="../../../../../../figures/ifcdoortypeenum-fig05.gif" alt="double swing right" border="0"></td>
 <td><img src="../../../../../../figures/ifcdoortypeenum-fig05b.gif" alt="double swing right" border="0"></td>
@@ -102,9 +92,8 @@ DOUBLE_SWING
 both directions and to the right in the main trafic direction the
 other swings also in both directions and to the left in the main
 trafic direction.<br>
-<blockquote class="note">NOTE&nbsp; Direction of main swing (whether in or
-out) is determined at the <em>IfcDoor</em> or
-<em>IfcDoorStandardCase</em>.<br></blockquote>
+<blockquote class="note">NOTE&nbsp; Direction of swing (whether in or out) is determined at the <em>IfcDoor</em> or <em>IfcDoorStandardCase</em>.<br>
+<br></blockquote>
 </td>
 <td valign="top" width="20%"><img src="../../../../../../figures/ifcdoortypeenum-fig06.gif" alt="double double swing" border="0"></td>
 <td><img src="../../../../../../figures/ifcdoortypeenum-fig06b.gif" alt="double double swing" border="0"></td>
@@ -118,12 +107,11 @@ OPPOSITE_LEFT
 <td valign="top" width="40%">Door with two panels that both open
 to the left, one panel swings in one direction and the other
 panel swings in the opposite direction.<br>
-<blockquote class="note">NOTE&nbsp; Direction of main swing (whether in or
-out) is determined at the <em>IfcDoor</em> or
-<em>IfcDoorStandardCase</em>.<br></blockquote>
+<blockquote class="note">NOTE&nbsp; Direction of swing (whether in or out) is determined at the <em>IfcDoor</em> or <em>IfcDoorStandardCase</em>.<br>
+<br></blockquote>
 </td>
-<td valign="top" width="20%"><img src="../../../../../../figures/ifcdoortypeenum-fig07.gif" alt="opposite left" border="0"> </td>
-<td> </td>
+<td valign="top" width="20%"><img src="../../../../../../figures/ifcdoortypeenum-fig07.gif" alt="opposite left" border="0"> </td>
+<td> </td>
 </tr>
 <tr>
 <td valign="top" width="20%">DOUBLE_DOOR_<br>
@@ -132,12 +120,11 @@ OPPOSITE_RIGHT</td>
 <td valign="top" width="40%">Door with two panels that both open
 to the right, one panel swings in one direction and the other
 panel swings in the opposite direction.<br>
-<blockquote class="note">NOTE&nbsp; Direction of main swing (whether in or
-out) is determined at the <em>IfcDoor</em> or
-<em>IfcDoorStandardCase</em>.<br></blockquote>
+<blockquote class="note">NOTE&nbsp; Direction of swing (whether in or out) is determined at the <em>IfcDoor</em> or <em>IfcDoorStandardCase</em>.<br>
+<br></blockquote>
 </td>
-<td valign="top" width="20%"><img src="../../../../../../figures/ifcdoortypeenum-fig08.gif" alt="opposite right" border="0"> </td>
-<td> </td>
+<td valign="top" width="20%"><img src="../../../../../../figures/ifcdoortypeenum-fig08.gif" alt="opposite right" border="0"> </td>
+<td> </td>
 </tr>
 <tr>
 <td valign="top" width="20%">
@@ -198,9 +185,9 @@ REVOLVING
 <td valign="top" width="40%">An entrance door consisting of four
 leaves set in a form of a cross and revolving around a central
 vertical axis (the four panels are described by a single
-<em>IfcDoor</em> panel property).</td>
-<td valign="top" width="20%"><img src="../../../../../../figures/ifcdoortypeenum-fig15.gif" alt="revolving" border="0"> </td>
-<td> </td>
+<a href="../../ifcsharedbldgelements/lexical/ifcdoor.htm">IfcDoor</a> panel property).</td>
+<td valign="top" width="20%"><img src="../../../../../../figures/ifcdoortypeenum-fig15.gif" alt="revolving" border="0"> </td>
+<td> </td>
 </tr>
 <tr>
 <td valign="top" width="20%">
@@ -219,12 +206,8 @@ outside is determined at the <em>IfcDoor</em>.</blockquote>
 (swings) to the left and one fixed panel. The hinges of the
 swinging panel are on the left side as viewed in the direction of
 the positive y-axis.<br>
-<blockquote class="note">NOTE&nbsp; Direction of swing (whether in or out)
-is determined at the <em>IfcDoor</em> or or
-<em>IfcDoorStandardCase</em>.<br>
-<font color="#FF0000">IFC4 CHANGE This is a new
-enumerator compared with previous
-<em>IfcDoorStyleOperationEnum</em>.</font><</blockquote>
+<blockquote class="note">NOTE&nbsp; Direction of swing (whether in or out) is determined at the <em>IfcDoor</em> or <em>IfcDoorStandardCase</em>.<br>
+<br></blockquote>
 </td>
 <td valign="top" width="20%"><img src="../../../../../../figures/ifcdoortypeenum-fig18.gif" alt="swinging left and fixed" border="0"></td>
 <td><img src="../../../../../../figures/ifcdoortypeenum-fig18b.gif" alt="swinging left and fixed" border="0"></td>
@@ -235,12 +218,8 @@ enumerator compared with previous
 (swings) to the right and one fixed panel. The hinges of the
 swinging panel are on the right side as viewed in the direction
 of the positive y-axis.<br>
-<blockquote class="note">NOTE&nbsp; Direction of swing (whether in or out)
-is determined at the <em>IfcDoor</em> or or
-<em>IfcDoorStandardCase</em>.<br>
-<font color="#FF0000">IFC4 CHANGE This is a new
-enumerator compared with previous
-<em>IfcDoorStyleOperationEnum</em>.</font></blockquote>
+<blockquote class="note">NOTE&nbsp; Direction of swing (whether in or out) is determined at the <em>IfcDoor</em> or <em>IfcDoorStandardCase</em>.<br>
+<br></blockquote>
 </td>
 <td valign="top" width="20%"><img src="../../../../../../figures/ifcdoortypeenum-fig19.gif" alt="swinging right and fixed" border="0"></td>
 <td><img src="../../../../../../figures/ifcdoortypeenum-fig19b.gif" alt="swinging right and fixed" border="0"></td>
@@ -248,8 +227,8 @@ enumerator compared with previous
 <tr>
 <td valign="top" width="20%">USERDEFINED</td>
 <td valign="top" width="40%">User defined operation type</td>
-<td valign="top" width="20%"> </td>
-<td> </td>
+<td valign="top" width="20%"> </td>
+<td> </td>
 </tr>
 <tr>
 <td valign="top" width="20%">NOTDEFINED</td>
@@ -257,7 +236,7 @@ enumerator compared with previous
 type is considered as a door with a lining, but no panels. It is
 thereby always open.</td>
 <td valign="top" width="20%"><img src="../../../../../../figures/ifcdoortypeenum-fig17.gif" alt="not defined"><br></td>
-<td> </td>
+<td> </td>
 </tr>
 </tbody>
 </table>

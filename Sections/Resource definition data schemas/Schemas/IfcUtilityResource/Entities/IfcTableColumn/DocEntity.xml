@@ -2,57 +2,57 @@
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTableColumn" UniqueId="8ddc55ed-5fdd-4eec-bbba-86270d59039c" DiagramNumber="2" EntityFlags="229">
 	<Localization>
 		<DocLocalization Name="Tabellenspalte" Locale="de" />
+		<DocLocalization Name="Table Column" Locale="en" />
 		<DocLocalization Name="Colonne de table" Locale="fr" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1753.4246" Y="170.82001" Width="359.8123" Height="597.63706" />
+	<DiagramRectangle xsi:type="DocRectangle" X="601.424580891927" Y="1082.81998697917" Width="298.478963216146" Height="530.970418294271" />
 	<Attributes>
 		<DocAttribute Name="Identifier" UniqueId="58747f37-ddaf-41c1-8fec-9773e615026d" DefinedType="IfcIdentifier" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Table column identifier.</Documentation>
+			<Documentation>The _Identifier_ identifies the column within the table. If provided, it must be unique within the table. Columns may be cross-referenced across multiple tables by sharing the same column identifier.</Documentation>
 			<DiagramLine>
-				<DocPoint X="2113.2369" Y="240.63824" />
-				<DocPoint X="2584.84229" Y="240.63824" />
+				<DocPoint X="899.903544108073" Y="1268.59674072266" />
+				<DocPoint X="899.903544108073" Y="1268.59674072266" />
+				<DocPoint X="1090.34046996094" Y="1268.59674072266" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2174.886598" Y="231.6876605" Width="102" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="899.903544108073" Y="1248.59674072266" Width="102" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Name" UniqueId="6dc5612f-9033-42ae-a603-d4b940f2c5e8" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>The table column display name.</Documentation>
+			<Documentation>The _Name_ is a human-readable caption for the table column. It is not necessarilly unique.</Documentation>
 			<DiagramLine>
-				<DocPoint X="2113.2369" Y="315.83735" />
-				<DocPoint X="2349.07908" Y="315.83735" />
-				<DocPoint X="2349.07908" Y="317.5540383" />
-				<DocPoint X="2584.92126" Y="317.5540383" />
+				<DocPoint X="762.224644978841" Y="1082.81998697917" />
+				<DocPoint X="762.224644978841" Y="1082.81998697917" />
+				<DocPoint X="762.224644978841" Y="1023.29912651042" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2164.900329" Y="309.6843266" Width="73" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="762.224644978841" Y="1003.29912651042" Width="73" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Description" UniqueId="749535b7-e5ca-4935-bf2d-2e42c04c7972" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Descriptive text for the table column.</Documentation>
+			<Documentation>The _Description_ provides human-readable text describing the table column.</Documentation>
 			<DiagramLine>
-				<DocPoint X="2113.2369" Y="435.54627" />
-				<DocPoint X="2349.0458" Y="435.54627" />
-				<DocPoint X="2349.0458" Y="437.9502665" />
-				<DocPoint X="2584.8547" Y="437.9502665" />
+				<DocPoint X="899.903544108073" Y="1474.82455105252" />
+				<DocPoint X="899.903544108073" Y="1474.82455105252" />
+				<DocPoint X="1090.34046996094" Y="1474.82455105252" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2079.276865" Y="421.820049" Width="130" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="899.903544108073" Y="1454.82455105252" Width="130" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Unit" UniqueId="006b5097-750b-4881-8007-fabfea21405f" DefinedType="IfcUnit" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>The unit of measure to be used for this column&apos;s data.</Documentation>
+			<Documentation>The _Unit_ indicates the unit of measure to be used for this column&apos;s data. If not provided, then project default units are assumed. If _ReferencePath_ is provided, the the unit must be of the same measure as the referenced attribute.</Documentation>
 			<DiagramLine>
-				<DocPoint X="2113.2369" Y="580.06626" />
-				<DocPoint X="2349.0732" Y="580.06626" />
-				<DocPoint X="2349.0732" Y="579.9969297" />
-				<DocPoint X="2584.9095" Y="579.9969297" />
+				<DocPoint X="899.903544108073" Y="1577.93845621745" />
+				<DocPoint X="899.903544108073" Y="1577.93845621745" />
+				<DocPoint X="1090.34046996094" Y="1577.93845621745" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2161.5291" Y="568.097586" Width="51" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="899.903544108073" Y="1557.93845621745" Width="51" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="ReferencePath" UniqueId="e176b358-4817-483a-851e-7d75f75aa4eb" DefinedType="IfcReference" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
-			<Documentation>Optional path to the object and attribute for which this column applies.</Documentation>
+			<Documentation>The _ReferencePath_ indicates a relative path to the object and attribute for which data within this column is to be applied. 
+
+For constraints, such path is relative to the _IfcObjectDefinition_ associated by _IfcRelAssociatesConstraint_.RelatedObjects. For a constraint to be satisified, exactly one row of the table must match the referenced object for all columns where the _ReferencePath_ attribute is set.</Documentation>
 			<DiagramLine>
-				<DocPoint X="2113.2369" Y="725.05257" />
-				<DocPoint X="2349.35619" Y="725.05257" />
-				<DocPoint X="2349.35619" Y="723.642612" />
-				<DocPoint X="2585.47548" Y="723.642612" />
+				<DocPoint X="899.903544108073" Y="1371.71064588759" />
+				<DocPoint X="899.903544108073" Y="1371.71064588759" />
+				<DocPoint X="1090.34046996094" Y="1371.71064588759" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2092.273718" Y="721.1145019" Width="173" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="899.903544108073" Y="1351.71064588759" Width="173" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

@@ -1,14 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocDefined xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcDayInMonthNumber" UniqueId="0c42411a-5567-46b3-bef9-616aab9e1028" DiagramNumber="5" DefinedType="INTEGER" Length="0">
 	<Localization>
+		<DocLocalization Name="Day In Month Number" Locale="en" />
 		<DocLocalization Name="Numéro du jour du mois" Locale="fr" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="7366.9948" Y="890.29756" Width="344.77945" Height="58.403148" />
+	<DiagramRectangle xsi:type="DocRectangle" X="2641.7666015625" Y="1744.51171875" Width="312.77945" Height="58.403148" />
+	<Definition xsi:type="DocPrimitive" xsi:nil="true" href="INTEGER_3zVfmb7DP1RPb9bVPO2XuE" />
 	<WhereRules>
-		<DocWhereRule Name="ValidRange" UniqueId="f1f1afe6-7e1a-4ead-b737-cdd550fcb8bb">
+		<DocWhereRule Name="ValidRange" UniqueId="c73bd9cb-7a4d-48c9-8dc6-3bc3910088b3">
 			<Documentation>The valid range for positioning a day in a month is min inclusive = 1 and max inclusive = 31.</Documentation>
 			<Expression>{1 &lt;= SELF &lt;= 31}</Expression>
 		</DocWhereRule>
 	</WhereRules>
+	<DiagramLine>
+		<DocPoint X="2641.7666015625" Y="1802.91486675" />
+		<DocPoint X="2641.7666015625" Y="1819.17683919271" />
+		<DocPoint X="2576.70142618815" Y="1819.17683919271" />
+	</DiagramLine>
 </DocDefined>
 

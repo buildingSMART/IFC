@@ -2,6 +2,7 @@
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBoxedHalfSpace" UniqueId="6d52ef81-4176-4ab5-a2d3-39b86c31c378" DiagramNumber="3" BaseDefinition="IfcHalfSpaceSolid" EntityFlags="101">
 	<Localization>
 		<DocLocalization Name="Eingerahmter Halbraum" Locale="de" />
+		<DocLocalization Name="Boxed Half Space" Locale="en" />
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="4264.17" Y="1320.0333" Width="380.66667" Height="100" />
 	<Attributes>
@@ -14,5 +15,11 @@
 			<DiagramLabel xsi:type="DocRectangle" X="4498.759933" Y="1261.42499" Width="116" Height="35" />
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="UnboundedSurface" UniqueId="16450210-5fb3-44e7-9c40-21abdac56fac">
+			<Documentation>The BaseSurface defining the half space shall not be a bounded surface.</Documentation>
+			<Expression>NOT (&apos;IFCGEOMETRYRESOURCE.IFCCURVEBOUNDEDPLANE&apos; IN TYPEOF(SELF\IfcHalfSpaceSolid.BaseSurface))</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

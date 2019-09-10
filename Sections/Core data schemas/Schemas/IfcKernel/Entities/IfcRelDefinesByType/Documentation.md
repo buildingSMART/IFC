@@ -1,14 +1,4 @@
-﻿The objectified relationship _IfcRelDefinesByType_ defines the relationship between an object type and object occurrences.
-
-The _IfcRelDefinesByType_ is a 1-to-N relationship, as it allows for the assignment of one type information to a single or to many objects. Those objects then share the same object type, and the property sets and properties assigned to the object type.
-
-> HISTORY&nbsp; New entity in IFC2x.
-
-{ .change-ifc2x4}
-> IFC4 CHANGE&nbsp; The attribute _RelatedObjects_ had been demoted from the supertype _IfcRelDefines_ to _IfcRelDefinesByType_.
-
-{ .use-head}
-Relationship use definition
+﻿The objectified relationship _IfcRelDefinesByType_ defines the relationship between an object type and object occurrences. The _IfcRelDefinesByType_ is a 1-to-N relationship, as it allows for the assignment of one type information to a single or to many objects. Those objects then share the same object type, and the property sets and properties assigned to the object type.
 
 The _IfcRelDefinesByType_ links the object type definition with the object occurrence. Both may define properties by assigning an _IfcPropertySet_, including one or many subtypes of _IfcProperty_ to either the object type or object occurrence, as shown in Figure 1.
 
@@ -29,12 +19,9 @@ The following table provides an example of assigning
 
 <table border="1" cellpadding="2" cellspacing="2" summary="example for property assignment">
 <tr valign="top">
-<td><small><b>properties assigned to
-<em>IfcWall</em></b></small></td>
-<td><small><b>properties assigned to
-<em>IfcWallType</em></b></small></td>
-<td><small><b>resulting property value for individual
-wall</b></small></td>
+<td><small><b>properties assigned to <em>IfcWall</em></b></small></td>
+<td><small><b>properties assigned to <em>IfcWallType</em></b></small></td>
+<td><small><b>resulting property value for individual wall</b></small></td>
 </tr>
 <tr valign="top">
 <td><small><em>Pset_WallCommon</em></small></td>
@@ -57,3 +44,8 @@ wall</b></small></td>
 <td><small>FALSE</small></td>
 </tr>
 </table>
+
+> HISTORY&nbsp; New entity in IFC2x.
+
+{ .change-ifc2x4}
+> IFC4 CHANGE&nbsp; The attribute _RelatedObjects_ had been demoted from the supertype _IfcRelDefines_ to _IfcRelDefinesByType_.

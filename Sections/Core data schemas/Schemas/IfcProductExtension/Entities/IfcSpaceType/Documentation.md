@@ -15,10 +15,3 @@ The occurrences of _IfcSpaceType_ are represented by instances of _IfcSpace_.
 
 { .change-ifc2x4}
 > IFC4 CHANGE&nbsp; The attribute _LongName_ has been added to the end of the entity definition.
-
-{ .use-head}
-Geometry Use Definition
-
-The _IfcSpaceType_ may define the shared geometric representation for all space occurrences. The _RepresentationMaps_ attribute refers to a list of _IfcRepresentationMap_'s, that allow for multiple geometric representations (e.g. with _IfcShaperepresentation_'s having an RepresentationIdentifier 'Box', 'FootPrint', or 'Body').
-
-> NOTE&nbsp; The product representations are defined as representation maps (at the level of the supertype _IfcTypeProduct_, which gets assigned by an element occurrence instance through the _IfcShapeRepresentation.Item[1]_ being an _IfcMappedItem_. However view definitions and implementer agreements may prevent the usage of shared geometry for spaces.

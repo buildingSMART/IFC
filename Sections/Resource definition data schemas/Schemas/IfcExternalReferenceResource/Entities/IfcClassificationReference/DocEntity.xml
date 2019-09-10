@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcClassificationReference" UniqueId="d6845f56-93c2-41ea-bd7e-edbfea1e9068" DiagramNumber="2" BaseDefinition="IfcExternalReference" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcClassificationReference" Name="IfcClassificationReference" UniqueId="d6845f56-93c2-41ea-bd7e-edbfea1e9068" DiagramNumber="2" BaseDefinition="IfcExternalReference" EntityFlags="237">
 	<Localization>
 		<DocLocalization Name="Klassifikationseintrag" Locale="de" />
+		<DocLocalization Name="Classification Reference" Locale="en" />
 		<DocLocalization Name="Référence de classification" Locale="fr" />
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="1764.6707" Y="586.4604" Width="483.33333" Height="238.66666" />
 	<Attributes>
-		<DocAttribute Name="ReferencedSource" UniqueId="4bb1e966-6ba7-4148-bab9-33623a5c9511" DefinedType="IfcClassificationReferenceSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ReferencedSource" UniqueId="4bb1e966-6ba7-4148-bab9-33623a5c9511" DefinedType="IfcClassificationReferenceSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="hidden">
 			<Documentation>The classification system or source that is referenced.
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; Data type changed to _IfcClassificationReferenceSelect_.</Documentation>
@@ -46,7 +47,7 @@
 			</DiagramLine>
 			<DiagramLabel xsi:type="DocRectangle" X="2162.76341" Y="682.127084" Width="453" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="HasReferences" UniqueId="cd72476e-c741-4de9-8ab5-603aacea15d6" DefinedType="IfcClassificationReference" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="ReferencedSource">
+		<DocAttribute Name="HasReferences" UniqueId="cd72476e-c741-4de9-8ab5-603aacea15d6" DefinedType="IfcClassificationReference" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="ReferencedSource" XsdFormat="element">
 			<Documentation>The parent classification references to which this child classification reference applies. It can either be the final classification item leaf node, or an intermediate classification item.
 { .change-ifc2x4}
 &gt; IFC4 CHANGE New inverse attribute.</Documentation>

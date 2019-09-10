@@ -5,11 +5,3 @@ A flow segment type is used to define the common properties of a flow segment th
 Occurrences of the _IfcFlowSegmentType_ are represented by instances of _IfcFlowSegment_ or its subtypes.
 
 > HISTORY&nbsp; New entity in IFC2x2.
-
-****Material Use Definition****
-
-The material of the **IfcDistributionFlowSegmentType** is defined using one of the following entities:
-
-* [IfcMaterialProfileSet](../../ifcmaterialresource/lexical/ifcmaterialprofileset.htm) : This defines the material cross section which may be used to generate the 'Body' representation at occurrences (for parametric definitions not having representation), or for analysis purposes.
-* [IfcMaterialConstituentSet](../../ifcmaterialresource/lexical/ifcmaterialconstituentset.htm) : For elements containing multiple materials where profiles are not applicable, this indicates materials at named aspects. 
-*  [IfcMaterial](../../ifcmaterialresource/lexical/ifcmaterial.htm) : For elements comprised of a single material where profiles are not applicable, this indicates the material.

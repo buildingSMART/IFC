@@ -1,0 +1,1 @@
+﻿Total weight of reinforcing.

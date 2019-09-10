@@ -2,29 +2,32 @@
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStairFlight" Name="IfcStairFlight" UniqueId="c9b965ff-02c6-41a5-937f-4788c8513e6c" DiagramNumber="2" BaseDefinition="IfcBuildingElement" EntityFlags="237">
 	<Localization>
 		<DocLocalization Name="Treppenlauf" Locale="de" />
+		<DocLocalization Name="Stair Flight" Locale="en" />
 		<DocLocalization Name="Volée d&apos;escalier" Locale="fr" />
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="1865.45" Y="450.1665" Width="249.9" Height="413.33333" />
 	<Attributes>
-		<DocAttribute Name="NumberOfRiser" UniqueId="1f8a108d-a43c-4d8d-b524-89413721480a" DefinedType="INTEGER" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="NumberOfRisers" UniqueId="ee984ef4-cde1-44a3-b301-c62a10108bea" DefinedType="IfcInteger" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Number of the risers included in the stair flight
 { .change-ifc2x4}
 &gt; IFC4 CHANGE The attribute has been deprecated it shall only be exposed with a NIL value. Use Pset_StairFlightCommon.NumberOfRisers instead.</Documentation>
 			<DiagramLine>
-				<DocPoint X="2115.35" Y="536.21677" />
-				<DocPoint X="2509.38326" Y="536.21677" />
+				<DocPoint X="2115.35" Y="488.160987854004" />
+				<DocPoint X="2115.35" Y="488.160987854004" />
+				<DocPoint X="2510.01676432292" Y="488.160987854004" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2109.5166667" Y="524.615319" Width="178" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="2115.35" Y="468.160987854004" Width="178" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="NumberOfTreads" UniqueId="8b933521-d0a8-4793-9290-c694bfdf4941" DefinedType="INTEGER" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="NumberOfTreads" UniqueId="8b933521-d0a8-4793-9290-c694bfdf4941" DefinedType="IfcInteger" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Number of treads included in the stair flight.
 { .change-ifc2x4}
 &gt; IFC4 CHANGE The attribute has been deprecated it shall only be exposed with a NIL value. Use Pset_StairFlightCommon.NumberOfTreads instead.</Documentation>
 			<DiagramLine>
-				<DocPoint X="2115.35" Y="477.35962" />
-				<DocPoint X="2509.38326" Y="477.35962" />
+				<DocPoint X="2115.35" Y="548.483215332031" />
+				<DocPoint X="2115.35" Y="548.483215332031" />
+				<DocPoint X="2512.68334960938" Y="548.483215332031" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2115.933334" Y="462.692953" Width="198" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="2115.35" Y="528.483215332031" Width="198" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="RiserHeight" UniqueId="221e43e9-f43c-47d3-b02e-20a0a86fbab6" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Vertical distance from tread to tread. The riser height is supposed to be equal for all stairs in a stair flight.
@@ -32,10 +35,11 @@
 { .change-ifc2x4}
 &gt; IFC4 CHANGE The attribute has been deprecated it shall only be exposed with a NIL value. Use Pset_StairFlightCommon.RiserHeight instead.</Documentation>
 			<DiagramLine>
-				<DocPoint X="2115.35" Y="709.10669" />
-				<DocPoint X="2509.38316" Y="709.10669" />
+				<DocPoint X="2115.35" Y="715.4334" />
+				<DocPoint X="2115.35" Y="715.4334" />
+				<DocPoint X="2509.3832" Y="715.4334" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2087.883301" Y="699.3733403" Width="136" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="2115.35" Y="695.4334" Width="136" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="TreadLength" UniqueId="bf014ecd-1bc8-4fee-bf42-f86df0c5cca6" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Horizontal distance from the front to the back of the tread. The tread length is supposed to be equal for all steps of the stair flight.
@@ -43,10 +47,11 @@
 { .change-ifc2x4}
 &gt; IFC4 CHANGE The attribute has been deprecated it shall only be exposed with a NIL value. Use Pset_StairFlightCommon.TreadLength instead.</Documentation>
 			<DiagramLine>
-				<DocPoint X="2115.35" Y="620.73526" />
-				<DocPoint X="2509.38326" Y="620.73526" />
+				<DocPoint X="2115.35" Y="620.8666" />
+				<DocPoint X="2115.35" Y="620.8666" />
+				<DocPoint X="2509.3833" Y="620.8666" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2093.117318" Y="616.108198" Width="149" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="2115.35" Y="600.8666" Width="149" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="PredefinedType" UniqueId="42c2789a-ba85-449f-8a3c-e9920ec67ef4" DefinedType="IfcStairFlightTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Predefined generic type for a stair flight that is specified in an enumeration. There may be a property set given specificly for the predefined types.
@@ -55,10 +60,11 @@
 { .change-ifc2x4}
 &gt; IFC4 CHANGE The attribute has been added at the end of the entity definition.</Documentation>
 			<DiagramLine>
-				<DocPoint X="2115.35" Y="832.83317" />
-				<DocPoint X="2509.3833" Y="832.83317" />
+				<DocPoint X="2115.35" Y="835.49983" />
+				<DocPoint X="2115.35" Y="835.49983" />
+				<DocPoint X="2509.3833" Y="835.49983" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2104.683333" Y="822.166503" Width="182" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="2115.35" Y="815.49983" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

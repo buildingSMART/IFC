@@ -11,9 +11,12 @@ Several representation identifiers for shape representation are included as pred
 <th>&nbsp;</th>
 </tr>
 <tr>
+<td align="left" valign="top" width="210"><b>CoG</b></td>
+<td align="left" valign="top">Point to identify the center of gravity of an element. This value can be used for validation purposes.</td>
+</tr>
+<tr>
 <td align="left" valign="top" width="210"><b>Box</b></td>
-<td align="left" valign="top">Bounding box as simplified 3D box geometry of an
-element</td>
+<td align="left" valign="top">Bounding box as simplified 3D box geometry of an element</td>
 </tr>
 <tr>
 <td align="left" valign="top" width="210"><b>Annotation</b></td>
@@ -21,46 +24,35 @@ element</td>
 </tr>
 <tr>
 <td align="left" valign="top" width="210"><b>Axis</b></td>
-<td align="left" valign="top">2D or 3D Axis, or single line, representation of
-an element</td>
+<td align="left" valign="top">2D or 3D Axis, or single line, representation of an element</td>
 </tr>
 <tr>
 <td align="left" valign="top" width="210"><b>FootPrint</b></td>
-<td align="left" valign="top">2D Foot print, or double line, representation of
-an element, projected to ground view</td>
+<td align="left" valign="top">2D Foot print, or double line, representation of an element, projected to ground view</td>
 </tr>
 <tr>
 <td align="left" valign="top" width="210"><b>Profile</b></td>
-<td align="left" valign="top">3D line representation of a profile being planar,
-e.g. used for door and window outlines</td>
+<td align="left" valign="top">3D line representation of a profile being planar, e.g. used for door and window outlines</td>
 </tr>
 <tr>
 <td align="left" valign="top" width="210"><b>Surface</b></td>
-<td align="left" valign="top">3D Surface representation, e.g. of an analytical
-surface, of an elementplane)</td>
+<td align="left" valign="top">3D Surface representation, e.g. of an analytical surface, of an elementplane)</td>
 </tr>
 <tr>
 <td align="left" valign="top" width="210"><b>Body</b></td>
-<td align="left" valign="top">3D Body representation, e.g. as wireframe,
-surface, or solid model, of an element</td>
+<td align="left" valign="top">3D Body representation, e.g. as wireframe, surface, or solid model, of an element</td>
 </tr>
 <tr>
-<td align="left" valign="top" width="210"><b>Body-FallBack</b></td>
-<td align="left" valign="top">3D Body representation, e.g. as tessellation, or
-other surface, or boundary representation, added in addition to the solid model
-(potentially involving Boolean operations) of an element</td>
+<td align="left" valign="top" width="210"><b>Mesh</b></td>
+<td align="left" valign="top">3D Body representation, e.g. as tessellation, or other surface, or boundary representation, added in addition to the solid model (potentially involving Boolean operations) of an element</td>
 </tr>
 <tr>
 <td align="left" valign="top" width="210"><b>Clearance</b></td>
-<td align="left" valign="top">3D clearance volume of the element. Such
-clearance region indicates space that should not intersect with the 'Body'
-representation of other elements, though may intersect with the 'Clearance'
-representation of other elements.</td>
+<td align="left" valign="top">3D clearance volume of the element. Such clearance region indicates space that should not intersect with the 'Body' representation of other elements, though may intersect with the 'Clearance' representation of other elements.</td>
 </tr>
 <tr>
 <td align="left" valign="top" width="210"><b>Lighting</b></td>
-<td align="left" valign="top">Representation of emitting light as a light
-source within a shape representation</td>
+<td align="left" valign="top">Representation of emitting light as a light source within a shape representation</td>
 </tr>
 </table>
 </td>
@@ -88,8 +80,7 @@ Several representation types for shape representation are included as predefined
 </tr>
 <tr>
 <td colspan="2" align="left" valign="top" width="20"><b>PointCloud</b></td>
-<td align="left" valign="top">3 dimensional points prepresented by a point
-list</td>
+<td align="left" valign="top">3 dimensional points prepresented by a point list</td>
 </tr>
 <tr>
 <td colspan="2" align="left" valign="top" width="20"><b>Curve</b></td>
@@ -109,8 +100,7 @@ list</td>
 </tr>
 <tr>
 <td colspan="2" align="left" valign="top" width="20"><b>Surface2D</b></td>
-<td align="left" valign="top">2 dimensional surface(s) (a region on ground
-view)</td>
+<td align="left" valign="top">2 dimensional surface(s) (a region on ground view)</td>
 </tr>
 <tr>
 <td colspan="2" align="left" valign="top" width="20"><b>Surface3D</b></td>
@@ -118,8 +108,7 @@ view)</td>
 </tr>
 <tr>
 <td colspan="2" align="left" valign="top" width="20"><b>FillArea</b></td>
-<td align="left" valign="top">2D region(s) represented as a filled area
-(hatching)</td>
+<td align="left" valign="top">2D region(s) represented as a filled area (hatching)</td>
 </tr>
 <tr>
 <td colspan="2" align="left" valign="top" width="20"><b>Text</b></td>
@@ -147,8 +136,7 @@ dimensional)</td>
 </tr>
 <tr>
 <td colspan="2" align="left" valign="top" width="20"><b>SurfaceModel</b></td>
-<td align="left" valign="top">face based and shell based surface model(s), or
-tessellated surface model(s)</td>
+<td align="left" valign="top">face based and shell based surface model(s), or tessellated surface model(s)</td>
 </tr>
 <tr>
 <td align="left" valign="top" width="20"></td>
@@ -157,20 +145,17 @@ tessellated surface model(s)</td>
 </tr>
 <tr>
 <td colspan="2" align="left" valign="top" width="20"><b>SolidModel</b></td>
-<td align="left" valign="top">including swept solid, Boolean results and Brep
-bodies; more specific types are:</td>
+<td align="left" valign="top">including swept solid, Boolean results and Brep bodies; more specific types are:</td>
 </tr>
 <tr>
 <td align="left" valign="top" width="20"></td>
 <td align="left" valign="top" width="180"><b>SweptSolid</b></td>
-<td align="left" valign="top">swept area solids, by extrusion and revolution,
-excluding tapered sweeps</td>
+<td align="left" valign="top">swept area solids, by extrusion and revolution, excluding tapered sweeps</td>
 </tr>
 <tr>
 <td align="left" valign="top" width="20"></td>
 <td align="left" valign="top" width="180"><b>AdvancedSweptSolid</b></td>
-<td align="left" valign="top">swept area solids created by sweeping a profile
-along a directrix, and tapered sweeps</td>
+<td align="left" valign="top">swept area solids created by sweeping a profile along a directrix, and tapered sweeps</td>
 </tr>
 <tr>
 <td align="left" valign="top" width="20"></td>
@@ -180,20 +165,17 @@ along a directrix, and tapered sweeps</td>
 <tr>
 <td align="left" valign="top" width="20"></td>
 <td align="left" valign="top" width="180"><b>AdvancedBrep</b></td>
-<td align="left" valign="top">Brep's based on advanced faces, with b-spline
-surface geometry, with and without voids</td>
+<td align="left" valign="top">Brep's based on advanced faces, with b-spline surface geometry, with and without voids</td>
 </tr>
 <tr>
 <td align="left" valign="top" width="20"></td>
 <td align="left" valign="top" width="180"><b>CSG</b></td>
-<td align="left" valign="top">Boolean results of operations between solid
-models, half spaces and Boolean results</td>
+<td align="left" valign="top">Boolean results of operations between solid models, half spaces and Boolean results</td>
 </tr>
 <tr>
 <td align="left" valign="top" width="20"></td>
 <td align="left" valign="top" width="180"><b>Clipping</b></td>
-<td align="left" valign="top">Boolean differences between swept area solids,
-half spaces and Boolean results</td>
+<td align="left" valign="top">Boolean differences between swept area solids, half spaces and Boolean results</td>
 </tr>
 <tr>
 <td colspan="2" align="left" valign="top" width="20"><em><br>
@@ -204,29 +186,22 @@ some additional representation types are provided:</td>
 <tr>
 <td align="left" valign="top" width="20"></td>
 <td align="left" valign="top" width="180"><b>BoundingBox</b></td>
-<td align="left" valign="top">simplistic 3D representation by a bounding
-box</td>
+<td align="left" valign="top">simplistic 3D representation by a bounding box</td>
 </tr>
 <tr>
 <td align="left" valign="top" width="20"></td>
 <td align="left" valign="top" width="180"><b>SectionedSpine</b></td>
-<td align="left" valign="top">cross section based representation of a spine
-curve and planar cross sections. It can represent a surface or a solid and the
-interpolations of the between the cross sections is not defined</td>
+<td align="left" valign="top">cross section based representation of a spine curve and planar cross sections. It can represent a surface or a solid and the interpolations of the between the cross sections is not defined</td>
 </tr>
 <tr>
 <td align="left" valign="top" width="20"></td>
 <td align="left" valign="top" width="180"><b>LightSource</b></td>
-<td align="left" valign="top">light source with (depending on type) position,
-orientation, light colour, intensity and attenuation</td>
+<td align="left" valign="top">light source with (depending on type) position, orientation, light colour, intensity and attenuation</td>
 </tr>
 <tr>
 <td align="left" valign="top" width="20"></td>
 <td align="left" valign="top" width="180"><b>MappedRepresentation</b></td>
-<td align="left" valign="top">representation based on mapped item(s), referring
-to a representation map. Note: it can be seen as an inserted block reference.
-The shape representation of the mapped item has a representation type declaring
-the type of its representation items.</td>
+<td align="left" valign="top">representation based on mapped item(s), referring to a representation map. Note: it can be seen as an inserted block reference. The shape representation of the mapped item has a representation type declaring the type of its representation items.</td>
 </tr>
 </table>
 </td>

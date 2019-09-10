@@ -1,15 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBooleanClippingResult" UniqueId="a6eb852d-2266-484e-b385-16dab2770609" DiagramNumber="2" BaseDefinition="IfcBooleanResult" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcBooleanClippingResult" Name="IfcBooleanClippingResult" UniqueId="a6eb852d-2266-484e-b385-16dab2770609" DiagramNumber="2" BaseDefinition="IfcBooleanResult" EntityFlags="101">
 	<Localization>
 		<DocLocalization Name="Boolesches Ergebnis - Abkappen" Locale="de" />
+		<DocLocalization Name="Boolean Clipping Result" Locale="en" />
 		<DocLocalization Name="Résultat d&apos;opération booléen" Locale="fr" />
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="1831.9667" Y="2167.15" Width="473.23333" Height="100" />
 	<WhereRules>
 		<DocWhereRule Name="FirstOperandType" UniqueId="16e6847d-fb1a-421c-a3f1-7098e6f5f521">
-			<Documentation>The first operand of the Boolean clipping operation shall be either an _IfcSweptAreaSolid_, an _IfcSweptDiskSolid_, or (in case of more than one clipping) an _IfcBooleanClippingResult_.</Documentation>
+			<Documentation>The first operand of the Boolean clipping operation shall be either an IfcSweptAreaSolid or (in case of more than one clipping) an IfcBooleanResult.</Documentation>
 			<Expression>(&apos;IFCGEOMETRICMODELRESOURCE.IFCSWEPTAREASOLID&apos; IN TYPEOF(FirstOperand)) OR 
-(&apos;IFCGEOMETRICMODELRESOURCE.IFCSWEPTDISCSOLID&apos; IN TYPEOF(FirstOperand)) OR
+(&apos;IFCGEOMETRICMODELRESOURCE.IFCSWEPTDISCSOLID&apos; IN TYPEOF(FirstOperand)) OR 
 (&apos;IFCGEOMETRICMODELRESOURCE.IFCBOOLEANCLIPPINGRESULT&apos; IN TYPEOF(FirstOperand))</Expression>
 		</DocWhereRule>
 		<DocWhereRule Name="SecondOperandType" UniqueId="5b8c3cfd-f445-4b42-9c0e-67413340806f">

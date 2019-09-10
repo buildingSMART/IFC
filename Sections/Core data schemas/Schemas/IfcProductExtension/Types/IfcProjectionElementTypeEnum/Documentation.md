@@ -1,9 +1,5 @@
 ﻿This enumeration defines the basic types of projection elements.
 
+> NOTE&nbsp; Cuurently no predefined are defined.
+
 > HISTORY&nbsp; New enumeration in IFC4.
-
-{ .spec-head}
-Enumerated Item Definitions:
-
-* **USERDEFINED**: User-defined projection element
-* **NOTDEFINED**: Undefined projection element

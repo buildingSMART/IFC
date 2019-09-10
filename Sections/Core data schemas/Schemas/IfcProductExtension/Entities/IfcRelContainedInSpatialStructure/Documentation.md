@@ -17,14 +17,11 @@ Occurrences of the same element type can be assigned to different spatial struct
 
 > EXAMPLE&nbsp; A wall might be normally assigned to a storey, however the curtain wall might be assigned to the building and the retaining wall in the terrain might be assigned to the site.
 
+Figure 1 shows the use of _IfcRelContainedInSpatialStructure_ to assign a stair and two walls to two different levels within the spatial structure.
+
+!["fig1"](../../../../../../figures/ifcrelcontainedinspatialstructure-fig1.png "Figure 1 &mdash; Relationship for spatial structure containment")
+
 > HISTORY&nbsp; New entity in IFC2x.
 
 { .change-ifc2x}
 > IFC2x CHANGE&nbsp; The data type of the attribute _RelatedElements_ has been changed from _IfcElement_ to its supertype _IfcProduct_ with upward compatibility for file based exchange.
-
-{ .use-head}
-Containment Use Definition
-
-Figure 1 shows the use of _IfcRelContainedInSpatialStructure_ to assign a stair and two walls to two different levels within the spatial structure.
-
-!["fig1"](../../../../../../figures/ifcrelcontainedinspatialstructure-fig1.png "Figure 1 &mdash; Relationship for spatial structure containment")

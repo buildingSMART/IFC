@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRoof" Name="IfcRoof" UniqueId="54499bfa-3796-45d8-870a-1357fd0e960f" DiagramNumber="2" BaseDefinition="IfcBuildingElement" EntityFlags="109">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRoof" Name="IfcRoof" UniqueId="54499bfa-3796-45d8-870a-1357fd0e960f" Status="H" DiagramNumber="2" BaseDefinition="IfcBuildingElement" EntityFlags="109">
 	<Localization>
 		<DocLocalization Name="Dach" Locale="de" />
+		<DocLocalization Name="Roof" Locale="en" />
 		<DocLocalization Name="Toiture" Locale="fr" />
 	</Localization>
 	<DiagramRectangle xsi:type="DocRectangle" X="1865.4999" Y="926.86657" Width="249.9" Height="100" />
@@ -20,23 +21,6 @@
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="CorrectShapeDecomposition" UniqueId="0fa5b99b-deaf-421d-ad7d-3318f91e4199">
-			<Documentation>Either the _IfcRoof_ is not decomposed into its roof slabs and supporting construction elements, then the _IfcRoof_ may have independent geometry. Or the _IfcRoof_ is decomposed into parts, then the _IfcRoof_ shall not have an own geometric shape representation of _RepresentationType_ = &apos;Body&apos;.</Documentation>
-			<Expression>(HIINDEX(SELF\IfcObjectDefinition.IsDecomposedBy) = 0) 
- OR 
-((HIINDEX(SELF\IfcObjectDefinition.IsDecomposedBy) = 1) 
-  AND 
-  ((NOT(EXISTS(SELF\IfcProduct.Representation))) 
-    OR
-    ((EXISTS(SELF\IfcProduct.Representation)) 
-      AND 
-      (SIZEOF(QUERY( temp &lt;* SELF\IfcProduct.Representation.Representations |
-        temp.RepresentationIdentifier = &apos;Body&apos;)) = 0
-      )
-    )
-  )
-)</Expression>
-		</DocWhereRule>
 		<DocWhereRule Name="CorrectPredefinedType" UniqueId="7546ff83-bb5b-4599-8707-1c5401bb7b7a">
 			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcRoofType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
 			<Expression>NOT(EXISTS(PredefinedType)) OR

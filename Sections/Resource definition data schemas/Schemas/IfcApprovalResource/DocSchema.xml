@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcApprovalResource" UniqueId="68989629-bf7a-4ece-b404-ebe8aa303487" DiagramPagesHorz="0" DiagramPagesVert="0">
+<DocSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcApprovalResource" UniqueId="68989629-bf7a-4ece-b404-ebe8aa303487" DiagramPagesHorz="1" DiagramPagesVert="1">
 	<SchemaRefs>
 		<DocSchemaRef Name="IFCACTORRESOURCE" UniqueId="b70c758a-8f7f-48e7-9917-59874a222b84">
 			<Definitions>
@@ -37,6 +37,28 @@
 				</DocDefinitionRef>
 				<DocDefinitionRef Name="IfcResourceLevelRelationship" UniqueId="932a78e5-6964-4762-bc98-70ca57fe7b99" DiagramNumber="1">
 					<DiagramRectangle xsi:type="DocRectangle" X="972.2759" Y="1315.2293" Width="556.51727" Height="229.09478" />
+					<Tree>
+						<DocLine>
+							<DiagramLine>
+								<DocPoint X="972.2759" Y="1429.7767" />
+								<DocPoint X="905.798505" Y="1429.7767" />
+							</DiagramLine>
+							<Tree>
+								<DocLine>
+									<DiagramLine>
+										<DocPoint X="905.79851" Y="1233.3435" />
+										<DocPoint X="972.389917" Y="1233.3435" />
+									</DiagramLine>
+								</DocLine>
+								<DocLine>
+									<DiagramLine>
+										<DocPoint X="905.79851" Y="1695.4667" />
+										<DocPoint X="516.41313" Y="1695.4667" />
+									</DiagramLine>
+								</DocLine>
+							</Tree>
+						</DocLine>
+					</Tree>
 				</DocDefinitionRef>
 			</Definitions>
 		</DocSchemaRef>
@@ -57,5 +79,24 @@
 		<DocSchemaRef Name="IFCPROFILERESOURCE" UniqueId="a4575729-3940-44e1-8b14-a57f52a79ed3" />
 		<DocSchemaRef Name="IFCPROPERTYRESOURCE" UniqueId="1e92b3b0-ea35-40de-8ec6-1e09f66316ab" />
 	</SchemaRefs>
+	<Comments>
+		<DocComment UniqueId="43947570-7b4c-4d35-a8fe-e1a1ffc92917" DiagramNumber="1">
+			<Documentation>New entity in IFC2x4.</Documentation>
+			<DiagramRectangle xsi:type="DocRectangle" X="161.71593" Y="1855.773" Width="399.1638" Height="61.220877" />
+		</DocComment>
+		<DocComment UniqueId="80c6a1dc-e9cd-4dbd-83b6-42944975949b" DiagramNumber="1">
+			<Documentation>Attribute changed to ISO8601 date time</Documentation>
+			<DiagramRectangle xsi:type="DocRectangle" X="554.34448" Y="36.825414" Width="436.25572" Height="113.00191" />
+		</DocComment>
+		<DocComment UniqueId="8c192fbc-0212-4b78-9f44-226bdb77460e" DiagramNumber="1">
+			<Documentation>Attributes Identifier and Name made optional in IFC2x4.</Documentation>
+			<DiagramRectangle xsi:type="DocRectangle" X="366.94319" Y="363.00503" Width="535.97409" Height="102.93963" />
+		</DocComment>
+		<DocComment UniqueId="b591d0fc-b7d4-4483-a501-0c6b4691f41e" DiagramNumber="1">
+			<Documentation>Inverse attributes ApprovedResources,  ApprovedObjects and HasExternalReferences 
+added in IFC2x4.</Documentation>
+			<DiagramRectangle xsi:type="DocRectangle" X="207.53111" Y="1375.8985" Width="686.60325" Height="124.13914" />
+		</DocComment>
+	</Comments>
 </DocSchema>
 

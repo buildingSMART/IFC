@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcConstructionMgmtDomain" UniqueId="2e553fb4-5225-43c2-bb06-83e12d32295a" DiagramPagesHorz="0" DiagramPagesVert="0">
+<DocSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcConstructionMgmtDomain" UniqueId="2e553fb4-5225-43c2-bb06-83e12d32295a" DiagramPagesHorz="1" DiagramPagesVert="1">
 	<SchemaRefs>
 		<DocSchemaRef Name="IFCCOSTRESOURCE" UniqueId="43d3bf74-911a-4c1c-924a-fc51a9d257c8">
 			<Definitions>
@@ -19,9 +19,27 @@
 			<Definitions>
 				<DocDefinitionRef Name="IfcResource" UniqueId="4a47620a-e904-4a64-97bb-f63833d0136d" DiagramNumber="1">
 					<DiagramRectangle xsi:type="DocRectangle" X="26.166668" Y="31.33334" Width="400" Height="122" />
+					<Tree>
+						<DocLine>
+							<DiagramLine>
+								<DocPoint X="154.16667" Y="153.33334" />
+								<DocPoint X="154.16667" Y="218.66667" />
+							</DiagramLine>
+						</DocLine>
+					</Tree>
 				</DocDefinitionRef>
 				<DocDefinitionRef Name="IfcTypeResource" UniqueId="9b36503e-db73-4fb5-a8eb-30a4690a9e8f" DiagramNumber="1">
 					<DiagramRectangle xsi:type="DocRectangle" X="1176.1667" Y="31.266667" Width="390.66667" Height="125" />
+					<Tree>
+						<DocLine>
+							<DiagramLine>
+								<DocPoint X="1446.1667" Y="156.26667" />
+								<DocPoint X="1446.1667" Y="187.50667" />
+								<DocPoint X="1445.5467" Y="187.50667" />
+								<DocPoint X="1445.5467" Y="218.74667" />
+							</DiagramLine>
+						</DocLine>
+					</Tree>
 				</DocDefinitionRef>
 			</Definitions>
 		</DocSchemaRef>
@@ -34,5 +52,11 @@
 			</Definitions>
 		</DocSchemaRef>
 	</SchemaRefs>
+	<Comments>
+		<DocComment UniqueId="a4a9d492-a044-4fad-a554-722b0a928e56" DiagramNumber="1">
+			<Documentation>IFC2X4: new attributes; IfcConstructionResourceType and subtypes added</Documentation>
+			<DiagramRectangle xsi:type="DocRectangle" X="316.63997" Y="1148.6667" Width="1018" Height="69.66667" />
+		</DocComment>
+	</Comments>
 </DocSchema>
 

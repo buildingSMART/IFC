@@ -1,27 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcDirection" UniqueId="c9a6fe1f-b072-45ab-ba40-8c1f8c01e132" DiagramNumber="3" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="109">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDirection" Name="IfcDirection" UniqueId="c9a6fe1f-b072-45ab-ba40-8c1f8c01e132" DiagramNumber="3" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="109">
 	<Localization>
 		<DocLocalization Name="Richtung" Locale="de" />
+		<DocLocalization Name="Direction" Locale="en" />
 		<DocLocalization Name="Direction" Locale="fr" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="3288.7854" Y="951.47137" Width="684.66667" Height="100" />
+	<DiagramRectangle xsi:type="DocRectangle" X="3875.45190429688" Y="762.137959798177" Width="319.333353678385" Height="244" />
 	<Attributes>
-		<DocAttribute Name="DirectionRatios" UniqueId="c10df008-c6c7-4ceb-8a7b-e5696975a354" DefinedType="REAL" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="3">
+		<DocAttribute Name="DirectionRatios" UniqueId="c10df008-c6c7-4ceb-8a7b-e5696975a354" DefinedType="IfcReal" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="3">
 			<Documentation>The components in the direction of X axis (DirectionRatios[1]), of Y axis (DirectionRatios[2]), and of Z axis (DirectionRatios[3])</Documentation>
 			<DiagramLine>
-				<DocPoint X="3404.3995" Y="1051.4714" />
-				<DocPoint X="3404.3995" Y="1190.80473" />
+				<DocPoint X="4023.85221354167" Y="1006.13795979818" />
+				<DocPoint X="4023.85221354167" Y="1006.13795979818" />
+				<DocPoint X="4023.85221354167" Y="1102.13802083333" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3538.39949" Y="1052.8047337" Width="251" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="4023.85221354167" Y="1082.13802083333" Width="251" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Dim" UniqueId="653facbb-d98b-49fd-af21-ec73baa0d051" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
 			<Documentation>The space dimensionality of this class, defined by the number of real in the list of DirectionRatios.</Documentation>
 			<Derived>HIINDEX(DirectionRatios)</Derived>
 			<DiagramLine>
-				<DocPoint X="3716.1385" Y="1051.4714" />
-				<DocPoint X="3716.1385" Y="1165.838" />
+				<DocPoint X="4194.78525797526" Y="1006.13795979818" />
+				<DocPoint X="4194.78525797526" Y="1088.13805321875" />
+				<DocPoint X="4385.21858723958" Y="1088.13805321875" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3802.805167" Y="1063.4714" Width="125" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="4194.78525797526" Y="1068.13805321875" Width="125" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
