@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSectionedSurface" Name="IfcSectionedSurface" UniqueId="c64b3835-f87b-4b99-8337-f559ad4a5ab3" DiagramNumber="11" BaseDefinition="IfcSurface" EntityFlags="32">
+	<DiagramRectangle xsi:type="DocRectangle" X="16213.3323567708" Y="264.000040690104" Width="400" Height="100" />
+	<Attributes>
+		<DocAttribute Name="Directrix" UniqueId="2e94e87a-eb57-4d74-8d16-a513e701fd49" DefinedType="IfcCurve" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The curve used to define the sweeping operation.</Documentation>
+			<DiagramLine>
+				<DocPoint X="16613.3323567708" Y="264.000040690104" />
+				<DocPoint X="16613.3323567708" Y="182.333374023438" />
+				<DocPoint X="16902.666015625" Y="182.333374023438" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="16613.3323567708" Y="244.000040690104" Width="0" Height="0" />
+		</DocAttribute>
+		<DocAttribute Name="CrossSectionPositions" UniqueId="d8439ec1-d2b4-48c1-8bfd-634a9e06268c" DefinedType="IfcDistanceExpression" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="?">
+			<Documentation>List of distance expressions in sequentially increasing order paired with CrossSections, indicating the position of the corresponding section along the Directrix.</Documentation>
+			<DiagramLine>
+				<DocPoint X="16213.3323567708" Y="364.000040690104" />
+				<DocPoint X="16213.3323567708" Y="2202.33325195313" />
+				<DocPoint X="1377.33331298828" Y="2202.33325195313" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="16213.3323567708" Y="384.000040690104" Width="400" Height="50" />
+		</DocAttribute>
+		<DocAttribute Name="CrossSections" UniqueId="de2ce195-6196-4abe-93fc-da9e74ca1b30" DefinedType="IfcProfileDef" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="?">
+			<Documentation>List of cross sections in sequential order along the Directrix.</Documentation>
+			<DiagramLine>
+				<DocPoint X="16613.3323567708" Y="334.333404541016" />
+				<DocPoint X="16613.3323567708" Y="334.333404541016" />
+				<DocPoint X="16902.666015625" Y="334.333404541016" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="16613.3323567708" Y="314.333404541016" Width="0" Height="0" />
+		</DocAttribute>
+		<DocAttribute Name="FixedAxisVertical" UniqueId="54fe920a-0618-486c-9616-8394168b74f0" DefinedType="IfcBoolean" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Indicates whether CrossSections are oriented with the Y axis of each profile facing upwards in +Z direction (True), or vertically perpendicular to the Directrix varying according to slope (False).</Documentation>
+			<DiagramLine>
+				<DocPoint X="16613.3323567708" Y="364.000040690104" />
+				<DocPoint X="16613.3323567708" Y="433.333404541016" />
+				<DocPoint X="16902.666015625" Y="433.333404541016" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="16613.3323567708" Y="384.000040690104" Width="0" Height="0" />
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

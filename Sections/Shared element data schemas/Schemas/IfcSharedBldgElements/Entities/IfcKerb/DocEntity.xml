@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcKerb" Name="IfcKerb" UniqueId="36a0d140-104c-48af-8a63-463a31c5e532" Status="Proposal" DiagramNumber="6" BaseDefinition="IfcBuildingElement" EntityFlags="32">
+	<DiagramRectangle xsi:type="DocRectangle" X="8261.3330078125" Y="2213.33325195313" Width="400" Height="100" />
+	<Attributes>
+		<DocAttribute Name="Mountable" UniqueId="e3cdf1b3-9b18-4173-a52f-10c9262cec7c" DefinedType="IfcBoolean" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Specifies whether the kerb can be readily climbed by a vehicle or not.</Documentation>
+			<DiagramLine>
+				<DocPoint X="8661.3330078125" Y="2247.33325195313" />
+				<DocPoint X="8661.3330078125" Y="2247.33325195313" />
+				<DocPoint X="8949.3330078125" Y="2247.33325195313" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="8661.3330078125" Y="2227.33325195313" Width="400" Height="50" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="f27644c6-5029-49d5-9e01-e8d25d690b86">
+			<Documentation>Either there is no member type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcKerbType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+  (&apos;IFCSHAREDBLDGELEMENTS.IFCKERBTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCourse" Name="IfcCourse" UniqueId="3f23984d-4208-4cf3-98ad-a4c2545911ee" Status="Proposal" DiagramNumber="6" BaseDefinition="IfcBuildingElement" EntityFlags="32">
+	<DiagramRectangle xsi:type="DocRectangle" X="8261.3330078125" Y="2039.99993896484" Width="400" Height="100" />
+	<WhereRules>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="3d4aeaba-f8eb-4da3-b1ce-7c2b78afc7a1">
+			<Documentation>Either there is no member type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcCourseType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+  (&apos;IFCSHAREDBLDGELEMENTS.IFCCOURSETYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

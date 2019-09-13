@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcOpenCrossProfileDef" Name="IfcOpenCrossProfileDef" UniqueId="19418b8c-8cd1-4093-ba4b-5f4cf04de71e" DiagramNumber="5" BaseDefinition="IfcProfileDef" EntityFlags="32">
+	<DiagramRectangle xsi:type="DocRectangle" X="301.333312988281" Y="3474.66650390625" Width="400" Height="100" />
+	<Attributes>
+		<DocAttribute Name="Widths" UniqueId="f7a25a3c-dada-4cd8-87fa-d2e2b0e3f986" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="?">
+			<Documentation>The horizontal widths (when HorizontalWidths=.T.) or distances along the Slope (when HorizontalWidths=.F.) for the segments in the profile. And if Horizontal=.T. the Slopes shall not be = +/-90 deg.</Documentation>
+			<DiagramLine>
+				<DocPoint X="701.333312988281" Y="3474.66650390625" />
+				<DocPoint X="701.333312988281" Y="3445.33317057292" />
+				<DocPoint X="875.999979654948" Y="3445.33317057292" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="701.333312988281" Y="3454.66650390625" Width="0" Height="0" />
+		</DocAttribute>
+		<DocAttribute Name="IsWidthHorizontal" UniqueId="4a33711f-47e1-49ef-94d8-502fe70bd714" DefinedType="IfcBoolean" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Indicates if the widths shallbe measured horizontally or along the slopes.</Documentation>
+			<DiagramLine>
+				<DocPoint X="701.333312988281" Y="861.333333333333" />
+				<DocPoint X="1096" Y="861.333333333333" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="701.333312988281" Y="861.333333333333" Width="400" Height="50" />
+		</DocAttribute>
+		<DocAttribute Name="Slopes" UniqueId="9f8b24fc-ca73-4829-8d5e-c243faa2bc81" DefinedType="IfcPlaneAngleMeasure" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="?">
+			<Documentation>Slopes of segments.</Documentation>
+			<DiagramLine>
+				<DocPoint X="701.333312988281" Y="3533.99979654948" />
+				<DocPoint X="701.333312988281" Y="3533.99979654948" />
+				<DocPoint X="875.999979654948" Y="3533.99979654948" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="701.333312988281" Y="3513.99979654948" Width="0" Height="0" />
+		</DocAttribute>
+		<DocAttribute Name="Tags" UniqueId="aeddf998-dc13-493b-af2d-8e1b5b6b6f04" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="?">
+			<Documentation>Label identifying each cross section point of the profile definition. (Tags should unambiguously identify each longitudinal breakline within SectionedSurface).</Documentation>
+			<DiagramLine>
+				<DocPoint X="701.333312988281" Y="3574.66650390625" />
+				<DocPoint X="701.333312988281" Y="3622.66642252604" />
+				<DocPoint X="875.999979654948" Y="3622.66642252604" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="701.333312988281" Y="3594.66650390625" Width="0" Height="0" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectProfileType" UniqueId="10dd9554-1c37-4ebe-8fef-7ef0951568dd">
+			<Expression>SELF\IfcProfileDef.ProfileType = IfcProfileTypeEnum.CURVE</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrespondingSlopeWidths" UniqueId="e0d839ff-187e-49d5-ad0e-e3be90e8f21d">
+			<Expression>SIZEOF(Slopes) = SIZEOF(Widths)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrespondingTags" UniqueId="5c8937a2-2cb8-4ca9-8723-b18b4439bd1e">
+			<Expression>(NOT EXISTS (Tags)) OR (SIZEOF(Tags) = (SIZEOF(Slopes) + 1))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

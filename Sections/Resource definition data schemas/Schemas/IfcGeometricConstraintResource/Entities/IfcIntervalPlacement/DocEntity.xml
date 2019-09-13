@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcIntervalPlacement" UniqueId="8ea05528-1a9f-41bf-9ac2-47a2b87de488" DiagramNumber="1" BaseDefinition="IfcLinearSpanPlacement" EntityFlags="32">
+	<DiagramRectangle xsi:type="DocRectangle" X="5.33333460489909" Y="5.33335367838538" Width="400" Height="76" />
+	<Attributes>
+		<DocAttribute Name="IntervalCount" UniqueId="77cece4b-a7de-4776-ae33-0062cce90be0" DefinedType="IfcInteger" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Specifies the number of intervals within the span. E.g. IntervalCount=2 specifies 3 locations, one at the span start, one between span start and end and one at the span end.</Documentation>
+			<DiagramLine>
+				<DocPoint X="405.333334604899" Y="122.666666666667" />
+				<DocPoint X="485.333333333333" Y="122.666666666667" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="405.333334604899" Y="122.666666666667" Width="400" Height="50" />
+		</DocAttribute>
+		<DocAttribute Name="ElementCount" UniqueId="9e599f64-0ab3-4b15-8ecc-26ddece1c850" DefinedType="IfcInteger" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Derived>IntervalCount + 1</Derived>
+			<DiagramLine>
+				<DocPoint X="405.333334604899" Y="122.666666666667" />
+				<DocPoint X="485.333333333333" Y="122.666666666667" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="405.333334604899" Y="122.666666666667" Width="400" Height="50" />
+		</DocAttribute>
+		<DocAttribute Name="IntervalLength" UniqueId="90ac4374-d39e-4ffb-a1a3-294b38589051" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Derived>Span / IntervalCount</Derived>
+			<DiagramLine>
+				<DocPoint X="405.333334604899" Y="230.333353678385" />
+				<DocPoint X="505.333334604899" Y="230.333353678385" />
+			</DiagramLine>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

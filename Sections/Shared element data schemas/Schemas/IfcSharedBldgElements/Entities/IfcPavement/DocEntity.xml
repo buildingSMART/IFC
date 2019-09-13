@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPavement" Name="IfcPavement" UniqueId="a9a4d284-581a-49ca-9647-d04dea955126" Status="Proposal" DiagramNumber="6" BaseDefinition="IfcBuildingElement" EntityFlags="32">
+	<DiagramRectangle xsi:type="DocRectangle" X="8261.3330078125" Y="1866.66662597656" Width="400" Height="100" />
+	<Attributes>
+		<DocAttribute Name="Flexible" UniqueId="9c592954-bd21-484c-a00e-344a9e8f89bf" Status="Proposal" DefinedType="IfcBoolean" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Specifies if the pavement is rigid or flexible.</Documentation>
+			<DiagramLine>
+				<DocPoint X="8661.3330078125" Y="1932.66666666667" />
+				<DocPoint X="8661.3330078125" Y="1932.66666666667" />
+				<DocPoint X="8951.99967447917" Y="1932.66666666667" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="8661.3330078125" Y="1912.66666666667" Width="400" Height="50" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="17266d78-af63-4f7e-88ba-1128d6fd9d24">
+			<Documentation>Either there is no member type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcPavementType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+  (&apos;IFCSHAREDBLDGELEMENTS.IFCPAVEMENTTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+
