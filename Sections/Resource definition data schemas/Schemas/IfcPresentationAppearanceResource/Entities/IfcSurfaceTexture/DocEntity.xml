@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSurfaceTexture" UniqueId="7ea0af80-1628-45aa-92a8-1fdb01644edc" DiagramNumber="7" EntityFlags="197">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSurfaceTexture" UniqueId="7ea0af80-1628-45aa-92a8-1fdb01644edc" EntityFlags="197">
 	<Subtypes>
 		<DocSubtype UniqueId="938dd83a-bdd0-4bd8-9fec-f4f764d2a76c" DefinedType="IfcPixelTexture" />
 		<DocSubtype UniqueId="05e1bef1-0dca-44b9-b273-3300acace959" DefinedType="IfcImageTexture" />
 		<DocSubtype UniqueId="8a3cdce7-d7b4-4c81-ab45-0fadbbb5ad59" DefinedType="IfcBlobTexture" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="RepeatS" UniqueId="083fc47c-3ee1-47b5-8bd3-40c028d4e31f" DefinedType="BOOLEAN" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RepeatS" UniqueId="083fc47c-3ee1-47b5-8bd3-40c028d4e31f" DefinedType="BOOLEAN">
 			<Documentation>The RepeatS field specifies how the texture wraps in the S direction. If RepeatS is TRUE (the default), the texture map is repeated outside the [0.0, 1.0] texture coordinate range in the S direction so that it fills the shape. If repeatS is FALSE, the texture coordinates are clamped in the S direction to lie within the [0.0, 1.0] range.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="RepeatT" UniqueId="b78c2d1e-ade1-4cfe-9ad0-600ac9e65db1" DefinedType="BOOLEAN" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RepeatT" UniqueId="b78c2d1e-ade1-4cfe-9ad0-600ac9e65db1" DefinedType="BOOLEAN">
 			<Documentation>The RepeatT field specifies how the texture wraps in the T direction. If RepeatT is TRUE (the default), the texture map is repeated outside the [0.0, 1.0] texture coordinate range in the T direction so that it fills the shape. If repeatT is FALSE, the texture coordinates are clamped in the T direction to lie within the [0.0, 1.0] range.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="TextureType" UniqueId="1ULc0bFL92ewQ2kqMregsC" DefinedType="IfcSurfaceTextureEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="TextureType" UniqueId="1ULc0bFL92ewQ2kqMregsC" DefinedType="IfcSurfaceTextureEnum">
 			<Documentation>Identifies the predefined types of image map from which the type required may be set.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="TextureTransform" UniqueId="c1cd6b51-2e24-4a4e-a44f-8b9143988a34" DefinedType="IfcCartesianTransformationOperator2D" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="TextureTransform" UniqueId="c1cd6b51-2e24-4a4e-a44f-8b9143988a34" DefinedType="IfcCartesianTransformationOperator2D" AttributeFlags="1">
 			<Documentation>These parameters support changes to the size, orientation, and position of textures on shapes. Note that these operations appear reversed when viewed on the surface of geometry. For example, a scale value of (2 2) will scale the texture coordinates and have the net effect of shrinking the texture size by a factor of 2 (texture coordinates are twice as large and thus cause the texture to repeat). A translation of (0.5 0.0) translates the texture coordinates +.5 units along the S-axis and has the net effect of translating the texture -0.5 along the S-axis on the geometry&apos;s surface. A rotation of PI/2 of the texture coordinates results in a -PI/2 rotation of the texture on the geometry.</Documentation>
 		</DocAttribute>
 	</Attributes>

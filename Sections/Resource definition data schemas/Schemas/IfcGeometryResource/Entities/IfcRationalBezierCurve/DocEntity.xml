@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRationalBezierCurve" UniqueId="1W93A80ZfBRhxG5mxiX1vO" DiagramNumber="9" BaseDefinition="IfcBezierCurve" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRationalBezierCurve" UniqueId="1W93A80ZfBRhxG5mxiX1vO" BaseDefinition="IfcBezierCurve" EntityFlags="229">
 	<Attributes>
-		<DocAttribute Name="WeightsData" UniqueId="0rReOglC5EBAWnjko$IppJ" DefinedType="REAL" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="0">
+		<DocAttribute Name="WeightsData" UniqueId="0rReOglC5EBAWnjko$IppJ" DefinedType="REAL" AggregationType="1" AggregationLower="2" AggregationUpper="0">
 			<Documentation>The supplied values of the weights.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Weights" UniqueId="1Orr$NYXvCeQUF6b1KSfMN" DefinedType="REAL" AttributeFlags="0" AggregationType="2" AggregationFlag="0" AggregationLower="0" AggregationUpper="255">
+		<DocAttribute Name="Weights" UniqueId="1Orr$NYXvCeQUF6b1KSfMN" DefinedType="REAL" AggregationType="2" AggregationLower="0" AggregationUpper="255">
 			<Documentation>The array of weights associated with the control points. This is derived from the weights data.</Documentation>
 			<Derived>IfcListToArray(WeightsData,0,SELF\IfcBSplineCurve.UpperIndexOnControlPoints)</Derived>
 		</DocAttribute>

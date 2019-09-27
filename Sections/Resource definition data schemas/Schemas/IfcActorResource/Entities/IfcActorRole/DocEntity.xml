@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcActorRole" UniqueId="82b7f4e9-c9c0-41a2-a7e4-2b02f8a377c3" DiagramNumber="1" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcActorRole" UniqueId="82b7f4e9-c9c0-41a2-a7e4-2b02f8a377c3" EntityFlags="229">
 	<Attributes>
-		<DocAttribute Name="Role" UniqueId="cab76dc4-0eb3-4fab-9579-656cd9b52302" DefinedType="IfcRoleEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Role" UniqueId="cab76dc4-0eb3-4fab-9579-656cd9b52302" DefinedType="IfcRoleEnum">
 			<Documentation>The name of the role played by an actor. If the Role has value USERDEFINED, then
 the user defined role shall be provided as a value of the attribute UserDefinedRole.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="UserDefinedRole" UniqueId="7d1b62b5-eb50-44cb-8ecf-5821f8991f32" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="UserDefinedRole" UniqueId="7d1b62b5-eb50-44cb-8ecf-5821f8991f32" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>Allows for specification of user defined roles beyond the 
 enumeration values provided by Role attribute of type IfcRoleEnum. 
 When a value is provided for attribute UserDefinedRole in parallel 
 the attribute Role shall have enumeration value USERDEFINED.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Description" UniqueId="0529bf63-9322-4740-ad36-2cc861f6082b" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Description" UniqueId="0529bf63-9322-4740-ad36-2cc861f6082b" DefinedType="IfcText" AttributeFlags="1">
 			<Documentation>A textual description relating the nature of the role played by an actor.</Documentation>
 		</DocAttribute>
 	</Attributes>

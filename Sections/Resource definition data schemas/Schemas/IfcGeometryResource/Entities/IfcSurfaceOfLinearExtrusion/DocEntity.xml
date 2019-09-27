@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSurfaceOfLinearExtrusion" UniqueId="de606da2-a6cd-4560-a4c7-0e89276bc4ca" DiagramNumber="8" BaseDefinition="IfcSweptSurface" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSurfaceOfLinearExtrusion" UniqueId="de606da2-a6cd-4560-a4c7-0e89276bc4ca" BaseDefinition="IfcSweptSurface" EntityFlags="101">
 	<Attributes>
-		<DocAttribute Name="ExtrudedDirection" UniqueId="0f7fc3fd-9211-4ce1-8cc9-408ea774da47" DefinedType="IfcDirection" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ExtrudedDirection" UniqueId="0f7fc3fd-9211-4ce1-8cc9-408ea774da47" DefinedType="IfcDirection">
 			<Documentation>The direction of the extrusion.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Depth" UniqueId="4a50c089-187a-47a1-bae2-528540dc9218" DefinedType="IfcLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Depth" UniqueId="4a50c089-187a-47a1-bae2-528540dc9218" DefinedType="IfcLengthMeasure">
 			<Documentation>The depth of the extrusion, it determines the parameterization.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="ExtrusionAxis" UniqueId="d6df0744-f821-4cb7-8ccf-c3dacd8a9690" DefinedType="IfcVector" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ExtrusionAxis" UniqueId="d6df0744-f821-4cb7-8ccf-c3dacd8a9690" DefinedType="IfcVector">
 			<Documentation>The extrusion axis defined as vector.</Documentation>
 			<Derived>IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcVector (ExtrudedDirection, Depth)</Derived>
 		</DocAttribute>

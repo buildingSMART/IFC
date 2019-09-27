@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMaterialLayerSetUsage" UniqueId="2e823b55-2b4a-4eb3-ab29-2daa31a0e9d2" DiagramNumber="1" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMaterialLayerSetUsage" UniqueId="2e823b55-2b4a-4eb3-ab29-2daa31a0e9d2" EntityFlags="229">
 	<Attributes>
-		<DocAttribute Name="ForLayerSet" UniqueId="6270a84c-a47e-49e8-ad70-df7255d002ec" DefinedType="IfcMaterialLayerSet" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ForLayerSet" UniqueId="6270a84c-a47e-49e8-ad70-df7255d002ec" DefinedType="IfcMaterialLayerSet">
 			<Documentation>The _IfcMaterialLayerSet_ set to which the usage is applied.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="LayerSetDirection" UniqueId="61658062-7a41-4e62-a4ac-e22ff1cacbdb" DefinedType="IfcLayerSetDirectionEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LayerSetDirection" UniqueId="61658062-7a41-4e62-a4ac-e22ff1cacbdb" DefinedType="IfcLayerSetDirectionEnum">
 			<Documentation>Orientation of the layer set relative to element reference geometry. The meaning of the value of this attribute shall be specified in the geometry use section for each element. For extruded shape representation, direction can be given along the extrusion path (e.g. for slabs) or perpendicular to it (e.g. for walls).
 &gt; &lt;small&gt;NOTE&amp;nbsp; the &lt;i&gt;LayerSetDirection&lt;/i&gt; for &lt;i&gt;IfcWallStandardCase&lt;/i&gt; shall be AXIS2 (i.e. the y-axis) and for standard &lt;i&gt;IfcSlab&lt;/i&gt; it shall be AXIS3 (i.e. the z-axis).
 &lt;/small&gt;</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="DirectionSense" UniqueId="ce6589dc-d71f-450a-a1c0-378bb4d6f066" DefinedType="IfcDirectionSenseEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="DirectionSense" UniqueId="ce6589dc-d71f-450a-a1c0-378bb4d6f066" DefinedType="IfcDirectionSenseEnum">
 			<Documentation>Denotion whether the layer set is oriented in positive or negative sense relative to the material layer set base. The meaning of &quot;positive&quot; and &quot;negative&quot; needs to be established in the geometry use definitions. See examples at _IfcMaterialLayerSetUsage_ for a guideline as well.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="OffsetFromReferenceLine" UniqueId="03479fcc-0ce0-4ce2-87e2-23dca844ee1c" DefinedType="IfcLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="OffsetFromReferenceLine" UniqueId="03479fcc-0ce0-4ce2-87e2-23dca844ee1c" DefinedType="IfcLengthMeasure">
 			<Documentation>Offset of the material layer set base line (MlsBase) from reference geometry (line or plane). The offset can be positive or negative, unless restricted for a particular building element type in its use definition or by implementer agreement. The reference geometry for each relevant subtype of _IfcElement_ is defined in use definition for the element. Examples are given in the use definition of _IfcMaterialLayerSetUsage_.</Documentation>
 		</DocAttribute>
 	</Attributes>

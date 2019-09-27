@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTable" UniqueId="a998a201-457f-4f17-9337-b5f2acb084d8" DiagramNumber="2" EntityFlags="165">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTable" UniqueId="a998a201-457f-4f17-9337-b5f2acb084d8" EntityFlags="165">
 	<Attributes>
-		<DocAttribute Name="Name" UniqueId="9abc07c5-b708-450e-a8bd-c055f3dd735e" DefinedType="STRING" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Name" UniqueId="9abc07c5-b708-450e-a8bd-c055f3dd735e" DefinedType="STRING">
 			<Documentation>A unique name which is intended to describe the usage of the Table.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Rows" UniqueId="7022ee4b-bd52-48f7-9edb-ef5c09c44206" DefinedType="IfcTableRow" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="Rows" UniqueId="7022ee4b-bd52-48f7-9edb-ef5c09c44206" DefinedType="IfcTableRow" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Reference to information content of rows.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="NumberOfCellsInRow" UniqueId="a079c8cc-df08-4b62-b081-51e8572745d1" DefinedType="INTEGER" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="NumberOfCellsInRow" UniqueId="a079c8cc-df08-4b62-b081-51e8572745d1" DefinedType="INTEGER">
 			<Documentation>The number of cells in each row, this complies to the number of columns in a table. See WR2 that ensures that each row has the same number of cells. The actual value is derived from the first member of the Rows list.</Documentation>
 			<Derived>HIINDEX(Rows[1].RowCells)</Derived>
 		</DocAttribute>
-		<DocAttribute Name="NumberOfHeadings" UniqueId="f715f965-b239-42f1-b0c7-fd99d00ea73a" DefinedType="INTEGER" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="NumberOfHeadings" UniqueId="f715f965-b239-42f1-b0c7-fd99d00ea73a" DefinedType="INTEGER">
 			<Documentation>The number of headings in a table. This is restricted by WR3 to max. one.</Documentation>
 			<Derived>SIZEOF(QUERY( Temp &lt;* Rows | Temp.IsHeading))</Derived>
 		</DocAttribute>
-		<DocAttribute Name="NumberOfDataRows" UniqueId="c5f803f8-2be0-441c-9417-3e937fb62764" DefinedType="INTEGER" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="NumberOfDataRows" UniqueId="c5f803f8-2be0-441c-9417-3e937fb62764" DefinedType="INTEGER">
 			<Documentation>The number of rows in a table that contains data, i.e. total number of rows minus number of heading rows in table.</Documentation>
 			<Derived>SIZEOF(QUERY( Temp &lt;* Rows | NOT(Temp.IsHeading)))</Derived>
 		</DocAttribute>

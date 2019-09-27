@@ -1,29 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBSplineCurve" UniqueId="b9435164-1687-4e0f-8afc-85feadf601cd" DiagramNumber="9" BaseDefinition="IfcBoundedCurve" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBSplineCurve" UniqueId="b9435164-1687-4e0f-8afc-85feadf601cd" BaseDefinition="IfcBoundedCurve" EntityFlags="205">
 	<Subtypes>
 		<DocSubtype UniqueId="0LI8sGb39B6xe7buRB4kz1" DefinedType="IfcBezierCurve" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Degree" UniqueId="9215ef5b-0c61-4dd2-97ed-6c70dc669532" DefinedType="INTEGER" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Degree" UniqueId="9215ef5b-0c61-4dd2-97ed-6c70dc669532" DefinedType="INTEGER">
 			<Documentation>The algebraic degree of the basis functions.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="ControlPointsList" UniqueId="49ee485c-b8e8-460a-877e-a0df0214a5b9" DefinedType="IfcCartesianPoint" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="0">
+		<DocAttribute Name="ControlPointsList" UniqueId="49ee485c-b8e8-460a-877e-a0df0214a5b9" DefinedType="IfcCartesianPoint" AggregationType="1" AggregationLower="2" AggregationUpper="0">
 			<Documentation>The list of control points for the curve.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="CurveForm" UniqueId="533eaddc-7020-4be6-bd8d-f8f6c4d72442" DefinedType="IfcBSplineCurveForm" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="CurveForm" UniqueId="533eaddc-7020-4be6-bd8d-f8f6c4d72442" DefinedType="IfcBSplineCurveForm">
 			<Documentation>Used to identify particular types of curve; it is for information only.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="ClosedCurve" UniqueId="01035261-65db-467b-ad2b-1c4d21786723" DefinedType="LOGICAL" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ClosedCurve" UniqueId="01035261-65db-467b-ad2b-1c4d21786723" DefinedType="LOGICAL">
 			<Documentation>Indication of whether the curve is closed; it is for information only.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="SelfIntersect" UniqueId="35b37f03-d9bc-4662-8c51-80a08918556a" DefinedType="LOGICAL" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="SelfIntersect" UniqueId="35b37f03-d9bc-4662-8c51-80a08918556a" DefinedType="LOGICAL">
 			<Documentation>Indication whether the curve self-intersects or not; it is for information only.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="ControlPoints" UniqueId="8eba8ab8-5ec9-4c72-99f7-782da1e6a008" DefinedType="IfcCartesianPoint" AttributeFlags="0" AggregationType="2" AggregationFlag="0" AggregationLower="0" AggregationUpper="255">
+		<DocAttribute Name="ControlPoints" UniqueId="8eba8ab8-5ec9-4c72-99f7-782da1e6a008" DefinedType="IfcCartesianPoint" AggregationType="2" AggregationLower="0" AggregationUpper="255">
 			<Documentation>The array of control points used to define the geometry of the curve. This is derived from the list of control points.</Documentation>
 			<Derived>IfcListToArray(ControlPointsList,0,UpperIndexOnControlPoints)</Derived>
 		</DocAttribute>
-		<DocAttribute Name="UpperIndexOnControlPoints" UniqueId="4c2b99cb-7844-410e-9b24-d754bb7de440" DefinedType="INTEGER" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="UpperIndexOnControlPoints" UniqueId="4c2b99cb-7844-410e-9b24-d754bb7de440" DefinedType="INTEGER">
 			<Documentation>The upper index on the array of control points; the lower index is 0.
 This value is derived from the control points list.</Documentation>
 			<Derived>(SIZEOF(ControlPointsList) - 1)</Derived>

@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcHalfSpaceSolid" UniqueId="c9679787-14e8-44ff-b62a-a511bb58005d" DiagramNumber="3" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="109">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcHalfSpaceSolid" UniqueId="c9679787-14e8-44ff-b62a-a511bb58005d" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="109">
 	<Subtypes>
 		<DocSubtype UniqueId="14251490-6162-406c-952b-13435a945c71" DefinedType="IfcBoxedHalfSpace" />
 		<DocSubtype UniqueId="2b6553b3-e9ed-4dfc-9db9-eea04ef13fa9" DefinedType="IfcPolygonalBoundedHalfSpace" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="BaseSurface" UniqueId="110e5354-e95f-42b1-81d2-f4de74eb9085" DefinedType="IfcSurface" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="BaseSurface" UniqueId="110e5354-e95f-42b1-81d2-f4de74eb9085" DefinedType="IfcSurface">
 			<Documentation>Surface defining side of half space.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="AgreementFlag" UniqueId="689e63ba-3c13-477c-810a-69a5acc44e82" DefinedType="BOOLEAN" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="AgreementFlag" UniqueId="689e63ba-3c13-477c-810a-69a5acc44e82" DefinedType="BOOLEAN">
 			<Documentation>The agreement flag is TRUE if the normal to the BaseSurface points away from the material of the IfcHalfSpaceSolid. Otherwise it is FALSE.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Dim" UniqueId="0b9419d7-30de-4938-a436-7f00f8307975" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Dim" UniqueId="0b9419d7-30de-4938-a436-7f00f8307975" DefinedType="IfcDimensionCount">
 			<Documentation>The space dimensionality of this class, it is always 3</Documentation>
 			<Derived>3</Derived>
 		</DocAttribute>

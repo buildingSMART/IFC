@@ -1,40 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPerson" UniqueId="444c7a43-9f92-48d5-9ff4-acdf38ead916" DiagramNumber="1" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPerson" UniqueId="444c7a43-9f92-48d5-9ff4-acdf38ead916" EntityFlags="229">
 	<Attributes>
-		<DocAttribute Name="Id" UniqueId="34k0NJJcX3NBtIs$2ozFNG" DefinedType="IfcIdentifier" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Id" UniqueId="34k0NJJcX3NBtIs$2ozFNG" DefinedType="IfcIdentifier" AttributeFlags="1">
 			<Documentation>Identification of the person.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="FamilyName" UniqueId="e0501fe3-5ddf-4817-ae8e-0736a8375d9d" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="FamilyName" UniqueId="e0501fe3-5ddf-4817-ae8e-0736a8375d9d" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>The name by which the family identity of the person may be recognized.
 &gt; &lt;font size=&quot;-1&quot;&gt;NOTE: Depending on geographical location and culture, family name may appear either as the first or last component of a name.&lt;/font&gt;</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="GivenName" UniqueId="ca330b42-ee3a-43ff-a9c3-54feeafe62fa" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="GivenName" UniqueId="ca330b42-ee3a-43ff-a9c3-54feeafe62fa" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>The name by which a person is known within a family and by which he or she may be familiarly recognized.
 &gt; &lt;font size=&quot;-1&quot;&gt;NOTE: Depending on geographical location and culture, given name may appear either as the first or last component of a name.
 &lt;/font&gt;</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="MiddleNames" UniqueId="66e561d1-9813-4539-8dbf-68de088a59a2" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="MiddleNames" UniqueId="66e561d1-9813-4539-8dbf-68de088a59a2" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Additional names given to a person that enable their identification apart from others who may have the same or similar family and given names.
 &gt; &lt;font size=&quot;-1&quot;&gt;NOTE: Middle names are not normally used in familiar communication but may be asserted to provide additional 
 identification of a particular person if necessary. They may be particularly useful in situations where the person concerned has a 
 family name that occurs commonly in the geographical region.
 &lt;/font&gt;</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="PrefixTitles" UniqueId="3d6cc85d-6254-4595-b49d-c17bf042ce73" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="PrefixTitles" UniqueId="3d6cc85d-6254-4595-b49d-c17bf042ce73" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The word, or group of words, which specify the person&apos;s social and/or professional standing and appear before his/her names.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="SuffixTitles" UniqueId="b3ec9779-b455-4f6b-bd96-a51a22ae5797" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="SuffixTitles" UniqueId="b3ec9779-b455-4f6b-bd96-a51a22ae5797" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The word, or group of words, which specify the person&apos;s social and/or professional standing and appear after his/her names.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Roles" UniqueId="30be2207-32b0-438f-8fc7-fad9a4578bdd" DefinedType="IfcActorRole" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="Roles" UniqueId="30be2207-32b0-438f-8fc7-fad9a4578bdd" DefinedType="IfcActorRole" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Roles played by the person.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Addresses" UniqueId="8e3a5e4b-90cd-43e2-b297-f3d7912bb3c1" DefinedType="IfcAddress" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="Addresses" UniqueId="8e3a5e4b-90cd-43e2-b297-f3d7912bb3c1" DefinedType="IfcAddress" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Postal and telecommunication addresses of a person.
 &gt; &lt;font size=&quot;-1&quot;&gt;NOTE - A person may have several addresses.
 &lt;/font&gt;</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="EngagedIn" UniqueId="72fa7a66-38ba-470c-84d5-3f99391bf4a6" DefinedType="IfcPersonAndOrganization" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="ThePerson">
+		<DocAttribute Name="EngagedIn" UniqueId="72fa7a66-38ba-470c-84d5-3f99391bf4a6" DefinedType="IfcPersonAndOrganization" AttributeFlags="8" AggregationType="3" AggregationLower="0" AggregationUpper="0" Inverse="ThePerson">
 			<Documentation>The inverse relationship to IfcPersonAndOrganization relationships in which IfcPerson is engaged.</Documentation>
 		</DocAttribute>
 	</Attributes>

@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcDerivedUnit" UniqueId="2923468f-7a3d-4521-9900-c76a41447138" DiagramNumber="1" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcDerivedUnit" UniqueId="2923468f-7a3d-4521-9900-c76a41447138" EntityFlags="229">
 	<Attributes>
-		<DocAttribute Name="Elements" UniqueId="e72142b9-ee3d-4bf3-8cbc-1a1c4506f9d8" DefinedType="IfcDerivedUnitElement" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="Elements" UniqueId="e72142b9-ee3d-4bf3-8cbc-1a1c4506f9d8" DefinedType="IfcDerivedUnitElement" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The group of units and their exponents that define the derived unit.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="UnitType" UniqueId="df3cb14f-4bb8-4ed8-a79c-92221b2c5710" DefinedType="IfcDerivedUnitEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="UnitType" UniqueId="df3cb14f-4bb8-4ed8-a79c-92221b2c5710" DefinedType="IfcDerivedUnitEnum">
 			<Documentation>Name of the derived unit chosen from an enumeration of derived unit types for use in IFC models.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="UserDefinedType" UniqueId="ad069c40-59ef-46b3-ba34-ad6fd730e7dc" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0" />
-		<DocAttribute Name="Dimensions" UniqueId="4c2d2a13-ce40-4488-a908-26365ac47c40" DefinedType="IfcDimensionalExponents" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="UserDefinedType" UniqueId="ad069c40-59ef-46b3-ba34-ad6fd730e7dc" DefinedType="IfcLabel" AttributeFlags="1" />
+		<DocAttribute Name="Dimensions" UniqueId="4c2d2a13-ce40-4488-a908-26365ac47c40" DefinedType="IfcDimensionalExponents">
 			<Documentation>Dimensional exponents derived using the function IfcDerivedDimensionalExponents using (SELF) as the input value.</Documentation>
 			<Derived>IfcDeriveDimensionalExponents(Elements)</Derived>
 		</DocAttribute>

@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcFillAreaStyleTiles" UniqueId="94e16249-95c6-4654-92c9-5cfac4e1e234" DiagramNumber="4" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcFillAreaStyleTiles" UniqueId="94e16249-95c6-4654-92c9-5cfac4e1e234" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="101">
 	<Attributes>
-		<DocAttribute Name="TilingPattern" UniqueId="85b936d1-2755-4739-9fd0-716ef0622f80" DefinedType="IfcOneDirectionRepeatFactor" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="TilingPattern" UniqueId="85b936d1-2755-4739-9fd0-716ef0622f80" DefinedType="IfcOneDirectionRepeatFactor">
 			<Documentation>A two direction repeat factor defining the shape and relative positioning of the tiles.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Tiles" UniqueId="5812d5a2-edd8-486a-8237-149034e4dcaa" DefinedType="IfcFillAreaStyleTileShapeSelect" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="Tiles" UniqueId="5812d5a2-edd8-486a-8237-149034e4dcaa" DefinedType="IfcFillAreaStyleTileShapeSelect" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>A set of constituents of the tile.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="TilingScale" UniqueId="0200d8ed-49fd-4670-a213-284158f9200d" DefinedType="IfcPositiveRatioMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="TilingScale" UniqueId="0200d8ed-49fd-4670-a213-284158f9200d" DefinedType="IfcPositiveRatioMeasure">
 			<Documentation>The scale factor applied to each tile as it is placed in the annotation fill area.</Documentation>
 		</DocAttribute>
 	</Attributes>

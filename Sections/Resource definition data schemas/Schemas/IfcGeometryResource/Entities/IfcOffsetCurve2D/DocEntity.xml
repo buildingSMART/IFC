@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcOffsetCurve2D" UniqueId="f5ea20e7-98db-4aeb-b0f8-03ac3e6d947c" DiagramNumber="5" BaseDefinition="IfcCurve" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcOffsetCurve2D" UniqueId="f5ea20e7-98db-4aeb-b0f8-03ac3e6d947c" BaseDefinition="IfcCurve" EntityFlags="101">
 	<Attributes>
-		<DocAttribute Name="BasisCurve" UniqueId="99888d7b-4079-40f5-9de9-5f4048ee8964" DefinedType="IfcCurve" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="BasisCurve" UniqueId="99888d7b-4079-40f5-9de9-5f4048ee8964" DefinedType="IfcCurve">
 			<Documentation>The curve that is being offset.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Distance" UniqueId="4214b648-a464-4af2-ba65-3c2ac259bd4a" DefinedType="IfcLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Distance" UniqueId="4214b648-a464-4af2-ba65-3c2ac259bd4a" DefinedType="IfcLengthMeasure">
 			<Documentation>The distance of the offset curve from the basis curve. distance may be positive, negative or zero. A positive value of distance defines an offset in the direction which is normal to the curve in the sense of an anti-clockwise rotation through 90 degrees from the tangent vector T at the given point. (This is in the direction of orthogonal complement(T).)</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="SelfIntersect" UniqueId="7b9a922b-dd34-4353-b3d4-a230b9dc5dcb" DefinedType="LOGICAL" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="SelfIntersect" UniqueId="7b9a922b-dd34-4353-b3d4-a230b9dc5dcb" DefinedType="LOGICAL">
 			<Documentation>An indication of whether the offset curve self-intersects; this is for information only.</Documentation>
 		</DocAttribute>
 	</Attributes>

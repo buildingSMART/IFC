@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcDirection" UniqueId="c9a6fe1f-b072-45ab-ba40-8c1f8c01e132" DiagramNumber="3" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="109">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcDirection" UniqueId="c9a6fe1f-b072-45ab-ba40-8c1f8c01e132" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="109">
 	<Attributes>
-		<DocAttribute Name="DirectionRatios" UniqueId="c10df008-c6c7-4ceb-8a7b-e5696975a354" DefinedType="REAL" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="3">
+		<DocAttribute Name="DirectionRatios" UniqueId="c10df008-c6c7-4ceb-8a7b-e5696975a354" DefinedType="REAL" AggregationType="1" AggregationLower="2" AggregationUpper="3">
 			<Documentation>The components in the direction of X axis (DirectionRatios[1]), of Y axis (DirectionRatios[2]), and of Z axis (DirectionRatios[3])</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Dim" UniqueId="653facbb-d98b-49fd-af21-ec73baa0d051" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Dim" UniqueId="653facbb-d98b-49fd-af21-ec73baa0d051" DefinedType="IfcDimensionCount">
 			<Documentation>The space dimensionality of this class, defined by the number of real in the list of DirectionRatios.</Documentation>
 			<Derived>HIINDEX(DirectionRatios)</Derived>
 		</DocAttribute>

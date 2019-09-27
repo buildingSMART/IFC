@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcWindowStyle" UniqueId="db2eb89c-05a5-4166-8f16-149189ed3bfa" DiagramNumber="4" BaseDefinition="IfcTypeProduct" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcWindowStyle" UniqueId="db2eb89c-05a5-4166-8f16-149189ed3bfa" BaseDefinition="IfcTypeProduct" EntityFlags="237">
 	<Attributes>
-		<DocAttribute Name="ConstructionType" UniqueId="86bdb583-d724-4564-b54a-856d36c09ea1" DefinedType="IfcWindowStyleConstructionEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ConstructionType" UniqueId="86bdb583-d724-4564-b54a-856d36c09ea1" DefinedType="IfcWindowStyleConstructionEnum">
 			<Documentation>Type defining the basic construction and material type of the window.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="OperationType" UniqueId="c8dfa2e1-92d3-45c7-888c-3f33602acb59" DefinedType="IfcWindowStyleOperationEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="OperationType" UniqueId="c8dfa2e1-92d3-45c7-888c-3f33602acb59" DefinedType="IfcWindowStyleOperationEnum">
 			<Documentation>Type defining the general layout and operation of the window style.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="ParameterTakesPrecedence" UniqueId="bc8f77be-3d4e-481b-b869-19bd68f29427" DefinedType="BOOLEAN" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ParameterTakesPrecedence" UniqueId="bc8f77be-3d4e-481b-b869-19bd68f29427" DefinedType="BOOLEAN">
 			<Documentation>The Boolean value reflects, whether the parameter given in the attached lining and panel properties exactly define the geometry (TRUE), or whether the attached style shape take precedence (FALSE). In the last case the parameter have only informative value.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Sizeable" UniqueId="b8e166df-8b37-41bc-b78c-9ba0be8ce237" DefinedType="BOOLEAN" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Sizeable" UniqueId="b8e166df-8b37-41bc-b78c-9ba0be8ce237" DefinedType="BOOLEAN">
 			<Documentation>The Boolean indicates, whether the attached ShapeStyle can be sized (using scale factor of transformation), or not (FALSE). If not, the ShapeStyle should be inserted by the IfcWindow (using IfcMappedItem) with the scale factor = 1.</Documentation>
 		</DocAttribute>
 	</Attributes>

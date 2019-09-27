@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcConnectionPointGeometry" UniqueId="eb9cba99-d452-42f5-91a7-7d9d1195d90d" DiagramNumber="2" BaseDefinition="IfcConnectionGeometry" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcConnectionPointGeometry" UniqueId="eb9cba99-d452-42f5-91a7-7d9d1195d90d" BaseDefinition="IfcConnectionGeometry" EntityFlags="101">
 	<Subtypes>
 		<DocSubtype UniqueId="7cd252d8-549b-4d1e-86ff-4b9060ac2399" DefinedType="IfcConnectionPointEccentricity" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="PointOnRelatingElement" UniqueId="976628c1-26d5-43ee-819d-e2ef622cf70c" DefinedType="IfcPointOrVertexPoint" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PointOnRelatingElement" UniqueId="976628c1-26d5-43ee-819d-e2ef622cf70c" DefinedType="IfcPointOrVertexPoint">
 			<Documentation>Point at which the connected object is aligned at the relating element, given in the LCS of the relating element.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="PointOnRelatedElement" UniqueId="393301b1-7137-4011-bbd9-6e513c7d079f" DefinedType="IfcPointOrVertexPoint" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PointOnRelatedElement" UniqueId="393301b1-7137-4011-bbd9-6e513c7d079f" DefinedType="IfcPointOrVertexPoint" AttributeFlags="1">
 			<Documentation>Point at which connected objects are aligned at the related element, given in the LCS of the related element. If the information is omitted, then the origin of the related element is used.</Documentation>
 		</DocAttribute>
 	</Attributes>

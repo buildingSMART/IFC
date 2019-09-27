@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelSpaceBoundary" UniqueId="b5068876-210f-4343-a93a-674f2a9e63ff" DiagramNumber="3" BaseDefinition="IfcRelConnects" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelSpaceBoundary" UniqueId="b5068876-210f-4343-a93a-674f2a9e63ff" BaseDefinition="IfcRelConnects" EntityFlags="237">
 	<Attributes>
-		<DocAttribute Name="RelatingSpace" UniqueId="f8599c4e-f4c7-493b-acaf-453c795e6070" DefinedType="IfcSpace" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RelatingSpace" UniqueId="f8599c4e-f4c7-493b-acaf-453c795e6070" DefinedType="IfcSpace">
 			<Documentation>Reference to one spaces that is delimited by this boundary.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="RelatedBuildingElement" UniqueId="6523e107-ea64-416e-a049-ceda315c7e48" DefinedType="IfcElement" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RelatedBuildingElement" UniqueId="6523e107-ea64-416e-a049-ceda315c7e48" DefinedType="IfcElement" AttributeFlags="1">
 			<Documentation>Reference to ~~Building~~ Element, that defines the Space Boundaries.
 &gt; &lt;small&gt;&lt;font color=&quot;#ff0000&quot;&gt;
 IFC2x PLATFORM CHANGE: The data type has been changed from &lt;i&gt;IfcBuildingElement&lt;/i&gt; to &lt;i&gt;IfcElement&lt;/i&gt; with upward compatibility for file based exchange.
 &lt;/font&gt;&lt;/small&gt;</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="ConnectionGeometry" UniqueId="1e9b8391-2d9c-4039-8d4a-922a0ee5c8c2" DefinedType="IfcConnectionGeometry" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ConnectionGeometry" UniqueId="1e9b8391-2d9c-4039-8d4a-922a0ee5c8c2" DefinedType="IfcConnectionGeometry" AttributeFlags="1">
 			<Documentation>Physical representation of the space boundary. Provided as a **curve or** surface given within the LCS of the space.
 &gt; &lt;small&gt;&lt;font color=&quot;#ff0000&quot;&gt;
 IFC2x PLATFORM CHANGE&amp;nbsp; The data type has been changed from &lt;i&gt;IfcConnectionSurfaceGeometry&lt;/i&gt; to &lt;i&gt;IfcConnectionGeometry&lt;/i&gt; with upward compatibility for file based exchange.
 &lt;/font&gt;&lt;/small&gt;</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="PhysicalOrVirtualBoundary" UniqueId="229c3b86-471b-488d-bcb1-333acb26d486" DefinedType="IfcPhysicalOrVirtualEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PhysicalOrVirtualBoundary" UniqueId="229c3b86-471b-488d-bcb1-333acb26d486" DefinedType="IfcPhysicalOrVirtualEnum">
 			<Documentation>Defines, whether the Space Boundary is physical (Physical) or virtual (Virtual).</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="InternalOrExternalBoundary" UniqueId="8a88debb-6d88-4f0b-80bc-706ba9f88f51" DefinedType="IfcInternalOrExternalEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="InternalOrExternalBoundary" UniqueId="8a88debb-6d88-4f0b-80bc-706ba9f88f51" DefinedType="IfcInternalOrExternalEnum">
 			<Documentation>Defines, whether the Space Boundary is internal (Internal), or external, i.e. adjacent to open space (that can be an partially enclosed space, such as terrace (External).</Documentation>
 		</DocAttribute>
 	</Attributes>

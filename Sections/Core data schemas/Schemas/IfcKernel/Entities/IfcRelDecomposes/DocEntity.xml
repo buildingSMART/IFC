@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelDecomposes" UniqueId="4ee02ebb-86ec-4872-a4ca-287681002e36" DiagramNumber="5" BaseDefinition="IfcRelationship" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelDecomposes" UniqueId="4ee02ebb-86ec-4872-a4ca-287681002e36" BaseDefinition="IfcRelationship" EntityFlags="205">
 	<Subtypes>
 		<DocSubtype UniqueId="d0d3f9b0-c70b-4566-995d-201dee377f59" DefinedType="IfcRelAggregates" />
 		<DocSubtype UniqueId="84a7a8c7-c2a7-4cb9-9508-b80e51dc445f" DefinedType="IfcRelNests" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="RelatingObject" UniqueId="0Sz_LAZjb90uHJf4ERDNRF" DefinedType="IfcObjectDefinition" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RelatingObject" UniqueId="0Sz_LAZjb90uHJf4ERDNRF" DefinedType="IfcObjectDefinition">
 			<Documentation>The object that represents the nest or aggregation.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="RelatedObjects" UniqueId="1YofFXWDb5NBSA3pzdFble" DefinedType="IfcObjectDefinition" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="RelatedObjects" UniqueId="1YofFXWDb5NBSA3pzdFble" DefinedType="IfcObjectDefinition" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The objects being nested or aggregated.</Documentation>
 		</DocAttribute>
 	</Attributes>

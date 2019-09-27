@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMaterialLayerSet" UniqueId="c1a5e8bc-cb6b-4466-8130-d2946ca1f8a0" DiagramNumber="1" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMaterialLayerSet" UniqueId="c1a5e8bc-cb6b-4466-8130-d2946ca1f8a0" EntityFlags="229">
 	<Attributes>
-		<DocAttribute Name="MaterialLayers" UniqueId="5a628a68-ffd7-4f73-aa3e-e72f2be216a1" DefinedType="IfcMaterialLayer" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="MaterialLayers" UniqueId="5a628a68-ffd7-4f73-aa3e-e72f2be216a1" DefinedType="IfcMaterialLayer" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Identification of the layers from which the material layer set is composed.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="LayerSetName" UniqueId="64d28d03-21af-45f1-8409-87bc5674dfbe" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LayerSetName" UniqueId="64d28d03-21af-45f1-8409-87bc5674dfbe" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>The name by which the material layer set is known.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="TotalThickness" UniqueId="81ed0494-3a34-4ff6-9004-3779ff4854d9" DefinedType="IfcLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="TotalThickness" UniqueId="81ed0494-3a34-4ff6-9004-3779ff4854d9" DefinedType="IfcLengthMeasure">
 			<Documentation>Total thickness of the material layer set is derived from the function IfcMlsTotalThickness.</Documentation>
 			<Derived>IfcMlsTotalThickness(SELF)</Derived>
 		</DocAttribute>

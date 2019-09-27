@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralAction" UniqueId="773e5eda-f463-41ec-a0f4-14681750a780" DiagramNumber="4" BaseDefinition="IfcStructuralActivity" EntityFlags="141">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralAction" UniqueId="773e5eda-f463-41ec-a0f4-14681750a780" BaseDefinition="IfcStructuralActivity" EntityFlags="141">
 	<Subtypes>
 		<DocSubtype UniqueId="b48ff75f-886d-4b06-9bcb-5d8a3ce5f0bc" DefinedType="IfcStructuralPointAction" />
 		<DocSubtype UniqueId="2V0x50MLPChx0Pg7sAnPcF" DefinedType="IfcStructuralLinearAction" />
 		<DocSubtype UniqueId="1b8CLiyfjA$PINz9tL9Pe9" DefinedType="IfcStructuralPlanarAction" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="DestabilizingLoad" UniqueId="7e7162c0-17e9-4165-9c29-294aefb1216b" DefinedType="BOOLEAN" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="DestabilizingLoad" UniqueId="7e7162c0-17e9-4165-9c29-294aefb1216b" DefinedType="BOOLEAN">
 			<Documentation>Indicates if this action may cause a stability problem. If it is &apos;FALSE&apos;, no further investigations regarding stability problems are necessary.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="CausedBy" UniqueId="1O6GDuuRr8afVU8Y21VjPH" DefinedType="IfcStructuralReaction" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="CausedBy" UniqueId="1O6GDuuRr8afVU8Y21VjPH" DefinedType="IfcStructuralReaction" AttributeFlags="1">
 			<Documentation>Optional reference to an instance of IfcStructuralReaction representing a result of another structural analysis model which creates this action upon the considered structural analysis model.</Documentation>
 		</DocAttribute>
 	</Attributes>

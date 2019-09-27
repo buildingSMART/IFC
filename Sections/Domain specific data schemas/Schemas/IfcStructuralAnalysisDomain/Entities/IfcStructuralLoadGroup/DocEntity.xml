@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralLoadGroup" UniqueId="eda81530-0687-4842-bde0-d6567c6ba98b" DiagramNumber="5" BaseDefinition="IfcGroup" EntityFlags="165">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralLoadGroup" UniqueId="eda81530-0687-4842-bde0-d6567c6ba98b" BaseDefinition="IfcGroup" EntityFlags="165">
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="5663480e-3310-47cf-9895-b66f3b6bc6fc" DefinedType="IfcLoadGroupTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="5663480e-3310-47cf-9895-b66f3b6bc6fc" DefinedType="IfcLoadGroupTypeEnum">
 			<Documentation>Selects a predefined type for the load group. It can be differentiated between load groups, load cases, load combination groups (a necessary construct for the description of load combinations) and load combinations.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="ActionType" UniqueId="aef5596c-d11b-4db0-a46f-35343620887f" DefinedType="IfcActionTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ActionType" UniqueId="aef5596c-d11b-4db0-a46f-35343620887f" DefinedType="IfcActionTypeEnum">
 			<Documentation>Type of actions in the group. Normally needed if &apos;PredefinedType&apos; specifies a LOAD_COMBINATION_GROUP.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="ActionSource" UniqueId="448bc4ea-6678-4bdf-aa0a-b668235e13ff" DefinedType="IfcActionSourceTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ActionSource" UniqueId="448bc4ea-6678-4bdf-aa0a-b668235e13ff" DefinedType="IfcActionSourceTypeEnum">
 			<Documentation>Source of actions in the group. Normally needed if &apos;PredefinedType&apos; specifies a LOAD_CASE.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Coefficient" UniqueId="aa87d543-3486-4d44-8480-cb94601a2fc7" DefinedType="IfcRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Coefficient" UniqueId="aa87d543-3486-4d44-8480-cb94601a2fc7" DefinedType="IfcRatioMeasure" AttributeFlags="1">
 			<Documentation>Load factor. If omitted, a factor is not yet known or not specified. A load factor of 1.0 shall be explicitly exported as Coefficient = 1.0.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Purpose" UniqueId="fd3c9364-c459-4be9-bd2f-25e1b39b4957" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Purpose" UniqueId="fd3c9364-c459-4be9-bd2f-25e1b39b4957" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>Description of the purpose of this instance. Among else, possible values of the Purpose of load combinations are &apos;SLS&apos;, &apos;ULS&apos;, &apos;ALS&apos; to indicate serviceability, ultimate, or accidental limit state.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="SourceOfResultGroup" UniqueId="cc5325c9-4d29-44d1-b97c-63725962202d" DefinedType="IfcStructuralResultGroup" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="ResultForLoadGroup">
+		<DocAttribute Name="SourceOfResultGroup" UniqueId="cc5325c9-4d29-44d1-b97c-63725962202d" DefinedType="IfcStructuralResultGroup" AttributeFlags="8" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="ResultForLoadGroup">
 			<Documentation>Results which were computed using this load group.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="LoadGroupFor" UniqueId="4da738a4-3225-4f05-895a-6c91c1c53f79" DefinedType="IfcStructuralAnalysisModel" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="LoadedBy">
+		<DocAttribute Name="LoadGroupFor" UniqueId="4da738a4-3225-4f05-895a-6c91c1c53f79" DefinedType="IfcStructuralAnalysisModel" AttributeFlags="8" AggregationType="3" AggregationLower="0" AggregationUpper="0" Inverse="LoadedBy">
 			<Documentation>Analysis models in which this load group is used.</Documentation>
 		</DocAttribute>
 	</Attributes>

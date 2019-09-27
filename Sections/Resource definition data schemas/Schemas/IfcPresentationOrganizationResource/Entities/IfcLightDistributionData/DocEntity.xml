@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcLightDistributionData" UniqueId="cffe9f24-4de2-4238-8448-856d95446876" DiagramNumber="3" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcLightDistributionData" UniqueId="cffe9f24-4de2-4238-8448-856d95446876" EntityFlags="101">
 	<Attributes>
-		<DocAttribute Name="MainPlaneAngle" UniqueId="8bfeda5d-d746-43d6-9ae7-6099d937f490" DefinedType="IfcPlaneAngleMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="MainPlaneAngle" UniqueId="8bfeda5d-d746-43d6-9ae7-6099d937f490" DefinedType="IfcPlaneAngleMeasure">
 			<Documentation>The main plane angle (A, B or C angles, according to the light distribution curve chosen).</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="SecondaryPlaneAngle" UniqueId="3fbe74a3-c4b3-4987-8774-375df54d71eb" DefinedType="IfcPlaneAngleMeasure" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="SecondaryPlaneAngle" UniqueId="3fbe74a3-c4b3-4987-8774-375df54d71eb" DefinedType="IfcPlaneAngleMeasure" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The list of secondary plane angles (the &amp;#945;, &amp;#946; or &amp;#947; angles) according to the light distribution curve chosen.
 
 &gt; NOTE: The _SecondaryPlaneAngle_ and _LuminousIntensity_ lists are corresponding lists.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="LuminousIntensity" UniqueId="226abcef-3fd3-4a2c-a02c-653dc392ba82" DefinedType="IfcLuminousIntensityDistributionMeasure" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="LuminousIntensity" UniqueId="226abcef-3fd3-4a2c-a02c-653dc392ba82" DefinedType="IfcLuminousIntensityDistributionMeasure" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The luminous intensity distribution measure for this pair of main and secondary plane angles according to the light distribution curve chosen.</Documentation>
 		</DocAttribute>
 	</Attributes>

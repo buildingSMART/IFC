@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTask" UniqueId="1cd0905c-9f60-44f9-9f06-d4cefbc96a5b" DiagramNumber="3" BaseDefinition="IfcProcess" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTask" UniqueId="1cd0905c-9f60-44f9-9f06-d4cefbc96a5b" BaseDefinition="IfcProcess" EntityFlags="229">
 	<Attributes>
-		<DocAttribute Name="TaskId" UniqueId="1oirDPyDr4IQG16ackg5dt" DefinedType="IfcIdentifier" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="TaskId" UniqueId="1oirDPyDr4IQG16ackg5dt" DefinedType="IfcIdentifier">
 			<Documentation>An identifying designation given to a task.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Status" UniqueId="24dad4d8-59a7-4a3c-9f09-a69c43924da4" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Status" UniqueId="24dad4d8-59a7-4a3c-9f09-a69c43924da4" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>Current status of the task.
 NOTE: Particular values for status are not specified, these should be determined and agreed by local usage. Examples of possible status values include &apos;Not Yet Started&apos;, &apos;Started&apos;, &apos;Completed&apos;.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="WorkMethod" UniqueId="17ff6383-1e7f-4b76-9767-c81157032a92" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="WorkMethod" UniqueId="17ff6383-1e7f-4b76-9767-c81157032a92" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>The method of work used in carrying out a task.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="IsMilestone" UniqueId="7b39e6b5-1058-483b-b41a-aa6262a8d52e" DefinedType="BOOLEAN" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="IsMilestone" UniqueId="7b39e6b5-1058-483b-b41a-aa6262a8d52e" DefinedType="BOOLEAN">
 			<Documentation>Identifies whether a task is a milestone task (=TRUE) or not (= FALSE).
 NOTE: In small project planning applications, a milestone task may be understood to be a task having no duration. As such, it represents a singular point in time.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Priority" UniqueId="1bdb7742-02a5-4935-816c-f448d784924b" DefinedType="INTEGER" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Priority" UniqueId="1bdb7742-02a5-4935-816c-f448d784924b" DefinedType="INTEGER" AttributeFlags="1">
 			<Documentation>A value that indicates the relative priority of the task (in comparison to the priorities of other tasks).</Documentation>
 		</DocAttribute>
 	</Attributes>

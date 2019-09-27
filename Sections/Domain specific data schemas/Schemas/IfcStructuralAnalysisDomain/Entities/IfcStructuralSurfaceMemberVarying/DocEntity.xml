@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralSurfaceMemberVarying" UniqueId="66950826-279c-419b-94ba-f2cc8d28c876" DiagramNumber="3" BaseDefinition="IfcStructuralSurfaceMember" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralSurfaceMemberVarying" UniqueId="66950826-279c-419b-94ba-f2cc8d28c876" BaseDefinition="IfcStructuralSurfaceMember" EntityFlags="229">
 	<Attributes>
-		<DocAttribute Name="SubsequentThickness" UniqueId="0anfLvh9j9qftC_ZYjnFPh" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="0">
+		<DocAttribute Name="SubsequentThickness" UniqueId="0anfLvh9j9qftC_ZYjnFPh" DefinedType="IfcPositiveLengthMeasure" AggregationType="1" AggregationLower="2" AggregationUpper="0">
 			<Documentation>Defines the variable thickness of the structural face member using two or more subsequent and additional thickness values. The first thickness value is already given by the inherited Thickness value and shall not be included in the list.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="VaryingThicknessLocation" UniqueId="2Bup6puLjAXAhNPY5OvPaP" DefinedType="IfcShapeAspect" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="VaryingThicknessLocation" UniqueId="2Bup6puLjAXAhNPY5OvPaP" DefinedType="IfcShapeAspect">
 			<Documentation>A shape aspect, containing a list of shape representations, each defining either one Cartesian point or one point on surface (by parameter values) which are needed to provide the positions of the VaryingThickness. The values contained in the list of IfcShapeAspect.ShapeRepresentations correspond to the values at the same position in the list VaryingThickness. The locations shall be along the outer bounds of the face (or surface) only.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="VaryingThickness" UniqueId="0Hvx2BOW10putja1Bk2uaM" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="3" AggregationUpper="0">
+		<DocAttribute Name="VaryingThickness" UniqueId="0Hvx2BOW10putja1Bk2uaM" DefinedType="IfcPositiveLengthMeasure" AggregationType="1" AggregationLower="3" AggregationUpper="0">
 			<Documentation>Derived list of all varying thickness values by pushing the inherited starting thickness to the beginning of the list of SubsequentThickness.</Documentation>
 			<Derived>IfcAddToBeginOfList(SELF\IfcStructuralSurfaceMember.Thickness, SubsequentThickness)</Derived>
 		</DocAttribute>

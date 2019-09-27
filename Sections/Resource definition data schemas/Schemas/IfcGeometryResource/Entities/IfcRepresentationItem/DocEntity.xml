@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRepresentationItem" UniqueId="e783d84d-d19b-4cf7-a863-f851642523f8" DiagramNumber="1" EntityFlags="197">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRepresentationItem" UniqueId="e783d84d-d19b-4cf7-a863-f851642523f8" EntityFlags="197">
 	<Subtypes>
 		<DocSubtype UniqueId="d8b1cb11-f38b-4b2b-b863-347735987f55" DefinedType="IfcTopologicalRepresentationItem" />
 		<DocSubtype UniqueId="b1ad9e4e-295c-4d5b-ae94-583b3e81ea02" DefinedType="IfcGeometricRepresentationItem" />
@@ -7,12 +7,12 @@
 		<DocSubtype UniqueId="98af54d7-0473-4442-ae40-9676f51af881" DefinedType="IfcStyledItem" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="LayerAssignments" UniqueId="2weLF0acz8chrlAByckGk6" DefinedType="IfcPresentationLayerAssignment" AttributeFlags="32" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="AssignedItems">
+		<DocAttribute Name="LayerAssignments" UniqueId="2weLF0acz8chrlAByckGk6" DefinedType="IfcPresentationLayerAssignment" AttributeFlags="32" AggregationType="3" AggregationLower="0" AggregationUpper="0" Inverse="AssignedItems">
 			<Documentation>Assignment of the representation item to a single or multiple layer(s). The _LayerAssignments_ can override a _LayerAssignments_ of the _IfcRepresentation_ it is used  within the list of _Items_.
 &gt; &lt;small&gt;NOTE&amp;nbsp; Implementation agreements can restrict the maximum number of layer assignments to 1.&lt;/small&gt;  
 &gt; &lt;small&gt;&lt;font color=&quot;#ff0000&quot;&gt;IFC2x Edition 3 CHANGE&amp;nbsp; The inverse attribute &lt;i&gt;LayerAssignments&lt;/i&gt; has been added.&lt;/font&gt;&lt;/small&gt;</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="StyledByItem" UniqueId="77b7e734-9703-41d6-82ec-f7dcfb179cba" DefinedType="IfcStyledItem" AttributeFlags="32" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="Item">
+		<DocAttribute Name="StyledByItem" UniqueId="77b7e734-9703-41d6-82ec-f7dcfb179cba" DefinedType="IfcStyledItem" AttributeFlags="32" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="Item">
 			<Documentation>Reference to the _IfcStyledItem_ that provides presentation information to the representation, e.g. a curve style, including colour and thickness to a geometric curve.
   
 &gt; &lt;small&gt;&lt;font color=&quot;#ff0000&quot;&gt;IFC2x Edition 3 CHANGE&amp;nbsp; The inverse attribute &lt;i&gt;StyledByItem&lt;/i&gt; has been added.&lt;/font&gt;&lt;/small&gt;</Documentation>

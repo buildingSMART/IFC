@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelAssigns" UniqueId="458cc135-db13-40d6-ab1b-64ba222632fe" DiagramNumber="4" BaseDefinition="IfcRelationship" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelAssigns" UniqueId="458cc135-db13-40d6-ab1b-64ba222632fe" BaseDefinition="IfcRelationship" EntityFlags="205">
 	<Subtypes>
 		<DocSubtype UniqueId="d118468e-eabe-45fa-b20c-ab90dd626245" DefinedType="IfcRelAssignsToProcess" />
 		<DocSubtype UniqueId="51866591-25ad-4694-b8d2-583ccb483eea" DefinedType="IfcRelAssignsToProduct" />
@@ -9,10 +9,10 @@
 		<DocSubtype UniqueId="51e22a54-e0f3-49b9-8d2e-d8ce84524bac" DefinedType="IfcRelAssignsToGroup" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="RelatedObjects" UniqueId="15095ee6-ca54-435a-ada1-6296bedeafc5" DefinedType="IfcObjectDefinition" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="RelatedObjects" UniqueId="15095ee6-ca54-435a-ada1-6296bedeafc5" DefinedType="IfcObjectDefinition" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Related objects, which are assigned to a single object. The type of the single (or relating) object is defined in the subtypes of IfcRelAssigns.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="RelatedObjectsType" UniqueId="7dd9a03b-e83d-4bde-a7cc-99502633620b" DefinedType="IfcObjectTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RelatedObjectsType" UniqueId="7dd9a03b-e83d-4bde-a7cc-99502633620b" DefinedType="IfcObjectTypeEnum" AttributeFlags="1">
 			<Documentation>Particular type of the assignment relationship. It can constrain the applicable object types, used within the role of RelatedObjects.</Documentation>
 		</DocAttribute>
 	</Attributes>

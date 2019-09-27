@@ -1,39 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAppliedValue" UniqueId="878e7c12-556c-42e6-a62a-feef9a77b4f9" DiagramNumber="1" EntityFlags="197">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAppliedValue" UniqueId="878e7c12-556c-42e6-a62a-feef9a77b4f9" EntityFlags="197">
 	<Subtypes>
 		<DocSubtype UniqueId="d060230f-003d-4654-9728-cb3861230258" DefinedType="IfcCostValue" />
 		<DocSubtype UniqueId="1J42BknyH7n8UmgVY4Jrzd" DefinedType="IfcEnvironmentalImpactValue" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Name" UniqueId="f1f7e181-7ab7-42ee-8419-312a8e441f5e" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Name" UniqueId="f1f7e181-7ab7-42ee-8419-312a8e441f5e" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>A name or additional clarification given to a cost (or impact) value.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Description" UniqueId="aca5297a-4f05-4828-a377-84262bd54980" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Description" UniqueId="aca5297a-4f05-4828-a377-84262bd54980" DefinedType="IfcText" AttributeFlags="1">
 			<Documentation>The description that may apply additional information about a cost (or impact) value. The description may be from purpose generated text, specification libraries, standards etc.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="AppliedValue" UniqueId="f569f893-d02e-4d0c-b8aa-eada1af92d01" DefinedType="IfcAppliedValueSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="AppliedValue" UniqueId="f569f893-d02e-4d0c-b8aa-eada1af92d01" DefinedType="IfcAppliedValueSelect" AttributeFlags="1">
 			<Documentation>The extent or quantity or amount of an applied value.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="UnitBasis" UniqueId="e93a6586-03c9-491a-b750-61a192bc3068" DefinedType="IfcMeasureWithUnit" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="UnitBasis" UniqueId="e93a6586-03c9-491a-b750-61a192bc3068" DefinedType="IfcMeasureWithUnit" AttributeFlags="1">
 			<Documentation>The number and unit of measure on which the unit cost is based.
 
 Note: As well as the normally expected units of measure such as length, area, volume etc., costs may be based on units of measure which need to be defined e.g. sack, drum, pallet, item etc. Unit costs may be based on quantities greater (or lesser) than a unitary value of the basis measure. For instance, timber may have a unit cost rate per X meters where X &gt; 1; similarly for cable, piping and many other items. The basis number may be either an integer or a real value.
 
 Note: This attribute should be asserted for all circumstances where the cost to be applied is per unit quantity. It may be asserted even for circumstances where an item price is used, in which case the unit cost basis should be by item (or equivalent definition).</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="ApplicableDate" UniqueId="607a3336-5a2c-4366-a5a4-4ecde56ea7f9" DefinedType="IfcDateTimeSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ApplicableDate" UniqueId="607a3336-5a2c-4366-a5a4-4ecde56ea7f9" DefinedType="IfcDateTimeSelect" AttributeFlags="1">
 			<Documentation>The date on or from which an applied value is applicable.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="FixedUntilDate" UniqueId="44cc2615-38d3-4a6e-a478-efc5cbd2cefa" DefinedType="IfcDateTimeSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="FixedUntilDate" UniqueId="44cc2615-38d3-4a6e-a478-efc5cbd2cefa" DefinedType="IfcDateTimeSelect" AttributeFlags="1">
 			<Documentation>The date until which applied value is applicable.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="ValuesReferenced" UniqueId="27s_e3Vjn63hVnVPgpzpLN" DefinedType="IfcReferencesValueDocument" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="ReferencingValues">
+		<DocAttribute Name="ValuesReferenced" UniqueId="27s_e3Vjn63hVnVPgpzpLN" DefinedType="IfcReferencesValueDocument" AttributeFlags="8" AggregationType="3" AggregationLower="0" AggregationUpper="0" Inverse="ReferencingValues">
 			<Documentation>Pointer to the IfcReferencesCostDocument relationship, which refer to a document from which the cost value is referenced.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="ValueOfComponents" UniqueId="1lRZv2fgLDVPAG$nX9x9W2" DefinedType="IfcAppliedValueRelationship" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="ComponentOfTotal">
+		<DocAttribute Name="ValueOfComponents" UniqueId="1lRZv2fgLDVPAG$nX9x9W2" DefinedType="IfcAppliedValueRelationship" AttributeFlags="8" AggregationType="3" AggregationLower="0" AggregationUpper="0" Inverse="ComponentOfTotal">
 			<Documentation>The total (or subtotal) value of the components within the applied value relationship expressed as a single applied value.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="IsComponentIn" UniqueId="2$_7Ury2H2uh1sI4UNn8gV" DefinedType="IfcAppliedValueRelationship" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="Components">
+		<DocAttribute Name="IsComponentIn" UniqueId="2$_7Ury2H2uh1sI4UNn8gV" DefinedType="IfcAppliedValueRelationship" AttributeFlags="8" AggregationType="3" AggregationLower="0" AggregationUpper="0" Inverse="Components">
 			<Documentation>The value of the single applied value which is used by the applied value relationship to express a complex applied value.</Documentation>
 		</DocAttribute>
 	</Attributes>

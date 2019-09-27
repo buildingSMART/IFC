@@ -1,31 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcWindowLiningProperties" UniqueId="cb0b2f54-1b67-43b1-bfc6-07a44a44a16e" DiagramNumber="4" BaseDefinition="IfcPropertySetDefinition" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcWindowLiningProperties" UniqueId="cb0b2f54-1b67-43b1-bfc6-07a44a44a16e" BaseDefinition="IfcPropertySetDefinition" EntityFlags="237">
 	<Attributes>
-		<DocAttribute Name="LiningDepth" UniqueId="5f11ca78-fd39-49fd-aa05-39f48444916b" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LiningDepth" UniqueId="5f11ca78-fd39-49fd-aa05-39f48444916b" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>Depth of the window lining (dimension measured perpendicular to window elevation plane).</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="LiningThickness" UniqueId="098f93e9-146f-47d3-b18c-1f220d0ab695" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LiningThickness" UniqueId="098f93e9-146f-47d3-b18c-1f220d0ab695" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>Thickness of the window lining (measured parallel to the window elevation plane).</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="TransomThickness" UniqueId="a8f96736-8189-438d-b44f-d45154a2cac4" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="TransomThickness" UniqueId="a8f96736-8189-438d-b44f-d45154a2cac4" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>Thickness of the transom (horizontal separator of window panels within a window), measured parallel to the window elevation plane. The transom is part of the lining and the transom depth is assumed to be identical to the lining depth.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="MullionThickness" UniqueId="293ce108-6384-4825-b1ee-d82d4bd2c090" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="MullionThickness" UniqueId="293ce108-6384-4825-b1ee-d82d4bd2c090" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>Thickness of the mullion (vertical separator of window panels within a window), measured parallel to the window elevation plane. The mullion is part of the lining and the mullion depth is assumed to be identical to the lining depth.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="FirstTransomOffset" UniqueId="ec1322a2-cf54-4c11-a299-e788cb2e37ad" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="FirstTransomOffset" UniqueId="ec1322a2-cf54-4c11-a299-e788cb2e37ad" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1">
 			<Documentation>Offset of the transom centerline, measured along the z-axis of the window placement co-ordinate system. An offset value = 0.5 indicates that the transom is positioned in the middle of the window.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="SecondTransomOffset" UniqueId="cbc74d4c-21bb-43b8-b467-73cea9bcb9c2" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="SecondTransomOffset" UniqueId="cbc74d4c-21bb-43b8-b467-73cea9bcb9c2" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1">
 			<Documentation>Offset of the transom centerline for the second transom, measured along the x-axis of the window placement co-ordinate system. An offset value = 0.666 indicates that the second transom is positioned at two/third of the window.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="FirstMullionOffset" UniqueId="e022da46-8cf7-401d-a027-52fbdca3cfa5" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="FirstMullionOffset" UniqueId="e022da46-8cf7-401d-a027-52fbdca3cfa5" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1">
 			<Documentation>Offset of the mullion centerline, measured along the x-axis of the window placement co-ordinate system. An offset value = 0.5 indicates that the mullion is positioned in the middle of the window.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="SecondMullionOffset" UniqueId="8bbdec77-bf94-47da-8eb4-aa38a336dece" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="SecondMullionOffset" UniqueId="8bbdec77-bf94-47da-8eb4-aa38a336dece" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1">
 			<Documentation>Offset of the mullion centerline for the second mullion, measured along the x-axis of the window placement co-ordinate system. An offset value = 0.666 indicates that the second mullion is positioned at two/third of the window.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="ShapeAspectStyle" UniqueId="1cafc84f-dbdc-4763-87f3-c9c4b4162f98" DefinedType="IfcShapeAspect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ShapeAspectStyle" UniqueId="1cafc84f-dbdc-4763-87f3-c9c4b4162f98" DefinedType="IfcShapeAspect" AttributeFlags="1">
 			<Documentation>Optional link to a shape aspect definition, which points to the part of the geometric representation of the window style, which is used to represent the lining.</Documentation>
 		</DocAttribute>
 	</Attributes>

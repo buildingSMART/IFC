@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcElementarySurface" UniqueId="dab568ba-aad6-4d74-963d-d3f397cfcea1" DiagramNumber="7" BaseDefinition="IfcSurface" EntityFlags="69">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcElementarySurface" UniqueId="dab568ba-aad6-4d74-963d-d3f397cfcea1" BaseDefinition="IfcSurface" EntityFlags="69">
 	<Subtypes>
 		<DocSubtype UniqueId="8a825a54-0de3-4445-82fd-b47b0026a084" DefinedType="IfcPlane" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Position" UniqueId="f91d2366-0868-4189-a462-5254202e97dc" DefinedType="IfcAxis2Placement3D" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Position" UniqueId="f91d2366-0868-4189-a462-5254202e97dc" DefinedType="IfcAxis2Placement3D">
 			<Documentation>The position and orientation of the surface. This attribute is used in the definition of the parameterization of the surface.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Dim" UniqueId="1HowbxtqfBzv49$jtTJOv6" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Dim" UniqueId="1HowbxtqfBzv49$jtTJOv6" DefinedType="IfcDimensionCount">
 			<Documentation>The space dimensionality of this class, derived from the dimensionality of the Position.</Documentation>
 			<Derived>Position.Dim</Derived>
 		</DocAttribute>

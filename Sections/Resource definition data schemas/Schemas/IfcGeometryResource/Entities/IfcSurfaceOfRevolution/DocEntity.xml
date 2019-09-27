@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSurfaceOfRevolution" UniqueId="89fd5813-f37e-4602-a4ad-8cdb9bf8869c" DiagramNumber="8" BaseDefinition="IfcSweptSurface" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSurfaceOfRevolution" UniqueId="89fd5813-f37e-4602-a4ad-8cdb9bf8869c" BaseDefinition="IfcSweptSurface" EntityFlags="101">
 	<Attributes>
-		<DocAttribute Name="AxisPosition" UniqueId="f5ca3d78-4e7d-4f00-8f91-e7bad20ebeb5" DefinedType="IfcAxis1Placement" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="AxisPosition" UniqueId="f5ca3d78-4e7d-4f00-8f91-e7bad20ebeb5" DefinedType="IfcAxis1Placement">
 			<Documentation>A point on the axis of revolution and the direction of the axis of revolution.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="AxisLine" UniqueId="a7d21d77-3b89-4f1a-9ec3-c828659d1a73" DefinedType="IfcLine" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="AxisLine" UniqueId="a7d21d77-3b89-4f1a-9ec3-c828659d1a73" DefinedType="IfcLine">
 			<Documentation>The line coinciding with the axis of revolution.</Documentation>
 			<Derived>IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcCurve() || IfcLine(AxisPosition.Location, 
   IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcVector(AxisPosition.Z,1.0))</Derived>

@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCartesianTransformationOperator3DnonUniform" UniqueId="283bc76c-8d97-414d-a5ef-96f76f53702f" DiagramNumber="4" BaseDefinition="IfcCartesianTransformationOperator3D" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCartesianTransformationOperator3DnonUniform" UniqueId="283bc76c-8d97-414d-a5ef-96f76f53702f" BaseDefinition="IfcCartesianTransformationOperator3D" EntityFlags="229">
 	<Attributes>
-		<DocAttribute Name="Scale2" UniqueId="a8e81164-ed5f-4e59-a76e-ab0907154bf2" DefinedType="REAL" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Scale2" UniqueId="a8e81164-ed5f-4e59-a76e-ab0907154bf2" DefinedType="REAL" AttributeFlags="1">
 			<Documentation>The scaling value specified for the transformation along the axis 2. This is normally the y scale factor.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Scale3" UniqueId="9efce9a5-63f1-44d1-bb62-a02be5a7092f" DefinedType="REAL" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Scale3" UniqueId="9efce9a5-63f1-44d1-bb62-a02be5a7092f" DefinedType="REAL" AttributeFlags="1">
 			<Documentation>The scaling value specified for the transformation along the axis 3. This is normally the z scale factor.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Scl2" UniqueId="c0557b80-3f12-4162-a325-966c2e0e1748" DefinedType="REAL" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Scl2" UniqueId="c0557b80-3f12-4162-a325-966c2e0e1748" DefinedType="REAL">
 			<Documentation>The derived scale S(2) of the transformation along the axis 2 (normally the y axis), equal to Scale2 if that exists, or equal to the derived Scl1 (normally the x axis scale factor) otherwise.</Documentation>
 			<Derived>NVL(Scale2, SELF\IfcCartesianTransformationOperator.Scl)</Derived>
 		</DocAttribute>
-		<DocAttribute Name="Scl3" UniqueId="74ef7007-f9c1-4b92-9d59-808818060ac1" DefinedType="REAL" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Scl3" UniqueId="74ef7007-f9c1-4b92-9d59-808818060ac1" DefinedType="REAL">
 			<Documentation>The derived scale S(3) of the transformation along the axis 3 (normally the z axis), equal to Scale3 if that exists, or equal to the derived Scl1 (normally the x axis scale factor) otherwise.</Documentation>
 			<Derived>NVL(Scale3, SELF\IfcCartesianTransformationOperator.Scl)</Derived>
 		</DocAttribute>

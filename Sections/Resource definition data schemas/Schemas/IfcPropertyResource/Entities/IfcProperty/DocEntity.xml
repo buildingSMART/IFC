@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcProperty" UniqueId="911b51d0-e3e7-45db-a881-520360ded638" DiagramNumber="1" EntityFlags="197">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcProperty" UniqueId="911b51d0-e3e7-45db-a881-520360ded638" EntityFlags="197">
 	<Subtypes>
 		<DocSubtype UniqueId="e32a11ea-5ca4-43fa-a4c3-2b856cb51bed" DefinedType="IfcComplexProperty" />
 		<DocSubtype UniqueId="13fa34e0-6a71-4ef7-ac7a-20ca058ac8e1" DefinedType="IfcSimpleProperty" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Name" UniqueId="cec40e31-025d-4bcc-ae89-09d7916a8ee6" DefinedType="IfcIdentifier" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Name" UniqueId="cec40e31-025d-4bcc-ae89-09d7916a8ee6" DefinedType="IfcIdentifier">
 			<Documentation>Name for this property. This label is the significant name string that defines the semantic meaning for the property.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Description" UniqueId="563a5298-c546-435f-98d5-4d192815257f" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Description" UniqueId="563a5298-c546-435f-98d5-4d192815257f" DefinedType="IfcText" AttributeFlags="1">
 			<Documentation>Informative text to explain the property.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="PropertyForDependance" UniqueId="386eb852-dc2b-4164-963e-1d2791e03caf" DefinedType="IfcPropertyDependencyRelationship" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="DependingProperty">
+		<DocAttribute Name="PropertyForDependance" UniqueId="386eb852-dc2b-4164-963e-1d2791e03caf" DefinedType="IfcPropertyDependencyRelationship" AttributeFlags="8" AggregationType="3" AggregationLower="0" AggregationUpper="0" Inverse="DependingProperty">
 			<Documentation>The property on whose value that of another property depends.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="PropertyDependsOn" UniqueId="a26503fc-f130-45bc-90c4-05998f9e5137" DefinedType="IfcPropertyDependencyRelationship" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="DependantProperty">
+		<DocAttribute Name="PropertyDependsOn" UniqueId="a26503fc-f130-45bc-90c4-05998f9e5137" DefinedType="IfcPropertyDependencyRelationship" AttributeFlags="8" AggregationType="3" AggregationLower="0" AggregationUpper="0" Inverse="DependantProperty">
 			<Documentation>The relating property on which the value of the property depends.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="PartOfComplex" UniqueId="be34513c-c6e4-4dd1-b6be-63ae5e66413f" DefinedType="IfcComplexProperty" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="HasProperties">
+		<DocAttribute Name="PartOfComplex" UniqueId="be34513c-c6e4-4dd1-b6be-63ae5e66413f" DefinedType="IfcComplexProperty" AttributeFlags="8" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="HasProperties">
 			<Documentation>Reference to the IfcComplexProperty in which the IfcProperty is contained.</Documentation>
 		</DocAttribute>
 	</Attributes>

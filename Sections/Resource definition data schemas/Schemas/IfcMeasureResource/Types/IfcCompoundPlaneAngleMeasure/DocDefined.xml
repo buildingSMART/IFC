@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocDefined xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCompoundPlaneAngleMeasure" UniqueId="6b5c667d-bed9-4b77-ba0b-039cef56680c" DiagramNumber="3" DefinedType="INTEGER" Length="0">
+<DocDefined xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCompoundPlaneAngleMeasure" UniqueId="6b5c667d-bed9-4b77-ba0b-039cef56680c" DefinedType="INTEGER">
 	<WhereRules>
 		<DocWhereRule Name="WR1" UniqueId="1NTJOH6GP0RxkUGEbuKwPx">
 			<Documentation>The first measure (degrees) shall be between -360 and 360 degree.</Documentation>
@@ -18,6 +18,6 @@
 			<Expression>((SELF[1] &gt;= 0) AND (SELF[2] &gt;= 0) AND (SELF[3] &gt;= 0)) OR ((SELF[1] &lt;= 0) AND (SELF[2] &lt;= 0) AND (SELF[3] &lt;= 0))</Expression>
 		</DocWhereRule>
 	</WhereRules>
-	<Aggregation xsi:type="DocAttribute" UniqueId="1wswUb6Uj0Uhmcwqici3vV" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="3" AggregationUpper="4" />
+	<Aggregation xsi:type="DocAttribute" UniqueId="1wswUb6Uj0Uhmcwqici3vV" AggregationType="1" AggregationLower="3" AggregationUpper="4" />
 </DocDefined>
 

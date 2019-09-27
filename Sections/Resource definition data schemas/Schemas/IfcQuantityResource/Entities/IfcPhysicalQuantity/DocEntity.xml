@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPhysicalQuantity" UniqueId="992fb4f8-e3be-4df1-8101-f866b2fa8617" DiagramNumber="1" EntityFlags="197">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPhysicalQuantity" UniqueId="992fb4f8-e3be-4df1-8101-f866b2fa8617" EntityFlags="197">
 	<Subtypes>
 		<DocSubtype UniqueId="a86d6250-008f-4a4c-b4e2-cf5c873cb373" DefinedType="IfcPhysicalSimpleQuantity" />
 		<DocSubtype UniqueId="11a80a91-de9b-445a-8440-1fd0ac33e8ac" DefinedType="IfcPhysicalComplexQuantity" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Name" UniqueId="6e61090c-7c36-4a29-84d9-f1404b4270d3" DefinedType="IfcLabel" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Name" UniqueId="6e61090c-7c36-4a29-84d9-f1404b4270d3" DefinedType="IfcLabel">
 			<Documentation>Name of the element quantity or measure. The name attribute has to be made recognizable by further agreements.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Description" UniqueId="2d43b17c-5432-4535-8b22-c8c08aee6cbf" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Description" UniqueId="2d43b17c-5432-4535-8b22-c8c08aee6cbf" DefinedType="IfcText" AttributeFlags="1">
 			<Documentation>Further explanation that might be given to the quantity.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="PartOfComplex" UniqueId="e3118983-d5ed-4e50-9a48-f842a13ce296" DefinedType="IfcPhysicalComplexQuantity" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="HasQuantities">
+		<DocAttribute Name="PartOfComplex" UniqueId="e3118983-d5ed-4e50-9a48-f842a13ce296" DefinedType="IfcPhysicalComplexQuantity" AttributeFlags="8" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="HasQuantities">
 			<Documentation>Reference to a physical complex quantity in which the physical quantity may be contained.</Documentation>
 		</DocAttribute>
 	</Attributes>

@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAnnotationFillAreaOccurrence" UniqueId="3S2O5U92H2QeKtLYzLeMjh" DiagramNumber="1" BaseDefinition="IfcAnnotationOccurrence" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAnnotationFillAreaOccurrence" UniqueId="3S2O5U92H2QeKtLYzLeMjh" BaseDefinition="IfcAnnotationOccurrence" EntityFlags="229">
 	<Attributes>
-		<DocAttribute Name="FillStyleTarget" UniqueId="34YFiT6_j8KOvmHZYGTypZ" DefinedType="IfcPoint" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="FillStyleTarget" UniqueId="34YFiT6_j8KOvmHZYGTypZ" DefinedType="IfcPoint" AttributeFlags="1">
 			<Documentation>The point that specifies the starting location for the fill area style assigned to the annotation fill area occurrence. Depending on the attribute _GlobalOrLocal_ the point is either given within the world coordinate system of the project or within the object coordinate system of the element or annotation. If the _FillStyleTarget_ is not given, it defaults to 0.,0.
   
 &gt; &lt;small&gt;&lt;font color=&quot;#ff0000&quot;&gt;
 IFC2x Edition 3 CHANGE&amp;nbsp; The attribute has been made OPTIONAL.
   &lt;/font&gt;&lt;/small&gt;</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="GlobalOrLocal" UniqueId="0iF8PTCj5Awg1$PUYByx_U" DefinedType="IfcGlobalOrLocalEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="GlobalOrLocal" UniqueId="0iF8PTCj5Awg1$PUYByx_U" DefinedType="IfcGlobalOrLocalEnum" AttributeFlags="1">
 			<Documentation>The coordinate system in which the _FillStyleTarget_ point is given. Depending on the attribute _GlobalOrLocal_ the point is either given within the world coordinate system of the project or within the object coordinate system of the element or annotation. If not given, the hatch style is directly applied to the parameterization of the geometric representation item, e.g. to the surface coordinate sytem, defined by the surface normal.
   
 &gt; &lt;small&gt;&lt;font color=&quot;#ff0000&quot;&gt;

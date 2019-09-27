@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcEdge" UniqueId="47c088c9-be86-473f-a8d3-cfc2f822e52d" DiagramNumber="1" BaseDefinition="IfcTopologicalRepresentationItem" EntityFlags="37">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcEdge" UniqueId="47c088c9-be86-473f-a8d3-cfc2f822e52d" BaseDefinition="IfcTopologicalRepresentationItem" EntityFlags="37">
 	<Subtypes>
 		<DocSubtype UniqueId="00d5f2e9-9f5d-42b5-9b54-3e0c1f9c06b1" DefinedType="IfcOrientedEdge" />
 		<DocSubtype UniqueId="da329a02-3dfd-4558-9d3e-67fa4f7d43ee" DefinedType="IfcEdgeCurve" />
 		<DocSubtype UniqueId="f630874f-1b68-4ea7-bc55-8c89bbc1d962" DefinedType="IfcSubedge" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="EdgeStart" UniqueId="80c0d5f0-b497-4154-978f-adf7ca3ada45" DefinedType="IfcVertex" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="EdgeStart" UniqueId="80c0d5f0-b497-4154-978f-adf7ca3ada45" DefinedType="IfcVertex">
 			<Documentation>Start point (vertex) of the edge.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="EdgeEnd" UniqueId="e751fb52-dd63-46a8-8e2f-9f1b44e78f86" DefinedType="IfcVertex" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="EdgeEnd" UniqueId="e751fb52-dd63-46a8-8e2f-9f1b44e78f86" DefinedType="IfcVertex">
 			<Documentation>End point (vertex) of the edge. The same vertex can be used for both EdgeStart and EdgeEnd.</Documentation>
 		</DocAttribute>
 	</Attributes>

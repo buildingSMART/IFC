@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCsgPrimitive3D" UniqueId="538f2550-e0fc-4704-97f7-66d555de1ae4" DiagramNumber="2" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCsgPrimitive3D" UniqueId="538f2550-e0fc-4704-97f7-66d555de1ae4" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="205">
 	<Subtypes>
 		<DocSubtype UniqueId="5897d1ea-ba0c-479f-be07-5c0fcb57c467" DefinedType="IfcBlock" />
 		<DocSubtype UniqueId="0f4cb0e9-7d10-4dda-b502-2ab41d683af9" DefinedType="IfcRectangularPyramid" />
@@ -8,10 +8,10 @@
 		<DocSubtype UniqueId="ccd1437f-a61c-4dff-ad57-2637557bf1e4" DefinedType="IfcSphere" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Position" UniqueId="623bbeab-dc08-4cb6-83ef-232501104ec3" DefinedType="IfcAxis2Placement3D" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Position" UniqueId="623bbeab-dc08-4cb6-83ef-232501104ec3" DefinedType="IfcAxis2Placement3D">
 			<Documentation>The placement coordinate system to which the parameters of each individual CSG primitive apply.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Dim" UniqueId="6cfd0ff0-72fd-4c55-b168-9bf9801390cf" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Dim" UniqueId="6cfd0ff0-72fd-4c55-b168-9bf9801390cf" DefinedType="IfcDimensionCount">
 			<Documentation>The space dimensionality of this geometric representation item, it is always 3.</Documentation>
 			<Derived>3</Derived>
 		</DocAttribute>

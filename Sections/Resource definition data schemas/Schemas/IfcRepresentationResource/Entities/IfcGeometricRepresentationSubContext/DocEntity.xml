@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGeometricRepresentationSubContext" UniqueId="2e4bdfcf-4532-4cf3-b45f-4372edb5bfb3" DiagramNumber="1" BaseDefinition="IfcGeometricRepresentationContext" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGeometricRepresentationSubContext" UniqueId="2e4bdfcf-4532-4cf3-b45f-4372edb5bfb3" BaseDefinition="IfcGeometricRepresentationContext" EntityFlags="229">
 	<Attributes>
-		<DocAttribute Name="ParentContext" UniqueId="7cb376a0-9c58-4443-96fa-afc3a59e7ba1" DefinedType="IfcGeometricRepresentationContext" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ParentContext" UniqueId="7cb376a0-9c58-4443-96fa-afc3a59e7ba1" DefinedType="IfcGeometricRepresentationContext">
 			<Documentation>Parent context from which the sub context derives its world coordinate system, precision, space coordinate dimension and true north.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="TargetScale" UniqueId="073455e4-1a2b-4354-9ff3-c1f32182a254" DefinedType="IfcPositiveRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="TargetScale" UniqueId="073455e4-1a2b-4354-9ff3-c1f32182a254" DefinedType="IfcPositiveRatioMeasure" AttributeFlags="1">
 			<Documentation>The target &lt;font color=&quot;#ff0000&quot;&gt;plot&lt;/font&gt; scale of the representation 
 to which this representation context applies.
 &gt; &lt;font size=&quot;-1&quot;&gt; Scale indicates the target plot scale for
@@ -19,22 +19,22 @@ Note: Scale 1:100 (given as 0.01 within &lt;i&gt;TargetScale&lt;/i&gt;)
 is bigger then 1:200 (given as 0.005 within &lt;i&gt;TargetScale&lt;/i&gt;).
   &lt;/font&gt;</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="TargetView" UniqueId="13b3e0ec-6a77-4adb-a4cb-5fc77d4a7644" DefinedType="IfcGeometricProjectionEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="TargetView" UniqueId="13b3e0ec-6a77-4adb-a4cb-5fc77d4a7644" DefinedType="IfcGeometricProjectionEnum">
 			<Documentation>Target view of the representation to which this representation context applies.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="UserDefinedTargetView" UniqueId="f9374710-c549-4fc2-be03-03bb62121bb5" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="UserDefinedTargetView" UniqueId="f9374710-c549-4fc2-be03-03bb62121bb5" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>User defined target view, this attribute value shall be given, if the TargetView attribute is set to USERDEFINED.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="WorldCoordinateSystem" UniqueId="c8f73a88-7c4d-4d42-bbae-9363c1d37865" DefinedType="IfcAxis2Placement" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="WorldCoordinateSystem" UniqueId="c8f73a88-7c4d-4d42-bbae-9363c1d37865" DefinedType="IfcAxis2Placement">
 			<Derived>ParentContext.WorldCoordinateSystem</Derived>
 		</DocAttribute>
-		<DocAttribute Name="CoordinateSpaceDimension" UniqueId="cd762a80-b010-4136-a418-95b2fd925aa4" DefinedType="IfcDimensionCount" AttributeFlags="16" AggregationType="0" AggregationFlag="0" Inverse="IfcGeometricRepresentationContext">
+		<DocAttribute Name="CoordinateSpaceDimension" UniqueId="cd762a80-b010-4136-a418-95b2fd925aa4" DefinedType="IfcDimensionCount" AttributeFlags="16" Inverse="IfcGeometricRepresentationContext">
 			<Derived>ParentContext.CoordinateSpaceDimension</Derived>
 		</DocAttribute>
-		<DocAttribute Name="TrueNorth" UniqueId="0535f9bb-ddbe-4d14-8f6e-f741ee3701bf" DefinedType="IfcDirection" AttributeFlags="16" AggregationType="0" AggregationFlag="0" Inverse="IfcGeometricRepresentationContext">
+		<DocAttribute Name="TrueNorth" UniqueId="0535f9bb-ddbe-4d14-8f6e-f741ee3701bf" DefinedType="IfcDirection" AttributeFlags="16" Inverse="IfcGeometricRepresentationContext">
 			<Derived>NVL(ParentContext.TrueNorth,SELF.WorldCoordinateSystem.P[2])</Derived>
 		</DocAttribute>
-		<DocAttribute Name="Precision" UniqueId="8addeb83-c243-4dc6-a74e-7375d21c8eca" DefinedType="REAL" AttributeFlags="16" AggregationType="0" AggregationFlag="0" Inverse="IfcGeometricRepresentationContext">
+		<DocAttribute Name="Precision" UniqueId="8addeb83-c243-4dc6-a74e-7375d21c8eca" DefinedType="REAL" AttributeFlags="16" Inverse="IfcGeometricRepresentationContext">
 			<Derived>NVL(ParentContext.Precision,1.E-5)</Derived>
 		</DocAttribute>
 	</Attributes>

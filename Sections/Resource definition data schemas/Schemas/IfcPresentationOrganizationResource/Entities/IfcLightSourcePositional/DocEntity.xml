@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcLightSourcePositional" UniqueId="32a170a7-e0ba-48c0-9f27-f2a1df1265d0" DiagramNumber="2" BaseDefinition="IfcLightSource" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcLightSourcePositional" UniqueId="32a170a7-e0ba-48c0-9f27-f2a1df1265d0" BaseDefinition="IfcLightSource" EntityFlags="229">
 	<Subtypes>
 		<DocSubtype UniqueId="30af9057-6d2e-4b79-a49e-91688266d890" DefinedType="IfcLightSourceSpot" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Position" UniqueId="b14f2740-7faa-41bf-b16f-b3811cd24338" DefinedType="IfcCartesianPoint" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Position" UniqueId="b14f2740-7faa-41bf-b16f-b3811cd24338" DefinedType="IfcCartesianPoint">
 			<Documentation>Definition from ISO/CD 10303-46:1992: The Cartesian point indicates the position of the light source.
 Definition from VRML97 - ISO/IEC 14772-1:1997: A Point light node illuminates geometry within radius of its location.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Radius" UniqueId="e32ed7f9-1e64-44f1-890b-6a5b3397c943" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Radius" UniqueId="e32ed7f9-1e64-44f1-890b-6a5b3397c943" DefinedType="IfcPositiveLengthMeasure">
 			<Documentation>The maximum distance from the light source for a surface still to be illuminated.
 Definition from VRML97 - ISO/IEC 14772-1:1997: A Point light node illuminates geometry within radius of its location.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="ConstantAttenuation" UniqueId="2effff58-264e-4ab4-9648-ba2409c15b7c" DefinedType="IfcReal" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ConstantAttenuation" UniqueId="2effff58-264e-4ab4-9648-ba2409c15b7c" DefinedType="IfcReal">
 			<Documentation>Definition from ISO/CD 10303-46:1992: This real indicates the value of the attenuation in the lighting equation that is constant.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="DistanceAttenuation" UniqueId="04cd93af-8e0e-4e24-bfeb-14b008f4908c" DefinedType="IfcReal" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="DistanceAttenuation" UniqueId="04cd93af-8e0e-4e24-bfeb-14b008f4908c" DefinedType="IfcReal">
 			<Documentation>Definition from ISO/CD 10303-46:1992: This real indicates the value of the attenuation in the lighting equation that proportional to the distance from the light source.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="QuadricAttenuation" UniqueId="1cda05dc-8988-4938-babb-95a4caa843f7" DefinedType="IfcReal" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="QuadricAttenuation" UniqueId="1cda05dc-8988-4938-babb-95a4caa843f7" DefinedType="IfcReal">
 			<Documentation>Definition from the IAI: This real indicates the value of the attenuation in the lighting equation that proportional to the square value of the distance from the light source.</Documentation>
 		</DocAttribute>
 	</Attributes>

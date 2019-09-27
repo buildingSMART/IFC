@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcFillAreaStyleHatching" UniqueId="f465f4fa-8a5f-4683-ad61-1fb517f09bc0" DiagramNumber="4" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcFillAreaStyleHatching" UniqueId="f465f4fa-8a5f-4683-ad61-1fb517f09bc0" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="229">
 	<Attributes>
-		<DocAttribute Name="HatchLineAppearance" UniqueId="70a11e79-bdc8-46f0-9008-63a772af258e" DefinedType="IfcCurveStyle" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="HatchLineAppearance" UniqueId="70a11e79-bdc8-46f0-9008-63a772af258e" DefinedType="IfcCurveStyle">
 			<Documentation>The curve style of the hatching lines. Any curve style pattern shall start at the origin of each hatch line.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="StartOfNextHatchLine" UniqueId="c710aa21-dea0-4d37-aee0-3842bade1db0" DefinedType="IfcHatchLineDistanceSelect" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="StartOfNextHatchLine" UniqueId="c710aa21-dea0-4d37-aee0-3842bade1db0" DefinedType="IfcHatchLineDistanceSelect">
 			<Documentation>A repetition factor that determines the distance between adjacent hatch lines.
   
 &gt; &lt;small&gt;&lt;color=&quot;#ff0000&quot;&gt;
 IFC2x Edition 3 CHANGE&amp;nbsp; The attribute type of &lt;i&gt;StartOfNextHatchLine&lt;/i&gt; has changed to a SELECT of &lt;i&gt;IfcPositiveLengthMeasure&lt;/i&gt; (new) and &lt;i&gt;IfcOneDirectionRepeatFactor&lt;/i&gt;.&lt;/color=&quot;#ff0000&quot;&gt;&lt;/small&gt;</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="PointOfReferenceHatchLine" UniqueId="eec82600-9107-417b-a087-cf445a3c336d" DefinedType="IfcCartesianPoint" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PointOfReferenceHatchLine" UniqueId="eec82600-9107-417b-a087-cf445a3c336d" DefinedType="IfcCartesianPoint" AttributeFlags="1">
 			<Documentation>A Cartesian point which defines the offset of the reference hatch line from the origin of the (virtual) hatching coordinate system. The origin is used for mapping the fill area style hatching onto an annotation fill area or surface. The reference hatch line would then appear with this offset from the fill style target point.  
 If not given the reference hatch lines goes through the origin of the (virtual) hatching coordinate system.
   
@@ -18,14 +18,14 @@ If not given the reference hatch lines goes through the origin of the (virtual) 
 IFC2x Edition 3 CHANGE&amp;nbsp; The usage of the attribute &lt;i&gt;PointOfReferenceHatchLine&lt;/i&gt; has changed to not provide the Cartesian point which is the origin for mapping, but to provide an offset to the origin for the mapping. The attribute has been made OPTIONAL.
   &lt;/font&gt;&lt;/small&gt;</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="PatternStart" UniqueId="fba84c74-f390-4285-8b76-72a96b48b4aa" DefinedType="IfcCartesianPoint" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PatternStart" UniqueId="fba84c74-f390-4285-8b76-72a96b48b4aa" DefinedType="IfcCartesianPoint" AttributeFlags="1">
 			<Documentation>A distance along the reference hatch line which is the start point for the curve style font pattern of the reference hatch line.  
 If not given, the start point of the curve style font pattern is at the (virtual) hatching coordinate system.
   
 &gt; &lt;small&gt;&lt;font color=&quot;#ff0000&quot;&gt;
 IFC2x Edition 2 Addendum 2 CHANGE The attribute &lt;i&gt;PatternStart&lt;/i&gt; has been made OPTIONAL.&lt;/font&gt;&lt;/small&gt;</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="HatchLineAngle" UniqueId="3f4138c4-0acd-472b-9c06-98e72cd44193" DefinedType="IfcPlaneAngleMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="HatchLineAngle" UniqueId="3f4138c4-0acd-472b-9c06-98e72cd44193" DefinedType="IfcPlaneAngleMeasure">
 			<Documentation>A plane angle measure determining the direction of the parallel hatching lines.</Documentation>
 		</DocAttribute>
 	</Attributes>

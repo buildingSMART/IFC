@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralConnection" UniqueId="d4640db1-7b55-4f79-8ba6-05b016369801" DiagramNumber="1" BaseDefinition="IfcStructuralItem" EntityFlags="133">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralConnection" UniqueId="d4640db1-7b55-4f79-8ba6-05b016369801" BaseDefinition="IfcStructuralItem" EntityFlags="133">
 	<Subtypes>
 		<DocSubtype UniqueId="b9a5e9c8-8c4a-40be-8a78-88c8f7c0c7c6" DefinedType="IfcStructuralCurveConnection" />
 		<DocSubtype UniqueId="cc51e4ae-b56c-4ab9-bb23-813878582187" DefinedType="IfcStructuralPointConnection" />
 		<DocSubtype UniqueId="386b3aac-edc9-42e3-8683-7991adc37295" DefinedType="IfcStructuralSurfaceConnection" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="AppliedCondition" UniqueId="f73c29bd-73af-42d0-ba9a-8654e4da5996" DefinedType="IfcBoundaryCondition" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="AppliedCondition" UniqueId="f73c29bd-73af-42d0-ba9a-8654e4da5996" DefinedType="IfcBoundaryCondition" AttributeFlags="1">
 			<Documentation>Optional reference to an instance of IfcBoundaryCondition which defines the support condition of this &apos;connection&apos;.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="ConnectsStructuralMembers" UniqueId="e589142e-96a4-4236-be46-02d7d341f21b" DefinedType="IfcRelConnectsStructuralMember" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0" Inverse="RelatedStructuralConnection">
+		<DocAttribute Name="ConnectsStructuralMembers" UniqueId="e589142e-96a4-4236-be46-02d7d341f21b" DefinedType="IfcRelConnectsStructuralMember" AttributeFlags="8" AggregationType="3" AggregationLower="1" AggregationUpper="0" Inverse="RelatedStructuralConnection">
 			<Documentation>References to the IfcRelConnectsStructuralMembers relationship by which structural members can be associated to structural connections.</Documentation>
 		</DocAttribute>
 	</Attributes>

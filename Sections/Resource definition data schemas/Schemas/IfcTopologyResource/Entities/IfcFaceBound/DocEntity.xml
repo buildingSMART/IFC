@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcFaceBound" UniqueId="57c11bcb-98a6-432c-af6d-cb98d7020755" DiagramNumber="2" BaseDefinition="IfcTopologicalRepresentationItem" EntityFlags="109">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcFaceBound" UniqueId="57c11bcb-98a6-432c-af6d-cb98d7020755" BaseDefinition="IfcTopologicalRepresentationItem" EntityFlags="109">
 	<Subtypes>
 		<DocSubtype UniqueId="1d6b586e-5ab6-4710-9a40-06024f34b6cf" DefinedType="IfcFaceOuterBound" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Bound" UniqueId="851ba2e0-700c-4bb5-b663-1806386b9710" DefinedType="IfcLoop" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Bound" UniqueId="851ba2e0-700c-4bb5-b663-1806386b9710" DefinedType="IfcLoop">
 			<Documentation>The loop which will be used as a face boundary.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Orientation" UniqueId="8014ce9a-263c-4cf4-84b2-42ab6328c830" DefinedType="BOOLEAN" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Orientation" UniqueId="8014ce9a-263c-4cf4-84b2-42ab6328c830" DefinedType="BOOLEAN">
 			<Documentation>This indicated whether (TRUE) or not (FALSE) the loop has the same sense when used to bound the face as when first defined. If sense is FALSE the senses of all its component oriented edges are implicitly reversed when used in the face.</Documentation>
 		</DocAttribute>
 	</Attributes>

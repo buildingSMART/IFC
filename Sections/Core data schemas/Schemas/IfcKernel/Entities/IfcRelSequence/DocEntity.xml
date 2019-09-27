@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelSequence" UniqueId="99cd2ac0-7e3f-4393-bf5a-fbd991bf194b" DiagramNumber="6" BaseDefinition="IfcRelConnects" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelSequence" UniqueId="99cd2ac0-7e3f-4393-bf5a-fbd991bf194b" BaseDefinition="IfcRelConnects" EntityFlags="229">
 	<Attributes>
-		<DocAttribute Name="RelatingProcess" UniqueId="22284f64-9b1c-42ca-ad5b-c1332fc7f416" DefinedType="IfcProcess" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RelatingProcess" UniqueId="22284f64-9b1c-42ca-ad5b-c1332fc7f416" DefinedType="IfcProcess">
 			<Documentation>Reference to the Process, that is the predecessor.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="RelatedProcess" UniqueId="0512a983-f4fe-4536-8095-7defbd21c65b" DefinedType="IfcProcess" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RelatedProcess" UniqueId="0512a983-f4fe-4536-8095-7defbd21c65b" DefinedType="IfcProcess">
 			<Documentation>Reference to the Process, that is the successor.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="TimeLag" UniqueId="94d09d41-3b26-40a2-803f-92dc47187a91" DefinedType="IfcTimeMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="TimeLag" UniqueId="94d09d41-3b26-40a2-803f-92dc47187a91" DefinedType="IfcTimeMeasure">
 			<Documentation>Time Duration of the sequence, it is the time lag between the predecessor and the successor as specified by the SequenceType.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="SequenceType" UniqueId="b73f79bf-ab44-454c-9180-a11e3cf40323" DefinedType="IfcSequenceEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="SequenceType" UniqueId="b73f79bf-ab44-454c-9180-a11e3cf40323" DefinedType="IfcSequenceEnum">
 			<Documentation>The way in which the time lag applies to the sequence.</Documentation>
 		</DocAttribute>
 	</Attributes>

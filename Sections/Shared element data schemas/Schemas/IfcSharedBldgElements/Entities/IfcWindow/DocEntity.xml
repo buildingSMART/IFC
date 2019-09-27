@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcWindow" Name="IfcWindow" UniqueId="0f9043b3-19f5-4f1b-b221-76018647d933" DiagramNumber="4" BaseDefinition="IfcBuildingElement" EntityFlags="173">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcWindow" Name="IfcWindow" UniqueId="0f9043b3-19f5-4f1b-b221-76018647d933" BaseDefinition="IfcBuildingElement" EntityFlags="173">
 	<Attributes>
-		<DocAttribute Name="OverallHeight" UniqueId="4eab6bd3-dcea-4c3d-bb3c-069664b3bb8e" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="OverallHeight" UniqueId="4eab6bd3-dcea-4c3d-bb3c-069664b3bb8e" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>Overall measure of the height, it reflects the Z Dimension of a bounding box, enclosing the ~~body of the~~ window opening. If omitted, the _OverallHeight_ should be taken from the geometric representation of the _IfcOpening_ in which the window is inserted. 
   
 &gt; &lt;small&gt;
 NOTE&amp;nbsp; The body of the window might be taller then the window opening (e.g. in cases where the window lining includes a casing). In these cases the &lt;i&gt;OverallHeight&lt;/i&gt; shall still be given as the window opening height, and not as the total height of the window lining.&lt;/small&gt;</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="OverallWidth" UniqueId="0fe5fb49-9b5f-4384-ba1c-6afa2219013c" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="OverallWidth" UniqueId="0fe5fb49-9b5f-4384-ba1c-6afa2219013c" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>Overall measure of the width, it reflects the X Dimension of a bounding box, enclosing the ~~body of the~~ window opening. If omitted, the _OverallWidth_ should be taken from the geometric representation of the _IfcOpening_ in which the window is inserted. 
   
 &gt; &lt;small&gt;

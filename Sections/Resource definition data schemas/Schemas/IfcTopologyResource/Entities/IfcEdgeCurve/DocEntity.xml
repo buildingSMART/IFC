@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcEdgeCurve" UniqueId="86ef7edf-f099-47aa-977b-0bc982b8db88" DiagramNumber="1" BaseDefinition="IfcEdge" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcEdgeCurve" UniqueId="86ef7edf-f099-47aa-977b-0bc982b8db88" BaseDefinition="IfcEdge" EntityFlags="101">
 	<Attributes>
-		<DocAttribute Name="EdgeGeometry" UniqueId="5cdae291-5fb5-4980-bb06-4373b159e076" DefinedType="IfcCurve" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="EdgeGeometry" UniqueId="5cdae291-5fb5-4980-bb06-4373b159e076" DefinedType="IfcCurve">
 			<Documentation>The curve which defines the shape and spatial location of the edge. This curve may be unbounded and is implicitly trimmed by the vertices of the edge; this defines the edge domain. Multiple edges can reference the same curve.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="SameSense" UniqueId="12a92453-5480-4793-989a-273e604a2079" DefinedType="BOOLEAN" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="SameSense" UniqueId="12a92453-5480-4793-989a-273e604a2079" DefinedType="BOOLEAN">
 			<Documentation>This logical flag indicates whether (TRUE), or not (FALSE) the senses of the edge and the curve defining the edge geometry are the same. The sense of an edge is from the edge start vertex to the edge end vertex; the sense of a curve is in the direction of increasing parameter.</Documentation>
 		</DocAttribute>
 	</Attributes>

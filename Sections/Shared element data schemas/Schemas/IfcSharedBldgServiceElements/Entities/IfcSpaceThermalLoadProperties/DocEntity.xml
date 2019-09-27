@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSpaceThermalLoadProperties" UniqueId="2q8XllCzPDSxxjjyJyLISY" DiagramNumber="3" BaseDefinition="IfcPropertySetDefinition" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSpaceThermalLoadProperties" UniqueId="2q8XllCzPDSxxjjyJyLISY" BaseDefinition="IfcPropertySetDefinition" EntityFlags="229">
 	<Attributes>
-		<DocAttribute Name="ApplicableValueRatio" UniqueId="0F1qERP_r6rwnhF_ELEMsy" DefinedType="IfcPositiveRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ApplicableValueRatio" UniqueId="0F1qERP_r6rwnhF_ELEMsy" DefinedType="IfcPositiveRatioMeasure" AttributeFlags="1">
 			<Documentation>Percentage of use requirement or criteria applicable to the space, interpretation depends on the source type.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="ThermalLoadSource" UniqueId="2GUUGSapPFT98v8xGQbS1s" DefinedType="IfcThermalLoadSourceEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ThermalLoadSource" UniqueId="2GUUGSapPFT98v8xGQbS1s" DefinedType="IfcThermalLoadSourceEnum">
 			<Documentation>Source of the thermal loss or gain. Depending on the source, the maximum and minimum values have to be interpreted. Refer to the space usage in Pset_SpaceProgramCommon to determine thermal loads associated with the activity levels of people.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="PropertySource" UniqueId="3ijcUeFun8evIBGBqudzfq" DefinedType="IfcPropertySourceEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PropertySource" UniqueId="3ijcUeFun8evIBGBqudzfq" DefinedType="IfcPropertySourceEnum">
 			<Documentation>The source of the space thermal load properties (e.g., are these design values, measured values, etc.).</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="SourceDescription" UniqueId="3HOQSvx_D3_8xIhiufrOXX" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="SourceDescription" UniqueId="3HOQSvx_D3_8xIhiufrOXX" DefinedType="IfcText" AttributeFlags="1">
 			<Documentation>Further specification for the source, which might be specific for a region or project. E.g. whether the heat gain from Person is caused by specific activities.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="MaximumValue" UniqueId="0R2qwcDWzFAe6jztt_ntuS" DefinedType="IfcPowerMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="MaximumValue" UniqueId="0R2qwcDWzFAe6jztt_ntuS" DefinedType="IfcPowerMeasure">
 			<Documentation>The maximum thermal load value. If this value is less than zero (negative), then the thermal load is lost from the space. If the value is greater than zero (positive), then the thermal load is a gain to the space. If the minimum value is not specified, then this value is the actual value. At least one of the maximum, minimum, or time series values must be specified.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="MinimumValue" UniqueId="0RyX32z2f1dOsZ38gZFf$C" DefinedType="IfcPowerMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="MinimumValue" UniqueId="0RyX32z2f1dOsZ38gZFf$C" DefinedType="IfcPowerMeasure" AttributeFlags="1">
 			<Documentation>The minimum thermal load value. If this value is less than zero (negative), then the thermal load is lost from the space. If the value is greater than zero (positive), then the thermal load is a gain to the space. The requirement for the inclusion of this attribute is dependent on the load source. At least one of the maximum, minimum, or time series values must be specified.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="ThermalLoadTimeSeriesValues" UniqueId="1uDCWVvRrCixSQQgQ7BYm2" DefinedType="IfcTimeSeries" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ThermalLoadTimeSeriesValues" UniqueId="1uDCWVvRrCixSQQgQ7BYm2" DefinedType="IfcTimeSeries" AttributeFlags="1">
 			<Documentation>A time series of the thermal load values. If a value is less than zero (negative), then the thermal load is lost from the space. If the value is greater than zero (positive), then the thermal load is a gain to the space. These values are contributed from the specified thermal load source. At least one of the maximum, minimum, or time series values must be specified.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="UserDefinedThermalLoadSource" UniqueId="0vOG3q3ir9seYLjIdts47V" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="UserDefinedThermalLoadSource" UniqueId="0vOG3q3ir9seYLjIdts47V" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>This attribute must be defined if the ThermalLoadSource is USERDEFINED.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="UserDefinedPropertySource" UniqueId="369MqpqmH63OOgvl1lwJWf" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="UserDefinedPropertySource" UniqueId="369MqpqmH63OOgvl1lwJWf" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>This attribute must be defined if the PropertySource is USERDEFINED.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="ThermalLoadType" UniqueId="3cD8B$Oun2tPXWf0vheC3r" DefinedType="IfcThermalLoadTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ThermalLoadType" UniqueId="3cD8B$Oun2tPXWf0vheC3r" DefinedType="IfcThermalLoadTypeEnum">
 			<Documentation>Defines the type of thermal load (e.g., sensible, latent, radiant, etc.).</Documentation>
 		</DocAttribute>
 	</Attributes>

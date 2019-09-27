@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelConnectsStructuralMember" UniqueId="a3f65142-e263-40a0-a199-116ed79dd647" DiagramNumber="1" BaseDefinition="IfcRelConnects" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelConnectsStructuralMember" UniqueId="a3f65142-e263-40a0-a199-116ed79dd647" BaseDefinition="IfcRelConnects" EntityFlags="229">
 	<Subtypes>
 		<DocSubtype UniqueId="96510db1-4540-45bc-b384-849bafafa5a1" DefinedType="IfcRelConnectsWithEccentricity" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="RelatingStructuralMember" UniqueId="29dc8e83-1a71-402e-a494-06876f1f1bae" DefinedType="IfcStructuralMember" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RelatingStructuralMember" UniqueId="29dc8e83-1a71-402e-a494-06876f1f1bae" DefinedType="IfcStructuralMember">
 			<Documentation>Reference to an instance of IfcStructuralMember (or its subclasses) which is connected to the specified structural connection.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="RelatedStructuralConnection" UniqueId="1303e4ee-2a6a-4635-899a-6f5f6d8e392c" DefinedType="IfcStructuralConnection" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RelatedStructuralConnection" UniqueId="1303e4ee-2a6a-4635-899a-6f5f6d8e392c" DefinedType="IfcStructuralConnection">
 			<Documentation>Reference to an instance of IfcStructuralConnection (or its subclasses) which is connected to the specified structural member.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="AppliedCondition" UniqueId="3425bba1-6c03-4452-ad27-7f2e007714cd" DefinedType="IfcBoundaryCondition" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="AppliedCondition" UniqueId="3425bba1-6c03-4452-ad27-7f2e007714cd" DefinedType="IfcBoundaryCondition" AttributeFlags="1">
 			<Documentation>Reference to an instance of _IfcBoundaryCondition_ which is used to define the connections properties.
   
 &gt; &lt;font size=&quot;-1&quot;&gt;
 NOTE&amp;nbsp; The boundary condition applied to a member-connection-relationship is also called &quot;release&quot;&lt;/font&gt;</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="AdditionalConditions" UniqueId="ea1f2763-53b0-4484-886d-5941951ce053" DefinedType="IfcStructuralConnectionCondition" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="AdditionalConditions" UniqueId="ea1f2763-53b0-4484-886d-5941951ce053" DefinedType="IfcStructuralConnectionCondition" AttributeFlags="1">
 			<Documentation>Reference to instances describing additional connection properties.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="SupportedLength" UniqueId="15d0e2e1-462a-4cb4-8425-9aeac6fdd59d" DefinedType="IfcLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="SupportedLength" UniqueId="15d0e2e1-462a-4cb4-8425-9aeac6fdd59d" DefinedType="IfcLengthMeasure" AttributeFlags="1">
 			<Documentation>Defines the &apos;supported length&apos; of this structural connection. See Fig. for more detail.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="ConditionCoordinateSystem" UniqueId="4d84ca74-7ceb-4d98-bea7-c5f06d1b43d1" DefinedType="IfcAxis2Placement3D" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ConditionCoordinateSystem" UniqueId="4d84ca74-7ceb-4d98-bea7-c5f06d1b43d1" DefinedType="IfcAxis2Placement3D" AttributeFlags="1">
 			<Documentation>Defines a new coordinate system used for the description of the connection properties. The usage of this coordinate system is described more detailed in the definition of the subtypes of this entity definition.</Documentation>
 		</DocAttribute>
 	</Attributes>

@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCurveStyle" UniqueId="fe9ed6e7-c95b-4c4b-9f78-e0941123548b" DiagramNumber="2" BaseDefinition="IfcPresentationStyle" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCurveStyle" UniqueId="fe9ed6e7-c95b-4c4b-9f78-e0941123548b" BaseDefinition="IfcPresentationStyle" EntityFlags="237">
 	<Attributes>
-		<DocAttribute Name="CurveFont" UniqueId="f67c03bb-edb7-437c-b3da-ab3832ca744f" DefinedType="IfcCurveFontOrScaledCurveFontSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="CurveFont" UniqueId="f67c03bb-edb7-437c-b3da-ab3832ca744f" DefinedType="IfcCurveFontOrScaledCurveFontSelect" AttributeFlags="1">
 			<Documentation>A curve style font which is used to present a curve. It can either be a predefined curve font, or an explicitly defined curve font. Both may be scaled. If not given, then the curve font should be taken from the layer assignment with style, if that is not given either, then the default curve font applies.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="CurveWidth" UniqueId="1d39c1ea-e58e-493f-a214-70f70f2d7abe" DefinedType="IfcSizeSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="CurveWidth" UniqueId="1d39c1ea-e58e-493f-a214-70f70f2d7abe" DefinedType="IfcSizeSelect" AttributeFlags="1">
 			<Documentation>A positive length measure in units of the presentation area for the width of a presented curve. If not given, then the style should be taken from the layer assignment with style, if that is not given either, then the default style applies.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="CurveColour" UniqueId="3cdb32db-97fc-4f30-bd9b-452208ed4e7f" DefinedType="IfcColour" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="CurveColour" UniqueId="3cdb32db-97fc-4f30-bd9b-452208ed4e7f" DefinedType="IfcColour" AttributeFlags="1">
 			<Documentation>The colour of the visible part of the curve. If not given, then the colour should be taken from the layer assignment with style, if that is not given either, then the default colour applies.</Documentation>
 		</DocAttribute>
 	</Attributes>

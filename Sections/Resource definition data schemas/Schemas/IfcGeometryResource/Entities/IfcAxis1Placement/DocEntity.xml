@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAxis1Placement" UniqueId="c8b3d74c-f4b5-470f-9869-a0abb477b699" DiagramNumber="3" BaseDefinition="IfcPlacement" EntityFlags="109">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAxis1Placement" UniqueId="c8b3d74c-f4b5-470f-9869-a0abb477b699" BaseDefinition="IfcPlacement" EntityFlags="109">
 	<Attributes>
-		<DocAttribute Name="Axis" UniqueId="c014a489-c24c-47b9-980e-1ccb8510c66b" DefinedType="IfcDirection" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Axis" UniqueId="c014a489-c24c-47b9-980e-1ccb8510c66b" DefinedType="IfcDirection" AttributeFlags="1">
 			<Documentation>The direction of the local Z axis.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Z" UniqueId="a00a3506-65a7-4932-9af4-43e2d794394c" DefinedType="IfcDirection" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Z" UniqueId="a00a3506-65a7-4932-9af4-43e2d794394c" DefinedType="IfcDirection">
 			<Documentation>The normalized direction of the local Z axis. It is either identical with the Axis value, if given, or it defaults to [0.,0.,1.]</Documentation>
 			<Derived>NVL (IfcNormalise(Axis), IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([0.0,0.0,1.0]))</Derived>
 		</DocAttribute>

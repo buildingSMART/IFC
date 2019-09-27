@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCurveBoundedPlane" UniqueId="49f23ea3-63e5-4868-bb6d-dc7fe2e9d879" DiagramNumber="7" BaseDefinition="IfcBoundedSurface" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCurveBoundedPlane" UniqueId="49f23ea3-63e5-4868-bb6d-dc7fe2e9d879" BaseDefinition="IfcBoundedSurface" EntityFlags="101">
 	<Attributes>
-		<DocAttribute Name="BasisSurface" UniqueId="e3507105-8eae-42eb-9122-b8f9474b2507" DefinedType="IfcPlane" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="BasisSurface" UniqueId="e3507105-8eae-42eb-9122-b8f9474b2507" DefinedType="IfcPlane">
 			<Documentation>The surface to be bound.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="OuterBoundary" UniqueId="d59dedb7-409b-40f2-b7f6-780fbf45198e" DefinedType="IfcCurve" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="OuterBoundary" UniqueId="d59dedb7-409b-40f2-b7f6-780fbf45198e" DefinedType="IfcCurve">
 			<Documentation>The outer boundary of the surface.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="InnerBoundaries" UniqueId="33e2f437-e02b-4345-af76-39640de58ff3" DefinedType="IfcCurve" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0">
+		<DocAttribute Name="InnerBoundaries" UniqueId="33e2f437-e02b-4345-af76-39640de58ff3" DefinedType="IfcCurve" AggregationType="3" AggregationLower="0" AggregationUpper="0">
 			<Documentation>An optional set of inner boundaries. They shall not intersect each other or the outer boundary.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Dim" UniqueId="01S4mOzBX2i8I$bopkjABj" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Dim" UniqueId="01S4mOzBX2i8I$bopkjABj" DefinedType="IfcDimensionCount">
 			<Documentation>The space dimensionality of this class, defined by the dimensionality of the basis surface.</Documentation>
 			<Derived>BasisSurface.Dim</Derived>
 		</DocAttribute>

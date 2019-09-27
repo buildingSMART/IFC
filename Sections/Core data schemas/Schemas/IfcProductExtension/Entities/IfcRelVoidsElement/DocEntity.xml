@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelVoidsElement" UniqueId="5307e7a4-2270-4ad7-9e3c-ba76198cc09e" DiagramNumber="4" BaseDefinition="IfcRelConnects" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelVoidsElement" UniqueId="5307e7a4-2270-4ad7-9e3c-ba76198cc09e" BaseDefinition="IfcRelConnects" EntityFlags="237">
 	<Attributes>
-		<DocAttribute Name="RelatingBuildingElement" UniqueId="6088c92a-4578-4341-b20d-3690feb149af" DefinedType="IfcElement" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RelatingBuildingElement" UniqueId="6088c92a-4578-4341-b20d-3690feb149af" DefinedType="IfcElement">
 			<Documentation>Reference to ~~building~~ element in which a void is created by associated ~~opening~~ feature subtraction element.
 &gt; &lt;small&gt;&lt;font color=&quot;#ff0000&quot;&gt;
 IFC2x PLATFORM CHANGE: The data type has been changed from &lt;i&gt;IfcBuildingElement&lt;/i&gt; to &lt;i&gt;IfcElement&lt;/i&gt; with upward compatibility for file based exchange.
 &lt;/font&gt;&lt;/small&gt;</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="RelatedOpeningElement" UniqueId="edbe00f6-c081-41e2-a32e-32ab51af7a0a" DefinedType="IfcFeatureElementSubtraction" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RelatedOpeningElement" UniqueId="edbe00f6-c081-41e2-a32e-32ab51af7a0a" DefinedType="IfcFeatureElementSubtraction">
 			<Documentation>Reference to the ~~opening~~ feature subtraction element which defines a void in the associated ~~opening~~ element.
 &gt; &lt;small&gt;&lt;font color=&quot;#ff0000&quot;&gt;
 IFC2x PLATFORM CHANGE&amp;nbsp; The data type has been changed from &lt;i&gt;IfcOpeningElement&lt;/i&gt; to &lt;i&gt;IfcFeatureElementSubtraction&lt;/i&gt; with upward compatibility for file based exchange.

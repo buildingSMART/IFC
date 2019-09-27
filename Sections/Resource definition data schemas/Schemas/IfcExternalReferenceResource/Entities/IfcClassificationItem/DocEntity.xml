@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcClassificationItem" UniqueId="1OULHd369AmvIJD24vWokw" DiagramNumber="2" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcClassificationItem" UniqueId="1OULHd369AmvIJD24vWokw" EntityFlags="229">
 	<Attributes>
-		<DocAttribute Name="Notation" UniqueId="3JFy2xxEP3QxsfjzTt1fLV" DefinedType="IfcClassificationNotationFacet" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Notation" UniqueId="3JFy2xxEP3QxsfjzTt1fLV" DefinedType="IfcClassificationNotationFacet">
 			<Documentation>The notations from within a classification item that are used within the project.
 NOTE: In Uniclass this label is called the Code, in UDC it is called the Class Number.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="ItemOf" UniqueId="17raxmS697aOfhZmNnQV47" DefinedType="IfcClassification" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ItemOf" UniqueId="17raxmS697aOfhZmNnQV47" DefinedType="IfcClassification" AttributeFlags="1">
 			<Documentation>The classification that is the source for the uppermost level of the classification item hierarchy used.
 NOTE: Where a classification item hierarchy is developed within the IFC model, only the uppermost level needs to refer to the classification system or source from which it is derived since all other levels of the hierachy will refer to the source by virtue of their containment by the uppermost level. However, the uppermost level MUST point back to the classification source by virtue of the fact that it is not contained by a higher level classification item.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Title" UniqueId="2Vha7XJnH9ivMOcQnZqtxd" DefinedType="IfcLabel" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Title" UniqueId="2Vha7XJnH9ivMOcQnZqtxd" DefinedType="IfcLabel">
 			<Documentation>The name of the classification item.
 NOTE: Examples of the above attributes from Uniclass: 
 A classification item in Uniclass has a notation &quot;L6814&quot; which has the title &quot;Tanking&quot;.
 It has a parent notation &quot;L681&quot; which has the title &quot;Proofings, insulation&quot;.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="IsClassifiedItemIn" UniqueId="23ZuiOkw96mubMOMAKbM1t" DefinedType="IfcClassificationItemRelationship" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatedItems">
+		<DocAttribute Name="IsClassifiedItemIn" UniqueId="23ZuiOkw96mubMOMAKbM1t" DefinedType="IfcClassificationItemRelationship" AttributeFlags="8" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="RelatedItems">
 			<Documentation>Identifies the relationship in which the role of ClassifiedItem is taken.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="IsClassifyingItemIn" UniqueId="0eJzmIuTj4xe6PFbMsRILi" DefinedType="IfcClassificationItemRelationship" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatingItem">
+		<DocAttribute Name="IsClassifyingItemIn" UniqueId="0eJzmIuTj4xe6PFbMsRILi" DefinedType="IfcClassificationItemRelationship" AttributeFlags="8" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="RelatingItem">
 			<Documentation>Identifies the relationship in which the role of ClassifyingItem is taken.</Documentation>
 		</DocAttribute>
 	</Attributes>

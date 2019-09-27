@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCurve" UniqueId="e39241f5-7436-4f04-91f5-7a80393f242d" DiagramNumber="5" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="13">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCurve" UniqueId="e39241f5-7436-4f04-91f5-7a80393f242d" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="13">
 	<Subtypes>
 		<DocSubtype UniqueId="c1c0f7ae-4e31-4912-9b07-7d3080132caf" DefinedType="IfcBoundedCurve" />
 		<DocSubtype UniqueId="0e92f170-da26-49e2-b8fb-d421eaf4df18" DefinedType="IfcConic" />
@@ -8,7 +8,7 @@
 		<DocSubtype UniqueId="0265bbc4-43a5-4837-977e-d756a6598447" DefinedType="IfcOffsetCurve3D" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Dim" UniqueId="ac570a55-8169-4098-82e0-7c5fdb6c597a" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Dim" UniqueId="ac570a55-8169-4098-82e0-7c5fdb6c597a" DefinedType="IfcDimensionCount">
 			<Documentation>The space dimensionality of this abstract class, defined differently for all subtypes, i.e. for IfcLine, IfcConic and IfcBoundedCurve.</Documentation>
 			<Derived>IfcCurveDim(SELF)</Derived>
 		</DocAttribute>

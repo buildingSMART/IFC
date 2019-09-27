@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCurrencyRelationship" UniqueId="9369fbbe-c581-4604-aa77-92582aa9453c" DiagramNumber="2" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCurrencyRelationship" UniqueId="9369fbbe-c581-4604-aa77-92582aa9453c" EntityFlags="229">
 	<Attributes>
-		<DocAttribute Name="RelatingMonetaryUnit" UniqueId="8ad0cf1d-249d-446c-a3b0-d1a9aeda943d" DefinedType="IfcMonetaryUnit" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RelatingMonetaryUnit" UniqueId="8ad0cf1d-249d-446c-a3b0-d1a9aeda943d" DefinedType="IfcMonetaryUnit">
 			<Documentation>The monetary unit from which an exchange is derived. For instance, in the case of a conversion from GBP to USD, the relating monetary unit is GBP.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="RelatedMonetaryUnit" UniqueId="2dd6b7a2-34a1-4238-b477-c09271f157aa" DefinedType="IfcMonetaryUnit" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RelatedMonetaryUnit" UniqueId="2dd6b7a2-34a1-4238-b477-c09271f157aa" DefinedType="IfcMonetaryUnit">
 			<Documentation>The monetary unit to which an exchange results. For instance, in the case of a conversion from GBP to USD, the related monetary unit is USD.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="ExchangeRate" UniqueId="b0243b1e-6e24-414e-9b92-5ee782e1c2b7" DefinedType="IfcPositiveRatioMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ExchangeRate" UniqueId="b0243b1e-6e24-414e-9b92-5ee782e1c2b7" DefinedType="IfcPositiveRatioMeasure">
 			<Documentation>The currently agreed ratio of the amount of a related monetary unit that is equivalent to a unit amount of the relating monetary unit in a currency relationship. For instance, in the case of a conversion from GBP to USD, the value of the exchange rate may be 1.486 (USD) : 1 (GBP).</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="RateDateTime" UniqueId="ec65c0c7-e002-4f68-b956-b479d9fc4a25" DefinedType="IfcDateAndTime" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RateDateTime" UniqueId="ec65c0c7-e002-4f68-b956-b479d9fc4a25" DefinedType="IfcDateAndTime">
 			<Documentation>The date and time at which an exchange rate applies.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="RateSource" UniqueId="89f1b6ce-2442-40b8-b9ab-6e4941cc5459" DefinedType="IfcLibraryInformation" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RateSource" UniqueId="89f1b6ce-2442-40b8-b9ab-6e4941cc5459" DefinedType="IfcLibraryInformation" AttributeFlags="1">
 			<Documentation>The source from which an exchange rate is obtained.</Documentation>
 		</DocAttribute>
 	</Attributes>

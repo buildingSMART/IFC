@@ -1,69 +1,69 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcScheduleTimeControl" UniqueId="3mAawdmrz7tgTs2BNblfuS" DiagramNumber="2" BaseDefinition="IfcControl" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcScheduleTimeControl" UniqueId="3mAawdmrz7tgTs2BNblfuS" BaseDefinition="IfcControl" EntityFlags="237">
 	<Attributes>
-		<DocAttribute Name="ActualStart" UniqueId="0d9O3uQ15DVBJGsUVBFoPJ" DefinedType="IfcDateTimeSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ActualStart" UniqueId="0d9O3uQ15DVBJGsUVBFoPJ" DefinedType="IfcDateTimeSelect" AttributeFlags="1">
 			<Documentation>The date on which a task is actually started. 
 
 NOTE: The scheduled start date must be greater than or equal to the earliest start date. No constraint is applied to the actual start date with respect to the scheduled start date since a task may be started earlier than had originally been scheduled if circumstances allow.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="EarlyStart" UniqueId="1UKEQ3Zof6dhc5Gyfy8LT3" DefinedType="IfcDateTimeSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="EarlyStart" UniqueId="1UKEQ3Zof6dhc5Gyfy8LT3" DefinedType="IfcDateTimeSelect" AttributeFlags="1">
 			<Documentation>The earliest date on which a task can be started.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="LateStart" UniqueId="15joMOBJPELPPW2i4mUjZr" DefinedType="IfcDateTimeSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LateStart" UniqueId="15joMOBJPELPPW2i4mUjZr" DefinedType="IfcDateTimeSelect" AttributeFlags="1">
 			<Documentation>The latest date on which a task can be started.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="ScheduleStart" UniqueId="1XCbT8KV1AAO0ftjee7Tx7" DefinedType="IfcDateTimeSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ScheduleStart" UniqueId="1XCbT8KV1AAO0ftjee7Tx7" DefinedType="IfcDateTimeSelect" AttributeFlags="1">
 			<Documentation>The date on which a task is scheduled to be started.
 NOTE: The scheduled start date must be greater than or equal to the earliest start date.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="ActualFinish" UniqueId="2_EfMSdbv7DRymApKxfEB7" DefinedType="IfcDateTimeSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ActualFinish" UniqueId="2_EfMSdbv7DRymApKxfEB7" DefinedType="IfcDateTimeSelect" AttributeFlags="1">
 			<Documentation>The date on which a task is actually finished.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="EarlyFinish" UniqueId="09GavOtUn0KPM8j9FFPd_x" DefinedType="IfcDateTimeSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="EarlyFinish" UniqueId="09GavOtUn0KPM8j9FFPd_x" DefinedType="IfcDateTimeSelect" AttributeFlags="1">
 			<Documentation>The earliest date on which a task can be finished.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="LateFinish" UniqueId="2_InVuYIXE$go$Ntup6gJL" DefinedType="IfcDateTimeSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LateFinish" UniqueId="2_InVuYIXE$go$Ntup6gJL" DefinedType="IfcDateTimeSelect" AttributeFlags="1">
 			<Documentation>The latest date on which a task can be finished.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="ScheduleFinish" UniqueId="0gXXhwfID6NBl9Vnl8$IEt" DefinedType="IfcDateTimeSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ScheduleFinish" UniqueId="0gXXhwfID6NBl9Vnl8$IEt" DefinedType="IfcDateTimeSelect" AttributeFlags="1">
 			<Documentation>The date on which a task is scheduled to be finished. 
 NOTE: The scheduled finish date must be greater than or equal to the earliest finish date.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="ScheduleDuration" UniqueId="3JhvgYOKT7YgYIjkkgdQiT" DefinedType="IfcTimeMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ScheduleDuration" UniqueId="3JhvgYOKT7YgYIjkkgdQiT" DefinedType="IfcTimeMeasure" AttributeFlags="1">
 			<Documentation>The amount of time which is scheduled for completion of a task. 
 NOTE: Scheduled Duration may be calculated as the time from scheduled start date to scheduled finish date.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="ActualDuration" UniqueId="0xagPkmJL3Ge9sxN1Fa5eW" DefinedType="IfcTimeMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ActualDuration" UniqueId="0xagPkmJL3Ge9sxN1Fa5eW" DefinedType="IfcTimeMeasure" AttributeFlags="1">
 			<Documentation>The actual duration of the task.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="RemainingTime" UniqueId="00BnWYJjvDq881EdZaHXV$" DefinedType="IfcTimeMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RemainingTime" UniqueId="00BnWYJjvDq881EdZaHXV$" DefinedType="IfcTimeMeasure" AttributeFlags="1">
 			<Documentation>The amount of time remaining to complete a task. 
 NOTE: The time remaining in which to complete a task may be determined both for tasks which have not yet started and those which have. Remaining time for a task not yet started has the same value as the scheduled duration. For a task already started, remaining time is calculated as the difference between the scheduled finish and the point of analysis.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="FreeFloat" UniqueId="0i9Szo1b97$PZa8j_wOMjO" DefinedType="IfcTimeMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="FreeFloat" UniqueId="0i9Szo1b97$PZa8j_wOMjO" DefinedType="IfcTimeMeasure" AttributeFlags="1">
 			<Documentation>The amount of time during which the start or finish of a task may be varied without any effect on the overall programme of work.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="TotalFloat" UniqueId="07Tm1nU5L5VwhhTIy_3$Gs" DefinedType="IfcTimeMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="TotalFloat" UniqueId="07Tm1nU5L5VwhhTIy_3$Gs" DefinedType="IfcTimeMeasure" AttributeFlags="1">
 			<Documentation>The difference between the duration available to carry out a task and the scheduled duration of the task. 
 NOTE: Total Float time may be calculated as being the difference between the scheduled duration of a task and the available duration from earliest start to latest finish. Float time may be either positive, zero or negative. Where it is zero or negative, the task becomes critical.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="IsCritical" UniqueId="2PKeKmtjj1t83rlBhSIHl8" DefinedType="BOOLEAN" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="IsCritical" UniqueId="2PKeKmtjj1t83rlBhSIHl8" DefinedType="BOOLEAN" AttributeFlags="1">
 			<Documentation>A flag which identifies whether a scheduled task is a critical item within the programme. 
 NOTE: A task becomes critical when the float time becomes zero or negative.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="StatusTime" UniqueId="0mD_NraFT3OxG_HyvEZvMy" DefinedType="IfcDateTimeSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="StatusTime" UniqueId="0mD_NraFT3OxG_HyvEZvMy" DefinedType="IfcDateTimeSelect" AttributeFlags="1">
 			<Documentation>The date or time at which the status of the tasks within the schedule is analyzed.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="StartFloat" UniqueId="2LWmhoFEDBaQw7bQqGhDgY" DefinedType="IfcTimeMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="StartFloat" UniqueId="2LWmhoFEDBaQw7bQqGhDgY" DefinedType="IfcTimeMeasure" AttributeFlags="1">
 			<Documentation>The difference between the late start and early start of a task. Start float measures how long an task&apos;s start can be delayed and still not have an impact on the overall duration of a schedule.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="FinishFloat" UniqueId="2ZzWpOhVj95AwbiE46j843" DefinedType="IfcTimeMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="FinishFloat" UniqueId="2ZzWpOhVj95AwbiE46j843" DefinedType="IfcTimeMeasure" AttributeFlags="1">
 			<Documentation>The difference between the late finish and early finish of a task. Finish float measures how long an task&apos;s finish can be delayed and still not have an impact on the overall duration of a schedule.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Completion" UniqueId="2$9COD739D1PgBKjn0Hxfb" DefinedType="IfcPositiveRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Completion" UniqueId="2$9COD739D1PgBKjn0Hxfb" DefinedType="IfcPositiveRatioMeasure" AttributeFlags="1">
 			<Documentation>The extent of completion expressed as a ratio or percentage.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="ScheduleTimeControlAssigned" UniqueId="2RZ7JdAAH0FfNb4X8NHMvZ" DefinedType="IfcRelAssignsTasks" AttributeFlags="8" AggregationType="0" AggregationFlag="0" Inverse="TimeForTask">
+		<DocAttribute Name="ScheduleTimeControlAssigned" UniqueId="2RZ7JdAAH0FfNb4X8NHMvZ" DefinedType="IfcRelAssignsTasks" AttributeFlags="8" Inverse="TimeForTask">
 			<Documentation>The assigned schedule time control in the relationship.</Documentation>
 		</DocAttribute>
 	</Attributes>

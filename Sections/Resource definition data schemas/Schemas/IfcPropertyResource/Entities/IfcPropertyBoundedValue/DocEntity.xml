@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPropertyBoundedValue" UniqueId="8e5675b7-1eab-4355-967e-bd85ba01ab9d" DiagramNumber="2" BaseDefinition="IfcSimpleProperty" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPropertyBoundedValue" UniqueId="8e5675b7-1eab-4355-967e-bd85ba01ab9d" BaseDefinition="IfcSimpleProperty" EntityFlags="237">
 	<Attributes>
-		<DocAttribute Name="UpperBoundValue" UniqueId="28c3b4b3-6d57-4edb-be6d-3ab7531478c1" DefinedType="IfcValue" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="UpperBoundValue" UniqueId="28c3b4b3-6d57-4edb-be6d-3ab7531478c1" DefinedType="IfcValue" AttributeFlags="1">
 			<Documentation>Upper bound value for the interval defining the property value. If the value is not given, it indicates an open bound (all values to be greater than or equal to LowerBoundValue).</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="LowerBoundValue" UniqueId="8511d45b-6a0b-497c-ba87-ff8eb107d34f" DefinedType="IfcValue" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LowerBoundValue" UniqueId="8511d45b-6a0b-497c-ba87-ff8eb107d34f" DefinedType="IfcValue" AttributeFlags="1">
 			<Documentation>Lower bound value for the interval defining the property value. If the value is not given, it indicates an open bound (all values to be lower than or equal to UpperBoundValue).</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Unit" UniqueId="efcd98c4-2c73-40ff-a47a-51ee91f65800" DefinedType="IfcUnit" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Unit" UniqueId="efcd98c4-2c73-40ff-a47a-51ee91f65800" DefinedType="IfcUnit" AttributeFlags="1">
 			<Documentation>Unit for the upper and lower bound values, if not given, the default value for the measure type (given by the TYPE of the upper and lower bound values) is used as defined by the global unit assignment at IfcProject.</Documentation>
 		</DocAttribute>
 	</Attributes>
