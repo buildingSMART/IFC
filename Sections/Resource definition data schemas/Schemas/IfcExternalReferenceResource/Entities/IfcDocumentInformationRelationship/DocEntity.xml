@@ -1,39 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDocumentInformationRelationship" Name="IfcDocumentInformationRelationship" UniqueId="79f322fe-2390-4be9-ac5e-2c79ccbfc1d5" DiagramNumber="3" BaseDefinition="IfcResourceLevelRelationship" EntityFlags="109">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcDocumentInformationRelationship" UniqueId="79f322fe-2390-4be9-ac5e-2c79ccbfc1d5" BaseDefinition="IfcResourceLevelRelationship" EntityFlags="109">
 	<Localization>
-		<DocLocalization Name="Dokumenteninformation - Relation" Locale="de" />
-		<DocLocalization Name="Document Information Relationship" Locale="en" />
-		<DocLocalization Name="Relation entre un document et des documents associés" Locale="fr" />
+		<DocLocalization Locale="de" Name="Dokumenteninformation - Relation" />
+		<DocLocalization Locale="en" Name="Document Information Relationship" />
+		<DocLocalization Locale="fr" Name="Relation entre un document et des documents associés" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="4097.6333" Y="307.03333" Width="580.66667" Height="100" />
 	<Attributes>
-		<DocAttribute Name="RelatingDocument" UniqueId="aa89e7a7-4654-4e52-af82-fda6e179130a" DefinedType="IfcDocumentInformation" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="RelatingDocument" UniqueId="aa89e7a7-4654-4e52-af82-fda6e179130a" DefinedType="IfcDocumentInformation" XsdFormat="attribute">
 			<Documentation>The document that acts as the parent, referencing or original document in a relationship.</Documentation>
-			<DiagramLine>
-				<DocPoint X="4307.9667" Y="407.03333" />
-				<DocPoint X="4307.9667" Y="659.49546" />
-				<DocPoint X="4146.16402" Y="659.49546" />
-				<DocPoint X="4146.16402" Y="1172.41663" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="4326.868041" Y="586.828793" Width="211" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RelatedDocuments" UniqueId="785f2826-b24e-4a4e-ba65-203c8c439d34" DefinedType="IfcDocumentInformation" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="RelatedDocuments" UniqueId="785f2826-b24e-4a4e-ba65-203c8c439d34" DefinedType="IfcDocumentInformation" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The document that acts as the child, referenced or replacing document in a relationship.</Documentation>
-			<DiagramLine>
-				<DocPoint X="4369.3" Y="407.03333" />
-				<DocPoint X="4369.3" Y="867.8627" />
-				<DocPoint X="4196.73524" Y="867.8627" />
-				<DocPoint X="4196.73524" Y="1172.41663" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="4355.01762" Y="390.366663" Width="297" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RelationshipType" UniqueId="b23740b1-d36a-4d3d-88df-c8e7e0d1efbf" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RelationshipType" UniqueId="b23740b1-d36a-4d3d-88df-c8e7e0d1efbf" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>Describes the type of relationship between documents. This could be sub-document, replacement etc. The interpretation has to be established in an application context.</Documentation>
-			<DiagramLine>
-				<DocPoint X="4387.9666" Y="307.03333" />
-				<DocPoint X="4387.9666" Y="239.433337" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="4499.79994" Y="320.53333" Width="198" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

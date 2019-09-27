@@ -1,27 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcActor" Name="IfcActor" UniqueId="463dbc90-5ef6-4411-b9c2-71144e8ed08d" DiagramNumber="11" BaseDefinition="IfcObject" EntityFlags="173">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcActor" Name="IfcActor" UniqueId="463dbc90-5ef6-4411-b9c2-71144e8ed08d" BaseDefinition="IfcObject" EntityFlags="173">
 	<Localization>
-		<DocLocalization Name="Akteur" Locale="de" />
-		<DocLocalization Name="Actor" Locale="en" />
-		<DocLocalization Name="Acteur" Locale="fr" />
+		<DocLocalization Locale="de" Name="Akteur" />
+		<DocLocalization Locale="en" Name="Actor" />
+		<DocLocalization Locale="fr" Name="Acteur" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="16244.755" Y="1416.1132" Width="200" Height="226.63333" />
 	<Attributes>
-		<DocAttribute Name="TheActor" UniqueId="1f0b24bd-108b-4dfd-b2f7-4ca3197d54e3" DefinedType="IfcActorSelect" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="TheActor" UniqueId="1f0b24bd-108b-4dfd-b2f7-4ca3197d54e3" DefinedType="IfcActorSelect">
 			<Documentation>Information about the actor.</Documentation>
-			<DiagramLine>
-				<DocPoint X="16344.755" Y="1642.7465" />
-				<DocPoint X="16344.755" Y="1885.8631" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="16413.088334" Y="1648.5798333" Width="107" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="IsActingUpon" UniqueId="aad58398-0599-4d60-aa99-4b0921c95159" DefinedType="IfcRelAssignsToActor" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="RelatingActor">
+		<DocAttribute Name="IsActingUpon" UniqueId="aad58398-0599-4d60-aa99-4b0921c95159" DefinedType="IfcRelAssignsToActor" AttributeFlags="8" AggregationType="3" Inverse="RelatingActor">
 			<Documentation>Reference to the relationship that associates the actor to an object.</Documentation>
-			<DiagramLine>
-				<DocPoint X="16928.403" Y="1482.6645" />
-				<DocPoint X="16444.755" Y="1482.6645" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="16928.403" Y="1517.6645" Width="297" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

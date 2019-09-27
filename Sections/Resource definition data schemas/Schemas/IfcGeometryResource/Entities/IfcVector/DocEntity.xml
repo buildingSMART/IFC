@@ -1,36 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcVector" Name="IfcVector" UniqueId="aa519614-ac30-463c-82ff-1733470ef911" DiagramNumber="4" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcVector" Name="IfcVector" UniqueId="aa519614-ac30-463c-82ff-1733470ef911" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Vektor" Locale="de" />
-		<DocLocalization Name="Vector" Locale="en" />
-		<DocLocalization Name="Vecteur" Locale="fr" />
+		<DocLocalization Locale="de" Name="Vektor" />
+		<DocLocalization Locale="en" Name="Vector" />
+		<DocLocalization Locale="fr" Name="Vecteur" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="5351.845" Y="1918.1197" Width="202" Height="222.66667" />
 	<Attributes>
-		<DocAttribute Name="Orientation" UniqueId="724c6299-4acc-41c6-bbed-b436c1426e7a" DefinedType="IfcDirection" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="Orientation" UniqueId="724c6299-4acc-41c6-bbed-b436c1426e7a" DefinedType="IfcDirection" XsdFormat="attribute">
 			<Documentation>The direction of the vector.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5452.845" Y="2140.7864" />
-				<DocPoint X="5452.845" Y="2224.05307" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5538.178334" Y="2156.453069" Width="128" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Magnitude" UniqueId="5c2c3892-dc4c-467b-95af-92f6de1b2abe" DefinedType="IfcLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Magnitude" UniqueId="5c2c3892-dc4c-467b-95af-92f6de1b2abe" DefinedType="IfcLengthMeasure">
 			<Documentation>The magnitude of the vector. All vectors of Magnitude 0.0 are regarded as equal in value regardless of the orientation attribute.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5553.845" Y="2072.1197" />
-				<DocPoint X="5844.34497" Y="2072.1197" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5557.7616667" Y="2064.1197" Width="123" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Dim" UniqueId="132af30f-e00a-480f-8435-e55c0d1b0b52" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Dim" UniqueId="132af30f-e00a-480f-8435-e55c0d1b0b52" DefinedType="IfcDimensionCount">
 			<Documentation>The space dimensionality of this class, it is derived from Orientation</Documentation>
 			<Derived>Orientation.Dim</Derived>
-			<DiagramLine>
-				<DocPoint X="5553.845" Y="1960.1197" />
-				<DocPoint X="5844.34497" Y="1960.1197" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5553.84500003333" Y="1954.7863667" Width="125" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

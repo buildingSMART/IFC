@@ -1,26 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelCoversBldgElements" Name="IfcRelCoversBldgElements" UniqueId="921a1a16-20f9-45bc-956b-62e09d80fa95" Status="H" DiagramNumber="5" BaseDefinition="IfcRelConnects" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelCoversBldgElements" Name="IfcRelCoversBldgElements" UniqueId="921a1a16-20f9-45bc-956b-62e09d80fa95" Status="H" BaseDefinition="IfcRelConnects" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Ordnet Bekleidung / Belag einem Bauteil zu - Relation" Locale="de" />
-		<DocLocalization Name="Rel Covers Bldg Elements" Locale="en" />
+		<DocLocalization Locale="de" Name="Ordnet Bekleidung / Belag einem Bauteil zu - Relation" />
+		<DocLocalization Locale="en" Name="Rel Covers Bldg Elements" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="6657.3463" Y="2074.9025" Width="436.66667" Height="168.26667" />
 	<Attributes>
-		<DocAttribute Name="RelatingBuildingElement" UniqueId="9c474fe1-510a-4abc-a5df-1d393a70137d" DefinedType="IfcElement" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="RelatingBuildingElement" UniqueId="9c474fe1-510a-4abc-a5df-1d393a70137d" DefinedType="IfcElement" XsdFormat="attribute">
 			<Documentation>Relationship to the element that is covered. It includes building elements for coverings such as flooring or cladding, or distribution elements for coverings such as sleeving or wrapping.</Documentation>
-			<DiagramLine>
-				<DocPoint X="7094.013" Y="2159.0358" />
-				<DocPoint X="7579.0463" Y="2159.0358" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="7096.6796667" Y="2148.369133" Width="275" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RelatedCoverings" UniqueId="4422a81c-654e-4da3-84be-ef46e94d3d3a" DefinedType="IfcCovering" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="RelatedCoverings" UniqueId="4422a81c-654e-4da3-84be-ef46e94d3d3a" DefinedType="IfcCovering" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Relationship to the set of coverings that are assigned to this element.</Documentation>
-			<DiagramLine>
-				<DocPoint X="6726.3463" Y="2074.9025" />
-				<DocPoint X="6726.3463" Y="1941.63583" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="6881.01297" Y="2088.235833" Width="283" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

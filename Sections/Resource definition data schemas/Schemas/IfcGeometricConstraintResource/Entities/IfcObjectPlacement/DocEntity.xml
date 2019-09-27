@@ -1,18 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcObjectPlacement" Name="IfcObjectPlacement" UniqueId="d7b307f1-5ef1-47c0-ae0c-e0ef2a8a6bf6" DiagramNumber="1" EntityFlags="69">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcObjectPlacement" Name="IfcObjectPlacement" UniqueId="d7b307f1-5ef1-47c0-ae0c-e0ef2a8a6bf6" EntityFlags="69">
 	<Localization>
-		<DocLocalization Name="Objektpositionierung" Locale="de" />
-		<DocLocalization Name="Object Placement" Locale="en" />
-		<DocLocalization Name="Positionnement d&apos;objet" Locale="fr" />
+		<DocLocalization Locale="de" Name="Objektpositionierung" />
+		<DocLocalization Locale="en" Name="Object Placement" />
+		<DocLocalization Locale="fr" Name="Positionnement d&apos;objet" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="932.713536580404" Y="322.950002034505" Width="460.6" Height="100" />
 	<Subtypes>
 		<DocSubtype UniqueId="3bbca550-f7f4-4674-a3c1-6505a15a9e12" DefinedType="IfcGridPlacement" />
 		<DocSubtype UniqueId="f3dc67eb-1ef4-4b77-bbc0-8bbc30e14c51" DefinedType="IfcLocalPlacement" />
 		<DocSubtype UniqueId="8200edef-bcea-4517-9b59-fbb49bcf03c7" DefinedType="IfcLinearPlacement" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="PlacesObject" UniqueId="badd4380-1510-40db-86e6-386eac940e22" DefinedType="IfcProduct" AttributeFlags="32" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="ObjectPlacement">
+		<DocAttribute Name="PlacesObject" UniqueId="badd4380-1510-40db-86e6-386eac940e22" DefinedType="IfcProduct" AttributeFlags="32" AggregationType="3" AggregationLower="0" AggregationUpper="0" Inverse="ObjectPlacement">
 			<Documentation>The _IfcObjectPlacement_ shall be used to provide a placement and 
 an object coordinate system for instances of _IfcProduct_. 
 { .note}
@@ -23,52 +22,10 @@ an object coordinate system for instances of _IfcProduct_.
 
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The cardinality has changed to 0..n to allow reuse of instances of _IfcObjectPlacement_ as placement object in one to many products. It takes also into account that it can act as a placement for _IfcStructuralAnalysisModel_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1204.26668127604" Y="322.950002034505" />
-				<DocPoint X="1204.26668127604" Y="322.950002034505" />
-				<DocPoint X="1204.26668127604" Y="172.166669209798" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1204.26668127604" Y="302.950002034505" Width="294" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="ReferencedByPlacements" UniqueId="27fc033d-5ad5-4a3e-a8a8-5b74f2b80a81" DefinedType="IfcLocalPlacement" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="PlacementRelTo">
+		<DocAttribute Name="ReferencedByPlacements" UniqueId="27fc033d-5ad5-4a3e-a8a8-5b74f2b80a81" DefinedType="IfcLocalPlacement" AttributeFlags="8" AggregationType="3" Inverse="PlacementRelTo">
 			<Documentation>Placements that are given relative to this placement of an object.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1284.5135" Y="422.950002034505" />
-				<DocPoint X="1284.5135" Y="422.950002034505" />
-				<DocPoint X="1284.5135" Y="673.14999" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1284.5135" Y="442.950002034505" Width="435" Height="35" />
 		</DocAttribute>
 	</Attributes>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="932.713536580404" Y="422.950002034505" />
-				<DocPoint X="932.713536580404" Y="612.627503" />
-				<DocPoint X="461.68021" Y="612.627503" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="462.6725" Y="612.6275" />
-						<DocPoint X="462.6725" Y="673.23833" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="1105.2691" Y="612.6275" />
-						<DocPoint X="1105.2691" Y="673.14999" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="461.68021" Y="612.627503" />
-						<DocPoint X="450.666615168254" Y="612.627503" />
-						<DocPoint X="450.666615168254" Y="491.999969482422" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcConstructionResource" Name="IfcConstructionResource" UniqueId="8d7d96c2-5987-41a0-aa66-ab3c2f3443bf" DiagramNumber="1" BaseDefinition="IfcResource" EntityFlags="197">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcConstructionResource" Name="IfcConstructionResource" UniqueId="8d7d96c2-5987-41a0-aa66-ab3c2f3443bf" BaseDefinition="IfcResource" EntityFlags="197">
 	<Localization>
-		<DocLocalization Name="Konstruktion - Ressource" Locale="de" />
-		<DocLocalization Name="Construction Resource" Locale="en" />
-		<DocLocalization Name="Ressource de construction" Locale="fr" />
+		<DocLocalization Locale="de" Name="Konstruktion - Ressource" />
+		<DocLocalization Locale="en" Name="Construction Resource" />
+		<DocLocalization Locale="fr" Name="Ressource de construction" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="30.640001" Y="218.66667" Width="256" Height="886.66667" />
 	<Subtypes>
 		<DocSubtype UniqueId="f154a2f3-27e1-4dd1-bb1d-1a86812b3789" DefinedType="IfcConstructionEquipmentResource" />
 		<DocSubtype UniqueId="c848aa3f-18fc-4047-9462-dbcded9fc6d6" DefinedType="IfcLaborResource" />
@@ -15,33 +14,19 @@
 		<DocSubtype UniqueId="1a49d58f-f445-4289-9ce8-34bbc0dbefe6" DefinedType="IfcConstructionMaterialResource" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Usage" UniqueId="a310105d-c221-4f71-b051-9391d731cec8" DefinedType="IfcResourceTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="Usage" UniqueId="a310105d-c221-4f71-b051-9391d731cec8" DefinedType="IfcResourceTime" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Indicates the work, usage, and times scheduled and completed.  Some attributes on this object may have associated constraints or time series; see documentation of _IfcResourceTime_ for specific usage.  If the resource is nested, then certain values may be calculated based on the component resources as indicated at _IfcResourceTime_.
 
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute.</Documentation>
-			<DiagramLine>
-				<DocPoint X="286.64" Y="277.99997" />
-				<DocPoint X="406.83666" Y="277.99997" />
-				<DocPoint X="406.83666" Y="277.20000333" />
-				<DocPoint X="527.03332" Y="277.20000333" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="278.8366653" Y="262.19997" Width="79" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="BaseCosts" UniqueId="c897428f-689a-4abb-9fb4-b5dffaf945e6" DefinedType="IfcAppliedValue" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="BaseCosts" UniqueId="c897428f-689a-4abb-9fb4-b5dffaf945e6" DefinedType="IfcAppliedValue" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Indicates the unit costs for which accrued amounts should be calculated.  Such unit costs may be split into _Name_ designations (for example, &apos;Standard&apos;, &apos;Overtime&apos;), and may contain a hierarchy of cost values that apply at different dates (using _IfcCostValue.ApplicableDate_ and _IfcCostValue.FixedUntilDate_).
 
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute.</Documentation>
-			<DiagramLine>
-				<DocPoint X="286.64" Y="527.31688" />
-				<DocPoint X="405.53668" Y="527.31688" />
-				<DocPoint X="405.53668" Y="528.6000033" />
-				<DocPoint X="524.43336" Y="528.6000033" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="278.7550091" Y="516.950632" Width="203" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="BaseQuantity" UniqueId="4da46f38-bb04-4ce9-88fb-8b7ca2c524a7" DefinedType="IfcPhysicalQuantity" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="BaseQuantity" UniqueId="4da46f38-bb04-4ce9-88fb-8b7ca2c524a7" DefinedType="IfcPhysicalQuantity" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Identifies the base quantity consumed of the resource relative to assignments.  
 
 For crew, labour, subcontract, and equipment resources, this refers to _IfcQuantityTime_.
@@ -52,60 +37,7 @@ For product resources, this refers to _IfcQuantityCount_.
 
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute.</Documentation>
-			<DiagramLine>
-				<DocPoint X="286.64" Y="662.46091" />
-				<DocPoint X="405.53667" Y="662.46091" />
-				<DocPoint X="405.53667" Y="663.8666767" />
-				<DocPoint X="524.43334" Y="663.8666767" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="314.186469" Y="656.3609976" Width="155" Height="35" />
 		</DocAttribute>
 	</Attributes>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="54.904337" Y="1105.3333" />
-				<DocPoint X="54.9043375" Y="1105.3333" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="54.903337" Y="2041.3667" />
-						<DocPoint X="95.4" Y="2041.3667" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="54.903337" Y="1485.3334" />
-						<DocPoint X="95.4" Y="1485.3334" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="54.903337" Y="1302.6668" />
-						<DocPoint X="95.49999" Y="1302.6668" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="54.903337" Y="1670.6666" />
-						<DocPoint X="95.45326" Y="1670.6666" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="54.903337" Y="2226.6999" />
-						<DocPoint X="95.433367" Y="2226.6999" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="54.903337" Y="1856.0334" />
-						<DocPoint X="95.480003" Y="1856.0334" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

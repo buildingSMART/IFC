@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcReinforcingElement" Name="IfcReinforcingElement" UniqueId="ca6074f0-a8aa-4b5b-a402-931d20010f8b" Status="H" DiagramNumber="2" BaseDefinition="IfcElementComponent" EntityFlags="197">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcReinforcingElement" Name="IfcReinforcingElement" UniqueId="ca6074f0-a8aa-4b5b-a402-931d20010f8b" Status="H" BaseDefinition="IfcElementComponent" EntityFlags="197">
 	<Localization>
-		<DocLocalization Name="Bewehrung" Locale="de" />
-		<DocLocalization Name="Reinforcing Element" Locale="en" />
-		<DocLocalization Name="Elément d&apos;armature" Locale="fr" />
+		<DocLocalization Locale="de" Name="Bewehrung" />
+		<DocLocalization Locale="en" Name="Reinforcing Element" />
+		<DocLocalization Locale="fr" Name="Elément d&apos;armature" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1672.1479" Y="190.14171" Width="239.54781" Height="178.45776" />
 	<Subtypes>
 		<DocSubtype UniqueId="c8cfdd44-3766-4ed3-819b-9f0724c6e784" DefinedType="IfcReinforcingBar" />
 		<DocSubtype UniqueId="30687a91-76b0-4fa6-a2b2-ad128b6eedbd" DefinedType="IfcReinforcingMesh" />
@@ -13,51 +12,12 @@
 		<DocSubtype UniqueId="2d48ddb0-823a-4fa9-ae42-2a920e39d81a" DefinedType="IfcTendonAnchor" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="SteelGrade" UniqueId="cc4f684c-9582-4577-b0f1-3dceb69e65f9" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="SteelGrade" UniqueId="cc4f684c-9582-4577-b0f1-3dceb69e65f9" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>Deprecated.
 
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; Attribute deprecated. Use material association at _IfcReinforcingElementType_ instead.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1911.6957" Y="240.58965" />
-				<DocPoint X="2537.94897" Y="240.58965" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1898.223928" Y="232.3228808" Width="132" Height="35" />
 		</DocAttribute>
 	</Attributes>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="1788.5911" Y="368.59947" />
-				<DocPoint X="1788.5911005" Y="368.59947" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="1788.5896" Y="508.16354" />
-						<DocPoint X="1940.90976" Y="508.16354" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="1788.5896" Y="1126.3844" />
-						<DocPoint X="1940.9765" Y="1126.3844" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="1788.5898" Y="1868.7162" />
-						<DocPoint X="1940.99974" Y="1868.7162" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="1788.5898" Y="2285.4973" />
-						<DocPoint X="1940.91923" Y="2285.4973" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

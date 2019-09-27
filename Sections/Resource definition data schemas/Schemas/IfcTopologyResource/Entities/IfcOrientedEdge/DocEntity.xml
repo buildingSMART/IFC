@@ -1,51 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcOrientedEdge" Name="IfcOrientedEdge" UniqueId="a0cbcd65-91d4-42a9-ba31-58d592875aa7" DiagramNumber="1" BaseDefinition="IfcEdge" EntityFlags="109">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcOrientedEdge" UniqueId="a0cbcd65-91d4-42a9-ba31-58d592875aa7" BaseDefinition="IfcEdge" EntityFlags="109">
 	<Localization>
-		<DocLocalization Name="Gerichtete Kante - Topologie" Locale="de" />
-		<DocLocalization Name="Oriented Edge" Locale="en" />
-		<DocLocalization Name="Arête orientée" Locale="fr" />
+		<DocLocalization Locale="de" Name="Gerichtete Kante - Topologie" />
+		<DocLocalization Locale="en" Name="Oriented Edge" />
+		<DocLocalization Locale="fr" Name="Arête orientée" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="691.8583984375" Y="633.83349609375" Width="337.999979654948" Height="308.000010172526" />
 	<Attributes>
-		<DocAttribute Name="EdgeElement" UniqueId="c7122e72-f5c7-4ed0-97e7-f3feadf775d9" DefinedType="IfcEdge" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="EdgeElement" UniqueId="c7122e72-f5c7-4ed0-97e7-f3feadf775d9" DefinedType="IfcEdge" XsdFormat="attribute">
 			<Documentation>Edge entity used to construct this oriented edge.</Documentation>
-			<DiagramLine>
-				<DocPoint X="691.8583984375" Y="647.416717529297" />
-				<DocPoint X="691.8583984375" Y="647.416717529297" />
-				<DocPoint X="442.024988810221" Y="647.416717529297" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="691.8583984375" Y="627.416717529297" Width="155" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Orientation" UniqueId="6fa9df70-e436-49e6-860f-f18263e0e214" DefinedType="IfcBoolean" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Orientation" UniqueId="6fa9df70-e436-49e6-860f-f18263e0e214" DefinedType="IfcBoolean">
 			<Documentation>BOOLEAN, If TRUE the topological orientation as used coincides with the orientation from start vertex to end vertex of the edge element. If FALSE otherwise.</Documentation>
-			<DiagramLine>
-				<DocPoint X="691.8583984375" Y="767.833251953125" />
-				<DocPoint X="691.8583984375" Y="767.833251953125" />
-				<DocPoint X="523.858276367187" Y="767.833251953125" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="691.8583984375" Y="747.833251953125" Width="128" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="EdgeStart" UniqueId="544bff9c-509b-4884-b08c-fcfb142238f3" DefinedType="IfcVertex" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="EdgeStart" UniqueId="544bff9c-509b-4884-b08c-fcfb142238f3" DefinedType="IfcVertex">
 			<Documentation>The start vertex of the oriented edge. It derives from the vertices of the edge element after taking account of the orientation.</Documentation>
 			<Derived>IfcBooleanChoose 
 (Orientation, EdgeElement.EdgeStart, EdgeElement.EdgeEnd)</Derived>
-			<DiagramLine>
-				<DocPoint X="691.8583984375" Y="904.350006103516" />
-				<DocPoint X="691.8583984375" Y="904.350006103516" />
-				<DocPoint X="484.625026221517" Y="904.350006103516" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="691.8583984375" Y="884.350006103516" Width="248" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="EdgeEnd" UniqueId="7148a307-6944-41cb-914c-1c404c45b642" DefinedType="IfcVertex" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="EdgeEnd" UniqueId="7148a307-6944-41cb-914c-1c404c45b642" DefinedType="IfcVertex">
 			<Documentation>The end vertex of the oriented edge. It derives from the vertices of the edge element after taking account of the orientation.</Documentation>
 			<Derived>IfcBooleanChoose 
 (Orientation, EdgeElement.EdgeEnd, EdgeElement.EdgeStart)</Derived>
-			<DiagramLine>
-				<DocPoint X="691.8583984375" Y="904.350006103516" />
-				<DocPoint X="691.8583984375" Y="904.350006103516" />
-				<DocPoint X="484.625026221517" Y="904.350006103516" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="691.8583984375" Y="884.350006103516" Width="240" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

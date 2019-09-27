@@ -1,21 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcColourRgbList" Name="IfcColourRgbList" UniqueId="02b8b9ac-609f-4e13-8a54-94743a93eebf" DiagramNumber="11" BaseDefinition="IfcPresentationItem" EntityFlags="109">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcColourRgbList" UniqueId="02b8b9ac-609f-4e13-8a54-94743a93eebf" BaseDefinition="IfcPresentationItem" EntityFlags="109">
 	<Localization>
-		<DocLocalization Name="Liste von RGB-Farbwerten" Locale="de" />
-		<DocLocalization Name="Colour Rgb List" Locale="en" />
-		<DocLocalization Name="Liste de couleur RGB" Locale="fr" />
+		<DocLocalization Locale="de" Name="Liste von RGB-Farbwerten" />
+		<DocLocalization Locale="en" Name="Colour Rgb List" />
+		<DocLocalization Locale="fr" Name="Liste de couleur RGB" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="7309.16666666667" Y="4125.68017578125" Width="330.66667" Height="100" />
 	<Attributes>
-		<DocAttribute Name="ColourList" UniqueId="711ff0f4-b696-4f47-8b2d-4c5df0a1d1fb" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="?" XsdFormat="content" XsdTagless="true">
+		<DocAttribute Name="ColourList" UniqueId="711ff0f4-b696-4f47-8b2d-4c5df0a1d1fb" DefinedType="IfcNormalisedRatioMeasure" AggregationType="1" AggregationLower="1" AggregationUpper="?" XsdFormat="content" XsdTagless="true">
 			<Documentation>List of colours defined by the red, green, blue components. All values are provided as a ratio of 0.0 &amp;le; _value_ &amp;le; 1.0. When using 8bit for each colour channel, a value of 0.0 equals 0, a value of 1.0 equals 255, and values between are interpolated.</Documentation>
-			<AggregationAttribute xsi:type="DocAttribute" UniqueId="f464abae-82b7-4421-bd39-f9e7e82e5cc9" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="3" AggregationUpper="3" />
-			<DiagramLine>
-				<DocPoint X="7485.16650390625" Y="4225.68017578125" />
-				<DocPoint X="7485.16650390625" Y="4225.68017578125" />
-				<DocPoint X="7485.16650390625" Y="4329.68017578125" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="7485.16650390625" Y="4309.68017578125" Width="265" Height="35" />
+			<AggregationAttribute xsi:type="DocAttribute" UniqueId="f464abae-82b7-4421-bd39-f9e7e82e5cc9" AggregationType="1" AggregationLower="3" AggregationUpper="3" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

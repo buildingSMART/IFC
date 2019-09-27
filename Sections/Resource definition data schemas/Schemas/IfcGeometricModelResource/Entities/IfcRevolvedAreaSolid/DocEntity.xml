@@ -1,43 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRevolvedAreaSolid" Name="IfcRevolvedAreaSolid" UniqueId="81970f2f-c63e-4133-adaf-c74d522cb449" DiagramNumber="4" BaseDefinition="IfcSweptAreaSolid" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRevolvedAreaSolid" Name="IfcRevolvedAreaSolid" UniqueId="81970f2f-c63e-4133-adaf-c74d522cb449" BaseDefinition="IfcSweptAreaSolid" EntityFlags="101">
 	<Localization>
-		<DocLocalization Name="Festkörper - durch Rotation" Locale="de" />
-		<DocLocalization Name="Revolved Area Solid" Locale="en" />
-		<DocLocalization Name="Solide de révolution surfacique" Locale="fr" />
+		<DocLocalization Locale="de" Name="Festkörper - durch Rotation" />
+		<DocLocalization Locale="en" Name="Revolved Area Solid" />
+		<DocLocalization Locale="fr" Name="Solide de révolution surfacique" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="5549.8167" Y="888.39174" Width="493.3" Height="100" />
 	<Subtypes>
 		<DocSubtype UniqueId="9cebadad-f05d-4215-b76a-71d2fbc35c20" DefinedType="IfcRevolvedAreaSolidTapered" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Axis" UniqueId="7d721792-8d9e-4a49-84d2-65251bbed28a" DefinedType="IfcAxis1Placement" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="Axis" UniqueId="7d721792-8d9e-4a49-84d2-65251bbed28a" DefinedType="IfcAxis1Placement" XsdFormat="attribute">
 			<Documentation>Axis about which revolution will take place.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5642.5052" Y="988.39174" />
-				<DocPoint X="5642.5052" Y="1524.11051" />
-				<DocPoint X="5782.59998" Y="1524.11051" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5621.171867" Y="1504.377176" Width="52" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Angle" UniqueId="1119b572-18c2-4c9a-b4cf-e146b2426614" DefinedType="IfcPlaneAngleMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Angle" UniqueId="1119b572-18c2-4c9a-b4cf-e146b2426614" DefinedType="IfcPlaneAngleMeasure">
 			<Documentation>The angle through which the sweep will be made. This angle is measured from the plane of the swept area provided by the XY plane of the position coordinate system.</Documentation>
-			<DiagramLine>
-				<DocPoint X="6043.1167" Y="938.39174" />
-				<DocPoint X="6099.298253" Y="938.39174" />
-				<DocPoint X="6099.298253" Y="1051.76668" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="6155.298253" Y="911.70427" Width="70" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="AxisLine" UniqueId="c8f87731-68ac-44bc-a63b-6104dd6c713e" DefinedType="IfcLine" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="AxisLine" UniqueId="c8f87731-68ac-44bc-a63b-6104dd6c713e" DefinedType="IfcLine">
 			<Documentation>The line of the axis of revolution.</Documentation>
 			<Derived>IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcCurve() || IfcLine(Axis.Location, 
   IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcVector(Axis.Z,1.0))</Derived>
-			<DiagramLine>
-				<DocPoint X="5743.9058" Y="988.39174" />
-				<DocPoint X="5743.9058" Y="1393.12922" />
-				<DocPoint X="5782.666684" Y="1393.12922" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5848.59747" Y="1032.045887" Width="174" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

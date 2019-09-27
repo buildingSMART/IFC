@@ -1,26 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPlate" Name="IfcPlate" UniqueId="2b32e8c1-898b-46b1-a578-df08e1db3c6b" DiagramNumber="1" BaseDefinition="IfcBuildingElement" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPlate" Name="IfcPlate" UniqueId="2b32e8c1-898b-46b1-a578-df08e1db3c6b" BaseDefinition="IfcBuildingElement" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Platte / Paneel" Locale="de" />
-		<DocLocalization Name="Plate" Locale="en" />
-		<DocLocalization Name="Plaque" Locale="fr" />
+		<DocLocalization Locale="de" Name="Platte / Paneel" />
+		<DocLocalization Locale="en" Name="Plate" />
+		<DocLocalization Locale="fr" Name="Plaque" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="484.69574" Y="1372.3574" Width="249.9" Height="214.6" />
 	<Subtypes>
 		<DocSubtype UniqueId="6478f697-99ce-4282-bd27-c36ba662d83c" DefinedType="IfcPlateStandardCase" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="4b413560-ba7d-4a7c-b5d9-d3bf64f0b896" DefinedType="IfcPlateTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="4b413560-ba7d-4a7c-b5d9-d3bf64f0b896" DefinedType="IfcPlateTypeEnum" AttributeFlags="1">
 			<Documentation>Predefined generic type for a plate that is specified in an enumeration. There may be a property set given specificly for the predefined types.
 &gt; NOTE&amp;nbsp; The _PredefinedType_ shall only be used, if no _IfcPlateType_ is assigned, providing its own _IfcPlateType.PredefinedType_.
 
 { .change-ifc2x4}
 &gt; IFC4 CHANGE The attribute has been added at the end of the entity definition.</Documentation>
-			<DiagramLine>
-				<DocPoint X="734.59574" Y="1527.6574" />
-				<DocPoint X="1113.9624" Y="1527.6574" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="729.2624067" Y="1519.6574" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

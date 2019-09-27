@@ -1,29 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCartesianPointList3D" UniqueId="18fe3405-d1b4-4632-b93d-b36e1cdf00c1" DiagramNumber="8" BaseDefinition="IfcCartesianPointList" EntityFlags="109">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCartesianPointList3D" UniqueId="18fe3405-d1b4-4632-b93d-b36e1cdf00c1" BaseDefinition="IfcCartesianPointList" EntityFlags="109">
 	<Localization>
-		<DocLocalization Name="Liste von Kartesischen 3D Punkten" Locale="de" />
-		<DocLocalization Name="Cartesian Point List 3D" Locale="en" />
+		<DocLocalization Locale="de" Name="Liste von Kartesischen 3D Punkten" />
+		<DocLocalization Locale="en" Name="Cartesian Point List 3D" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="11777.787109375" Y="667.119995117188" Width="465.56666" Height="100" />
 	<Attributes>
-		<DocAttribute Name="CoordList" UniqueId="eda33e5f-5fc8-41a1-bd3a-470744cb85ff" DefinedType="IfcLengthMeasure" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="?" XsdFormat="content" XsdTagless="true">
+		<DocAttribute Name="CoordList" UniqueId="eda33e5f-5fc8-41a1-bd3a-470744cb85ff" DefinedType="IfcLengthMeasure" AggregationType="1" AggregationLower="1" AggregationUpper="?" XsdFormat="content" XsdTagless="true">
 			<Documentation>Two-dimensional list of Cartesian points provided by three coordinates.</Documentation>
-			<AggregationAttribute xsi:type="DocAttribute" UniqueId="eb563b37-9d60-441f-b30a-092226a561d9" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="3" AggregationUpper="3" />
-			<DiagramLine>
-				<DocPoint X="11796.68646" Y="667.119995117188" />
-				<DocPoint X="11796.68646" Y="667.119995117188" />
-				<DocPoint X="11796.68646" Y="581.300018310547" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="11796.68646" Y="647.119995117188" Width="260" Height="35" />
+			<AggregationAttribute xsi:type="DocAttribute" UniqueId="eb563b37-9d60-441f-b30a-092226a561d9" AggregationType="1" AggregationLower="3" AggregationUpper="3" />
 		</DocAttribute>
-		<DocAttribute Name="TagList" UniqueId="67557644-17fb-4622-a38d-36425a048847" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1">
+		<DocAttribute Name="TagList" UniqueId="67557644-17fb-4622-a38d-36425a048847" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="1" AggregationLower="1">
 			<Documentation>List of tags corresponding to each point that may be used to identify a basis curve according to the Tag attribute at _IfcOffsetCurveByDistances_ or _IfcAlignmentCurve_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="12218.9823584375" Y="667.119995117188" />
-				<DocPoint X="12218.9823584375" Y="667.119995117188" />
-				<DocPoint X="12218.9823584375" Y="581.300018310547" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="12218.9823584375" Y="647.119995117188" Width="400" Height="100" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

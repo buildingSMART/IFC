@@ -1,29 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPropertyListValue" Name="IfcPropertyListValue" UniqueId="166fb09e-156c-46c0-ae3d-c231cb40cd96" DiagramNumber="2" BaseDefinition="IfcSimpleProperty" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPropertyListValue" Name="IfcPropertyListValue" UniqueId="166fb09e-156c-46c0-ae3d-c231cb40cd96" BaseDefinition="IfcSimpleProperty" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Merkmal mit Listenwert" Locale="de" />
-		<DocLocalization Name="Property List Value" Locale="en" />
-		<DocLocalization Name="Propriété à liste de valeurs" Locale="fr" />
+		<DocLocalization Locale="de" Name="Merkmal mit Listenwert" />
+		<DocLocalization Locale="en" Name="Property List Value" />
+		<DocLocalization Locale="fr" Name="Propriété à liste de valeurs" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1900.1134" Y="2084.1199" Width="459.56667" Height="194.4" />
 	<Attributes>
-		<DocAttribute Name="ListValues" UniqueId="32f56438-324e-4cc0-a015-fd42bc1d2464" DefinedType="IfcValue" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="ListValues" UniqueId="32f56438-324e-4cc0-a015-fd42bc1d2464" DefinedType="IfcValue" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>List of property values.
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute has been made optional with upward compatibility for file based exchange.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2359.6801" Y="2130.6533" />
-				<DocPoint X="2879.7467" Y="2130.6533" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2359.6801" Y="2117.319967" Width="197" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Unit" UniqueId="6c1e2deb-0757-4bab-bcbd-d6199312452a" DefinedType="IfcUnit" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Unit" UniqueId="6c1e2deb-0757-4bab-bcbd-d6199312452a" DefinedType="IfcUnit" AttributeFlags="1">
 			<Documentation>Unit for the list values, if not given, the default value for the measure type (given by the TYPE of nominal value) is used as defined by the global unit assignment at IfcProject.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2359.6801" Y="2223.9866" />
-				<DocPoint X="2879.8134" Y="2223.9866" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2289.6801" Y="2210.653267" Width="51" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

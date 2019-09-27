@@ -1,47 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSectionedSpine" Name="IfcSectionedSpine" UniqueId="d92abdea-e3e3-4799-9cb5-39b1c40f03aa" DiagramNumber="6" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSectionedSpine" UniqueId="d92abdea-e3e3-4799-9cb5-39b1c40f03aa" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Geometrische Achse mit Querschnitten" Locale="de" />
-		<DocLocalization Name="Sectioned Spine" Locale="en" />
+		<DocLocalization Locale="de" Name="Geometrische Achse mit Querschnitten" />
+		<DocLocalization Locale="en" Name="Sectioned Spine" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="8258.4333" Y="1609.875" Width="452.06667" Height="241.33333" />
 	<Attributes>
-		<DocAttribute Name="SpineCurve" UniqueId="9972a3cc-e10b-4958-b69a-cff36403a20f" DefinedType="IfcCompositeCurve" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="SpineCurve" UniqueId="9972a3cc-e10b-4958-b69a-cff36403a20f" DefinedType="IfcCompositeCurve" XsdFormat="attribute">
 			<Documentation>A single composite curve, that defines the spine curve. Each of the composite curve segments correspond to the part between two cross-sections.</Documentation>
-			<DiagramLine>
-				<DocPoint X="8333.2861" Y="1851.2083" />
-				<DocPoint X="8333.2861" Y="1946.895725" />
-				<DocPoint X="8472.51664" Y="1946.895725" />
-				<DocPoint X="8472.51664" Y="1983.91654" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="8360.394433" Y="1936.385316" Width="136" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="CrossSections" UniqueId="ab186537-69aa-4b04-909e-0a50fb0c39a8" DefinedType="IfcProfileDef" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="0">
+		<DocAttribute Name="CrossSections" UniqueId="ab186537-69aa-4b04-909e-0a50fb0c39a8" DefinedType="IfcProfileDef" AggregationType="1" AggregationLower="2" AggregationUpper="0">
 			<Documentation>A list of at least two cross sections, each defined within the xy plane of the position coordinate system of the cross section. The position coordinate system is given by the corresponding list CrossSectionPositions.</Documentation>
-			<DiagramLine>
-				<DocPoint X="8710.5" Y="1794.5416" />
-				<DocPoint X="9111.0333" Y="1794.5416" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="8713.5833487" Y="1782.874933" Width="242" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="CrossSectionPositions" UniqueId="248f7801-8a52-417a-a51f-43ba0fbb601d" DefinedType="IfcAxis2Placement3D" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="0">
+		<DocAttribute Name="CrossSectionPositions" UniqueId="248f7801-8a52-417a-a51f-43ba0fbb601d" DefinedType="IfcAxis2Placement3D" AggregationType="1" AggregationLower="2" AggregationUpper="0">
 			<Documentation>Position coordinate systems for the cross sections that form the sectioned spine. The profiles defining the cross sections are positioned within the xy plane of the corresponding position coordinate system.</Documentation>
-			<DiagramLine>
-				<DocPoint X="8710.5" Y="1658.5417" />
-				<DocPoint X="9111.0666" Y="1658.5417" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="8719.8333334" Y="1653.2083667" Width="329" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Dim" UniqueId="40abd247-1c82-4fc0-8a01-aab4d02b1e8c" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Dim" UniqueId="40abd247-1c82-4fc0-8a01-aab4d02b1e8c" DefinedType="IfcDimensionCount">
 			<Documentation>The dimensionality of the spine curve is always 3.</Documentation>
 			<Derived>3</Derived>
-			<DiagramLine>
-				<DocPoint X="8643.0219" Y="1851.2083" />
-				<DocPoint X="8643.0219" Y="1895.362607" />
-				<DocPoint X="9285.58336" Y="1895.362607" />
-				<DocPoint X="9285.58336" Y="1989.208237" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="8626.355233" Y="1885.362607" Width="125" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

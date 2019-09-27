@@ -1,47 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDoorType" Name="IfcDoorType" UniqueId="644f260a-0347-4e6a-84b2-be14f6c42b87" DiagramNumber="4" BaseDefinition="IfcBuildingElementType" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDoorType" Name="IfcDoorType" UniqueId="644f260a-0347-4e6a-84b2-be14f6c42b87" BaseDefinition="IfcBuildingElementType" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Tür - Typ" Locale="de" />
-		<DocLocalization Name="Door Type" Locale="en" />
-		<DocLocalization Name="Type de porte" Locale="fr" />
+		<DocLocalization Locale="de" Name="Tür - Typ" />
+		<DocLocalization Locale="en" Name="Door Type" />
+		<DocLocalization Locale="fr" Name="Type de porte" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="6072.16634114583" Y="157.636672973633" Width="279.93333" Height="745.333343505859" />
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="f36db3f7-2cec-48d9-8e81-6fa01a860509" DefinedType="IfcDoorTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="f36db3f7-2cec-48d9-8e81-6fa01a860509" DefinedType="IfcDoorTypeEnum">
 			<Documentation>Identifies the predefined types of a door element from which the type required may be set.</Documentation>
-			<DiagramLine>
-				<DocPoint X="6072.16634114583" Y="203.966644453776" />
-				<DocPoint X="6072.16634114583" Y="203.966644453776" />
-				<DocPoint X="5734.6796875" Y="203.966644453776" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="6072.16634114583" Y="183.966644453776" Width="182" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="OperationType" UniqueId="479b13b8-14cd-4731-b8a1-5d03729e2a42" DefinedType="IfcDoorTypeOperationEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="OperationType" UniqueId="479b13b8-14cd-4731-b8a1-5d03729e2a42" DefinedType="IfcDoorTypeOperationEnum">
 			<Documentation>Type defining the general layout and operation of the door type in terms of the partitioning of panels and panel operations.</Documentation>
-			<DiagramLine>
-				<DocPoint X="6072.16634114583" Y="289.048642744792" />
-				<DocPoint X="6072.16634114583" Y="289.048642744792" />
-				<DocPoint X="5806.4796875" Y="289.048642744792" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="6072.16634114583" Y="269.048642744792" Width="171" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ParameterTakesPrecedence" UniqueId="1adc3f57-5b13-4887-a1d4-b5788991afd9" DefinedType="IfcBoolean" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ParameterTakesPrecedence" UniqueId="1adc3f57-5b13-4887-a1d4-b5788991afd9" DefinedType="IfcBoolean" AttributeFlags="1">
 			<Documentation>The Boolean value reflects, whether the parameter given in the attached lining and panel properties exactly define the geometry (TRUE), or whether the attached style shape take precedence (FALSE). In the last case the parameter have only informative value. If not provided, no such information can be infered.</Documentation>
-			<DiagramLine>
-				<DocPoint X="6072.16634114583" Y="902.970016479492" />
-				<DocPoint X="5845.84635416667" Y="902.970016479492" />
-				<DocPoint X="5845.84635416667" Y="1044.16666666667" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="6072.16634114583" Y="1024.16666666667" Width="321" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="UserDefinedOperationType" UniqueId="8995c9e7-f0e4-4226-afd6-3c8b4dd3a0a0" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="UserDefinedOperationType" UniqueId="8995c9e7-f0e4-4226-afd6-3c8b4dd3a0a0" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>Designator for the user defined operation type, shall only be provided, if the value of _OperationType_ is set to USERDEFINED.</Documentation>
-			<DiagramLine>
-				<DocPoint X="6072.16634114583" Y="377.297307535807" />
-				<DocPoint X="6072.16634114583" Y="377.297307535807" />
-				<DocPoint X="5685.1796875" Y="377.297307535807" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="6072.16634114583" Y="357.297307535807" Width="309" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

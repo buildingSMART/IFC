@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocProperty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="PanMounting_3thle0qWCHuO00025QrEV" Name="PanMounting" UniqueId="3thle0qWCHuO00025QrE$V" PropertyType="p_enumeratedvalue" PrimaryDataType="IfcLabel">
 	<Localization>
-		<DocLocalization Name="Pan Mounting" Locale="en" />
-		<DocLocalization Name="取付方法" Locale="ja-JP">
+		<DocLocalization Locale="en" Name="Pan Mounting" />
+		<DocLocalization Locale="ja-JP" Name="取付方法">
 			<Documentation>Pset_SanitaryMountingEnumは固定された衛生器具の接続点（トイレや洗面器、シンクなど）に取り付けられます。
 
 ・床置き壁排出：背面の壁に接続口を合わせること。
@@ -11,8 +11,6 @@
 ・壁掛け型：衛生器具は片側固定がされ床から離れていること。</Documentation>
 		</DocLocalization>
 	</Localization>
-	<Enumeration>
-		<DocPropertyEnumeration xsi:nil="true" href="PEnum_SanitaryMounting" />
-	</Enumeration>
+	<Enumeration xsi:type="DocPropertyEnumeration" xsi:nil="true" href="PEnum_SanitaryMounting" />
 </DocProperty>
 

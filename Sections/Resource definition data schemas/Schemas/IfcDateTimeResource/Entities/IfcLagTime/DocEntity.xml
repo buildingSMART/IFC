@@ -1,31 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcLagTime" UniqueId="ebde4676-fd2c-4f52-8985-79f623317d88" DiagramNumber="2" BaseDefinition="IfcSchedulingTime" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcLagTime" UniqueId="ebde4676-fd2c-4f52-8985-79f623317d88" BaseDefinition="IfcSchedulingTime" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Zeitlicher Abstand" Locale="de" />
-		<DocLocalization Name="Lag Time" Locale="en" />
-		<DocLocalization Name="Décalage entre processus" Locale="fr" />
+		<DocLocalization Locale="de" Name="Zeitlicher Abstand" />
+		<DocLocalization Locale="en" Name="Lag Time" />
+		<DocLocalization Locale="fr" Name="Décalage entre processus" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1649.23311360677" Y="270.57612101237" Width="237.833353678385" Height="125.196309407552" />
 	<Attributes>
-		<DocAttribute Name="LagValue" UniqueId="2887dc71-f136-4c8b-9da9-5b34af397d8d" DefinedType="IfcTimeOrRatioSelect" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LagValue" UniqueId="2887dc71-f136-4c8b-9da9-5b34af397d8d" DefinedType="IfcTimeOrRatioSelect">
 			<Documentation>Value of the time lag selected as being either a ratio or a
     time measure.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1887.06646728516" Y="363.35133853776" />
-				<DocPoint X="1887.06646728516" Y="363.35133853776" />
-				<DocPoint X="2131.79972330729" Y="363.35133853776" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1887.06646728516" Y="343.35133853776" Width="112" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="DurationType" UniqueId="9a00390a-a0d3-4bba-9267-7512fae616c3" DefinedType="IfcTaskDurationEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="DurationType" UniqueId="9a00390a-a0d3-4bba-9267-7512fae616c3" DefinedType="IfcTaskDurationEnum">
 			<Documentation>The allowed types of task duration that specify the lag time
     measurement (work time or elapsed time).</Documentation>
-			<DiagramLine>
-				<DocPoint X="1887.06646728516" Y="290.561965250651" />
-				<DocPoint X="1887.06646728516" Y="290.561965250651" />
-				<DocPoint X="2357.24650065104" Y="290.561965250651" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1887.06646728516" Y="270.561965250651" Width="156" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

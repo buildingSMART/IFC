@@ -1,53 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRoot" Name="IfcRoot" UniqueId="f8efd3b8-d3ea-429a-95d6-d19264324999" DiagramNumber="1" EntityFlags="133">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRoot" Name="IfcRoot" UniqueId="f8efd3b8-d3ea-429a-95d6-d19264324999" EntityFlags="133">
 	<Localization>
-		<DocLocalization Name="generelle Basisklasse" Locale="de" />
-		<DocLocalization Name="Root" Locale="en" />
-		<DocLocalization Name="Racine" Locale="fr" />
+		<DocLocalization Locale="de" Name="generelle Basisklasse" />
+		<DocLocalization Locale="en" Name="Root" />
+		<DocLocalization Locale="fr" Name="Racine" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="773.13333" Y="151.83334" Width="200" Height="221.6" />
 	<Subtypes>
 		<DocSubtype UniqueId="ba2ca809-60d3-4360-9000-4cb4d92123fb" DefinedType="IfcPropertyDefinition" />
 		<DocSubtype UniqueId="37dd3b2d-b0d0-4eab-9a91-bbb881a707ce" DefinedType="IfcRelationship" />
 		<DocSubtype UniqueId="4e1a3bc1-c4ea-4a0a-9917-0c050e7972b0" DefinedType="IfcObjectDefinition" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="GlobalId" UniqueId="2ef91ad0-a87b-4049-910a-d9c2aea67739" DefinedType="IfcGloballyUniqueId" AttributeFlags="6" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="GlobalId" UniqueId="2ef91ad0-a87b-4049-910a-d9c2aea67739" DefinedType="IfcGloballyUniqueId" AttributeFlags="6">
 			<Documentation>Assignment of a globally unique identifier within the entire software world.</Documentation>
-			<DiagramLine>
-				<DocPoint X="773.13333" Y="326.1" />
-				<DocPoint X="585.06668" Y="326.1" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="774.7333303" Y="313.966667" Width="109" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="OwnerHistory" UniqueId="3f6c9112-a79d-49a2-a983-4fd08a4cedc3" DefinedType="IfcOwnerHistory" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="OwnerHistory" UniqueId="3f6c9112-a79d-49a2-a983-4fd08a4cedc3" DefinedType="IfcOwnerHistory" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Assignment of the information about the current ownership of that object, including owning actor, application, local identification and information captured about the recent changes of the object, 
 
 &gt; NOTE&amp;nbsp; only the last modification in stored - either as addition, deletion or modification.
 
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute has been changed to be OPTIONAL.</Documentation>
-			<DiagramLine>
-				<DocPoint X="773.13333" Y="201.83334" />
-				<DocPoint X="584.93334" Y="201.83334" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="779.9833325" Y="185.73334" Width="156" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Name" UniqueId="03435dd4-ced4-460f-9203-e318d330c219" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Name" UniqueId="03435dd4-ced4-460f-9203-e318d330c219" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>Optional name for use by the participating software systems or users. For some subtypes of IfcRoot the insertion of the Name attribute may be required. This would be enforced by a where rule.</Documentation>
-			<DiagramLine>
-				<DocPoint X="973.13337" Y="195.43334" />
-				<DocPoint X="1277.6" Y="195.43334" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="973.13337" Y="185.43334" Width="73" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Description" UniqueId="ae1c2069-cba7-4c56-b652-2ce207a2345f" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Description" UniqueId="ae1c2069-cba7-4c56-b652-2ce207a2345f" DefinedType="IfcText" AttributeFlags="1">
 			<Documentation>Optional description, provided for exchanging informative comments.</Documentation>
-			<DiagramLine>
-				<DocPoint X="973.13337" Y="334.63334" />
-				<DocPoint X="1277.53334" Y="334.63334" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="978.4667033" Y="329.3000067" Width="130" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<UniqueRules>
@@ -57,33 +36,5 @@
 			</Items>
 		</DocUniqueRule>
 	</UniqueRules>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="865.13333" Y="373.43334" />
-				<DocPoint X="865.13333" Y="441.399997" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="864.2" Y="441.4" />
-						<DocPoint X="864.2" Y="473.56666" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="1330.3" Y="441.39999" />
-						<DocPoint X="1330.3" Y="473.466667" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="351.98" Y="441.39999" />
-						<DocPoint X="351.98" Y="636.66666" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

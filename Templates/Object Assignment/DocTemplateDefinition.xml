@@ -4,13 +4,13 @@
 		<DocTemplateDefinition id="Actor_Assignment_04W7d1TDrBsRCmHveKZIEF" Name="Actor Assignment" UniqueId="04W7d1TDrBsRCmHveKZIEF" Type="IfcActor">
 			<Documentation>Actors may have assignments indicating objects for which they have responsibility. An example of such assignment is a work order assigned to an organization.</Documentation>
 			<Rules>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsActingUpon">
+				<DocModelRuleAttribute Name="IsActingUpon">
 					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssignsToActor">
+						<DocModelRuleEntity Name="IfcRelAssignsToActor">
 							<Rules>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedObjects" Identification="Type">
+								<DocModelRuleAttribute Name="RelatedObjects" Identification="Type">
 									<Rules>
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcControl" />
+										<DocModelRuleEntity Name="IfcControl" />
 									</Rules>
 								</DocModelRuleAttribute>
 							</Rules>
@@ -24,11 +24,11 @@
 
 The grouping relationship does not apply any other meaning then grouping objects under some aspect. It is non-hierarchical, meaning that objects can be assigned to many groups, and it does not interfere with other relationship concepts, such as _Element Decomposition_.</Documentation>
 			<Rules>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasAssignments" Identification="IsAssigned">
+				<DocModelRuleAttribute Name="HasAssignments" Identification="IsAssigned">
 					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssignsToGroup">
+						<DocModelRuleEntity Name="IfcRelAssignsToGroup">
 							<Rules>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingGroup" />
+								<DocModelRuleAttribute Name="RelatingGroup" />
 							</Rules>
 						</DocModelRuleEntity>
 					</Rules>
@@ -46,17 +46,17 @@ The grouping relationship does not apply any other meaning then grouping objects
 						</DocLocalization>
 					</Localization>
 					<Rules>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasAssignments" Identification="IsAssigned">
+						<DocModelRuleAttribute Name="HasAssignments" Identification="IsAssigned">
 							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssignsToGroup">
+								<DocModelRuleEntity Name="IfcRelAssignsToGroup">
 									<Rules>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingGroup">
+										<DocModelRuleAttribute Name="RelatingGroup">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDistributionSystem">
+												<DocModelRuleEntity Name="IfcDistributionSystem">
 													<Rules>
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="SystemName">
+														<DocModelRuleAttribute Name="Name" Identification="SystemName">
 															<Rules>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																<DocModelRuleEntity Name="IfcLabel" />
 															</Rules>
 														</DocModelRuleAttribute>
 													</Rules>
@@ -80,17 +80,17 @@ The grouping relationship does not apply any other meaning then grouping objects
 						</DocLocalization>
 					</Localization>
 					<Rules>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasAssignments" Identification="IsAssigned">
+						<DocModelRuleAttribute Name="HasAssignments" Identification="IsAssigned">
 							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssignsToGroup">
+								<DocModelRuleEntity Name="IfcRelAssignsToGroup">
 									<Rules>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingGroup">
+										<DocModelRuleAttribute Name="RelatingGroup">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDistributionSystem">
+												<DocModelRuleEntity Name="IfcDistributionSystem">
 													<Rules>
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="SystemName">
+														<DocModelRuleAttribute Name="Name" Identification="SystemName">
 															<Rules>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																<DocModelRuleEntity Name="IfcLabel" />
 															</Rules>
 														</DocModelRuleAttribute>
 													</Rules>
@@ -108,13 +108,13 @@ The grouping relationship does not apply any other meaning then grouping objects
 		<DocTemplateDefinition id="Control_Assignment_21FdF_La56IAQ0Y8VFGrdn" Name="Control Assignment" UniqueId="21FdF_La56IAQ0Y8VFGrdn" Type="IfcControl">
 			<Documentation>Controls may have assignments indicating objects that must observe the established requirements. An example of such assignment is a labor resource assigned to a calendar.</Documentation>
 			<Rules>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Controls">
+				<DocModelRuleAttribute Name="Controls">
 					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssignsToControl">
+						<DocModelRuleEntity Name="IfcRelAssignsToControl">
 							<Rules>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedObjects" Identification="Type">
+								<DocModelRuleAttribute Name="RelatedObjects" Identification="Type">
 									<Rules>
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcObject" />
+										<DocModelRuleEntity Name="IfcObject" />
 									</Rules>
 								</DocModelRuleAttribute>
 							</Rules>
@@ -143,13 +143,13 @@ The _Group Assignment_ concept establish a given object as being the group colle
 				</DocLocalization>
 			</Localization>
 			<Rules>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsGroupedBy" Identification="IsGrouped">
+				<DocModelRuleAttribute Name="IsGroupedBy" Identification="IsGrouped">
 					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssignsToGroup">
+						<DocModelRuleEntity Name="IfcRelAssignsToGroup">
 							<Rules>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedObjects" Identification="RelatedObjects">
+								<DocModelRuleAttribute Name="RelatedObjects" Identification="RelatedObjects">
 									<Rules>
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProduct" />
+										<DocModelRuleEntity Name="IfcProduct" />
 									</Rules>
 								</DocModelRuleAttribute>
 							</Rules>
@@ -161,13 +161,13 @@ The _Group Assignment_ concept establish a given object as being the group colle
 		<DocTemplateDefinition id="Process_Assignment_3eGT0hpFrD7vGpsa24POHe" Name="Process Assignment" UniqueId="3eGT0hpFrD7vGpsa24POHe" Type="IfcProcess">
 			<Documentation>Processes may have assignments indicating resources consumed or occupied by the process. An example of such assignment is a carpenter labor resource building a wall.</Documentation>
 			<Rules>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="OperatesOn">
+				<DocModelRuleAttribute Name="OperatesOn">
 					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssignsToProcess">
+						<DocModelRuleEntity Name="IfcRelAssignsToProcess">
 							<Rules>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedObjects" Identification="Type">
+								<DocModelRuleAttribute Name="RelatedObjects" Identification="Type">
 									<Rules>
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcResource" />
+										<DocModelRuleEntity Name="IfcResource" />
 									</Rules>
 								</DocModelRuleAttribute>
 							</Rules>
@@ -179,13 +179,13 @@ The _Group Assignment_ concept establish a given object as being the group colle
 		<DocTemplateDefinition Name="Process Type Assignment" UniqueId="3jsmg0QzX3P8NyRLtIknVd" Type="IfcTypeProcess">
 			<Documentation>Process types may have assignments indicating re-usable resource types for which occurrences may be consumed or occupied by occurrences of the process type. An example of such assignment is a concrete mixer resource type for delivering concrete.</Documentation>
 			<Rules>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="OperatesOn">
+				<DocModelRuleAttribute Name="OperatesOn">
 					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssignsToProcess">
+						<DocModelRuleEntity Name="IfcRelAssignsToProcess">
 							<Rules>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedObjects" Identification="Type">
+								<DocModelRuleAttribute Name="RelatedObjects" Identification="Type">
 									<Rules>
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcTypeResource" />
+										<DocModelRuleEntity Name="IfcTypeResource" />
 									</Rules>
 								</DocModelRuleAttribute>
 							</Rules>
@@ -197,13 +197,13 @@ The _Group Assignment_ concept establish a given object as being the group colle
 		<DocTemplateDefinition id="Product_Assignment_3idFi4hVv8Q85erufbQaJ" Name="Product Assignment" UniqueId="3idFi4hVv8Q85eru$fbQaJ" Type="IfcProduct">
 			<Documentation>Products may have assignments indicating processes that operate upon the product. An example of such assignment is a task to construct a wall.</Documentation>
 			<Rules>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ReferencedBy">
+				<DocModelRuleAttribute Name="ReferencedBy">
 					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssignsToProduct">
+						<DocModelRuleEntity Name="IfcRelAssignsToProduct">
 							<Rules>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedObjects" Identification="Type">
+								<DocModelRuleAttribute Name="RelatedObjects" Identification="Type">
 									<Rules>
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcObject" />
+										<DocModelRuleEntity Name="IfcObject" />
 									</Rules>
 								</DocModelRuleAttribute>
 							</Rules>
@@ -215,13 +215,13 @@ The _Group Assignment_ concept establish a given object as being the group colle
 		<DocTemplateDefinition id="Product_Type_Assignment_2BbKMj_Ub0FOQ2L62woS6" Name="Product Type Assignment" UniqueId="2BbKMj_Ub0FOQ2L62$woS6" Type="IfcTypeProduct">
 			<Documentation>Product types may have assignments indicating re-usable process types for which occurrences may operate on occurrences of the product type. An example of such assignment is a task type for placing concrete in slabs on grade.</Documentation>
 			<Rules>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ReferencedBy">
+				<DocModelRuleAttribute Name="ReferencedBy">
 					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssignsToProduct">
+						<DocModelRuleEntity Name="IfcRelAssignsToProduct">
 							<Rules>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedObjects" Identification="Type">
+								<DocModelRuleAttribute Name="RelatedObjects" Identification="Type">
 									<Rules>
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcTypeProcess" />
+										<DocModelRuleEntity Name="IfcTypeProcess" />
 									</Rules>
 								</DocModelRuleAttribute>
 							</Rules>
@@ -233,14 +233,14 @@ The _Group Assignment_ concept establish a given object as being the group colle
 		<DocTemplateDefinition id="Resource_Assignment_0cKfk8v5r86A7E0heIa1j_" Name="Resource Assignment" UniqueId="0cKfk8v5r86A7E0heIa1j_" Type="IfcResource">
 			<Documentation>Resources may have assignments indicating sources available to be used. An example of such assignment is a person fulfilling a carpenter labor resource.</Documentation>
 			<Rules>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ResourceOf">
+				<DocModelRuleAttribute Name="ResourceOf">
 					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssignsToResource">
+						<DocModelRuleEntity Name="IfcRelAssignsToResource">
 							<Rules>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedObjects" Identification="Type">
+								<DocModelRuleAttribute Name="RelatedObjects" Identification="Type">
 									<Rules>
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcActor" />
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProduct" />
+										<DocModelRuleEntity Name="IfcActor" />
+										<DocModelRuleEntity Name="IfcProduct" />
 									</Rules>
 								</DocModelRuleAttribute>
 							</Rules>
@@ -252,13 +252,13 @@ The _Group Assignment_ concept establish a given object as being the group colle
 		<DocTemplateDefinition id="Resource_Type_Assignment_3O6NtkIznAkhjNJ6Pupd3S" Name="Resource Type Assignment" UniqueId="3O6NtkIznAkhjNJ6Pupd3S" Type="IfcTypeResource">
 			<Documentation>Resource types may have assignments indicating re-usable product types for which occurrences may be sourced by occurrences of the resource type. An example of such assignment is a particular crane model that may be used for a crane equipment resource used for erecting steel.</Documentation>
 			<Rules>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ResourceOf">
+				<DocModelRuleAttribute Name="ResourceOf">
 					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssignsToResource">
+						<DocModelRuleEntity Name="IfcRelAssignsToResource">
 							<Rules>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedObjects" Identification="Type">
+								<DocModelRuleAttribute Name="RelatedObjects" Identification="Type">
 									<Rules>
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcTypeProduct" />
+										<DocModelRuleEntity Name="IfcTypeProduct" />
 									</Rules>
 								</DocModelRuleAttribute>
 							</Rules>

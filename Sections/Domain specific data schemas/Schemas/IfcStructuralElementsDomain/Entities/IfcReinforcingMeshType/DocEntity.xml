@@ -1,99 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcReinforcingMeshType" UniqueId="c55468d2-4e66-449a-9e37-6795ea684389" DiagramNumber="3" BaseDefinition="IfcReinforcingElementType" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcReinforcingMeshType" UniqueId="c55468d2-4e66-449a-9e37-6795ea684389" BaseDefinition="IfcReinforcingElementType" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Bewehrungsmatte - Typ" Locale="de" />
-		<DocLocalization Name="Reinforcing Mesh Type" Locale="en" />
-		<DocLocalization Name="Type de treillis" Locale="fr" />
+		<DocLocalization Locale="de" Name="Bewehrungsmatte - Typ" />
+		<DocLocalization Locale="en" Name="Reinforcing Mesh Type" />
+		<DocLocalization Locale="fr" Name="Type de treillis" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="3541.16" Y="838.08908" Width="251.87419" Height="983.86579" />
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="1d8cc34d-0aa9-4d31-a830-2eb84e3f8fff" DefinedType="IfcReinforcingMeshTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="1d8cc34d-0aa9-4d31-a830-2eb84e3f8fff" DefinedType="IfcReinforcingMeshTypeEnum">
 			<Documentation>Subtype of reinforcing mesh.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3793.0342" Y="876.97682" />
-				<DocPoint X="4285.53263" Y="876.97682" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3793.0342" Y="876.97682" Width="182" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="MeshLength" UniqueId="133716eb-0efc-4894-8d25-7843e0a0f8dc" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="MeshLength" UniqueId="133716eb-0efc-4894-8d25-7843e0a0f8dc" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>The overall length of the mesh measured in its longitudinal direction.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3793.0342" Y="964.67173" />
-				<DocPoint X="4285.48847" Y="964.67173" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3911.68377" Y="960.2891933" Width="144" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="MeshWidth" UniqueId="c19b7ecf-89bc-4ce5-88df-1fc9e119b605" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="MeshWidth" UniqueId="c19b7ecf-89bc-4ce5-88df-1fc9e119b605" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>The overall width of the mesh measured in its transversal direction.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3793.0342" Y="1055.1233" />
-				<DocPoint X="4285.45307" Y="1055.1233" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3910.03094" Y="1051.2155071" Width="130" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LongitudinalBarNominalDiameter" UniqueId="f333ae8d-a4a1-429f-914c-edb1c105285b" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LongitudinalBarNominalDiameter" UniqueId="f333ae8d-a4a1-429f-914c-edb1c105285b" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>The nominal diameter denoting the cross-section size of the longitudinal bars.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3793.0342" Y="1142.1929" />
-				<DocPoint X="4285.49767" Y="1142.1929" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3774.795216" Y="1136.0545895" Width="369" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="TransverseBarNominalDiameter" UniqueId="826e5734-3a0d-4205-9848-53f04a6c1c81" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="TransverseBarNominalDiameter" UniqueId="826e5734-3a0d-4205-9848-53f04a6c1c81" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>The nominal diameter denoting the cross-section size of the transverse bars.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3793.0342" Y="1233.2224" />
-				<DocPoint X="4285.54157" Y="1233.2224" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3770.16383" Y="1229.0675452" Width="358" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LongitudinalBarCrossSectionArea" UniqueId="f5d91a39-9728-42f4-8ec2-5154cb02bb08" DefinedType="IfcAreaMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LongitudinalBarCrossSectionArea" UniqueId="f5d91a39-9728-42f4-8ec2-5154cb02bb08" DefinedType="IfcAreaMeasure" AttributeFlags="1">
 			<Documentation>The effective cross-section area of the longitudinal bars of the mesh.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3793.0342" Y="1321.3311" />
-				<DocPoint X="4285.45143" Y="1321.3311" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3778.626155" Y="1313.4638115" Width="377" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="TransverseBarCrossSectionArea" UniqueId="39ee07ed-b714-4671-83ba-eda0b707228a" DefinedType="IfcAreaMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="TransverseBarCrossSectionArea" UniqueId="39ee07ed-b714-4671-83ba-eda0b707228a" DefinedType="IfcAreaMeasure" AttributeFlags="1">
 			<Documentation>The effective cross-section area of the transverse bars of the mesh.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3793.0342" Y="1411.1438" />
-				<DocPoint X="4285.50843" Y="1411.1438" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3787.8906137" Y="1405.6755685" Width="366" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LongitudinalBarSpacing" UniqueId="42e0b783-0ae3-4e97-8452-01815b38f23e" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LongitudinalBarSpacing" UniqueId="42e0b783-0ae3-4e97-8452-01815b38f23e" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>The spacing between the longitudinal bars.  Note: an even distribution of bars is presumed; other cases are handled by classification or property sets.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3793.0342" Y="1501.8289" />
-				<DocPoint X="4285.50797" Y="1501.8289" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3730.834129" Y="1494.3284305" Width="268" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="TransverseBarSpacing" UniqueId="ccd835af-8460-41f9-86ce-c93355671a77" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="TransverseBarSpacing" UniqueId="ccd835af-8460-41f9-86ce-c93355671a77" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>The spacing between the transverse bars.  Note: an even distribution of bars is presumed; other cases are handled by classification or property sets.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3793.0342" Y="1588.6777" />
-				<DocPoint X="4285.46167" Y="1588.6777" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3733.878842" Y="1582.5393895" Width="257" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="BendingShapeCode" UniqueId="3b0b1b32-71f7-4e23-b4a5-8003eef3d2cc" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="BendingShapeCode" UniqueId="3b0b1b32-71f7-4e23-b4a5-8003eef3d2cc" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>If this mesh type is bent rather than planar, this attribute provides a shape code per a standard like ACI 315, ISO 3766, or a similar standard.  It is presumed that a single standard for defining the mesh bending is used throughout the project and that this standard is referenced from the _IfcProject_ object through the _IfcDocumentReference_ mechanism.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3793.0342" Y="1687.9678" />
-				<DocPoint X="4285.63814" Y="1687.9678" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3793.0342" Y="1687.9678" Width="230" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="BendingParameters" UniqueId="996282cb-f70e-4996-baa7-7b247054cd4e" DefinedType="IfcBendingParameterSelect" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="BendingParameters" UniqueId="996282cb-f70e-4996-baa7-7b247054cd4e" DefinedType="IfcBendingParameterSelect" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>If this mesh type is bent rather than planar, this attribute provides bending shape parameters. Their meaning is defined by the bending shape code and the respective standard.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3793.0342" Y="1769.1931" />
-				<DocPoint X="4285.58961" Y="1769.1931" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3793.0342" Y="1769.1931" Width="302" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

@@ -1,72 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDoor" Name="IfcDoor" UniqueId="70b10571-8732-44f7-a5b2-3fdb229d547b" DiagramNumber="4" BaseDefinition="IfcBuildingElement" EntityFlags="173">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDoor" Name="IfcDoor" UniqueId="70b10571-8732-44f7-a5b2-3fdb229d547b" BaseDefinition="IfcBuildingElement" EntityFlags="173">
 	<Localization>
-		<DocLocalization Name="Tür" Locale="de" />
-		<DocLocalization Name="Door" Locale="en" />
-		<DocLocalization Name="Porte" Locale="fr" />
+		<DocLocalization Locale="de" Name="Tür" />
+		<DocLocalization Locale="en" Name="Door" />
+		<DocLocalization Locale="fr" Name="Porte" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="4829.5166015625" Y="157.636672973633" Width="279.93333" Height="745.333343505859" />
 	<Subtypes>
 		<DocSubtype UniqueId="5078ba5e-37ce-44ee-a144-570e7a3e93f7" DefinedType="IfcDoorStandardCase" />
 		<DocSubtype UniqueId="5078ba5e-37ce-44ee-a144-570e7a3e93f7" DefinedType="IfcDoorStandardCase" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="OverallHeight" UniqueId="82f1996a-2267-42e4-9a5b-d4f2a6e4f8e8" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="OverallHeight" UniqueId="82f1996a-2267-42e4-9a5b-d4f2a6e4f8e8" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>Overall measure of the height, it reflects the Z Dimension of a bounding box, enclosing the ~~body of the~~ door opening. If omitted, the _OverallHeight_ should be taken from the geometric representation of the _IfcOpening_ in which the door is inserted. 
   
 &gt; NOTE&amp;nbsp; The body of the door might be taller then the door opening (e.g. in cases where the door lining includes a casing). In these cases the _OverallHeight_ shall still be given as the door opening height, and not as the total height of the door lining.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5109.4499315625" Y="666.593302408854" />
-				<DocPoint X="5109.4499315625" Y="666.593302408854" />
-				<DocPoint X="5375.2130225" Y="666.593302408854" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5109.4499315625" Y="646.593302408854" Width="156" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="OverallWidth" UniqueId="646a9c81-0757-404c-9c64-84e003fede0a" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="OverallWidth" UniqueId="646a9c81-0757-404c-9c64-84e003fede0a" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>Overall measure of the width, it reflects the X Dimension of a bounding box, enclosing the ~~body of the~~ door opening. If omitted, the _OverallWidth_ should be taken from the geometric representation of the _IfcOpening_ in which the door is inserted. 
   
 &gt; NOTE&amp;nbsp; The body of the door might be wider then the door opening (e.g. in cases where the door lining includes a casing). In these cases the _OverallWidth_ shall still be given as the door opening width, and not as the total width of the door lining.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5109.4499315625" Y="565.161304117838" />
-				<DocPoint X="5109.4499315625" Y="565.161304117838" />
-				<DocPoint X="5375.2130225" Y="565.161304117838" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5109.4499315625" Y="545.161304117838" Width="147" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="PredefinedType" UniqueId="a4378e60-7e89-4d23-840a-b63a2e39ea45" DefinedType="IfcDoorTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="a4378e60-7e89-4d23-840a-b63a2e39ea45" DefinedType="IfcDoorTypeEnum" AttributeFlags="1">
 			<Documentation>Predefined generic type for a door that is specified in an enumeration. There may be a property set given specificly for the predefined types.
 &gt; NOTE&amp;nbsp; The _PredefinedType_ shall only be used, if no _IfcDoorType_ is assigned, providing its own _IfcDoorType.PredefinedType_.
 
 { .change-ifc2x4}
 &gt; IFC4 CHANGE The attribute has been added at the end of the entity definition.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5109.4499315625" Y="203.966644453776" />
-				<DocPoint X="5109.4499315625" Y="203.966644453776" />
-				<DocPoint X="5439.6796875" Y="203.966644453776" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5109.4499315625" Y="183.966644453776" Width="182" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="OperationType" UniqueId="6bdfd4d0-3ffa-4da5-98bd-95b065f45793" DefinedType="IfcDoorTypeOperationEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="OperationType" UniqueId="6bdfd4d0-3ffa-4da5-98bd-95b065f45793" DefinedType="IfcDoorTypeOperationEnum" AttributeFlags="1">
 			<Documentation>Type defining the general layout and operation of the door type in terms of the partitioning of panels and panel operations. 
 &gt; NOTE&amp;nbsp; The _OperationType_ shall only be used, if no type object _IfcDoorType_ is assigned, providing its own _IfcDoorType.OperationType_.
 
 { .change-ifc2x4}
 &gt; IFC4 CHANGE The attribute has been added at the end of the entity definition.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5109.4499315625" Y="289.048642744792" />
-				<DocPoint X="5109.4499315625" Y="289.048642744792" />
-				<DocPoint X="5367.8796875" Y="289.048642744792" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5109.4499315625" Y="269.048642744792" Width="171" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="UserDefinedOperationType" UniqueId="5c07c222-8576-4936-ab56-4f4b1a9eb05a" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="UserDefinedOperationType" UniqueId="5c07c222-8576-4936-ab56-4f4b1a9eb05a" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>Designator for the user defined operation type, shall only be provided, if the value of _OperationType_ is set to USERDEFINED.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5109.4499315625" Y="468.729305826823" />
-				<DocPoint X="5109.4499315625" Y="468.729305826823" />
-				<DocPoint X="5489.1796875" Y="468.729305826823" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5109.4499315625" Y="448.729305826823" Width="309" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
