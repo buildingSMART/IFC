@@ -1,0 +1,907 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Object Association" UniqueId="1BE5HakPf2lA5weAP7eQjR" Type="IfcObjectDefinition">
+	<Templates>
+		<DocTemplateDefinition id="Approval_Association_1ILXQGe50dQe7saXJ0YIU" Name="Approval Association" UniqueId="1ILX$QGe50dQe7saXJ0YIU" Type="IfcObjectDefinition">
+			<Documentation>The concept _Approval Association_ describes how object or object types can have associated approvals indicating who is required to approve the data, the status of whether it has been approved, and the date/time of such approval. Approvals may require multiple parties fulfilling various roles.</Documentation>
+			<Rules>
+				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasAssociations">
+					<Rules>
+						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssociatesApproval">
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingApproval">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcApproval">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="TimeOfApproval">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDateTime" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Status">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocModelRuleEntity>
+					</Rules>
+				</DocModelRuleAttribute>
+			</Rules>
+		</DocTemplateDefinition>
+		<DocTemplateDefinition id="Classification_Association_1A8aO9PNXCTQFYl_eRbxo" Name="Classification Association" UniqueId="1A8aO9PNXCTQ$FYl_eRbxo" Type="IfcObjectDefinition">
+			<Documentation>The concept _Classification Association_ describes how objects and object types can be further described by associating references to external sources of information. The source of information can be:
+
+* a classification system;
+* a dictionary server;
+* any external catalogue that classifies the object further;
+* any service that combine the above features.
+
+An individual item within the external source of information can be selected. It then applies the inherent meaning of the item to the _IfcObject_ or _IfcTypeObject_.
+
+&gt; NOTE&amp;nbsp; The classification system or dictionary server that is used within the project itself can also be indicated at the level of _IfcProject_ or _IfcProjectLibrary_ either as an external source, or copied with all relevant classification items into the project data. Use the concept _Project Classification Information_ to utilize this functionality.
+
+The main attributes to be provided for a _Classification Association_ are:
+
+* _Identification_: holds the key provided for a specific references to classification items (or tables)
+* _Name_: allows for a human interpretable designation of a classification notation</Documentation>
+			<Localization>
+				<DocLocalization Locale="tt">
+					<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+	&lt;TemplateRule Parameters=&quot;Identification[Value]=&apos;351.4&apos; &quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;Name[Value]=&apos;Balken&apos; &quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;ClassificationName[Value]=&apos;DIN 276&apos; &quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+				</DocLocalization>
+			</Localization>
+			<Rules>
+				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasAssociations">
+					<Rules>
+						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssociatesClassification">
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingClassification">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcClassificationReference">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Identification" Identification="Identification">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="Name">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ReferencedSource">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcClassification">
+															<Rules>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Source" Identification="ClassificationSource">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="ClassificationName">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ReferenceTokens" Identification="ClassificationTokens">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Edition">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Location">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcURIReference" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="EditionDate">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDate" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Sort">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Location">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcURIReference" />
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocModelRuleEntity>
+					</Rules>
+				</DocModelRuleAttribute>
+			</Rules>
+		</DocTemplateDefinition>
+		<DocTemplateDefinition id="Constraint_Association_30YoPCzyP7dwzNMHS4mwe" Name="Constraint Association" UniqueId="30YoPCzyP7dwz$NMHS4mwe" Type="IfcObjectDefinition">
+			<Documentation>The concept _Constraint Association_ describes how object or object types may have associated constraints indicating a qualitative objective or a quantitative metric to be met.
+
+Constraints based on metrics are measurable, such that the status of a metric being valid is computer-interpretable. Metric constraints are based on simple conditional logic such as greater than a particular value or included within a specified list or table. Constraints may be combine multiple metrics using boolean logic such as AND, OR, XOR, or NOT.</Documentation>
+			<Rules>
+				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasAssociations">
+					<Rules>
+						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssociatesConstraint">
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingConstraint">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcObjective">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="BenchmarkValues">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMetric">
+															<Rules>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="DataValue" Identification="DataValue">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMetricValueSelect" />
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAppliedValue">
+																			<Rules>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ArithmeticOperator">
+																					<Rules>
+																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcArithmeticOperatorEnum" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Components">
+																					<Rules>
+																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAppliedValue" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="AppliedValue">
+																					<Rules>
+																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLengthMeasure" />
+																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcReal" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																			</Rules>
+																		</DocModelRuleEntity>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcTable">
+																			<Rules>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Rows">
+																					<Rules>
+																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcTableRow" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Columns">
+																					<Rules>
+																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcTableColumn">
+																							<Rules>
+																								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Identifier">
+																									<Rules>
+																										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
+																									</Rules>
+																								</DocModelRuleAttribute>
+																								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name">
+																									<Rules>
+																										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																									</Rules>
+																								</DocModelRuleAttribute>
+																								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+																									<Rules>
+																										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+																									</Rules>
+																								</DocModelRuleAttribute>
+																								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ReferencePath">
+																									<Rules>
+																										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcReference" />
+																									</Rules>
+																								</DocModelRuleAttribute>
+																							</Rules>
+																						</DocModelRuleEntity>
+																					</Rules>
+																				</DocModelRuleAttribute>
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Benchmark">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcBenchmarkEnum" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ReferencePath">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcReference">
+																			<Rules>
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="TypeIdentifier" />
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="AttributeIdentifier" Identification="Attribute1" />
+																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="InnerReference" />
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+																	<Rules>
+																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ObjectiveQualifier">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcObjectiveEnum" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="LogicalAggregator">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLogicalOperatorEnum" />
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocModelRuleEntity>
+					</Rules>
+				</DocModelRuleAttribute>
+			</Rules>
+		</DocTemplateDefinition>
+		<DocTemplateDefinition id="Document_Association_1zhQwS02P4qwtdceGukyB" Name="Document Association" UniqueId="1zhQwS02P4qwtdceG$ukyB" Type="IfcObjectDefinition">
+			<Documentation>The concept _Document Association_ describes how objects or object types can have associated documents indicating external files. Documents may be referenced in their entirety such as to capture product brochures, data sheets, multimedia content, or thumbnail images. Contents within documents may be referenced from any object, and may be used to synchronize information in other files such as work schedules for project management applications.
+
+Typical document meta data, such as issue date, editor, and similar, can be captured with the association, the document content however remains with the external files.</Documentation>
+			<Rules>
+				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasAssociations">
+					<Rules>
+						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssociatesDocument">
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="Name">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingDocument">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDocumentReference">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Location">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcURIReference" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Identification">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocModelRuleEntity>
+					</Rules>
+				</DocModelRuleAttribute>
+			</Rules>
+		</DocTemplateDefinition>
+		<DocTemplateDefinition id="Library_Association_0zTXy98w9C0Ol5XsAgahmZ" Name="Library Association" UniqueId="0zTXy98w9C0Ol5XsAgahmZ" Type="IfcObjectDefinition">
+			<Documentation>The concept _Library Association_ describes how object and object types can have associated library entities indicating the source of data such as from a model server or product library, or simply enriching the data with more details. Libraries may be referenced in their entirety from projects or project libraries indicating the master source and version of data. Contents within libraries may be referenced from any object, type object, property, and some resource schema entities within a project or project library.</Documentation>
+			<Rules>
+				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasAssociations">
+					<Rules>
+						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssociatesLibrary">
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingLibrary" Identification="RelatingLibrary">
+									<Rules>
+										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLibraryReference">
+											<Rules>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Location">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcURIReference" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Identification">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Language">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLanguageId" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ReferencedLibrary">
+													<Rules>
+														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLibraryInformation" />
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocModelRuleEntity>
+					</Rules>
+				</DocModelRuleAttribute>
+			</Rules>
+		</DocTemplateDefinition>
+		<DocTemplateDefinition Name="Material Association" UniqueId="3gAcE_$Gr2ROOxKiEN3AM5" Type="IfcObjectDefinition">
+			<Documentation>Any product or product type can have associated materials indicating the physical composition of an object.
+
+&gt; EXAMPLE&amp;nbsp; An object can be comprised of a single material or a set of materials with a particular layout. Several examples include: &gt; * a slab may have an associated layer of concrete; 
+&gt; * a beam may have an associated I-Shape profile of steel;
+&gt; * a door may have associated constituents for framing and glazing;
+&gt; * a port may have an associated profile and/or material flowing through it such as hot water.
+
+Materials can have representations for surface styles indicating colors, textures, and light reflectance for 3D rendering. Materials can have representations for fill styles indicating colors, tiles, and hatch patterns for 2D rendering. Materials can have properties such as density, elasticity, thermal resistance, and others as defined in this specification. Materials can also be classified according to a referenced industry standard.
+
+&gt; EXAMPLE&amp;nbsp; Material information can also be given at object type, defining the common material data for all occurrences of the same type. It is then accessible by the inverse _IsTypedBy_ relationship pointing via _HasAssociations_ and via _IfcRelAssociatesMaterial.RelatingMaterial_ to the material information. If both are given, then the material directly assigned to object occurrence overrides the material assigned to object type.</Documentation>
+			<Rules>
+				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasAssociations">
+					<Rules>
+						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssociatesMaterial">
+							<Rules>
+								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingMaterial" />
+							</Rules>
+						</DocModelRuleEntity>
+					</Rules>
+				</DocModelRuleAttribute>
+			</Rules>
+			<Templates>
+				<DocTemplateDefinition id="Material_Constituent_Set_3PRtzzvq9Dk9jT6ADgRVY4" Name="Material Constituent Set" UniqueId="3PRtzzvq9Dk9jT6ADgRVY4" Type="IfcObjectDefinition">
+					<Documentation>Material constituents are associated with products or product types where materials are placed arbitrarily (unlike 1D material profiles or 2D material layers). The mapping of materials to geometry may be accomplished using _IfcShapeAspect_.</Documentation>
+					<Localization>
+						<DocLocalization Locale="tt">
+							<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+	&lt;TemplateRule Parameters=&quot;MaterialName[Value]=&apos;PVC&apos; AND ConstituentName[Value]=&apos;Beschichtung&apos; &quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+						</DocLocalization>
+					</Localization>
+					<Rules>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasAssociations">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssociatesMaterial">
+									<Rules>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingMaterial">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMaterialConstituentSet">
+													<Rules>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="MaterialConstituents">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMaterialConstituent">
+																	<Rules>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="ConstituentName">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Material">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMaterial">
+																					<References>
+																						<DocTemplateDefinition id="Material_1PXhOQjvz4uAadztqSAJX" Name="Material" UniqueId="5986b61a-b79f-44e0-a93f-9fddf470a4e1" Type="IfcMaterial">
+																							<Rules>
+																								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="MaterialName">
+																									<Rules>
+																										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																									</Rules>
+																								</DocModelRuleAttribute>
+																								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+																									<Rules>
+																										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+																									</Rules>
+																								</DocModelRuleAttribute>
+																								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Category">
+																									<Rules>
+																										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																									</Rules>
+																								</DocModelRuleAttribute>
+																							</Rules>
+																						</DocTemplateDefinition>
+																					</References>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Category">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Fraction">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcNormalisedRatioMeasure" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocTemplateDefinition>
+				<DocTemplateDefinition id="Material_Layer_Set_Usage_1jNxXlFor9_vKe1tXLtSn7" Name="Material Layer Set Usage" UniqueId="1jNxXlFor9_vKe1tXLtSn7" Type="IfcProduct">
+					<Documentation>Material layer set usage defines layout at occurrences to indicate a direction and offset from the &apos;Axis&apos; reference curve, and a reference extent such as for a default wall height.
+
+The concept of _Material Layer Set Usage_ is only applicable to certain product subtypes, refered to as &quot;Standard case&quot; elements. It supports a certain range of parametric definitions for those element configurations.
+
+The material of those standard case elements is defined by _IfcMaterialLayerSetUsage_ and is attached by the _IfcRelAssociatesMaterial_._RelatingMaterial_. It is accessible by the inverse _HasAssociations_ relationship. Standard case elements with multiple layers can be represented by refering to several _IfcMaterialLayer_&apos;s within the _IfcMaterialLayerSet_ that is referenced from the _IfcMaterialLayerUsage_.</Documentation>
+					<Rules>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasAssociations">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssociatesMaterial">
+									<Rules>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingMaterial">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMaterialLayerSetUsage">
+													<Rules>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ForLayerSet">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMaterialLayerSet">
+																	<Rules>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="MaterialLayers">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMaterialLayer">
+																					<Rules>
+																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="Name" />
+																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Material">
+																							<Rules>
+																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMaterial">
+																									<Rules>
+																										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasRepresentation">
+																											<Rules>
+																												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMaterialDefinitionRepresentation">
+																													<References>
+																														<DocTemplateDefinition id="Material_Surface_Color_Style_1kJbqswZn6rQIGcQljECN" Name="Material Surface Color Style" UniqueId="6e4e5d36-ea3c-46d5-a490-99abffb4e317" Type="IfcMaterialDefinitionRepresentation" />
+																													</References>
+																												</DocModelRuleEntity>
+																											</Rules>
+																										</DocModelRuleAttribute>
+																									</Rules>
+																								</DocModelRuleEntity>
+																							</Rules>
+																						</DocModelRuleAttribute>
+																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="LayerThickness">
+																							<Rules>
+																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcNonNegativeLengthMeasure" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																					</Rules>
+																				</DocModelRuleEntity>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMaterialLayerWithOffsets">
+																					<Rules>
+																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="OffsetDirection">
+																							<Rules>
+																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLayerSetDirectionEnum" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="OffsetValues">
+																							<Rules>
+																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLengthMeasure" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																					</Rules>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="LayerSetDirection">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLayerSetDirectionEnum" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="DirectionSense">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDirectionSenseEnum" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="OffsetFromReferenceLine">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLengthMeasure" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ReferenceExtent">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveLengthMeasure" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocTemplateDefinition>
+				<DocTemplateDefinition id="Material_Layer_Set_3VjREfKED6ueKO7mFdpzY6" Name="Material Layer Set" UniqueId="3VjREfKED6ueKO7mFdpzY6" Type="IfcObjectDefinition">
+					<Documentation>Material layer sets are associated with products or product types to indicate a parametric specification of layers having specified thickness filling a boundary defined on the product, or the occurrences of the product type. Examples of such products or product types are slabs, walls, and plates.</Documentation>
+					<Localization>
+						<DocLocalization Locale="tt">
+							<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+	&lt;TemplateRule Parameters=&quot;MaterialName[Value]=&apos;Wandaufbau&apos; AND HasLayer[Size]=3&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;LayerName[Value]=&apos;Schicht 1&apos; AND LayerThickness[Value]=0.10 AND AND Category[Value]=&apos;Insulation&apos;&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;LayerName[Value]=&apos;Schicht 2&apos; AND LayerThickness[Value]=0.24 AND AND Category[Value]=&apos;LoadBearing&apos;&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;LayerName[Value]=&apos;Schicht 3&apos; AND LayerThickness[Value]=0.03 AND AND Category[Value]=&apos;Covering&apos;&quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+						</DocLocalization>
+					</Localization>
+					<Rules>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasAssociations">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssociatesMaterial">
+									<Rules>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingMaterial">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMaterialLayerSet">
+													<Rules>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="MaterialLayers" Identification="HasLayer">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMaterialLayer">
+																	<Rules>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="LayerName">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Material">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMaterial">
+																					<References>
+																						<DocTemplateDefinition xsi:nil="true" href="Material_1PXhOQjvz4uAadztqSAJX" />
+																					</References>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="LayerThickness" Identification="LayerThickness">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcNonNegativeLengthMeasure" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsVentilated" Identification="AirGap">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLogical" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Category" Identification="Category">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Priority">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcNormalisedRatioMeasure" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="LayerSetName">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocTemplateDefinition>
+				<DocTemplateDefinition id="Material_Profile_Set_Usage_1ge1GfjMPBDeTQCM88YfWn" Name="Material Profile Set Usage" UniqueId="1ge1GfjMPBDeTQCM88YfWn" Type="IfcProduct">
+					<Documentation>Material profile set usage defines layout at occurrences to indicate the offset from the &apos;Axis&apos; reference curve according to cardinal point, and a reference extent such as for a default column height.
+
+The concept of _Material Profile Set Usage_ is only applicable to certain product subtypes, refered to as &quot;standard case&quot; elements. It supports a certain range of parametric definitions for those element configurations.
+
+The material of those standard case elements is defined by _IfcMaterialProfileSetUsage_ and is attached by the _IfcRelAssociatesMaterial_._RelatingMaterial_. It is accessible by the inverse _HasAssociations_ relationship. Standard case elements with composite profiles can be represented by refering to several _IfcMaterialProfile_&apos;s within the _IfcMaterialProfileSet_ that is referenced from the _IfcMaterialProfileSetUsage_.</Documentation>
+					<Rules>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasAssociations">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssociatesMaterial">
+									<Rules>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingMaterial">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMaterialProfileSetUsage">
+													<Rules>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ForProfileSet">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMaterialProfileSet">
+																	<Rules>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="MaterialProfiles">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMaterialProfile">
+																					<Rules>
+																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="Name" />
+																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Material">
+																							<Rules>
+																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMaterial">
+																									<Rules>
+																										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasRepresentation">
+																											<Rules>
+																												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMaterialDefinitionRepresentation">
+																													<References>
+																														<DocTemplateDefinition xsi:nil="true" href="Material_Surface_Color_Style_1kJbqswZn6rQIGcQljECN" />
+																													</References>
+																												</DocModelRuleEntity>
+																											</Rules>
+																										</DocModelRuleAttribute>
+																									</Rules>
+																								</DocModelRuleEntity>
+																							</Rules>
+																						</DocModelRuleAttribute>
+																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Profile">
+																							<Rules>
+																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProfileDef" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																					</Rules>
+																				</DocModelRuleEntity>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMaterialProfileWithOffsets">
+																					<Rules>
+																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="OffsetValues">
+																							<Rules>
+																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLengthMeasure" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																					</Rules>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="CardinalPoint">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCardinalPointReference" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ReferenceExtent">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPositiveLengthMeasure" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMaterialProfileSetUsageTapering">
+													<Rules>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ForProfileEndSet">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMaterialProfileSet" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="CardinalEndPoint">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCardinalPointReference" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocTemplateDefinition>
+				<DocTemplateDefinition id="Material_Profile_Set_12Ui1LAd52mgGZSMYVfrnP" Name="Material Profile Set" UniqueId="12Ui1LAd52mgGZSMYVfrnP" Type="IfcObjectDefinition">
+					<Documentation>Material profile sets are associated with products or product types where materials are placed in cross-sections of specified dimensions following a path defined at occurrences of the type. Examples of such products are beams, columns, members, reinforcing, footings, piles, pipe segments, duct segments, and cable segments.
+
+&gt; EXAMPLE&amp;nbsp; Material profile sets can be provided at the _IfcColumnType_, defining the common material information for all occurrences of the same column type. It is then accessible by the inverse _IsTypedBy_ relationship at _IfcColumn_ pointing to _IfcColumnType_ having the _HasAssociations_ inverse relationship to _IfcRelAssociatesMaterial_ with _RelatingMaterial_ refering to the _IfcMaterialProfileSet_&gt;. If an individual material association is provide at the _IfcColumn_ and the _IfcColumnType_, then the material directly assigned to _IfcColumn_ overrides the material assigned to _IfcColumnType_.</Documentation>
+					<Localization>
+						<DocLocalization Locale="tt">
+							<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+ &lt;TemplateRule Parameters=&quot;MaterialName[Value]=&apos;stainless steel&apos; AND ProfileName[Value]=&apos;circle hollow profile&apos;&quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+						</DocLocalization>
+					</Localization>
+					<Rules>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasAssociations">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssociatesMaterial">
+									<Rules>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingMaterial">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMaterialProfileSet">
+													<Rules>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="MaterialProfiles" Identification="HasProfiles">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMaterialProfile">
+																	<Rules>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="1" Name="Material">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMaterial">
+																					<References>
+																						<DocTemplateDefinition xsi:nil="true" href="Material_1PXhOQjvz4uAadztqSAJX" />
+																					</References>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="Profile">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProfileDef">
+																					<Rules>
+																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ProfileType">
+																							<Rules>
+																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProfileTypeEnum" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ProfileName" Identification="ProfileName">
+																							<Rules>
+																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																					</Rules>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Category" Identification="Category">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Priority">
+																			<Rules>
+																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcInteger" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+															<Rules>
+																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocTemplateDefinition>
+				<DocTemplateDefinition id="Material_Single_1VEQWKHA1Fiut6tQe5OFnK" Name="Material Single" UniqueId="1VEQWKHA1Fiut6tQe5OFnK" Type="IfcObjectDefinition">
+					<Documentation>Materials are directly associated with products and product types to indicate a uniform material for the entire object.</Documentation>
+					<Localization>
+						<DocLocalization Locale="tt">
+							<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+ &lt;TemplateRule Parameters=&quot;MaterialName[Value]=&apos;steel&apos;&quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+						</DocLocalization>
+					</Localization>
+					<Rules>
+						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasAssociations">
+							<Rules>
+								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAssociatesMaterial">
+									<Rules>
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingMaterial">
+											<Rules>
+												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMaterial">
+													<References>
+														<DocTemplateDefinition xsi:nil="true" href="Material_1PXhOQjvz4uAadztqSAJX" />
+													</References>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocTemplateDefinition>
+			</Templates>
+		</DocTemplateDefinition>
+	</Templates>
+</DocTemplateDefinition>
+

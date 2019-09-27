@@ -10,5 +10,5 @@ The _IfcMaterialLayer_ may have a material layer name which may differ from the 
 
 > HISTORY&nbsp; New entity in IFC1.5
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The attributes _Name_, _Description_, _Category_, _Priority_ have been added at the end of attribute list. Data type of _LayerThickness_ relaxed to _IfcNonNegativeLengthMeasure_.

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcVibrationDamper" Name="IfcVibrationDamper" UniqueId="6c0c8721-414f-46e8-beb7-5776418828d6" DiagramNumber="1" BaseDefinition="IfcElementComponent" EntityFlags="32">
+	<DiagramRectangle xsi:type="DocRectangle" X="152" Y="1093.33333333333" Width="400" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="41f808cc-85d2-43a0-b004-7784d0257324" DefinedType="IfcVibrationDamperTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<DiagramLine>
+				<DocPoint X="552" Y="1122" />
+				<DocPoint X="0" Y="1122" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="552" Y="1122" Width="400" Height="50" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="60775036-a4b1-4b63-ab74-5a5529eb1d82">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcVibrationDamperType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+(PredefinedType &lt;&gt; IfcVibrationDamperTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcVibrationDamperTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="b7fdda72-ad69-4f90-b446-be48ea993afd">
+			<Documentation>If this occurrence is defined by a type object, the latter has to be an _IfcVibrationDamperType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+(&apos;IFCSHAREDCOMPONENTELEMENTS.IFCVIBRATIONDAMPERTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

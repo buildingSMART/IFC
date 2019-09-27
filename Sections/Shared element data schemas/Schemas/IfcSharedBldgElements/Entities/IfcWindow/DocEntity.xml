@@ -8,7 +8,7 @@
 	<DiagramRectangle xsi:type="DocRectangle" X="4829.5166015625" Y="1287.55338541667" Width="279.93333" Height="745.333343505859" />
 	<Subtypes>
 		<DocSubtype UniqueId="16d8db66-d8ad-437b-b95e-2c49eb5db9ac" DefinedType="IfcWindowStandardCase" />
-		<DocSubtype UniqueId="16d8db66-d8ad-437b-b95e-2c49eb5db9ac" DefinedType="IfcWindowStandardCase" />
+		<DocSubtype UniqueId="9fcdce23-6665-447a-8d11-a6d1749974f7" DefinedType="IfcWindowStandardCase" />
 	</Subtypes>
 	<Attributes>
 		<DocAttribute Name="OverallHeight" UniqueId="4eab6bd3-dcea-4c3d-bb3c-069664b3bb8e" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
@@ -37,7 +37,7 @@
 			<Documentation>Predefined generic type for a window that is specified in an enumeration. There may be a property set given specificly for the predefined types.
 &gt; NOTE&amp;nbsp; The _PredefinedType_ shall only be used, if no _IfcWindowType_ is assigned, providing its own _IfcWindowType.PredefinedType_.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE The attribute has been added at the end of the entity definition.</Documentation>
 			<DiagramLine>
 				<DocPoint X="5109.4499315625" Y="1350.46655290104" />
@@ -50,7 +50,7 @@
 			<Documentation>Type defining the general layout of the window in terms of the partitioning of panels. 
 &gt; NOTE&amp;nbsp; The _PartitioningType_ shall only be used, if no type object _IfcWindowType_ is assigned, providing its own _IfcWindowType.PartitioningType_.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE The attribute has been added at the end of the entity definition.</Documentation>
 			<DiagramLine>
 				<DocPoint X="5109.4499315625" Y="1433.64057796615" />
@@ -77,14 +77,5 @@
 OR (&apos;IFCSHAREDBLDGELEMENTS.IFCWINDOWTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
 		</DocWhereRule>
 	</WhereRules>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="5031.1832665625" Y="2032.88672892253" />
-				<DocPoint X="5031.1832665625" Y="2032.88672892253" />
-				<DocPoint X="5031.1832665625" Y="2050.39978027344" />
-			</DiagramLine>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

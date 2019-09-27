@@ -7,5 +7,5 @@ One or several instances of subtypes of _IfcReinforcingElement_ should always be
 
 > HISTORY&nbsp; New entity in IFC2x2
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Attribute _SteelGrade_ deprecated.

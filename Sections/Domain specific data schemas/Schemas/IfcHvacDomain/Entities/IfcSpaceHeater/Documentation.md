@@ -7,5 +7,5 @@ _IfcUnitaryEquipment_ should be used for packaged units supporting a combination
 { .note}
 > 
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Electric heaters formerly defined by _IfcElectricHeaterType_ are now represented by this entity with _PredefinedType_ set to _CONVECTOR_ and _Pset_SpaceHeaterCommon_._HeatTransferDimension_ reflecting _IfcElectricHeaterTypeEnum_ as follows: _ELECTRICPOINTHEATER_ = _POINT_, _ELECTRICCABLEHEATER_ = _CURVE_, _ELECTRICMATHEATER_ = _SURFACE_.

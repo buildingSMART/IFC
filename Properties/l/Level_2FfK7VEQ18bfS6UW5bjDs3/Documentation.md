@@ -1,1 +1,0 @@
-﻿The level of the tank as a fraction of its available capacity.

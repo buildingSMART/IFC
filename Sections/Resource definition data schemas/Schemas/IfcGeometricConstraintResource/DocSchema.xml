@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGeometricConstraintResource" UniqueId="d786ca33-c223-4ef7-b437-1ce5d2ee9d02" DiagramPagesHorz="3" DiagramPagesVert="1">
+<DocSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGeometricConstraintResource" UniqueId="d786ca33-c223-4ef7-b437-1ce5d2ee9d02" DiagramPagesHorz="4" DiagramPagesVert="1">
 	<SchemaRefs>
 		<DocSchemaRef Name="IFCGEOMETRICMODELRESOURCE" UniqueId="2f43db2c-a30c-45fb-88db-58cbde2b812c">
 			<Definitions>
@@ -17,13 +17,22 @@
 					<DiagramRectangle xsi:type="DocRectangle" X="1867.3667" Y="830.26666" Width="570.8" Height="133.33333" />
 				</DocDefinitionRef>
 				<DocDefinitionRef Name="IfcBoundedCurve" UniqueId="cfc53dd8-6bf6-483b-b478-90a2ffaab399" DiagramNumber="2">
-					<DiagramRectangle xsi:type="DocRectangle" X="1867.3333" Y="1386.3334" Width="570.86667" Height="123.93333" />
+					<DiagramRectangle xsi:type="DocRectangle" X="1864.66662597656" Y="1386.33337402344" Width="570.86667" Height="123.93333" />
+					<Tree>
+						<DocLine>
+							<DiagramLine>
+								<DocPoint X="2150.19978841146" Y="1510.26670402344" />
+								<DocPoint X="2150.19978841146" Y="1510.26670402344" />
+								<DocPoint X="2150.19978841146" Y="1544.93334960938" />
+							</DiagramLine>
+						</DocLine>
+					</Tree>
 				</DocDefinitionRef>
 				<DocDefinitionRef Name="IfcSurface" UniqueId="a2ba2c9e-088e-43cd-9e50-c10115070ba7" DiagramNumber="2">
 					<DiagramRectangle xsi:type="DocRectangle" X="1867.2666" Y="1942.3667" Width="570.86667" Height="133.26667" />
 				</DocDefinitionRef>
 				<DocDefinitionRef Name="IfcCurve" UniqueId="9190a2d9-387d-4b3c-a99d-9e82e082d4a4" DiagramNumber="1">
-					<DiagramRectangle xsi:type="DocRectangle" X="1044.6709" Y="1810.3167" Width="479.63333" Height="187.5" />
+					<DiagramRectangle xsi:type="DocRectangle" X="1060.6708984375" Y="1860.98327636719" Width="479.63333" Height="187.5" />
 				</DocDefinitionRef>
 				<DocDefinitionRef id="IfcAxis2Placement_3kIXCBY8z5SwC6_VAxRPpy" Name="IfcAxis2Placement" UniqueId="ee4a130b-888f-4573-a306-f9f2bb6d9cfc" DiagramNumber="3">
 					<DiagramRectangle xsi:type="DocRectangle" X="3519.4667" Y="88.533337" Width="446.36667" Height="227.5" />
@@ -37,25 +46,86 @@
 				<DocDefinitionRef Name="IfcDirection" UniqueId="c541a339-f3e0-4e71-a666-0f22078586be" DiagramNumber="1">
 					<DiagramRectangle xsi:type="DocRectangle" X="1044.6667" Y="1003.0333" Width="500.86667" Height="228" />
 				</DocDefinitionRef>
+				<DocDefinitionRef Name="IfcGeometricRepresentationItem" UniqueId="19f156ae-c79d-4729-b9d4-15a0c8f00803" DiagramNumber="4">
+					<DiagramRectangle xsi:type="DocRectangle" X="5954.66666666667" Y="77.3333536783854" Width="400" Height="100" />
+					<Tree>
+						<DocLine>
+							<DiagramLine>
+								<DocPoint X="6314.66666666667" Y="177.333353678385" />
+								<DocPoint X="6314.66666666667" Y="177.333353678385" />
+								<DocPoint X="6314.66666666667" Y="256" />
+							</DiagramLine>
+							<Tree>
+								<DocLine>
+									<DiagramLine>
+										<DocPoint X="6314.66666666667" Y="256" />
+										<DocPoint X="6314.66666666667" Y="292.666669209798" />
+										<DocPoint X="5266.666015625" Y="292.666669209798" />
+									</DiagramLine>
+								</DocLine>
+								<DocLine>
+									<DiagramLine>
+										<DocPoint X="6314.66666666667" Y="256" />
+										<DocPoint X="6314.66666666667" Y="1055.33335367839" />
+										<DocPoint X="5653.33299763997" Y="1055.33335367839" />
+									</DiagramLine>
+								</DocLine>
+								<DocLine>
+									<DiagramLine>
+										<DocPoint X="6314.66666666667" Y="256" />
+										<DocPoint X="6314.66666666667" Y="713.999979654948" />
+										<DocPoint X="5754.66633097331" Y="713.999979654948" />
+									</DiagramLine>
+								</DocLine>
+							</Tree>
+						</DocLine>
+					</Tree>
+				</DocDefinitionRef>
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IfcGeometryResource" UniqueId="9382f8f1-67ba-4617-84f2-c5577000a413">
+			<Definitions>
+				<DocDefinitionRef Name="IfcCurveSegment2D" UniqueId="114b9ba3-3484-4148-abbd-3b27fc32bd34" DiagramNumber="4">
+					<DiagramRectangle xsi:type="DocRectangle" X="5835.99951171875" Y="520" Width="400" Height="103.33332824707" />
+				</DocDefinitionRef>
+				<DocDefinitionRef Name="IfcDistanceExpression" UniqueId="05963569-e241-4f25-9ded-ab3b11b3c43e" DiagramNumber="1">
+					<DiagramRectangle xsi:type="DocRectangle" X="25.3333028157552" Y="223.999974568685" Width="400" Height="112" />
+				</DocDefinitionRef>
+				<DocDefinitionRef Name="IfcOrientationExpression" UniqueId="6ad239aa-0289-478a-aff9-7d05d4d00257" DiagramNumber="1">
+					<DiagramRectangle xsi:type="DocRectangle" X="451.99994913737" Y="219.999959309896" Width="400" Height="111.999997456868" />
+				</DocDefinitionRef>
+				<DocDefinitionRef Name="IfcAxis2Placement3D" UniqueId="a954d01e-b6d6-4809-a1c6-7993bf9e459d" DiagramNumber="1">
+					<DiagramRectangle xsi:type="DocRectangle" X="22.6666049957275" Y="553.333333333333" Width="400" Height="90.6666666666667" />
+				</DocDefinitionRef>
 			</Definitions>
 		</DocSchemaRef>
 		<DocSchemaRef Name="IFCKERNEL" UniqueId="83d0aba8-89a1-4fa2-9000-494f1d348fe9">
 			<Definitions>
 				<DocDefinitionRef Name="IfcProduct" UniqueId="ef7c68a1-ca39-46e6-acd8-69006dd0b5ca" DiagramNumber="1">
-					<DiagramRectangle xsi:type="DocRectangle" X="311.6" Y="108.5" Width="313.33333" Height="125" />
+					<DiagramRectangle xsi:type="DocRectangle" X="1047.60001627604" Y="47.1666692097982" Width="313.33333" Height="125" />
 				</DocDefinitionRef>
 			</Definitions>
 		</DocSchemaRef>
 		<DocSchemaRef Name="IFCMEASURERESOURCE" UniqueId="07e0e41d-1c26-4225-8a30-87e0aa364aa2">
 			<Definitions>
-				<DocDefinitionRef Name="IfcLabel" UniqueId="67ca8639-5d5c-4260-a778-d68712fa9b3b" DiagramNumber="1">
-					<DiagramRectangle xsi:type="DocRectangle" X="1044.6375" Y="1411.15" Width="479.56667" Height="183.33333" />
+				<DocDefinitionRef id="IfcLabel_1doeOvNLn2OATureSI_fix" Name="IfcLabel" UniqueId="67ca8639-5d5c-4260-a778-d68712fa9b3b" DiagramNumber="1">
+					<DiagramRectangle xsi:type="DocRectangle" X="924.637451171875" Y="1507.15002441406" Width="479.56667" Height="116.666704023437" />
 				</DocDefinitionRef>
-				<DocDefinitionRef Name="IfcBoolean" UniqueId="92e669ed-386b-4f1c-b3c0-27e5d86898dc" DiagramNumber="1">
-					<DiagramRectangle xsi:type="DocRectangle" X="1044.6709" Y="1611.15" Width="479.63333" Height="187.5" />
+				<DocDefinitionRef id="IfcBoolean_2IvcdjE6jF7BF09_NOQ9ZS" Name="IfcBoolean" UniqueId="92e669ed-386b-4f1c-b3c0-27e5d86898dc" DiagramNumber="1">
+					<DiagramRectangle xsi:type="DocRectangle" X="924.6708984375" Y="1651.15002441406" Width="479.63333" Height="120.833374023438" />
 				</DocDefinitionRef>
 				<DocDefinitionRef id="IfcLengthMeasure_3ynOeLMj56SuKvXtLpkxFj" Name="IfcLengthMeasure" UniqueId="fcc58a15-5ad1-4673-8539-877573bbb3ed" DiagramNumber="3">
 					<DiagramRectangle xsi:type="DocRectangle" X="4099.4374" Y="88.449997" Width="446.3" Height="228.16667" />
+				</DocDefinitionRef>
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IfcMeasureResource" UniqueId="db4fd0e2-acca-41dc-af93-177025407147">
+			<Definitions>
+				<DocDefinitionRef id="IfcPositiveLengthMeasure_3KmSFXu719kuMqNz3Q0DS" Name="IfcPositiveLengthMeasure" UniqueId="d4c1c3e1-e070-49bb-85b4-5fd0da00d73f" DiagramNumber="4">
+					<DiagramRectangle xsi:type="DocRectangle" X="5833.33284505208" Y="1302.66674804688" Width="400" Height="103.33332824707" />
+				</DocDefinitionRef>
+				<DocDefinitionRef Name="IfcRatioMeasure" UniqueId="6af16030-8a96-4a64-a8a4-706413c1f97d" DiagramNumber="4">
+					<DiagramRectangle xsi:type="DocRectangle" X="5833.33284505208" Y="1553.33337402344" Width="400" Height="103.33332824707" />
 				</DocDefinitionRef>
 			</Definitions>
 		</DocSchemaRef>
@@ -90,6 +160,50 @@
 		</DocSchemaRef>
 	</SchemaRefs>
 	<PageTargets>
+		<DocPageTarget Name="1,1 IfcLabel" UniqueId="b76a27bd-28c5-4f3d-9c81-ecf911b20b07" DiagramNumber="1">
+			<DiagramRectangle xsi:type="DocRectangle" X="1452.63745117188" Y="1488.4833984375" Width="90.6666564941406" Height="100" />
+			<DiagramLine>
+				<DocPoint X="1452.63745117188" Y="1538.4833984375" />
+				<DocPoint X="1404.20412117187" Y="1538.4833984375" />
+				<DocPoint X="1404.20412117187" Y="1538.4833984375" />
+			</DiagramLine>
+			<Sources>
+				<DocPageSource Name="1,1 IfcLabel" UniqueId="7f9c4a9e-8d2c-41ab-9cfe-c246293b2c0c" DiagramNumber="4">
+					<DiagramRectangle xsi:type="DocRectangle" X="5513.33251953125" Y="105.333320617676" Width="400" Height="64" />
+				</DocPageSource>
+				<DocPageSource Name="1,1 IfcLabel" UniqueId="a2d07e69-829c-45bb-8396-c44c1cabadf1" DiagramNumber="4">
+					<DiagramRectangle xsi:type="DocRectangle" X="5513.33251953125" Y="190.666697184245" Width="400" Height="64" />
+				</DocPageSource>
+				<DocPageSource Name="1,1 IfcLabel" UniqueId="fe8063b1-b142-4c3c-ba16-61f4ece74108" DiagramNumber="4">
+					<DiagramRectangle xsi:type="DocRectangle" X="5574.6669921875" Y="877.33359781901" Width="258.666666666667" Height="64" />
+				</DocPageSource>
+			</Sources>
+			<Definition>
+				<DocDefinitionRef xsi:nil="true" href="IfcLabel_1doeOvNLn2OATureSI_fix" />
+			</Definition>
+		</DocPageTarget>
+		<DocPageTarget Name="1,2 IfcBoolean" UniqueId="3f459880-0281-461d-ab0b-e9f5493d2c4c" DiagramNumber="1">
+			<DiagramRectangle xsi:type="DocRectangle" X="1452.67102050781" Y="1656.48327636719" Width="88.0000152587891" Height="100" />
+			<DiagramLine>
+				<DocPoint X="1452.67102050781" Y="1706.48327636719" />
+				<DocPoint X="1404.3042284375" Y="1706.48327636719" />
+				<DocPoint X="1404.3042284375" Y="1706.48327636719" />
+			</DiagramLine>
+			<Sources>
+				<DocPageSource Name="1,2 IfcBoolean" UniqueId="671e2323-2f5c-43bd-9ed8-db89e3aa180d" DiagramNumber="4">
+					<DiagramRectangle xsi:type="DocRectangle" X="5513.33251953125" Y="337.333384195964" Width="400" Height="64" />
+				</DocPageSource>
+				<DocPageSource Name="1,2 IfcBoolean" UniqueId="e669086f-4e20-4a6d-9c07-fec82eee6783" DiagramNumber="4">
+					<DiagramRectangle xsi:type="DocRectangle" X="5833.33284505208" Y="1950.66674804688" Width="400" Height="64" />
+				</DocPageSource>
+				<DocPageSource Name="1,2 IfcBoolean" UniqueId="7f0f1fb3-cd83-4329-856c-c7d3e54dc6db" DiagramNumber="4">
+					<DiagramRectangle xsi:type="DocRectangle" X="5833.33284505208" Y="2204" Width="400" Height="64" />
+				</DocPageSource>
+			</Sources>
+			<Definition>
+				<DocDefinitionRef xsi:nil="true" href="IfcBoolean_2IvcdjE6jF7BF09_NOQ9ZS" />
+			</Definition>
+		</DocPageTarget>
 		<DocPageTarget Name="3,1 IfcLengthMeasure" UniqueId="c0a40bf1-a314-437a-8332-71ab89863d92" DiagramNumber="3">
 			<DiagramRectangle xsi:type="DocRectangle" X="4624.5876" Y="151.81667" Width="125.93333" Height="85" />
 			<DiagramLine>
@@ -108,6 +222,15 @@
 				</DocPageSource>
 				<DocPageSource Name="3,1 IfcLengthMeasure" UniqueId="c879bb39-e96e-48fa-8ac7-8539367b17b9" DiagramNumber="2">
 					<DiagramRectangle xsi:type="DocRectangle" X="2437.76" Y="228.08" Width="308" Height="80" />
+				</DocPageSource>
+				<DocPageSource Name="3,1 IfcLengthMeasure" UniqueId="45cfbbc1-85dc-42cc-83ce-d3d3c08fbc69" DiagramNumber="4">
+					<DiagramRectangle xsi:type="DocRectangle" X="5833.33284505208" Y="1170.66674804688" Width="400" Height="103.33332824707" />
+				</DocPageSource>
+				<DocPageSource Name="3,1 IfcLengthMeasure" UniqueId="720df599-10b5-4458-b4f6-cc02c2f5b145" DiagramNumber="4">
+					<DiagramRectangle xsi:type="DocRectangle" X="5833.33284505208" Y="1429.33337402344" Width="400" Height="103.33332824707" />
+				</DocPageSource>
+				<DocPageSource Name="3,1 IfcLengthMeasure" UniqueId="4464d5e1-cd87-4fe2-900a-18ac1649b0ee" DiagramNumber="4">
+					<DiagramRectangle xsi:type="DocRectangle" X="5529.33284505208" Y="810.666687011719" Width="317.333333333333" Height="64" />
 				</DocPageSource>
 			</Sources>
 			<Definition>
@@ -144,10 +267,45 @@
 				<DocEntity xsi:nil="true" href="IfcConnectionVolumeGeometry" />
 			</Definition>
 		</DocPageTarget>
+		<DocPageTarget Name="4,1 IfcPositiveLengthMeasure" UniqueId="29b11bac-a327-4172-8b42-ed74f7bf5f7a" DiagramNumber="4">
+			<DiagramRectangle xsi:type="DocRectangle" X="6270.66682942708" Y="1308.00012207031" Width="109.333335876465" Height="100" />
+			<DiagramLine>
+				<DocPoint X="6270.66682942708" Y="1358.00012207031" />
+				<DocPoint X="6233.33284505208" Y="1358.00012207031" />
+				<DocPoint X="6233.33284505208" Y="1358.00012207031" />
+			</DiagramLine>
+			<Sources>
+				<DocPageSource Name="4,1 IfcPositiveLengthMeasure" UniqueId="5a9d7ad2-f8a5-4b5c-90f7-de24519212a1" DiagramNumber="4">
+					<DiagramRectangle xsi:type="DocRectangle" X="5838.66634114583" Y="1836" Width="400" Height="64" />
+				</DocPageSource>
+				<DocPageSource Name="4,1 IfcPositiveLengthMeasure" UniqueId="c8e60971-a5ef-4d54-a89d-d7b478fe8569" DiagramNumber="4">
+					<DiagramRectangle xsi:type="DocRectangle" X="5833.33284505208" Y="2098.66674804688" Width="400" Height="64" />
+				</DocPageSource>
+			</Sources>
+			<Definition>
+				<DocDefinitionRef xsi:nil="true" href="IfcPositiveLengthMeasure_3KmSFXu719kuMqNz3Q0DS" />
+			</Definition>
+		</DocPageTarget>
+		<DocPageTarget Name="4,2 IfcAlignmentCurve" UniqueId="f5e12957-4a02-4ee6-85b5-22788b2123aa" DiagramNumber="4">
+			<DiagramRectangle xsi:type="DocRectangle" X="4914.66682942708" Y="856.000203450521" Width="90.6668294270839" Height="100" />
+			<DiagramLine>
+				<DocPoint X="5005.33365885416" Y="906.000203450521" />
+				<DocPoint X="5085.33333333333" Y="906.000203450521" />
+				<DocPoint X="5085.33333333333" Y="906.000203450521" />
+			</DiagramLine>
+			<Sources>
+				<DocPageSource Name="4,2 IfcAlignmentCurve" UniqueId="fd46ce17-e090-4e06-b256-818c1cd7f92a" DiagramNumber="2">
+					<DiagramRectangle xsi:type="DocRectangle" X="1950.19978841146" Y="1544.93334960938" Width="400" Height="100" />
+				</DocPageSource>
+			</Sources>
+			<Definition>
+				<DocEntity xsi:nil="true" href="IfcAlignmentCurve" />
+			</Definition>
+		</DocPageTarget>
 	</PageTargets>
 	<Comments>
 		<DocComment UniqueId="382fbdf6-db32-48a9-b014-2952e72ff43d" DiagramNumber="1">
-			<Documentation>new type in IFC2x4</Documentation>
+			<Documentation>new type in IFC4</Documentation>
 			<DiagramRectangle xsi:type="DocRectangle" X="665.54667" Y="944.24" Width="278.66667" Height="55" />
 		</DocComment>
 		<DocComment UniqueId="4eb6bb16-fef1-4e24-9b21-af686080aecf" DiagramNumber="1">
@@ -155,7 +313,7 @@
 			<DiagramRectangle xsi:type="DocRectangle" X="718.66667" Y="2094.22" Width="372" Height="88.333333" />
 		</DocComment>
 		<DocComment UniqueId="8b49b1d3-7010-4b33-b261-0fdfa401e398" DiagramNumber="3">
-			<Documentation>New entity in IFC2x4</Documentation>
+			<Documentation>New entity in IFC4</Documentation>
 			<DiagramRectangle xsi:type="DocRectangle" X="3800.8933" Y="379.96666" Width="297.33333" Height="55" />
 		</DocComment>
 		<DocComment UniqueId="b7ebd4f9-9392-4473-8563-812adccee949" DiagramNumber="2">
@@ -168,7 +326,7 @@
 		</DocComment>
 		<DocComment UniqueId="c6493f60-0946-4ffd-8b9a-d85da3dcae72" DiagramNumber="1">
 			<Documentation>new inverse relationship in IFC2x3</Documentation>
-			<DiagramRectangle xsi:type="DocRectangle" X="640.33333" Y="105.25333" Width="372" Height="88.333333" />
+			<DiagramRectangle xsi:type="DocRectangle" X="824.333312988281" Y="163.919993082682" Width="372" Height="88.333333" />
 		</DocComment>
 		<DocComment UniqueId="ec04342c-7200-4af0-8cae-ee3535a1bf38" DiagramNumber="2">
 			<Documentation>New select in IFC2x3</Documentation>

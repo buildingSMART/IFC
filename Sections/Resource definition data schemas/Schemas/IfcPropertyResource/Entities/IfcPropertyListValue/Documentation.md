@@ -45,5 +45,5 @@ The unit is handled by the _Unit_ attribute, see Table 1 for an example of a lis
 
 > HISTORY&nbsp; New entity in IFC2x2.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Attribute _ListValues_ has been made OPTIONAL with upward compatibility for file based exchange.

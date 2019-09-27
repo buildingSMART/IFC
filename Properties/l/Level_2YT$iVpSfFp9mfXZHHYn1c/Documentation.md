@@ -1,1 +1,0 @@
-﻿The fraction of usable energy stored.

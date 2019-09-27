@@ -233,5 +233,5 @@ Table 1 illustrates application of _IfcLogicalOperatorEnum_ in a case of three o
 
 > HISTORY&nbsp; New enumeration in IFC2.0.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Extended to include LOGICALXOR, LOGICALNOTAND and LOGICALNOTOR.

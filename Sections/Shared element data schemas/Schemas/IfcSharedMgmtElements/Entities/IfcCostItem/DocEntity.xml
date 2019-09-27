@@ -10,7 +10,7 @@
 		<DocAttribute Name="PredefinedType" UniqueId="b88a8628-6b2a-4c45-b51b-a20cbe67368c" DefinedType="IfcCostItemTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Predefined generic type for a cost item that is specified in an enumeration. There may be a property set given specificly for the predefined types.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE The attribute has been added.</Documentation>
 			<DiagramLine>
 				<DocPoint X="516.2654" Y="2040.2918" />
@@ -27,7 +27,7 @@ If _CostQuantities_ is provided then values indicate unit costs, otherwise value
 
 For calculation purposes, the cost values may be directly added unless they have qualifications.  Cost values with qualifications (e.g. _IfcCostValue.ApplicableDate_, _IfcCostValue.FixedUntilDate_) should be excluded from such calculation if they do not apply.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE The attribute has been added.</Documentation>
 			<DiagramLine>
 				<DocPoint X="516.2654" Y="2270.1583" />
@@ -39,7 +39,7 @@ For calculation purposes, the cost values may be directly added unless they have
 		</DocAttribute>
 		<DocAttribute Name="CostQuantities" UniqueId="b7296c99-1454-49d0-a548-09ac41553f78" DefinedType="IfcPhysicalQuantity" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Component quantities of the same type for which the total quantity for the cost item is calculated as the sum.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE The attribute has been added.</Documentation>
 			<DiagramLine>
 				<DocPoint X="516.2654" Y="2138.7389" />

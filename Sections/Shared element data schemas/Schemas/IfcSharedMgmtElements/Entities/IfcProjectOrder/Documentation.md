@@ -4,5 +4,5 @@ Project orders are typically formal contracts between two organizations, where c
 
 > HISTORY&nbsp; New entity in IFC2.0
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Attribute _ID_ renamed to _Identification_ and promoted to supertype _IfcControl_. Attribute 'LongDescription' added.

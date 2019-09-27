@@ -13,20 +13,24 @@
 		<DocSubtype UniqueId="2d48ddb0-823a-4fa9-ae42-2a920e39d81a" DefinedType="IfcTendonAnchor" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="SteelGrade" UniqueId="cc4f684c-9582-4577-b0f1-3dceb69e65f9" Status="Deprecated" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>{ .change-ifc2x4}
+		<DocAttribute Name="SteelGrade" UniqueId="cc4f684c-9582-4577-b0f1-3dceb69e65f9" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Deprecated.
+
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; Attribute deprecated. Use material association at _IfcReinforcingElementType_ instead.</Documentation>
 			<DiagramLine>
-				<DocPoint X="1911.6957" Y="240.58965" />
-				<DocPoint X="2537.94897" Y="240.58965" />
+				<DocPoint X="1911.69571" Y="242.31047" />
+				<DocPoint X="1911.69571" Y="242.31047" />
+				<DocPoint X="2537.949" Y="242.31047" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1898.223928" Y="232.3228808" Width="132" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="1911.69571" Y="222.31047" Width="132" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<Tree>
 		<DocLine>
 			<DiagramLine>
 				<DocPoint X="1788.5911" Y="368.59947" />
+				<DocPoint X="0" Y="0" />
 				<DocPoint X="1788.5911005" Y="368.59947" />
 			</DiagramLine>
 			<Tree>
@@ -55,6 +59,13 @@
 					</DiagramLine>
 				</DocLine>
 			</Tree>
+		</DocLine>
+		<DocLine>
+			<DiagramLine>
+				<DocPoint X="1911.69571" Y="240.14171" />
+				<DocPoint X="1911.69571" Y="240.14171" />
+				<DocPoint X="2311.69571" Y="240.14171" />
+			</DiagramLine>
 		</DocLine>
 	</Tree>
 </DocEntity>

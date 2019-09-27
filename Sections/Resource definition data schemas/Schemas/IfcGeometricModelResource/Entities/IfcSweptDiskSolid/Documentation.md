@@ -24,7 +24,7 @@ Figure 1 illustrates an example.
 
 > HISTORY&nbsp; New entity in IFC2x2.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The attribute _StartParam_ and _EndParam_ have been made optional.
 
 { .spec-head}

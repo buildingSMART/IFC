@@ -29,7 +29,7 @@ The following material properties and information sets can be assigned to an _If
 
 > HISTORY&nbsp; New schema in IFC1.0
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Definition of material properties and their assignment to _IfcMaterial_ or other appropriate options in _IfcMaterialSelect_ is now fully captured by _IfcExtendedMaterialProperties_ using the general _IfcProperty_ approach. Specific predefined subtypes of _IfcMaterialProperties_ are no longer available.
 
 { .deprecated}

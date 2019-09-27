@@ -2,7 +2,7 @@
 
 > HISTORY&nbsp; New entity in IFC2x2.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Attribute _Axis_ and WHERE rule added. Use definitions changed.
 
 ****Coordinate Systems****:

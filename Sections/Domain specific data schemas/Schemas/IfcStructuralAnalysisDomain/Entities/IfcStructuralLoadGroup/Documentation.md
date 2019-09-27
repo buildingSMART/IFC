@@ -6,7 +6,7 @@
 
 > HISTORY&nbsp; New entity in IFC2x2.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Subtype _IfcStructuralLoadCase_ added. Informal propositions and WHERE rule added. Predefined type LOAD_COMBINATION_GROUP made obsolete and removed.
 
 { .spec-head}

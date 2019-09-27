@@ -2,7 +2,7 @@
 
 > HISTORY&nbsp; New entity in IFC2x2.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Types of _InnerFilletRadius_ and _OuterFilletRadius_ relaxed to allow for zero values.
 
 Figure 1 illustrates parameters of a rectangular or square hollow profile definition.

@@ -12,5 +12,5 @@ A measured constraint or metric defines the actual value or values of a constrai
 
 > HISTORY&nbsp; New schema in IFC2x.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The classification of constraints shall not be done using _IfcConstraintClassificationRelationship_ anymore (entity deleted); the capability of associating external references to constraints has been introduced by _IfcExternalReferenceRelationship_ in _IfcExternalReferenceResource_ schema and should be used instead. The aggregation of constraints shall not be done using _IfcConstraintAggregationRelationship_ anymore (entity deleted); the capability of associating aggregated constraints is now handled by an attribute at _IfcObjective_.

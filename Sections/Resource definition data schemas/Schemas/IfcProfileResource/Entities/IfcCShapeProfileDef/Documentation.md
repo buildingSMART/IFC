@@ -5,7 +5,7 @@
 { .change-ifc2x3}
 > IFC2x3 CHANGE&nbsp; All profile origins are now in the center of the bounding box.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Type of _InternalFilletRadius_ relaxed to allow for zero radius. Trailing attribute _CentreOfGravityInX_ deleted, use respective property in _IfcExtendedProfileProperties_ instead.
 
 Figure 1 illustrates parameters of the C-shape profile definition. The parameterized profile defines its own position coordinate system. The underlying coordinate system is defined by the swept area solid that uses the profile definition. It is the xy plane of:

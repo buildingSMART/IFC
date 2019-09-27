@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCaissonFoundation" Name="IfcCaissonFoundation" UniqueId="99487755-954d-425a-a13e-a3ea6d49bce2" DiagramNumber="6" BaseDefinition="IfcDeepFoundation" EntityFlags="32">
+	<DiagramRectangle xsi:type="DocRectangle" X="8832.00032552083" Y="413.333323160807" Width="400" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="ec8b849c-4224-42d3-9461-c6d5017a9c0d" DefinedType="IfcCaissonFoundationTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+			<Documentation>Predefined generic type for a caisson foundation that is specified in an enumeration. There may be a property set given specificly for the predefined types.
+&gt; NOTE&amp;nbsp; The _PredefinedType_ shall only be used, if no _IfcCaissonFoundationType_ is assigned, providing its own _IfcCaissoFoundationType.PredefinedType_.</Documentation>
+			<DiagramLine>
+				<DocPoint X="9029.33349609375" Y="513.333323160807" />
+				<DocPoint X="9029.33349609375" Y="513.333323160807" />
+				<DocPoint X="9029.33349609375" Y="621.333312988281" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="9029.33349609375" Y="533.333323160807" Width="400" Height="50" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="afc238f0-b16a-4f0d-90eb-69ce72a42f5e">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcCaissonFoundationType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+ (PredefinedType &lt;&gt; IfcCaissonFoundationTypeEnum.USERDEFINED) OR
+ ((PredefinedType = IfcCaissonFoundationTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="2a816059-42db-43ae-9bcd-da6a83fce4e1">
+			<Documentation>Either there is no caisson foundation type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcCaissonFoundationType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+  (&apos;IFCSHAREDBLDGELEMENTS.IFCCAISSONFOUNDATIONTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -48,7 +48,7 @@ Note: This attribute should be asserted for all circumstances where the cost to 
 		</DocAttribute>
 		<DocAttribute Name="ApplicableDate" UniqueId="607a3336-5a2c-4366-a5a4-4ecde56ea7f9" DefinedType="IfcDate" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The date on or from which an applied value is applicable.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE Type changed from IfcDateTimeSelect.</Documentation>
 			<DiagramLine>
 				<DocPoint X="424.5" Y="1254.3471" />
@@ -58,7 +58,7 @@ Note: This attribute should be asserted for all circumstances where the cost to 
 		</DocAttribute>
 		<DocAttribute Name="FixedUntilDate" UniqueId="44cc2615-38d3-4a6e-a478-efc5cbd2cefa" DefinedType="IfcDate" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The date until which applied value is applicable.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE Type changed from IfcDateTimeSelect.</Documentation>
 			<DiagramLine>
 				<DocPoint X="424.5" Y="1325.0117" />
@@ -113,7 +113,7 @@ For example, within the context of a bid submission, this may refer to an option
 		</DocAttribute>
 		<DocAttribute Name="HasExternalReference" UniqueId="fa44a5a5-d30c-49f6-bfee-252224ac5db6" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="32" AggregationType="3" AggregationFlag="0" Inverse="RelatedResourceObjects">
 			<Documentation>Reference to an external reference, e.g. library, classification, or document information, that is associated to the IfcAppliedValue. 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE New inverse attribute.</Documentation>
 			<DiagramLine>
 				<DocPoint X="235.9" Y="429.76666" />
@@ -122,13 +122,5 @@ For example, within the context of a bid submission, this may refer to an option
 			<DiagramLabel xsi:type="DocRectangle" X="451.03333" Y="453.933323" Width="399" Height="70" />
 		</DocAttribute>
 	</Attributes>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="114.15843" Y="1701.3667" />
-				<DocPoint X="114.15843" Y="1874.0167" />
-			</DiagramLine>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

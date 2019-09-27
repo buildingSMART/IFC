@@ -10,5 +10,5 @@ An _IfcMaterial_ may also have presentation information associated. Such present
 
 > HISTORY New entity in IFC4
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE  The attributes _Description_ and _Category_ have been added.

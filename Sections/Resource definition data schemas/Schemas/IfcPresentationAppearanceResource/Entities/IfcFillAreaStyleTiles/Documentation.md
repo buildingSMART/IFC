@@ -18,5 +18,5 @@ k~2~\* R~2~_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_k~1~,k~2~_= -1,0,1 , ![formula](../.
 
 > HISTORY&nbsp; New entity in IFC2x2.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; _TilingPattern_ changed to list of two _IfcVector_, _Tiles_ refer directly to _IfcStyledItem_.

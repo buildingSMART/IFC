@@ -8,12 +8,8 @@
 { .change-ifc2x3}
 > IFC2x3 CHANGE&nbsp; The enumerators _ELEMENTEDWALL_ and _PLUMBINGWALL_ have been added.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; New enumerators MOVABLE, PARAPET, PARTITIONING, and SOLIDWALL have been added.  
->   
->
-
-{ .deprecated}
-> IFC4 DEPRECATION&nbsp; The enumerator POLYGONAL is deprecated and shall no longer be used.
+> IFC4 DEPRECATION&nbsp; The enumerators STANDARD, POLYGONAL and ELEMENTEDWALL are deprecated and shall no longer be used.
 
 > NOTE&nbsp; The potentially misleading term _SHEAR_ shall not impose a particular resistance against shear forces, but a particular shape.

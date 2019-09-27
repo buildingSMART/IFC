@@ -5,7 +5,7 @@
 { .change-ifc2x3}
 > IFC2x3 CHANGE&nbsp; All profile origins are now in the center of the bounding box.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Types of _FilletRadius_ and _EdgeRadius_ were relaxed to allow for zero values.  
 > Trailing attributes _CentreOfGravityInX_ and _CentreOfGravityInY_ deleted, use respective properties in _IfcExtendedProfileProperties_ instead.  
 > WHERE rule which required _Width_ &lt;= _Depth_ removed.

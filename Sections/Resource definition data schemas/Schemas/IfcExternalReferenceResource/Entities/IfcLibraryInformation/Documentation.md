@@ -4,5 +4,5 @@ In a broder sense, _IfcLibraryInformation_ includes the meta data for capture th
 
 > HISTORY&nbsp; New entity in IFC2x.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; _Location_ and _Description_ attributes added; _Publisher_ and _VersionDate_ data type changed; _HasLibraryReferences_ inverse attribute added (previous LibraryReference changed to inverse).

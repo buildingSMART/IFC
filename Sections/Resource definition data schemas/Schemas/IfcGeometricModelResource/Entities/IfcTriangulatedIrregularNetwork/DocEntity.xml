@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTriangulatedIrregularNetwork" UniqueId="e312d865-7031-4404-9644-cb13ee236f46" DiagramNumber="9" BaseDefinition="IfcTriangulatedFaceSet" EntityFlags="32">
+	<Localization>
+		<DocLocalization Name="Triangulated Irregular Network" Locale="en" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="12813.3349609375" Y="2226.66674804688" Width="546.666707356771" Height="118.666666666667" />
+	<Attributes>
+		<DocAttribute Name="Flags" UniqueId="d65a5805-7937-43a0-9540-98e0e449031f" DefinedType="IfcInteger" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="?">
+			<Documentation>Indicates attributes of each triangle in a compact form as follows: -2 = invisible void; -1 = invisible hole; 0 = no breaklines; 1 = breakline at edge 1; 2 = breakline at edge 2; 3 = breakline at edges 1 and 2; 4 = breakline at edge 3; 5 = breakline at edges 1 and 3; 6 = breakline at edges 2 and 3; 7 = breakline at edges 1, 2, and 3.</Documentation>
+			<DiagramLine>
+				<DocPoint X="13360.0016682943" Y="2226.66674804688" />
+				<DocPoint X="13530.4573364258" Y="2226.66674804688" />
+				<DocPoint X="13530.4573364258" Y="2177.15368143717" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="13360.0016682943" Y="2206.66674804688" Width="400" Height="50" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="NotClosed" UniqueId="93a536b8-6205-4222-addd-197749932e19">
+			<Documentation>The triangulated face set shall not be closed.</Documentation>
+			<Expression>SELF\IfcTriangulatedFaceSet.Closed = FALSE</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

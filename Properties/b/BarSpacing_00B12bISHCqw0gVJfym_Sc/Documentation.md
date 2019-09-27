@@ -1,1 +1,0 @@
-﻿The spacing between bars if constant.

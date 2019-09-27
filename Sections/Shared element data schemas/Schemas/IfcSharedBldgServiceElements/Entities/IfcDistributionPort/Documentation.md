@@ -6,5 +6,5 @@ Ports are assigned the distribution systems in order to indicate its role in a p
 
 > HISTORY&nbsp; New entity in IFC2x2
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Ports are now related to products and product types using the _IfcRelNests_ relationship; use of _IfcRelConnectsPortToElement_ is now reserved for dynamically attached ports (such as drilling a hole in a tank).

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelPositions" UniqueId="b7f2144d-02f5-41d3-9e18-a069dcbab723" DiagramNumber="2" BaseDefinition="IfcRelConnects" EntityFlags="32">
+	<DiagramRectangle xsi:type="DocRectangle" X="2858.66666666667" Y="1114.66666666667" Width="400" Height="100" />
+	<Attributes>
+		<DocAttribute Name="RelatingPositioningElement" UniqueId="68cb1e94-161b-4c33-87c2-54251301a60d" DefinedType="IfcPositioningElement" AttributeFlags="0" AggregationType="0" AggregationFlag="0" AggregationLower="1" AggregationUpper="1">
+			<Documentation>Positioning element defining the source of the relative position.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3258.66666666667" Y="1139.66666666667" />
+				<DocPoint X="3358.66666666667" Y="1139.66666666667" />
+			</DiagramLine>
+		</DocAttribute>
+		<DocAttribute Name="RelatedProducts" UniqueId="4264eecb-aee6-4cf8-a9ba-8556964b4606" DefinedType="IfcProduct" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Relatively positioned product.</Documentation>
+			<DiagramLine>
+				<DocPoint X="3258.66666666667" Y="1239.66666666667" />
+				<DocPoint X="3358.66666666667" Y="1239.66666666667" />
+			</DiagramLine>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="NoSelfReference" UniqueId="44274b9d-60a5-4416-adea-86948f39607c">
+			<Documentation>The instance of the _PositionedElement_ shall not be the same instance as the _Product_.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* RelatedProducts | RelatingPositioningElement :=: temp)) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

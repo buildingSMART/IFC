@@ -1,4 +1,4 @@
-﻿The building element comprises all elements that are primarily part of the construction of a building, i.e., its structural and space separating system. Building elements are all physically existent and tangible things
+﻿The building element comprises all elements that are primarily part of the construction of a built facility, i.e., its structural and space separating system. Building elements are all physically existent and tangible things
 
 { .extDef}
 > NOTE&nbsp; Definition from ISO 6707-1:  

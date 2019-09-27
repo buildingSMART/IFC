@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSectionedSolid" UniqueId="5a72f72b-2917-406d-9209-87895d0396e1" DiagramNumber="1" BaseDefinition="IfcSolidModel" EntityFlags="0">
+	<Localization>
+		<DocLocalization Name="Sectioned Solid" Locale="en" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="200" Y="1837.33337402344" Width="400" Height="225.333333333333" />
+	<Subtypes>
+		<DocSubtype UniqueId="d332cfb7-1e36-4844-95bf-2725303cdfc9" DefinedType="IfcSectionedSolidHorizontal" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="Directrix" UniqueId="6b62fbb9-51d3-49e8-bef9-7c89794e944b" DefinedType="IfcCurve" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>The curve used to define the sweeping operation.</Documentation>
+			<DiagramLine>
+				<DocPoint X="600" Y="1897.0000406901" />
+				<DocPoint X="600" Y="1897.0000406901" />
+				<DocPoint X="865.333333333333" Y="1897.0000406901" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="600" Y="1877.0000406901" Width="0" Height="0" />
+		</DocAttribute>
+		<DocAttribute Name="CrossSections" UniqueId="d1d30f1a-217a-4b12-a342-2dce6f766aab" DefinedType="IfcProfileDef" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="?">
+			<Documentation>List of cross sections in sequential order along the _Directrix_.</Documentation>
+			<DiagramLine>
+				<DocPoint X="600" Y="1970.33337402344" />
+				<DocPoint X="600" Y="1970.33337402344" />
+				<DocPoint X="868" Y="1970.33337402344" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="600" Y="1950.33337402344" Width="0" Height="0" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="DirectrixIs3D" UniqueId="4497bee3-9ba1-4307-b298-458ef6ddd34a">
+			<Documentation>The curve entity which is the underlying directrix shall have the dimensionality of 3.</Documentation>
+			<Expression>Directrix.Dim = 3</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="ConsistentProfileTypes" UniqueId="1d56ed2c-a9b1-4b74-aca0-0fb83816db26">
+			<Documentation>The profile type (either AREA or CURVE) shall be consistent within the list of the profiles defining the cross sections.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* CrossSections | CrossSections[1].ProfileType &lt;&gt; temp.ProfileType)) = 0</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="SectionsSameType" UniqueId="6c7e1111-b80f-4118-b7a8-964d9f224030">
+			<Documentation>The entity type for each section must be the same.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* CrossSections | TYPEOF(CrossSections[1]) :&lt;&gt;: TYPEOF(temp))) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

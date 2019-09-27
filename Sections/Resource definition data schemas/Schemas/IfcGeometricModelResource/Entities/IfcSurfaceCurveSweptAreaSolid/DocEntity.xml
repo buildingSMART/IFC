@@ -17,7 +17,7 @@
 		<DocAttribute Name="StartParam" UniqueId="3b7320f4-3ba7-4832-acde-ad54018261d6" DefinedType="IfcParameterValue" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The parameter value on the _Directrix_ at which the sweeping operation commences. If no value is provided the start of the sweeping operation is at the start of the _Directrix_.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute has been changed to OPTIONAL with upward compatibility for file-based exchange.</Documentation>
 			<DiagramLine>
 				<DocPoint X="7059.6334" Y="502.13333" />
@@ -28,7 +28,7 @@
 		<DocAttribute Name="EndParam" UniqueId="07f28201-d83f-4d2b-9102-dba02a68c213" DefinedType="IfcParameterValue" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The parameter value on the _Directrix_ at which the sweeping operation ends. If no value is provided the end of the sweeping operation is at the end of the _Directrix_.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute has been changed to OPTIONAL with upward compatibility for file-based exchange.</Documentation>
 			<DiagramLine>
 				<DocPoint X="7059.6334" Y="632.13333" />
@@ -49,7 +49,7 @@
 		<DocWhereRule Name="DirectrixBounded" UniqueId="5e73b25d-65de-4a8d-8d7f-0810d7837a09">
 			<Documentation>If the values for _StartParam_ or _EndParam_ are omited, then the _Directrix_ has to be a bounded or closed curve.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New WHERE rule.</Documentation>
 			<Expression>(EXISTS(StartParam) AND EXISTS(EndParam)) OR 
 (SIZEOF([&apos;IFCGEOMETRYRESOURCE.IFCCONIC&apos;, &apos;IFCGEOMETRYRESOURCE.IFCBOUNDEDCURVE&apos;] * TYPEOF(Directrix)) = 1)</Expression>

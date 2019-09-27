@@ -2,5 +2,5 @@
 
 > HISTORY&nbsp; New enumeration in IFC2.0.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; PROPORTIONALINTEGRAL and PROPORTIONALINTEGRALDERIVATIVE values deleted (property set enumeration now used). MULTIPOSITION added.

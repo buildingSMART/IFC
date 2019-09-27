@@ -13,3 +13,4 @@ It is used to define a window specification, or window style (the specific produ
 Occurrences of the _IfcWindowType_ within building models are represented by instances of _IfcWindow_.
 
 > HISTORY&nbsp; New entity in IFC4. The entity _IfcWindowType_ replaces the previous definition _IfcWindowStyle_ (which is deprecated in IFC4).
+

@@ -2,7 +2,7 @@
 
 > HISTORY&nbsp; New entity in IFC2x2
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC 2x4 CHANGE&nbsp; All attributes are optional now. Several attributes are deprecated; their information now provided by _IfcReinforcingBarType_. Attribute _BarRole_ renamed to _PredefinedType_.
 
 { .use-head}

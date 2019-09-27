@@ -36,7 +36,7 @@
 		<DocAttribute Name="StartParam" UniqueId="1e37f4af-9aa9-4fd7-9f75-1fa5b3af2a7b" DefinedType="IfcParameterValue" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The parameter value on the _Directrix_ at which the sweeping operation commences. &lt;font color=&quot;#0000ff&quot;&gt;If no value is provided the start of the sweeping operation is at the start of the &lt;em&gt;Directrix&lt;/em&gt;.&lt;/font&gt;.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute has been changed to OPTIONAL with upward compatibility for file-based exchange.</Documentation>
 			<DiagramLine>
 				<DocPoint X="8710.5333" Y="588.6767" />
@@ -47,7 +47,7 @@
 		<DocAttribute Name="EndParam" UniqueId="c33ba8e5-28f6-4a8b-a2a1-7020ac0ff4f1" DefinedType="IfcParameterValue" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>The parameter value on the _Directrix_ at which the sweeping operation ends. &lt;font color=&quot;#0000ff&quot;&gt;If no value is provided the end of the sweeping operation is at the end of the &lt;em&gt;Directrix&lt;/em&gt;.&lt;/font&gt;.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute has been changed to OPTIONAL with upward compatibility for file-based exchange.</Documentation>
 			<DiagramLine>
 				<DocPoint X="8710.5333" Y="695.3433" />
@@ -68,21 +68,11 @@
 		<DocWhereRule Name="DirectrixBounded" UniqueId="98ce20af-a2ec-46f7-8e79-8af08c3cdf1a">
 			<Documentation>If the values for _StartParam_ or _EndParam_ are omited, then the _Directrix_ has to be a bounded or closed curve.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New WHERE rule.</Documentation>
 			<Expression>(EXISTS(StartParam) AND EXISTS(EndParam)) OR 
 (SIZEOF([&apos;IFCGEOMETRYRESOURCE.IFCCONIC&apos;, &apos;IFCGEOMETRYRESOURCE.IFCBOUNDEDCURVE&apos;] * TYPEOF(Directrix)) = 1)</Expression>
 		</DocWhereRule>
 	</WhereRules>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="8484.4667" Y="722.66003" />
-				<DocPoint X="8484.4667" Y="833.13001" />
-				<DocPoint X="8484.550033333" Y="833.13001" />
-				<DocPoint X="8484.550033333" Y="943.59999" />
-			</DiagramLine>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

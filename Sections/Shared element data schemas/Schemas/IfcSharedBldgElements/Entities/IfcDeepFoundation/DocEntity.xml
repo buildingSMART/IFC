@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDeepFoundation" Name="IfcDeepFoundation" UniqueId="6b0038ed-8c9a-4224-a441-44db9dae712c" DiagramNumber="6" BaseDefinition="IfcBuildingElement" EntityFlags="32">
+	<DiagramRectangle xsi:type="DocRectangle" X="8221.3330078125" Y="413.333343505859" Width="400" Height="100" />
+	<WhereRules>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="1572959a-124f-4ab8-b448-bc4982b55f25">
+			<Documentation>Either there is no deep foundation type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcDeepFoundationType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+  (&apos;IFCSHAREDBLDGELEMENTS.IFCDEEPFOUNDATIONTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+	<Tree>
+		<DocLine>
+			<DiagramLine>
+				<DocPoint X="8621.3330078125" Y="463.333323160807" />
+				<DocPoint X="8621.3330078125" Y="463.333323160807" />
+				<DocPoint X="8832.00032552083" Y="463.333323160807" />
+			</DiagramLine>
+		</DocLine>
+	</Tree>
+</DocEntity>
+

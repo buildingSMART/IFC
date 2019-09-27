@@ -10,7 +10,7 @@ Important functionalities for the description of an analysis model are derived f
 
 > HISTORY&nbsp; New entity in IFC2x2.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Attribute _SharedPlacement_ and informal propositions added, allowing for easy retrieval of the common object placement and for specification of the analysis model's coordiante system before any structural item is instantiated. WHERE rule added.
 
 { .spec-head}

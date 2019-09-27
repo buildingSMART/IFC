@@ -4,7 +4,7 @@ _IfcOwnerHistory_ is used to identify the creating and owning application and us
 
 > HISTORY&nbsp; New entity in IFC1.0.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; ChangeAction is now optional and a related WHERE rule enforces conditions when it is asserted.
 
 { .spec-head}

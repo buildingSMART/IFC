@@ -33,7 +33,7 @@
 		</DocAttribute>
 		<DocAttribute Name="ServicedBySystems" UniqueId="15e959b7-d280-49c7-84da-b6470edf05ac" DefinedType="IfcRelServicesBuildings" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatedBuildings">
 			<Documentation>Set of relationships to systems, that provides a certain service to the spatial element for which it is defined. The relationship is handled by the objectified relationship _IfcRelServicesBuildings_.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The inverse attribute has been promoted to the new supertype _IfcSpatialElement_ with upward compatibility for file based exchange.</Documentation>
 			<DiagramLine>
 				<DocPoint X="7041.7709" Y="491.85245" />
@@ -44,7 +44,7 @@
 		</DocAttribute>
 		<DocAttribute Name="ReferencesElements" UniqueId="b2b6b73c-8240-478f-94ac-454a8fb0cbd7" DefinedType="IfcRelReferencedInSpatialStructure" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingStructure" XsdFormat="element">
 			<Documentation>Set of spatial reference relationships, that holds those elements, which are referenced, but not contained, within this element of the project spatial structure.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; NOTE&amp;nbsp; The spatial reference relationship, established by _IfcRelReferencedInSpatialStructure_, is not required to be an hierarchical relationship, i.e. each element can be assigned to 0, 1 or many spatial structure elements.
 
 &gt; EXAMPLE&amp;nbsp; A curtain wall maybe contained in the ground floor, but maybe referenced in all floors, it reaches.
@@ -52,7 +52,7 @@
 { .change-ifc2x3}
 &gt; IFC2x3 CHANGE&amp;nbsp; The inverse attribute has been added with upward compatibility for file based exchange.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; Ø\X</Documentation>
 			<DiagramLine>
 				<DocPoint X="7041.7709" Y="294.56924" />
@@ -77,8 +77,9 @@
 				</DocLine>
 				<DocLine>
 					<DiagramLine>
-						<DocPoint X="7073.5315" Y="789.27604" />
-						<DocPoint X="7073.5315" Y="1270.42937" />
+						<DocPoint X="6795.1041" Y="789.27604" />
+						<DocPoint X="6883.531535" Y="789.27604" />
+						<DocPoint X="6883.531535" Y="1270.4294" />
 					</DiagramLine>
 				</DocLine>
 				<DocLine>

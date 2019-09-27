@@ -2,5 +2,5 @@
 
 > HISTORY&nbsp; New entity in IFC2.0.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Attribute _ID_ renamed to _Identification_ and promoted to supertype _IfcControl_, _PredefinedType_ made optional, attributes _PreparedBy_, _SubmittedBy_, _TargetUsers_ removed.

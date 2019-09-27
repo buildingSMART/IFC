@@ -76,5 +76,5 @@ scale T = <em>TextureTransform.Scale2</em></span></li>
 
 > HISTORY&nbsp; New entity in IFC2x2.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Attribute TextureType replaces by _Mode_, attributes _Parameter_ and _MapsTo_ aded, new inverse attribute _UsedInStyle_.

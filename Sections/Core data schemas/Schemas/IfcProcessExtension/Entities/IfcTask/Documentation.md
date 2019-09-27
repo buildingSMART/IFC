@@ -6,7 +6,7 @@ Quantities of resources consumed by the task are dealt with by defining the _Ifc
 
 > HISTORY&nbsp; New entity in IFC1.0. Renamed from _IfcWorkTask_ in IFC2x.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Attributes _TaskTime_ and _PredefinedType_ added. IfcMove and IfcOrderRequest has been removed in IFC4 and are now represented by _IfcTask_. IfcRelAssignsTasks relationship has been removed as well.
 
 { .use-head}

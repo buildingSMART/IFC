@@ -4,5 +4,5 @@
 
 > HISTORY&nbsp; New entity in IFC2x
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Attributes _Name_ and _Description_ promoted to new supertype _IfcResourceLevelRelationship_.

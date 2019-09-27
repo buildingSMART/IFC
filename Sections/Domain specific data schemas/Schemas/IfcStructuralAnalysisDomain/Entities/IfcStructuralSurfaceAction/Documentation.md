@@ -2,7 +2,7 @@
 
 > HISTORY&nbsp; New entity in IFC4.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Former entity _IfcStructuralPlanarActionVarying_ from IFC2x2 has been removed and are replaced by this entity.
 
 ****Coordinate Systems****:
