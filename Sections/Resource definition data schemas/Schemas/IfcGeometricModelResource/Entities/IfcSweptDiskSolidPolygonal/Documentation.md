@@ -7,4 +7,4 @@
 { .spec-head}
 Informal Propositions:
 
-1. The _FilletRadius_, if provided, has to be smaller then or equal to the length of the start and end segment of the _IfcPolyline_, and smaller then or equal to one half of the lenght of the shortest inner segment.
+1. The _FilletRadius_, if provided, has to be smaller then or equal to the length of the start and end segment of the _IfcPolyline_, and smaller then or equal to one half of the length of the shortest inner segment.

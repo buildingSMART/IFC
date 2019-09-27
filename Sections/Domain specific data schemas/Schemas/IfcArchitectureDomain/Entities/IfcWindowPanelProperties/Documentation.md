@@ -12,5 +12,5 @@ As shown in Figure 1, the panel is applied to the position within the lining as 
 
 > HISTORY&nbsp; New entity in IFC2.0, it had been renamed from IfcWindowPanel in IFC2x.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Supertype changed to new _IfcPreDefinedPropertySet_.

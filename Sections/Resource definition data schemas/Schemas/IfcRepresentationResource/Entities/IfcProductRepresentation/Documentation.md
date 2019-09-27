@@ -7,5 +7,5 @@
 { .change-ifc2x3}
 > IFC2x3 NOTE&nbsp; Users should not instantiate the entity from IFC2x3 onwards.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Entity made abstract.

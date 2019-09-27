@@ -116,14 +116,14 @@ DATA;
 #289= IFCCARTESIANPOINT((0.,192.));
 #290= IFCCARTESIANPOINT((0.,0.));
 #291= IFCPOLYLINE((#286,#287,#288,#289,#290));
-#292= IFCSLAB('20WrgxqpbDtferON_k1P2X',#201,'Slab #1',$,$,#352,#302,$,.BASESLAB.);
+#292= IFCSLABSTANDARDCASE('20WrgxqpbDtferON_k1P2X',#201,'Slab #1',$,$,#352,#302,$,.BASESLAB.);
 #300= IFCGEOMETRICCURVESET((#291));
 #302= IFCPRODUCTDEFINITIONSHAPE($,$,(#304,#346));
 #304= IFCSHAPEREPRESENTATION(#204,'FootPrint','GeometricCurveSet',(#300));
 #310= IFCMATERIALLAYER(#315,6.,$,'Core','Material from which the slab is constructed.',$,$);
 #311= IFCMATERIALLAYERSET((#310),$,$);
 #313= IFCMATERIALLAYERSETUSAGE(#311,.AXIS3.,.POSITIVE.,0.,$);
-#314= IFCRELASSOCIATESMATERIAL('2kASSjs2f6Phd71DH$IPe5',#201,'IfcSlabStandardCase',$,(#292),#313);
+#314= IFCRELASSOCIATESMATERIAL('2kASSjs2f6Phd71DH$IPe5',#201,'IfcSlab',$,(#292),#313);
 #315= IFCMATERIAL('Concrete (Nominal)',$,'Concrete');
 #341= IFCARBITRARYCLOSEDPROFILEDEF(.AREA.,$,#279);
 #342= IFCEXTRUDEDAREASOLID(#341,#344,#345,6.);
@@ -148,7 +148,7 @@ DATA;
 
 /* Standard case walls #1 with axis and body geometry and material layer set defined ----------- */
 /* --------------------------------------------------------------------------------------------- */
-#356= IFCWALL('26tmERtwL8G8UQn5BoglEh',#201,'Wall #1',$,$,#362,#379,$,.NOTDEFINED.);
+#356= IFCWALLSTANDARDCASE('26tmERtwL8G8UQn5BoglEh',#201,'Wall #1',$,$,#362,#379,$,.NOTDEFINED.);
 #358= IFCRELCONNECTSELEMENTS('2ZHJEGFvL98QhEDnQsGNrK',#201,$,$,$,#292,#356);
 #359= IFCCARTESIANPOINT((0.,0.,6.));
 #360= IFCDIRECTION((0.,0.,1.));
@@ -157,7 +157,7 @@ DATA;
 #365= IFCMATERIALLAYERWITHOFFSETS(#370,6.,$,'Block','Structural core of the wall, such as concrete masonry units.',$,$,.AXIS1.,(0.,0.));
 #366= IFCMATERIALLAYERSET((#365),$,$);
 #368= IFCMATERIALLAYERSETUSAGE(#366,.AXIS2.,.POSITIVE.,-3.,$);
-#369= IFCRELASSOCIATESMATERIAL('0cuSbpct575BKLAXM$olZ_',#201,'IfcWallStandardCase',$,(#356,#385,#407,#429),#368);
+#369= IFCRELASSOCIATESMATERIAL('0cuSbpct575BKLAXM$olZ_',#201,'IfcWall',$,(#356,#385,#407,#429),#368);
 #370= IFCMATERIAL('Block (Nominal)',$,'Block');
 #376= IFCCARTESIANPOINT((0.,0.));
 #377= IFCCARTESIANPOINT((192.,0.));
@@ -180,7 +180,7 @@ DATA;
 
 /* Standard case walls #2 with axis and body geometry and material layer set defined ----------- */
 /* --------------------------------------------------------------------------------------------- */
-#385= IFCWALL('2qqyx9mIf27vQuEGt7ts8$',#201,'Wall #2',$,$,#394,#401,$,.NOTDEFINED.);
+#385= IFCWALLSTANDARDCASE('2qqyx9mIf27vQuEGt7ts8$',#201,'Wall #2',$,$,#394,#401,$,.NOTDEFINED.);
 #387= IFCRELCONNECTSELEMENTS('04lBS8dRv8082xho3Ve2L0',#201,$,$,$,#292,#385);
 #388= IFCRELCONNECTSPATHELEMENTS('2aU84ph_f2iwRK7mEx6APn',#201,$,$,$,#356,#385,(),(),.ATSTART.,.ATEND.);
 #391= IFCCARTESIANPOINT((0.,192.,6.));
@@ -207,7 +207,7 @@ DATA;
 
 /* Standard case walls #3 with axis and body geometry and material layer set defined ----------- */
 /* --------------------------------------------------------------------------------------------- */
-#407= IFCWALL('0edwXkNgP03AySQjQQlat2',#201,'Wall #3',$,$,#416,#423,$,.NOTDEFINED.);
+#407= IFCWALLSTANDARDCASE('0edwXkNgP03AySQjQQlat2',#201,'Wall #3',$,$,#416,#423,$,.NOTDEFINED.);
 #409= IFCRELCONNECTSELEMENTS('1_c3omXFD7UPfF9thiXwlM',#201,$,$,$,#292,#407);
 #410= IFCRELCONNECTSPATHELEMENTS('3cHo0l0vT7YecRcCZH80A_',#201,$,$,$,#385,#407,(),(),.ATSTART.,.ATEND.);
 #413= IFCCARTESIANPOINT((288.,192.,6.));
@@ -234,7 +234,7 @@ DATA;
 
 /* Standard case walls #4 with axis and body geometry and material layer set defined ----------- */
 /* --------------------------------------------------------------------------------------------- */
-#429= IFCWALL('27D5wuD5z86hr07xvbZLKW',#201,'Wall #4',$,$,#438,#445,$,.NOTDEFINED.);
+#429= IFCWALLSTANDARDCASE('27D5wuD5z86hr07xvbZLKW',#201,'Wall #4',$,$,#438,#445,$,.NOTDEFINED.);
 #431= IFCRELCONNECTSELEMENTS('2GwDyB_Xb1mBzqynA5hpmk',#201,$,$,$,#292,#429);
 #432= IFCRELCONNECTSPATHELEMENTS('0N2CJ8VSz1yx6iStYDzqLN',#201,$,$,$,#407,#429,(),(),.ATSTART.,.ATEND.);
 #435= IFCCARTESIANPOINT((288.,0.,6.));
@@ -270,7 +270,7 @@ DATA;
 /* Tasks for slabs, where each nested task is assigned to a specific slab ---------------------- */
 /* Scheduled start and finish are not specified, such that early start and finish take effect -- */
 #614= IFCTASKTIME($,.PREDICTED.,$,.WORKTIME.,'P0Y0M0DT8H0M0S',$,$,'2010-09-20T08:00:00','2010-09-20T16:00:00',$,$,$,$,$,$,$,$,$,$,$);
-#615= IFCTASK('3OFhQ6xenBvBxNI4NhGlTz',#201,'Slab (Standard)',$,$,'IfcSlabStandardCase',$,$,$,.F.,$,#614,$);
+#615= IFCTASK('3OFhQ6xenBvBxNI4NhGlTz',#201,'Slab (Standard)',$,$,'IfcSlab',$,$,$,.F.,$,#614,$);
 #618= IFCRELNESTS('084eMXNPf4iQUJ1DL9YVyg',#201,$,$,#598,(#615,#639));
 #620= IFCTASKTIME($,.PREDICTED.,$,.WORKTIME.,'P0Y0M0DT8H0M0S',$,$,'2010-09-20T08:00:00','2010-09-20T16:00:00', '2010-09-20T08:00:00','2010-09-20T16:00:00','P0Y0M0DT16H0M0S','P0Y0M0DT1H0M0S',.T.,$,$,$,$,$,$);
 #621= IFCTASK('3vesIabXX7guLU5lIRuXh7',#201,'Slab #1',$,$,$,$,$,$,.F.,$,#620,$);
@@ -279,7 +279,7 @@ DATA;
 
 /* Tasks for walls where each nested task is assigned to a specific wall ----------------------- */
 #638= IFCTASKTIME($,.PREDICTED.,$,.WORKTIME.,'P0Y0M1DT8H0M0S',$,$,'2010-09-21T08:00:00','2010-09-24T16:00:00',$,$,$,$,$,$,$,$,$,$,$);
-#639= IFCTASK('0njFKjg5HAEuwb1SdMaVRR',#201,'Wall (Standard)',$,$,'IfcWallStandardCase',$,$,$,.F.,$,#638,$);
+#639= IFCTASK('0njFKjg5HAEuwb1SdMaVRR',#201,'Wall (Standard)',$,$,'IfcWall',$,$,$,.F.,$,#638,$);
 #643= IFCTASKTIME($,.PREDICTED.,$,.WORKTIME.,'P0Y0M0DT8H0M0S',$,$,'2010-09-21T08:00:00','2010-09-21T16:00:00', '2010-09-21T08:00:00','2010-09-21T16:00:00','P0Y0M0DT0H0M0S','P0Y0M0DT0H0M0S',.T.,$,$,$,$,$,$);
 #644= IFCTASK('0Kq8RwbZH3afCy87RX8dso',#201,'Wall #1',$,$,$,$,$,$,.F.,$,#643,$);
 #645= IFCRELNESTS('3i7xt4aCT70BYgowuH355l',#201,$,$,#639,(#644,#662,#676,#690));

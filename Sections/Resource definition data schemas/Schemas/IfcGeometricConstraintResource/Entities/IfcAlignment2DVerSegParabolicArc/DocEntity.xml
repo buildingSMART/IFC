@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAlignment2DVerSegParabolicArc" UniqueId="59d16e41-5c1a-43d5-8705-044920cf9cbc" DiagramNumber="4" BaseDefinition="IfcAlignment2DVerticalSegment" EntityFlags="32">
+	<Localization>
+		<DocLocalization Name="Alignment 2D Vertical Segment Parabolic Arc" Locale="en" />
+	</Localization>
+	<DiagramRectangle xsi:type="DocRectangle" X="5071.99983723958" Y="2088.00012207031" Width="490.666656494141" Height="228" />
+	<Attributes>
+		<DocAttribute Name="ParabolaConstant" UniqueId="a1f5f18f-d929-443d-8134-939003d1b9f1" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Parabola constant (determining the “steepness” of the parabola). The parabola constant is provided by the “minimum parabola radius”, the true radius of a parabola at its vertical axis (the zero-gradient point of the parabola). The minimum radius is twice the focal length of the parabola (the distance between the focal point and the vertex).</Documentation>
+			<DiagramLine>
+				<DocPoint X="5562.66649373372" Y="2130.66674804688" />
+				<DocPoint X="5562.66649373372" Y="2130.66674804688" />
+				<DocPoint X="5833.33284505208" Y="2130.66674804688" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5562.66649373372" Y="2110.66674804688" Width="0" Height="0" />
+		</DocAttribute>
+		<DocAttribute Name="IsConvex" UniqueId="e9d73a8a-a83d-4b8a-9fc8-bf6d1fd26273" DefinedType="IfcBoolean" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+			<Documentation>Orientation of the parabolic arc, convex (Boolean=”true”) means decreasing gradient along the arc at the beginning such as at the crest of a hill, concave (Boolean=”false”) means increasing gradient along the arc at the beginning such as at the base of a valley.</Documentation>
+			<DiagramLine>
+				<DocPoint X="5562.66649373372" Y="2236" />
+				<DocPoint X="5562.66649373372" Y="2236" />
+				<DocPoint X="5833.33284505208" Y="2236" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="5562.66649373372" Y="2216" Width="0" Height="0" />
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

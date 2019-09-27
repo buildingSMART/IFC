@@ -9,7 +9,7 @@ _IfcAsymmetricIShapeProfileDef_ can also be used to model rail profiles if the a
 { .change-ifc2x3}
 > IFC2x3 CHANGE&nbsp; All profile origins are now in the center of the bounding box. The attribute _CentreOfGravityInY_ has been made OPTIONAL.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Supertype changed from _IfcIShapeProfileDef_ to _IfcParameterizedProfileDef_. Attributes which were inherited from _IfcIShapeProfileDef_ are now defined directly at _IfcAsymmetricIShapeProfileDef_ and have been partially renamed but were not reordered.  
 > Bottom flange may be narrower than top flange.  
 > Type of _TopFlangeFilletRadius_ relaxed to allow for zero radius.  

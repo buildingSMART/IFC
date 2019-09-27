@@ -40,7 +40,7 @@ Each _IfcTextureVertex_ (given as S, T coordinates of the 2-dimension texture co
 { .change-ifc2x3}
 > IFC2x3 CHANGE&nbsp; The attribute Texture is deleted, and the attribute TextureMaps is added.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The attribute TextureMap is replaced by _Vertices_, and the attribute _AppliedTo_ is added.
 
 { .spec-head}

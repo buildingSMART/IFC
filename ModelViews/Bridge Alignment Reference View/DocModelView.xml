@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocModelView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Bridge_Alignment_Reference_View_3bqd4PlBL3vhQpYhgyHPFq" Name="Bridge Alignment Reference View" UniqueId="e5d27119-bcb5-43e6-b6b3-8ababc4593f4" Code="BridgeAlignmentReferenceView_V0-1" Version="0.1" Status="Draft" BaseView="2c20c595-6b25-445b-92f5-37ef9eb1825f">
+	<Exchanges>
+		<DocExchangeDefinition Name="Bridge Alignment Reference Exchange" UniqueId="467ca84f-1089-4244-90c3-31244472a078" />
+	</Exchanges>
+	<ConceptRoots>
+		<DocConceptRoot Name="IfcAlignment" UniqueId="b99b80f3-d1e8-4b01-a7e5-261a7178e83f">
+			<Concepts>
+				<DocTemplateUsage Name="Referent Nesting" UniqueId="298a702d-5b8e-46d7-be1a-ea0df0f82808">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Nesting_3xyZPOf2b4W9j1Ne1PH7WR" />
+					<Items>
+						<DocTemplateItem UniqueId="ad9fecee-d8b2-4d35-8939-31bdd665e887" RuleParameters="Type=IfcReferent;" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Alignment Attributes" UniqueId="4dae0db5-c264-487d-a0e5-5abc6f374eb2">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Alignment_Attributes_18hxpYJj7aPJTwpcwiPO" />
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="e5c197c2-7836-40e9-acf9-f8f530b1cebb" />
+		</DocConceptRoot>
+		<DocConceptRoot Name="IfcProduct" UniqueId="92d55eb3-eab2-4b85-9f31-ee946784ab16">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcProduct" />
+			<Concepts>
+				<DocTemplateUsage Name="Linear Placement" UniqueId="a8dd3c09-3668-445f-82b5-724483e07885">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Linear_Placement_2BSSvyDSzAhvG2y638nNlp" />
+					<Items>
+						<DocTemplateItem UniqueId="75b2bf53-432f-40bf-809a-75ea42fca9db" RuleParameters="HasPlacement=IfcLinearPlacement;LinearPositioninElement=IfcLinearPositioningElement;" Order="0">
+							<Documentation>DIstance can be measured relative to another linear placement along any physical element that has a representation featuring an IfcBoundedCurve that can be used as an Axis in IfcLinearPositioningElement.</Documentation>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Relative Position" UniqueId="e67dc547-85c8-42ab-8f1d-c10496aff0e6">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Relative_Positioning_1jo2X5iK969AcbDz7acLTX" />
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Relative_Positioning_1jo2X5iK969AcbDz7acLTX" />
+		</DocConceptRoot>
+		<DocConceptRoot Name="IfcReferent" UniqueId="f768647c-d267-48eb-9db5-e5aa49a33908">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcReferent" />
+			<Concepts>
+				<DocTemplateUsage Name="Object Predefined Type" UniqueId="167f7d17-677b-4060-a384-bc91af0b61a3">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+					<Items>
+						<DocTemplateItem UniqueId="7500d1d0-0056-473b-b501-e26ee3dd5c87" Order="0" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="a92fcf75-c200-4a09-b59f-5bd8e6177960" Type="IfcReferent" />
+		</DocConceptRoot>
+	</ConceptRoots>
+</DocModelView>
+

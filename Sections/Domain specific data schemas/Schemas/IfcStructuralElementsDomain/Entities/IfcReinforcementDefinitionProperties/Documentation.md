@@ -6,5 +6,5 @@ Only one property set definition of this kind is used for each concrete building
 
 > HISTORY&nbsp; New entity in IFC2x2
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Supertype changed from _IfcPropertySetDefinition_ to _IfcPreDefinedPropertySet_

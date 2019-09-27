@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcObjectDefinition" Name="IfcObjectDefinition" UniqueId="40ee8a1b-c5dc-4107-8d14-cb784713b9e5" Status="Official" DiagramNumber="1" BaseDefinition="IfcRoot" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcObjectDefinition" Name="IfcObjectDefinition" UniqueId="40ee8a1b-c5dc-4107-8d14-cb784713b9e5" DiagramNumber="1" BaseDefinition="IfcRoot" EntityFlags="205">
 	<Localization>
 		<DocLocalization Name="Objektdefinition" Locale="de" />
 		<DocLocalization Name="Object Definition" Locale="en" />
@@ -23,7 +23,7 @@
 		<DocAttribute Name="Nests" UniqueId="c991dcb4-4357-4933-b45c-77eb14c59839" DefinedType="IfcRelNests" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatedObjects" XsdFormat="hidden">
 			<Documentation>References to the decomposition relationship being a nesting. It determines that this object definition is a part within an ordered whole/part decomposition relationship. An object occurrence or type can only be part of a single decomposition (to allow hierarchical strutures only).
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The inverse attribute datatype has been added and separated from _Decomposes_ defined at _IfcObjectDefinition_.</Documentation>
 			<DiagramLine>
 				<DocPoint X="404.64667" Y="1124.0591" />
@@ -34,7 +34,7 @@
 		<DocAttribute Name="IsNestedBy" UniqueId="f61c2101-dddb-4f80-bfe6-e83bea5a1603" DefinedType="IfcRelNests" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingObject" XsdFormat="element">
 			<Documentation>References to the decomposition relationship being a nesting. It determines that this object definition is the whole within an ordered whole/part decomposition relationship. An object or object type can be nested by several other objects (occurrences or types).
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The inverse attribute datatype has been added and separated from _IsDecomposedBy_ defined at _IfcObjectDefinition_.</Documentation>
 			<DiagramLine>
 				<DocPoint X="404.64667" Y="1036.6719" />
@@ -45,7 +45,7 @@
 		<DocAttribute Name="HasContext" UniqueId="0f4649a2-7360-4872-ab34-e0a3172e4ba1" DefinedType="IfcRelDeclares" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatedDefinitions">
 			<Documentation>References to the context providing context information such as project unit or representation context. It should only be asserted for the uppermost non-spatial object.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The inverse attribute datatype has been added.</Documentation>
 			<DiagramLine>
 				<DocPoint X="404.64667" Y="1213.8667" />
@@ -56,7 +56,7 @@
 		<DocAttribute Name="IsDecomposedBy" UniqueId="090a480e-fb85-4fdd-b904-d720ea0009c9" DefinedType="IfcRelAggregates" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingObject" XsdFormat="element">
 			<Documentation>References to the decomposition relationship being an aggregation. It determines that this object definition is whole within an unordered whole/part decomposition relationship. An object definitions can be aggregated by several other objects (occurrences or parts).
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The inverse attribute datatype has been changed from the supertype _IfcRelDecomposes_ to subtype _IfcRelAggregates_.</Documentation>
 			<DiagramLine>
 				<DocPoint X="404.64667" Y="852.17639" />
@@ -67,7 +67,7 @@
 		<DocAttribute Name="Decomposes" UniqueId="e138d591-4c0a-492f-9738-23a2b9d31c1a" DefinedType="IfcRelAggregates" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatedObjects" XsdFormat="hidden">
 			<Documentation>References to the decomposition relationship being an aggregation. It determines that this object definition is a part within an unordered whole/part decomposition relationship. An object definitions can only be part of a single decomposition (to allow hierarchical strutures only).
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The inverse attribute datatype has been changed from the supertype _IfcRelDecomposes_ to subtype _IfcRelAggregates_.</Documentation>
 			<DiagramLine>
 				<DocPoint X="404.64667" Y="948.17327" />

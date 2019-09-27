@@ -2,7 +2,7 @@
 
 > HISTORY&nbsp; New entity in IFC2x2
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; _ProcedureType_ renamed to _PredefinedType_ and made optional (upward compatible). Where rules WR1 and WR2 have been removed.
 
 { .use-head}

@@ -25,9 +25,9 @@ The part should not be contained in the spatial hierarchy, i.e. the concept _Spa
 
 &gt; EXAMPLE&amp;nbsp; An _IfcBeam_ may be aggregated into an element assembly using the objectified relationship _IfcRelAggregates_, refering to it by its inverse attribute SELF\IfcObjectDefinition.Decomposes. Any subtype of _IfcElement_ can be an element assembly, with _IfcElementAssembly_ as a special focus subtype. In this case it should not be additionally contained in the spatial hierarchy, i.e. _SELF\IfcElement.ContainedInStructure_ should be NIL.</Documentation>
 					<Localization>
-						<DocLocalization Name="AUTOMATIC" Locale="tt">
+						<DocLocalization Locale="tt">
 							<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
-	&lt;TemplateRule Parameters=&quot;Decomposes[Exists]=TRUE AND RelatingObject[Type]=&apos;IfcWallStandardCase&apos; AND ElementName[Value]=&apos;Facade&apos;&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;Decomposes[Exists]=TRUE AND RelatingObject[Type]=&apos;IfcWallStandardCase&apos; AND ElementName[Value]=&apos;Facade&apos; &quot;/&gt;
 &lt;/TemplateRules&gt;</Documentation>
 						</DocLocalization>
 					</Localization>
@@ -70,10 +70,10 @@ By default the following constraints apply to an element being decomposed by _El
 
 &gt; NOTE&amp;nbsp; Use the sub template _Element Decomposition Required_ if any instance of the element is required to represent a composite with declared parts.</Documentation>
 					<Localization>
-						<DocLocalization Name="AUTOMATIC" Locale="tt">
+						<DocLocalization Locale="tt">
 							<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
-	&lt;TemplateRule Parameters=&quot;IsDecomposedBy[Exists]=TRUE AND RelatedObjects[Size]=2&quot;/&gt;
-	&lt;TemplateRule Parameters=&quot;RelatedObjects[Type]=&apos;IfcSlab&apos; OR RelatedObjects[Type]=&apos;IfcRailing&apos;&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;IsDecomposedBy[Exists]=TRUE AND RelatedObjects[Size]=2 &quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;RelatedObjects[Type]=&apos;IfcSlab&apos; OR RelatedObjects[Type]=&apos;IfcRailing&apos; &quot;/&gt;
 &lt;/TemplateRules&gt;</Documentation>
 						</DocLocalization>
 					</Localization>
@@ -112,10 +112,10 @@ In addition a more general hierarchical tree of spatial elements can be created 
 
 &gt; NOTE&amp;nbsp; The more general hiearchical tree has been introduced as an intermediate solution and stub for further extensions to support infrastructure works.</Documentation>
 					<Localization>
-						<DocLocalization Name="AUTOMATIC" Locale="tt">
+						<DocLocalization Locale="tt">
 							<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
-	&lt;TemplateRule Parameters=&quot;RelatingObject[Type]=&apos;IfcProject&apos; AND ProjectName[Value]=&apos;Green Architecture Sydney&apos; &quot;/&gt;
-	&lt;!-- &lt;TemplateRule Parameters=&quot;RelatingObject[Type]=&apos;IfcSite&apos; AND SpatialElementName[Value]=&apos;LOT-1002&apos;&quot;/&gt; --&gt; 
+	&lt;TemplateRule Parameters=&quot;RelatingObject[Type]=&apos;IfcProject&apos; AND ProjectName[Value]=&apos;Wall test project&apos; &quot;/&gt;
+	&lt;!-- &lt;TemplateRule Parameters=&quot;RelatingObject[Type]=&apos;IfcSpatialElement&apos; AND SpatialElementName[Value]=&apos;Wall test building&apos; &quot;/&gt; --&gt; 
 &lt;/TemplateRules&gt;</Documentation>
 						</DocLocalization>
 					</Localization>
@@ -155,7 +155,7 @@ In addition a more general hierarchical tree of spatial elements can be created 
 
 &gt; NOTE&amp;nbsp; The more general hiearchical tree has been introduced as an intermediate solution and stub for further extensions to support infrastructure works.</Documentation>
 					<Localization>
-						<DocLocalization Name="AUTOMATIC" Locale="tt">
+						<DocLocalization Locale="tt">
 							<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
 	&lt;TemplateRule Parameters=&quot;RelatedObjects[Size]=4 AND RelatedObjects[Type]=&apos;IfcBuildingStorey&apos;&quot;/&gt;
 	&lt;TemplateRule Parameters=&quot;SpatialElementName[Value]=&apos;UG&apos; OR SpatialElementName[Value]=&apos;EG&apos; OR SpatialElementName[Value]=&apos;OG1&apos; OR SpatialElementName[Value]=&apos;DG&apos;&quot;/&gt;
@@ -167,11 +167,11 @@ In addition a more general hierarchical tree of spatial elements can be created 
 							<Rules>
 								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAggregates">
 									<Rules>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedObjects" Identification="Type">
+										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedObjects" Identification="RelatedObjects">
 											<Rules>
 												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcSpatialElement">
 													<Rules>
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name">
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="SpatialElementName">
 															<Rules>
 																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
 															</Rules>
@@ -220,10 +220,11 @@ The &apos;Body&apos; representation of an element does not account for voids, fo
 
 The &apos;Mesh&apos; representation of an element does account for voids, such that no additional operations are required.</Documentation>
 			<Localization>
-				<DocLocalization Name="AUTOMATIC" Locale="tt">
+				<DocLocalization Locale="tt">
 					<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
-                &lt;TemplateRule Parameters=&quot;HasOpenings[Size]=1 AND HasFillings[Size]=1 AND RelatedFillings[Size]=1 AND ElementName[Type]=&apos;IfcDoor&apos;&quot;/&gt;
-&lt;/TemplateRules&gt;</Documentation>
+    &lt;!-- Check assignement to openings and fillings of the opening --&gt;
+    &lt;TemplateRule Parameters=&quot;HasOpenings[Size]=1 AND HasFillings[Size]=1 AND RelatedFillings[Size]=1 AND ElementName[Type]=&apos;IfcDoor&apos;&quot;/&gt;
+ &lt;/TemplateRules&gt;</Documentation>
 				</DocLocalization>
 			</Localization>
 			<Rules>
@@ -350,11 +351,12 @@ A general rule for using nesting as opposed to aggregation is based on the conte
 
 Ports may have placement defined indicating the position and outward orientation of the port relative to the product or product type. Ports may also have material profile sets defined indicating the flow area and connection enclosure.</Documentation>
 					<Localization>
-						<DocLocalization Name="AUTOMATIC" Locale="tt">
+						<DocLocalization Locale="tt">
 							<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
-                &lt;TemplateRule Parameters=&quot;PortName[Value]=&apos;P1&apos;&quot;/&gt;
-                &lt;TemplateRule Parameters=&quot;Flow[Value]=&apos;SINK&apos; OR Flow[Value]=&apos;SOURCE&apos;&quot;/&gt;
-                &lt;TemplateRule Parameters=&quot;SystemType[Value]=&apos;ELECTRICAL&apos; OR SystemType[Value]=&apos;WATERSUPPLY&apos; OR SystemType[Value]=&apos;WASTEWATER&apos;&quot;/&gt;
+    &lt;!-- Check assignement to port name and enum types →
+    &lt;TemplateRule Parameters=&quot;PortName[Value]=&apos;P1&apos;&quot;/&gt;
+    &lt;TemplateRule Parameters=&quot;Flow[Value]=&apos;SINK&apos; OR Flow[Value]=&apos;SOURCE&apos;&quot;/&gt;
+    &lt;TemplateRule Parameters=&quot;SystemType[Value]=&apos;ELECTRICAL&apos; OR SystemType[Value]=&apos;WATERSUPPLY&apos; OR SystemType[Value]=&apos;WASTEWATER&apos;&quot;/&gt;
 &lt;/TemplateRules&gt;</Documentation>
 						</DocLocalization>
 					</Localization>
@@ -414,6 +416,7 @@ Ports may have placement defined indicating the position and outward orientation
 																</DocModelRuleEntity>
 															</Rules>
 														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsDeclaredBy" />
 														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="PredefinedType">
 															<Rules>
 																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDistributionPortTypeEnum" />

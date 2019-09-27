@@ -125,7 +125,7 @@ The _IfcPropertyTableValue_ allows for the specification of a table of defining/
 
 > HISTORY&nbsp; New entity in IFC2x.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Attributes _DefiningValues_ and _DefinedValues_ have been made OPTIONAL with upward compatibility for file based exchange. The attribute _CurveInterpolation_ has been added.
 
 &nbsp;

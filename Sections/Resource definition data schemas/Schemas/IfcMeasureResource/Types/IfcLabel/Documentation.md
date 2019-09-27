@@ -6,7 +6,7 @@ Type: STRING of up to 255 characters
 
 > HISTORY&nbsp; New type in IFC2x.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Previously recommended size restriction of 255 characters is now mandatory.
 
 { .use-head}

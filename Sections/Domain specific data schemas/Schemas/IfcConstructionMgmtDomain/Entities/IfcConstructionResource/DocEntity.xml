@@ -18,7 +18,7 @@
 		<DocAttribute Name="Usage" UniqueId="a310105d-c221-4f71-b051-9391d731cec8" DefinedType="IfcResourceTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>Indicates the work, usage, and times scheduled and completed.  Some attributes on this object may have associated constraints or time series; see documentation of _IfcResourceTime_ for specific usage.  If the resource is nested, then certain values may be calculated based on the component resources as indicated at _IfcResourceTime_.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute.</Documentation>
 			<DiagramLine>
 				<DocPoint X="286.64" Y="277.99997" />
@@ -31,7 +31,7 @@
 		<DocAttribute Name="BaseCosts" UniqueId="c897428f-689a-4abb-9fb4-b5dffaf945e6" DefinedType="IfcAppliedValue" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Indicates the unit costs for which accrued amounts should be calculated.  Such unit costs may be split into _Name_ designations (for example, &apos;Standard&apos;, &apos;Overtime&apos;), and may contain a hierarchy of cost values that apply at different dates (using _IfcCostValue.ApplicableDate_ and _IfcCostValue.FixedUntilDate_).
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute.</Documentation>
 			<DiagramLine>
 				<DocPoint X="286.64" Y="527.31688" />
@@ -50,7 +50,7 @@ For material resources, this refers to _IfcQuantityVolume_.
 
 For product resources, this refers to _IfcQuantityCount_.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute.</Documentation>
 			<DiagramLine>
 				<DocPoint X="286.64" Y="662.46091" />

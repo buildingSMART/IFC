@@ -49,13 +49,23 @@ EXAMPLE: Would be FALSE for a center line, identified as shape aspect; would be 
 		</DocAttribute>
 		<DocAttribute Name="PartOfProductDefinitionShape" UniqueId="26d2bffa-08ab-4f51-8c1b-5240f92fc434" DefinedType="IfcProductRepresentationSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="hidden">
 			<Documentation>Reference to the _IfcProductDefinitionShape_ or the _IfcRepresentationMap_ of which this shape is an aspect.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; Data type modified to be _IfcProductRepresentationSelect_ allowing the assignment also to _IfcRepresentationMap_.</Documentation>
 			<DiagramLine>
-				<DocPoint X="2373.5592" Y="2106.6029" />
-				<DocPoint X="2373.5592" Y="2220.51726" />
+				<DocPoint X="2443.10034179688" Y="2106.60288" />
+				<DocPoint X="2443.10034179688" Y="2106.60288" />
+				<DocPoint X="2443.10034179688" Y="2199.18375651042" />
 			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2563.18444" Y="2073.989499" Width="338" Height="35" />
+			<DiagramLabel xsi:type="DocRectangle" X="2443.10034179688" Y="2126.60288" Width="338" Height="35" />
+		</DocAttribute>
+		<DocAttribute Name="HasExternalReferences" UniqueId="85686d70-e65d-4c7d-b5ff-80615d570e42" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="?" Inverse="RelatedResourceObjects">
+			<Documentation>External references (e.g. classification) associated with the shape aspect.</Documentation>
+			<DiagramLine>
+				<DocPoint X="2222.7051" Y="2106.60288" />
+				<DocPoint X="2222.7051" Y="2222.13924153646" />
+				<DocPoint X="2030.03853352865" Y="2222.13924153646" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="2222.7051" Y="2126.60288" Width="400" Height="50" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

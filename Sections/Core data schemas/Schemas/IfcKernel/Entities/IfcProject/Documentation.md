@@ -12,7 +12,7 @@ The context provided by the _IfcProject_ includes:
 
 > HISTORY&nbsp; New entity in IFC1.0
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The attributes _RepresentationContexts_ and _UnitsInContext_ are made optional and are promoted to supertype _IfcContext_.
 
 { .spec-head}

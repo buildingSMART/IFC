@@ -16,7 +16,7 @@
 			<Documentation>The type object to which the property set is assigned. The property set acts as a shared property set to all occurrences of the type object.
 &gt; NOTE&amp;nbsp; The relationship between the _IfcPropertySetDefinition_ and the _IfcTypeObject_ is a direct relationship, not utilizing _IfcRelDefinesByProperties_, for maintaining compatibility with earlier releases of this standard.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The cardinality has been changed from 0:1 to 0:? with upward compatibility for file based exchange.</Documentation>
 			<DiagramLine>
 				<DocPoint X="1955.7642" Y="1022.2582" />
@@ -26,7 +26,7 @@
 		</DocAttribute>
 		<DocAttribute Name="IsDefinedBy" UniqueId="e9541680-618c-49dc-a052-7d13de3fd336" DefinedType="IfcRelDefinesByTemplate" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatedPropertySets">
 			<Documentation>Relation to the property set template, via the objectified relationship _IfcRelDefinesByTemplate_, that, if given, provides the definition template for the property set or quantity set and its properties. 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New inverse relationship, change made with upward compatibility for file based exchange.</Documentation>
 			<DiagramLine>
 				<DocPoint X="1955.7642" Y="1168.2048" />
@@ -36,7 +36,7 @@
 		</DocAttribute>
 		<DocAttribute Name="DefinesOccurrence" UniqueId="74a32a1f-15b3-4366-a7ac-3776403dd4dd" DefinedType="IfcRelDefinesByProperties" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatingPropertyDefinition">
 			<Documentation>Reference to the relation to one or many object occurrences that are characterized by the property set definition. A single property set can be assigned to multiple object occurrences using the objectified relationship _IfcRefDefinesByProperties_.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE Inverse attribute renamed from PropertyDefinitionOf with upward compatibility for file-based exchange.</Documentation>
 			<DiagramLine>
 				<DocPoint X="1955.7641" Y="1311.8008" />

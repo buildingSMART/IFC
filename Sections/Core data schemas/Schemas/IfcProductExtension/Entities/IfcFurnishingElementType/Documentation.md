@@ -11,5 +11,5 @@ The occurrences of the _IfcFurnishingElementType_ are represented by instances o
 { .change-ifc2x3}
 > IFC2x3 CHANGE&nbsp; The entity has been made non-abstract
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The entity is marked as deprecated for instantiation - will be made ABSTRACT after IFC4.

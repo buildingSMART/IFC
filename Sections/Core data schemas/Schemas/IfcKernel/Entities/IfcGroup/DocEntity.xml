@@ -9,7 +9,7 @@
 	<Attributes>
 		<DocAttribute Name="IsGroupedBy" UniqueId="d62fb122-4977-4bdd-9663-ff15e288c506" DefinedType="IfcRelAssignsToGroup" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="RelatingGroup">
 			<Documentation>Reference to the relationship _IfcRelAssignsToGroup_ that assigns the one to many group members to the _IfcGroup_ object.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The cardinality has been changed from 1..1 to 0..? in order to allow the exchange of a group concept without having already group members assigned. It now also allows the use of many instances of _IfcRelAssignsToGroup_ to assign the group members. The change has been done with upward compatibility for file based exchange.</Documentation>
 			<DiagramLine>
 				<DocPoint X="20084.47" Y="386.34063" />

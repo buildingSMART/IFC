@@ -29,7 +29,7 @@
 		</DocAttribute>
 		<DocAttribute Name="PartOfPset" UniqueId="79ce08ab-7c92-4db4-9325-4a08c1c70c38" DefinedType="IfcPropertySet" AttributeFlags="32" AggregationType="3" AggregationFlag="0" Inverse="HasProperties">
 			<Documentation>Reference to the _IfcPropertySet_ by which the _IfcProperty_ is referenced.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New inverse attribute to navigate from _IfcProperty_ to _IfcPropertySet_ with upward compatibility for file based exchange.</Documentation>
 			<DiagramLine>
 				<DocPoint X="679.60001" Y="1309.7973" />
@@ -56,7 +56,7 @@
 		</DocAttribute>
 		<DocAttribute Name="PartOfComplex" UniqueId="be34513c-c6e4-4dd1-b6be-63ae5e66413f" DefinedType="IfcComplexProperty" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="HasProperties">
 			<Documentation>Reference to the _IfcComplexProperty_ in which the _IfcProperty_ is contained.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The cardinality has changed to 0..n to allow reuse of instances of _IfcProperty_ in several _IfcComplexProperty_ with upward compatibility for file based exchange.</Documentation>
 			<DiagramLine>
 				<DocPoint X="493.50928" Y="1567.7999" />

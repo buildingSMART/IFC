@@ -2,5 +2,5 @@
 
 > HISTORY&nbsp; New type in IFC2x2
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Item ANCHORING added. Enumeration renamed in IFC4 from _IfcReinforcingBarRoleEnum_ without changes to the range of enumeration items.

@@ -9,7 +9,7 @@ The Material Layer Set Base (MlsBase) describes the imaginary axis along which t
 
 > HISTORY&nbsp; New entity in IFC1.0
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Subtyped from _IfcMaterialDefinition_, the attribute _Description_ has been added at the end of attribute list.
 
 { .use-head}

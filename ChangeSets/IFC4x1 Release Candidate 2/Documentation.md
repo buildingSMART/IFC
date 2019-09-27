@@ -1,0 +1,1 @@
+﻿Release Candidate 2 is a minor update from Release Candidate 1, which introduces _IfcAlignmentCurve_ as a geometric curve and modifies _IfcAlignment_ to use this new data structure. This change is necessary to support upcoming functionality in Release Candidate 3.

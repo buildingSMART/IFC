@@ -56,5 +56,5 @@ The use of one instance of _IfcGeometricRepresentationContext_ to represent the 
 { .change-ifc2x3}
 > IFC2x3 CHANGE&nbsp; Applicable values for _ContextType_ are only 'Model', 'Plan', and 'NotDefined'. All other contexts are now handled by _IfcGeometricRepresentationSubContext_.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Mapping to Geographic coordinate system added by inverse attribute _HasCoordinateOperation_.

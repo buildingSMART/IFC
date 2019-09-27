@@ -2,7 +2,7 @@
 
 > HISTORY&nbsp; New entity in IFC2x2
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; All attributes are optional now. Several attributes are deprecated; their information is now provided by _IfcReinforcingMeshType_. Attribute _PredefinedType_ added.
 
 { .use-head}

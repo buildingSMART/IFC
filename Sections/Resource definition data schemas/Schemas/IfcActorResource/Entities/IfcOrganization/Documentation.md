@@ -6,5 +6,5 @@
 
 > HISTORY&nbsp; New entity in IFC1.5.1.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Attribute 'Id' renamed to _Identification_.

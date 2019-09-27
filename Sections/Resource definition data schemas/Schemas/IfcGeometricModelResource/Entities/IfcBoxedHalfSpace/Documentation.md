@@ -33,5 +33,5 @@ fully enclose the Boolean result.</td>
 
 > HISTORY&nbsp; New entity in IFC1.5.1
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Usage correct, position coordinate system for _Enclosure_ is the object coordinate system.

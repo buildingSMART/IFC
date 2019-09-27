@@ -2,7 +2,7 @@
 
 > HISTORY&nbsp; New entity in IFC2x2.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Type of _FilletRadius_ and _EdgeRadius_ relaxed to allow for zero radius.
 
 Figure 1 illustrates parameters of the Z-shape profile definition.

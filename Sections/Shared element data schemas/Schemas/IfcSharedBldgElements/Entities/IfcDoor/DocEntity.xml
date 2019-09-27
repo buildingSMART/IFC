@@ -8,7 +8,7 @@
 	<DiagramRectangle xsi:type="DocRectangle" X="4829.5166015625" Y="157.636672973633" Width="279.93333" Height="745.333343505859" />
 	<Subtypes>
 		<DocSubtype UniqueId="5078ba5e-37ce-44ee-a144-570e7a3e93f7" DefinedType="IfcDoorStandardCase" />
-		<DocSubtype UniqueId="5078ba5e-37ce-44ee-a144-570e7a3e93f7" DefinedType="IfcDoorStandardCase" />
+		<DocSubtype UniqueId="0f7841c9-6eb7-45cb-a24a-6f308d276c44" DefinedType="IfcDoorStandardCase" />
 	</Subtypes>
 	<Attributes>
 		<DocAttribute Name="OverallHeight" UniqueId="82f1996a-2267-42e4-9a5b-d4f2a6e4f8e8" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
@@ -37,7 +37,7 @@
 			<Documentation>Predefined generic type for a door that is specified in an enumeration. There may be a property set given specificly for the predefined types.
 &gt; NOTE&amp;nbsp; The _PredefinedType_ shall only be used, if no _IfcDoorType_ is assigned, providing its own _IfcDoorType.PredefinedType_.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE The attribute has been added at the end of the entity definition.</Documentation>
 			<DiagramLine>
 				<DocPoint X="5109.4499315625" Y="203.966644453776" />
@@ -50,7 +50,7 @@
 			<Documentation>Type defining the general layout and operation of the door type in terms of the partitioning of panels and panel operations. 
 &gt; NOTE&amp;nbsp; The _OperationType_ shall only be used, if no type object _IfcDoorType_ is assigned, providing its own _IfcDoorType.OperationType_.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE The attribute has been added at the end of the entity definition.</Documentation>
 			<DiagramLine>
 				<DocPoint X="5109.4499315625" Y="289.048642744792" />
@@ -77,14 +77,5 @@
 OR (&apos;IFCSHAREDBLDGELEMENTS.IFCDOORTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
 		</DocWhereRule>
 	</WhereRules>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="5031.1499365625" Y="902.970016479492" />
-				<DocPoint X="5031.1499365625" Y="902.970016479492" />
-				<DocPoint X="5031.1499365625" Y="927.100036621094" />
-			</DiagramLine>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

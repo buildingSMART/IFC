@@ -8,16 +8,17 @@ The following conventions shall apply as default relative positions if the relat
 
 * For the subtypes of _IfcSpatialStructureElement_ the following conventions apply 
     * _IfcSite_ shall be placed absolutely within the world coordinate system established by the geometric representation context of the _IfcProject_ 
-    * _IfcBuilding_ shall be placed relative to the local placement of _IfcSite_ 
-    * _IfcBuildingStorey_ shall be placed relative to the local placement of _IfcBuilding_ 
+    * _IfcFacility_ shall be placed relative to the local placement of _IfcSite_ 
+    * _IfcFacilityPart_ shall be placed relative to the local placement of _IfcFacility_ 
 * For _IfcGrid_ and _IfcAnnotation_ the convention applies that it shall be placed relative 
     *  to the local placement of its container, either _IfcSite_, _IfcBuilding_, or _IfcBuildingStorey_ 
         * it should be the same container element that is referenced by the _IfcRelContainedInSpatialStructure_ containment relationship, 
+*  For _IfcAlignment_ placed relative to the local placement of its container _IfcSite_ when not placed absolutely within the world coordinate system. 
 * For _IfcPort_ the convention applies that it shall be placed relative 
     *  to the local placement of the _IfcElement_ it belongs to 
         * it should be the same element that is referenced by the _IfcRelConnectsPortToElement_ connection relationship, 
 *  For _IfcElement_ the convention applies that it shall be placed relative: 
-    *  to the local placement of its container, either _IfcSite_, _IfcBuilding_, or _IfcBuildingStorey_ 
+    *  to the local placement of its container, either _IfcSite_, _IfcFacility_, or _IfcFacilityPart_ 
         * it should be the same container element that is referenced by the _IfcRelContainedInSpatialStructure_ containment relationship, 
     * to the local placement of the _IfcElement_ to which it is tied by an element composition relationship 
         * for features that are located relative to the main component (such as openings), as expressed by _IfcRelVoidsElement_ and _IfcRelProjectsElement_;

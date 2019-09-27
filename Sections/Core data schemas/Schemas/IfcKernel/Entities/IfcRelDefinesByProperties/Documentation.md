@@ -4,5 +4,5 @@ The _IfcRelDefinesByProperties_ is an N-to-N relationship, as it allows for the 
 
 > HISTORY&nbsp; New entity in IFC2.0. Has been renamed from _IfcRelAssignsProperties_ in IFC2x.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The attribute _RelatedObjects_ had been demoted from the supertype _IfcRelDefines_ to _IfcRelDefinesByProperties_. This relationship has been modified to support multiple property sets referenced by a single relationship.

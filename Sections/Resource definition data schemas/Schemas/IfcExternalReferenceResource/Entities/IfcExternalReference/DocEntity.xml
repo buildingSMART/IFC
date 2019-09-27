@@ -14,7 +14,7 @@
 	<Attributes>
 		<DocAttribute Name="Location" UniqueId="d4dad48f-1dac-4cbb-99d0-7819c93da6c2" DefinedType="IfcURIReference" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
 			<Documentation>Location, where the external source (classification, document or library) can be accessed by electronic means. The electronic location is provided as an URI, and would normally be given as an URL location string.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The data type has been changed from _IfcLabel_ to _IfcURIReference_  
 &gt; .</Documentation>
 			<DiagramLine>
@@ -31,7 +31,7 @@
 
 
 It may be human readable (such as a key) or not (such as a handle or uuid) depending on the context of its usage (which has to be determined by local agreement).
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE Attribute renamed from _ItemReference_ for consistency.  
 &gt;</Documentation>
 			<DiagramLine>
@@ -51,7 +51,7 @@ It may be human readable (such as a key) or not (such as a handle or uuid) depen
 		<DocAttribute Name="ExternalReferenceForResources" UniqueId="52adb1da-05bd-4f8b-bd47-3c140643a153" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatingReference">
 			<Documentation>Reference to all associations between this external reference and objects within the _IfcResourceObjectSelect_ that are tagged by the external reference.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New inverse attribute added with upward compatibility.  
 &gt;</Documentation>
 			<DiagramLine>

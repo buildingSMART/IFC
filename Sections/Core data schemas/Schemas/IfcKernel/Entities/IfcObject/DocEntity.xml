@@ -25,7 +25,7 @@
 		</DocAttribute>
 		<DocAttribute Name="IsDeclaredBy" UniqueId="61731909-a38e-45fe-98b9-b403ef1e803d" DefinedType="IfcRelDefinesByObject" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatedObjects" XsdFormat="attribute">
 			<Documentation>Link to the relationship object pointing to the declaring object that provides the object definitions for this object occurrence. The declaring object has to be part of an object type decomposition. The associated _IfcObject_, or its subtypes, contains the specific information (as part of a type, or style, definition), that is common to all reflected instances of the declaring _IfcObject_, or its subtypes. 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New inverse relationship, change made with upward compatibility for file based exchange.</Documentation>
 			<DiagramLine>
 				<DocPoint X="607.76667" Y="1819.0065" />
@@ -35,7 +35,7 @@
 		</DocAttribute>
 		<DocAttribute Name="Declares" UniqueId="8a2b55d8-3bca-45a0-9309-e7c6e2770821" DefinedType="IfcRelDefinesByObject" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingObject">
 			<Documentation>Link to the relationship object pointing to the reflected object(s) that receives the object definitions. The reflected object has to be part of an object occurrence decomposition. The associated _IfcObject_, or its subtypes, provides the specific information (as part of a type, or style, definition), that is common to all reflected instances of the declaring _IfcObject_, or its subtypes. 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New inverse relationship, change made with upward compatibility for file based exchange.</Documentation>
 			<DiagramLine>
 				<DocPoint X="607.76667" Y="1916.516" />
@@ -45,7 +45,7 @@
 		</DocAttribute>
 		<DocAttribute Name="IsTypedBy" UniqueId="4016c47e-1d15-481e-8a59-b6fb531ad43c" DefinedType="IfcRelDefinesByType" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatedObjects" XsdFormat="attribute">
 			<Documentation>Set of relationships to the object type that provides the type definitions for this object occurrence. The then associated _IfcTypeObject_, or its subtypes, contains the specific information (or type, or style), that is common to all instances of _IfcObject_, or its subtypes, referring to the same type. 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New inverse relationship, the link to _IfcRelDefinesByType_ had previously be included in the inverse relationship _IfcRelDefines_. Change made with upward compatibility for file based exchange.</Documentation>
 			<DiagramLine>
 				<DocPoint X="607.76667" Y="1725.0993" />
@@ -55,7 +55,7 @@
 		</DocAttribute>
 		<DocAttribute Name="IsDefinedBy" UniqueId="e2315ec5-85ce-457d-b508-07be258c2138" DefinedType="IfcRelDefinesByProperties" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatedObjects" XsdFormat="element">
 			<Documentation>Set of relationships to property set definitions attached to this object. Those statically or dynamically defined properties contain alphanumeric information content that further defines the object. 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The data type has been changed from _IfcRelDefines_ to _IfcRelDefinesByProperties_ with upward compatibility for file based exchange.</Documentation>
 			<DiagramLine>
 				<DocPoint X="607.76667" Y="1630.1666" />

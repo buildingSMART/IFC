@@ -2,5 +2,5 @@
 
 > HISTORY&nbsp; New enumeration in IFC2.0
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Enumeration no longer applicable to _IfcSpace_. The following enumerators are added: EXTERNAL_EARTH, EXTERNAL_WATER, EXTERNAL_FIRE.

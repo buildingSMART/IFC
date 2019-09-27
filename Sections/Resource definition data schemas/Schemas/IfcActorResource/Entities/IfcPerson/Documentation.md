@@ -6,5 +6,5 @@
 
 > HISTORY&nbsp; New entity in IFC1.5.1.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Attribute _Id_ renamed to _Identification_. WHERE rule relaxed to allow omission of names if _Identification_ is provided.

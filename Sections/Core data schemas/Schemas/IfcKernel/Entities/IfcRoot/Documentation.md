@@ -4,5 +4,5 @@
 
 > HISTORY&nbsp; New entity in IFC1.0
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The attribute _OwnerHistory_ has been made OPTIONAL.

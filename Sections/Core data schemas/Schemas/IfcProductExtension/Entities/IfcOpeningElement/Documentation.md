@@ -1,12 +1,11 @@
 ﻿The opening element stands for opening, recess or chase, all reflecting voids. It represents a void within any element that has physical manifestation. Openings can be inserted into walls, slabs, beams, columns, or other elements.
 
-There are two main representations for opening elements:
+The IFC specification provides two entities for opening elements:
 
-* Openings that have a constant profile along a linear extrusion. They are placed relative to the voided elements and the extrusion direction is perpendicular to the plane of the element (horizontally for walls, vertically for slabs). Only a single extrusion body is allowed. It cuts through the whole thickness of the voided element, i.e. it reflects a true opening. 
->> NOTE&nbsp; The entity _IfcOpeningStandardCase_ has been deprecated. 
+* _IfcOpeningStandardCase_ is used for all openings that have a constant profile along a linear extrusion. They are placed relative to the voided elements and the extrusion direction is perpendicular to the plane of the element (horizontally for walls, vertically for slabs). Only a single extrusion body is allowed. It cuts through the whole thickness of the voided element, i.e. it reflects a true opening.
 * _IfcOpeningElement_ is used for all other occurrences of openings and in particular also for niches or recesses.
 
-> NOTE&nbsp; Model View Definitions may restrict the types of elements which can be voided by an _IfcOpeningElement_
+> NOTE&nbsp; View definitions or implementer agreements may restrict the types of elements which can be voided by an _IfcOpeningElement_ or _IfcOpeningStandardCase_
 
 There are two different types of opening elements:
 
@@ -35,5 +34,5 @@ The _IfcOpeningElement_ shall not participate in the containment relationship, i
 { .change-ifc2x}
 > IFC2x CHANGE&nbsp; The intermediate ABSTRACT supertypes _IfcFeatureElement_ and _IfcFeatureSubtraction_ have been added.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The attribute _PredefinedType_ has been added at the end of attribute list. It should be used instead of the inherited attribute _ObjectType_ from now on.

@@ -18,5 +18,5 @@ _IfcGroup_ does not define an own object coordinate system, nor does it have an 
 
 > HISTORY&nbsp; New entity in IFC1.0.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The inverse _IsGroupedBy_ relationship is set to 0..n

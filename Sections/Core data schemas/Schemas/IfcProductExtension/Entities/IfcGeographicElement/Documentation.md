@@ -3,3 +3,5 @@
 > NOTE &nbsp;Roads are now represented by _IfcCivilElement_.
 
 > HISTORY &nbsp;New entity in IFC4.
+
+> NOTE &nbsp;For the PredefinedType=’.SOIL_BORING_POINT.’ the soil layers shall be modelled with the Material Layer Set Usage concept..

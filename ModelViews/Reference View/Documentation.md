@@ -246,7 +246,7 @@ Only the following spatial structure elements _IfcSite_, _IfcBuilding_, _IfcBuil
 All model elements, listed in the previous section, are defined by several generic and direct object attributes, some specific model elements do carry additional direct attributes. The usage of the direct generic attributes is defined within the following concept templates (see also Chapter 4 "fundamental concepts and assumptions"):
 
 * "_Software Identity_", it defines how to apply the Globally Unique Id and how to compress it during exchange; 
-* "_User Identity_", it defins the meaning of _Name_, _Description_, _LongName_and _Tag_attributes; 
+* "_User Identity_", it defines the meaning of _Name_, _Description_, _LongName_and _Tag_attributes; 
 * "_Object Occurrence Predefined Type_", it defines how to use the _PredefinedType_and in case of user defined types, how to assign the user defined type information within the _ObjectType_attribute for occurrences of model elements; 
 * "_Element Type Predefined Type_" it defines how to use the _PredefinedType_and in case of user defined types, how to assign the user defined type information within the _ElementType_attribute for types of model elements. 
 
@@ -356,7 +356,7 @@ In scope of presentation capabilities for the appearance of model element shapes
 
 * "_Surface Style Shading_", applying a single coloring for each solid; 
 * "_Surface Style Rendering_", applying a single rendering (color, transparency, reflection, etc.) for each solid; 
-* "_Surface_", applying a single texture for each solid according to a texture mapping based on the solid type; 
+* "_Surface Style textures_", applying a single texture for each solid according to a texture mapping based on the solid type; 
 * "_Suface Style Tessellation_", applying a color and/or texture for each face of a tessellated solid. 
 
 The visually adaquate presentation of model elements is constraint by the shape representation

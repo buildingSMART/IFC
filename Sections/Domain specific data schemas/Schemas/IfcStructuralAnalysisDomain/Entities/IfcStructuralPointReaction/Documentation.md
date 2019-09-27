@@ -2,7 +2,7 @@
 
 > HISTORY&nbsp; New entity in IFC2x2.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Attributes in the supertypes _IfcStructuralActivity_ and _IfcStructuralReaction_ changed. Use definitions changed, informal propositions added.
 
 ****Coordinate Systems****:

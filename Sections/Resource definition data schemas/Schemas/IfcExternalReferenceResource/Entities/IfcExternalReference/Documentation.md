@@ -6,5 +6,5 @@ _IfcExternalReference_ is an abstract supertype of all external reference entiti
 
 > HISTORY&nbsp; New entity in IFC2x.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC 2x4 CHANGE&nbsp; Attribute _Identification_ renamed from ItemReference, attribute _Location_ datatype changed, and inverse attribute _ExternalReferenceForResources_ added.

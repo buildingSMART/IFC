@@ -2,7 +2,7 @@
 
 > HISTORY&nbsp; New entity in IFC2.0.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The attribute _SubContractor_ has been deleted; use _IfcRelAssignsToResource_ to assign an _IfcActor_ to fulfill the role as the subcontractor. The attribute _JobDescription_ has been deleted; use _LongDescription_ to describe the job.
 
 An _IfcSubContractResource_ can be used in cost estimating and work planning with or without specifying the subcontractor and contract agreement.

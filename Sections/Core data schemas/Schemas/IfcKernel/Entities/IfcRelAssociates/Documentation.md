@@ -12,5 +12,5 @@ The association relationship establishs an association between one to many objec
 
 > HISTORY&nbsp; New entity in IFC2x.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Entity has been changed into an ABSTRACT supertype

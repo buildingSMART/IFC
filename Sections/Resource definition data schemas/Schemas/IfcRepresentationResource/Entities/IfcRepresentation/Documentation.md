@@ -13,7 +13,7 @@
 { .change-ifc2x3}
 > IFC2x3 CHANGE&nbsp; The inverse attributes _LayerAssignments_ and_RepresentationMap_ have been added with upward compatibility.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Entity _IfcRepresentation_ has been changed into an ABSTRACT supertype.
 
 { .use-head}

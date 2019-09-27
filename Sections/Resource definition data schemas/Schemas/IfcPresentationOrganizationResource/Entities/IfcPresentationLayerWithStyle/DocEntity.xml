@@ -38,7 +38,7 @@
 			<Documentation>Assignment of presentation styles to the layer to provide a default style for representation items.
 &gt; NOTE&amp;nbsp; In most cases the assignment of styles to a layer is restricted to an _IfcCurveStyle_ representing the layer curve colour, layer curve thickness, and layer curve type.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The data type has been changed from _IfcPresentationStyleSelect_ (now deprecated) to _IfcPresentationStyle_.</Documentation>
 			<DiagramLine>
 				<DocPoint X="480.166709899902" Y="1037.60005442301" />
@@ -51,13 +51,9 @@
 	<WhereRules>
 		<DocWhereRule Name="ApplicableOnlyToItems" UniqueId="15b49b88-7a97-4508-afed-63832bc8c23a">
 			<Documentation>The _IfcPresentationLayerWithStyle_ shall only be used to assign subtypes of _IfcGeometricRepresentationItem_&apos;s and to _IfcMappedItem_. There shall be no instance of subtypes of _IfcRepresentation_ in the set of _AssignedItem_&apos;s.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New where rule.</Documentation>
-			<Expression>SIZEOF(QUERY(temp &lt;* AssignedItems | (
-  SIZEOF(TYPEOF(temp) * [
-    &apos;IFCGEOMETRYRESOURCE.IFCGEOMETRICREPRESENTATIONITEM&apos;,
-    &apos;IFCGEOMETRYRESOURCE.IFCMAPPEDITEM&apos;]) = 1)
-)) = SIZEOF(AssignedItems)</Expression>
+			<Expression>SIZEOF(QUERY(temp &lt;* AssignedItems | (SIZEOF(TYPEOF(temp) * [&apos;IFCGEOMETRYRESOURCE.IfcGeometricRepresentationItem&apos;,&apos;IFCGEOMETRYRESOURCE.IfcMappedItem&apos;]) &gt;= 1))) = SIZEOF(AssignedItems)</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>

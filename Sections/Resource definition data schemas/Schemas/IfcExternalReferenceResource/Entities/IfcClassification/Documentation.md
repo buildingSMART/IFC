@@ -11,5 +11,5 @@ There are two methods to define and reference a classification system:
 
 > HISTORY&nbsp; New entity in IFC1.5
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC 2x4 CHANGE&nbsp; Attribute _Edition_ made optional. Attributes: _Description_, _Location_, and _ReferenceTokens_ and inverse attribute _HasReferences_ added.

@@ -1,4 +1,4 @@
-﻿A ramp is a vertical passageway which provides a human circulation link between one floor level and another floor level at a different elevation. It may include a landing as an intermediate floor slab. A ramp normally does not include steps.
+﻿A ramp is a vertical passageway which provides a human or vehicle circulation link between one floor level and another floor level at a different elevation. It may include a landing as an intermediate floor slab. A ramp normally does not include steps.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO 6707-1: Inclined way or floor joining two surfaces at different levels.
@@ -14,5 +14,5 @@ The _IfcRamp_ shall either be represented:
 
 > HISTORY&nbsp; New entity in IFC2.0.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE Attribute _ShapeType_ renamed to _PredefinedType_

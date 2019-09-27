@@ -10,5 +10,5 @@ Applied values may be referenced from a document (such as a price list). The rel
 
 > HISTORY&nbsp; New entity in IFC2x2.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Entity made non-abstract to support general formula expressions of constraints, data type of date-based attributes changed into _IfcDate_, _ValueType_ and _Condition_ promoted from _IfcCostValue_, _Components_ and _ArithmeticOperator_ attributes added to replace _IfcAppliedValueRelationship_ for more efficient encoding and reference tracking.
