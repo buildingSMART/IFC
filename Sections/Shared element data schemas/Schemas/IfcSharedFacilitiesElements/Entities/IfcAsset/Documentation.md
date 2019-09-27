@@ -8,5 +8,5 @@ There are a number of costs that can be associated with an asset, each cost havi
 
 > HISTORY&nbsp; New entity in IFC2x.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; All attributes made optional and date values changed to use _IfcDate_.

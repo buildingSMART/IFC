@@ -1,53 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcActionRequest" Name="IfcActionRequest" UniqueId="7045cc64-c05a-4a43-aaa5-b5b4d849f3f5" DiagramNumber="1" BaseDefinition="IfcControl" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcActionRequest" Name="IfcActionRequest" UniqueId="7045cc64-c05a-4a43-aaa5-b5b4d849f3f5" BaseDefinition="IfcControl" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Tätigkeitsanfrage" Locale="de" />
-		<DocLocalization Name="Action Request" Locale="en" />
-		<DocLocalization Name="Requête d&apos;action" Locale="fr" />
+		<DocLocalization Locale="de" Name="Tätigkeitsanfrage" />
+		<DocLocalization Locale="en" Name="Action Request" />
+		<DocLocalization Locale="fr" Name="Requête d&apos;action" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="207.50721" Y="969.83759" Width="306" Height="310.06477" />
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="04d1554b-e1df-4af5-b21d-47c6f248a9a0" DefinedType="IfcActionRequestTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="04d1554b-e1df-4af5-b21d-47c6f248a9a0" DefinedType="IfcActionRequestTypeEnum" AttributeFlags="1">
 			<Documentation>Identifies the predefined type of sources through which a request can be made.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE The attribute has been added.</Documentation>
-			<DiagramLine>
-				<DocPoint X="513.50721" Y="1010.6416" />
-				<DocPoint X="642.84317" Y="1010.6416" />
-				<DocPoint X="642.84317" Y="1010.53634168" />
-				<DocPoint X="772.17913" Y="1010.53634168" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="613.166124" Y="1006.339302" Width="182" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Status" UniqueId="c98c93dd-884d-46da-b5e2-2d3e00098829" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Status" UniqueId="c98c93dd-884d-46da-b5e2-2d3e00098829" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>The status currently assigned to the request.  Possible values include:  
 Hold: wait to see if further requests are received before deciding on action  
 NoAction: no action is required on this request  
 Schedule: plan action to take place as part of maintenance or other task planning/scheduling  
 Urgent: take action immediately  
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE The attribute has been added.</Documentation>
-			<DiagramLine>
-				<DocPoint X="513.50721" Y="1124.87" />
-				<DocPoint X="1519.40371" Y="1124.87" />
-				<DocPoint X="1519.40371" Y="364.22779" />
-				<DocPoint X="1356.571" Y="364.22779" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="555.291082" Y="1122.958787" Width="77" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LongDescription" UniqueId="cf5a062f-d588-48de-8962-d74ad1d29328" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LongDescription" UniqueId="cf5a062f-d588-48de-8962-d74ad1d29328" DefinedType="IfcText" AttributeFlags="1">
 			<Documentation>Detailed description of the permit.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE The attribute has been added.</Documentation>
-			<DiagramLine>
-				<DocPoint X="513.50721" Y="1233.9724" />
-				<DocPoint X="1434.82418" Y="1233.9724" />
-				<DocPoint X="1434.82418" Y="499.10513" />
-				<DocPoint X="1360.420039" Y="499.10513" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="607.988513" Y="1229.6453152" Width="186" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

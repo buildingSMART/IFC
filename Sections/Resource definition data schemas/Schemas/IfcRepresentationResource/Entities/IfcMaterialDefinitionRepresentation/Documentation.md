@@ -12,7 +12,7 @@ The _IfcMaterialDefinitionRepresentation_ can apply
 { .change-ifc2x3}
 > IFC2x3 CHANGE&nbsp; The entity _IfcMaterialDefinitionRepresentation_ has been added. Upward compatibility for file based exchange is guaranteed.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The assignment of curve, surface and other styles to an _IfcStyledItem_ has been simplified by _IfcStyleAssignmentSelect_. The use of intermediate _IfcPresentationStyleAssignment_ is deprecated.
 
 &nbsp;

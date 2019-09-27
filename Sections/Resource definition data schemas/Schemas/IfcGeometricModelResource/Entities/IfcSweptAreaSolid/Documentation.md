@@ -12,5 +12,5 @@ The optional _Positio_n coordinate system allows for re-positioning the resultin
 
 > HISTORY&nbsp; New entity in IFC1.5
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The attribute _Position_ has been changed to OPTIONAL with upward compatibility for file-based exchange.

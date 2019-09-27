@@ -1,21 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcTransportElement" Name="IfcTransportElement" UniqueId="ada3468b-6924-41e7-9aed-8281dc9e75c3" DiagramNumber="2" BaseDefinition="IfcElement" EntityFlags="109">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcTransportElement" Name="IfcTransportElement" UniqueId="ada3468b-6924-41e7-9aed-8281dc9e75c3" BaseDefinition="IfcElement" EntityFlags="109">
 	<Localization>
-		<DocLocalization Name="Beförderungsgerät" Locale="de" />
-		<DocLocalization Name="Transport Element" Locale="en" />
-		<DocLocalization Name="Equipement de transport" Locale="fr" />
+		<DocLocalization Locale="de" Name="Beförderungsgerät" />
+		<DocLocalization Locale="en" Name="Transport Element" />
+		<DocLocalization Locale="fr" Name="Equipement de transport" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1810.7516" Y="1033.7595" Width="363.86667" Height="100" />
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="07bc919e-a192-4b17-aa12-57f7999df3e2" DefinedType="IfcTransportElementTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="07bc919e-a192-4b17-aa12-57f7999df3e2" DefinedType="IfcTransportElementTypeEnum" AttributeFlags="1">
 			<Documentation>Predefined generic types for a transportation element that are specified in an enumeration. There might be property sets defined specifically for each predefined type.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute has been changed to be optional.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2174.6183" Y="1069.9932" />
-				<DocPoint X="2697.2516" Y="1069.9932" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2163.951633" Y="1061.9932" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

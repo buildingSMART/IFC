@@ -1,30 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcIndexedTextureMap" UniqueId="ac1ef8ed-e75b-403b-a651-72cd4dec16ce" DiagramNumber="10" BaseDefinition="IfcTextureCoordinate" EntityFlags="197">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcIndexedTextureMap" UniqueId="ac1ef8ed-e75b-403b-a651-72cd4dec16ce" BaseDefinition="IfcTextureCoordinate" EntityFlags="197">
 	<Localization>
-		<DocLocalization Name="Liste von Indizes für Texturen" Locale="de" />
-		<DocLocalization Name="Indexed Texture Map" Locale="en" />
+		<DocLocalization Locale="de" Name="Liste von Indizes für Texturen" />
+		<DocLocalization Locale="en" Name="Indexed Texture Map" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="5131.0333" Y="2819.4933" Width="296" Height="140" />
 	<Subtypes>
 		<DocSubtype UniqueId="30c84939-93b7-4560-938b-31f1ad9bb843" DefinedType="IfcIndexedTriangleTextureMap" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="MappedTo" UniqueId="5678ee84-15aa-4bdd-823c-4a04f4455400" DefinedType="IfcTessellatedFaceSet" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="hidden">
+		<DocAttribute Name="MappedTo" UniqueId="5678ee84-15aa-4bdd-823c-4a04f4455400" DefinedType="IfcTessellatedFaceSet" XsdFormat="hidden">
 			<Documentation>Reference to the _IfcTessellatedFaceSet_ to which it applies the texture map.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5427.0333" Y="2858.3822" />
-				<DocPoint X="5832.7333" Y="2858.3822" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5424.1499667" Y="2846.1622" Width="126" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="TexCoords" UniqueId="e3ac75e4-db50-4833-aad4-1310cc86ea8c" DefinedType="IfcTextureVertexList" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="TexCoords" UniqueId="e3ac75e4-db50-4833-aad4-1310cc86ea8c" DefinedType="IfcTextureVertexList" XsdFormat="attribute">
 			<Documentation>Indexable list of texture vertices.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5185.699868125" Y="2959.4933" />
-				<DocPoint X="5185.699868125" Y="2959.4933" />
-				<DocPoint X="5185.699868125" Y="3283.01326497396" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5185.699868125" Y="3263.01326497396" Width="128" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

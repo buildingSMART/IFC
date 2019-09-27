@@ -1,41 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDocumentReference" Name="IfcDocumentReference" UniqueId="d5b0d04f-2b00-489b-a200-4b5b96eaec68" DiagramNumber="3" BaseDefinition="IfcExternalReference" EntityFlags="109">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcDocumentReference" UniqueId="d5b0d04f-2b00-489b-a200-4b5b96eaec68" BaseDefinition="IfcExternalReference" EntityFlags="109">
 	<Localization>
-		<DocLocalization Name="Bezug auf Dokument" Locale="de" />
-		<DocLocalization Name="Document Reference" Locale="en" />
-		<DocLocalization Name="Référence à un document" Locale="fr" />
+		<DocLocalization Locale="de" Name="Bezug auf Dokument" />
+		<DocLocalization Locale="en" Name="Document Reference" />
+		<DocLocalization Locale="fr" Name="Référence à un document" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="3220.8117" Y="307.00666" Width="377.33334" Height="100" />
 	<Attributes>
-		<DocAttribute Name="Description" UniqueId="a10271e3-eeec-494c-a378-fdf227220c4f" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Description" UniqueId="a10271e3-eeec-494c-a378-fdf227220c4f" DefinedType="IfcText" AttributeFlags="1">
 			<Documentation>Description of the document reference for informational purposes.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute added at the end of the attribute list.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3337.4783" Y="407.00666" />
-				<DocPoint X="3337.4783" Y="695.67333" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3420.144967" Y="376.00666" Width="130" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ReferencedDocument" UniqueId="596a3a71-9490-4e46-ba9f-1a65ad2002e3" DefinedType="IfcDocumentInformation" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="ReferencedDocument" UniqueId="596a3a71-9490-4e46-ba9f-1a65ad2002e3" DefinedType="IfcDocumentInformation" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>The document that is referenced.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3243.5642" Y="407.00666" />
-				<DocPoint X="3243.5642" Y="913.07677" />
-				<DocPoint X="3916.34223" Y="913.07677" />
-				<DocPoint X="3916.34223" Y="1172.41663" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3189.687961" Y="903.5384508" Width="249" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="DocumentRefForObjects" UniqueId="5c1212d9-a944-4a61-a6ec-2de838a530bb" DefinedType="IfcRelAssociatesDocument" AttributeFlags="32" AggregationType="3" AggregationFlag="0" Inverse="RelatingDocument">
+		<DocAttribute Name="DocumentRefForObjects" UniqueId="5c1212d9-a944-4a61-a6ec-2de838a530bb" DefinedType="IfcRelAssociatesDocument" AttributeFlags="32" AggregationType="3" Inverse="RelatingDocument">
 			<Documentation>The document reference with which objects are associated.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New inverse attribute.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3465.4784" Y="407.00666" />
-				<DocPoint X="3465.4784" Y="548.34" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3716.14507" Y="381.673327" Width="422" Height="70" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

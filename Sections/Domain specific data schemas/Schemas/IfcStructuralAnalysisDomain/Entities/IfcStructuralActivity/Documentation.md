@@ -8,7 +8,7 @@ The differentiation between actions and reactions is realized by instantiating o
 
 > HISTORY&nbsp; New entity in IFC2x2.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Cardinality of attribute _AssignedToStructuralItem_ relaxed from 1 to 0..1 in order to allow for schema-compliant incomplete models as well as conceptual models without load&mdash;item relationships.
 
 ****Coordinate Systems****:

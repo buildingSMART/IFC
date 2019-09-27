@@ -1,29 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcElementAssembly" Name="IfcElementAssembly" UniqueId="80060d73-7260-4e2d-8f9b-46819d547abe" DiagramNumber="2" BaseDefinition="IfcElement" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcElementAssembly" Name="IfcElementAssembly" UniqueId="80060d73-7260-4e2d-8f9b-46819d547abe" BaseDefinition="IfcElement" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="zusammengesetztes Element" Locale="de" />
-		<DocLocalization Name="Element Assembly" Locale="en" />
-		<DocLocalization Name="Assemblage d&apos;éléments" Locale="fr" />
+		<DocLocalization Locale="de" Name="zusammengesetztes Element" />
+		<DocLocalization Locale="en" Name="Element Assembly" />
+		<DocLocalization Locale="fr" Name="Assemblage d&apos;éléments" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1808.107" Y="1252.4734" Width="363.8411" Height="181.35152" />
 	<Attributes>
-		<DocAttribute Name="AssemblyPlace" UniqueId="1d9c3c37-5ade-4dce-84eb-639544d907bb" DefinedType="IfcAssemblyPlaceEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="AssemblyPlace" UniqueId="1d9c3c37-5ade-4dce-84eb-639544d907bb" DefinedType="IfcAssemblyPlaceEnum" AttributeFlags="1">
 			<Documentation>A designation of where the assembly is intended to take place defined by an Enum.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2171.9481" Y="1385.8158" />
-				<DocPoint X="2694.58563" Y="1385.8158" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2169.4781483" Y="1380.8016327" Width="173" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="PredefinedType" UniqueId="52e54ce3-c706-4309-8db3-88ec5a4386ac" DefinedType="IfcElementAssemblyTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="52e54ce3-c706-4309-8db3-88ec5a4386ac" DefinedType="IfcElementAssemblyTypeEnum" AttributeFlags="1">
 			<Documentation>Predefined generic types for a element assembly that are specified in an enumeration. There might be property sets defined specifically for each predefined type.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute has been changed to be optional.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2171.9481" Y="1288.262" />
-				<DocPoint X="2694.5609" Y="1288.262" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2166.571165" Y="1274.971995" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

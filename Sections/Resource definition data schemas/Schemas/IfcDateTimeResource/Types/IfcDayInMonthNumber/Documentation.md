@@ -4,5 +4,5 @@ Type: INTEGER
 
 > HISTORY&nbsp; New type in IFC1.5.1.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Where rule _ValidRange_ added.

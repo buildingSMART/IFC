@@ -8,5 +8,5 @@ There are a number of costs that can be associated with an inventory, each cost 
 
 > HISTORY&nbsp; New entity in IFC2.0.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; All attributes optional, Where Rule removed.

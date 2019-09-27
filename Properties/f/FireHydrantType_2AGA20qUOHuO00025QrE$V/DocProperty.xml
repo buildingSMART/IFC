@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocProperty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="FireHydrantType_2AGA20qUOHuO00025QrEV" Name="FireHydrantType" UniqueId="2AGA20qUOHuO00025QrE$V" PropertyType="p_enumeratedvalue" PrimaryDataType="IfcLabel">
 	<Localization>
-		<DocLocalization Name="Fire Hydrant Type" Locale="en" />
-		<DocLocalization Name="消火栓のタイプ" Locale="ja-JP">
+		<DocLocalization Locale="en" Name="Fire Hydrant Type" />
+		<DocLocalization Locale="ja-JP" Name="消火栓のタイプ">
 			<Documentation>消火栓の必要なタイプを定義する。
 
 乾式l：凍結の可能性のあるとき地中に開放弁セット。
@@ -10,8 +10,6 @@
 湿式：凍結の可能性のないとき地上に開放弁セット。</Documentation>
 		</DocLocalization>
 	</Localization>
-	<Enumeration>
-		<DocPropertyEnumeration xsi:nil="true" href="PEnum_FireHydrantType" />
-	</Enumeration>
+	<Enumeration xsi:type="DocPropertyEnumeration" xsi:nil="true" href="PEnum_FireHydrantType" />
 </DocProperty>
 

@@ -1,41 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcConversionBasedUnit" Name="IfcConversionBasedUnit" UniqueId="7d4b1cf1-345c-456d-9199-c2fc2e7e94f0" DiagramNumber="1" BaseDefinition="IfcNamedUnit" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcConversionBasedUnit" Name="IfcConversionBasedUnit" UniqueId="7d4b1cf1-345c-456d-9199-c2fc2e7e94f0" BaseDefinition="IfcNamedUnit" EntityFlags="101">
 	<Localization>
-		<DocLocalization Name="Auf Umrechnung basierte Einheit" Locale="de" />
-		<DocLocalization Name="Conversion Based Unit" Locale="en" />
-		<DocLocalization Name="Unité basée sur une mesure avec unité" Locale="fr" />
+		<DocLocalization Locale="de" Name="Auf Umrechnung basierte Einheit" />
+		<DocLocalization Locale="en" Name="Conversion Based Unit" />
+		<DocLocalization Locale="fr" Name="Unité basée sur une mesure avec unité" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1013.4937" Y="1456.2339" Width="446.66667" Height="100" />
 	<Subtypes>
 		<DocSubtype UniqueId="14d59055-c237-4e59-b780-4bff3b455f0e" DefinedType="IfcConversionBasedUnitWithOffset" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Name" UniqueId="8f0badf9-2c68-49b2-9365-0e66adb20d4d" DefinedType="IfcLabel" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Name" UniqueId="8f0badf9-2c68-49b2-9365-0e66adb20d4d" DefinedType="IfcLabel">
 			<Documentation>The word, or group of words, by which the conversion based unit is referred to.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1236.827" Y="1556.2339" />
-				<DocPoint X="1236.827" Y="1678.48282" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1281.662708" Y="1575.398933" Width="73" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ConversionFactor" UniqueId="91e5e04e-74ab-456a-9cb8-77cbbdf2cdf7" DefinedType="IfcMeasureWithUnit" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="ConversionFactor" UniqueId="91e5e04e-74ab-456a-9cb8-77cbbdf2cdf7" DefinedType="IfcMeasureWithUnit" XsdFormat="attribute">
 			<Documentation>The physical quantity from which the converted unit is derived.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1184.1289" Y="1556.2339" />
-				<DocPoint X="1184.1289" Y="1858.32408" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1347.20702" Y="1530.81472" Width="202" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="HasExternalReference" UniqueId="d6118974-bfed-426c-b479-6ecff30b88a2" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="32" AggregationType="3" AggregationFlag="0" Inverse="RelatedResourceObjects">
+		<DocAttribute Name="HasExternalReference" UniqueId="d6118974-bfed-426c-b479-6ecff30b88a2" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="32" AggregationType="3" Inverse="RelatedResourceObjects">
 			<Documentation>Reference to external information, e.g. library, classification, or document information, which is associated with the conversion-based unit.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE New inverse attribute.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1043.3088" Y="1556.2339" />
-				<DocPoint X="1043.3088" Y="2021.04033" />
-				<DocPoint X="586.44104" Y="2021.04033" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1053.2003565" Y="2050.577932" Width="399" Height="70" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

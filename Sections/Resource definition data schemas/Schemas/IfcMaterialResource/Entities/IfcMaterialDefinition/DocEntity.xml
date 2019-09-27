@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcMaterialDefinition" Name="IfcMaterialDefinition" UniqueId="b31f0891-e60f-4cc1-9b3b-9bbae1fde79c" DiagramNumber="1" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMaterialDefinition" UniqueId="b31f0891-e60f-4cc1-9b3b-9bbae1fde79c" EntityFlags="205">
 	<Localization>
-		<DocLocalization Name="Materialdefinition" Locale="de" />
-		<DocLocalization Name="Material Definition" Locale="en" />
-		<DocLocalization Name="Définition de matériau" Locale="fr" />
+		<DocLocalization Locale="de" Name="Materialdefinition" />
+		<DocLocalization Locale="en" Name="Material Definition" />
+		<DocLocalization Locale="fr" Name="Définition de matériau" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="703.09584" Y="780.98998" Width="380.10357" Height="122.87029" />
 	<Subtypes>
 		<DocSubtype UniqueId="c50b8294-a469-4b33-9a13-8d2b53f65990" DefinedType="IfcMaterialLayer" />
 		<DocSubtype UniqueId="d6ec1ff9-122f-46d4-906f-b18b84f803bb" DefinedType="IfcMaterial" />
@@ -16,91 +15,21 @@
 		<DocSubtype UniqueId="59c63319-f483-4d75-80a0-103b25d515b6" DefinedType="IfcMaterialLayerSet" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="AssociatedTo" UniqueId="b1ec3680-78e2-4c73-915a-89a294a334a7" DefinedType="IfcRelAssociatesMaterial" AttributeFlags="32" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatingMaterial">
+		<DocAttribute Name="AssociatedTo" UniqueId="b1ec3680-78e2-4c73-915a-89a294a334a7" DefinedType="IfcRelAssociatesMaterial" AttributeFlags="32" AggregationType="3" AggregationLower="0" AggregationUpper="0" Inverse="RelatingMaterial">
 			<Documentation>Use of the _IfcMaterialDefinition_ subtypes within the material association of an element occurrence or element type. The association is established by the _IfcRelAssociatesMaterial_ relationship.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The inverse attribute has been added.</Documentation>
-			<DiagramLine>
-				<DocPoint X="987.63441" Y="780.98998" />
-				<DocPoint X="987.63441" Y="273.45872" />
-				<DocPoint X="1169.3717" Y="273.45872" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="977.424315" Y="386.97437" Width="299" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="HasExternalReferences" UniqueId="d28dbc0d-d8f5-445d-8f01-e84587f1ef49" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="32" AggregationType="3" AggregationFlag="0" Inverse="RelatedResourceObjects">
+		<DocAttribute Name="HasExternalReferences" UniqueId="d28dbc0d-d8f5-445d-8f01-e84587f1ef49" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="32" AggregationType="3" Inverse="RelatedResourceObjects">
 			<Documentation>Reference to external references, e.g. library, classification, or document information, that are associated to the material.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The inverse attribute has been added.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1083.1994" Y="864.6373" />
-				<DocPoint X="1123.911301" Y="864.6373" />
-				<DocPoint X="1123.911301" Y="1022.26389" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1358.491811" Y="834.226726" Width="411" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="HasProperties" UniqueId="d60a2049-8e83-46d1-9e06-029c5163fab4" DefinedType="IfcMaterialProperties" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="Material" XsdFormat="element">
+		<DocAttribute Name="HasProperties" UniqueId="d60a2049-8e83-46d1-9e06-029c5163fab4" DefinedType="IfcMaterialProperties" AggregationType="3" Inverse="Material" XsdFormat="element">
 			<Documentation>Material properties assigned to instances of subtypes of _IfcMaterialDefinition_.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The inverse attribute has been added.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1030.3061" Y="780.98998" />
-				<DocPoint X="1030.3061" Y="585.13431" />
-				<DocPoint X="1226.12724" Y="585.13431" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1031.7412473" Y="725.94395" Width="335" Height="70" />
 		</DocAttribute>
 	</Attributes>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="703.09584" Y="842.42513" />
-				<DocPoint X="641.125949" Y="842.42513" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="641.12595" Y="1086.47" />
-						<DocPoint X="323.80646" Y="1086.47" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="641.12595" Y="1671.0602" />
-						<DocPoint X="693.158807" Y="1671.0602" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="641.12595" Y="1178.4106" />
-						<DocPoint X="367.83406" Y="1178.4106" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="641.12595" Y="1270.4745" />
-						<DocPoint X="330.79285" Y="1270.4745" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="641.12595" Y="1362.4463" />
-						<DocPoint X="424.79285" Y="1362.4463" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="641.12595" Y="1454.3529" />
-						<DocPoint X="387.7577" Y="1454.3529" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="641.12595" Y="992.19041" />
-						<DocPoint X="360.75164" Y="992.19041" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

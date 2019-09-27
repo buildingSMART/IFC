@@ -1,28 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcWall" Name="IfcWall" UniqueId="6cb09e6f-b387-44bc-afcc-563e5b5b5ead" DiagramNumber="1" BaseDefinition="IfcBuildingElement" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcWall" Name="IfcWall" UniqueId="6cb09e6f-b387-44bc-afcc-563e5b5b5ead" BaseDefinition="IfcBuildingElement" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Wand" Locale="de" />
-		<DocLocalization Name="Wall" Locale="en" />
-		<DocLocalization Name="Mur" Locale="fr" />
+		<DocLocalization Locale="de" Name="Wand" />
+		<DocLocalization Locale="en" Name="Wall" />
+		<DocLocalization Locale="fr" Name="Mur" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="484.74167" Y="1709.6167" Width="249.9" Height="214.63333" />
 	<Subtypes>
 		<DocSubtype UniqueId="6d91798f-350e-4e74-9e7a-5dc82f29824a" DefinedType="IfcWallStandardCase" />
 		<DocSubtype UniqueId="00725764-7738-4af4-9fdc-fdaa901d5351" DefinedType="IfcWallElementedCase" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="a2fe4f73-a12c-42fa-9516-3c0a0d94e105" DefinedType="IfcWallTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="a2fe4f73-a12c-42fa-9516-3c0a0d94e105" DefinedType="IfcWallTypeEnum" AttributeFlags="1">
 			<Documentation>Predefined generic type for a wall that is specified in an enumeration. There may be a property set given specifically for the predefined types.
 &gt; NOTE&amp;nbsp; The _PredefinedType_ shall only be used, if no _IfcWallType_ is assigned, providing its own _IfcWallType.PredefinedType_.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE The attribute has been added at the end of the entity definition.</Documentation>
-			<DiagramLine>
-				<DocPoint X="484.74167" Y="1875.6" />
-				<DocPoint X="72.34167" Y="1875.6" />
-				<DocPoint X="72.34167" Y="1792.933333" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="484.74167" Y="1867.6" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
@@ -38,27 +31,5 @@
   (&apos;IFCSHAREDBLDGELEMENTS.IFCWALLTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
 		</DocWhereRule>
 	</WhereRules>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="734.64167" Y="1762.694" />
-				<DocPoint X="1006.97413" Y="1762.694" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="1006.9741" Y="1761.5934" />
-						<DocPoint X="1113.97323" Y="1761.5934" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="1006.9741" Y="1868.5333" />
-						<DocPoint X="1113.99997" Y="1868.5333" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

@@ -4,5 +4,5 @@
 
 > HISTORY&nbsp; New select type in IFC2x
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Select renamed from IfcClassificationNotationSelect.

@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelAssigns" Name="IfcRelAssigns" UniqueId="458cc135-db13-40d6-ab1b-64ba222632fe" Status="H" DiagramNumber="5" BaseDefinition="IfcRelationship" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelAssigns" Name="IfcRelAssigns" UniqueId="458cc135-db13-40d6-ab1b-64ba222632fe" Status="H" BaseDefinition="IfcRelationship" EntityFlags="205">
 	<Localization>
-		<DocLocalization Name="Weist zu - Relation" Locale="de" />
-		<DocLocalization Name="Rel Assigns" Locale="en" />
-		<DocLocalization Name="Assignation" Locale="fr" />
+		<DocLocalization Locale="de" Name="Weist zu - Relation" />
+		<DocLocalization Locale="en" Name="Rel Assigns" />
+		<DocLocalization Locale="fr" Name="Assignation" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="6539.1333" Y="1507.7791" Width="454.1" Height="171.6625" />
 	<Subtypes>
 		<DocSubtype UniqueId="d118468e-eabe-45fa-b20c-ab90dd626245" DefinedType="IfcRelAssignsToProcess" />
 		<DocSubtype UniqueId="51866591-25ad-4694-b8d2-583ccb483eea" DefinedType="IfcRelAssignsToProduct" />
@@ -15,23 +14,13 @@
 		<DocSubtype UniqueId="51e22a54-e0f3-49b9-8d2e-d8ce84524bac" DefinedType="IfcRelAssignsToGroup" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="RelatedObjects" UniqueId="15095ee6-ca54-435a-ada1-6296bedeafc5" DefinedType="IfcObjectDefinition" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="RelatedObjects" UniqueId="15095ee6-ca54-435a-ada1-6296bedeafc5" DefinedType="IfcObjectDefinition" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Related objects, which are assigned to a single object. The type of the single (or relating) object is defined in the subtypes of IfcRelAssigns.</Documentation>
-			<DiagramLine>
-				<DocPoint X="6993.2333" Y="1540.277" />
-				<DocPoint X="7616.79997" Y="1540.277" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="6993.2333" Y="1526.943667" Width="255" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RelatedObjectsType" UniqueId="7dd9a03b-e83d-4bde-a7cc-99502633620b" DefinedType="IfcObjectTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RelatedObjectsType" UniqueId="7dd9a03b-e83d-4bde-a7cc-99502633620b" DefinedType="IfcObjectTypeEnum" AttributeFlags="1">
 			<Documentation>Particular type of the assignment relationship. It can constrain the applicable object types, used within the role of _RelatedObjects_.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute is deprecated and shall no longer be used. A NIL value should always be assigned.</Documentation>
-			<DiagramLine>
-				<DocPoint X="6993.2333" Y="1648.2944" />
-				<DocPoint X="7616.7333" Y="1648.2944" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="6980.4333" Y="1639.7610667" Width="231" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
@@ -40,51 +29,5 @@
 			<Expression>IfcCorrectObjectAssignment(RelatedObjectsType, RelatedObjects)</Expression>
 		</DocWhereRule>
 	</WhereRules>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="6766.1833" Y="1679.4416" />
-				<DocPoint X="6766.1833" Y="1743.739517" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="6927.9366" Y="1743.7395" />
-						<DocPoint X="6927.9366" Y="1902.50825" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="7754.3085" Y="1743.7395" />
-						<DocPoint X="7754.3085" Y="1785.49158" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="7029.4855" Y="1743.7395" />
-						<DocPoint X="7029.4855" Y="2031.52491" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="6669.5648" Y="1743.7395" />
-						<DocPoint X="6669.5648" Y="1785.56825" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="7341.9922" Y="1743.7395" />
-						<DocPoint X="7341.9922" Y="2031.54158" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="7436.7552" Y="1743.7395" />
-						<DocPoint X="7436.7552" Y="1902.50825" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

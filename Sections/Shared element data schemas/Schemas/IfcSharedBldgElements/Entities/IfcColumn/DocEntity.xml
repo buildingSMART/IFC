@@ -1,26 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcColumn" Name="IfcColumn" UniqueId="ba7dd489-a3f1-480d-b133-43f23e616b86" DiagramNumber="1" BaseDefinition="IfcBuildingElement" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcColumn" Name="IfcColumn" UniqueId="ba7dd489-a3f1-480d-b133-43f23e616b86" BaseDefinition="IfcBuildingElement" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Stütze / Pfeiler" Locale="de" />
-		<DocLocalization Name="Column" Locale="en" />
-		<DocLocalization Name="Poteau" Locale="fr" />
+		<DocLocalization Locale="de" Name="Stütze / Pfeiler" />
+		<DocLocalization Locale="en" Name="Column" />
+		<DocLocalization Locale="fr" Name="Poteau" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="484.7749" Y="697.7617" Width="249.9" Height="214.66667" />
 	<Subtypes>
 		<DocSubtype UniqueId="3eec0970-cb99-4c5f-985b-0df8808ef2b5" DefinedType="IfcColumnStandardCase" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="839e754d-ca64-474c-8b15-4a29da86d337" DefinedType="IfcColumnTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="839e754d-ca64-474c-8b15-4a29da86d337" DefinedType="IfcColumnTypeEnum" AttributeFlags="1">
 			<Documentation>Predefined generic type for a column that is specified in an enumeration. There may be a property set given specificly for the predefined types.
 &gt; NOTE&amp;nbsp; The _PredefinedType_ shall only be used, if no _IfcColumnType_ is assigned, providing its own _IfcColumnType.PredefinedType_.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE The attribute has been added at the end of the entity definition.</Documentation>
-			<DiagramLine>
-				<DocPoint X="734.6749" Y="863.7617" />
-				<DocPoint X="1114.0749" Y="863.7617" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="732.0082333" Y="855.7617" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

@@ -1,72 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAppliedValue" UniqueId="878e7c12-556c-42e6-a62a-feef9a77b4f9" DiagramNumber="1" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAppliedValue" UniqueId="878e7c12-556c-42e6-a62a-feef9a77b4f9" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Angewendeter Wert" Locale="de" />
-		<DocLocalization Name="Applied Value" Locale="en" />
-		<DocLocalization Name="Valeur appliquée" Locale="fr" />
+		<DocLocalization Locale="de" Name="Angewendeter Wert" />
+		<DocLocalization Locale="en" Name="Applied Value" />
+		<DocLocalization Locale="fr" Name="Valeur appliquée" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="47.3" Y="429.76666" Width="377.2" Height="1271.6" />
 	<Subtypes>
 		<DocSubtype UniqueId="d060230f-003d-4654-9728-cb3861230258" DefinedType="IfcCostValue" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Name" UniqueId="f1f7e181-7ab7-42ee-8419-312a8e441f5e" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Name" UniqueId="f1f7e181-7ab7-42ee-8419-312a8e441f5e" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>A name or additional clarification given to a cost value.</Documentation>
-			<DiagramLine>
-				<DocPoint X="424.5" Y="504.79335" />
-				<DocPoint X="1091.0959" Y="504.79335" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="496.397931" Y="493.676704" Width="73" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Description" UniqueId="aca5297a-4f05-4828-a377-84262bd54980" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Description" UniqueId="aca5297a-4f05-4828-a377-84262bd54980" DefinedType="IfcText" AttributeFlags="1">
 			<Documentation>The description that may apply additional information about a cost value.</Documentation>
-			<DiagramLine>
-				<DocPoint X="424.5" Y="618.37441" />
-				<DocPoint X="952.43333" Y="618.37441" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="521.081174" Y="605.028609" Width="130" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="AppliedValue" UniqueId="f569f893-d02e-4d0c-b8aa-eada1af92d01" DefinedType="IfcAppliedValueSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="AppliedValue" UniqueId="f569f893-d02e-4d0c-b8aa-eada1af92d01" DefinedType="IfcAppliedValueSelect" AttributeFlags="1">
 			<Documentation>The extent or quantity or amount of an applied value.</Documentation>
-			<DiagramLine>
-				<DocPoint X="424.5" Y="747.84857" />
-				<DocPoint X="747.66663" Y="747.84857" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="401.23332" Y="734.59093" Width="152" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="UnitBasis" UniqueId="e93a6586-03c9-491a-b750-61a192bc3068" DefinedType="IfcMeasureWithUnit" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="UnitBasis" UniqueId="e93a6586-03c9-491a-b750-61a192bc3068" DefinedType="IfcMeasureWithUnit" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>The number and unit of measure on which the unit cost is based.
 
 Note: As well as the normally expected units of measure such as length, area, volume etc., costs may be based on units of measure which need to be defined e.g. sack, drum, pallet, item etc. Unit costs may be based on quantities greater (or lesser) than a unitary value of the basis measure. For instance, timber may have a unit cost rate per X meters where X &gt; 1; similarly for cable, piping and many other items. The basis number may be either an integer or a real value.
 
 Note: This attribute should be asserted for all circumstances where the cost to be applied is per unit quantity. It may be asserted even for circumstances where an item price is used, in which case the unit cost basis should be by item (or equivalent definition).</Documentation>
-			<DiagramLine>
-				<DocPoint X="424.5" Y="1172.8589" />
-				<DocPoint X="952.39587" Y="1172.8589" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="400.314598" Y="1161.618278" Width="110" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ApplicableDate" UniqueId="607a3336-5a2c-4366-a5a4-4ecde56ea7f9" DefinedType="IfcDate" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ApplicableDate" UniqueId="607a3336-5a2c-4366-a5a4-4ecde56ea7f9" DefinedType="IfcDate" AttributeFlags="1">
 			<Documentation>The date on or from which an applied value is applicable.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE Type changed from IfcDateTimeSelect.</Documentation>
-			<DiagramLine>
-				<DocPoint X="424.5" Y="1254.3471" />
-				<DocPoint X="952.36667" Y="1254.3471" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="430.508332" Y="1244.6346003" Width="173" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="FixedUntilDate" UniqueId="44cc2615-38d3-4a6e-a478-efc5cbd2cefa" DefinedType="IfcDate" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="FixedUntilDate" UniqueId="44cc2615-38d3-4a6e-a478-efc5cbd2cefa" DefinedType="IfcDate" AttributeFlags="1">
 			<Documentation>The date until which applied value is applicable.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE Type changed from IfcDateTimeSelect.</Documentation>
-			<DiagramLine>
-				<DocPoint X="424.5" Y="1325.0117" />
-				<DocPoint X="952.36667" Y="1325.0117" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="427.8333337" Y="1321.6783666" Width="169" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Category" UniqueId="1d4e4998-3ebe-4e3c-b6b0-11ac5c1adf89" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Category" UniqueId="1d4e4998-3ebe-4e3c-b6b0-11ac5c1adf89" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>Specification of the type of cost used.
 
 &gt; NOTE&amp;nbsp; There are many possible types of cost value that may be identified. Whilst there is a broad understanding of the meaning of names that may be assigned to different types of costs, there is no general standard for naming cost types nor are there any broadly defined classifications. To allow for any type of cost value, the _IfcLabel_ datatype is assigned.
@@ -74,52 +43,22 @@ Note: This attribute should be asserted for all circumstances where the cost to 
 
  
 In the absence of any well defined standard, it is recommended that local agreements should be made to define allowable and understandable cost value types within a project or region.</Documentation>
-			<DiagramLine>
-				<DocPoint X="424.5" Y="1424.3883" />
-				<DocPoint X="1534.8625" Y="1424.3883" />
-				<DocPoint X="1534.8625" Y="556.20004" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="566.06356" Y="1416.4712283" Width="108" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Condition" UniqueId="9ce0493d-c35a-4110-9bfc-895871328d4e" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Condition" UniqueId="9ce0493d-c35a-4110-9bfc-895871328d4e" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>The condition under which a cost value applies.  
 
 For example, within the context of a bid submission, this may refer to an option that may or may not be elected.</Documentation>
-			<DiagramLine>
-				<DocPoint X="424.5" Y="1490" />
-				<DocPoint X="1564.8339" Y="1490" />
-				<DocPoint X="1564.8339" Y="556.2" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="564.71593" Y="1486.0052308" Width="112" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ArithmeticOperator" UniqueId="013ba33b-dca3-439e-b21f-103713eb82f8" DefinedType="IfcArithmeticOperatorEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ArithmeticOperator" UniqueId="013ba33b-dca3-439e-b21f-103713eb82f8" DefinedType="IfcArithmeticOperatorEnum" AttributeFlags="1">
 			<Documentation>The arithmetic operator applied to component values.</Documentation>
-			<DiagramLine>
-				<DocPoint X="424.5" Y="1570.3562" />
-				<DocPoint X="952.33336" Y="1570.3562" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="344.633341" Y="1560.7328717" Width="213" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Components" UniqueId="8a17c585-267a-48a6-9598-35c3c8393e76" DefinedType="IfcAppliedValue" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="Components" UniqueId="8a17c585-267a-48a6-9598-35c3c8393e76" DefinedType="IfcAppliedValue" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Optional component values from which _AppliedValue_ is calculated.</Documentation>
-			<DiagramLine>
-				<DocPoint X="235.9" Y="1701.3666" />
-				<DocPoint X="235.9" Y="1755.566617" />
-				<DocPoint X="751.16667" Y="1755.566617" />
-				<DocPoint X="751.16667" Y="1669.766634" />
-				<DocPoint X="424.5" Y="1669.766634" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="774.500003" Y="1656.433301" Width="225" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="HasExternalReference" UniqueId="fa44a5a5-d30c-49f6-bfee-252224ac5db6" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="32" AggregationType="3" AggregationFlag="0" Inverse="RelatedResourceObjects">
+		<DocAttribute Name="HasExternalReference" UniqueId="fa44a5a5-d30c-49f6-bfee-252224ac5db6" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="32" AggregationType="3" Inverse="RelatedResourceObjects">
 			<Documentation>Reference to an external reference, e.g. library, classification, or document information, that is associated to the IfcAppliedValue. 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE New inverse attribute.</Documentation>
-			<DiagramLine>
-				<DocPoint X="235.9" Y="429.76666" />
-				<DocPoint X="235.9" Y="270.23333" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="451.03333" Y="453.933323" Width="399" Height="70" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

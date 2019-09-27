@@ -1,38 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCovering" Name="IfcCovering" UniqueId="71cd9964-d26e-4857-81b8-de24c4651a85" DiagramNumber="2" BaseDefinition="IfcBuildingElement" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCovering" Name="IfcCovering" UniqueId="71cd9964-d26e-4857-81b8-de24c4651a85" BaseDefinition="IfcBuildingElement" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Bekleidung / Belag" Locale="de" />
-		<DocLocalization Name="Covering" Locale="en" />
-		<DocLocalization Name="Revêtement" Locale="fr" />
+		<DocLocalization Locale="de" Name="Bekleidung / Belag" />
+		<DocLocalization Locale="en" Name="Covering" />
+		<DocLocalization Locale="fr" Name="Revêtement" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1865.4062" Y="1849.8359" Width="228" Height="268" />
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="1c0df8fd-2a8e-4b75-a68e-22fa8c279270" DefinedType="IfcCoveringTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="1c0df8fd-2a8e-4b75-a68e-22fa8c279270" DefinedType="IfcCoveringTypeEnum" AttributeFlags="1">
 			<Documentation>Predefined types to define the particular type of the covering. There may be property set definitions available for each predefined type.
 &gt; NOTE&amp;nbsp; The _PredefinedType_ shall only be used, if no _IfcCoveringType_ is assigned, providing its own _IfcCoveringType.PredefinedType_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2093.4062" Y="1876.6359" />
-				<DocPoint X="2506.7062" Y="1876.6359" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2093.4062" Y="1876.6359" Width="182" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="CoversSpaces" UniqueId="84a19b72-c5f8-40f0-8380-e4989bb7d407" DefinedType="IfcRelCoversSpaces" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatedCoverings">
+		<DocAttribute Name="CoversSpaces" UniqueId="84a19b72-c5f8-40f0-8380-e4989bb7d407" DefinedType="IfcRelCoversSpaces" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="RelatedCoverings">
 			<Documentation>Reference to the objectified relationship that handles the relationship of the covering to the covered space.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2093.4062" Y="1977.8316" />
-				<DocPoint X="2643.83323" Y="1977.8316" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2066.739533" Y="2004.498267" Width="443" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="CoversElements" UniqueId="1e41a6ca-9e36-4047-a656-34a282811332" DefinedType="IfcRelCoversBldgElements" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatedCoverings">
+		<DocAttribute Name="CoversElements" UniqueId="1e41a6ca-9e36-4047-a656-34a282811332" DefinedType="IfcRelCoversBldgElements" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="RelatedCoverings">
 			<Documentation>Reference to the objectified relationship that handles the relationship of the covering to the covered element.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE Renamed into _CoversElements_ for consistency.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2093.4062" Y="2082.5025" />
-				<DocPoint X="2650.87287" Y="2082.5025" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2093.4062" Y="2109.169167" Width="512" Height="70" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

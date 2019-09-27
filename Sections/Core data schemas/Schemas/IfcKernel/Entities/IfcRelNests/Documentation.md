@@ -10,5 +10,5 @@ Decompositions imply a dependency, i.e. the definition of the whole depends on t
 
 > HISTORY&nbsp; New entity in IFC2.0
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The attributes _RelatingObject_ and _RelatedObjects_ are demoted from the supertype _IfcRelDecomposes_, and _RelatedObjects_ is refined to be a list. The use of _IfcRelNests_ is repurposed to be a nesting of an ordered collections of parts.

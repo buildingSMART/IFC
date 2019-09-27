@@ -1,43 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcFillAreaStyleTiles" UniqueId="94e16249-95c6-4654-92c9-5cfac4e1e234" DiagramNumber="6" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcFillAreaStyleTiles" UniqueId="94e16249-95c6-4654-92c9-5cfac4e1e234" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Füllfläche - Kachelstil" Locale="de" />
-		<DocLocalization Name="Fill Area Style Tiles" Locale="en" />
+		<DocLocalization Locale="de" Name="Füllfläche - Kachelstil" />
+		<DocLocalization Locale="en" Name="Fill Area Style Tiles" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="8832.11751302083" Y="888.021402994792" Width="256.166666666666" Height="478.666676839193" />
 	<Attributes>
-		<DocAttribute Name="TilingPattern" UniqueId="85b936d1-2755-4739-9fd0-716ef0622f80" DefinedType="IfcVector" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="2">
+		<DocAttribute Name="TilingPattern" UniqueId="85b936d1-2755-4739-9fd0-716ef0622f80" DefinedType="IfcVector" AggregationType="1" AggregationLower="2" AggregationUpper="2">
 			<Documentation>A two direction repeat factor defining the shape and relative positioning of the tiles.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute type has changed to directly reference two _IfcVector_&apos;s.</Documentation>
-			<DiagramLine>
-				<DocPoint X="9049.067535" Y="1366.68807983398" />
-				<DocPoint X="9049.067535" Y="1366.68807983398" />
-				<DocPoint X="9049.067535" Y="1888.8213" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="9049.067535" Y="1868.8213" Width="222" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Tiles" UniqueId="5812d5a2-edd8-486a-8237-149034e4dcaa" DefinedType="IfcStyledItem" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="Tiles" UniqueId="5812d5a2-edd8-486a-8237-149034e4dcaa" DefinedType="IfcStyledItem" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>A set of constituents of the tile being a styled item that is used as the annotation symbol for tiling the filled area.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE The data type has been changed to _IfcStyledItem_.
 
 &gt; NOTE&amp;nbsp; Only _IfcStyleItem_&apos;s that refer to a compatible geometric representation item and presentation style shall be used.</Documentation>
-			<DiagramLine>
-				<DocPoint X="9088.2841796875" Y="1122.02136230469" />
-				<DocPoint X="9088.2841796875" Y="1122.02136230469" />
-				<DocPoint X="9299.78450520833" Y="1122.02136230469" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="9088.2841796875" Y="1102.02136230469" Width="137" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="TilingScale" UniqueId="0200d8ed-49fd-4670-a213-284158f9200d" DefinedType="IfcPositiveRatioMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="TilingScale" UniqueId="0200d8ed-49fd-4670-a213-284158f9200d" DefinedType="IfcPositiveRatioMeasure">
 			<Documentation>The scale factor applied to each tile as it is placed in the annotation fill area.</Documentation>
-			<DiagramLine>
-				<DocPoint X="9088.2841796875" Y="1239.68799658594" />
-				<DocPoint X="9088.2841796875" Y="1239.68799658594" />
-				<DocPoint X="9224.75130208333" Y="1239.68799658594" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="9088.2841796875" Y="1219.68799658594" Width="126" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

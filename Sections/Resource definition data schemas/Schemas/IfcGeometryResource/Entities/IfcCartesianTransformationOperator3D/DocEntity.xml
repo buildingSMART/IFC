@@ -1,32 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCartesianTransformationOperator3D" Name="IfcCartesianTransformationOperator3D" UniqueId="137f3407-b6b9-4752-b668-e9e574a1b3fd" DiagramNumber="4" BaseDefinition="IfcCartesianTransformationOperator" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCartesianTransformationOperator3D" Name="IfcCartesianTransformationOperator3D" UniqueId="137f3407-b6b9-4752-b668-e9e574a1b3fd" BaseDefinition="IfcCartesianTransformationOperator" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Kartesische Transformation - dreidimensional (3D)" Locale="de" />
-		<DocLocalization Name="Cartesian Transformation Operator 3D" Locale="en" />
-		<DocLocalization Name="Opérateur 3D de transformation cartésienne" Locale="fr" />
+		<DocLocalization Locale="de" Name="Kartesische Transformation - dreidimensional (3D)" />
+		<DocLocalization Locale="en" Name="Cartesian Transformation Operator 3D" />
+		<DocLocalization Locale="fr" Name="Opérateur 3D de transformation cartésienne" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="5744.8985" Y="895.96813" Width="440.53334" Height="120" />
 	<Subtypes>
 		<DocSubtype UniqueId="573bde8d-86b6-4c29-b0da-e6720f789027" DefinedType="IfcCartesianTransformationOperator3DnonUniform" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Axis3" UniqueId="42759c76-3cfb-44fb-9a58-78c6f7c1c245" DefinedType="IfcDirection" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="Axis3" UniqueId="42759c76-3cfb-44fb-9a58-78c6f7c1c245" DefinedType="IfcDirection" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>The exact direction of U[3], the derived Z axis direction.</Documentation>
-			<DiagramLine>
-				<DocPoint X="6123.7002" Y="895.96813" />
-				<DocPoint X="6123.7002" Y="794.1348" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="6182.866867" Y="904.3014637" Width="66" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="U" UniqueId="b73fc729-9f33-4dd2-bc11-f7cd8cc066de" DefinedType="IfcDirection" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="3" AggregationUpper="3">
+		<DocAttribute Name="U" UniqueId="b73fc729-9f33-4dd2-bc11-f7cd8cc066de" DefinedType="IfcDirection" AggregationType="1" AggregationLower="3" AggregationUpper="3">
 			<Documentation>The list of mutually orthogonal, normalized vectors defining the transformation matrix T. They are derived from the explicit attributes Axis3, Axis1, and Axis2 in that order.</Documentation>
 			<Derived>IfcBaseAxis(3,SELF\IfcCartesianTransformationOperator.Axis1,
 SELF\IfcCartesianTransformationOperator.Axis2,Axis3)</Derived>
-			<DiagramLine>
-				<DocPoint X="6120.4648" Y="1015.9681" />
-				<DocPoint X="6120.4648" Y="1110.76798" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="6227.13147" Y="1032.634766" Width="177" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

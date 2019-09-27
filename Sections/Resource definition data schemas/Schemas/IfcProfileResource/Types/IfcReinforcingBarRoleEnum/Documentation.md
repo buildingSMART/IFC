@@ -2,5 +2,5 @@
 
 > HISTORY&nbsp; New type in IFC2x2.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Item ANCHORING added.

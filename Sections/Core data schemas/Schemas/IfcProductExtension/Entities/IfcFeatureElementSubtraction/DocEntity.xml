@@ -1,21 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcFeatureElementSubtraction" Name="IfcFeatureElementSubtraction" UniqueId="c881faa0-78d9-40af-a83e-a4924a575869" DiagramNumber="8" BaseDefinition="IfcFeatureElement" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcFeatureElementSubtraction" Name="IfcFeatureElementSubtraction" UniqueId="c881faa0-78d9-40af-a83e-a4924a575869" BaseDefinition="IfcFeatureElement" EntityFlags="205">
 	<Localization>
-		<DocLocalization Name="Modifikator (geometrischer Körper) - Subtraktion" Locale="de" />
-		<DocLocalization Name="Feature Element Subtraction" Locale="en" />
+		<DocLocalization Locale="de" Name="Modifikator (geometrischer Körper) - Subtraktion" />
+		<DocLocalization Locale="en" Name="Feature Element Subtraction" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="2685.8871" Y="2869.2319" Width="302.58346" Height="137.18756" />
 	<Subtypes>
 		<DocSubtype UniqueId="134ba1d7-27ea-4af4-aedb-8bf6b9431a32" DefinedType="IfcOpeningElement" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="VoidsElements" UniqueId="094eb37f-0822-4b0d-9fcc-e87be21592b4" DefinedType="IfcRelVoidsElement" AttributeFlags="8" AggregationType="0" AggregationFlag="0" Inverse="RelatedOpeningElement">
+		<DocAttribute Name="VoidsElements" UniqueId="094eb37f-0822-4b0d-9fcc-e87be21592b4" DefinedType="IfcRelVoidsElement" AttributeFlags="8" Inverse="RelatedOpeningElement">
 			<Documentation>Reference to the Voids Relationship that uses this Opening Element to create a void within an Element. The Opening Element can only be used to create a single void within a single Element.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2161.414" Y="2954.7223" />
-				<DocPoint X="2685.8871" Y="2954.7223" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2161.414" Y="2989.7223" Width="234" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

@@ -4,7 +4,7 @@
 
 > HISTORY&nbsp; New entity in IFC2x3.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Use definitions changed to always require two topology items.
 
 **Use Definition**

@@ -24,6 +24,7 @@
 
 The use of one instance of _IfcGeometricRepresentationContext_ to represent the model (3D) view is mandatory, the use of a second instance of _IfcGeometricRepresentationContext_ to represent the plan (2D) view is optional (but needs to be given, if there are scale dependent plan views), the additional scale or view dependent contexts need to be handled by using the subtype _IfcGeometricRepresentationSubContext_ pointing to the model view (or the plan view) as the _ParentContext_. See Figure 2 for an example using geometric representation contexts for 3D and 2D with assigned sub contexts.
 
+> NOTE&nbsp; The inherited attribute _ContextIdentifier_ shall have a value that matches _IfcShapeRepresentation.RepresentationIdentifier_. For example 'Body', 'Annotation', or 'Axis'.
 > NOTE&nbsp; The inherited attribute _ContextType_ shall have one of the following recognized values: 'Model', 'Plan', 'NotDefined'.
 
 &nbsp;
@@ -56,5 +57,5 @@ The use of one instance of _IfcGeometricRepresentationContext_ to represent the 
 { .change-ifc2x3}
 > IFC2x3 CHANGE&nbsp; Applicable values for _ContextType_ are only 'Model', 'Plan', and 'NotDefined'. All other contexts are now handled by _IfcGeometricRepresentationSubContext_.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Mapping to Geographic coordinate system added by inverse attribute _HasCoordinateOperation_.

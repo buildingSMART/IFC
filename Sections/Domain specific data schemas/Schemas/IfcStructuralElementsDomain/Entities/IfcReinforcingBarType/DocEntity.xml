@@ -1,67 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcReinforcingBarType" UniqueId="c46e7d75-e366-4cf2-839d-664d7f121513" DiagramNumber="3" BaseDefinition="IfcReinforcingElementType" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcReinforcingBarType" UniqueId="c46e7d75-e366-4cf2-839d-664d7f121513" BaseDefinition="IfcReinforcingElementType" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Bewehrungsstab - Typ" Locale="de" />
-		<DocLocalization Name="Reinforcing Bar Type" Locale="en" />
-		<DocLocalization Name="Type de barre d&apos;armature" Locale="fr" />
+		<DocLocalization Locale="de" Name="Bewehrungsstab - Typ" />
+		<DocLocalization Locale="en" Name="Reinforcing Bar Type" />
+		<DocLocalization Locale="fr" Name="Type de barre d&apos;armature" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="3541.2184" Y="192.40274" Width="251.85508" Height="608.81452" />
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="fca03e97-8ce9-4f5c-85ff-3dcf0977e521" DefinedType="IfcReinforcingBarTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="fca03e97-8ce9-4f5c-85ff-3dcf0977e521" DefinedType="IfcReinforcingBarTypeEnum">
 			<Documentation>Subtype of reinforcing bar.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3793.0734" Y="226.35397" />
-				<DocPoint X="4285.54983" Y="226.35397" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3793.0734" Y="226.35397" Width="182" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="NominalDiameter" UniqueId="fde37eb2-b137-41aa-aed4-6316a725c799" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="NominalDiameter" UniqueId="fde37eb2-b137-41aa-aed4-6316a725c799" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>The nominal diameter defining the cross-section size of the reinforcing bar.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3793.0735" Y="314.43408" />
-				<DocPoint X="4285.4812" Y="314.43408" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3786.1963068" Y="312.8293081" Width="197" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="CrossSectionArea" UniqueId="a1374397-c2d5-4f1f-8287-b2798ba3bdc9" DefinedType="IfcAreaMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="CrossSectionArea" UniqueId="a1374397-c2d5-4f1f-8287-b2798ba3bdc9" DefinedType="IfcAreaMeasure" AttributeFlags="1">
 			<Documentation>The effective cross-section area of the reinforcing bar.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3793.0735" Y="404.51912" />
-				<DocPoint X="4285.5347" Y="404.51912" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3793.67754067" Y="398.0598551" Width="205" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="BarLength" UniqueId="daef2cc9-4032-40d9-96be-0106c845b10a" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="BarLength" UniqueId="daef2cc9-4032-40d9-96be-0106c845b10a" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>The total length of the reinforcing bar. The total length of bended bars are calculated according to local standards with corrections for the bends.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3793.0735" Y="493.87568" />
-				<DocPoint X="4285.48914" Y="493.87568" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3781.863234" Y="490.2888415" Width="122" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="BarSurface" UniqueId="523a6afb-4ec8-49fc-abf0-e285918fcb00" DefinedType="IfcReinforcingBarSurfaceEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="BarSurface" UniqueId="523a6afb-4ec8-49fc-abf0-e285918fcb00" DefinedType="IfcReinforcingBarSurfaceEnum" AttributeFlags="1">
 			<Documentation>Indicator for whether the bar surface is plain or textured.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3793.0734" Y="580.46332" />
-				<DocPoint X="4285.53433" Y="580.46332" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3787.3581028" Y="574.0846401" Width="130" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="BendingShapeCode" UniqueId="0aba5d11-f542-4204-a111-a75ec36c13b0" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="BendingShapeCode" UniqueId="0aba5d11-f542-4204-a111-a75ec36c13b0" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>Shape code per a standard like ACI 315, ISO 3766, or a similar standard.  It is presumed that a single standard for defining the bar bending is used throughout the project and that this standard is referenced from the _IfcProject_ object through the _IfcDocumentReference_ mechanism.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3793.0734" Y="672.23778" />
-				<DocPoint X="4285.4866" Y="672.23778" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3789.0476426" Y="665.909537" Width="230" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="BendingParameters" UniqueId="2c1e05e0-9fb3-4478-90b7-8119e40734f3" DefinedType="IfcBendingParameterSelect" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="BendingParameters" UniqueId="2c1e05e0-9fb3-4478-90b7-8119e40734f3" DefinedType="IfcBendingParameterSelect" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Bending shape parameters.  Their meaning is defined by the bending shape code and the respective standard.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3793.0734" Y="761.344" />
-				<DocPoint X="4285.46103" Y="761.344" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3793.0734" Y="756.4451738" Width="302" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

@@ -1,34 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSweptSurface" Name="IfcSweptSurface" UniqueId="e06621e1-1a92-4dd8-8a42-1bba3e74e221" DiagramNumber="11" BaseDefinition="IfcSurface" EntityFlags="77">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSweptSurface" UniqueId="e06621e1-1a92-4dd8-8a42-1bba3e74e221" BaseDefinition="IfcSurface" EntityFlags="77">
 	<Localization>
-		<DocLocalization Name="Oberfläche - Entlang einem Pfad extrudiert" Locale="de" />
-		<DocLocalization Name="Swept Surface" Locale="en" />
-		<DocLocalization Name="Surface produite par extrusion d&apos;une courbe le long d&apos;une courbe" Locale="fr" />
+		<DocLocalization Locale="de" Name="Oberfläche - Entlang einem Pfad extrudiert" />
+		<DocLocalization Locale="en" Name="Swept Surface" />
+		<DocLocalization Locale="fr" Name="Surface produite par extrusion d&apos;une courbe le long d&apos;une courbe" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="16874.061" Y="323.11874" Width="356.66667" Height="100" />
 	<Subtypes>
 		<DocSubtype UniqueId="1d4d3621-dbca-493b-988d-8b2a5e209a7d" DefinedType="IfcSurfaceOfRevolution" />
 		<DocSubtype UniqueId="5a5d062a-a619-4a05-ac7f-c7d3c060e57d" DefinedType="IfcSurfaceOfLinearExtrusion" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="SweptCurve" UniqueId="8b9e9fbb-a7a2-4104-90fd-d098f43dd8c8" DefinedType="IfcProfileDef" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="SweptCurve" UniqueId="8b9e9fbb-a7a2-4104-90fd-d098f43dd8c8" DefinedType="IfcProfileDef" XsdFormat="attribute">
 			<Documentation>The curve to be swept in defining the surface. The curve is defined as a profile within the position coordinate system.</Documentation>
-			<DiagramLine>
-				<DocPoint X="16874.061" Y="373.11874" />
-				<DocPoint X="16580.81067" Y="373.11874" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="16876.7276667" Y="367.7854067" Width="142" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Position" UniqueId="f0c754b3-e364-4ba8-a03c-0167ea0aaded" DefinedType="IfcAxis2Placement3D" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="Position" UniqueId="f0c754b3-e364-4ba8-a03c-0167ea0aaded" DefinedType="IfcAxis2Placement3D" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Position coordinate system for the swept surface, provided by a profile definition within the XY plane of the _Position_ coordinates. If not provided, the position of the profile being swept is determined by the object coordinate system. In this case, the swept surface is not repositioned.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute has been changed to OPTIONAL with upward compatibility for file-based exchange.</Documentation>
-			<DiagramLine>
-				<DocPoint X="17185.89453125" Y="423.11874" />
-				<DocPoint X="17185.89453125" Y="423.11874" />
-				<DocPoint X="17185.89453125" Y="615.685424804688" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="17185.89453125" Y="595.685424804688" Width="94" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
@@ -36,27 +24,5 @@
 			<Expression>SweptCurve.ProfileType = IfcProfileTypeEnum.Curve</Expression>
 		</DocWhereRule>
 	</WhereRules>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="16937.727" Y="423.11874" />
-				<DocPoint X="16937.727" Y="882.88541" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="16937.677" Y="882.88546" />
-						<DocPoint X="16937.677" Y="960.952093" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="16427.96" Y="882.88546" />
-						<DocPoint X="16427.96" Y="961.018693" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

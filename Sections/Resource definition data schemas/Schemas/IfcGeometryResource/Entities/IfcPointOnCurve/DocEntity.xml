@@ -1,39 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPointOnCurve" UniqueId="48ccc19b-d9f1-4207-af14-8d7c8eafab3b" DiagramNumber="3" BaseDefinition="IfcPoint" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPointOnCurve" UniqueId="48ccc19b-d9f1-4207-af14-8d7c8eafab3b" BaseDefinition="IfcPoint" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Punkt auf einer Kurve" Locale="de" />
-		<DocLocalization Name="Point On Curve" Locale="en" />
-		<DocLocalization Name="Point de courbe" Locale="fr" />
+		<DocLocalization Locale="de" Name="Punkt auf einer Kurve" />
+		<DocLocalization Locale="en" Name="Point On Curve" />
+		<DocLocalization Locale="fr" Name="Point de courbe" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="3257.45239257813" Y="1321.16658528646" Width="390" Height="392" />
 	<Attributes>
-		<DocAttribute Name="BasisCurve" UniqueId="23610d14-c492-4d05-b307-e083998c52f8" DefinedType="IfcCurve" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="BasisCurve" UniqueId="23610d14-c492-4d05-b307-e083998c52f8" DefinedType="IfcCurve" XsdFormat="attribute">
 			<Documentation>The curve to which point parameter relates.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3647.45239257813" Y="1504.59997558594" />
-				<DocPoint X="3647.45239257813" Y="1504.59997558594" />
-				<DocPoint X="3889.33349609375" Y="1504.59997558594" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3647.45239257813" Y="1484.59997558594" Width="132" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="PointParameter" UniqueId="5ee320ad-16c4-44d7-a272-c4c6f7d2deb2" DefinedType="IfcParameterValue" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PointParameter" UniqueId="5ee320ad-16c4-44d7-a272-c4c6f7d2deb2" DefinedType="IfcParameterValue">
 			<Documentation>The parameter value of the point location.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3647.45239257813" Y="1622.5000406901" />
-				<DocPoint X="3647.45239257813" Y="1622.5000406901" />
-				<DocPoint X="3889.33349609375" Y="1622.5000406901" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3647.45239257813" Y="1602.5000406901" Width="178" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Dim" UniqueId="46656360-14de-4bbe-ac9f-e3771d59a218" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Dim" UniqueId="46656360-14de-4bbe-ac9f-e3771d59a218" DefinedType="IfcDimensionCount">
 			<Documentation>The space dimensionality of this class, determined by the space dimensionality of the basis curve.</Documentation>
 			<Derived>BasisCurve.Dim</Derived>
-			<DiagramLine>
-				<DocPoint X="3647.45239257813" Y="1396.20003255208" />
-				<DocPoint X="3647.45239257813" Y="1396.20003255208" />
-				<DocPoint X="3889.33349609375" Y="1396.20003255208" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3647.45239257813" Y="1376.20003255208" Width="125" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

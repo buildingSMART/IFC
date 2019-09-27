@@ -4,5 +4,5 @@ The same _IfcDocumentInformation_ can be referenced from the exchange structure 
 
 > HISTORY&nbsp; New entity in IFC2x.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Attribute _HasDocumentReferences_ changed to be inverse, attribute _Location_ added, and attribute _ElectronicFormat_ modified.

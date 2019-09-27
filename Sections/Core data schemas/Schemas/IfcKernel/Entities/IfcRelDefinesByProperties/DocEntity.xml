@@ -1,31 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelDefinesByProperties" Name="IfcRelDefinesByProperties" UniqueId="349d602e-d775-4785-ac74-0632e4fdd015" DiagramNumber="4" BaseDefinition="IfcRelDefines" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelDefinesByProperties" Name="IfcRelDefinesByProperties" UniqueId="349d602e-d775-4785-ac74-0632e4fdd015" BaseDefinition="IfcRelDefines" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Definiert durch Merkmale - Relation" Locale="de">
+		<DocLocalization Locale="de" Name="Definiert durch Merkmale - Relation">
 			<Documentation>Relation zwischen einem Objekt und dessen beschreibenden Merkmalen</Documentation>
 		</DocLocalization>
-		<DocLocalization Name="Rel Defines By Properties" Locale="en" />
-		<DocLocalization Name="Définition par propriétés" Locale="fr" />
+		<DocLocalization Locale="en" Name="Rel Defines By Properties" />
+		<DocLocalization Locale="fr" Name="Définition par propriétés" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="4932.7454" Y="942.05707" Width="454" Height="192.53333" />
 	<Attributes>
-		<DocAttribute Name="RelatedObjects" UniqueId="bdb132c9-664c-4197-bf3d-a2f2c81af4cb" DefinedType="IfcObjectDefinition" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="?" XsdFormat="hidden">
+		<DocAttribute Name="RelatedObjects" UniqueId="bdb132c9-664c-4197-bf3d-a2f2c81af4cb" DefinedType="IfcObjectDefinition" AggregationType="3" AggregationLower="1" AggregationUpper="?" XsdFormat="hidden">
 			<Documentation>Reference to the objects (or single object) to which the property definition applies.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; Data type promoted from subtype _IfcObject_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5386.7454" Y="987.65707" />
-				<DocPoint X="6010.3787" Y="987.65707" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5354.7454" Y="974.323737" Width="255" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RelatingPropertyDefinition" UniqueId="b4e540ff-8ce0-4a5c-a495-3452883ceea7" DefinedType="IfcPropertySetDefinitionSelect" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RelatingPropertyDefinition" UniqueId="b4e540ff-8ce0-4a5c-a495-3452883ceea7" DefinedType="IfcPropertySetDefinitionSelect">
 			<Documentation>Reference to the property set definition for that object or set of objects.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5345.28" Y="1134.5904" />
-				<DocPoint X="5345.28" Y="1290.53333" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5507.94667" Y="1118.5904" Width="294" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

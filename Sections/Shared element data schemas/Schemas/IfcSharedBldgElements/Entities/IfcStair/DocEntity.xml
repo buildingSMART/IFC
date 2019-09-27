@@ -1,23 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStair" Name="IfcStair" UniqueId="d974f360-0afb-4b3f-a222-03b0b82cf2e3" DiagramNumber="2" BaseDefinition="IfcBuildingElement" EntityFlags="109">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStair" Name="IfcStair" UniqueId="d974f360-0afb-4b3f-a222-03b0b82cf2e3" BaseDefinition="IfcBuildingElement" EntityFlags="109">
 	<Localization>
-		<DocLocalization Name="Treppe" Locale="de" />
-		<DocLocalization Name="Stair" Locale="en" />
-		<DocLocalization Name="Escalier" Locale="fr" />
+		<DocLocalization Locale="de" Name="Treppe" />
+		<DocLocalization Locale="en" Name="Stair" />
+		<DocLocalization Locale="fr" Name="Escalier" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1865.3633" Y="314.86664" Width="249.9" Height="100" />
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="8b615fde-d241-43ce-8bff-ccc8693ad6ff" DefinedType="IfcStairTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="8b615fde-d241-43ce-8bff-ccc8693ad6ff" DefinedType="IfcStairTypeEnum" AttributeFlags="1">
 			<Documentation>Predefined generic type for a stair that is specified in an enumeration. There may be a property set given specifically for the predefined types.
 &gt; NOTE&amp;nbsp; The _PredefinedType_ shall only be used, if no _IfcStairType_ is assigned, providing its own _IfcStairType.PredefinedType_.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE The attribute has been renamed from _ShapeType_ and changed to be OPTIONAL with upward compatibility for file based exchange.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2115.2633" Y="364.86664" />
-				<DocPoint X="2509.3633" Y="364.86664" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2107.2633" Y="358.1999733" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

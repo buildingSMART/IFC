@@ -32,17 +32,17 @@ The part should not be contained in the spatial hierarchy, i.e. the concept _Spa
 						</DocLocalization>
 					</Localization>
 					<Rules>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Decomposes" Identification="Decomposes">
+						<DocModelRuleAttribute Name="Decomposes" Identification="Decomposes">
 							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAggregates">
+								<DocModelRuleEntity Name="IfcRelAggregates">
 									<Rules>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingObject" Identification="RelatingObject">
+										<DocModelRuleAttribute Name="RelatingObject" Identification="RelatingObject">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcElement">
+												<DocModelRuleEntity Name="IfcElement">
 													<Rules>
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="ElementName">
+														<DocModelRuleAttribute Name="Name" Identification="ElementName">
 															<Rules>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																<DocModelRuleEntity Name="IfcLabel" />
 															</Rules>
 														</DocModelRuleAttribute>
 													</Rules>
@@ -78,17 +78,17 @@ By default the following constraints apply to an element being decomposed by _El
 						</DocLocalization>
 					</Localization>
 					<Rules>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsDecomposedBy" Identification="IsDecomposedBy">
+						<DocModelRuleAttribute Name="IsDecomposedBy" Identification="IsDecomposedBy">
 							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAggregates">
+								<DocModelRuleEntity Name="IfcRelAggregates">
 									<Rules>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedObjects" Identification="RelatedObjects">
+										<DocModelRuleAttribute Name="RelatedObjects" Identification="RelatedObjects">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcElement">
+												<DocModelRuleEntity Name="IfcElement">
 													<Rules>
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="PartName">
+														<DocModelRuleAttribute Name="Name" Identification="PartName">
 															<Rules>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																<DocModelRuleEntity Name="IfcLabel" />
 															</Rules>
 														</DocModelRuleAttribute>
 													</Rules>
@@ -120,20 +120,20 @@ In addition a more general hierarchical tree of spatial elements can be created 
 						</DocLocalization>
 					</Localization>
 					<Rules>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Decomposes">
+						<DocModelRuleAttribute Name="Decomposes">
 							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAggregates">
+								<DocModelRuleEntity Name="IfcRelAggregates">
 									<Rules>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingObject" Identification="RelatingObject">
+										<DocModelRuleAttribute Name="RelatingObject" Identification="RelatingObject">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProject">
+												<DocModelRuleEntity Name="IfcProject">
 													<Rules>
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="ProjectName" />
+														<DocModelRuleAttribute Name="Name" Identification="ProjectName" />
 													</Rules>
 												</DocModelRuleEntity>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcSpatialElement">
+												<DocModelRuleEntity Name="IfcSpatialElement">
 													<Rules>
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="SpatialElementName" />
+														<DocModelRuleAttribute Name="Name" Identification="SpatialElementName" />
 													</Rules>
 												</DocModelRuleEntity>
 											</Rules>
@@ -163,17 +163,17 @@ In addition a more general hierarchical tree of spatial elements can be created 
 						</DocLocalization>
 					</Localization>
 					<Rules>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsDecomposedBy">
+						<DocModelRuleAttribute Name="IsDecomposedBy">
 							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAggregates">
+								<DocModelRuleEntity Name="IfcRelAggregates">
 									<Rules>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedObjects" Identification="RelatedObjects">
+										<DocModelRuleAttribute Name="RelatedObjects" Identification="RelatedObjects">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcSpatialElement">
+												<DocModelRuleEntity Name="IfcSpatialElement">
 													<Rules>
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="SpatialElementName">
+														<DocModelRuleAttribute Name="Name" Identification="SpatialElementName">
 															<Rules>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																<DocModelRuleEntity Name="IfcLabel" />
 															</Rules>
 														</DocModelRuleAttribute>
 													</Rules>
@@ -190,17 +190,17 @@ In addition a more general hierarchical tree of spatial elements can be created 
 		</DocTemplateDefinition>
 		<DocTemplateDefinition id="Element_Projecting_0KYHuPBgf6GOaJOfkvfWW1" Name="Element Projecting" UniqueId="14891e19-2eaa-4641-8913-629bb9a60801" Type="IfcElement">
 			<Rules>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasProjections">
+				<DocModelRuleAttribute Name="HasProjections">
 					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelProjectsElement">
+						<DocModelRuleEntity Name="IfcRelProjectsElement">
 							<Rules>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedFeatureElement">
+								<DocModelRuleAttribute Name="RelatedFeatureElement">
 									<Rules>
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProjectionElement">
+										<DocModelRuleEntity Name="IfcProjectionElement">
 											<Rules>
-												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="PredefinedType">
+												<DocModelRuleAttribute Name="PredefinedType">
 													<Rules>
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProjectionElementTypeEnum" />
+														<DocModelRuleEntity Name="IfcProjectionElementTypeEnum" />
 													</Rules>
 												</DocModelRuleAttribute>
 											</Rules>
@@ -228,27 +228,27 @@ The &apos;Mesh&apos; representation of an element does account for voids, such t
 				</DocLocalization>
 			</Localization>
 			<Rules>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasOpenings" Identification="HasOpenings">
+				<DocModelRuleAttribute Name="HasOpenings" Identification="HasOpenings">
 					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelVoidsElement">
+						<DocModelRuleEntity Name="IfcRelVoidsElement">
 							<Rules>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedOpeningElement">
+								<DocModelRuleAttribute Name="RelatedOpeningElement">
 									<Rules>
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcOpeningElement">
+										<DocModelRuleEntity Name="IfcOpeningElement">
 											<Rules>
-												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="PredefinedType">
+												<DocModelRuleAttribute Name="PredefinedType">
 													<Rules>
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcOpeningElementTypeEnum" />
+														<DocModelRuleEntity Name="IfcOpeningElementTypeEnum" />
 													</Rules>
 												</DocModelRuleAttribute>
-												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasFillings" Identification="HasFillings">
+												<DocModelRuleAttribute Name="HasFillings" Identification="HasFillings">
 													<Rules>
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelFillsElement">
+														<DocModelRuleEntity Name="IfcRelFillsElement">
 															<Rules>
-																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedBuildingElement" Identification="RelatedFillings">
+																<DocModelRuleAttribute Name="RelatedBuildingElement" Identification="RelatedFillings">
 																	<Rules>
-																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDoor" Identification="ElementName" />
-																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcWindow" Identification="ElementName" />
+																		<DocModelRuleEntity Name="IfcDoor" Identification="ElementName" />
+																		<DocModelRuleEntity Name="IfcWindow" Identification="ElementName" />
 																	</Rules>
 																</DocModelRuleAttribute>
 															</Rules>
@@ -275,9 +275,9 @@ The &apos;Mesh&apos; representation of an element does account for voids, such t
 
 Nesting is a bi-directional relationship, the relationship from the hosting structure to its attached components is called Nesting, and the relationship from the components to their containing structure is called Hosting.</Documentation>
 			<Rules>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsNestedBy">
+				<DocModelRuleAttribute Name="IsNestedBy">
 					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelNests" />
+						<DocModelRuleEntity Name="IfcRelNests" />
 					</Rules>
 				</DocModelRuleAttribute>
 			</Rules>
@@ -304,20 +304,20 @@ Element nesting should be used for cases where the hosting element has a specifi
 
 A general rule for using nesting as opposed to aggregation is based on the contents of the manufactured product as ordered according to its specified article number. If the product includes the component (regardless of whether it comes assembled), then it should use aggregation. If the product does not include any such component but is specifically designed for attaching to other components, then it should use nesting.</Documentation>
 					<Rules>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsNestedBy">
+						<DocModelRuleAttribute Name="IsNestedBy">
 							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelNests">
+								<DocModelRuleEntity Name="IfcRelNests">
 									<Rules>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedObjects" Identification="Type">
+										<DocModelRuleAttribute Name="RelatedObjects" Identification="Type">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcElement">
+												<DocModelRuleEntity Name="IfcElement">
 													<Rules>
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ObjectPlacement">
+														<DocModelRuleAttribute Name="ObjectPlacement">
 															<Rules>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLocalPlacement" />
+																<DocModelRuleEntity Name="IfcLocalPlacement" />
 															</Rules>
 														</DocModelRuleAttribute>
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="PredefinedType" Identification="PredefinedType" />
+														<DocModelRuleAttribute Name="PredefinedType" Identification="PredefinedType" />
 													</Rules>
 												</DocModelRuleEntity>
 											</Rules>
@@ -331,13 +331,13 @@ A general rule for using nesting as opposed to aggregation is based on the conte
 				<DocTemplateDefinition id="Object_Nesting_0uoeU8NaT178AKrM_UcbQH" Name="Object Nesting" UniqueId="0uoeU8NaT178AKrM_UcbQH" Type="IfcObjectDefinition">
 					<Documentation>General object nesting indicates an ordered arrangement relationship.</Documentation>
 					<Rules>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsNestedBy">
+						<DocModelRuleAttribute Name="IsNestedBy">
 							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelNests">
+								<DocModelRuleEntity Name="IfcRelNests">
 									<Rules>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedObjects" Identification="Type">
+										<DocModelRuleAttribute Name="RelatedObjects" Identification="Type">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcObject" />
+												<DocModelRuleEntity Name="IfcObject" />
 											</Rules>
 										</DocModelRuleAttribute>
 									</Rules>
@@ -361,51 +361,51 @@ Ports may have placement defined indicating the position and outward orientation
 						</DocLocalization>
 					</Localization>
 					<Rules>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="PredefinedType" Identification="PredefinedType" />
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsNestedBy">
+						<DocModelRuleAttribute Name="PredefinedType" Identification="PredefinedType" />
+						<DocModelRuleAttribute Name="IsNestedBy">
 							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelNests">
+								<DocModelRuleEntity Name="IfcRelNests">
 									<Rules>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedObjects">
+										<DocModelRuleAttribute Name="RelatedObjects">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDistributionPort">
+												<DocModelRuleEntity Name="IfcDistributionPort">
 													<Rules>
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="PortName">
+														<DocModelRuleAttribute Name="Name" Identification="PortName">
 															<Rules>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																<DocModelRuleEntity Name="IfcLabel" />
 															</Rules>
 														</DocModelRuleAttribute>
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="FlowDirection" Identification="Flow">
+														<DocModelRuleAttribute Name="FlowDirection" Identification="Flow">
 															<Rules>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcFlowDirectionEnum" />
+																<DocModelRuleEntity Name="IfcFlowDirectionEnum" />
 															</Rules>
 														</DocModelRuleAttribute>
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="SystemType" Identification="SystemType">
+														<DocModelRuleAttribute Name="SystemType" Identification="SystemType">
 															<Rules>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDistributionSystemEnum" />
+																<DocModelRuleEntity Name="IfcDistributionSystemEnum" />
 															</Rules>
 														</DocModelRuleAttribute>
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ObjectPlacement">
+														<DocModelRuleAttribute Name="ObjectPlacement">
 															<Rules>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLocalPlacement">
+																<DocModelRuleEntity Name="IfcLocalPlacement">
 																	<Rules>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelativePlacement">
+																		<DocModelRuleAttribute Name="RelativePlacement">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAxis2Placement3D">
+																				<DocModelRuleEntity Name="IfcAxis2Placement3D">
 																					<Rules>
-																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Location">
+																						<DocModelRuleAttribute Name="Location">
 																							<Rules>
-																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCartesianPoint" />
+																								<DocModelRuleEntity Name="IfcCartesianPoint" />
 																							</Rules>
 																						</DocModelRuleAttribute>
-																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Axis">
+																						<DocModelRuleAttribute Name="Axis">
 																							<Rules>
-																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDirection" />
+																								<DocModelRuleEntity Name="IfcDirection" />
 																							</Rules>
 																						</DocModelRuleAttribute>
-																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RefDirection">
+																						<DocModelRuleAttribute Name="RefDirection">
 																							<Rules>
-																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDirection" />
+																								<DocModelRuleEntity Name="IfcDirection" />
 																							</Rules>
 																						</DocModelRuleAttribute>
 																					</Rules>
@@ -416,10 +416,10 @@ Ports may have placement defined indicating the position and outward orientation
 																</DocModelRuleEntity>
 															</Rules>
 														</DocModelRuleAttribute>
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsDeclaredBy" />
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="PredefinedType">
+														<DocModelRuleAttribute Name="IsDeclaredBy" />
+														<DocModelRuleAttribute Name="PredefinedType">
 															<Rules>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDistributionPortTypeEnum" />
+																<DocModelRuleEntity Name="IfcDistributionPortTypeEnum" />
 															</Rules>
 														</DocModelRuleAttribute>
 													</Rules>
@@ -441,17 +441,17 @@ This relationship differs from _IfcRelAggregates_, which is used to define expli
 
 The order and naming of components may be significant based on parameterized material association. For example, if the _IfcElementType_ has an associated _IfcMaterialLayerSet_, then layers are constructed according to material associations of each nested _IfcElement_, and the _Name_ of each _IfcMaterialLayer_ must correspond to the _Name_ of each _IfcElement_.</Documentation>
 					<Rules>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsNestedBy">
+						<DocModelRuleAttribute Name="IsNestedBy">
 							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelNests">
+								<DocModelRuleEntity Name="IfcRelNests">
 									<Rules>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedObjects" Identification="Elements">
+										<DocModelRuleAttribute Name="RelatedObjects" Identification="Elements">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcElement">
+												<DocModelRuleEntity Name="IfcElement">
 													<Rules>
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="Name">
+														<DocModelRuleAttribute Name="Name" Identification="Name">
 															<Rules>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																<DocModelRuleEntity Name="IfcLabel" />
 															</Rules>
 														</DocModelRuleAttribute>
 													</Rules>
@@ -469,50 +469,50 @@ The order and naming of components may be significant based on parameterized mat
 
 On type objects, ports are not connected, but serve as placeholders indicating that occurrences of the enclosing type object shall use a duplicate list of ports for connecting to ports on other object occurrences.</Documentation>
 					<Rules>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsNestedBy">
+						<DocModelRuleAttribute Name="IsNestedBy">
 							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelNests">
+								<DocModelRuleEntity Name="IfcRelNests">
 									<Rules>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedObjects">
+										<DocModelRuleAttribute Name="RelatedObjects">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDistributionPort">
+												<DocModelRuleEntity Name="IfcDistributionPort">
 													<Rules>
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name">
+														<DocModelRuleAttribute Name="Name">
 															<Rules>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																<DocModelRuleEntity Name="IfcLabel" />
 															</Rules>
 														</DocModelRuleAttribute>
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="FlowDirection">
+														<DocModelRuleAttribute Name="FlowDirection">
 															<Rules>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcFlowDirectionEnum" />
+																<DocModelRuleEntity Name="IfcFlowDirectionEnum" />
 															</Rules>
 														</DocModelRuleAttribute>
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="SystemType">
+														<DocModelRuleAttribute Name="SystemType">
 															<Rules>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDistributionSystemEnum" />
+																<DocModelRuleEntity Name="IfcDistributionSystemEnum" />
 															</Rules>
 														</DocModelRuleAttribute>
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ObjectPlacement">
+														<DocModelRuleAttribute Name="ObjectPlacement">
 															<Rules>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLocalPlacement">
+																<DocModelRuleEntity Name="IfcLocalPlacement">
 																	<Rules>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelativePlacement">
+																		<DocModelRuleAttribute Name="RelativePlacement">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAxis2Placement3D">
+																				<DocModelRuleEntity Name="IfcAxis2Placement3D">
 																					<Rules>
-																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Location">
+																						<DocModelRuleAttribute Name="Location">
 																							<Rules>
-																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCartesianPoint" />
+																								<DocModelRuleEntity Name="IfcCartesianPoint" />
 																							</Rules>
 																						</DocModelRuleAttribute>
-																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Axis">
+																						<DocModelRuleAttribute Name="Axis">
 																							<Rules>
-																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDirection" />
+																								<DocModelRuleEntity Name="IfcDirection" />
 																							</Rules>
 																						</DocModelRuleAttribute>
-																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RefDirection">
+																						<DocModelRuleAttribute Name="RefDirection">
 																							<Rules>
-																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDirection" />
+																								<DocModelRuleEntity Name="IfcDirection" />
 																							</Rules>
 																						</DocModelRuleAttribute>
 																					</Rules>
@@ -523,9 +523,9 @@ On type objects, ports are not connected, but serve as placeholders indicating t
 																</DocModelRuleEntity>
 															</Rules>
 														</DocModelRuleAttribute>
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="PredefinedType">
+														<DocModelRuleAttribute Name="PredefinedType">
 															<Rules>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDistributionPortTypeEnum" />
+																<DocModelRuleEntity Name="IfcDistributionPortTypeEnum" />
 															</Rules>
 														</DocModelRuleAttribute>
 													</Rules>
@@ -547,21 +547,21 @@ Placement of such components may be explicitly defined using _IfcLocalPlacement_
 
 If an occurrence is instantiated of the given _IfcElementType_, then such occurrence must include equivalent aggregated elements with names corresponding to those within the element type.</Documentation>
 			<Rules>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="PredefinedType" Identification="PredefinedType" />
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsDecomposedBy">
+				<DocModelRuleAttribute Name="PredefinedType" Identification="PredefinedType" />
+				<DocModelRuleAttribute Name="IsDecomposedBy">
 					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelAggregates">
+						<DocModelRuleEntity Name="IfcRelAggregates">
 							<Rules>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedObjects" Identification="RelatedObjects">
+								<DocModelRuleAttribute Name="RelatedObjects" Identification="RelatedObjects">
 									<Rules>
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcElement" />
+										<DocModelRuleEntity Name="IfcElement" />
 									</Rules>
 								</DocModelRuleAttribute>
 							</Rules>
 						</DocModelRuleEntity>
 					</Rules>
 				</DocModelRuleAttribute>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Decomposes" />
+				<DocModelRuleAttribute Name="Decomposes" />
 			</Rules>
 		</DocTemplateDefinition>
 	</Templates>

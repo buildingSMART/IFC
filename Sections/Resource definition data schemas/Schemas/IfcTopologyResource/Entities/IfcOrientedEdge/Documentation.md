@@ -21,5 +21,5 @@ The reused edge with a geometric representation as _IfcEdgeCurve_ defines the ed
 
 > HISTORY&nbsp; New entity in IFC2.0.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 Add2 CHANGE&nbsp; The attribute _CurveOnSurface_ has been added.

@@ -1,59 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcReinforcementBarProperties" UniqueId="c1d5b667-727a-4e33-a16c-cec44470ca27" DiagramNumber="8" BaseDefinition="IfcPreDefinedProperties" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcReinforcementBarProperties" UniqueId="c1d5b667-727a-4e33-a16c-cec44470ca27" BaseDefinition="IfcPreDefinedProperties" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Bewehrungsstab - Merkmale" Locale="de" />
-		<DocLocalization Name="Reinforcement Bar Properties" Locale="en" />
-		<DocLocalization Name="Propriétés du ferraillage" Locale="fr" />
+		<DocLocalization Locale="de" Name="Bewehrungsstab - Merkmale" />
+		<DocLocalization Locale="en" Name="Reinforcement Bar Properties" />
+		<DocLocalization Locale="fr" Name="Propriétés du ferraillage" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="5095.4333" Y="4058.5" Width="333.33333" Height="517.5" />
 	<Attributes>
-		<DocAttribute Name="TotalCrossSectionArea" UniqueId="0a3287fa-94df-4a56-b7bb-d6299d19133a" DefinedType="IfcAreaMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="TotalCrossSectionArea" UniqueId="0a3287fa-94df-4a56-b7bb-d6299d19133a" DefinedType="IfcAreaMeasure">
 			<Documentation>The total effective cross-section area of the reinforcement of a specific steel grade.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5428.7667" Y="4092.1332" />
-				<DocPoint X="5870.8667" Y="4092.1332" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5423.4333667" Y="4081.466533" Width="260" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="SteelGrade" UniqueId="7884f3a6-3453-4dbd-bc43-439ff97ce024" DefinedType="IfcLabel" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="SteelGrade" UniqueId="7884f3a6-3453-4dbd-bc43-439ff97ce024" DefinedType="IfcLabel">
 			<Documentation>The nominal steel grade defined according to local standards.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5428.7667" Y="4176.446" />
-				<DocPoint X="5870.9333" Y="4176.446" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5355.433367" Y="4169.0634808" Width="132" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="BarSurface" UniqueId="0cc0ab54-3753-4179-bbe5-d207922e0809" DefinedType="IfcReinforcingBarSurfaceEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="BarSurface" UniqueId="0cc0ab54-3753-4179-bbe5-d207922e0809" DefinedType="IfcReinforcingBarSurfaceEnum" AttributeFlags="1">
 			<Documentation>Indicator for whether the bar surface is plain or textured.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5428.7667" Y="4264.2495" />
-				<DocPoint X="5870.9424" Y="4264.2495" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5357.933367" Y="4264.2495" Width="130" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="EffectiveDepth" UniqueId="c05cd6da-13ef-40e0-aea8-e18e7b96e205" DefinedType="IfcLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="EffectiveDepth" UniqueId="c05cd6da-13ef-40e0-aea8-e18e7b96e205" DefinedType="IfcLengthMeasure" AttributeFlags="1">
 			<Documentation>The effective depth, i.e. the distance of the specific reinforcement cross section area or reinforcement configuration in a row, counted from a common specific reference point. Usually the reference point is the upper surface (for beams and slabs) or a similar projection in a plane (for columns).</Documentation>
-			<DiagramLine>
-				<DocPoint X="5428.7667" Y="4346.6814" />
-				<DocPoint X="5870.9333" Y="4346.6814" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5378.7667" Y="4346.6814" Width="168" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="NominalBarDiameter" UniqueId="9e618967-8206-4a64-bf1c-f065826620ac" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="NominalBarDiameter" UniqueId="9e618967-8206-4a64-bf1c-f065826620ac" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>The nominal diameter defining the cross-section size of the reinforcing bar. The bar diameter should be identical for all bars included in the specific reinforcement configuration.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5428.7667" Y="4444.3603" />
-				<DocPoint X="5870.96667" Y="4444.3603" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5410.933367" Y="4437.5269666" Width="235" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="BarCount" UniqueId="1d3f34e8-4a6a-4514-975b-b9e0649229e2" DefinedType="IfcCountMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="BarCount" UniqueId="1d3f34e8-4a6a-4514-975b-b9e0649229e2" DefinedType="IfcCountMeasure" AttributeFlags="1">
 			<Documentation>The number of bars with identical nominal diameter and steel grade included in the specific reinforcement configuration.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5428.7667" Y="4533.8188" />
-				<DocPoint X="5870.96663" Y="4533.8188" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5356.933367" Y="4526.9854666" Width="112" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

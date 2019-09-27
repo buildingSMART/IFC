@@ -1,58 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcProcess" Name="IfcProcess" UniqueId="f56a4e45-de47-49a7-83d1-3628609eb4f3" DiagramNumber="9" BaseDefinition="IfcObject" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcProcess" Name="IfcProcess" UniqueId="f56a4e45-de47-49a7-83d1-3628609eb4f3" BaseDefinition="IfcObject" EntityFlags="205">
 	<Localization>
-		<DocLocalization Name="Prozess (allgemein)" Locale="de" />
-		<DocLocalization Name="Process" Locale="en" />
-		<DocLocalization Name="Processus" Locale="fr" />
+		<DocLocalization Locale="de" Name="Prozess (allgemein)" />
+		<DocLocalization Locale="en" Name="Process" />
+		<DocLocalization Locale="fr" Name="Processus" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="13004.717" Y="354.02586" Width="522" Height="303.73334" />
 	<Attributes>
-		<DocAttribute Name="Identification" UniqueId="66e9489d-b4ed-4ba1-a9bb-eebd2225c8f1" DefinedType="IfcIdentifier" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Identification" UniqueId="66e9489d-b4ed-4ba1-a9bb-eebd2225c8f1" DefinedType="IfcIdentifier" AttributeFlags="1">
 			<Documentation>An identifying designation given to a process or activity.
     It is the identifier at the occurrence level. 
     
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE Attribute promoted from subtypes.</Documentation>
-			<DiagramLine>
-				<DocPoint X="13526.717" Y="385.52807" />
-				<DocPoint X="14093.38367" Y="385.52807" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="13529.3836667" Y="380.1947367" Width="146" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LongDescription" UniqueId="a6480a2f-193a-4d98-af8a-dcc00c42d675" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LongDescription" UniqueId="a6480a2f-193a-4d98-af8a-dcc00c42d675" DefinedType="IfcText" AttributeFlags="1">
 			<Documentation>An extended description or narrative that may be provided.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute.</Documentation>
-			<DiagramLine>
-				<DocPoint X="13526.717" Y="471.22586" />
-				<DocPoint X="14093.45033" Y="471.22586" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="13529.3836667" Y="463.22586" Width="186" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="IsPredecessorTo" UniqueId="e95a3b00-ba20-4428-9ea0-0dac117a2339" DefinedType="IfcRelSequence" AttributeFlags="32" AggregationType="3" AggregationFlag="0" Inverse="RelatingProcess">
+		<DocAttribute Name="IsPredecessorTo" UniqueId="e95a3b00-ba20-4428-9ea0-0dac117a2339" DefinedType="IfcRelSequence" AttributeFlags="32" AggregationType="3" Inverse="RelatingProcess">
 			<Documentation>Dependency between two activities, it refers to the subsequent activity for which this activity is the predecessor. The link between two activities can include a link type and a lag time.</Documentation>
-			<DiagramLine>
-				<DocPoint X="13427.995" Y="657.7592" />
-				<DocPoint X="13427.995" Y="946.44999" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="13462.66167" Y="697.7592" Width="336" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="IsSuccessorFrom" UniqueId="06cc4698-e7f3-4905-a123-e09c3e2bb81d" DefinedType="IfcRelSequence" AttributeFlags="32" AggregationType="3" AggregationFlag="0" Inverse="RelatedProcess">
+		<DocAttribute Name="IsSuccessorFrom" UniqueId="06cc4698-e7f3-4905-a123-e09c3e2bb81d" DefinedType="IfcRelSequence" AttributeFlags="32" AggregationType="3" Inverse="RelatedProcess">
 			<Documentation>Dependency between two activities, it refers to the previous activity for which this activity is the successor. The link between two activities can include a link type and a lag time.</Documentation>
-			<DiagramLine>
-				<DocPoint X="13065.863" Y="657.7592" />
-				<DocPoint X="13065.863" Y="946.44999" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="13095.19633" Y="695.092533" Width="340" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="OperatesOn" UniqueId="c6ab7167-e878-400c-9125-45a74e99ef1d" DefinedType="IfcRelAssignsToProcess" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingProcess">
+		<DocAttribute Name="OperatesOn" UniqueId="c6ab7167-e878-400c-9125-45a74e99ef1d" DefinedType="IfcRelAssignsToProcess" AggregationType="3" Inverse="RelatingProcess">
 			<Documentation>Set of relationships to other objects, e.g. products, processes, controls, resources or actors, that are operated on by the process.</Documentation>
-			<DiagramLine>
-				<DocPoint X="13526.717" Y="624.04262" />
-				<DocPoint X="14007.39762" Y="624.04262" />
-				<DocPoint X="14007.39762" Y="845.03648" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="13652.07398" Y="600.097929" Width="467" Height="70" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

@@ -1,126 +1,62 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcWindowLiningProperties" Name="IfcWindowLiningProperties" UniqueId="cb0b2f54-1b67-43b1-bfc6-07a44a44a16e" DiagramNumber="2" BaseDefinition="IfcPreDefinedPropertySet" EntityFlags="173">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcWindowLiningProperties" Name="IfcWindowLiningProperties" UniqueId="cb0b2f54-1b67-43b1-bfc6-07a44a44a16e" BaseDefinition="IfcPreDefinedPropertySet" EntityFlags="173">
 	<Localization>
-		<DocLocalization Name="Festdefinierte Merkmale des Fensterrahmens / der Fensterzarge" Locale="de" />
-		<DocLocalization Name="Window Lining Properties" Locale="en" />
-		<DocLocalization Name="Propriétés de cadre de fenêtre" Locale="fr" />
+		<DocLocalization Locale="de" Name="Festdefinierte Merkmale des Fensterrahmens / der Fensterzarge" />
+		<DocLocalization Locale="en" Name="Window Lining Properties" />
+		<DocLocalization Locale="fr" Name="Propriétés de cadre de fenêtre" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="2338.2983" Y="278.92503" Width="200" Height="838.46666" />
 	<Attributes>
-		<DocAttribute Name="LiningDepth" UniqueId="5f11ca78-fd39-49fd-aa05-39f48444916b" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LiningDepth" UniqueId="5f11ca78-fd39-49fd-aa05-39f48444916b" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>Depth of the window lining (dimension measured perpendicular to window elevation plane).</Documentation>
-			<DiagramLine>
-				<DocPoint X="2538.2983" Y="420.87166" />
-				<DocPoint X="2788.03163" Y="420.87166" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2538.2983" Y="416.6049933" Width="140" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LiningThickness" UniqueId="098f93e9-146f-47d3-b18c-1f220d0ab695" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LiningThickness" UniqueId="098f93e9-146f-47d3-b18c-1f220d0ab695" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1">
 			<Documentation>Thickness of the window lining as explained in the figure above. If _LiningThickness_ value is 0. (zero) it denotes a window without a lining (all other lining parameters shall be set to NIL in this case). If the _LiningThickness_ is NIL it denotes that the value is not available.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; Data type modified to be _IfcNonNegativeLengthMeasure_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2538.2983" Y="316.82503" />
-				<DocPoint X="2958.96497" Y="316.82503" />
-				<DocPoint X="2958.96497" Y="252.82503" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2478.764967" Y="308.82503" Width="183" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="TransomThickness" UniqueId="a8f96736-8189-438d-b44f-d45154a2cac4" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="TransomThickness" UniqueId="a8f96736-8189-438d-b44f-d45154a2cac4" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1">
 			<Documentation>Thickness of the transom (horizontal separator of window panels within a window), measured parallel to the window elevation plane. The transom is part of the lining and the transom depth is assumed to be identical to the lining depth.
 If the _TransomThickness_ is set to zero (and the _TransomOffset_ set to a positive length), then the window is divided vertically without a physical divider.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; Data type changed to _IfcNonNegativeLengthMeasure_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2538.2983" Y="817.62503" />
-				<DocPoint X="2954.66497" Y="817.62503" />
-				<DocPoint X="2954.66497" Y="871.491697" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2495.831633" Y="810.42503" Width="214" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="MullionThickness" UniqueId="293ce108-6384-4825-b1ee-d82d4bd2c090" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="MullionThickness" UniqueId="293ce108-6384-4825-b1ee-d82d4bd2c090" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1">
 			<Documentation>Thickness of the mullion (vertical separator of window panels within a window), measured parallel to the window elevation plane. The mullion is part of the lining and the mullion depth is assumed to be identical to the lining depth. 
 If the _MullionThickness_ is set to zero (and the _MullionOffset_ set to a positive length), then the window is divided horizontally without a physical divider.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; Data type changed to _IfcNonNegativeLengthMeasure_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2538.2983" Y="698.15836" />
-				<DocPoint X="2938.66497" Y="698.15836" />
-				<DocPoint X="2938.66497" Y="612.291693" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2494.231633" Y="687.225027" Width="194" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="FirstTransomOffset" UniqueId="ec1322a2-cf54-4c11-a299-e788cb2e37ad" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="FirstTransomOffset" UniqueId="ec1322a2-cf54-4c11-a299-e788cb2e37ad" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1">
 			<Documentation>Offset of the transom centerline, measured along the z-axis of the window placement co-ordinate system. An offset value = 0.5 indicates that the transom is positioned in the middle of the window.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2338.2983" Y="535.4917" />
-				<DocPoint X="2036.86497" Y="535.4917" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2338.2983" Y="535.4917" Width="217" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="SecondTransomOffset" UniqueId="cbc74d4c-21bb-43b8-b467-73cea9bcb9c2" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="SecondTransomOffset" UniqueId="cbc74d4c-21bb-43b8-b467-73cea9bcb9c2" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1">
 			<Documentation>Offset of the transom centerline for the second transom, measured along the x-axis of the window placement co-ordinate system. An offset value = 0.666 indicates that the second transom is positioned at two/third of the window.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2338.2983" Y="647.4917" />
-				<DocPoint X="2036.93163" Y="647.4917" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2335.6316333" Y="636.825033" Width="254" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="FirstMullionOffset" UniqueId="e022da46-8cf7-401d-a027-52fbdca3cfa5" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="FirstMullionOffset" UniqueId="e022da46-8cf7-401d-a027-52fbdca3cfa5" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1">
 			<Documentation>Offset of the mullion centerline, measured along the x-axis of the window placement co-ordinate system. An offset value = 0.5 indicates that the mullion is positioned in the middle of the window.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2338.2983" Y="316.82503" />
-				<DocPoint X="2036.86497" Y="316.82503" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2338.2983" Y="316.82503" Width="197" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="SecondMullionOffset" UniqueId="8bbdec77-bf94-47da-8eb4-aa38a336dece" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="SecondMullionOffset" UniqueId="8bbdec77-bf94-47da-8eb4-aa38a336dece" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1">
 			<Documentation>Offset of the mullion centerline for the second mullion, measured along the x-axis of the window placement co-ordinate system. An offset value = 0.666 indicates that the second mullion is positioned at two/third of the window.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2338.2983" Y="426.15836" />
-				<DocPoint X="2036.7983" Y="426.15836" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2338.2983" Y="426.15836" Width="234" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ShapeAspectStyle" UniqueId="1cafc84f-dbdc-4763-87f3-c9c4b4162f98" DefinedType="IfcShapeAspect" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="ShapeAspectStyle" UniqueId="1cafc84f-dbdc-4763-87f3-c9c4b4162f98" DefinedType="IfcShapeAspect" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Optional link to a shape aspect definition, which points to the part of the geometric representation of the window style, which is used to represent the lining.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE The attribute is deprecated and shall no longer be used, i.e. the value shall be NIL ($).</Documentation>
-			<DiagramLine>
-				<DocPoint X="2438.2983" Y="1117.3917" />
-				<DocPoint X="2438.2983" Y="1241.3917" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2582.2983" Y="1146.725033" Width="208" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LiningOffset" UniqueId="3fa30327-8c18-4ddc-8dbd-d8c94edd50b3" DefinedType="IfcLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LiningOffset" UniqueId="3fa30327-8c18-4ddc-8dbd-d8c94edd50b3" DefinedType="IfcLengthMeasure" AttributeFlags="1">
 			<Documentation>Offset of the window lining. The offset is given as distance along the y axis of the local placement (perpendicular to the window plane).
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute added at the end of the entity definition.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2338.2983" Y="825.56261" />
-				<DocPoint X="1945.03163" Y="825.56261" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2338.2983" Y="825.56261" Width="139" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LiningToPanelOffsetX" UniqueId="2badc725-2305-4494-8b1f-8407472ba375" DefinedType="IfcLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LiningToPanelOffsetX" UniqueId="2badc725-2305-4494-8b1f-8407472ba375" DefinedType="IfcLengthMeasure" AttributeFlags="1">
 			<Documentation>Offset between the lining and the window panel measured along the x-axis of the local placement. Should be smaller or equal to the _LiningThickness_.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute added at the end of the entity definition.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2338.2983" Y="933.11579" />
-				<DocPoint X="1945.03163" Y="933.11579" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2338.2983" Y="933.11579" Width="247" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LiningToPanelOffsetY" UniqueId="a60c6e61-b449-48ad-a001-b9afee248533" DefinedType="IfcLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LiningToPanelOffsetY" UniqueId="a60c6e61-b449-48ad-a001-b9afee248533" DefinedType="IfcLengthMeasure" AttributeFlags="1">
 			<Documentation>Offset between the lining and the window panel measured along the y-axis of the local placement. Should be smaller or equal to the _IfcWindowPanelProperties.PanelThickness_.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute added at the end of the entity definition.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2338.2983" Y="1035.2298" />
-				<DocPoint X="1945.03163" Y="1035.2298" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2338.2983" Y="1035.2298" Width="247" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
@@ -128,7 +64,7 @@ If the _MullionThickness_ is set to zero (and the _MullionOffset_ set to a posit
 			<Documentation>Either both parameter, _LiningDepth_ and _LiningThickness_ are given, or only the _LiningThickness_, then the _LiningDepth_ is variable. It is not valid to only assert the _LiningDepth_.
 &gt; NOTE&amp;nbsp; A _LiningDepth_ with NIL ($) value indicates a window style with a lining equal to the wall thickness.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; Rule corrected.</Documentation>
 			<Expression>NOT(EXISTS(LiningDepth) AND NOT(EXISTS(LiningThickness)))</Expression>
 		</DocWhereRule>

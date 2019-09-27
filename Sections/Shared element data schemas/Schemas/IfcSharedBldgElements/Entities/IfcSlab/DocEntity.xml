@@ -1,28 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSlab" Name="IfcSlab" UniqueId="8f561139-3792-4723-b343-700785092d40" DiagramNumber="1" BaseDefinition="IfcBuildingElement" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSlab" Name="IfcSlab" UniqueId="8f561139-3792-4723-b343-700785092d40" BaseDefinition="IfcBuildingElement" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Decke / Dachfläche / Bodenplatte" Locale="de" />
-		<DocLocalization Name="Slab" Locale="en" />
-		<DocLocalization Name="Dalle" Locale="fr" />
+		<DocLocalization Locale="de" Name="Decke / Dachfläche / Bodenplatte" />
+		<DocLocalization Locale="en" Name="Slab" />
+		<DocLocalization Locale="fr" Name="Dalle" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="484.71656" Y="2046.9" Width="249.9" Height="214.66667" />
 	<Subtypes>
 		<DocSubtype UniqueId="0524d9fa-38b9-4116-beb3-29bf18a8f541" DefinedType="IfcSlabStandardCase" />
 		<DocSubtype UniqueId="27225375-f497-4c90-a318-b910905ba064" DefinedType="IfcSlabElementedCase" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="5f3dcc3b-0c4a-4603-b6c1-2aa940b83049" DefinedType="IfcSlabTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="5f3dcc3b-0c4a-4603-b6c1-2aa940b83049" DefinedType="IfcSlabTypeEnum" AttributeFlags="1">
 			<Documentation>Predefined generic type for a slab that is specified in an enumeration. There may be a property set given specifically for the predefined types.
 &gt; NOTE&amp;nbsp; The _PredefinedType_ shall only be used, if no _IfcSlabType_ is assigned, providing its own _IfcSlabType.PredefinedType_.
 
 { .change-ifc2x}
 &gt; IFC2x CHANGE The attribute has been changed into an OPTIONAL attribute.</Documentation>
-			<DiagramLine>
-				<DocPoint X="484.71656" Y="2217.6555" />
-				<DocPoint X="77.23319" Y="2217.6555" />
-				<DocPoint X="77.23319" Y="2121.6667" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="482.0498933" Y="2206.988833" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
@@ -38,27 +31,5 @@
   (&apos;IFCSHAREDBLDGELEMENTS.IFCSLABTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
 		</DocWhereRule>
 	</WhereRules>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="734.61656" Y="2108.8999" />
-				<DocPoint X="1006.92496" Y="2108.8999" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="1006.925" Y="2107.5133" />
-						<DocPoint X="1113.9" Y="2107.5133" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="1006.925" Y="2217.8667" />
-						<DocPoint X="1113.93337" Y="2217.8667" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

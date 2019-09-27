@@ -1,32 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCoordinateOperation" Name="IfcCoordinateOperation" UniqueId="5abaa3e9-3b43-4c49-9e66-afe0a3c094d5" DiagramNumber="4" EntityFlags="77">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCoordinateOperation" UniqueId="5abaa3e9-3b43-4c49-9e66-afe0a3c094d5" EntityFlags="77">
 	<Localization>
-		<DocLocalization Name="(Rechen-)Operation zwischen Koordinatensystemen" Locale="de" />
-		<DocLocalization Name="Coordinate Operation" Locale="en" />
-		<DocLocalization Name="Opération entre systèmes de coordonnées de référence" Locale="fr" />
+		<DocLocalization Locale="de" Name="(Rechen-)Operation zwischen Koordinatensystemen" />
+		<DocLocalization Locale="en" Name="Coordinate Operation" />
+		<DocLocalization Locale="fr" Name="Opération entre systèmes de coordonnées de référence" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="4917.4745" Y="157.41076" Width="501.09413" Height="100" />
 	<Subtypes>
 		<DocSubtype UniqueId="3fef1084-8a1d-4025-bd52-173f051d301a" DefinedType="IfcMapConversion" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="SourceCRS" UniqueId="3d781952-2086-40fd-a92a-802f85bb3c80" DefinedType="IfcCoordinateReferenceSystemSelect" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="hidden">
+		<DocAttribute Name="SourceCRS" UniqueId="3d781952-2086-40fd-a92a-802f85bb3c80" DefinedType="IfcCoordinateReferenceSystemSelect" XsdFormat="hidden">
 			<Documentation>Source coordinate reference system for the operation.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5377.69219" Y="257.41076" />
-				<DocPoint X="5377.69219" Y="257.41076" />
-				<DocPoint X="5377.69219" Y="1044.6497" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5377.69219" Y="1024.6497" Width="137" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="TargetCRS" UniqueId="50e043e6-b530-4813-8caa-bc048a759690" DefinedType="IfcCoordinateReferenceSystem" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="TargetCRS" UniqueId="50e043e6-b530-4813-8caa-bc048a759690" DefinedType="IfcCoordinateReferenceSystem" XsdFormat="attribute">
 			<Documentation>Target coordinate reference system for the operation.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5100.6631909375" Y="257.41076" />
-				<DocPoint X="5100.6631909375" Y="257.41076" />
-				<DocPoint X="5100.6631909375" Y="1478.98974609375" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5100.6631909375" Y="1458.98974609375" Width="131" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

@@ -15,5 +15,5 @@ The _IfcClassificationReference_ can either be assigned directly to the _IfcClas
 
 > HISTORY&nbsp; New entity in IFC2x.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The attribute _Description_ and inverse attribute _HasReferences_ are added. The attribute _Identification_ has been renamed from ItemReference.

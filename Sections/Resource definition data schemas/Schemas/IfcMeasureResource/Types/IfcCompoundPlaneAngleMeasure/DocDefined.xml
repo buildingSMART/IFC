@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocDefined xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCompoundPlaneAngleMeasure" UniqueId="6b5c667d-bed9-4b77-ba0b-039cef56680c" DiagramNumber="4" DefinedType="INTEGER" Length="0">
+<DocDefined xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCompoundPlaneAngleMeasure" UniqueId="6b5c667d-bed9-4b77-ba0b-039cef56680c" DefinedType="INTEGER">
 	<Localization>
-		<DocLocalization Name="Compound Plane Angle Measure" Locale="en" />
-		<DocLocalization Name="Mesure composée d&apos;angle plan" Locale="fr" />
+		<DocLocalization Locale="en" Name="Compound Plane Angle Measure" />
+		<DocLocalization Locale="fr" Name="Mesure composée d&apos;angle plan" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="5057.8563" Y="255.64024" Width="529.22365" Height="54.923051" />
 	<Definition xsi:type="DocPrimitive" xsi:nil="true" href="INTEGER_0Bo9r4fCj07e5rVk1a6n_D" />
 	<WhereRules>
 		<DocWhereRule Name="MinutesInRange" UniqueId="43153839-dbf3-4eed-98f2-f2b31e14e7b0">
@@ -26,10 +25,6 @@ OR
 ((SELF[1] &lt;= 0) AND (SELF[2] &lt;= 0) AND (SELF[3] &lt;= 0) AND ((SIZEOF(SELF) = 3) OR (SELF[4] &lt;= 0)))</Expression>
 		</DocWhereRule>
 	</WhereRules>
-	<Aggregation xsi:type="DocAttribute" UniqueId="b8797118-03a1-4cf9-871c-c02cb7310645" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="3" AggregationUpper="4" />
-	<DiagramLine>
-		<DocPoint X="5057.8563" Y="281.54643" />
-		<DocPoint X="4990.398984" Y="281.54643" />
-	</DiagramLine>
+	<Aggregation xsi:type="DocAttribute" UniqueId="b8797118-03a1-4cf9-871c-c02cb7310645" AggregationType="1" AggregationLower="3" AggregationUpper="4" />
 </DocDefined>
 

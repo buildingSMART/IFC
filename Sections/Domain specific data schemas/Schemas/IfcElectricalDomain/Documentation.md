@@ -58,5 +58,5 @@ An electrical circuit is formed from electrical devices connected together with 
 
 > HISTORY&nbsp; New schema in IFC2x.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Electrical circuit specification modified, scope expanded to support communications systems.

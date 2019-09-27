@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSpatialStructureElement" Name="IfcSpatialStructureElement" UniqueId="061ba193-076d-4292-a0ce-c96d7aba692e" DiagramNumber="5" BaseDefinition="IfcSpatialElement" EntityFlags="197">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSpatialStructureElement" Name="IfcSpatialStructureElement" UniqueId="061ba193-076d-4292-a0ce-c96d7aba692e" BaseDefinition="IfcSpatialElement" EntityFlags="197">
 	<Localization>
-		<DocLocalization Name="Räumliches Strukturelement" Locale="de" />
-		<DocLocalization Name="Spatial Structure Element" Locale="en" />
-		<DocLocalization Name="Elément de la structure spatiale" Locale="fr" />
+		<DocLocalization Locale="de" Name="Räumliches Strukturelement" />
+		<DocLocalization Locale="en" Name="Spatial Structure Element" />
+		<DocLocalization Locale="fr" Name="Elément de la structure spatiale" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="6625.6982" Y="1270.4294" Width="515.66667" Height="123.33333" />
 	<Subtypes>
 		<DocSubtype UniqueId="ae2170bb-ceb9-4c49-8ff9-845a434b1169" DefinedType="IfcBuilding" />
 		<DocSubtype UniqueId="f270dacf-366f-4ffe-9b9b-f9c781521fef" DefinedType="IfcBuildingStorey" />
@@ -13,16 +12,10 @@
 		<DocSubtype UniqueId="b18c05d7-6169-4317-b902-ee339352f9a0" DefinedType="IfcSite" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="CompositionType" UniqueId="726de67f-b56e-4031-b779-84330e1d0483" DefinedType="IfcElementCompositionEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="CompositionType" UniqueId="726de67f-b56e-4031-b779-84330e1d0483" DefinedType="IfcElementCompositionEnum" AttributeFlags="1">
 			<Documentation>Denotes, whether the predefined spatial structure element represents itself, or an aggregate (complex) or a part (part). The interpretation is given separately for each subtype of spatial structure element. If no _CompositionType_ is asserted, the dafault value &apos;ELEMENT&apos; applies.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; Attribute made optional.</Documentation>
-			<DiagramLine>
-				<DocPoint X="7141.36487" Y="1324.799335" />
-				<DocPoint X="7141.36487" Y="1324.799335" />
-				<DocPoint X="7464.8083" Y="1324.799335" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="7141.36487" Y="1304.799335" Width="199" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
@@ -37,58 +30,5 @@ AND
 )</Expression>
 		</DocWhereRule>
 	</WhereRules>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="6776" Y="1393.76273" />
-				<DocPoint X="6776" Y="1393.76273" />
-				<DocPoint X="6776" Y="1400" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="6776" Y="1400" />
-						<DocPoint X="6776" Y="1616.97607421875" />
-						<DocPoint X="6810.05143229167" Y="1616.97607421875" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="6776" Y="1400" />
-						<DocPoint X="6776" Y="1711.45922851563" />
-						<DocPoint X="6809.45149739583" Y="1711.45922851563" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="6776" Y="1400" />
-						<DocPoint X="6776" Y="1711.37609863281" />
-						<DocPoint X="6745.31774421875" Y="1711.37609863281" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="6776" Y="1400" />
-						<DocPoint X="6776" Y="1616.92610677083" />
-						<DocPoint X="6745.384765625" Y="1616.92610677083" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="7141.36487" Y="1393.76273" />
-				<DocPoint X="7141.36487" Y="1466.00008138021" />
-				<DocPoint X="7237.33349609375" Y="1466.00008138021" />
-			</DiagramLine>
-		</DocLine>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="7141.36487" Y="1393.76273" />
-				<DocPoint X="7141.36487" Y="1611.33325195313" />
-				<DocPoint X="7240.00016276042" Y="1611.33325195313" />
-			</DiagramLine>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

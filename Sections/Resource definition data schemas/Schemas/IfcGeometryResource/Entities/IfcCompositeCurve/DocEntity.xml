@@ -1,52 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCompositeCurve" Name="IfcCompositeCurve" UniqueId="ebd15e62-e09c-44c3-8e9c-7f8840bebed8" DiagramNumber="6" BaseDefinition="IfcBoundedCurve" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCompositeCurve" Name="IfcCompositeCurve" UniqueId="ebd15e62-e09c-44c3-8e9c-7f8840bebed8" BaseDefinition="IfcBoundedCurve" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Zusammengesetzte Kurve" Locale="de" />
-		<DocLocalization Name="Composite Curve" Locale="en" />
-		<DocLocalization Name="Courbe composite" Locale="fr" />
+		<DocLocalization Locale="de" Name="Zusammengesetzte Kurve" />
+		<DocLocalization Locale="en" Name="Composite Curve" />
+		<DocLocalization Locale="fr" Name="Courbe composite" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="8609.681640625" Y="1115.72192382813" Width="372.33333" Height="255.33334" />
 	<Subtypes>
 		<DocSubtype UniqueId="e6a62b32-4227-4659-94ed-0e46d5f68fbd" DefinedType="IfcCompositeCurveOnSurface" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Segments" UniqueId="b32453c8-8375-4bc7-8758-86e6097c7709" DefinedType="IfcCompositeCurveSegment" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="Segments" UniqueId="b32453c8-8375-4bc7-8758-86e6097c7709" DefinedType="IfcCompositeCurveSegment" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The component bounded curves, their transitions and senses. The transition attribute for the last segment defines the transition between the end of the last segment and the start of the first; this transition attribute may take the value discontinuous, which indicates an open curve.</Documentation>
-			<DiagramLine>
-				<DocPoint X="8722.9784521875" Y="1371.05526382812" />
-				<DocPoint X="8722.9784521875" Y="1371.05526382812" />
-				<DocPoint X="8722.9784521875" Y="1830.98852539063" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="8722.9784521875" Y="1810.98852539063" Width="195" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="SelfIntersect" UniqueId="8e53369e-bae8-4a7e-81e4-370b1cb785b8" DefinedType="IfcLogical" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="SelfIntersect" UniqueId="8e53369e-bae8-4a7e-81e4-370b1cb785b8" DefinedType="IfcLogical">
 			<Documentation>Indication of whether the curve intersects itself or not; this is for information only.</Documentation>
-			<DiagramLine>
-				<DocPoint X="8982.014970625" Y="1234.8134765625" />
-				<DocPoint X="8982.014970625" Y="1234.8134765625" />
-				<DocPoint X="9259.34798177083" Y="1234.8134765625" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="8982.014970625" Y="1214.8134765625" Width="144" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="NSegments" UniqueId="46f28929-2534-4105-9848-5cbcd99dd9c4" DefinedType="IfcInteger" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="NSegments" UniqueId="46f28929-2534-4105-9848-5cbcd99dd9c4" DefinedType="IfcInteger">
 			<Documentation>The number of component curves.</Documentation>
 			<Derived>SIZEOF(Segments)</Derived>
-			<DiagramLine>
-				<DocPoint X="8982.014970625" Y="1159.72200520833" />
-				<DocPoint X="8982.014970625" Y="1159.72200520833" />
-				<DocPoint X="9259.34765625" Y="1159.72200520833" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="8982.014970625" Y="1139.72200520833" Width="211" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ClosedCurve" UniqueId="dc317cb3-07cf-46d5-8531-b7b35a80248f" DefinedType="IfcLogical" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ClosedCurve" UniqueId="dc317cb3-07cf-46d5-8531-b7b35a80248f" DefinedType="IfcLogical">
 			<Documentation>Indication whether the curve is closed or not; this is derived from the transition code of the last segment.</Documentation>
 			<Derived>Segments[NSegments].Transition &lt;&gt; Discontinuous</Derived>
-			<DiagramLine>
-				<DocPoint X="8982.014970625" Y="1311.72200520833" />
-				<DocPoint X="8982.014970625" Y="1311.72200520833" />
-				<DocPoint X="9259.34798177083" Y="1311.72200520833" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="8982.014970625" Y="1291.72200520833" Width="225" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

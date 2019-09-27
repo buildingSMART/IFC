@@ -4,7 +4,7 @@
 
 > HISTORY&nbsp; New entity in IFC1.0
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Subtyping changed from _IfcManifoldSolidBrep_ to _IfcFacetedBrep_ with upward compatibility for file based exchange.
 
 &nbsp;

@@ -2,5 +2,5 @@
 
 > HISTORY&nbsp; New enumeration in IFC1.0
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The following enumerators have been added _MOLDING_, and _SKIRTINGBOARD_.

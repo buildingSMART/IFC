@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocProperty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="ToiletPanType_3dbng0qWCHuO00025QrEV" Name="ToiletPanType" UniqueId="3dbng0qWCHuO00025QrE$V" PropertyType="p_enumeratedvalue" PrimaryDataType="IfcLabel">
 	<Localization>
-		<DocLocalization Name="Toilet Pan Type" Locale="en" />
-		<DocLocalization Name="便器タイプ" Locale="ja-JP">
+		<DocLocalization Locale="en" Name="Toilet Pan Type" />
+		<DocLocalization Locale="ja-JP" Name="便器タイプ">
 			<Documentation>Pset_SanitaryMountingEnumは下記に列挙された便器タイプとして定義されます。
 
 サイホン式：流水を含むサイホンにより汚物が廃棄される便器
@@ -11,8 +11,6 @@
 洗浄式便器：まず汚物が落ちその後、便器に水が流れます</Documentation>
 		</DocLocalization>
 	</Localization>
-	<Enumeration>
-		<DocPropertyEnumeration xsi:nil="true" href="PEnum_ToiletPanType" />
-	</Enumeration>
+	<Enumeration xsi:type="DocPropertyEnumeration" xsi:nil="true" href="PEnum_ToiletPanType" />
 </DocProperty>
 

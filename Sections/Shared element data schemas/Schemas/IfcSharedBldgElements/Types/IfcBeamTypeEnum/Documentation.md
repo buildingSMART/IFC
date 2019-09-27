@@ -2,5 +2,5 @@
 
 > HISTORY&nbsp; New enumeration type in IFC2x2.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The enumerators HOLLOWCORE and SPANDREL have been added.

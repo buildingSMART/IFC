@@ -1,37 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPort" Name="IfcPort" UniqueId="032e8ec4-b702-496b-b1c7-582032fc9a31" DiagramNumber="4" BaseDefinition="IfcProduct" EntityFlags="77">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPort" Name="IfcPort" UniqueId="032e8ec4-b702-496b-b1c7-582032fc9a31" BaseDefinition="IfcProduct" EntityFlags="77">
 	<Localization>
-		<DocLocalization Name="Anschluss" Locale="de" />
-		<DocLocalization Name="Port" Locale="en" />
-		<DocLocalization Name="Port" Locale="fr" />
+		<DocLocalization Locale="de" Name="Anschluss" />
+		<DocLocalization Locale="en" Name="Port" />
+		<DocLocalization Locale="fr" Name="Port" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="5016.5643" Y="1526.9458" Width="387.9" Height="100" />
 	<Attributes>
-		<DocAttribute Name="ContainedIn" UniqueId="36e82fa5-2db1-4c7a-8ef6-45624460a621" DefinedType="IfcRelConnectsPortToElement" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatingPort">
+		<DocAttribute Name="ContainedIn" UniqueId="36e82fa5-2db1-4c7a-8ef6-45624460a621" DefinedType="IfcRelConnectsPortToElement" AttributeFlags="8" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="RelatingPort">
 			<Documentation>Reference to the element to port connection relationship. The relationship then refers to the element in which this port is contained.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The cardinality has been changed from 1:1 to 0:1. IFC4 DEPRECATION&amp;nbsp; The inverse relationship is deprecated for fixed ports due to deprecation of _IfcRelConnectsPortToElement_ for this usage. Use inverse relationship _Nests_ instead.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5843.2333" Y="1573.2999" />
-				<DocPoint X="5404.4643" Y="1573.2999" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5859.222693" Y="1614.966567" Width="285" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ConnectedFrom" UniqueId="1bb39505-d966-41c3-af7f-7fb70e99a055" DefinedType="IfcRelConnectsPorts" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatedPort">
+		<DocAttribute Name="ConnectedFrom" UniqueId="1bb39505-d966-41c3-af7f-7fb70e99a055" DefinedType="IfcRelConnectsPorts" AttributeFlags="8" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="RelatedPort">
 			<Documentation>Reference to a port that is connected by the objectified relationship.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5335.2187" Y="1842.4458" />
-				<DocPoint X="5335.2187" Y="1626.94581" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5525.21869" Y="1885.112466" Width="328" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ConnectedTo" UniqueId="ab8ec2a9-69ab-4668-b82d-b20d591cbd40" DefinedType="IfcRelConnectsPorts" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatingPort">
+		<DocAttribute Name="ConnectedTo" UniqueId="ab8ec2a9-69ab-4668-b82d-b20d591cbd40" DefinedType="IfcRelConnectsPorts" AttributeFlags="8" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="RelatingPort">
 			<Documentation>Reference to the port connection relationship. The relationship then refers to the other port to which this port is connected.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5199.1253" Y="1842.4458" />
-				<DocPoint X="5199.1253" Y="1626.94581" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5034.45863" Y="1887.779132" Width="300" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

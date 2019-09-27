@@ -1,36 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcBuilding" Name="IfcBuilding" UniqueId="417b2868-1e1e-4b5e-b73a-84dec52d9767" DiagramNumber="6" BaseDefinition="IfcFacility" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcBuilding" Name="IfcBuilding" UniqueId="417b2868-1e1e-4b5e-b73a-84dec52d9767" BaseDefinition="IfcFacility" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Gebäude" Locale="de" />
-		<DocLocalization Name="Building" Locale="en" />
-		<DocLocalization Name="Bâtiment" Locale="fr" />
+		<DocLocalization Locale="de" Name="Gebäude" />
+		<DocLocalization Locale="en" Name="Building" />
+		<DocLocalization Locale="fr" Name="Bâtiment" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="8211.1875" Y="1087.7762" Width="303.3" Height="292.46667" />
 	<Attributes>
-		<DocAttribute Name="ElevationOfRefHeight" UniqueId="b638bbf6-a449-4f87-b203-2bdd94b3c9fc" DefinedType="IfcLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ElevationOfRefHeight" UniqueId="b638bbf6-a449-4f87-b203-2bdd94b3c9fc" DefinedType="IfcLengthMeasure" AttributeFlags="1">
 			<Documentation>Elevation above sea level of the reference height used for all storey elevation measures, equals to height 0.0. It is usually the ground floor level.</Documentation>
-			<DiagramLine>
-				<DocPoint X="8514.4875" Y="1220.6762" />
-				<DocPoint X="9053.45417" Y="1220.6762" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="8524.4875" Y="1214.0095333" Width="245" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ElevationOfTerrain" UniqueId="19e45a59-8fc2-4694-be01-540ce797fd66" DefinedType="IfcLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ElevationOfTerrain" UniqueId="19e45a59-8fc2-4694-be01-540ce797fd66" DefinedType="IfcLengthMeasure" AttributeFlags="1">
 			<Documentation>Elevation above the minimal terrain level around the foot print of the building, given in elevation above sea level.</Documentation>
-			<DiagramLine>
-				<DocPoint X="8514.4875" Y="1330.6762" />
-				<DocPoint X="9053.52083" Y="1330.6762" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="8507.8208333" Y="1324.0095333" Width="212" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="BuildingAddress" UniqueId="f8bb01a6-368c-4931-ab21-e811443bbfed" DefinedType="IfcPostalAddress" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="BuildingAddress" UniqueId="f8bb01a6-368c-4931-ab21-e811443bbfed" DefinedType="IfcPostalAddress" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Address given to the building for postal purposes.</Documentation>
-			<DiagramLine>
-				<DocPoint X="8514.4875" Y="1114.0095" />
-				<DocPoint X="9152.92916" Y="1114.0095" />
-				<DocPoint X="9152.92916" Y="904.34283" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="8434.791667" Y="1101.676168" Width="184" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

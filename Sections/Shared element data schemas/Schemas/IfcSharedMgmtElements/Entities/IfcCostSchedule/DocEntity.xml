@@ -1,63 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCostSchedule" Name="IfcCostSchedule" UniqueId="ff373331-377a-4ddd-8781-060d4b4f0828" Status="H" DiagramNumber="1" BaseDefinition="IfcControl" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCostSchedule" Name="IfcCostSchedule" UniqueId="ff373331-377a-4ddd-8781-060d4b4f0828" Status="H" BaseDefinition="IfcControl" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Kostentabelle" Locale="de" />
-		<DocLocalization Name="Cost Schedule" Locale="en" />
-		<DocLocalization Name="IfcCostSchedule" Locale="fr" />
+		<DocLocalization Locale="de" Name="Kostentabelle" />
+		<DocLocalization Locale="en" Name="Cost Schedule" />
+		<DocLocalization Locale="fr" Name="IfcCostSchedule" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="210.37978" Y="1687.9204" Width="305.97153" Height="310.07314" />
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="11588a64-9704-464e-859a-69c5c7ed8693" DefinedType="IfcCostScheduleTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="11588a64-9704-464e-859a-69c5c7ed8693" DefinedType="IfcCostScheduleTypeEnum" AttributeFlags="1">
 			<Documentation>Predefined generic type for a cost schedule that is specified in an enumeration. There may be a property set given specifically for the predefined types.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE The attribute has been made optional.</Documentation>
-			<DiagramLine>
-				<DocPoint X="516.35131" Y="1732.2476" />
-				<DocPoint X="741.74095" Y="1732.2476" />
-				<DocPoint X="741.74095" Y="1733.3387077" />
-				<DocPoint X="967.13059" Y="1733.3387077" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="515.67410292" Y="1722.5091102" Width="182" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Status" UniqueId="69cf6268-7c30-4f3d-a314-486cc0140ad1" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Status" UniqueId="69cf6268-7c30-4f3d-a314-486cc0140ad1" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>The current status of a cost schedule. Examples of status values that might be used for a cost schedule status include:
 *  PLANNED 
 *  APPROVED 
 *  AGREED 
 *  ISSUED 
 *  STARTED</Documentation>
-			<DiagramLine>
-				<DocPoint X="516.35131" Y="1798.5851" />
-				<DocPoint X="1551.12581" Y="1798.5851" />
-				<DocPoint X="1551.12581" Y="364.2278" />
-				<DocPoint X="1356.57098" Y="364.2278" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="580.566481" Y="1797.95456233" Width="77" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="SubmittedOn" UniqueId="01517834-9aeb-40dd-9b60-86a3bc514efc" DefinedType="IfcDateTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="SubmittedOn" UniqueId="01517834-9aeb-40dd-9b60-86a3bc514efc" DefinedType="IfcDateTime" AttributeFlags="1">
 			<Documentation>The date and time on which the cost schedule was submitted.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE Type changed from IfcDateTimeSelect.</Documentation>
-			<DiagramLine>
-				<DocPoint X="516.35131" Y="1873.8133" />
-				<DocPoint X="744.43138" Y="1873.8133" />
-				<DocPoint X="744.43138" Y="1872.8942371" />
-				<DocPoint X="972.51145" Y="1872.8942371" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="496.178726" Y="1865.1474375" Width="151" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="UpdateDate" UniqueId="99952380-22fd-4754-9d3d-84dca6afe470" DefinedType="IfcDateTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="UpdateDate" UniqueId="99952380-22fd-4754-9d3d-84dca6afe470" DefinedType="IfcDateTime" AttributeFlags="1">
 			<Documentation>The date and time that this cost schedule is updated; this allows tracking the schedule history.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE Type changed from IfcDateTimeSelect.</Documentation>
-			<DiagramLine>
-				<DocPoint X="516.35131" Y="1953.4248" />
-				<DocPoint X="744.43138" Y="1953.4248" />
-				<DocPoint X="744.43138" Y="1953.58461287" />
-				<DocPoint X="972.51145" Y="1953.58461287" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="490.737766" Y="1944.2213837" Width="141" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

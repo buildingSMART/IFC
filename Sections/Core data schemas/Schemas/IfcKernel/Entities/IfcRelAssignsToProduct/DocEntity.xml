@@ -1,22 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelAssignsToProduct" Name="IfcRelAssignsToProduct" UniqueId="72eec376-bbab-40d5-9342-93108c172713" DiagramNumber="8" BaseDefinition="IfcRelAssigns" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelAssignsToProduct" UniqueId="72eec376-bbab-40d5-9342-93108c172713" BaseDefinition="IfcRelAssigns" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Weist Produkt zu - Relation" Locale="de" />
-		<DocLocalization Name="Rel Assigns To Product" Locale="en" />
-		<DocLocalization Name="Assignation à produit" Locale="fr" />
+		<DocLocalization Locale="de" Name="Weist Produkt zu - Relation" />
+		<DocLocalization Locale="en" Name="Rel Assigns To Product" />
+		<DocLocalization Locale="fr" Name="Assignation à produit" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="12287.985" Y="354.04582" Width="454.16667" Height="133.23333" />
 	<Attributes>
-		<DocAttribute Name="RelatingProduct" UniqueId="2daaadb6-2a0e-43bc-8f2b-5cdcdce021dd" DefinedType="IfcProductSelect" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RelatingProduct" UniqueId="2daaadb6-2a0e-43bc-8f2b-5cdcdce021dd" DefinedType="IfcProductSelect">
 			<Documentation>Reference to the product or product type to which the objects are assigned to.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE Datatype expanded to include _IfcProduct_ and _IfcTypeProduct_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="12366.313" Y="487.27915" />
-				<DocPoint X="12366.313" Y="1241.89333" />
-				<DocPoint X="11505.974" Y="1241.89333" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="12267.646333" Y="540.58624" Width="183" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

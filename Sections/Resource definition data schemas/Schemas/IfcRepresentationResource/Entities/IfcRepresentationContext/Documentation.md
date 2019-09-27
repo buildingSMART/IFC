@@ -8,5 +8,5 @@
 
 > HISTORY&nbsp; New entity in IFC1.5.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Entity made abstract, had been deprecated from instantiation since IFC2x2.

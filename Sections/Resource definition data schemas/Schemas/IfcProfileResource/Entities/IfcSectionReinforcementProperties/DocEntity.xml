@@ -1,62 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSectionReinforcementProperties" UniqueId="1a1fbaec-082a-40cf-b33c-8bd3fe79b8e5" DiagramNumber="8" BaseDefinition="IfcPreDefinedProperties" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSectionReinforcementProperties" UniqueId="1a1fbaec-082a-40cf-b33c-8bd3fe79b8e5" BaseDefinition="IfcPreDefinedProperties" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Bewehrungsquerschnitt - Merkmale der Bewehrung" Locale="de" />
-		<DocLocalization Name="Section Reinforcement Properties" Locale="en" />
+		<DocLocalization Locale="de" Name="Bewehrungsquerschnitt - Merkmale der Bewehrung" />
+		<DocLocalization Locale="en" Name="Section Reinforcement Properties" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="5037.125" Y="3215.25" Width="391.66667" Height="355" />
 	<Attributes>
-		<DocAttribute Name="LongitudinalStartPosition" UniqueId="bca4994a-8c29-49d3-98b5-1020732acfe8" DefinedType="IfcLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LongitudinalStartPosition" UniqueId="bca4994a-8c29-49d3-98b5-1020732acfe8" DefinedType="IfcLengthMeasure">
 			<Documentation>The start position in longitudinal direction for the section reinforcement properties.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5428.7917" Y="3262.3419" />
-				<DocPoint X="5876.29163" Y="3262.3419" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5428.7917" Y="3262.3419" Width="280" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LongitudinalEndPosition" UniqueId="2a03291a-7edc-4bdd-a393-13751700cd3c" DefinedType="IfcLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LongitudinalEndPosition" UniqueId="2a03291a-7edc-4bdd-a393-13751700cd3c" DefinedType="IfcLengthMeasure">
 			<Documentation>The end position in longitudinal direction for the section reinforcement properties.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5428.7917" Y="3347.9793" />
-				<DocPoint X="5878.9583" Y="3347.9793" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5428.7917" Y="3347.9793" Width="272" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="TransversePosition" UniqueId="589f3281-5c3c-44ad-98fd-491fcdcadce2" DefinedType="IfcLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="TransversePosition" UniqueId="589f3281-5c3c-44ad-98fd-491fcdcadce2" DefinedType="IfcLengthMeasure" AttributeFlags="1">
 			<Documentation>The position for the section reinforcement properties in transverse direction.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5428.7917" Y="3445.2085" />
-				<DocPoint X="5879.02497" Y="3445.2085" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5428.7917" Y="3445.2085" Width="217" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ReinforcementRole" UniqueId="4dad372f-bc97-4103-b68d-2bfd2f650b68" DefinedType="IfcReinforcingBarRoleEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ReinforcementRole" UniqueId="4dad372f-bc97-4103-b68d-2bfd2f650b68" DefinedType="IfcReinforcingBarRoleEnum">
 			<Documentation>The role, purpose or usage of the reinforcement, i.e. the kind of loads and stresses it is intended to carry, defined for the section reinforcement properties.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5428.7917" Y="3527.3404" />
-				<DocPoint X="5889.72166" Y="3527.3404" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5428.7917" Y="3527.3404" Width="219" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="SectionDefinition" UniqueId="79631f01-30ec-44b1-a579-ff40a0af46c4" DefinedType="IfcSectionProperties" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="SectionDefinition" UniqueId="79631f01-30ec-44b1-a579-ff40a0af46c4" DefinedType="IfcSectionProperties" XsdFormat="attribute">
 			<Documentation>Definition of the cross section profile and longitudinal section type.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5152.2917" Y="3570.25" />
-				<DocPoint X="5152.2917" Y="3680.49997" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5268.45837" Y="3594.916667" Width="192" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="CrossSectionReinforcementDefinitions" UniqueId="122ebe19-91ac-4bee-8b58-fa8a8e0f26f8" DefinedType="IfcReinforcementBarProperties" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="CrossSectionReinforcementDefinitions" UniqueId="122ebe19-91ac-4bee-8b58-fa8a8e0f26f8" DefinedType="IfcReinforcementBarProperties" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The set of reinforcment properties attached to a section reinforcement properties definition.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5384.9584" Y="3570.25" />
-				<DocPoint X="5384.9584" Y="3601.778384" />
-				<DocPoint X="6142.32506" Y="3601.778384" />
-				<DocPoint X="6142.32506" Y="3997.569574" />
-				<DocPoint X="5262.09999" Y="3997.569574" />
-				<DocPoint X="5262.09999" Y="4058.500008" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5942.20006" Y="3982.11124" Width="508" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

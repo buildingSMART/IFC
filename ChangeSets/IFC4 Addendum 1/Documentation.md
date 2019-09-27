@@ -10,7 +10,7 @@ The main change incorporated into IFC4 ADD1 schema is:
 
 Minor corrections and improvements to the IFC4 ADD1 schema include:
 
-* Use of defined types throughout the schema, i.e. using _IfcInteger_ instead of <emINTEGER, including the addition of _IfcBinary_
+* Use of defined types throughout the schema, i.e. using _IfcInteger_ instead of _INTEGER_, including the addition of _IfcBinary_
 * Use of the new type _IfcPositiveInteger_ to restrict the indices used e.g. for tessellated items to positive, one-based integers
 * Adding the missing attribute _LongName_ to _IfcBuildingSystem_ in order to make it consistent with _IfcDistributionSystem_.
 * Promoting the inverse attribute _HasCoverings_ from _IfcBuildingElement_ to _IfcElement_ to enable the inverse navigation also for _IfcDistributionElement_

@@ -1,31 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDistributionSystem" Name="IfcDistributionSystem" UniqueId="08d5a5d6-3a9a-42d2-8411-5f268929c1fe" DiagramNumber="3" BaseDefinition="IfcSystem" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDistributionSystem" Name="IfcDistributionSystem" UniqueId="08d5a5d6-3a9a-42d2-8411-5f268929c1fe" BaseDefinition="IfcSystem" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="haustechnische Anlage" Locale="de" />
-		<DocLocalization Name="Distribution System" Locale="en" />
-		<DocLocalization Name="Système de distribution" Locale="fr" />
+		<DocLocalization Locale="de" Name="haustechnische Anlage" />
+		<DocLocalization Locale="en" Name="Distribution System" />
+		<DocLocalization Locale="fr" Name="Système de distribution" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="3268.8106" Y="351.55983" Width="561.98305" Height="237.57317" />
 	<Subtypes>
 		<DocSubtype UniqueId="e20a476e-79c1-4c9b-acf6-88a5e5a43660" DefinedType="IfcDistributionCircuit" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="LongName" UniqueId="595fb1c1-bd79-44fe-8bb4-98094a918348" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LongName" UniqueId="595fb1c1-bd79-44fe-8bb4-98094a918348" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>Long name for a distribution system, used for informal purposes. It should be used, if available, in conjunction with the inherited _Name_ attribute.
 &gt; NOTE&amp;nbsp; In many scenarios the _Name_ attribute refers to the short name or number of a distribution system or branch circuit, and the _LongName_ refers to a descriptive name.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3830.7937" Y="396.52666" />
-				<DocPoint X="4085.2308" Y="396.52666" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3813.872352" Y="384.909168" Width="129" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="PredefinedType" UniqueId="d0f9b35a-a5aa-40b0-9ef3-8d4ca8c027dc" DefinedType="IfcDistributionSystemEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="d0f9b35a-a5aa-40b0-9ef3-8d4ca8c027dc" DefinedType="IfcDistributionSystemEnum" AttributeFlags="1">
 			<Documentation>Predefined types of distribution systems.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3830.7937" Y="506.82385" />
-				<DocPoint X="4086.5103" Y="506.82385" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3834.1744207" Y="496.360352" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

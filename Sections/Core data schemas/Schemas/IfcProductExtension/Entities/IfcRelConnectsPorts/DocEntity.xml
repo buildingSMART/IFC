@@ -1,35 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelConnectsPorts" Name="IfcRelConnectsPorts" UniqueId="6763c7ee-edf0-48d2-a207-bc8e7ec8f122" DiagramNumber="4" BaseDefinition="IfcRelConnects" EntityFlags="109">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelConnectsPorts" Name="IfcRelConnectsPorts" UniqueId="6763c7ee-edf0-48d2-a207-bc8e7ec8f122" BaseDefinition="IfcRelConnects" EntityFlags="109">
 	<Localization>
-		<DocLocalization Name="Verbindet Anschlüsse - Relation" Locale="de" />
-		<DocLocalization Name="Rel Connects Ports" Locale="en" />
-		<DocLocalization Name="Connection de ports" Locale="fr" />
+		<DocLocalization Locale="de" Name="Verbindet Anschlüsse - Relation" />
+		<DocLocalization Locale="en" Name="Rel Connects Ports" />
+		<DocLocalization Locale="fr" Name="Connection de ports" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="5013.2978" Y="1842.4458" Width="404.6" Height="100" />
 	<Attributes>
-		<DocAttribute Name="RelatingPort" UniqueId="efe1eb66-54da-4f86-91e0-b7d9358e3d45" DefinedType="IfcPort" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="RelatingPort" UniqueId="efe1eb66-54da-4f86-91e0-b7d9358e3d45" DefinedType="IfcPort" XsdFormat="attribute">
 			<Documentation>Reference to the first port that is connected by the objectified relationship.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5199.1253" Y="1842.4458" />
-				<DocPoint X="5199.1253" Y="1626.94581" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5109.791967" Y="1845.7791337" Width="143" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RelatedPort" UniqueId="54345254-9eba-473c-8fa3-db57ed133bb0" DefinedType="IfcPort" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="RelatedPort" UniqueId="54345254-9eba-473c-8fa3-db57ed133bb0" DefinedType="IfcPort" XsdFormat="attribute">
 			<Documentation>Reference to the second port that is connected by the objectified relationship.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5335.2187" Y="1842.4458" />
-				<DocPoint X="5335.2187" Y="1626.94581" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5422.55203" Y="1843.779133" Width="138" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RealizingElement" UniqueId="1fdb9b03-71b4-4ec2-a92f-d2854c96a18d" DefinedType="IfcElement" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="RealizingElement" UniqueId="1fdb9b03-71b4-4ec2-a92f-d2854c96a18d" DefinedType="IfcElement" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Defines the element that realizes a port connection relationship.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5417.8978" Y="1892.4458" />
-				<DocPoint X="5841.63114" Y="1892.4458" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5417.8978" Y="1882.4458" Width="198" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

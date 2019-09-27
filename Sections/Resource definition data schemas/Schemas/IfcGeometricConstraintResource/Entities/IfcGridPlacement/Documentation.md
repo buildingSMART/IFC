@@ -66,5 +66,5 @@ The following figures show the usage of placement location and direction for an 
 
 > HISTORY  New entity in IFC1.5. The entity name was changed from IfcConstrainedPlacement in IFC2x.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE Attribute data type of _PlacementRefDirection_ has been changed to _IfcGridPlacementDirectionSelect_.

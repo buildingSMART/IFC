@@ -1,91 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPerson" Name="IfcPerson" UniqueId="444c7a43-9f92-48d5-9ff4-acdf38ead916" DiagramNumber="1" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPerson" Name="IfcPerson" UniqueId="444c7a43-9f92-48d5-9ff4-acdf38ead916" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Person" Locale="de" />
-		<DocLocalization Name="Person" Locale="en" />
-		<DocLocalization Name="Personne" Locale="fr" />
+		<DocLocalization Locale="de" Name="Person" />
+		<DocLocalization Locale="en" Name="Person" />
+		<DocLocalization Locale="fr" Name="Personne" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="695.04285" Y="349.95513" Width="274" Height="297.26701" />
 	<Attributes>
-		<DocAttribute Name="Identification" UniqueId="e6da2311-ed55-4407-85d6-144bff64cea2" DefinedType="IfcIdentifier" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Identification" UniqueId="e6da2311-ed55-4407-85d6-144bff64cea2" DefinedType="IfcIdentifier" AttributeFlags="1">
 			<Documentation>Identification of the person.</Documentation>
-			<DiagramLine>
-				<DocPoint X="861.85085" Y="349.95513" />
-				<DocPoint X="861.85085" Y="160.08362" />
-				<DocPoint X="1315.42285" Y="160.08362" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="885.174383" Y="154.2527368" Width="146" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="FamilyName" UniqueId="e0501fe3-5ddf-4817-ae8e-0736a8375d9d" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="FamilyName" UniqueId="e0501fe3-5ddf-4817-ae8e-0736a8375d9d" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>The name by which the family identity of the person may be recognized.
 &gt; NOTE&amp;nbsp; Depending on geographical location and culture, family name may appear either as the first or last component of a name.</Documentation>
-			<DiagramLine>
-				<DocPoint X="924.68695" Y="349.95513" />
-				<DocPoint X="924.68695" Y="272.471801" />
-				<DocPoint X="1315.46589" Y="272.471801" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="912.029544" Y="260.815031" Width="144" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="GivenName" UniqueId="ca330b42-ee3a-43ff-a9c3-54feeafe62fa" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="GivenName" UniqueId="ca330b42-ee3a-43ff-a9c3-54feeafe62fa" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>The name by which a person is known within a family and by which he or she may be familiarly recognized.
 &gt; NOTE&amp;nbsp; Depending on geographical location and culture, given name may appear either as the first or last component of a name.</Documentation>
-			<DiagramLine>
-				<DocPoint X="969.04289" Y="390.85545" />
-				<DocPoint X="1315.37809" Y="390.85545" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="926.734101" Y="379.926291" Width="137" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="MiddleNames" UniqueId="66e561d1-9813-4539-8dbf-68de088a59a2" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0" XsdTagless="true">
+		<DocAttribute Name="MiddleNames" UniqueId="66e561d1-9813-4539-8dbf-68de088a59a2" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0" XsdTagless="true">
 			<Documentation>Additional names given to a person that enable their identification apart from others who may have the same or similar family and given names.
 &gt; NOTE&amp;nbsp; Middle names are not normally used in familiar communication but may be asserted to provide additional identification of a particular person if necessary. They may be particularly useful in situations where the person concerned has a family name that occurs commonly in the geographical region.</Documentation>
-			<DiagramLine>
-				<DocPoint X="969.04289" Y="498.58864" />
-				<DocPoint X="1315.50629" Y="498.58864" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="974.9869708" Y="493.1240606" Width="234" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="PrefixTitles" UniqueId="3d6cc85d-6254-4595-b49d-c17bf042ce73" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0" XsdTagless="true">
+		<DocAttribute Name="PrefixTitles" UniqueId="3d6cc85d-6254-4595-b49d-c17bf042ce73" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0" XsdTagless="true">
 			<Documentation>The word, or group of words, which specify the person&apos;s social and/or professional standing and appear before his/her names.</Documentation>
-			<DiagramLine>
-				<DocPoint X="969.04289" Y="615.26646" />
-				<DocPoint X="1315.51039" Y="615.26646" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="961.8598072" Y="608.3029202" Width="204" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="SuffixTitles" UniqueId="b3ec9779-b455-4f6b-bd96-a51a22ae5797" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0" XsdTagless="true">
+		<DocAttribute Name="SuffixTitles" UniqueId="b3ec9779-b455-4f6b-bd96-a51a22ae5797" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0" XsdTagless="true">
 			<Documentation>The word, or group of words, which specify the person&apos;s social and/or professional standing and appear after his/her names.</Documentation>
-			<DiagramLine>
-				<DocPoint X="846.02755" Y="647.22214" />
-				<DocPoint X="846.02755" Y="722.246379" />
-				<DocPoint X="1315.44083" Y="722.246379" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="902.293287" Y="715.4495171" Width="203" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Roles" UniqueId="30be2207-32b0-438f-8fc7-fad9a4578bdd" DefinedType="IfcActorRole" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="Roles" UniqueId="30be2207-32b0-438f-8fc7-fad9a4578bdd" DefinedType="IfcActorRole" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Roles played by the person.</Documentation>
-			<DiagramLine>
-				<DocPoint X="723.90419" Y="647.22214" />
-				<DocPoint X="723.90419" Y="975.41243" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="817.956654" Y="568.305922" Width="147" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Addresses" UniqueId="8e3a5e4b-90cd-43e2-b297-f3d7912bb3c1" DefinedType="IfcAddress" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="Addresses" UniqueId="8e3a5e4b-90cd-43e2-b297-f3d7912bb3c1" DefinedType="IfcAddress" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Postal and telecommunication addresses of a person.
 &gt; NOTE&amp;nbsp; A person may have several addresses.</Documentation>
-			<DiagramLine>
-				<DocPoint X="781.70952" Y="647.22214" />
-				<DocPoint X="781.70952" Y="834.65075" />
-				<DocPoint X="1315.47713" Y="834.65075" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="850.454282" Y="821.018265" Width="200" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="EngagedIn" UniqueId="72fa7a66-38ba-470c-84d5-3f99391bf4a6" DefinedType="IfcPersonAndOrganization" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="ThePerson">
+		<DocAttribute Name="EngagedIn" UniqueId="72fa7a66-38ba-470c-84d5-3f99391bf4a6" DefinedType="IfcPersonAndOrganization" AttributeFlags="8" AggregationType="3" Inverse="ThePerson">
 			<Documentation>The inverse relationship to IfcPersonAndOrganization relationships in which IfcPerson is engaged.</Documentation>
-			<DiagramLine>
-				<DocPoint X="333.4695" Y="545.44434" />
-				<DocPoint X="695.04285" Y="545.44434" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="332.76159093" Y="590.261747" Width="271" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

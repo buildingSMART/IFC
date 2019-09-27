@@ -1,58 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralAction" UniqueId="773e5eda-f463-41ec-a0f4-14681750a780" Status="H" DiagramNumber="4" BaseDefinition="IfcStructuralActivity" EntityFlags="133">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralAction" UniqueId="773e5eda-f463-41ec-a0f4-14681750a780" Status="H" BaseDefinition="IfcStructuralActivity" EntityFlags="133">
 	<Localization>
-		<DocLocalization Name="Belastung / Einwirkung (allgemein)" Locale="de" />
-		<DocLocalization Name="Structural Action" Locale="en" />
-		<DocLocalization Name="Action structurelle" Locale="fr" />
+		<DocLocalization Locale="de" Name="Belastung / Einwirkung (allgemein)" />
+		<DocLocalization Locale="en" Name="Structural Action" />
+		<DocLocalization Locale="fr" Name="Action structurelle" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="4810.19417317708" Y="937.462463378906" Width="242.666666666667" Height="131.801483626302" />
 	<Subtypes>
 		<DocSubtype UniqueId="b48ff75f-886d-4b06-9bcb-5d8a3ce5f0bc" DefinedType="IfcStructuralPointAction" />
 		<DocSubtype UniqueId="269c03e1-3e51-4753-9842-a5551dcb0ccc" DefinedType="IfcStructuralCurveAction" />
 		<DocSubtype UniqueId="e6e38c48-2fd2-402f-874b-ade7e40c0702" DefinedType="IfcStructuralSurfaceAction" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="DestabilizingLoad" UniqueId="7e7162c0-17e9-4165-9c29-294aefb1216b" DefinedType="IfcBoolean" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="DestabilizingLoad" UniqueId="7e7162c0-17e9-4165-9c29-294aefb1216b" DefinedType="IfcBoolean" AttributeFlags="1">
 			<Documentation>Indicates if this action may cause a stability problem. If it is &apos;FALSE&apos;, no further investigations regarding stability problems are necessary.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5052.86083984375" Y="1053.93054199219" />
-				<DocPoint X="5052.86083984375" Y="1053.93054199219" />
-				<DocPoint X="5388.86018880208" Y="1053.93054199219" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5052.86083984375" Y="1033.93054199219" Width="202" Height="35" />
 		</DocAttribute>
 	</Attributes>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="4824" Y="1069.26394700521" />
-				<DocPoint X="4824" Y="1069.26394700521" />
-				<DocPoint X="4824" Y="1893.33333333333" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="4824" Y="1893.33333333333" />
-						<DocPoint X="4824" Y="1241.6309000651" />
-						<DocPoint X="4855.23909505208" Y="1241.6309000651" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="4824" Y="1893.33333333333" />
-						<DocPoint X="4824" Y="1400.19584147135" />
-						<DocPoint X="4852.57259114583" Y="1400.19584147135" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="4824" Y="1893.33333333333" />
-						<DocPoint X="4824" Y="1888.29850260417" />
-						<DocPoint X="4855.23942057292" Y="1888.29850260417" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

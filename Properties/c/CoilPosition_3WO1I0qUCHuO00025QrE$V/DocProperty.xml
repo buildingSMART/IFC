@@ -1,15 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocProperty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CoilPosition_3WO1I0qUCHuO00025QrEV" Name="CoilPosition" UniqueId="3WO1I0qUCHuO00025QrE$V" PropertyType="p_enumeratedvalue" PrimaryDataType="IfcLabel">
 	<Localization>
-		<DocLocalization Name="Coil Position" Locale="en" />
-		<DocLocalization Name="コイル位置" Locale="ja-JP">
+		<DocLocalization Locale="en" Name="Coil Position" />
+		<DocLocalization Locale="ja-JP" Name="コイル位置">
 			<Documentation>Fanとコイル間の関係定義
 DwawThrough:ファンはコイルの下流に位置
 BlowThrough:ファンはコイルの上流に位置</Documentation>
 		</DocLocalization>
 	</Localization>
-	<Enumeration>
-		<DocPropertyEnumeration xsi:nil="true" href="PEnum_FanCoilPosition" />
-	</Enumeration>
+	<Enumeration xsi:type="DocPropertyEnumeration" xsi:nil="true" href="PEnum_FanCoilPosition" />
 </DocProperty>
 

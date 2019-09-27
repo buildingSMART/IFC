@@ -34,7 +34,7 @@ The actual parameter of the window and/or its shape is defined at the _IfcWindow
 
 > HISTORY&nbsp; New entity in IFC1.0.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The attributes _PredefinedType_ and _OperationType_ are added, the applicable type object has been changed to _IfcDoorType_.
 
 { .use-head}
