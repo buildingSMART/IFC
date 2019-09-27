@@ -1,26 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcResourceApprovalRelationship" UniqueId="6de8ca8d-3bd7-4b78-8326-eece0c07a365" DiagramNumber="1" BaseDefinition="IfcResourceLevelRelationship" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcResourceApprovalRelationship" UniqueId="6de8ca8d-3bd7-4b78-8326-eece0c07a365" BaseDefinition="IfcResourceLevelRelationship" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="allgemeine Relation - Zuweisung von Genehmigungen" Locale="de" />
-		<DocLocalization Name="Resource Approval Relationship" Locale="en" />
+		<DocLocalization Locale="de" Name="allgemeine Relation - Zuweisung von Genehmigungen" />
+		<DocLocalization Locale="en" Name="Resource Approval Relationship" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="173.65457" Y="1670.7469" Width="342.75856" Height="180.30169" />
 	<Attributes>
-		<DocAttribute Name="RelatedResourceObjects" UniqueId="c6883e2d-5f86-4009-859d-e33bbdc46730" DefinedType="IfcResourceObjectSelect" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="RelatedResourceObjects" UniqueId="c6883e2d-5f86-4009-859d-e33bbdc46730" DefinedType="IfcResourceObjectSelect" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Resource objects that are approved.</Documentation>
-			<DiagramLine>
-				<DocPoint X="516.41313" Y="1829.3029" />
-				<DocPoint X="972.35068" Y="1829.3029" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="510.4648567" Y="1817.406353" Width="361" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RelatingApproval" UniqueId="7a73f010-f2e7-4683-b597-b07460897bf5" DefinedType="IfcApproval" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="RelatingApproval" UniqueId="7a73f010-f2e7-4683-b597-b07460897bf5" DefinedType="IfcApproval" XsdFormat="attribute">
 			<Documentation>The approval for the resource objects selected.</Documentation>
-			<DiagramLine>
-				<DocPoint X="196.32701" Y="1670.7469" />
-				<DocPoint X="196.32701" Y="1341.33367" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="318.09286" Y="1595.443365" Width="195" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

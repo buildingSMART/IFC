@@ -1,130 +1,62 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDoorLiningProperties" Name="IfcDoorLiningProperties" UniqueId="710a01e4-3b28-429a-8170-ab82c20ec8df" DiagramNumber="1" BaseDefinition="IfcPreDefinedPropertySet" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDoorLiningProperties" Name="IfcDoorLiningProperties" UniqueId="710a01e4-3b28-429a-8170-ab82c20ec8df" BaseDefinition="IfcPreDefinedPropertySet" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Festdefinierte Merkmale des Türrahmens / der Türzarge" Locale="de" />
-		<DocLocalization Name="Door Lining Properties" Locale="en" />
-		<DocLocalization Name="Propriétés du cadre de porte" Locale="fr" />
+		<DocLocalization Locale="de" Name="Festdefinierte Merkmale des Türrahmens / der Türzarge" />
+		<DocLocalization Locale="en" Name="Door Lining Properties" />
+		<DocLocalization Locale="fr" Name="Propriétés du cadre de porte" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="692.64003" Y="273.8334" Width="235.6" Height="725.33333" />
 	<Attributes>
-		<DocAttribute Name="LiningDepth" UniqueId="40c38c4f-81b1-4400-b64b-981586e14b6c" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LiningDepth" UniqueId="40c38c4f-81b1-4400-b64b-981586e14b6c" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>Depth of the door lining, measured perpendicular to the plane of the door lining. If omitted (and with a given value to lining thickness) it indicates an adjustable depth (i.e. a depth that adjusts to the thickness of the wall into which the occurrence of this door style is inserted).</Documentation>
-			<DiagramLine>
-				<DocPoint X="928.24003" Y="412.50006" />
-				<DocPoint X="1188.54003" Y="412.50006" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="904.24003" Y="407.1667267" Width="140" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LiningThickness" UniqueId="53c5f2d9-ac1d-45b6-a1ce-12397e8ad5bf" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LiningThickness" UniqueId="53c5f2d9-ac1d-45b6-a1ce-12397e8ad5bf" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1">
 			<Documentation>Thickness of the door lining as explained in the figure above. If _LiningThickness_ value is 0. (zero) it denotes a door without a lining (all other lining parameters shall be set to NIL in this case). If the _LiningThickness_ is NIL it denotes that the value is not available.
 { .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; Data type modified to be _IfcNonNegativeLengthMeasure_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="928.24003" Y="316.50006" />
-				<DocPoint X="1391.57336" Y="316.50006" />
-				<DocPoint X="1391.57336" Y="249.833393" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="829.24003" Y="311.1667267" Width="183" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ThresholdDepth" UniqueId="db0a7c60-4300-4d24-988d-0983bdfce5ce" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ThresholdDepth" UniqueId="db0a7c60-4300-4d24-988d-0983bdfce5ce" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>Depth (dimension in plane perpendicular to door leaf) of the door threshold. Only given if the door lining includes a threshold. If omitted (and with a given value to threshold thickness) it indicates an adjustable depth (i.e. a depth that adjusts to the thickness of the wall into which the occurrence of this door style is inserted).</Documentation>
-			<DiagramLine>
-				<DocPoint X="928.24003" Y="620.67661" />
-				<DocPoint X="1188.47336" Y="620.67661" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="920.2400303" Y="612.67661" Width="184" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ThresholdThickness" UniqueId="5361bc7f-6510-42a5-aebc-488f63e93876" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ThresholdThickness" UniqueId="5361bc7f-6510-42a5-aebc-488f63e93876" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1">
 			<Documentation>Thickness of the door threshold as explained in the figure above. If _ThresholdThickness_ value is 0. (zero) it denotes a door without a threshold (_ThresholdDepth_ shall be set to NIL in this case). If the _ThresholdThickness_ is NIL it denotes that the information about a threshold is not available.
 { .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; Data type modified to be _IfcNonNegativeLengthMeasure_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="928.24003" Y="847.16673" />
-				<DocPoint X="1411.54003" Y="847.16673" />
-				<DocPoint X="1411.54003" Y="905.833397" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="836.556697" Y="836.500063" Width="227" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="TransomThickness" UniqueId="17b1f23a-20d2-439d-924c-049868c9df8d" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="TransomThickness" UniqueId="17b1f23a-20d2-439d-924c-049868c9df8d" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1">
 			<Documentation>Thickness (width in plane parallel to door leaf) of the transom (if provided - that is, if the _TransomOffset_ attribute is set), which divides the door leaf from a glazing (or window) above.
 If the _TransomThickness_ is set to zero (and the _TransomOffset_ set to a positive length), then the door is divided vertically into a leaf and transom window area without a physical frame.
 { .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; Data type changed to _IfcNonNegativeLengthMeasure_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="692.64003" Y="416.76673" />
-				<DocPoint X="466.3067" Y="416.76673" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="692.64003" Y="408.2333967" Width="214" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="TransomOffset" UniqueId="3921b7e9-37c7-459e-b04c-20f4f8daee97" DefinedType="IfcLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="TransomOffset" UniqueId="3921b7e9-37c7-459e-b04c-20f4f8daee97" DefinedType="IfcLengthMeasure" AttributeFlags="1">
 			<Documentation>Offset of the transom (if given) which divides the door leaf from a glazing (or window) above. The offset is given from the bottom of the door opening.</Documentation>
-			<DiagramLine>
-				<DocPoint X="692.64003" Y="297.84269" />
-				<DocPoint X="322.37337" Y="297.84269" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="692.64003" Y="297.84269" Width="170" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LiningOffset" UniqueId="df3922e6-190a-4aa5-8180-6ac391098b67" DefinedType="IfcLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LiningOffset" UniqueId="df3922e6-190a-4aa5-8180-6ac391098b67" DefinedType="IfcLengthMeasure" AttributeFlags="1">
 			<Documentation>Offset (dimension in plane perpendicular to door leaf) of the door lining. The offset is given as distance to the x axis of the local placement.</Documentation>
-			<DiagramLine>
-				<DocPoint X="928.24003" Y="511.16673" />
-				<DocPoint X="1273.5067" Y="511.16673" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="864.24003" Y="503.1667303" Width="139" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ThresholdOffset" UniqueId="a9e439f0-15a1-4053-87bb-d7b1e206080d" DefinedType="IfcLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ThresholdOffset" UniqueId="a9e439f0-15a1-4053-87bb-d7b1e206080d" DefinedType="IfcLengthMeasure" AttributeFlags="1">
 			<Documentation>Offset (dimension in plane perpendicular to door leaf) of the door threshold. The offset is given as distance to the x axis of the local placement. Only given if the door lining includes a threshold and the parameter is known.</Documentation>
-			<DiagramLine>
-				<DocPoint X="928.24003" Y="735.99368" />
-				<DocPoint X="1273.60673" Y="735.99368" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="880.24003" Y="727.99368" Width="183" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="CasingThickness" UniqueId="f35d56da-5b60-4e7e-92ca-34f4845b3e1e" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="CasingThickness" UniqueId="f35d56da-5b60-4e7e-92ca-34f4845b3e1e" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>Thickness of the casing (dimension in plane of the door leaf). If given it is applied equally to all four sides of the adjacent wall.</Documentation>
-			<DiagramLine>
-				<DocPoint X="692.64003" Y="593.53607" />
-				<DocPoint X="407.34003" Y="593.53607" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="692.64003" Y="593.53607" Width="194" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="CasingDepth" UniqueId="a77d2518-2e6f-4a33-a7b0-e9c0c1475308" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="CasingDepth" UniqueId="a77d2518-2e6f-4a33-a7b0-e9c0c1475308" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>Depth of the casing (dimension in plane perpendicular to door leaf). If given it is applied equally to all four sides of the adjacent wall.</Documentation>
-			<DiagramLine>
-				<DocPoint X="692.64003" Y="500.0262" />
-				<DocPoint X="407.34003" Y="500.0262" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="692.64003" Y="500.0262" Width="151" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ShapeAspectStyle" UniqueId="778cc896-d1c6-4a41-88f0-6fec03ecaac7" Status="Deprecated" DefinedType="IfcShapeAspect" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="ShapeAspectStyle" UniqueId="778cc896-d1c6-4a41-88f0-6fec03ecaac7" Status="Deprecated" DefinedType="IfcShapeAspect" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Pointer to the shape aspect, if given. The shape aspect reflects the part of the door shape, which represents the door lining.
 { .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute is deprecated and shall no longer be used, i.e. the value shall be NIL ($).</Documentation>
-			<DiagramLine>
-				<DocPoint X="810.44003" Y="999.16673" />
-				<DocPoint X="810.44003" Y="1197.8334" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="943.77336" Y="1017.833397" Width="208" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LiningToPanelOffsetX" UniqueId="4acf9654-3895-4418-a56d-8b283d40a96d" DefinedType="IfcLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LiningToPanelOffsetX" UniqueId="4acf9654-3895-4418-a56d-8b283d40a96d" DefinedType="IfcLengthMeasure" AttributeFlags="1">
 			<Documentation>Offset between the lining and the window panel measured along the x-axis of the local placement.
 { .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute added at the end of the entity definition.</Documentation>
-			<DiagramLine>
-				<DocPoint X="692.64003" Y="824.37463" />
-				<DocPoint X="322.27337" Y="824.37463" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="700.64003" Y="808.37463" Width="247" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LiningToPanelOffsetY" UniqueId="5cb494dc-61b8-47af-a7fe-8e3c90ba2465" DefinedType="IfcLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LiningToPanelOffsetY" UniqueId="5cb494dc-61b8-47af-a7fe-8e3c90ba2465" DefinedType="IfcLengthMeasure" AttributeFlags="1">
 			<Documentation>Offset between the lining and the door panel measured along the y-axis of the local placement.
 { .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute added at the end of the entity definition.</Documentation>
-			<DiagramLine>
-				<DocPoint X="692.64003" Y="930.66035" />
-				<DocPoint X="322.34003" Y="930.66035" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="703.306697" Y="919.993683" Width="247" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

@@ -1,29 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcApprovalRelationship" UniqueId="a303f452-ac6e-4cf8-aec2-92da14dd6675" DiagramNumber="1" BaseDefinition="IfcResourceLevelRelationship" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcApprovalRelationship" UniqueId="a303f452-ac6e-4cf8-aec2-92da14dd6675" BaseDefinition="IfcResourceLevelRelationship" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Genehmigung - Relation" Locale="de" />
-		<DocLocalization Name="Approval Relationship" Locale="en" />
-		<DocLocalization Name="Relation d&apos;approbation" Locale="fr" />
+		<DocLocalization Locale="de" Name="Genehmigung - Relation" />
+		<DocLocalization Locale="en" Name="Approval Relationship" />
+		<DocLocalization Locale="fr" Name="Relation d&apos;approbation" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="972.38991" Y="1036.4809" Width="414.17234" Height="230.26719" />
 	<Attributes>
-		<DocAttribute Name="RelatingApproval" UniqueId="087ff43e-9086-44f3-b2a4-d3d0f0d65c92" DefinedType="IfcApproval" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="RelatingApproval" UniqueId="087ff43e-9086-44f3-b2a4-d3d0f0d65c92" DefinedType="IfcApproval" XsdFormat="attribute">
 			<Documentation>The approval that other approval is related to.</Documentation>
-			<DiagramLine>
-				<DocPoint X="972.38991" Y="1076.7285" />
-				<DocPoint X="328.85106" Y="1076.7285" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="944.04364" Y="1068.012676" Width="195" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RelatedApprovals" UniqueId="027066b0-22f2-4641-858b-796e3ab8d77b" DefinedType="IfcApproval" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="RelatedApprovals" UniqueId="027066b0-22f2-4641-858b-796e3ab8d77b" DefinedType="IfcApproval" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The approvals that are related to another (relating) approval.
 { .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The cardinality of this attribute has been changed to SET.</Documentation>
-			<DiagramLine>
-				<DocPoint X="972.38991" Y="1193.3349" />
-				<DocPoint X="328.85106" Y="1193.3349" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="948.996959" Y="1189.3776945" Width="281" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

@@ -1,80 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcTask" Name="IfcTask" UniqueId="1cd0905c-9f60-44f9-9f06-d4cefbc96a5b" DiagramNumber="1" BaseDefinition="IfcProcess" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcTask" Name="IfcTask" UniqueId="1cd0905c-9f60-44f9-9f06-d4cefbc96a5b" BaseDefinition="IfcProcess" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Aufgabe" Locale="de" />
-		<DocLocalization Name="Task" Locale="en" />
-		<DocLocalization Name="Tâche" Locale="fr" />
+		<DocLocalization Locale="de" Name="Aufgabe" />
+		<DocLocalization Locale="en" Name="Task" />
+		<DocLocalization Locale="fr" Name="Tâche" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="140.750005086263" Y="1426.46980794271" Width="265.96667" Height="752.633346666667" />
 	<Attributes>
-		<DocAttribute Name="Status" UniqueId="24dad4d8-59a7-4a3c-9f09-a69c43924da4" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Status" UniqueId="24dad4d8-59a7-4a3c-9f09-a69c43924da4" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>Current status of the task.
     
 &gt; NOTE&amp;nbsp; Particular values for status are not specified, these should be determined and agreed by local usage. Examples of possible status values include &apos;Not Yet Started&apos;, &apos;Started&apos;, &apos;Completed&apos;.</Documentation>
-			<DiagramLine>
-				<DocPoint X="406.716675086263" Y="2027.52057562934" />
-				<DocPoint X="406.716675086263" Y="2027.52057562934" />
-				<DocPoint X="613.033284505208" Y="2027.52057562934" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="406.716675086263" Y="2007.52057562934" Width="77" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="WorkMethod" UniqueId="17ff6383-1e7f-4b76-9767-c81157032a92" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="WorkMethod" UniqueId="17ff6383-1e7f-4b76-9767-c81157032a92" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>The method of work used in carrying out a task.
     
 &gt; NOTE&amp;nbsp; This attribute should not be used if the work method is specified for the _IfcTaskType_</Documentation>
-			<DiagramLine>
-				<DocPoint X="406.716675086263" Y="1581.60324435764" />
-				<DocPoint X="406.716675086263" Y="1581.60324435764" />
-				<DocPoint X="613.033284505208" Y="1581.60324435764" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="406.716675086263" Y="1561.60324435764" Width="147" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="IsMilestone" UniqueId="7b39e6b5-1058-483b-b41a-aa6262a8d52e" DefinedType="IfcBoolean" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="IsMilestone" UniqueId="7b39e6b5-1058-483b-b41a-aa6262a8d52e" DefinedType="IfcBoolean">
 			<Documentation>Identifies whether a task is a milestone task (=TRUE) or not
     (= FALSE).
     
 &gt; NOTE&amp;nbsp; In small project planning applications, a milestone task may be understood to be a task having no duration. As such, it represents a singular point in time.</Documentation>
-			<DiagramLine>
-				<DocPoint X="406.716675086263" Y="1804.56190999349" />
-				<DocPoint X="406.716675086263" Y="1804.56190999349" />
-				<DocPoint X="613.033284505208" Y="1804.56190999349" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="406.716675086263" Y="1784.56190999349" Width="131" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Priority" UniqueId="1bdb7742-02a5-4935-816c-f448d784924b" DefinedType="IfcInteger" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Priority" UniqueId="1bdb7742-02a5-4935-816c-f448d784924b" DefinedType="IfcInteger" AttributeFlags="1">
 			<Documentation>A value that indicates the relative priority of the task (in
     comparison to the priorities of other tasks).</Documentation>
-			<DiagramLine>
-				<DocPoint X="406.716675086263" Y="1916.04124281141" />
-				<DocPoint X="406.716675086263" Y="1916.04124281141" />
-				<DocPoint X="613.033284505208" Y="1916.04124281141" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="406.716675086263" Y="1896.04124281141" Width="82" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="TaskTime" UniqueId="c9eb8ec9-2781-4a95-bb1c-e76c1befbe06" DefinedType="IfcTaskTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="TaskTime" UniqueId="c9eb8ec9-2781-4a95-bb1c-e76c1befbe06" DefinedType="IfcTaskTime" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Time related information for the task.
     
 { .change-ifc4}
 &gt; IFC4 CHANGE Attribute added</Documentation>
-			<DiagramLine>
-				<DocPoint X="406.716675086263" Y="2138.99990844727" />
-				<DocPoint X="406.716675086263" Y="2138.99990844727" />
-				<DocPoint X="613.033284505208" Y="2138.99990844727" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="406.716675086263" Y="2118.99990844727" Width="114" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="PredefinedType" UniqueId="02327d6b-da53-4a13-b62d-f958e4f6badf" DefinedType="IfcTaskTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="02327d6b-da53-4a13-b62d-f958e4f6badf" DefinedType="IfcTaskTypeEnum" AttributeFlags="1">
 			<Documentation>Identifies the predefined types of a task from which 
     the type required may be set.
     
 { .change-ifc4}
 &gt; IFC4 CHANGE Attribute added</Documentation>
-			<DiagramLine>
-				<DocPoint X="406.716675086263" Y="1470.12391153971" />
-				<DocPoint X="406.716675086263" Y="1470.12391153971" />
-				<DocPoint X="613.033284505208" Y="1470.12391153971" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="406.716675086263" Y="1450.12391153971" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

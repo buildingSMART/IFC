@@ -1,31 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelServicesBuildings" Name="IfcRelServicesBuildings" UniqueId="db89d737-4bde-4aef-bb04-156d8b2c8097" DiagramNumber="11" BaseDefinition="IfcRelConnects" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelServicesBuildings" Name="IfcRelServicesBuildings" UniqueId="db89d737-4bde-4aef-bb04-156d8b2c8097" BaseDefinition="IfcRelConnects" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Zuordnung Anlage zu räumlicher Gliederung - Relation" Locale="de" />
-		<DocLocalization Name="Rel Services Buildings" Locale="en" />
+		<DocLocalization Locale="de" Name="Zuordnung Anlage zu räumlicher Gliederung - Relation" />
+		<DocLocalization Locale="en" Name="Rel Services Buildings" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="7283.6707" Y="3981.3044" Width="438.66667" Height="103.33333" />
 	<Attributes>
-		<DocAttribute Name="RelatingSystem" UniqueId="ef4ac800-94ab-4c07-9262-b7e44d13f6a3" DefinedType="IfcSystem" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="RelatingSystem" UniqueId="ef4ac800-94ab-4c07-9262-b7e44d13f6a3" DefinedType="IfcSystem" XsdFormat="attribute">
 			<Documentation>System that services the Buildings.</Documentation>
-			<DiagramLine>
-				<DocPoint X="7283.6707" Y="4027.6377" />
-				<DocPoint X="6748.30393" Y="4027.6377" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="7198.537365" Y="4019.351779" Width="179" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RelatedBuildings" UniqueId="9e2d6247-93c2-4b4c-87e7-0a35aec4c0e1" DefinedType="IfcSpatialElement" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="RelatedBuildings" UniqueId="9e2d6247-93c2-4b4c-87e7-0a35aec4c0e1" DefinedType="IfcSpatialElement" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Spatial structure elements (including site, building, storeys) that are serviced by the system.
 { .change-ifc2x}
 &gt; IFC2x CHANGE&amp;nbsp; The data type has been changed from _IfcBuilding_ to _IfcSpatialStructureElement_ with upward compatibility for file based exchange.
 
 { .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The data type has been changed from _IfcSpatialStructureElement_ to _IfcSpatialElement_ with upward compatibility for file based exchange.</Documentation>
-			<DiagramLine>
-				<DocPoint X="7503.0041" Y="3981.3044" />
-				<DocPoint X="7503.0041" Y="3854.63777" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="7656.33743" Y="3991.971067" Width="271" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

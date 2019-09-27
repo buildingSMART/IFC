@@ -1,50 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPermit" Name="IfcPermit" UniqueId="68afab75-4967-4f29-8e43-1f456d2a85d0" DiagramNumber="1" BaseDefinition="IfcControl" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPermit" Name="IfcPermit" UniqueId="68afab75-4967-4f29-8e43-1f456d2a85d0" BaseDefinition="IfcControl" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Erlaubnis / Zulassung" Locale="de" />
-		<DocLocalization Name="Permit" Locale="en" />
-		<DocLocalization Name="Permis" Locale="fr" />
+		<DocLocalization Locale="de" Name="Erlaubnis / Zulassung" />
+		<DocLocalization Locale="en" Name="Permit" />
+		<DocLocalization Locale="fr" Name="Permis" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="207.62291" Y="601.32349" Width="305.93333" Height="310.05206" />
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="0e7d5fb5-5730-488d-81d5-0a45b54a9f9c" DefinedType="IfcPermitTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="0e7d5fb5-5730-488d-81d5-0a45b54a9f9c" DefinedType="IfcPermitTypeEnum" AttributeFlags="1">
 			<Documentation>Identifies the predefined types of permit that can be granted.
 
 { .change-ifc4}
 &gt; IFC4 CHANGE The attribute has been added.</Documentation>
-			<DiagramLine>
-				<DocPoint X="513.55624" Y="641.37456" />
-				<DocPoint X="644.2944" Y="641.37456" />
-				<DocPoint X="644.2944" Y="641.79711558" />
-				<DocPoint X="775.03256" Y="641.79711558" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="545.099462" Y="633.93121" Width="182" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Status" UniqueId="1486b92f-8a56-432e-a9b9-a8ef085ead05" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Status" UniqueId="1486b92f-8a56-432e-a9b9-a8ef085ead05" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>The status currently assigned to the permit.
 
 { .change-ifc4}
 &gt; IFC4 CHANGE The attribute has been added.</Documentation>
-			<DiagramLine>
-				<DocPoint X="513.55624" Y="756.34952" />
-				<DocPoint X="1492.99305" Y="756.34952" />
-				<DocPoint X="1492.99305" Y="364.22777" />
-				<DocPoint X="1356.57099" Y="364.22777" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="555.315599" Y="750.8848013" Width="77" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LongDescription" UniqueId="90a8f164-66d0-4aac-bcc6-4b738708490c" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LongDescription" UniqueId="90a8f164-66d0-4aac-bcc6-4b738708490c" DefinedType="IfcText" AttributeFlags="1">
 			<Documentation>Detailed description of the request.
 
 { .change-ifc4}
 &gt; IFC4 CHANGE The attribute has been added.</Documentation>
-			<DiagramLine>
-				<DocPoint X="513.55624" Y="864.77988" />
-				<DocPoint X="1410.66869" Y="864.77988" />
-				<DocPoint X="1410.66869" Y="499.10511" />
-				<DocPoint X="1360.420043" Y="499.10511" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="611.86946" Y="857.2353127" Width="186" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

@@ -1,46 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcMaterialLayerSet" Name="IfcMaterialLayerSet" UniqueId="c1a5e8bc-cb6b-4466-8130-d2946ca1f8a0" DiagramNumber="2" BaseDefinition="IfcMaterialDefinition" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcMaterialLayerSet" Name="IfcMaterialLayerSet" UniqueId="c1a5e8bc-cb6b-4466-8130-d2946ca1f8a0" BaseDefinition="IfcMaterialDefinition" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Gruppe von Materialschichten" Locale="de" />
-		<DocLocalization Name="Material Layer Set" Locale="en" />
-		<DocLocalization Name="Ensemble de couches de matériau homogène" Locale="fr" />
+		<DocLocalization Locale="de" Name="Gruppe von Materialschichten" />
+		<DocLocalization Locale="en" Name="Material Layer Set" />
+		<DocLocalization Locale="fr" Name="Ensemble de couches de matériau homogène" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1742.6697" Y="773.52199" Width="357.23328" Height="242.93934" />
 	<Attributes>
-		<DocAttribute Name="MaterialLayers" UniqueId="5a628a68-ffd7-4f73-aa3e-e72f2be216a1" DefinedType="IfcMaterialLayer" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="MaterialLayers" UniqueId="5a628a68-ffd7-4f73-aa3e-e72f2be216a1" DefinedType="IfcMaterialLayer" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Identification of the _IfcMaterialLayer_&amp;rsquo;s from which the _IfcMaterialLayerSet_ is composed.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1949.8742" Y="1016.4613" />
-				<DocPoint X="1949.8742" Y="1229.40697" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1802.74969" Y="1011.441448" Width="245" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LayerSetName" UniqueId="64d28d03-21af-45f1-8409-87bc5674dfbe" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LayerSetName" UniqueId="64d28d03-21af-45f1-8409-87bc5674dfbe" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>The name by which the _IfcMaterialLayerSet_ is known.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2099.9029" Y="801.99177" />
-				<DocPoint X="2567.39122" Y="801.99177" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2077.032605" Y="790.556623" Width="172" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Description" UniqueId="52a88214-0845-42fb-b617-1dbe7dc4dcdc" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Description" UniqueId="52a88214-0845-42fb-b617-1dbe7dc4dcdc" DefinedType="IfcText" AttributeFlags="1">
 			<Documentation>Definition of the _IfcMaterialLayerSet_ in descriptive terms.
 { .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute has been added at the end of attribute list.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2099.9029" Y="894.99166" />
-				<DocPoint X="2567.40879" Y="894.99166" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2042.727164" Y="883.556513" Width="130" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="TotalThickness" UniqueId="81ed0494-3a34-4ff6-9004-3779ff4854d9" DefinedType="IfcLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="TotalThickness" UniqueId="81ed0494-3a34-4ff6-9004-3779ff4854d9" DefinedType="IfcLengthMeasure">
 			<Documentation>Total thickness of the material layer set is derived from the function _IfcMlsTotalThickness._</Documentation>
 			<Derived>IfcMlsTotalThickness(SELF)</Derived>
-			<DiagramLine>
-				<DocPoint X="2099.9029" Y="990.70913" />
-				<DocPoint X="2567.40879" Y="990.70913" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2117.055621" Y="979.273983" Width="247" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

@@ -33,15 +33,15 @@ Many object occurrence and object type entities have an attribute named _Predefi
 				</DocLocalization>
 			</Localization>
 			<Rules>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsTypedBy" Identification="HasType">
+				<DocModelRuleAttribute Name="IsTypedBy" Identification="HasType">
 					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelDefinesByType">
+						<DocModelRuleEntity Name="IfcRelDefinesByType">
 							<Rules>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingType" Identification="RelatingType">
+								<DocModelRuleAttribute Name="RelatingType" Identification="RelatingType">
 									<Rules>
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcTypeObject">
+										<DocModelRuleEntity Name="IfcTypeObject">
 											<Rules>
-												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="TypeName" />
+												<DocModelRuleAttribute Name="Name" Identification="TypeName" />
 											</Rules>
 										</DocModelRuleEntity>
 									</Rules>
@@ -50,7 +50,7 @@ Many object occurrence and object type entities have an attribute named _Predefi
 						</DocModelRuleEntity>
 					</Rules>
 				</DocModelRuleAttribute>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="PredefinedType" />
+				<DocModelRuleAttribute Name="PredefinedType" />
 			</Rules>
 		</DocTemplateDefinition>
 		<DocTemplateDefinition Name="Property Sets" UniqueId="0sc4CqEiXEMOMczerbutd7" Type="IfcRoot">
@@ -61,100 +61,100 @@ Many object occurrence and object type entities have an attribute named _Predefi
 
 Property sets can also be related to an object type, see concept _Property Sets for Types_. They then define the common properties for all occurrences of the same type. If the same property (by name) is provided by the same property set (by name), then the properties directly assigned to the object occurrence override the properties assigned to the object type.</Documentation>
 					<Rules>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="PredefinedType" Identification="PredefinedType" />
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsDefinedBy">
+						<DocModelRuleAttribute Name="PredefinedType" Identification="PredefinedType" />
+						<DocModelRuleAttribute Name="IsDefinedBy">
 							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelDefinesByProperties">
+								<DocModelRuleEntity Name="IfcRelDefinesByProperties">
 									<Rules>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingPropertyDefinition">
+										<DocModelRuleAttribute Name="RelatingPropertyDefinition">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertySet">
+												<DocModelRuleEntity Name="IfcPropertySet">
 													<Rules>
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="PsetName" />
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasProperties" Identification="Properties">
+														<DocModelRuleAttribute Name="Name" Identification="PsetName" />
+														<DocModelRuleAttribute Name="HasProperties" Identification="Properties">
 															<Rules>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertySingleValue">
+																<DocModelRuleEntity Name="IfcPropertySingleValue">
 																	<References>
 																		<DocTemplateDefinition id="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" Name="Single Value" UniqueId="1cLVRGAQX7k8yzoVpfoQOW" Status="Official" Owner="System" Type="IfcPropertySingleValue">
 																			<Rules>
-																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="PropertyName">
+																				<DocModelRuleAttribute Name="Name" Identification="PropertyName">
 																					<Rules>
-																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
+																						<DocModelRuleEntity Name="IfcIdentifier" />
 																					</Rules>
 																				</DocModelRuleAttribute>
-																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+																				<DocModelRuleAttribute Name="Description">
 																					<Rules>
-																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+																						<DocModelRuleEntity Name="IfcText" />
 																					</Rules>
 																				</DocModelRuleAttribute>
-																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="NominalValue" Identification="Value">
+																				<DocModelRuleAttribute Name="NominalValue" Identification="Value">
 																					<Rules>
-																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcValue" />
+																						<DocModelRuleEntity Name="IfcValue" />
 																					</Rules>
 																				</DocModelRuleAttribute>
 																			</Rules>
 																		</DocTemplateDefinition>
 																	</References>
 																</DocModelRuleEntity>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertyBoundedValue">
+																<DocModelRuleEntity Name="IfcPropertyBoundedValue">
 																	<References>
 																		<DocTemplateDefinition id="Bounded_Value_0zPwBITXr4sQ2Ujkn_bOo" Name="Bounded Value" UniqueId="0zPwBITXr4sQ2Uj$kn_bOo" Status="Official" Owner="System" Type="IfcPropertyBoundedValue">
 																			<Rules>
-																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="PropertyName">
+																				<DocModelRuleAttribute Name="Name" Identification="PropertyName">
 																					<Rules>
-																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
+																						<DocModelRuleEntity Name="IfcIdentifier" />
 																					</Rules>
 																				</DocModelRuleAttribute>
-																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+																				<DocModelRuleAttribute Name="Description">
 																					<Rules>
-																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+																						<DocModelRuleEntity Name="IfcText" />
 																					</Rules>
 																				</DocModelRuleAttribute>
-																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="UpperBoundValue" Identification="UpperValue">
+																				<DocModelRuleAttribute Name="UpperBoundValue" Identification="UpperValue">
 																					<Rules>
-																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcValue" />
+																						<DocModelRuleEntity Name="IfcValue" />
 																					</Rules>
 																				</DocModelRuleAttribute>
-																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="LowerBoundValue" Identification="LowerValue">
+																				<DocModelRuleAttribute Name="LowerBoundValue" Identification="LowerValue">
 																					<Rules>
-																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcValue" />
+																						<DocModelRuleEntity Name="IfcValue" />
 																					</Rules>
 																				</DocModelRuleAttribute>
-																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="SetPointValue" Identification="SetValue">
+																				<DocModelRuleAttribute Name="SetPointValue" Identification="SetValue">
 																					<Rules>
-																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcValue" />
+																						<DocModelRuleEntity Name="IfcValue" />
 																					</Rules>
 																				</DocModelRuleAttribute>
 																			</Rules>
 																		</DocTemplateDefinition>
 																	</References>
 																</DocModelRuleEntity>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertyEnumeratedValue">
+																<DocModelRuleEntity Name="IfcPropertyEnumeratedValue">
 																	<References>
 																		<DocTemplateDefinition id="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" Name="Enumerated Value" UniqueId="31IA2Pmr53g99cNptWj5gL" Status="Official" Owner="System" Type="IfcPropertyEnumeratedValue">
 																			<Rules>
-																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="PropertyName">
+																				<DocModelRuleAttribute Name="Name" Identification="PropertyName">
 																					<Rules>
-																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
+																						<DocModelRuleEntity Name="IfcIdentifier" />
 																					</Rules>
 																				</DocModelRuleAttribute>
-																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+																				<DocModelRuleAttribute Name="Description">
 																					<Rules>
-																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+																						<DocModelRuleEntity Name="IfcText" />
 																					</Rules>
 																				</DocModelRuleAttribute>
-																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="EnumerationValues" Identification="Value">
+																				<DocModelRuleAttribute Name="EnumerationValues" Identification="Value">
 																					<Rules>
-																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcValue" />
+																						<DocModelRuleEntity Name="IfcValue" />
 																					</Rules>
 																				</DocModelRuleAttribute>
-																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="EnumerationReference">
+																				<DocModelRuleAttribute Name="EnumerationReference">
 																					<Rules>
-																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertyEnumeration">
+																						<DocModelRuleEntity Name="IfcPropertyEnumeration">
 																							<Rules>
-																								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="Reference">
+																								<DocModelRuleAttribute Name="Name" Identification="Reference">
 																									<Rules>
-																										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																										<DocModelRuleEntity Name="IfcLabel" />
 																									</Rules>
 																								</DocModelRuleAttribute>
 																							</Rules>
@@ -165,61 +165,61 @@ Property sets can also be related to an object type, see concept _Property Sets 
 																		</DocTemplateDefinition>
 																	</References>
 																</DocModelRuleEntity>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertyListValue">
+																<DocModelRuleEntity Name="IfcPropertyListValue">
 																	<References>
 																		<DocTemplateDefinition id="List_Value_2E4BQ8aNbEEesoQhogfKj" Name="List Value" UniqueId="2E4BQ8aNbEEesoQhog$fKj" Type="IfcPropertyListValue">
 																			<Rules>
-																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="PropertyName">
+																				<DocModelRuleAttribute Name="Name" Identification="PropertyName">
 																					<Rules>
-																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
+																						<DocModelRuleEntity Name="IfcIdentifier" />
 																					</Rules>
 																				</DocModelRuleAttribute>
-																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+																				<DocModelRuleAttribute Name="Description">
 																					<Rules>
-																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+																						<DocModelRuleEntity Name="IfcText" />
 																					</Rules>
 																				</DocModelRuleAttribute>
-																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ListValues" Identification="Value">
+																				<DocModelRuleAttribute Name="ListValues" Identification="Value">
 																					<Rules>
-																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcValue" />
+																						<DocModelRuleEntity Name="IfcValue" />
 																					</Rules>
 																				</DocModelRuleAttribute>
 																			</Rules>
 																		</DocTemplateDefinition>
 																	</References>
 																</DocModelRuleEntity>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertyTableValue">
+																<DocModelRuleEntity Name="IfcPropertyTableValue">
 																	<References>
 																		<DocTemplateDefinition id="Table_Value_0roKUmQhnB4ux7QMxo11SX" Name="Table Value" UniqueId="0roKUmQhnB4ux7QMxo11SX" Type="IfcPropertyTableValue">
 																			<Rules>
-																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="PropertyName">
+																				<DocModelRuleAttribute Name="Name" Identification="PropertyName">
 																					<Rules>
-																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
+																						<DocModelRuleEntity Name="IfcIdentifier" />
 																					</Rules>
 																				</DocModelRuleAttribute>
-																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+																				<DocModelRuleAttribute Name="Description">
 																					<Rules>
-																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+																						<DocModelRuleEntity Name="IfcText" />
 																					</Rules>
 																				</DocModelRuleAttribute>
-																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="DefiningValues" Identification="Value">
+																				<DocModelRuleAttribute Name="DefiningValues" Identification="Value">
 																					<Rules>
-																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcValue" />
+																						<DocModelRuleEntity Name="IfcValue" />
 																					</Rules>
 																				</DocModelRuleAttribute>
-																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="DefinedValues" Identification="Reference">
+																				<DocModelRuleAttribute Name="DefinedValues" Identification="Reference">
 																					<Rules>
-																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcValue" />
+																						<DocModelRuleEntity Name="IfcValue" />
 																					</Rules>
 																				</DocModelRuleAttribute>
-																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Expression">
+																				<DocModelRuleAttribute Name="Expression">
 																					<Rules>
-																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+																						<DocModelRuleEntity Name="IfcText" />
 																					</Rules>
 																				</DocModelRuleAttribute>
-																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="CurveInterpolation">
+																				<DocModelRuleAttribute Name="CurveInterpolation">
 																					<Rules>
-																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCurveInterpolationEnum" />
+																						<DocModelRuleEntity Name="IfcCurveInterpolationEnum" />
 																					</Rules>
 																				</DocModelRuleAttribute>
 																			</Rules>
@@ -257,39 +257,39 @@ Property sets can also be related to an object type, see concept _Property Sets 
 								</DocLocalization>
 							</Localization>
 							<Rules>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="PredefinedType" Identification="PredefinedType" />
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsDefinedBy">
+								<DocModelRuleAttribute Name="PredefinedType" Identification="PredefinedType" />
+								<DocModelRuleAttribute Name="IsDefinedBy">
 									<Rules>
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelDefinesByProperties">
+										<DocModelRuleEntity Name="IfcRelDefinesByProperties">
 											<Rules>
-												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingPropertyDefinition">
+												<DocModelRuleAttribute Name="RelatingPropertyDefinition">
 													<Rules>
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertySet">
+														<DocModelRuleEntity Name="IfcPropertySet">
 															<Rules>
-																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="PsetName" />
-																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasProperties" Identification="Properties">
+																<DocModelRuleAttribute Name="Name" Identification="PsetName" />
+																<DocModelRuleAttribute Name="HasProperties" Identification="Properties">
 																	<Rules>
-																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertySingleValue">
+																		<DocModelRuleEntity Name="IfcPropertySingleValue">
 																			<References>
 																				<DocTemplateDefinition xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
 																			</References>
 																		</DocModelRuleEntity>
-																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertyBoundedValue">
+																		<DocModelRuleEntity Name="IfcPropertyBoundedValue">
 																			<References>
 																				<DocTemplateDefinition xsi:nil="true" href="Bounded_Value_0zPwBITXr4sQ2Ujkn_bOo" />
 																			</References>
 																		</DocModelRuleEntity>
-																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertyEnumeratedValue">
+																		<DocModelRuleEntity Name="IfcPropertyEnumeratedValue">
 																			<References>
 																				<DocTemplateDefinition xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
 																			</References>
 																		</DocModelRuleEntity>
-																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertyListValue">
+																		<DocModelRuleEntity Name="IfcPropertyListValue">
 																			<References>
 																				<DocTemplateDefinition xsi:nil="true" href="List_Value_2E4BQ8aNbEEesoQhogfKj" />
 																			</References>
 																		</DocModelRuleEntity>
-																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertyTableValue">
+																		<DocModelRuleEntity Name="IfcPropertyTableValue">
 																			<References>
 																				<DocTemplateDefinition xsi:nil="true" href="Table_Value_0roKUmQhnB4ux7QMxo11SX" />
 																			</References>
@@ -304,42 +304,42 @@ Property sets can also be related to an object type, see concept _Property Sets 
 										</DocModelRuleEntity>
 									</Rules>
 								</DocModelRuleAttribute>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsTypedBy">
+								<DocModelRuleAttribute Name="IsTypedBy">
 									<Rules>
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelDefinesByType">
+										<DocModelRuleEntity Name="IfcRelDefinesByType">
 											<Rules>
-												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingType">
+												<DocModelRuleAttribute Name="RelatingType">
 													<Rules>
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcTypeObject">
+														<DocModelRuleEntity Name="IfcTypeObject">
 															<Rules>
-																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasPropertySets">
+																<DocModelRuleAttribute Name="HasPropertySets">
 																	<Rules>
-																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertySet">
+																		<DocModelRuleEntity Name="IfcPropertySet">
 																			<Rules>
-																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="TypePsetName" />
-																				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasProperties" Identification="TypeProperties">
+																				<DocModelRuleAttribute Name="Name" Identification="TypePsetName" />
+																				<DocModelRuleAttribute Name="HasProperties" Identification="TypeProperties">
 																					<Rules>
-																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertySingleValue" Prefix="Type">
+																						<DocModelRuleEntity Name="IfcPropertySingleValue" Prefix="Type">
 																							<References>
 																								<DocTemplateDefinition xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
 																							</References>
 																						</DocModelRuleEntity>
-																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertyBoundedValue" Prefix="Type">
+																						<DocModelRuleEntity Name="IfcPropertyBoundedValue" Prefix="Type">
 																							<References>
 																								<DocTemplateDefinition xsi:nil="true" href="Bounded_Value_0zPwBITXr4sQ2Ujkn_bOo" />
 																							</References>
 																						</DocModelRuleEntity>
-																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertyEnumeratedValue" Prefix="Type">
+																						<DocModelRuleEntity Name="IfcPropertyEnumeratedValue" Prefix="Type">
 																							<References>
 																								<DocTemplateDefinition xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
 																							</References>
 																						</DocModelRuleEntity>
-																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertyListValue" Prefix="Type">
+																						<DocModelRuleEntity Name="IfcPropertyListValue" Prefix="Type">
 																							<References>
 																								<DocTemplateDefinition xsi:nil="true" href="List_Value_2E4BQ8aNbEEesoQhogfKj" />
 																							</References>
 																						</DocModelRuleEntity>
-																						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertyTableValue" Prefix="Type">
+																						<DocModelRuleEntity Name="IfcPropertyTableValue" Prefix="Type">
 																							<References>
 																								<DocTemplateDefinition xsi:nil="true" href="Table_Value_0roKUmQhnB4ux7QMxo11SX" />
 																							</References>
@@ -365,34 +365,34 @@ Property sets can also be related to an object type, see concept _Property Sets 
 				<DocTemplateDefinition id="Property_Sets_for_Performance_33BCLRhyT3dhWXvaRXiTqQ" Name="Property Sets for Performance" UniqueId="33BCLRhyT3dhWXvaRXiTqQ" Type="IfcPerformanceHistory">
 					<Documentation>For performance history, properties are in the form of time series, for tracking data at points in time.</Documentation>
 					<Rules>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsDefinedBy">
+						<DocModelRuleAttribute Name="IsDefinedBy">
 							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelDefinesByProperties">
+								<DocModelRuleEntity Name="IfcRelDefinesByProperties">
 									<Rules>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingPropertyDefinition">
+										<DocModelRuleAttribute Name="RelatingPropertyDefinition">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertySet">
+												<DocModelRuleEntity Name="IfcPropertySet">
 													<Rules>
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasProperties">
+														<DocModelRuleAttribute Name="HasProperties">
 															<Rules>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertyReferenceValue">
+																<DocModelRuleEntity Name="IfcPropertyReferenceValue">
 																	<Rules>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="PropertyReference">
+																		<DocModelRuleAttribute Name="PropertyReference">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIrregularTimeSeries">
+																				<DocModelRuleEntity Name="IfcIrregularTimeSeries">
 																					<Rules>
-																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Values">
+																						<DocModelRuleAttribute Name="Values">
 																							<Rules>
-																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIrregularTimeSeriesValue">
+																								<DocModelRuleEntity Name="IfcIrregularTimeSeriesValue">
 																									<Rules>
-																										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="TimeStamp">
+																										<DocModelRuleAttribute Name="TimeStamp">
 																											<Rules>
-																												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDateTime" />
+																												<DocModelRuleEntity Name="IfcDateTime" />
 																											</Rules>
 																										</DocModelRuleAttribute>
-																										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ListValues">
+																										<DocModelRuleAttribute Name="ListValues">
 																											<Rules>
-																												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcValue" />
+																												<DocModelRuleEntity Name="IfcValue" />
 																											</Rules>
 																										</DocModelRuleAttribute>
 																									</Rules>
@@ -422,34 +422,34 @@ Property sets can also be related to an object type, see concept _Property Sets 
 
 The property values assigned to an object type apply equally to all occurrences of this object type, see concept _Object Typing_, unless it is overriden by a property with same name within a property set with the same name at an individual object occurrence.</Documentation>
 					<Rules>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasPropertySets">
+						<DocModelRuleAttribute Name="HasPropertySets">
 							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertySet">
+								<DocModelRuleEntity Name="IfcPropertySet">
 									<Rules>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="PsetName" />
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasProperties">
+										<DocModelRuleAttribute Name="Name" Identification="PsetName" />
+										<DocModelRuleAttribute Name="HasProperties">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertySingleValue">
+												<DocModelRuleEntity Name="IfcPropertySingleValue">
 													<References>
 														<DocTemplateDefinition xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
 													</References>
 												</DocModelRuleEntity>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertyBoundedValue">
+												<DocModelRuleEntity Name="IfcPropertyBoundedValue">
 													<References>
 														<DocTemplateDefinition xsi:nil="true" href="Bounded_Value_0zPwBITXr4sQ2Ujkn_bOo" />
 													</References>
 												</DocModelRuleEntity>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertyEnumeratedValue">
+												<DocModelRuleEntity Name="IfcPropertyEnumeratedValue">
 													<References>
 														<DocTemplateDefinition xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
 													</References>
 												</DocModelRuleEntity>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertyListValue">
+												<DocModelRuleEntity Name="IfcPropertyListValue">
 													<References>
 														<DocTemplateDefinition xsi:nil="true" href="List_Value_2E4BQ8aNbEEesoQhogfKj" />
 													</References>
 												</DocModelRuleEntity>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPropertyTableValue">
+												<DocModelRuleEntity Name="IfcPropertyTableValue">
 													<References>
 														<DocTemplateDefinition xsi:nil="true" href="Table_Value_0roKUmQhnB4ux7QMxo11SX" />
 													</References>
@@ -476,193 +476,193 @@ The quantity set is expressed by instances of _IfcElementQuantity_, where the _N
 				</DocLocalization>
 			</Localization>
 			<Rules>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsDefinedBy">
+				<DocModelRuleAttribute Name="IsDefinedBy">
 					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelDefinesByProperties">
+						<DocModelRuleEntity Name="IfcRelDefinesByProperties">
 							<Rules>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingPropertyDefinition">
+								<DocModelRuleAttribute Name="RelatingPropertyDefinition">
 									<Rules>
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcElementQuantity">
+										<DocModelRuleEntity Name="IfcElementQuantity">
 											<Rules>
-												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="QsetName">
+												<DocModelRuleAttribute Name="Name" Identification="QsetName">
 													<Rules>
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+														<DocModelRuleEntity Name="IfcLabel" />
 													</Rules>
 												</DocModelRuleAttribute>
-												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+												<DocModelRuleAttribute Name="Description">
 													<Rules>
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+														<DocModelRuleEntity Name="IfcText" />
 													</Rules>
 												</DocModelRuleAttribute>
-												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="MethodOfMeasurement">
+												<DocModelRuleAttribute Name="MethodOfMeasurement">
 													<Rules>
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+														<DocModelRuleEntity Name="IfcLabel" />
 													</Rules>
 												</DocModelRuleAttribute>
-												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Quantities" Identification="Quantities">
+												<DocModelRuleAttribute Name="Quantities" Identification="Quantities">
 													<Rules>
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcQuantityLength">
+														<DocModelRuleEntity Name="IfcQuantityLength">
 															<References>
 																<DocTemplateDefinition id="Length_Quantity_3TXdZXum1FS9rZvJdRIz4S" Name="Length Quantity" UniqueId="3TXdZXum1FS9rZvJdRIz4S" Type="IfcQuantityLength">
 																	<Rules>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="QuantityName">
+																		<DocModelRuleAttribute Name="Name" Identification="QuantityName">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																				<DocModelRuleEntity Name="IfcLabel" />
 																			</Rules>
 																		</DocModelRuleAttribute>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+																		<DocModelRuleAttribute Name="Description">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+																				<DocModelRuleEntity Name="IfcText" />
 																			</Rules>
 																		</DocModelRuleAttribute>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="LengthValue" Identification="LengthValue">
+																		<DocModelRuleAttribute Name="LengthValue" Identification="LengthValue">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLengthMeasure" />
+																				<DocModelRuleEntity Name="IfcLengthMeasure" />
 																			</Rules>
 																		</DocModelRuleAttribute>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Formula">
+																		<DocModelRuleAttribute Name="Formula">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																				<DocModelRuleEntity Name="IfcLabel" />
 																			</Rules>
 																		</DocModelRuleAttribute>
 																	</Rules>
 																</DocTemplateDefinition>
 															</References>
 														</DocModelRuleEntity>
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcQuantityArea">
+														<DocModelRuleEntity Name="IfcQuantityArea">
 															<References>
 																<DocTemplateDefinition id="Area_Quantity_1bh4T7Rlz3VfJYP3Kux_6" Name="Area Quantity" UniqueId="1bh4T7Rlz3VfJYP3$Kux_6" Type="IfcQuantityArea">
 																	<Rules>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="QuantityName">
+																		<DocModelRuleAttribute Name="Name" Identification="QuantityName">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																				<DocModelRuleEntity Name="IfcLabel" />
 																			</Rules>
 																		</DocModelRuleAttribute>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+																		<DocModelRuleAttribute Name="Description">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+																				<DocModelRuleEntity Name="IfcText" />
 																			</Rules>
 																		</DocModelRuleAttribute>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="AreaValue" Identification="AreaValue">
+																		<DocModelRuleAttribute Name="AreaValue" Identification="AreaValue">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAreaMeasure" />
+																				<DocModelRuleEntity Name="IfcAreaMeasure" />
 																			</Rules>
 																		</DocModelRuleAttribute>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Formula">
+																		<DocModelRuleAttribute Name="Formula">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																				<DocModelRuleEntity Name="IfcLabel" />
 																			</Rules>
 																		</DocModelRuleAttribute>
 																	</Rules>
 																</DocTemplateDefinition>
 															</References>
 														</DocModelRuleEntity>
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcQuantityVolume">
+														<DocModelRuleEntity Name="IfcQuantityVolume">
 															<References>
 																<DocTemplateDefinition id="Volume_Quantity_1aaQEmj_b1Ae8clDaSAmiE" Name="Volume Quantity" UniqueId="1aaQEmj_b1Ae8clDaSAmiE" Type="IfcQuantityVolume">
 																	<Rules>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="QuantityName">
+																		<DocModelRuleAttribute Name="Name" Identification="QuantityName">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																				<DocModelRuleEntity Name="IfcLabel" />
 																			</Rules>
 																		</DocModelRuleAttribute>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+																		<DocModelRuleAttribute Name="Description">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+																				<DocModelRuleEntity Name="IfcText" />
 																			</Rules>
 																		</DocModelRuleAttribute>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="VolumeValue" Identification="VolumeValue">
+																		<DocModelRuleAttribute Name="VolumeValue" Identification="VolumeValue">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcVolumeMeasure" />
+																				<DocModelRuleEntity Name="IfcVolumeMeasure" />
 																			</Rules>
 																		</DocModelRuleAttribute>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Formula">
+																		<DocModelRuleAttribute Name="Formula">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																				<DocModelRuleEntity Name="IfcLabel" />
 																			</Rules>
 																		</DocModelRuleAttribute>
 																	</Rules>
 																</DocTemplateDefinition>
 															</References>
 														</DocModelRuleEntity>
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcQuantityWeight">
+														<DocModelRuleEntity Name="IfcQuantityWeight">
 															<References>
 																<DocTemplateDefinition id="Weight_Quantity_3X0MvMF8bFGfPv1_7RF0hx" Name="Weight Quantity" UniqueId="3X0MvMF8bFGfPv1_7RF0hx" Type="IfcQuantityWeight">
 																	<Rules>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="QuantityName">
+																		<DocModelRuleAttribute Name="Name" Identification="QuantityName">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																				<DocModelRuleEntity Name="IfcLabel" />
 																			</Rules>
 																		</DocModelRuleAttribute>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+																		<DocModelRuleAttribute Name="Description">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+																				<DocModelRuleEntity Name="IfcText" />
 																			</Rules>
 																		</DocModelRuleAttribute>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="WeightValue" Identification="WeightValue">
+																		<DocModelRuleAttribute Name="WeightValue" Identification="WeightValue">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcMassMeasure" />
+																				<DocModelRuleEntity Name="IfcMassMeasure" />
 																			</Rules>
 																		</DocModelRuleAttribute>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Formula">
+																		<DocModelRuleAttribute Name="Formula">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																				<DocModelRuleEntity Name="IfcLabel" />
 																			</Rules>
 																		</DocModelRuleAttribute>
 																	</Rules>
 																</DocTemplateDefinition>
 															</References>
 														</DocModelRuleEntity>
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcQuantityCount">
+														<DocModelRuleEntity Name="IfcQuantityCount">
 															<References>
 																<DocTemplateDefinition id="Count_Quantity_2AhlyoLonFQgnauXKMOyln" Name="Count Quantity" UniqueId="2AhlyoLonFQgnauXKMOyln" Type="IfcQuantityCount">
 																	<Rules>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="QuantityName">
+																		<DocModelRuleAttribute Name="Name" Identification="QuantityName">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																				<DocModelRuleEntity Name="IfcLabel" />
 																			</Rules>
 																		</DocModelRuleAttribute>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+																		<DocModelRuleAttribute Name="Description">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+																				<DocModelRuleEntity Name="IfcText" />
 																			</Rules>
 																		</DocModelRuleAttribute>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="CountValue" Identification="CountValue">
+																		<DocModelRuleAttribute Name="CountValue" Identification="CountValue">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCountMeasure" />
+																				<DocModelRuleEntity Name="IfcCountMeasure" />
 																			</Rules>
 																		</DocModelRuleAttribute>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Formula">
+																		<DocModelRuleAttribute Name="Formula">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																				<DocModelRuleEntity Name="IfcLabel" />
 																			</Rules>
 																		</DocModelRuleAttribute>
 																	</Rules>
 																</DocTemplateDefinition>
 															</References>
 														</DocModelRuleEntity>
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcQuantityTime">
+														<DocModelRuleEntity Name="IfcQuantityTime">
 															<References>
 																<DocTemplateDefinition id="Time_Quantity_13nC1G1DvB3vv3S8lPWW6e" Name="Time Quantity" UniqueId="13nC1G1DvB3vv3S8lPWW6e" Type="IfcQuantityTime">
 																	<Rules>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="QuantityName">
+																		<DocModelRuleAttribute Name="Name" Identification="QuantityName">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																				<DocModelRuleEntity Name="IfcLabel" />
 																			</Rules>
 																		</DocModelRuleAttribute>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Description">
+																		<DocModelRuleAttribute Name="Description">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcText" />
+																				<DocModelRuleEntity Name="IfcText" />
 																			</Rules>
 																		</DocModelRuleAttribute>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="TimeValue" Identification="TimeValue">
+																		<DocModelRuleAttribute Name="TimeValue" Identification="TimeValue">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcTimeMeasure" />
+																				<DocModelRuleEntity Name="IfcTimeMeasure" />
 																			</Rules>
 																		</DocModelRuleAttribute>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Formula">
+																		<DocModelRuleAttribute Name="Formula">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																				<DocModelRuleEntity Name="IfcLabel" />
 																			</Rules>
 																		</DocModelRuleAttribute>
 																	</Rules>

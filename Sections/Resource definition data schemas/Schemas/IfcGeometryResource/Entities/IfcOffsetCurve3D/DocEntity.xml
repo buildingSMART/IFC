@@ -1,38 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcOffsetCurve3D" UniqueId="993ba75f-6b94-4c8c-b4c4-ba41608e3dc4" DiagramNumber="5" BaseDefinition="IfcOffsetCurve" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcOffsetCurve3D" UniqueId="993ba75f-6b94-4c8c-b4c4-ba41608e3dc4" BaseDefinition="IfcOffsetCurve" EntityFlags="101">
 	<Localization>
-		<DocLocalization Name="Versetzte Kurve im dreidimensionalen Raum (3D)" Locale="de" />
-		<DocLocalization Name="Offset Curve 3D" Locale="en" />
-		<DocLocalization Name="Décalage de courbe 3D" Locale="fr" />
+		<DocLocalization Locale="de" Name="Versetzte Kurve im dreidimensionalen Raum (3D)" />
+		<DocLocalization Locale="en" Name="Offset Curve 3D" />
+		<DocLocalization Locale="fr" Name="Décalage de courbe 3D" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="6530.83365885417" Y="587.833353678385" Width="276.666666666667" Height="246.666666666667" />
 	<Attributes>
-		<DocAttribute Name="Distance" UniqueId="875036b8-1aba-4de6-9e1d-c77a4f761fcb" DefinedType="IfcLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Distance" UniqueId="875036b8-1aba-4de6-9e1d-c77a4f761fcb" DefinedType="IfcLengthMeasure">
 			<Documentation>The distance of the offset curve from the basis curve. The distance may be positive, negative or zero.</Documentation>
-			<DiagramLine>
-				<DocPoint X="6807.50032552083" Y="606.5" />
-				<DocPoint X="6807.50032552083" Y="606.5" />
-				<DocPoint X="6947.16650390625" Y="606.5" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="6807.50032552083" Y="586.5" Width="103" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="SelfIntersect" UniqueId="7b5fafd0-453a-4ce8-b2d4-06ba1b08a15b" DefinedType="IfcLogical" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="SelfIntersect" UniqueId="7b5fafd0-453a-4ce8-b2d4-06ba1b08a15b" DefinedType="IfcLogical">
 			<Documentation>An indication of whether the offset curve self-intersects, this is for information only.</Documentation>
-			<DiagramLine>
-				<DocPoint X="6807.50032552083" Y="708.500017801921" />
-				<DocPoint X="6807.50032552083" Y="708.500017801921" />
-				<DocPoint X="7026.166015625" Y="708.500017801921" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="6807.50032552083" Y="688.500017801921" Width="144" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RefDirection" UniqueId="5a018675-aaa2-4e06-8c88-1c7f4e8c0012" DefinedType="IfcDirection" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="RefDirection" UniqueId="5a018675-aaa2-4e06-8c88-1c7f4e8c0012" DefinedType="IfcDirection" XsdFormat="attribute">
 			<Documentation>The direction used to define the direction of the offset curve 3d from the basis curve.</Documentation>
-			<DiagramLine>
-				<DocPoint X="6807.50032552083" Y="803.866706848145" />
-				<DocPoint X="6807.50032552083" Y="803.866706848145" />
-				<DocPoint X="7048.466796875" Y="803.866706848145" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="6807.50032552083" Y="783.866706848145" Width="143" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

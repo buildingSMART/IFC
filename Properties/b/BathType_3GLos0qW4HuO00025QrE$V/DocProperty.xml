@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocProperty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="BathType_3GLos0qW4HuO00025QrEV" Name="BathType" UniqueId="3GLos0qW4HuO00025QrE$V" PropertyType="p_enumeratedvalue" PrimaryDataType="IfcLabel">
 	<Localization>
-		<DocLocalization Name="Bath Type" Locale="en" />
-		<DocLocalization Name="バスタイプ" Locale="ja-JP">
+		<DocLocalization Locale="en" Name="Bath Type" />
+		<DocLocalization Locale="ja-JP" Name="バスタイプ">
 			<Documentation>列挙するプロパティは、プロパティセット内で指定することができるバスの種類の定義：
 
 家庭用：全身を簡単に浸漬することができる一度に1人の人間が入るバス。
@@ -22,8 +22,6 @@
 渦バス：ポンプによる水の循環や、水や空気の誘引により水を攪拌する統合された装置としてのバス。</Documentation>
 		</DocLocalization>
 	</Localization>
-	<Enumeration>
-		<DocPropertyEnumeration xsi:nil="true" href="PEnum_BathType" />
-	</Enumeration>
+	<Enumeration xsi:type="DocPropertyEnumeration" xsi:nil="true" href="PEnum_BathType" />
 </DocProperty>
 

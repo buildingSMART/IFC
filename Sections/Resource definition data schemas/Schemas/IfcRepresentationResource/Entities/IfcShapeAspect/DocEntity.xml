@@ -1,71 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcShapeAspect" Name="IfcShapeAspect" UniqueId="d0b09671-0848-4353-9710-4312d56ffea7" DiagramNumber="2" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcShapeAspect" UniqueId="d0b09671-0848-4353-9710-4312d56ffea7" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Form - Aspekt" Locale="de" />
-		<DocLocalization Name="Shape Aspect" Locale="en" />
-		<DocLocalization Name="Aspect de forme" Locale="fr" />
+		<DocLocalization Locale="de" Name="Form - Aspekt" />
+		<DocLocalization Locale="en" Name="Shape Aspect" />
+		<DocLocalization Locale="fr" Name="Aspect de forme" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="2222.7051" Y="1855.8059" Width="307.33333" Height="250.79698" />
 	<Attributes>
-		<DocAttribute Name="ShapeRepresentations" UniqueId="db755f10-d8c8-4854-b571-b705ca239039" DefinedType="IfcShapeModel" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="ShapeRepresentations" UniqueId="db755f10-d8c8-4854-b571-b705ca239039" DefinedType="IfcShapeModel" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>List of ~~shape~~ representations. Each member defines a valid representation of a particular type within a particular representation context as being an aspect (or part) of a product definition.
 { .change-ifc2x3}
 &gt; IFC2x3 CHANGE&amp;nbsp; The data type has been changed from _IfcShapeRepresentation_ to _IfcShapeModel_ with upward compatibility</Documentation>
-			<DiagramLine>
-				<DocPoint X="2530.0384" Y="2058.0795" />
-				<DocPoint X="3049.63729" Y="2058.0795" />
-				<DocPoint X="3049.63729" Y="1248.24669" />
-				<DocPoint X="2708.33329" Y="1248.24669" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2528.1582866" Y="2052.2729731" Width="337" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Name" UniqueId="112f0471-a832-43b6-afd9-1fea94b60438" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Name" UniqueId="112f0471-a832-43b6-afd9-1fea94b60438" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>The word or group of words by which the shape aspect is known. It is a tag to indicate the particular semantic of a component within the product definition shape, used to provide meaning. Example: use the tag &quot;Glazing&quot; to define which component of a window shape defines the glazing area.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2222.7051" Y="1895.3347" />
-				<DocPoint X="1940.73643" Y="1895.3347" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2157.052699" Y="1882.522184" Width="73" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Description" UniqueId="efe2ecf9-35ff-4806-aad2-4ed933ead852" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Description" UniqueId="efe2ecf9-35ff-4806-aad2-4ed933ead852" DefinedType="IfcText" AttributeFlags="1">
 			<Documentation>The word or group of words that characterize the shape aspect. It can be used to add additional meaning to the name of the aspect.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2222.7051" Y="1981.2044" />
-				<DocPoint X="1940.7204" Y="1981.2044" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2186.830055" Y="1968.391884" Width="130" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ProductDefinitional" UniqueId="05efefab-4927-4846-a3f1-e28bff9478de" DefinedType="IfcLogical" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ProductDefinitional" UniqueId="05efefab-4927-4846-a3f1-e28bff9478de" DefinedType="IfcLogical">
 			<Documentation>An indication that the shape aspect is on the physical boundary of the product definition shape. If the value of this attribute is TRUE, it shall be asserted that the shape aspect being identified is on such a boundary. If the value is FALSE, it shall be asserted that the shape aspect being identified is not on such a boundary. If the value is UNKNOWN, it shall be asserted that it is not known whether or not the shape aspect being identified is on such a boundary. 
 ---
 EXAMPLE: Would be FALSE for a center line, identified as shape aspect; would be TRUE for a cantilever.
 ---</Documentation>
-			<DiagramLine>
-				<DocPoint X="2222.7051" Y="2080.95623344792" />
-				<DocPoint X="2222.7051" Y="2080.95623344792" />
-				<DocPoint X="1970.13851928711" Y="2080.95623344792" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2222.7051" Y="2060.95623344792" Width="214" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="PartOfProductDefinitionShape" UniqueId="26d2bffa-08ab-4f51-8c1b-5240f92fc434" DefinedType="IfcProductRepresentationSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="hidden">
+		<DocAttribute Name="PartOfProductDefinitionShape" UniqueId="26d2bffa-08ab-4f51-8c1b-5240f92fc434" DefinedType="IfcProductRepresentationSelect" AttributeFlags="1" XsdFormat="hidden">
 			<Documentation>Reference to the _IfcProductDefinitionShape_ or the _IfcRepresentationMap_ of which this shape is an aspect.
 { .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; Data type modified to be _IfcProductRepresentationSelect_ allowing the assignment also to _IfcRepresentationMap_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2443.10034179688" Y="2106.60288" />
-				<DocPoint X="2443.10034179688" Y="2106.60288" />
-				<DocPoint X="2443.10034179688" Y="2199.18375651042" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2443.10034179688" Y="2126.60288" Width="338" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="HasExternalReferences" UniqueId="85686d70-e65d-4c7d-b5ff-80615d570e42" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="?" Inverse="RelatedResourceObjects">
+		<DocAttribute Name="HasExternalReferences" UniqueId="85686d70-e65d-4c7d-b5ff-80615d570e42" DefinedType="IfcExternalReferenceRelationship" AggregationType="3" AggregationLower="0" AggregationUpper="?" Inverse="RelatedResourceObjects">
 			<Documentation>External references (e.g. classification) associated with the shape aspect.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2222.7051" Y="2106.60288" />
-				<DocPoint X="2222.7051" Y="2222.13924153646" />
-				<DocPoint X="2030.03853352865" Y="2222.13924153646" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2222.7051" Y="2126.60288" Width="400" Height="50" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

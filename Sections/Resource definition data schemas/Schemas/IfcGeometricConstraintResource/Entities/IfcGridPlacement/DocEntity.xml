@@ -1,29 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGridPlacement" UniqueId="f2e1a6b7-3d7a-4c60-a04a-924b62253b52" DiagramNumber="1" BaseDefinition="IfcObjectPlacement" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGridPlacement" UniqueId="f2e1a6b7-3d7a-4c60-a04a-924b62253b52" BaseDefinition="IfcObjectPlacement" EntityFlags="101">
 	<Localization>
-		<DocLocalization Name="Rasterplatzierung" Locale="de" />
-		<DocLocalization Name="Grid Placement" Locale="en" />
-		<DocLocalization Name="Positionnement de grille" Locale="fr" />
+		<DocLocalization Locale="de" Name="Rasterplatzierung" />
+		<DocLocalization Locale="en" Name="Grid Placement" />
+		<DocLocalization Locale="fr" Name="Positionnement de grille" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="231.4225" Y="673.23833" Width="460.63333" Height="100" />
 	<Attributes>
-		<DocAttribute Name="PlacementLocation" UniqueId="254677ef-164b-42be-9245-68fdbc6f3d44" DefinedType="IfcVirtualGridIntersection" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="PlacementLocation" UniqueId="254677ef-164b-42be-9245-68fdbc6f3d44" DefinedType="IfcVirtualGridIntersection" XsdFormat="attribute">
 			<Documentation>Placement of the object coordinate system defined by the intersection of two grid axes.</Documentation>
-			<DiagramLine>
-				<DocPoint X="295.73917" Y="773.23833" />
-				<DocPoint X="295.73917" Y="1264.02163" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="418.40584" Y="706.24668" Width="217" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="PlacementRefDirection" UniqueId="101b6fcb-9df5-4945-8dfe-9cc885457815" DefinedType="IfcGridPlacementDirectionSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PlacementRefDirection" UniqueId="101b6fcb-9df5-4945-8dfe-9cc885457815" DefinedType="IfcGridPlacementDirectionSelect" AttributeFlags="1">
 			<Documentation>Reference to either an explicit direction, or a second grid axis intersection, which defines the orientation of the grid placement.
 { .change-ifc4}
 &gt; IFC4 CHANGE The select of an explict direction has been added.</Documentation>
-			<DiagramLine>
-				<DocPoint X="461.73917" Y="773.23833" />
-				<DocPoint X="461.73917" Y="1002.94933" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="608.93917" Y="828.360497" Width="259" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

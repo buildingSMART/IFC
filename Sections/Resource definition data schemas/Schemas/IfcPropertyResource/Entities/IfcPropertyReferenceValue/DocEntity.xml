@@ -1,28 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPropertyReferenceValue" Name="IfcPropertyReferenceValue" UniqueId="7c1a56a5-26cf-4e5b-932f-55d94501a267" DiagramNumber="3" BaseDefinition="IfcSimpleProperty" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPropertyReferenceValue" UniqueId="7c1a56a5-26cf-4e5b-932f-55d94501a267" BaseDefinition="IfcSimpleProperty" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Merkmal mit Bezugswert" Locale="de" />
-		<DocLocalization Name="Property Reference Value" Locale="en" />
+		<DocLocalization Locale="de" Name="Merkmal mit Bezugswert" />
+		<DocLocalization Locale="en" Name="Property Reference Value" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="3330.6999" Y="199.79993" Width="459.56667" Height="206.66667" />
 	<Attributes>
-		<DocAttribute Name="UsageName" UniqueId="3f4121ae-3567-4718-8910-fd4fd7fc9822" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="UsageName" UniqueId="3f4121ae-3567-4718-8910-fd4fd7fc9822" DefinedType="IfcText" AttributeFlags="1">
 			<Documentation>Description of the use of the referenced value within the property. It is a descriptive text that may hold an expression or other additional information.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3790.2666" Y="303.13326" />
-				<DocPoint X="4351.59993" Y="303.13326" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3696.933267" Y="295.13326" Width="145" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="PropertyReference" UniqueId="adf61d9f-3105-4adb-bf7d-b567adaae2f6" DefinedType="IfcObjectReferenceSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PropertyReference" UniqueId="adf61d9f-3105-4adb-bf7d-b567adaae2f6" DefinedType="IfcObjectReferenceSelect" AttributeFlags="1">
 			<Documentation>Reference to another property entity through one of the select types in the _IfcObjectReferenceSelect_.
 { .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute has been made optional with upward compatibility for file based exchange.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3403.15" Y="406.4666" />
-				<DocPoint X="3403.15" Y="559.56657" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3530.47504" Y="383.332493" Width="215" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

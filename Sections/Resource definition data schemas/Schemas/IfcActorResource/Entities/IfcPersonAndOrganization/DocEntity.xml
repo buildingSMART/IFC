@@ -1,37 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPersonAndOrganization" Name="IfcPersonAndOrganization" UniqueId="52b0207c-cc6a-42c8-a632-c3d63a70b2a5" DiagramNumber="1" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPersonAndOrganization" Name="IfcPersonAndOrganization" UniqueId="52b0207c-cc6a-42c8-a632-c3d63a70b2a5" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Person und Organisation" Locale="de" />
-		<DocLocalization Name="Person And Organization" Locale="en" />
-		<DocLocalization Name="Personne agissant au nom d&apos;une organisation" Locale="fr" />
+		<DocLocalization Locale="de" Name="Person und Organisation" />
+		<DocLocalization Locale="en" Name="Person And Organization" />
+		<DocLocalization Locale="fr" Name="Personne agissant au nom d&apos;une organisation" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="98.046712" Y="439.37932" Width="235.42279" Height="204.9559" />
 	<Attributes>
-		<DocAttribute Name="ThePerson" UniqueId="02df37f6-0641-446d-a277-937e200b8a23" DefinedType="IfcPerson" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="ThePerson" UniqueId="02df37f6-0641-446d-a277-937e200b8a23" DefinedType="IfcPerson" XsdFormat="attribute">
 			<Documentation>The person who is related to the organization.</Documentation>
-			<DiagramLine>
-				<DocPoint X="333.4695" Y="545.44434" />
-				<DocPoint X="695.04285" Y="545.44434" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="339.8789384" Y="539.6104488" Width="128" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="TheOrganization" UniqueId="2d901b29-feea-479c-95e0-a3a68bbb5975" DefinedType="IfcOrganization" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="TheOrganization" UniqueId="2d901b29-feea-479c-95e0-a3a68bbb5975" DefinedType="IfcOrganization" XsdFormat="attribute">
 			<Documentation>The organization to which the person is related.</Documentation>
-			<DiagramLine>
-				<DocPoint X="195.85702" Y="644.33522" />
-				<DocPoint X="195.85702" Y="1513.03504" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="312.39219" Y="514.40107" Width="190" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Roles" UniqueId="56c46a00-0a80-42b4-977c-40d83aa30982" DefinedType="IfcActorRole" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="Roles" UniqueId="56c46a00-0a80-42b4-977c-40d83aa30982" DefinedType="IfcActorRole" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Roles played by the person within the context of an organization.  These may differ from the roles in _ThePerson.Roles_ which may be asserted without organizational context.</Documentation>
-			<DiagramLine>
-				<DocPoint X="286.98023" Y="644.33522" />
-				<DocPoint X="286.98023" Y="831.07933" />
-				<DocPoint X="638.10458" Y="831.07933" />
-				<DocPoint X="638.10458" Y="975.41242" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="297.23766" Y="820.651581" Width="147" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

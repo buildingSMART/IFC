@@ -1,52 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcObjective" UniqueId="2a23c0f9-203b-4e38-9564-91c5cb3f651d" DiagramNumber="1" BaseDefinition="IfcConstraint" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcObjective" UniqueId="2a23c0f9-203b-4e38-9564-91c5cb3f651d" BaseDefinition="IfcConstraint" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Ziel (der Einschränkung)" Locale="de" />
-		<DocLocalization Name="Objective" Locale="en" />
-		<DocLocalization Name="Objectif" Locale="fr">
+		<DocLocalization Locale="de" Name="Ziel (der Einschränkung)" />
+		<DocLocalization Locale="en" Name="Objective" />
+		<DocLocalization Locale="fr" Name="Objectif">
 			<Documentation>Capture l&apos;information quantitative associée à une contrainte de type objectif.</Documentation>
 		</DocLocalization>
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="271.05383" Y="1291.9723" Width="243.7856" Height="244.87881" />
 	<Attributes>
-		<DocAttribute Name="BenchmarkValues" UniqueId="35571b4c-6b8b-42d5-b196-db21e320b274" DefinedType="IfcConstraint" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="BenchmarkValues" UniqueId="35571b4c-6b8b-42d5-b196-db21e320b274" DefinedType="IfcConstraint" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>A list of nested constraints.
 
 { .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; Modified to be a LIST of nested constraints, which replaces the former _IfcConstraintAggregationRelationship_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="467.92827" Y="1291.9723" />
-				<DocPoint X="467.92827" Y="1133.8579" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="636.26266" Y="1287.0397719" Width="283" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LogicalAggregator" UniqueId="73fa8b72-3bf0-4286-8adf-427fb2e3b88c" DefinedType="IfcLogicalOperatorEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LogicalAggregator" UniqueId="73fa8b72-3bf0-4286-8adf-427fb2e3b88c" DefinedType="IfcLogicalOperatorEnum" AttributeFlags="1">
 			<Documentation>Enumeration that identifies the logical type of aggregation for the benchmark metrics.
 
 { .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; This attribute replaces replaces the former _ResultValues_ attribute and indicates the aggregation behavior formerly defined at _IfcConstraintAggregationRelationship_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="514.83943" Y="1328.7174" />
-				<DocPoint X="817.3744" Y="1328.7174" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="503.338937" Y="1320.8513964" Width="208" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ObjectiveQualifier" UniqueId="7740fe16-eaa1-449e-8ee1-27b4ff3b5a60" DefinedType="IfcObjectiveEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ObjectiveQualifier" UniqueId="7740fe16-eaa1-449e-8ee1-27b4ff3b5a60" DefinedType="IfcObjectiveEnum">
 			<Documentation>Enumeration that qualifies the type of objective constraint.</Documentation>
-			<DiagramLine>
-				<DocPoint X="514.83943" Y="1398.8947" />
-				<DocPoint X="817.46193" Y="1398.8947" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="505.5124163" Y="1392.1729235" Width="200" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="UserDefinedQualifier" UniqueId="7e2e3917-2628-4d81-9f54-990e46d54c40" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="UserDefinedQualifier" UniqueId="7e2e3917-2628-4d81-9f54-990e46d54c40" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>A user defined value that qualifies the type of objective constraint when ObjectiveQualifier attribute of type _IfcObjectiveEnum_ has value USERDEFINED.</Documentation>
-			<DiagramLine>
-				<DocPoint X="514.83943" Y="1490.5385" />
-				<DocPoint X="1362.17172" Y="1490.5385" />
-				<DocPoint X="1362.17172" Y="1250.58407" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="676.31744" Y="1486.0311593" Width="236" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

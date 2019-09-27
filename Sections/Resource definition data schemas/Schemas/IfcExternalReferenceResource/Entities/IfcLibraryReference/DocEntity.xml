@@ -1,50 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcLibraryReference" UniqueId="739c22f8-9791-4f05-b25d-70ddc3ed443f" DiagramNumber="1" BaseDefinition="IfcExternalReference" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcLibraryReference" UniqueId="739c22f8-9791-4f05-b25d-70ddc3ed443f" BaseDefinition="IfcExternalReference" EntityFlags="101">
 	<Localization>
-		<DocLocalization Name="Bibliothekseintrag" Locale="de" />
-		<DocLocalization Name="Library Reference" Locale="en" />
-		<DocLocalization Name="Référence de bibliothèque" Locale="fr" />
+		<DocLocalization Locale="de" Name="Bibliothekseintrag" />
+		<DocLocalization Locale="en" Name="Library Reference" />
+		<DocLocalization Locale="fr" Name="Référence de bibliothèque" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="91.77292" Y="1391.9" Width="374" Height="100" />
 	<Attributes>
-		<DocAttribute Name="Description" UniqueId="c36f2056-db4c-4e1e-b01c-a5a7d5794c09" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Description" UniqueId="c36f2056-db4c-4e1e-b01c-a5a7d5794c09" DefinedType="IfcText" AttributeFlags="1">
 			<Documentation>Additional description provided for the library reference.
 { .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute added at the end of the attribute list.</Documentation>
-			<DiagramLine>
-				<DocPoint X="345.88149" Y="1391.9" />
-				<DocPoint X="345.88149" Y="1145.9" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="433.88149" Y="1445.566667" Width="130" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Language" UniqueId="48d70f10-19be-4364-a36d-d32efe9e72de" DefinedType="IfcLanguageId" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Language" UniqueId="48d70f10-19be-4364-a36d-d32efe9e72de" DefinedType="IfcLanguageId" AttributeFlags="1">
 			<Documentation>The language in which a library reference is expressed.
 { .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute added at the end of the attribute list.</Documentation>
-			<DiagramLine>
-				<DocPoint X="113.13482" Y="1491.9" />
-				<DocPoint X="113.13482" Y="1597.43331" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="183.801486" Y="1503.233334" Width="119" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ReferencedLibrary" UniqueId="0ddfeb57-9edd-46aa-8369-dff55be36456" DefinedType="IfcLibraryInformation" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="ReferencedLibrary" UniqueId="0ddfeb57-9edd-46aa-8369-dff55be36456" DefinedType="IfcLibraryInformation" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>The library information that is being referenced.</Documentation>
-			<DiagramLine>
-				<DocPoint X="358.94735" Y="1491.9" />
-				<DocPoint X="358.94735" Y="1917.23331" />
-				<DocPoint X="530.94789" Y="1917.23331" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="484.28068" Y="1557.23332" Width="211" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LibraryRefForObjects" UniqueId="369a8e6b-21f9-42f6-82fc-0feec6c5a0fe" DefinedType="IfcRelAssociatesLibrary" AttributeFlags="32" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatingLibrary">
+		<DocAttribute Name="LibraryRefForObjects" UniqueId="369a8e6b-21f9-42f6-82fc-0feec6c5a0fe" DefinedType="IfcRelAssociatesLibrary" AttributeFlags="32" AggregationType="3" AggregationLower="0" AggregationUpper="0" Inverse="RelatingLibrary">
 			<Documentation>The library reference with which objects are associated.
 { .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New inverse attribute.</Documentation>
-			<DiagramLine>
-				<DocPoint X="112.8453" Y="1391.9" />
-				<DocPoint X="112.8453" Y="658.5667" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="326.76196" Y="1477.066669" Width="384" Height="70" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

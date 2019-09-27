@@ -1,27 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcResourceConstraintRelationship" Name="IfcResourceConstraintRelationship" UniqueId="a14f1e2c-6b41-4740-8797-3a51d8f35cc5" DiagramNumber="2" BaseDefinition="IfcResourceLevelRelationship" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcResourceConstraintRelationship" UniqueId="a14f1e2c-6b41-4740-8797-3a51d8f35cc5" BaseDefinition="IfcResourceLevelRelationship" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="allgemeine Relation - Zuweisung von Einschränkungen" Locale="de" />
-		<DocLocalization Name="Resource Constraint Relationship" Locale="en" />
+		<DocLocalization Locale="de" Name="allgemeine Relation - Zuweisung von Einschränkungen" />
+		<DocLocalization Locale="en" Name="Resource Constraint Relationship" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1786.9685" Y="1421.8135" Width="559.33333" Height="190.14682" />
 	<Attributes>
-		<DocAttribute Name="RelatingConstraint" UniqueId="e196ff69-9601-4f75-a1bf-5c093b548895" DefinedType="IfcConstraint" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="RelatingConstraint" UniqueId="e196ff69-9601-4f75-a1bf-5c093b548895" DefinedType="IfcConstraint" XsdFormat="attribute">
 			<Documentation>The constraint that is to be related.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2108.489" Y="1611.9604" />
-				<DocPoint X="2108.489" Y="1720.43917" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2224.39205" Y="1638.663081" Width="211" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RelatedResourceObjects" UniqueId="8f528729-9ae0-43e9-9cdc-6f2923e574f4" DefinedType="IfcResourceObjectSelect" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="RelatedResourceObjects" UniqueId="8f528729-9ae0-43e9-9cdc-6f2923e574f4" DefinedType="IfcResourceObjectSelect" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The properties to which a constraint is to be related.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2346.3019" Y="1594.1556" />
-				<DocPoint X="2776.59264" Y="1594.1556" />
-				<DocPoint X="2776.59264" Y="1715.15146" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2371.173095" Y="1577.706783" Width="361" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

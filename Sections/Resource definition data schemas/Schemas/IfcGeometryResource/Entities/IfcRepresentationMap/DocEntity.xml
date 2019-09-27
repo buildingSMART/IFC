@@ -1,47 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRepresentationMap" Name="IfcRepresentationMap" UniqueId="3968ca44-8f3e-43f2-ab19-855d7709487b" DiagramNumber="1" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRepresentationMap" Name="IfcRepresentationMap" UniqueId="3968ca44-8f3e-43f2-ab19-855d7709487b" EntityFlags="101">
 	<Localization>
-		<DocLocalization Name="Ausgangsform für Transformation" Locale="de" />
-		<DocLocalization Name="Representation Map" Locale="en" />
+		<DocLocalization Locale="de" Name="Ausgangsform für Transformation" />
+		<DocLocalization Locale="en" Name="Representation Map" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="852.0208" Y="1387.4584" Width="359.93333" Height="100" />
 	<Attributes>
-		<DocAttribute Name="MappingOrigin" UniqueId="ccc26f1c-a4ae-4b02-8980-7af9a9680d54" DefinedType="IfcAxis2Placement" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="MappingOrigin" UniqueId="ccc26f1c-a4ae-4b02-8980-7af9a9680d54" DefinedType="IfcAxis2Placement">
 			<Documentation>An axis2 placement that defines the position about which the mapped
 representation is mapped.</Documentation>
-			<DiagramLine>
-				<DocPoint X="852.0208" Y="1437.4584" />
-				<DocPoint X="373.6854" Y="1437.4584" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="925.354133" Y="1430.7917333" Width="167" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="MappedRepresentation" UniqueId="66c50edd-89c8-4bf7-9312-05facd806895" DefinedType="IfcRepresentation" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="MappedRepresentation" UniqueId="66c50edd-89c8-4bf7-9312-05facd806895" DefinedType="IfcRepresentation" XsdFormat="attribute">
 			<Documentation>A representation that is mapped to at least one mapped item.</Documentation>
-			<DiagramLine>
-				<DocPoint X="906.65417" Y="1487.4584" />
-				<DocPoint X="906.65417" Y="1634.775" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1069.13542" Y="1497.8334" Width="266" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="HasShapeAspects" UniqueId="706e409b-b397-4d89-af8c-f070939b0668" DefinedType="IfcShapeAspect" AttributeFlags="32" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="PartOfProductDefinitionShape">
+		<DocAttribute Name="HasShapeAspects" UniqueId="706e409b-b397-4d89-af8c-f070939b0668" DefinedType="IfcShapeAspect" AttributeFlags="32" AggregationType="3" AggregationLower="0" AggregationUpper="0" Inverse="PartOfProductDefinitionShape">
 			<Documentation>Reference to the shape aspect that represents part of the shape or its feature distinctively.
 { .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; Inverse attribute added.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1211.9541" Y="1433.0459" />
-				<DocPoint X="1496.45334" Y="1433.0459" />
-				<DocPoint X="1496.45334" Y="2085.13335" />
-				<DocPoint X="1351.45334" Y="2085.13335" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1262.620767" Y="1403.712567" Width="368" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="MapUsage" UniqueId="10781165-90b6-4b8f-bb3e-340053c55543" DefinedType="IfcMappedItem" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="MappingSource">
-			<DiagramLine>
-				<DocPoint X="906.65417" Y="1180.625" />
-				<DocPoint X="906.65417" Y="1387.45836" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1069.1625" Y="1200.291667" Width="270" Height="35" />
-		</DocAttribute>
+		<DocAttribute Name="MapUsage" UniqueId="10781165-90b6-4b8f-bb3e-340053c55543" DefinedType="IfcMappedItem" AttributeFlags="8" AggregationType="3" Inverse="MappingSource" />
 	</Attributes>
 	<WhereRules>
 		<DocWhereRule Name="ApplicableMappedRepr" UniqueId="6d398bff-0697-4172-9d8a-353b2f004636">

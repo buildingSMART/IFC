@@ -1,24 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStructuralAnalysisModel" Name="IfcStructuralAnalysisModel" UniqueId="2e087fc5-d46f-48f2-82c1-7c7b5162f4c3" DiagramNumber="1" BaseDefinition="IfcSystem" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStructuralAnalysisModel" Name="IfcStructuralAnalysisModel" UniqueId="2e087fc5-d46f-48f2-82c1-7c7b5162f4c3" BaseDefinition="IfcSystem" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Statisches Modell" Locale="de">
+		<DocLocalization Locale="de" Name="Statisches Modell">
 			<Documentation>Idealisierung zur Berechnung der Auflagerreaktionen und des Kräfteverlaufs</Documentation>
 		</DocLocalization>
-		<DocLocalization Name="Structural Analysis Model" Locale="en" />
-		<DocLocalization Name="Modèle d&apos;analyse structurelle" Locale="fr" />
+		<DocLocalization Locale="en" Name="Structural Analysis Model" />
+		<DocLocalization Locale="fr" Name="Modèle d&apos;analyse structurelle" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="127.75781" Y="223.765055338542" Width="338.40288" Height="408.570814661458" />
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="aaf6e058-ebfd-4b13-9c28-9e2226a7cd29" DefinedType="IfcAnalysisModelTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="aaf6e058-ebfd-4b13-9c28-9e2226a7cd29" DefinedType="IfcAnalysisModelTypeEnum">
 			<Documentation>Defines the type of the structural analysis model.</Documentation>
-			<DiagramLine>
-				<DocPoint X="466.16069" Y="260.565048217773" />
-				<DocPoint X="466.16069" Y="260.565048217773" />
-				<DocPoint X="778.195149739583" Y="260.565048217773" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="466.16069" Y="240.565048217773" Width="182" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="OrientationOf2DPlane" UniqueId="3d198530-7da9-431b-a6f6-2a133dfe8481" DefinedType="IfcAxis2Placement3D" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="OrientationOf2DPlane" UniqueId="3d198530-7da9-431b-a6f6-2a133dfe8481" DefinedType="IfcAxis2Placement3D" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>If the selected model type (_PredefinedType_) describes a 2D system, the orientation defines
 the analysis plane (P[1], P[2]) and the normal to the analysis plane (P[3]).  This is needed because
 structural items and activities are always defined in three-dimensional space even if they are
@@ -27,43 +20,19 @@ meant to be analysed in a two-dimensional manner.
 * In case of predefined type IN_PLANE_LOADING_2D, the analysis is to be performed within the projection into the P[1], P[2] plane.
 * In case of predefined type OUT_PLANE_LOADING_2D, only the P[3] component of loads and their effects is meant to be analyzed. This is used for beam grids and for typical slab analyses.
 * In case of predefined type LOADING_3D, _OrientationOf2DPlane_ shall be omitted.</Documentation>
-			<DiagramLine>
-				<DocPoint X="466.16069" Y="336.77287419637" />
-				<DocPoint X="466.16069" Y="336.77287419637" />
-				<DocPoint X="767.557861328125" Y="336.77287419637" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="466.16069" Y="316.77287419637" Width="249" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LoadedBy" UniqueId="db84f7ed-e47b-43d7-a93c-f42d6aa1eda4" DefinedType="IfcStructuralLoadGroup" AttributeFlags="1" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="LoadedBy" UniqueId="db84f7ed-e47b-43d7-a93c-f42d6aa1eda4" DefinedType="IfcStructuralLoadGroup" AttributeFlags="1" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>References to all load groups to be analyzed.</Documentation>
-			<DiagramLine>
-				<DocPoint X="243.921821594238" Y="632.33587" />
-				<DocPoint X="243.921821594238" Y="632.33587" />
-				<DocPoint X="243.921821594238" Y="1050.12882486979" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="243.921821594238" Y="1030.12882486979" Width="198" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="HasResults" UniqueId="a3f409db-16db-429e-8788-f03d45464f8a" DefinedType="IfcStructuralResultGroup" AttributeFlags="1" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="HasResults" UniqueId="a3f409db-16db-429e-8788-f03d45464f8a" DefinedType="IfcStructuralResultGroup" AttributeFlags="1" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>References to all result groups available for this structural analysis model.</Documentation>
-			<DiagramLine>
-				<DocPoint X="466.16069" Y="632.33587" />
-				<DocPoint X="466.16069" Y="1713.92230988932" />
-				<DocPoint X="1140.65502929688" Y="1713.92230988932" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="466.16069" Y="1693.92230988932" Width="212" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="SharedPlacement" UniqueId="49d1b310-6cdc-4f50-8efa-70ff55bba65e" DefinedType="IfcObjectPlacement" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="SharedPlacement" UniqueId="49d1b310-6cdc-4f50-8efa-70ff55bba65e" DefinedType="IfcObjectPlacement" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Object placement which shall be common to all items and activities which are grouped into this instance of _IfcStructuralAnalysisModel_.  This placement establishes a coordinate system which is referred to as &apos;global coordinate system&apos; in use definitions of various classes of structural items and activities.
 
 &gt; NOTE&amp;nbsp; Most commonly, but not necessarily, the _SharedPlacement_ is an _IfcLocalPlacement_ whose z axis is parallel with the z axis of the _IfcProject_&apos;s world coordinate system and directed like the WCS z axis (i.e. pointing &quot;upwards&quot;) or directed against the WCS z axis (i.e. points &quot;downwards&quot;).
 
 &gt; NOTE&amp;nbsp; Per informal proposition, this attribute is **not optional** as soon as at least one _IfcStructuralItem_ is grouped into the instance of _IfcStructuralAnalysisModel_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="466.16069" Y="514.929907480876" />
-				<DocPoint X="466.16069" Y="514.929907480876" />
-				<DocPoint X="674.155476888021" Y="514.929907480876" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="466.16069" Y="494.929907480876" Width="203" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

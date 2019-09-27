@@ -1,56 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSite" Name="IfcSite" UniqueId="1208b73f-6d28-45b8-bda4-7dc5d67a886b" DiagramNumber="6" BaseDefinition="IfcSpatialStructureElement" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSite" Name="IfcSite" UniqueId="1208b73f-6d28-45b8-bda4-7dc5d67a886b" BaseDefinition="IfcSpatialStructureElement" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Grundstück" Locale="de" />
-		<DocLocalization Name="Site" Locale="en" />
-		<DocLocalization Name="Site" Locale="fr" />
+		<DocLocalization Locale="de" Name="Grundstück" />
+		<DocLocalization Locale="en" Name="Site" />
+		<DocLocalization Locale="fr" Name="Site" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="8211.1201" Y="256.77598" Width="303.3" Height="402.49997" />
 	<Attributes>
-		<DocAttribute Name="RefLatitude" UniqueId="35f5020f-d203-4c6b-9106-60f283ec94c7" DefinedType="IfcCompoundPlaneAngleMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RefLatitude" UniqueId="35f5020f-d203-4c6b-9106-60f283ec94c7" DefinedType="IfcCompoundPlaneAngleMeasure" AttributeFlags="1">
 			<Documentation>World Latitude at reference point (most likely defined in legal description). Defined as integer values for degrees, minutes, seconds, and, optionally, millionths of seconds with respect to the world geodetic system WGS84.
 &gt; NOTE&amp;nbsp; Latitudes are measured relative to the geodetic equator, north of the equator by positive values - from 0 till +90, south of the equator by negative values - from 0 till -90.</Documentation>
-			<DiagramLine>
-				<DocPoint X="8514.4201" Y="398.13437" />
-				<DocPoint X="9033.4534" Y="398.13437" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="8517.30343" Y="385.676037" Width="135" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RefLongitude" UniqueId="d0f7ccd1-9a49-4d0d-a1b9-73c9edd9b69b" DefinedType="IfcCompoundPlaneAngleMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RefLongitude" UniqueId="d0f7ccd1-9a49-4d0d-a1b9-73c9edd9b69b" DefinedType="IfcCompoundPlaneAngleMeasure" AttributeFlags="1">
 			<Documentation>World Longitude at reference point (most likely defined in legal description). Defined as integer values for degrees, minutes, seconds, and, optionally, millionths of seconds with respect to the world geodetic system WGS84.
 &gt; NOTE&amp;nbsp; Longitudes are measured relative to the geodetic zero meridian, nominally the same as the Greenwich prime meridian: longitudes west of the zero meridian have negative values - from 0 till -180, longitudes east of the zero meridian have positive values - from 0 till -180.
 
 &gt; EXAMPLE&amp;nbsp; Chicago Harbor Light has according to WGS84 a longitude -87.35.40 (or 87.35.40W) and a latitude 41.53.30 (or 41.53.30N).</Documentation>
-			<DiagramLine>
-				<DocPoint X="8514.4201" Y="505.42628" />
-				<DocPoint X="9033.4534" Y="505.42628" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="8522.7034337" Y="496.30128" Width="156" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RefElevation" UniqueId="117894b2-b884-433b-a0cd-6cbd59685a12" DefinedType="IfcLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RefElevation" UniqueId="117894b2-b884-433b-a0cd-6cbd59685a12" DefinedType="IfcLengthMeasure" AttributeFlags="1">
 			<Documentation>Datum elevation relative to sea level.</Documentation>
-			<DiagramLine>
-				<DocPoint X="8514.4201" Y="297.64788" />
-				<DocPoint X="9033.4534" Y="297.64788" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="8520.8201163" Y="288.9951303" Width="147" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LandTitleNumber" UniqueId="1adcd159-01ea-40ba-9dd2-0e9ed2cfc41a" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LandTitleNumber" UniqueId="1adcd159-01ea-40ba-9dd2-0e9ed2cfc41a" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>The land title number (designation of the site within a regional system).</Documentation>
-			<DiagramLine>
-				<DocPoint X="8514.4201" Y="624.69268" />
-				<DocPoint X="9033.4534" Y="624.69268" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="8527.753433" Y="608.026013" Width="197" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="SiteAddress" UniqueId="97ec96dd-f92e-43e8-9e7d-228cfdd0f137" DefinedType="IfcPostalAddress" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="SiteAddress" UniqueId="97ec96dd-f92e-43e8-9e7d-228cfdd0f137" DefinedType="IfcPostalAddress" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Address given to the site for postal purposes.</Documentation>
-			<DiagramLine>
-				<DocPoint X="8428.3955" Y="659.27598" />
-				<DocPoint X="8428.3955" Y="731.030214" />
-				<DocPoint X="9033.53747" Y="731.030214" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="8491.407813" Y="715.646866" Width="139" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

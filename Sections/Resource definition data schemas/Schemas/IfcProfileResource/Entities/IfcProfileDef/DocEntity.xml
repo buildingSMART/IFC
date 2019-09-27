@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcProfileDef" Name="IfcProfileDef" UniqueId="6721f13a-680a-41f0-b994-52e18d901eb5" DiagramNumber="1" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcProfileDef" Name="IfcProfileDef" UniqueId="6721f13a-680a-41f0-b994-52e18d901eb5" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Profil" Locale="de" />
-		<DocLocalization Name="Profile Def" Locale="en" />
-		<DocLocalization Name="Définition de profil" Locale="fr" />
+		<DocLocalization Locale="de" Name="Profil" />
+		<DocLocalization Locale="en" Name="Profile Def" />
+		<DocLocalization Locale="fr" Name="Définition de profil" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="252.18666" Y="61.000003" Width="316.66667" Height="186.66667" />
 	<Subtypes>
 		<DocSubtype UniqueId="61c52686-7398-4f2f-ba91-f2f9bde56192" DefinedType="IfcParameterizedProfileDef" />
 		<DocSubtype UniqueId="4fa9badc-994e-4f2b-a199-d6ed6ded2543" DefinedType="IfcArbitraryOpenProfileDef" />
@@ -14,87 +13,22 @@
 		<DocSubtype UniqueId="52249217-e2cf-4f7d-af99-3bf036a6c076" DefinedType="IfcDerivedProfileDef" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="ProfileType" UniqueId="c31d0cfe-9eec-49ef-8912-0879d1a77343" DefinedType="IfcProfileTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ProfileType" UniqueId="c31d0cfe-9eec-49ef-8912-0879d1a77343" DefinedType="IfcProfileTypeEnum">
 			<Documentation>Defines the type of geometry into which this profile definition shall be resolved, either a curve or a surface area. In case of curve the profile should be referenced by a swept surface, in case of area the profile should be referenced by a swept area solid.</Documentation>
-			<DiagramLine>
-				<DocPoint X="568.85333" Y="94.7733406943359" />
-				<DocPoint X="568.85333" Y="94.7733406943359" />
-				<DocPoint X="880.092041015625" Y="94.7733406943359" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="568.85333" Y="74.7733406943359" Width="131" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ProfileName" UniqueId="411500e4-ab55-4fe8-bbf9-3a329ea5b1c7" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ProfileName" UniqueId="411500e4-ab55-4fe8-bbf9-3a329ea5b1c7" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>Human-readable name of the profile, for example according to a standard profile table. As noted above, machine-readable standardized profile designations should be provided in _IfcExternalReference.ItemReference_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="568.85333" Y="199.608332316081" />
-				<DocPoint X="568.85333" Y="199.608332316081" />
-				<DocPoint X="880.953674316406" Y="199.608332316081" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="568.85333" Y="179.608332316081" Width="142" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="HasExternalReference" UniqueId="5384e4ff-9e84-45c1-bd5f-b6e037852b2e" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="32" AggregationType="3" AggregationFlag="0" Inverse="RelatedResourceObjects">
+		<DocAttribute Name="HasExternalReference" UniqueId="5384e4ff-9e84-45c1-bd5f-b6e037852b2e" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="32" AggregationType="3" Inverse="RelatedResourceObjects">
 			<Documentation>Reference to external information, e.g. library, classification, or document information, which is associated with the profile.
 { .change-ifc4}
 &gt; IFC4 CHANGE New inverse attribute</Documentation>
-			<DiagramLine>
-				<DocPoint X="410.52" Y="247.66667" />
-				<DocPoint X="410.52" Y="521" />
-				<DocPoint X="880.83334" Y="521" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="407.1866667" Y="552.626667" Width="399" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="HasProperties" UniqueId="68f7e99c-a629-41eb-9442-f3ad71ab2ea7" DefinedType="IfcProfileProperties" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="ProfileDefinition" XsdFormat="element">
+		<DocAttribute Name="HasProperties" UniqueId="68f7e99c-a629-41eb-9442-f3ad71ab2ea7" DefinedType="IfcProfileProperties" AggregationType="3" Inverse="ProfileDefinition" XsdFormat="element">
 			<Documentation>Additional properties of the profile, for example mechanical properties.
 { .change-ifc4}
 &gt; IFC4 CHANGE New inverse attribute</Documentation>
-			<DiagramLine>
-				<DocPoint X="502.18666" Y="247.66667" />
-				<DocPoint X="502.18666" Y="313.91667" />
-				<DocPoint X="1131.18666" Y="313.91667" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="498.0199933" Y="340.750003" Width="402" Height="70" />
 		</DocAttribute>
 	</Attributes>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="297.51012" Y="247.66667" />
-				<DocPoint X="297.5101205" Y="247.66667" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="297.5101205" Y="247.66667" />
-						<DocPoint X="297.5101205" Y="1200.54333" />
-						<DocPoint X="396.66666" Y="1200.54333" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="297.51" Y="796.6306" />
-						<DocPoint X="394.479077" Y="796.6306" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="297.51" Y="692.205" />
-						<DocPoint X="394.466707" Y="692.205" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="297.51" Y="901.1229" />
-						<DocPoint X="394.496937" Y="901.1229" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="297.51" Y="1010.393" />
-						<DocPoint X="394.565037" Y="1010.393" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

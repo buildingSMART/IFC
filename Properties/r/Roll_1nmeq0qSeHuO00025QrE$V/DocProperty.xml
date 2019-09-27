@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocProperty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Roll_1nmeq0qSeHuO00025QrEV" Name="Roll" UniqueId="1nmeq0qSeHuO00025QrE$V" PrimaryDataType="IfcPlaneAngleMeasure">
 	<Localization>
-		<DocLocalization Name="Drehwinkel" Locale="de-DE">
+		<DocLocalization Locale="de-DE" Name="Drehwinkel">
 			<Documentation>Drehwinkel der Stütze relative zur globalen X Ausrichtung (O Grad). Bei nicht-vertikalen Stützen wird die Verdrehung analog zu den Balken (Verkippung gegen die Vertikale) angegeben.
 
 Dieser Parameter wird zusätzlich zur geometrischen Repräsentation bereitgestellt. Im Fall der Inkonsistenz zwischen dem Parameter und der Geometrie hat die geometrische Repräsention Priorität. Dieser Parameter ist für CAD Software write-only.</Documentation>
 		</DocLocalization>
-		<DocLocalization Name="Roll" Locale="en" />
-		<DocLocalization Name="RotationAutourAxeLongitudinal" Locale="fr-FR">
+		<DocLocalization Locale="en" Name="Roll" />
+		<DocLocalization Locale="fr-FR" Name="RotationAutourAxeLongitudinal">
 			<Documentation>Rotation autour de l&apos;axe longitudinal - relativement à l&apos;axe X pour tous les poteaux qui sont verticaux relativement au repère absolu (la direction du profil est celle de l&apos;axe X si la valeur est 0). Pour tous les poteaux non verticaux, la valeur de la propriété est relative à l&apos;axe Z (la direction du profil des poteaux non verticaux est celle de l&apos;axe Z si la valeur est 0). 
 Cette propriété est donnée en complément de la représentation de la forme de l&apos;élément et des paramètres géométriques qui la déterminent. En cas d&apos;incohérence entre ces paramètres géométriques et cette propriété, ce sont les paramètres géométriques qui priment. Les applications qui déterminent la géométrie comme les logiciels de CAO ne doivent pas autoriser la modification de cette propriété. Note : nouvelle propriété de la version IFC4.</Documentation>
 		</DocLocalization>
-		<DocLocalization Name="回転" Locale="ja-JP">
+		<DocLocalization Locale="ja-JP" Name="回転">
 			<Documentation>柱の長軸に対する回転。</Documentation>
 		</DocLocalization>
-		<DocLocalization Name="转角" Locale="zh-CN">
+		<DocLocalization Locale="zh-CN" Name="转角">
 			<Documentation>相对于纵轴的旋转角。对全局坐标系中的垂直柱，该属性为相对于X轴的角度。（若轮廓方向在X轴上，则转角为0。）对全局坐标系中的非垂直柱，该属性为相对于Z轴的角度。（若轮廓方向在Z轴上，则转角为0。）
 该属性所提供的形状信息是对内部形状描述和几何参数的补充。如果几何参数与该属性所提供的形状属性不符，应以几何参数为准。对CAD等几何编辑程序，该属性应为只写类型。
 注：IFC4新添属性</Documentation>

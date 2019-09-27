@@ -1,23 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCurtainWall" Name="IfcCurtainWall" UniqueId="3395e66f-bd77-4cce-a82f-4ccb81430e2c" DiagramNumber="2" BaseDefinition="IfcBuildingElement" EntityFlags="109">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCurtainWall" Name="IfcCurtainWall" UniqueId="3395e66f-bd77-4cce-a82f-4ccb81430e2c" BaseDefinition="IfcBuildingElement" EntityFlags="109">
 	<Localization>
-		<DocLocalization Name="Vorhangfassade" Locale="de" />
-		<DocLocalization Name="Curtain Wall" Locale="en" />
-		<DocLocalization Name="Mur rideau" Locale="fr" />
+		<DocLocalization Locale="de" Name="Vorhangfassade" />
+		<DocLocalization Locale="en" Name="Curtain Wall" />
+		<DocLocalization Locale="fr" Name="Mur rideau" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1865.35" Y="1155.9999" Width="250" Height="100" />
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="3868f9f2-95c6-4770-bb71-6ef7a9f4fced" DefinedType="IfcCurtainWallTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="3868f9f2-95c6-4770-bb71-6ef7a9f4fced" DefinedType="IfcCurtainWallTypeEnum" AttributeFlags="1">
 			<Documentation>Predefined generic type for a curtain wall that is specified in an enumeration. There may be a property set given specificly for the predefined types.
 &gt; NOTE&amp;nbsp; The _PredefinedType_ shall only be used, if no _IfcCurtainWallType_ is assigned, providing its own _IfcCurtainWallType.PredefinedType_.
 
 { .change-ifc4}
 &gt; IFC4 CHANGE The attribute has been added at the end of the entity definition.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2115.35" Y="1205.9999" />
-				<DocPoint X="2501.41667" Y="1205.9999" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2118.0166667" Y="1195.333233" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

@@ -1,55 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelAssociates" Name="IfcRelAssociates" UniqueId="50e72608-2b70-4951-afa7-68d8cf130d15" Status="H" DiagramNumber="5" BaseDefinition="IfcRelationship" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelAssociates" Name="IfcRelAssociates" UniqueId="50e72608-2b70-4951-afa7-68d8cf130d15" Status="H" BaseDefinition="IfcRelationship" EntityFlags="205">
 	<Localization>
-		<DocLocalization Name="Ordnet zu - Relation" Locale="de" />
-		<DocLocalization Name="Rel Associates" Locale="en" />
-		<DocLocalization Name="Association" Locale="fr" />
+		<DocLocalization Locale="de" Name="Ordnet zu - Relation" />
+		<DocLocalization Locale="en" Name="Rel Associates" />
+		<DocLocalization Locale="fr" Name="Association" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="6576.6179" Y="333.1208" Width="454.1" Height="100.66666" />
 	<Subtypes>
 		<DocSubtype UniqueId="7984fb82-a771-4c88-b7bb-2ac50197cf31" DefinedType="IfcRelAssociatesClassification" />
 		<DocSubtype UniqueId="5ec01403-38a5-4f3d-9abc-a962db0d86a5" DefinedType="IfcRelAssociatesDocument" />
 		<DocSubtype UniqueId="aeb7df03-64cc-486d-9b4d-b4ff82b52b91" DefinedType="IfcRelAssociatesLibrary" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="RelatedObjects" UniqueId="22a3ccef-98eb-4699-b8ff-4edd0ca9ab83" DefinedType="IfcDefinitionSelect" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="RelatedObjects" UniqueId="22a3ccef-98eb-4699-b8ff-4edd0ca9ab83" DefinedType="IfcDefinitionSelect" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Set of object or property definitions to which the external references or information is associated. It includes object and type objects, property set templates, property templates and property sets and contexts.
 { .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute datatype has been changed from _IfcRoot_ to _IfcDefinitionSelect_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="7030.7179" Y="383.45413" />
-				<DocPoint X="7586.6179" Y="383.45413" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="6950.7179" Y="372.787463" Width="255" Height="35" />
 		</DocAttribute>
 	</Attributes>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="6805.1679" Y="433.7875" />
-				<DocPoint X="6805.1679" Y="481.83394" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="6805.1212" Y="481.834" />
-						<DocPoint X="6805.1212" Y="540.5471" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="7631.2613" Y="481.834" />
-						<DocPoint X="7631.2613" Y="540.4612" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="7230.7843" Y="481.834" />
-						<DocPoint X="7230.7843" Y="679.9789" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

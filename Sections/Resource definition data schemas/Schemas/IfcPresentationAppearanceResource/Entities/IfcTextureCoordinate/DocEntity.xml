@@ -1,55 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcTextureCoordinate" Name="IfcTextureCoordinate" UniqueId="bcd71dc5-c1c1-46c9-8dcf-2d9155a3edff" DiagramNumber="10" BaseDefinition="IfcPresentationItem" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTextureCoordinate" UniqueId="bcd71dc5-c1c1-46c9-8dcf-2d9155a3edff" BaseDefinition="IfcPresentationItem" EntityFlags="205">
 	<Localization>
-		<DocLocalization Name="Texturkoordinaten" Locale="de" />
-		<DocLocalization Name="Texture Coordinate" Locale="en" />
-		<DocLocalization Name="Coordonnées de texture" Locale="fr" />
+		<DocLocalization Locale="de" Name="Texturkoordinaten" />
+		<DocLocalization Locale="en" Name="Texture Coordinate" />
+		<DocLocalization Locale="fr" Name="Coordonnées de texture" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="5033.0583" Y="2539.65" Width="353.26667" Height="118.66666" />
 	<Subtypes>
 		<DocSubtype UniqueId="39c223c6-78b1-4784-8316-e74c7e9221ab" DefinedType="IfcTextureCoordinateGenerator" />
 		<DocSubtype UniqueId="48ca0d09-e927-410d-a5a7-11eaaaff0e5a" DefinedType="IfcTextureMap" />
 		<DocSubtype UniqueId="9013edd9-b16f-4c06-8868-f304f833b945" DefinedType="IfcIndexedTextureMap" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Maps" UniqueId="044e83c7-c1b4-499a-a541-3ff790ce34fb" DefinedType="IfcSurfaceTexture" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="Maps" UniqueId="044e83c7-c1b4-499a-a541-3ff790ce34fb" DefinedType="IfcSurfaceTexture" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Reference to the one (or many in case of multi textures with identity transformation to geometric surfaces) subtype(s) of _IfcSurfaceTexture_ that are mapped to a geometric surface by the texture coordinate transformation.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5386.325" Y="2577.2087" />
-				<DocPoint X="6044.3583" Y="2577.2087" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5346.325" Y="2561.2087" Width="144" Height="35" />
 		</DocAttribute>
 	</Attributes>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="5174.3454" Y="2658.3167" />
-				<DocPoint X="5174.3454" Y="2717.61667" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="4998.0417" Y="2717.6166" />
-						<DocPoint X="4998.0417" Y="3728.9166" />
-						<DocPoint X="5130.39173" Y="3728.9166" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="4898.3353" Y="2717.6166" />
-						<DocPoint X="4898.3353" Y="3978.6499" />
-						<DocPoint X="5033.12497" Y="3978.6499" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="5175.3667" Y="2717.6166" />
-						<DocPoint X="5175.3667" Y="2819.49327" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

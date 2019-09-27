@@ -1,50 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelSequence" UniqueId="99cd2ac0-7e3f-4393-bf5a-fbd991bf194b" DiagramNumber="1" BaseDefinition="IfcRelConnects" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelSequence" UniqueId="99cd2ac0-7e3f-4393-bf5a-fbd991bf194b" BaseDefinition="IfcRelConnects" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Abfolgebeziehung zwischen Prozessen - Relation" Locale="de" />
-		<DocLocalization Name="Rel Sequence" Locale="en" />
+		<DocLocalization Locale="de" Name="Abfolgebeziehung zwischen Prozessen - Relation" />
+		<DocLocalization Locale="en" Name="Rel Sequence" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="712.387430826823" Y="192.179514567057" Width="303.66667" Height="265.299987792969" />
 	<Attributes>
-		<DocAttribute Name="RelatingProcess" UniqueId="22284f64-9b1c-42ca-ad5b-c1332fc7f416" DefinedType="IfcProcess" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="RelatingProcess" UniqueId="22284f64-9b1c-42ca-ad5b-c1332fc7f416" DefinedType="IfcProcess" XsdFormat="attribute">
 			<Documentation>Reference to the process, that is the predecessor.</Documentation>
-			<DiagramLine>
-				<DocPoint X="712.387430826823" Y="293.743300374349" />
-				<DocPoint X="712.387430826823" Y="293.743300374349" />
-				<DocPoint X="411.655115281982" Y="293.743300374349" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="712.387430826823" Y="273.743300374349" Width="186" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RelatedProcess" UniqueId="0512a983-f4fe-4536-8095-7defbd21c65b" DefinedType="IfcProcess" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="RelatedProcess" UniqueId="0512a983-f4fe-4536-8095-7defbd21c65b" DefinedType="IfcProcess" XsdFormat="attribute">
 			<Documentation>Reference to the process, that is the successor.</Documentation>
-			<DiagramLine>
-				<DocPoint X="712.387430826823" Y="347.509967041016" />
-				<DocPoint X="712.387430826823" Y="347.509967041016" />
-				<DocPoint X="411.655115281982" Y="347.509967041016" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="712.387430826823" Y="327.509967041016" Width="181" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="TimeLag" UniqueId="94d09d41-3b26-40a2-803f-92dc47187a91" DefinedType="IfcLagTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="TimeLag" UniqueId="94d09d41-3b26-40a2-803f-92dc47187a91" DefinedType="IfcLagTime" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Time duration of the sequence, it is the time lag between the
     predecessor and the successor as specified by the
     SequenceType.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1016.05410082682" Y="427.213348388672" />
-				<DocPoint X="1016.05410082682" Y="427.213348388672" />
-				<DocPoint X="1220.51330566406" Y="427.213348388672" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1016.05410082682" Y="407.213348388672" Width="103" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="SequenceType" UniqueId="b73f79bf-ab44-454c-9180-a11e3cf40323" DefinedType="IfcSequenceEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="SequenceType" UniqueId="b73f79bf-ab44-454c-9180-a11e3cf40323" DefinedType="IfcSequenceEnum" AttributeFlags="1">
 			<Documentation>The way in which the time lag applies to the sequence.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1016.05410082682" Y="244.775772261393" />
-				<DocPoint X="1016.05410082682" Y="244.775772261393" />
-				<DocPoint X="1291.89672851563" Y="244.775772261393" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1016.05410082682" Y="224.775772261393" Width="174" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="UserDefinedSequenceType" UniqueId="2514fd3f-d851-4771-a4ec-5e55b283085a" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="UserDefinedSequenceType" UniqueId="2514fd3f-d851-4771-a4ec-5e55b283085a" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>Allows for specification of user defined type of the sequence
     beyond the enumeration values (START_START, START_FINISH,
     FINISH_START, FINISH_FINISH) provided by _SequenceType_
@@ -55,12 +30,6 @@
     
 { .change-ifc4}
 &gt; IFC4 CHANGE Attribute added</Documentation>
-			<DiagramLine>
-				<DocPoint X="1016.05410082682" Y="330.194814046224" />
-				<DocPoint X="1016.05410082682" Y="330.194814046224" />
-				<DocPoint X="1376.38614908854" Y="330.194814046224" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1016.05410082682" Y="310.194814046224" Width="312" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

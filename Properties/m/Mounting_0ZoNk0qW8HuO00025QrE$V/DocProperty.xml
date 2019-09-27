@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocProperty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Mounting_0ZoNk0qW8HuO00025QrEV" Name="Mounting" UniqueId="0ZoNk0qW8HuO00025QrE$V" PropertyType="p_enumeratedvalue" PrimaryDataType="IfcLabel">
 	<Localization>
-		<DocLocalization Name="Mounting" Locale="en" />
-		<DocLocalization Name="装着" Locale="ja-JP">
+		<DocLocalization Locale="en" Name="Mounting" />
+		<DocLocalization Locale="ja-JP" Name="装着">
 			<Documentation>列挙するプロパティはPset_SanitaryMountingEnumでは（トイレの、洗面台、シンクなど）、衛生配管への装着法で定義される：
 
 床置き壁排水：台座は、カバーの背面の壁にあるフラッシュバルブに接続される。
@@ -16,8 +16,6 @@
 床置き壁排水、床置き、壁掛けは、ビデの許容値であることに注意。</Documentation>
 		</DocLocalization>
 	</Localization>
-	<Enumeration>
-		<DocPropertyEnumeration xsi:nil="true" href="PEnum_SanitaryMounting" />
-	</Enumeration>
+	<Enumeration xsi:type="DocPropertyEnumeration" xsi:nil="true" href="PEnum_SanitaryMounting" />
 </DocProperty>
 

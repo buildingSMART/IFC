@@ -1,103 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcContext" Name="IfcContext" UniqueId="2ef4dae0-8e0d-4c3e-a179-bf7d2f279492" DiagramNumber="12" BaseDefinition="IfcObjectDefinition" EntityFlags="141">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcContext" UniqueId="2ef4dae0-8e0d-4c3e-a179-bf7d2f279492" BaseDefinition="IfcObjectDefinition" EntityFlags="141">
 	<Localization>
-		<DocLocalization Name="Kontextinformation" Locale="de" />
-		<DocLocalization Name="Context" Locale="en" />
-		<DocLocalization Name="Contexte" Locale="fr" />
+		<DocLocalization Locale="de" Name="Kontextinformation" />
+		<DocLocalization Locale="en" Name="Context" />
+		<DocLocalization Locale="fr" Name="Contexte" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="17752.056" Y="313.702" Width="200" Height="778.66667" />
 	<Subtypes>
 		<DocSubtype UniqueId="12e9da3e-91cd-40b9-a562-6c4273080ec3" DefinedType="IfcProject" />
 		<DocSubtype UniqueId="4cf349b3-56f5-4405-badc-5d14bce74222" DefinedType="IfcProjectLibrary" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="ObjectType" UniqueId="bb969c4a-579c-4aa1-be1f-9fb4bd873fad" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ObjectType" UniqueId="bb969c4a-579c-4aa1-be1f-9fb4bd873fad" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>The object type denotes a particular type that indicates the object further. The use has to be established at the level of instantiable subtypes. 
 &gt; NOTE&amp;nbsp; Subtypes of _IfcContext_ do not introduce a _PredefinedType_ attribute, therefore the usage of _ObjectType_ is not bound to the selection of USERDEFINED within the _PredefinedType_ enumaration.</Documentation>
-			<DiagramLine>
-				<DocPoint X="17952.056" Y="335.26915" />
-				<DocPoint X="18290.65567" Y="335.26915" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="17949.3893334" Y="321.935817" Width="133" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LongName" UniqueId="14b49397-1ce3-4799-8ead-ec46f5364256" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LongName" UniqueId="14b49397-1ce3-4799-8ead-ec46f5364256" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>Long name for the context as used for reference purposes.</Documentation>
-			<DiagramLine>
-				<DocPoint X="17952.056" Y="450.6188" />
-				<DocPoint X="18290.66967" Y="450.6188" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="17949.3893333" Y="437.285467" Width="129" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Phase" UniqueId="2f21a5c2-8ff3-40c7-9331-101a0cca4c61" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Phase" UniqueId="2f21a5c2-8ff3-40c7-9331-101a0cca4c61" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>Current project phase, or life-cycle phase of this project. Applicable values have to be agreed upon by view definitions or implementer agreements.</Documentation>
-			<DiagramLine>
-				<DocPoint X="17952.056" Y="577.70851" />
-				<DocPoint X="18290.704" Y="577.70851" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="17926.722667" Y="567.70851" Width="77" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RepresentationContexts" UniqueId="e9ef241b-a738-4ab4-b2cd-7041784d5749" DefinedType="IfcRepresentationContext" AttributeFlags="1" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="RepresentationContexts" UniqueId="e9ef241b-a738-4ab4-b2cd-7041784d5749" DefinedType="IfcRepresentationContext" AttributeFlags="1" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Context of the representations used within the context. When the context is a project and it includes shape representations for its components, one or several geometric representation contexts need to be included that define e.g. the world coordinate system, the coordinate space dimensions, and/or the precision factor.
 { .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute has been changed to be optional. Change made with upward compatibility for file based exchange.</Documentation>
-			<DiagramLine>
-				<DocPoint X="17952.056" Y="703.03533" />
-				<DocPoint X="18615.34067" Y="703.03533" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="17896.056" Y="695.03533" Width="353" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="UnitsInContext" UniqueId="59787a75-222f-48ec-a8d6-73733cf7c004" DefinedType="IfcUnitAssignment" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="UnitsInContext" UniqueId="59787a75-222f-48ec-a8d6-73733cf7c004" DefinedType="IfcUnitAssignment" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Units globally assigned to measure types used within the context.
 { .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute has been changed to be optional. Change made with upward compatibility for file based exchange.</Documentation>
-			<DiagramLine>
-				<DocPoint X="17952.056" Y="837.58555" />
-				<DocPoint X="18615.37367" Y="837.58555" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="17802.72267" Y="826.918883" Width="170" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="IsDefinedBy" UniqueId="7e8b25d6-0e9c-4e04-bc16-e08eea08f8ec" DefinedType="IfcRelDefinesByProperties" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatedObjects" XsdFormat="element">
+		<DocAttribute Name="IsDefinedBy" UniqueId="7e8b25d6-0e9c-4e04-bc16-e08eea08f8ec" DefinedType="IfcRelDefinesByProperties" AggregationType="3" AggregationLower="0" AggregationUpper="0" Inverse="RelatedObjects" XsdFormat="element">
 			<Documentation>Set of relationships to property set definitions attached to this context. Those statically or dynamically defined properties contain alphanumeric information content that further defines the context. 
 { .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The data type has been changed from _IfcRelDefines_ to _IfcRelDefinesByProperties_ with upward compatibility for file based exchange.</Documentation>
-			<DiagramLine>
-				<DocPoint X="17952.056" Y="1049.702" />
-				<DocPoint X="18615.38933" Y="1049.702" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="17960.056" Y="1079.035333" Width="479" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="Declares" UniqueId="cd34747d-186f-4fe1-9267-19625144c9e6" DefinedType="IfcRelDeclares" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="RelatingContext" XsdFormat="element">
+		<DocAttribute Name="Declares" UniqueId="cd34747d-186f-4fe1-9267-19625144c9e6" DefinedType="IfcRelDeclares" AttributeFlags="8" AggregationType="3" Inverse="RelatingContext" XsdFormat="element">
 			<Documentation>Reference to the _IfcRelDeclares_ relationship that assigns the uppermost entities of includes hierarchies to this context instance.
 &gt; NOTE&amp;nbsp; The spatial hiearchy is assigned to _IfcProject_ using the _IfcRelAggregates_ relationship. This is a single exception due to compatibility reasons with earlier releases.</Documentation>
-			<DiagramLine>
-				<DocPoint X="18615.416" Y="1434.6593" />
-				<DocPoint X="17852.05633" Y="1434.6593" />
-				<DocPoint X="17852.05633" Y="1092.36867" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="18619.9528333" Y="1477.180625" Width="247" Height="35" />
 		</DocAttribute>
 	</Attributes>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="17790.722" Y="1092.3687" />
-				<DocPoint X="17790.722" Y="1602.83994" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="17790.603" Y="1602.84" />
-						<DocPoint X="17790.603" Y="1673.311267" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="18155.056" Y="1602.84" />
-						<DocPoint X="18155.056" Y="1673.316714" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

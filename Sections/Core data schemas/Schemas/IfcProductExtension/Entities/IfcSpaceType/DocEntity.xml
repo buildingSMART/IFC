@@ -1,31 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSpaceType" Name="IfcSpaceType" UniqueId="e7fcbf9c-f9a1-43ab-b15f-56f0e33af740" DiagramNumber="5" BaseDefinition="IfcSpatialStructureElementType" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSpaceType" Name="IfcSpaceType" UniqueId="e7fcbf9c-f9a1-43ab-b15f-56f0e33af740" BaseDefinition="IfcSpatialStructureElementType" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Raum - Typ" Locale="de" />
-		<DocLocalization Name="Space Type" Locale="en" />
-		<DocLocalization Name="Type de local" Locale="fr" />
+		<DocLocalization Locale="de" Name="Raum - Typ" />
+		<DocLocalization Locale="en" Name="Space Type" />
+		<DocLocalization Locale="fr" Name="Type de local" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="7173.1959" Y="1857.9927" Width="237.16667" Height="146.6" />
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="d5abf58d-e70d-4140-b4e1-4023bd04e61d" DefinedType="IfcSpaceTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="d5abf58d-e70d-4140-b4e1-4023bd04e61d" DefinedType="IfcSpaceTypeEnum">
 			<Documentation>Predefined types to define the particular type of space. There may be property set definitions available for each predefined type.</Documentation>
-			<DiagramLine>
-				<DocPoint X="7410.3626" Y="1885.9594" />
-				<DocPoint X="7637.8626" Y="1885.9594" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="7408.6959317" Y="1872.542734" Width="182" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LongName" UniqueId="a280afe4-0acf-4989-8898-22cb92b4b93c" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LongName" UniqueId="a280afe4-0acf-4989-8898-22cb92b4b93c" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>Long name for a space type, used for informal purposes. It should be used, if available, in conjunction with the inherited _Name_ attribute.
 &gt; NOTE&amp;nbsp; In many scenarios the _Name_ attribute refers to the short name or number of a space type, and the _LongName_ refers to the full descriptive name.
 
 { .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute added at the end of entity definition.</Documentation>
-			<DiagramLine>
-				<DocPoint X="7410.3626" Y="1973.9594" />
-				<DocPoint X="7637.79593" Y="1973.9594" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="7391.695933" Y="1960.626067" Width="129" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

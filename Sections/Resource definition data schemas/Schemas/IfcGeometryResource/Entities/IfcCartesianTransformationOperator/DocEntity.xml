@@ -1,71 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCartesianTransformationOperator" Name="IfcCartesianTransformationOperator" UniqueId="da40a055-7f34-44ae-85cb-40b20d82ae5a" DiagramNumber="4" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCartesianTransformationOperator" Name="IfcCartesianTransformationOperator" UniqueId="da40a055-7f34-44ae-85cb-40b20d82ae5a" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="205">
 	<Localization>
-		<DocLocalization Name="Kartesische Transformation" Locale="de" />
-		<DocLocalization Name="Cartesian Transformation Operator" Locale="en" />
-		<DocLocalization Name="Opérateur de transformation cartésienne" Locale="fr" />
+		<DocLocalization Locale="de" Name="Kartesische Transformation" />
+		<DocLocalization Locale="en" Name="Cartesian Transformation Operator" />
+		<DocLocalization Locale="fr" Name="Opérateur de transformation cartésienne" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="5366.8485" Y="400.02396" Width="445.95833" Height="125" />
 	<Subtypes>
 		<DocSubtype UniqueId="ed7227df-031c-479a-885f-6d454562803f" DefinedType="IfcCartesianTransformationOperator2D" />
 		<DocSubtype UniqueId="67551319-1c66-4347-b401-c8286930a1a4" DefinedType="IfcCartesianTransformationOperator3D" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Axis1" UniqueId="77d3a933-8ecd-40ec-a018-58dcd07018c7" DefinedType="IfcDirection" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="Axis1" UniqueId="77d3a933-8ecd-40ec-a018-58dcd07018c7" DefinedType="IfcDirection" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>The direction used to determine U[1], the derived X axis direction.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5415.515135" Y="525.02396" />
-				<DocPoint X="5415.515135" Y="525.02396" />
-				<DocPoint X="5415.515135" Y="610.55729" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5415.515135" Y="590.55729" Width="66" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Axis2" UniqueId="c87eb32c-c021-4fa9-888e-27a2a2d49f73" DefinedType="IfcDirection" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="Axis2" UniqueId="c87eb32c-c021-4fa9-888e-27a2a2d49f73" DefinedType="IfcDirection" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>The direction used to determine U[2], the derived Y axis direction.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5812.80683" Y="525.02396" />
-				<DocPoint X="5852.848435" Y="525.02396" />
-				<DocPoint X="5852.848435" Y="610.62396" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5812.80683" Y="590.62396" Width="66" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LocalOrigin" UniqueId="c81e6d3a-d622-4443-a670-a2c528ea33dc" DefinedType="IfcCartesianPoint" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="LocalOrigin" UniqueId="c81e6d3a-d622-4443-a670-a2c528ea33dc" DefinedType="IfcCartesianPoint" XsdFormat="attribute">
 			<Documentation>The required translation, specified as a cartesian point. The actual translation included in the transformation is from the geometric origin to the local origin.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5366.8485" Y="400.02396" />
-				<DocPoint X="5366.8485" Y="322.590633" />
-				<DocPoint X="5191.4818" Y="322.590633" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5366.8485" Y="302.590633" Width="131" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Scale" UniqueId="3240216d-4df6-4546-a6f0-58d59fa41159" DefinedType="IfcReal" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Scale" UniqueId="3240216d-4df6-4546-a6f0-58d59fa41159" DefinedType="IfcReal" AttributeFlags="1">
 			<Documentation>The scaling value specified for the transformation.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5812.80683" Y="404.138127644857" />
-				<DocPoint X="5812.80683" Y="404.138127644857" />
-				<DocPoint X="5958.8486328125" Y="404.138127644857" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5812.80683" Y="384.138127644857" Width="68" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Scl" UniqueId="1d03e053-7d65-4017-9fdd-fd78322d198e" DefinedType="IfcReal" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Scl" UniqueId="1d03e053-7d65-4017-9fdd-fd78322d198e" DefinedType="IfcReal">
 			<Documentation>The derived scale S of the transformation, equal to scale if that exists, or 1.0 otherwise.</Documentation>
 			<Derived>NVL(Scale, 1.0)</Derived>
-			<DiagramLine>
-				<DocPoint X="5812.80683" Y="485.690653483073" />
-				<DocPoint X="5812.80683" Y="485.690653483073" />
-				<DocPoint X="5958.8486328125" Y="485.690653483073" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5812.80683" Y="465.690653483073" Width="115" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Dim" UniqueId="e1598a19-e317-4923-a3b3-5620c6f57ec6" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Dim" UniqueId="e1598a19-e317-4923-a3b3-5620c6f57ec6" DefinedType="IfcDimensionCount">
 			<Documentation>The space dimensionality of this class, determined by the space dimensionality of the local origin.</Documentation>
 			<Derived>LocalOrigin.Dim</Derived>
-			<DiagramLine>
-				<DocPoint X="5366.8485" Y="455.890633" />
-				<DocPoint X="5366.8485" Y="455.890633" />
-				<DocPoint X="5212.31513" Y="455.890633" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5366.8485" Y="435.890633" Width="125" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
@@ -74,28 +37,5 @@
 			<Expression>Scl &gt; 0.0</Expression>
 		</DocWhereRule>
 	</WhereRules>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="5589.8276" Y="525.02396" />
-				<DocPoint X="5589.8276" Y="525.02396" />
-				<DocPoint X="5589.8276" Y="827.62937" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="5225.1652" Y="827.62938" />
-						<DocPoint X="5225.1652" Y="893.368116" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="5965.1651" Y="827.62938" />
-						<DocPoint X="5965.1651" Y="895.968123" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

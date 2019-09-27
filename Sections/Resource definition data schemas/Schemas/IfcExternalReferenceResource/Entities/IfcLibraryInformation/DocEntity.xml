@@ -1,87 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcLibraryInformation" UniqueId="614b2347-4e01-42a4-a914-c29116ce216a" DiagramNumber="1" BaseDefinition="IfcExternalInformation" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcLibraryInformation" UniqueId="614b2347-4e01-42a4-a914-c29116ce216a" BaseDefinition="IfcExternalInformation" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Bibliothek" Locale="de" />
-		<DocLocalization Name="Library Information" Locale="en" />
-		<DocLocalization Name="Information de bibliothèque" Locale="fr" />
+		<DocLocalization Locale="de" Name="Bibliothek" />
+		<DocLocalization Locale="en" Name="Library Information" />
+		<DocLocalization Locale="fr" Name="Information de bibliothèque" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="530.94789" Y="1744.5666" Width="386" Height="345.33334" />
 	<Attributes>
-		<DocAttribute Name="Name" UniqueId="755c53a9-82cf-4c15-9e0d-73dd254c1ff6" DefinedType="IfcLabel" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Name" UniqueId="755c53a9-82cf-4c15-9e0d-73dd254c1ff6" DefinedType="IfcLabel">
 			<Documentation>The name which is used to identify the library.</Documentation>
-			<DiagramLine>
-				<DocPoint X="916.94789" Y="1840.2516" />
-				<DocPoint X="1181.44797" Y="1840.2516" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="891.072933" Y="1832.9182667" Width="73" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Version" UniqueId="924e1676-b198-4462-931d-0e25718622d5" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Version" UniqueId="924e1676-b198-4462-931d-0e25718622d5" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>Identifier for the library version used for reference.</Documentation>
-			<DiagramLine>
-				<DocPoint X="916.94789" Y="1942.3879" />
-				<DocPoint X="1181.51467" Y="1942.3879" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="898.281223" Y="1932.3879003" Width="90" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Publisher" UniqueId="6055fe08-1ac2-4ea9-abd4-2946584d95fd" DefinedType="IfcActorSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Publisher" UniqueId="6055fe08-1ac2-4ea9-abd4-2946584d95fd" DefinedType="IfcActorSelect" AttributeFlags="1">
 			<Documentation>Information of the organization that acts as the library publisher.
 { .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The data type has been changed to _IfcActorSelect_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="552.07405" Y="2089.8999" />
-				<DocPoint X="552.07405" Y="2197.23323" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="488.740717" Y="2106.566567" Width="109" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="VersionDate" UniqueId="67f4cb9a-7178-4c17-b962-16a18f0a0e40" DefinedType="IfcDateTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="VersionDate" UniqueId="67f4cb9a-7178-4c17-b962-16a18f0a0e40" DefinedType="IfcDateTime" AttributeFlags="1">
 			<Documentation>Date of the referenced version of the library.
 { .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The data type has been changed to _IfcDateTime_, the date and time string according to ISO8601.</Documentation>
-			<DiagramLine>
-				<DocPoint X="916.94789" Y="2050.5666" />
-				<DocPoint X="1181.51456" Y="2050.5666" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="920.2812233" Y="2040.5666" Width="143" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Location" UniqueId="ea4384e0-37e9-4245-af22-39f8db1948b7" DefinedType="IfcURIReference" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Location" UniqueId="ea4384e0-37e9-4245-af22-39f8db1948b7" DefinedType="IfcURIReference" AttributeFlags="1">
 			<Documentation>Resource identifier or locator, provided as URI, URN or URL, of the library information for online references.
 { .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute added at the end of the attribute list.</Documentation>
-			<DiagramLine>
-				<DocPoint X="881.49891" Y="2089.9" />
-				<DocPoint X="881.49891" Y="2194.80009" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="951.341633" Y="2100.33338" Width="101" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Description" UniqueId="1e2e7012-ea11-4268-bd87-7c1c71e09e14" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Description" UniqueId="1e2e7012-ea11-4268-bd87-7c1c71e09e14" DefinedType="IfcText" AttributeFlags="1">
 			<Documentation>Additional description provided for the library revision information.
 { .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute added at the end of the attribute list.</Documentation>
-			<DiagramLine>
-				<DocPoint X="530.94789" Y="2050.5666" />
-				<DocPoint X="216.61455" Y="2050.5666" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="530.94789" Y="2033.899933" Width="130" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LibraryInfoForObjects" UniqueId="d76b6ef8-3769-4e4c-bc12-0fd6bb9f2c63" DefinedType="IfcRelAssociatesLibrary" AttributeFlags="32" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatingLibrary">
+		<DocAttribute Name="LibraryInfoForObjects" UniqueId="d76b6ef8-3769-4e4c-bc12-0fd6bb9f2c63" DefinedType="IfcRelAssociatesLibrary" AttributeFlags="32" AggregationType="3" AggregationLower="0" AggregationUpper="0" Inverse="RelatingLibrary">
 			<Documentation>The library information with which objects are associated.
 { .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New inverse attribute.</Documentation>
-			<DiagramLine>
-				<DocPoint X="916.94789" Y="1762.1857" />
-				<DocPoint X="1494.61456" Y="1762.1857" />
-				<DocPoint X="1494.61456" Y="1641.9" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="932.44789" Y="1749.1857" Width="387" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="HasLibraryReferences" UniqueId="4ce4efbe-3cb1-47aa-9fdb-f566c62d4f8a" DefinedType="IfcLibraryReference" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="ReferencedLibrary">
+		<DocAttribute Name="HasLibraryReferences" UniqueId="4ce4efbe-3cb1-47aa-9fdb-f566c62d4f8a" DefinedType="IfcLibraryReference" AttributeFlags="8" AggregationType="3" Inverse="ReferencedLibrary">
 			<Documentation>The library references to which the library information applies.</Documentation>
-			<DiagramLine>
-				<DocPoint X="358.94735" Y="1491.9" />
-				<DocPoint X="358.94735" Y="1917.23331" />
-				<DocPoint X="530.94789" Y="1917.23331" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="574.94735" Y="1597.56665" Width="396" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

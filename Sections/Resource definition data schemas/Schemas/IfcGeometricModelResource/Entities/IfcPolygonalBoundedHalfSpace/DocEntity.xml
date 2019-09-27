@@ -1,29 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPolygonalBoundedHalfSpace" Name="IfcPolygonalBoundedHalfSpace" UniqueId="65e9d30b-d646-47b9-a5b5-e3d5e4d6323c" DiagramNumber="3" BaseDefinition="IfcHalfSpaceSolid" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPolygonalBoundedHalfSpace" Name="IfcPolygonalBoundedHalfSpace" UniqueId="65e9d30b-d646-47b9-a5b5-e3d5e4d6323c" BaseDefinition="IfcHalfSpaceSolid" EntityFlags="101">
 	<Localization>
-		<DocLocalization Name="Halbraum - eingeschränkter Gültigkeitsbereich" Locale="de" />
-		<DocLocalization Name="Polygonal Bounded Half Space" Locale="en" />
+		<DocLocalization Locale="de" Name="Halbraum - eingeschränkter Gültigkeitsbereich" />
+		<DocLocalization Locale="en" Name="Polygonal Bounded Half Space" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="3376.6667" Y="1319.9833" Width="519.83333" Height="100" />
 	<Attributes>
-		<DocAttribute Name="Position" UniqueId="512ffcfa-0a74-4a77-a54d-02c512a55ac9" DefinedType="IfcAxis2Placement3D" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="Position" UniqueId="512ffcfa-0a74-4a77-a54d-02c512a55ac9" DefinedType="IfcAxis2Placement3D" XsdFormat="attribute">
 			<Documentation>Definition of the position coordinate system for the bounding polyline ~~and the base surface~~.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3411.8434" Y="1419.9833" />
-				<DocPoint X="3411.8434" Y="1628.31663" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3349.3434" Y="1465.816633" Width="94" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="PolygonalBoundary" UniqueId="4e5eaaf9-5a26-4560-a6b2-29a59c914215" DefinedType="IfcBoundedCurve" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="PolygonalBoundary" UniqueId="4e5eaaf9-5a26-4560-a6b2-29a59c914215" DefinedType="IfcBoundedCurve" XsdFormat="attribute">
 			<Documentation>Two-dimensional ~~polyline~~ bounded curve, defined in the xy plane of the position coordinate system.
 { .change-ifc2x3}
 &gt; IFC2x3 CHANGE&amp;nbsp; The attribute type has been changed from _IfcPolyline_ to its supertype _IfcBoundedCurve_ with upward compatibility for file based exchange.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3782.13330244792" Y="1419.9833" />
-				<DocPoint X="3782.13330244792" Y="1419.9833" />
-				<DocPoint X="3782.13330244792" Y="1840.7333984375" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3782.13330244792" Y="1820.7333984375" Width="221" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

@@ -1,28 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPcurve" Name="IfcPcurve" UniqueId="dd30ecc9-e76f-48d9-b2d9-5340b2f0c0b8" DiagramNumber="5" BaseDefinition="IfcCurve" EntityFlags="109">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPcurve" UniqueId="dd30ecc9-e76f-48d9-b2d9-5340b2f0c0b8" BaseDefinition="IfcCurve" EntityFlags="109">
 	<Localization>
-		<DocLocalization Name="Kurve im Parameterraum einer Fläche" Locale="de" />
-		<DocLocalization Name="Pcurve" Locale="en" />
-		<DocLocalization Name="Courbe basée sur une surface" Locale="fr" />
+		<DocLocalization Locale="de" Name="Kurve im Parameterraum einer Fläche" />
+		<DocLocalization Locale="en" Name="Pcurve" />
+		<DocLocalization Locale="fr" Name="Courbe basée sur une surface" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="7369.70703125" Y="633.973327636719" Width="216" Height="204" />
 	<Attributes>
-		<DocAttribute Name="BasisSurface" UniqueId="f38fdab6-e98c-4adb-9126-c3042c4c319e" DefinedType="IfcSurface" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
-			<DiagramLine>
-				<DocPoint X="7585.70703125" Y="793.906616210938" />
-				<DocPoint X="7585.70703125" Y="793.906616210938" />
-				<DocPoint X="7757.70686848958" Y="793.906616210938" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="7585.70703125" Y="773.906616210938" Width="151" Height="35" />
-		</DocAttribute>
-		<DocAttribute Name="ReferenceCurve" UniqueId="dc6024e0-af04-459d-857b-4eccd3401110" DefinedType="IfcCurve" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
-			<DiagramLine>
-				<DocPoint X="7585.70703125" Y="703.24013264974" />
-				<DocPoint X="7585.70703125" Y="703.24013264974" />
-				<DocPoint X="7786.03971354167" Y="703.24013264974" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="7585.70703125" Y="683.24013264974" Width="188" Height="35" />
-		</DocAttribute>
+		<DocAttribute Name="BasisSurface" UniqueId="f38fdab6-e98c-4adb-9126-c3042c4c319e" DefinedType="IfcSurface" XsdFormat="attribute" />
+		<DocAttribute Name="ReferenceCurve" UniqueId="dc6024e0-af04-459d-857b-4eccd3401110" DefinedType="IfcCurve" XsdFormat="attribute" />
 	</Attributes>
 	<WhereRules>
 		<DocWhereRule Name="DimIs2D" UniqueId="64920069-9ab8-470a-b694-113a3f926a33">

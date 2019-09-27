@@ -1,41 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRepresentationContext" Name="IfcRepresentationContext" UniqueId="38217e82-b534-4baa-87a6-49402ed0a52c" DiagramNumber="1" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRepresentationContext" Name="IfcRepresentationContext" UniqueId="38217e82-b534-4baa-87a6-49402ed0a52c" EntityFlags="205">
 	<Localization>
-		<DocLocalization Name="Repräsentationskontext" Locale="de" />
-		<DocLocalization Name="Representation Context" Locale="en" />
-		<DocLocalization Name="Contexte de représentation" Locale="fr" />
+		<DocLocalization Locale="de" Name="Repräsentationskontext" />
+		<DocLocalization Locale="en" Name="Representation Context" />
+		<DocLocalization Locale="fr" Name="Contexte de représentation" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="61.4544461568197" Y="356.927754720052" Width="446.33333" Height="245.523329827474" />
 	<Subtypes>
 		<DocSubtype UniqueId="ca7761a8-39dd-45b5-97d6-1f3abfa6fea7" DefinedType="IfcGeometricRepresentationContext" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="ContextIdentifier" UniqueId="98c7faf4-7709-4f0a-9ab4-c1e8c7d0f012" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ContextIdentifier" UniqueId="98c7faf4-7709-4f0a-9ab4-c1e8c7d0f012" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>The optional identifier of the representation context as used within a project.</Documentation>
-			<DiagramLine>
-				<DocPoint X="507.78777615682" Y="487.475931803385" />
-				<DocPoint X="507.78777615682" Y="487.475931803385" />
-				<DocPoint X="1170.78299967448" Y="487.475931803385" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="507.78777615682" Y="467.475931803385" Width="188" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ContextType" UniqueId="60350fff-c598-4635-a106-9b50ce5ec88c" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ContextType" UniqueId="60350fff-c598-4635-a106-9b50ce5ec88c" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>The description of the type of a representation context. The supported values for context type are to be specified by implementers agreements.</Documentation>
-			<DiagramLine>
-				<DocPoint X="507.78777615682" Y="400.455006917318" />
-				<DocPoint X="507.78777615682" Y="400.455006917318" />
-				<DocPoint X="1170.78299967448" Y="400.455006917318" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="507.78777615682" Y="380.455006917318" Width="148" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RepresentationsInContext" UniqueId="1e0f4b5c-3ad8-4ee7-8998-0a6b915be556" DefinedType="IfcRepresentation" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="ContextOfItems">
+		<DocAttribute Name="RepresentationsInContext" UniqueId="1e0f4b5c-3ad8-4ee7-8998-0a6b915be556" DefinedType="IfcRepresentation" AggregationType="3" Inverse="ContextOfItems">
 			<Documentation>All shape representations that are defined in the same representation context.</Documentation>
-			<DiagramLine>
-				<DocPoint X="507.78777615682" Y="580.952311197917" />
-				<DocPoint X="507.78777615682" Y="580.952311197917" />
-				<DocPoint X="1062.78299967448" Y="580.952311197917" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="507.78777615682" Y="560.952311197917" Width="438" Height="70" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

@@ -1,41 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStyledItem" Name="IfcStyledItem" UniqueId="03067245-b9da-400b-8de8-c6189fa9b928" DiagramNumber="1" BaseDefinition="IfcRepresentationItem" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStyledItem" Name="IfcStyledItem" UniqueId="03067245-b9da-400b-8de8-c6189fa9b928" BaseDefinition="IfcRepresentationItem" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Element mit Stilinformationen" Locale="de" />
-		<DocLocalization Name="Styled Item" Locale="en" />
+		<DocLocalization Locale="de" Name="Element mit Stilinformationen" />
+		<DocLocalization Locale="en" Name="Styled Item" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="577.33334" Y="468.66667" Width="406.66667" Height="246.66667" />
 	<Attributes>
-		<DocAttribute Name="Item" UniqueId="1f40d575-2832-4c30-80dc-77a3fcabd3c9" DefinedType="IfcRepresentationItem" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="hidden">
+		<DocAttribute Name="Item" UniqueId="1f40d575-2832-4c30-80dc-77a3fcabd3c9" DefinedType="IfcRepresentationItem" AttributeFlags="1" XsdFormat="hidden">
 			<Documentation>A geometric representation item to which the style is assigned.
   
 { .change-ifc2x2}
 &gt; IFC2x2 Add2 CHANGE The attribute _Item_ has been made optional. Upward compatibility for file based exchange is guaranteed.</Documentation>
-			<DiagramLine>
-				<DocPoint X="654.32363" Y="468.66667" />
-				<DocPoint X="654.32363" Y="309.60001" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="697.656963" Y="495.333337" Width="55" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Styles" UniqueId="d38b5c99-b51e-4f5a-a2a5-140d9071d049" DefinedType="IfcStyleAssignmentSelect" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="Styles" UniqueId="d38b5c99-b51e-4f5a-a2a5-140d9071d049" DefinedType="IfcStyleAssignmentSelect" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Representation styles which are assigned, either to an geometric representation item, or to a material definition.
 { .change-ifc4}
 &gt; IFC4 CHANGE The data type has been changed to _IfcStyleAssignmentSelect_ with upward compatibility for file based exchange.
 
 &gt; NOTE&amp;nbsp; Only the select item _IfcPresentationStyle_ shall be used from IFC4 onwards, the _IfcPresentationStyleAssignment_ has been deprecated.</Documentation>
-			<DiagramLine>
-				<DocPoint X="654.00001" Y="715.33334" />
-				<DocPoint X="654.00001" Y="900.66667" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="767.33334" Y="745.33334" Width="152" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Name" UniqueId="d82e6d30-0872-439b-9e6c-e97111ad8266" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Name" UniqueId="d82e6d30-0872-439b-9e6c-e97111ad8266" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>The word, or group of words, by which the styled item is referred to.</Documentation>
-			<DiagramLine>
-				<DocPoint X="577.33334" Y="658.66667" />
-				<DocPoint X="319.63334" Y="658.66667" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="574.0000067" Y="648.66667" Width="73" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

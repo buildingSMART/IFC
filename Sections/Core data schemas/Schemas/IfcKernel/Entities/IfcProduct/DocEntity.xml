@@ -1,46 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcProduct" Name="IfcProduct" UniqueId="ed1b8d59-300e-45f5-b8df-fd0e833a761e" DiagramNumber="8" BaseDefinition="IfcObject" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcProduct" Name="IfcProduct" UniqueId="ed1b8d59-300e-45f5-b8df-fd0e833a761e" BaseDefinition="IfcObject" EntityFlags="205">
 	<Localization>
-		<DocLocalization Name="Produkt (allgemein)" Locale="de" />
-		<DocLocalization Name="Product" Locale="en" />
-		<DocLocalization Name="Produit" Locale="fr" />
+		<DocLocalization Locale="de" Name="Produkt (allgemein)" />
+		<DocLocalization Locale="en" Name="Product" />
+		<DocLocalization Locale="fr" Name="Produit" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="11319.398" Y="354.09249" Width="454.1" Height="133.33333" />
 	<Subtypes>
 		<DocSubtype UniqueId="db048e60-831b-4fab-90e8-a45d39fa6975" DefinedType="IfcProxy" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="ObjectPlacement" UniqueId="d2d0a44a-3717-40dd-8034-5278124028b2" DefinedType="IfcObjectPlacement" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="ObjectPlacement" UniqueId="d2d0a44a-3717-40dd-8034-5278124028b2" DefinedType="IfcObjectPlacement" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Placement of the product in space, the placement can either be absolute (relative to the world coordinate system), relative (relative to the object placement of another product), or constraint (e.g. relative to grid axes). It is determined by the various subtypes of IfcObjectPlacement, which includes the axis placement information to determine the  transformation for the object coordinate system.</Documentation>
-			<DiagramLine>
-				<DocPoint X="11377.112" Y="487.42582" />
-				<DocPoint X="11377.112" Y="858.84161" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="11502.08191" Y="467.514789" Width="194" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Representation" UniqueId="dc4c6d0f-4308-4e92-8224-93d3b8194102" DefinedType="IfcProductRepresentation" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="Representation" UniqueId="dc4c6d0f-4308-4e92-8224-93d3b8194102" DefinedType="IfcProductRepresentation" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Reference to the representations of the product, being either a representation (IfcProductRepresentation) or as a special case a shape representations (IfcProductDefinitionShape). The product definition shape provides for multiple geometric representations of the shape property of the object within the same object coordinate system, defined by the object placement.</Documentation>
-			<DiagramLine>
-				<DocPoint X="11501.061" Y="487.42582" />
-				<DocPoint X="11501.061" Y="557.775833" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="11620.73927" Y="501.79665" Width="176" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ReferencedBy" UniqueId="4672f05f-d72b-42d4-880c-01367391c23f" DefinedType="IfcRelAssignsToProduct" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingProduct">
+		<DocAttribute Name="ReferencedBy" UniqueId="4672f05f-d72b-42d4-880c-01367391c23f" DefinedType="IfcRelAssignsToProduct" AggregationType="3" Inverse="RelatingProduct">
 			<Documentation>Reference to the _IfcRelAssignsToProduct_ relationship, by which other products, processes, controls, resources or actors (as subtypes of _IfcObjectDefinition_) can be related to this product.</Documentation>
-			<DiagramLine>
-				<DocPoint X="11773.498" Y="415.42582" />
-				<DocPoint X="12287.985" Y="415.42582" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="11780.0748333" Y="396.807486" Width="461" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="PositionedRelativeTo" UniqueId="4e037e1b-e5b1-4a51-aed6-867d47edb41a" DefinedType="IfcRelPositions" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatedProducts">
-			<DiagramLine>
-				<DocPoint X="11773.498" Y="32" />
-				<DocPoint X="0" Y="32" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="11773.498" Y="32" Width="400" Height="50" />
-		</DocAttribute>
+		<DocAttribute Name="PositionedRelativeTo" UniqueId="4e037e1b-e5b1-4a51-aed6-867d47edb41a" DefinedType="IfcRelPositions" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="RelatedProducts" />
 	</Attributes>
 	<WhereRules>
 		<DocWhereRule Name="PlacementForShapeRepresentation" UniqueId="1e683d1f-04ac-437e-a105-362930e5f02b">
