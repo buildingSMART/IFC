@@ -10,10 +10,10 @@
     <tr style="height: 320px">
       <td style="vertical-align: top">
         <p style="text-align:left;">
-          <span style="font-family:Arial, Verdana, Tahoma, sans-serif; font-size:x-large; color:#FFFFFF; ">
-            Industry Foundation Classes 4.0.2.1</span><br><br><br>
           <span style="font-family:Arial, Verdana, Tahoma, sans-serif; font-size:xx-large; color:#FFFFFF; ">
-            <b>Design Transfer View</b></span> 
+            <b>Industry Foundation Classes 4.0.2.2</b></span><br><br><br>
+          <span style="font-family:Arial, Verdana, Tahoma, sans-serif; font-size:x-large; color:#FFFFFF; ">
+            <b>Version 4.0 - Addendum 2 - Technical Corrigendum 2</b></span> 
         </p>
       </td>
     </tr>
@@ -21,7 +21,7 @@
       <td style="vertical-align: top;">
         <p style="text-align:left;">
           <span style="font-family:Arial, Verdana, Tahoma, sans-serif; font-size:small; ">
-            &#169; buildingSMART 1996-2017 - This document is owned and copyrighted by buildingSMART International Limited<br>
+            &#169; buildingSMART 1996-2019 - This document is owned and copyrighted by buildingSMART International Limited<br>
             By using the IFC4 specification you agree to the following <a href="copyright.htm" target="info"><b>copyright notice</b></a></span>
         </p>
       </td>
@@ -30,6 +30,6 @@
 </div><noscript>
   <div style="position:absolute; top:10px; width:100%">
     <p style="text-align:center;font-weight:bold;color:white;background-color:darkred;padding:5px;">
-      Browsing the IFC4 specification with full functionality requires you to enable JavaScript in your browser settings.</p>
+      Browsing the IFC specification with full functionality requires you to enable JavaScript in your browser settings.</p>
   </div>
 </noscript>
