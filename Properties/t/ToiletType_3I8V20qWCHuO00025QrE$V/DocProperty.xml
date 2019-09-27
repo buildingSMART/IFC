@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocProperty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="ToiletType_3I8V20qWCHuO00025QrEV" Name="ToiletType" UniqueId="3I8V20qWCHuO00025QrE$V" PropertyType="p_enumeratedvalue" PrimaryDataType="IfcLabel">
 	<Localization>
-		<DocLocalization Name="Toilet Type" Locale="en" />
-		<DocLocalization Name="トイレ種類" Locale="ja-JP">
+		<DocLocalization Locale="en" Name="Toilet Type" />
+		<DocLocalization Locale="ja-JP" Name="トイレ種類">
 			<Documentation>トイレ配置は下記に列挙された仕様となります。
 
 便器洗浄機：便器と小便器が空にされ洗浄される周囲が囲まれた電気機器。
@@ -12,8 +12,6 @@
 汚物流し：ホッパーは土壌器具にデザイされており、汚物が流され空になります。</Documentation>
 		</DocLocalization>
 	</Localization>
-	<Enumeration>
-		<DocPropertyEnumeration xsi:nil="true" href="PEnum_ToiletType" />
-	</Enumeration>
+	<Enumeration xsi:type="DocPropertyEnumeration" xsi:nil="true" href="PEnum_ToiletType" />
 </DocProperty>
 

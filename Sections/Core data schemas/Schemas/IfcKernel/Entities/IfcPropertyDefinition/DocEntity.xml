@@ -1,53 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPropertyDefinition" Name="IfcPropertyDefinition" UniqueId="244ca500-edbb-46f5-9ab8-9560710b61a4" DiagramNumber="2" BaseDefinition="IfcRoot" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPropertyDefinition" Name="IfcPropertyDefinition" UniqueId="244ca500-edbb-46f5-9ab8-9560710b61a4" BaseDefinition="IfcRoot" EntityFlags="205">
 	<Localization>
-		<DocLocalization Name="Merkmal - Definition" Locale="de" />
-		<DocLocalization Name="Property Definition" Locale="en" />
-		<DocLocalization Name="Définition de propriété" Locale="fr" />
+		<DocLocalization Locale="de" Name="Merkmal - Definition" />
+		<DocLocalization Locale="en" Name="Property Definition" />
+		<DocLocalization Locale="fr" Name="Définition de propriété" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1650.7306" Y="451.05081" Width="439.76667" Height="180.66666" />
 	<Subtypes>
 		<DocSubtype UniqueId="52471774-c767-49b6-8fdc-4b900d38b546" DefinedType="IfcPropertySetDefinition" />
 		<DocSubtype UniqueId="e22d2db6-5d94-4ad3-878f-769d8960996c" DefinedType="IfcPropertyTemplateDefinition" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="HasContext" UniqueId="28b07bf7-fbb2-4391-bcc6-65fdc6c85e0c" DefinedType="IfcRelDeclares" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatedDefinitions">
-			<DiagramLine>
-				<DocPoint X="2090.4973" Y="576.05081" />
-				<DocPoint X="2765.6973" Y="576.05081" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2101.163967" Y="608.05081" Width="384" Height="70" />
-		</DocAttribute>
-		<DocAttribute Name="HasAssociations" UniqueId="0e3ae573-eb5a-4df0-9bf3-6a03c15d2cd9" DefinedType="IfcRelAssociates" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatedObjects">
+		<DocAttribute Name="HasContext" UniqueId="28b07bf7-fbb2-4391-bcc6-65fdc6c85e0c" DefinedType="IfcRelDeclares" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="RelatedDefinitions" />
+		<DocAttribute Name="HasAssociations" UniqueId="0e3ae573-eb5a-4df0-9bf3-6a03c15d2cd9" DefinedType="IfcRelAssociates" AggregationType="3" Inverse="RelatedObjects">
 			<Documentation>Reference to the relationship IfcRelAssociates and thus to those externally defined concepts, like classifications, documents, or library information, which are associated to the property definition.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2090.4973" Y="473.61026" />
-				<DocPoint X="2830.76499" Y="473.61026" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2085.1639667" Y="500.276927" Width="373" Height="70" />
 		</DocAttribute>
 	</Attributes>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="1856.614" Y="631.71747" />
-				<DocPoint X="1856.614" Y="711.959129" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="1857.2809" Y="711.95914" />
-						<DocPoint X="1857.2809" Y="967.80079" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="2159.9" Y="711.95914" />
-						<DocPoint X="2159.9" Y="805.959147" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

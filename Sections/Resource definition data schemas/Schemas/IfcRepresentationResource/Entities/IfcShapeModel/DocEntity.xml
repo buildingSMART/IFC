@@ -1,25 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcShapeModel" Name="IfcShapeModel" UniqueId="96fc3c5f-dd42-4a80-aea3-295fbe743fa9" DiagramNumber="2" BaseDefinition="IfcRepresentation" EntityFlags="197">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcShapeModel" Name="IfcShapeModel" UniqueId="96fc3c5f-dd42-4a80-aea3-295fbe743fa9" BaseDefinition="IfcRepresentation" EntityFlags="197">
 	<Localization>
-		<DocLocalization Name="Form - Modell" Locale="de" />
-		<DocLocalization Name="Shape Model" Locale="en" />
-		<DocLocalization Name="Modèle de forme" Locale="fr" />
+		<DocLocalization Locale="de" Name="Form - Modell" />
+		<DocLocalization Locale="en" Name="Shape Model" />
+		<DocLocalization Locale="fr" Name="Modèle de forme" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="2377.005" Y="1187.0357" Width="331.32829" Height="122.4219" />
 	<Subtypes>
 		<DocSubtype UniqueId="fe948891-ecb4-44f3-9bfa-ef2cff5ee112" DefinedType="IfcShapeRepresentation" />
 		<DocSubtype UniqueId="bc3960f4-14b5-44c7-9d74-cb9ab5b662b9" DefinedType="IfcTopologyRepresentation" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="OfShapeAspect" UniqueId="917251e4-e944-4d8c-adbb-eecf72e4e71c" DefinedType="IfcShapeAspect" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="ShapeRepresentations">
+		<DocAttribute Name="OfShapeAspect" UniqueId="917251e4-e944-4d8c-adbb-eecf72e4e71c" DefinedType="IfcShapeAspect" AttributeFlags="8" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="ShapeRepresentations">
 			<Documentation>Reference to the shape aspect, for which it is the shape representation.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2530.0384" Y="2058.0795" />
-				<DocPoint X="3049.63729" Y="2058.0795" />
-				<DocPoint X="3049.63729" Y="1248.24669" />
-				<DocPoint X="2708.33329" Y="1248.24669" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2534.5227807" Y="2100.126384" Width="323" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
@@ -30,27 +22,5 @@
 (SIZEOF(OfShapeAspect) = 1)</Expression>
 		</DocWhereRule>
 	</WhereRules>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="2542.6691" Y="1309.4576" />
-				<DocPoint X="2542.6691" Y="1399.524889" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="2712.4084" Y="1399.5249" />
-						<DocPoint X="2712.4084" Y="1444.748383" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="2464.0143" Y="1399.5249" />
-						<DocPoint X="2464.0143" Y="1608.75717" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

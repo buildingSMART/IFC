@@ -1,67 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcEdge" UniqueId="47c088c9-be86-473f-a8d3-cfc2f822e52d" DiagramNumber="1" BaseDefinition="IfcTopologicalRepresentationItem" EntityFlags="37">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcEdge" UniqueId="47c088c9-be86-473f-a8d3-cfc2f822e52d" BaseDefinition="IfcTopologicalRepresentationItem" EntityFlags="37">
 	<Localization>
-		<DocLocalization Name="Kante - Topologie" Locale="de" />
-		<DocLocalization Name="Edge" Locale="en" />
-		<DocLocalization Name="Arête" Locale="fr" />
+		<DocLocalization Locale="de" Name="Kante - Topologie" />
+		<DocLocalization Locale="en" Name="Edge" />
+		<DocLocalization Locale="fr" Name="Arête" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="242.024988810221" Y="597.416717529297" Width="200" Height="100" />
 	<Subtypes>
 		<DocSubtype UniqueId="00d5f2e9-9f5d-42b5-9b54-3e0c1f9c06b1" DefinedType="IfcOrientedEdge" />
 		<DocSubtype UniqueId="da329a02-3dfd-4558-9d3e-67fa4f7d43ee" DefinedType="IfcEdgeCurve" />
 		<DocSubtype UniqueId="f630874f-1b68-4ea7-bc55-8c89bbc1d962" DefinedType="IfcSubedge" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="EdgeStart" UniqueId="80c0d5f0-b497-4154-978f-adf7ca3ada45" DefinedType="IfcVertex" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="EdgeStart" UniqueId="80c0d5f0-b497-4154-978f-adf7ca3ada45" DefinedType="IfcVertex" XsdFormat="attribute">
 			<Documentation>Start point (vertex) of the edge.</Documentation>
-			<DiagramLine>
-				<DocPoint X="296.291691221517" Y="879.238898383247" />
-				<DocPoint X="296.291691221517" Y="879.238898383247" />
-				<DocPoint X="296.291691221517" Y="879.238898383247" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="296.291691221517" Y="859.238898383247" Width="117" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="EdgeEnd" UniqueId="e751fb52-dd63-46a8-8e2f-9f1b44e78f86" DefinedType="IfcVertex" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="EdgeEnd" UniqueId="e751fb52-dd63-46a8-8e2f-9f1b44e78f86" DefinedType="IfcVertex" XsdFormat="attribute">
 			<Documentation>End point (vertex) of the edge. The same vertex can be used for both EdgeStart and EdgeEnd.</Documentation>
-			<DiagramLine>
-				<DocPoint X="296.291691221517" Y="929.461113823785" />
-				<DocPoint X="296.291691221517" Y="929.461113823785" />
-				<DocPoint X="296.291691221517" Y="929.461113823785" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="296.291691221517" Y="909.461113823785" Width="109" Height="35" />
 		</DocAttribute>
 	</Attributes>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="442.024988810221" Y="610.666666666667" />
-				<DocPoint X="442.024988810221" Y="610.666666666667" />
-				<DocPoint X="858.666666666667" Y="610.666666666667" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="858.666666666667" Y="610.666666666667" />
-						<DocPoint X="860.858388264974" Y="610.666666666667" />
-						<DocPoint X="860.858388264974" Y="633.83349609375" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="858.666666666667" Y="610.666666666667" />
-						<DocPoint X="858.666666666667" Y="474.066741943359" />
-						<DocPoint X="1002.63999430339" Y="474.066741943359" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="858.666666666667" Y="610.666666666667" />
-						<DocPoint X="858.666666666667" Y="473.90011430013" />
-						<DocPoint X="410.453303019206" Y="473.90011430013" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

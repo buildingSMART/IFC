@@ -1,28 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcEdgeCurve" UniqueId="86ef7edf-f099-47aa-977b-0bc982b8db88" DiagramNumber="1" BaseDefinition="IfcEdge" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcEdgeCurve" UniqueId="86ef7edf-f099-47aa-977b-0bc982b8db88" BaseDefinition="IfcEdge" EntityFlags="101">
 	<Localization>
-		<DocLocalization Name="Kante - Topologie mit expliziter Geometrie" Locale="de" />
-		<DocLocalization Name="Edge Curve" Locale="en" />
+		<DocLocalization Locale="de" Name="Kante - Topologie mit expliziter Geometrie" />
+		<DocLocalization Locale="en" Name="Edge Curve" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1002.63999430339" Y="424.066741943359" Width="260.66667" Height="100" />
 	<Attributes>
-		<DocAttribute Name="EdgeGeometry" UniqueId="5cdae291-5fb5-4980-bb06-4373b159e076" DefinedType="IfcCurve" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="EdgeGeometry" UniqueId="5cdae291-5fb5-4980-bb06-4373b159e076" DefinedType="IfcCurve" XsdFormat="attribute">
 			<Documentation>The curve which defines the shape and spatial location of the edge. This curve may be unbounded and is implicitly trimmed by the vertices of the edge; this defines the edge domain. Multiple edges can reference the same curve.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1214.39993794759" Y="524.066741943359" />
-				<DocPoint X="1214.39993794759" Y="524.066741943359" />
-				<DocPoint X="1214.39993794759" Y="631.766642252604" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1214.39993794759" Y="611.766642252604" Width="173" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="SameSense" UniqueId="12a92453-5480-4793-989a-273e604a2079" DefinedType="IfcBoolean" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="SameSense" UniqueId="12a92453-5480-4793-989a-273e604a2079" DefinedType="IfcBoolean">
 			<Documentation>This logical flag indicates whether (TRUE), or not (FALSE) the senses of the edge and the curve defining the edge geometry are the same. The sense of an edge is from the edge start vertex to the edge end vertex; the sense of a curve is in the direction of increasing parameter.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1263.30666430339" Y="484.733510335287" />
-				<DocPoint X="1263.30666430339" Y="484.733510335287" />
-				<DocPoint X="1322.42277018229" Y="484.733510335287" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1263.30666430339" Y="464.733510335287" Width="141" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

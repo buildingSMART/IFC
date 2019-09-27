@@ -1,43 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSystem" Name="IfcSystem" UniqueId="dffb2f7f-2ba0-4b5f-88e4-bde0fa72fa1d" DiagramNumber="11" BaseDefinition="IfcGroup" EntityFlags="165">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSystem" Name="IfcSystem" UniqueId="dffb2f7f-2ba0-4b5f-88e4-bde0fa72fa1d" BaseDefinition="IfcGroup" EntityFlags="165">
 	<Localization>
-		<DocLocalization Name="System (allgemein)" Locale="de" />
-		<DocLocalization Name="System" Locale="en" />
-		<DocLocalization Name="Système" Locale="fr" />
+		<DocLocalization Locale="de" Name="System (allgemein)" />
+		<DocLocalization Locale="en" Name="System" />
+		<DocLocalization Locale="fr" Name="Système" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="6548.3039" Y="3978.5377" Width="200" Height="148.66666" />
 	<Subtypes>
 		<DocSubtype UniqueId="7a8f7013-3d5c-429f-9f24-e18f8ce57092" DefinedType="IfcZone" />
 		<DocSubtype UniqueId="5d8055d3-4846-4000-b792-14e85d40d127" DefinedType="IfcBuildingSystem" />
 		<DocSubtype UniqueId="39d595ba-d440-4f87-84c3-48a910dc54a4" DefinedType="IfcDistributionSystem" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="ServicesBuildings" UniqueId="9aebcdcb-6859-4a94-9ebc-9143ff0fcde4" DefinedType="IfcRelServicesBuildings" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatingSystem">
+		<DocAttribute Name="ServicesBuildings" UniqueId="9aebcdcb-6859-4a94-9ebc-9143ff0fcde4" DefinedType="IfcRelServicesBuildings" AttributeFlags="8" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="RelatingSystem">
 			<Documentation>Reference to the ~~building~~ spatial structure via the objectified relationship _IfcRelServicesBuildings_, which is serviced by the system.</Documentation>
-			<DiagramLine>
-				<DocPoint X="7283.6707" Y="4027.6377" />
-				<DocPoint X="6748.30393" Y="4027.6377" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="7285.6456983" Y="4073.179366" Width="342" Height="35" />
 		</DocAttribute>
 	</Attributes>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="6648.3039" Y="4127.2044" />
-				<DocPoint X="6648.3039" Y="4175.554386" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="6648.304" Y="4175.5544" />
-						<DocPoint X="6648.304" Y="4231.904414" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine />
-				<DocLine />
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

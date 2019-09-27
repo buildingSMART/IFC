@@ -1,30 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcAxis2Placement2D" Name="IfcAxis2Placement2D" UniqueId="0110d280-1722-46bf-b12c-0b81868564a8" DiagramNumber="3" BaseDefinition="IfcPlacement" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcAxis2Placement2D" Name="IfcAxis2Placement2D" UniqueId="0110d280-1722-46bf-b12c-0b81868564a8" BaseDefinition="IfcPlacement" EntityFlags="101">
 	<Localization>
-		<DocLocalization Name="Einfügepunkt mit zwei Achsen - zweidimensionaler Raum (2D)" Locale="de" />
-		<DocLocalization Name="Axis 2 Placement 2D" Locale="en" />
+		<DocLocalization Locale="de" Name="Einfügepunkt mit zwei Achsen - zweidimensionaler Raum (2D)" />
+		<DocLocalization Locale="en" Name="Axis 2 Placement 2D" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="3818.99877929688" Y="484.737904866536" Width="408.66667" Height="206.666687011719" />
 	<Attributes>
-		<DocAttribute Name="RefDirection" UniqueId="5e585783-4533-48ef-834e-1d2f291ac661" DefinedType="IfcDirection" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="RefDirection" UniqueId="5e585783-4533-48ef-834e-1d2f291ac661" DefinedType="IfcDirection" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>The direction used to determine the direction of the local X axis. If a value is omited that it defaults to [1.0, 0.0.].</Documentation>
-			<DiagramLine>
-				<DocPoint X="4035.11858113607" Y="691.404591878255" />
-				<DocPoint X="4035.11858113607" Y="691.404591878255" />
-				<DocPoint X="4035.11858113607" Y="762.137959798177" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="4035.11858113607" Y="742.137959798177" Width="143" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="P" UniqueId="33104550-d380-4611-9005-707c5ca49a0e" DefinedType="IfcDirection" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="2">
+		<DocAttribute Name="P" UniqueId="33104550-d380-4611-9005-707c5ca49a0e" DefinedType="IfcDirection" AggregationType="1" AggregationLower="2" AggregationUpper="2">
 			<Documentation>_P[1]_: The normalized direction of the placement X Axis. This is [1.0,0.0] if _RefDirection_ is omitted.  
 _P[2]_: The normalized direction of the placement Y Axis. This is a derived attribute and is orthogonal to P[1]. If _RefDirection_ is omitted, it defaults to [0.0,1.0]</Documentation>
 			<Derived>IfcBuild2Axes(RefDirection)</Derived>
-			<DiagramLine>
-				<DocPoint X="4035.11858113607" Y="691.404591878255" />
-				<DocPoint X="4035.11858113607" Y="691.404591878255" />
-				<DocPoint X="4035.11858113607" Y="762.137959798177" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="4035.11858113607" Y="742.137959798177" Width="175" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

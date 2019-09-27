@@ -1,33 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSurfaceStyleShading" Name="IfcSurfaceStyleShading" UniqueId="4d15ed6e-2d9b-4101-a12a-055e03cab045" DiagramNumber="8" BaseDefinition="IfcPresentationItem" EntityFlags="109">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSurfaceStyleShading" Name="IfcSurfaceStyleShading" UniqueId="4d15ed6e-2d9b-4101-a12a-055e03cab045" BaseDefinition="IfcPresentationItem" EntityFlags="109">
 	<Localization>
-		<DocLocalization Name="Oberflächenstil - Tönung" Locale="de" />
-		<DocLocalization Name="Surface Style Shading" Locale="en" />
-		<DocLocalization Name="Style d&apos;ombrage de surface" Locale="fr" />
+		<DocLocalization Locale="de" Name="Oberflächenstil - Tönung" />
+		<DocLocalization Locale="en" Name="Surface Style Shading" />
+		<DocLocalization Locale="fr" Name="Style d&apos;ombrage de surface" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1846.39331054688" Y="2563.94677734375" Width="248" Height="145.33332824707" />
 	<Subtypes>
 		<DocSubtype UniqueId="87fdddd6-30e5-46ee-a991-07c5ce5f9db2" DefinedType="IfcSurfaceStyleRendering" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="SurfaceColour" UniqueId="a2fe2d3a-9a84-4326-9016-dae00e0d0af9" DefinedType="IfcColourRgb" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="SurfaceColour" UniqueId="a2fe2d3a-9a84-4326-9016-dae00e0d0af9" DefinedType="IfcColourRgb" XsdFormat="attribute">
 			<Documentation>The colour used to render the surface. The surface colour for visualisation is defined by specifying the intensity of red, green and blue.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2094.39331054688" Y="2599.8134" />
-				<DocPoint X="2094.39331054688" Y="2599.8134" />
-				<DocPoint X="2596.5266" Y="2599.8134" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2094.39331054688" Y="2579.8134" Width="165" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Transparency" UniqueId="3ced60f5-17d8-4093-a16a-d36cdad0806d" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Transparency" UniqueId="3ced60f5-17d8-4093-a16a-d36cdad0806d" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1">
 			<Documentation>The transparency field specifies how &quot;clear&quot; an object is, with 1.0 being completely transparent, and 0.0 completely opaque. If not given, the value 0.0 (opaque) is assumed.
 &gt; NOTE&amp;nbsp; The definition of 1 being transparent and 0 being opaque is the opposite of the definition in alpha channels, where 0.0 is completely transparent and 1.0 is completely opaque. This definition is due to upward compatibility to previous versions of this standard in different to the definition in _IfcIndexedColourMap_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2094.39331054688" Y="2709.28010559082" />
-				<DocPoint X="2094.39331054688" Y="2759.28010559082" />
-				<DocPoint X="2246.39331054688" Y="2759.28010559082" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2094.39331054688" Y="2739.28010559082" Width="400" Height="50" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

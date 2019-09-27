@@ -1,31 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcIndexedPolygonalFace" UniqueId="d254b777-e1d5-480f-a356-6496977d5a4a" DiagramNumber="9" BaseDefinition="IfcTessellatedItem" EntityFlags="32">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcIndexedPolygonalFace" UniqueId="d254b777-e1d5-480f-a356-6496977d5a4a" BaseDefinition="IfcTessellatedItem" EntityFlags="32">
 	<Localization>
-		<DocLocalization Name="Indexed Polygonal Face" Locale="en" />
+		<DocLocalization Locale="en" Name="Indexed Polygonal Face" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="13856.0009765625" Y="1530.66687011719" Width="378.666656494141" Height="100" />
 	<Subtypes>
 		<DocSubtype UniqueId="408c000d-5adf-4945-ad66-daf5ab8d6e6e" DefinedType="IfcIndexedPolygonalFaceWithVoids" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="CoordIndex" UniqueId="e98eb6ec-1d91-49a2-848d-43f835c2b769" DefinedType="IfcPositiveInteger" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="3" AggregationUpper="?">
+		<DocAttribute Name="CoordIndex" UniqueId="e98eb6ec-1d91-49a2-848d-43f835c2b769" DefinedType="IfcPositiveInteger" AggregationType="1" AggregationLower="3" AggregationUpper="?">
 			<Documentation>One-dimensional list with the indices for the three or more points, that define the vertices of the outer loop. If the tessellated face set is closed, indicated by _SELF\IfcTessellatedFaceSet.Closed_, then the points, defining the outer loop, shall connect counter clockwise, as seen from the outside of the body, so that the resulting normal will point outwards.
 &gt; NOTE&amp;nbsp; The coordinates of the vertices are provided by the indexed list of _SELF\IfcTessellatedFaceSet.Coordinates.CoordList_. If the _SELF\IfcTessellatedFaceSet.PnIndex_ is provided, the indices point into it, otherwise directly into the _IfcCartesianPointList3D_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="13856.0009765625" Y="1630.66687011719" />
-				<DocPoint X="13856.0009765625" Y="1778.98680114746" />
-				<DocPoint X="13757.9583129883" Y="1778.98680114746" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="13856.0009765625" Y="1650.66687011719" Width="400" Height="100" />
 		</DocAttribute>
-		<DocAttribute Name="ToFaceSet" UniqueId="539ffe91-454c-4cc6-a6ee-03a20eaf9166" DefinedType="IfcPolygonalFaceSet" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="?" Inverse="Faces">
+		<DocAttribute Name="ToFaceSet" UniqueId="539ffe91-454c-4cc6-a6ee-03a20eaf9166" DefinedType="IfcPolygonalFaceSet" AggregationType="3" AggregationLower="1" AggregationUpper="?" Inverse="Faces">
 			<Documentation>Reference to the _IfcPolygonalFaceSet_ for which this face is associated.</Documentation>
-			<DiagramLine>
-				<DocPoint X="13930.666015625" Y="1530.66687011719" />
-				<DocPoint X="13930.666015625" Y="1530.66687011719" />
-				<DocPoint X="13930.666015625" Y="1340" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="13930.666015625" Y="1320" Width="400" Height="100" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

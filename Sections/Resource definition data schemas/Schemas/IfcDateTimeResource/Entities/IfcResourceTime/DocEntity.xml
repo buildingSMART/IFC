@@ -1,145 +1,53 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcResourceTime" UniqueId="d5120875-1fc0-4135-8be9-51f5bd59fc0c" DiagramNumber="2" BaseDefinition="IfcSchedulingTime" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcResourceTime" UniqueId="d5120875-1fc0-4135-8be9-51f5bd59fc0c" BaseDefinition="IfcSchedulingTime" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Ressourcenzeit" Locale="de" />
-		<DocLocalization Name="Resource Time" Locale="en" />
+		<DocLocalization Locale="de" Name="Ressourcenzeit" />
+		<DocLocalization Locale="en" Name="Resource Time" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1649.23311360677" Y="401.704661051432" Width="237.833353678385" Height="945.440633138021" />
 	<Attributes>
-		<DocAttribute Name="ScheduleWork" UniqueId="4b4bfb0c-4091-4fff-a712-fe4f2a6ab96e" DefinedType="IfcDuration" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ScheduleWork" UniqueId="4b4bfb0c-4091-4fff-a712-fe4f2a6ab96e" DefinedType="IfcDuration" AttributeFlags="1">
 			<Documentation>Indicates the total work (e.g. person-hours) allocated to the task on behalf of the resource. 
 Note: this is not necessarily the same as the task duration (IfcTaskTime.ScheduleDuration); it may vary according to the resource usage ratio and other resources assigned to the task.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1887.06646728516" Y="466.704051717122" />
-				<DocPoint X="1887.06646728516" Y="466.704051717122" />
-				<DocPoint X="2335.95328776042" Y="466.704051717122" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1887.06646728516" Y="446.704051717122" Width="167" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ScheduleUsage" UniqueId="de98a5df-400e-4d81-917e-b5a94759d675" DefinedType="IfcPositiveRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ScheduleUsage" UniqueId="de98a5df-400e-4d81-917e-b5a94759d675" DefinedType="IfcPositiveRatioMeasure" AttributeFlags="1">
 			<Documentation>Indicates the amount of the resource used concurrently. For example, 100% means 1 worker, 300% means 3 workers, 50% means half of 1 worker&apos;s time for scenarios where multitasking is feasible. If not provided, then the usage ratio is considered to be 100%.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1887.06646728516" Y="1149.36897786458" />
-				<DocPoint X="1887.06646728516" Y="1149.36897786458" />
-				<DocPoint X="2087.9462890625" Y="1149.36897786458" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1887.06646728516" Y="1129.36897786458" Width="182" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ScheduleStart" UniqueId="d5861bd0-7d6c-40c8-9b69-1904295e0d92" DefinedType="IfcDateTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ScheduleStart" UniqueId="d5861bd0-7d6c-40c8-9b69-1904295e0d92" DefinedType="IfcDateTime" AttributeFlags="1">
 			<Documentation>Indicates the time when the resource is scheduled to start working.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1887.06646728516" Y="757.217895507813" />
-				<DocPoint X="1887.06646728516" Y="757.217895507813" />
-				<DocPoint X="2153.15942382813" Y="757.217895507813" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1887.06646728516" Y="737.217895507813" Width="162" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ScheduleFinish" UniqueId="45829cf5-93e2-4391-bff7-547516787758" DefinedType="IfcDateTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ScheduleFinish" UniqueId="45829cf5-93e2-4391-bff7-547516787758" DefinedType="IfcDateTime" AttributeFlags="1">
 			<Documentation>Indicates the time when the resource is scheduled to finish working.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1887.06646728516" Y="818.551228841146" />
-				<DocPoint X="1887.06646728516" Y="818.551228841146" />
-				<DocPoint X="2153.15942382813" Y="818.551228841146" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1887.06646728516" Y="798.551228841146" Width="175" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ScheduleContour" UniqueId="162cf71d-e04c-4489-84e3-5cdad4978cee" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ScheduleContour" UniqueId="162cf71d-e04c-4489-84e3-5cdad4978cee" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>Indicates how a resource should be leveled over time by adjusting the resource usage according to a specified curve.  Standard values include: &apos;Flat&apos;, &apos;BackLoaded&apos;, &apos;FrontLoaded&apos;, &apos;DoublePeak&apos;, &apos;EarlyPeak&apos;, &apos;LatePeak&apos;, &apos;Bell&apos;, and &apos;Turtle&apos;.  Custom values may specify a custom name or formula.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1887.06646728516" Y="879.884562174479" />
-				<DocPoint X="1887.06646728516" Y="879.884562174479" />
-				<DocPoint X="2153.15942382813" Y="879.884562174479" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1887.06646728516" Y="859.884562174479" Width="199" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LevelingDelay" UniqueId="f46b3261-321d-4a92-bacc-06ccd902aafc" DefinedType="IfcDuration" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LevelingDelay" UniqueId="f46b3261-321d-4a92-bacc-06ccd902aafc" DefinedType="IfcDuration" AttributeFlags="1">
 			<Documentation>Indicates a delay in the ScheduleStart caused by leveling.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1887.06646728516" Y="510.224957275391" />
-				<DocPoint X="1887.06646728516" Y="510.224957275391" />
-				<DocPoint X="2335.95328776042" Y="510.224957275391" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1887.06646728516" Y="490.224957275391" Width="162" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="IsOverAllocated" UniqueId="7af92579-02b6-4fca-a69f-4c670bb7aa78" DefinedType="IfcBoolean" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="IsOverAllocated" UniqueId="7af92579-02b6-4fca-a69f-4c670bb7aa78" DefinedType="IfcBoolean" AttributeFlags="1">
 			<Documentation>Indicates that the resource is scheduled in excess of its capacity.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1887.06646728516" Y="683.884602864583" />
-				<DocPoint X="1887.06646728516" Y="683.884602864583" />
-				<DocPoint X="2222.49259440104" Y="683.884602864583" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1887.06646728516" Y="663.884602864583" Width="180" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="StatusTime" UniqueId="cf3f1225-d2b5-4b1f-8ac3-4a2f01807ca7" DefinedType="IfcDateTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="StatusTime" UniqueId="cf3f1225-d2b5-4b1f-8ac3-4a2f01807ca7" DefinedType="IfcDateTime" AttributeFlags="1">
 			<Documentation>Indicates the date and time for which status values are applicable; particularly completion, actual, and remaining values.  If values are time-phased (the referencing IfcConstructionResource has associated time series values for attributes), then the status values may be determined from such time-phased data as of the StatusTime.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1887.06646728516" Y="941.217895507813" />
-				<DocPoint X="1887.06646728516" Y="941.217895507813" />
-				<DocPoint X="2153.15942382813" Y="941.217895507813" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1887.06646728516" Y="921.217895507813" Width="131" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ActualWork" UniqueId="b21864c5-499d-4d90-8593-9eeedfd3c29d" DefinedType="IfcDuration" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ActualWork" UniqueId="b21864c5-499d-4d90-8593-9eeedfd3c29d" DefinedType="IfcDuration" AttributeFlags="1">
 			<Documentation>Indicates the actual work performed by the resource as of the StatusTime.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1887.06646728516" Y="553.745862833659" />
-				<DocPoint X="1887.06646728516" Y="553.745862833659" />
-				<DocPoint X="2335.95328776042" Y="553.745862833659" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1887.06646728516" Y="533.745862833659" Width="132" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ActualUsage" UniqueId="6a504f50-8aac-406c-9874-26733470043c" DefinedType="IfcPositiveRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ActualUsage" UniqueId="6a504f50-8aac-406c-9874-26733470043c" DefinedType="IfcPositiveRatioMeasure" AttributeFlags="1">
 			<Documentation>Indicates the actual amount of the resource used concurrently.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1887.06646728516" Y="1190.70231119792" />
-				<DocPoint X="1887.06646728516" Y="1190.70231119792" />
-				<DocPoint X="2087.9462890625" Y="1190.70231119792" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1887.06646728516" Y="1170.70231119792" Width="147" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ActualStart" UniqueId="e137ba6a-c21b-4606-aa20-b9e7c30e0881" DefinedType="IfcDateTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ActualStart" UniqueId="e137ba6a-c21b-4606-aa20-b9e7c30e0881" DefinedType="IfcDateTime" AttributeFlags="1">
 			<Documentation>Indicates the time when the resource actually started working.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1887.06646728516" Y="1002.55122884115" />
-				<DocPoint X="1887.06646728516" Y="1002.55122884115" />
-				<DocPoint X="2153.15942382813" Y="1002.55122884115" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1887.06646728516" Y="982.551228841146" Width="127" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ActualFinish" UniqueId="a5335e6f-18fd-4d92-ba1d-ea662f05df7a" DefinedType="IfcDateTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ActualFinish" UniqueId="a5335e6f-18fd-4d92-ba1d-ea662f05df7a" DefinedType="IfcDateTime" AttributeFlags="1">
 			<Documentation>Indicates the time when the resource actually finished working.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1887.06646728516" Y="1063.88456217448" />
-				<DocPoint X="1887.06646728516" Y="1063.88456217448" />
-				<DocPoint X="2153.15942382813" Y="1063.88456217448" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1887.06646728516" Y="1043.88456217448" Width="140" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RemainingWork" UniqueId="920d1d67-aec5-4c96-9b9d-d2a8c61bc3ea" DefinedType="IfcDuration" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RemainingWork" UniqueId="920d1d67-aec5-4c96-9b9d-d2a8c61bc3ea" DefinedType="IfcDuration" AttributeFlags="1">
 			<Documentation>Indicates the work remaining to be completed by the resource.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1887.06646728516" Y="597.266768391927" />
-				<DocPoint X="1887.06646728516" Y="597.266768391927" />
-				<DocPoint X="2335.95328776042" Y="597.266768391927" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1887.06646728516" Y="577.266768391927" Width="182" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RemainingUsage" UniqueId="3f98d797-f920-4f52-9739-48be47b047e3" DefinedType="IfcPositiveRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<DiagramLine>
-				<DocPoint X="1887.06646728516" Y="1232.03564453125" />
-				<DocPoint X="1887.06646728516" Y="1232.03564453125" />
-				<DocPoint X="2087.9462890625" Y="1232.03564453125" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1887.06646728516" Y="1212.03564453125" Width="197" Height="35" />
-		</DocAttribute>
-		<DocAttribute Name="Completion" UniqueId="2a9a0478-4070-40f3-b8c8-736ceb9d9c9d" DefinedType="IfcPositiveRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RemainingUsage" UniqueId="3f98d797-f920-4f52-9739-48be47b047e3" DefinedType="IfcPositiveRatioMeasure" AttributeFlags="1" />
+		<DocAttribute Name="Completion" UniqueId="2a9a0478-4070-40f3-b8c8-736ceb9d9c9d" DefinedType="IfcPositiveRatioMeasure" AttributeFlags="1">
 			<Documentation>Indicates the percent completion of this resource.  If the resource is assigned to a task, then indicates completion of the task on behalf of the resource; if the resource is partitioned into sub-allocations, then indicates overall completion of sub-allocations.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1887.06646728516" Y="1273.36897786458" />
-				<DocPoint X="1887.06646728516" Y="1273.36897786458" />
-				<DocPoint X="2087.9462890625" Y="1273.36897786458" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1887.06646728516" Y="1253.36897786458" Width="132" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

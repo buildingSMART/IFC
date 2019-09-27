@@ -1,52 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCartesianPointList" Name="IfcCartesianPointList" UniqueId="300d59f2-14b1-4472-b5a4-8cf798c02341" DiagramNumber="8" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="77">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCartesianPointList" UniqueId="300d59f2-14b1-4472-b5a4-8cf798c02341" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="77">
 	<Localization>
-		<DocLocalization Name="Liste von Kartesischen Punkten" Locale="de" />
-		<DocLocalization Name="Cartesian Point List" Locale="en" />
-		<DocLocalization Name="Liste de points cartésiens" Locale="fr" />
+		<DocLocalization Locale="de" Name="Liste von Kartesischen Punkten" />
+		<DocLocalization Locale="en" Name="Cartesian Point List" />
+		<DocLocalization Locale="fr" Name="Liste de points cartésiens" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="11288.9873046875" Y="195.813323974609" Width="397.33333" Height="100" />
 	<Subtypes>
 		<DocSubtype UniqueId="bf6b09ee-3450-4f25-bc10-23bc525c2bd9" DefinedType="IfcCartesianPointList3D" />
 		<DocSubtype UniqueId="645b4590-62a5-4ab7-af67-23b440eb4958" DefinedType="IfcCartesianPointList2D" />
 		<DocSubtype UniqueId="68214c97-f390-486f-a960-47582e665dbc" DefinedType="IfcCartesianPointList3D" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Dim" UniqueId="0d99431c-6c21-461a-b68d-f13d146d8595" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Dim" UniqueId="0d99431c-6c21-461a-b68d-f13d146d8595" DefinedType="IfcDimensionCount">
 			<Documentation>The space dimensionality of this class, either 2 or 3, depending on the sub type.</Documentation>
 			<Derived>IfcPointListDim(SELF)</Derived>
-			<DiagramLine>
-				<DocPoint X="11686.3206346875" Y="242.146667480469" />
-				<DocPoint X="11686.3206346875" Y="242.146667480469" />
-				<DocPoint X="11820.986328125" Y="242.146667480469" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="11686.3206346875" Y="222.146667480469" Width="400" Height="50" />
 		</DocAttribute>
 	</Attributes>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="11506.6666666667" Y="295.813323974609" />
-				<DocPoint X="11506.6666666667" Y="295.813323974609" />
-				<DocPoint X="11506.6666666667" Y="365.333333333333" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="11506.6666666667" Y="365.333333333333" />
-						<DocPoint X="11506.6666666667" Y="362.000030517578" />
-						<DocPoint X="11781.3330078125" Y="362.000030517578" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="11506.6666666667" Y="365.333333333333" />
-						<DocPoint X="11506.6666666667" Y="717.119995117188" />
-						<DocPoint X="11777.787109375" Y="717.119995117188" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

@@ -1,36 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPolygonalFaceSet" UniqueId="db4f6cc6-cf8a-4dbe-9456-f8235923f349" DiagramNumber="9" BaseDefinition="IfcTessellatedFaceSet" EntityFlags="32">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPolygonalFaceSet" UniqueId="db4f6cc6-cf8a-4dbe-9456-f8235923f349" BaseDefinition="IfcTessellatedFaceSet" EntityFlags="32">
 	<Localization>
-		<DocLocalization Name="Polygonal Face Set" Locale="en" />
+		<DocLocalization Locale="en" Name="Polygonal Face Set" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="13730.666015625" Y="1176" Width="400" Height="164" />
 	<Attributes>
-		<DocAttribute Name="Closed" UniqueId="6f54d305-9e4f-48f6-802b-83d293cd932e" DefinedType="IfcBoolean" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Closed" UniqueId="6f54d305-9e4f-48f6-802b-83d293cd932e" DefinedType="IfcBoolean" AttributeFlags="1">
 			<Documentation>Indication whether the _IfcPolygonalFaceSet_ is a closed shell or not. If omited no such information can be provided.</Documentation>
-			<DiagramLine>
-				<DocPoint X="13730.666015625" Y="1340" />
-				<DocPoint X="13730.666015625" Y="1441.33337402344" />
-				<DocPoint X="13625.3323516846" Y="1441.33337402344" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="13730.666015625" Y="1421.33337402344" Width="0" Height="0" />
 		</DocAttribute>
-		<DocAttribute Name="Faces" UniqueId="ce73f034-79d3-4e8d-a2df-68e051c2606b" DefinedType="IfcIndexedPolygonalFace" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="?">
+		<DocAttribute Name="Faces" UniqueId="ce73f034-79d3-4e8d-a2df-68e051c2606b" DefinedType="IfcIndexedPolygonalFace" AggregationType="1" AggregationLower="1" AggregationUpper="?">
 			<Documentation>The list of polygonal faces, with or without inner loops, that bound the faceted face set.</Documentation>
-			<DiagramLine>
-				<DocPoint X="14045.3343048096" Y="1340" />
-				<DocPoint X="14045.3343048096" Y="1340" />
-				<DocPoint X="14045.3343048096" Y="1530.66687011719" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="14045.3343048096" Y="1510.66687011719" Width="400" Height="50" />
 		</DocAttribute>
-		<DocAttribute Name="PnIndex" UniqueId="d28d398b-ccae-43b7-8470-6d19dcbaf135" DefinedType="IfcPositiveInteger" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="?">
+		<DocAttribute Name="PnIndex" UniqueId="d28d398b-ccae-43b7-8470-6d19dcbaf135" DefinedType="IfcPositiveInteger" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="?">
 			<Documentation>The list of integers defining the locations in the _IfcCartesianPointList3D_ to obtain the point coordinates for the indices at the indexed polygonal faces. If the _PnIndex_ is not provided the indices at the indexed polygonal faces point directly into the  _IfcCartesianPointList3D_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="13730.666015625" Y="1340" />
-				<DocPoint X="13595.7916564941" Y="1340" />
-				<DocPoint X="13595.7916564941" Y="1703.48677571615" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="13730.666015625" Y="1360" Width="400" Height="100" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

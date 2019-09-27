@@ -1,42 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcResource" Name="IfcResource" UniqueId="7d23ec63-a69d-48c1-9db7-f4089326e1f2" DiagramNumber="10" BaseDefinition="IfcObject" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcResource" UniqueId="7d23ec63-a69d-48c1-9db7-f4089326e1f2" BaseDefinition="IfcObject" EntityFlags="205">
 	<Localization>
-		<DocLocalization Name="Ressource (allgemein)" Locale="de" />
-		<DocLocalization Name="Resource" Locale="en" />
-		<DocLocalization Name="Ressource" Locale="fr" />
+		<DocLocalization Locale="de" Name="Ressource (allgemein)" />
+		<DocLocalization Locale="en" Name="Resource" />
+		<DocLocalization Locale="fr" Name="Ressource" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="14668.131" Y="354.0779" Width="492" Height="303.83333" />
 	<Attributes>
-		<DocAttribute Name="Identification" UniqueId="0cd017c3-4383-4abf-b0ed-773af9cc8232" DefinedType="IfcIdentifier" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Identification" UniqueId="0cd017c3-4383-4abf-b0ed-773af9cc8232" DefinedType="IfcIdentifier" AttributeFlags="1">
 			<Documentation>An identifying designation given to a resource.
     It is the identifier at the occurrence level. 
     
 { .change-ifc2x4}
 &gt; IFC4 CHANGE Attribute promoted from subtype _IfcConstructionResource_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="15160.131" Y="387.32332" />
-				<DocPoint X="15693.464" Y="387.32332" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="15156.7976667" Y="380.6566533" Width="146" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LongDescription" UniqueId="60a852dc-c4e0-4828-89b6-44ca845ab563" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LongDescription" UniqueId="60a852dc-c4e0-4828-89b6-44ca845ab563" DefinedType="IfcText" AttributeFlags="1">
 			<Documentation>A detailed description of the resource (e.g. the skillset for a labor resource).  
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute _LongDescription_ is added replacing the _ResourceGroup_ attribute at subtype _IfcConstructionResource_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="15160.131" Y="471.3279" />
-				<DocPoint X="15693.46433" Y="471.3279" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="15148.797667" Y="463.3279" Width="186" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ResourceOf" UniqueId="e87b021e-ec74-43eb-9a4e-b35cff326133" DefinedType="IfcRelAssignsToResource" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingResource">
+		<DocAttribute Name="ResourceOf" UniqueId="e87b021e-ec74-43eb-9a4e-b35cff326133" DefinedType="IfcRelAssignsToResource" AggregationType="3" Inverse="RelatingResource">
 			<Documentation>Set of relationships to other objects, e.g. products, processes, controls, resources or actors, for which this resource object is a resource.</Documentation>
-			<DiagramLine>
-				<DocPoint X="15160.131" Y="621.87303" />
-				<DocPoint X="15574.54483" Y="621.87303" />
-				<DocPoint X="15574.54483" Y="845.07686" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="15235.37125" Y="601.080845" Width="503" Height="70" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

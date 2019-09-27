@@ -1,20 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcIndexedPolygonalFaceWithVoids" UniqueId="d2c744de-ffd9-4239-a7cb-245b41b80a33" DiagramNumber="9" BaseDefinition="IfcIndexedPolygonalFace" EntityFlags="32">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcIndexedPolygonalFaceWithVoids" UniqueId="d2c744de-ffd9-4239-a7cb-245b41b80a33" BaseDefinition="IfcIndexedPolygonalFace" EntityFlags="32">
 	<Localization>
-		<DocLocalization Name="Indexed Polygonal Face With Voids" Locale="en" />
+		<DocLocalization Locale="en" Name="Indexed Polygonal Face With Voids" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="13989.3330078125" Y="1725.33337402344" Width="376" Height="100" />
 	<Attributes>
-		<DocAttribute Name="InnerCoordIndices" UniqueId="f6139048-1730-4c6e-91f6-239c4a5c0ca2" DefinedType="IfcPositiveInteger" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="?" XsdFormat="attribute">
+		<DocAttribute Name="InnerCoordIndices" UniqueId="f6139048-1730-4c6e-91f6-239c4a5c0ca2" DefinedType="IfcPositiveInteger" AggregationType="1" AggregationLower="1" AggregationUpper="?" XsdFormat="attribute">
 			<Documentation>Two-dimensional list, where the first dimension represents each inner loop (from 1 to N) and the second dimension the indices to three or more points that define the vertices of each inner loop. If the tessellated face set is closed, indicated by _SELF\IfcTessellatedFaceSet.Closed_, then the points, defining the inner loops, shall connect clockwise, as seen from the outside of the body.
 &gt; NOTE&amp;nbsp; The coordinates of the vertices are provided by the indexed list of _SELF\IfcTessellatedFaceSet.Coordinates.CoordList_. If the _SELF\IfcTessellatedFaceSet.PnIndex_ is provided, the indices point into it, otherwise directly into the _IfcCartesianPointList3D_.</Documentation>
-			<AggregationAttribute xsi:type="DocAttribute" UniqueId="ea55f708-469d-45d2-9905-ed83269d63e8" AttributeFlags="0" AggregationType="1" AggregationFlag="2" AggregationLower="3" AggregationUpper="?" />
-			<DiagramLine>
-				<DocPoint X="13989.3330078125" Y="1778.98680114746" />
-				<DocPoint X="13989.3330078125" Y="1778.98680114746" />
-				<DocPoint X="13757.9583129883" Y="1778.98680114746" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="13989.3330078125" Y="1758.98680114746" Width="400" Height="100" />
+			<AggregationAttribute xsi:type="DocAttribute" UniqueId="ea55f708-469d-45d2-9905-ed83269d63e8" AggregationType="1" AggregationFlag="2" AggregationLower="3" AggregationUpper="?" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

@@ -1,44 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcMaterialProfileSetUsage" Name="IfcMaterialProfileSetUsage" UniqueId="1ca68971-59c5-4363-bcf5-4a3bf1006eae" DiagramNumber="3" BaseDefinition="IfcMaterialUsageDefinition" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMaterialProfileSetUsage" UniqueId="1ca68971-59c5-4363-bcf5-4a3bf1006eae" BaseDefinition="IfcMaterialUsageDefinition" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Gruppe von Profilen mit Material - Verwendung" Locale="de" />
-		<DocLocalization Name="Material Profile Set Usage" Locale="en" />
-		<DocLocalization Name="Mise en place d&apos;un ensemble de matériaux de profil" Locale="fr" />
+		<DocLocalization Locale="de" Name="Gruppe von Profilen mit Material - Verwendung" />
+		<DocLocalization Locale="en" Name="Material Profile Set Usage" />
+		<DocLocalization Locale="fr" Name="Mise en place d&apos;un ensemble de matériaux de profil" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="3410.2923" Y="262.3709" Width="434.86842" Height="177.1661" />
 	<Subtypes>
 		<DocSubtype UniqueId="65dd1bda-9ca0-407c-b19a-1f8f9105142a" DefinedType="IfcMaterialProfileSetUsageTapering" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="ForProfileSet" UniqueId="c96afa24-01fc-4da3-b6ce-642031dac6ae" DefinedType="IfcMaterialProfileSet" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="ForProfileSet" UniqueId="c96afa24-01fc-4da3-b6ce-642031dac6ae" DefinedType="IfcMaterialProfileSet" XsdFormat="attribute">
 			<Documentation>The _IfcMaterialProfileSet_ set to which the usage is applied.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3604.8562" Y="439.537" />
-				<DocPoint X="3604.8562" Y="801.42377" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3698.826568" Y="490.00333" Width="150" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="CardinalPoint" UniqueId="66625475-0f95-4c75-8e18-07cd905063a7" DefinedType="IfcCardinalPointReference" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="CardinalPoint" UniqueId="66625475-0f95-4c75-8e18-07cd905063a7" DefinedType="IfcCardinalPointReference" AttributeFlags="1">
 			<Documentation>Index reference to a significant point in the section profile. Describes how the section is aligned relative to the (longitudinal) axis of the member it is associated with. This parametric specification of profile alignment can be provided redundantly to the explicit alignment defined by ForProfileSet.MaterialProfiles[\*].Profile.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3609.1009" Y="262.3709" />
-				<DocPoint X="3609.1009" Y="134.42581" />
-				<DocPoint X="3999.11531" Y="134.42581" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3537.841185" Y="123.749872" Width="155" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ReferenceExtent" UniqueId="0030178b-e5f9-4374-9d8c-f15dd967e318" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ReferenceExtent" UniqueId="0030178b-e5f9-4374-9d8c-f15dd967e318" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>Extent of the extrusion of the elements body shape representation to which the _IfcMaterialProfileSetUsage_ applies. It is used as the reference value for the upper _OffsetValues[2]_ provided by the _IfcMaterialProfileSetWithOffsets_ subtype for included material profiles.
 
 &gt; NOTE&amp;nbsp; The attribute _ReferenceExtent_ shall be asserted if an _IfcMaterialProfileSetWithOffsets_ is included in the _ForProfileSet.MaterialProfiles_ list of material layers.
 
 &gt; NOTE&amp;nbsp; The _ReferenceExtent_ for _IfcBeamStandardCase_, _IfcColumnStandardCase_, and _IfcMemberStandardCase_ is the reference length starting at z=0 being the XY plane of the object coordinate system.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3692.2099" Y="439.537" />
-				<DocPoint X="3692.2099" Y="545.35145" />
-				<DocPoint X="4002.38252" Y="545.35145" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3668.627786" Y="526.749665" Width="192" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

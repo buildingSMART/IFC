@@ -1,30 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcQuantityVolume" UniqueId="3b86c373-401a-48f2-a1e3-c6a078202bf9" DiagramNumber="1" BaseDefinition="IfcPhysicalSimpleQuantity" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcQuantityVolume" UniqueId="3b86c373-401a-48f2-a1e3-c6a078202bf9" BaseDefinition="IfcPhysicalSimpleQuantity" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Mengenangabe - Volumen" Locale="de" />
-		<DocLocalization Name="Quantity Volume" Locale="en" />
-		<DocLocalization Name="Quantité de volume" Locale="fr" />
+		<DocLocalization Locale="de" Name="Mengenangabe - Volumen" />
+		<DocLocalization Locale="en" Name="Quantity Volume" />
+		<DocLocalization Locale="fr" Name="Quantité de volume" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="559.26666" Y="1435.7332" Width="316.56667" Height="101.33333" />
 	<Attributes>
-		<DocAttribute Name="VolumeValue" UniqueId="8ece699a-8cbf-4a26-9fc3-68778f530a8f" DefinedType="IfcVolumeMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="VolumeValue" UniqueId="8ece699a-8cbf-4a26-9fc3-68778f530a8f" DefinedType="IfcVolumeMeasure">
 			<Documentation>Volume measure value of this quantity.</Documentation>
-			<DiagramLine>
-				<DocPoint X="875.83333" Y="1486.3999" />
-				<DocPoint X="1182.6333" Y="1486.3999" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="875.83333" Y="1486.3999" Width="153" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Formula" UniqueId="778b2020-fecb-42a5-a31b-2d91bd0f3b61" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Formula" UniqueId="778b2020-fecb-42a5-a31b-2d91bd0f3b61" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>A formula by which the quantity has been calculated. It can be assigned in addition to the actual value of the quantity. Formulas could be mathematic calculations (like width x height), database links, or a combination. The formula is for informational purposes only.
 { .change-ifc2x4}
 &gt; IFC4 CHANGE Attribute added to the end of the attribute list.</Documentation>
-			<DiagramLine>
-				<DocPoint X="581.79999" Y="1537.0666" />
-				<DocPoint X="581.79999" Y="1608.966602" />
-				<DocPoint X="927.76666" Y="1608.966602" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="579.4833233" Y="1602.3499345" Width="97" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

@@ -1,37 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCurveBoundedSurface" UniqueId="8606dc84-8a2a-415b-8415-b98039c064b8" DiagramNumber="9" BaseDefinition="IfcBoundedSurface" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCurveBoundedSurface" UniqueId="8606dc84-8a2a-415b-8415-b98039c064b8" BaseDefinition="IfcBoundedSurface" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Durch Kurven begrenzte Fläche" Locale="de" />
-		<DocLocalization Name="Curve Bounded Surface" Locale="en" />
+		<DocLocalization Locale="de" Name="Durch Kurven begrenzte Fläche" />
+		<DocLocalization Locale="en" Name="Curve Bounded Surface" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="13237.5940755208" Y="1282.48010253906" Width="327.999674479166" Height="192" />
 	<Attributes>
-		<DocAttribute Name="BasisSurface" UniqueId="3fb78b2a-7501-4109-b62b-eb4d6ef23c20" DefinedType="IfcSurface" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="BasisSurface" UniqueId="3fb78b2a-7501-4109-b62b-eb4d6ef23c20" DefinedType="IfcSurface" XsdFormat="attribute">
 			<Documentation>The surface to be bounded.</Documentation>
-			<DiagramLine>
-				<DocPoint X="13237.5940755208" Y="1382.47993977865" />
-				<DocPoint X="13237.5940755208" Y="1382.47993977865" />
-				<DocPoint X="13060.3271484375" Y="1382.47993977865" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="13237.5940755208" Y="1362.47993977865" Width="151" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Boundaries" UniqueId="8cb2201d-35ec-4b4f-9f5a-a1f51db9cb99" DefinedType="IfcBoundaryCurve" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="Boundaries" UniqueId="8cb2201d-35ec-4b4f-9f5a-a1f51db9cb99" DefinedType="IfcBoundaryCurve" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The outer boundary of the surface.</Documentation>
-			<DiagramLine>
-				<DocPoint X="13237.5940755208" Y="1474.48010253906" />
-				<DocPoint X="13237.5940755208" Y="1633.14672851563" />
-				<DocPoint X="13148.2607421875" Y="1633.14672851563" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="13237.5940755208" Y="1494.48010253906" Width="211" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ImplicitOuter" UniqueId="9c449e17-4401-4cd1-920d-3ad8685ac7a3" DefinedType="IfcBoolean" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
-			<DiagramLine>
-				<DocPoint X="13424.2600860596" Y="1474.48010253906" />
-				<DocPoint X="13424.2600860596" Y="1474.48010253906" />
-				<DocPoint X="13424.2600860596" Y="1607.81335449219" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="13424.2600860596" Y="1494.48010253906" Width="144" Height="35" />
-		</DocAttribute>
+		<DocAttribute Name="ImplicitOuter" UniqueId="9c449e17-4401-4cd1-920d-3ad8685ac7a3" DefinedType="IfcBoolean" />
 	</Attributes>
 </DocEntity>
 

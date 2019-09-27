@@ -1,95 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRecurrencePattern" UniqueId="258a0af9-321d-4e24-a6cc-be10c825e9f7" DiagramNumber="2" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRecurrencePattern" UniqueId="258a0af9-321d-4e24-a6cc-be10c825e9f7" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Wiederholungsmuster" Locale="de" />
-		<DocLocalization Name="Recurrence Pattern" Locale="en" />
+		<DocLocalization Locale="de" Name="Wiederholungsmuster" />
+		<DocLocalization Locale="en" Name="Recurrence Pattern" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="2169.81762695313" Y="1770.44645182292" Width="183.205841064453" Height="566.321665445964" />
 	<Attributes>
-		<DocAttribute Name="RecurrenceType" UniqueId="954775d8-cdf6-472f-86bb-c7b6f316a87e" DefinedType="IfcRecurrenceTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RecurrenceType" UniqueId="954775d8-cdf6-472f-86bb-c7b6f316a87e" DefinedType="IfcRecurrenceTypeEnum">
 			<Documentation>Defines the recurrence type that gives meaning to the used
     attributes and decides about possible attribute
     combinations, i.e. what attributes are needed to fully
     describe the pattern type.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2169.81762695313" Y="2108.50795013932" />
-				<DocPoint X="2169.81762695313" Y="2108.50795013932" />
-				<DocPoint X="1959.8791809082" Y="2108.50795013932" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2169.81762695313" Y="2088.50795013932" Width="190" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="DayComponent" UniqueId="aa5983f3-4399-47f4-a4de-045d80528e17" DefinedType="IfcDayInMonthNumber" AttributeFlags="1" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="DayComponent" UniqueId="aa5983f3-4399-47f4-a4de-045d80528e17" DefinedType="IfcDayInMonthNumber" AttributeFlags="1" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The position of the specified day in a month.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2353.02346801758" Y="1773.71329275" />
-				<DocPoint X="2353.02346801758" Y="1773.71329275" />
-				<DocPoint X="2641.7666015625" Y="1773.71329275" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2353.02346801758" Y="1753.71329275" Width="259" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="WeekdayComponent" UniqueId="8d1bab19-3977-4b22-84d4-451c88dd0969" DefinedType="IfcDayInWeekNumber" AttributeFlags="1" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="WeekdayComponent" UniqueId="8d1bab19-3977-4b22-84d4-451c88dd0969" DefinedType="IfcDayInWeekNumber" AttributeFlags="1" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The weekday name of the specified day in a week.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2353.02346801758" Y="1877.0072787526" />
-				<DocPoint X="2353.02346801758" Y="1877.0072787526" />
-				<DocPoint X="2644.43310546875" Y="1877.0072787526" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2353.02346801758" Y="1857.0072787526" Width="318" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="MonthComponent" UniqueId="1019c4ef-3322-48ef-a091-41faef01eb7f" DefinedType="IfcMonthInYearNumber" AttributeFlags="1" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="MonthComponent" UniqueId="1019c4ef-3322-48ef-a091-41faef01eb7f" DefinedType="IfcMonthInYearNumber" AttributeFlags="1" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The position of the specified month in a year.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2353.02346801758" Y="1980.30126475521" />
-				<DocPoint X="2353.02346801758" Y="1980.30126475521" />
-				<DocPoint X="2639.09969075521" Y="1980.30126475521" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2353.02346801758" Y="1960.30126475521" Width="284" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Position" UniqueId="ae3d57dd-01ef-4c24-a775-224bd6b6563d" DefinedType="IfcInteger" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Position" UniqueId="ae3d57dd-01ef-4c24-a775-224bd6b6563d" DefinedType="IfcInteger" AttributeFlags="1">
 			<Documentation>The position of the specified component, e.g. the 3rd
     (position=3) Tuesday (weekday component) in a month. A
     negative position value is used to define the last position 
     of the component (-1), the next to last position (-2) etc.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2169.81762695313" Y="2196.31071790059" />
-				<DocPoint X="2169.81762695313" Y="2196.31071790059" />
-				<DocPoint X="1960.50245157878" Y="2196.31071790059" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2169.81762695313" Y="2176.31071790059" Width="94" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Interval" UniqueId="b3ad6127-b001-400c-868c-465054246938" DefinedType="IfcInteger" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Interval" UniqueId="b3ad6127-b001-400c-868c-465054246938" DefinedType="IfcInteger" AttributeFlags="1">
 			<Documentation>An interval can be given according to the pattern type. An
     interval value of 2 can for instance every two days, weeks,
     months, years. An empty interval value is regarded as 1. The
     used interval values should be in a reasonable range, e.g.
     not 0 or &amp;lt;0.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2169.81762695313" Y="2245.49684270223" />
-				<DocPoint X="2169.81762695313" Y="2245.49684270223" />
-				<DocPoint X="1960.50245157878" Y="2245.49684270223" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2169.81762695313" Y="2225.49684270223" Width="88" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Occurrences" UniqueId="16cdd883-9b54-425d-a1f6-28166578e77b" DefinedType="IfcInteger" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Occurrences" UniqueId="16cdd883-9b54-425d-a1f6-28166578e77b" DefinedType="IfcInteger" AttributeFlags="1">
 			<Documentation>Defines the number of occurrences of this pattern, e.g. a weekly 
     event might be defined to occur 5 times before it stops.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2169.81762695313" Y="2294.68296750387" />
-				<DocPoint X="2169.81762695313" Y="2294.68296750387" />
-				<DocPoint X="1960.50245157878" Y="2294.68296750387" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2169.81762695313" Y="2274.68296750387" Width="146" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="TimePeriods" UniqueId="0b43faa7-5e36-4cef-a0e7-e04c4030833f" DefinedType="IfcTimePeriod" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="TimePeriods" UniqueId="0b43faa7-5e36-4cef-a0e7-e04c4030833f" DefinedType="IfcTimePeriod" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>List of time periods that are defined by a start and end time
     of the recurring element (day). The order of the list should
     reflect the sequence of the time periods.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2353.02346801758" Y="2145.93026987712" />
-				<DocPoint X="2353.02346801758" Y="2145.93026987712" />
-				<DocPoint X="2716.43277994792" Y="2145.93026987712" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2353.02346801758" Y="2125.93026987712" Width="221" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>
