@@ -1,26 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCostItem" Name="IfcCostItem" UniqueId="78610aed-e656-483f-b7d3-8fc99b2c0312" DiagramNumber="1" BaseDefinition="IfcControl" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCostItem" Name="IfcCostItem" UniqueId="78610aed-e656-483f-b7d3-8fc99b2c0312" BaseDefinition="IfcControl" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Kostenelement" Locale="de" />
-		<DocLocalization Name="Cost Item" Locale="en" />
-		<DocLocalization Name="Item de coût" Locale="fr" />
+		<DocLocalization Locale="de" Name="Kostenelement" />
+		<DocLocalization Locale="en" Name="Cost Item" />
+		<DocLocalization Locale="fr" Name="Item de coût" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="210.29931" Y="2021.4642" Width="305.96609" Height="310.0698" />
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="b88a8628-6b2a-4c45-b51b-a20cbe67368c" DefinedType="IfcCostItemTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="b88a8628-6b2a-4c45-b51b-a20cbe67368c" DefinedType="IfcCostItemTypeEnum" AttributeFlags="1">
 			<Documentation>Predefined generic type for a cost item that is specified in an enumeration. There may be a property set given specificly for the predefined types.
 
 { .change-ifc2x4}
 &gt; IFC4 CHANGE The attribute has been added.</Documentation>
-			<DiagramLine>
-				<DocPoint X="516.2654" Y="2040.2918" />
-				<DocPoint X="744.44031" Y="2040.2918" />
-				<DocPoint X="744.44031" Y="2040.56855315" />
-				<DocPoint X="972.61522" Y="2040.56855315" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="513.4829743" Y="2029.162097" Width="182" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="CostValues" UniqueId="11b6d699-057d-44f9-b352-cffd41ba1269" DefinedType="IfcCostValue" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="CostValues" UniqueId="11b6d699-057d-44f9-b352-cffd41ba1269" DefinedType="IfcCostValue" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Component costs for which the total cost for the cost item is calculated, and then multiplied by the total _CostQuantities_ if provided.  
 
 If _CostQuantities_ is provided then values indicate unit costs, otherwise values indicate total costs.
@@ -29,25 +21,11 @@ For calculation purposes, the cost values may be directly added unless they have
 
 { .change-ifc2x4}
 &gt; IFC4 CHANGE The attribute has been added.</Documentation>
-			<DiagramLine>
-				<DocPoint X="516.2654" Y="2270.1583" />
-				<DocPoint X="744.39941" Y="2270.1583" />
-				<DocPoint X="744.39941" Y="2269.23822478" />
-				<DocPoint X="972.53342" Y="2269.23822478" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="527.395103" Y="2264.5934487" Width="210" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="CostQuantities" UniqueId="b7296c99-1454-49d0-a548-09ac41553f78" DefinedType="IfcPhysicalQuantity" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="CostQuantities" UniqueId="b7296c99-1454-49d0-a548-09ac41553f78" DefinedType="IfcPhysicalQuantity" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Component quantities of the same type for which the total quantity for the cost item is calculated as the sum.
 { .change-ifc2x4}
 &gt; IFC4 CHANGE The attribute has been added.</Documentation>
-			<DiagramLine>
-				<DocPoint X="516.2654" Y="2138.7389" />
-				<DocPoint X="744.43939" Y="2138.7389" />
-				<DocPoint X="744.43939" Y="2137.2842349" />
-				<DocPoint X="972.61338" Y="2137.2842349" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="542.002838" Y="2135.9146777" Width="246" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

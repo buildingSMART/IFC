@@ -1,32 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelFillsElement" Name="IfcRelFillsElement" UniqueId="38e3c74b-486e-4323-980b-6375977d83ae" DiagramNumber="8" BaseDefinition="IfcRelConnects" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelFillsElement" Name="IfcRelFillsElement" UniqueId="38e3c74b-486e-4323-980b-6375977d83ae" BaseDefinition="IfcRelConnects" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Element als Füllung einer Öffnung - Relation" Locale="de">
+		<DocLocalization Locale="de" Name="Element als Füllung einer Öffnung - Relation">
 			<Documentation>Relation zwischen einer Tür / Fenster und der Öffnung</Documentation>
 		</DocLocalization>
-		<DocLocalization Name="Rel Fills Element" Locale="en" />
-		<DocLocalization Name="Relation de remplissage" Locale="fr" />
+		<DocLocalization Locale="en" Name="Rel Fills Element" />
+		<DocLocalization Locale="fr" Name="Relation de remplissage" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1777.4138" Y="3531.0555" Width="338" Height="115.73333" />
 	<Attributes>
-		<DocAttribute Name="RelatingOpeningElement" UniqueId="1263cb61-a362-4a46-a3b4-e13467721d95" DefinedType="IfcOpeningElement" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="hidden">
+		<DocAttribute Name="RelatingOpeningElement" UniqueId="1263cb61-a362-4a46-a3b4-e13467721d95" DefinedType="IfcOpeningElement" XsdFormat="hidden">
 			<Documentation>Opening Element being filled by virtue of this relationship.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2115.4138" Y="3588.9223" />
-				<DocPoint X="2498.76755" Y="3588.9223" />
-				<DocPoint X="2498.76755" Y="3377.55563" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2135.674015" Y="3580.7389577" Width="282" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RelatedBuildingElement" UniqueId="d5593c58-a2e5-41a2-a38a-ffd919af2329" DefinedType="IfcElement" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="RelatedBuildingElement" UniqueId="d5593c58-a2e5-41a2-a38a-ffd919af2329" DefinedType="IfcElement" XsdFormat="attribute">
 			<Documentation>Reference to ~~building~~ element that occupies fully or partially the associated opening.
 { .change-ifc2x}
 &gt; IFC2x CHANGE&amp;nbsp; The data type has been changed from _IfcBuildingElement_ to _IfcElement_ with upward compatibility for file based exchange.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1946.4138" Y="3531.0555" />
-				<DocPoint X="1946.4138" Y="3321.0555" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2102.4138" Y="3573.388834" Width="270" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

@@ -1,77 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcMaterial" Name="IfcMaterial" UniqueId="b36052ed-896b-48e8-b655-a1b4cb67f826" DiagramNumber="1" BaseDefinition="IfcMaterialDefinition" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcMaterial" Name="IfcMaterial" UniqueId="b36052ed-896b-48e8-b655-a1b4cb67f826" BaseDefinition="IfcMaterialDefinition" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Material" Locale="de" />
-		<DocLocalization Name="Material" Locale="en" />
-		<DocLocalization Name="Matériau" Locale="fr" />
+		<DocLocalization Locale="de" Name="Material" />
+		<DocLocalization Locale="en" Name="Material" />
+		<DocLocalization Locale="fr" Name="Matériau" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="693.15881" Y="1514.3682" Width="403.4714" Height="313.38396" />
 	<Attributes>
-		<DocAttribute Name="Name" UniqueId="b6883bdf-1f6e-4067-b785-e3f69c39dd13" DefinedType="IfcLabel" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Name" UniqueId="b6883bdf-1f6e-4067-b785-e3f69c39dd13" DefinedType="IfcLabel">
 			<Documentation>Name of the material. 
 &gt; EXAMPLE A view definition may require _Material.Name_ to uniquely specify e.g. concrete or steel grade, in which case the attribute Material.Category could take the value &apos;Concrete&apos; or &apos;Steel&apos;.
 
 &gt; NOTE&amp;nbsp; Material grade may have different meaning in different view definitions, e.g. strength grade for structural design and analysis, or visible appearance grade in architectural application. Also, more elaborate material grade definition may be associated as classification via inverse attribute _HasExternalReferences_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1096.6302" Y="1560.559" />
-				<DocPoint X="1283.58328" Y="1560.559" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1064.751833" Y="1545.663988" Width="73" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Description" UniqueId="b3710d03-ea05-40f7-8d3a-049eeb34dc83" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Description" UniqueId="b3710d03-ea05-40f7-8d3a-049eeb34dc83" DefinedType="IfcText" AttributeFlags="1">
 			<Documentation>Definition of the material in more descriptive terms than given by attributes _Name_ or _Category_.
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute has been added at the end of attribute list.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1096.6302" Y="1669.8842" />
-				<DocPoint X="1283.61363" Y="1669.8842" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1093.1996558" Y="1655.018509" Width="130" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Category" UniqueId="71f2628a-7d92-42dc-8cae-f750d95d60d0" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Category" UniqueId="71f2628a-7d92-42dc-8cae-f750d95d60d0" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>Definition of the category (group or type) of material, in more general terms than given by attribute _Name_.  
 &gt; EXAMPLE A view definition may require each _Material.Name_ to be unique, e.g. for each concrete or steel grade used in a project, in which case _Material.Category_ could take the values &apos;Concrete&apos; or &apos;Steel&apos;.
 
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute has been added at the end of attribute list.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1096.6302" Y="1773.5394" />
-				<DocPoint X="1283.62423" Y="1773.5394" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1081.764509" Y="1760.246041" Width="108" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="HasRepresentation" UniqueId="7807052f-f464-49e8-8e1f-76be0f2e6d53" DefinedType="IfcMaterialDefinitionRepresentation" AttributeFlags="32" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RepresentedMaterial" XsdFormat="attribute">
+		<DocAttribute Name="HasRepresentation" UniqueId="7807052f-f464-49e8-8e1f-76be0f2e6d53" DefinedType="IfcMaterialDefinitionRepresentation" AttributeFlags="32" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="RepresentedMaterial" XsdFormat="attribute">
 			<Documentation>Reference to the _IfcMaterialDefinitionRepresentation_ that provides presentation information to a representation common to this material in style definitions.
   
 { .change-ifc2x3}
 &gt; IFC2x3 CHANGE&amp;nbsp; The inverse attribute _HasRepresentation_ has been added.</Documentation>
-			<DiagramLine>
-				<DocPoint X="740.52002" Y="1827.7522" />
-				<DocPoint X="740.52002" Y="1913.425365" />
-				<DocPoint X="191.76516" Y="1913.425365" />
-				<DocPoint X="191.76516" Y="1833.845501" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="729.199268" Y="1942.61087" Width="363" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="IsRelatedWith" UniqueId="fad3b164-50b4-446a-be5d-7f148ddf544d" DefinedType="IfcMaterialRelationship" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="RelatedMaterials">
+		<DocAttribute Name="IsRelatedWith" UniqueId="fad3b164-50b4-446a-be5d-7f148ddf544d" DefinedType="IfcMaterialRelationship" AttributeFlags="8" AggregationType="3" Inverse="RelatedMaterials">
 			<Documentation>Reference to a material relationship indicating that this material is a part (or constituent) in a material composite.
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The inverse attribute has been added.</Documentation>
-			<DiagramLine>
-				<DocPoint X="937.76086" Y="2060.8048" />
-				<DocPoint X="937.76086" Y="1827.75213" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="776.23168" Y="2032.849944" Width="304" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RelatesTo" UniqueId="dee9726c-471e-4e55-8ed6-2fa143b0f671" DefinedType="IfcMaterialRelationship" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatingMaterial">
+		<DocAttribute Name="RelatesTo" UniqueId="dee9726c-471e-4e55-8ed6-2fa143b0f671" DefinedType="IfcMaterialRelationship" AttributeFlags="8" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="RelatingMaterial">
 			<Documentation>Reference to a material relationship indicating that this material composite has parts (or constituents).
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The inverse attribute has been added.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1023.5245" Y="2060.8048" />
-				<DocPoint X="1023.5245" Y="1827.75213" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1173.60309" Y="2029.991157" Width="263" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

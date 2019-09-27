@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPropertyAbstraction" UniqueId="3981f908-e217-4f02-92e8-517147b40572" DiagramNumber="1" EntityFlags="69">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPropertyAbstraction" UniqueId="3981f908-e217-4f02-92e8-517147b40572" EntityFlags="69">
 	<Localization>
-		<DocLocalization Name="Merkmal - Abstraktion" Locale="de" />
-		<DocLocalization Name="Property Abstraction" Locale="en" />
-		<DocLocalization Name="Propriété abstraite" Locale="fr" />
+		<DocLocalization Locale="de" Name="Merkmal - Abstraktion" />
+		<DocLocalization Locale="en" Name="Property Abstraction" />
+		<DocLocalization Locale="fr" Name="Propriété abstraite" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="64.933333" Y="451.49333" Width="394.66667" Height="100" />
 	<Subtypes>
 		<DocSubtype UniqueId="99a576fe-2ed9-4b43-9f22-c58eccfeb406" DefinedType="IfcProperty" />
 		<DocSubtype UniqueId="d218f53c-4a0d-48f6-9056-394d215ca68e" DefinedType="IfcExtendedProperties" />
@@ -13,50 +12,11 @@
 		<DocSubtype UniqueId="934138de-903d-4026-ad36-c0df0a1c964c" DefinedType="IfcPropertyEnumeration" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="HasExternalReferences" UniqueId="45118fce-f74b-4602-880f-2edf8fda5e98" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="32" AggregationType="3" AggregationFlag="0" Inverse="RelatedResourceObjects">
+		<DocAttribute Name="HasExternalReferences" UniqueId="45118fce-f74b-4602-880f-2edf8fda5e98" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="32" AggregationType="3" Inverse="RelatedResourceObjects">
 			<Documentation>Reference to an external reference, e.g. library, classification, or document information, that is associated to the property definition.
 { .change-ifc2x4}
 &gt; IFC4 CHANGE New inverse attribute.</Documentation>
-			<DiagramLine>
-				<DocPoint X="251.6" Y="451.49333" />
-				<DocPoint X="251.6" Y="330.53333" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="481.3" Y="476.639997" Width="411" Height="70" />
 		</DocAttribute>
 	</Attributes>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="118.26667" Y="551.49333" />
-				<DocPoint X="118.26667" Y="707.99693" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="832.60001" Y="707.99693" />
-						<DocPoint X="832.60001" Y="1220.9332" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="118.26667" Y="707.99693" />
-						<DocPoint X="118.26667" Y="803.493331" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="638.26667" Y="707.99693" />
-						<DocPoint X="638.26667" Y="803.493331" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="1212.0332" Y="707.99693" />
-						<DocPoint X="1212.0332" Y="803.430263" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

@@ -1,59 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcLShapeProfileDef" Name="IfcLShapeProfileDef" UniqueId="ac8317b8-fdef-4d3d-afd6-b168298be8c3" DiagramNumber="6" BaseDefinition="IfcParameterizedProfileDef" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcLShapeProfileDef" Name="IfcLShapeProfileDef" UniqueId="ac8317b8-fdef-4d3d-afd6-b168298be8c3" BaseDefinition="IfcParameterizedProfileDef" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="L-Profil - parametrische Definition" Locale="de" />
-		<DocLocalization Name="LShape Profile Def" Locale="en" />
-		<DocLocalization Name="Définition de section d&apos;un profil en L" Locale="fr" />
+		<DocLocalization Locale="de" Name="L-Profil - parametrische Definition" />
+		<DocLocalization Locale="en" Name="LShape Profile Def" />
+		<DocLocalization Locale="fr" Name="Définition de section d&apos;un profil en L" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1853.1061" Y="3198.7256" Width="398.7" Height="616.17041" />
 	<Attributes>
-		<DocAttribute Name="Depth" UniqueId="d5f893a9-ac59-4b4f-877f-7f4ef879bbf0" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Depth" UniqueId="d5f893a9-ac59-4b4f-877f-7f4ef879bbf0" DefinedType="IfcPositiveLengthMeasure">
 			<Documentation>Leg length, see illustration above (= h). Same as the overall depth.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2251.8061" Y="3264.9642" />
-				<DocPoint X="2667.68967" Y="3264.9642" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2179.096899" Y="3259.7933547" Width="74" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Width" UniqueId="d2e9f2de-1ffc-4a89-a7dc-52f8b85b3609" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Width" UniqueId="d2e9f2de-1ffc-4a89-a7dc-52f8b85b3609" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>Leg length, see illustration above (= b). Same as the overall width. This attribute is formally optional for historic reasons only. Whenever the width is known, it shall be provided by value.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2251.8061" Y="3366.7989" />
-				<DocPoint X="2667.72974" Y="3366.7989" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2181.490625" Y="3361.963524" Width="70" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Thickness" UniqueId="82f849f8-efde-409e-b7bb-1a7d7f324a78" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Thickness" UniqueId="82f849f8-efde-409e-b7bb-1a7d7f324a78" DefinedType="IfcPositiveLengthMeasure">
 			<Documentation>Constant wall thickness of profile, see illustration above (= ts).</Documentation>
-			<DiagramLine>
-				<DocPoint X="2251.8061" Y="3463.5717" />
-				<DocPoint X="2667.72307" Y="3463.5717" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2205.20627" Y="3461.995144" Width="117" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="FilletRadius" UniqueId="4153f801-e907-4df3-a212-ad28a2c2d3c6" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="FilletRadius" UniqueId="4153f801-e907-4df3-a212-ad28a2c2d3c6" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1">
 			<Documentation>Fillet radius according the above illustration (= r1).</Documentation>
-			<DiagramLine>
-				<DocPoint X="2251.8061" Y="3562.7075" />
-				<DocPoint X="2667.73944" Y="3562.7075" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2215.395293" Y="3559.724733" Width="135" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="EdgeRadius" UniqueId="ff960210-e1c0-4437-a69a-ae63d0150b47" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="EdgeRadius" UniqueId="ff960210-e1c0-4437-a69a-ae63d0150b47" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1">
 			<Documentation>Edge radius according the above illustration (= r2).</Documentation>
-			<DiagramLine>
-				<DocPoint X="2251.8061" Y="3662.9514" />
-				<DocPoint X="2667.70607" Y="3662.9514" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2218.568767" Y="3657.6180667" Width="142" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LegSlope" UniqueId="f8fb3118-9133-499a-94d2-0a52853a0287" DefinedType="IfcPlaneAngleMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LegSlope" UniqueId="f8fb3118-9133-499a-94d2-0a52853a0287" DefinedType="IfcPlaneAngleMeasure" AttributeFlags="1">
 			<Documentation>Slope of the inner face of each leg of the profile.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2251.8061" Y="3757.6644" />
-				<DocPoint X="2667.67267" Y="3757.6644" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2207.0061" Y="3753.3977333" Width="112" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

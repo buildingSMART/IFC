@@ -1,79 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBSplineSurfaceWithKnots" UniqueId="8af578ab-a0d2-4d1e-b725-2f0d1ac24326" DiagramNumber="10" BaseDefinition="IfcBSplineSurface" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBSplineSurfaceWithKnots" UniqueId="8af578ab-a0d2-4d1e-b725-2f0d1ac24326" BaseDefinition="IfcBSplineSurface" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Bézier-Spline-Fläche mit (gegebenen) Kontrollpunkten" Locale="de" />
-		<DocLocalization Name="BSpline Surface With Knots" Locale="en" />
+		<DocLocalization Locale="de" Name="Bézier-Spline-Fläche mit (gegebenen) Kontrollpunkten" />
+		<DocLocalization Locale="en" Name="BSpline Surface With Knots" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="15677.9713541667" Y="992.431925455729" Width="305.81333" Height="924.42670694987" />
 	<Subtypes>
 		<DocSubtype UniqueId="a4a9c9c0-eb2a-4215-b3b5-f9ad53ab8688" DefinedType="IfcRationalBSplineSurfaceWithKnots" />
 		<DocSubtype UniqueId="a4a9c9c0-eb2a-4215-b3b5-f9ad53ab8688" DefinedType="IfcRationalBSplineSurfaceWithKnots" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="UMultiplicities" UniqueId="01cd7da3-0cd3-4aa6-9515-d7e7c7fd48e6" DefinedType="IfcInteger" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="0">
+		<DocAttribute Name="UMultiplicities" UniqueId="01cd7da3-0cd3-4aa6-9515-d7e7c7fd48e6" DefinedType="IfcInteger" AggregationType="1" AggregationLower="2" AggregationUpper="0">
 			<Documentation>The multiplicities of the knots in the _u_ parameter direction.</Documentation>
-			<DiagramLine>
-				<DocPoint X="15983.7846841667" Y="1401.21146647135" />
-				<DocPoint X="15983.7846841667" Y="1401.21146647135" />
-				<DocPoint X="16493.1184895833" Y="1401.21146647135" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="15983.7846841667" Y="1381.21146647135" Width="232" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="VMultiplicities" UniqueId="3afd3d0c-ad44-4c85-a9c9-4c1fafcca678" DefinedType="IfcInteger" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="0">
+		<DocAttribute Name="VMultiplicities" UniqueId="3afd3d0c-ad44-4c85-a9c9-4c1fafcca678" DefinedType="IfcInteger" AggregationType="1" AggregationLower="2" AggregationUpper="0">
 			<Documentation>The multiplicities of the knots in the _v_ parameter direction.</Documentation>
-			<DiagramLine>
-				<DocPoint X="15983.7846841667" Y="1531.98273383247" />
-				<DocPoint X="15983.7846841667" Y="1531.98273383247" />
-				<DocPoint X="16493.1184895833" Y="1531.98273383247" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="15983.7846841667" Y="1511.98273383247" Width="230" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="UKnots" UniqueId="20273f36-c1b4-45cd-a634-aaa034672ba4" DefinedType="IfcParameterValue" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="0">
+		<DocAttribute Name="UKnots" UniqueId="20273f36-c1b4-45cd-a634-aaa034672ba4" DefinedType="IfcParameterValue" AggregationType="1" AggregationLower="2" AggregationUpper="0">
 			<Documentation>The list of the distinct knots in the _u_ parameter direction.</Documentation>
-			<DiagramLine>
-				<DocPoint X="15677.9713541667" Y="1671.37866210938" />
-				<DocPoint X="15677.9713541667" Y="1671.37866210938" />
-				<DocPoint X="15301.9918619792" Y="1671.37866210938" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="15677.9713541667" Y="1651.37866210938" Width="165" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="VKnots" UniqueId="e5db2f6b-1239-462e-bf03-f805a9a9bf3c" DefinedType="IfcParameterValue" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="2" AggregationUpper="0">
+		<DocAttribute Name="VKnots" UniqueId="e5db2f6b-1239-462e-bf03-f805a9a9bf3c" DefinedType="IfcParameterValue" AggregationType="1" AggregationLower="2" AggregationUpper="0">
 			<Documentation>The list of the distinct knots in the _v_ parameter direction.</Documentation>
-			<DiagramLine>
-				<DocPoint X="15677.9713541667" Y="1771.58536783854" />
-				<DocPoint X="15677.9713541667" Y="1771.58536783854" />
-				<DocPoint X="15301.9983723958" Y="1771.58536783854" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="15677.9713541667" Y="1751.58536783854" Width="163" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="KnotSpec" UniqueId="7b53cb7b-e60a-46de-9e6f-eecd7fc5c858" DefinedType="IfcKnotType" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="KnotSpec" UniqueId="7b53cb7b-e60a-46de-9e6f-eecd7fc5c858" DefinedType="IfcKnotType">
 			<Documentation>The description of the knot type.</Documentation>
-			<DiagramLine>
-				<DocPoint X="15677.9713541667" Y="1885.13208007813" />
-				<DocPoint X="15677.9713541667" Y="1885.13208007813" />
-				<DocPoint X="15304.6848958333" Y="1885.13208007813" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="15677.9713541667" Y="1865.13208007813" Width="114" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="KnotVUpper" UniqueId="4ab4bbfc-de00-49b2-9c3f-2d04f58d5716" DefinedType="IfcInteger" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="KnotVUpper" UniqueId="4ab4bbfc-de00-49b2-9c3f-2d04f58d5716" DefinedType="IfcInteger">
 			<Documentation>The number of distinct knots in the _v_ parameter direction.</Documentation>
 			<Derived>SIZEOF(VKnots)</Derived>
-			<DiagramLine>
-				<DocPoint X="15983.7846841667" Y="1793.52526855469" />
-				<DocPoint X="15983.7846841667" Y="1793.52526855469" />
-				<DocPoint X="16493.1184895833" Y="1793.52526855469" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="15983.7846841667" Y="1773.52526855469" Width="217" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="KnotUUpper" UniqueId="8d36fbb0-2ce4-4347-8675-5222773608da" DefinedType="IfcInteger" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="KnotUUpper" UniqueId="8d36fbb0-2ce4-4347-8675-5222773608da" DefinedType="IfcInteger">
 			<Documentation>The number of distinct knots in the _u_ parameter direction.</Documentation>
 			<Derived>SIZEOF(UKnots)</Derived>
-			<DiagramLine>
-				<DocPoint X="15983.7846841667" Y="1662.75400119358" />
-				<DocPoint X="15983.7846841667" Y="1662.75400119358" />
-				<DocPoint X="16493.1184895833" Y="1662.75400119358" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="15983.7846841667" Y="1642.75400119358" Width="219" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
@@ -98,14 +55,5 @@
 			<Expression>SIZEOF(VMultiplicities) = KnotVUpper</Expression>
 		</DocWhereRule>
 	</WhereRules>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="15824.2283854167" Y="1916.8586324056" />
-				<DocPoint X="15824.2283854167" Y="1916.8586324056" />
-				<DocPoint X="15824.2283854167" Y="2146.37329101563" />
-			</DiagramLine>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

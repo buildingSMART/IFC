@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcConstructionResourceType" UniqueId="c642ffe1-4447-43e7-935a-fa0b8f9420ed" DiagramNumber="1" BaseDefinition="IfcTypeResource" EntityFlags="197">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcConstructionResourceType" UniqueId="c642ffe1-4447-43e7-935a-fa0b8f9420ed" BaseDefinition="IfcTypeResource" EntityFlags="197">
 	<Localization>
-		<DocLocalization Name="Konstruktion - Ressource -Typ" Locale="de" />
-		<DocLocalization Name="Construction Resource Type" Locale="en" />
-		<DocLocalization Name="Type de ressource de construction" Locale="fr" />
+		<DocLocalization Locale="de" Name="Konstruktion - Ressource -Typ" />
+		<DocLocalization Locale="en" Name="Construction Resource Type" />
+		<DocLocalization Locale="fr" Name="Type de ressource de construction" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1322.88" Y="218.74667" Width="245.33333" Height="886.66667" />
 	<Subtypes>
 		<DocSubtype UniqueId="7fa1b2d7-ef27-4225-bf96-e8884326ea47" DefinedType="IfcCrewResourceType" />
 		<DocSubtype UniqueId="3301b2cd-3fae-433b-af04-23876866ef58" DefinedType="IfcLaborResourceType" />
@@ -15,73 +14,12 @@
 		<DocSubtype UniqueId="65b0bb15-6709-497d-b5fc-8d8647aa1b8a" DefinedType="IfcConstructionProductResourceType" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="BaseCosts" UniqueId="fab31804-3e6a-456a-bae2-2138c73e4b1f" DefinedType="IfcAppliedValue" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="BaseCosts" UniqueId="fab31804-3e6a-456a-bae2-2138c73e4b1f" DefinedType="IfcAppliedValue" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Indicates the unit costs and environmental impacts for which accrued amounts should be calculated.  Such unit costs may be split into _Name_ designations (e.g. &apos;Standard&apos;, &apos;Overtime&apos;), and may contain a hierarchy of cost values that apply at different dates (using _IfcCostValue.ApplicableDate_ and _IfcCostValue.FixedUntilDate_).</Documentation>
-			<DiagramLine>
-				<DocPoint X="1322.88" Y="526.08" />
-				<DocPoint X="1211.62335" Y="526.08" />
-				<DocPoint X="1211.62335" Y="528.6000033" />
-				<DocPoint X="1100.3667" Y="528.6000033" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1331.6128627" Y="513.115814" Width="203" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="BaseQuantity" UniqueId="e52f14a1-d244-46eb-8c1f-d7685c63d749" DefinedType="IfcPhysicalQuantity" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="BaseQuantity" UniqueId="e52f14a1-d244-46eb-8c1f-d7685c63d749" DefinedType="IfcPhysicalQuantity" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Identifies the quantity for which the _BaseQuantityProduced_ applies.  The _Name_ of the _IfcPhysicalQuantity_ identifies the quantity definition being measured, e.g. &quot;GrossVolume&quot;.  For production-based resources (e.g. carpentry labor), this value refers to quantities on _IfcProduct_(s) to which the assigned _IfcTask_ is assigned.  For duration-based resources (e.g. safety inspector, fuel for equipment), this value refers to quantities that may be assigned to occurrences of the assigned _IfcTaskType_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1322.88" Y="662.08" />
-				<DocPoint X="1211.64" Y="662.08" />
-				<DocPoint X="1211.64" Y="663.8666733" />
-				<DocPoint X="1100.4" Y="663.8666733" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1344.598358" Y="656.100674" Width="155" Height="35" />
 		</DocAttribute>
 	</Attributes>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="1541.5467" Y="1105.4133" />
-				<DocPoint X="1541.5467" Y="1268.34659" />
-				<DocPoint X="1542.3167" Y="1268.34659" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="1542.3167" Y="1302.6133" />
-						<DocPoint X="1499.5667" Y="1302.6133" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="1542.3167" Y="1486.6133" />
-						<DocPoint X="1496.9667" Y="1486.6133" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="1542.3167" Y="1670.68" />
-						<DocPoint X="1497.000033" Y="1670.68" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="1542.3167" Y="1855.9467" />
-						<DocPoint X="1496.9667" Y="1855.9467" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="1542.3167" Y="2041.3467" />
-						<DocPoint X="1496.9667" Y="2041.3467" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="1542.3167" Y="2226.6133" />
-						<DocPoint X="1496.9667" Y="2226.6133" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

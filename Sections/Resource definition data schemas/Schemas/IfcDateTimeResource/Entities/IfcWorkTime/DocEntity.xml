@@ -1,42 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcWorkTime" UniqueId="cb173376-bb9c-47f5-99f1-2fd84e691ccc" DiagramNumber="2" BaseDefinition="IfcSchedulingTime" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcWorkTime" UniqueId="cb173376-bb9c-47f5-99f1-2fd84e691ccc" BaseDefinition="IfcSchedulingTime" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Arbeitszeit" Locale="de" />
-		<DocLocalization Name="Work Time" Locale="en" />
-		<DocLocalization Name="Période de travail" Locale="fr" />
+		<DocLocalization Locale="de" Name="Arbeitszeit" />
+		<DocLocalization Locale="en" Name="Work Time" />
+		<DocLocalization Locale="fr" Name="Période de travail" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1649.23315429688" Y="1603.236328125" Width="237.833353678385" Height="298.505625406901" />
 	<Attributes>
-		<DocAttribute Name="RecurrencePattern" UniqueId="7d696598-d758-492c-ab43-acf0f3375ec6" DefinedType="IfcRecurrencePattern" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="RecurrencePattern" UniqueId="7d696598-d758-492c-ab43-acf0f3375ec6" DefinedType="IfcRecurrencePattern" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Recurrence pattern that defines a time period, which, if given, is
     valid within the time period defined by
     _IfcWorkTime.Start_ and _IfcWorkTime.Finish_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1887.06650797526" Y="1901.7419535319" />
-				<DocPoint X="1887.06650797526" Y="2053.6072845459" />
-				<DocPoint X="2169.81762695313" Y="2053.6072845459" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1887.06650797526" Y="2033.6072845459" Width="215" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Start" UniqueId="67de30f4-67c3-4e5b-bc64-1614203b10bc" DefinedType="IfcDate" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Start" UniqueId="67de30f4-67c3-4e5b-bc64-1614203b10bc" DefinedType="IfcDate" AttributeFlags="1">
 			<Documentation>Start date of the work time (0:00), that might be further
     restricted by a recurrence pattern.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1887.06650797527" Y="1681.77592213949" />
-				<DocPoint X="1887.06650797527" Y="1681.77592213949" />
-				<DocPoint X="1981.27807617188" Y="1681.77592213949" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1887.06650797527" Y="1661.77592213949" Width="59" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Finish" UniqueId="9833d9fd-4211-42fd-a696-7119de15d437" DefinedType="IfcDate" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Finish" UniqueId="9833d9fd-4211-42fd-a696-7119de15d437" DefinedType="IfcDate" AttributeFlags="1">
 			<Documentation>End date of the work time (24:00), that might be further
     restricted by a recurrence pattern.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1887.06650797527" Y="1726.7552134196" />
-				<DocPoint X="1887.06650797527" Y="1726.7552134196" />
-				<DocPoint X="1981.27807617188" Y="1726.7552134196" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1887.06650797527" Y="1706.7552134196" Width="72" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

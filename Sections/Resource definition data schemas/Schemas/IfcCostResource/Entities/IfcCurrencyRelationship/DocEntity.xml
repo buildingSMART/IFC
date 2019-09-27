@@ -1,56 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCurrencyRelationship" UniqueId="9369fbbe-c581-4604-aa77-92582aa9453c" DiagramNumber="2" BaseDefinition="IfcResourceLevelRelationship" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCurrencyRelationship" UniqueId="9369fbbe-c581-4604-aa77-92582aa9453c" BaseDefinition="IfcResourceLevelRelationship" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Währung - Relation" Locale="de" />
-		<DocLocalization Name="Currency Relationship" Locale="en" />
+		<DocLocalization Locale="de" Name="Währung - Relation" />
+		<DocLocalization Locale="en" Name="Currency Relationship" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1654.5559" Y="513.4667" Width="474" Height="681.29999" />
 	<Attributes>
-		<DocAttribute Name="RelatingMonetaryUnit" UniqueId="8ad0cf1d-249d-446c-a3b0-d1a9aeda943d" DefinedType="IfcMonetaryUnit" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="RelatingMonetaryUnit" UniqueId="8ad0cf1d-249d-446c-a3b0-d1a9aeda943d" DefinedType="IfcMonetaryUnit" XsdFormat="attribute">
 			<Documentation>The monetary unit from which an exchange is derived. For instance, in the case of a conversion from GBP to USD, the relating monetary unit is GBP.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2128.5559" Y="552.35924" />
-				<DocPoint X="2505.0292" Y="552.35924" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2120.0775334" Y="548.2857418" Width="245" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RelatedMonetaryUnit" UniqueId="2dd6b7a2-34a1-4238-b477-c09271f157aa" DefinedType="IfcMonetaryUnit" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="RelatedMonetaryUnit" UniqueId="2dd6b7a2-34a1-4238-b477-c09271f157aa" DefinedType="IfcMonetaryUnit" XsdFormat="attribute">
 			<Documentation>The monetary unit to which an exchange results. For instance, in the case of a conversion from GBP to USD, the related monetary unit is USD.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2128.5559" Y="624.70763" />
-				<DocPoint X="2316.79255" Y="624.70763" />
-				<DocPoint X="2316.79255" Y="624.60003524" />
-				<DocPoint X="2505.0292" Y="624.60003524" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2314.3275573" Y="619.5568915" Width="240" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ExchangeRate" UniqueId="b0243b1e-6e24-414e-9b92-5ee782e1c2b7" DefinedType="IfcPositiveRatioMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ExchangeRate" UniqueId="b0243b1e-6e24-414e-9b92-5ee782e1c2b7" DefinedType="IfcPositiveRatioMeasure">
 			<Documentation>The currently agreed ratio of the amount of a related monetary unit that is equivalent to a unit amount of the relating monetary unit in a currency relationship. For instance, in the case of a conversion from GBP to USD, the value of the exchange rate may be 1.486 (USD) : 1 (GBP).</Documentation>
-			<DiagramLine>
-				<DocPoint X="2128.5559" Y="754.41963" />
-				<DocPoint X="2505.0959" Y="754.41963" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2104.5409" Y="741.086297" Width="170" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RateDateTime" UniqueId="ec65c0c7-e002-4f68-b956-b479d9fc4a25" DefinedType="IfcDateTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RateDateTime" UniqueId="ec65c0c7-e002-4f68-b956-b479d9fc4a25" DefinedType="IfcDateTime" AttributeFlags="1">
 			<Documentation>The date and time at which an exchange rate applies.
 { .change-ifc2x4}
 &gt; IFC4 CHANGE Type changed from IfcDateTimeSelect. Attribute made optional.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2128.5559" Y="930.78336" />
-				<DocPoint X="2317.1592" Y="930.78336" />
-				<DocPoint X="2317.1592" Y="930.46663167" />
-				<DocPoint X="2505.7625" Y="930.46663167" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2280.492533" Y="917.608391" Width="167" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RateSource" UniqueId="89f1b6ce-2442-40b8-b9ab-6e4941cc5459" DefinedType="IfcLibraryInformation" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="RateSource" UniqueId="89f1b6ce-2442-40b8-b9ab-6e4941cc5459" DefinedType="IfcLibraryInformation" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>The source from which an exchange rate is obtained.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2128.5559" Y="1141.6908" />
-				<DocPoint X="2501.72507" Y="1141.6908" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2086.175101" Y="1125.024133" Width="138" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

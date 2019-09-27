@@ -1,47 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcWindowType" Name="IfcWindowType" UniqueId="0b5e3044-5232-4561-be29-c49fef5969d5" Status="Official" DiagramNumber="4" BaseDefinition="IfcBuildingElementType" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcWindowType" Name="IfcWindowType" UniqueId="0b5e3044-5232-4561-be29-c49fef5969d5" Status="Official" BaseDefinition="IfcBuildingElementType" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Fenster - Typ" Locale="de" />
-		<DocLocalization Name="Window Type" Locale="en" />
-		<DocLocalization Name="Type de fenêtre" Locale="fr" />
+		<DocLocalization Locale="de" Name="Fenster - Typ" />
+		<DocLocalization Locale="en" Name="Window Type" />
+		<DocLocalization Locale="fr" Name="Type de fenêtre" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="6072.16634114583" Y="1287.55338541667" Width="279.93333" Height="745.333343505859" />
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="39e590f0-e4d6-474b-b669-31d5c0b0ecd1" DefinedType="IfcWindowTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="39e590f0-e4d6-474b-b669-31d5c0b0ecd1" DefinedType="IfcWindowTypeEnum">
 			<Documentation>Identifies the predefined types of a window element from which the type required may be set.</Documentation>
-			<DiagramLine>
-				<DocPoint X="6072.16634114583" Y="1350.46655290104" />
-				<DocPoint X="6072.16634114583" Y="1350.46655290104" />
-				<DocPoint X="5756.01318692708" Y="1350.46655290104" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="6072.16634114583" Y="1330.46655290104" Width="182" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="PartitioningType" UniqueId="c6634212-c392-4071-bc8b-80093ab368e2" DefinedType="IfcWindowTypePartitioningEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PartitioningType" UniqueId="c6634212-c392-4071-bc8b-80093ab368e2" DefinedType="IfcWindowTypePartitioningEnum">
 			<Documentation>Type defining the general layout of the window type in terms of the partitioning of panels.</Documentation>
-			<DiagramLine>
-				<DocPoint X="6072.16634114583" Y="1433.64057796615" />
-				<DocPoint X="6072.16634114583" Y="1433.64057796615" />
-				<DocPoint X="5844.26318692708" Y="1433.64057796615" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="6072.16634114583" Y="1413.64057796615" Width="185" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ParameterTakesPrecedence" UniqueId="fd185249-9123-4a84-95eb-c2d6323477c5" DefinedType="IfcBoolean" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ParameterTakesPrecedence" UniqueId="fd185249-9123-4a84-95eb-c2d6323477c5" DefinedType="IfcBoolean" AttributeFlags="1">
 			<Documentation>The Boolean value reflects, whether the parameter given in the attached lining and panel properties exactly define the geometry (TRUE), or whether the attached shape representation takes precedence (FALSE). In the last case the parameters have only informative value. If not provided, it defaults to FALSE.</Documentation>
-			<DiagramLine>
-				<DocPoint X="6072.16634114583" Y="1287.55338541667" />
-				<DocPoint X="5845.84635416667" Y="1287.55338541667" />
-				<DocPoint X="5845.84635416667" Y="1149.83333333333" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="6072.16634114583" Y="1129.83333333333" Width="321" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="UserDefinedPartitioningType" UniqueId="3364027c-7696-47fe-93c8-4996a958bb20" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="UserDefinedPartitioningType" UniqueId="3364027c-7696-47fe-93c8-4996a958bb20" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>Designator for the user defined partitioning type, shall only be provided, if the value of _PartitioningType_ is set to USERDEFINED.</Documentation>
-			<DiagramLine>
-				<DocPoint X="6072.16634114583" Y="1612.50529459635" />
-				<DocPoint X="6072.16634114583" Y="1612.50529459635" />
-				<DocPoint X="5693.17985192708" Y="1612.50529459635" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="6072.16634114583" Y="1592.50529459635" Width="323" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

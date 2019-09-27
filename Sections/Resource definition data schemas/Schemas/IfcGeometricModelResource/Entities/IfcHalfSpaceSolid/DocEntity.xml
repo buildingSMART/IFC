@@ -1,68 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcHalfSpaceSolid" Name="IfcHalfSpaceSolid" UniqueId="c9679787-14e8-44ff-b62a-a511bb58005d" DiagramNumber="3" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="109">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcHalfSpaceSolid" Name="IfcHalfSpaceSolid" UniqueId="c9679787-14e8-44ff-b62a-a511bb58005d" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="109">
 	<Localization>
-		<DocLocalization Name="Halbraum Festkörper" Locale="de" />
-		<DocLocalization Name="Half Space Solid" Locale="en" />
+		<DocLocalization Locale="de" Name="Halbraum Festkörper" />
+		<DocLocalization Locale="en" Name="Half Space Solid" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="3760.08317057292" Y="519.166687011719" Width="331" Height="363.999979654948" />
 	<Subtypes>
 		<DocSubtype UniqueId="14251490-6162-406c-952b-13435a945c71" DefinedType="IfcBoxedHalfSpace" />
 		<DocSubtype UniqueId="2b6553b3-e9ed-4dfc-9db9-eea04ef13fa9" DefinedType="IfcPolygonalBoundedHalfSpace" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="BaseSurface" UniqueId="110e5354-e95f-42b1-81d2-f4de74eb9085" DefinedType="IfcSurface" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="BaseSurface" UniqueId="110e5354-e95f-42b1-81d2-f4de74eb9085" DefinedType="IfcSurface" XsdFormat="attribute">
 			<Documentation>Surface defining side of half space.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3760.08317057292" Y="681.850011189779" />
-				<DocPoint X="3760.08317057292" Y="681.850011189779" />
-				<DocPoint X="3580.38325528646" Y="681.850011189779" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3760.08317057292" Y="661.850011189779" Width="148" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="AgreementFlag" UniqueId="689e63ba-3c13-477c-810a-69a5acc44e82" DefinedType="IfcBoolean" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="AgreementFlag" UniqueId="689e63ba-3c13-477c-810a-69a5acc44e82" DefinedType="IfcBoolean">
 			<Documentation>The agreement flag is TRUE if the normal to the BaseSurface points away from the material of the IfcHalfSpaceSolid. Otherwise it is FALSE.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3760.08317057292" Y="589.833343505859" />
-				<DocPoint X="3760.08317057292" Y="589.833343505859" />
-				<DocPoint X="3580.38325528646" Y="589.833343505859" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3760.08317057292" Y="569.833343505859" Width="176" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Dim" UniqueId="0b9419d7-30de-4938-a436-7f00f8307975" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Dim" UniqueId="0b9419d7-30de-4938-a436-7f00f8307975" DefinedType="IfcDimensionCount">
 			<Documentation>The space dimensionality of this class, it is always 3</Documentation>
 			<Derived>3</Derived>
-			<DiagramLine>
-				<DocPoint X="3760.08317057292" Y="773.866678873698" />
-				<DocPoint X="3760.08317057292" Y="773.866678873698" />
-				<DocPoint X="3580.38325528646" Y="773.866678873698" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3760.08317057292" Y="753.866678873698" Width="125" Height="35" />
 		</DocAttribute>
 	</Attributes>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="3917.33333333333" Y="883.166666666667" />
-				<DocPoint X="3917.33333333333" Y="883.166666666667" />
-				<DocPoint X="3917.33333333333" Y="1248" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="3917.33333333333" Y="1248" />
-						<DocPoint X="3917.33333333333" Y="1370.0333" />
-						<DocPoint X="4264.17" Y="1370.0333" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="3917.33333333333" Y="1248" />
-						<DocPoint X="3917.33333333333" Y="1369.9833" />
-						<DocPoint X="3896.50003" Y="1369.9833" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

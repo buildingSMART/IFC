@@ -1,39 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDerivedProfileDef" Name="IfcDerivedProfileDef" UniqueId="bce6c9f4-6d2e-4d7b-8d7e-5174db9b4051" DiagramNumber="5" BaseDefinition="IfcProfileDef" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDerivedProfileDef" Name="IfcDerivedProfileDef" UniqueId="bce6c9f4-6d2e-4d7b-8d7e-5174db9b4051" BaseDefinition="IfcProfileDef" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="abgeleitetes Profil" Locale="de" />
-		<DocLocalization Name="Derived Profile Def" Locale="en" />
-		<DocLocalization Name="Définition d&apos;un profil dérivé" Locale="fr" />
+		<DocLocalization Locale="de" Name="abgeleitetes Profil" />
+		<DocLocalization Locale="en" Name="Derived Profile Def" />
+		<DocLocalization Locale="fr" Name="Définition d&apos;un profil dérivé" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="307.0333" Y="4050.9375" Width="436.6" Height="173.33333" />
 	<Subtypes>
 		<DocSubtype UniqueId="8baec99e-1606-4114-b85e-74ed5cf3ec48" DefinedType="IfcMirroredProfileDef" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="ParentProfile" UniqueId="a965069b-b250-483b-bca0-761cd8940d02" DefinedType="IfcProfileDef" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="ParentProfile" UniqueId="a965069b-b250-483b-bca0-761cd8940d02" DefinedType="IfcProfileDef" XsdFormat="attribute">
 			<Documentation>The parent profile provides the origin of the transformation.</Documentation>
-			<DiagramLine>
-				<DocPoint X="743.6333" Y="4086.0042" />
-				<DocPoint X="1116.9999" Y="4086.0042" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="743.6333" Y="4082.6708667" Width="149" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Operator" UniqueId="00ccc2f6-4a36-4cf8-990a-50ae7863bf91" DefinedType="IfcCartesianTransformationOperator2D" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="Operator" UniqueId="00ccc2f6-4a36-4cf8-990a-50ae7863bf91" DefinedType="IfcCartesianTransformationOperator2D" XsdFormat="attribute">
 			<Documentation>Transformation operator applied to the parent profile.</Documentation>
-			<DiagramLine>
-				<DocPoint X="700.26663" Y="4224.2709" />
-				<DocPoint X="700.26663" Y="4366.26043" />
-				<DocPoint X="1010.7541" Y="4366.26043" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="693.90623" Y="4357.804213" Width="105" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Label" UniqueId="22457022-a959-4537-a5dd-0f712caa528f" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Label" UniqueId="22457022-a959-4537-a5dd-0f712caa528f" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>The name by which the transformation may be referred to. The actual meaning of the name has to be defined in the context of applications.</Documentation>
-			<DiagramLine>
-				<DocPoint X="743.6333" Y="4174.8042" />
-				<DocPoint X="1117.027" Y="4174.8042" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="706.7693" Y="4174.8042" Width="68" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
@@ -42,13 +25,5 @@
 			<Expression>SELF\IfcProfileDef.ProfileType = ParentProfile.ProfileType</Expression>
 		</DocWhereRule>
 	</WhereRules>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="512.5333" Y="4224.2708" />
-				<DocPoint X="512.5333" Y="4455.86664" />
-			</DiagramLine>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

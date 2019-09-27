@@ -1,92 +1,50 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcMaterialLayer" Name="IfcMaterialLayer" UniqueId="1550d694-6c4a-46c4-9661-12b1956f035d" DiagramNumber="2" BaseDefinition="IfcMaterialDefinition" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMaterialLayer" UniqueId="1550d694-6c4a-46c4-9661-12b1956f035d" BaseDefinition="IfcMaterialDefinition" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Materialschicht" Locale="de" />
-		<DocLocalization Name="Material Layer" Locale="en" />
-		<DocLocalization Name="Couche de matériau" Locale="fr" />
+		<DocLocalization Locale="de" Name="Materialschicht" />
+		<DocLocalization Locale="en" Name="Material Layer" />
+		<DocLocalization Locale="fr" Name="Couche de matériau" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1810.8281" Y="1229.407" Width="289.1152" Height="678.90433" />
 	<Subtypes>
 		<DocSubtype UniqueId="bc567f09-80ee-489d-b228-d0cfeb6bef43" DefinedType="IfcMaterialLayerWithOffsets" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Material" UniqueId="5e1b64ef-4e51-4312-8c39-0c01567e2571" DefinedType="IfcMaterial" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="Material" UniqueId="5e1b64ef-4e51-4312-8c39-0c01567e2571" DefinedType="IfcMaterial" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Optional reference to the material from which the layer is constructed. Note that if this value is not given, it does not denote a layer with no material (an air gap), it only means that the material is not specified at that point.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2099.9433" Y="1265.1282" />
-				<DocPoint X="2519.3931" Y="1265.1282" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2062.550078" Y="1256.5547165" Width="94" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LayerThickness" UniqueId="37ff71f7-f0fc-487e-b121-8627e1c4e98a" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LayerThickness" UniqueId="37ff71f7-f0fc-487e-b121-8627e1c4e98a" DefinedType="IfcNonNegativeLengthMeasure">
 			<Documentation>The thickness of the material layer. The meaning of &quot;thickness&quot; depends on its usage. In case of building elements elements utilizing _IfcMaterialLayerSetUsage_, the dimension is measured along the positive _LayerSetDirection_ as specified in _IfcMaterialLayerSetUsage_.
 
 &gt; NOTE&amp;nbsp; The attribute value can be 0. for material thicknesses very close to zero, such as for a membrane. Material layers with thickess 0. may not be rendered in the geometric representation.
 
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute datatype has been changed to _IfcNonNegativeLengthMeasure_ allowing for 0. as thickness.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2099.9433" Y="1368.7441" />
-				<DocPoint X="2524.4086" Y="1368.7441" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2108.5196605" Y="1360.1677395" Width="179" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="IsVentilated" UniqueId="e6dcc683-da58-48b5-959e-f29b34e3b2e2" DefinedType="IfcLogical" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="IsVentilated" UniqueId="e6dcc683-da58-48b5-959e-f29b34e3b2e2" DefinedType="IfcLogical" AttributeFlags="1">
 			<Documentation>Indication of whether the material layer represents an air layer (or cavity). 
 * set to TRUE if the material layer is an air gap and provides air exchange from the layer to the outside air.
 * set to UNKNOWN if the material layer is an air gap and does not provide air exchange (or when this information about air exchange of the air gap is not available).
 * set to FALSE if the material layer is a solid material layer (the default).</Documentation>
-			<DiagramLine>
-				<DocPoint X="2099.9433" Y="1468.4048" />
-				<DocPoint X="2519.43768" Y="1468.4048" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2079.926036" Y="1457.188991" Width="136" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Name" UniqueId="7d73652c-4300-4f34-8cf4-e54ea78193cd" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Name" UniqueId="7d73652c-4300-4f34-8cf4-e54ea78193cd" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>The name by which the material layer is known.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2099.9433" Y="1563.7604" />
-				<DocPoint X="2519.4316" Y="1563.7604" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2049.908772" Y="1553.009049" Width="73" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Description" UniqueId="0bc92180-96da-475d-b6d4-3cdef5c86dc3" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Description" UniqueId="0bc92180-96da-475d-b6d4-3cdef5c86dc3" DefinedType="IfcText" AttributeFlags="1">
 			<Documentation>Definition of the material layer in more descriptive terms than given by attributes Name or Category.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2099.9433" Y="1654.1954" />
-				<DocPoint X="2519.4878" Y="1654.1954" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2081.765957" Y="1644.2156998" Width="130" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Category" UniqueId="9675de3e-375b-4012-ad71-905a53587020" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Category" UniqueId="9675de3e-375b-4012-ad71-905a53587020" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>Category of the material layer, e.g. the role it has in the layer set it belongs to (such as &apos;load bearing&apos;, &apos;thermal insulation&apos; etc.). The list of keywords might be extended by model view definitions, however the following keywords shall apply in general:
 * &apos;LoadBearing&apos; &amp;mdash; for all material layers having a load bearing function.
 * &apos;Insulation&apos; &amp;mdash; for all material layers having an insolating function. 
 * &apos;Finish&apos; &amp;mdash; for the material layer being the inner or outer finish.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2099.9433" Y="1746.65" />
-				<DocPoint X="2519.4668" Y="1746.65" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2069.205585" Y="1737.8362226" Width="108" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Priority" UniqueId="4c9dfd48-454b-4406-93cb-179480e17654" DefinedType="IfcInteger" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Priority" UniqueId="4c9dfd48-454b-4406-93cb-179480e17654" DefinedType="IfcInteger" AttributeFlags="1">
 			<Documentation>The relative priority of the layer, expressed as normalised integer range [0..100]. Controls how layers intersect in connections and corners of building elements: a layer from one element protrudes into (i.e. displaces) a layer from another element in a joint of these elements if the former element&apos;s layer has higher priority than the latter. The priority value for a material layer in an element has to be set and maintained by software applications in relation to the material layers in connected elements.
 
 &gt; NOTE&amp;nbsp; The layer priority at a connection may be overridden by the priority attributes of _IfcRelConnectsPathElements_ if that relationship is used to establish a logical connection between two building elements having a layer structure.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2099.9433" Y="1868.38380388802" />
-				<DocPoint X="2099.9433" Y="1868.38380388802" />
-				<DocPoint X="2524.72379557292" Y="1868.38380388802" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2099.9433" Y="1848.38380388802" Width="82" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ToMaterialLayerSet" UniqueId="f2c9c962-d35f-4ea5-b566-2dba24893f5a" DefinedType="IfcMaterialLayerSet" AttributeFlags="8" AggregationType="0" AggregationFlag="0" Inverse="MaterialLayers">
+		<DocAttribute Name="ToMaterialLayerSet" UniqueId="f2c9c962-d35f-4ea5-b566-2dba24893f5a" DefinedType="IfcMaterialLayerSet" AttributeFlags="8" Inverse="MaterialLayers">
 			<Documentation>Reference to the _IfcMaterialLayerSet_ in which the material layer is included.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1949.8742" Y="1016.4613" />
-				<DocPoint X="1949.8742" Y="1229.40697" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1789.78214" Y="1060.03766" Width="286" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
@@ -95,13 +53,5 @@
 			<Expression>NOT(EXISTS(Priority)) OR {0 &lt;= Priority &lt;= 100}</Expression>
 		</DocWhereRule>
 	</WhereRules>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="1912.757" Y="1908.3113" />
-				<DocPoint X="1912.757" Y="2084.36141" />
-			</DiagramLine>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

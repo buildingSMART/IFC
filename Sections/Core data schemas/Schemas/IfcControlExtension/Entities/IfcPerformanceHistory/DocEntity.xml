@@ -1,29 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPerformanceHistory" Name="IfcPerformanceHistory" UniqueId="e8ca45f2-cf0b-4a93-84ca-ea3c10c7b27e" DiagramNumber="1" BaseDefinition="IfcControl" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPerformanceHistory" Name="IfcPerformanceHistory" UniqueId="e8ca45f2-cf0b-4a93-84ca-ea3c10c7b27e" BaseDefinition="IfcControl" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Leistungsverlauf" Locale="de" />
-		<DocLocalization Name="Performance History" Locale="en" />
-		<DocLocalization Name="Historique de performance" Locale="fr" />
+		<DocLocalization Locale="de" Name="Leistungsverlauf" />
+		<DocLocalization Locale="en" Name="Performance History" />
+		<DocLocalization Locale="fr" Name="Historique de performance" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="114.63333" Y="397.46667" Width="410" Height="110.66667" />
 	<Attributes>
-		<DocAttribute Name="LifeCyclePhase" UniqueId="36401673-0cb0-4b02-8a3e-b30192a03438" DefinedType="IfcLabel" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LifeCyclePhase" UniqueId="36401673-0cb0-4b02-8a3e-b30192a03438" DefinedType="IfcLabel">
 			<Documentation>Describes the applicable building life-cycle phase. Typical values should be DESIGNDEVELOPMENT, SCHEMATICDEVELOPMENT, CONSTRUCTIONDOCUMENT, CONSTRUCTION, ASBUILT, COMMISSIONING, OPERATION, etc.</Documentation>
-			<DiagramLine>
-				<DocPoint X="210.3" Y="508.13334" />
-				<DocPoint X="210.3" Y="1336.09997" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="319.3" Y="570.766638" Width="178" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="PredefinedType" UniqueId="a19e5d1f-1c30-4199-b7a2-958bf89b7871" DefinedType="IfcPerformanceHistoryTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="a19e5d1f-1c30-4199-b7a2-958bf89b7871" DefinedType="IfcPerformanceHistoryTypeEnum" AttributeFlags="1">
 			<Documentation>Predefined generic type for a performace history that is specified in an enumeration.
 { .change-ifc2x4}
 &gt; IFC4 CHANGE The attribute has been added at the end of the entity definition.</Documentation>
-			<DiagramLine>
-				<DocPoint X="524.63333" Y="452.8" />
-				<DocPoint X="958.4" Y="452.8" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="527.2999967" Y="447.4666667" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

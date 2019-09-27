@@ -1,39 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelConnectsElements" Name="IfcRelConnectsElements" UniqueId="2749c418-fb5d-400d-92ce-0c491a55cbd7" DiagramNumber="10" BaseDefinition="IfcRelConnects" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelConnectsElements" Name="IfcRelConnectsElements" UniqueId="2749c418-fb5d-400d-92ce-0c491a55cbd7" BaseDefinition="IfcRelConnects" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Verbindet Elemente - Relation" Locale="de" />
-		<DocLocalization Name="Rel Connects Elements" Locale="en" />
-		<DocLocalization Name="Connection d&apos;éléments" Locale="fr" />
+		<DocLocalization Locale="de" Name="Verbindet Elemente - Relation" />
+		<DocLocalization Locale="en" Name="Rel Connects Elements" />
+		<DocLocalization Locale="fr" Name="Connection d&apos;éléments" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="4907.1415" Y="2645.5249" Width="448" Height="120" />
 	<Subtypes>
 		<DocSubtype UniqueId="934789df-1208-4c7d-a326-237fe6c71ec0" DefinedType="IfcRelConnectsWithRealizingElements" />
 		<DocSubtype UniqueId="4533744f-a7e5-49f9-878d-ad0a4c7f82d9" DefinedType="IfcRelConnectsPathElements" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="ConnectionGeometry" UniqueId="5b2207fa-16ea-4fe2-900a-652e7e2b521e" DefinedType="IfcConnectionGeometry" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="ConnectionGeometry" UniqueId="5b2207fa-16ea-4fe2-900a-652e7e2b521e" DefinedType="IfcConnectionGeometry" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>The geometric shape representation of the connection geometry that is provided in the object coordinate system of the _RelatingElement_ (mandatory) and in the object coordinate system of the _RelatedElement_ (optionally).</Documentation>
-			<DiagramLine>
-				<DocPoint X="5355.1415" Y="2705.5249" />
-				<DocPoint X="5689.69157" Y="2705.5249" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5355.1415" Y="2688.858233" Width="241" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RelatingElement" UniqueId="f875bb4c-3105-4b90-a8d1-25dfc10e0f90" DefinedType="IfcElement" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="RelatingElement" UniqueId="f875bb4c-3105-4b90-a8d1-25dfc10e0f90" DefinedType="IfcElement" XsdFormat="attribute">
 			<Documentation>Reference to a subtype of _IfcElement_ that is connected by the connection relationship in the role of _RelatingElement_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="4995.1416" Y="2765.5249" />
-				<DocPoint X="4995.1416" Y="3052.18487" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5104.47493" Y="2775.5248997" Width="188" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RelatedElement" UniqueId="eb56d278-f844-4217-8731-9c4cc688940e" DefinedType="IfcElement" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="RelatedElement" UniqueId="eb56d278-f844-4217-8731-9c4cc688940e" DefinedType="IfcElement" XsdFormat="attribute">
 			<Documentation>Reference to a subtype of _IfcElement_ that is connected by the connection relationship in the role of _RelatedElement_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5318.4749" Y="2765.5249" />
-				<DocPoint X="5318.4749" Y="3052.25157" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5427.80823" Y="2778.858233" Width="183" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
@@ -42,23 +26,5 @@
 			<Expression>RelatingElement :&lt;&gt;: RelatedElement</Expression>
 		</DocWhereRule>
 	</WhereRules>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="4907.1415" Y="2705.5249" />
-				<DocPoint X="4849.283965" Y="2705.5249" />
-				<DocPoint X="4849.283965" Y="3261.35624" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="5138.2187" Y="3261.3563" />
-						<DocPoint X="5138.2187" Y="3351.59156" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine />
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

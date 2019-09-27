@@ -1,12 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMirroredProfileDef" UniqueId="44ff2ba0-d8b9-466c-9dba-d297766c680f" DiagramNumber="5" BaseDefinition="IfcDerivedProfileDef" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMirroredProfileDef" UniqueId="44ff2ba0-d8b9-466c-9dba-d297766c680f" BaseDefinition="IfcDerivedProfileDef" EntityFlags="101">
 	<Localization>
-		<DocLocalization Name="gespiegeltes Profil" Locale="de" />
-		<DocLocalization Name="Mirrored Profile Def" Locale="en" />
+		<DocLocalization Locale="de" Name="gespiegeltes Profil" />
+		<DocLocalization Locale="en" Name="Mirrored Profile Def" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="307.00667" Y="4455.8667" Width="430.4" Height="100" />
 	<Attributes>
-		<DocAttribute Name="Operator" UniqueId="992b571c-5d03-41bb-a724-a448eface501" DefinedType="IfcCartesianTransformationOperator2D" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Operator" UniqueId="992b571c-5d03-41bb-a724-a448eface501" DefinedType="IfcCartesianTransformationOperator2D">
 			<Derived>
 IfcRepresentationItem() || IfcGeometricRepresentationItem() ||
 IfcCartesianTransformationOperator(
@@ -22,11 +21,6 @@ IfcCartesianTransformationOperator(
     -- Scale
     1.) ||
 IfcCartesianTransformationOperator2D()</Derived>
-			<DiagramLine>
-				<DocPoint X="737.40667" Y="4505.8667" />
-				<DocPoint X="1010.7541" Y="4505.8667" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="732.0733367" Y="4500.5333667" Width="236" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

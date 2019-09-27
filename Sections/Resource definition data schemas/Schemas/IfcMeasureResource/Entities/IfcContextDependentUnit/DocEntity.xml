@@ -1,31 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcContextDependentUnit" UniqueId="c715b91e-2c57-4166-9e0b-694da8b97ac6" DiagramNumber="1" BaseDefinition="IfcNamedUnit" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcContextDependentUnit" UniqueId="c715b91e-2c57-4166-9e0b-694da8b97ac6" BaseDefinition="IfcNamedUnit" EntityFlags="101">
 	<Localization>
-		<DocLocalization Name="Kontextabhängige Einheit" Locale="de" />
-		<DocLocalization Name="Context Dependent Unit" Locale="en" />
-		<DocLocalization Name="Unité dépendant du contexte" Locale="fr" />
+		<DocLocalization Locale="de" Name="Kontextabhängige Einheit" />
+		<DocLocalization Locale="en" Name="Context Dependent Unit" />
+		<DocLocalization Locale="fr" Name="Unité dépendant du contexte" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="540.15002" Y="1456.2969" Width="386.96093" Height="100" />
 	<Attributes>
-		<DocAttribute Name="Name" UniqueId="0bce538b-be29-4366-95f9-9fd28f48cd0a" DefinedType="IfcLabel" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Name" UniqueId="0bce538b-be29-4366-95f9-9fd28f48cd0a" DefinedType="IfcLabel">
 			<Documentation>The word, or group of words, by which the context dependent unit is referred to.</Documentation>
-			<DiagramLine>
-				<DocPoint X="687.5041" Y="1556.2969" />
-				<DocPoint X="687.5041" Y="1678.48647" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="733.796615" Y="1577.262402" Width="73" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="HasExternalReference" UniqueId="a99f218c-3a41-42f7-bdd8-070f81d72e23" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="32" AggregationType="3" AggregationFlag="0" Inverse="RelatedResourceObjects">
+		<DocAttribute Name="HasExternalReference" UniqueId="a99f218c-3a41-42f7-bdd8-070f81d72e23" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="32" AggregationType="3" Inverse="RelatedResourceObjects">
 			<Documentation>Reference to external information, e.g. library, classification, or document information, which is associated with the context dependent unit.
 { .change-ifc2x4}
 &gt; IFC4 CHANGE New inverse attribute</Documentation>
-			<DiagramLine>
-				<DocPoint X="927.11095" Y="1506.2969" />
-				<DocPoint X="973.119957" Y="1506.2969" />
-				<DocPoint X="973.119957" Y="1895.72399" />
-				<DocPoint X="586.441067" Y="1895.72399" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="992.70898" Y="1924.403492" Width="399" Height="70" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

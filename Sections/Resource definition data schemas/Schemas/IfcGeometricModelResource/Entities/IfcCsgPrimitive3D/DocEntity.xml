@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCsgPrimitive3D" Name="IfcCsgPrimitive3D" UniqueId="538f2550-e0fc-4704-97f7-66d555de1ae4" DiagramNumber="2" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCsgPrimitive3D" UniqueId="538f2550-e0fc-4704-97f7-66d555de1ae4" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="205">
 	<Localization>
-		<DocLocalization Name="CSG - Primitiv (3D)" Locale="de" />
-		<DocLocalization Name="Csg Primitive3 D" Locale="en" />
-		<DocLocalization Name="Primitive 3D Csg" Locale="fr" />
+		<DocLocalization Locale="de" Name="CSG - Primitiv (3D)" />
+		<DocLocalization Locale="en" Name="Csg Primitive3 D" />
+		<DocLocalization Locale="fr" Name="Primitive 3D Csg" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1924.2667" Y="344.13333" Width="380" Height="173.33333" />
 	<Subtypes>
 		<DocSubtype UniqueId="5897d1ea-ba0c-479f-be07-5c0fcb57c467" DefinedType="IfcBlock" />
 		<DocSubtype UniqueId="0f4cb0e9-7d10-4dda-b502-2ab41d683af9" DefinedType="IfcRectangularPyramid" />
@@ -14,63 +13,13 @@
 		<DocSubtype UniqueId="ccd1437f-a61c-4dff-ad57-2637557bf1e4" DefinedType="IfcSphere" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Position" UniqueId="623bbeab-dc08-4cb6-83ef-232501104ec3" DefinedType="IfcAxis2Placement3D" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="Position" UniqueId="623bbeab-dc08-4cb6-83ef-232501104ec3" DefinedType="IfcAxis2Placement3D" XsdFormat="attribute">
 			<Documentation>The placement coordinate system to which the parameters of each individual CSG primitive apply.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2304.2667" Y="395.24444" />
-				<DocPoint X="2680.9333" Y="395.24444" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2304.2667" Y="385.24444" Width="94" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Dim" UniqueId="6cfd0ff0-72fd-4c55-b168-9bf9801390cf" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Dim" UniqueId="6cfd0ff0-72fd-4c55-b168-9bf9801390cf" DefinedType="IfcDimensionCount">
 			<Documentation>The space dimensionality of this geometric representation item, it is always 3.</Documentation>
 			<Derived>3</Derived>
-			<DiagramLine>
-				<DocPoint X="2304.2667" Y="464.13333" />
-				<DocPoint X="2680.90003" Y="464.13333" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2297.6000333" Y="457.4666633" Width="125" Height="35" />
 		</DocAttribute>
 	</Attributes>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="1946.1334" Y="517.46667" />
-				<DocPoint X="1946.1334005" Y="517.46667" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="1946.1333" Y="710.63333" />
-						<DocPoint X="2104.2333" Y="710.63333" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="1946.1333" Y="968.96667" />
-						<DocPoint X="2067.59997" Y="968.96667" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="1946.1334" Y="1199.0667" />
-						<DocPoint X="2047.60004" Y="1199.0667" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="1946.1334" Y="1395.7667" />
-						<DocPoint X="2047.66671" Y="1395.7667" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="1946.1334" Y="1557.3667" />
-						<DocPoint X="2047.53337" Y="1557.3667" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

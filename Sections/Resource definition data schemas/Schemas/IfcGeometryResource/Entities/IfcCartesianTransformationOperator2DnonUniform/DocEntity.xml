@@ -1,30 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCartesianTransformationOperator2DnonUniform" Name="IfcCartesianTransformationOperator2DnonUniform" UniqueId="f45b9882-e0fb-41eb-9b0a-805615a37351" DiagramNumber="4" BaseDefinition="IfcCartesianTransformationOperator2D" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCartesianTransformationOperator2DnonUniform" Name="IfcCartesianTransformationOperator2DnonUniform" UniqueId="f45b9882-e0fb-41eb-9b0a-805615a37351" BaseDefinition="IfcCartesianTransformationOperator2D" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Kartesische Transformation - zweidimensional nicht gleichmäßig (2D)" Locale="de" />
-		<DocLocalization Name="Cartesian Transformation Operator2 Dnon Uniform" Locale="en" />
-		<DocLocalization Name="Opérateur 2D de transformation cartésienne non uniforme" Locale="fr" />
+		<DocLocalization Locale="de" Name="Kartesische Transformation - zweidimensional nicht gleichmäßig (2D)" />
+		<DocLocalization Locale="en" Name="Cartesian Transformation Operator2 Dnon Uniform" />
+		<DocLocalization Locale="fr" Name="Opérateur 2D de transformation cartésienne non uniforme" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="5001.5999" Y="1248.9334" Width="443.16666" Height="140" />
 	<Attributes>
-		<DocAttribute Name="Scale2" UniqueId="b428bab1-b9bc-4f46-abce-c63c47f01e4c" DefinedType="IfcReal" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Scale2" UniqueId="b428bab1-b9bc-4f46-abce-c63c47f01e4c" DefinedType="IfcReal" AttributeFlags="1">
 			<Documentation>The scaling value specified for the transformation along the axis 2. This is normally the y scale factor.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5046.93359375" Y="1388.9334" />
-				<DocPoint X="5046.93359375" Y="1388.9334" />
-				<DocPoint X="5046.93359375" Y="1490.13810221354" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5046.93359375" Y="1470.13810221354" Width="82" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Scl2" UniqueId="74fa5661-c33f-4fdd-9c32-512f0cdc9336" DefinedType="IfcReal" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Scl2" UniqueId="74fa5661-c33f-4fdd-9c32-512f0cdc9336" DefinedType="IfcReal">
 			<Documentation>The derived scale S(2) of the transformation along the axis 2 (normally the y axis), equal to Scale2 if that exists, or equal to the derived Scl1 (normally the x axis scale factor) otherwise.</Documentation>
 			<Derived>NVL(Scale2, SELF\IfcCartesianTransformationOperator.Scl)</Derived>
-			<DiagramLine>
-				<DocPoint X="5324.2666015625" Y="1388.9334" />
-				<DocPoint X="5324.2666015625" Y="1388.9334" />
-				<DocPoint X="5324.2666015625" Y="1598.2666422526" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5324.2666015625" Y="1578.2666422526" Width="129" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

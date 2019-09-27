@@ -1,75 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelConnectsStructuralMember" Name="IfcRelConnectsStructuralMember" UniqueId="a3f65142-e263-40a0-a199-116ed79dd647" DiagramNumber="2" BaseDefinition="IfcRelConnects" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelConnectsStructuralMember" UniqueId="a3f65142-e263-40a0-a199-116ed79dd647" BaseDefinition="IfcRelConnects" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Verbindet idealisierte Tragelemente - Relation" Locale="de" />
-		<DocLocalization Name="Rel Connects Structural Member" Locale="en" />
+		<DocLocalization Locale="de" Name="Verbindet idealisierte Tragelemente - Relation" />
+		<DocLocalization Locale="en" Name="Rel Connects Structural Member" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1871.8442" Y="1487.853" Width="498.06488" Height="229.36047" />
 	<Subtypes>
 		<DocSubtype UniqueId="96510db1-4540-45bc-b384-849bafafa5a1" DefinedType="IfcRelConnectsWithEccentricity" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="RelatingStructuralMember" UniqueId="29dc8e83-1a71-402e-a494-06876f1f1bae" DefinedType="IfcStructuralMember" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="RelatingStructuralMember" UniqueId="29dc8e83-1a71-402e-a494-06876f1f1bae" DefinedType="IfcStructuralMember" XsdFormat="attribute">
 			<Documentation>Reference to an instance of IfcStructuralMember (or its subclasses) which is connected to the specified structural connection.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2369.9091" Y="1503.6801" />
-				<DocPoint X="2608.63594" Y="1503.6801" />
-				<DocPoint X="2608.63594" Y="813.82581" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2525.27797" Y="1336.20836" Width="293" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RelatedStructuralConnection" UniqueId="1303e4ee-2a6a-4635-899a-6f5f6d8e392c" DefinedType="IfcStructuralConnection" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="RelatedStructuralConnection" UniqueId="1303e4ee-2a6a-4635-899a-6f5f6d8e392c" DefinedType="IfcStructuralConnection" XsdFormat="attribute">
 			<Documentation>Reference to an instance of IfcStructuralConnection (or its subclasses) which is connected to the specified structural member.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1871.8442" Y="1506.7195" />
-				<DocPoint X="1666.39389" Y="1506.7195" />
-				<DocPoint X="1666.39389" Y="759.43877" />
-				<DocPoint X="1748.733142" Y="759.43877" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1835.9854" Y="1702.89796" Width="324" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="AppliedCondition" UniqueId="3425bba1-6c03-4452-ad27-7f2e007714cd" DefinedType="IfcBoundaryCondition" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="AppliedCondition" UniqueId="3425bba1-6c03-4452-ad27-7f2e007714cd" DefinedType="IfcBoundaryCondition" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Conditions which define the connections properties.  Connection conditions are often called &quot;release&quot; but are not only used to define mechanisms like hinges but also rigid, elastic, and other conditions.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2064.6046" Y="1717.2135" />
-				<DocPoint X="2064.6046" Y="2078.09401" />
-				<DocPoint X="2279.31936" Y="2078.09401" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2063.84654554" Y="2063.743745" Width="194" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="AdditionalConditions" UniqueId="ea1f2763-53b0-4484-886d-5941951ce053" DefinedType="IfcStructuralConnectionCondition" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="AdditionalConditions" UniqueId="ea1f2763-53b0-4484-886d-5941951ce053" DefinedType="IfcStructuralConnectionCondition" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Describes additional connection properties.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2185.7669" Y="1717.2135" />
-				<DocPoint X="2185.7669" Y="1886.07782" />
-				<DocPoint X="2279.229229" Y="1886.07782" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2228.259826" Y="1796.85373" Width="232" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="SupportedLength" UniqueId="15d0e2e1-462a-4cb4-8425-9aeac6fdd59d" DefinedType="IfcLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="SupportedLength" UniqueId="15d0e2e1-462a-4cb4-8425-9aeac6fdd59d" DefinedType="IfcLengthMeasure" AttributeFlags="1">
 			<Documentation>Defines the &apos;supported length&apos; of this structural connection. See Fig. for more detail.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2369.9091" Y="1589.03" />
-				<DocPoint X="2630.14424" Y="1589.03" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2363.3123256" Y="1584.0229308" Width="199" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ConditionCoordinateSystem" UniqueId="4d84ca74-7ceb-4d98-bea7-c5f06d1b43d1" DefinedType="IfcAxis2Placement3D" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="ConditionCoordinateSystem" UniqueId="4d84ca74-7ceb-4d98-bea7-c5f06d1b43d1" DefinedType="IfcAxis2Placement3D" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Defines a coordinate system used for the description of the connection properties in _ConnectionCondition_ relative to the local coordinate system of _RelatingStructuralMember_.  If left unspecified, the placement _IfcAxis2Placement3D_((x,y,z), ?, ?) is implied with x,y,z being the local member coordinates where the connection is made and the default axes directions being in parallel with the local axes of _RelatingStructuralMember_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2369.9091" Y="1684.1303" />
-				<DocPoint X="2743.67269" Y="1684.1303" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2369.04370701" Y="1681.9150142" Width="315" Height="35" />
 		</DocAttribute>
 	</Attributes>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="1970.5105" Y="1717.2135" />
-				<DocPoint X="1970.5105" Y="2136.69578" />
-			</DiagramLine>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

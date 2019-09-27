@@ -1,34 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStructuralCurveMember" Name="IfcStructuralCurveMember" UniqueId="b0527d1a-798c-4134-b9f1-056c3d7650af" DiagramNumber="3" BaseDefinition="IfcStructuralMember" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStructuralCurveMember" Name="IfcStructuralCurveMember" UniqueId="b0527d1a-798c-4134-b9f1-056c3d7650af" BaseDefinition="IfcStructuralMember" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Stab / Seil / Balken mit konstantem Profil / Querschnitt" Locale="de">
+		<DocLocalization Locale="de" Name="Stab / Seil / Balken mit konstantem Profil / Querschnitt">
 			<Documentation>lineares statisches Bauteil mit Beanspruchung auf Zug, Druck, Biegung oder Torsion</Documentation>
 		</DocLocalization>
-		<DocLocalization Name="Structural Curve Member" Locale="en" />
+		<DocLocalization Locale="en" Name="Structural Curve Member" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="3501.5159" Y="1116.2342" Width="303.84759" Height="160.83461" />
 	<Subtypes>
 		<DocSubtype UniqueId="1d518939-df1a-4088-9985-e307f7a4fd2b" DefinedType="IfcStructuralCurveMemberVarying" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="bad7498e-7414-4402-843f-00cb547486b2" DefinedType="IfcStructuralCurveMemberTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="bad7498e-7414-4402-843f-00cb547486b2" DefinedType="IfcStructuralCurveMemberTypeEnum">
 			<Documentation>Type of member with respect to its load carrying behavior in this analysis idealization.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3805.3635" Y="1152.6277" />
-				<DocPoint X="4067.68745" Y="1152.6277" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3799.6619097" Y="1148.3683117" Width="182" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Axis" UniqueId="98e340d3-9f0e-4b44-9421-dc95050a5be5" DefinedType="IfcDirection" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="Axis" UniqueId="98e340d3-9f0e-4b44-9421-dc95050a5be5" DefinedType="IfcDirection" XsdFormat="attribute">
 			<Documentation>Direction which is used in the definition of the local z axis.  _Axis_ is specified relative to the so-called global coordinate system, i.e. the _SELF\IfcProduct.ObjectPlacement_.
 
 &gt; NOTE&amp;nbsp; It is desirable and usually possible that many instances of _IfcStructuralCurveConnection_ and _IfcStructuralCurveMember_ share a common instance of _IfcDirection_ as their _Axis_ attribute.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3805.3635" Y="1242.2775" />
-				<DocPoint X="4636.81925" Y="1242.2775" />
-				<DocPoint X="4636.81925" Y="676.89956" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3878.921441" Y="1239.6812017" Width="52" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
@@ -37,15 +25,5 @@
 			<Expression>(PredefinedType &lt;&gt; IfcStructuralCurveMemberTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
 		</DocWhereRule>
 	</WhereRules>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="3654.6877" Y="1277.0688" />
-				<DocPoint X="3654.6877" Y="1317.192725" />
-				<DocPoint X="3654.8116737" Y="1317.192725" />
-				<DocPoint X="3654.8116737" Y="1373.539862" />
-			</DiagramLine>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

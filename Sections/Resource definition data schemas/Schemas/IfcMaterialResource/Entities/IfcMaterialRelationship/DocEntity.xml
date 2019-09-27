@@ -1,36 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMaterialRelationship" UniqueId="6e3cd925-5085-4070-91c6-868ff915e9ae" DiagramNumber="1" BaseDefinition="IfcResourceLevelRelationship" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMaterialRelationship" UniqueId="6e3cd925-5085-4070-91c6-868ff915e9ae" BaseDefinition="IfcResourceLevelRelationship" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Material - Relation" Locale="de" />
-		<DocLocalization Name="Material Relationship" Locale="en" />
-		<DocLocalization Name="Relation entre matériaux" Locale="fr" />
+		<DocLocalization Locale="de" Name="Material - Relation" />
+		<DocLocalization Locale="en" Name="Material Relationship" />
+		<DocLocalization Locale="fr" Name="Relation entre matériaux" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="696.98" Y="2060.8048" Width="390.08055" Height="134.30544" />
 	<Attributes>
-		<DocAttribute Name="RelatingMaterial" UniqueId="e999e1a6-2c9d-42cc-906e-aa2f77ff42dd" DefinedType="IfcMaterial" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="RelatingMaterial" UniqueId="e999e1a6-2c9d-42cc-906e-aa2f77ff42dd" DefinedType="IfcMaterial" XsdFormat="attribute">
 			<Documentation>Reference to the relating material (the composite).</Documentation>
-			<DiagramLine>
-				<DocPoint X="1023.5245" Y="2060.8048" />
-				<DocPoint X="1023.5245" Y="1827.75213" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1130.72128" Y="2107.229313" Width="185" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RelatedMaterials" UniqueId="c4283d48-f0a8-4323-802a-02c8c67cb8b6" DefinedType="IfcMaterial" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="RelatedMaterials" UniqueId="c4283d48-f0a8-4323-802a-02c8c67cb8b6" DefinedType="IfcMaterial" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Reference to related materials (as constituents of composite material).</Documentation>
-			<DiagramLine>
-				<DocPoint X="937.76086" Y="2060.8048" />
-				<DocPoint X="937.76086" Y="1827.75213" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="793.3844" Y="2105.799919" Width="271" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Expression" UniqueId="06e78a67-c146-48c1-a11c-c8b9a2752c74" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Expression" UniqueId="06e78a67-c146-48c1-a11c-c8b9a2752c74" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>Information about the material relationship refering for example to the amount of related materials in the composite material. 
 &gt; NOTE&amp;nbsp; Any formal meaning of the _Expression_ string value has to be established in model view definitions or implementer agreements. No such formal language is provided as part of this specification.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1087.0606" Y="2122.7156" />
-				<DocPoint X="1278.20538" Y="2122.7156" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1072.766666" Y="2111.280453" Width="128" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

@@ -1,31 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStructuralSurfaceMember" Name="IfcStructuralSurfaceMember" UniqueId="98531769-b684-4095-a8e0-843609f7cef0" DiagramNumber="3" BaseDefinition="IfcStructuralMember" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStructuralSurfaceMember" Name="IfcStructuralSurfaceMember" UniqueId="98531769-b684-4095-a8e0-843609f7cef0" BaseDefinition="IfcStructuralMember" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Platte / Scheibe" Locale="de">
+		<DocLocalization Locale="de" Name="Platte / Scheibe">
 			<Documentation>flächenförmiges statisches Bauteil mit Beanspruchung quer oder längs zur Fläche</Documentation>
 		</DocLocalization>
-		<DocLocalization Name="Structural Surface Member" Locale="en" />
+		<DocLocalization Locale="en" Name="Structural Surface Member" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="3501.4471" Y="1640.673" Width="331.06777" Height="202.71027" />
 	<Subtypes>
 		<DocSubtype UniqueId="34c19330-5991-4341-9505-88007a14f65f" DefinedType="IfcStructuralSurfaceMemberVarying" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="7f571c3a-8900-4457-889e-282980a58f89" DefinedType="IfcStructuralSurfaceMemberTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="7f571c3a-8900-4457-889e-282980a58f89" DefinedType="IfcStructuralSurfaceMemberTypeEnum">
 			<Documentation>Type of member with respect to its load carrying behavior in this analysis idealization.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3832.5149" Y="1668.156" />
-				<DocPoint X="4067.62814" Y="1668.156" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3835.5915667" Y="1665.0936589" Width="182" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Thickness" UniqueId="dc70652b-1bc6-4bef-8a4f-70049ac774f9" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Thickness" UniqueId="dc70652b-1bc6-4bef-8a4f-70049ac774f9" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>Defines the typically understood thickness of the structural surface member, measured normal to its reference surface.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3832.5149" Y="1790.5562" />
-				<DocPoint X="4067.78495" Y="1790.5562" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3819.709132" Y="1782.5562" Width="117" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
@@ -34,13 +23,5 @@
 			<Expression>(PredefinedType &lt;&gt; IfcStructuralSurfaceMemberTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
 		</DocWhereRule>
 	</WhereRules>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="3666.9811" Y="1843.3833" />
-				<DocPoint X="3666.9811" Y="1949.38" />
-			</DiagramLine>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

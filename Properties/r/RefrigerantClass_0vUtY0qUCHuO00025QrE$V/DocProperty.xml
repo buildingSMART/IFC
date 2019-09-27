@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocProperty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="RefrigerantClass_0vUtY0qUCHuO00025QrEV" Name="RefrigerantClass" UniqueId="0vUtY0qUCHuO00025QrE$V" PropertyType="p_enumeratedvalue" PrimaryDataType="IfcLabel">
 	<Localization>
-		<DocLocalization Name="Refrigerant Class" Locale="en" />
-		<DocLocalization Name="冷媒分類" Locale="ja-JP">
+		<DocLocalization Locale="en" Name="Refrigerant Class" />
+		<DocLocalization Locale="ja-JP" Name="冷媒分類">
 			<Documentation>圧縮機で使用される冷媒種類
 CFC: Chlorofluorocarbons.
 HCFC: Hydrochlorofluorocarbons.
@@ -10,8 +10,6 @@ HFC: Hydrofluorocarbons.
 （CFC, HCFC, HFC, HYDROCARBONS, AMMONIA, CO2, H2O, その他）</Documentation>
 		</DocLocalization>
 	</Localization>
-	<Enumeration>
-		<DocPropertyEnumeration xsi:nil="true" href="PEnum_RefrigerantClass" />
-	</Enumeration>
+	<Enumeration xsi:type="DocPropertyEnumeration" xsi:nil="true" href="PEnum_RefrigerantClass" />
 </DocProperty>
 

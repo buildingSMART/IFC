@@ -1,13 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocProperty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Status_1B4L00qUGHuO00025QrEV" Name="Status" UniqueId="1B4L00qUGHuO00025QrE$V" PropertyType="p_enumeratedvalue" PrimaryDataType="IfcLabel">
 	<Localization>
-		<DocLocalization Name="Status" Locale="en" />
-		<DocLocalization Name="状態" Locale="ja-JP">
+		<DocLocalization Locale="en" Name="Status" />
+		<DocLocalization Locale="ja-JP" Name="状態">
 			<Documentation>要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。</Documentation>
 		</DocLocalization>
 	</Localization>
-	<Enumeration>
-		<DocPropertyEnumeration xsi:nil="true" href="PEnum_ElementStatus" />
-	</Enumeration>
+	<Enumeration xsi:type="DocPropertyEnumeration" xsi:nil="true" href="PEnum_ElementStatus" />
 </DocProperty>
 
