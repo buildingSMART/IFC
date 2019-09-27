@@ -1,110 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcProperty" Name="IfcProperty" UniqueId="911b51d0-e3e7-45db-a881-520360ded638" DiagramNumber="1" BaseDefinition="IfcPropertyAbstraction" EntityFlags="197">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcProperty" Name="IfcProperty" UniqueId="911b51d0-e3e7-45db-a881-520360ded638" BaseDefinition="IfcPropertyAbstraction" EntityFlags="197">
 	<Localization>
-		<DocLocalization Name="Merkmal" Locale="de" />
-		<DocLocalization Name="Property" Locale="en" />
-		<DocLocalization Name="Propriété" Locale="fr" />
+		<DocLocalization Locale="de" Name="Merkmal" />
+		<DocLocalization Locale="en" Name="Property" />
+		<DocLocalization Locale="fr" Name="Propriété" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="679.60001" Y="1220.9332" Width="332.66667" Height="201.33333" />
 	<Subtypes>
 		<DocSubtype UniqueId="e32a11ea-5ca4-43fa-a4c3-2b856cb51bed" DefinedType="IfcComplexProperty" />
 		<DocSubtype UniqueId="13fa34e0-6a71-4ef7-ac7a-20ca058ac8e1" DefinedType="IfcSimpleProperty" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Name" UniqueId="cec40e31-025d-4bcc-ae89-09d7916a8ee6" DefinedType="IfcIdentifier" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Name" UniqueId="cec40e31-025d-4bcc-ae89-09d7916a8ee6" DefinedType="IfcIdentifier">
 			<Documentation>Name for this property. This label is the significant name string that defines the semantic meaning for the property.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1012.2667" Y="1279.2314" />
-				<DocPoint X="1322.16669" Y="1279.2314" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="988.2667" Y="1268.564733" Width="73" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Description" UniqueId="563a5298-c546-435f-98d5-4d192815257f" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Description" UniqueId="563a5298-c546-435f-98d5-4d192815257f" DefinedType="IfcText" AttributeFlags="1">
 			<Documentation>Informative text to explain the property.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1012.2667" Y="1390.912" />
-				<DocPoint X="1322.20002" Y="1390.912" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1014.9333667" Y="1385.5786667" Width="130" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="PartOfPset" UniqueId="79ce08ab-7c92-4db4-9325-4a08c1c70c38" DefinedType="IfcPropertySet" AttributeFlags="32" AggregationType="3" AggregationFlag="0" Inverse="HasProperties">
+		<DocAttribute Name="PartOfPset" UniqueId="79ce08ab-7c92-4db4-9325-4a08c1c70c38" DefinedType="IfcPropertySet" AttributeFlags="32" AggregationType="3" Inverse="HasProperties">
 			<Documentation>Reference to the _IfcPropertySet_ by which the _IfcProperty_ is referenced.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New inverse attribute to navigate from _IfcProperty_ to _IfcPropertySet_ with upward compatibility for file based exchange.</Documentation>
-			<DiagramLine>
-				<DocPoint X="679.60001" Y="1309.7973" />
-				<DocPoint X="101.68334" Y="1309.7973" />
-				<DocPoint X="101.68334" Y="1567.70004" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="546.72501" Y="1395.393904" Width="270" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="PropertyForDependance" UniqueId="386eb852-dc2b-4164-963e-1d2791e03caf" DefinedType="IfcPropertyDependencyRelationship" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="DependingProperty">
+		<DocAttribute Name="PropertyForDependance" UniqueId="386eb852-dc2b-4164-963e-1d2791e03caf" DefinedType="IfcPropertyDependencyRelationship" AttributeFlags="8" AggregationType="3" Inverse="DependingProperty">
 			<Documentation>The property on whose value that of another property depends.</Documentation>
-			<DiagramLine>
-				<DocPoint X="938.28579" Y="574.88333" />
-				<DocPoint X="938.28579" Y="1220.9332" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1168.95245" Y="432.19173" Width="422" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="PropertyDependsOn" UniqueId="a26503fc-f130-45bc-90c4-05998f9e5137" DefinedType="IfcPropertyDependencyRelationship" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="DependantProperty">
+		<DocAttribute Name="PropertyDependsOn" UniqueId="a26503fc-f130-45bc-90c4-05998f9e5137" DefinedType="IfcPropertyDependencyRelationship" AttributeFlags="8" AggregationType="3" Inverse="DependantProperty">
 			<Documentation>The relating property on which the value of the property depends.</Documentation>
-			<DiagramLine>
-				<DocPoint X="893.6694" Y="574.88333" />
-				<DocPoint X="893.6694" Y="1220.9332" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="691.00274" Y="666.508265" Width="376" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="PartOfComplex" UniqueId="be34513c-c6e4-4dd1-b6be-63ae5e66413f" DefinedType="IfcComplexProperty" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="HasProperties">
+		<DocAttribute Name="PartOfComplex" UniqueId="be34513c-c6e4-4dd1-b6be-63ae5e66413f" DefinedType="IfcComplexProperty" AttributeFlags="8" AggregationType="3" Inverse="HasProperties">
 			<Documentation>Reference to the _IfcComplexProperty_ in which the _IfcProperty_ is contained.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The cardinality has changed to 0..n to allow reuse of instances of _IfcProperty_ in several _IfcComplexProperty_ with upward compatibility for file based exchange.</Documentation>
-			<DiagramLine>
-				<DocPoint X="493.50928" Y="1567.7999" />
-				<DocPoint X="493.50928" Y="1378.49094" />
-				<DocPoint X="679.60001" Y="1378.49094" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="489.1453344" Y="1523.02426" Width="318" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="HasConstraints" UniqueId="33bd1930-a3a9-40cd-a3cc-6c31ed80b89f" DefinedType="IfcResourceConstraintRelationship" AttributeFlags="1" AggregationType="3" AggregationFlag="0" Inverse="RelatedResourceObjects">
+		<DocAttribute Name="HasConstraints" UniqueId="33bd1930-a3a9-40cd-a3cc-6c31ed80b89f" DefinedType="IfcResourceConstraintRelationship" AttributeFlags="1" AggregationType="3" Inverse="RelatedResourceObjects">
 			<Documentation>User-defined constraints for the property.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1012.26668" Y="1220.9332" />
-				<DocPoint X="1012.26668" Y="1084.66662597656" />
-				<DocPoint X="1045.33325195313" Y="1084.66662597656" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1012.26668" Y="1064.66662597656" Width="400" Height="100" />
 		</DocAttribute>
-		<DocAttribute Name="HasApprovals" UniqueId="a25de802-e2fe-47f2-adcd-e56cdc287d21" DefinedType="IfcResourceApprovalRelationship" AttributeFlags="1" AggregationType="3" AggregationFlag="0" Inverse="RelatedResourceObjects">
+		<DocAttribute Name="HasApprovals" UniqueId="a25de802-e2fe-47f2-adcd-e56cdc287d21" DefinedType="IfcResourceApprovalRelationship" AttributeFlags="1" AggregationType="3" Inverse="RelatedResourceObjects">
 			<Documentation>User-defined approvals for the property.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1012.26668" Y="1422.26653" />
-				<DocPoint X="1012.26668" Y="1490.00008138021" />
-				<DocPoint X="1176" Y="1490.00008138021" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1012.26668" Y="1470.00008138021" Width="400" Height="100" />
 		</DocAttribute>
 	</Attributes>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="932.6" Y="1422.2666" />
-				<DocPoint X="932.6" Y="1532.19994" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="696.11669" Y="1532.1999" />
-						<DocPoint X="696.11669" Y="1567.7999" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="1021.625" Y="1532.1999" />
-						<DocPoint X="1021.625" Y="1567.795771" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

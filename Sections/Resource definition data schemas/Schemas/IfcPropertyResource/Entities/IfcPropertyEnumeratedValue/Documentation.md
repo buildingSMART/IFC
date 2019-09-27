@@ -78,5 +78,5 @@ It is not mandatory to use an instance of _IfcPropertyEnumeration_ to hold the a
 { .change-ifc2x}
 > IFC2x CHANGE&nbsp; Entity has been renamed from IfcEnumeratedProperty
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Attribute _EnumerationValues_ has been made OPTIONAL with upward compatibility for file based exchange.

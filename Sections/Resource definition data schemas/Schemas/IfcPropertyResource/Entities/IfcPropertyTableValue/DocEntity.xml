@@ -1,65 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPropertyTableValue" Name="IfcPropertyTableValue" UniqueId="e3c26a8d-a8eb-45a1-ae3b-cf89be51902e" DiagramNumber="2" BaseDefinition="IfcSimpleProperty" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPropertyTableValue" Name="IfcPropertyTableValue" UniqueId="e3c26a8d-a8eb-45a1-ae3b-cf89be51902e" BaseDefinition="IfcSimpleProperty" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Merkmal mit Tabellenwert" Locale="de" />
-		<DocLocalization Name="Property Table Value" Locale="en" />
-		<DocLocalization Name="Propriété à valeurs tabulaires" Locale="fr" />
+		<DocLocalization Locale="de" Name="Merkmal mit Tabellenwert" />
+		<DocLocalization Locale="en" Name="Property Table Value" />
+		<DocLocalization Locale="fr" Name="Propriété à valeurs tabulaires" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1900.2833" Y="1374.8499" Width="459.6" Height="582.66667" />
 	<Attributes>
 		<DocAttribute Name="DefiningValues" UniqueId="9867214e-f440-4aef-b09f-77d8191be7e1" DefinedType="IfcValue" AttributeFlags="1" AggregationType="1" AggregationFlag="2" AggregationLower="1" AggregationUpper="0">
 			<Documentation>List of defining values, which determine the defined values. This list shall have unique values only.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute has been made optional with upward compatibility for file based exchange.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2359.8833" Y="1409.5166" />
-				<DocPoint X="2879.88337" Y="1409.5166" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2356.0499666" Y="1398.849933" Width="260" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="DefinedValues" UniqueId="ceaeca4b-57ed-4f16-b679-5ae20096a3fd" DefinedType="IfcValue" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="DefinedValues" UniqueId="ceaeca4b-57ed-4f16-b679-5ae20096a3fd" DefinedType="IfcValue" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Defined values which are applicable for the scope as defined by the defining values.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute has been made optional with upward compatibility for file based exchange.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2359.8833" Y="1507.7086" />
-				<DocPoint X="2879.85007" Y="1507.7086" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2347.4833" Y="1497.7086004" Width="245" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Expression" UniqueId="44bb4232-b2a5-467d-b418-1173fc69da99" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Expression" UniqueId="44bb4232-b2a5-467d-b418-1173fc69da99" DefinedType="IfcText" AttributeFlags="1">
 			<Documentation>Expression for the derivation of defined values from the defining values, the expression is given for information only, i.e. no automatic processing can be expected from the expression.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2359.8833" Y="1615.7975" />
-				<DocPoint X="2879.88327" Y="1615.7975" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2296.549967" Y="1605.7975" Width="128" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="DefiningUnit" UniqueId="78024b01-73ed-4f40-9b79-de9b88a20510" DefinedType="IfcUnit" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="DefiningUnit" UniqueId="78024b01-73ed-4f40-9b79-de9b88a20510" DefinedType="IfcUnit" AttributeFlags="1">
 			<Documentation>Unit for the defining values, if not given, the default value for the measure type (given by the TYPE of the defining values) is used as defined by the global unit assignment at IfcProject.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2359.8833" Y="1715.2217" />
-				<DocPoint X="2879.91657" Y="1715.2217" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2302.466602" Y="1705.8716997" Width="142" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="DefinedUnit" UniqueId="c9f7e84f-2e1c-46b9-9f1e-c6f11c4c578b" DefinedType="IfcUnit" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="DefinedUnit" UniqueId="c9f7e84f-2e1c-46b9-9f1e-c6f11c4c578b" DefinedType="IfcUnit" AttributeFlags="1">
 			<Documentation>Unit for the defined values, if not given, the default value for the measure type (given by the TYPE of the defined values) is used as defined by the global unit assignment at IfcProject.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2359.8833" Y="1820.4197" />
-				<DocPoint X="2879.88337" Y="1820.4197" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2299.133302" Y="1811.753033" Width="137" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="CurveInterpolation" UniqueId="8f0aca34-80c5-47dd-996e-81d3a9395f49" DefinedType="IfcCurveInterpolationEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="CurveInterpolation" UniqueId="8f0aca34-80c5-47dd-996e-81d3a9395f49" DefinedType="IfcCurveInterpolationEnum" AttributeFlags="1">
 			<Documentation>Interpolation of the curve between two defining and defined values that are provided. if not provided a linear interpolation is assumed.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute has been added at the end of the attribute list.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2359.8833" Y="1919.5166" />
-				<DocPoint X="2729.86663" Y="1919.5166" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2410.549966" Y="1908.849933" Width="210" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

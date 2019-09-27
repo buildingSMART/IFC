@@ -1,23 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcBuildingElementProxy" Name="IfcBuildingElementProxy" UniqueId="3e4aa4b8-2c66-482c-8c4a-6913d68fc480" DiagramNumber="2" BaseDefinition="IfcBuildingElement" EntityFlags="109">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcBuildingElementProxy" Name="IfcBuildingElementProxy" UniqueId="3e4aa4b8-2c66-482c-8c4a-6913d68fc480" BaseDefinition="IfcBuildingElement" EntityFlags="109">
 	<Localization>
-		<DocLocalization Name="Bauteil / Bauelement - beliebig" Locale="de" />
-		<DocLocalization Name="Building Element Proxy" Locale="en" />
-		<DocLocalization Name="Elément de construction non défini" Locale="fr" />
+		<DocLocalization Locale="de" Name="Bauteil / Bauelement - beliebig" />
+		<DocLocalization Locale="en" Name="Building Element Proxy" />
+		<DocLocalization Locale="fr" Name="Elément de construction non défini" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1865.3516" Y="2173.3927" Width="314" Height="100" />
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="49d8264c-da80-476c-97cc-c93b33d98240" DefinedType="IfcBuildingElementProxyTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="49d8264c-da80-476c-97cc-c93b33d98240" DefinedType="IfcBuildingElementProxyTypeEnum" AttributeFlags="1">
 			<Documentation>Predefined generic type for a building element proxy that is specified in an enumeration. There may be a property set given specificly for the predefined types.
 &gt; NOTE&amp;nbsp; The _PredefinedType_ shall only be used, if no _IfcBuildingElementProxyType_ is assigned, providing its own _IfcBuildingElementProxyType.PredefinedType_.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute _CompositionType_ has been replaced by _PredefinedType_, being a superset of the enumerators.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2179.3516" Y="2223.3927" />
-				<DocPoint X="2501.41826" Y="2223.3927" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2179.3516" Y="2223.3927" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

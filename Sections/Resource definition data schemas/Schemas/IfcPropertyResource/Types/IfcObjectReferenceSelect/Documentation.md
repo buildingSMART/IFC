@@ -2,5 +2,5 @@
 
 > HISTORY&nbsp; New select type in IFC2.0.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; _IfcTable_ added to the select.

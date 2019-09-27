@@ -9,5 +9,5 @@
 { .change-ifc2x3}
 > IFC2x3 CHANGE&nbsp; The attribute Texture is deleted.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The inverse attribute AnnotatedSurface isdeleted, and the attribute _Maps_ is added.

@@ -1,28 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelConnectsPortToElement" Name="IfcRelConnectsPortToElement" UniqueId="ade898d9-502a-402f-b2b5-25e8a097c9e9" DiagramNumber="4" BaseDefinition="IfcRelConnects" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelConnectsPortToElement" Name="IfcRelConnectsPortToElement" UniqueId="ade898d9-502a-402f-b2b5-25e8a097c9e9" BaseDefinition="IfcRelConnects" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Verbindet Anschluss mit Element - Relation (veraltert)" Locale="de" />
-		<DocLocalization Name="Rel Connects Port To Element" Locale="en" />
+		<DocLocalization Locale="de" Name="Verbindet Anschluss mit Element - Relation (veraltert)" />
+		<DocLocalization Locale="en" Name="Rel Connects Port To Element" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="5843.2333" Y="1511.6332" Width="358.66666" Height="123.33333" />
 	<Attributes>
-		<DocAttribute Name="RelatingPort" UniqueId="222980d1-b080-42e0-b7b3-eb3b93435142" DefinedType="IfcPort" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="RelatingPort" UniqueId="222980d1-b080-42e0-b7b3-eb3b93435142" DefinedType="IfcPort" XsdFormat="attribute">
 			<Documentation>Reference to an Port that is connected by the objectified relationship.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5843.2333" Y="1573.2999" />
-				<DocPoint X="5404.4643" Y="1573.2999" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5829.273857" Y="1556.622852" Width="143" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RelatedElement" UniqueId="9169b986-1fba-4dbd-b53a-9d8e770368f5" DefinedType="IfcDistributionElement" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="RelatedElement" UniqueId="9169b986-1fba-4dbd-b53a-9d8e770368f5" DefinedType="IfcDistributionElement" XsdFormat="attribute">
 			<Documentation>Reference to an _IfcDistributionElement_ that has ports assigned.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE Data type restricted to _IfcDistributionElement_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="6022.5666" Y="1511.6332" />
-				<DocPoint X="6022.5666" Y="1367.96653" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="6139.89993" Y="1506.2998667" Width="183" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

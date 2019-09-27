@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocProperty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="MotorDriveType_1RAI_0qUGHuO00025QrEV" Name="MotorDriveType" UniqueId="1RAI_0qUGHuO00025QrE$V" PropertyType="p_enumeratedvalue" PrimaryDataType="IfcLabel">
 	<Localization>
-		<DocLocalization Name="Motor Drive Type" Locale="en" />
-		<DocLocalization Name="モーター駆動種類" Locale="ja-JP">
+		<DocLocalization Locale="en" Name="Motor Drive Type" />
+		<DocLocalization Locale="ja-JP" Name="モーター駆動種類">
 			<Documentation>モーター駆動種類
 DIRECTDRIVE: ダイレクトドライブ
 BELTDRIVE: ベルトドライブ
@@ -10,8 +10,6 @@ COUPLING: カップリング
 OTHER: その他</Documentation>
 		</DocLocalization>
 	</Localization>
-	<Enumeration>
-		<DocPropertyEnumeration xsi:nil="true" href="PEnum_FanMotorConnectionType" />
-	</Enumeration>
+	<Enumeration xsi:type="DocPropertyEnumeration" xsi:nil="true" href="PEnum_FanMotorConnectionType" />
 </DocProperty>
 

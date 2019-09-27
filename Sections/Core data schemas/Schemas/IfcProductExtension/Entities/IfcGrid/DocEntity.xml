@@ -1,49 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGrid" UniqueId="25379845-b692-4288-a06e-0e6782212371" DiagramNumber="13" BaseDefinition="IfcPositioningElement" EntityFlags="32">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGrid" UniqueId="25379845-b692-4288-a06e-0e6782212371" BaseDefinition="IfcPositioningElement" EntityFlags="32">
 	<Localization>
-		<DocLocalization Name="Raster" Locale="de" />
-		<DocLocalization Name="Grid" Locale="en" />
-		<DocLocalization Name="Grille" Locale="fr" />
+		<DocLocalization Locale="de" Name="Raster" />
+		<DocLocalization Locale="en" Name="Grid" />
+		<DocLocalization Locale="fr" Name="Grille" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="8186.6669921875" Y="3277.33325195313" Width="400" Height="444" />
 	<Attributes>
-		<DocAttribute Name="UAxes" UniqueId="52e8b76f-1753-4f63-bec2-8c5baf34e010" DefinedType="IfcGridAxis" AttributeFlags="0" AggregationType="1" AggregationFlag="2" AggregationLower="1" AggregationUpper="?">
+		<DocAttribute Name="UAxes" UniqueId="52e8b76f-1753-4f63-bec2-8c5baf34e010" DefinedType="IfcGridAxis" AggregationType="1" AggregationFlag="2" AggregationLower="1" AggregationUpper="?">
 			<Documentation>List of grid axes defining the first row of grid lines.</Documentation>
-			<DiagramLine>
-				<DocPoint X="8586.6669921875" Y="3365.99003822917" />
-				<DocPoint X="8586.6669921875" Y="3365.99003822917" />
-				<DocPoint X="8956.68098958333" Y="3365.99003822917" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="8586.6669921875" Y="3345.99003822917" Width="400" Height="100" />
 		</DocAttribute>
-		<DocAttribute Name="VAxes" UniqueId="4db57570-5afe-44ca-acac-ab9ca9b30e78" DefinedType="IfcGridAxis" AttributeFlags="0" AggregationType="1" AggregationFlag="2" AggregationLower="1" AggregationUpper="?">
+		<DocAttribute Name="VAxes" UniqueId="4db57570-5afe-44ca-acac-ab9ca9b30e78" DefinedType="IfcGridAxis" AggregationType="1" AggregationFlag="2" AggregationLower="1" AggregationUpper="?">
 			<Documentation>List of grid axes defining the second row of grid lines.</Documentation>
-			<DiagramLine>
-				<DocPoint X="8586.6669921875" Y="3440.64837072917" />
-				<DocPoint X="8586.6669921875" Y="3440.64837072917" />
-				<DocPoint X="8956.68098958333" Y="3440.64837072917" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="8586.6669921875" Y="3420.64837072917" Width="400" Height="100" />
 		</DocAttribute>
 		<DocAttribute Name="WAxes" UniqueId="7c8b1731-f15b-4944-8503-27030ed23f78" DefinedType="IfcGridAxis" AttributeFlags="1" AggregationType="1" AggregationFlag="2" AggregationLower="1" AggregationUpper="?">
 			<Documentation>List of grid axes defining the third row of grid lines. It may be given in the case of a triangular grid.</Documentation>
-			<DiagramLine>
-				<DocPoint X="8586.6669921875" Y="3515.30670322917" />
-				<DocPoint X="8586.6669921875" Y="3515.30670322917" />
-				<DocPoint X="8956.68098958333" Y="3515.30670322917" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="8586.6669921875" Y="3495.30670322917" Width="400" Height="100" />
 		</DocAttribute>
-		<DocAttribute Name="PredefinedType" UniqueId="17d92a16-1003-4924-9cff-c55f5b39e118" DefinedType="IfcGridTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="17d92a16-1003-4924-9cff-c55f5b39e118" DefinedType="IfcGridTypeEnum" AttributeFlags="1">
 			<Documentation>Predefined types to define the particular type of the grid. 
 { .change-ifc4}
 &gt; IFC4 Change&amp;nbsp; New attribute.</Documentation>
-			<DiagramLine>
-				<DocPoint X="8586.6669921875" Y="3666.42626953125" />
-				<DocPoint X="8586.6669921875" Y="3666.42626953125" />
-				<DocPoint X="8978.400390625" Y="3666.42626953125" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="8586.6669921875" Y="3646.42626953125" Width="400" Height="100" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

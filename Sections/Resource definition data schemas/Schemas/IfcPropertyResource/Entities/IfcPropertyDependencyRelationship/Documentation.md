@@ -2,7 +2,7 @@
 
 > HISTORY&nbsp; New entity in IFC2x2
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Made subtype of _IfcResourceLevelRelationship_ (attribute order changed).
 
 { .use-head}

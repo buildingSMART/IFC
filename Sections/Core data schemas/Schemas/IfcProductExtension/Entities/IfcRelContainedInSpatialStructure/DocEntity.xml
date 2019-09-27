@@ -1,31 +1,20 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelContainedInSpatialStructure" Name="IfcRelContainedInSpatialStructure" UniqueId="d85e2968-6220-4d4b-9e5d-3fcf794fea60" DiagramNumber="10" BaseDefinition="IfcRelConnects" EntityFlags="237">
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelContainedInSpatialStructure" Name="IfcRelContainedInSpatialStructure" UniqueId="d85e2968-6220-4d4b-9e5d-3fcf794fea60" BaseDefinition="IfcRelConnects" EntityFlags="237"> 
 	<Localization>
-		<DocLocalization Name="Zu räumlicher Struktur zugeordnet - Relation" Locale="de" />
-		<DocLocalization Name="Rel Contained In Spatial Structure" Locale="en" />
-		<DocLocalization Name="Localisation dans la structure spatiale" Locale="fr" />
+		<DocLocalization Locale="de" Name="Zu räumlicher Struktur zugeordnet - Relation" />
+		<DocLocalization Locale="en" Name="Rel Contained In Spatial Structure" />
+		<DocLocalization Locale="fr" Name="Localisation dans la structure spatiale" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="3476.93" Y="3615.3034" Width="571" Height="103.33333" />
 	<Attributes>
-		<DocAttribute Name="RelatedElements" UniqueId="6d60a348-9802-4101-89d4-2e0c5ce2ab92" DefinedType="IfcProduct" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="RelatedElements" UniqueId="6d60a348-9802-4101-89d4-2e0c5ce2ab92" DefinedType="IfcProduct" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Set of products, which are contained within this level of the spatial structure hierarchy.
 { .change-ifc2x}
 &gt; IFC2x CHANGE&amp;nbsp; The data type has been changed from _IfcElement_ to _IfcProduct_ with upward compatibility</Documentation>
-			<DiagramLine>
-				<DocPoint X="3546.43" Y="3718.6367" />
-				<DocPoint X="3546.43" Y="3856.63677" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3703.09667" Y="3743.303367" Width="274" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RelatingStructure" UniqueId="8b59fadd-0d62-4ca6-bdb3-5620e2dd2b8f" DefinedType="IfcSpatialElement" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="hidden">
+		<DocAttribute Name="RelatingStructure" UniqueId="8b59fadd-0d62-4ca6-bdb3-5620e2dd2b8f" DefinedType="IfcSpatialElement" XsdFormat="hidden">
 			<Documentation>Spatial structure element, within which the element is contained. Any element can only be contained within one element of the project spatial structure.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute _RelatingStructure_ as been promoted to the new supertype _IfcSpatialElement_ with upward compatibility for file based exchange.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3922.43" Y="3718.6367" />
-				<DocPoint X="3922.43" Y="3994.97004" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="4034.43" Y="3692.470032" Width="198" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

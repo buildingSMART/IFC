@@ -1,55 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSpace" Name="IfcSpace" UniqueId="ef5bd9a3-9472-49c9-9aa4-173b9444e09a" DiagramNumber="8" BaseDefinition="IfcSpatialStructureElement" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSpace" Name="IfcSpace" UniqueId="ef5bd9a3-9472-49c9-9aa4-173b9444e09a" BaseDefinition="IfcSpatialStructureElement" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Raum" Locale="de" />
-		<DocLocalization Name="Space" Locale="en" />
-		<DocLocalization Name="Local" Locale="fr" />
+		<DocLocalization Locale="de" Name="Raum" />
+		<DocLocalization Locale="en" Name="Space" />
+		<DocLocalization Locale="fr" Name="Local" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1052.2555" Y="2900.8729" Width="282.63333" Height="292.7" />
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="39555f4a-a49d-4ba2-ac74-c53ebe97b98c" DefinedType="IfcSpaceTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="39555f4a-a49d-4ba2-ac74-c53ebe97b98c" DefinedType="IfcSpaceTypeEnum" AttributeFlags="1">
 			<Documentation>Predefined generic types for a space that are specified in an enumeration. There might be property sets defined specifically for each predefined type.
 
 &gt; NOTE&amp;nbsp; Previous use had been to indicates whether the _IfcSpace_ is an interior space by value INTERNAL, or an exterior space by value EXTERNAL. This use is now deprecated, the property &apos;IsExternal&apos; at &apos;Pset_SpaceCommon&apos; should be used instead.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute has been renamed from _ExteriorOrInteriorSpace_ with upward compatibility for file based exchange.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1236.1735" Y="2900.8729" />
-				<DocPoint X="1236.1735" Y="2775.00623" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1337.50683" Y="2911.539567" Width="182" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ElevationWithFlooring" UniqueId="0c593fdb-4928-4a7e-b527-c275a3eff283" DefinedType="IfcLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ElevationWithFlooring" UniqueId="0c593fdb-4928-4a7e-b527-c275a3eff283" DefinedType="IfcLengthMeasure" AttributeFlags="1">
 			<Documentation>Level of flooring of this space; the average shall be taken, if the space ground surface is sloping or if there are level differences within this space.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1161.8923" Y="2900.8729" />
-				<DocPoint X="1161.8923" Y="2610.35621" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1307.31887" Y="2960.022898" Width="246" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="HasCoverings" UniqueId="e169375e-bbf4-43b8-a679-bf64711c047f" DefinedType="IfcRelCoversSpaces" AttributeFlags="32" AggregationType="3" AggregationFlag="0" Inverse="RelatingSpace">
+		<DocAttribute Name="HasCoverings" UniqueId="e169375e-bbf4-43b8-a679-bf64711c047f" DefinedType="IfcRelCoversSpaces" AttributeFlags="32" AggregationType="3" Inverse="RelatingSpace">
 			<Documentation>Reference to _IfcCovering_ by virtue of the objectified relationship _IfcRelCoversSpaces_. It defines the concept of a space having coverings assigned. Those coverings may represent different flooring, or tiling areas.
 
 &gt; NOTE&amp;nbsp; Coverings are often managed by the space, and not by the building element, which they cover.
 
 { .change-ifc2x3}
 &gt; IFC2x Edition3 CHANGE&amp;nbsp; New inverse relationship. Upward compatibility for file based exchange is guaranteed.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1193.5722" Y="3193.5729" />
-				<DocPoint X="1193.5722" Y="3303.09998" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1382.90553" Y="3166.742696" Width="305" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="BoundedBy" UniqueId="618d511c-b181-48b0-85bd-f8e858015320" DefinedType="IfcRelSpaceBoundary" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingSpace">
+		<DocAttribute Name="BoundedBy" UniqueId="618d511c-b181-48b0-85bd-f8e858015320" DefinedType="IfcRelSpaceBoundary" AggregationType="3" Inverse="RelatingSpace">
 			<Documentation>Reference to a set of _IfcRelSpaceBoundary_&apos;s that defines the physical or virtual delimitation of that space against physical or virtual boundaries.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1052.2555" Y="2950.3898" />
-				<DocPoint X="769.27217" Y="2950.3898" />
-				<DocPoint X="769.27217" Y="2950.464705699" />
-				<DocPoint X="486.28884" Y="2950.464705699" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="769.27217" Y="2977.016885" Width="423" Height="70" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

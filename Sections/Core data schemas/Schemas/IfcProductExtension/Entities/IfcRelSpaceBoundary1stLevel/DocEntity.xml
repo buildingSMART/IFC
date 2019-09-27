@@ -1,36 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelSpaceBoundary1stLevel" UniqueId="bae52a64-1034-464e-8c4d-a00aa45bafa0" DiagramNumber="8" BaseDefinition="IfcRelSpaceBoundary" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelSpaceBoundary1stLevel" UniqueId="bae52a64-1034-464e-8c4d-a00aa45bafa0" BaseDefinition="IfcRelSpaceBoundary" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Raumgrenzen 1. Ebene - Relation" Locale="de" />
-		<DocLocalization Name="Rel Space Boundary1st Level" Locale="en" />
-		<DocLocalization Name="Limites d&apos;espace de premier niveau" Locale="fr" />
+		<DocLocalization Locale="de" Name="Raumgrenzen 1. Ebene - Relation" />
+		<DocLocalization Locale="en" Name="Rel Space Boundary1st Level" />
+		<DocLocalization Locale="fr" Name="Limites d&apos;espace de premier niveau" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="325.44" Y="3407.3867" Width="333.33333" Height="124" />
 	<Subtypes>
 		<DocSubtype UniqueId="fcf3f77d-c44e-4c6a-88d7-98eb4dff7d35" DefinedType="IfcRelSpaceBoundary2ndLevel" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="ParentBoundary" UniqueId="b82c885d-c05b-4881-9c67-820a0aa13e35" DefinedType="IfcRelSpaceBoundary1stLevel" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="ParentBoundary" UniqueId="b82c885d-c05b-4881-9c67-820a0aa13e35" DefinedType="IfcRelSpaceBoundary1stLevel" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Reference to the host, or parent, space boundary within which this inner boundary is defined.</Documentation>
-			<DiagramLine>
-				<DocPoint X="658.77333" Y="3442.72" />
-				<DocPoint X="808.77333" Y="3442.72" />
-				<DocPoint X="808.77333" Y="3307.38667" />
-				<DocPoint X="406.77333" Y="3307.38667" />
-				<DocPoint X="406.77333" Y="3407.38667" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="811.4399967" Y="3296.720003" Width="186" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="InnerBoundaries" UniqueId="17fdcd0c-9332-432d-9933-30d0938105e8" DefinedType="IfcRelSpaceBoundary1stLevel" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="ParentBoundary">
+		<DocAttribute Name="InnerBoundaries" UniqueId="17fdcd0c-9332-432d-9933-30d0938105e8" DefinedType="IfcRelSpaceBoundary1stLevel" AttributeFlags="8" AggregationType="3" Inverse="ParentBoundary">
 			<Documentation>Reference to the inner boundaries of the space boundary. Inner boundaries are defined by the space boundaries of openings, doors and windows.</Documentation>
-			<DiagramLine>
-				<DocPoint X="658.77333" Y="3442.72" />
-				<DocPoint X="808.77333" Y="3442.72" />
-				<DocPoint X="808.77333" Y="3307.38667" />
-				<DocPoint X="406.77333" Y="3307.38667" />
-				<DocPoint X="406.77333" Y="3407.38667" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="811.4399967" Y="3353.053337" Width="332" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

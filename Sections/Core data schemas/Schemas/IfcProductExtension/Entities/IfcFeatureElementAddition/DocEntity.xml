@@ -1,21 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcFeatureElementAddition" Name="IfcFeatureElementAddition" UniqueId="818c820c-139e-4825-96bc-6c16e6f606d4" DiagramNumber="9" BaseDefinition="IfcFeatureElement" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcFeatureElementAddition" Name="IfcFeatureElementAddition" UniqueId="818c820c-139e-4825-96bc-6c16e6f606d4" BaseDefinition="IfcFeatureElement" EntityFlags="205">
 	<Localization>
-		<DocLocalization Name="Modifikator (geometrischer Körper) - Addition" Locale="de" />
-		<DocLocalization Name="Feature Element Addition" Locale="en" />
+		<DocLocalization Locale="de" Name="Modifikator (geometrischer Körper) - Addition" />
+		<DocLocalization Locale="en" Name="Feature Element Addition" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="2457.8866" Y="4087.6112" Width="289.21262" Height="137.0917" />
 	<Subtypes>
 		<DocSubtype UniqueId="a56c2df4-2cf7-4d18-a335-f768023ce4fb" DefinedType="IfcProjectionElement" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="ProjectsElements" UniqueId="916482f1-a6fe-4d2a-86b0-8f9c6796f946" DefinedType="IfcRelProjectsElement" AttributeFlags="8" AggregationType="0" AggregationFlag="0" Inverse="RelatedFeatureElement">
+		<DocAttribute Name="ProjectsElements" UniqueId="916482f1-a6fe-4d2a-86b0-8f9c6796f946" DefinedType="IfcRelProjectsElement" AttributeFlags="8" Inverse="RelatedFeatureElement">
 			<Documentation>Reference to the _IfcRelProjectsElement_ relationship that uses this _IfcFeatureElementAddition_ to create a volume addition at an element. The _IfcFeatureElementAddition_ can only be used to create a single addition at a single element using Boolean addition operation.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2086.9291" Y="4153.5427" />
-				<DocPoint X="2457.88654" Y="4153.5427" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2092.4443" Y="4190.52181" Width="261" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

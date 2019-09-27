@@ -1,30 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelCoversSpaces" Name="IfcRelCoversSpaces" UniqueId="d7038275-a6b7-4293-86c1-f69337a29534" DiagramNumber="5" BaseDefinition="IfcRelConnects" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelCoversSpaces" UniqueId="d7038275-a6b7-4293-86c1-f69337a29534" BaseDefinition="IfcRelConnects" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Ordnet Bekleidung / Belag einem Raum zu - Relation" Locale="de" />
-		<DocLocalization Name="Rel Covers Spaces" Locale="en" />
+		<DocLocalization Locale="de" Name="Ordnet Bekleidung / Belag einem Raum zu - Relation" />
+		<DocLocalization Locale="en" Name="Rel Covers Spaces" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="6657.33984375" Y="1431.2666015625" Width="436.6" Height="168.26667" />
 	<Attributes>
-		<DocAttribute Name="RelatingSpace" UniqueId="934695b7-b499-4d39-a698-18b232840eaf" DefinedType="IfcSpace" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="RelatingSpace" UniqueId="934695b7-b499-4d39-a698-18b232840eaf" DefinedType="IfcSpace" XsdFormat="attribute">
 			<Documentation>Relationship to the space object that is covered.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute name has been changed from _RelatedSpace_ to _RelatingSpace_ with upward compatibility for file based exchange.</Documentation>
-			<DiagramLine>
-				<DocPoint X="7093.9399" Y="1515.4" />
-				<DocPoint X="7343.07996" Y="1515.4" />
-				<DocPoint X="0" Y="0" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="7093.9399" Y="1495.4" Width="168" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RelatedCoverings" UniqueId="18964ad6-f7f4-49e7-b15b-0b72b0b504e5" DefinedType="IfcCovering" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="RelatedCoverings" UniqueId="18964ad6-f7f4-49e7-b15b-0b72b0b504e5" DefinedType="IfcCovering" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Relationship to the set of coverings covering that cover surfaces of this space.</Documentation>
-			<DiagramLine>
-				<DocPoint X="6890.80683427083" Y="1599.53327" />
-				<DocPoint X="6890.80683427083" Y="1599.53327" />
-				<DocPoint X="6890.80683427083" Y="1689.69991048177" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="6890.80683427083" Y="1619.53327" Width="283" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

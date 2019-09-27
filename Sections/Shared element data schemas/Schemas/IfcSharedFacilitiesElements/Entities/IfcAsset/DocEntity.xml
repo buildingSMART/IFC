@@ -1,89 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcAsset" Name="IfcAsset" UniqueId="e1ef998e-9c7f-4969-9371-b17f2cb38f14" DiagramNumber="2" BaseDefinition="IfcGroup" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcAsset" Name="IfcAsset" UniqueId="e1ef998e-9c7f-4969-9371-b17f2cb38f14" BaseDefinition="IfcGroup" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Sachvermögen" Locale="de" />
-		<DocLocalization Name="Asset" Locale="en" />
-		<DocLocalization Name="Biens" Locale="fr" />
+		<DocLocalization Locale="de" Name="Sachvermögen" />
+		<DocLocalization Locale="en" Name="Asset" />
+		<DocLocalization Locale="fr" Name="Biens" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1789.8809" Y="389.14883" Width="293.5463" Height="619.56958" />
 	<Attributes>
-		<DocAttribute Name="Identification" UniqueId="a895f5bf-79c8-4a70-aac0-62ab5c5c23c9" DefinedType="IfcIdentifier" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Identification" UniqueId="a895f5bf-79c8-4a70-aac0-62ab5c5c23c9" DefinedType="IfcIdentifier" AttributeFlags="1">
 			<Documentation>A unique identification assigned to an asset that enables its differentiation from other assets.
 &gt; NOTE&amp;nbsp; The asset identifier is unique within the asset register. It differs from the globally unique id assigned to the instance of an entity populating a database.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2083.4272" Y="412.77223" />
-				<DocPoint X="2572.0863" Y="412.77223" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2074.9530727" Y="409.6617799" Width="146" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="OriginalValue" UniqueId="a71d0d19-98f1-45a6-b969-987c11871490" DefinedType="IfcCostValue" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="OriginalValue" UniqueId="a71d0d19-98f1-45a6-b969-987c11871490" DefinedType="IfcCostValue" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>The cost value of the asset at the time of purchase.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2083.4272" Y="476.94853" />
-				<DocPoint X="2571.98376" Y="476.94853" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2083.4272" Y="476.94853" Width="154" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="CurrentValue" UniqueId="20597429-b166-489f-a555-6871d7823028" DefinedType="IfcCostValue" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="CurrentValue" UniqueId="20597429-b166-489f-a555-6871d7823028" DefinedType="IfcCostValue" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>The current cost value of the asset.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2083.4272" Y="543.22213" />
-				<DocPoint X="2571.98376" Y="543.22213" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2083.4272" Y="543.22213" Width="153" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="TotalReplacementCost" UniqueId="e3041417-cdab-498d-b22e-23d72641b6dc" DefinedType="IfcCostValue" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="TotalReplacementCost" UniqueId="e3041417-cdab-498d-b22e-23d72641b6dc" DefinedType="IfcCostValue" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>The total cost of replacement of the asset.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2083.4272" Y="609.05033" />
-				<DocPoint X="2571.98376" Y="609.05033" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2086.5376501" Y="609.05033" Width="259" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Owner" UniqueId="1806a557-2b88-40fb-bde4-033918957e73" DefinedType="IfcActorSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Owner" UniqueId="1806a557-2b88-40fb-bde4-033918957e73" DefinedType="IfcActorSelect" AttributeFlags="1">
 			<Documentation>The name of the person or organization that &apos;owns&apos; the asset.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2083.4272" Y="748.02623" />
-				<DocPoint X="2378.97817" Y="748.02623" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2083.4272" Y="748.02623" Width="80" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="User" UniqueId="15065989-6bb5-469b-b866-bb7f6b13e835" DefinedType="IfcActorSelect" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="User" UniqueId="15065989-6bb5-469b-b866-bb7f6b13e835" DefinedType="IfcActorSelect" AttributeFlags="1">
 			<Documentation>The name of the person or organization that &apos;uses&apos; the asset.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2083.4272" Y="820.07443" />
-				<DocPoint X="2378.97817" Y="820.07443" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2083.4272" Y="820.07443" Width="59" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ResponsiblePerson" UniqueId="e9346cf1-5817-44f0-a5c8-81c1cd269a96" DefinedType="IfcPerson" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="ResponsiblePerson" UniqueId="e9346cf1-5817-44f0-a5c8-81c1cd269a96" DefinedType="IfcPerson" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>The person designated to be responsible for the asset.
 &gt; NOTE&amp;nbsp; In some regulations (for example, UK Health and Safety at Work Act, Electricity at Work Regulations), management of assets must have a person identified as being responsible and to whom regulatory, insurance and other organizations communicate. In places where there is not a legal requirement, the responsible person would be the asset manager but would not have a legal status.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2083.4272" Y="933.81003" />
-				<DocPoint X="2378.93797" Y="933.81003" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2083.4272" Y="933.81003" Width="221" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="IncorporationDate" UniqueId="f0e297f7-a0bb-4cc4-8035-b24e8703ddac" DefinedType="IfcDate" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="IncorporationDate" UniqueId="f0e297f7-a0bb-4cc4-8035-b24e8703ddac" DefinedType="IfcDate" AttributeFlags="1">
 			<Documentation>The date on which an asset was incorporated into the works, installed, constructed, erected or completed.
 &gt; NOTE&amp;nbsp; This is the date on which an asset is considered to start depreciating.
 
 { .history}
 &gt; IFC4 CHANGE&amp;nbsp; Type changed from IfcDateTimeSelect.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1905.5496" Y="1008.7184" />
-				<DocPoint X="1905.5496" Y="1135.82698" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2033.07805" Y="1021.1602" Width="205" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="DepreciatedValue" UniqueId="5660c0e1-c55b-44c7-b6c2-a63fbaa28609" DefinedType="IfcCostValue" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="DepreciatedValue" UniqueId="5660c0e1-c55b-44c7-b6c2-a63fbaa28609" DefinedType="IfcCostValue" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>The current value of an asset within the accounting rules and procedures of an organization.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2083.4272" Y="670.14793" />
-				<DocPoint X="2571.98376" Y="670.14793" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2083.4272" Y="670.14793" Width="204" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

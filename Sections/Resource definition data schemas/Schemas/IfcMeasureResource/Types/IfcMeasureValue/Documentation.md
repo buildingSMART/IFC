@@ -8,5 +8,5 @@
 
 > HISTORY&nbsp; New type in IFC1.5.1.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC 2x4 CHANGE&nbsp; _IfcNonNegativeLengthMeasure_ added.

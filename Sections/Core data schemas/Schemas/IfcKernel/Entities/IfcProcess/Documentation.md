@@ -21,5 +21,5 @@ Process information relates to other objects by establishing the following relat
 { .change-ifc2x}
 > IFC2x CHANGE&nbsp; The attribute _Productivity_ has been removed.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The attribute _Identification_ has been promoted from subtypes _IfcTask_ and others.

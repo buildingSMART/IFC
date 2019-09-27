@@ -15,5 +15,5 @@ An _IfcTextStyle_ is assigned to _IfcTextLiteral_ through the _IfcStyledItem_ en
 { .change-ifc2x3}
 > IFC2x3 CHANGE&nbsp; The _IfcTextStyle_ has been changed by adding _TextFontStyle_ and different data types for _TextStyle_ and _IfcTextCharacterAppearance_.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The _IfcTextStyle_ has been simplified by removing old vector based text style definitions.

@@ -29,5 +29,5 @@ The following general agreements apply for each base quantity set
 
 > HISTORY&nbsp; New entity in IFC2x.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Subtyped from new intermediate _IfcQuantitySet_ supertype.

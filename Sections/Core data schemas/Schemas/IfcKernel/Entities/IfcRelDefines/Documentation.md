@@ -10,5 +10,5 @@
 
 > HISTORY&nbsp; New entity in IFC2x.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The attribute _RelatedObjects_ had been demoted to the subtypes _IfcRelDefinesByProperties_ and _IfcRelDefinesByType_.

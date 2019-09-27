@@ -11,5 +11,5 @@
 
 > HISTORY&nbsp; New entity in IFC2x2.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Attribute _PredefinedType_ made optional. _NominalDiameter_ and _CrossSectionArea_ made optional and deprecated; this information can now be provided by _IfcTendonType_. Description of _FrictionCoefficient_ corrected.

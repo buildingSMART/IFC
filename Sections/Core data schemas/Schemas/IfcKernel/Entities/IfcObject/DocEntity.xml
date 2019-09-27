@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcObject" Name="IfcObject" UniqueId="03ad1d5a-0288-44a7-b612-096bd45ae66b" DiagramNumber="1" BaseDefinition="IfcObjectDefinition" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcObject" Name="IfcObject" UniqueId="03ad1d5a-0288-44a7-b612-096bd45ae66b" BaseDefinition="IfcObjectDefinition" EntityFlags="205">
 	<Localization>
-		<DocLocalization Name="Objekt" Locale="de" />
-		<DocLocalization Name="Object" Locale="en" />
-		<DocLocalization Name="Objet" Locale="fr" />
+		<DocLocalization Locale="de" Name="Objekt" />
+		<DocLocalization Locale="en" Name="Object" />
+		<DocLocalization Locale="fr" Name="Objet" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="336.43333" Y="1485.2333" Width="271.33334" Height="471.2" />
 	<Subtypes>
 		<DocSubtype UniqueId="98e18a22-dc53-48f4-a980-3e0269144315" DefinedType="IfcActor" />
 		<DocSubtype UniqueId="3527e2dc-dcbc-44db-b9b8-fa0a79fb75a3" DefinedType="IfcControl" />
@@ -15,53 +14,28 @@
 		<DocSubtype UniqueId="5ef6060a-53b7-4bcb-a425-2e400f21551b" DefinedType="IfcResource" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="ObjectType" UniqueId="a2a49b49-46e4-4a0d-a311-916cc1dd4a25" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ObjectType" UniqueId="a2a49b49-46e4-4a0d-a311-916cc1dd4a25" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>The type denotes a particular type that indicates the object further. The use has to be established at the level of instantiable subtypes. In particular it holds the user defined type, if the enumeration of the attribute _PredefinedType_ is set to USERDEFINED.</Documentation>
-			<DiagramLine>
-				<DocPoint X="607.76667" Y="1537.8748" />
-				<DocPoint X="1174.01666" Y="1537.8748" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="604.4333367" Y="1524.541467" Width="133" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="IsDeclaredBy" UniqueId="61731909-a38e-45fe-98b9-b403ef1e803d" DefinedType="IfcRelDefinesByObject" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatedObjects" XsdFormat="attribute">
+		<DocAttribute Name="IsDeclaredBy" UniqueId="61731909-a38e-45fe-98b9-b403ef1e803d" DefinedType="IfcRelDefinesByObject" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="RelatedObjects" XsdFormat="attribute">
 			<Documentation>Link to the relationship object pointing to the declaring object that provides the object definitions for this object occurrence. The declaring object has to be part of an object type decomposition. The associated _IfcObject_, or its subtypes, contains the specific information (as part of a type, or style, definition), that is common to all reflected instances of the declaring _IfcObject_, or its subtypes. 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New inverse relationship, change made with upward compatibility for file based exchange.</Documentation>
-			<DiagramLine>
-				<DocPoint X="607.76667" Y="1819.0065" />
-				<DocPoint X="1174.02" Y="1819.0065" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="597.100003" Y="1848.339833" Width="438" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="Declares" UniqueId="8a2b55d8-3bca-45a0-9309-e7c6e2770821" DefinedType="IfcRelDefinesByObject" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatingObject">
+		<DocAttribute Name="Declares" UniqueId="8a2b55d8-3bca-45a0-9309-e7c6e2770821" DefinedType="IfcRelDefinesByObject" AggregationType="3" Inverse="RelatingObject">
 			<Documentation>Link to the relationship object pointing to the reflected object(s) that receives the object definitions. The reflected object has to be part of an object occurrence decomposition. The associated _IfcObject_, or its subtypes, provides the specific information (as part of a type, or style, definition), that is common to all reflected instances of the declaring _IfcObject_, or its subtypes. 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New inverse relationship, change made with upward compatibility for file based exchange.</Documentation>
-			<DiagramLine>
-				<DocPoint X="607.76667" Y="1916.516" />
-				<DocPoint X="1174.0533" Y="1916.516" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="605.6333367" Y="1948.516" Width="431" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="IsTypedBy" UniqueId="4016c47e-1d15-481e-8a59-b6fb531ad43c" DefinedType="IfcRelDefinesByType" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="RelatedObjects" XsdFormat="attribute">
+		<DocAttribute Name="IsTypedBy" UniqueId="4016c47e-1d15-481e-8a59-b6fb531ad43c" DefinedType="IfcRelDefinesByType" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="RelatedObjects" XsdFormat="attribute">
 			<Documentation>Set of relationships to the object type that provides the type definitions for this object occurrence. The then associated _IfcTypeObject_, or its subtypes, contains the specific information (or type, or style), that is common to all instances of _IfcObject_, or its subtypes, referring to the same type. 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; New inverse relationship, the link to _IfcRelDefinesByType_ had previously be included in the inverse relationship _IfcRelDefines_. Change made with upward compatibility for file based exchange.</Documentation>
-			<DiagramLine>
-				<DocPoint X="607.76667" Y="1725.0993" />
-				<DocPoint X="1174.1" Y="1725.0993" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="597.100003" Y="1755.4993" Width="422" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="IsDefinedBy" UniqueId="e2315ec5-85ce-457d-b508-07be258c2138" DefinedType="IfcRelDefinesByProperties" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatedObjects" XsdFormat="element">
+		<DocAttribute Name="IsDefinedBy" UniqueId="e2315ec5-85ce-457d-b508-07be258c2138" DefinedType="IfcRelDefinesByProperties" AggregationType="3" Inverse="RelatedObjects" XsdFormat="element">
 			<Documentation>Set of relationships to property set definitions attached to this object. Those statically or dynamically defined properties contain alphanumeric information content that further defines the object. 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The data type has been changed from _IfcRelDefines_ to _IfcRelDefinesByProperties_ with upward compatibility for file based exchange.</Documentation>
-			<DiagramLine>
-				<DocPoint X="607.76667" Y="1630.1666" />
-				<DocPoint X="1173.9733" Y="1630.1666" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="607.76667" Y="1654.1666" Width="479" Height="70" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
@@ -69,51 +43,5 @@
 			<Expression>((SIZEOF(IsDefinedBy) = 0) OR IfcUniqueDefinitionNames(IsDefinedBy))</Expression>
 		</DocWhereRule>
 	</WhereRules>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="404.16489" Y="1956.4333" />
-				<DocPoint X="404.1648905" Y="1956.4333" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="404.16467" Y="2036.7666" />
-						<DocPoint X="338.293337" Y="2036.7666" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="404.16467" Y="2259.4626" />
-						<DocPoint X="446.065344" Y="2259.4626" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="404.16467" Y="2147.8" />
-						<DocPoint X="338.206667" Y="2147.8" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="404.16467" Y="2148.3948" />
-						<DocPoint X="446.096004" Y="2148.3948" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="404.16467" Y="2037.3066" />
-						<DocPoint X="446.014664" Y="2037.3066" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="404.16467" Y="2255.8734" />
-						<DocPoint X="338.220007" Y="2255.8734" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

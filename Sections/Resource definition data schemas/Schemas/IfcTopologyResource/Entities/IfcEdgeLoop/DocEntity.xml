@@ -1,29 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcEdgeLoop" UniqueId="1642dee1-9c3d-416b-86a9-db23ccf926ae" DiagramNumber="2" BaseDefinition="IfcLoop" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcEdgeLoop" UniqueId="1642dee1-9c3d-416b-86a9-db23ccf926ae" BaseDefinition="IfcLoop" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Kante als Schleife" Locale="de" />
-		<DocLocalization Name="Edge Loop" Locale="en" />
+		<DocLocalization Locale="de" Name="Kante als Schleife" />
+		<DocLocalization Locale="en" Name="Edge Loop" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="2325.80004882813" Y="1658" Width="222" Height="167.266667683919" />
 	<Attributes>
-		<DocAttribute Name="EdgeList" UniqueId="c9c4cf69-72a6-4bc9-862b-5518de6b066a" DefinedType="IfcOrientedEdge" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="EdgeList" UniqueId="c9c4cf69-72a6-4bc9-862b-5518de6b066a" DefinedType="IfcOrientedEdge" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>A list of oriented edge entities which are concatenated together to form this path.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2547.80004882813" Y="1689.66666666667" />
-				<DocPoint X="2547.80004882813" Y="1689.66666666667" />
-				<DocPoint X="2818.70003255208" Y="1689.66666666667" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2547.80004882813" Y="1669.66666666667" Width="180" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Ne" UniqueId="637a63ba-cc47-45f4-b3b0-02e86e799123" DefinedType="IfcInteger" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Ne" UniqueId="637a63ba-cc47-45f4-b3b0-02e86e799123" DefinedType="IfcInteger">
 			<Documentation>The number of elements in the edge list.</Documentation>
 			<Derived>SIZEOF(EdgeList)</Derived>
-			<DiagramLine>
-				<DocPoint X="2547.80004882813" Y="1777.13346354167" />
-				<DocPoint X="2547.80004882813" Y="1777.13346354167" />
-				<DocPoint X="2818.70003255208" Y="1777.13346354167" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2547.80004882813" Y="1757.13346354167" Width="114" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

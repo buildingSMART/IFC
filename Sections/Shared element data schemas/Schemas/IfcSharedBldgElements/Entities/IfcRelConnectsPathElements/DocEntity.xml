@@ -1,50 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelConnectsPathElements" Name="IfcRelConnectsPathElements" UniqueId="801d751c-7dbf-4a3c-a799-223323377272" DiagramNumber="5" BaseDefinition="IfcRelConnectsElements" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelConnectsPathElements" Name="IfcRelConnectsPathElements" UniqueId="801d751c-7dbf-4a3c-a799-223323377272" BaseDefinition="IfcRelConnectsElements" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Verbindet Elemente mit Pfaddefinition - Relation" Locale="de" />
-		<DocLocalization Name="Rel Connects Path Elements" Locale="en" />
+		<DocLocalization Locale="de" Name="Verbindet Elemente mit Pfaddefinition - Relation" />
+		<DocLocalization Locale="en" Name="Rel Connects Path Elements" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="6652.03385416667" Y="719.516682942708" Width="463.33333" Height="169.83334" />
 	<Attributes>
-		<DocAttribute Name="RelatingPriorities" UniqueId="875ef649-a65e-40cd-970a-b99ead08ca9f" DefinedType="IfcInteger" AttributeFlags="0" AggregationType="1" AggregationFlag="0">
+		<DocAttribute Name="RelatingPriorities" UniqueId="875ef649-a65e-40cd-970a-b99ead08ca9f" DefinedType="IfcInteger" AggregationType="1">
 			<Documentation>Overriding priorities at this connection. It overrides the standard priority given at the wall layer provided by _IfcMaterialLayer_._Priority_. The list of _RelatingProperties_ corresponds to the list of _IfcMaterialLayerSet_._MaterialLayers_ of the element referenced by _RelatingObject_.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; Data type changed to NUMBER and usage to hold a normalized ratio measure [0..1].</Documentation>
-			<DiagramLine>
-				<DocPoint X="7115.36718416667" Y="757.494333902995" />
-				<DocPoint X="7115.36718416667" Y="757.494333902995" />
-				<DocPoint X="7432.70035807292" Y="757.494333902995" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="7115.36718416667" Y="737.494333902995" Width="269" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RelatedPriorities" UniqueId="7362235e-2a0d-4f5e-af69-482fd8dacac7" DefinedType="IfcInteger" AttributeFlags="0" AggregationType="1" AggregationFlag="0">
+		<DocAttribute Name="RelatedPriorities" UniqueId="7362235e-2a0d-4f5e-af69-482fd8dacac7" DefinedType="IfcInteger" AggregationType="1">
 			<Documentation>Overriding priorities at this connection. It overrides the standard priority given at the wall layer provided by _IfcMaterialLayer_._Priority_. The list of _RelatedProperties_ corresponds to the list of _IfcMaterialLayerSet_._MaterialLayers_ of the element referenced by _RelatedObject_.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; Data type changed to NUMBER and usage to hold a normalized ratio measure [0..1].</Documentation>
-			<DiagramLine>
-				<DocPoint X="7115.36718416667" Y="849.516693115234" />
-				<DocPoint X="7115.36718416667" Y="849.516693115234" />
-				<DocPoint X="7435.3671875" Y="849.516693115234" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="7115.36718416667" Y="829.516693115234" Width="264" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RelatedConnectionType" UniqueId="add30ef4-48b3-4bba-9732-f682f23c1293" DefinedType="IfcConnectionTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RelatedConnectionType" UniqueId="add30ef4-48b3-4bba-9732-f682f23c1293" DefinedType="IfcConnectionTypeEnum">
 			<Documentation>Indication of the connection type in relation to the path of the _RelatingObject_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="6889.067" Y="889.350022942708" />
-				<DocPoint X="6889.067" Y="889.350022942708" />
-				<DocPoint X="6889.067" Y="1034.1833" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="6889.067" Y="1014.1833" Width="274" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RelatingConnectionType" UniqueId="f9db190a-4cfc-4840-9fda-0fbdb3adda53" DefinedType="IfcConnectionTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RelatingConnectionType" UniqueId="f9db190a-4cfc-4840-9fda-0fbdb3adda53" DefinedType="IfcConnectionTypeEnum">
 			<Documentation>Indication of the connection type in relation to the path of the _RelatingObject_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="6889.067" Y="889.350022942708" />
-				<DocPoint X="6889.067" Y="889.350022942708" />
-				<DocPoint X="6889.067" Y="1034.1833" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="6889.067" Y="1014.1833" Width="279" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

@@ -2,5 +2,5 @@
 
 > HISTORY&nbsp; New entity in IFC1.5. Entity has been renamed from IfcObjectReference in IFC2x.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Attribute _PropertyReference_ has been made OPTIONAL with upward compatibility for file based exchange.

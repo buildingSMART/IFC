@@ -1,48 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralMember" UniqueId="a37e785d-9c63-4d0c-acff-e17f5fc43811" DiagramNumber="2" BaseDefinition="IfcStructuralItem" EntityFlags="133">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralMember" UniqueId="a37e785d-9c63-4d0c-acff-e17f5fc43811" BaseDefinition="IfcStructuralItem" EntityFlags="133">
 	<Localization>
-		<DocLocalization Name="idealisiertes Tragelement (allgemein)" Locale="de">
+		<DocLocalization Locale="de" Name="idealisiertes Tragelement (allgemein)">
 			<Documentation>Idealisierung des tragenden Bauteils zur  Berechnung der Auflagerreaktionen und des Kräfteverlaufs</Documentation>
 		</DocLocalization>
-		<DocLocalization Name="Structural Member" Locale="en" />
+		<DocLocalization Locale="en" Name="Structural Member" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="2541.588" Y="674.62583" Width="200" Height="139.2" />
 	<Subtypes>
 		<DocSubtype UniqueId="aa57450e-21ea-445a-be1f-56bb447674f2" DefinedType="IfcStructuralCurveMember" />
 		<DocSubtype UniqueId="544f8f5e-1bf7-4655-b4f3-e2cea13ea4a8" DefinedType="IfcStructuralSurfaceMember" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="ConnectedBy" UniqueId="0e5c250b-dcb5-48d9-9260-d187e548238f" DefinedType="IfcRelConnectsStructuralMember" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="RelatingStructuralMember">
+		<DocAttribute Name="ConnectedBy" UniqueId="0e5c250b-dcb5-48d9-9260-d187e548238f" DefinedType="IfcRelConnectsStructuralMember" AttributeFlags="8" AggregationType="3" Inverse="RelatingStructuralMember">
 			<Documentation>Inverse relationship to all structural connections (i.e. to supports or connecting elements) which are defined for this structural member.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2369.9091" Y="1503.6801" />
-				<DocPoint X="2608.63594" Y="1503.6801" />
-				<DocPoint X="2608.63594" Y="813.82581" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2777.50693" Y="1635.79014" Width="299" Height="35" />
 		</DocAttribute>
 	</Attributes>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="2691.996" Y="813.82583" />
-				<DocPoint X="2691.9960005" Y="813.82583" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="2691.996" Y="936.37441" />
-						<DocPoint X="2726.051473" Y="936.37441" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="2691.996" Y="1037.1643" />
-						<DocPoint X="2726.006573" Y="1037.1643" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

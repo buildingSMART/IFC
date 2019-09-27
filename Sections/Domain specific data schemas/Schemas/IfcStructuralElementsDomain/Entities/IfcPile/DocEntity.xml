@@ -1,33 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPile" Name="IfcPile" UniqueId="986bf516-0c1c-465d-992a-2150e7aabe95" DiagramNumber="1" BaseDefinition="IfcDeepFoundation" EntityFlags="37">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPile" Name="IfcPile" UniqueId="986bf516-0c1c-465d-992a-2150e7aabe95" BaseDefinition="IfcDeepFoundation" EntityFlags="37">
 	<Localization>
-		<DocLocalization Name="Fundament / Tiefgründung" Locale="de" />
-		<DocLocalization Name="Pile" Locale="en" />
-		<DocLocalization Name="Pieu" Locale="fr" />
+		<DocLocalization Locale="de" Name="Fundament / Tiefgründung" />
+		<DocLocalization Locale="en" Name="Pile" />
+		<DocLocalization Locale="fr" Name="Pieu" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="135.29402" Y="399.77283" Width="200" Height="100" />
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="d2a4fc10-ab8a-4025-a09e-59889c12124b" DefinedType="IfcPileTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="d2a4fc10-ab8a-4025-a09e-59889c12124b" DefinedType="IfcPileTypeEnum" AttributeFlags="1">
 			<Documentation>The predefined generic type of the pile according to function.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; Attribute made optional. Type information can be provided by _IfcRelDefinesByType_ and _IfcPileType_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="335.29402" Y="414.81191" />
-				<DocPoint X="597.89673" Y="414.81191" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="319.769499" Y="403.655765" Width="182" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ConstructionType" UniqueId="68d7f08c-9d56-4f95-ae87-2f3278162109" DefinedType="IfcPileConstructionEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ConstructionType" UniqueId="68d7f08c-9d56-4f95-ae87-2f3278162109" DefinedType="IfcPileConstructionEnum" AttributeFlags="1">
 			<Documentation>Deprecated.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; Material profile association capability by means of _IfcRelAssociatesMaterial_ has been added. The attribute _ConstructionType_ should not be used whenever its information can be provided by a material profile set, either associated with the _IfcPile_ object or, if present, with a corresponding instance of _IfcPileType_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="335.29402" Y="483.99609" />
-				<DocPoint X="597.94583" Y="483.99609" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="326.9278661" Y="476.3701077" Width="201" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

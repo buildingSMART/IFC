@@ -10,5 +10,5 @@ A constraint may also have additional external information (such as classificati
 
 > HISTORY&nbsp; New entity in IFC2.0
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; CreationTime changed to IfcDateTime for ISO 8601 representation, HasExternalReferences new inverse attribute.

@@ -52,5 +52,5 @@ The connection is described by a connection geometry, given within the object co
 
 > HISTORY&nbsp; New entity in IFC1.5.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The data type of _RelatingPriorities_ and _RelatedPriorities_ are restricted to a range o [0..100] to be a normalized ratio measure.

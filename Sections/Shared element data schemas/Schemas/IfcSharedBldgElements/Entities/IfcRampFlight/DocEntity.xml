@@ -1,23 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRampFlight" Name="IfcRampFlight" UniqueId="b22a442d-98eb-4579-80cf-dc1054cbb509" DiagramNumber="2" BaseDefinition="IfcBuildingElement" EntityFlags="109">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRampFlight" Name="IfcRampFlight" UniqueId="b22a442d-98eb-4579-80cf-dc1054cbb509" BaseDefinition="IfcBuildingElement" EntityFlags="109">
 	<Localization>
-		<DocLocalization Name="Rampenlauf" Locale="de" />
-		<DocLocalization Name="Ramp Flight" Locale="en" />
-		<DocLocalization Name="Volée" Locale="fr" />
+		<DocLocalization Locale="de" Name="Rampenlauf" />
+		<DocLocalization Locale="en" Name="Ramp Flight" />
+		<DocLocalization Locale="fr" Name="Volée" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1865.3934" Y="180.07341" Width="249.9" Height="100" />
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="14de555e-b478-4d05-91bc-19cad9fa65f2" DefinedType="IfcRampFlightTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="14de555e-b478-4d05-91bc-19cad9fa65f2" DefinedType="IfcRampFlightTypeEnum" AttributeFlags="1">
 			<Documentation>Predefined generic type for a ramp flight that is specified in an enumeration. There may be a property set given specificly for the predefined types.
 &gt; NOTE&amp;nbsp; The _PredefinedType_ shall only be used, if no _IfcRampFlightType_ is assigned, providing its own _IfcRampFlightType.PredefinedType_.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE The attribute has been added at the end of the entity definition.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2115.2934" Y="222.07341" />
-				<DocPoint X="2509.3267" Y="222.07341" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2112.6267333" Y="211.406743" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

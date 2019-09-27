@@ -12,5 +12,5 @@ Figure 1 illustrates the panel applied to the position within the lining, as def
 
 > HISTORY&nbsp; New entity in IFC2.0, it had been renamed from _IfcPermeableCovering_ in IFC2x.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Supertype changed to new _IfcPreDefinedPropertySet_.

@@ -1,56 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPresentationLayerAssignment" Name="IfcPresentationLayerAssignment" UniqueId="1021fba4-3bfe-4e0a-b0b5-662a3498c052" DiagramNumber="1" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPresentationLayerAssignment" Name="IfcPresentationLayerAssignment" UniqueId="1021fba4-3bfe-4e0a-b0b5-662a3498c052" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Zuordnung zu Präsentations-Layer" Locale="de" />
-		<DocLocalization Name="Presentation Layer Assignment" Locale="en" />
-		<DocLocalization Name="Assignation de calque" Locale="fr" />
+		<DocLocalization Locale="de" Name="Zuordnung zu Präsentations-Layer" />
+		<DocLocalization Locale="en" Name="Presentation Layer Assignment" />
+		<DocLocalization Locale="fr" Name="Assignation de calque" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="40.8333333333333" Y="84.0666707356771" Width="439.333333333333" Height="620.133331298828" />
 	<Subtypes>
 		<DocSubtype UniqueId="521d82d8-ad9d-44da-aa0f-4d9e022493ea" DefinedType="IfcPresentationLayerWithStyle" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Name" UniqueId="87af29d2-be1e-4b15-b9ad-c509d2b4f7fa" DefinedType="IfcLabel" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Name" UniqueId="87af29d2-be1e-4b15-b9ad-c509d2b4f7fa" DefinedType="IfcLabel">
 			<Documentation>Name of the layer.</Documentation>
-			<DiagramLine>
-				<DocPoint X="480.166666666667" Y="123.633389790853" />
-				<DocPoint X="480.166666666667" Y="123.633389790853" />
-				<DocPoint X="823.7666015625" Y="123.633389790853" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="480.166666666667" Y="103.633389790853" Width="73" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Description" UniqueId="8a982d79-1717-4d47-928c-6f0d31346142" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Description" UniqueId="8a982d79-1717-4d47-928c-6f0d31346142" DefinedType="IfcText" AttributeFlags="1">
 			<Documentation>Additional description of the layer.</Documentation>
-			<DiagramLine>
-				<DocPoint X="480.166666666667" Y="231.43327331543" />
-				<DocPoint X="480.166666666667" Y="231.43327331543" />
-				<DocPoint X="823.7666015625" Y="231.43327331543" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="480.166666666667" Y="211.43327331543" Width="130" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="AssignedItems" UniqueId="e05d7922-970e-4100-b3e7-bd5a77d73c09" DefinedType="IfcLayeredItem" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="AssignedItems" UniqueId="e05d7922-970e-4100-b3e7-bd5a77d73c09" DefinedType="IfcLayeredItem" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The set of layered items, which are assigned to this layer.</Documentation>
-			<DiagramLine>
-				<DocPoint X="480.166666666667" Y="575.333316802979" />
-				<DocPoint X="480.166666666667" Y="575.333316802979" />
-				<DocPoint X="822.166646321615" Y="575.333316802979" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="480.166666666667" Y="555.333316802979" Width="247" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Identifier" UniqueId="c3bbf33f-c067-4501-bfe8-2c9da90c9b22" DefinedType="IfcIdentifier" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Identifier" UniqueId="c3bbf33f-c067-4501-bfe8-2c9da90c9b22" DefinedType="IfcIdentifier" AttributeFlags="1">
 			<Documentation>An (internal) identifier assigned to the layer.</Documentation>
-			<DiagramLine>
-				<DocPoint X="480.166666666667" Y="346.466623942057" />
-				<DocPoint X="480.166666666667" Y="346.466623942057" />
-				<DocPoint X="823.7666015625" Y="346.466623942057" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="480.166666666667" Y="326.466623942057" Width="102" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
 		<DocWhereRule Name="ApplicableItems" UniqueId="10cf5a0c-f690-4dd1-aa55-ff6327d6f97e">
 			<Documentation>The items within the set of _AssignedItems_ that can be assigned to a presentation layer shall be geometric shape representation or representation items.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE&amp;nbsp; The where rule has been added.</Documentation>
 			<Expression>SIZEOF(QUERY(temp &lt;* AssignedItems | (
   SIZEOF(TYPEOF(temp) * [

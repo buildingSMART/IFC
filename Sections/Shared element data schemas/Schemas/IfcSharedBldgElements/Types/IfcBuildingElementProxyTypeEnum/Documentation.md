@@ -2,7 +2,7 @@
 
 > HISTORY&nbsp; New enumeration IFC2x3
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Enumerators PROVISIONFORVOID and PROVISIONFORSPACE added.
 
 { .deprecated}

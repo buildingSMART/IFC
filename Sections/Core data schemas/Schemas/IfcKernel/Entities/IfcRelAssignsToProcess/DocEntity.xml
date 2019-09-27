@@ -1,31 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelAssignsToProcess" Name="IfcRelAssignsToProcess" UniqueId="2b84a703-2870-4982-b755-d5e128989509" DiagramNumber="9" BaseDefinition="IfcRelAssigns" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelAssignsToProcess" UniqueId="2b84a703-2870-4982-b755-d5e128989509" BaseDefinition="IfcRelAssigns" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Weist Prozess zu - Relation" Locale="de" />
-		<DocLocalization Name="Rel Assigns To Process" Locale="en" />
-		<DocLocalization Name="Assignation à processus" Locale="fr" />
+		<DocLocalization Locale="de" Name="Weist Prozess zu - Relation" />
+		<DocLocalization Locale="en" Name="Rel Assigns To Process" />
+		<DocLocalization Locale="fr" Name="Assignation à processus" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="13919.445" Y="845.03648" Width="417.90833" Height="133.29166" />
 	<Attributes>
-		<DocAttribute Name="RelatingProcess" UniqueId="54a9a406-c37a-4960-bd8e-5ffa24089552" DefinedType="IfcProcessSelect" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RelatingProcess" UniqueId="54a9a406-c37a-4960-bd8e-5ffa24089552" DefinedType="IfcProcessSelect">
 			<Documentation>Reference to the process to which the objects are assigned to.
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE Datatype expanded to include _IfcProcess_ and _IfcTypeProcess_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="13919.445" Y="911.68231" />
-				<DocPoint X="13798.29168" Y="911.68231" />
-				<DocPoint X="13798.29168" Y="1267.25666" />
-				<DocPoint X="13526.63387" Y="1267.25666" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="13819.567538" Y="1250.536153" Width="186" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="QuantityInProcess" UniqueId="d46dadaf-98f8-4365-b82a-c34da0aaab02" DefinedType="IfcMeasureWithUnit" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="QuantityInProcess" UniqueId="d46dadaf-98f8-4365-b82a-c34da0aaab02" DefinedType="IfcMeasureWithUnit" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Quantity of the object specific for the operation by this process.</Documentation>
-			<DiagramLine>
-				<DocPoint X="14261.89" Y="978.32814" />
-				<DocPoint X="14261.89" Y="1987.64244" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="14153.08625" Y="997.60914" Width="208" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

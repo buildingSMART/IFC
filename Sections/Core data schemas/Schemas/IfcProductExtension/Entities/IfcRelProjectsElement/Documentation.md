@@ -10,5 +10,5 @@ The _IfcRelProjectsElement_ implies a Boolean operation of addition for the geom
 
 > HISTORY&nbsp; New entity in IFC2x2.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Supertype changed to IfcRelDecomposes.

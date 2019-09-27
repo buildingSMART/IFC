@@ -12,5 +12,5 @@ The _IfcProjectionElement_ shall not participate in the containment relationship
 
 > HISTORY&nbsp; New entity in IFC2x2.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The attribute _PredefinedType_ has been added at the end of attribute list.

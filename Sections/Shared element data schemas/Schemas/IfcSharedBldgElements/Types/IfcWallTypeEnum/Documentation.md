@@ -8,7 +8,7 @@
 { .change-ifc2x3}
 > IFC2x3 CHANGE&nbsp; The enumerators _ELEMENTEDWALL_ and _PLUMBINGWALL_ have been added.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; New enumerators MOVABLE, PARAPET, PARTITIONING, and SOLIDWALL have been added.  
 > IFC4 DEPRECATION&nbsp; The enumerators STANDARD, POLYGONAL and ELEMENTEDWALL are deprecated and shall no longer be used.
 

@@ -78,5 +78,5 @@ The _IfcDoorLiningProperties_ does not hold its own geometric representation. Ho
 
 > HISTORY&nbsp; New entity in IFC2.0. Has been renamed from _IfcDoorLining_ in IFC2x.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The following attributes have been added _LiningToPanelOffsetX_, _LiningToPanelOffsetY_. The attribute _ShapeAspectStyle_ is deprecated and shall no longer be used. Supertype changed to new _IfcPreDefinedPropertySet_.

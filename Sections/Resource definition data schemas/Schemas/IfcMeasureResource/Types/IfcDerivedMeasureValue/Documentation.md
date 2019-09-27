@@ -76,5 +76,5 @@ SELECT
 
 > HISTORY&nbsp; New type in IFC2x.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; added _IfcAreaDensityMeasure_, _IfcSoundPowerLevelMeasure_, _IfcSoundPressureLevelMeasure_, _IfcTemperatureRateOfChangeMeasure_, removed _IfcTimeStamp_.

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocProperty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="ElectricalSystemType_206AK0qTeHuO00025QrEV" Name="ElectricalSystemType" UniqueId="206AK0qTeHuO00025QrE$V" PropertyType="p_enumeratedvalue" PrimaryDataType="IfcLabel">
 	<Localization>
-		<DocLocalization Name="Electrical System Type" Locale="en" />
-		<DocLocalization Name="電気システム方式" Locale="ja-JP">
+		<DocLocalization Locale="en" Name="Electrical System Type" />
+		<DocLocalization Locale="ja-JP" Name="電気システム方式">
 			<Documentation>IEC60364電気基準に定義した電気接地の方式。電気設備の種類、接地電極と設備の導電性部分の種類で決められる。具体的なには、IEC60364に下記のような方法がある：
 
 
@@ -13,12 +13,10 @@
 - TTシステム：一点を大地に直接接続し、電力系統の接地とは無関係に、設備の露出導電性部分を大地に直接接地すること。
 - ITシステム：電力システムを大地(接地)から絶縁する、設備の露出導電性部分を大地に直接接地すること。</Documentation>
 		</DocLocalization>
-		<DocLocalization Name="전기 시스템 방식" Locale="ko-KR">
+		<DocLocalization Locale="ko-KR" Name="전기 시스템 방식">
 			<Documentation>IEC60364 전기 기준으로 정의한 전기 접지 방식. 전기 설비의 종류, 접지 전극 시설의 도전성 부분 유형에 결정된다. 구체적인에는 IEC60364에 다음과 같은 방법이있다. · TN 시스템 : 전기 설비는한데 또는 다점 접지 점을 가지고 직접 접지되는 시스템. 시설과 접지극의 도전성 부분을 보호하는 것. · TN C 시스템 : 계통의 모든 걸쳐 중성선과 보호 도체가 하나의 도체 TN 시스템. · TN S 시스템 : 계통의 모든 걸쳐 독립 중성선과 보호 도체가있는 TN 시스템. · TN C S 시스템 : 계통의 일부가, 중성선과 보호 도체가 하나의 도체 TN 시스템. · TT 시스템 : 한 점을 대지에 직접 연결하여 전력 계통의 접지와는 상관없이 설비의 노출 도전성 부분을 대지에 직접 접지한다. · IT 시스템 : 전력 시스템을 대지 (접지)로부터 절연하는 설비의 노출 도전성 부분을 대지에 직접 접지한다.</Documentation>
 		</DocLocalization>
 	</Localization>
-	<Enumeration>
-		<DocPropertyEnumeration xsi:nil="true" href="PEnum_DistributionSystemElectricalType" />
-	</Enumeration>
+	<Enumeration xsi:type="DocPropertyEnumeration" xsi:nil="true" href="PEnum_DistributionSystemElectricalType" />
 </DocProperty>
 

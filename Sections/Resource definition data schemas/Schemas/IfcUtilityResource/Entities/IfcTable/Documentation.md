@@ -12,5 +12,5 @@ Figure 2 depicts how tables were structured prior to IFC4.
 
 > HISTORY&nbsp; New entity in IFC1.5.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; Columns attribute added.

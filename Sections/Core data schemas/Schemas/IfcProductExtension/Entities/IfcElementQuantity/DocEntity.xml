@@ -1,30 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcElementQuantity" UniqueId="f1e9cf21-4f13-485c-a608-e1f0beac34f7" DiagramNumber="12" BaseDefinition="IfcQuantitySet" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcElementQuantity" UniqueId="f1e9cf21-4f13-485c-a608-e1f0beac34f7" BaseDefinition="IfcQuantitySet" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="frei definierbare Elementmengenliste" Locale="de" />
-		<DocLocalization Name="Element Quantity" Locale="en" />
-		<DocLocalization Name="Quantité d&apos;élément" Locale="fr" />
+		<DocLocalization Locale="de" Name="frei definierbare Elementmengenliste" />
+		<DocLocalization Locale="en" Name="Element Quantity" />
+		<DocLocalization Locale="fr" Name="Quantité d&apos;élément" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="6459.1916" Y="2828.2958" Width="336.66667" Height="246.66667" />
 	<Attributes>
-		<DocAttribute Name="MethodOfMeasurement" UniqueId="e8632959-d375-4923-bc11-6da33c9c455b" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="MethodOfMeasurement" UniqueId="e8632959-d375-4923-bc11-6da33c9c455b" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>Name of the method of measurement used to calculate the element quantity. The method of measurement attribute has to be made recognizable by further agreements.
 
 { .change-ifc2x2}
 &gt; IFC2x2 Addendum 1 change: The attribute has been changed to be optional</Documentation>
-			<DiagramLine>
-				<DocPoint X="6795.8583" Y="2869.4069" />
-				<DocPoint X="7169.62487" Y="2869.4069" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="6797.6499703" Y="2857.948567" Width="267" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Quantities" UniqueId="fff9aa2e-b2ad-44a5-a09f-13be4f49a1a1" DefinedType="IfcPhysicalQuantity" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="Quantities" UniqueId="fff9aa2e-b2ad-44a5-a09f-13be4f49a1a1" DefinedType="IfcPhysicalQuantity" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The individual quantities for the element, can be a set of length, area, volume, weight or count based quantities.</Documentation>
-			<DiagramLine>
-				<DocPoint X="6795.8583" Y="3009.143" />
-				<DocPoint X="7559.59163" Y="3009.143" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="6956.39163" Y="2998.476333" Width="197" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

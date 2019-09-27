@@ -1,104 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcWorkControl" Name="IfcWorkControl" UniqueId="d247df5b-2f6d-4ef6-bca1-19a0283512e0" DiagramNumber="3" BaseDefinition="IfcControl" EntityFlags="197">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcWorkControl" Name="IfcWorkControl" UniqueId="d247df5b-2f6d-4ef6-bca1-19a0283512e0" BaseDefinition="IfcControl" EntityFlags="197">
 	<Localization>
-		<DocLocalization Name="Arbeitskontrolle" Locale="de" />
-		<DocLocalization Name="Work Control" Locale="en" />
-		<DocLocalization Name="Contrôle des travaux" Locale="fr" />
+		<DocLocalization Locale="de" Name="Arbeitskontrolle" />
+		<DocLocalization Locale="en" Name="Work Control" />
+		<DocLocalization Locale="fr" Name="Contrôle des travaux" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="3811.71850585938" Y="335.440277099609" Width="260.66667" Height="674.66656" />
 	<Subtypes>
 		<DocSubtype UniqueId="e4c0c418-1d37-4f1b-a39b-2421690fff8e" DefinedType="IfcWorkPlan" />
 		<DocSubtype UniqueId="3d4168a1-8435-4dc0-87e2-93f3e4088a2b" DefinedType="IfcWorkSchedule" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="CreationDate" UniqueId="0a22762a-7121-44bd-92cb-3bbd2bc1e0e2" DefinedType="IfcDateTime" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="CreationDate" UniqueId="0a22762a-7121-44bd-92cb-3bbd2bc1e0e2" DefinedType="IfcDateTime">
 			<Documentation>The date that the plan is created.</Documentation>
-			<DiagramLine>
-				<DocPoint X="4072.38517585938" Y="640.341979980469" />
-				<DocPoint X="4072.38517585938" Y="640.341979980469" />
-				<DocPoint X="4376.13037109375" Y="640.341979980469" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="4072.38517585938" Y="620.341979980469" Width="154" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Creators" UniqueId="fed840b2-43b1-4d71-a833-6854015a193b" DefinedType="IfcPerson" AttributeFlags="1" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="Creators" UniqueId="fed840b2-43b1-4d71-a833-6854015a193b" DefinedType="IfcPerson" AttributeFlags="1" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>The authors of the work plan.</Documentation>
-			<DiagramLine>
-				<DocPoint X="4072.38517585938" Y="371.2620459375" />
-				<DocPoint X="4072.38517585938" Y="371.2620459375" />
-				<DocPoint X="4372.78955078125" Y="371.2620459375" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="4072.38517585938" Y="351.2620459375" Width="181" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Purpose" UniqueId="8c118d77-09d3-47b2-a847-5b113d037d15" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Purpose" UniqueId="8c118d77-09d3-47b2-a847-5b113d037d15" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>A description of the purpose of the work schedule.</Documentation>
-			<DiagramLine>
-				<DocPoint X="4072.38517585938" Y="517.995330810547" />
-				<DocPoint X="4072.38517585938" Y="517.995330810547" />
-				<DocPoint X="4391.6904296875" Y="517.995330810547" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="4072.38517585938" Y="497.995330810547" Width="99" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Duration" UniqueId="e0b21a3a-7521-46f1-8fc4-4bf3f214537f" DefinedType="IfcDuration" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Duration" UniqueId="e0b21a3a-7521-46f1-8fc4-4bf3f214537f" DefinedType="IfcDuration" AttributeFlags="1">
 			<Documentation>The total duration of the entire work schedule.</Documentation>
-			<DiagramLine>
-				<DocPoint X="4072.38517585938" Y="840.542012532552" />
-				<DocPoint X="4072.38517585938" Y="840.542012532552" />
-				<DocPoint X="4378.9296875" Y="840.542012532552" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="4072.38517585938" Y="820.542012532552" Width="101" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="TotalFloat" UniqueId="67a16ba6-45d6-4997-bd66-2e4ea6494da8" DefinedType="IfcDuration" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="TotalFloat" UniqueId="67a16ba6-45d6-4997-bd66-2e4ea6494da8" DefinedType="IfcDuration" AttributeFlags="1">
 			<Documentation>The total time float of the entire work schedule.</Documentation>
-			<DiagramLine>
-				<DocPoint X="4072.38517585938" Y="881.875345865885" />
-				<DocPoint X="4072.38517585938" Y="881.875345865885" />
-				<DocPoint X="4378.9296875" Y="881.875345865885" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="4072.38517585938" Y="861.875345865885" Width="117" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="StartTime" UniqueId="0ff50aa4-80b0-42b6-94a8-8738e35d9864" DefinedType="IfcDateTime" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="StartTime" UniqueId="0ff50aa4-80b0-42b6-94a8-8738e35d9864" DefinedType="IfcDateTime">
 			<Documentation>The start time of the schedule.</Documentation>
-			<DiagramLine>
-				<DocPoint X="4072.38517585938" Y="671.341979980469" />
-				<DocPoint X="4072.38517585938" Y="671.341979980469" />
-				<DocPoint X="4376.13037109375" Y="671.341979980469" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="4072.38517585938" Y="651.341979980469" Width="113" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="FinishTime" UniqueId="eb43d20b-df3a-48f8-81f4-bf103d0f01b1" DefinedType="IfcDateTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="FinishTime" UniqueId="eb43d20b-df3a-48f8-81f4-bf103d0f01b1" DefinedType="IfcDateTime" AttributeFlags="1">
 			<Documentation>The finish time of the schedule.</Documentation>
-			<DiagramLine>
-				<DocPoint X="4072.38517585938" Y="702.341979980469" />
-				<DocPoint X="4072.38517585938" Y="702.341979980469" />
-				<DocPoint X="4376.13037109375" Y="702.341979980469" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="4072.38517585938" Y="682.341979980469" Width="126" Height="35" />
 		</DocAttribute>
 	</Attributes>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="3936.3849" Y="1010.10683709961" />
-				<DocPoint X="3936.3849" Y="1010.10683709961" />
-				<DocPoint X="3936.3849" Y="1289.14814" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="3936.3849" Y="1289.14814" />
-						<DocPoint X="3936.3849" Y="1424.50628421875" />
-						<DocPoint X="3559.09578117187" Y="1424.50628421875" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="3936.3849" Y="1289.14814" />
-						<DocPoint X="3936.3849" Y="1424.46214320312" />
-						<DocPoint X="4292.0234375" Y="1424.46214320312" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

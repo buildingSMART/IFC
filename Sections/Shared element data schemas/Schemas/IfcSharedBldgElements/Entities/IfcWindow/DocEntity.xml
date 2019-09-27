@@ -1,71 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcWindow" Name="IfcWindow" UniqueId="0f9043b3-19f5-4f1b-b221-76018647d933" DiagramNumber="4" BaseDefinition="IfcBuildingElement" EntityFlags="173">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcWindow" Name="IfcWindow" UniqueId="0f9043b3-19f5-4f1b-b221-76018647d933" BaseDefinition="IfcBuildingElement" EntityFlags="173">
 	<Localization>
-		<DocLocalization Name="Fenster" Locale="de" />
-		<DocLocalization Name="Window" Locale="en" />
-		<DocLocalization Name="Fenêtre" Locale="fr" />
+		<DocLocalization Locale="de" Name="Fenster" />
+		<DocLocalization Locale="en" Name="Window" />
+		<DocLocalization Locale="fr" Name="Fenêtre" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="4829.5166015625" Y="1287.55338541667" Width="279.93333" Height="745.333343505859" />
 	<Subtypes>
 		<DocSubtype UniqueId="16d8db66-d8ad-437b-b95e-2c49eb5db9ac" DefinedType="IfcWindowStandardCase" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="OverallHeight" UniqueId="4eab6bd3-dcea-4c3d-bb3c-069664b3bb8e" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="OverallHeight" UniqueId="4eab6bd3-dcea-4c3d-bb3c-069664b3bb8e" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>Overall measure of the height, it reflects the Z Dimension of a bounding box, enclosing the window opening. If omitted, the _OverallHeight_ should be taken from the geometric representation of the _IfcOpening_ in which the window is inserted. 
 
 &gt; NOTE&amp;nbsp; The body of the window might be taller then the window opening (for example in cases where the window lining includes a casing). In these cases the _OverallHeight_ shall still be given as the window opening height, and not as the total height of the window lining.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5109.4499315625" Y="1810.55334472656" />
-				<DocPoint X="5109.4499315625" Y="1810.55334472656" />
-				<DocPoint X="5383.21318692708" Y="1810.55334472656" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5109.4499315625" Y="1790.55334472656" Width="156" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="OverallWidth" UniqueId="0fe5fb49-9b5f-4384-ba1c-6afa2219013c" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="OverallWidth" UniqueId="0fe5fb49-9b5f-4384-ba1c-6afa2219013c" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>Overall measure of the width, it reflects the X Dimension of a bounding box, enclosing the window opening. If omitted, the _OverallWidth_ should be taken from the geometric representation of the _IfcOpening_ in which the window is inserted. 
 
 &gt; NOTE&amp;nbsp; The body of the window might be wider then the window opening (for example in cases where the window lining includes a casing). In these cases the _OverallWidth_ shall still be given as the window opening width, and not as the total width of the window lining.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5109.4499315625" Y="1709.02931966146" />
-				<DocPoint X="5109.4499315625" Y="1709.02931966146" />
-				<DocPoint X="5383.21318692708" Y="1709.02931966146" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5109.4499315625" Y="1689.02931966146" Width="147" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="PredefinedType" UniqueId="42be76e4-d473-45aa-bb93-7e6f581f5e07" DefinedType="IfcWindowTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="42be76e4-d473-45aa-bb93-7e6f581f5e07" DefinedType="IfcWindowTypeEnum" AttributeFlags="1">
 			<Documentation>Predefined generic type for a window that is specified in an enumeration. There may be a property set given specificly for the predefined types.
 &gt; NOTE&amp;nbsp; The _PredefinedType_ shall only be used, if no _IfcWindowType_ is assigned, providing its own _IfcWindowType.PredefinedType_.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE The attribute has been added at the end of the entity definition.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5109.4499315625" Y="1350.46655290104" />
-				<DocPoint X="5109.4499315625" Y="1350.46655290104" />
-				<DocPoint X="5434.34651692708" Y="1350.46655290104" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5109.4499315625" Y="1330.46655290104" Width="182" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="PartitioningType" UniqueId="3d62e476-3cc2-4402-b026-b1a0b07db425" DefinedType="IfcWindowTypePartitioningEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PartitioningType" UniqueId="3d62e476-3cc2-4402-b026-b1a0b07db425" DefinedType="IfcWindowTypePartitioningEnum" AttributeFlags="1">
 			<Documentation>Type defining the general layout of the window in terms of the partitioning of panels. 
 &gt; NOTE&amp;nbsp; The _PartitioningType_ shall only be used, if no type object _IfcWindowType_ is assigned, providing its own _IfcWindowType.PartitioningType_.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 &gt; IFC4 CHANGE The attribute has been added at the end of the entity definition.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5109.4499315625" Y="1433.64057796615" />
-				<DocPoint X="5109.4499315625" Y="1433.64057796615" />
-				<DocPoint X="5346.09651692708" Y="1433.64057796615" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5109.4499315625" Y="1413.64057796615" Width="185" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="UserDefinedPartitioningType" UniqueId="39c8c84f-d708-4cd3-bba2-6ae6d2e950d6" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="UserDefinedPartitioningType" UniqueId="39c8c84f-d708-4cd3-bba2-6ae6d2e950d6" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>Designator for the user defined partitioning type, shall only be provided, if the value of _PartitioningType_ is set to USERDEFINED.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5109.4499315625" Y="1520.98126953125" />
-				<DocPoint X="5109.4499315625" Y="1520.98126953125" />
-				<DocPoint X="5497.17985192708" Y="1520.98126953125" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5109.4499315625" Y="1500.98126953125" Width="323" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

@@ -13,5 +13,5 @@ The occurrences of _IfcSpaceType_ are represented by instances of _IfcSpace_.
 
 > HISTORY&nbsp; New entity in IFC2x3.
 
-{ .change-ifc2x4}
+{ .change-ifc4}
 > IFC4 CHANGE&nbsp; The attribute _LongName_ has been added to the end of the entity definition.
