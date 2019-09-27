@@ -211,10 +211,10 @@ Figure 1 illustrates a &apos;Clipping&apos; geometric representation with use of
 				<DocTemplateUsage Name="Port" UniqueId="172f08ce-3aeb-4d99-bf29-d7394fc162ec">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Port_Nesting_2w9EtqE92s8JFNQ8EuKWA" />
 					<Items>
-						<DocTemplateItem UniqueId="8a5c7e47-b0a8-42e0-9b1f-b224a854a698" RuleParameters="PortName=Head;Flow=SINK;SystemType=NOTDEFINED;" Order="0">
+						<DocTemplateItem UniqueId="8a5c7e47-b0a8-42e0-9b1f-b224a854a698" RuleParameters="PortName=Head;Flow=SINK;SystemType=NOTDEFINED;">
 							<Documentation>Head connection.</Documentation>
 						</DocTemplateItem>
-						<DocTemplateItem UniqueId="1cb49665-3a35-4a9f-a0df-d7fd31fca976" RuleParameters="PortName=Tail;SystemType=NOTDEFINED;Flow=SOURCE;" Order="0">
+						<DocTemplateItem UniqueId="1cb49665-3a35-4a9f-a0df-d7fd31fca976" RuleParameters="PortName=Tail;SystemType=NOTDEFINED;Flow=SOURCE;">
 							<Documentation>Tail connection.</Documentation>
 						</DocTemplateItem>
 					</Items>
@@ -228,10 +228,10 @@ Figure 1 illustrates a &apos;Clipping&apos; geometric representation with use of
 				<DocTemplateUsage Name="Port" UniqueId="697110d7-7979-4123-8d10-648bfbdcff67">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Port_Nesting_2w9EtqE92s8JFNQ8EuKWA" />
 					<Items>
-						<DocTemplateItem UniqueId="609a5b8f-8824-42ec-923c-7cc09c701162" RuleParameters="PortName=Input;SystemType=NOTDEFINED;Flow=SINK;" Order="0">
+						<DocTemplateItem UniqueId="609a5b8f-8824-42ec-923c-7cc09c701162" RuleParameters="PortName=Input;SystemType=NOTDEFINED;Flow=SINK;">
 							<Documentation>The input end of the cable. While many cables may be bidirectional, port direction is indicated for connectivity purposes.</Documentation>
 						</DocTemplateItem>
-						<DocTemplateItem UniqueId="6ace2a40-6556-4d59-8678-4966902a1a66" RuleParameters="PortName=Output;SystemType=NOTDEFINED;Flow=SOURCE;" Order="0">
+						<DocTemplateItem UniqueId="6ace2a40-6556-4d59-8678-4966902a1a66" RuleParameters="PortName=Output;SystemType=NOTDEFINED;Flow=SOURCE;">
 							<Documentation>The output end of the cable. While many cables may be bidirectional, port direction is indicated for connectivity purposes.</Documentation>
 						</DocTemplateItem>
 					</Items>
@@ -412,7 +412,7 @@ Figure 1 illustrates a &apos;Clipping&apos; geometric representation with use of
 					<Documentation>Vertical coverings such as for walls may be positioned according to an Axis representation. For the case of an enclosed space, such curve may be closed.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Axis_2D_Geometry_1u94Jere57Mf0qgUVrF6rb" />
 					<Items>
-						<DocTemplateItem UniqueId="e8ccd968-8978-4941-b77d-a0a37e207250" RuleParameters="Identifier=Axis;Type=Curve2D;Items=IfcBoundedCurve;" Order="0">
+						<DocTemplateItem UniqueId="e8ccd968-8978-4941-b77d-a0a37e207250" RuleParameters="Identifier=Axis;Type=Curve2D;Items=IfcBoundedCurve;">
 							<Documentation>The wall axis of the wall.</Documentation>
 						</DocTemplateItem>
 					</Items>
@@ -525,10 +525,10 @@ height. Distance to the centre line of the transom.&lt;/li&gt;
 				<DocTemplateUsage Name="Port" UniqueId="c4dd0fe5-4948-4337-9de4-37f8422ab2bd">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Port_Nesting_2w9EtqE92s8JFNQ8EuKWA" />
 					<Items>
-						<DocTemplateItem UniqueId="948966c7-f1d9-438a-86c5-35c0e621d8c2" RuleParameters="PortName=Inlet;SystemType=NOTDEFINED;Flow=SINK;" Order="0">
+						<DocTemplateItem UniqueId="948966c7-f1d9-438a-86c5-35c0e621d8c2" RuleParameters="PortName=Inlet;SystemType=NOTDEFINED;Flow=SINK;">
 							<Documentation>The flow inlet.</Documentation>
 						</DocTemplateItem>
-						<DocTemplateItem UniqueId="0343b867-5d6f-4a76-b953-e88bcecc97d2" RuleParameters="PortName=Outlet;SystemType=NOTDEFINED;Flow=SOURCE;" Order="0">
+						<DocTemplateItem UniqueId="0343b867-5d6f-4a76-b953-e88bcecc97d2" RuleParameters="PortName=Outlet;SystemType=NOTDEFINED;Flow=SOURCE;">
 							<Documentation>The flow outlet.</Documentation>
 						</DocTemplateItem>
 					</Items>
@@ -559,7 +559,7 @@ height. Distance to the centre line of the transom.&lt;/li&gt;
 				<DocTemplateUsage Name="Body Clipping Geometry" UniqueId="8fe0b3f8-a8c4-4acb-b8dc-e18d87105f12">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Clipping_Geometry_0isyBrcmn3wfqgdNBG57u0" />
 					<Items>
-						<DocTemplateItem UniqueId="54ca22fe-34f4-4284-b1bb-4bc478fdb1d9" RuleParameters="Identifier=Body;Type=Clipping;Items=IfcBooleanClippingResult;" Order="0" />
+						<DocTemplateItem UniqueId="54ca22fe-34f4-4284-b1bb-4bc478fdb1d9" RuleParameters="Identifier=Body;Type=Clipping;Items=IfcBooleanClippingResult;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Body Brep Geometry" UniqueId="fa16b6e8-4f1c-4048-b3a7-01659d262492">
@@ -635,17 +635,17 @@ Figure 2 illustrates an element assembly type used for wall framing.
 				<DocTemplateUsage Name="Type Body CSG Geometry" UniqueId="cd2d595e-1cba-41d2-85d9-cdf87657ee36">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Type_Body_CSG_Geometry_3cgCgF6P4XAWUmEZvj5eg" />
 					<Items>
-						<DocTemplateItem UniqueId="2c8b2518-6b58-4992-a8a7-86ef36c9893f" RuleParameters="RepresentationType=CSG;Geometry=IfcBlock;" Order="0" />
-						<DocTemplateItem UniqueId="90a34506-8f20-4083-a12c-d97afa37d34e" RuleParameters="RepresentationType=CSG;Geometry=IfcRectangularPyramid;" Order="0" />
-						<DocTemplateItem UniqueId="baf64c65-424b-4f5b-a1e2-9027b01e0bcc" RuleParameters="RepresentationType=CSG;Geometry=IfcRightCircularCone;" Order="0" />
-						<DocTemplateItem UniqueId="490f80d1-90df-476b-a650-f6dd889ae68c" RuleParameters="RepresentationType=CSG;Geometry=IfcRightCircularCylinder;" Order="0" />
-						<DocTemplateItem UniqueId="acc5ba5f-d3e2-411f-a2db-2e0a3f7b7764" RuleParameters="RepresentationType=CSG;Geometry=IfcSphere;" Order="0" />
-						<DocTemplateItem UniqueId="4bb917f2-9508-4f34-b4f6-4af22c7479d6" RuleParameters="RepresentationType=CSG;Geometry=IfcBooleanResult;" Order="0" />
-						<DocTemplateItem UniqueId="af71e37b-2b5b-4fe6-b8b6-0bd6282e35d5" RuleParameters="RepresentationType=CSG;Geometry=IfcExtrudedAreaSolid;" Order="0" />
-						<DocTemplateItem UniqueId="4a2b653b-bede-427b-88fc-86ec0463a670" RuleParameters="RepresentationType=CSG;Geometry=IfcExtrudedAreaSolidTapered;" Order="0" />
-						<DocTemplateItem UniqueId="f9ffe19a-f3f7-4278-826a-afa85417342f" RuleParameters="RepresentationType=CSG;Geometry=IfcRevolvedAreaSolid;" Order="0" />
-						<DocTemplateItem UniqueId="e5bb1743-b923-4c97-9698-0c5c5c30a0ef" RuleParameters="RepresentationType=CSG;Geometry=IfcRevolvedAreaSolidTapered;" Order="0" />
-						<DocTemplateItem UniqueId="57906c7d-ef0d-421c-a900-107f030b16fb" RuleParameters="RepresentationType=CSG;Geometry=IfcSurfaceCurveSweptAreaSolid;" Order="0" />
+						<DocTemplateItem UniqueId="2c8b2518-6b58-4992-a8a7-86ef36c9893f" RuleParameters="RepresentationType=CSG;Geometry=IfcBlock;" />
+						<DocTemplateItem UniqueId="90a34506-8f20-4083-a12c-d97afa37d34e" RuleParameters="RepresentationType=CSG;Geometry=IfcRectangularPyramid;" />
+						<DocTemplateItem UniqueId="baf64c65-424b-4f5b-a1e2-9027b01e0bcc" RuleParameters="RepresentationType=CSG;Geometry=IfcRightCircularCone;" />
+						<DocTemplateItem UniqueId="490f80d1-90df-476b-a650-f6dd889ae68c" RuleParameters="RepresentationType=CSG;Geometry=IfcRightCircularCylinder;" />
+						<DocTemplateItem UniqueId="acc5ba5f-d3e2-411f-a2db-2e0a3f7b7764" RuleParameters="RepresentationType=CSG;Geometry=IfcSphere;" />
+						<DocTemplateItem UniqueId="4bb917f2-9508-4f34-b4f6-4af22c7479d6" RuleParameters="RepresentationType=CSG;Geometry=IfcBooleanResult;" />
+						<DocTemplateItem UniqueId="af71e37b-2b5b-4fe6-b8b6-0bd6282e35d5" RuleParameters="RepresentationType=CSG;Geometry=IfcExtrudedAreaSolid;" />
+						<DocTemplateItem UniqueId="4a2b653b-bede-427b-88fc-86ec0463a670" RuleParameters="RepresentationType=CSG;Geometry=IfcExtrudedAreaSolidTapered;" />
+						<DocTemplateItem UniqueId="f9ffe19a-f3f7-4278-826a-afa85417342f" RuleParameters="RepresentationType=CSG;Geometry=IfcRevolvedAreaSolid;" />
+						<DocTemplateItem UniqueId="e5bb1743-b923-4c97-9698-0c5c5c30a0ef" RuleParameters="RepresentationType=CSG;Geometry=IfcRevolvedAreaSolidTapered;" />
+						<DocTemplateItem UniqueId="57906c7d-ef0d-421c-a900-107f030b16fb" RuleParameters="RepresentationType=CSG;Geometry=IfcSurfaceCurveSweptAreaSolid;" />
 					</Items>
 					<Exchanges>
 						<DocExchangeItem Applicability="export" Requirement="optional">
@@ -705,7 +705,7 @@ The material is attached by the _RelatingMaterial_ attribute on the [IfcRelAssoc
 					<Documentation>Standard representations are defined at the supertype _IfcDistributionFlowElement_. For parametric flow segments where [IfcMaterialProfileSetUsage](../../ifcmaterialresource/lexical/ifcmaterialprofilesetusage.htm) is defined and an &apos;Axis&apos; representation is defined, then the &apos;Body&apos; representation may be generated using the &apos;SweptSolid&apos; or &apos;AdvancedSweptSolid&apos; representation types by sweeping the profile(s) along the axis.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Axis_Geometry_0xznRVEP1B815da0HoROY" />
 					<Items>
-						<DocTemplateItem UniqueId="9a0b3d34-8f85-46ea-8894-685165796ec2" RuleParameters="RepresentationType=Curve3D;Geometry=IfcBoundedCurve;" Order="0" />
+						<DocTemplateItem UniqueId="9a0b3d34-8f85-46ea-8894-685165796ec2" RuleParameters="RepresentationType=Curve3D;Geometry=IfcBoundedCurve;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage UniqueId="57ae85a3-f767-4fbf-b92e-b1b18974fe59">
@@ -745,7 +745,7 @@ The material is attached by the _RelatingMaterial_ attribute on the [IfcRelAssoc
 				<DocTemplateUsage Name="Axis 2D Geometry" UniqueId="fd2f50e9-4883-4500-b0d0-315ad7c36932">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Axis_2D_Geometry_1u94Jere57Mf0qgUVrF6rb" />
 					<Items>
-						<DocTemplateItem UniqueId="06c1e386-68cd-45f4-91e4-c9e849476f46" RuleParameters="Identifier=Axis;Type=Curve2D;Items=IfcIndexedPolyCurve;" Order="0" />
+						<DocTemplateItem UniqueId="06c1e386-68cd-45f4-91e4-c9e849476f46" RuleParameters="Identifier=Axis;Type=Curve2D;Items=IfcIndexedPolyCurve;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Material Profile Set Usage" UniqueId="ea22abf4-5790-463f-ba00-f8163660cfa8">
@@ -921,12 +921,12 @@ Figure 1 illustrates an advanced geometric representation with use of _IfcBoolea
 				<DocTemplateUsage Name="Body SweptSolid Geometry" UniqueId="e18806d9-0ccf-457e-88b0-bdb4181b5112">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SweptSolid_Geometry_3BV1ZwpuDDiRuRm1EwJjPo" />
 					<Items>
-						<DocTemplateItem UniqueId="eb532329-f30b-4f8d-948b-76485083b813" RuleParameters="Identifier=Body;Type=SweptSolid;" Order="0">
+						<DocTemplateItem UniqueId="eb532329-f30b-4f8d-948b-76485083b813" RuleParameters="Identifier=Body;Type=SweptSolid;">
 							<Concepts>
 								<DocTemplateUsage Name="Geometry" UniqueId="00beb5d3-815b-4183-a1b1-dba7fb9f89d1">
 									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Swept_Solid_Geometry_3Zj3s_m9z8Ngphyp0n7JNE" />
 									<Items>
-										<DocTemplateItem UniqueId="d05a4bbf-1f05-4dd5-8d9b-b8755e4701da" Order="0" />
+										<DocTemplateItem UniqueId="d05a4bbf-1f05-4dd5-8d9b-b8755e4701da" />
 									</Items>
 								</DocTemplateUsage>
 							</Concepts>
@@ -953,7 +953,7 @@ Figure 1 illustrates an advanced geometric representation with use of _IfcBoolea
 				<DocTemplateUsage Name="Axis 3D Geometry" UniqueId="fdd61629-5964-460f-8e98-942e06321e6c">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Axis_3D_Geometry_2ubDZB_q55xBeOSih6klyq" />
 					<Items>
-						<DocTemplateItem UniqueId="7252fa24-6be7-4c9e-8283-e7f85bc7a792" RuleParameters="Identifier=Axis;Type=Curve3D;Items=IfcIndexedPolyCurve;" Order="0" />
+						<DocTemplateItem UniqueId="7252fa24-6be7-4c9e-8283-e7f85bc7a792" RuleParameters="Identifier=Axis;Type=Curve3D;Items=IfcIndexedPolyCurve;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Material Profile Set Usage" UniqueId="5a1d2c43-6a83-482b-8f6c-fab267fa4bae">
@@ -968,10 +968,10 @@ Figure 1 illustrates an advanced geometric representation with use of _IfcBoolea
 				<DocTemplateUsage Name="Port" UniqueId="d72b5121-09fb-44d1-90d5-6adb1685e5e9">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Port_Nesting_2w9EtqE92s8JFNQ8EuKWA" />
 					<Items>
-						<DocTemplateItem UniqueId="235782d6-3121-44b4-baf2-c7918cd00823" RuleParameters="PortName=Inlet;Flow=SINK;SystemType=NOTDEFINED;" Order="0">
+						<DocTemplateItem UniqueId="235782d6-3121-44b4-baf2-c7918cd00823" RuleParameters="PortName=Inlet;Flow=SINK;SystemType=NOTDEFINED;">
 							<Documentation>The flow inlet.</Documentation>
 						</DocTemplateItem>
-						<DocTemplateItem UniqueId="dc7eaa73-e66e-4a12-9839-dbdf51b4f1f1" RuleParameters="PortName=Outlet;SystemType=NOTDEFINED;Flow=SOURCE;" Order="0">
+						<DocTemplateItem UniqueId="dc7eaa73-e66e-4a12-9839-dbdf51b4f1f1" RuleParameters="PortName=Outlet;SystemType=NOTDEFINED;Flow=SOURCE;">
 							<Documentation>The flow outlet.</Documentation>
 						</DocTemplateItem>
 					</Items>
@@ -1050,14 +1050,14 @@ As shown in Figure 106, the following conventions shall be met:
 &lt;/table&gt;</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SweptSolid_Geometry_3BV1ZwpuDDiRuRm1EwJjPo" />
 					<Items>
-						<DocTemplateItem UniqueId="b985e251-3ee3-4a2f-ac0a-77589292e328" RuleParameters="Identifier=Body;Type=SweptSolid;" Order="0">
+						<DocTemplateItem UniqueId="b985e251-3ee3-4a2f-ac0a-77589292e328" RuleParameters="Identifier=Body;Type=SweptSolid;">
 							<Concepts>
 								<DocTemplateUsage Name="Geometry" UniqueId="72af4fee-e503-4e1f-9258-5a113ccb4950">
 									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Swept_Solid_Geometry_3Zj3s_m9z8Ngphyp0n7JNE" />
 									<Items>
-										<DocTemplateItem UniqueId="f28e6400-bd83-4c3f-931c-43d51b63311e" RuleParameters="Profile=IfcArbitraryClosedProfileDef;" Order="0" />
-										<DocTemplateItem UniqueId="ee3dffc4-5c6d-4e2b-bc21-8704ce221204" RuleParameters="Profile=IfcArbitraryProfileDefWithVoids;" Order="0" />
-										<DocTemplateItem UniqueId="687080c5-d7da-4e7f-8d94-5a00c5e37681" RuleParameters="Profile=IfcRectangleProfileDef;" Order="0" />
+										<DocTemplateItem UniqueId="f28e6400-bd83-4c3f-931c-43d51b63311e" RuleParameters="Profile=IfcArbitraryClosedProfileDef;" />
+										<DocTemplateItem UniqueId="ee3dffc4-5c6d-4e2b-bc21-8704ce221204" RuleParameters="Profile=IfcArbitraryProfileDefWithVoids;" />
+										<DocTemplateItem UniqueId="687080c5-d7da-4e7f-8d94-5a00c5e37681" RuleParameters="Profile=IfcRectangleProfileDef;" />
 									</Items>
 								</DocTemplateUsage>
 							</Concepts>
@@ -1270,13 +1270,13 @@ Figure 2 illustrates slab material usage, where the following conventions shall 
 &lt;/table&gt;</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SweptSolid_Geometry_3BV1ZwpuDDiRuRm1EwJjPo" />
 					<Items>
-						<DocTemplateItem UniqueId="8d9b2338-0b2e-46bb-b596-4735bc5bfb25" RuleParameters="Identifier=Body;Type=SweptSolid;" Order="0">
+						<DocTemplateItem UniqueId="8d9b2338-0b2e-46bb-b596-4735bc5bfb25" RuleParameters="Identifier=Body;Type=SweptSolid;">
 							<Concepts>
 								<DocTemplateUsage Name="Geometry" UniqueId="906cff3e-3465-4d6a-a02e-59718d972011">
 									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Swept_Solid_Geometry_3Zj3s_m9z8Ngphyp0n7JNE" />
 									<Items>
-										<DocTemplateItem UniqueId="d7389cd1-6a65-4cbf-ab11-3d15890933a5" RuleParameters="Profile=IfcArbitraryClosedProfileDef;" Order="0" />
-										<DocTemplateItem UniqueId="fa4b5225-bee2-4e89-a791-6ed5de1cfb32" RuleParameters="Profile=IfcArbitraryProfileDefWithVoids;" Order="0" />
+										<DocTemplateItem UniqueId="d7389cd1-6a65-4cbf-ab11-3d15890933a5" RuleParameters="Profile=IfcArbitraryClosedProfileDef;" />
+										<DocTemplateItem UniqueId="fa4b5225-bee2-4e89-a791-6ed5de1cfb32" RuleParameters="Profile=IfcArbitraryProfileDefWithVoids;" />
 									</Items>
 								</DocTemplateUsage>
 							</Concepts>
@@ -1317,13 +1317,13 @@ Figure 2 illustrates slab material usage, where the following conventions shall 
 					<Documentation>An slab may be decomposed into parts for particular components such as headers, joists, deck/subfloor, insulation, fasteners, and sealants. If a material layer set is defined, each _IfcElement_.Name shall match the corresponding _IfcMaterialLayer_.Name.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_2A9y5QnEfCgOpEVxkXoRpW" />
 					<Items>
-						<DocTemplateItem UniqueId="65cdb3a1-3933-4a1f-9f4b-37d70143d494" RuleParameters="RelatedObjects=IfcPlate;" Order="0">
+						<DocTemplateItem UniqueId="65cdb3a1-3933-4a1f-9f4b-37d70143d494" RuleParameters="RelatedObjects=IfcPlate;">
 							<Documentation>Plywood for subfloor above.</Documentation>
 						</DocTemplateItem>
-						<DocTemplateItem UniqueId="4561af6a-a017-4504-81d1-2aee57932a3f" RuleParameters="RelatedObjects=IfcElementAssembly;" Order="0">
+						<DocTemplateItem UniqueId="4561af6a-a017-4504-81d1-2aee57932a3f" RuleParameters="RelatedObjects=IfcElementAssembly;">
 							<Documentation>Frame containing headers, joists, and possibly insulation.</Documentation>
 						</DocTemplateItem>
-						<DocTemplateItem UniqueId="d0580523-c853-4fa8-8c80-eef3fae8d123" RuleParameters="RelatedObjects=IfcBuildingElementPart;" Order="0">
+						<DocTemplateItem UniqueId="d0580523-c853-4fa8-8c80-eef3fae8d123" RuleParameters="RelatedObjects=IfcBuildingElementPart;">
 							<Documentation>Panels such as gypsum board for ceiling underneath.</Documentation>
 						</DocTemplateItem>
 					</Items>
@@ -1491,12 +1491,12 @@ Figure 2 illustrates a body representation for a curved wall. In case of a curve
 &lt;/table&gt;</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SweptSolid_Geometry_3BV1ZwpuDDiRuRm1EwJjPo" />
 					<Items>
-						<DocTemplateItem UniqueId="804eaeeb-2ab0-44b7-83fc-a7c457012cf6" RuleParameters="Identifier=Body;Type=SweptSolid;" Order="0">
+						<DocTemplateItem UniqueId="804eaeeb-2ab0-44b7-83fc-a7c457012cf6" RuleParameters="Identifier=Body;Type=SweptSolid;">
 							<Concepts>
 								<DocTemplateUsage Name="Geometry" UniqueId="557a7be8-78cc-4e75-8822-1abf57b564e4">
 									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Swept_Solid_Geometry_3Zj3s_m9z8Ngphyp0n7JNE" />
 									<Items>
-										<DocTemplateItem UniqueId="fad433b1-01fc-4666-b5d1-c7e13fdeb825" RuleParameters="Profile=IfcArbitraryClosedProfileDef;" Order="0" />
+										<DocTemplateItem UniqueId="fad433b1-01fc-4666-b5d1-c7e13fdeb825" RuleParameters="Profile=IfcArbitraryClosedProfileDef;" />
 									</Items>
 								</DocTemplateUsage>
 							</Concepts>
@@ -1531,10 +1531,10 @@ Figure 2 illustrates a clipping for a curved wall using an _IfcHalfSpaceSolid_ a
 					<Documentation>A wall may be decomposed into parts for particular components such as framing and panels on each side. If a material layer set is defined, each _IfcElement_.Name shall match the corresponding _IfcMaterialLayer_.Name.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_2A9y5QnEfCgOpEVxkXoRpW" />
 					<Items>
-						<DocTemplateItem UniqueId="39a50939-37b4-4b7a-951d-57a244f77af1" RuleParameters="RelatedObjects=IfcElementAssembly;" Order="0">
+						<DocTemplateItem UniqueId="39a50939-37b4-4b7a-951d-57a244f77af1" RuleParameters="RelatedObjects=IfcElementAssembly;">
 							<Documentation>Frame containing studs, tracks, and possibly insulation</Documentation>
 						</DocTemplateItem>
-						<DocTemplateItem UniqueId="31f20a1c-81cd-41e3-83e3-056c289cd269" RuleParameters="RelatedObjects=IfcBuildingElementPart;" Order="0">
+						<DocTemplateItem UniqueId="31f20a1c-81cd-41e3-83e3-056c289cd269" RuleParameters="RelatedObjects=IfcBuildingElementPart;">
 							<Documentation>Panels on each side such as gypsum (drywall) or cement board (tile backing) with fasteners</Documentation>
 						</DocTemplateItem>
 					</Items>
@@ -1549,7 +1549,7 @@ Figure 2 illustrates a clipping for a curved wall using an _IfcHalfSpaceSolid_ a
 					<Documentation>&gt; NOTE&amp;nbsp; The &apos;Axis&apos; is not used to locate the material layer set, only the subtype _IfcWallStandardCase_ provides this capability.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Axis_2D_Geometry_1u94Jere57Mf0qgUVrF6rb" />
 					<Items>
-						<DocTemplateItem UniqueId="a0f91a34-d50b-4ec2-b9c2-76dd1406d0ec" RuleParameters="Identifier=Axis;Type=Curve2D;Items=IfcBoundedCurve;" Order="0">
+						<DocTemplateItem UniqueId="a0f91a34-d50b-4ec2-b9c2-76dd1406d0ec" RuleParameters="Identifier=Axis;Type=Curve2D;Items=IfcBoundedCurve;">
 							<Documentation>The wall axis of the wall.</Documentation>
 						</DocTemplateItem>
 					</Items>
@@ -1557,7 +1557,7 @@ Figure 2 illustrates a clipping for a curved wall using an _IfcHalfSpaceSolid_ a
 				<DocTemplateUsage Name="Path Connectivity" UniqueId="69ecde9e-2199-4690-94b7-eedc1e88a758">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Path_Connectivity_1G5mELXyP9BgRydr_42n5F" />
 					<Items>
-						<DocTemplateItem UniqueId="a109a6bc-aaa7-435b-bb22-903ee8280536" RuleParameters="RelatedElement=IfcWall;" Order="0">
+						<DocTemplateItem UniqueId="a109a6bc-aaa7-435b-bb22-903ee8280536" RuleParameters="RelatedElement=IfcWall;">
 							<Documentation>Walls with equal or lower priority are connected at RelatedElement.</Documentation>
 						</DocTemplateItem>
 					</Items>

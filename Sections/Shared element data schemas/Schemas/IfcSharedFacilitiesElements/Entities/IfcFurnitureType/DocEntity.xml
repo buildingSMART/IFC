@@ -1,28 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcFurnitureType" UniqueId="a8b69ebd-a055-4b49-b99d-0de94f4c7d81" Status="H" DiagramNumber="1" BaseDefinition="IfcFurnishingElementType" EntityFlags="101">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcFurnitureType" UniqueId="a8b69ebd-a055-4b49-b99d-0de94f4c7d81" Status="H" BaseDefinition="IfcFurnishingElementType" EntityFlags="101">
 	<Localization>
-		<DocLocalization Name="Mobiliar - Typ" Locale="de" />
-		<DocLocalization Name="Furniture Type" Locale="en" />
-		<DocLocalization Name="Type de mobilier" Locale="fr" />
+		<DocLocalization Locale="de" Name="Mobiliar - Typ" />
+		<DocLocalization Locale="en" Name="Furniture Type" />
+		<DocLocalization Locale="fr" Name="Type de mobilier" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="129.46361" Y="726.45954" Width="495.72556" Height="100" />
 	<Attributes>
-		<DocAttribute Name="AssemblyPlace" UniqueId="791d2270-d762-4005-b5b8-19697f8a6878" DefinedType="IfcAssemblyPlaceEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="AssemblyPlace" UniqueId="791d2270-d762-4005-b5b8-19697f8a6878" DefinedType="IfcAssemblyPlaceEnum">
 			<Documentation>A designation of where the assembly is intended to take place. A selection of alternatives s provided in an enumerated list.</Documentation>
-			<DiagramLine>
-				<DocPoint X="189.46098" Y="826.45954" />
-				<DocPoint X="189.46098" Y="1097.10097" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="292.10583" Y="793.783675" Width="173" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="PredefinedType" UniqueId="b303f177-1e33-4bd3-a16d-fb06e46b54c0" DefinedType="IfcFurnitureTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<DiagramLine>
-				<DocPoint X="366.25761" Y="826.45954" />
-				<DocPoint X="366.25761" Y="939.08705" />
-				<DocPoint X="514.79502" Y="939.08705" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="402.409883" Y="879.662843" Width="182" Height="35" />
-		</DocAttribute>
+		<DocAttribute Name="PredefinedType" UniqueId="b303f177-1e33-4bd3-a16d-fb06e46b54c0" DefinedType="IfcFurnitureTypeEnum" AttributeFlags="1" />
 	</Attributes>
 	<WhereRules>
 		<DocWhereRule Name="CorrectPredefinedType" UniqueId="ba0239fa-b58b-4aa3-95c7-1f8988eb5f89">

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocProperty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="FlushType_24yKy0qW8HuO00025QrEV" Name="FlushType" UniqueId="24yKy0qW8HuO00025QrE$V" PropertyType="p_enumeratedvalue" PrimaryDataType="IfcLabel">
 	<Localization>
-		<DocLocalization Name="Flush Type" Locale="en" />
-		<DocLocalization Name="タイプフラッシュ" Locale="ja-JP">
+		<DocLocalization Locale="en" Name="Flush Type" />
+		<DocLocalization Locale="ja-JP" Name="タイプフラッシュ">
 			<Documentation>列挙するプロパティはPset_FlushTypeEnumでは貯水槽や衛生配管の配置による、フラッシュメカニズムのタイプを定義する：
 
 レバー式：洗浄水は、レバーをねじることによって貯水タンクから衛生配管にの所定の流量を流す。
@@ -14,8 +14,6 @@
 センサー式：洗浄水は、自動検出機構を介して作動する。</Documentation>
 		</DocLocalization>
 	</Localization>
-	<Enumeration>
-		<DocPropertyEnumeration xsi:nil="true" href="PEnum_FlushType" />
-	</Enumeration>
+	<Enumeration xsi:type="DocPropertyEnumeration" xsi:nil="true" href="PEnum_FlushType" />
 </DocProperty>
 

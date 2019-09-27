@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSpatialStructureElement" Name="IfcSpatialStructureElement" UniqueId="061ba193-076d-4292-a0ce-c96d7aba692e" Status="H" DiagramNumber="5" BaseDefinition="IfcSpatialElement" EntityFlags="197">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSpatialStructureElement" Name="IfcSpatialStructureElement" UniqueId="061ba193-076d-4292-a0ce-c96d7aba692e" Status="H" BaseDefinition="IfcSpatialElement" EntityFlags="197">
 	<Localization>
-		<DocLocalization Name="Räumliches Strukturelement" Locale="de" />
-		<DocLocalization Name="Spatial Structure Element" Locale="en" />
-		<DocLocalization Name="Elément de la structure spatiale" Locale="fr" />
+		<DocLocalization Locale="de" Name="Räumliches Strukturelement" />
+		<DocLocalization Locale="en" Name="Spatial Structure Element" />
+		<DocLocalization Locale="fr" Name="Elément de la structure spatiale" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="6625.6982" Y="1270.4294" Width="515.66667" Height="123.33333" />
 	<Subtypes>
 		<DocSubtype UniqueId="ae2170bb-ceb9-4c49-8ff9-845a434b1169" DefinedType="IfcBuilding" />
 		<DocSubtype UniqueId="f270dacf-366f-4ffe-9b9b-f9c781521fef" DefinedType="IfcBuildingStorey" />
@@ -13,15 +12,10 @@
 		<DocSubtype UniqueId="b18c05d7-6169-4317-b902-ee339352f9a0" DefinedType="IfcSite" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="CompositionType" UniqueId="726de67f-b56e-4031-b779-84330e1d0483" DefinedType="IfcElementCompositionEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="CompositionType" UniqueId="726de67f-b56e-4031-b779-84330e1d0483" DefinedType="IfcElementCompositionEnum" AttributeFlags="1">
 			<Documentation>Denotes, whether the predefined spatial structure element represents itself, or an aggregate (complex) or a part (part). The interpretation is given separately for each subtype of spatial structure element. If no _CompositionType_ is asserted, the dafault value &apos;ELEMENT&apos; applies.
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; Attribute made optional.</Documentation>
-			<DiagramLine>
-				<DocPoint X="7141.3649" Y="1329.4437" />
-				<DocPoint X="7464.8083" Y="1329.4437" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="7144.6982333" Y="1316.110367" Width="199" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
@@ -36,39 +30,5 @@ AND
 )</Expression>
 		</DocWhereRule>
 	</WhereRules>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="6952.1185" Y="1393.7627" />
-				<DocPoint X="6952.1185005" Y="1393.7627" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="6952.1183" Y="1595.3095" />
-						<DocPoint X="6983.384834" Y="1595.3095" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="6952.1183" Y="1690.0059" />
-						<DocPoint X="6980.118167" Y="1690.0059" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="6952.1179" Y="1690.0427" />
-						<DocPoint X="6921.317837" Y="1690.0427" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="6952.1183" Y="1595.2594" />
-						<DocPoint X="6921.384867" Y="1595.2594" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

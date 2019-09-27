@@ -1,46 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcWorkCalendar" Name="IfcWorkCalendar" UniqueId="d05923c3-37a8-444a-b811-bf0709bab84f" DiagramNumber="3" BaseDefinition="IfcControl" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcWorkCalendar" Name="IfcWorkCalendar" UniqueId="d05923c3-37a8-444a-b811-bf0709bab84f" BaseDefinition="IfcControl" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Arbeitskalender" Locale="de" />
-		<DocLocalization Name="Work Calendar" Locale="en" />
-		<DocLocalization Name="Calendrier de travail" Locale="fr" />
+		<DocLocalization Locale="de" Name="Arbeitskalender" />
+		<DocLocalization Locale="en" Name="Work Calendar" />
+		<DocLocalization Locale="fr" Name="Calendrier de travail" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="3236.5201" Y="1991.9867" Width="455.96667" Height="249.26667" />
 	<Attributes>
-		<DocAttribute Name="WorkingTimes" UniqueId="f600c372-69d7-44f2-ad5a-450a9dd1e34a" DefinedType="IfcWorkTime" AttributeFlags="1" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="WorkingTimes" UniqueId="f600c372-69d7-44f2-ad5a-450a9dd1e34a" DefinedType="IfcWorkTime" AttributeFlags="1" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Set of times periods that are regarded as an initial set-up
     of working times. Exception times can then further restrict
     these working times.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3692.48677" Y="2036.03111325521" />
-				<DocPoint X="3692.48677" Y="2036.03111325521" />
-				<DocPoint X="4081.74658203125" Y="2036.03111325521" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3692.48677" Y="2016.03111325521" Width="242" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ExceptionTimes" UniqueId="2a68f57c-be31-4ee2-acee-aa80e15467f6" DefinedType="IfcWorkTime" AttributeFlags="1" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="ExceptionTimes" UniqueId="2a68f57c-be31-4ee2-acee-aa80e15467f6" DefinedType="IfcWorkTime" AttributeFlags="1" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Set of times periods that define exceptions (non-working
     times) for the given working times including the base
     calendar, if provided.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3692.48677" Y="2087.47555658854" />
-				<DocPoint X="3692.48677" Y="2087.47555658854" />
-				<DocPoint X="4081.74658203125" Y="2087.47555658854" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3692.48677" Y="2067.47555658854" Width="260" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="PredefinedType" UniqueId="4343392e-ed01-4af4-931f-7be994806a87" DefinedType="IfcWorkCalendarTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="4343392e-ed01-4af4-931f-7be994806a87" DefinedType="IfcWorkCalendarTypeEnum" AttributeFlags="1">
 			<Documentation>Identifies the predefined types of a work calendar from which 
     the type required may be set.
     
 { .change-ifc2x4}
 &gt; IFC4 CHANGE Attribute added</Documentation>
-			<DiagramLine>
-				<DocPoint X="3692.48677" Y="2219.7561850625" />
-				<DocPoint X="3692.48677" Y="2219.7561850625" />
-				<DocPoint X="4081.84448242188" Y="2219.7561850625" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3692.48677" Y="2199.7561850625" Width="182" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

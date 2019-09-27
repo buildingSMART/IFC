@@ -1,26 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcConnectionSurfaceGeometry" UniqueId="2e3f9a00-22e8-4d1e-9473-28fab150a1fa" DiagramNumber="2" BaseDefinition="IfcConnectionGeometry" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcConnectionSurfaceGeometry" UniqueId="2e3f9a00-22e8-4d1e-9473-28fab150a1fa" BaseDefinition="IfcConnectionGeometry" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Flächige Verbindung - Geometrie" Locale="de" />
-		<DocLocalization Name="Connection Surface Geometry" Locale="en" />
+		<DocLocalization Locale="de" Name="Flächige Verbindung - Geometrie" />
+		<DocLocalization Locale="en" Name="Connection Surface Geometry" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1867.2999" Y="1576.3667" Width="570.86667" Height="120" />
 	<Attributes>
-		<DocAttribute Name="SurfaceOnRelatingElement" UniqueId="314adc40-553a-4304-9635-524cc52d9f2b" DefinedType="IfcSurfaceOrFaceSurface" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="SurfaceOnRelatingElement" UniqueId="314adc40-553a-4304-9635-524cc52d9f2b" DefinedType="IfcSurfaceOrFaceSurface">
 			<Documentation>Surface at which related object is aligned at the relating element, given in the LCS of the relating element.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1904.7332" Y="1696.3667" />
-				<DocPoint X="1904.7332" Y="1792.4533" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2072.7332" Y="1699.0333667" Width="306" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="SurfaceOnRelatedElement" UniqueId="799673ed-96e5-416c-9b59-e0b232546f8e" DefinedType="IfcSurfaceOrFaceSurface" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="SurfaceOnRelatedElement" UniqueId="799673ed-96e5-416c-9b59-e0b232546f8e" DefinedType="IfcSurfaceOrFaceSurface" AttributeFlags="1">
 			<Documentation>Surface at which the relating element is aligned at the related element, given in the LCS of the related element. If the information is omitted, then the origin of the related element is used.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2403.3999" Y="1696.3667" />
-				<DocPoint X="2403.3999" Y="1792.4533" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2574.06657" Y="1674.990033" Width="301" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

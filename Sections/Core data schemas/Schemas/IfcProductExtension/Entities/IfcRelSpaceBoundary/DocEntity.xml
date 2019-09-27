@@ -1,64 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelSpaceBoundary" Name="IfcRelSpaceBoundary" UniqueId="b5068876-210f-4343-a93a-674f2a9e63ff" DiagramNumber="7" BaseDefinition="IfcRelConnects" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelSpaceBoundary" UniqueId="b5068876-210f-4343-a93a-674f2a9e63ff" BaseDefinition="IfcRelConnects" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Raumgrenzen - Relation" Locale="de" />
-		<DocLocalization Name="Rel Space Boundary" Locale="en" />
-		<DocLocalization Name="Limite d&apos;espace" Locale="fr" />
+		<DocLocalization Locale="de" Name="Raumgrenzen - Relation" />
+		<DocLocalization Locale="en" Name="Rel Space Boundary" />
+		<DocLocalization Locale="fr" Name="Limite d&apos;espace" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="99.455533" Y="2900.9313" Width="386.83333" Height="292.70833" />
 	<Subtypes>
 		<DocSubtype UniqueId="e6c1f4b3-dd54-436b-908d-2f24a5deeced" DefinedType="IfcRelSpaceBoundary1stLevel" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="RelatingSpace" UniqueId="f8599c4e-f4c7-493b-acaf-453c795e6070" DefinedType="IfcSpaceBoundarySelect" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RelatingSpace" UniqueId="f8599c4e-f4c7-493b-acaf-453c795e6070" DefinedType="IfcSpaceBoundarySelect">
 			<Documentation>Reference to one spaces that is delimited by this boundary.</Documentation>
-			<DiagramLine>
-				<DocPoint X="486.28886" Y="3116.9048" />
-				<DocPoint X="744.10666" Y="3116.9048" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="486.28886" Y="3108.9048" Width="168" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RelatedBuildingElement" UniqueId="6523e107-ea64-416e-a049-ceda315c7e48" DefinedType="IfcElement" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="RelatedBuildingElement" UniqueId="6523e107-ea64-416e-a049-ceda315c7e48" DefinedType="IfcElement" XsdFormat="attribute">
 			<Documentation>Reference to ~~Building~~ Element, that defines the Space Boundaries.
 { .change-ifc2x}
 &gt; IFC2x CHANGE&amp;nbsp; The data type has been changed from _IfcBuildingElement_ to _IfcElement_ with upward compatibility for file based exchange.
 
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute has been changed to be mandatory.</Documentation>
-			<DiagramLine>
-				<DocPoint X="156.20553" Y="3193.6396" />
-				<DocPoint X="156.20553" Y="4447.4454" />
-				<DocPoint X="346.78883" Y="4447.4454" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="160.288862" Y="4380.955817" Width="270" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ConnectionGeometry" UniqueId="1e9b8391-2d9c-4039-8d4a-922a0ee5c8c2" DefinedType="IfcConnectionGeometry" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="ConnectionGeometry" UniqueId="1e9b8391-2d9c-4039-8d4a-922a0ee5c8c2" DefinedType="IfcConnectionGeometry" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Physical representation of the space boundary. Provided as a **curve or** surface given within the LCS of the space.
 { .change-ifc2x}
 &gt; IFC2x CHANGE&amp;nbsp; The data type has been changed from _IfcConnectionSurfaceGeometry_ to _IfcConnectionGeometry_ with upward compatibility for file based exchange.</Documentation>
-			<DiagramLine>
-				<DocPoint X="99.455533" Y="3047.1135" />
-				<DocPoint X="72.761064" Y="3047.1135" />
-				<DocPoint X="72.761064" Y="4610.7788" />
-				<DocPoint X="202.722134" Y="4610.7788" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="117.677732" Y="4540.622548" Width="241" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="PhysicalOrVirtualBoundary" UniqueId="229c3b86-471b-488d-bcb1-333acb26d486" DefinedType="IfcPhysicalOrVirtualEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PhysicalOrVirtualBoundary" UniqueId="229c3b86-471b-488d-bcb1-333acb26d486" DefinedType="IfcPhysicalOrVirtualEnum">
 			<Documentation>Defines, whether the Space Boundary is physical (Physical) or virtual (Virtual).</Documentation>
-			<DiagramLine>
-				<DocPoint X="299.77547" Y="2900.9313" />
-				<DocPoint X="299.77547" Y="2782.473" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="480.04211" Y="2916.947988" Width="299" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="InternalOrExternalBoundary" UniqueId="8a88debb-6d88-4f0b-80bc-706ba9f88f51" DefinedType="IfcInternalOrExternalEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="InternalOrExternalBoundary" UniqueId="8a88debb-6d88-4f0b-80bc-706ba9f88f51" DefinedType="IfcInternalOrExternalEnum">
 			<Documentation>Defines, whether the Space Boundary is internal (Internal), or external, i.e. adjacent to open space (that can be an partially enclosed space, such as terrace (External).</Documentation>
-			<DiagramLine>
-				<DocPoint X="219.19033" Y="2900.9313" />
-				<DocPoint X="219.19033" Y="2617.77295" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="398.47271" Y="2946.9313" Width="313" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
@@ -76,13 +47,5 @@ OR
 (PhysicalOrVirtualBoundary = IfcPhysicalOrVirtualEnum.NotDefined)</Expression>
 		</DocWhereRule>
 	</WhereRules>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="361.44" Y="3193.6396" />
-				<DocPoint X="361.44" Y="3407.38667" />
-			</DiagramLine>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

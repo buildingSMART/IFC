@@ -1,77 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPropertySetDefinition" Name="IfcPropertySetDefinition" UniqueId="dc96d6f9-b8ed-4899-979b-8cc86974ea2d" Status="H" DiagramNumber="2" BaseDefinition="IfcPropertyDefinition" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPropertySetDefinition" Name="IfcPropertySetDefinition" UniqueId="dc96d6f9-b8ed-4899-979b-8cc86974ea2d" Status="H" BaseDefinition="IfcPropertyDefinition" EntityFlags="205">
 	<Localization>
-		<DocLocalization Name="Definition der Merkmalliste (allgemein)" Locale="de" />
-		<DocLocalization Name="Property Set Definition" Locale="en" />
-		<DocLocalization Name="Définition d&apos;ensemble de propriété" Locale="fr" />
+		<DocLocalization Locale="de" Name="Definition der Merkmalliste (allgemein)" />
+		<DocLocalization Locale="en" Name="Property Set Definition" />
+		<DocLocalization Locale="fr" Name="Définition d&apos;ensemble de propriété" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1712.1308" Y="967.80079" Width="243.63333" Height="426.66667" />
 	<Subtypes>
 		<DocSubtype UniqueId="ac371977-a633-4911-8ef3-5fd156b7fb59" DefinedType="IfcPropertySet" />
 		<DocSubtype UniqueId="9f5ecc6a-0cee-4f85-8682-7d9ea83e3d4b" DefinedType="IfcPreDefinedPropertySet" />
 		<DocSubtype UniqueId="8babff16-3204-41fc-8852-07e8bedbfec2" DefinedType="IfcQuantitySet" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="DefinesType" UniqueId="5aee7ab3-dcb7-4abe-8fa5-d2b2f2c37083" DefinedType="IfcTypeObject" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="HasPropertySets">
+		<DocAttribute Name="DefinesType" UniqueId="5aee7ab3-dcb7-4abe-8fa5-d2b2f2c37083" DefinedType="IfcTypeObject" AggregationType="3" Inverse="HasPropertySets">
 			<Documentation>The type object to which the property set is assigned. The property set acts as a shared property set to all occurrences of the type object.
 &gt; NOTE&amp;nbsp; The relationship between the _IfcPropertySetDefinition_ and the _IfcTypeObject_ is a direct relationship, not utilizing _IfcRelDefinesByProperties_, for maintaining compatibility with earlier releases of this standard.
 
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The cardinality has been changed from 0:1 to 0:? with upward compatibility for file based exchange.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1955.7642" Y="1022.2582" />
-				<DocPoint X="2859.76487" Y="1022.2582" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1839.7642" Y="1050.258199" Width="361" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="IsDefinedBy" UniqueId="e9541680-618c-49dc-a052-7d13de3fd336" DefinedType="IfcRelDefinesByTemplate" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="RelatedPropertySets">
+		<DocAttribute Name="IsDefinedBy" UniqueId="e9541680-618c-49dc-a052-7d13de3fd336" DefinedType="IfcRelDefinesByTemplate" AggregationType="3" Inverse="RelatedPropertySets">
 			<Documentation>Relation to the property set template, via the objectified relationship _IfcRelDefinesByTemplate_, that, if given, provides the definition template for the property set or quantity set and its properties. 
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; New inverse relationship, change made with upward compatibility for file based exchange.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1955.7642" Y="1168.2048" />
-				<DocPoint X="2764.73344" Y="1168.2048" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1905.097533" Y="1197.538133" Width="529" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="DefinesOccurrence" UniqueId="74a32a1f-15b3-4366-a7ac-3776403dd4dd" DefinedType="IfcRelDefinesByProperties" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="0" Inverse="RelatingPropertyDefinition">
+		<DocAttribute Name="DefinesOccurrence" UniqueId="74a32a1f-15b3-4366-a7ac-3776403dd4dd" DefinedType="IfcRelDefinesByProperties" AggregationType="3" AggregationLower="0" AggregationUpper="0" Inverse="RelatingPropertyDefinition">
 			<Documentation>Reference to the relation to one or many object occurrences that are characterized by the property set definition. A single property set can be assigned to multiple object occurrences using the objectified relationship _IfcRefDefinesByProperties_.
 { .change-ifc2x4}
 &gt; IFC4 CHANGE Inverse attribute renamed from PropertyDefinitionOf with upward compatibility for file-based exchange.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1955.7641" Y="1311.8008" />
-				<DocPoint X="2755.82177" Y="1311.8008" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1929.097433" Y="1341.134133" Width="597" Height="70" />
 		</DocAttribute>
 	</Attributes>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="1753.8745" Y="1394.4675" />
-				<DocPoint X="1753.8745" Y="1617.92579" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="1753.2147" Y="1617.9257" />
-						<DocPoint X="1753.2147" Y="1677.117314" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="2368.3334" Y="1617.9257" />
-						<DocPoint X="2368.3334" Y="1677.13325" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="2893.3333" Y="1617.9257" />
-						<DocPoint X="2893.3333" Y="1677.15329" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

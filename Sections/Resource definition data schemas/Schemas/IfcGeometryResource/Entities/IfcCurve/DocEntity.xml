@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCurve" Name="IfcCurve" UniqueId="e39241f5-7436-4f04-91f5-7a80393f242d" DiagramNumber="5" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="13">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCurve" Name="IfcCurve" UniqueId="e39241f5-7436-4f04-91f5-7a80393f242d" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="13">
 	<Localization>
-		<DocLocalization Name="Kurve" Locale="de" />
-		<DocLocalization Name="Curve" Locale="en" />
-		<DocLocalization Name="Courbe" Locale="fr" />
+		<DocLocalization Locale="de" Name="Kurve" />
+		<DocLocalization Locale="en" Name="Curve" />
+		<DocLocalization Locale="fr" Name="Courbe" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="7175.70556640625" Y="181.878143310547" Width="202" Height="100" />
 	<Subtypes>
 		<DocSubtype UniqueId="c1c0f7ae-4e31-4912-9b07-7d3080132caf" DefinedType="IfcBoundedCurve" />
 		<DocSubtype UniqueId="0e92f170-da26-49e2-b8fb-d421eaf4df18" DefinedType="IfcConic" />
@@ -16,76 +15,10 @@
 		<DocSubtype UniqueId="abcf0565-0779-4210-b778-2f6d038b3224" DefinedType="IfcSurfaceCurve" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Dim" UniqueId="ac570a55-8169-4098-82e0-7c5fdb6c597a" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Dim" UniqueId="ac570a55-8169-4098-82e0-7c5fdb6c597a" DefinedType="IfcDimensionCount">
 			<Documentation>The space dimensionality of this abstract class, defined differently for all subtypes, i.e. for IfcLine, IfcConic and IfcBoundedCurve.</Documentation>
 			<Derived>IfcCurveDim(SELF)</Derived>
-			<DiagramLine>
-				<DocPoint X="7175.70556640625" Y="181.878143310547" />
-				<DocPoint X="7175.70556640625" Y="71.7781297529297" />
-				<DocPoint X="7131.91259765625" Y="71.7781297529297" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="7175.70556640625" Y="161.878143310547" Width="125" Height="35" />
 		</DocAttribute>
 	</Attributes>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="7314.66650390625" Y="281.878143310547" />
-				<DocPoint X="7314.66650390625" Y="281.878143310547" />
-				<DocPoint X="7314.66650390625" Y="376" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="7314.66650390625" Y="376" />
-						<DocPoint X="7314.66650390625" Y="688.844787597656" />
-						<DocPoint X="7615.6591796875" Y="688.844787597656" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="7314.66650390625" Y="376" />
-						<DocPoint X="7314.66650390625" Y="936.544715881348" />
-						<DocPoint X="7182.9921875" Y="936.544715881348" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="7314.66650390625" Y="376" />
-						<DocPoint X="7314.66650390625" Y="689.26148921875" />
-						<DocPoint X="6916.32568359375" Y="689.26148921875" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="7314.66650390625" Y="376" />
-						<DocPoint X="7314.66650390625" Y="373.833343505859" />
-						<DocPoint X="7538.46630859375" Y="373.833343505859" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="7314.66650390625" Y="376" />
-						<DocPoint X="7314.66650390625" Y="373.833343505859" />
-						<DocPoint X="7071.50016609375" Y="373.833343505859" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="7314.66650390625" Y="376" />
-						<DocPoint X="7314.66650390625" Y="937.306579589844" />
-						<DocPoint X="7409.70654296875" Y="937.306579589844" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="7314.66650390625" Y="376" />
-						<DocPoint X="7314.66650390625" Y="1647.33337402344" />
-						<DocPoint X="7389.3330078125" Y="1647.33337402344" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

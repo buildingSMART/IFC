@@ -1,77 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPhysicalQuantity" UniqueId="992fb4f8-e3be-4df1-8101-f866b2fa8617" DiagramNumber="1" EntityFlags="197">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPhysicalQuantity" UniqueId="992fb4f8-e3be-4df1-8101-f866b2fa8617" EntityFlags="197">
 	<Localization>
-		<DocLocalization Name="Physikalische Größe" Locale="de" />
-		<DocLocalization Name="Physical Quantity" Locale="en" />
-		<DocLocalization Name="Quantité physique" Locale="fr" />
+		<DocLocalization Locale="de" Name="Physikalische Größe" />
+		<DocLocalization Locale="en" Name="Physical Quantity" />
+		<DocLocalization Locale="fr" Name="Quantité physique" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="22.0000203450521" Y="40.4999885559082" Width="351.333323160807" Height="323.83332824707" />
 	<Subtypes>
 		<DocSubtype UniqueId="a86d6250-008f-4a4c-b4e2-cf5c873cb373" DefinedType="IfcPhysicalSimpleQuantity" />
 		<DocSubtype UniqueId="11a80a91-de9b-445a-8440-1fd0ac33e8ac" DefinedType="IfcPhysicalComplexQuantity" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Name" UniqueId="6e61090c-7c36-4a29-84d9-f1404b4270d3" DefinedType="IfcLabel" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Name" UniqueId="6e61090c-7c36-4a29-84d9-f1404b4270d3" DefinedType="IfcLabel">
 			<Documentation>Name of the element quantity or measure. The name attribute has to be made recognizable by further agreements.</Documentation>
-			<DiagramLine>
-				<DocPoint X="373.333343505859" Y="193.310668945313" />
-				<DocPoint X="373.333343505859" Y="193.310668945313" />
-				<DocPoint X="801.333251953125" Y="193.310668945313" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="373.333343505859" Y="173.310668945313" Width="73" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Description" UniqueId="2d43b17c-5432-4535-8b22-c8c08aee6cbf" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Description" UniqueId="2d43b17c-5432-4535-8b22-c8c08aee6cbf" DefinedType="IfcText" AttributeFlags="1">
 			<Documentation>Further explanation that might be given to the quantity.</Documentation>
-			<DiagramLine>
-				<DocPoint X="373.333343505859" Y="309.166653074544" />
-				<DocPoint X="373.333343505859" Y="309.166653074544" />
-				<DocPoint X="796.66660563151" Y="309.166653074544" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="373.333343505859" Y="289.166653074544" Width="130" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="HasExternalReferences" UniqueId="27b2b843-28a6-42e2-bb25-b4fdcb625898" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="32" AggregationType="3" AggregationFlag="0" Inverse="RelatedResourceObjects">
+		<DocAttribute Name="HasExternalReferences" UniqueId="27b2b843-28a6-42e2-bb25-b4fdcb625898" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="32" AggregationType="3" Inverse="RelatedResourceObjects">
 			<Documentation>Reference to an external reference, e.g. library, classification, or document information, that is associated to the quantity.
 { .change-ifc2x4}
 &gt; IFC4 CHANGE New inverse attribute.</Documentation>
-			<DiagramLine>
-				<DocPoint X="373.333343505859" Y="131.466664632161" />
-				<DocPoint X="373.333343505859" Y="131.466664632161" />
-				<DocPoint X="1034.06658935547" Y="131.466664632161" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="373.333343505859" Y="111.466664632161" Width="411" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="PartOfComplex" UniqueId="e3118983-d5ed-4e50-9a48-f842a13ce296" DefinedType="IfcPhysicalComplexQuantity" AttributeFlags="8" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="HasQuantities">
+		<DocAttribute Name="PartOfComplex" UniqueId="e3118983-d5ed-4e50-9a48-f842a13ce296" DefinedType="IfcPhysicalComplexQuantity" AttributeFlags="8" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="HasQuantities">
 			<Documentation>Reference to a physical complex quantity in which the physical quantity may be contained.</Documentation>
-			<DiagramLine>
-				<DocPoint X="253.46667" Y="364.333316802979" />
-				<DocPoint X="253.46667" Y="364.333316802979" />
-				<DocPoint X="253.46667" Y="619.33333" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="253.46667" Y="599.33333" Width="318" Height="35" />
 		</DocAttribute>
 	</Attributes>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="373.333343505859" Y="364.333316802979" />
-				<DocPoint X="373.333343505859" Y="550.15" />
-				<DocPoint X="683" Y="550.15" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="681.89537" Y="550.15" />
-						<DocPoint X="681.89537" Y="619.3" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="253.46667" Y="550.15" />
-						<DocPoint X="253.46667" Y="619.333333" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

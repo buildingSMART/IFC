@@ -1,50 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcActorRole" Name="IfcActorRole" UniqueId="82b7f4e9-c9c0-41a2-a7e4-2b02f8a377c3" DiagramNumber="1" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcActorRole" Name="IfcActorRole" UniqueId="82b7f4e9-c9c0-41a2-a7e4-2b02f8a377c3" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Rolle des Akteurs" Locale="de" />
-		<DocLocalization Name="Actor Role" Locale="en" />
-		<DocLocalization Name="Rôle d&apos;acteur" Locale="fr" />
+		<DocLocalization Locale="de" Name="Rolle des Akteurs" />
+		<DocLocalization Locale="en" Name="Actor Role" />
+		<DocLocalization Locale="fr" Name="Rôle d&apos;acteur" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="559.85911" Y="975.41249" Width="253.33333" Height="211.39167" />
 	<Attributes>
-		<DocAttribute Name="Role" UniqueId="cab76dc4-0eb3-4fab-9579-656cd9b52302" DefinedType="IfcRoleEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Role" UniqueId="cab76dc4-0eb3-4fab-9579-656cd9b52302" DefinedType="IfcRoleEnum">
 			<Documentation>The name of the role played by an actor. If the Role has value USERDEFINED, then
 the user defined role shall be provided as a value of the attribute UserDefinedRole.</Documentation>
-			<DiagramLine>
-				<DocPoint X="813.19244" Y="989.04444" />
-				<DocPoint X="1110.4521" Y="989.04444" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="744.585508" Y="983.9872234" Width="58" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="UserDefinedRole" UniqueId="7d1b62b5-eb50-44cb-8ecf-5821f8991f32" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="UserDefinedRole" UniqueId="7d1b62b5-eb50-44cb-8ecf-5821f8991f32" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>Allows for specification of user defined roles beyond the 
 enumeration values provided by Role attribute of type IfcRoleEnum. 
 When a value is provided for attribute UserDefinedRole in parallel 
 the attribute Role shall have enumeration value USERDEFINED.</Documentation>
-			<DiagramLine>
-				<DocPoint X="813.19244" Y="1076.1597" />
-				<DocPoint X="1110.37112" Y="1076.1597" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="806.0073982" Y="1070.7428446" Width="196" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Description" UniqueId="0529bf63-9322-4740-ad36-2cc861f6082b" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Description" UniqueId="0529bf63-9322-4740-ad36-2cc861f6082b" DefinedType="IfcText" AttributeFlags="1">
 			<Documentation>A textual description relating the nature of the role played by an actor.</Documentation>
-			<DiagramLine>
-				<DocPoint X="813.19244" Y="1162.9172" />
-				<DocPoint X="1110.47355" Y="1162.9172" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="842.344684" Y="1154.0837957" Width="130" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="HasExternalReference" UniqueId="0c0b8207-2077-4ad5-a65b-49eaccdf4a62" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="32" AggregationType="3" AggregationFlag="0" Inverse="RelatedResourceObjects">
+		<DocAttribute Name="HasExternalReference" UniqueId="0c0b8207-2077-4ad5-a65b-49eaccdf4a62" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="32" AggregationType="3" Inverse="RelatedResourceObjects">
 			<Documentation>Reference to external information, e.g. library, classification, or document information, which is associated with the actor role.
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; New inverse attribute.</Documentation>
-			<DiagramLine>
-				<DocPoint X="596.96341" Y="1186.8042" />
-				<DocPoint X="596.96341" Y="1355.76629" />
-				<DocPoint X="1011.40593" Y="1355.76629" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="592.7138623" Y="1382.844912" Width="399" Height="70" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

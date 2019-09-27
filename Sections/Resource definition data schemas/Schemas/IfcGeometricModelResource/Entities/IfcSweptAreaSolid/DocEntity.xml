@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSweptAreaSolid" Name="IfcSweptAreaSolid" UniqueId="1bfb8302-5211-4de4-a3b9-20e200cf1097" DiagramNumber="4" BaseDefinition="IfcSolidModel" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSweptAreaSolid" Name="IfcSweptAreaSolid" UniqueId="1bfb8302-5211-4de4-a3b9-20e200cf1097" BaseDefinition="IfcSolidModel" EntityFlags="205">
 	<Localization>
-		<DocLocalization Name="Festkörper - Entlang einem Pfad extrudiert" Locale="de" />
-		<DocLocalization Name="Swept Area Solid" Locale="en" />
+		<DocLocalization Locale="de" Name="Festkörper - Entlang einem Pfad extrudiert" />
+		<DocLocalization Locale="en" Name="Swept Area Solid" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="4905.8834" Y="270.29167" Width="486.63333" Height="256.66667" />
 	<Subtypes>
 		<DocSubtype UniqueId="212829ea-be2a-41ae-882d-cbcbcc89af9c" DefinedType="IfcExtrudedAreaSolid" />
 		<DocSubtype UniqueId="00e87347-436b-41b3-bfab-c09477823008" DefinedType="IfcRevolvedAreaSolid" />
@@ -12,23 +11,13 @@
 		<DocSubtype UniqueId="238766a3-5214-4d50-97e5-f049d24e29c4" DefinedType="IfcFixedReferenceSweptAreaSolid" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="SweptArea" UniqueId="1c1cfe35-c525-4b8e-967a-78258ff390f3" DefinedType="IfcProfileDef" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="SweptArea" UniqueId="1c1cfe35-c525-4b8e-967a-78258ff390f3" DefinedType="IfcProfileDef" XsdFormat="attribute">
 			<Documentation>The surface defining the area to be swept. It is given as a profile definition within the xy plane of the position coordinate system.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5392.5167" Y="347.95834" />
-				<DocPoint X="5865.8501" Y="347.95834" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5384.5167" Y="337.291673" Width="128" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Position" UniqueId="fccab43b-72fa-486a-b491-6d2133f1474b" DefinedType="IfcAxis2Placement3D" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="Position" UniqueId="fccab43b-72fa-486a-b491-6d2133f1474b" DefinedType="IfcAxis2Placement3D" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Position coordinate system for the resulting swept solid of the sweeping operation. The position coordinate system allows for re-positioning of the swept solid. If not provided, the swept solid remains within the position as determined by the cross section or by the directrix used for the sweeping operation.
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute has been changed to OPTIONAL with upward compatibility for file-based exchange.</Documentation>
-			<DiagramLine>
-				<DocPoint X="5392.5167" Y="470.62501" />
-				<DocPoint X="5865.78004" Y="470.62501" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="5365.850033" Y="462.62501" Width="94" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
@@ -37,39 +26,5 @@
 			<Expression>SweptArea.ProfileType = IfcProfileTypeEnum.Area</Expression>
 		</DocWhereRule>
 	</WhereRules>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="4977.7961" Y="526.95837" />
-				<DocPoint X="4977.7961" Y="819.29163" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="5029.9837" Y="819.29174" />
-						<DocPoint X="5029.9837" Y="890.45834" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="5770.6732" Y="819.29174" />
-						<DocPoint X="5770.6732" Y="888.391737" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="6030.5333" Y="819.29163" />
-						<DocPoint X="6030.5333" Y="737.924977" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="5470.6" Y="819.29163" />
-						<DocPoint X="5470.6" Y="737.958297" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

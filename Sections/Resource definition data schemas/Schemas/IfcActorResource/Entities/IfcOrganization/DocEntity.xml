@@ -1,78 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcOrganization" Name="IfcOrganization" UniqueId="93c06606-4886-4b0b-9ed6-d883d74c46fd" DiagramNumber="1" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcOrganization" Name="IfcOrganization" UniqueId="93c06606-4886-4b0b-9ed6-d883d74c46fd" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Organisation" Locale="de" />
-		<DocLocalization Name="Organization" Locale="en" />
-		<DocLocalization Name="Organisation" Locale="fr" />
+		<DocLocalization Locale="de" Name="Organisation" />
+		<DocLocalization Locale="en" Name="Organization" />
+		<DocLocalization Locale="fr" Name="Organisation" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="162.05781" Y="1513.0351" Width="464.76667" Height="289.60146" />
 	<Attributes>
-		<DocAttribute Name="Identification" UniqueId="69df2c90-db0e-4770-8b56-979b8b047e1e" DefinedType="IfcIdentifier" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Identification" UniqueId="69df2c90-db0e-4770-8b56-979b8b047e1e" DefinedType="IfcIdentifier" AttributeFlags="1">
 			<Documentation>Identification of the organization.</Documentation>
-			<DiagramLine>
-				<DocPoint X="626.82448" Y="1561.5767" />
-				<DocPoint X="1112.63885" Y="1561.5767" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="565.399792" Y="1547.585578" Width="146" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Name" UniqueId="c166f087-4894-4a21-a9e9-d97eb1819fdf" DefinedType="IfcLabel" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Name" UniqueId="c166f087-4894-4a21-a9e9-d97eb1819fdf" DefinedType="IfcLabel">
 			<Documentation>The word, or group of words, by which the organization is referred to.</Documentation>
-			<DiagramLine>
-				<DocPoint X="626.82448" Y="1658.4662" />
-				<DocPoint X="1112.67709" Y="1658.4662" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="527.208702" Y="1648.7067179" Width="73" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Description" UniqueId="25df158d-5646-41da-ab00-0278fd97465f" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Description" UniqueId="25df158d-5646-41da-ab00-0278fd97465f" DefinedType="IfcText" AttributeFlags="1">
 			<Documentation>Text that relates the nature of the organization.</Documentation>
-			<DiagramLine>
-				<DocPoint X="626.82448" Y="1765.8907" />
-				<DocPoint X="1112.64559" Y="1765.8907" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="556.536891" Y="1755.467869" Width="130" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Roles" UniqueId="0d1eb7de-a748-4032-b4dc-41db568b69e9" DefinedType="IfcActorRole" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="Roles" UniqueId="0d1eb7de-a748-4032-b4dc-41db568b69e9" DefinedType="IfcActorRole" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Roles played by the organization.</Documentation>
-			<DiagramLine>
-				<DocPoint X="295.19613" Y="1513.0351" />
-				<DocPoint X="295.19613" Y="1081.10828" />
-				<DocPoint X="559.85911" Y="1081.10828" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="290.6665172" Y="1069.511933" Width="147" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Addresses" UniqueId="5539929c-db61-4891-a291-4994f62113a2" DefinedType="IfcAddress" AttributeFlags="1" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="Addresses" UniqueId="5539929c-db61-4891-a291-4994f62113a2" DefinedType="IfcAddress" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Postal and telecom addresses of an organization.
 &gt; NOTE&amp;nbsp; There may be several addresses related to an organization.</Documentation>
-			<DiagramLine>
-				<DocPoint X="567.10903" Y="1802.6366" />
-				<DocPoint X="567.10903" Y="1923.22145" />
-				<DocPoint X="1112.62559" Y="1923.22145" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="564.8622485" Y="1913.3860546" Width="200" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="IsRelatedBy" UniqueId="59988b08-ea6e-488b-b72b-2dcc2c2d9d0a" DefinedType="IfcOrganizationRelationship" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="RelatedOrganizations">
+		<DocAttribute Name="IsRelatedBy" UniqueId="59988b08-ea6e-488b-b72b-2dcc2c2d9d0a" DefinedType="IfcOrganizationRelationship" AttributeFlags="8" AggregationType="3" Inverse="RelatedOrganizations">
 			<Documentation>The inverse relationship for relationship RelatedOrganizations of IfcOrganizationRelationship.</Documentation>
-			<DiagramLine>
-				<DocPoint X="497.09457" Y="2171.5846" />
-				<DocPoint X="497.09457" Y="1802.6366" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="666.25372" Y="2115.983542" Width="283" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Relates" UniqueId="4bad5ffe-b272-41b1-93f8-a45a33946e83" DefinedType="IfcOrganizationRelationship" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="RelatingOrganization">
+		<DocAttribute Name="Relates" UniqueId="4bad5ffe-b272-41b1-93f8-a45a33946e83" DefinedType="IfcOrganizationRelationship" AttributeFlags="8" AggregationType="3" Inverse="RelatingOrganization">
 			<Documentation>The inverse relationship for relationship RelatingOrganization of IfcOrganizationRelationship.</Documentation>
-			<DiagramLine>
-				<DocPoint X="205.05879" Y="2171.5846" />
-				<DocPoint X="205.05879" Y="1802.6366" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="338.84708" Y="2116.880328" Width="234" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Engages" UniqueId="5555917c-f7e2-4872-9d55-b2e5ae11442d" DefinedType="IfcPersonAndOrganization" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="TheOrganization">
+		<DocAttribute Name="Engages" UniqueId="5555917c-f7e2-4872-9d55-b2e5ae11442d" DefinedType="IfcPersonAndOrganization" AttributeFlags="8" AggregationType="3" Inverse="TheOrganization">
 			<Documentation>Inverse relationship to IfcPersonAndOrganization relationships in which IfcOrganization is engaged.</Documentation>
-			<DiagramLine>
-				<DocPoint X="195.85702" Y="644.33522" />
-				<DocPoint X="195.85702" Y="1513.03504" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="334.01241" Y="556.956338" Width="248" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

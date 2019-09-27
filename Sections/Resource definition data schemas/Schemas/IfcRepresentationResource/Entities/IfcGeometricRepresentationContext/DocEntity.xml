@@ -1,34 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcGeometricRepresentationContext" Name="IfcGeometricRepresentationContext" UniqueId="0eca3f63-ee99-4b79-bd1a-4602d00d24d9" DiagramNumber="1" BaseDefinition="IfcRepresentationContext" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcGeometricRepresentationContext" Name="IfcGeometricRepresentationContext" UniqueId="0eca3f63-ee99-4b79-bd1a-4602d00d24d9" BaseDefinition="IfcRepresentationContext" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Geometrische Repräsentation - Kontext" Locale="de" />
-		<DocLocalization Name="Geometric Representation Context" Locale="en" />
+		<DocLocalization Locale="de" Name="Geometrische Repräsentation - Kontext" />
+		<DocLocalization Locale="en" Name="Geometric Representation Context" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="69.375862121582" Y="804.551737467448" Width="270.254974365234" Height="1240.23248291016" />
 	<Subtypes>
 		<DocSubtype UniqueId="11431988-40cb-4dc2-b0c8-dde156b8d20f" DefinedType="IfcGeometricRepresentationSubContext" />
 		<DocSubtype UniqueId="11431988-40cb-4dc2-b0c8-dde156b8d20f" DefinedType="IfcGeometricRepresentationSubContext" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="CoordinateSpaceDimension" UniqueId="9b485f73-0c6c-43ff-81b5-d7c39ee5ee67" DefinedType="IfcDimensionCount" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="CoordinateSpaceDimension" UniqueId="9b485f73-0c6c-43ff-81b5-d7c39ee5ee67" DefinedType="IfcDimensionCount">
 			<Documentation>The integer dimension count of the coordinate space modeled in a geometric representation context.</Documentation>
-			<DiagramLine>
-				<DocPoint X="339.630836486816" Y="1209.74401467448" />
-				<DocPoint X="339.630836486816" Y="1209.74401467448" />
-				<DocPoint X="668.387023925781" Y="1209.74401467448" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="339.630836486816" Y="1189.74401467448" Width="315" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Precision" UniqueId="382390c9-360a-42c7-a7a3-700fefef9737" DefinedType="IfcReal" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Precision" UniqueId="382390c9-360a-42c7-a7a3-700fefef9737" DefinedType="IfcReal" AttributeFlags="1">
 			<Documentation>Value of the model precision for geometric models. It is a double value (REAL), typically in 1E-5 to 1E-8 range, that indicates the tolerance under which two given points are still assumed to be identical. The value can be used e.g. to sets the maximum distance from an edge curve to the underlying face surface in brep models.</Documentation>
-			<DiagramLine>
-				<DocPoint X="339.630836486816" Y="864.915096217448" />
-				<DocPoint X="339.630836486816" Y="864.915096217448" />
-				<DocPoint X="668.387023925781" Y="864.915096217448" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="339.630836486816" Y="844.915096217448" Width="107" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="WorldCoordinateSystem" UniqueId="e0225b8f-ba56-4539-bc5f-7bfffbe8edc1" DefinedType="IfcAxis2Placement" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="element">
+		<DocAttribute Name="WorldCoordinateSystem" UniqueId="e0225b8f-ba56-4539-bc5f-7bfffbe8edc1" DefinedType="IfcAxis2Placement" XsdFormat="element">
 			<Documentation>Establishment of the engineering coordinate system (often referred to as the world coordinate system in CAD) for all representation contexts used by the project. 
 
 &gt; NOTE&amp;nbsp; It can be used to provide better numeric stability if the placement of the building(s) is far away from the origin. In most cases however it would be set to origin: (0.,0.,0.) and directions x(1.,0.,0.), y(0.,1.,0.), z(0.,0.,1.).
@@ -36,41 +23,17 @@
 
 
 If an geographic placement is provided using _IfcMapConversion_ then the _WorldCoordinateSystem_ atttibute is used to define the offset between the zero point of the local engineering coordinate system and the geographic reference point to which the _IfcMapConversion_ offset relates. In preferred practise both points (also called &quot;project base point&quot; and &quot;survey point&quot;) should be coincidental. However it is possible to offset the geographic reference point from the local zero point.</Documentation>
-			<DiagramLine>
-				<DocPoint X="339.630836486816" Y="1094.80101472874" />
-				<DocPoint X="339.630836486816" Y="1094.80101472874" />
-				<DocPoint X="668.387023925781" Y="1094.80101472874" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="339.630836486816" Y="1074.80101472874" Width="274" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="TrueNorth" UniqueId="b64811d8-8918-4d38-b58f-7a8bc6f03c0f" DefinedType="IfcDirection" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="TrueNorth" UniqueId="b64811d8-8918-4d38-b58f-7a8bc6f03c0f" DefinedType="IfcDirection" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Direction of the true north, or geographic northing direction, relative to the underlying project coordinate system. It is given by a 2 dimensional direction within the xy-plane of the project coordinate system. If not present, it defaults to 0. 1., meaning that the positive Y axis of the project coordinate system equals the geographic northing direction.
 
 &gt; NOTE&amp;nbsp; If a geographic placement is provided using _IfcMapConversion_ then the true north is for information only. In case of inconsistency, the value provided with _IfcMapConversion_ shall take precedence.</Documentation>
-			<DiagramLine>
-				<DocPoint X="339.630836486816" Y="979.858055473091" />
-				<DocPoint X="339.630836486816" Y="979.858055473091" />
-				<DocPoint X="668.387023925781" Y="979.858055473091" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="339.630836486816" Y="959.858055473091" Width="119" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="HasSubContexts" UniqueId="2af7d963-9ff0-43fe-a2b2-e2766bb83443" DefinedType="IfcGeometricRepresentationSubContext" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="ParentContext" XsdFormat="element">
+		<DocAttribute Name="HasSubContexts" UniqueId="2af7d963-9ff0-43fe-a2b2-e2766bb83443" DefinedType="IfcGeometricRepresentationSubContext" AttributeFlags="8" AggregationType="3" Inverse="ParentContext" XsdFormat="element">
 			<Documentation>The set of _IfcGeometricRepresentationSubContexts_ that refer to this _IfcGeometricRepresentationContext_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="339.630836486816" Y="1446.37129720052" />
-				<DocPoint X="339.630836486816" Y="1446.37129720052" />
-				<DocPoint X="1317.4032796224" Y="1446.37129720052" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="339.630836486816" Y="1426.37129720052" Width="336" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="HasCoordinateOperation" UniqueId="d5175543-19ac-432c-ae3b-5b13d4d04785" DefinedType="IfcCoordinateOperation" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="SourceCRS" XsdFormat="attribute">
+		<DocAttribute Name="HasCoordinateOperation" UniqueId="d5175543-19ac-432c-ae3b-5b13d4d04785" DefinedType="IfcCoordinateOperation" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="SourceCRS" XsdFormat="attribute">
 			<Documentation>Indicates conversion between coordinate systems. In particular it refers to an _IfcCoordinateOperation_ between a Geographic map coordinate reference system, and the engineering coordinate system of this construction project. If there is more then one _IfcGeometricRepresentationContext_ provided to the _IfcProject_ then all contexts shall have an identical instance of _IfcCoordinateOperation_ as _HasCoordinateOperation_ refering to the same instance of _IfcCoordinateReferenceSystem_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="339.630836486816" Y="1667.88513183594" />
-				<DocPoint X="339.630836486816" Y="1667.88513183594" />
-				<DocPoint X="864.964172363281" Y="1667.88513183594" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="339.630836486816" Y="1647.88513183594" Width="400" Height="100" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
@@ -79,23 +42,5 @@ If an geographic placement is provided using _IfcMapConversion_ then the _WorldC
 			<Expression>NOT(EXISTS(TrueNorth)) OR (HIINDEX(TrueNorth.DirectionRatios) = 2)</Expression>
 		</DocWhereRule>
 	</WhereRules>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="339.630836486816" Y="804.551737467448" />
-				<DocPoint X="339.630836486816" Y="650.666666666667" />
-				<DocPoint X="1437.33333333333" Y="650.666666666667" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="1437.33333333333" Y="650.666666666667" />
-						<DocPoint X="1434.68555196127" Y="650.666666666667" />
-						<DocPoint X="1434.68555196127" Y="822.438924153646" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

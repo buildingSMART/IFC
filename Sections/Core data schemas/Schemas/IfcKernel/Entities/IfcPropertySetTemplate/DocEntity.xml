@@ -1,23 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPropertySetTemplate" UniqueId="a7b77ff0-78ea-4751-af7d-edca24e4a5db" DiagramNumber="3" BaseDefinition="IfcPropertyTemplateDefinition" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPropertySetTemplate" UniqueId="a7b77ff0-78ea-4751-af7d-edca24e4a5db" BaseDefinition="IfcPropertyTemplateDefinition" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Merkmalsliste - Vorlage" Locale="de" />
-		<DocLocalization Name="Property Set Template" Locale="en" />
-		<DocLocalization Name="Modèle d&apos;ensemble de propriété" Locale="fr" />
+		<DocLocalization Locale="de" Name="Merkmalsliste - Vorlage" />
+		<DocLocalization Locale="en" Name="Property Set Template" />
+		<DocLocalization Locale="fr" Name="Modèle d&apos;ensemble de propriété" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="3449.6667" Y="467.73333" Width="433.33333" Height="360" />
 	<Attributes>
-		<DocAttribute Name="TemplateType" UniqueId="753bf92e-30ff-44b4-be5a-452aa32a8948" DefinedType="IfcPropertySetTemplateTypeEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="TemplateType" UniqueId="753bf92e-30ff-44b4-be5a-452aa32a8948" DefinedType="IfcPropertySetTemplateTypeEnum" AttributeFlags="1">
 			<Documentation>Property set type defining whether the property set is applicable to a type (subtypes of _IfcTypeObject_), to an occurrence (subtypes of _IfcObject_), or as a special case to a performance history.  
   
 The attribute _ApplicableEntity_ may further refine the applicability to a single or multiple entity type(s).</Documentation>
-			<DiagramLine>
-				<DocPoint X="3883.0001" Y="685.06666" />
-				<DocPoint X="4291.50667" Y="685.06666" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3856.333433" Y="677.06666" Width="165" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ApplicableEntity" UniqueId="05ff2edb-46a7-4fe8-86a8-b263a876a203" DefinedType="IfcIdentifier" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ApplicableEntity" UniqueId="05ff2edb-46a7-4fe8-86a8-b263a876a203" DefinedType="IfcIdentifier" AttributeFlags="1">
 			<Documentation>The attribute optionally defines the data type of the applicable type or occurrence object, to which the assigned property set template can relate. If not present, no instruction is given to which type or occurrence object the property set template is applicable. The following conventions are used:
 * The IFC entity name of the applicable entity using the IFC naming convention, CamelCase with IFC prefix
 * It can be optionally followed by the predefined type after the separator &quot;/&quot; (forward slash), using upper case
@@ -25,27 +19,12 @@ The attribute _ApplicableEntity_ may further refine the applicability to a singl
 * If one property set template is applicable to many type and/or occurrence objects, then those object names should be separate by comma &quot;,&quot; forming a comma separated string. 
 
 &gt; EXAMPLE Refering to a boiler type as applicable entity would be expressed as &apos;IfcBoilerType&apos;, refering to a steam boiler type as applicable entity would be expressed as &apos;IfcBoilerType/STEAM&apos;, refering to a wall and wall standard case and a wall type would be expressed as &apos;IfcWall, IfcWallStandardCase, IfcWallType&apos;. An applicable _IfcPerformanceHistory_ assigned to an occurrence or type object would be indicated by IfcBoilerType[PerformanceHistory], or respectively IfcBoilerType/STEAM[PerformanceHistory].</Documentation>
-			<DiagramLine>
-				<DocPoint X="3883.0001" Y="805.3956" />
-				<DocPoint X="4291.59997" Y="805.3956" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3862.000035" Y="792.312267" Width="181" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="HasPropertyTemplates" UniqueId="3171afcc-c2c1-4425-9f1e-a9220a12bca4" DefinedType="IfcPropertyTemplate" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="HasPropertyTemplates" UniqueId="3171afcc-c2c1-4425-9f1e-a9220a12bca4" DefinedType="IfcPropertyTemplate" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Set of _IfcPropertyTemplate_&apos;s that are defined within the scope of the _IfcPropertySetTemplate_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3538.3334" Y="827.73333" />
-				<DocPoint X="3538.3334" Y="1043.27997" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3727.66673" Y="833.7333297" Width="338" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Defines" UniqueId="db32070f-d0f6-4577-af3d-c45820e5b332" DefinedType="IfcRelDefinesByTemplate" AttributeFlags="8" AggregationType="3" AggregationFlag="0" Inverse="RelatingTemplate">
+		<DocAttribute Name="Defines" UniqueId="db32070f-d0f6-4577-af3d-c45820e5b332" DefinedType="IfcRelDefinesByTemplate" AttributeFlags="8" AggregationType="3" Inverse="RelatingTemplate">
 			<Documentation>Relation to the property sets, via the objectified relationship _IfcRelDefinesByTemplate_, that, if given, utilize the definition template.</Documentation>
-			<DiagramLine>
-				<DocPoint X="4291.5334" Y="517.06666" />
-				<DocPoint X="3883.00006" Y="517.06666" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="4291.13340003" Y="557.816661" Width="234" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

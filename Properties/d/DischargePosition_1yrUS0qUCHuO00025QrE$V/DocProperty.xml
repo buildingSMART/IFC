@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocProperty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="DischargePosition_1yrUS0qUCHuO00025QrEV" Name="DischargePosition" UniqueId="1yrUS0qUCHuO00025QrE$V" PropertyType="p_enumeratedvalue" PrimaryDataType="IfcLabel">
 	<Localization>
-		<DocLocalization Name="Discharge Position" Locale="en" />
-		<DocLocalization Name="吐出位置" Locale="ja-JP">
+		<DocLocalization Locale="en" Name="Discharge Position" />
+		<DocLocalization Locale="ja-JP" Name="吐出位置">
 			<Documentation>遠心送風機の吐出位置
 TOPHORIZONTAL: 上部水平 
 TOPANGULARDOWN: 上部角度付き下向き 
@@ -15,8 +15,6 @@ TOPANGULARUP: 上部角度付き上向き.
 OTHER: その他</Documentation>
 		</DocLocalization>
 	</Localization>
-	<Enumeration>
-		<DocPropertyEnumeration xsi:nil="true" href="PEnum_CentrifugalFanDischargePosition" />
-	</Enumeration>
+	<Enumeration xsi:type="DocPropertyEnumeration" xsi:nil="true" href="PEnum_CentrifugalFanDischargePosition" />
 </DocProperty>
 

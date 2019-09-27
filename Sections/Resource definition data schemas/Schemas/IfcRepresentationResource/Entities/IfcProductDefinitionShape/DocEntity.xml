@@ -1,32 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcProductDefinitionShape" Name="IfcProductDefinitionShape" UniqueId="ba246ca4-84c8-436f-8964-9d288e492ad4" DiagramNumber="3" BaseDefinition="IfcProductRepresentation" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcProductDefinitionShape" Name="IfcProductDefinitionShape" UniqueId="ba246ca4-84c8-436f-8964-9d288e492ad4" BaseDefinition="IfcProductRepresentation" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Produkt - Repräsentation der Form" Locale="de" />
-		<DocLocalization Name="Product Definition Shape" Locale="en" />
-		<DocLocalization Name="Représentation de la forme du produit" Locale="fr" />
+		<DocLocalization Locale="de" Name="Produkt - Repräsentation der Form" />
+		<DocLocalization Locale="en" Name="Product Definition Shape" />
+		<DocLocalization Locale="fr" Name="Représentation de la forme du produit" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="4130.8014" Y="1271.7361" Width="501.66667" Height="100.78123" />
 	<Attributes>
-		<DocAttribute Name="ShapeOfProduct" UniqueId="1ff74e69-c8f5-4180-bc2e-a643526f8098" DefinedType="IfcProduct" AttributeFlags="32" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0" Inverse="Representation">
+		<DocAttribute Name="ShapeOfProduct" UniqueId="1ff74e69-c8f5-4180-bc2e-a643526f8098" DefinedType="IfcProduct" AttributeFlags="32" AggregationType="3" AggregationLower="1" AggregationUpper="0" Inverse="Representation">
 			<Documentation>The _IfcProductDefinitionShape_ shall be used to provide a representation for a single instance of _IfcProduct_.
 { .change-ifc2x3}
 &gt; IFC2x3 CHANGE New inverse attribute.
 
 { .change-ifc2x4}
 &gt; IFC4 CHANGE Inverse relationship cardinality relaxed to be 1:N.</Documentation>
-			<DiagramLine>
-				<DocPoint X="4381.6347" Y="1372.5173" />
-				<DocPoint X="4381.6347" Y="1622.67675" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="4564.21305" Y="1414.157977" Width="333" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="HasShapeAspects" UniqueId="4332ba90-64b3-4707-a15d-96b41a63195a" DefinedType="IfcShapeAspect" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="PartOfProductDefinitionShape" XsdFormat="element">
+		<DocAttribute Name="HasShapeAspects" UniqueId="4332ba90-64b3-4707-a15d-96b41a63195a" DefinedType="IfcShapeAspect" AggregationType="3" Inverse="PartOfProductDefinitionShape" XsdFormat="element">
 			<Documentation>Reference to the shape aspect that represents part of the shape or its feature distinctively.</Documentation>
-			<DiagramLine>
-				<DocPoint X="4130.8014" Y="1319.5642" />
-				<DocPoint X="3535.30071" Y="1319.5642" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="4123.1138903" Y="1296.501671" Width="527" Height="70" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

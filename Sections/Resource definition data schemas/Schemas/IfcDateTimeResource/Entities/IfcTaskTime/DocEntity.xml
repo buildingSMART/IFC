@@ -1,188 +1,76 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTaskTime" UniqueId="4eee487b-9f5a-4135-9327-1e972cc6124f" DiagramNumber="2" BaseDefinition="IfcSchedulingTime" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTaskTime" UniqueId="4eee487b-9f5a-4135-9327-1e972cc6124f" BaseDefinition="IfcSchedulingTime" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Zeitliche Information einer Tätigkeit" Locale="de" />
-		<DocLocalization Name="Task Time" Locale="en" />
-		<DocLocalization Name="Propriétés temporelles de tâche" Locale="fr" />
+		<DocLocalization Locale="de" Name="Zeitliche Information einer Tätigkeit" />
+		<DocLocalization Locale="en" Name="Task Time" />
+		<DocLocalization Locale="fr" Name="Propriétés temporelles de tâche" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="2973.3681640625" Y="412.776580810547" Width="205.999847412109" Height="1915.25984700521" />
 	<Subtypes>
 		<DocSubtype UniqueId="6b02075b-8c18-4dde-b82e-06bde6dbdfcc" DefinedType="IfcTaskTimeRecurring" />
 		<DocSubtype UniqueId="6b02075b-8c18-4dde-b82e-06bde6dbdfcc" DefinedType="IfcTaskTimeRecurring" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="DurationType" UniqueId="397b58b9-0e87-4f6e-aa6e-b91fae6c6a4e" DefinedType="IfcTaskDurationEnum" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="DurationType" UniqueId="397b58b9-0e87-4f6e-aa6e-b91fae6c6a4e" DefinedType="IfcTaskDurationEnum" AttributeFlags="1">
 			<Documentation>Enables to specify the type of duration values for _ScheduleDuration_, _ActualDuration_ and _RemainingTime_. The duration type is either work time or elapsed time.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2973.3681640625" Y="412.776580810547" />
-				<DocPoint X="2973.3681640625" Y="290.561965250651" />
-				<DocPoint X="2766.24650065104" Y="290.561965250651" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2973.3681640625" Y="270.561965250651" Width="156" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ScheduleDuration" UniqueId="17765db4-2af2-4877-9a1c-1a1aa17d61c0" DefinedType="IfcDuration" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ScheduleDuration" UniqueId="17765db4-2af2-4877-9a1c-1a1aa17d61c0" DefinedType="IfcDuration" AttributeFlags="1">
 			<Documentation>The amount of time which is scheduled for completion of a task. The value might be measured or somehow calculated, which is defined by
 _ScheduleDataOrigin_. The value is either given as elapsed time or work time, which is defined by _DurationType_.
 
 &gt; NOTE&amp;nbsp; Scheduled Duration may be calculated as the time from scheduled start date to scheduled finish date.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2973.3681640625" Y="459.450567457411" />
-				<DocPoint X="2973.3681640625" Y="459.450567457411" />
-				<DocPoint X="2630.68652776042" Y="459.450567457411" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2973.3681640625" Y="439.450567457411" Width="204" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ScheduleStart" UniqueId="d5661729-f85b-4be7-8632-15aa2e10ab22" DefinedType="IfcDateTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ScheduleStart" UniqueId="d5661729-f85b-4be7-8632-15aa2e10ab22" DefinedType="IfcDateTime" AttributeFlags="1">
 			<Documentation>The date on which a task is scheduled to be started. The value might be measured or somehow calculated, which is defined by
 _ScheduleDataOrigin_.
 &gt; NOTE&amp;nbsp; The scheduled start date must be greater than or equal to the earliest start date.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2973.3681640625" Y="754.551310221354" />
-				<DocPoint X="2973.3681640625" Y="754.551310221354" />
-				<DocPoint X="2744.44921875" Y="754.551310221354" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2973.3681640625" Y="734.551310221354" Width="162" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ScheduleFinish" UniqueId="285c04fa-d7c3-4263-a1cf-02c2ee0040a0" DefinedType="IfcDateTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ScheduleFinish" UniqueId="285c04fa-d7c3-4263-a1cf-02c2ee0040a0" DefinedType="IfcDateTime" AttributeFlags="1">
 			<Documentation>The date on which a task is scheduled to be finished. The value might be measured or somehow calculated, which is defined by _ScheduleDataOrigin_.
 &gt; NOTE&amp;nbsp; The scheduled finish date must be greater than or equal to the earliest finish date.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2973.3681640625" Y="815.884643554688" />
-				<DocPoint X="2973.3681640625" Y="815.884643554688" />
-				<DocPoint X="2744.44913736979" Y="815.884643554688" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2973.3681640625" Y="795.884643554688" Width="175" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="EarlyStart" UniqueId="70dfb411-90a1-4a66-a1d7-9320fd245548" DefinedType="IfcDateTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="EarlyStart" UniqueId="70dfb411-90a1-4a66-a1d7-9320fd245548" DefinedType="IfcDateTime" AttributeFlags="1">
 			<Documentation>The earliest date on which a task can be started. It is a calculated value.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2973.3681640625" Y="877.217976888021" />
-				<DocPoint X="2973.3681640625" Y="877.217976888021" />
-				<DocPoint X="2744.44913736979" Y="877.217976888021" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2973.3681640625" Y="857.217976888021" Width="114" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="EarlyFinish" UniqueId="29d02d47-1a92-4c99-a3b6-45fc125dcad7" DefinedType="IfcDateTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="EarlyFinish" UniqueId="29d02d47-1a92-4c99-a3b6-45fc125dcad7" DefinedType="IfcDateTime" AttributeFlags="1">
 			<Documentation>The earliest date on which a task can be finished. It is a calculated value.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2973.3681640625" Y="938.551310221354" />
-				<DocPoint X="2973.3681640625" Y="938.551310221354" />
-				<DocPoint X="2744.44913736979" Y="938.551310221354" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2973.3681640625" Y="918.551310221354" Width="127" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LateStart" UniqueId="98829ecd-dbb3-496b-9330-910738614175" DefinedType="IfcDateTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LateStart" UniqueId="98829ecd-dbb3-496b-9330-910738614175" DefinedType="IfcDateTime" AttributeFlags="1">
 			<Documentation>The latest date on which a task can be started. It is a calculated value.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2973.3681640625" Y="999.884643554688" />
-				<DocPoint X="2973.3681640625" Y="999.884643554688" />
-				<DocPoint X="2744.44913736979" Y="999.884643554688" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2973.3681640625" Y="979.884643554688" Width="108" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="LateFinish" UniqueId="f0a8d060-3dc8-4626-89de-282d46fa2a9b" DefinedType="IfcDateTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="LateFinish" UniqueId="f0a8d060-3dc8-4626-89de-282d46fa2a9b" DefinedType="IfcDateTime" AttributeFlags="1">
 			<Documentation>The latest date on which a task can be finished. It is a calculated value.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2973.3681640625" Y="1061.21797688802" />
-				<DocPoint X="2973.3681640625" Y="1061.21797688802" />
-				<DocPoint X="2744.44913736979" Y="1061.21797688802" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2973.3681640625" Y="1041.21797688802" Width="121" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="FreeFloat" UniqueId="eecac739-ba4e-4309-a645-38b4740fa4de" DefinedType="IfcDuration" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="FreeFloat" UniqueId="eecac739-ba4e-4309-a645-38b4740fa4de" DefinedType="IfcDuration" AttributeFlags="1">
 			<Documentation>The amount of time during which the start or finish of a task may be varied without any effect on the overall programme of work. It is a calculated elapsed time value.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2973.3681640625" Y="495.717988755968" />
-				<DocPoint X="2973.3681640625" Y="495.717988755968" />
-				<DocPoint X="2630.68652776042" Y="495.717988755968" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2973.3681640625" Y="475.717988755968" Width="113" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="TotalFloat" UniqueId="9bf4c43a-4c27-4d6b-b101-6ba64ce6f120" DefinedType="IfcDuration" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="TotalFloat" UniqueId="9bf4c43a-4c27-4d6b-b101-6ba64ce6f120" DefinedType="IfcDuration" AttributeFlags="1">
 			<Documentation>The difference between the duration available to carry out a task and the scheduled duration of the task. It is a calculated elapsed time value.
 &gt; NOTE&amp;nbsp; Total Float time may be calculated as being the difference between the scheduled duration of a task and the available duration from earliest start to latest finish. Float time may be either positive, zero or negative. Where it is zero or negative, the task becomes critical.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2973.3681640625" Y="531.985410054525" />
-				<DocPoint X="2973.3681640625" Y="531.985410054525" />
-				<DocPoint X="2630.68652776042" Y="531.985410054525" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2973.3681640625" Y="511.985410054525" Width="117" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="IsCritical" UniqueId="8aa0889f-6698-437a-b5da-35b0c4813464" DefinedType="IfcBoolean" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="IsCritical" UniqueId="8aa0889f-6698-437a-b5da-35b0c4813464" DefinedType="IfcBoolean" AttributeFlags="1">
 			<Documentation>A flag which identifies whether a scheduled task is a critical item within the programme.
 &gt; NOTE&amp;nbsp; A task becomes critical when the float time becomes zero or negative.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2973.3681640625" Y="683.884602864583" />
-				<DocPoint X="2973.3681640625" Y="683.884602864583" />
-				<DocPoint X="2592.49260457357" Y="683.884602864583" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2973.3681640625" Y="663.884602864583" Width="100" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="StatusTime" UniqueId="88662ea5-953b-499b-b149-73854134e848" DefinedType="IfcDateTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="StatusTime" UniqueId="88662ea5-953b-499b-b149-73854134e848" DefinedType="IfcDateTime" AttributeFlags="1">
 			<Documentation>The date or time at which the status of the tasks within the schedule is analyzed.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2973.3681640625" Y="1125.21793619792" />
-				<DocPoint X="2973.3681640625" Y="1125.21793619792" />
-				<DocPoint X="2741.78263346354" Y="1125.21793619792" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2973.3681640625" Y="1105.21793619792" Width="131" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ActualDuration" UniqueId="1646c30c-9b12-48d2-9c66-ef85c4f2a043" DefinedType="IfcDuration" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ActualDuration" UniqueId="1646c30c-9b12-48d2-9c66-ef85c4f2a043" DefinedType="IfcDuration" AttributeFlags="1">
 			<Documentation>The actual duration of the task. It is a measured value. The value is either given as elapsed time or work time, which is defined by _DurationType_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2973.3681640625" Y="568.252831353082" />
-				<DocPoint X="2973.3681640625" Y="568.252831353082" />
-				<DocPoint X="2630.68652776042" Y="568.252831353082" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2973.3681640625" Y="548.252831353082" Width="169" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ActualStart" UniqueId="5e97a697-7082-4bdb-8990-ea90fdf6f15a" DefinedType="IfcDateTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ActualStart" UniqueId="5e97a697-7082-4bdb-8990-ea90fdf6f15a" DefinedType="IfcDateTime" AttributeFlags="1">
 			<Documentation>The date on which a task is actually started. It is a measured value.
 &gt; NOTE&amp;nbsp; The scheduled start date must be greater than or equal to the earliest start date. No constraint is applied to the actual start date with respect to the scheduled start date since a task may be started earlier than had originally been scheduled if circumstances allow.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2973.3681640625" Y="1250.55135091146" />
-				<DocPoint X="2973.3681640625" Y="1250.55135091146" />
-				<DocPoint X="2736.44913736979" Y="1250.55135091146" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2973.3681640625" Y="1230.55135091146" Width="127" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="ActualFinish" UniqueId="79cfac6b-f665-401b-be2c-918d52b11c49" DefinedType="IfcDateTime" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="ActualFinish" UniqueId="79cfac6b-f665-401b-be2c-918d52b11c49" DefinedType="IfcDateTime" AttributeFlags="1">
 			<Documentation>The date on which a task is actually finished.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2973.3681640625" Y="1309.21789550781" />
-				<DocPoint X="2973.3681640625" Y="1309.21789550781" />
-				<DocPoint X="2733.78255208333" Y="1309.21789550781" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2973.3681640625" Y="1289.21789550781" Width="140" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RemainingTime" UniqueId="971ed03f-d8a5-4734-bac5-e8314d432e59" DefinedType="IfcDuration" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RemainingTime" UniqueId="971ed03f-d8a5-4734-bac5-e8314d432e59" DefinedType="IfcDuration" AttributeFlags="1">
 			<Documentation>The amount of time remaining to complete a task. It is a predicted value. The value is either given as elapsed time or work time, which is defined by _DurationType_.
 &gt; NOTE&amp;nbsp; The time remaining in which to complete a task may be determined both for tasks which have not yet started and those which have. Remaining time for a task not yet started has the same value as the scheduled duration. For a task already started, remaining time is calculated as the difference between the scheduled finish and the point of analysis.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2973.3681640625" Y="604.520252651638" />
-				<DocPoint X="2973.3681640625" Y="604.520252651638" />
-				<DocPoint X="2630.68652776042" Y="604.520252651638" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2973.3681640625" Y="584.520252651638" Width="179" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Completion" UniqueId="84fca29b-286d-4a6b-a358-c543c94ff5f0" DefinedType="IfcPositiveRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Completion" UniqueId="84fca29b-286d-4a6b-a358-c543c94ff5f0" DefinedType="IfcPositiveRatioMeasure" AttributeFlags="1">
 			<Documentation>The extent of completion expressed as a ratio or percentage. It is a measured value.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2973.3681640625" Y="1211.36897786458" />
-				<DocPoint X="2973.3681640625" Y="1211.36897786458" />
-				<DocPoint X="2453.77972412109" Y="1211.36897786458" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2973.3681640625" Y="1191.36897786458" Width="132" Height="35" />
 		</DocAttribute>
 	</Attributes>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="2973.3681640625" Y="1685.05564371745" />
-				<DocPoint X="2973.3681640625" Y="1685.05564371745" />
-				<DocPoint X="2481.91135660807" Y="1685.05564371745" />
-			</DiagramLine>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DocProperty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="ConnectionType_0RKQL3FvDFfwK378TxjBGf" Name="ConnectionType" UniqueId="1b51a543-3f93-4fa7-a503-1c877bb4b429" PropertyType="p_enumeratedvalue" PrimaryDataType="IfcLabel">
 	<Localization>
-		<DocLocalization Name="Connection Type" Locale="en" />
-		<DocLocalization Name="接続タイプ" Locale="ja-JP">
+		<DocLocalization Locale="en" Name="Connection Type" />
+		<DocLocalization Locale="ja-JP" Name="接続タイプ">
 			<Documentation>物理ポート接続：
 
 - ACPLUG: AC プラグ
@@ -10,8 +10,6 @@
 - CRIMP: 裸線</Documentation>
 		</DocLocalization>
 	</Localization>
-	<Enumeration>
-		<DocPropertyEnumeration xsi:nil="true" href="PEnum_DistributionPortElectricalType" />
-	</Enumeration>
+	<Enumeration xsi:type="DocPropertyEnumeration" xsi:nil="true" href="PEnum_DistributionPortElectricalType" />
 </DocProperty>
 

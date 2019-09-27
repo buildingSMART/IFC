@@ -1,87 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcGeometricRepresentationSubContext" Name="IfcGeometricRepresentationSubContext" UniqueId="2e4bdfcf-4532-4cf3-b45f-4372edb5bfb3" DiagramNumber="1" BaseDefinition="IfcGeometricRepresentationContext" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcGeometricRepresentationSubContext" Name="IfcGeometricRepresentationSubContext" UniqueId="2e4bdfcf-4532-4cf3-b45f-4372edb5bfb3" BaseDefinition="IfcGeometricRepresentationContext" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Geometrische Repräsentation - Unterkontext" Locale="de" />
-		<DocLocalization Name="Geometric Representation Sub Context" Locale="en" />
+		<DocLocalization Locale="de" Name="Geometrische Repräsentation - Unterkontext" />
+		<DocLocalization Locale="en" Name="Geometric Representation Sub Context" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1317.4032796224" Y="822.438924153646" Width="234.564544677734" Height="1247.86474609375" />
 	<Attributes>
-		<DocAttribute Name="ParentContext" UniqueId="7cb376a0-9c58-4443-96fa-afc3a59e7ba1" DefinedType="IfcGeometricRepresentationContext" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="hidden">
+		<DocAttribute Name="ParentContext" UniqueId="7cb376a0-9c58-4443-96fa-afc3a59e7ba1" DefinedType="IfcGeometricRepresentationContext" XsdFormat="hidden">
 			<Documentation>Parent context from which the sub context derives its world coordinate system, precision, space coordinate dimension and true north.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1317.4032796224" Y="1424.66797892253" />
-				<DocPoint X="1317.4032796224" Y="1424.66797892253" />
-				<DocPoint X="339.630836486816" Y="1424.66797892253" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1317.4032796224" Y="1404.66797892253" Width="166" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="TargetScale" UniqueId="073455e4-1a2b-4354-9ff3-c1f32182a254" DefinedType="IfcPositiveRatioMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="TargetScale" UniqueId="073455e4-1a2b-4354-9ff3-c1f32182a254" DefinedType="IfcPositiveRatioMeasure" AttributeFlags="1">
 			<Documentation>The target &lt;font color=&quot;#ff0000&quot;&gt;plot&lt;/font&gt; scale of the representation 
 to which this representation context applies.
 &gt; NOTE&amp;nbsp; Scale indicates the target plot scale for the representation sub context, all annotation styles are given in plot dimensions according to this target plot scale.  
 &gt; If multiple instances of _IfcGeometricRepresentationSubContext_ are given having the same _TargetView_ value, the target plot scale applies up to the next smaller scale, or up to unlimited small scale.
 
 &gt; NOTE&amp;nbsp; Scale 1:100 (given as 0.01 within _TargetScale_) is bigger then 1:200 (given as 0.005 within _TargetScale_).</Documentation>
-			<DiagramLine>
-				<DocPoint X="1317.4032796224" Y="1994.75899759928" />
-				<DocPoint X="1317.4032796224" Y="1994.75899759928" />
-				<DocPoint X="1080.77294921875" Y="1994.75899759928" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1317.4032796224" Y="1974.75899759928" Width="140" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="TargetView" UniqueId="13b3e0ec-6a77-4adb-a4cb-5fc77d4a7644" DefinedType="IfcGeometricProjectionEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="TargetView" UniqueId="13b3e0ec-6a77-4adb-a4cb-5fc77d4a7644" DefinedType="IfcGeometricProjectionEnum">
 			<Documentation>Target view of the representation to which this representation context applies.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1317.4032796224" Y="1804.21407047135" />
-				<DocPoint X="1317.4032796224" Y="1804.21407047135" />
-				<DocPoint X="1010.08437426432" Y="1804.21407047135" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1317.4032796224" Y="1784.21407047135" Width="132" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="UserDefinedTargetView" UniqueId="f9374710-c549-4fc2-be03-03bb62121bb5" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="UserDefinedTargetView" UniqueId="f9374710-c549-4fc2-be03-03bb62121bb5" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>User defined target view, this attribute value shall be given, if the TargetView attribute is set to USERDEFINED.</Documentation>
-			<DiagramLine>
-				<DocPoint X="1317.4032796224" Y="1894.61889648438" />
-				<DocPoint X="1317.4032796224" Y="1894.61889648438" />
-				<DocPoint X="922.106791178385" Y="1894.61889648438" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1317.4032796224" Y="1874.61889648438" Width="270" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="WorldCoordinateSystem" UniqueId="c8f73a88-7c4d-4d42-bbae-9363c1d37865" DefinedType="IfcAxis2Placement" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="WorldCoordinateSystem" UniqueId="c8f73a88-7c4d-4d42-bbae-9363c1d37865" DefinedType="IfcAxis2Placement">
 			<Derived>ParentContext.WorldCoordinateSystem</Derived>
-			<DiagramLine>
-				<DocPoint X="1317.4032796224" Y="1094.80101472874" />
-				<DocPoint X="1317.4032796224" Y="1094.80101472874" />
-				<DocPoint X="1048.50783358073" Y="1094.80101472874" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1317.4032796224" Y="1074.80101472874" Width="405" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="CoordinateSpaceDimension" UniqueId="cd762a80-b010-4136-a418-95b2fd925aa4" DefinedType="IfcDimensionCount" AttributeFlags="16" AggregationType="0" AggregationFlag="0" Inverse="IfcGeometricRepresentationContext">
+		<DocAttribute Name="CoordinateSpaceDimension" UniqueId="cd762a80-b010-4136-a418-95b2fd925aa4" DefinedType="IfcDimensionCount" AttributeFlags="16" Inverse="IfcGeometricRepresentationContext">
 			<Derived>ParentContext.CoordinateSpaceDimension</Derived>
-			<DiagramLine>
-				<DocPoint X="1317.4032796224" Y="1209.74401467448" />
-				<DocPoint X="1317.4032796224" Y="1209.74401467448" />
-				<DocPoint X="1048.50783358073" Y="1209.74401467448" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1317.4032796224" Y="1189.74401467448" Width="446" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="TrueNorth" UniqueId="0535f9bb-ddbe-4d14-8f6e-f741ee3701bf" DefinedType="IfcDirection" AttributeFlags="16" AggregationType="0" AggregationFlag="0" Inverse="IfcGeometricRepresentationContext">
+		<DocAttribute Name="TrueNorth" UniqueId="0535f9bb-ddbe-4d14-8f6e-f741ee3701bf" DefinedType="IfcDirection" AttributeFlags="16" Inverse="IfcGeometricRepresentationContext">
 			<Derived>NVL(ParentContext.TrueNorth, IfcConvertDirectionInto2D(SELF\IfcGeometricRepresentationContext.WorldCoordinateSystem.P[2]))</Derived>
-			<DiagramLine>
-				<DocPoint X="1317.4032796224" Y="979.858055473091" />
-				<DocPoint X="1317.4032796224" Y="979.858055473091" />
-				<DocPoint X="1048.50783358073" Y="979.858055473091" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1317.4032796224" Y="959.858055473091" Width="250" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Precision" UniqueId="8addeb83-c243-4dc6-a74e-7375d21c8eca" DefinedType="IfcReal" AttributeFlags="16" AggregationType="0" AggregationFlag="0" Inverse="IfcGeometricRepresentationContext">
+		<DocAttribute Name="Precision" UniqueId="8addeb83-c243-4dc6-a74e-7375d21c8eca" DefinedType="IfcReal" AttributeFlags="16" Inverse="IfcGeometricRepresentationContext">
 			<Derived>NVL(ParentContext.Precision,1.E-5)</Derived>
-			<DiagramLine>
-				<DocPoint X="1317.4032796224" Y="864.915096217448" />
-				<DocPoint X="1317.4032796224" Y="864.915096217448" />
-				<DocPoint X="1048.50783358073" Y="864.915096217448" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1317.4032796224" Y="844.915096217448" Width="238" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

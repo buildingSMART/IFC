@@ -1,43 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTendonType" UniqueId="66a6e642-3b24-4796-a6a3-8045c9ee3b54" DiagramNumber="3" BaseDefinition="IfcReinforcingElementType" EntityFlags="229">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTendonType" UniqueId="66a6e642-3b24-4796-a6a3-8045c9ee3b54" BaseDefinition="IfcReinforcingElementType" EntityFlags="229">
 	<Localization>
-		<DocLocalization Name="Spannglied - Typ" Locale="de" />
-		<DocLocalization Name="Tendon Type" Locale="en" />
-		<DocLocalization Name="Type de cable" Locale="fr" />
+		<DocLocalization Locale="de" Name="Spannglied - Typ" />
+		<DocLocalization Locale="en" Name="Tendon Type" />
+		<DocLocalization Locale="fr" Name="Type de cable" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="3541.3005" Y="1858.9208" Width="251.92929" Height="348.51337" />
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="c3673c95-2686-4e5e-9e7a-0046b947ff94" DefinedType="IfcTendonTypeEnum" AttributeFlags="0" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="PredefinedType" UniqueId="c3673c95-2686-4e5e-9e7a-0046b947ff94" DefinedType="IfcTendonTypeEnum">
 			<Documentation>Subtype of tendon.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3793.2298" Y="1891.3684" />
-				<DocPoint X="4285.64338" Y="1891.3684" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3798.8430383" Y="1881.6728066" Width="182" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="NominalDiameter" UniqueId="e68ea63d-b611-4993-ac7c-486784151c1e" Status="Deprecated" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="NominalDiameter" UniqueId="e68ea63d-b611-4993-ac7c-486784151c1e" Status="Deprecated" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>The nominal diameter defining the cross-section size of the prestressed part of the tendon.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3793.2298" Y="1985.3959" />
-				<DocPoint X="4285.62675" Y="1985.3959" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3795.781272" Y="1977.7414841" Width="197" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="CrossSectionArea" UniqueId="7cbdd29f-faaa-4ef5-92ff-d2b870e89f86" Status="Deprecated" DefinedType="IfcAreaMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="CrossSectionArea" UniqueId="7cbdd29f-faaa-4ef5-92ff-d2b870e89f86" Status="Deprecated" DefinedType="IfcAreaMeasure" AttributeFlags="1">
 			<Documentation>The effective cross-section area of the prestressed part of the tendon.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3793.2298" Y="2070.9343" />
-				<DocPoint X="4285.55028" Y="2070.9343" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3790.678328" Y="2063.2798841" Width="205" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="SheathDiameter" UniqueId="558f7ecf-0e60-4557-abf4-3eb909d17bc2" Status="Deprecated" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="SheathDiameter" UniqueId="558f7ecf-0e60-4557-abf4-3eb909d17bc2" Status="Deprecated" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>Diameter of the sheeth (duct) around the tendon, if there is one with this type of tendon.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3793.2298" Y="2155.6482" />
-				<DocPoint X="4285.55323" Y="2155.6482" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3793.2298" Y="2155.6482" Width="186" Height="35" />
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

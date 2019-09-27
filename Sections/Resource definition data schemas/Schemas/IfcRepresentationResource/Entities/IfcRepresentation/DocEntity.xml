@@ -1,105 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRepresentation" Name="IfcRepresentation" UniqueId="487b5a0c-6904-49ae-b622-ec42a5535b20" DiagramNumber="2" EntityFlags="205">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRepresentation" Name="IfcRepresentation" UniqueId="487b5a0c-6904-49ae-b622-ec42a5535b20" EntityFlags="205">
 	<Localization>
-		<DocLocalization Name="Repräsentation" Locale="de" />
-		<DocLocalization Name="Representation" Locale="en" />
-		<DocLocalization Name="Représentation" Locale="fr" />
+		<DocLocalization Locale="de" Name="Repräsentation" />
+		<DocLocalization Locale="en" Name="Representation" />
+		<DocLocalization Locale="fr" Name="Représentation" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="1685.4836" Y="476.8461" Width="446.23333" Height="492.08378" />
 	<Subtypes>
 		<DocSubtype UniqueId="c7c105cd-a928-413c-82f0-76ecc0390210" DefinedType="IfcStyleModel" />
 		<DocSubtype UniqueId="20cf8a6b-5dd6-43b0-8bce-b1fe5f540a4a" DefinedType="IfcShapeModel" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="ContextOfItems" UniqueId="6397c6c3-ac2a-4444-874a-e1a8248e1f7c" DefinedType="IfcRepresentationContext" AttributeFlags="0" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="ContextOfItems" UniqueId="6397c6c3-ac2a-4444-874a-e1a8248e1f7c" DefinedType="IfcRepresentationContext" XsdFormat="attribute">
 			<Documentation>Definition of the representation context for which the different subtypes of representation are valid.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2131.7169" Y="722.83219" />
-				<DocPoint X="2721.39476" Y="722.83219" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2019.60738" Y="716.425932" Width="179" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RepresentationIdentifier" UniqueId="834bd505-97aa-424b-a4f3-63bbb4c9fff4" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RepresentationIdentifier" UniqueId="834bd505-97aa-424b-a4f3-63bbb4c9fff4" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>The optional identifier of the representation as used within a project.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2131.7169" Y="911.8726" />
-				<DocPoint X="2526.63986" Y="911.8726" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2152.36566" Y="901.9664564" Width="271" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RepresentationType" UniqueId="6db71c93-5688-4d8a-b1f8-3d56e73ed944" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="RepresentationType" UniqueId="6db71c93-5688-4d8a-b1f8-3d56e73ed944" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>The description of the type of a representation context. The representation type defines the type of geometry or topology used for representing the product representation. More information is given at the subtypes _IfcShapeRepresentation_ and _IfcTopologyRepresentation_.  
 The supported values for context type are to be specified by implementers agreements.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2131.7169" Y="834.56332" />
-				<DocPoint X="2526.59675" Y="834.56332" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2140.0450362" Y="824.313307" Width="231" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Items" UniqueId="cc5827e6-652d-4ef5-b908-5305d2831319" DefinedType="IfcRepresentationItem" AttributeFlags="0" AggregationType="3" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="Items" UniqueId="cc5827e6-652d-4ef5-b908-5305d2831319" DefinedType="IfcRepresentationItem" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Set of geometric representation items that are defined for this representation.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2131.7169" Y="506.57948" />
-				<DocPoint X="2721.49363" Y="506.57948" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2011.01685" Y="501.1001163" Width="146" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="RepresentationMap" UniqueId="d66de186-3772-4637-8afe-d9fe4bf7aa65" DefinedType="IfcRepresentationMap" AttributeFlags="32" AggregationType="3" AggregationFlag="0" AggregationLower="0" AggregationUpper="1" Inverse="MappedRepresentation">
+		<DocAttribute Name="RepresentationMap" UniqueId="d66de186-3772-4637-8afe-d9fe4bf7aa65" DefinedType="IfcRepresentationMap" AttributeFlags="32" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="MappedRepresentation">
 			<Documentation>Use of the representation within an _IfcRepresentationMap_. If used, this _IfcRepresentation_ may be assigned to many representations as one of its _Items_ using an _IfcMappedItem_. Using _IfcRepresentationMap_ is the way to share one representation (often of type _IfcShapeRepresentation_) by many products.  
 { .change-ifc2x3}
 &gt; IFC2x3 CHANGE&amp;nbsp; The inverse attribute _LayerAssignments_ has been added</Documentation>
-			<DiagramLine>
-				<DocPoint X="1849.44668" Y="476.8461" />
-				<DocPoint X="1849.44668" Y="476.8461" />
-				<DocPoint X="1849.44668" Y="281.207219441732" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="1849.44668" Y="261.207219441732" Width="367" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="LayerAssignments" UniqueId="25d8e6f0-a248-4327-97e1-5cfd45416980" DefinedType="IfcPresentationLayerAssignment" AttributeFlags="32" AggregationType="3" AggregationFlag="0" Inverse="AssignedItems">
+		<DocAttribute Name="LayerAssignments" UniqueId="25d8e6f0-a248-4327-97e1-5cfd45416980" DefinedType="IfcPresentationLayerAssignment" AttributeFlags="32" AggregationType="3" Inverse="AssignedItems">
 			<Documentation>Assignment of the whole representation to a single or multiple layer(s). The _LayerAssigments_ can be overridden by _LayerAssigments_ of the _IfcRepresentationItem_&apos;s within the list of _Items_.
 &gt; NOTE&amp;nbsp; Implementation agreements can restrict the maximum number of layer assignments to 1.
 
 { .change-ifc2x3}
 &gt; IFC2x3 CHANGE&amp;nbsp; The inverse attribute _LayerAssignments_ has been added</Documentation>
-			<DiagramLine>
-				<DocPoint X="2131.71693" Y="476.8461" />
-				<DocPoint X="2131.71693" Y="210.116374454915" />
-				<DocPoint X="2490.11246744792" Y="210.116374454915" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2131.71693" Y="190.116374454915" Width="352" Height="70" />
 		</DocAttribute>
-		<DocAttribute Name="OfProductRepresentation" UniqueId="c55fb5c3-aac5-47ac-adf5-5afc03392f9b" DefinedType="IfcProductRepresentation" AttributeFlags="0" AggregationType="3" AggregationFlag="0" Inverse="Representations">
+		<DocAttribute Name="OfProductRepresentation" UniqueId="c55fb5c3-aac5-47ac-adf5-5afc03392f9b" DefinedType="IfcProductRepresentation" AggregationType="3" Inverse="Representations">
 			<Documentation>Reference to the product representations to which this individual representation applies. In most cases it is the reference to one or many product shapes, to which this shape representation is applicable.
 { .change-ifc2x4}
 &gt; IFC4 CHANGE Inverse relationship cardinality relaxed to be 0:N.</Documentation>
-			<DiagramLine>
-				<DocPoint X="2131.7169" Y="631.09561" />
-				<DocPoint X="2721.47676" Y="631.09561" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="2134.920029" Y="618.283094" Width="484" Height="70" />
 		</DocAttribute>
 	</Attributes>
-	<Tree>
-		<DocLine>
-			<DiagramLine>
-				<DocPoint X="1908.6003" Y="968.92988" />
-				<DocPoint X="1908.6003" Y="1055.548396" />
-			</DiagramLine>
-			<Tree>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="1908.4308" Y="1055.5484" />
-						<DocPoint X="1908.4308" Y="1187.01072" />
-					</DiagramLine>
-				</DocLine>
-				<DocLine>
-					<DiagramLine>
-						<DocPoint X="2542.6691" Y="1055.5484" />
-						<DocPoint X="2542.6691" Y="1187.03575" />
-					</DiagramLine>
-				</DocLine>
-			</Tree>
-		</DocLine>
-	</Tree>
 </DocEntity>
 

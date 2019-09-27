@@ -4,13 +4,13 @@
 		<DocTemplateDefinition id="Control_Flow_3Hs22BKULAZvAwuwBgAykS" Name="Control Flow" UniqueId="3Hs22BKULAZvAwuwBgAykS" Type="IfcDistributionControlElement">
 			<Documentation>Control elements (such as sensors) that monitor or control behavior of flow elements (such as valves) use this relationship to indicate control flow logical behavior.</Documentation>
 			<Rules>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="AssignedToFlowElement">
+				<DocModelRuleAttribute Name="AssignedToFlowElement">
 					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelFlowControlElements">
+						<DocModelRuleEntity Name="IfcRelFlowControlElements">
 							<Rules>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingFlowElement" Identification="Type">
+								<DocModelRuleAttribute Name="RelatingFlowElement" Identification="Type">
 									<Rules>
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDistributionFlowElement" />
+										<DocModelRuleEntity Name="IfcDistributionFlowElement" />
 									</Rules>
 								</DocModelRuleAttribute>
 							</Rules>
@@ -25,86 +25,86 @@
 				<DocTemplateDefinition id="Path_Connectivity_1G5mELXyP9BgRydr_42n5F" Name="Path Connectivity" UniqueId="1G5mELXyP9BgRydr_42n5F" Type="IfcElement">
 					<Documentation>Elements based on an &apos;Axis&apos; representation such as walls, beams, and columns use a path connectivity relationship to indicate parameters for the connection, indicating which side takes precedence for material layers or profiles.</Documentation>
 					<Rules>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ConnectedTo">
+						<DocModelRuleAttribute Name="ConnectedTo">
 							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelConnectsPathElements">
+								<DocModelRuleEntity Name="IfcRelConnectsPathElements">
 									<Rules>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ConnectionGeometry">
+										<DocModelRuleAttribute Name="ConnectionGeometry">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcConnectionCurveGeometry">
+												<DocModelRuleEntity Name="IfcConnectionCurveGeometry">
 													<Rules>
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="CurveOnRelatingElement">
+														<DocModelRuleAttribute Name="CurveOnRelatingElement">
 															<Rules>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIndexedPolyCurve" />
+																<DocModelRuleEntity Name="IfcIndexedPolyCurve" />
 															</Rules>
 														</DocModelRuleAttribute>
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="CurveOnRelatedElement">
+														<DocModelRuleAttribute Name="CurveOnRelatedElement">
 															<Rules>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIndexedPolyCurve" />
+																<DocModelRuleEntity Name="IfcIndexedPolyCurve" />
 															</Rules>
 														</DocModelRuleAttribute>
 													</Rules>
 												</DocModelRuleEntity>
 											</Rules>
 										</DocModelRuleAttribute>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedElement">
+										<DocModelRuleAttribute Name="RelatedElement">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcElement" />
+												<DocModelRuleEntity Name="IfcElement" />
 											</Rules>
 										</DocModelRuleAttribute>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingPriorities">
+										<DocModelRuleAttribute Name="RelatingPriorities">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcInteger" />
+												<DocModelRuleEntity Name="IfcInteger" />
 											</Rules>
 										</DocModelRuleAttribute>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedPriorities">
+										<DocModelRuleAttribute Name="RelatedPriorities">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcInteger" />
+												<DocModelRuleEntity Name="IfcInteger" />
 											</Rules>
 										</DocModelRuleAttribute>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingConnectionType">
+										<DocModelRuleAttribute Name="RelatingConnectionType">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcConnectionTypeEnum" />
+												<DocModelRuleEntity Name="IfcConnectionTypeEnum" />
 											</Rules>
 										</DocModelRuleAttribute>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedConnectionType">
+										<DocModelRuleAttribute Name="RelatedConnectionType">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcConnectionTypeEnum" />
+												<DocModelRuleEntity Name="IfcConnectionTypeEnum" />
 											</Rules>
 										</DocModelRuleAttribute>
 									</Rules>
 								</DocModelRuleEntity>
 							</Rules>
 						</DocModelRuleAttribute>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ConnectedFrom" />
+						<DocModelRuleAttribute Name="ConnectedFrom" />
 					</Rules>
 				</DocTemplateDefinition>
 				<DocTemplateDefinition id="Port_Connectivity_0MeHlCh55bRkmnAq5FQia" Name="Port Connectivity" UniqueId="0M$eHlCh55bRkmnAq5FQia" Type="IfcDistributionPort">
 					<Documentation>Ports on distribution elements, such as ducts and airoutlets, or pipes and sanitary elements are connected with each other using the _Port Connectivity_. The port connection determines the direction of flow between the connected ports belonging to the distribution elements.</Documentation>
 					<Localization>
-						<DocLocalization Name="AUTOMATIC" Locale="tt">
+						<DocLocalization Locale="tt" Name="AUTOMATIC">
 							<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
                 &lt;TemplateRule Parameters=&quot;ConnectedToPort[Size]=1 AND ConnectedFromPort[Size]=0&quot;/&gt;
 &lt;/TemplateRules&gt;</Documentation>
 						</DocLocalization>
 					</Localization>
 					<Rules>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ConnectedFrom">
+						<DocModelRuleAttribute Name="ConnectedFrom">
 							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelConnectsPorts">
+								<DocModelRuleEntity Name="IfcRelConnectsPorts">
 									<Rules>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingPort">
+										<DocModelRuleAttribute Name="RelatingPort">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcDistributionPort" />
+												<DocModelRuleEntity Name="IfcDistributionPort" />
 											</Rules>
 										</DocModelRuleAttribute>
 									</Rules>
 								</DocModelRuleEntity>
 							</Rules>
 						</DocModelRuleAttribute>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ConnectedTo">
+						<DocModelRuleAttribute Name="ConnectedTo">
 							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelConnectsPorts" />
+								<DocModelRuleEntity Name="IfcRelConnectsPorts" />
 							</Rules>
 						</DocModelRuleAttribute>
 					</Rules>
@@ -116,13 +116,13 @@
 
 &gt; EXAMPLE&amp;nbsp; A cladding is assigned to a wall, a flooring is assigned to a slab, a wrapping is assigned to a duct using the _IfcRelCoversBldgElements_ relationship.</Documentation>
 			<Rules>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="HasCoverings">
+				<DocModelRuleAttribute Name="HasCoverings">
 					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelCoversBldgElements">
+						<DocModelRuleEntity Name="IfcRelCoversBldgElements">
 							<Rules>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedCoverings">
+								<DocModelRuleAttribute Name="RelatedCoverings">
 									<Rules>
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCovering" />
+										<DocModelRuleEntity Name="IfcCovering" />
 									</Rules>
 								</DocModelRuleAttribute>
 							</Rules>
@@ -134,21 +134,21 @@
 		<DocTemplateDefinition id="Element_Filling_06PqYJUYn9Euwrw5e5XmUp" Name="Element Filling" UniqueId="06PqYJUYn9Euwrw5e5XmUp" Type="IfcElement">
 			<Documentation>Elements such as doors and windows may be placed inside openings of walls, slabs, or other elements.</Documentation>
 			<Rules>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="FillsVoids">
+				<DocModelRuleAttribute Name="FillsVoids">
 					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelFillsElement">
+						<DocModelRuleEntity Name="IfcRelFillsElement">
 							<Rules>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingOpeningElement">
+								<DocModelRuleAttribute Name="RelatingOpeningElement">
 									<Rules>
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcOpeningElement">
+										<DocModelRuleEntity Name="IfcOpeningElement">
 											<Rules>
-												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="VoidsElements">
+												<DocModelRuleAttribute Name="VoidsElements">
 													<Rules>
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelVoidsElement">
+														<DocModelRuleEntity Name="IfcRelVoidsElement">
 															<Rules>
-																<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingElement" Identification="Type">
+																<DocModelRuleAttribute Name="RelatingElement" Identification="Type">
 																	<Rules>
-																		<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcElement" />
+																		<DocModelRuleEntity Name="IfcElement" />
 																	</Rules>
 																</DocModelRuleAttribute>
 															</Rules>
@@ -167,31 +167,31 @@
 		</DocTemplateDefinition>
 		<DocTemplateDefinition id="Element_Interference_0UOOBy7qT4qvju5rLb0FE6" Name="Element Interference" UniqueId="1e6182fc-1f47-44d3-9b78-17556500f386" Type="IfcElement">
 			<Rules>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsInterferedByElements">
+				<DocModelRuleAttribute Name="IsInterferedByElements">
 					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelInterferesElements">
+						<DocModelRuleEntity Name="IfcRelInterferesElements">
 							<Rules>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingElement">
+								<DocModelRuleAttribute Name="RelatingElement">
 									<Rules>
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcElement" />
+										<DocModelRuleEntity Name="IfcElement" />
 									</Rules>
 								</DocModelRuleAttribute>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="InterferenceGeometry">
+								<DocModelRuleAttribute Name="InterferenceGeometry">
 									<Rules>
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcConnectionVolumeGeometry">
+										<DocModelRuleEntity Name="IfcConnectionVolumeGeometry">
 											<Rules>
-												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="VolumeOnRelatingElement">
+												<DocModelRuleAttribute Name="VolumeOnRelatingElement">
 													<Rules>
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcSolidModel" />
+														<DocModelRuleEntity Name="IfcSolidModel" />
 													</Rules>
 												</DocModelRuleAttribute>
 											</Rules>
 										</DocModelRuleEntity>
 									</Rules>
 								</DocModelRuleAttribute>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="InterferenceType">
+								<DocModelRuleAttribute Name="InterferenceType">
 									<Rules>
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIdentifier" />
+										<DocModelRuleEntity Name="IfcIdentifier" />
 									</Rules>
 								</DocModelRuleAttribute>
 							</Rules>
@@ -203,26 +203,26 @@
 		<DocTemplateDefinition id="Sequential_Connectivity_39yHY0ZFP7gki1SSxG46n" Name="Sequential Connectivity" UniqueId="39yHY0ZFP7$gki1SSxG46n" Type="IfcProcess">
 			<Documentation>Processes that occur in time use this relationship to indicate the order of occurrence, such as for tasks, procedures, and events.</Documentation>
 			<Rules>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsPredecessorTo">
+				<DocModelRuleAttribute Name="IsPredecessorTo">
 					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelSequence">
+						<DocModelRuleEntity Name="IfcRelSequence">
 							<Rules>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedProcess">
+								<DocModelRuleAttribute Name="RelatedProcess">
 									<Rules>
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProcess" />
+										<DocModelRuleEntity Name="IfcProcess" />
 									</Rules>
 								</DocModelRuleAttribute>
 							</Rules>
 						</DocModelRuleEntity>
 					</Rules>
 				</DocModelRuleAttribute>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="IsSuccessorFrom">
+				<DocModelRuleAttribute Name="IsSuccessorFrom">
 					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelSequence">
+						<DocModelRuleEntity Name="IfcRelSequence">
 							<Rules>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingProcess">
+								<DocModelRuleAttribute Name="RelatingProcess">
 									<Rules>
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProcess" />
+										<DocModelRuleEntity Name="IfcProcess" />
 									</Rules>
 								</DocModelRuleAttribute>
 							</Rules>
@@ -236,57 +236,57 @@
 				<DocTemplateDefinition id="Space_Boundaries_1st_Level_1gujKKuhrA9Bc4cn5oNyVR" Name="Space Boundaries 1st Level" UniqueId="1gujKKuhrA9Bc4cn5oNyVR" Type="IfcSpace">
 					<Documentation>Spaces may have boundaries defined by building elements such as walls, slabs, doors, and windows. Such information may be used to determine heat transmission through surrounding materials.</Documentation>
 					<Rules>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="BoundedBy">
+						<DocModelRuleAttribute Name="BoundedBy">
 							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelSpaceBoundary1stLevel">
+								<DocModelRuleEntity Name="IfcRelSpaceBoundary1stLevel">
 									<Rules>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedBuildingElement">
+										<DocModelRuleAttribute Name="RelatedBuildingElement">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcElement" />
+												<DocModelRuleEntity Name="IfcElement" />
 											</Rules>
 										</DocModelRuleAttribute>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ConnectionGeometry">
+										<DocModelRuleAttribute Name="ConnectionGeometry">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcConnectionSurfaceGeometry">
+												<DocModelRuleEntity Name="IfcConnectionSurfaceGeometry">
 													<Rules>
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="SurfaceOnRelatingElement">
+														<DocModelRuleAttribute Name="SurfaceOnRelatingElement">
 															<Rules>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcSurfaceOfLinearExtrusion">
+																<DocModelRuleEntity Name="IfcSurfaceOfLinearExtrusion">
 																	<Rules>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="SweptCurve">
+																		<DocModelRuleAttribute Name="SweptCurve">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcArbitraryOpenProfileDef">
+																				<DocModelRuleEntity Name="IfcArbitraryOpenProfileDef">
 																					<Rules>
-																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Curve">
+																						<DocModelRuleAttribute Name="Curve">
 																							<Rules>
-																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIndexedPolyCurve">
+																								<DocModelRuleEntity Name="IfcIndexedPolyCurve">
 																									<Rules>
-																										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Points">
+																										<DocModelRuleAttribute Name="Points">
 																											<Rules>
-																												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCartesianPointList2D">
+																												<DocModelRuleEntity Name="IfcCartesianPointList2D">
 																													<Rules>
-																														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="CoordList">
+																														<DocModelRuleAttribute Name="CoordList">
 																															<Rules>
-																																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLengthMeasure" />
+																																<DocModelRuleEntity Name="IfcLengthMeasure" />
 																															</Rules>
 																														</DocModelRuleAttribute>
 																													</Rules>
 																												</DocModelRuleEntity>
 																											</Rules>
 																										</DocModelRuleAttribute>
-																										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Segments">
+																										<DocModelRuleAttribute Name="Segments">
 																											<Rules>
-																												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcArcIndex" />
-																												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLineIndex" />
+																												<DocModelRuleEntity Name="IfcArcIndex" />
+																												<DocModelRuleEntity Name="IfcLineIndex" />
 																											</Rules>
 																										</DocModelRuleAttribute>
-																										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="SelfIntersect">
+																										<DocModelRuleAttribute Name="SelfIntersect">
 																											<Rules>
-																												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcBoolean">
+																												<DocModelRuleEntity Name="IfcBoolean">
 																													<Rules>
-																														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedOpeningElement">
+																														<DocModelRuleAttribute Name="RelatedOpeningElement">
 																															<Rules>
-																																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcVoidingFeature" />
+																																<DocModelRuleEntity Name="IfcVoidingFeature" />
 																															</Rules>
 																														</DocModelRuleAttribute>
 																													</Rules>
@@ -303,15 +303,15 @@
 																		</DocModelRuleAttribute>
 																	</Rules>
 																</DocModelRuleEntity>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCurveBoundedPlane">
+																<DocModelRuleEntity Name="IfcCurveBoundedPlane">
 																	<Rules>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="BasisSurface">
+																		<DocModelRuleAttribute Name="BasisSurface">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPlane">
+																				<DocModelRuleEntity Name="IfcPlane">
 																					<Rules>
-																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Position">
+																						<DocModelRuleAttribute Name="Position">
 																							<Rules>
-																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAxis2Placement3D" />
+																								<DocModelRuleEntity Name="IfcAxis2Placement3D" />
 																							</Rules>
 																						</DocModelRuleAttribute>
 																					</Rules>
@@ -320,54 +320,54 @@
 																		</DocModelRuleAttribute>
 																	</Rules>
 																</DocModelRuleEntity>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCurveBoundedSurface">
+																<DocModelRuleEntity Name="IfcCurveBoundedSurface">
 																	<Rules>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="BasisSurface">
+																		<DocModelRuleAttribute Name="BasisSurface">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCylindricalSurface">
+																				<DocModelRuleEntity Name="IfcCylindricalSurface">
 																					<Rules>
-																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Position">
+																						<DocModelRuleAttribute Name="Position">
 																							<Rules>
-																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAxis2Placement3D" />
+																								<DocModelRuleEntity Name="IfcAxis2Placement3D" />
 																							</Rules>
 																						</DocModelRuleAttribute>
 																					</Rules>
 																				</DocModelRuleEntity>
 																			</Rules>
 																		</DocModelRuleAttribute>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Boundaries">
+																		<DocModelRuleAttribute Name="Boundaries">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcOuterBoundaryCurve">
+																				<DocModelRuleEntity Name="IfcOuterBoundaryCurve">
 																					<Rules>
-																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Segments">
+																						<DocModelRuleAttribute Name="Segments">
 																							<Rules>
-																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCompositeCurveSegment" />
+																								<DocModelRuleEntity Name="IfcCompositeCurveSegment" />
 																							</Rules>
 																						</DocModelRuleAttribute>
 																					</Rules>
 																				</DocModelRuleEntity>
 																			</Rules>
 																		</DocModelRuleAttribute>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ImplicitOuter">
+																		<DocModelRuleAttribute Name="ImplicitOuter">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcBoolean" />
+																				<DocModelRuleEntity Name="IfcBoolean" />
 																			</Rules>
 																		</DocModelRuleAttribute>
 																	</Rules>
 																</DocModelRuleEntity>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcFaceBasedSurfaceModel">
+																<DocModelRuleEntity Name="IfcFaceBasedSurfaceModel">
 																	<Rules>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="FbsmFaces">
+																		<DocModelRuleAttribute Name="FbsmFaces">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcOpenShell">
+																				<DocModelRuleEntity Name="IfcOpenShell">
 																					<Rules>
-																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="CfsFaces">
+																						<DocModelRuleAttribute Name="CfsFaces">
 																							<Rules>
-																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcFace">
+																								<DocModelRuleEntity Name="IfcFace">
 																									<Rules>
-																										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Bounds">
+																										<DocModelRuleAttribute Name="Bounds">
 																											<Rules>
-																												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcFaceOuterBound" />
+																												<DocModelRuleEntity Name="IfcFaceOuterBound" />
 																											</Rules>
 																										</DocModelRuleAttribute>
 																									</Rules>
@@ -382,24 +382,24 @@
 																</DocModelRuleEntity>
 															</Rules>
 														</DocModelRuleAttribute>
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="SurfaceOnRelatedElement" />
+														<DocModelRuleAttribute Name="SurfaceOnRelatedElement" />
 													</Rules>
 												</DocModelRuleEntity>
 											</Rules>
 										</DocModelRuleAttribute>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ParentBoundary">
+										<DocModelRuleAttribute Name="ParentBoundary">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelSpaceBoundary1stLevel" />
+												<DocModelRuleEntity Name="IfcRelSpaceBoundary1stLevel" />
 											</Rules>
 										</DocModelRuleAttribute>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="PhysicalOrVirtualBoundary">
+										<DocModelRuleAttribute Name="PhysicalOrVirtualBoundary">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPhysicalOrVirtualEnum" />
+												<DocModelRuleEntity Name="IfcPhysicalOrVirtualEnum" />
 											</Rules>
 										</DocModelRuleAttribute>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="InternalOrExternalBoundary">
+										<DocModelRuleAttribute Name="InternalOrExternalBoundary">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcInternalOrExternalEnum" />
+												<DocModelRuleEntity Name="IfcInternalOrExternalEnum" />
 											</Rules>
 										</DocModelRuleAttribute>
 									</Rules>
@@ -410,56 +410,56 @@
 				</DocTemplateDefinition>
 				<DocTemplateDefinition id="Space_Boundaries_2nd_Level_3617lpLsr0Gew4VoAapAbV" Name="Space Boundaries 2nd Level" UniqueId="c6047bf3-576d-4042-8e84-7f22a4cca95f" Type="IfcSpace">
 					<Rules>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="BoundedBy">
+						<DocModelRuleAttribute Name="BoundedBy">
 							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelSpaceBoundary2ndLevel">
+								<DocModelRuleEntity Name="IfcRelSpaceBoundary2ndLevel">
 									<Rules>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedBuildingElement">
+										<DocModelRuleAttribute Name="RelatedBuildingElement">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcElement" />
+												<DocModelRuleEntity Name="IfcElement" />
 											</Rules>
 										</DocModelRuleAttribute>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ConnectionGeometry">
+										<DocModelRuleAttribute Name="ConnectionGeometry">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcConnectionSurfaceGeometry">
+												<DocModelRuleEntity Name="IfcConnectionSurfaceGeometry">
 													<Rules>
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="SurfaceOnRelatingElement">
+														<DocModelRuleAttribute Name="SurfaceOnRelatingElement">
 															<Rules>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcCurveBoundedPlane">
+																<DocModelRuleEntity Name="IfcCurveBoundedPlane">
 																	<Rules>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="BasisSurface">
+																		<DocModelRuleAttribute Name="BasisSurface">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPlane">
+																				<DocModelRuleEntity Name="IfcPlane">
 																					<Rules>
-																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Position">
+																						<DocModelRuleAttribute Name="Position">
 																							<Rules>
-																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcAxis2Placement3D" />
+																								<DocModelRuleEntity Name="IfcAxis2Placement3D" />
 																							</Rules>
 																						</DocModelRuleAttribute>
 																					</Rules>
 																				</DocModelRuleEntity>
 																			</Rules>
 																		</DocModelRuleAttribute>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="OuterBoundary">
+																		<DocModelRuleAttribute Name="OuterBoundary">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcIndexedPolyCurve" />
+																				<DocModelRuleEntity Name="IfcIndexedPolyCurve" />
 																			</Rules>
 																		</DocModelRuleAttribute>
 																	</Rules>
 																</DocModelRuleEntity>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcFaceBasedSurfaceModel">
+																<DocModelRuleEntity Name="IfcFaceBasedSurfaceModel">
 																	<Rules>
-																		<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="FbsmFaces">
+																		<DocModelRuleAttribute Name="FbsmFaces">
 																			<Rules>
-																				<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcOpenShell">
+																				<DocModelRuleEntity Name="IfcOpenShell">
 																					<Rules>
-																						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="CfsFaces">
+																						<DocModelRuleAttribute Name="CfsFaces">
 																							<Rules>
-																								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcFace">
+																								<DocModelRuleEntity Name="IfcFace">
 																									<Rules>
-																										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Bounds">
+																										<DocModelRuleAttribute Name="Bounds">
 																											<Rules>
-																												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcFaceOuterBound" />
+																												<DocModelRuleEntity Name="IfcFaceOuterBound" />
 																											</Rules>
 																										</DocModelRuleAttribute>
 																									</Rules>
@@ -478,24 +478,24 @@
 												</DocModelRuleEntity>
 											</Rules>
 										</DocModelRuleAttribute>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="PhysicalOrVirtualBoundary">
+										<DocModelRuleAttribute Name="PhysicalOrVirtualBoundary">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcPhysicalOrVirtualEnum" />
+												<DocModelRuleEntity Name="IfcPhysicalOrVirtualEnum" />
 											</Rules>
 										</DocModelRuleAttribute>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="InternalOrExternalBoundary">
+										<DocModelRuleAttribute Name="InternalOrExternalBoundary">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcInternalOrExternalEnum" />
+												<DocModelRuleEntity Name="IfcInternalOrExternalEnum" />
 											</Rules>
 										</DocModelRuleAttribute>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ParentBoundary">
+										<DocModelRuleAttribute Name="ParentBoundary">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelSpaceBoundary2ndLevel" />
+												<DocModelRuleEntity Name="IfcRelSpaceBoundary2ndLevel" />
 											</Rules>
 										</DocModelRuleAttribute>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="CorrespondingBoundary">
+										<DocModelRuleAttribute Name="CorrespondingBoundary">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelSpaceBoundary2ndLevel" />
+												<DocModelRuleEntity Name="IfcRelSpaceBoundary2ndLevel" />
 											</Rules>
 										</DocModelRuleAttribute>
 									</Rules>
@@ -509,17 +509,17 @@
 		<DocTemplateDefinition id="Spatial_Service_Connectivity_3ZHXQIzCLD_gZr1pIWQOzh" Name="Spatial Service Connectivity" UniqueId="e3461692-f4c5-4dfa-a8f5-0734a0698f6b" Type="IfcSpatialElement">
 			<Documentation>A system, such as a distribution system, services a particular spatial structure, either a total building, a building section, or a storey, or any part of these structures.</Documentation>
 			<Rules>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ServicedBySystems" Identification="ServicedBySystems">
+				<DocModelRuleAttribute Name="ServicedBySystems" Identification="ServicedBySystems">
 					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelServicesBuildings">
+						<DocModelRuleEntity Name="IfcRelServicesBuildings">
 							<Rules>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingSystem" Identification="RelatedSystem">
+								<DocModelRuleAttribute Name="RelatingSystem" Identification="RelatedSystem">
 									<Rules>
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcSystem">
+										<DocModelRuleEntity Name="IfcSystem">
 											<Rules>
-												<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="SystemName">
+												<DocModelRuleAttribute Name="Name" Identification="SystemName">
 													<Rules>
-														<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+														<DocModelRuleEntity Name="IfcLabel" />
 													</Rules>
 												</DocModelRuleAttribute>
 											</Rules>
@@ -548,13 +548,13 @@ The spatial containment relationship, together with the Spatial decomposition re
 
 The _Spatial Container_ concept is realized by using the _IfcRelContainedInSpatialStructure_ objectified relationship between subtypes of _IfcSpatialElement_ and the elements contained. The inverse relationship _ContainsElements_ at the subtypes of _IfcSpatialElement_ refers to the contained physical elements.</Documentation>
 					<Rules>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContainsElements">
+						<DocModelRuleAttribute Name="ContainsElements">
 							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelContainedInSpatialStructure">
+								<DocModelRuleEntity Name="IfcRelContainedInSpatialStructure">
 									<Rules>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedElements" Identification="Type">
+										<DocModelRuleAttribute Name="RelatedElements" Identification="Type">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcProduct" />
+												<DocModelRuleEntity Name="IfcProduct" />
 											</Rules>
 										</DocModelRuleAttribute>
 									</Rules>
@@ -571,24 +571,24 @@ Any subtype of _IfcElement_ may participate in two different containment relatio
 * The subtypes of _IfcElement_ are placed within the project spatial hierarchy using the objectified relationship _IfcRelContainedInSpatialStructure_, refering to it by its inverse attribute _SELF\IfcElement.ContainedInStructure_. Subtypes of _IfcSpatialElement_ are valid spatial containers.
 * The subtypes of _IfcElement_ may be aggregated into an element assembly using the objectified relationship _IfcRelAggregates_, refering to it by its inverse attribute _SELF\IfcObjectDefinition.Decomposes_. Any subtype of _IfcElement_ can be an element assembly, with _IfcElementAssembly_ as a special focus subtype. In this case it should not be additionally contained in the project spatial hierarchy, i.e. _SELF\IfcElement.ContainedInStructure_ should be _NIL_.</Documentation>
 					<Localization>
-						<DocLocalization Name="AUTOMATIC" Locale="tt">
+						<DocLocalization Locale="tt" Name="AUTOMATIC">
 							<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
                 &lt;TemplateRule Parameters=&quot;RelatingStructure[Type]=&apos;IfcBuildingStorey&apos; AND SpatialElementName[Value]=&apos;Ground Floor&apos;&quot;/&gt;
 &lt;/TemplateRules&gt;</Documentation>
 						</DocLocalization>
 					</Localization>
 					<Rules>
-						<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ContainedInStructure">
+						<DocModelRuleAttribute Name="ContainedInStructure">
 							<Rules>
-								<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelContainedInSpatialStructure">
+								<DocModelRuleEntity Name="IfcRelContainedInSpatialStructure">
 									<Rules>
-										<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingStructure" Identification="RelatingStructure">
+										<DocModelRuleAttribute Name="RelatingStructure" Identification="RelatingStructure">
 											<Rules>
-												<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcSpatialElement">
+												<DocModelRuleEntity Name="IfcSpatialElement">
 													<Rules>
-														<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="Name" Identification="SpatialElementName">
+														<DocModelRuleAttribute Name="Name" Identification="SpatialElementName">
 															<Rules>
-																<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcLabel" />
+																<DocModelRuleEntity Name="IfcLabel" />
 															</Rules>
 														</DocModelRuleAttribute>
 													</Rules>
@@ -606,18 +606,18 @@ Any subtype of _IfcElement_ may participate in two different containment relatio
 		<DocTemplateDefinition id="Structural_Activity_2JaCfosE98Avc6uE7HNd6K" Name="Structural Activity" UniqueId="9390ca72-d8e2-482b-9986-e0e1d15e7194" Type="IfcStructuralActivity">
 			<Documentation>Structural activities may be linked to structural items.</Documentation>
 			<Rules>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="AppliedLoad" Identification="AppliedLoad">
+				<DocModelRuleAttribute Name="AppliedLoad" Identification="AppliedLoad">
 					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcStructuralLoad" />
+						<DocModelRuleEntity Name="IfcStructuralLoad" />
 					</Rules>
 				</DocModelRuleAttribute>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="AssignedToStructuralItem">
+				<DocModelRuleAttribute Name="AssignedToStructuralItem">
 					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelConnectsStructuralActivity">
+						<DocModelRuleEntity Name="IfcRelConnectsStructuralActivity">
 							<Rules>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatingElement" Identification="RelatingElement">
+								<DocModelRuleAttribute Name="RelatingElement" Identification="RelatingElement">
 									<Rules>
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcStructuralItem" />
+										<DocModelRuleEntity Name="IfcStructuralItem" />
 									</Rules>
 								</DocModelRuleAttribute>
 							</Rules>
@@ -629,13 +629,13 @@ Any subtype of _IfcElement_ may participate in two different containment relatio
 		<DocTemplateDefinition id="Structural_Connectivity_3qzrrFRJXClfxxtxM4GDB" Name="Structural Connectivity" UniqueId="f4f75d4f-6d38-4cbe-9efb-dfb58440dfcb" Type="IfcStructuralMember">
 			<Documentation>Structural items may be connected within an analysis model.</Documentation>
 			<Rules>
-				<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="ConnectedBy">
+				<DocModelRuleAttribute Name="ConnectedBy">
 					<Rules>
-						<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcRelConnectsStructuralMember">
+						<DocModelRuleEntity Name="IfcRelConnectsStructuralMember">
 							<Rules>
-								<DocModelRuleAttribute CardinalityMin="0" CardinalityMax="0" Name="RelatedStructuralConnection" Identification="StructuralConnection">
+								<DocModelRuleAttribute Name="RelatedStructuralConnection" Identification="StructuralConnection">
 									<Rules>
-										<DocModelRuleEntity CardinalityMin="0" CardinalityMax="0" Name="IfcStructuralConnection" />
+										<DocModelRuleEntity Name="IfcStructuralConnection" />
 									</Rules>
 								</DocModelRuleAttribute>
 							</Rules>

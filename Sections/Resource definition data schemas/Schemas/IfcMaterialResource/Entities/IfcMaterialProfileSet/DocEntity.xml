@@ -1,48 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcMaterialProfileSet" Name="IfcMaterialProfileSet" UniqueId="e0fca8fd-d265-44c8-a538-722ea9b7a1a2" DiagramNumber="3" BaseDefinition="IfcMaterialDefinition" EntityFlags="237">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMaterialProfileSet" UniqueId="e0fca8fd-d265-44c8-a538-722ea9b7a1a2" BaseDefinition="IfcMaterialDefinition" EntityFlags="237">
 	<Localization>
-		<DocLocalization Name="Gruppe von Profilen mit Material" Locale="de" />
-		<DocLocalization Name="Material Profile Set" Locale="en" />
-		<DocLocalization Name="Ensemble de matériaux de profil" Locale="fr" />
+		<DocLocalization Locale="de" Name="Gruppe von Profilen mit Material" />
+		<DocLocalization Locale="en" Name="Material Profile Set" />
+		<DocLocalization Locale="fr" Name="Ensemble de matériaux de profil" />
 	</Localization>
-	<DiagramRectangle xsi:type="DocRectangle" X="3403.1988" Y="801.42378" Width="403.33033" Height="191.42195" />
 	<Attributes>
-		<DocAttribute Name="Name" UniqueId="575e5fc0-0fb3-43df-bc1f-398c3df06e28" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Name" UniqueId="575e5fc0-0fb3-43df-bc1f-398c3df06e28" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>The name by which the material profile set is known.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3806.5292" Y="835.58221" />
-				<DocPoint X="4075.926" Y="835.58221" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3843.693429" Y="815.570702" Width="73" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="Description" UniqueId="96616325-fa1f-4b5b-9ad7-4f5ea7bd82ae" DefinedType="IfcText" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
+		<DocAttribute Name="Description" UniqueId="96616325-fa1f-4b5b-9ad7-4f5ea7bd82ae" DefinedType="IfcText" AttributeFlags="1">
 			<Documentation>Definition of the material profile set in descriptive terms.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3806.5292" Y="933.80389" />
-				<DocPoint X="3941.26578" Y="933.80389" />
-				<DocPoint X="3941.26578" Y="934.26955246" />
-				<DocPoint X="4076.00236" Y="934.26955246" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3824.399513" Y="919.509956" Width="130" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="MaterialProfiles" UniqueId="0bc09f75-2471-4b85-ab7d-c1f65511961c" DefinedType="IfcMaterialProfile" AttributeFlags="0" AggregationType="1" AggregationFlag="0" AggregationLower="1" AggregationUpper="0">
+		<DocAttribute Name="MaterialProfiles" UniqueId="0bc09f75-2471-4b85-ab7d-c1f65511961c" DefinedType="IfcMaterialProfile" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Identification of the profiles from which the material profile set is composed.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3595.5728" Y="992.84573" />
-				<DocPoint X="3595.5728" Y="1285.10188" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3744.53435" Y="1011.757784" Width="252" Height="35" />
 		</DocAttribute>
-		<DocAttribute Name="CompositeProfile" UniqueId="46d8d3f2-4791-4c45-b7a3-1d9a006595fb" DefinedType="IfcCompositeProfileDef" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
+		<DocAttribute Name="CompositeProfile" UniqueId="46d8d3f2-4791-4c45-b7a3-1d9a006595fb" DefinedType="IfcCompositeProfileDef" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Reference to the composite profile definition for which this material profile set associates material to each of its individual profiles. If only a single material profile is used (the most typical case) then no _CompositeProfile_ is asserted.
 
 &gt; NOTE&amp;nbsp; The referenced _IfcCompositeProfileDef_ instance shall be composed of all of the _IfcProfileDef_ instances which are used via the MaterialProfiles list in the current _IfcMaterialProfileSet_.</Documentation>
-			<DiagramLine>
-				<DocPoint X="3739.227" Y="992.84579" />
-				<DocPoint X="3739.227" Y="1063.924204" />
-				<DocPoint X="4382.60381" Y="1063.924204" />
-			</DiagramLine>
-			<DiagramLabel xsi:type="DocRectangle" X="3697.326169" Y="1044.834234" Width="194" Height="35" />
 		</DocAttribute>
 	</Attributes>
 </DocEntity>
