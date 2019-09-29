@@ -17,7 +17,7 @@
 			<DiagramLabel xsi:type="DocRectangle" X="3608.813267" Y="1495.422933" Width="165" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="PrimaryMeasureType" UniqueId="23f2b0c9-3b16-4f38-a416-eb4d1b8a6eb6" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Primary measure type assigned to the definition of the property. It should be provided, if the _PropertyType_ is set to:
+			<Documentation>Primary measure type assigned to the definition of the property. It should be provided, if the _TemplateType_ is set to:
 * &lt;small&gt;P_SINGLEVALUE&lt;/small&gt;: determining the measure type of _IfcPropertySingleValue.NominalValue_
 * &lt;small&gt;P_ENUMERATEDVALUE&lt;/small&gt;: determining the measure type of _IfcPropertyEnumeratedValue.EnumerationValues_
 * &lt;small&gt;P_BOUNDEDVALUE&lt;/small&gt;: determining the measure type of _IfcPropertyBoundedValue.LowerBoundValue_
@@ -25,7 +25,7 @@
 * &lt;small&gt;P_TABLEVALUE&lt;/small&gt;: determining the measure type of _IfcPropertyTableValue.DefiningValues_
 * &lt;small&gt;P_REFERENCEVALUE&lt;/small&gt;: determining the measure type of _IfcPropertyTableValue.PropertyReference_
 
-&gt; NOTE&amp;nbsp; The value range of the measure type is within the select type _IfcValue_ for all _PropertyType_&apos;s with the exeption of &lt;small&gt;P_REFERENCEVALUE&lt;/small&gt;. Here it is within the select type _IfcObjectReferenceSelect_.</Documentation>
+&gt; NOTE&amp;nbsp; The value range of the measure type is within the select type _IfcValue_ for all _TemplateType_&apos;s with the exeption of &lt;small&gt;P_REFERENCEVALUE&lt;/small&gt;. Here it is within the select type _IfcObjectReferenceSelect_.</Documentation>
 			<DiagramLine>
 				<DocPoint X="3654.1466" Y="1598.5777" />
 				<DocPoint X="4008.9466" Y="1598.5777" />
@@ -33,12 +33,12 @@
 			<DiagramLabel xsi:type="DocRectangle" X="3648.8132667" Y="1593.2443667" Width="241" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="SecondaryMeasureType" UniqueId="3d5c231d-ff1d-43b9-8032-e56540c68963" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Secondary measure type assigned to the definition of the property. It should be provided, if the _PropertyType_ is set to:
+			<Documentation>Secondary measure type assigned to the definition of the property. It should be provided, if the _TemplateType_ is set to:
 * &lt;small&gt;P_BOUNDEDVALUE&lt;/small&gt;: determining the measure type of _IfcPropertyBoundedValue.UpperBoundValue_
 * &lt;small&gt;P_TABLEVALUE&lt;/small&gt;: determining the measure type of _IfcPropertyTableValue.DefinedValues_
 
 
-The value range of the measure type is within the select type _IfcValue_  for all _PropertyType_&apos;s with the exeption of &lt;small&gt;P_ENUMERATEDVALUE&lt;/small&gt;. Here it is the comma delimited list of enumerators.
+The value range of the measure type is within the select type _IfcValue_  for all _TemplateType_&apos;s with the exeption of &lt;small&gt;P_ENUMERATEDVALUE&lt;/small&gt;. Here it is the comma delimited list of enumerators.
 &gt; NOTE&amp;nbsp; The measure type of _IfcPropertyEnumeration.EnumerationValues_ is provided as _PrimaryDataType_.</Documentation>
 			<DiagramLine>
 				<DocPoint X="3654.1466" Y="1688.1429" />
@@ -48,7 +48,7 @@ The value range of the measure type is within the select type _IfcValue_  for al
 		</DocAttribute>
 		<DocAttribute Name="Enumerators" UniqueId="883e5f6b-01e4-4244-a489-be75a31918fe" DefinedType="IfcPropertyEnumeration" AttributeFlags="1" AggregationType="0" AggregationFlag="0" XsdFormat="attribute">
 			<Documentation>Name of the property enumeration, and list of all valid enumerators being selectable values, assigned to the definition of the property. 
-This attribute shall only be provided, if the _PropertyType_ is set to:
+This attribute shall only be provided, if the _TemplateType_ is set to:
 * &lt;small&gt;P_ENUMERATEDVALUE&lt;/small&gt;</Documentation>
 			<DiagramLine>
 				<DocPoint X="3654.1466" Y="1803.0441" />
@@ -57,7 +57,7 @@ This attribute shall only be provided, if the _PropertyType_ is set to:
 			<DiagramLabel xsi:type="DocRectangle" X="3598.1466" Y="1795.0441" Width="148" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="PrimaryUnit" UniqueId="e67fbcd2-1af8-469f-bfb0-4cda583fb0c6" DefinedType="IfcUnit" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Primary unit assigned to the definition of the property. It should be provided, if the _PropertyType_ is set to:
+			<Documentation>Primary unit assigned to the definition of the property. It should be provided, if the _TemplateType_ is set to:
 * &lt;small&gt;P_SINGLEVALUE&lt;/small&gt;: determining the _IfcPropertySingleValue.Unit_
 * &lt;small&gt;P_ENUMERATEDVALUE&lt;/small&gt;: determining the _IfcPropertyEnumeration.Unit_
 * &lt;small&gt;P_BOUNDEDVALUE&lt;/small&gt;: determining the _IfcPropertyBoundedValue.Unit_
@@ -70,7 +70,7 @@ This attribute shall only be provided, if the _PropertyType_ is set to:
 			<DiagramLabel xsi:type="DocRectangle" X="3595.479933" Y="1885.503633" Width="134" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="SecondaryUnit" UniqueId="c3750bec-8371-47de-bf41-b9ac5295c1bb" DefinedType="IfcUnit" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>Secondary unit assigned to the definition of the property. It should be provided, if the _PropertyType_ is set to:
+			<Documentation>Secondary unit assigned to the definition of the property. It should be provided, if the _TemplateType_ is set to:
 * &lt;small&gt;P_TABLEVALUE&lt;/small&gt;: determining the _IfcPropertyTableValue.DefinedUnit_</Documentation>
 			<DiagramLine>
 				<DocPoint X="3654.1466" Y="1986.5759" />
@@ -79,11 +79,11 @@ This attribute shall only be provided, if the _PropertyType_ is set to:
 			<DiagramLabel xsi:type="DocRectangle" X="3606.1466" Y="1981.2425667" Width="169" Height="35" />
 		</DocAttribute>
 		<DocAttribute Name="Expression" UniqueId="2e44a5f9-8aa1-484d-86c1-21a2609f2dcc" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="0" AggregationFlag="0">
-			<Documentation>The expression used to store additional information for the property template depending on the _PropertyType_. It should the following definitions, if the _PropertyType_ is set to:
+			<Documentation>The expression used to store additional information for the property template depending on the _TemplateType_. It should the following definitions, if the _TemplateType_ is set to:
 * &lt;small&gt;P_TABLEVALUE&lt;/small&gt;: the expression that could be evaluated to define the correlation between the defining values and the defined values.
 * &lt;small&gt;Q_LENGTH, Q_AREA, Q_VOLUME, Q_COUNT, Q_WEIGTH, Q_TIME&lt;/small&gt;: the formula to be used to calculate the quantity
 
-&gt; NOTE&amp;nbsp; No value shall be asserted if the _PropertyType_ is not listed above.</Documentation>
+&gt; NOTE&amp;nbsp; No value shall be asserted if the _TemplateType_ is not listed above.</Documentation>
 			<DiagramLine>
 				<DocPoint X="3654.1466" Y="2077.3867" />
 				<DocPoint X="4008.81324" Y="2077.3867" />
@@ -106,4 +106,3 @@ This attribute shall only be provided, if the _PropertyType_ is set to:
 		</DocAttribute>
 	</Attributes>
 </DocEntity>
-
