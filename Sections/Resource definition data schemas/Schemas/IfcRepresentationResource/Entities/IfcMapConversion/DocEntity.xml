@@ -19,21 +19,18 @@
 		</DocAttribute>
 		<DocAttribute Name="XAxisAbscissa" UniqueId="fd51ced1-8bfd-4463-8c2d-da83ec682068" DefinedType="IfcReal" AttributeFlags="1">
 			<Documentation>Specifies the value along the easing axis of the end point of a vector indicating the position of the local x axis of the engineering coordinate reference system.
-&gt; NOTE&amp;nbsp;1 for right-handed Cartesian coordinate systems this would establish the location along the x axis
-
-&gt; NOTE&amp;nbsp;2 together with the _XAxisOrdinate_ it provides the direction of the local x axis within the horizontal plane of the map coordinate system</Documentation>
+{ .note}&gt; NOTE&amp;nbsp; together with the _YAxisOrdinate_ it provides the direction of the local x axis within the horizontal plane of the map coordinate system.
+			</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="XAxisOrdinate" UniqueId="7cbfb2eb-9b52-4866-9d87-da9d89a90495" DefinedType="IfcReal" AttributeFlags="1">
 			<Documentation>Specifies the value along the northing axis of the end point of a vector indicating the position of the local x axis of the engineering coordinate reference system.
-&gt; NOTE&amp;nbsp;1 for right-handed Cartesian coordinate systems this would establish the location along the y axis
-
-{ .note}
-&gt; 
-
-_XAxisAbscissa_ it provides the direction of the local x axis within the horizontal plane of the map coordinate system.</Documentation>
+{ .note}&gt; NOTE&amp;nbsp; together with the _XAxisAbscissa_ it provides the direction of the local x axis within the horizontal plane of the map coordinate system.
+			</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="Scale" UniqueId="db27722d-93be-4e68-a96a-712ebbef1884" DefinedType="IfcReal" AttributeFlags="1">
-			<Documentation>Scale to be used, when the units of the CRS are not identical to the units of the engineering coordinate system. If omited, the value of 1.0 is assumed.</Documentation>
+			<Documentation>Scale of distortion at the particular location of the map.
+{ .note}&gt; NOTE&amp;nbsp; The scale Scale to be used, when the units of the CRS are not identical to the units of the engineering coordinate system, have to be calculated by the units of the local engineering coordinate systems and the unit assigned to the _IfcProjectedCRS_.
+			</Documentation>
 		</DocAttribute>
 	</Attributes>
 </DocEntity>
