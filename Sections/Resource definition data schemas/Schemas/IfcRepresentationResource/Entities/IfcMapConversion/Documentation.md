@@ -6,6 +6,6 @@ The map conversion allows to convert the local origin of the local engineering c
 
 > NOTE&nbsp; The z axis of the local engineering coordinate system is always parallel to the z axis of the map coordinate system.
 
-The scale factor can be used when the length unit for the 3 axes of the map coordinate system are not identical with the length unit established for this project (see _IfcProject.UnitsInContext_), if omitted, the scale factor 1.0 is assumed.
+If the referenced _IfcProjectedCRS_ has an _Unit_ assigned, the unit applies to the length measures of _Northing_, _Easting_, and _OrthogonalHeigth_. If omitted the global length unit established for this project by _IfcProject.UnitsInContext_ also applies to  _Northing_, _Easting_, and _OrthogonalHeigth_.
 
 > HISTORY&nbsp; New entity in IFC4
