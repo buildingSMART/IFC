@@ -1,6 +1,6 @@
-﻿A unitary control element combines a number of control components into a single product, such as a thermostat or humidistat.
+﻿A unitary control element combines a number of control and/or electrical distribution components into a single product, such as a thermostat or humidistat, to perform a singular (unitary) purpose.
 
-A unitary control element provides a housing for an aggregation of control or electrical distribution elements that, in combination, perform a singular (unitary) purpose. Each item in the aggregation may have its own geometric representation and location.
+In addition a unitary control element provides a housing for the aggregation of such components.
 
 > HISTORY&nbsp; New entity in IFC4
 
