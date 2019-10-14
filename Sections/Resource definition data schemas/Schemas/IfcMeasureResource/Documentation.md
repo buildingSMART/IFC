@@ -1,6 +1,6 @@
 ﻿The _IfcMeasureResource_ schema specifies units and defined measure types that may be assigned to quantities.
 
-> NOTE&nbsp; The fundamental unit types used in this schema are based on the SI system defined in ISO 1000+A1, 1992, 1998. Units in measurement systems other than SI may be derived using this schema. Many definitions declared in the _IfcMeasureResource_ schema is adapted from [ISO 10303-41](../../bibliography.htm#iso-10303-41){ .int-ref}
+> NOTE&nbsp; The fundamental unit types used in this schema are based on the SI system defined in ISO/IEC 80000-1, 1992, 1998. Units in measurement systems other than SI may be derived using this schema. Many definitions declared in the _IfcMeasureResource_ schema is adapted from [ISO 10303-41](../../bibliography.htm#iso-10303-41){ .int-ref}
 
 > NOTE&nbsp; In the definitions of the unit exponents the use of superscript font has been omitted. Therefore, m2 means square metre, m3 means cubic meter.
 
