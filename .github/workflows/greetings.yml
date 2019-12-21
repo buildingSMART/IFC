@@ -1,0 +1,13 @@
+name: Greetings
+
+on: [pull_request, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: 'Thank you for submitting your first issue. Community engagement is very important for us. Looking forward to further engagements.'
+        pr-message: 'Awesome! Thank you for your first pull-request. IFC can only be improved with user engarement like this. Thanks again. It means the world to us!'
