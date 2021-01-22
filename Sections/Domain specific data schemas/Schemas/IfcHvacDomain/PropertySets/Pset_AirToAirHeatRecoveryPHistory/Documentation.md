@@ -1,1 +1,1 @@
-﻿Air to Air Heat Recovery performance history common attributes.
+Air to Air Heat Recovery performance history common attributes.

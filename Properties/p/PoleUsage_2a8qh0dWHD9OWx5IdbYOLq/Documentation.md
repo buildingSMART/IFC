@@ -1,1 +1,1 @@
-﻿Pole usage.
+Pole usage.

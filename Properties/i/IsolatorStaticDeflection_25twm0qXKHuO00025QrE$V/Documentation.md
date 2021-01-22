@@ -1,1 +1,1 @@
-﻿Static deflection of the vibration isolator.
+Static deflection of the vibration isolator.

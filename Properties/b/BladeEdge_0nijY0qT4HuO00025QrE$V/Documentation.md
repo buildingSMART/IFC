@@ -1,1 +1,1 @@
-﻿Blade edge.
+Blade edge.

@@ -1,4 +1,4 @@
-﻿A stair is a vertical passageway allowing occupants to walk (step) from one floor level to another floor level at a different elevation. It may include a landing as an intermediate floor slab.
+A stair is a vertical passageway allowing occupants to walk (step) from one floor level to another floor level at a different elevation. It may include a landing as an intermediate floor slab.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO 6707-1: Construction comprising a succession of horizontal stages (steps or landings) that make it possible to pass on foot to other levels.
@@ -14,5 +14,5 @@ The _IfcStair_ shall either be represented:
 
 > HISTORY&nbsp; New entity in IFC2.0.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE Attribute _ShapeType_ renamed to _PredefinedType_.

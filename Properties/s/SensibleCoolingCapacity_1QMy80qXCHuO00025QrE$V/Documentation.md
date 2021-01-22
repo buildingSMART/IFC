@@ -1,1 +1,1 @@
-﻿Sensible cooling capacity.
+Sensible cooling capacity.

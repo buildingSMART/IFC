@@ -1,1 +1,1 @@
-﻿Measure a according to ISO 2553
+Measure a according to ISO 2553

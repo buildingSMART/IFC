@@ -1,1 +1,1 @@
-﻿Heat exchanger type common attributes.
+Heat exchanger type common attributes.

@@ -1,4 +1,4 @@
-﻿The _IfcRepresentation_ defines the general concept of representing product properties and in particular the product shape.
+The _IfcRepresentation_ defines the general concept of representing product properties and in particular the product shape.
 
 { .extDef}
 > NOTE&nbsp; Definition from ISO 10303-43:  
@@ -13,7 +13,7 @@
 { .change-ifc2x3}
 > IFC2x3 CHANGE&nbsp; The inverse attributes _LayerAssignments_ and_RepresentationMap_ have been added with upward compatibility.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; Entity _IfcRepresentation_ has been changed into an ABSTRACT supertype.
 
 { .use-head}

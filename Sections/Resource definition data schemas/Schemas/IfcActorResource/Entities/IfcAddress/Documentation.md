@@ -1,4 +1,4 @@
-﻿This abstract entity represents various kinds of postal and telecom addresses.
+This abstract entity represents various kinds of postal and telecom addresses.
 
 > NOTE&nbsp; Entity adapted from **address** defined in ISO&nbsp;10303-41.
 

@@ -1,1 +1,1 @@
-﻿Shear strength.
+Shear strength.

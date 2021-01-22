@@ -1,1 +1,1 @@
-﻿The organization that manufactured and/or assembled the item.
+The organization that manufactured and/or assembled the item.

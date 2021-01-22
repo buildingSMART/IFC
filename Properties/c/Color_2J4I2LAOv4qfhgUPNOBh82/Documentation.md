@@ -1,1 +1,1 @@
-﻿Color selection for this object.
+Color selection for this object.

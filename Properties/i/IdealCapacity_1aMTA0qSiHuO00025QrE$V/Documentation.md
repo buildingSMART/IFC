@@ -1,1 +1,1 @@
-﻿Compressor capacity under ideal conditions.
+Compressor capacity under ideal conditions.

@@ -1,1 +1,1 @@
-﻿Load safety factor.
+Load safety factor.

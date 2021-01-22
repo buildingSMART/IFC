@@ -1,4 +1,4 @@
-﻿The resource type _IfcLaborResourceType_ defines commonly shared information for occurrences of labour resources. The set of shared information may include:
+The resource type _IfcLaborResourceType_ defines commonly shared information for occurrences of labour resources. The set of shared information may include:
 
 * common productivities
 * common cost rates

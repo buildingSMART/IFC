@@ -1,1 +1,1 @@
-﻿Common properties of all occurrences of IfcDistributionChamberElement.
+Common properties of all occurrences of IfcDistributionChamberElement.

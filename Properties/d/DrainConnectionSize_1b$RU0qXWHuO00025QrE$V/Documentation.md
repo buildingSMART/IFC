@@ -1,1 +1,1 @@
-﻿Size of the drain connection inlet to the waste disposal unit.
+Size of the drain connection inlet to the waste disposal unit.

@@ -1,1 +1,1 @@
-﻿Properties common to fixing sockets.
+Properties common to fixing sockets.

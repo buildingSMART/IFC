@@ -1,1 +1,1 @@
-﻿Ventilation air flow rate in the space.
+Ventilation air flow rate in the space.

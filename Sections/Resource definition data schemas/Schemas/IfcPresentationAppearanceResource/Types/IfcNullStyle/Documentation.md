@@ -1,4 +1,4 @@
-﻿The _IfcNullStyle_ is an enumeration with a fixed value NULL to indicate that no presentation style is defined for the representation item.
+The _IfcNullStyle_ is an enumeration with a fixed value NULL to indicate that no presentation style is defined for the representation item.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-46:1992  
@@ -8,5 +8,5 @@
 
 > HISTORY&nbsp; New enumeration type in IFC2x2.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; The enumeration is deprecated.

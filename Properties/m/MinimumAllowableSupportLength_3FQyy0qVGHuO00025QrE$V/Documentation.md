@@ -1,1 +1,1 @@
-﻿The minimum allowable support length.
+The minimum allowable support length.

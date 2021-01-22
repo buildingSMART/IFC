@@ -1,1 +1,1 @@
-﻿Defining values: α; defined values: shear strength.
+Defining values: α; defined values: shear strength.

@@ -1,1 +1,1 @@
-﻿Pressure rise = f (flow rate).
+Pressure rise = f (flow rate).

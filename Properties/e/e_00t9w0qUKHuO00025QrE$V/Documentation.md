@@ -1,1 +1,1 @@
-﻿Measure e according to ISO 2553
+Measure e according to ISO 2553

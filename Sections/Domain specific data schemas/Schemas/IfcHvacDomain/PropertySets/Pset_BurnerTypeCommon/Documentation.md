@@ -1,1 +1,1 @@
-﻿Common attributes of burner types.
+Common attributes of burner types.

@@ -1,1 +1,1 @@
-﻿Year of construction of this building, including expected year of completion.
+Year of construction of this building, including expected year of completion.

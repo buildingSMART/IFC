@@ -1,1 +1,1 @@
-﻿The pump and motor overall operational efficiency.
+The pump and motor overall operational efficiency.

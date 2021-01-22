@@ -1,1 +1,1 @@
-﻿Information on tripping units that are thermally tripped.
+Information on tripping units that are thermally tripped.

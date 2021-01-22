@@ -1,1 +1,1 @@
-﻿Tensile strength, α=0°.
+Tensile strength, α=0°.

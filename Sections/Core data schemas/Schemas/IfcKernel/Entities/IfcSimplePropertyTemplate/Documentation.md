@@ -1,4 +1,4 @@
-﻿The _IfcSimplePropertyTemplate_ defines the template for all dynamically extensible properties, either the subtypes of _IfcSimpleProperty_, or the subtypes of _IfcPhysicalSimpleQuantity_. The individual property templates are interpreted according to their _Name_ attribute and may have a predefined template type, property units, and property measure types. The correct interpretation of the attributes:
+The _IfcSimplePropertyTemplate_ defines the template for all dynamically extensible properties, either the subtypes of _IfcSimpleProperty_, or the subtypes of _IfcPhysicalSimpleQuantity_. The individual property templates are interpreted according to their _Name_ attribute and may have a predefined template type, property units, and property measure types. The correct interpretation of the attributes:
 
 * _PrimaryUnit_
 * _SecondaryUnit_

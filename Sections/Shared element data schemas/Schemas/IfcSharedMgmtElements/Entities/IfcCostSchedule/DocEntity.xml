@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCostSchedule" Name="IfcCostSchedule" UniqueId="ff373331-377a-4ddd-8781-060d4b4f0828" Status="H" BaseDefinition="IfcControl" EntityFlags="229">
 	<Localization>
 		<DocLocalization Locale="de" Name="Kostentabelle" />
@@ -9,7 +9,7 @@
 		<DocAttribute Name="PredefinedType" UniqueId="11588a64-9704-464e-859a-69c5c7ed8693" DefinedType="IfcCostScheduleTypeEnum" AttributeFlags="1">
 			<Documentation>Predefined generic type for a cost schedule that is specified in an enumeration. There may be a property set given specifically for the predefined types.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE The attribute has been made optional.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="Status" UniqueId="69cf6268-7c30-4f3d-a314-486cc0140ad1" DefinedType="IfcLabel" AttributeFlags="1">
@@ -22,12 +22,12 @@
 		</DocAttribute>
 		<DocAttribute Name="SubmittedOn" UniqueId="01517834-9aeb-40dd-9b60-86a3bc514efc" DefinedType="IfcDateTime" AttributeFlags="1">
 			<Documentation>The date and time on which the cost schedule was submitted.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE Type changed from IfcDateTimeSelect.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="UpdateDate" UniqueId="99952380-22fd-4754-9d3d-84dca6afe470" DefinedType="IfcDateTime" AttributeFlags="1">
 			<Documentation>The date and time that this cost schedule is updated; this allows tracking the schedule history.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE Type changed from IfcDateTimeSelect.</Documentation>
 		</DocAttribute>
 	</Attributes>

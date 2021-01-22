@@ -1,1 +1,1 @@
-﻿Weight of the duct fitting.
+Weight of the duct fitting.

@@ -1,4 +1,4 @@
-﻿The _IfcSharedFacilitiesElements_ schema defines basic concepts in the facilities management (FM) domain. This schema, along with _IfcProcessExtension_ and _IfcSharedMgmtElements_, provide a set of models that can be used by applications needing to share information concerning facilities management related issues.
+The _IfcSharedFacilitiesElements_ schema defines basic concepts in the facilities management (FM) domain. This schema, along with _IfcProcessExtension_ and _IfcSharedMgmtElements_, provide a set of models that can be used by applications needing to share information concerning facilities management related issues.
 
 The _IfcSharedFacilitiesElements_ schema supports ideas including:
 

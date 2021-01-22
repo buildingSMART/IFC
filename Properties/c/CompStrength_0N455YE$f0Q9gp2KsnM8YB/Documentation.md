@@ -1,1 +1,1 @@
-﻿Compressive strength, α=0°.
+Compressive strength, α=0°.

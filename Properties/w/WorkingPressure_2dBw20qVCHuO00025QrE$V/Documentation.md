@@ -1,1 +1,1 @@
-﻿Working pressure.
+Working pressure.

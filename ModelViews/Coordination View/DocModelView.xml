@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocModelView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Coordination View" UniqueId="919c202e-8bef-4706-9806-9a1ca6d233c3" Code="IFC2X3CV" Status="Official">
 	<ConceptRoots>
 		<DocConceptRoot UniqueId="26985285-cd18-4e32-81c5-aca89c204bae">
@@ -93,10 +93,6 @@
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBuilding" />
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="37251ebf-f36c-4348-aa89-d908a0d528a8" Type="IfcBuilding" />
 		</DocConceptRoot>
-		<DocConceptRoot UniqueId="55553a46-bea5-4f9b-9b7d-2527ca56d848">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBuildingElement" />
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="fd15d974-dc7c-46bb-a6b5-b6703539b0bc" Type="IfcBuildingElement" />
-		</DocConceptRoot>
 		<DocConceptRoot UniqueId="ce9d69a9-c83c-4eb3-a9e1-72c7b3f982b3">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBuildingElementPart" />
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="7cc6e1ee-46cf-458c-ad69-a693882dc44d" Type="IfcBuildingElementPart" />
@@ -109,13 +105,17 @@
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBuildingElementProxyType" />
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="fa994337-cdd9-4519-acef-13262f2eae59" Type="IfcBuildingElementProxyType" />
 		</DocConceptRoot>
-		<DocConceptRoot UniqueId="4d617e10-0fc3-420e-8d11-0a6f59d5cee6">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBuildingElementType" />
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="3521f1e0-99b0-4521-9cad-b3b45bf5b0ee" Type="IfcBuildingElementType" />
-		</DocConceptRoot>
 		<DocConceptRoot UniqueId="86d1bf1d-b46f-4965-a4ae-173a306d150c">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBuildingStorey" />
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="a4dd130e-c3ae-471a-8da8-638aea4d7238" Type="IfcBuildingStorey" />
+		</DocConceptRoot>
+		<DocConceptRoot UniqueId="55553a46-bea5-4f9b-9b7d-2527ca56d848">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBuiltElement" />
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="fd15d974-dc7c-46bb-a6b5-b6703539b0bc" Type="IfcBuildingElement" />
+		</DocConceptRoot>
+		<DocConceptRoot UniqueId="4d617e10-0fc3-420e-8d11-0a6f59d5cee6">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBuiltElementType" />
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="3521f1e0-99b0-4521-9cad-b3b45bf5b0ee" Type="IfcBuildingElementType" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="4274f1b5-e568-4bec-aecf-6aa0bd9c0795">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcCableCarrierFittingType" />

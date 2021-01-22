@@ -1,1 +1,1 @@
-﻿Number of panels.
+Number of panels.

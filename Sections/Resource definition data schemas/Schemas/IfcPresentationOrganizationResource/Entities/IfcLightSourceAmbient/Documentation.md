@@ -1,4 +1,4 @@
-﻿{ .extDef}
+{ .extDef}
 > NOTE&nbsp; Definition according to ISO 10303-46:  
 > The light source ambient entity is a subtype of light source. It lights a surface independent of the surface's orientation and position.
 

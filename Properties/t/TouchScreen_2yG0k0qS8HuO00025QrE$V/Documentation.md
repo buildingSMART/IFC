@@ -1,1 +1,1 @@
-﻿Indicates touchscreen support.
+Indicates touchscreen support.

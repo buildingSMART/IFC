@@ -1,1 +1,1 @@
-﻿Indicates audio amplification frequency ranges.
+Indicates audio amplification frequency ranges.

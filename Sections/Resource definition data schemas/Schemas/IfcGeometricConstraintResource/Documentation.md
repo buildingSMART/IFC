@@ -1,4 +1,4 @@
-﻿The schema _IfcGeometricConstraintResource_ defines the resources used to determine the placement of the shape representation of a product within the geometric representation context of a project. It also contains resource definitions to be assigned to product connectivity definitions to determine the connection geometry constraints between those products.
+The schema _IfcGeometricConstraintResource_ defines the resources used to determine the placement of the shape representation of a product within the geometric representation context of a project. It also contains resource definitions to be assigned to product connectivity definitions to determine the connection geometry constraints between those products.
 
 The primary application of this resource is to:
 

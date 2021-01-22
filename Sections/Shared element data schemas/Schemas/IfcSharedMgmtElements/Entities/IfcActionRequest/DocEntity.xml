@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcActionRequest" Name="IfcActionRequest" UniqueId="7045cc64-c05a-4a43-aaa5-b5b4d849f3f5" BaseDefinition="IfcControl" EntityFlags="229">
 	<Localization>
 		<DocLocalization Locale="de" Name="Tätigkeitsanfrage" />
@@ -9,7 +9,7 @@
 		<DocAttribute Name="PredefinedType" UniqueId="04d1554b-e1df-4af5-b21d-47c6f248a9a0" DefinedType="IfcActionRequestTypeEnum" AttributeFlags="1">
 			<Documentation>Identifies the predefined type of sources through which a request can be made.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE The attribute has been added.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="Status" UniqueId="c98c93dd-884d-46da-b5e2-2d3e00098829" DefinedType="IfcLabel" AttributeFlags="1">
@@ -18,13 +18,13 @@ Hold: wait to see if further requests are received before deciding on action
 NoAction: no action is required on this request  
 Schedule: plan action to take place as part of maintenance or other task planning/scheduling  
 Urgent: take action immediately  
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE The attribute has been added.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="LongDescription" UniqueId="cf5a062f-d588-48de-8962-d74ad1d29328" DefinedType="IfcText" AttributeFlags="1">
 			<Documentation>Detailed description of the permit.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE The attribute has been added.</Documentation>
 		</DocAttribute>
 	</Attributes>

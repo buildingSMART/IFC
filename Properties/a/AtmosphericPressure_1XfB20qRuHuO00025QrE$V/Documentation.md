@@ -1,1 +1,1 @@
-﻿Ambient atmospheric pressure.
+Ambient atmospheric pressure.

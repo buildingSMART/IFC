@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcConveyorSegmentType" UniqueId="4481e1f9-4957-4775-9b65-2c038cca4f50" BaseDefinition="IfcFlowSegmentType" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="f51140a7-e904-41f3-92f3-5cf56e6b8416" DefinedType="IfcConveyorSegmentTypeEnum">
+			<Documentation></Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="083054c0-7415-4cee-b2f7-6a0f4d852ac4">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcConveyorSegmentTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcConveyorSegmentTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

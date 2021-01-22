@@ -1,1 +1,1 @@
-﻿A high voltage surge protection device.
+A high voltage surge protection device.

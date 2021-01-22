@@ -1,1 +1,1 @@
-﻿Energy efficiency ratio (EER).
+Energy efficiency ratio (EER).

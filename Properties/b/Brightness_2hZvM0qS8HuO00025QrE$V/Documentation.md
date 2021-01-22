@@ -1,1 +1,1 @@
-﻿Indicates the display brightness.
+Indicates the display brightness.

@@ -1,1 +1,1 @@
-﻿Evaporator type common attributes.
+Evaporator type common attributes.

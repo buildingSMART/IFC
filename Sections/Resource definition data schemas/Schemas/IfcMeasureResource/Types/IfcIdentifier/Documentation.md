@@ -1,4 +1,4 @@
-﻿An identifier is an alphanumeric string which allows an individual thing to be identified. It may not provide natural-language meaning.
+An identifier is an alphanumeric string which allows an individual thing to be identified. It may not provide natural-language meaning.
 
 Type: STRING of up to 255 characters
 
@@ -6,7 +6,7 @@ Type: STRING of up to 255 characters
 
 > HISTORY&nbsp; New type in IFC2x.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC 2x4 CHANGE&nbsp; Previously recommended size restriction of 255 characters is now mandatory.
 
 { .use-head}

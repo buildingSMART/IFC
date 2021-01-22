@@ -1,1 +1,1 @@
-﻿Sensible heat transfer rate to primary air flow.
+Sensible heat transfer rate to primary air flow.

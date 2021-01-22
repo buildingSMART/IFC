@@ -1,1 +1,1 @@
-﻿Number of plies.
+Number of plies.

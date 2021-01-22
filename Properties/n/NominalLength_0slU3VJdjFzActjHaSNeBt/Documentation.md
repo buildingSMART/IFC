@@ -1,1 +1,1 @@
-﻿Nominal or quoted length of the object.
+Nominal or quoted length of the object.

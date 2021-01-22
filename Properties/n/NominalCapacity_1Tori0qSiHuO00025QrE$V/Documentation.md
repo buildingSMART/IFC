@@ -1,1 +1,1 @@
-﻿Compressor nameplate capacity.
+Compressor nameplate capacity.

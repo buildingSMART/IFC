@@ -1,1 +1,1 @@
-﻿If TRUE, the air terminal has thermal insulation.
+If TRUE, the air terminal has thermal insulation.

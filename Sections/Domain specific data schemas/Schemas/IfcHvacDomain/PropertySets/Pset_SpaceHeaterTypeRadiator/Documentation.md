@@ -1,1 +1,1 @@
-﻿Space heater type radiator attributes.
+Space heater type radiator attributes.

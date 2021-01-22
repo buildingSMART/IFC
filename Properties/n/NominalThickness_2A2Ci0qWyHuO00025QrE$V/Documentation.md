@@ -1,1 +1,1 @@
-﻿The nominal thickness of the work surface.
+The nominal thickness of the work surface.

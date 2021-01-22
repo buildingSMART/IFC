@@ -1,1 +1,1 @@
-﻿Common attributes of a pressure vessel.
+Common attributes of a pressure vessel.

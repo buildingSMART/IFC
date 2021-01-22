@@ -1,1 +1,1 @@
-﻿Air velocity at the neck.
+Air velocity at the neck.

@@ -1,10 +1,10 @@
-﻿_IfcConstructionResource_ is an abstract generalization of the different resources used in construction projects, mainly labour, material, equipment and product resources, plus subcontracted resources and aggregations such as a crew resource.
+_IfcConstructionResource_ is an abstract generalization of the different resources used in construction projects, mainly labour, material, equipment and product resources, plus subcontracted resources and aggregations such as a crew resource.
 
 A resource represents "use of something" and does not necessarily correspond to a single item such as a person or vehicle, but represents a pool of items having limited availability such as general labor or an equipment fleet. A resource can represent either a generic resource pool (not having any task assignment) or a task-specific resource allocation (having an _IfcTask_ assignment).
 
 > HISTORY&nbsp; New entity in IFC2x2.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; Modified in to promote _ResourceIdentifer_ and _ResourceGroup_ (renamed to _LongDescription_) to supertype _IfcResource_ and add attributes as described.
 
 { .use-head}

@@ -1,4 +1,4 @@
-﻿A property with a bounded value, _IfcPropertyBoundedValue_, defines a property object which has a maximum of two (numeric or descriptive) values assigned, the first value specifying the upper bound and the second value specifying the lower bound. It defines a property - value bound (min-max) combination for which the property _Name_, an optional _Description_, the optional _UpperBoundValue_ with measure type, the optional _LowerBoundValue_ with measure type, and the optional _Unit_ is given. A set point value can be provided in addition to the upper and lower bound values for operational value setting.
+A property with a bounded value, _IfcPropertyBoundedValue_, defines a property object which has a maximum of two (numeric or descriptive) values assigned, the first value specifying the upper bound and the second value specifying the lower bound. It defines a property - value bound (min-max) combination for which the property _Name_, an optional _Description_, the optional _UpperBoundValue_ with measure type, the optional _LowerBoundValue_ with measure type, and the optional _Unit_ is given. A set point value can be provided in addition to the upper and lower bound values for operational value setting.
 
 The unit is handled by the _Unit_ attribute, see Table 1 for an example of a bounded property:
 
@@ -71,7 +71,7 @@ The _IfcPropertyBoundedValue_ allows for the specification of an interval for th
 { .change-ifc2x2}
 > IFC2x2 CHANGE&nbsp; The attribute type of the attribute _UpperBoundValue_ and _LowerBoundValue_ has been made optional with upward compatibility for file based exchange.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; The attribute _SetPointValue_ has been added.
 
 { .spec-head}

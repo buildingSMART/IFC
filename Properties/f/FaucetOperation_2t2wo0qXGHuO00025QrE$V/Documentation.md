@@ -1,4 +1,4 @@
-﻿Defines the range of ways in which a faucet can be operated that may be specified where:
+Defines the range of ways in which a faucet can be operated that may be specified where:
 
 CeramicDisc: Quick action faucet with a ceramic seal to open or close the orifice
 .

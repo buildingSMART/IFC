@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStair" Name="IfcStair" UniqueId="d974f360-0afb-4b3f-a222-03b0b82cf2e3" BaseDefinition="IfcBuildingElement" EntityFlags="109">
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStair" Name="IfcStair" UniqueId="d974f360-0afb-4b3f-a222-03b0b82cf2e3" BaseDefinition="IfcBuiltElement" EntityFlags="109">
 	<Localization>
 		<DocLocalization Locale="de" Name="Treppe" />
 		<DocLocalization Locale="en" Name="Stair" />
@@ -10,7 +10,7 @@
 			<Documentation>Predefined generic type for a stair that is specified in an enumeration. There may be a property set given specifically for the predefined types.
 &gt; NOTE&amp;nbsp; The _PredefinedType_ shall only be used, if no _IfcStairType_ is assigned, providing its own _IfcStairType.PredefinedType_.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE The attribute has been renamed from _ShapeType_ and changed to be OPTIONAL with upward compatibility for file based exchange.</Documentation>
 		</DocAttribute>
 	</Attributes>

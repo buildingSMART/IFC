@@ -1,4 +1,4 @@
-﻿Boolean operators that apply to the first and second Boolean operands.
+Boolean operators that apply to the first and second Boolean operands.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  

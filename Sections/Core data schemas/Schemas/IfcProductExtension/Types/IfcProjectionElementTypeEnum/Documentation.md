@@ -1,4 +1,4 @@
-﻿This enumeration defines the basic types of projection elements.
+This enumeration defines the basic types of projection elements.
 
 > NOTE&nbsp; Cuurently no predefined are defined.
 

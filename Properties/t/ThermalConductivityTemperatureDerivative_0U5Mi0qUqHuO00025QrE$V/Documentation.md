@@ -1,1 +1,1 @@
-﻿Thermal conductivity temperature derivative.
+Thermal conductivity temperature derivative.

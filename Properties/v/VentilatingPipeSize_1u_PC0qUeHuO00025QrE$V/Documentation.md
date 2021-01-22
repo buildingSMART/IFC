@@ -1,1 +1,1 @@
-﻿Size of the ventilating pipe(s).
+Size of the ventilating pipe(s).

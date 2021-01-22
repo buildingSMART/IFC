@@ -1,4 +1,4 @@
-﻿The building element type **IfcRampType** defines commonly shared information for occurrences of ramps. The set of shared information may include:
+The building element type **IfcRampType** defines commonly shared information for occurrences of ramps. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

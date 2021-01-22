@@ -1,4 +1,4 @@
-﻿_IfcMaterialSelect_ provides selection of either a material definition or a material usage definition that can be assigned to an element, a resource or another entity within this specification.
+_IfcMaterialSelect_ provides selection of either a material definition or a material usage definition that can be assigned to an element, a resource or another entity within this specification.
 
 * _IfcMaterialDefinition_ 
     * _IfcMaterial_
@@ -15,5 +15,5 @@
 
 > HISTORY&nbsp; New select in IFC1.0
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE The select now includes two new abstract entities _IfcMaterialDefinition_ and _IfcMaterialUsageDefinition_ with upward compatibility. The use of _IfcMaterialList_ is deprecated from IFC4 onwards.

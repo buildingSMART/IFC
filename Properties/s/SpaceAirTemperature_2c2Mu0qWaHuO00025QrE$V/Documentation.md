@@ -1,1 +1,1 @@
-﻿Dry bulb temperature in the space.
+Dry bulb temperature in the space.

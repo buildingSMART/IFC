@@ -1,1 +1,1 @@
-﻿Date on which the agreement commences.
+Date on which the agreement commences.

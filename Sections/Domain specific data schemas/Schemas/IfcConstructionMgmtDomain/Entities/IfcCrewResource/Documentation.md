@@ -1,4 +1,4 @@
-﻿_IfcCrewResource_ represents a collection of internal resources used in construction processes.
+_IfcCrewResource_ represents a collection of internal resources used in construction processes.
 
 > HISTORY&nbsp; New entity in IFC2.0.
 

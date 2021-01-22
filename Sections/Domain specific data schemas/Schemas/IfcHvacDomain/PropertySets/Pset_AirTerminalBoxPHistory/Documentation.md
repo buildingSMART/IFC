@@ -1,1 +1,1 @@
-﻿Air terminal box performance history attributes.
+Air terminal box performance history attributes.

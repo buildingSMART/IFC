@@ -1,4 +1,4 @@
-﻿The _IfcTextureCoordinateGenerator_ describes a procedurally defined mapping function with input parameter to map 2D texture coordinates to 3D geometry vertices. The allowable _Mode_ values and input _Parameter_ need to be agreed upon in view definitions and implementer agreements.
+The _IfcTextureCoordinateGenerator_ describes a procedurally defined mapping function with input parameter to map 2D texture coordinates to 3D geometry vertices. The allowable _Mode_ values and input _Parameter_ need to be agreed upon in view definitions and implementer agreements.
 
 > NOTE&nbsp; It is recommended to use the texture coordinate generation modes as defined in X3D.
 

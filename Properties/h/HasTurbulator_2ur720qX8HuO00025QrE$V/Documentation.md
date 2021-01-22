@@ -1,1 +1,1 @@
-﻿TRUE if the tube has a turbulator, FALSE if it does not.
+TRUE if the tube has a turbulator, FALSE if it does not.

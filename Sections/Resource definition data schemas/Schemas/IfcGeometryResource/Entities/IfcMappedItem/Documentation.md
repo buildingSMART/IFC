@@ -1,4 +1,4 @@
-﻿The _IfcMappedItem_ is the inserted instance of a source definition (to be compared with a block / shared cell / macro definition). The instance is inserted by applying a Cartesian transformation operator as the _MappingTarget_.
+The _IfcMappedItem_ is the inserted instance of a source definition (to be compared with a block / shared cell / macro definition). The instance is inserted by applying a Cartesian transformation operator as the _MappingTarget_.
 
 > NOTE&nbsp; A mapped item is a subtype of representation item. It enables a representation to be used as a representation item in one or more other representations. The mapped item allows for the definition of a representation using other representations.
 

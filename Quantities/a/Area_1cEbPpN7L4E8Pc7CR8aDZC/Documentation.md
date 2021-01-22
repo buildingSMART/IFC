@@ -1,1 +1,1 @@
-﻿Total area of the outer lining of the door.
+Total area of the outer lining of the door.

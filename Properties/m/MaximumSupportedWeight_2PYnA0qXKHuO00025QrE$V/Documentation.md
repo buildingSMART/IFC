@@ -1,1 +1,1 @@
-﻿The maximum weight that can be carried by the vibration isolator.
+The maximum weight that can be carried by the vibration isolator.

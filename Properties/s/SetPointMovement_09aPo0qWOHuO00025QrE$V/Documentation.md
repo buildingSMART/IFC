@@ -1,1 +1,1 @@
-﻿The movement to be sensed.
+The movement to be sensed.

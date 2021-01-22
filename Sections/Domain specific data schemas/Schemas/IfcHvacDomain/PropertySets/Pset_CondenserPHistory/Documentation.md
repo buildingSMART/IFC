@@ -1,1 +1,1 @@
-﻿Condenser performance history attributes.
+Condenser performance history attributes.

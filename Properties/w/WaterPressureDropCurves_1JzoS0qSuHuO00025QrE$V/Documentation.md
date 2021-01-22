@@ -1,1 +1,1 @@
-﻿Water pressure drop as function of water flow rate.
+Water pressure drop as function of water flow rate.

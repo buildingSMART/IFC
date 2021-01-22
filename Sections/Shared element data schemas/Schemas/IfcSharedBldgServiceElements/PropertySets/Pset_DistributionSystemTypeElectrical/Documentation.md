@@ -1,1 +1,1 @@
-﻿Properties of electrical circuits.
+Properties of electrical circuits.

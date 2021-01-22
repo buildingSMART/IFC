@@ -1,1 +1,1 @@
-﻿Description of the water impermeability denoting the water repelling properties.
+Description of the water impermeability denoting the water repelling properties.

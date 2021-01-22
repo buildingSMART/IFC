@@ -1,1 +1,1 @@
-﻿Coil connection direction (facing into the air stream).
+Coil connection direction (facing into the air stream).

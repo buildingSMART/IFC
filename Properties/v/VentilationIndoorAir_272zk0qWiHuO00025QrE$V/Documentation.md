@@ -1,1 +1,1 @@
-﻿Ventilation loads from indoor air.
+Ventilation loads from indoor air.

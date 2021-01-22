@@ -1,1 +1,1 @@
-﻿Weight of water content within the heater.
+Weight of water content within the heater.

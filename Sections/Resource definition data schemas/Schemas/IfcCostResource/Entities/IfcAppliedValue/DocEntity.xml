@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAppliedValue" UniqueId="878e7c12-556c-42e6-a62a-feef9a77b4f9" EntityFlags="229">
 	<Localization>
 		<DocLocalization Locale="de" Name="Angewendeter Wert" />
@@ -27,12 +27,12 @@ Note: This attribute should be asserted for all circumstances where the cost to 
 		</DocAttribute>
 		<DocAttribute Name="ApplicableDate" UniqueId="607a3336-5a2c-4366-a5a4-4ecde56ea7f9" DefinedType="IfcDate" AttributeFlags="1">
 			<Documentation>The date on or from which an applied value is applicable.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE Type changed from IfcDateTimeSelect.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="FixedUntilDate" UniqueId="44cc2615-38d3-4a6e-a478-efc5cbd2cefa" DefinedType="IfcDate" AttributeFlags="1">
 			<Documentation>The date until which applied value is applicable.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE Type changed from IfcDateTimeSelect.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="Category" UniqueId="1d4e4998-3ebe-4e3c-b6b0-11ac5c1adf89" DefinedType="IfcLabel" AttributeFlags="1">
@@ -57,7 +57,7 @@ For example, within the context of a bid submission, this may refer to an option
 		</DocAttribute>
 		<DocAttribute Name="HasExternalReference" UniqueId="fa44a5a5-d30c-49f6-bfee-252224ac5db6" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="32" AggregationType="3" Inverse="RelatedResourceObjects">
 			<Documentation>Reference to an external reference, e.g. library, classification, or document information, that is associated to the IfcAppliedValue. 
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE New inverse attribute.</Documentation>
 		</DocAttribute>
 	</Attributes>

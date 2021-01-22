@@ -1,1 +1,1 @@
-﻿Enumeration that identifies the type of movement sensing mechanism.
+Enumeration that identifies the type of movement sensing mechanism.

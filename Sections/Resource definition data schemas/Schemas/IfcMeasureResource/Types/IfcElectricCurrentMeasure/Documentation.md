@@ -1,4 +1,4 @@
-﻿The value for the movement of electrically charged particles.
+The value for the movement of electrically charged particles.
 
 Usually measured in Ampere (A).
 

@@ -1,1 +1,1 @@
-﻿Number of blades.
+Number of blades.

@@ -1,1 +1,1 @@
-﻿The temperature of the fuel.
+The temperature of the fuel.

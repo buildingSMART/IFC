@@ -1,1 +1,1 @@
-﻿Maximum pressure under normal operating conditions.
+Maximum pressure under normal operating conditions.

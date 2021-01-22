@@ -1,4 +1,4 @@
-﻿Centrifugal fan discharge position.
+Centrifugal fan discharge position.
 
 TOPHORIZONTAL: Top horizontal discharge. 
 TOPANGULARDOWN: Top angular down discharge. 

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcContext" UniqueId="2ef4dae0-8e0d-4c3e-a179-bf7d2f279492" BaseDefinition="IfcObjectDefinition" EntityFlags="141">
 	<Localization>
 		<DocLocalization Locale="de" Name="Kontextinformation" />
@@ -22,17 +22,17 @@
 		</DocAttribute>
 		<DocAttribute Name="RepresentationContexts" UniqueId="e9ef241b-a738-4ab4-b2cd-7041784d5749" DefinedType="IfcRepresentationContext" AttributeFlags="1" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Context of the representations used within the context. When the context is a project and it includes shape representations for its components, one or several geometric representation contexts need to be included that define e.g. the world coordinate system, the coordinate space dimensions, and/or the precision factor.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute has been changed to be optional. Change made with upward compatibility for file based exchange.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="UnitsInContext" UniqueId="59787a75-222f-48ec-a8d6-73733cf7c004" DefinedType="IfcUnitAssignment" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Units globally assigned to measure types used within the context.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute has been changed to be optional. Change made with upward compatibility for file based exchange.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="IsDefinedBy" UniqueId="7e8b25d6-0e9c-4e04-bc16-e08eea08f8ec" DefinedType="IfcRelDefinesByProperties" AggregationType="3" AggregationLower="0" AggregationUpper="0" Inverse="RelatedObjects" XsdFormat="element">
 			<Documentation>Set of relationships to property set definitions attached to this context. Those statically or dynamically defined properties contain alphanumeric information content that further defines the context. 
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The data type has been changed from _IfcRelDefines_ to _IfcRelDefinesByProperties_ with upward compatibility for file based exchange.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="Declares" UniqueId="cd34747d-186f-4fe1-9267-19625144c9e6" DefinedType="IfcRelDeclares" AttributeFlags="8" AggregationType="3" Inverse="RelatingContext" XsdFormat="element">

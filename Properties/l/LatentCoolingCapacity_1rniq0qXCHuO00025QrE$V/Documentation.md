@@ -1,1 +1,1 @@
-﻿Latent cooling capacity.
+Latent cooling capacity.

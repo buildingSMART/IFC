@@ -1,1 +1,1 @@
-﻿The radius of bending for the left junction.
+The radius of bending for the left junction.

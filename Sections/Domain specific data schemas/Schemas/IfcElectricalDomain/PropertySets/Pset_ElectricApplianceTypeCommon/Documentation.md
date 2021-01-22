@@ -1,1 +1,1 @@
-﻿Common properties for electric appliances.  HISTORY: Added in IFC4.
+Common properties for electric appliances.  HISTORY: Added in IFC4.

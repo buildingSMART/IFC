@@ -1,4 +1,4 @@
-﻿An _IfcSurface_ is a 2-dimensional representation item positioned in 3-dimensional space. 2-dimensional means that each point at the surface can be defined by a 2-dimensional coordinate system, usually by u and v coordinates.
+An _IfcSurface_ is a 2-dimensional representation item positioned in 3-dimensional space. 2-dimensional means that each point at the surface can be defined by a 2-dimensional coordinate system, usually by u and v coordinates.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  

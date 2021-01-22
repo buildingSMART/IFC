@@ -1,1 +1,1 @@
-﻿Production date (stripped from form).
+Production date (stripped from form).

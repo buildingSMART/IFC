@@ -1,4 +1,4 @@
-﻿The _IfcAxis2Placement2D_ provides location and orientation to place items in a two-dimensional space. The attribute _RefDirection_ defines the x axis, the y axis is derived. If the attribute _RefDirection_ is not given, the placement defaults to P[1] (x-axis) as [1.,0.] and P[2] (y-axis) as [0.,1.].
+The _IfcAxis2Placement2D_ provides location and orientation to place items in a two-dimensional space. The attribute _RefDirection_ defines the x axis, the y axis is derived. If the attribute _RefDirection_ is not given, the placement defaults to P[1] (x-axis) as [1.,0.] and P[2] (y-axis) as [0.,1.].
 
 <table>
       <tr>

@@ -1,1 +1,1 @@
-﻿Category of use e.g. residential, commercial, recreation etc.
+Category of use e.g. residential, commercial, recreation etc.

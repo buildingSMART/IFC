@@ -1,4 +1,4 @@
-﻿Defines forces at which a support or connection fails.
+Defines forces at which a support or connection fails.
 
 Applicability:
 

@@ -1,4 +1,4 @@
-﻿The 2nd level space boundary defines the physical or virtual delimiter of a space by the relationship _IfcRelSpaceBoundary2ndLevel_ to the surrounding elements. 2nd level space boundaries are characterized by:
+The 2nd level space boundary defines the physical or virtual delimiter of a space by the relationship _IfcRelSpaceBoundary2ndLevel_ to the surrounding elements. 2nd level space boundaries are characterized by:
 
 * 2nd level space boundaries still represent building elements that bound the space, but are more granular in that they are subdivided in any of the following cases: 
     * Differences in materials and/or material assemblies (for example, a wainscot or paneling on the lower portion of a wall).

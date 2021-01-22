@@ -1,1 +1,1 @@
-﻿Number of parallel circuits.
+Number of parallel circuits.

@@ -1,1 +1,1 @@
-﻿A set of thermal material properties.
+A set of thermal material properties.

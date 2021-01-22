@@ -1,1 +1,1 @@
-﻿Volumetric leakage flow rate.
+Volumetric leakage flow rate.

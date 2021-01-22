@@ -1,4 +1,4 @@
-﻿The vertical parabolic segment is defined as a parabola using the inherited attributes from _IfcAlignment2DVerticalSegment_ and the following additional curve parameters _ParabolaConstant_ as the minimum radius of the parabolic arc at its apex, and _IsConvex_ to indicate the whether the parabolic arc defined a sag or a crest.
+The vertical parabolic segment is defined as a parabola using the inherited attributes from _IfcAlignment2DVerticalSegment_ and the following additional curve parameters _ParabolaConstant_ as the minimum radius of the parabolic arc at its apex, and _IsConvex_ to indicate the whether the parabolic arc defined a sag or a crest.
 
 The parabolic arc is described by (see figure 1):
 

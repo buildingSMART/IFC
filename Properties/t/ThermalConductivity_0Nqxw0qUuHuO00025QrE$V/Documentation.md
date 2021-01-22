@@ -1,1 +1,1 @@
-﻿The rate at which thermal energy is transmitted through the material.
+The rate at which thermal energy is transmitted through the material.

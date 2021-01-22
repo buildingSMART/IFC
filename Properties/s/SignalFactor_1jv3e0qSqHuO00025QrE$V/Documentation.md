@@ -1,1 +1,1 @@
-﻿Factor multiplied onto offset signal.
+Factor multiplied onto offset signal.

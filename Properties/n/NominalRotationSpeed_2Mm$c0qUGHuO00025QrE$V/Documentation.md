@@ -1,1 +1,1 @@
-﻿Nominal fan wheel speed.
+Nominal fan wheel speed.

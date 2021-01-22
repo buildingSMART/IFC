@@ -1,4 +1,4 @@
-﻿The _IfcCurveStyleFontSelect_ provides a selection between an explicitly defined and a predefined curve style font.
+The _IfcCurveStyleFontSelect_ provides a selection between an explicitly defined and a predefined curve style font.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-46:1992  

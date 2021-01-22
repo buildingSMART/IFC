@@ -1,1 +1,1 @@
-﻿Total nominal heat output as listed by the manufacturer.
+Total nominal heat output as listed by the manufacturer.

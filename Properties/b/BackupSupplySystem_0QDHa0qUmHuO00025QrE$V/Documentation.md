@@ -1,1 +1,1 @@
-﻿The type of backup supply system.
+The type of backup supply system.

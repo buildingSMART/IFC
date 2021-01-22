@@ -1,1 +1,1 @@
-﻿Width, in the event of the shape being non circular in plan.
+Width, in the event of the shape being non circular in plan.

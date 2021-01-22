@@ -1,1 +1,1 @@
-﻿Log of electrical voltage.
+Log of electrical voltage.

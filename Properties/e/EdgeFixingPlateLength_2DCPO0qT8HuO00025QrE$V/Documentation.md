@@ -1,1 +1,1 @@
-﻿The length of the L-shaped edge plate.
+The length of the L-shaped edge plate.

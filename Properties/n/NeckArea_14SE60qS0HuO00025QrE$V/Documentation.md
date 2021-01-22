@@ -1,1 +1,1 @@
-﻿Neck area of the air terminal.
+Neck area of the air terminal.

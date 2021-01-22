@@ -1,1 +1,1 @@
-﻿The scheduled work on behalf of the resource allocation.
+The scheduled work on behalf of the resource allocation.

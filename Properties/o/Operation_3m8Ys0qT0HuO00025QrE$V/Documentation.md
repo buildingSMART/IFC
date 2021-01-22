@@ -1,1 +1,1 @@
-﻿The operational mechanism for the damper operation.
+The operational mechanism for the damper operation.

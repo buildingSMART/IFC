@@ -1,4 +1,4 @@
-﻿_IfcGroup_ is an generalization of any arbitrary group. A group is a logical collection of objects. It does not have its own position, nor can it hold its own shape representation. Therefore a group is an aggregation under some non-geometrical / topological grouping aspects.
+_IfcGroup_ is an generalization of any arbitrary group. A group is a logical collection of objects. It does not have its own position, nor can it hold its own shape representation. Therefore a group is an aggregation under some non-geometrical / topological grouping aspects.
 
 > EXAMPLE&nbsp; An example for a group is a system, since it groups elements under the aspect of their role, regardless of their position in a building. One of the most important usage of a group representing a system is the _IfcDistributionSystem_, that groups distribution components, such as space heaters and valves into a heating system.
 
@@ -18,5 +18,5 @@ _IfcGroup_ does not define an own object coordinate system, nor does it have an 
 
 > HISTORY&nbsp; New entity in IFC1.0.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; The inverse _IsGroupedBy_ relationship is set to 0..n

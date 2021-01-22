@@ -1,1 +1,1 @@
-﻿Base quantities that are common to the definition of all types of evaporative coolers.
+Base quantities that are common to the definition of all types of evaporative coolers.

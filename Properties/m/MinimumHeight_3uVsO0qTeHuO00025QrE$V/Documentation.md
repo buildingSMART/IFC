@@ -1,1 +1,1 @@
-﻿The minimum duct height for rectangular, oval or round duct.
+The minimum duct height for rectangular, oval or round duct.

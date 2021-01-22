@@ -1,4 +1,4 @@
-﻿An _IfcObjectDefinition_ is the generalization of any semantically treated thing or process, either being a type or an occurrences. Object defintions can be named, using the inherited _Name_ attribute, which should be a user recognizable label for the object occurrance. Further explanations to the object can be given using the inherited _Description_ attribute. A context is a specific kind of object definition as it provides the project or library context in which object types and object occurrences are defined.
+An _IfcObjectDefinition_ is the generalization of any semantically treated thing or process, either being a type or an occurrences. Object defintions can be named, using the inherited _Name_ attribute, which should be a user recognizable label for the object occurrance. Further explanations to the object can be given using the inherited _Description_ attribute. A context is a specific kind of object definition as it provides the project or library context in which object types and object occurrences are defined.
 
 Objects are independent pieces of information that might contain or reference other pieces of information. There are four essential kinds of relationships in which object definitons (by their instantiable subtypes) can be involved:
 
@@ -12,5 +12,5 @@ Objects are independent pieces of information that might contain or reference ot
 
 > HISTORY&nbsp; New abstract entity in IFC2x3.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE The new subtype _IfcContext_ and the relationship to context _HasContext_ has been added . The decomposition relationship is split into ordered nesting (_Nests_, _IsNestedBy_) and un-ordered aggregating (_Decomposes_, _IsDecomposedBy_).

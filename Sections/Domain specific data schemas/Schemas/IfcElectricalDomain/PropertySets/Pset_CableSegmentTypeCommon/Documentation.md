@@ -1,1 +1,1 @@
-﻿Properties for the definitions of electrical cable segments.
+Properties for the definitions of electrical cable segments.

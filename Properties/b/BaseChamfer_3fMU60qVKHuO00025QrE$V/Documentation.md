@@ -1,1 +1,1 @@
-﻿Base chamfer of the profile.
+Base chamfer of the profile.

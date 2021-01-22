@@ -1,4 +1,4 @@
-﻿A Cartesian transformation operator 3d non uniform defines a geometric transformation in three-dimensional space composed of translation, rotation, mirroring and non uniform scaling. Non uniform scaling is given by three different scaling factors:
+A Cartesian transformation operator 3d non uniform defines a geometric transformation in three-dimensional space composed of translation, rotation, mirroring and non uniform scaling. Non uniform scaling is given by three different scaling factors:
 
 * _SELF\IfcCartesianTransformationOperator.Scale_: the x axis scale factor
 * _Scale2_: the y axis scale factor

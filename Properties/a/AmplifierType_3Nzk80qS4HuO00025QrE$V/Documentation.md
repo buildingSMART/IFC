@@ -1,1 +1,1 @@
-﻿Indicates the type of amplifier.
+Indicates the type of amplifier.

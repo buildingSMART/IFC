@@ -1,1 +1,1 @@
-﻿The thickness of the L-shaped edge plate.
+The thickness of the L-shaped edge plate.

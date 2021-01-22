@@ -1,1 +1,1 @@
-﻿The source of energy.
+The source of energy.

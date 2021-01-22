@@ -1,1 +1,1 @@
-﻿Properties for tracking resource usage over time.
+Properties for tracking resource usage over time.

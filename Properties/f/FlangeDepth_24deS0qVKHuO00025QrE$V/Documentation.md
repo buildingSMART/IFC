@@ -1,1 +1,1 @@
-﻿Flange depth of the profile.
+Flange depth of the profile.

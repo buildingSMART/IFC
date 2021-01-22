@@ -1,1 +1,1 @@
-﻿Hydraulic diameter.
+Hydraulic diameter.

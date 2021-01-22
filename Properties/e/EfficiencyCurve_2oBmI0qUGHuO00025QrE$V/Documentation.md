@@ -1,1 +1,1 @@
-﻿Fan efficiency =f (flow rate).
+Fan efficiency =f (flow rate).

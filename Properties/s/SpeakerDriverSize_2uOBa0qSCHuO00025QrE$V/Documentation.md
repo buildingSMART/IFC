@@ -1,1 +1,1 @@
-﻿Indicates the number of drivers and their sizes.
+Indicates the number of drivers and their sizes.

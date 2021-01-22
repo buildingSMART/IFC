@@ -1,4 +1,4 @@
-﻿An _IfcLengthMeasure_ is the value of a distance.
+An _IfcLengthMeasure_ is the value of a distance.
 
 Usually measured in millimeters (mm).
 

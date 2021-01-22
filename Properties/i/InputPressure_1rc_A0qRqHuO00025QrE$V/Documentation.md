@@ -1,1 +1,1 @@
-﻿Maximum design pressure for the actuator.
+Maximum design pressure for the actuator.

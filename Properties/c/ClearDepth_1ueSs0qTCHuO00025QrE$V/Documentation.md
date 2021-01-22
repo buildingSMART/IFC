@@ -1,1 +1,1 @@
-﻿The depth of the formed space in the duct.
+The depth of the formed space in the duct.

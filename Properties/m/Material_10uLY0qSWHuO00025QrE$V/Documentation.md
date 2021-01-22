@@ -1,1 +1,1 @@
-﻿Type of material from which the conductor is constructed.
+Type of material from which the conductor is constructed.

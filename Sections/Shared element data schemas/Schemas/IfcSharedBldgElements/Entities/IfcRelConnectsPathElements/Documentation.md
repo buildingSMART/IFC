@@ -1,4 +1,4 @@
-﻿The _IfcRelConnectsPathElements_ relationship provides the connectivity information between two elements, which have path information.
+The _IfcRelConnectsPathElements_ relationship provides the connectivity information between two elements, which have path information.
 
 The objectified relationship provides the additional information required to describe the connection between two path based elements that might have single or multiple layers of material. The connection type specifies where at the path based element a connection is given (at the start, in the middle or at the end).
 
@@ -52,5 +52,5 @@ The connection is described by a connection geometry, given within the object co
 
 > HISTORY&nbsp; New entity in IFC1.5.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; The data type of _RelatingPriorities_ and _RelatedPriorities_ are restricted to a range o [0..100] to be a normalized ratio measure.

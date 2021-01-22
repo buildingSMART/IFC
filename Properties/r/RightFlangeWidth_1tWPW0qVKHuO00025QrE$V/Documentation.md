@@ -1,1 +1,1 @@
-﻿Right flange width of the profile.
+Right flange width of the profile.

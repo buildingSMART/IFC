@@ -1,1 +1,1 @@
-﻿Allowable water circuit working pressure range.
+Allowable water circuit working pressure range.

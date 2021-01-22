@@ -1,4 +1,4 @@
-﻿The _IfcProductExtension_ further specialises the concepts of a (physical) product, i.e. a component likely to have a shape and a placement within the project context. The product information is provided for individual product occurrences as subtypes of _IfcProduct_, and for common specific product types as subtypes of _IfcTypeProduct_. Both definitions are rooted in supertypes provided within the _IfcKernel_. Basis concepts, introduced within the _IfcProductExtension_, are:
+The _IfcProductExtension_ further specialises the concepts of a (physical) product, i.e. a component likely to have a shape and a placement within the project context. The product information is provided for individual product occurrences as subtypes of _IfcProduct_, and for common specific product types as subtypes of _IfcTypeProduct_. Both definitions are rooted in supertypes provided within the _IfcKernel_. Basis concepts, introduced within the _IfcProductExtension_, are:
 
 * the spatial project structure,
 * the element,

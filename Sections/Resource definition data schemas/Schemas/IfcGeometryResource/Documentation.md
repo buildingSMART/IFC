@@ -1,4 +1,4 @@
-﻿The schema _IfcGeometryResource_ defines the resources used for geometric representations. The primary application of this resource is for representation of the shape or geometric form of an element. The geometric representation items defined here are also used to describe geometric models within the schema _IfcGeometricModelResource_.
+The schema _IfcGeometryResource_ defines the resources used for geometric representations. The primary application of this resource is for representation of the shape or geometric form of an element. The geometric representation items defined here are also used to describe geometric models within the schema _IfcGeometricModelResource_.
 
 The following is within the scope of the geometry resource:
 

@@ -1,4 +1,4 @@
-﻿The physical port connection subtype that further qualifies the ConnectionType. The following values are recommended:
+The physical port connection subtype that further qualifies the ConnectionType. The following values are recommended:
 
 * ACPLUG: A, B, C, D, E, F, EF, G, H, I, J, K, L, M
 * DIN: Mini3P, Mini4P, Mini5P, Mini6P, Mini7P, Mini8P, Mini9P

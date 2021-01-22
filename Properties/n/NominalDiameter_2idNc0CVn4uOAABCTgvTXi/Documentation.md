@@ -1,1 +1,1 @@
-﻿The nominal diameter of the pipe connection.
+The nominal diameter of the pipe connection.

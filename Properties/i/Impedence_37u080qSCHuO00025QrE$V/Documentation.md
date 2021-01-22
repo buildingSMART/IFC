@@ -1,1 +1,1 @@
-﻿Indicates the speaker impedence.
+Indicates the speaker impedence.

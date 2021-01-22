@@ -1,1 +1,1 @@
-﻿Maximum apparent power/capacity in VA (volt ampere).
+Maximum apparent power/capacity in VA (volt ampere).

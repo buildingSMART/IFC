@@ -1,1 +1,1 @@
-﻿Configuration of the lamination.
+Configuration of the lamination.

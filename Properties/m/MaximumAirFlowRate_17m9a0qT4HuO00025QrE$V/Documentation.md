@@ -1,1 +1,1 @@
-﻿Maximum allowable air flow rate.
+Maximum allowable air flow rate.

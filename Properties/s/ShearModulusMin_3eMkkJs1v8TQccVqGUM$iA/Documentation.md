@@ -1,1 +1,1 @@
-﻿Shear modulus, minimal value.
+Shear modulus, minimal value.

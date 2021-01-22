@@ -1,1 +1,1 @@
-﻿Maximum pressure that the object is manufactured to withstand.
+Maximum pressure that the object is manufactured to withstand.

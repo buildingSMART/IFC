@@ -1,1 +1,1 @@
-﻿The width of the formed space in the duct.
+The width of the formed space in the duct.

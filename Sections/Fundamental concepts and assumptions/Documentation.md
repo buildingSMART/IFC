@@ -1,4 +1,4 @@
-﻿This specification consists of a schema defining data types, along with common concepts indicating use of data types for particular scenarios. This chapter defines such common concepts, which are applied at entities having specific use. Such concepts also form the basis of model views, which are supplementary specifications that adapt the scope and rules of this schema for targeted domains within the building industry.
+This specification consists of a schema defining data types, along with common concepts indicating use of data types for particular scenarios. This chapter defines such common concepts, which are applied at entities having specific use. Such concepts also form the basis of model views, which are supplementary specifications that adapt the scope and rules of this schema for targeted domains within the building industry.
 
 The concepts assigned to General usage definitions are for clarity purposes and do not represent all official concept templates which might be assigned to entities in domain specific model views.
 

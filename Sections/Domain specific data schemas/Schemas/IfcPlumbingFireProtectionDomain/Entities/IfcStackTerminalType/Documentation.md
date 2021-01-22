@@ -1,4 +1,4 @@
-﻿The flow terminal type **IfcStackTerminalType** defines commonly shared information for occurrences of stack terminals. The set of shared information may include:
+The flow terminal type **IfcStackTerminalType** defines commonly shared information for occurrences of stack terminals. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

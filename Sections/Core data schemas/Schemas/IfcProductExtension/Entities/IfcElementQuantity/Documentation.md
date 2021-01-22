@@ -1,4 +1,4 @@
-﻿An _IfcElementQuantity_ defines a set of derived measures of an element's physical property. Elements could be spatial structure elements (like buildings, storeys, or spaces) or building elements (like walls, slabs, finishes). The _IfcElementQuantity_ gets assigned to the element by using the _IfcRelDefinesByProperties_ relationship.
+An _IfcElementQuantity_ defines a set of derived measures of an element's physical property. Elements could be spatial structure elements (like buildings, storeys, or spaces) or building elements (like walls, slabs, finishes). The _IfcElementQuantity_ gets assigned to the element by using the _IfcRelDefinesByProperties_ relationship.
 
 The optional _MethodOfMeasurement_ attribute defines the code, e.g. from a standard method of measurement, which had been used to calculate the element quantity.
 
@@ -29,5 +29,5 @@ The following general agreements apply for each base quantity set
 
 > HISTORY&nbsp; New entity in IFC2x.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; Subtyped from new intermediate _IfcQuantitySet_ supertype.

@@ -1,1 +1,1 @@
-﻿The overall diameter of a Cable/Bus.
+The overall diameter of a Cable/Bus.

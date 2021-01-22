@@ -1,1 +1,1 @@
-﻿Stem base width of the profile.
+Stem base width of the profile.

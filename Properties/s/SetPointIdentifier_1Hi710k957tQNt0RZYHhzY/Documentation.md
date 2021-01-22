@@ -1,1 +1,1 @@
-﻿The detected tag value.
+The detected tag value.

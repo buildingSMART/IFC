@@ -1,4 +1,4 @@
-﻿The _IfcStructuralAnalysisDomain_ describes the structural analysis model in order to tightly integrate the structural engineering domain. It reuses the existing building element and spatial structure element definition and associates the structural assumptions to it. The focus is to ensure that structural engineering information is captured and made visible to other related domains.
+The _IfcStructuralAnalysisDomain_ describes the structural analysis model in order to tightly integrate the structural engineering domain. It reuses the existing building element and spatial structure element definition and associates the structural assumptions to it. The focus is to ensure that structural engineering information is captured and made visible to other related domains.
 
 The following features are in scope:
 

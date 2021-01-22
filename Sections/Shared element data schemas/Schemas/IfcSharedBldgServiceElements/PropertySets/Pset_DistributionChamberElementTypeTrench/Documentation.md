@@ -1,1 +1,1 @@
-﻿Excavation, the length of which greatly exceeds the width.
+Excavation, the length of which greatly exceeds the width.

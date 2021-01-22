@@ -1,4 +1,4 @@
-﻿Selection of the type of urinal from the enumerated list of types where:-
+Selection of the type of urinal from the enumerated list of types where:-
 
 Bowl: Individual wall mounted urinal.
 Slab: Urinal that consists of a slab or sheet fixed to a wall and down which urinal flows into a floor channel.

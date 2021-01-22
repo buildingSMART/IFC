@@ -1,1 +1,1 @@
-﻿Pump rotational speed.
+Pump rotational speed.

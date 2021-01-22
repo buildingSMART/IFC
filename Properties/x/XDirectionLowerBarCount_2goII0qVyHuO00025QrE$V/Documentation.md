@@ -1,1 +1,1 @@
-﻿The number of bars with X direction lower bar.
+The number of bars with X direction lower bar.

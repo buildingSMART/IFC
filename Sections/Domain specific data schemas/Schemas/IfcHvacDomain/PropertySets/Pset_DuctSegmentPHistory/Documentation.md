@@ -1,1 +1,1 @@
-﻿Duct segment performance history common attributes.
+Duct segment performance history common attributes.

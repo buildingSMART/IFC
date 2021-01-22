@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcApproval" UniqueId="76476d02-0061-4539-81cf-c606a2acbe13" EntityFlags="229">
 	<Localization>
 		<DocLocalization Locale="de" Name="Genehmigung" />
@@ -17,7 +17,7 @@
 		</DocAttribute>
 		<DocAttribute Name="TimeOfApproval" UniqueId="998d7843-2f2d-4e56-a224-6d334af4ac2e" DefinedType="IfcDateTime" AttributeFlags="1">
 			<Documentation>Date and time when the result of the approval process is produced.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; Attribute data type changed to _IfcDateTime_ using ISO 8601 representation, renamed from ApprovalDateTime and made OPTIONAL.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="Status" UniqueId="2ee053bf-3553-49ee-9fd8-f253b1eafb26" DefinedType="IfcLabel" AttributeFlags="1">
@@ -31,17 +31,17 @@
 		</DocAttribute>
 		<DocAttribute Name="RequestingApproval" UniqueId="4b0f76d0-86d3-4da8-aa4a-be82b503cabb" DefinedType="IfcActorSelect" AttributeFlags="1">
 			<Documentation>The actor that is acting in the role specified at _IfcOrganization_ or individually at _IfcPerson_ and requesting an approval.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute for approval request replacing IfcApprovalActorRelationship (being deleted).</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="GivingApproval" UniqueId="56400bef-4db8-4c65-ad92-c61fc8ee4850" DefinedType="IfcActorSelect" AttributeFlags="1">
 			<Documentation>The actor that is acting in the role specified at _IfcOrganization_ or individually at _IfcPerson_ and giving an approval.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute for approval provision replacing IfcApprovalActorRelationship (being deleted).</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="HasExternalReferences" UniqueId="8cd1b95c-03b1-4fbd-bb5e-86213dc0d6d2" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="32" AggregationType="3" Inverse="RelatedResourceObjects">
 			<Documentation>Reference to external references, e.g. library, classification, or document information, that are associated to the Approval.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; New inverse attribute.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="ApprovedObjects" UniqueId="1803bd98-5411-4c09-9660-d1c5beb99533" DefinedType="IfcRelAssociatesApproval" AttributeFlags="32" AggregationType="3" Inverse="RelatingApproval">

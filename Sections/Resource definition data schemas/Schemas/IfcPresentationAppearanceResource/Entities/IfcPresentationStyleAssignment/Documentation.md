@@ -1,4 +1,4 @@
-﻿Assignment of style information to a styled item.
+Assignment of style information to a styled item.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  

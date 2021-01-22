@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcTransportElement" Name="IfcTransportElement" UniqueId="ada3468b-6924-41e7-9aed-8281dc9e75c3" BaseDefinition="IfcElement" EntityFlags="109">
 	<Localization>
 		<DocLocalization Locale="de" Name="Beförderungsgerät" />
@@ -6,18 +6,16 @@
 		<DocLocalization Locale="fr" Name="Equipement de transport" />
 	</Localization>
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="07bc919e-a192-4b17-aa12-57f7999df3e2" DefinedType="IfcTransportElementTypeEnum" AttributeFlags="1">
-			<Documentation>Predefined generic types for a transportation element that are specified in an enumeration. There might be property sets defined specifically for each predefined type.
-{ .change-ifc4}
-&gt; IFC4 CHANGE&amp;nbsp; The attribute has been changed to be optional.</Documentation>
+		<DocAttribute Name="PredefinedType" UniqueId="07bc919e-a192-4b17-aa12-57f7999df3e2" DefinedType="IfcTransportElementTypeSelect" AttributeFlags="1">
+			<Documentation></Documentation>
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
 		<DocWhereRule Name="CorrectPredefinedType" UniqueId="128290e1-b63b-4747-b69b-cfe36b2b2c37">
 			<Documentation>Either the _IfcTransportElement_ attribute is unset (e.g. because an _IfcTransportElementType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
 			<Expression>NOT(EXISTS(PredefinedType)) OR
- (PredefinedType &lt;&gt; IfcTransportElementTypeEnum.USERDEFINED) OR
- ((PredefinedType = IfcTransportElementTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+((PredefinedType &lt;&gt; IfcTransportElementFixedTypeEnum.USERDEFINED) AND (PredefinedType &lt;&gt; IfcTransportElementNonFixedTypeEnum.USERDEFINED)) OR
+(((PredefinedType = IfcTransportElementFixedTypeEnum.USERDEFINED) OR (PredefinedType = IfcTransportElementNonFixedTypeEnum.USERDEFINED)) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
 		</DocWhereRule>
 		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="faeb762c-6063-4275-be6e-062e4168b71d">
 			<Documentation>Either there is no transport element type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcTransportElementType_.</Documentation>

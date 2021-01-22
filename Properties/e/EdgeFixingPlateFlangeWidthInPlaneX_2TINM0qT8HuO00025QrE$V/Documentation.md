@@ -1,1 +1,1 @@
-﻿The flange width of the L-shaped edge plate in plane X.
+The flange width of the L-shaped edge plate in plane X.

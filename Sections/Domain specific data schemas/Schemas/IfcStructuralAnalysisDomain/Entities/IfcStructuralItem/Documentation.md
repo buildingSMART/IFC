@@ -1,10 +1,10 @@
-﻿The abstract entity _IfcStructuralItem_ is the generalization of structural members and structural connections, that is, analysis idealizations of elements in the building model. It defines the relation between structural members and connections with structural activities (actions and reactions).
+The abstract entity _IfcStructuralItem_ is the generalization of structural members and structural connections, that is, analysis idealizations of elements in the building model. It defines the relation between structural members and connections with structural activities (actions and reactions).
 
 Relationships between elements in the building model and structural items as their idealizations can be expressed by instances of _IfcRelAssignsToProduct_.
 
 > HISTORY&nbsp; New entity in IFC2x2.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; Use definitions and informal proposition added.
 
 ****Coordinate Systems****:

@@ -1,1 +1,1 @@
-﻿Nominal or quoted depth of the object.
+Nominal or quoted depth of the object.

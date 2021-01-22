@@ -1,4 +1,4 @@
-﻿The type of signal modification effected and applicable ports:
+The type of signal modification effected and applicable ports:
 
 LOWERLIMITSWITCH: Single analog input is read and if less than Value.LowerBound then True is written to the output value.
 UPPERLIMITSWITCH: Single analog input is read and if more than Value.UpperBound then True is written to the output value.

@@ -1,1 +1,1 @@
-﻿Name of a color for identifying the connector, if applicable.
+Name of a color for identifying the connector, if applicable.

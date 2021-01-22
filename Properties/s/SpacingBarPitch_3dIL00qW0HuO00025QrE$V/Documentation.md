@@ -1,1 +1,1 @@
-﻿The pitch length of the spacing bar.
+The pitch length of the spacing bar.

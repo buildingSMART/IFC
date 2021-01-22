@@ -1,1 +1,1 @@
-﻿Air velocity through the coil.
+Air velocity through the coil.

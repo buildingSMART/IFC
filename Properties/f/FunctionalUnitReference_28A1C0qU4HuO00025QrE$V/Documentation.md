@@ -1,1 +1,1 @@
-﻿Reference to a database or a classification
+Reference to a database or a classification

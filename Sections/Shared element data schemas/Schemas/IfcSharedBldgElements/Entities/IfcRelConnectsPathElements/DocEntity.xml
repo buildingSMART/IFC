@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelConnectsPathElements" Name="IfcRelConnectsPathElements" UniqueId="801d751c-7dbf-4a3c-a799-223323377272" BaseDefinition="IfcRelConnectsElements" EntityFlags="229">
 	<Localization>
 		<DocLocalization Locale="de" Name="Verbindet Elemente mit Pfaddefinition - Relation" />
@@ -7,12 +7,12 @@
 	<Attributes>
 		<DocAttribute Name="RelatingPriorities" UniqueId="875ef649-a65e-40cd-970a-b99ead08ca9f" DefinedType="IfcInteger" AggregationType="1">
 			<Documentation>Overriding priorities at this connection. It overrides the standard priority given at the wall layer provided by _IfcMaterialLayer_._Priority_. The list of _RelatingProperties_ corresponds to the list of _IfcMaterialLayerSet_._MaterialLayers_ of the element referenced by _RelatingObject_.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; Data type changed to NUMBER and usage to hold a normalized ratio measure [0..1].</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="RelatedPriorities" UniqueId="7362235e-2a0d-4f5e-af69-482fd8dacac7" DefinedType="IfcInteger" AggregationType="1">
 			<Documentation>Overriding priorities at this connection. It overrides the standard priority given at the wall layer provided by _IfcMaterialLayer_._Priority_. The list of _RelatedProperties_ corresponds to the list of _IfcMaterialLayerSet_._MaterialLayers_ of the element referenced by _RelatedObject_.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; Data type changed to NUMBER and usage to hold a normalized ratio measure [0..1].</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="RelatedConnectionType" UniqueId="add30ef4-48b3-4bba-9732-f682f23c1293" DefinedType="IfcConnectionTypeEnum">

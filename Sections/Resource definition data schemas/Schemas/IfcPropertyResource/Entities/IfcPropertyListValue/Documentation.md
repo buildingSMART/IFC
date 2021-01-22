@@ -1,4 +1,4 @@
-﻿An _IfcPropertyListValue_ defines a property that has several (numeric or descriptive) values assigned, these values are given by an ordered list. It defines a property - list value combination for which the property _Name_, an optional _Description_, the optional _ListValues_ with measure type and optionally an _Unit_ is given. An _IfcPropertyListValue_ is a list of values. The order in which values appear is significant. All list members shall be of the same type.
+An _IfcPropertyListValue_ defines a property that has several (numeric or descriptive) values assigned, these values are given by an ordered list. It defines a property - list value combination for which the property _Name_, an optional _Description_, the optional _ListValues_ with measure type and optionally an _Unit_ is given. An _IfcPropertyListValue_ is a list of values. The order in which values appear is significant. All list members shall be of the same type.
 
 The unit is handled by the _Unit_ attribute, see Table 1 for an example of a list property:
 
@@ -45,5 +45,5 @@ The unit is handled by the _Unit_ attribute, see Table 1 for an example of a lis
 
 > HISTORY&nbsp; New entity in IFC2x2.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; Attribute _ListValues_ has been made OPTIONAL with upward compatibility for file based exchange.

@@ -1,1 +1,1 @@
-﻿Size of the inlet connection to the sprinkler.
+Size of the inlet connection to the sprinkler.

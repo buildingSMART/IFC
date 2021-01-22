@@ -1,1 +1,1 @@
-﻿Allowable operational range of the fluid temperature.
+Allowable operational range of the fluid temperature.

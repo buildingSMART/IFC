@@ -1,1 +1,1 @@
-﻿The amount of heat energy consumed during the period specified in the time series.
+The amount of heat energy consumed during the period specified in the time series.

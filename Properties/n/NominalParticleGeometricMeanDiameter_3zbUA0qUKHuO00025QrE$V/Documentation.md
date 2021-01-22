@@ -1,1 +1,1 @@
-﻿Particle geometric mean diameter associated with nominal efficiency.
+Particle geometric mean diameter associated with nominal efficiency.

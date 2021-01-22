@@ -1,1 +1,1 @@
-﻿Quantity of non hazardous waste generated.
+Quantity of non hazardous waste generated.

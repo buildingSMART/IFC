@@ -1,4 +1,4 @@
-﻿The element component type **IfcVibrationIsolatorType** defines commonly shared information for occurrences of vibration isolators. The set of shared information may include:
+The element component type **IfcVibrationIsolatorType** defines commonly shared information for occurrences of vibration isolators. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

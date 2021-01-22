@@ -1,1 +1,1 @@
-﻿The minimum required compressive strength of the concrete at form stripping time.
+The minimum required compressive strength of the concrete at form stripping time.

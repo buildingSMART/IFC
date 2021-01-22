@@ -1,4 +1,4 @@
-﻿The _IfcConstructionMgmtDomain_ schema defines resource concepts in the construction management domain. Together with the _IfcProcessExtension_ and _IfcSharedMgmtElement_ schemas it provides a set of models that can be used to exchange information between construction management applications.
+The _IfcConstructionMgmtDomain_ schema defines resource concepts in the construction management domain. Together with the _IfcProcessExtension_ and _IfcSharedMgmtElement_ schemas it provides a set of models that can be used to exchange information between construction management applications.
 
 The _IfcConstructionMgmtDomain_ schema extends resources and resource types as applicable to construction. The objective of the _IfcConstructionMgmtDomain_ schema is to capture information that supports specific business processes and resource requirements that are wholly within the domain of interest of the Construction Manager. The aim is to provide support for information exchange and sharing within computer aided management applications.
 

@@ -1,1 +1,1 @@
-﻿The detection of frost.
+The detection of frost.

@@ -1,1 +1,1 @@
-﻿Minimum part load ratio as a fraction of nominal capacity.
+Minimum part load ratio as a fraction of nominal capacity.

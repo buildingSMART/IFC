@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcWindowLiningProperties" Name="IfcWindowLiningProperties" UniqueId="cb0b2f54-1b67-43b1-bfc6-07a44a44a16e" BaseDefinition="IfcPreDefinedPropertySet" EntityFlags="173">
 	<Localization>
 		<DocLocalization Locale="de" Name="Festdefinierte Merkmale des Fensterrahmens / der Fensterzarge" />
@@ -11,19 +11,19 @@
 		</DocAttribute>
 		<DocAttribute Name="LiningThickness" UniqueId="098f93e9-146f-47d3-b18c-1f220d0ab695" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1">
 			<Documentation>Thickness of the window lining as explained in the figure above. If _LiningThickness_ value is 0. (zero) it denotes a window without a lining (all other lining parameters shall be set to NIL in this case). If the _LiningThickness_ is NIL it denotes that the value is not available.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; Data type modified to be _IfcNonNegativeLengthMeasure_.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="TransomThickness" UniqueId="a8f96736-8189-438d-b44f-d45154a2cac4" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1">
 			<Documentation>Thickness of the transom (horizontal separator of window panels within a window), measured parallel to the window elevation plane. The transom is part of the lining and the transom depth is assumed to be identical to the lining depth.
 If the _TransomThickness_ is set to zero (and the _TransomOffset_ set to a positive length), then the window is divided vertically without a physical divider.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; Data type changed to _IfcNonNegativeLengthMeasure_.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="MullionThickness" UniqueId="293ce108-6384-4825-b1ee-d82d4bd2c090" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1">
 			<Documentation>Thickness of the mullion (vertical separator of window panels within a window), measured parallel to the window elevation plane. The mullion is part of the lining and the mullion depth is assumed to be identical to the lining depth. 
 If the _MullionThickness_ is set to zero (and the _MullionOffset_ set to a positive length), then the window is divided horizontally without a physical divider.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; Data type changed to _IfcNonNegativeLengthMeasure_.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="FirstTransomOffset" UniqueId="ec1322a2-cf54-4c11-a299-e788cb2e37ad" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1">
@@ -40,22 +40,22 @@ If the _MullionThickness_ is set to zero (and the _MullionOffset_ set to a posit
 		</DocAttribute>
 		<DocAttribute Name="ShapeAspectStyle" UniqueId="1cafc84f-dbdc-4763-87f3-c9c4b4162f98" DefinedType="IfcShapeAspect" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Optional link to a shape aspect definition, which points to the part of the geometric representation of the window style, which is used to represent the lining.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE The attribute is deprecated and shall no longer be used, i.e. the value shall be NIL ($).</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="LiningOffset" UniqueId="3fa30327-8c18-4ddc-8dbd-d8c94edd50b3" DefinedType="IfcLengthMeasure" AttributeFlags="1">
 			<Documentation>Offset of the window lining. The offset is given as distance along the y axis of the local placement (perpendicular to the window plane).
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute added at the end of the entity definition.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="LiningToPanelOffsetX" UniqueId="2badc725-2305-4494-8b1f-8407472ba375" DefinedType="IfcLengthMeasure" AttributeFlags="1">
 			<Documentation>Offset between the lining and the window panel measured along the x-axis of the local placement. Should be smaller or equal to the _LiningThickness_.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute added at the end of the entity definition.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="LiningToPanelOffsetY" UniqueId="a60c6e61-b449-48ad-a001-b9afee248533" DefinedType="IfcLengthMeasure" AttributeFlags="1">
 			<Documentation>Offset between the lining and the window panel measured along the y-axis of the local placement. Should be smaller or equal to the _IfcWindowPanelProperties.PanelThickness_.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute added at the end of the entity definition.</Documentation>
 		</DocAttribute>
 	</Attributes>
@@ -64,7 +64,7 @@ If the _MullionThickness_ is set to zero (and the _MullionOffset_ set to a posit
 			<Documentation>Either both parameter, _LiningDepth_ and _LiningThickness_ are given, or only the _LiningThickness_, then the _LiningDepth_ is variable. It is not valid to only assert the _LiningDepth_.
 &gt; NOTE&amp;nbsp; A _LiningDepth_ with NIL ($) value indicates a window style with a lining equal to the wall thickness.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; Rule corrected.</Documentation>
 			<Expression>NOT(EXISTS(LiningDepth) AND NOT(EXISTS(LiningThickness)))</Expression>
 		</DocWhereRule>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTrackElement" UniqueId="e61fcf61-e3cc-4f0f-8d55-7f9a5b5eba94" BaseDefinition="IfcBuiltElement" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="c0b15f31-55b2-4aa9-a027-a79c3988307c" DefinedType="IfcTrackElementTypeEnum" AttributeFlags="1">
+			<Documentation></Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="44672caf-0ef8-42cf-bac1-795596942ed6">
+			<Documentation>Either the _PredefinedType_ attribute is unset(e.g. because an _IfcTrackElementType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+(PredefinedType &lt;&gt; IfcTrackElementTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcTrackElementTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="d6860485-41d0-4e15-a0f1-9a64c9048a4a">
+			<Documentation>Either there is no type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcTrackElementType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+(&apos;IFCRAIL.IFCTRACKELEMENTTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

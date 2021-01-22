@@ -1,4 +1,4 @@
-﻿The _IfcFeatureElementSubtraction_ is specialization of the general feature element, that represents an existence dependent elements which modifies the shape and appearance of the associated master element. The _IfcFeatureElementSubtraction_ offers the ability to handle shape modifiers as semantic objects within the IFC object model that subtract from the shape of the master element.
+The _IfcFeatureElementSubtraction_ is specialization of the general feature element, that represents an existence dependent elements which modifies the shape and appearance of the associated master element. The _IfcFeatureElementSubtraction_ offers the ability to handle shape modifiers as semantic objects within the IFC object model that subtract from the shape of the master element.
 
 > NOTE&nbsp; A single subtraction feature such as the subtype _IfcOpeningElement_ is assigned by a single subtraction relationship _IfcRelVoidsElement_ to one occurrences of _IfcElement_. It establishes a 1:1 relationship between the opening and the element. An element may have several _IfcRelVoidsElement_ relationships, enabling several voids.
 

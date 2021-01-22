@@ -1,1 +1,1 @@
-﻿Indicates video frame capture time intervals.
+Indicates video frame capture time intervals.

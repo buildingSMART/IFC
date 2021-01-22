@@ -1,4 +1,4 @@
-﻿The building element type **IfcCurtainWallType** defines commonly shared information for occurrences of curtain walls. The set of shared information may include:
+The building element type **IfcCurtainWallType** defines commonly shared information for occurrences of curtain walls. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

@@ -1,1 +1,1 @@
-﻿Indicates the type of display.
+Indicates the type of display.

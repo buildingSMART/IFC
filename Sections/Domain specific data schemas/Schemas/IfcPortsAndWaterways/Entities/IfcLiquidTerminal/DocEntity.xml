@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcLiquidTerminal" UniqueId="f042a74a-1026-46d7-9a2d-5e48dea59687" BaseDefinition="IfcFlowTerminal" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="332bc28d-be4e-487e-bacb-c2738f652f63" DefinedType="IfcLiquidTerminalTypeEnum" AttributeFlags="1">
+			<Documentation></Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="2d566b7c-f8e3-48e1-b07f-3cf9cb931b06">
+			<Documentation>Either the _PredefinedType_ attribute is unset(e.g. because an _IfcLiquidTerminalType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+(PredefinedType &lt;&gt; IfcLiquidTerminalTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcLiquidTerminalTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="f3647eee-ca97-4964-8264-6cfd41be7581">
+			<Documentation>Either there is no type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcLiquidTerminalType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+(&apos;IFCPORTSANDWATERWAYS.IFCLIQUIDTERMINALTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

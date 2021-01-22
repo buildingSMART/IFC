@@ -1,1 +1,1 @@
-﻿Key offset of the profile.
+Key offset of the profile.

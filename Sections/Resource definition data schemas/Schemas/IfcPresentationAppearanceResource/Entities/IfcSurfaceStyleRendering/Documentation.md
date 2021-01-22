@@ -1,4 +1,4 @@
-﻿_IfcSurfaceStyleRendering_ holds the properties for visualization related to a particular surface side style. It allows rendering properties to be defined by:
+_IfcSurfaceStyleRendering_ holds the properties for visualization related to a particular surface side style. It allows rendering properties to be defined by:
 
 * a colour component (_SurfaceColour_ attribute inherited from _IfcSurfaceStyleShading_)
 * a transparency component (_Transparency_ attribute inherited from _IfcSurfaceStyleShading_)

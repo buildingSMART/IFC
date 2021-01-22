@@ -1,1 +1,1 @@
-﻿The finish color for the air terminal.
+The finish color for the air terminal.

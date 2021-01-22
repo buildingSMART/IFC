@@ -1,1 +1,1 @@
-﻿Tensile strength, α=90°.
+Tensile strength, α=90°.

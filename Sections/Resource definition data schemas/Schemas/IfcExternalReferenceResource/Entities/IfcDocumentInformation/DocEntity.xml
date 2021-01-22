@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcDocumentInformation" UniqueId="ece4dd99-11bc-4dbb-b170-998764abc239" BaseDefinition="IfcExternalInformation" EntityFlags="237">
 	<Localization>
 		<DocLocalization Locale="de" Name="Dokumenteninformation" />
@@ -8,7 +8,7 @@
 	<Attributes>
 		<DocAttribute Name="Identification" UniqueId="fdc5fbd6-5bb9-4f9c-b478-d0ed07773f1f" DefinedType="IfcIdentifier">
 			<Documentation>Identifier that uniquely identifies a document.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; Attribute renamed from _DocumentId_.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="Name" UniqueId="f308e9ce-8a5e-4408-b3c5-c20a7b5ee6de" DefinedType="IfcLabel">
@@ -19,7 +19,7 @@
 		</DocAttribute>
 		<DocAttribute Name="Location" UniqueId="494ea53e-4ee5-4c89-a31e-0732cd47caa0" DefinedType="IfcURIReference" AttributeFlags="1">
 			<Documentation>Resource identifier or locator, provided as URI, URN or URL, of the document information for online references.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute added at the place of the removed attribute _DocumentReferences_.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="Purpose" UniqueId="fa3fb19b-ade1-49bb-a0e9-41dc3a6a9a5f" DefinedType="IfcText" AttributeFlags="1">
@@ -42,12 +42,12 @@
 		</DocAttribute>
 		<DocAttribute Name="CreationTime" UniqueId="6741b5b9-5fc6-4d0d-9d0b-735b3a4b1c71" DefinedType="IfcDateTime" AttributeFlags="1">
 			<Documentation>Date and time stamp when the document was originally created.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE The data type has been changed to _IfcDateTime_, the date time string according to ISO8601.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="LastRevisionTime" UniqueId="92c6d656-53f9-42d6-b541-130b4d316672" DefinedType="IfcDateTime" AttributeFlags="1">
 			<Documentation>Date and time stamp when this document version was created.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE The data type has been changed to _IfcDateTime_, the date time string according to ISO8601.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="ElectronicFormat" UniqueId="fe0f622f-5a17-47b2-b996-a8c4d6b55c46" DefinedType="IfcIdentifier" AttributeFlags="1">
@@ -56,17 +56,17 @@
 
 &gt; EXAMPLE&amp;nbsp; &apos;image/png&apos; denotes an image type of png (Portable Network Graphics) subtype, &apos;application/pdf&apos; denotes an application specific type of pdf (Portable Document Format) subtype
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The data type has been changed from entity data type to _IfcIdentifier_.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="ValidFrom" UniqueId="260e8ab8-7a90-4161-bcac-6b2489ad061d" DefinedType="IfcDate" AttributeFlags="1">
 			<Documentation>Date when the document becomes valid.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE The data type has been changed to _IfcDate_, the date string according to ISO8601.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="ValidUntil" UniqueId="e572dd75-4081-4bab-bde6-f0ac7f237d08" DefinedType="IfcDate" AttributeFlags="1">
 			<Documentation>Date until which the document remains valid.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE The data type has been changed to _IfcDate_, the date string according to ISO8601.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="Confidentiality" UniqueId="ac2eb5cd-ebea-4b73-a63c-bfa90f00eeb5" DefinedType="IfcDocumentConfidentialityEnum" AttributeFlags="1">
@@ -81,7 +81,7 @@
 		</DocAttribute>
 		<DocAttribute Name="DocumentInfoForObjects" UniqueId="999d5137-72f3-4f77-84c9-a46462336d47" DefinedType="IfcRelAssociatesDocument" AttributeFlags="32" AggregationType="3" Inverse="RelatingDocument">
 			<Documentation>The document information with which objects are associated.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; New inverse attribute.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="HasDocumentReferences" UniqueId="d8bda5e9-e1b0-4528-93ef-de597e59496e" DefinedType="IfcDocumentReference" AttributeFlags="8" AggregationType="3" Inverse="ReferencedDocument">

@@ -1,4 +1,4 @@
-﻿The standard door, _IfcDoorStandardCase_, defines a door with certain constraints for the provision of operation types, opening directions, frame and lining parameters, and with certain constraints for the geometric representation. The _IfcDoorStandardCase_ handles all cases of doors, that:
+The standard door, _IfcDoorStandardCase_, defines a door with certain constraints for the provision of operation types, opening directions, frame and lining parameters, and with certain constraints for the geometric representation. The _IfcDoorStandardCase_ handles all cases of doors, that:
 
 * are inserted into an opening, represented by _IfcOpeningElement_, using the _IfcRelFillsElement_ relationship;
 * have a local placement relative to this opening, and with the y-axis of the placement pointing into the opening direction;

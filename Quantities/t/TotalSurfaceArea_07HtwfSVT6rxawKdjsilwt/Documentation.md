@@ -1,1 +1,1 @@
-﻿Gross area of the air terminal face plate.
+Gross area of the air terminal face plate.

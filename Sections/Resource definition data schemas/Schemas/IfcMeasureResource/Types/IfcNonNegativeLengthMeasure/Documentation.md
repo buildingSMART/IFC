@@ -1,4 +1,4 @@
-﻿A non-negative length measure is a length measure that is greater than or equal to zero.
+A non-negative length measure is a length measure that is greater than or equal to zero.
 
 Type: _IfcLengthMeasure_
 

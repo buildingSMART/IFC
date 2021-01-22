@@ -1,1 +1,1 @@
-﻿The amount of steam consumed during the period specified in the time series.
+The amount of steam consumed during the period specified in the time series.

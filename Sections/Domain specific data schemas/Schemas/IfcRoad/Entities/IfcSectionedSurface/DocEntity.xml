@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSectionedSurface" UniqueId="693792ab-63c3-4bd7-bad3-e5a64dcc0fbf" BaseDefinition="IfcSurface" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="Directrix" UniqueId="db8a44ee-100e-4d8f-a7d9-ea294311f7db" DefinedType="IfcCurve">
+			<Documentation>The curve used to define the sweeping operation</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="CrossSectionPositions" UniqueId="6f036e83-ef2e-4f46-9b50-f3d049cf88af" DefinedType="IfcDistanceExpression" AggregationType="1" AggregationLower="2" AggregationUpper="?">
+			<Documentation>List of distance expressions in sequentially increasing order paired with CrossSections, indicating the position of the corresponding section along the Directrix.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="CrossSections" UniqueId="0cd0d9cd-de33-4a3e-9dfd-63466c76799a" DefinedType="IfcProfileDef" AggregationType="1" AggregationLower="2" AggregationUpper="?">
+			<Documentation>List of cross sections in sequential order along the Directrix</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="FixedAxisVertical" UniqueId="708a1114-5a9b-47cf-93c4-f64cb3f4de4c" DefinedType="IfcBoolean">
+			<Documentation>Indicates whether Sections are oriented with the Y axis of each profile facing upwards in +Z direction (True), or vertically perpendicular to the Directrix varying according to slope (False)</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

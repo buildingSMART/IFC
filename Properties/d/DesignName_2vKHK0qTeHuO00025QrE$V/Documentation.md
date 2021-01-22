@@ -1,1 +1,1 @@
-﻿A name for the design values.
+A name for the design values.

@@ -1,1 +1,1 @@
-﻿The mass flow rate of the fluid.
+The mass flow rate of the fluid.

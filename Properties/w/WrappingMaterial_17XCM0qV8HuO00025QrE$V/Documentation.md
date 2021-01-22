@@ -1,1 +1,1 @@
-﻿Special requirements for material used to wrap an artefact.
+Special requirements for material used to wrap an artefact.

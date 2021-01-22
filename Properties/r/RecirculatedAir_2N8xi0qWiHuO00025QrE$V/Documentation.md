@@ -1,1 +1,1 @@
-﻿Loads from recirculated air.
+Loads from recirculated air.

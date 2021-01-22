@@ -1,4 +1,4 @@
-﻿An _IfcObject_ is the generalization of any semantically treated thing or process. Objects are things as they appear - i.e. occurrences.
+An _IfcObject_ is the generalization of any semantically treated thing or process. Objects are things as they appear - i.e. occurrences.
 
 > NOTE&nbsp; Examples of _IfcObject_ include physically tangible items such as wall, beam or covering, physically existing items such as spaces, or conceptual items such as grids or virtual boundaries. It also stands for processes such as work tasks, for controls such as cost items, or for actors such as persons involved in the design process.
 
@@ -20,7 +20,7 @@ Objects are independent pieces of information that might contain or reference ot
 
 > HISTORY&nbsp; New entity in IFC1.0
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; The inverse relationships _Declares_, _IsDeclaredBy_, and _IsTypedBy_ have been added, types are not longer included in the _IsDefinesBy_ relationship. _IfcProject_ has been promoted to be a subtype of _IfcObjectDefinition_ -&gt; _IfcContext_.
 
 { .spec-head}

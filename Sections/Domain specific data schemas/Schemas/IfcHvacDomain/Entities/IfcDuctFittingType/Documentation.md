@@ -1,4 +1,4 @@
-﻿The flow fitting type **IfcDuctFittingType** defines commonly shared information for occurrences of duct fittings. The set of shared information may include:
+The flow fitting type **IfcDuctFittingType** defines commonly shared information for occurrences of duct fittings. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

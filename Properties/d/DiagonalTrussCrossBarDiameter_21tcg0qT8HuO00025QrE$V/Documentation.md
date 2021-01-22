@@ -1,1 +1,1 @@
-﻿The nominal diameter of the diagonal cross-bars.
+The nominal diameter of the diagonal cross-bars.

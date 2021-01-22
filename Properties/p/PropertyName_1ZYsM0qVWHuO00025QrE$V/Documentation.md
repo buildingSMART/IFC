@@ -1,1 +1,1 @@
-﻿Addressing details of the property as stated within the agreement.
+Addressing details of the property as stated within the agreement.

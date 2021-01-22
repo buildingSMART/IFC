@@ -1,1 +1,1 @@
-﻿Nominal rate of water vapor added into the airstream.
+Nominal rate of water vapor added into the airstream.

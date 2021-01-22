@@ -1,1 +1,1 @@
-﻿The spacing between diagonal cross-bar sections.
+The spacing between diagonal cross-bar sections.

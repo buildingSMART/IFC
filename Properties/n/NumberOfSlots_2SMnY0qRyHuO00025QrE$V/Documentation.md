@@ -1,1 +1,1 @@
-﻿Number of slots.
+Number of slots.

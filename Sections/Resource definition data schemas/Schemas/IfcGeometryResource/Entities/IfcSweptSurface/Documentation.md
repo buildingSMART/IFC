@@ -1,4 +1,4 @@
-﻿An _IfcSweptSurface_ is a surface defined by sweeping a curve. The swept surface is defined by a open or closed curve, represented by a subtype if _IfcProfileDef_, that is provided as a two-dimensional curve on an implicit plane, and by the sweeping operation.
+An _IfcSweptSurface_ is a surface defined by sweeping a curve. The swept surface is defined by a open or closed curve, represented by a subtype if _IfcProfileDef_, that is provided as a two-dimensional curve on an implicit plane, and by the sweeping operation.
 
 * The swept curve is defined by positioning the profile in the xy plane of the object coordinate system, 
 * The sweeping operation is applied to the swept curve as defined within the subtypes of _IfcSweptSurface_;
@@ -13,5 +13,5 @@ The optional _Positio_n coordinate system allows for re-positioning the resultin
 
 > HISTORY&nbsp; New entity in IFC2x.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; The attribute _Position_ has been changed to OPTIONAL with upward compatibility for file-based exchange.

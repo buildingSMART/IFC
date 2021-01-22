@@ -1,1 +1,1 @@
-﻿Face area open to the airstream.
+Face area open to the airstream.

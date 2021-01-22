@@ -1,1 +1,1 @@
-﻿The actual airflow rate as designed.
+The actual airflow rate as designed.

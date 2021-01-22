@@ -1,1 +1,1 @@
-﻿Filter frame material.
+Filter frame material.

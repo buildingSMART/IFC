@@ -1,1 +1,1 @@
-﻿Vertical spacing between tubes in the tube bundle.
+Vertical spacing between tubes in the tube bundle.

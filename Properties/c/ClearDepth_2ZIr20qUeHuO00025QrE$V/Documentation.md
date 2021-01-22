@@ -1,1 +1,1 @@
-﻿Clear unobstructed depth available for cable inclusion within the junction box.
+Clear unobstructed depth available for cable inclusion within the junction box.

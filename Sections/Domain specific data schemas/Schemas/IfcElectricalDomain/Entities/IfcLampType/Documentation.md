@@ -1,4 +1,4 @@
-﻿The flow terminal type **IfcLampType** defines commonly shared information for occurrences of lamps. The set of shared information may include:
+The flow terminal type **IfcLampType** defines commonly shared information for occurrences of lamps. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

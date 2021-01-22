@@ -1,1 +1,1 @@
-﻿Overall body mass of the heater.
+Overall body mass of the heater.

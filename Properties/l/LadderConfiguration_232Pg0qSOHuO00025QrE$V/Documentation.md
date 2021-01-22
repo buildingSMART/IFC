@@ -1,1 +1,1 @@
-﻿Description of the configuration of the ladder structure used.
+Description of the configuration of the ladder structure used.

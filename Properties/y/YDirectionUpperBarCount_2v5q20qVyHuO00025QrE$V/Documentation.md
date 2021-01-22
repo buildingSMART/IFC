@@ -1,1 +1,1 @@
-﻿The number of bars with Y direction upper bar.
+The number of bars with Y direction upper bar.

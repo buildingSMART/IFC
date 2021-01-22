@@ -1,4 +1,4 @@
-﻿The type of signal modification effected and applicable ports: 
+The type of signal modification effected and applicable ports: 
 
 CONSTANT: No inputs; SignalOffset is written to the output value.
 MODIFIER: Single analog input is read, added to SignalOffset, multiplied by SignalFactor, and written to the output value.

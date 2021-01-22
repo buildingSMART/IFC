@@ -1,4 +1,4 @@
-﻿The standard plate, _IfcPlateStandardCase_, defines a plate with certain constraints for the provision of material usage, parameters and with certain constraints for the geometric representation. The _IfcPlateStandardCase_ handles all cases of plates, that:
+The standard plate, _IfcPlateStandardCase_, defines a plate with certain constraints for the provision of material usage, parameters and with certain constraints for the geometric representation. The _IfcPlateStandardCase_ handles all cases of plates, that:
 
 * have a reference to the _IfcMaterialLayerSetUsage_ defining the material layers of the plate with thicknesses
 * are based on an extrusion of a planar surface as defined by the plate profile

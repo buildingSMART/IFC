@@ -1,1 +1,1 @@
-﻿Number of sources .
+Number of sources .

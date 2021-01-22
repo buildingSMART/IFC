@@ -1,1 +1,1 @@
-﻿Temperature heat transfer effectiveness when defrosting is active.
+Temperature heat transfer effectiveness when defrosting is active.

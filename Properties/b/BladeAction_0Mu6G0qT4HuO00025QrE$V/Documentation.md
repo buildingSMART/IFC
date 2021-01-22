@@ -1,1 +1,1 @@
-﻿Blade action.
+Blade action.

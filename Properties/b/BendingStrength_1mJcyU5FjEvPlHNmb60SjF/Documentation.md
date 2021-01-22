@@ -1,1 +1,1 @@
-﻿Bending strength.
+Bending strength.

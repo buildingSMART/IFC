@@ -1,1 +1,1 @@
-﻿Finish color for cooled beam.
+Finish color for cooled beam.

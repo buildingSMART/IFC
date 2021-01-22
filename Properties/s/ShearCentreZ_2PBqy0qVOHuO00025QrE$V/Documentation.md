@@ -1,1 +1,1 @@
-﻿Location of the profile's shear centre, measured along zs.
+Location of the profile's shear centre, measured along zs.

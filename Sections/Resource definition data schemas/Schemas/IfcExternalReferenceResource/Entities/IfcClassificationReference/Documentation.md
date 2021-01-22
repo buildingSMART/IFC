@@ -1,4 +1,4 @@
-﻿An _IfcClassificationReference_ is a reference into a classification system or source (see _IfcClassification_) for a specific classification key (or notation).
+An _IfcClassificationReference_ is a reference into a classification system or source (see _IfcClassification_) for a specific classification key (or notation).
 
 The inherited attributes have the following meaning:
 
@@ -15,5 +15,5 @@ The _IfcClassificationReference_ can either be assigned directly to the _IfcClas
 
 > HISTORY&nbsp; New entity in IFC2x.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; The attribute _Description_ and inverse attribute _HasReferences_ are added. The attribute _Identification_ has been renamed from ItemReference.

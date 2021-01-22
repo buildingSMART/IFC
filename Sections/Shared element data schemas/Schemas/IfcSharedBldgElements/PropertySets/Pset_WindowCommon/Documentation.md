@@ -1,1 +1,1 @@
-﻿Properties common to the definition of all occurrences of Window.
+Properties common to the definition of all occurrences of Window.

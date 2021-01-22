@@ -1,1 +1,1 @@
-﻿Total length of the stair flight along the walking line.
+Total length of the stair flight along the walking line.

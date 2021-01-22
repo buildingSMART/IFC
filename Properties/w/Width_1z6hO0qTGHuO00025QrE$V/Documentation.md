@@ -1,1 +1,1 @@
-﻿The width of the trench.
+The width of the trench.

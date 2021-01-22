@@ -1,1 +1,1 @@
-﻿Under certain dust holding weight, DelPressure = f (fluidflowRate)
+Under certain dust holding weight, DelPressure = f (fluidflowRate)

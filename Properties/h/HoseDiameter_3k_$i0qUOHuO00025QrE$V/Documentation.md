@@ -1,1 +1,1 @@
-﻿Notional diameter (bore) of the hose.
+Notional diameter (bore) of the hose.

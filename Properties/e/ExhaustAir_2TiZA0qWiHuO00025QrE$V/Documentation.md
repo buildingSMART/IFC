@@ -1,1 +1,1 @@
-﻿Loads from exhaust air.
+Loads from exhaust air.

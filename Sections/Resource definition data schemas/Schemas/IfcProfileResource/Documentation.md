@@ -1,4 +1,4 @@
-﻿The schema _IfcProfileResource_ defines the two dimensional profiles or cross sections, used to define geometric shape representations. Profile definitions are applied to:
+The schema _IfcProfileResource_ defines the two dimensional profiles or cross sections, used to define geometric shape representations. Profile definitions are applied to:
 
 * swept surfaces
 * swept area solids

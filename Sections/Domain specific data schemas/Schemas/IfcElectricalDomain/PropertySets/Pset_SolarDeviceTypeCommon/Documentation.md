@@ -1,1 +1,1 @@
-﻿Common properties for solar device types.
+Common properties for solar device types.

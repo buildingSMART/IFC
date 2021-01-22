@@ -1,4 +1,4 @@
-﻿_IfcMaterialLayer_ is a single and identifiable part of an element which is constructed of a number of layers (one or more). Each _IfcMaterialLayer_ has a constant thickness and is located relative to the referencing _IfcMaterialLayerSet_ along the material layer set base (MlsBase).
+_IfcMaterialLayer_ is a single and identifiable part of an element which is constructed of a number of layers (one or more). Each _IfcMaterialLayer_ has a constant thickness and is located relative to the referencing _IfcMaterialLayerSet_ along the material layer set base (MlsBase).
 
 Air gaps within a material layer set are represented as an _IfcMaterialLayer_ with the attribute _IsVentilated_ having the value TRUE or UNKNOWN. Such air gaps shall be interpreted as voids (not having a material).
 
@@ -10,5 +10,5 @@ The _IfcMaterialLayer_ may have a material layer name which may differ from the 
 
 > HISTORY&nbsp; New entity in IFC1.5
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; The attributes _Name_, _Description_, _Category_, _Priority_ have been added at the end of attribute list. Data type of _LayerThickness_ relaxed to _IfcNonNegativeLengthMeasure_.

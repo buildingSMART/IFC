@@ -1,1 +1,1 @@
-﻿The minimum required compressive strength of the concrete when the concrete element is lifted.
+The minimum required compressive strength of the concrete when the concrete element is lifted.

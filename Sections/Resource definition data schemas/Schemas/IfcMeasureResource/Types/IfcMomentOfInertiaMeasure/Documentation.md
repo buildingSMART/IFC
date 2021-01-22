@@ -1,4 +1,4 @@
-﻿_IfcMomentOfInertiaMeasure_ is a measure of moment of inertia.
+_IfcMomentOfInertiaMeasure_ is a measure of moment of inertia.
 
 Usually measured in m4.
 

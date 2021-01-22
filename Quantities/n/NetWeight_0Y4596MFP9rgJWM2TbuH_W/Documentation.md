@@ -1,1 +1,1 @@
-﻿Weight of the element, including contained fluid as designed.
+Weight of the element, including contained fluid as designed.

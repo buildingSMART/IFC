@@ -1,4 +1,4 @@
-﻿The schema _IfcMaterialResource_ contains the types and entities that are used to define materials (substances, of which products are made of). Materials are defined generically.
+The schema _IfcMaterialResource_ contains the types and entities that are used to define materials (substances, of which products are made of). Materials are defined generically.
 
 > NOTE&nbsp; The references to the usage of materials is made from the relevant elements through the objectified relationship _IfcRelAssociatesMaterial_.
 
@@ -29,7 +29,7 @@ The following material properties and information sets can be assigned to an _If
 
 > HISTORY&nbsp; New schema in IFC1.0
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; Definition of material properties and their assignment to _IfcMaterial_ or other appropriate options in _IfcMaterialSelect_ is now fully captured by _IfcExtendedMaterialProperties_ using the general _IfcProperty_ approach. Specific predefined subtypes of _IfcMaterialProperties_ are no longer available.
 
 { .deprecated}

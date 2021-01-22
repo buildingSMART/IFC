@@ -1,1 +1,1 @@
-﻿Indicates version of application software according to systems integrator.
+Indicates version of application software according to systems integrator.

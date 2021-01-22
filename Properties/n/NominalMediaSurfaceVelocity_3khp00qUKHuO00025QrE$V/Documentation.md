@@ -1,1 +1,1 @@
-﻿Average fluid velocity at the media surface.
+Average fluid velocity at the media surface.

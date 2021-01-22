@@ -1,1 +1,1 @@
-﻿Energy consumption.
+Energy consumption.

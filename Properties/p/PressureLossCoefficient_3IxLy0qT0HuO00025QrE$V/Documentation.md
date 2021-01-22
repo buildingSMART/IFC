@@ -1,1 +1,1 @@
-﻿Pressure loss coefficient.
+Pressure loss coefficient.

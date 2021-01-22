@@ -1,1 +1,1 @@
-﻿The weight of the silencer.
+The weight of the silencer.

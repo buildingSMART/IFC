@@ -1,4 +1,4 @@
-﻿_IfcLinearForceMeasure_ is a measure of linear force.
+_IfcLinearForceMeasure_ is a measure of linear force.
 
 Usually measured in N/m.
 

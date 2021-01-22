@@ -1,1 +1,1 @@
-﻿Number of circuits in the distribution board.
+Number of circuits in the distribution board.

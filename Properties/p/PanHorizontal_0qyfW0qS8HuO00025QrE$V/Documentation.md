@@ -1,1 +1,1 @@
-﻿Indicates horizontal range for panning.
+Indicates horizontal range for panning.

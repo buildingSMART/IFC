@@ -1,1 +1,1 @@
-﻿The maximum aggregate size of the concrete.
+The maximum aggregate size of the concrete.

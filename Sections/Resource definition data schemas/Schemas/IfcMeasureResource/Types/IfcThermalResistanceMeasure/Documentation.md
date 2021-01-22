@@ -1,4 +1,4 @@
-﻿_IfcThermalResistanceMeasure_ is a measure of the resistance offered by a body to the flow of energy.
+_IfcThermalResistanceMeasure_ is a measure of the resistance offered by a body to the flow of energy.
 
 Usually measured in m2 Kelvin/Watt.
 

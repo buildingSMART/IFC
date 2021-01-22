@@ -1,1 +1,1 @@
-﻿Center core spacing of the profile.
+Center core spacing of the profile.

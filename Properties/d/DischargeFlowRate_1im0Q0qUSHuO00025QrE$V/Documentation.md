@@ -1,1 +1,1 @@
-﻿The volumetric rate of fluid discharge.
+The volumetric rate of fluid discharge.

@@ -1,23 +1,23 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelInterferesElements" UniqueId="61792a4b-dbd0-4dd6-9d1d-5af75a4780a8" BaseDefinition="IfcRelConnects" EntityFlags="109">
 	<Localization>
 		<DocLocalization Locale="de" Name="Kollision zwischen Elementen - Relation" />
 		<DocLocalization Locale="en" Name="Rel Interferes Elements" />
 	</Localization>
 	<Attributes>
-		<DocAttribute Name="RelatingElement" UniqueId="6cd188d3-336d-4017-8875-cca7cac2aaf6" DefinedType="IfcElement" XsdFormat="attribute">
-			<Documentation>Reference to a subtype of _IfcElement that is the _RelatingElement_ in the interference relationship. Depending on the value of _ImpliedOrder_ the _RelatingElement_ may carry the notion to be the element from which the interference geometry should be subtracted._</Documentation>
+		<DocAttribute Name="RelatingElement" UniqueId="6cd188d3-336d-4017-8875-cca7cac2aaf6" DefinedType="IfcInterferenceSelect" XsdFormat="element">
+			<Documentation></Documentation>
 		</DocAttribute>
-		<DocAttribute Name="RelatedElement" UniqueId="5f1f2c4f-4785-4ffe-ba1d-da6e119fb94b" DefinedType="IfcElement" XsdFormat="attribute">
-			<Documentation>Reference to a subtype of _IfcElement that is the _RelatedElement_ in the interference relationship. Depending on the value of _ImpliedOrder_ the _RelatedElement_ may carry the notion to be the element from which the interference geometry should not be subtracted._</Documentation>
+		<DocAttribute Name="RelatedElement" UniqueId="5f1f2c4f-4785-4ffe-ba1d-da6e119fb94b" DefinedType="IfcInterferenceSelect" XsdFormat="element">
+			<Documentation></Documentation>
 		</DocAttribute>
 		<DocAttribute Name="InterferenceGeometry" UniqueId="434aa7d7-1bd7-4773-a678-7ab1055f88f0" DefinedType="IfcConnectionGeometry" AttributeFlags="1" XsdFormat="attribute">
-			<Documentation>The geometric shape representation of the interference geometry that is provided in the object coordinate system of the _RelatingElement_ (mandatory) and in the object coordinate system of the _RelatedElement_ (optionally).</Documentation>
+			<Documentation></Documentation>
 		</DocAttribute>
 		<DocAttribute Name="InterferenceType" UniqueId="a92075e8-181d-4233-bd6a-e3efed6da830" DefinedType="IfcIdentifier" AttributeFlags="1">
-			<Documentation>Optional identifier that describes the nature of the interference. Examples could include &apos;Clash&apos;, &apos;ProvisionForVoid&apos;, etc.</Documentation>
+			<Documentation>Optional identifier that describes the nature of the interference. Examples include  &apos;&apos;Clash&apos;&apos;, &apos;&apos;ProvisionForVoid&apos;&apos; (physical elements), and �Crosses�, �PassesThrough� �PassesOver� �PassesUnder� (spatial elements).</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="ImpliedOrder" UniqueId="57512488-73cf-44cc-995d-d5e84df6ae44" DefinedType="LOGICAL">
+		<DocAttribute Name="ImpliedOrder" UniqueId="57512488-73cf-44cc-995d-d5e84df6ae44" DefinedType="IfcLogical">
 			<Documentation>Logical value indicating whether the interference geometry should be subtracted from the _RelatingElement_ (if TRUE), or whether it should be either subtracted from the _RelatingElement_ or the _RelatedElement_ (if FALSE), or whether no indication can be provided (if UNKNOWN).</Documentation>
 		</DocAttribute>
 	</Attributes>

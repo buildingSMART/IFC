@@ -1,4 +1,4 @@
-﻿This class combines one or more load or result values in a 1- or 2-dimensional configuration.
+This class combines one or more load or result values in a 1- or 2-dimensional configuration.
 
 > HISTORY&nbsp; New entity in IFC4.
 

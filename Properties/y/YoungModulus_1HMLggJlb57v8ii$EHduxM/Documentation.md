@@ -1,1 +1,1 @@
-﻿Elastic modulus, mean value, α=0°.
+Elastic modulus, mean value, α=0°.

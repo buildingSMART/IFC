@@ -1,1 +1,1 @@
-﻿The depth of the trench.
+The depth of the trench.

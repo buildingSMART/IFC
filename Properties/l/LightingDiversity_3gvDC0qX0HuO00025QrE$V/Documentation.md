@@ -1,1 +1,1 @@
-﻿Lighting diversity.
+Lighting diversity.

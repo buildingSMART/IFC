@@ -1,1 +1,1 @@
-﻿The tolerance for the current of time/current-curve in [%].
+The tolerance for the current of time/current-curve in [%].

@@ -1,1 +1,1 @@
-﻿The depth of the pit.
+The depth of the pit.

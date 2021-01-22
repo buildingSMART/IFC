@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSpatialElement" Name="IfcSpatialElement" UniqueId="a77e2e44-45fd-486d-8869-116757040301" BaseDefinition="IfcProduct" EntityFlags="205">
 	<Localization>
 		<DocLocalization Locale="de" Name="Räumliches Element" />
@@ -21,12 +21,12 @@
 		</DocAttribute>
 		<DocAttribute Name="ServicedBySystems" UniqueId="15e959b7-d280-49c7-84da-b6470edf05ac" DefinedType="IfcRelServicesBuildings" AggregationType="3" Inverse="RelatedBuildings">
 			<Documentation>Set of relationships to systems, that provides a certain service to the spatial element for which it is defined. The relationship is handled by the objectified relationship _IfcRelServicesBuildings_.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The inverse attribute has been promoted to the new supertype _IfcSpatialElement_ with upward compatibility for file based exchange.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="ReferencesElements" UniqueId="b2b6b73c-8240-478f-94ac-454a8fb0cbd7" DefinedType="IfcRelReferencedInSpatialStructure" AggregationType="3" Inverse="RelatingStructure" XsdFormat="element">
 			<Documentation>Set of spatial reference relationships, that holds those elements, which are referenced, but not contained, within this element of the project spatial structure.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; NOTE&amp;nbsp; The spatial reference relationship, established by _IfcRelReferencedInSpatialStructure_, is not required to be an hierarchical relationship, i.e. each element can be assigned to 0, 1 or many spatial structure elements.
 
 &gt; EXAMPLE&amp;nbsp; A curtain wall maybe contained in the ground floor, but maybe referenced in all floors, it reaches.
@@ -34,7 +34,7 @@
 { .change-ifc2x3}
 &gt; IFC2x3 CHANGE&amp;nbsp; The inverse attribute has been added with upward compatibility for file based exchange.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; Ø\X</Documentation>
 		</DocAttribute>
 	</Attributes>

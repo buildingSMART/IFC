@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcLiquidTerminalType" UniqueId="7758c865-e160-4dd8-ba26-d8333a7274c9" BaseDefinition="IfcFlowTerminalType" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="29e54fd7-85cd-4690-ad5f-0638fb5ea7f0" DefinedType="IfcLiquidTerminalTypeEnum">
+			<Documentation></Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="8e185176-edf7-494d-957a-128b1e166be7">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcLiquidTerminalTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcLiquidTerminalTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

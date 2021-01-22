@@ -1,1 +1,1 @@
-﻿The minimum required compressive strength of the concrete required for transportation.
+The minimum required compressive strength of the concrete required for transportation.

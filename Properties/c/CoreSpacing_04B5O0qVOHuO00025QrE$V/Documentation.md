@@ -1,1 +1,1 @@
-﻿Core spacing of the profile.
+Core spacing of the profile.

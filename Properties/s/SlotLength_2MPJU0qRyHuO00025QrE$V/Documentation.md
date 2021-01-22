@@ -1,1 +1,1 @@
-﻿Slot length.
+Slot length.

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelAssociates" Name="IfcRelAssociates" UniqueId="50e72608-2b70-4951-afa7-68d8cf130d15" Status="H" BaseDefinition="IfcRelationship" EntityFlags="205">
 	<Localization>
 		<DocLocalization Locale="de" Name="Ordnet zu - Relation" />
@@ -9,11 +9,12 @@
 		<DocSubtype UniqueId="7984fb82-a771-4c88-b7bb-2ac50197cf31" DefinedType="IfcRelAssociatesClassification" />
 		<DocSubtype UniqueId="5ec01403-38a5-4f3d-9abc-a962db0d86a5" DefinedType="IfcRelAssociatesDocument" />
 		<DocSubtype UniqueId="aeb7df03-64cc-486d-9b4d-b4ff82b52b91" DefinedType="IfcRelAssociatesLibrary" />
+		<DocSubtype UniqueId="c740ed83-bbe3-4bb7-b824-6ca0c10977a4" DefinedType="IfcRelAssociatesProfileDef" />
 	</Subtypes>
 	<Attributes>
 		<DocAttribute Name="RelatedObjects" UniqueId="22a3ccef-98eb-4699-b8ff-4edd0ca9ab83" DefinedType="IfcDefinitionSelect" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Set of object or property definitions to which the external references or information is associated. It includes object and type objects, property set templates, property templates and property sets and contexts.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute datatype has been changed from _IfcRoot_ to _IfcDefinitionSelect_.</Documentation>
 		</DocAttribute>
 	</Attributes>

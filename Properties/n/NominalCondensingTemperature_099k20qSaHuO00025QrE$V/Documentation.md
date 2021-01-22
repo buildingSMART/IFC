@@ -1,1 +1,1 @@
-﻿Chiller condensing temperature.
+Chiller condensing temperature.

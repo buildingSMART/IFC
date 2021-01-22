@@ -1,4 +1,4 @@
-﻿The _IfcDateTimeResource_ schema defines several generic date and time specific concepts that can be used to identify context within calendars, schedules, and time series. These concepts include:
+The _IfcDateTimeResource_ schema defines several generic date and time specific concepts that can be used to identify context within calendars, schedules, and time series. These concepts include:
 
 *  _IfcDate_, _IfcTime_, _IfcDateTime_ and _IfcDuration_. All given values should be provided in context and converted into a Gregorian date context and be shall be processable by a receiving application. 
 * Time series, which are a set of discrete data each with an associated date and time stamp, allowing a natural association of data collected over intervals of time. Time series data can be represented using the following entities: 
@@ -14,5 +14,5 @@
 
 > HISTORY&nbsp; This schema has been significantly modified in IFC4. The original concepts of _IfcDateTimeResource_ and _IfcTimeSeriesResource_ were introduced in IFC2.0 and IFC2x2 and merged into the _IfcDateTimeResource_ in IFC4.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; The new types _IfcDate_, _IfcTime_, _IfcDateTime_ and _IfcDuration_ cancel and replace the previous entities _IfcCalendarDate_, _IfcDateAndTime_, _IfcLocalTime_, and _IfcCoordinatedUniversalTimeOffset_.

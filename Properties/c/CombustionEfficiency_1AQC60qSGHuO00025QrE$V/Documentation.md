@@ -1,1 +1,1 @@
-﻿Combustion efficiency under nominal condition.
+Combustion efficiency under nominal condition.

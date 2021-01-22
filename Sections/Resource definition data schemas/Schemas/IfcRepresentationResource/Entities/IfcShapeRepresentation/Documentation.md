@@ -1,4 +1,4 @@
-﻿The _IfcShapeRepresentation_ represents the concept of a particular geometric representation of a product or a product component within a specific geometric representation context. The inherited attribute _RepresentationType_ is used to define the geometric model used for the shape representation (e.g. 'SweptSolid', or 'Brep'), the inherited attribute _RepresentationIdentifier_ is used to denote the kind of the representation captured by the _IfcShapeRepresentation_ (e.g. 'Axis', 'Body', etc.).
+The _IfcShapeRepresentation_ represents the concept of a particular geometric representation of a product or a product component within a specific geometric representation context. The inherited attribute _RepresentationType_ is used to define the geometric model used for the shape representation (e.g. 'SweptSolid', or 'Brep'), the inherited attribute _RepresentationIdentifier_ is used to denote the kind of the representation captured by the _IfcShapeRepresentation_ (e.g. 'Axis', 'Body', etc.).
 
 Several representation identifiers for shape representation are included as predefined values for _RepresentationIdentifier_. Table 1 indicates the defined list of values for _RepresentationIdentifier_.
 
@@ -218,5 +218,5 @@ some additional representation types are provided:</td>
 
 > HISTORY&nbsp; New entity in IFC1.5.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; The _RepresentationType_'s 'Point', 'PointCloud', 'Curve', 'Curve3D', 'Surface', 'Surface2D', 'Surface3D', 'FillArea', 'Text', 'Tessellation', 'AdvancedBrep', 'LightSource', and the _RepresentationIdentifier_ 'Body-FallBack', 'Profile', 'Clearance', 'Lighting' have been added.

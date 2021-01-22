@@ -1,1 +1,1 @@
-﻿Special requirements for material used to contain an artefact.
+Special requirements for material used to contain an artefact.

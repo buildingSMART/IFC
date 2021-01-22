@@ -1,4 +1,4 @@
-﻿The way the air terminal is mounted to the ceiling, wall, etc.
+The way the air terminal is mounted to the ceiling, wall, etc.
 
 Surface: mounted to the surface of something (e.g., wall, duct, etc.).
 Flat flush: mounted flat and flush with a surface.

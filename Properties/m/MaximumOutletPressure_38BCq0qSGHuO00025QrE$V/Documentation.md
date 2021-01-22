@@ -1,1 +1,1 @@
-﻿Maximum steam outlet pressure.
+Maximum steam outlet pressure.

@@ -1,1 +1,1 @@
-﻿Common properties for cable fittings.  HISTORY: Added in IFC4.
+Common properties for cable fittings.  HISTORY: Added in IFC4.

@@ -1,1 +1,1 @@
-﻿Measure d according to ISO 2553
+Measure d according to ISO 2553

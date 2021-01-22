@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCovering" Name="IfcCovering" UniqueId="71cd9964-d26e-4857-81b8-de24c4651a85" BaseDefinition="IfcBuildingElement" EntityFlags="237">
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCovering" Name="IfcCovering" UniqueId="71cd9964-d26e-4857-81b8-de24c4651a85" BaseDefinition="IfcBuiltElement" EntityFlags="237">
 	<Localization>
 		<DocLocalization Locale="de" Name="Bekleidung / Belag" />
 		<DocLocalization Locale="en" Name="Covering" />
@@ -15,7 +15,7 @@
 		</DocAttribute>
 		<DocAttribute Name="CoversElements" UniqueId="1e41a6ca-9e36-4047-a656-34a282811332" DefinedType="IfcRelCoversBldgElements" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="RelatedCoverings">
 			<Documentation>Reference to the objectified relationship that handles the relationship of the covering to the covered element.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE Renamed into _CoversElements_ for consistency.</Documentation>
 		</DocAttribute>
 	</Attributes>

@@ -1,4 +1,4 @@
-﻿A spatial element is the generalization of all spatial elements that might be used to define a spatial structure or to define spatial zones.
+A spatial element is the generalization of all spatial elements that might be used to define a spatial structure or to define spatial zones.
 
 * a hierarchical spatial structure element as _IfcSpatialStructureElement_ 
     * a spatial structure is a hiearchical decomposition of the project. That spatial structure is often used to provide a project structure to organize a building project.

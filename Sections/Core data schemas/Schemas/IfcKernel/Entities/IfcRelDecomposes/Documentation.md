@@ -1,4 +1,4 @@
-﻿The decomposition relationship, _IfcRelDecomposes_, defines the general concept of elements being composed or decomposed. The decomposition relationship denotes a whole/part hierarchy with the ability to navigate from the whole (the composition) to the parts and vice versa.
+The decomposition relationship, _IfcRelDecomposes_, defines the general concept of elements being composed or decomposed. The decomposition relationship denotes a whole/part hierarchy with the ability to navigate from the whole (the composition) to the parts and vice versa.
 
 Decompositions may be constrained by requiring both, the whole and its parts, to be of the same type - thus establishing a nesting relationship. Or they may require some form of physical containment, thus establishing special types of aggregation relationships.
 
@@ -10,5 +10,5 @@ Decompositions imply a dependency, i.e. the definition of the whole depends on t
 
 > HISTORY&nbsp; New entity in IFC1.5, it is a generalisation of the IFC2.0 entity _IfcRelNests_.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; The differentiation between the aggregation and nesting is determined to be a non-ordered or an ordered collection of parts. The attributes _RelatingObject_ and _RelatedObjects_ have been demoted to the subtypes.

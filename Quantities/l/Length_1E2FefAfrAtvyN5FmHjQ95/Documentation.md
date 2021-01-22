@@ -1,1 +1,1 @@
-﻿Total length of reinforcing.
+Total length of reinforcing.

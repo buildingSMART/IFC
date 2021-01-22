@@ -1,1 +1,1 @@
-﻿Common properties for waste terminals.
+Common properties for waste terminals.

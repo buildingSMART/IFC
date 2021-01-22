@@ -1,4 +1,4 @@
-﻿The physical port connection:
+The physical port connection:
 
 ACPLUG: AC plug
 DCPLUG: DC plug

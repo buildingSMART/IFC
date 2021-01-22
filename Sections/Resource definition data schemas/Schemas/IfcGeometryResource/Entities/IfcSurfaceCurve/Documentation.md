@@ -1,4 +1,4 @@
-﻿An _IfcSurfaceCurve_ is a 3-dimensional curve that has additional representations provided by one or two pcurves.
+An _IfcSurfaceCurve_ is a 3-dimensional curve that has additional representations provided by one or two pcurves.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  

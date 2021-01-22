@@ -1,1 +1,1 @@
-﻿The spacing between the straight cross-bars.
+The spacing between the straight cross-bars.

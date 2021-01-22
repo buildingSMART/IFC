@@ -1,4 +1,4 @@
-﻿The flow storage device type **IfcElectricFlowStorageDeviceType** defines commonly shared information for occurrences of electric flow storage devices. The set of shared information may include:
+The flow storage device type **IfcElectricFlowStorageDeviceType** defines commonly shared information for occurrences of electric flow storage devices. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

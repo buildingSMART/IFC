@@ -1,4 +1,4 @@
-﻿This enumeration defines the basic ways to describe how doors operate as shown in Figure 1.
+This enumeration defines the basic ways to describe how doors operate as shown in Figure 1.
 
 <table><tr><td>
 <table class="gridtable">

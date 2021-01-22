@@ -1,4 +1,4 @@
-﻿Selection of the form of mounting of the fountain from the enumerated list of mountings where:-
+Selection of the form of mounting of the fountain from the enumerated list of mountings where:-
 
 BackToWall: 	A pedestal mounted sanitary terminal that fits flush to the wall at the rear to cover its service connections.
 Pedestal: 	A floor mounted sanitary terminal that has an integral base

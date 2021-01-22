@@ -1,1 +1,1 @@
-﻿Total perimeter of the outer lining of the window.
+Total perimeter of the outer lining of the window.

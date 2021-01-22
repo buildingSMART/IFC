@@ -1,1 +1,1 @@
-﻿Space heater type convector attributes.
+Space heater type convector attributes.

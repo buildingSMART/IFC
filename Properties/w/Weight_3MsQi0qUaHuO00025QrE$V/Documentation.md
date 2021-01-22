@@ -1,1 +1,1 @@
-﻿The weight of the humidifier.
+The weight of the humidifier.

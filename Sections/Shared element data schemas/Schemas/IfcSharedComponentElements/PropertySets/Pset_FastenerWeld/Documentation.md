@@ -1,1 +1,1 @@
-﻿Properties related to welded connections.
+Properties related to welded connections.

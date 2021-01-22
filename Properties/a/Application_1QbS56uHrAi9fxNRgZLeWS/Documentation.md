@@ -1,1 +1,1 @@
-﻿Indicates application of controller.
+Indicates application of controller.

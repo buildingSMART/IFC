@@ -1,1 +1,1 @@
-﻿Draft base offset of the profile.
+Draft base offset of the profile.

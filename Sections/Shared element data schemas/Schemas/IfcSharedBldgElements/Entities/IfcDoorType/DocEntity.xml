@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDoorType" Name="IfcDoorType" UniqueId="644f260a-0347-4e6a-84b2-be14f6c42b87" BaseDefinition="IfcBuildingElementType" EntityFlags="237">
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDoorType" Name="IfcDoorType" UniqueId="644f260a-0347-4e6a-84b2-be14f6c42b87" BaseDefinition="IfcBuiltElementType" EntityFlags="237">
 	<Localization>
 		<DocLocalization Locale="de" Name="Tür - Typ" />
 		<DocLocalization Locale="en" Name="Door Type" />
@@ -7,13 +7,13 @@
 	</Localization>
 	<Attributes>
 		<DocAttribute Name="PredefinedType" UniqueId="f36db3f7-2cec-48d9-8e81-6fa01a860509" DefinedType="IfcDoorTypeEnum">
-			<Documentation>Identifies the predefined types of a door element from which the type required may be set.</Documentation>
+			<Documentation></Documentation>
 		</DocAttribute>
 		<DocAttribute Name="OperationType" UniqueId="479b13b8-14cd-4731-b8a1-5d03729e2a42" DefinedType="IfcDoorTypeOperationEnum">
 			<Documentation>Type defining the general layout and operation of the door type in terms of the partitioning of panels and panel operations.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="ParameterTakesPrecedence" UniqueId="1adc3f57-5b13-4887-a1d4-b5788991afd9" DefinedType="IfcBoolean" AttributeFlags="1">
-			<Documentation>The Boolean value reflects, whether the parameter given in the attached lining and panel properties exactly define the geometry (TRUE), or whether the attached shape representation takes precedence (FALSE). In the last case the parameters have only informative value. If not provided, it defaults to FALSE.</Documentation>
+			<Documentation>The Boolean value reflects, whether the parameter given in the attached lining and panel properties exactly define the geometry (TRUE), or whether the attached style shape take precedence (FALSE). In the last case the parameter have only informative value. If not provided, no such information can be infered.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="UserDefinedOperationType" UniqueId="8995c9e7-f0e4-4226-afd6-3c8b4dd3a0a0" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>Designator for the user defined operation type, shall only be provided, if the value of _OperationType_ is set to USERDEFINED.</Documentation>

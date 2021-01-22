@@ -1,4 +1,4 @@
-﻿This enumeration defines the basic ways to describe how window panels operate, as shown in Figure 2.
+This enumeration defines the basic ways to describe how window panels operate, as shown in Figure 2.
 
 <table><tr><td>
  <table class="gridtable"> 

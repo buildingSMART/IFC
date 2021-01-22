@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcElectricFlowTreatmentDeviceType" UniqueId="3a2b06cf-52ab-4831-b674-5fadc36cec37" BaseDefinition="IfcFlowTreatmentDeviceType" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="14d557a1-c8e3-4aeb-9bf7-101632ac1428" DefinedType="IfcElectricFlowTreatmentDeviceTypeEnum">
+			<Documentation></Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="50e73ff9-cc37-4263-abdf-e90159cb13da">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcElectricFlowTreatmentDeviceTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcElectricFlowTreatmentDeviceTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

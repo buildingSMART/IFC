@@ -1,4 +1,4 @@
-﻿The flow terminal type **IfcLightFixtureType** defines commonly shared information for occurrences of light fixtures. The set of shared information may include:
+The flow terminal type **IfcLightFixtureType** defines commonly shared information for occurrences of light fixtures. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

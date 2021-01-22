@@ -1,4 +1,4 @@
-﻿The property enumeration Pset_SanitaryMountingEnum defines the forms of mounting or fixing of the sanitary terminal that may be specified within property sets used to define sanitary terminals (WC’s, basins, sinks, etc.) where:-
+The property enumeration Pset_SanitaryMountingEnum defines the forms of mounting or fixing of the sanitary terminal that may be specified within property sets used to define sanitary terminals (WC’s, basins, sinks, etc.) where:-
 
 BackToWall: 	A pedestal mounted sanitary terminal that fits flush to the wall at the rear to cover its service connections
 .

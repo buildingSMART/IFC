@@ -1,1 +1,1 @@
-﻿Material mass density.
+Material mass density.

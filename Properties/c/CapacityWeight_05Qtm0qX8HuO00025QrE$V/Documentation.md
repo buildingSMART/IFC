@@ -1,1 +1,1 @@
-﻿Capacity of the transport element measured by weight.
+Capacity of the transport element measured by weight.

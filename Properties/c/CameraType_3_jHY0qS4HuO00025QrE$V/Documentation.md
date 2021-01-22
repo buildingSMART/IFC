@@ -1,1 +1,1 @@
-﻿Indicates the type of camera.
+Indicates the type of camera.

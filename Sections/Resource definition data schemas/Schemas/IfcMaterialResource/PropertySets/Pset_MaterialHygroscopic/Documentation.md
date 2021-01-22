@@ -1,1 +1,1 @@
-﻿A set of hygroscopic properties of materials.
+A set of hygroscopic properties of materials.

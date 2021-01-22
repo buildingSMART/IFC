@@ -1,4 +1,4 @@
-﻿An _IfcCircle_ is a curve consisting of a set of points having equal distance from the center.
+An _IfcCircle_ is a curve consisting of a set of points having equal distance from the center.
 
 > NOTE&nbsp; A circular arc segment is defined by using the _IfcTrimmedCurve_ with _BasisCurve_ being an _IfcCircle_.
 

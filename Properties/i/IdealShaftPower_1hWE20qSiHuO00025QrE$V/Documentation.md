@@ -1,1 +1,1 @@
-﻿Compressor shaft power under ideal conditions.
+Compressor shaft power under ideal conditions.

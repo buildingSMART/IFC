@@ -1,1 +1,1 @@
-﻿A measure of the ultimate stress of the material.
+A measure of the ultimate stress of the material.

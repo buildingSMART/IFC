@@ -1,1 +1,1 @@
-﻿Air leakage rate.
+Air leakage rate.

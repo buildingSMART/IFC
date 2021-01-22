@@ -1,1 +1,1 @@
-﻿Offset constant added to modfied signal.
+Offset constant added to modfied signal.

@@ -1,1 +1,1 @@
-﻿Nominal UA value.
+Nominal UA value.

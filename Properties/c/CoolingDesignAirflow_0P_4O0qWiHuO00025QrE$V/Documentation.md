@@ -1,1 +1,1 @@
-﻿The air flowrate required during the peak cooling conditions.
+The air flowrate required during the peak cooling conditions.

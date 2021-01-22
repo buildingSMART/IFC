@@ -1,4 +1,4 @@
-﻿The standard slab, _IfcSlabStandardCase_, defines a slab with certain constraints for the provision of material usage, parameters and with certain constraints for the geometric representation. The _IfcSlabStandardCase_ handles all cases of slabs, that:
+The standard slab, _IfcSlabStandardCase_, defines a slab with certain constraints for the provision of material usage, parameters and with certain constraints for the geometric representation. The _IfcSlabStandardCase_ handles all cases of slabs, that:
 
 * have a reference to the _IfcMaterialLayerSetUsage_ defining the material layers of the slab with thicknesses
 * are based on an extrusion of a planar surface as defined by the slab profile

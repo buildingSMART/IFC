@@ -1,4 +1,4 @@
-﻿A tendon anchor is the end connection for tendons in prestressed or posttensioned concrete.
+A tendon anchor is the end connection for tendons in prestressed or posttensioned concrete.
 
 > HISTORY&nbsp; New entity in IFC2x2.
 

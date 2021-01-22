@@ -1,1 +1,1 @@
-﻿Indicates the maximum rotation the actuator must traverse.
+Indicates the maximum rotation the actuator must traverse.

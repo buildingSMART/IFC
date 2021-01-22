@@ -1,1 +1,1 @@
-﻿Common properties for different outlet types.
+Common properties for different outlet types.

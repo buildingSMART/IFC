@@ -1,1 +1,1 @@
-﻿The actual power and operable range.
+The actual power and operable range.

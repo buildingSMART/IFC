@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAlignment2DCantSegTransition" UniqueId="83993c50-a556-440c-82b4-0dd7fe0275e8" BaseDefinition="IfcAlignment2DCantSegment" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="StartRadius" UniqueId="ce0706e9-86d3-4b7a-b823-454f5ff0be17" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
+			<Documentation>The radius of the curve at the start point. If the radius is not provided by a value, i.e. being �NIL� it is interpreted as INFINITE � the StartPoint is at the point, where it does not have a curvature.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="EndRadius" UniqueId="5fb52dda-dbe3-4885-a2b4-ea99a2e47152" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
+			<Documentation>The radius of the curve at the end point. If the radius is not provided by a value, i.e. being �NIL� it is interpreted as INFINITE � the end point is at the point, where it does not have a curvature.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="IsStartRadiusCCW" UniqueId="c6ebc7dc-7a00-44d2-9d61-84b9c19439c2" DefinedType="IfcBoolean">
+			<Documentation>Indication of the curve starting counter-clockwise or clockwise. The orientation of the curve is IsCcw=�true�, if the spiral arc goes counter-clockwise as seen from the right side of the curve, or �to the upside&quot;, and with IsCcw=�false� if the spiral arc goes clockwise, or �to the downside�.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="IsEndRadiusCCW" UniqueId="53f280e6-b7c2-42b6-8e70-57d922d0ebeb" DefinedType="IfcBoolean">
+			<Documentation>Indication of the curve ending counter-clockwise or clockwise. The orientation of the clothoidal arc is IsCcw=�true�, if the spiral arc goes counter-clockwise as seen from right side of the curve, or �to the upside&quot;, and with IsCcw=�false� if the spiral arc goes clockwise, or �to the downside�.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="TransitionCurveType" UniqueId="64a7225a-a65b-41f4-8dec-7fcb4c9e310e" DefinedType="IfcTransitionCurveType">
+			<Documentation>Indicates the specific type of transition curve.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

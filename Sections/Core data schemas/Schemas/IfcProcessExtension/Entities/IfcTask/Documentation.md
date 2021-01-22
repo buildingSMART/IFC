@@ -1,4 +1,4 @@
-﻿An _IfcTask_ is an identifiable unit of work to be carried out in a construction project.
+An _IfcTask_ is an identifiable unit of work to be carried out in a construction project.
 
 A task is typically used to describe an activity for the construction or installation of products, but is not limited to these types. For example it might be used to describe design processes, move operations and other design, construction and operation related activities as well.
 
@@ -6,7 +6,7 @@ Quantities of resources consumed by the task are dealt with by defining the _Ifc
 
 > HISTORY&nbsp; New entity in IFC1.0. Renamed from _IfcWorkTask_ in IFC2x.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; Attributes _TaskTime_ and _PredefinedType_ added. IfcMove and IfcOrderRequest has been removed in IFC4 and are now represented by _IfcTask_. IfcRelAssignsTasks relationship has been removed as well.
 
 { .use-head}

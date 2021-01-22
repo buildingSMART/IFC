@@ -1,1 +1,1 @@
-﻿The width of the pit.
+The width of the pit.

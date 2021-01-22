@@ -1,1 +1,1 @@
-﻿Air terminal performance history common attributes.
+Air terminal performance history common attributes.

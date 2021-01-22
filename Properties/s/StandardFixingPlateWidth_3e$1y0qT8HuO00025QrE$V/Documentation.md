@@ -1,1 +1,1 @@
-﻿The width of the standard fixing plate.
+The width of the standard fixing plate.

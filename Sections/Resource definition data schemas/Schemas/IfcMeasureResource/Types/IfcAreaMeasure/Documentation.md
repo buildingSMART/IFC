@@ -1,4 +1,4 @@
-﻿An area measure is the value of the extent of a surface.
+An area measure is the value of the extent of a surface.
 
 Usually measured in square metre (m2).
 

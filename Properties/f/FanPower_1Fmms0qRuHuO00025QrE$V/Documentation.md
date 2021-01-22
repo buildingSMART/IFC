@@ -1,1 +1,1 @@
-﻿Fan motor loads contributing to the cooling load.
+Fan motor loads contributing to the cooling load.

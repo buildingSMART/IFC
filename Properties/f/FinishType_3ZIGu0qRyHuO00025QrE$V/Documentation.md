@@ -1,1 +1,1 @@
-﻿The type of finish for the air terminal.
+The type of finish for the air terminal.

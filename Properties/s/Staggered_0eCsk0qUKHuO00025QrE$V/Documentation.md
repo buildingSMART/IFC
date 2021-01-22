@@ -1,1 +1,1 @@
-﻿If intermittent weld, staggered or not
+If intermittent weld, staggered or not

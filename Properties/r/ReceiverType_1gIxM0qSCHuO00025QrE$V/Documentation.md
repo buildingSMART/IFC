@@ -1,1 +1,1 @@
-﻿Indicates the type of receiver.
+Indicates the type of receiver.

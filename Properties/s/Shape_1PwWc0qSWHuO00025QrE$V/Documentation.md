@@ -1,1 +1,1 @@
-﻿Indication of the shape of the conductor.
+Indication of the shape of the conductor.

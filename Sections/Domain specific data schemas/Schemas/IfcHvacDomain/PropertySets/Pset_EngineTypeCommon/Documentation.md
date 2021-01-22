@@ -1,1 +1,1 @@
-﻿Engine type common attributes.
+Engine type common attributes.

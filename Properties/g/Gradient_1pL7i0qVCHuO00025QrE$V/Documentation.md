@@ -1,1 +1,1 @@
-﻿The gradient of the pipe segment.
+The gradient of the pipe segment.

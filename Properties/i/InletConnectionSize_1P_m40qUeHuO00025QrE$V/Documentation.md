@@ -1,1 +1,1 @@
-﻿Size of the inlet connection.
+Size of the inlet connection.

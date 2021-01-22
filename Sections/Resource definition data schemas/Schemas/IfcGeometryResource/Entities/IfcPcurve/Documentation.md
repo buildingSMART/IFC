@@ -1,4 +1,4 @@
-﻿The _IfcPcurve_ is a curve defined within the parameter space of its reference surface.
+The _IfcPcurve_ is a curve defined within the parameter space of its reference surface.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  

@@ -1,1 +1,1 @@
-﻿The length of the threaded part of the fixing socket.
+The length of the threaded part of the fixing socket.

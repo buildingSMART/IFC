@@ -1,1 +1,1 @@
-﻿Diversity factor for Winter infiltration.
+Diversity factor for Winter infiltration.

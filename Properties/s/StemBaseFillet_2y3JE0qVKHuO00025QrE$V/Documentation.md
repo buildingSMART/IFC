@@ -1,1 +1,1 @@
-﻿Stem base fillet of the profile.
+Stem base fillet of the profile.

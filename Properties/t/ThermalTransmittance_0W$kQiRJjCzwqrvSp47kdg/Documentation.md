@@ -1,1 +1,1 @@
-﻿Thermal transmittance coefficient (U-Value) of an element.
+Thermal transmittance coefficient (U-Value) of an element.

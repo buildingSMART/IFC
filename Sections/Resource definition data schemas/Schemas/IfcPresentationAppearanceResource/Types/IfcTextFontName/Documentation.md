@@ -1,4 +1,4 @@
-﻿The _IfcTextFontName_ is a list of font family names and/or generic family name.
+The _IfcTextFontName_ is a list of font family names and/or generic family name.
 
 { .extDef}
 > NOTE&nbsp; Definition according to Cascading Style Sheets, level 1  

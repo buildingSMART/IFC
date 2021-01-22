@@ -1,1 +1,1 @@
-﻿The length of the base plate.
+The length of the base plate.

@@ -1,1 +1,1 @@
-﻿Description of the reinforcement.
+Description of the reinforcement.

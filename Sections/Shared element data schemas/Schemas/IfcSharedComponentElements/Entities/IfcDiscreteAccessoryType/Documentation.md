@@ -1,4 +1,4 @@
-﻿The element component type **IfcDiscreteAccessoryType** defines commonly shared information for occurrences of discrete accessorys. The set of shared information may include:
+The element component type **IfcDiscreteAccessoryType** defines commonly shared information for occurrences of discrete accessorys. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

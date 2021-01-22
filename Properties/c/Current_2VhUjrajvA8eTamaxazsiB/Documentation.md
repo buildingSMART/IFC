@@ -1,1 +1,1 @@
-﻿Log of electrical current.
+Log of electrical current.

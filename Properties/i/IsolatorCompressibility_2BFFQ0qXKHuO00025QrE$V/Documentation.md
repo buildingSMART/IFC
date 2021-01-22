@@ -1,1 +1,1 @@
-﻿The compressibility of the vibration isolator.
+The compressibility of the vibration isolator.

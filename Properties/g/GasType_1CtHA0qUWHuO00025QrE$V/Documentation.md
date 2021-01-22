@@ -1,1 +1,1 @@
-﻿Defines the types of gas that may be specified.
+Defines the types of gas that may be specified.

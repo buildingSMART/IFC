@@ -1,4 +1,4 @@
-﻿Identifies the predefined types of maintenance that can be done from which the type that generates the maintenance work order may be set where:
+Identifies the predefined types of maintenance that can be done from which the type that generates the maintenance work order may be set where:
 
 ConditionBased: generated as a result of the condition of an asset or artefact being less than a determined value.
 Corrective: generated as a result of an immediate and urgent need for maintenance action.

@@ -1,4 +1,4 @@
-﻿This enumeration defines the basic ways how individual door panels operate as shown in Figure 1.
+This enumeration defines the basic ways how individual door panels operate as shown in Figure 1.
 
 <table>
  <tr>
@@ -61,5 +61,5 @@ The opening direction of the door panels is given by the local placement of the 
 
 > HISTORY&nbsp; New enumeration in IFC2.0.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; Enumerator FIXEDPANEL added.

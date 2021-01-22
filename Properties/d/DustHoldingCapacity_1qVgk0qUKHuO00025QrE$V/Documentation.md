@@ -1,1 +1,1 @@
-﻿Maximum filter dust holding capacity.
+Maximum filter dust holding capacity.

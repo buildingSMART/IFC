@@ -1,1 +1,1 @@
-﻿Common attributes of a flow meter type
+Common attributes of a flow meter type

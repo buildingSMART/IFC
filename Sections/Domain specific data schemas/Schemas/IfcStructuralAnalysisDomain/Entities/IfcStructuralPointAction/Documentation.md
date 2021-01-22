@@ -1,8 +1,8 @@
-﻿This entity defines an action which acts on a point. A point action is typically connected with a point connection. It may also be connected with a curve member or curve connection, or surface member or surface connection.
+This entity defines an action which acts on a point. A point action is typically connected with a point connection. It may also be connected with a curve member or curve connection, or surface member or surface connection.
 
 > HISTORY&nbsp; New entity in IFC2x2.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; Attributes in the supertypes _IfcStructuralActivity_ and _IfcStructuralAction_ changed. Use definitions changed, informal propositions added.
 
 ****Coordinate Systems****:

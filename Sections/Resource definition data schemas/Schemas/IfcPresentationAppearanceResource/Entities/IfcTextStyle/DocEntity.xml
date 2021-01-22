@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTextStyle" UniqueId="a79b1274-8b81-4827-baa7-03f278dc7a39" BaseDefinition="IfcPresentationStyle" EntityFlags="237">
 	<Localization>
 		<DocLocalization Locale="de" Name="Textstil" />
@@ -8,7 +8,7 @@
 	<Attributes>
 		<DocAttribute Name="TextCharacterAppearance" UniqueId="f5bd01b9-4639-4066-8a62-d1d8a355a2f5" DefinedType="IfcTextStyleForDefinedFont" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>A character style to be used for presented text.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; Superfluous select type IfcCharacterStyleSelect has been removed.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="TextStyle" UniqueId="edc9e2db-5005-4bcf-ac88-0a7ee0830fe0" DefinedType="IfcTextStyleTextModel" AttributeFlags="1" XsdFormat="attribute">
@@ -16,7 +16,7 @@
 { .change-ifc2x3}
 &gt; IFC2x3 CHANGE&amp;nbsp; The attribute _TextBlockStyle_ has been changed from SET[1:?] to a non-aggregated optional and renamed into _TextStyles_.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The IfcTextStyleWithBoxCharacteristics and the now superfluous select type IfcTextStyleSelect have been removed.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="TextFontStyle" UniqueId="c335c62d-bf07-439a-afb9-033418fa2050" DefinedType="IfcTextFontSelect">
@@ -27,7 +27,7 @@
 		</DocAttribute>
 		<DocAttribute Name="ModelOrDraughting" UniqueId="de6e20b2-8381-4b2e-b44e-399c8a61345d" DefinedType="IfcBoolean" AttributeFlags="1">
 			<Documentation>Indication whether the length measures provided for the presentation style are model based, or draughting based.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute.</Documentation>
 		</DocAttribute>
 	</Attributes>

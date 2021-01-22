@@ -1,1 +1,1 @@
-﻿Heat transfer coefficient-area product.
+Heat transfer coefficient-area product.

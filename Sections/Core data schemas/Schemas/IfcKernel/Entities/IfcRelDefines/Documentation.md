@@ -1,4 +1,4 @@
-﻿A generic and abstract relationship which subtypes are used to:
+A generic and abstract relationship which subtypes are used to:
 
 * assign a object type to an object occurrence
 * assign a property set to an object instance
@@ -10,5 +10,5 @@
 
 > HISTORY&nbsp; New entity in IFC2x.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; The attribute _RelatedObjects_ had been demoted to the subtypes _IfcRelDefinesByProperties_ and _IfcRelDefinesByType_.

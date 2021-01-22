@@ -1,1 +1,1 @@
-﻿The nominal diameter of the secondary bar.
+The nominal diameter of the secondary bar.

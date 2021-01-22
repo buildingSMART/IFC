@@ -1,4 +1,4 @@
-﻿The _IfcTextTransformation_ describes how the cases of characters are handled. Values are:
+The _IfcTextTransformation_ describes how the cases of characters are handled. Values are:
 
 * capitalize: uppercases the first character of each word
 * uppercase: uppercases all letters of the element

@@ -1,4 +1,4 @@
-﻿An _IfcTextureVertex_ is a list of 2 (S, T) texture coordinates.
+An _IfcTextureVertex_ is a list of 2 (S, T) texture coordinates.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/IEC 19775-1 :  

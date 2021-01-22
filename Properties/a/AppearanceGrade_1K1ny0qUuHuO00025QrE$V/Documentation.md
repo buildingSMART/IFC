@@ -1,1 +1,1 @@
-﻿Grade with respect to visual quality.
+Grade with respect to visual quality.

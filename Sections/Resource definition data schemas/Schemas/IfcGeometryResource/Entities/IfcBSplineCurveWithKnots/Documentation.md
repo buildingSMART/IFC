@@ -1,4 +1,4 @@
-﻿The _IfcBSplineCurveWithKnots_ is a spline curve parameterized by spline functions for which the knot values are explicitly given.
+The _IfcBSplineCurveWithKnots_ is a spline curve parameterized by spline functions for which the knot values are explicitly given.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  

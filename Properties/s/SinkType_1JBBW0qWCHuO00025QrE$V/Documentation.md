@@ -1,4 +1,4 @@
-﻿Selection of the type of sink from the enumerated list of types where:-
+Selection of the type of sink from the enumerated list of types where:-
 
 Belfast: 	Deep sink that has a plain edge and a weir overflow
 .

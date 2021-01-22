@@ -1,1 +1,1 @@
-﻿Supply air temperature in heating mode.
+Supply air temperature in heating mode.

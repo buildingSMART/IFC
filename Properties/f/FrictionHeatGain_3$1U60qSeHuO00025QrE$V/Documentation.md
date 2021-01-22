@@ -1,1 +1,1 @@
-﻿Friction heat gain.
+Friction heat gain.

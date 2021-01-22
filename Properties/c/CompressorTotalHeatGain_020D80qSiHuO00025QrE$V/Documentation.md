@@ -1,1 +1,1 @@
-﻿Compressor total heat gain.
+Compressor total heat gain.

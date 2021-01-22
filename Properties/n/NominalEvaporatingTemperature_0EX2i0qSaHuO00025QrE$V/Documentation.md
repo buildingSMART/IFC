@@ -1,1 +1,1 @@
-﻿Chiller evaporating temperature.
+Chiller evaporating temperature.

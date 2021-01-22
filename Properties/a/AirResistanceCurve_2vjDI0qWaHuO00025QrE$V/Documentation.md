@@ -1,1 +1,1 @@
-﻿Air resistance curve (w/ fan only); Pressure = f ( flow rate).
+Air resistance curve (w/ fan only); Pressure = f ( flow rate).

@@ -1,4 +1,4 @@
-﻿The schema _IfcPresentationOrganizationResource_ defines the resources used for geometric representations and presentations of styled items. The primary application of this resource is for presenting the annotation occurrences of curve, text, filled area, symbol, and surfaces. The organization resource focusses on the provision of layer assignments and light objects.
+The schema _IfcPresentationOrganizationResource_ defines the resources used for geometric representations and presentations of styled items. The primary application of this resource is for presenting the annotation occurrences of curve, text, filled area, symbol, and surfaces. The organization resource focusses on the provision of layer assignments and light objects.
 
 The following is within the scope of the presentation resource schemas:
 

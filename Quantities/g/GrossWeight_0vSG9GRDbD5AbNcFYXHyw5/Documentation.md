@@ -1,1 +1,1 @@
-﻿Weight of the element.
+Weight of the element.

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcReinforcedSoil" UniqueId="92c17199-1655-4d3b-b443-7f88b06fcbce" BaseDefinition="IfcEarthworksElement" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="f6349eb8-a26a-4366-9ac1-5e81aa2a288b" DefinedType="IfcReinforcedSoilTypeEnum" AttributeFlags="1">
+			<Documentation></Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="6d83861d-58f9-4d40-816e-3be6aa7e6cc6">
+			<Documentation>Either the _PredefinedType_ attribute is unset, or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+(PredefinedType &lt;&gt; IfcReinforcedSoilTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcReinforcedSoilTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

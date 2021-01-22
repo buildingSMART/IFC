@@ -1,1 +1,1 @@
-﻿Secondary heat transfer surface area created by fins.
+Secondary heat transfer surface area created by fins.

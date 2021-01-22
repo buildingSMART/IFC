@@ -1,1 +1,1 @@
-﻿Temperature range.
+Temperature range.

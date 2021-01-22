@@ -1,1 +1,1 @@
-﻿Refrigerant evaporating temperature.
+Refrigerant evaporating temperature.

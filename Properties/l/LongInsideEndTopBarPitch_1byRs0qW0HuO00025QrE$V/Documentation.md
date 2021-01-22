@@ -1,1 +1,1 @@
-﻿The pitch length of the long inside end top bar.
+The pitch length of the long inside end top bar.

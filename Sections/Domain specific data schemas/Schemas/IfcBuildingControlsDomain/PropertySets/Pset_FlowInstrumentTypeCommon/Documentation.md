@@ -1,1 +1,1 @@
-﻿Flow Instrument type common attributes.  HISTORY: Added in IFC4.
+Flow Instrument type common attributes.  HISTORY: Added in IFC4.

@@ -1,1 +1,1 @@
-﻿Heat exchange area.
+Heat exchange area.

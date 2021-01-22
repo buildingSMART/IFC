@@ -1,1 +1,1 @@
-﻿Internal surface area.
+Internal surface area.

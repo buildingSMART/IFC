@@ -1,1 +1,1 @@
-﻿Heat gains and losses from people.
+Heat gains and losses from people.

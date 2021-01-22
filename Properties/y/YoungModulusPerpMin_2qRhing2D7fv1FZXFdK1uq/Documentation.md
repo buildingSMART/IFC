@@ -1,1 +1,1 @@
-﻿Elastic modulus, minimal value, α=90°.
+Elastic modulus, minimal value, α=90°.

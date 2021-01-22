@@ -1,4 +1,4 @@
-﻿This entity captures a value driven by a formula, with additional qualifications including unit basis, valid date range, and categorization.
+This entity captures a value driven by a formula, with additional qualifications including unit basis, valid date range, and categorization.
 
 The extent of the _IfcAppliedValue_ is determined by the _AppliedValue_ attribute which may be defined either as an _IfcMeasureWithUnit_ or as an _IfcMonetaryMeasure_ or as an _IfcRatioMeasure_ via the _IfcAppliedValueSelect_ type.
 
@@ -10,5 +10,5 @@ Applied values may be referenced from a document (such as a price list). The rel
 
 > HISTORY&nbsp; New entity in IFC2x2.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; Entity made non-abstract to support general formula expressions of constraints, data type of date-based attributes changed into _IfcDate_, _ValueType_ and _Condition_ promoted from _IfcCostValue_, _Components_ and _ArithmeticOperator_ attributes added to replace _IfcAppliedValueRelationship_ for more efficient encoding and reference tracking.

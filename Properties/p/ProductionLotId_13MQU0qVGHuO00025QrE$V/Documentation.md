@@ -1,1 +1,1 @@
-﻿The manufacturer's production lot identifier.
+The manufacturer's production lot identifier.

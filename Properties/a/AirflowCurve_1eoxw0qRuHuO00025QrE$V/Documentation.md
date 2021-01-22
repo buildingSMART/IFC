@@ -1,1 +1,1 @@
-﻿Air flowrate versus damper position relationship;airflow = f ( valve position).
+Air flowrate versus damper position relationship;airflow = f ( valve position).

@@ -1,1 +1,1 @@
-﻿The thickness of the standard fixing plate.
+The thickness of the standard fixing plate.

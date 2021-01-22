@@ -1,1 +1,1 @@
-﻿Indicates the zoom range.
+Indicates the zoom range.

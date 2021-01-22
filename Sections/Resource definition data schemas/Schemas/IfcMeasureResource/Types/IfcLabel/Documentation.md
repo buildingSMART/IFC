@@ -1,4 +1,4 @@
-﻿A label is the term by which something may be referred to. It is a string which represents the human-interpretable name of something and shall have a natural-language meaning.
+A label is the term by which something may be referred to. It is a string which represents the human-interpretable name of something and shall have a natural-language meaning.
 
 Type: STRING of up to 255 characters
 
@@ -6,7 +6,7 @@ Type: STRING of up to 255 characters
 
 > HISTORY&nbsp; New type in IFC2x.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; Previously recommended size restriction of 255 characters is now mandatory.
 
 { .use-head}

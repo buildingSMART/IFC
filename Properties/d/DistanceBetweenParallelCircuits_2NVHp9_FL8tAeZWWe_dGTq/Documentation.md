@@ -1,1 +1,1 @@
-﻿Distance measured between parallel circuits.
+Distance measured between parallel circuits.

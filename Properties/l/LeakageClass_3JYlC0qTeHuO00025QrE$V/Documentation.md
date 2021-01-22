@@ -1,1 +1,1 @@
-﻿Nominal leakage rating for the system components.
+Nominal leakage rating for the system components.

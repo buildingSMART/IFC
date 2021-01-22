@@ -1,1 +1,1 @@
-﻿The overall height of the fixing socket.
+The overall height of the fixing socket.

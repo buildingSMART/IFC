@@ -1,1 +1,1 @@
-﻿Properties specific to standard fixing plates.
+Properties specific to standard fixing plates.

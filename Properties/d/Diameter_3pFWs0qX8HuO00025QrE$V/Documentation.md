@@ -1,1 +1,1 @@
-﻿Actual diameter of a fin for circular fins only.
+Actual diameter of a fin for circular fins only.

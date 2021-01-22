@@ -1,1 +1,1 @@
-﻿Terminal box has a sound attenuator.
+Terminal box has a sound attenuator.

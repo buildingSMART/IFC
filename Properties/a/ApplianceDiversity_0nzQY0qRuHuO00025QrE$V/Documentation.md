@@ -1,1 +1,1 @@
-﻿Diversity of appliance load.
+Diversity of appliance load.

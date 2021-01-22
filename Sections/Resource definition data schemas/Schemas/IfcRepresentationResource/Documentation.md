@@ -1,4 +1,4 @@
-﻿This schema defines the representation of shape and topology as important definitional properties for products defined within the IFC Object Model. The representations characterize certain properties of a product, and any product can be defined by zero, one, or many of those properties. The schema defines two ways to represent definitional properties of products:
+This schema defines the representation of shape and topology as important definitional properties for products defined within the IFC Object Model. The representations characterize certain properties of a product, and any product can be defined by zero, one, or many of those properties. The schema defines two ways to represent definitional properties of products:
 
 * topological representation 
 * geometric shape representation 

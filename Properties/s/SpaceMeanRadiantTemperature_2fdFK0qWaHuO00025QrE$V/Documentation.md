@@ -1,1 +1,1 @@
-﻿Mean radiant temperature in the space.
+Mean radiant temperature in the space.

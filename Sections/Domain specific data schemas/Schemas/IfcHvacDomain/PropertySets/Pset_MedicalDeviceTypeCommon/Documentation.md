@@ -1,1 +1,1 @@
-﻿Medical device type common attributes.
+Medical device type common attributes.

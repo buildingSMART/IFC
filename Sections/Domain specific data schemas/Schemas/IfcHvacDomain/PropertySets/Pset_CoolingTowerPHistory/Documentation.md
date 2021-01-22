@@ -1,1 +1,1 @@
-﻿Cooling tower performance history attributes.
+Cooling tower performance history attributes.

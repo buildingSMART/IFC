@@ -1,1 +1,1 @@
-﻿The flowrate of the fuel.
+The flowrate of the fuel.

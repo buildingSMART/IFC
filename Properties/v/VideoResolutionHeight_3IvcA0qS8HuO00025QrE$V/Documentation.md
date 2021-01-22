@@ -1,1 +1,1 @@
-﻿Indicates the number of vertical pixels, e.g. 1080.
+Indicates the number of vertical pixels, e.g. 1080.

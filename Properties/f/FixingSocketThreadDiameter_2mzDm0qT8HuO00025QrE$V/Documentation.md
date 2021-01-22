@@ -1,1 +1,1 @@
-﻿The nominal diameter of the thread.
+The nominal diameter of the thread.

@@ -1,4 +1,4 @@
-﻿A type comprising different kinds of shell.
+A type comprising different kinds of shell.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  

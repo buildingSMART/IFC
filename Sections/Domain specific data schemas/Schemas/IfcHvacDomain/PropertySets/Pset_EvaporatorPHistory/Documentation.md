@@ -1,1 +1,1 @@
-﻿Evaporator performance history attributes.
+Evaporator performance history attributes.

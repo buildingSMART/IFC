@@ -1,1 +1,1 @@
-﻿Properties for history of controller values.  HISTORY: Added in IFC4.
+Properties for history of controller values.  HISTORY: Added in IFC4.

@@ -1,4 +1,4 @@
-﻿The _IfcElectricalDomain_ schema forms part of the Domain Layer of the IFC Model. It extends the ideas concerning building services outlined in the _IfcSharedBldgServicesElements_ schema. It defines concepts of cabled systems where the cabling carries electrical supply, data, telephone signals or other forms of cable transmission.
+The _IfcElectricalDomain_ schema forms part of the Domain Layer of the IFC Model. It extends the ideas concerning building services outlined in the _IfcSharedBldgServicesElements_ schema. It defines concepts of cabled systems where the cabling carries electrical supply, data, telephone signals or other forms of cable transmission.
 
 Additionally the schema defines various devices that are connected by cabling, protection of electrical devices, provision and concepts of light fixtures within buildings, the cabling itself and methods for supporting and carrying cables.
 
@@ -58,5 +58,5 @@ An electrical circuit is formed from electrical devices connected together with 
 
 > HISTORY&nbsp; New schema in IFC2x.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; Electrical circuit specification modified, scope expanded to support communications systems.

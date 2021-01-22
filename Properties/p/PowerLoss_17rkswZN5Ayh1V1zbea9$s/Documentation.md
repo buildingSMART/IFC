@@ -1,1 +1,1 @@
-﻿Total loss of power across this cable.
+Total loss of power across this cable.

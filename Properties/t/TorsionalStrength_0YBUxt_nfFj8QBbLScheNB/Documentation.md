@@ -1,1 +1,1 @@
-﻿Shear strength in torsion.
+Shear strength in torsion.

@@ -1,1 +1,1 @@
-﻿Common properties for fire suppression terminals.
+Common properties for fire suppression terminals.

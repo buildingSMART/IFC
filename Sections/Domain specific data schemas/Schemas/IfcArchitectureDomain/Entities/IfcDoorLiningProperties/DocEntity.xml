@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDoorLiningProperties" Name="IfcDoorLiningProperties" UniqueId="710a01e4-3b28-429a-8170-ab82c20ec8df" BaseDefinition="IfcPreDefinedPropertySet" EntityFlags="237">
 	<Localization>
 		<DocLocalization Locale="de" Name="Festdefinierte Merkmale des Türrahmens / der Türzarge" />
@@ -11,7 +11,7 @@
 		</DocAttribute>
 		<DocAttribute Name="LiningThickness" UniqueId="53c5f2d9-ac1d-45b6-a1ce-12397e8ad5bf" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1">
 			<Documentation>Thickness of the door lining as explained in the figure above. If _LiningThickness_ value is 0. (zero) it denotes a door without a lining (all other lining parameters shall be set to NIL in this case). If the _LiningThickness_ is NIL it denotes that the value is not available.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; Data type modified to be _IfcNonNegativeLengthMeasure_.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="ThresholdDepth" UniqueId="db0a7c60-4300-4d24-988d-0983bdfce5ce" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
@@ -19,13 +19,13 @@
 		</DocAttribute>
 		<DocAttribute Name="ThresholdThickness" UniqueId="5361bc7f-6510-42a5-aebc-488f63e93876" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1">
 			<Documentation>Thickness of the door threshold as explained in the figure above. If _ThresholdThickness_ value is 0. (zero) it denotes a door without a threshold (_ThresholdDepth_ shall be set to NIL in this case). If the _ThresholdThickness_ is NIL it denotes that the information about a threshold is not available.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; Data type modified to be _IfcNonNegativeLengthMeasure_.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="TransomThickness" UniqueId="17b1f23a-20d2-439d-924c-049868c9df8d" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1">
 			<Documentation>Thickness (width in plane parallel to door leaf) of the transom (if provided - that is, if the _TransomOffset_ attribute is set), which divides the door leaf from a glazing (or window) above.
 If the _TransomThickness_ is set to zero (and the _TransomOffset_ set to a positive length), then the door is divided vertically into a leaf and transom window area without a physical frame.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; Data type changed to _IfcNonNegativeLengthMeasure_.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="TransomOffset" UniqueId="3921b7e9-37c7-459e-b04c-20f4f8daee97" DefinedType="IfcLengthMeasure" AttributeFlags="1">
@@ -45,17 +45,17 @@ If the _TransomThickness_ is set to zero (and the _TransomOffset_ set to a posit
 		</DocAttribute>
 		<DocAttribute Name="ShapeAspectStyle" UniqueId="778cc896-d1c6-4a41-88f0-6fec03ecaac7" Status="Deprecated" DefinedType="IfcShapeAspect" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Pointer to the shape aspect, if given. The shape aspect reflects the part of the door shape, which represents the door lining.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute is deprecated and shall no longer be used, i.e. the value shall be NIL ($).</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="LiningToPanelOffsetX" UniqueId="4acf9654-3895-4418-a56d-8b283d40a96d" DefinedType="IfcLengthMeasure" AttributeFlags="1">
 			<Documentation>Offset between the lining and the window panel measured along the x-axis of the local placement.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute added at the end of the entity definition.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="LiningToPanelOffsetY" UniqueId="5cb494dc-61b8-47af-a7fe-8e3c90ba2465" DefinedType="IfcLengthMeasure" AttributeFlags="1">
 			<Documentation>Offset between the lining and the door panel measured along the y-axis of the local placement.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute added at the end of the entity definition.</Documentation>
 		</DocAttribute>
 	</Attributes>
@@ -64,7 +64,7 @@ If the _TransomThickness_ is set to zero (and the _TransomOffset_ set to a posit
 			<Documentation>Either both parameter, _LiningDepth_ and _LiningThickness_ are given, or only the _LiningThickness_, then the _LiningDepth_ is variable. It is not valid to only assert the _LiningDepth_.
 &gt; NOTE&amp;nbsp; A _LiningDepth_ with NIL ($) value indicates a door style with a lining equal to the wall thickness.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; Rule corrected.</Documentation>
 			<Expression>NOT(EXISTS(LiningDepth) AND NOT(EXISTS(LiningThickness)))</Expression>
 		</DocWhereRule>
@@ -72,7 +72,7 @@ If the _TransomThickness_ is set to zero (and the _TransomOffset_ set to a posit
 			<Documentation>Either both parameter, _ThresholdDepth_ and _ThresholdThickness_ are given, or only the _ThresholdThickness_, then the _ThresholdDepth_ is variable. It is not valid to only assert the _ThresholdDepth_.
 &gt; NOTE&amp;nbsp; A _ThresholdDepth_ with NIL ($) value indicates a door style with a lining equal to the wall thickness.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; Rule corrected.</Documentation>
 			<Expression>NOT(EXISTS(ThresholdDepth) AND NOT(EXISTS(ThresholdThickness)))</Expression>
 		</DocWhereRule>

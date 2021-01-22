@@ -1,1 +1,1 @@
-﻿Chamber constructed on a drain, sewer or pipeline and with a removable cover, that permits visible inspection.
+Chamber constructed on a drain, sewer or pipeline and with a removable cover, that permits visible inspection.

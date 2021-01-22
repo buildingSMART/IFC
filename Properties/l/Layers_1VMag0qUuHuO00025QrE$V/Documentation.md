@@ -1,1 +1,1 @@
-﻿Number of layers.
+Number of layers.

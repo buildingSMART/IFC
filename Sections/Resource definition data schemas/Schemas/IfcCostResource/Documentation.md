@@ -1,4 +1,4 @@
-﻿The _IfcCostResource_ schema provides the means to identify cost values.
+The _IfcCostResource_ schema provides the means to identify cost values.
 
 A cost value specifies an amount or a value that has an effect on the amount that is applied to an object in the units of measure applicable to the value type. A cost value may have an applicable date that can be used to provide a basis on which fluctuations in price can be established or that otherwise identifies when the cost value was applied.
 

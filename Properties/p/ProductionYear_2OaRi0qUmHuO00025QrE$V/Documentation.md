@@ -1,1 +1,1 @@
-﻿The year of production of the manufactured item.
+The year of production of the manufactured item.

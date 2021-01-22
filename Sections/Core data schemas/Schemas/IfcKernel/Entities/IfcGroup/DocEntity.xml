@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcGroup" Name="IfcGroup" UniqueId="e991a118-741e-4598-a023-d9ad58f0f717" BaseDefinition="IfcObject" EntityFlags="173">
 	<Localization>
 		<DocLocalization Locale="de" Name="Gruppe (allgemein)" />
@@ -8,7 +8,7 @@
 	<Attributes>
 		<DocAttribute Name="IsGroupedBy" UniqueId="d62fb122-4977-4bdd-9663-ff15e288c506" DefinedType="IfcRelAssignsToGroup" AttributeFlags="8" AggregationType="3" Inverse="RelatingGroup">
 			<Documentation>Reference to the relationship _IfcRelAssignsToGroup_ that assigns the one to many group members to the _IfcGroup_ object.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The cardinality has been changed from 1..1 to 0..? in order to allow the exchange of a group concept without having already group members assigned. It now also allows the use of many instances of _IfcRelAssignsToGroup_ to assign the group members. The change has been done with upward compatibility for file based exchange.</Documentation>
 		</DocAttribute>
 	</Attributes>

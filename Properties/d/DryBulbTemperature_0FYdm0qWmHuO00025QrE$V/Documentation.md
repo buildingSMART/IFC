@@ -1,1 +1,1 @@
-﻿Loads from the dry bulb temperature.
+Loads from the dry bulb temperature.

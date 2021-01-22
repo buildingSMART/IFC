@@ -1,4 +1,4 @@
-﻿This entity describes edge members with varying profile properties. Each instance of _IfcStructuralCurveMemberVarying_ is composed of two or more instances of _IfcStructuralCurveMember_ with differing profile properties. These subordinate members relate to the instance of _IfcStructuralCurveMemberVarying_ by _IfcRelAggregates_.
+This entity describes edge members with varying profile properties. Each instance of _IfcStructuralCurveMemberVarying_ is composed of two or more instances of _IfcStructuralCurveMember_ with differing profile properties. These subordinate members relate to the instance of _IfcStructuralCurveMemberVarying_ by _IfcRelAggregates_.
 
 > NOTE&nbsp; A curve member whose variation of profile properties can be sufficiently described by a start profile and an end profile (e.g. tapers) shall be modeled as a single direct instance of the supertype _IfcStructuralCurveMember_.
 
@@ -6,7 +6,7 @@
 
 > HISTORY&nbsp; New entity in IFC2x2.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; Use definition changed.
 
 ****Coordinate Systems****:

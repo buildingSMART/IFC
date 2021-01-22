@@ -1,1 +1,1 @@
-﻿Indicates the tuner channels, if applicable.
+Indicates the tuner channels, if applicable.

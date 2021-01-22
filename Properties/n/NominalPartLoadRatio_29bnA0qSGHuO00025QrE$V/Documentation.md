@@ -1,1 +1,1 @@
-﻿Allowable part load ratio range.
+Allowable part load ratio range.

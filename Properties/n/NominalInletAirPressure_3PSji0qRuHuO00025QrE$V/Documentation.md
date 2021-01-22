@@ -1,1 +1,1 @@
-﻿Nominal airflow inlet static pressure.
+Nominal airflow inlet static pressure.

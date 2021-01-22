@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcNavigationElementType" UniqueId="632d826d-90ee-4587-8ee3-dcf77ad5ce12" BaseDefinition="IfcBuiltElementType" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="5c944ad4-677d-4c99-8168-dbaa1b83e81b" DefinedType="IfcNavigationElementTypeEnum">
+			<Documentation></Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="5957ee6e-e97d-4244-81ab-fc1720a189b4">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcNavigationElementTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcNavigationElementTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

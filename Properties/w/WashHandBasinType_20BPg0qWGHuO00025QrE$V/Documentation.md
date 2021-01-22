@@ -1,4 +1,4 @@
-﻿Defines the types of wash hand basin that may be specified where:
+Defines the types of wash hand basin that may be specified where:
 
 
 DentalCuspidor: Waste water appliance that receives and flushes away mouth washings

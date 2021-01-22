@@ -1,1 +1,1 @@
-﻿Information on tripping units that are electronically tripped.
+Information on tripping units that are electronically tripped.

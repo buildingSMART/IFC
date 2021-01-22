@@ -1,1 +1,1 @@
-﻿Tube bundle type common attributes.
+Tube bundle type common attributes.

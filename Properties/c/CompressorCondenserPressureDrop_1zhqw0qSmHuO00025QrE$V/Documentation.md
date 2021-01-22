@@ -1,1 +1,1 @@
-﻿Pressure drop between condenser inlet and compressor outlet.
+Pressure drop between condenser inlet and compressor outlet.

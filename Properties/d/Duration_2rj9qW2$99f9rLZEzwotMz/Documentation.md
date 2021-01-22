@@ -1,1 +1,1 @@
-﻿Duration of process.
+Duration of process.

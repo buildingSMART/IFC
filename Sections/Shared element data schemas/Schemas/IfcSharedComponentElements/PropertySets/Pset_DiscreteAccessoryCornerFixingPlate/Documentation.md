@@ -1,1 +1,1 @@
-﻿Properties specific to corner fixing plates.
+Properties specific to corner fixing plates.

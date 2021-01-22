@@ -1,1 +1,1 @@
-﻿Duct silencer performance history common attributes.
+Duct silencer performance history common attributes.

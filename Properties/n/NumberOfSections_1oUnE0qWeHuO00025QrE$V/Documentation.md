@@ -1,1 +1,1 @@
-﻿Number of vertical sections, measured in the direction of flow.
+Number of vertical sections, measured in the direction of flow.

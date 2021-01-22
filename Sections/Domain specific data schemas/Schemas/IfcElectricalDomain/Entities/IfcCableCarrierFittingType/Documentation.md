@@ -1,4 +1,4 @@
-﻿The flow fitting type **IfcCableCarrierFittingType** defines commonly shared information for occurrences of cable carrier fittings. The set of shared information may include:
+The flow fitting type **IfcCableCarrierFittingType** defines commonly shared information for occurrences of cable carrier fittings. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

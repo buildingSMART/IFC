@@ -1,1 +1,1 @@
-﻿Average surface temperature of the component.
+Average surface temperature of the component.

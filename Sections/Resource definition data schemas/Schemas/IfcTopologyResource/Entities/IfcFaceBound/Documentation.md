@@ -1,4 +1,4 @@
-﻿{ .extDef}
+{ .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
 > A face bound is a loop which is intended to be used for bounding a face.
 

@@ -1,1 +1,1 @@
-﻿Bottom cover of the profile.
+Bottom cover of the profile.

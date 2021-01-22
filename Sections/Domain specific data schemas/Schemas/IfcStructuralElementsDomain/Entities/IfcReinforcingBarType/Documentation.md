@@ -1,4 +1,4 @@
-﻿The reinforcing element type **IfcReinforcingBarType** defines commonly shared information for occurrences of reinforcing bars. The set of shared information may include:
+The reinforcing element type **IfcReinforcingBarType** defines commonly shared information for occurrences of reinforcing bars. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

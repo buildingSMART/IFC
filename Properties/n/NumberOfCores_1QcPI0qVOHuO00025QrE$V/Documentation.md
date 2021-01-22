@@ -1,1 +1,1 @@
-﻿Number of cores.
+Number of cores.

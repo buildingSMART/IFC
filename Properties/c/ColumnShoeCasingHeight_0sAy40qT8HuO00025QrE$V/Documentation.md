@@ -1,1 +1,1 @@
-﻿The height of the column shoe casing.
+The height of the column shoe casing.

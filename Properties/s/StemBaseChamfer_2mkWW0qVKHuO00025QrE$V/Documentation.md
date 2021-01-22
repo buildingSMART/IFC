@@ -1,1 +1,1 @@
-﻿Stem base chamfer of the profile.
+Stem base chamfer of the profile.

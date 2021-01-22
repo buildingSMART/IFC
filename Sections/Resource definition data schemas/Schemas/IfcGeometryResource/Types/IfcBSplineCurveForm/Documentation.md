@@ -1,4 +1,4 @@
-﻿The _IfcBSplineCurveForm_ represents a part of a curve of some sppecific form.
+The _IfcBSplineCurveForm_ represents a part of a curve of some sppecific form.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  

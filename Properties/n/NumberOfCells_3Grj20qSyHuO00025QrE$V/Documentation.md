@@ -1,1 +1,1 @@
-﻿Number of cells in one cooling tower unit.
+Number of cells in one cooling tower unit.

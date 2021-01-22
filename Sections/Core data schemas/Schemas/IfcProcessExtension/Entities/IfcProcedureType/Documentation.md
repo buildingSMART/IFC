@@ -1,4 +1,4 @@
-﻿An _IfcProcedureType_ defines a particular type of procedure that may be specified.
+An _IfcProcedureType_ defines a particular type of procedure that may be specified.
 
 > HISTORY&nbsp; New entity in IFC4
 

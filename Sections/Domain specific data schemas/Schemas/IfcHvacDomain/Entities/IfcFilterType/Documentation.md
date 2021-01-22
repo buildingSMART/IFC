@@ -1,4 +1,4 @@
-﻿The flow treatment device type **IfcFilterType** defines commonly shared information for occurrences of filters. The set of shared information may include:
+The flow treatment device type **IfcFilterType** defines commonly shared information for occurrences of filters. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

@@ -1,1 +1,1 @@
-﻿Flow rate of fluid through the condenser.
+Flow rate of fluid through the condenser.

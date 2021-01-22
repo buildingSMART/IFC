@@ -1,1 +1,1 @@
-﻿Ventilation loads from outdoor air.
+Ventilation loads from outdoor air.

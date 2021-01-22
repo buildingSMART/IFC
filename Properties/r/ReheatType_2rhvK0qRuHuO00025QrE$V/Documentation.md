@@ -1,1 +1,1 @@
-﻿Terminal box reheat type.
+Terminal box reheat type.

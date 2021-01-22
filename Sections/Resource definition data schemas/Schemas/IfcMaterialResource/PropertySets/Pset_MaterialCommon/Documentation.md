@@ -1,1 +1,1 @@
-﻿A set of general material properties.
+A set of general material properties.

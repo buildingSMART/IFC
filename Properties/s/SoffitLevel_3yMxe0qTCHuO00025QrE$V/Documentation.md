@@ -1,1 +1,1 @@
-﻿Level of the highest internal part of the cross section as measured from ground level.
+Level of the highest internal part of the cross section as measured from ground level.

@@ -1,4 +1,4 @@
-﻿The schema _IfcPresentationDefinitionResource_ defines the resources used for geometric representations and presentations of styled items. The primary application of this resource is for defining the annotation occurrences of curve, text, filled area, symbol, and surfaces and the definitions of symbols and text literals for being presented.
+The schema _IfcPresentationDefinitionResource_ defines the resources used for geometric representations and presentations of styled items. The primary application of this resource is for defining the annotation occurrences of curve, text, filled area, symbol, and surfaces and the definitions of symbols and text literals for being presented.
 
 The following is within the scope of the presentation resource schemas:
 

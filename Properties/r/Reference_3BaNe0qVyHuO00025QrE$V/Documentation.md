@@ -1,1 +1,1 @@
-﻿A descriptive label for the general reinforcement type.
+A descriptive label for the general reinforcement type.

@@ -1,1 +1,1 @@
-﻿Cross section area of the phase(s) lead(s).
+Cross section area of the phase(s) lead(s).

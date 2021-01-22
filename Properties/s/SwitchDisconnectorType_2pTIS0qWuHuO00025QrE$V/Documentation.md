@@ -1,4 +1,4 @@
-﻿A list of the available types of switch disconnector from which that required may be selected where:
+A list of the available types of switch disconnector from which that required may be selected where:
 
 CenterBreak: A disconnector in which both contacts of each pole are movable and engage at a point substantially midway between their supports. (IEC 441-14-08)
 DividedSupport: A disconnector in which the fixed and moving contacts of each pole are not supported by a common base or frame. (IEC 441-14-06)

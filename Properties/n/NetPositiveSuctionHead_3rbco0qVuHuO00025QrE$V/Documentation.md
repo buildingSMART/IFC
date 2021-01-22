@@ -1,1 +1,1 @@
-﻿Minimum liquid pressure at the pump inlet to prevent cavitation.
+Minimum liquid pressure at the pump inlet to prevent cavitation.

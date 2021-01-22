@@ -1,1 +1,1 @@
-﻿Maximum part load ratio as a fraction of nominal capacity.
+Maximum part load ratio as a fraction of nominal capacity.

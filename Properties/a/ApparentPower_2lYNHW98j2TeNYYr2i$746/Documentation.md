@@ -1,1 +1,1 @@
-﻿Apparent power.
+Apparent power.

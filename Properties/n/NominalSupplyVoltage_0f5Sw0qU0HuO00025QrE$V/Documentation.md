@@ -1,1 +1,1 @@
-﻿The nominal voltage of the supply.
+The nominal voltage of the supply.

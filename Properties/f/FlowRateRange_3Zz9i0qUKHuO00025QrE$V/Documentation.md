@@ -1,1 +1,1 @@
-﻿Possible range of fluid flowrate that can be delivered.
+Possible range of fluid flowrate that can be delivered.

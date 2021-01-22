@@ -1,1 +1,1 @@
-﻿Based on water vapor density.
+Based on water vapor density.

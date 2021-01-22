@@ -1,1 +1,1 @@
-﻿Nominal fuel consumption rate required to produce the total boiler heat output.
+Nominal fuel consumption rate required to produce the total boiler heat output.

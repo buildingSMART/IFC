@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcConstructionResource" Name="IfcConstructionResource" UniqueId="8d7d96c2-5987-41a0-aa66-ab3c2f3443bf" BaseDefinition="IfcResource" EntityFlags="197">
 	<Localization>
 		<DocLocalization Locale="de" Name="Konstruktion - Ressource" />
@@ -17,13 +17,13 @@
 		<DocAttribute Name="Usage" UniqueId="a310105d-c221-4f71-b051-9391d731cec8" DefinedType="IfcResourceTime" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Indicates the work, usage, and times scheduled and completed.  Some attributes on this object may have associated constraints or time series; see documentation of _IfcResourceTime_ for specific usage.  If the resource is nested, then certain values may be calculated based on the component resources as indicated at _IfcResourceTime_.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="BaseCosts" UniqueId="c897428f-689a-4abb-9fb4-b5dffaf945e6" DefinedType="IfcAppliedValue" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Indicates the unit costs for which accrued amounts should be calculated.  Such unit costs may be split into _Name_ designations (for example, &apos;Standard&apos;, &apos;Overtime&apos;), and may contain a hierarchy of cost values that apply at different dates (using _IfcCostValue.ApplicableDate_ and _IfcCostValue.FixedUntilDate_).
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="BaseQuantity" UniqueId="4da46f38-bb04-4ce9-88fb-8b7ca2c524a7" DefinedType="IfcPhysicalQuantity" AttributeFlags="1" XsdFormat="attribute">
@@ -35,7 +35,7 @@ For material resources, this refers to _IfcQuantityVolume_.
 
 For product resources, this refers to _IfcQuantityCount_.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute.</Documentation>
 		</DocAttribute>
 	</Attributes>

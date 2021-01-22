@@ -1,1 +1,1 @@
-﻿Left flange width of the profile.
+Left flange width of the profile.

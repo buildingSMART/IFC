@@ -1,1 +1,1 @@
-﻿Specifies the required fail-safe position of the actuator.
+Specifies the required fail-safe position of the actuator.

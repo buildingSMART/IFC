@@ -1,1 +1,1 @@
-﻿Defines the flow condition as a percentage of the cross-sectional area.
+Defines the flow condition as a percentage of the cross-sectional area.

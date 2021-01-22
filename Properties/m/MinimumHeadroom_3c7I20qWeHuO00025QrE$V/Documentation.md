@@ -1,1 +1,1 @@
-﻿Headroom required for the activity assigned to this space.
+Headroom required for the activity assigned to this space.

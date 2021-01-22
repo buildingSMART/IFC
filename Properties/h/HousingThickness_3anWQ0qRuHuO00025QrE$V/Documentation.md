@@ -1,1 +1,1 @@
-﻿Air terminal box housing material thickness.
+Air terminal box housing material thickness.

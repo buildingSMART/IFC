@@ -1,1 +1,1 @@
-﻿Length of the tubes in the tube bundle.
+Length of the tubes in the tube bundle.

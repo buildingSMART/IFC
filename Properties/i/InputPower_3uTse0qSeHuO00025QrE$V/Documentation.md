@@ -1,1 +1,1 @@
-﻿Input power to the compressor motor.
+Input power to the compressor motor.

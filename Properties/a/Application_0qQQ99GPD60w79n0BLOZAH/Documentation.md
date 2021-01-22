@@ -1,1 +1,1 @@
-﻿Indicates application of actuator.
+Indicates application of actuator.

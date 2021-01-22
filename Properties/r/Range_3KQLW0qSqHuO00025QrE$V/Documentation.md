@@ -1,1 +1,1 @@
-﻿The physical range of values.
+The physical range of values.

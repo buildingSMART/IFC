@@ -1,1 +1,1 @@
-﻿Classification designation of the dimensional accuracy requirement according to local standards.
+Classification designation of the dimensional accuracy requirement according to local standards.

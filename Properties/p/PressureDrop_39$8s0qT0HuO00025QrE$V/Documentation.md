@@ -1,1 +1,1 @@
-﻿Pressure drop.
+Pressure drop.

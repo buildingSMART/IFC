@@ -1,4 +1,4 @@
-﻿The distribution control element type **IfcProtectiveDeviceTrippingUnitType** defines commonly shared information for occurrences of protective device tripping units. The set of shared information may include:
+The distribution control element type **IfcProtectiveDeviceTrippingUnitType** defines commonly shared information for occurrences of protective device tripping units. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

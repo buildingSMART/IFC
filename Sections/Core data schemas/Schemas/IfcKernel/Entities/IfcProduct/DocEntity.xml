@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcProduct" Name="IfcProduct" UniqueId="ed1b8d59-300e-45f5-b8df-fd0e833a761e" BaseDefinition="IfcObject" EntityFlags="205">
 	<Localization>
 		<DocLocalization Locale="de" Name="Produkt (allgemein)" />
@@ -19,6 +19,9 @@
 			<Documentation>Reference to the _IfcRelAssignsToProduct_ relationship, by which other products, processes, controls, resources or actors (as subtypes of _IfcObjectDefinition_) can be related to this product.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="PositionedRelativeTo" UniqueId="4e037e1b-e5b1-4a51-aed6-867d47edb41a" DefinedType="IfcRelPositions" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="RelatedProducts" />
+		<DocAttribute Name="ReferencedInStructures" UniqueId="e0ffbd87-a8cb-4de7-84e8-79c20d3da578" DefinedType="IfcRelReferencedInSpatialStructure" AggregationType="3" AggregationLower="0" AggregationUpper="0" Inverse="RelatedElements">
+			<Documentation></Documentation>
+		</DocAttribute>
 	</Attributes>
 	<WhereRules>
 		<DocWhereRule Name="PlacementForShapeRepresentation" UniqueId="1e683d1f-04ac-437e-a105-362930e5f02b">

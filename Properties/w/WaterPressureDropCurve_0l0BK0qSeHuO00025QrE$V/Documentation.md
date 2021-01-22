@@ -1,1 +1,1 @@
-﻿Water pressure drop curve, pressure drop – flow rate curve, WaterPressureDrop = f(WaterflowRate).
+Water pressure drop curve, pressure drop – flow rate curve, WaterPressureDrop = f(WaterflowRate).

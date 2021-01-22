@@ -1,4 +1,4 @@
-﻿The _IfcBSplineSurface_ is a general form of rational or polynomial parametric surface.
+The _IfcBSplineSurface_ is a general form of rational or polynomial parametric surface.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  

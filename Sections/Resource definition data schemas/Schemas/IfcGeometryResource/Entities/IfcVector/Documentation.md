@@ -1,4 +1,4 @@
-﻿An _IfcVector_ is a geometric representation item having both a magnitude and direction. The magnitude of the vector is solely defined by the _Magnitude_ attribute and the direction is solely defined by the _Orientation_ attribute.
+An _IfcVector_ is a geometric representation item having both a magnitude and direction. The magnitude of the vector is solely defined by the _Magnitude_ attribute and the direction is solely defined by the _Orientation_ attribute.
 
 > NOTE&nbsp; The _DirectionRatios_ of the _Orientation_ attribute are not used to define the magnitude.
 

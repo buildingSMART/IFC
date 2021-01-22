@@ -1,1 +1,1 @@
-﻿Defines the method of mounting the fan in the building.
+Defines the method of mounting the fan in the building.

@@ -1,1 +1,1 @@
-﻿Pipe fitting performance history common attributes.
+Pipe fitting performance history common attributes.

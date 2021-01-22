@@ -1,1 +1,1 @@
-﻿Heating air flow rate in the space.
+Heating air flow rate in the space.

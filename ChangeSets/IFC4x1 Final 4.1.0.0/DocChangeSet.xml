@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocChangeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IFC4x1 Final 4.1.0.0" UniqueId="c53bd56d-7bce-4028-b2b8-2afebdc9f73d">
+	<ChangesEntities>
+		<DocChangeAction Name="Core data schemas" UniqueId="654e99e6-afda-482b-a718-211fd183b15e">
+			<Changes>
+				<DocChangeAction Name="IfcKernel" UniqueId="c636f446-1e3f-427c-ba4f-4201fb6a482b">
+					<Changes>
+						<DocChangeAction Name="IfcObjectTypeEnum" UniqueId="84c8d83a-a592-47fb-bc1e-8f7c3fb9ffb5" Action="modified">
+							<Aspects>
+								<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+							</Aspects>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcProxy" UniqueId="c8fe8473-83e0-4879-8f96-0452e686a3de" Action="modified">
+							<Aspects>
+								<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+							</Aspects>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcRelAssignsToActor" UniqueId="893cce2e-6c56-4f7e-9917-6d6cea4a2ef8">
+							<Changes>
+								<DocChangeAction Name="RelatedObjectsType" UniqueId="0a7dac30-d39b-43b9-979c-d5935780245a" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcRelAssignsToControl" UniqueId="6763d19c-6bce-4624-82c6-07e0ea12d567">
+							<Changes>
+								<DocChangeAction Name="RelatedObjectsType" UniqueId="e403aebc-4395-41c0-bead-de64880c8fc2" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcRelAssignsToGroup" UniqueId="412609a9-7949-42b2-8df2-f71c9e66b291">
+							<Changes>
+								<DocChangeAction Name="RelatedObjectsType" UniqueId="6874e343-248f-464e-8f88-f3836c905e8c" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcRelAssignsToGroupByFactor" UniqueId="84b84622-0182-4594-84e1-66d1a119536d">
+							<Changes>
+								<DocChangeAction Name="RelatedObjectsType" UniqueId="b7170f6d-b443-4735-9a19-7f633abe6128" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcRelAssignsToProcess" UniqueId="2e926077-e223-4c4c-90fa-cf05b37505f8">
+							<Changes>
+								<DocChangeAction Name="RelatedObjectsType" UniqueId="7c91a12f-986e-429e-9a71-848e36d63fd5" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcRelAssignsToProduct" UniqueId="5265f504-cadd-408f-82f3-8657350fdbf6">
+							<Changes>
+								<DocChangeAction Name="RelatedObjectsType" UniqueId="9117d751-c6f2-4538-8cce-35e01fba6c38" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcRelAssignsToResource" UniqueId="183fdb52-7eec-4003-bd96-6375e1633fa3">
+							<Changes>
+								<DocChangeAction Name="RelatedObjectsType" UniqueId="f9002c56-74af-42ea-835e-ba2d2d881f36" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+					</Changes>
+				</DocChangeAction>
+				<DocChangeAction Name="IfcProductExtension" UniqueId="27d08547-2ece-4c9f-a3a2-bbd666252d6b">
+					<Changes>
+						<DocChangeAction Name="IfcAlignmentTypeEnum" UniqueId="0323a330-bdf3-4cee-83fb-fbe47397a9e2" Action="added" />
+						<DocChangeAction Name="IfcReferentTypeEnum" UniqueId="93258098-771b-4bd1-924e-c6915f135ed1" Action="added" />
+						<DocChangeAction Name="IfcAlignment" UniqueId="c3b4cc3a-df5b-4aae-8318-a00ac9661f25" Action="added" />
+						<DocChangeAction Name="IfcLinearPositioningElement" UniqueId="9ed3f781-2c64-4288-8a22-d767d14ae0bb" Action="added" />
+						<DocChangeAction Name="IfcPositioningElement" UniqueId="0e1ceccc-b2df-4e87-a10e-c379b9c8e01a" Action="added" />
+						<DocChangeAction Name="IfcReferent" UniqueId="833ed3cc-b9ce-45e8-bb02-4ad0e16fa438" Action="added" />
+					</Changes>
+				</DocChangeAction>
+			</Changes>
+		</DocChangeAction>
+		<DocChangeAction Name="Shared element data schemas" UniqueId="70eba967-56b4-433f-be25-ab2aaaf71319">
+			<Changes>
+				<DocChangeAction Name="IfcSharedBldgElements" UniqueId="5d2639de-661f-41d0-8ca0-c033676fbced">
+					<Changes>
+						<DocChangeAction Name="IfcRelCoversSpaces" UniqueId="2c8c413a-c9b4-477b-ace0-087e98cd459d" Action="modified">
+							<Aspects>
+								<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+							</Aspects>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcStairFlight" UniqueId="897600dd-ee99-4bf1-99fd-d2fc2b01f183">
+							<Changes>
+								<DocChangeAction Name="NumberOfRisers" UniqueId="faf887d6-d0c4-4da6-8478-0a6259b94950" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="NumberOfTreads" UniqueId="83efd03f-df6d-45a1-a737-19e453ed1028" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="RiserHeight" UniqueId="e7de6284-3763-4aec-8b09-6c6f8dabe85d" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="TreadLength" UniqueId="216c24bd-238c-4b1f-a523-9e783fd39e2b" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+					</Changes>
+				</DocChangeAction>
+				<DocChangeAction Name="IfcSharedComponentElements" UniqueId="0aa7df8c-f040-4477-ae68-041a03304be7">
+					<Changes>
+						<DocChangeAction Name="IfcMechanicalFastener" UniqueId="20a9362b-5736-4adb-b159-0a290623bb28">
+							<Changes>
+								<DocChangeAction Name="NominalDiameter" UniqueId="9b6e20aa-3b68-4e46-ad55-494572782c52" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="NominalLength" UniqueId="e709f09f-ae01-4937-8917-b0a75bd6d13b" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcMechanicalFastenerType" UniqueId="953e6f88-2166-4b26-bc52-7a7204dd767b">
+							<Changes>
+								<DocChangeAction Name="NominalDiameter" UniqueId="b85314ac-7ccf-4549-86f7-fbb27cbce769" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="NominalLength" UniqueId="b5410619-de51-4fe4-a5b5-9aa5b13e6454" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+					</Changes>
+				</DocChangeAction>
+			</Changes>
+		</DocChangeAction>
+		<DocChangeAction Name="Domain specific data schemas" UniqueId="c65bd33c-dea1-4326-9762-2cba7631fa53">
+			<Changes>
+				<DocChangeAction Name="IfcArchitectureDomain" UniqueId="89f10ae5-4629-487d-a890-5be195edeb70">
+					<Changes>
+						<DocChangeAction Name="IfcPermeableCoveringProperties" UniqueId="3705d27d-1c6a-40c1-9168-267089e0fe9b">
+							<Changes>
+								<DocChangeAction Name="ShapeAspectStyle" UniqueId="5001937d-7893-4341-af1e-b2b880a5aae7" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" NewValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcWindowLiningProperties" UniqueId="cb6a5948-ad15-4f74-b298-be8550fb810a">
+							<Changes>
+								<DocChangeAction Name="ShapeAspectStyle" UniqueId="bab71c73-ca87-4aee-87f6-9cb4496142d8" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcWindowPanelProperties" UniqueId="9136579a-9a3d-49ca-b6b0-29ab48ecdd47">
+							<Changes>
+								<DocChangeAction Name="ShapeAspectStyle" UniqueId="db7a96b0-323b-47e2-8c48-fbb07ba2dd3b" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+					</Changes>
+				</DocChangeAction>
+				<DocChangeAction Name="IfcStructuralElementsDomain" UniqueId="d62a333e-1e7b-4a02-827a-a167a8119fa6">
+					<Changes>
+						<DocChangeAction Name="IfcPile" UniqueId="668ba8ff-5a92-4be1-83f2-cccf2054b4d0">
+							<Changes>
+								<DocChangeAction Name="ConstructionType" UniqueId="27b23626-9ac8-47e8-9943-c956d68466fc" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcReinforcingBar" UniqueId="bfd873e4-c796-48da-a362-192b18bfcff5">
+							<Changes>
+								<DocChangeAction Name="SteelGrade" UniqueId="82c224ff-15b7-4cb7-bf27-42c48a0361e6" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="NominalDiameter" UniqueId="5517fb89-46e2-4bd4-9f25-0cd49a0f4fc3" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="CrossSectionArea" UniqueId="ea831b04-a48b-4cce-a845-8b28bb6cc4be" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="BarLength" UniqueId="707f0ab2-119d-4f7d-bb09-c0eda2a487d8" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="BarSurface" UniqueId="cc078323-299c-46be-b5e8-e53fa0d847dd" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcReinforcingBarType" UniqueId="64ad8c06-3986-42d1-a6ee-e0ed620f9d7c">
+							<Changes>
+								<DocChangeAction Name="NominalDiameter" UniqueId="63b89128-3c2b-4eb9-89be-fb57526aeab6" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="CrossSectionArea" UniqueId="eeb57868-7ff6-45be-9248-fdeb570f2b6a" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="BarLength" UniqueId="e09bea2b-506b-4205-9d57-4e21d2197376" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="BarSurface" UniqueId="eaee64f6-f167-40a9-b496-e49e4765614c" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="BendingShapeCode" UniqueId="09d4ea38-b8a4-41a8-a0cd-1d3ddccd19cb" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="BendingParameters" UniqueId="0a2a9f4b-c3ff-4500-83db-c81187c61979" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcReinforcingMesh" UniqueId="5aa3f901-2b1f-4c8e-a44c-10dd0d580903">
+							<Changes>
+								<DocChangeAction Name="SteelGrade" UniqueId="d773efd6-be5b-4a88-8968-97b57673fd97" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="MeshLength" UniqueId="a8f5f37f-aa8c-4175-99ae-626dcfb7ea11" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="MeshWidth" UniqueId="de608258-b628-4d2e-bc22-d276ce311a7c" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="LongitudinalBarNominalDiameter" UniqueId="0be95ac1-6e79-4563-b755-6f86a3204acb" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="TransverseBarNominalDiameter" UniqueId="84134349-825e-42a3-ad82-7e1c19970a2e" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="LongitudinalBarCrossSectionArea" UniqueId="bd2385e9-22ee-4a5b-acc0-884303ceb0a7" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="TransverseBarCrossSectionArea" UniqueId="6760740f-d291-4395-aa47-c2b78f1ca14c" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="LongitudinalBarSpacing" UniqueId="ba0d20d2-8ce0-4a45-a4ab-483f1c2a0c25" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="TransverseBarSpacing" UniqueId="00803f00-b438-4e32-9ff4-1d5d7225175f" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcReinforcingMeshType" UniqueId="534704c4-c492-46dd-85c3-1d67659b241d">
+							<Changes>
+								<DocChangeAction Name="MeshLength" UniqueId="a5048bf2-ccce-4ea8-85c4-8b5f59a0aebc" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="MeshWidth" UniqueId="d9d06983-ff3b-44fd-a546-619df9e1928b" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="LongitudinalBarNominalDiameter" UniqueId="d891f374-efb3-49cd-bdfa-2ca9223c0a14" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="TransverseBarNominalDiameter" UniqueId="6309e8c2-b684-4eea-880f-5c0d38076055" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="LongitudinalBarCrossSectionArea" UniqueId="ff32dcf4-e612-40ef-8cfe-d2dd30ad27ca" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="TransverseBarCrossSectionArea" UniqueId="0ac7b529-0ae5-49a4-90c8-28d271bb6050" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="LongitudinalBarSpacing" UniqueId="87087bfa-ec52-4344-9d9b-ee0f411887c8" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="TransverseBarSpacing" UniqueId="f2e35a40-5343-4bc8-9307-22a568327bda" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="BendingShapeCode" UniqueId="0d78d6b0-a076-4727-bc47-009b73866f29" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="BendingParameters" UniqueId="6ea66b9a-8386-46d0-a708-2d976d79bbd9" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcTendon" UniqueId="afffdcf0-6b73-4cb1-a58b-4d664b53c1e4">
+							<Changes>
+								<DocChangeAction Name="SteelGrade" UniqueId="e0cf3c05-745a-4fbb-81ac-02b08677346d" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="NominalDiameter" UniqueId="f4f94dd7-5900-4cb9-98f8-8fdea15d65ea" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="CrossSectionArea" UniqueId="69a41b17-e429-4888-9b9d-fded8d13d367" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="TensionForce" UniqueId="c543e25c-7da2-4136-999c-b516d6eb4957" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="PreStress" UniqueId="23f6dff3-3774-4a16-bf84-0845862a088e" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="FrictionCoefficient" UniqueId="c72df37e-28c1-418d-bcf3-78ab18f19f90" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="AnchorageSlip" UniqueId="1d11485b-6883-4a8e-9135-67ab1a9f07f4" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="MinCurvatureRadius" UniqueId="af6bc579-2d62-4848-856b-cf4d3c486c1c" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcTendonAnchor" UniqueId="dc04ceaf-cad3-4597-b2fd-40c85be979be">
+							<Changes>
+								<DocChangeAction Name="SteelGrade" UniqueId="ccdb94a9-bcfb-463a-9901-255cba101281" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcTendonType" UniqueId="9004692d-55ff-43f0-9744-2d28ffae811d">
+							<Changes>
+								<DocChangeAction Name="NominalDiameter" UniqueId="ac97bf7a-e3ce-40e1-98b1-a97fb7f79467" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="CrossSectionArea" UniqueId="4e74769e-dc86-4a3d-bacc-19763ac74d99" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="SheathDiameter" UniqueId="e31ca3ba-e98c-40df-b1e3-3c5c3677a5c2" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+					</Changes>
+				</DocChangeAction>
+			</Changes>
+		</DocChangeAction>
+		<DocChangeAction Name="Resource definition data schemas" UniqueId="0e3b8b5f-95dd-4460-9aba-26e4505ee092">
+			<Changes>
+				<DocChangeAction Name="IfcExternalReferenceResource" UniqueId="c44d0132-70ea-4606-bf41-4212279072cc">
+					<Changes>
+						<DocChangeAction Name="IfcResourceObjectSelect" UniqueId="9c6818bd-20de-453d-8283-5ae7b1e62505">
+							<Changes>
+								<DocChangeAction Name="IfcShapeAspect" UniqueId="30c80fa8-466b-43ce-8c07-42808db67cf3" Action="added" />
+							</Changes>
+						</DocChangeAction>
+					</Changes>
+				</DocChangeAction>
+				<DocChangeAction Name="IfcGeometricConstraintResource" UniqueId="2983db38-0faa-44c0-83e8-8f9e6ffc6a75">
+					<Changes>
+						<DocChangeAction Name="IfcAlignment2DHorizontal" UniqueId="4b349420-134c-4f89-a364-eb877f68cc96" Action="added" />
+						<DocChangeAction Name="IfcAlignment2DHorizontalSegment" UniqueId="e577cc34-a20c-4517-87dd-70b6e1f35f1e" Action="added" />
+						<DocChangeAction Name="IfcAlignment2DSegment" UniqueId="13731c6f-bcba-4f54-9511-9f66d7d22362" Action="added" />
+						<DocChangeAction Name="IfcAlignment2DVerSegCircularArc" UniqueId="f476ff81-2acd-4436-9b1b-b72dd9cd131b" Action="added" />
+						<DocChangeAction Name="IfcAlignment2DVerSegLine" UniqueId="a48535d3-b9db-4901-8808-1f02bdc20a3d" Action="added" />
+						<DocChangeAction Name="IfcAlignment2DVerSegParabolicArc" UniqueId="e988974b-7652-4907-81b2-367f241f36bd" Action="added" />
+						<DocChangeAction Name="IfcAlignment2DVertical" UniqueId="56b43a8e-ebc6-4d86-a778-9e1d855af8e8" Action="added" />
+						<DocChangeAction Name="IfcAlignment2DVerticalSegment" UniqueId="c41b3819-060b-40fe-a830-082acd042ee0" Action="added" />
+						<DocChangeAction Name="IfcAlignmentCurve" UniqueId="53eaeaf3-d979-4e3f-9d35-3cb29204a82b" Action="added" />
+						<DocChangeAction Name="IfcLinearPlacement" UniqueId="6b8637f5-bcc5-4ce9-9b96-ee720b01a86c" Action="added" />
+					</Changes>
+				</DocChangeAction>
+				<DocChangeAction Name="IfcGeometricModelResource" UniqueId="24c61c5a-3140-4746-9575-56fc5a9f0090">
+					<Changes>
+						<DocChangeAction Name="IfcCartesianPointList2D" UniqueId="fb446a4e-ae41-446d-8da3-c355d42cdd39">
+							<Changes>
+								<DocChangeAction Name="TagList" UniqueId="b9dc42b2-72c0-4e7f-a2aa-36c4fd86eacd" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCartesianPointList3D" UniqueId="0d18b122-8b58-416d-b8d2-759bec82a49a">
+							<Changes>
+								<DocChangeAction Name="TagList" UniqueId="729538f5-b66c-4cf5-9804-1094449c5d45" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcFaceBasedSurfaceModel" UniqueId="4e06a20b-a904-4d18-9d18-bc3d5df7ac05" Action="modified">
+							<Aspects>
+								<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+							</Aspects>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcSectionedSolid" UniqueId="c43f3a8f-c2ec-4f64-9a38-80148152216a" Action="added" />
+						<DocChangeAction Name="IfcSectionedSolidHorizontal" UniqueId="ce7f8486-361f-4e3f-b753-fc1c90391436" Action="added" />
+						<DocChangeAction Name="IfcTriangulatedIrregularNetwork" UniqueId="1f6403ce-a578-4ed9-99ef-9a84eef953cd" Action="added" />
+					</Changes>
+				</DocChangeAction>
+				<DocChangeAction Name="IfcGeometryResource" UniqueId="eaccad86-85c2-4167-b6d1-b666d76ba6eb">
+					<Changes>
+						<DocChangeAction Name="IfcTransitionCurveType" UniqueId="14f90d77-00c6-471b-8602-f2ee6d154feb" Action="added" />
+						<DocChangeAction Name="IfcCircularArcSegment2D" UniqueId="9c6fe72b-ed29-45ac-9f77-f8ab400a7d34" Action="added" />
+						<DocChangeAction Name="IfcCurveSegment2D" UniqueId="f0d2d2e2-42b5-44d3-b347-36dfd4414a1e" Action="added" />
+						<DocChangeAction Name="IfcDistanceExpression" UniqueId="f815d1a3-8c55-4a36-ae76-811c2165bcf4" Action="added" />
+						<DocChangeAction Name="IfcLineSegment2D" UniqueId="fbce2b2f-b816-4889-b004-6677f3fac922" Action="added" />
+						<DocChangeAction Name="IfcOffsetCurve" UniqueId="bb2e728b-ebb1-4854-b217-e0e2e0faf83a" Action="added" />
+						<DocChangeAction Name="IfcOffsetCurveByDistances" UniqueId="07e5ddb3-3764-40b2-8f70-47a4e2246c36" Action="added" />
+						<DocChangeAction Name="IfcOrientationExpression" UniqueId="129d3d0d-5d01-441f-96ec-a807ec04789d" Action="added" />
+						<DocChangeAction Name="IfcTransitionCurveSegment2D" UniqueId="be7f7a7d-1cbe-4250-b509-46b0779836d6" Action="added" />
+					</Changes>
+				</DocChangeAction>
+				<DocChangeAction Name="IfcMaterialResource" UniqueId="b972364e-4d7c-4b3b-8c8a-2edc0dfe21ab">
+					<Changes>
+						<DocChangeAction Name="IfcMaterialClassificationRelationship" UniqueId="c2e9f4ed-966a-41da-a09f-03054097c5bd" Action="modified">
+							<Aspects>
+								<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+							</Aspects>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcMaterialList" UniqueId="8fb2303a-79ef-42e4-9a88-0d19c1a1057a" Action="modified">
+							<Aspects>
+								<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+							</Aspects>
+						</DocChangeAction>
+					</Changes>
+				</DocChangeAction>
+				<DocChangeAction Name="IfcPresentationAppearanceResource" UniqueId="58afcc24-8008-4f64-83e2-552b228aedad">
+					<Changes>
+						<DocChangeAction Name="IfcNullStyle" UniqueId="3c315da0-dac1-4fe1-9d8a-6043a1f49693" Action="modified">
+							<Aspects>
+								<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+							</Aspects>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcPresentationStyleSelect" UniqueId="d01396dc-a6df-42a8-8f12-994de7af4b42" Action="modified">
+							<Aspects>
+								<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+							</Aspects>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcStyleAssignmentSelect" UniqueId="3893cdda-18ab-4081-a757-2655c93bd660" Action="modified">
+							<Aspects>
+								<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+							</Aspects>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcPresentationStyleAssignment" UniqueId="f2ea250e-288e-49a7-a355-c8547bf2d6b1" Action="modified">
+							<Aspects>
+								<DocChangeAspect Aspect="status" OldValue="Deprecated" />
+							</Aspects>
+						</DocChangeAction>
+					</Changes>
+				</DocChangeAction>
+				<DocChangeAction Name="IfcRepresentationResource" UniqueId="7f727a69-9417-4cdc-902e-4c4c4fbec377">
+					<Changes>
+						<DocChangeAction Name="IfcShapeAspect" UniqueId="c1494c11-4446-4d8e-b808-fa52e98a78c0">
+							<Changes>
+								<DocChangeAction Name="HasExternalReferences" UniqueId="e97ba8d1-184b-4f12-a399-fddc2a85be81" Action="added" />
+							</Changes>
+						</DocChangeAction>
+					</Changes>
+				</DocChangeAction>
+			</Changes>
+		</DocChangeAction>
+	</ChangesEntities>
+	<ChangesProperties>
+		<DocChangeAction Name="PEnum_AirToAirHeatTransferHeatTransferType" UniqueId="6407aa4b-c857-41cf-8b2b-32710d4a7929" Action="added" />
+		<DocChangeAction Name="PEnum_HeatTransferType" UniqueId="cd1c0192-e481-46c4-96b9-908053cdbb72" Action="deleted" />
+		<DocChangeAction Name="PEnum_ReinforcementBarSurface" UniqueId="165be6ab-0c22-4f34-89b8-d4e44c410792" Action="deleted" />
+		<DocChangeAction Name="Shared element data schemas" UniqueId="129a6de4-3023-411a-a2ee-6c90ba9398ac">
+			<Changes>
+				<DocChangeAction Name="IfcSharedComponentElements" UniqueId="7474cb43-9ec6-4068-92cd-4fcfbe29ea68">
+					<Changes>
+						<DocChangeAction Name="Pset_MechanicalFastenerCommon" UniqueId="f4870b35-3061-424f-b1e8-31ee0ebbeec9" Action="deleted" />
+					</Changes>
+				</DocChangeAction>
+			</Changes>
+		</DocChangeAction>
+		<DocChangeAction Name="Domain specific data schemas" UniqueId="7abe9907-70b8-43e4-9cdd-e7fa98125803">
+			<Changes>
+				<DocChangeAction Name="IfcElectricalDomain" UniqueId="e07d247b-e708-4b9e-b690-36726578de66">
+					<Changes>
+						<DocChangeAction Name="Pset_ElectricFlowStorageDeviceTypeCommon" UniqueId="893e4c18-1fb0-4212-a676-37c5c13a3c15">
+							<Changes>
+								<DocChangeAction Name="RadiativeFraction" UniqueId="f24ee895-af85-499a-a121-b10f330dda80" Action="deleted" />
+								<DocChangeAction Name="ModuleCapacity" UniqueId="2f5350a2-3d2d-4bd9-a49b-5571aa333018" Action="deleted" />
+								<DocChangeAction Name="ModulesInParallel" UniqueId="4e000b0b-b120-47ff-95d3-0601935a1fae" Action="deleted" />
+								<DocChangeAction Name="ModulesInSeries" UniqueId="29bf290d-d1b6-4e7b-a616-dad7d6794818" Action="deleted" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="Pset_SolarDeviceTypeCommon" UniqueId="0fa70f6e-2552-4aec-af67-f74f356631be">
+							<Changes>
+								<DocChangeAction Name="ActiveCellSurfaceAreaFraction" UniqueId="a842fd1f-8e81-4d1e-bed7-a7ec4e37fdb1" Action="deleted" />
+								<DocChangeAction Name="CellEfficiency" UniqueId="81e40aec-bd33-4a66-9451-b09987d86ca2" Action="deleted" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="Pset_TransformerTypeCommon" UniqueId="3e590452-a055-4b69-bd39-f3ac7705cdca">
+							<Changes>
+								<DocChangeAction Name="EfficiencyCurve" UniqueId="708fa6cf-10ca-45f0-bd89-497d9a7e3456" Action="deleted" />
+								<DocChangeAction Name="RadiativeFraction" UniqueId="2ffb952d-8b55-4572-b189-809d85c7f4e2" Action="deleted" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="Pset_ElectricFlowStorageDevicePHistory" UniqueId="ee08e4b9-0191-4c11-8442-953a32cd61da" Action="deleted" />
+					</Changes>
+				</DocChangeAction>
+				<DocChangeAction Name="IfcHvacDomain" UniqueId="aaf07c0d-c479-4e9b-909d-8c4dcb5221ba">
+					<Changes>
+						<DocChangeAction Name="Pset_AirToAirHeatRecoveryTypeCommon" UniqueId="3871e2a5-ef54-4dfa-b3b1-8f4646ba0ee7">
+							<Changes>
+								<DocChangeAction Name="HeatTransferTypeEnum" UniqueId="33b9b553-113b-43a8-be92-fea8acf4268d" Action="added" />
+								<DocChangeAction Name="HeatTransferType" UniqueId="6b0e0c47-2db6-4932-9597-d6d3b0fe55f0" Action="deleted" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="Pset_TankPHistory" UniqueId="0246dac5-cff6-4c70-a4b2-5f09802be98e" Action="deleted" />
+					</Changes>
+				</DocChangeAction>
+				<DocChangeAction Name="IfcStructuralElementsDomain" UniqueId="7c29992c-7e59-460c-ad5d-c22f38b5190b">
+					<Changes>
+						<DocChangeAction Name="Pset_ReinforcingBarCommon" UniqueId="64933e1d-f560-4762-a27b-b7c1ec966ca5" Action="deleted" />
+						<DocChangeAction Name="Pset_ReinforcingMeshCommon" UniqueId="9382f482-c974-40b4-96a5-216f7474d70e" Action="deleted" />
+						<DocChangeAction Name="Pset_TendonAnchorCommon" UniqueId="f1d9d699-0036-4357-ab39-7f4c9d590f98" Action="deleted" />
+						<DocChangeAction Name="Pset_TendonCommon" UniqueId="45e0f093-2fad-43f6-94db-75e0f7a1d60f" Action="deleted" />
+					</Changes>
+				</DocChangeAction>
+			</Changes>
+		</DocChangeAction>
+	</ChangesProperties>
+</DocChangeSet>
+

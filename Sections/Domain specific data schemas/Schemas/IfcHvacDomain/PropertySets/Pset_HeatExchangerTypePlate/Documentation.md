@@ -1,1 +1,1 @@
-﻿Plate heat exchanger type common attributes.
+Plate heat exchanger type common attributes.

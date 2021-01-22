@@ -1,1 +1,1 @@
-﻿Defines the general material category intended to be stored.
+Defines the general material category intended to be stored.

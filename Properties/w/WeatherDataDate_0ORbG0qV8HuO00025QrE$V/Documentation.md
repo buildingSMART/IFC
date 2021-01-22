@@ -1,1 +1,1 @@
-﻿The date for which the weather data was gathered.
+The date for which the weather data was gathered.

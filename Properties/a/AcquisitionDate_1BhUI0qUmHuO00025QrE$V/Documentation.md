@@ -1,1 +1,1 @@
-﻿The date that the manufactured item was purchased.
+The date that the manufactured item was purchased.

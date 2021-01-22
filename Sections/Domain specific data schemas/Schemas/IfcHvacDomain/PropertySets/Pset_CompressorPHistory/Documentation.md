@@ -1,1 +1,1 @@
-﻿Compressor performance history attributes.
+Compressor performance history attributes.

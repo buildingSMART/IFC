@@ -1,8 +1,8 @@
-﻿_IfcConstructionMaterialResource_ identifies a material resource type in a construction project.
+_IfcConstructionMaterialResource_ identifies a material resource type in a construction project.
 
 > HISTORY&nbsp; New entity in IFC2.0.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; The attribute _Suppliers_ has been deleted; use _IfcRelAssignsToResource_ to assign an _IfcActor_ to fulfill the role as a supplier. The attribute _UsageRatio_ has been deleted; use _BaseQuantityConsumed_ and _BaseQuantityProduced_ to indicate material usage.
 
 Occurrences of _IfcConstructionMaterialResource_ are consumed (wholly or partially), or occupied during a construction work task (_IfcTask_).

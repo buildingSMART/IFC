@@ -1,1 +1,1 @@
-﻿The temperature setpoint range and default setpoint.
+The temperature setpoint range and default setpoint.

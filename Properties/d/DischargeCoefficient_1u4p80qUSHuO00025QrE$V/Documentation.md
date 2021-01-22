@@ -1,1 +1,1 @@
-﻿The coefficient of flow at the sprinkler.
+The coefficient of flow at the sprinkler.

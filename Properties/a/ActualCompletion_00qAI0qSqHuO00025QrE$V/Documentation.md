@@ -1,1 +1,1 @@
-﻿The actual completion percentage of the allocation.
+The actual completion percentage of the allocation.

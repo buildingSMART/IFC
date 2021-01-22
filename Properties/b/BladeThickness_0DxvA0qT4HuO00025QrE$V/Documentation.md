@@ -1,1 +1,1 @@
-﻿The thickness of the damper blade.
+The thickness of the damper blade.

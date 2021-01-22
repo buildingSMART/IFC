@@ -1,1 +1,1 @@
-﻿The nominal height of the duct segment.
+The nominal height of the duct segment.

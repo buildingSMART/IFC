@@ -1,1 +1,1 @@
-﻿Lead in time before start of process.
+Lead in time before start of process.

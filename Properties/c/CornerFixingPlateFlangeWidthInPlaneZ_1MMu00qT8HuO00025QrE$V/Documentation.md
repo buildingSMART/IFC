@@ -1,1 +1,1 @@
-﻿The flange width of the L-shaped corner plate in plane Z.
+The flange width of the L-shaped corner plate in plane Z.

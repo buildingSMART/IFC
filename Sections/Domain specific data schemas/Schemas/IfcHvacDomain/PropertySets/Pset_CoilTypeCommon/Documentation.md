@@ -1,1 +1,1 @@
-﻿Coil type common attributes.
+Coil type common attributes.

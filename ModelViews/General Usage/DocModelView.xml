@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<DocModelView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="General_Usage_3toDTuDGz3Iv6LyOE_qraH" Name="General Usage" UniqueId="3toDTuDGz3Iv6LyOE_qraH" Code="IFC4x2" Version="4x2 FINAL" Status="Proposal" Owner="bSI" Copyright="&amp;copy; 1996-2017 buildingSMART International Ltd." BaseView="f7c8d778-350f-434b-9195-f183bed35911" XsdUri="http://www.buildingsmart-tech.org/ifc/IFC4x2" IncludeAllDefinitions="true">
+<?xml version="1.0" encoding="utf-8"?>
+<DocModelView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="General_Usage_3toDTuDGz3Iv6LyOE_qraH" Name="General Usage" UniqueId="3toDTuDGz3Iv6LyOE_qraH" Code="IFC4x3_RC1" Version="4x2 FINAL" Status="Candidate" Owner="bSI" Copyright="&amp;copy; 1996-2017 buildingSMART International Ltd." BaseView="f7c8d778-350f-434b-9195-f183bed35911" XsdUri="http://www.buildingsmart-tech.org/ifc/IFC4x2" IncludeAllDefinitions="true">
 	<ConceptRoots>
 		<DocConceptRoot UniqueId="2A5Uybr$DEpB106VBrrx6q">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcActionRequest" />
@@ -1689,35 +1689,6 @@ Elements can also be referenced in an _IfcBridgePart_, for example, if they span
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="93b2e847-5329-4c78-9f2f-49995219a393" Type="IfcBuilding" />
 		</DocConceptRoot>
-		<DocConceptRoot UniqueId="0Cagd_SUD0vRMzJZd8XHcg">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBuildingElement" />
-			<Concepts>
-				<DocTemplateUsage UniqueId="1vypUBxL1F5w0gKEycEz_x">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Product Assignment" UniqueId="1Cehqy4ZjCJfCVRRZfKROF">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Assignment_3idFi4hVv8Q85erufbQaJ" />
-					<Items>
-						<DocTemplateItem UniqueId="4c9c33f9-aab8-4a36-aeac-7e4d66adf126" RuleParameters="Type=IfcTask;">
-							<Documentation>Task for operating upon the building element.</Documentation>
-						</DocTemplateItem>
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Spatial Containment" UniqueId="28p6Tr6t9BNB$qNPQZ1O6W">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Containment_3PeWY01HBmesKdP1dTP15" />
-					<Items>
-						<DocTemplateItem UniqueId="c0ced485-17b8-41d6-ad4a-4c70b7e1b672" RuleParameters="RelatingStructure=IfcBuildingStorey;" />
-						<DocTemplateItem UniqueId="87d6d069-236a-4e1e-915a-8b44f1e71414" RuleParameters="RelatingStructure=IfcBuilding;" />
-						<DocTemplateItem UniqueId="8cdf709a-dcdb-4d7c-859a-fe962a6ca62d" RuleParameters="RelatingStructure=IfcSite;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Surface 3D Geometry" UniqueId="e18a7464-340a-445f-ab6c-3d1fe994c8e4">
-					<Documentation>Some _IfcBuildingElement_ may be represented by an surface as an abstract geometric representation. See each subtype for specific guidance.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Surface_3D_Geometry_2zWfWzETL1ifxeyxs7TzCL" />
-				</DocTemplateUsage>
-			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="3b67fb81-a19a-4b42-9eb6-623eb4fdad37" Type="IfcBuildingElement" />
-		</DocConceptRoot>
 		<DocConceptRoot UniqueId="3736f6c2-956f-44e3-b296-9aae2202df70">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBuildingElementPart" />
 			<Concepts>
@@ -1999,6 +1970,35 @@ Elements can also be referenced in an _IfcBuildingStorey_, for example, if they 
 				</DocTemplateUsage>
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="7ec039d8-5450-4270-a28a-038d12564062" Type="IfcBuildingSystem" />
+		</DocConceptRoot>
+		<DocConceptRoot UniqueId="0Cagd_SUD0vRMzJZd8XHcg">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBuiltElement" />
+			<Concepts>
+				<DocTemplateUsage UniqueId="1vypUBxL1F5w0gKEycEz_x">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Product Assignment" UniqueId="1Cehqy4ZjCJfCVRRZfKROF">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Assignment_3idFi4hVv8Q85erufbQaJ" />
+					<Items>
+						<DocTemplateItem UniqueId="4c9c33f9-aab8-4a36-aeac-7e4d66adf126" RuleParameters="Type=IfcTask;">
+							<Documentation>Task for operating upon the building element.</Documentation>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Spatial Containment" UniqueId="28p6Tr6t9BNB$qNPQZ1O6W">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Containment_3PeWY01HBmesKdP1dTP15" />
+					<Items>
+						<DocTemplateItem UniqueId="c0ced485-17b8-41d6-ad4a-4c70b7e1b672" RuleParameters="RelatingStructure=IfcBuildingStorey;" />
+						<DocTemplateItem UniqueId="87d6d069-236a-4e1e-915a-8b44f1e71414" RuleParameters="RelatingStructure=IfcBuilding;" />
+						<DocTemplateItem UniqueId="8cdf709a-dcdb-4d7c-859a-fe962a6ca62d" RuleParameters="RelatingStructure=IfcSite;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Surface 3D Geometry" UniqueId="e18a7464-340a-445f-ab6c-3d1fe994c8e4">
+					<Documentation>Some _IfcBuildingElement_ may be represented by an surface as an abstract geometric representation. See each subtype for specific guidance.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Surface_3D_Geometry_2zWfWzETL1ifxeyxs7TzCL" />
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="3b67fb81-a19a-4b42-9eb6-623eb4fdad37" Type="IfcBuildingElement" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="0QbpaflE99ShbmU2GuVmrM">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBurner" />
@@ -8999,7 +8999,7 @@ The following additional constraints apply to the swept solid representation:
 
 Vertical extrusions shall be used when an opening or recess has a non rectangular foot print geometry that does not change along the height of the opening or recess.
 
-Figure 3 shows a vertical extrusion with multiple extrusion bodies for the opening. Each extrusion body has a different extrusion length.
+Figure 3 shows a vertical extrusion with multiple extrusion bodies for the opening. Each extrusion body has a different extrusion lenght.
 
 &gt; NOTE&amp;nbsp; The local placement directions for the _IfcOpeningElement_ are only given as an example, other directions are valid as well.
 

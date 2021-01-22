@@ -1,1 +1,1 @@
-﻿Properties common to the definition of building systems.
+Properties common to the definition of building systems.

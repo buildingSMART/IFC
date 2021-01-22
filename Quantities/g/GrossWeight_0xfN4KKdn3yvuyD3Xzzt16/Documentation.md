@@ -1,1 +1,1 @@
-﻿Weight of the element, not including contained fluid.
+Weight of the element, not including contained fluid.

@@ -1,4 +1,4 @@
-﻿The flow storage device type **IfcTankType** defines commonly shared information for occurrences of tanks. The set of shared information may include:
+The flow storage device type **IfcTankType** defines commonly shared information for occurrences of tanks. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

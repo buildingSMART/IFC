@@ -1,1 +1,1 @@
-﻿Boiler real load.
+Boiler real load.

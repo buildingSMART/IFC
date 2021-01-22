@@ -1,1 +1,1 @@
-﻿Pump rotational speed under nominal conditions.
+Pump rotational speed under nominal conditions.

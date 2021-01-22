@@ -1,1 +1,1 @@
-﻿The Y direction pitch length of the tie hoop.
+The Y direction pitch length of the tie hoop.

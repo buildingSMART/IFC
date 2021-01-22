@@ -1,4 +1,4 @@
-﻿The function returns the dimensional exponents of the given unit.
+The function returns the dimensional exponents of the given unit.
 
 Argument definitions:  
 m: (input) the name of the unit type for which the dimensional exponents are tested.  

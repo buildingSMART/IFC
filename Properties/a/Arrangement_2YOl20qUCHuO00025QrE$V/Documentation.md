@@ -1,4 +1,4 @@
-﻿Defines the fan and motor drive arrangement as defined by AMCA.
+Defines the fan and motor drive arrangement as defined by AMCA.
 
 ARRANGEMENT1: Arrangement 1. 
 ARRANGEMENT2: Arrangement 2. 

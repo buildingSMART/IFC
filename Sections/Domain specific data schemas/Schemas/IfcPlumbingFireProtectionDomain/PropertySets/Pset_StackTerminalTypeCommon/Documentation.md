@@ -1,1 +1,1 @@
-﻿Common properties for stack terminals.
+Common properties for stack terminals.

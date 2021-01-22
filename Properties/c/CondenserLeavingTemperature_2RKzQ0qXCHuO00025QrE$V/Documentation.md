@@ -1,1 +1,1 @@
-﻿Termperature of fluid leaving condenser.
+Termperature of fluid leaving condenser.

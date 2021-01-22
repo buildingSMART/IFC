@@ -1,1 +1,1 @@
-﻿The thickness of the base plate.
+The thickness of the base plate.

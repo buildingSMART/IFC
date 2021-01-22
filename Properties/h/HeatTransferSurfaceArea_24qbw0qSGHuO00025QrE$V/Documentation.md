@@ -1,1 +1,1 @@
-﻿Total heat transfer area of the vessel.
+Total heat transfer area of the vessel.

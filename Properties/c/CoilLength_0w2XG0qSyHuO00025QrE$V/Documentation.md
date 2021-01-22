@@ -1,1 +1,1 @@
-﻿Length of coil.
+Length of coil.

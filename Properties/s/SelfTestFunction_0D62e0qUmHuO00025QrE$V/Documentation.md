@@ -1,1 +1,1 @@
-﻿The type of self test function.
+The type of self test function.

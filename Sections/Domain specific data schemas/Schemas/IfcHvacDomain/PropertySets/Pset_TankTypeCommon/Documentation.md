@@ -1,1 +1,1 @@
-﻿Common attributes of a tank type.
+Common attributes of a tank type.

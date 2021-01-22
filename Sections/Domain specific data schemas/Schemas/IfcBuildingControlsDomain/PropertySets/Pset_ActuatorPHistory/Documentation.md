@@ -1,1 +1,1 @@
-﻿Properties for history of actuators. HISTORY: Added in IFC4.
+Properties for history of actuators. HISTORY: Added in IFC4.

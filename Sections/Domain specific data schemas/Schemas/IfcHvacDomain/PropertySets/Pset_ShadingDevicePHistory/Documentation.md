@@ -1,1 +1,1 @@
-﻿Shading device performance history attributes.
+Shading device performance history attributes.

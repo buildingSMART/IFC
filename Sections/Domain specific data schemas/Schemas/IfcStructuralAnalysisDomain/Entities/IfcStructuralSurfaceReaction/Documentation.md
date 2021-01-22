@@ -1,4 +1,4 @@
-﻿This entity defines a reaction which occurs distributed over a surface. A surface reaction may be connected with a surface member or surface connection.
+This entity defines a reaction which occurs distributed over a surface. A surface reaction may be connected with a surface member or surface connection.
 
 > HISTORY&nbsp; New entity in IFC4.
 

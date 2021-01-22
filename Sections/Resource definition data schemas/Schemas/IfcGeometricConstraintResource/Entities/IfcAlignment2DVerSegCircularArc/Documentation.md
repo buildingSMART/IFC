@@ -1,4 +1,4 @@
-﻿The vertical circular arc segment is defined as an arc using the inherited attributes from _IfcAlignment2DVerticalSegment_ and the following additional curve parameters _Radius_ as the radius of the circular arc, and _IsConvex_ to indicate the whether the circular arc defines a sag (i.e. concave, increasing gradiant) or a crest (i.e. convex, decreasing gradiant).
+The vertical circular arc segment is defined as an arc using the inherited attributes from _IfcAlignment2DVerticalSegment_ and the following additional curve parameters _Radius_ as the radius of the circular arc, and _IsConvex_ to indicate the whether the circular arc defines a sag (i.e. concave, increasing gradiant) or a crest (i.e. convex, decreasing gradiant).
 
 The circular arc is described by:
 

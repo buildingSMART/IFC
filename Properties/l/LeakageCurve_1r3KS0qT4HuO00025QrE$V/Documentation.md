@@ -1,1 +1,1 @@
-﻿Leakage versus pressure drop; Leakage = f (pressure).
+Leakage versus pressure drop; Leakage = f (pressure).

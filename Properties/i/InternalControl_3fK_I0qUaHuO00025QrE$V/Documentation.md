@@ -1,1 +1,1 @@
-﻿Internal modulation control.
+Internal modulation control.

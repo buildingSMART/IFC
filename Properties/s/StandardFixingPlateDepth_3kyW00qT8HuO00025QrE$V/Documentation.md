@@ -1,1 +1,1 @@
-﻿The depth of the standard fixing plate.
+The depth of the standard fixing plate.

@@ -1,4 +1,4 @@
-﻿The _IfcStyledItem_ holds presentation style information for products, either explicitly for an _IfcGeometricRepresentationItem_ being part of an _IfcShapeRepresentation_ assigned to a product, or by assigning presentation information to _IfcMaterial_ being assigned as other representation for a product.
+The _IfcStyledItem_ holds presentation style information for products, either explicitly for an _IfcGeometricRepresentationItem_ being part of an _IfcShapeRepresentation_ assigned to a product, or by assigning presentation information to _IfcMaterial_ being assigned as other representation for a product.
 
 * If the _IfcStyledItem_ is used within a reference from an _IfcProductDefinitionShape_ then one _Item_ shall be provided.
 * If the _IfcStyledItem_ is used within a reference from an _IfcMaterialDefinitionRepresentation_ then no _Item_ shall be provided.
@@ -17,7 +17,7 @@
 { .change-ifc2x3}
 > IFC2x3 CHANGE The attribute _Item_ has been made optional, upward compatibility for file based exchange is guaranteed.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE The subtype _IfcAnnotationOccurrence_ and its subtypes are deleted. Use _IfcStyledItem_ for all instantiations. The data type of _Styles_ has been changed to _IfcStyleAssignmentSelect_
 
 { .use-head}

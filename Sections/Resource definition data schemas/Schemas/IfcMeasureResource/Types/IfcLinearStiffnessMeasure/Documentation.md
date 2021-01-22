@@ -1,4 +1,4 @@
-﻿_IfcLinearStiffnessMeasure_ is a measure of linear stiffness.
+_IfcLinearStiffnessMeasure_ is a measure of linear stiffness.
 
 Usually measured in N/m.
 

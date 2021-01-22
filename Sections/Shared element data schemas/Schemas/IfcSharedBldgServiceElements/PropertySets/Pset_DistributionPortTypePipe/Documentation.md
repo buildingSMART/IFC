@@ -1,1 +1,1 @@
-﻿Pipe port occurrence attributes attached to an instance of IfcDistributionPort.
+Pipe port occurrence attributes attached to an instance of IfcDistributionPort.

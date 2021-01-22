@@ -1,4 +1,4 @@
-﻿The flow controller type **IfcElectricTimeControlType** defines commonly shared information for occurrences of electric time controls. The set of shared information may include:
+The flow controller type **IfcElectricTimeControlType** defines commonly shared information for occurrences of electric time controls. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

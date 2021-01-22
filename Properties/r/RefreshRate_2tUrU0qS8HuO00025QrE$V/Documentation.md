@@ -1,1 +1,1 @@
-﻿Indicates the display refresh frequency.
+Indicates the display refresh frequency.

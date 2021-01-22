@@ -1,1 +1,1 @@
-﻿Specifies the type of shading device.
+Specifies the type of shading device.

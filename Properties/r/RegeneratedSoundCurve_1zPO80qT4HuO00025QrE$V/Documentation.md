@@ -1,1 +1,1 @@
-﻿Regenerated sound versus air flow rate.
+Regenerated sound versus air flow rate.

@@ -1,1 +1,1 @@
-﻿Heat gains and losses from infiltration.
+Heat gains and losses from infiltration.

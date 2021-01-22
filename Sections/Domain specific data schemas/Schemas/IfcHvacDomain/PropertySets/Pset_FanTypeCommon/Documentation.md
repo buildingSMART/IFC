@@ -1,1 +1,1 @@
-﻿Fan type common attributes.
+Fan type common attributes.

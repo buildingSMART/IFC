@@ -1,4 +1,4 @@
-﻿The building element type **IfcChimneyType** defines commonly shared information for occurrences of chimneys. The set of shared information may include:
+The building element type **IfcChimneyType** defines commonly shared information for occurrences of chimneys. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

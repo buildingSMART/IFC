@@ -1,1 +1,1 @@
-﻿Overall width of the profile.
+Overall width of the profile.

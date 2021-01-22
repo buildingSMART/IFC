@@ -1,4 +1,4 @@
-﻿FanCycling: Fan is cycled on and off to control duty.
+FanCycling: Fan is cycled on and off to control duty.
 TwoSpeedFan: Fan is switched between low and high speed to control duty.
 VariableSpeedFan: Fan speed is varied to control duty.
 DampersControl: Dampers modulate the air flow to control duty.

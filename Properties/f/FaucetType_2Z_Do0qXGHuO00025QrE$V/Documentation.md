@@ -1,4 +1,4 @@
-﻿Defines the range of faucet types that may be specified where:
+Defines the range of faucet types that may be specified where:
 
 Bib:	 Faucet with a horizontal inlet and a nozzle that discharges downwards.
 Globe:	 Faucet fitted through the end of a bath, with a horizontal inlet, a partially spherical body and a vertical nozzle.

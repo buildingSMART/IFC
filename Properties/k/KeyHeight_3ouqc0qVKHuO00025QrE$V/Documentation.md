@@ -1,1 +1,1 @@
-﻿Key height of the profile.
+Key height of the profile.

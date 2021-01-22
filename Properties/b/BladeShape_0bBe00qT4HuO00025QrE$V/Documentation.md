@@ -1,1 +1,1 @@
-﻿Blade shape. Flat means triple V-groove.
+Blade shape. Flat means triple V-groove.

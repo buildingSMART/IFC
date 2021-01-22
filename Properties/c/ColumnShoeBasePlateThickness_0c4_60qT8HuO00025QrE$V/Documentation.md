@@ -1,1 +1,1 @@
-﻿The thickness of the column shoe base plate.
+The thickness of the column shoe base plate.

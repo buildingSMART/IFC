@@ -1,1 +1,1 @@
-﻿Indicates the maximum close-off force for the actuator.
+Indicates the maximum close-off force for the actuator.

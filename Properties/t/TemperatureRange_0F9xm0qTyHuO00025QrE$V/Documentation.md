@@ -1,1 +1,1 @@
-﻿Allowable minimum and maximum temperature.
+Allowable minimum and maximum temperature.

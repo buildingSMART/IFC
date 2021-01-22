@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAlignment2DCantSegment" UniqueId="b6b5f6a7-3b51-4f2e-958e-0f8845a8414d" BaseDefinition="IfcAlignment2DSegment">
+	<Subtypes>
+		<DocSubtype UniqueId="f16c5215-05a3-45a3-ba1c-d8c7e55aa021" DefinedType="IfcAlignment2DCantSegLine" />
+		<DocSubtype UniqueId="43275940-394c-45ff-84e3-a3b0712bbc9a" DefinedType="IfcAlignment2DCantSegTransition" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="StartDistAlong" UniqueId="6a411ff4-fa52-4c6a-a3de-5896627dc575" DefinedType="IfcPositiveLengthMeasure">
+			<Documentation>Distance along the horizontal alignment, measured along the IfcAlignment2DHorizontal given in the length unit of the global IfcUnitAssignment.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="HorizontalLength" UniqueId="ebd5ee92-1836-4c92-bfb5-4ef80d9eeceb" DefinedType="IfcPositiveLengthMeasure">
+			<Documentation>Length measured as distance along the horizontal alignment of the segment.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="StartCantLeft" UniqueId="035b7084-b76d-4b18-a9e8-2ddd020f1fc4" DefinedType="IfcLengthMeasure">
+			<Documentation>Length measured for the left cant at the beginning of the segment.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="EndCantLeft" UniqueId="b3d0a7a4-1e12-4b11-b303-06e478b8fb29" DefinedType="IfcLengthMeasure" AttributeFlags="1">
+			<Documentation>Length measured for the left cant at the end of the segment.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="StartCantRight" UniqueId="95c19543-9bf3-487d-8e8e-7926c89236dc" DefinedType="IfcLengthMeasure">
+			<Documentation>Length measured for the right cant at the beginning of the segment.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="EndCantRight" UniqueId="1414d0ce-f053-4a7e-87f5-6705c9d7ba50" DefinedType="IfcLengthMeasure" AttributeFlags="1">
+			<Documentation>Length measured for the right cant at the end of the segment.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ToCant" UniqueId="4c55acb5-d10c-4f20-a5f4-d274ebf12d1a" DefinedType="IfcAlignment2DCant" AggregationType="3" AggregationLower="1" AggregationUpper="1" Inverse="Segments">
+			<Documentation></Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

@@ -1,1 +1,1 @@
-﻿The clear depth of the culvert.
+The clear depth of the culvert.

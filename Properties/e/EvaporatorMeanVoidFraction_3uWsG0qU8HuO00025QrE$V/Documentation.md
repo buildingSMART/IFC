@@ -1,1 +1,1 @@
-﻿Mean void fraction in evaporator.
+Mean void fraction in evaporator.

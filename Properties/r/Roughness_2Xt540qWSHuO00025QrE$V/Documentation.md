@@ -1,1 +1,1 @@
-﻿A measure of the vertical deviations of the surface.
+A measure of the vertical deviations of the surface.

@@ -1,1 +1,1 @@
-﻿has the heat exchanger has defrost function or not.
+has the heat exchanger has defrost function or not.

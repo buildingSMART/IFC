@@ -1,1 +1,1 @@
-﻿Dry bulb temperature of the air.
+Dry bulb temperature of the air.

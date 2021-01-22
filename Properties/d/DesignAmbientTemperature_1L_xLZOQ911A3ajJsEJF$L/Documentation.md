@@ -1,1 +1,1 @@
-﻿The highest and lowest local ambient temperature likely to be encountered.
+The highest and lowest local ambient temperature likely to be encountered.

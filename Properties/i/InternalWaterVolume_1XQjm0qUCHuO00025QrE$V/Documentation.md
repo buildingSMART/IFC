@@ -1,1 +1,1 @@
-﻿Internal volume of evaporator (water side).
+Internal volume of evaporator (water side).

@@ -1,1 +1,1 @@
-﻿The rate of flow of a fluid measured across the valve.
+The rate of flow of a fluid measured across the valve.

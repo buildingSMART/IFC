@@ -1,1 +1,1 @@
-﻿Internal volume of evaporator (refrigerant side).
+Internal volume of evaporator (refrigerant side).

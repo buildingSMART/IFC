@@ -1,1 +1,1 @@
-﻿The interior roughness coefficient of the pipe segment.
+The interior roughness coefficient of the pipe segment.

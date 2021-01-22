@@ -1,1 +1,1 @@
-﻿The hanging height of the worksurface.
+The hanging height of the worksurface.

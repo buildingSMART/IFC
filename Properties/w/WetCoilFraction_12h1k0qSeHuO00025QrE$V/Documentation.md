@@ -1,1 +1,1 @@
-﻿Fraction of coil surface area that is wet (0-1).
+Fraction of coil surface area that is wet (0-1).

@@ -1,1 +1,1 @@
-﻿The amount of time during the day that the activity is required within this space.
+The amount of time during the day that the activity is required within this space.

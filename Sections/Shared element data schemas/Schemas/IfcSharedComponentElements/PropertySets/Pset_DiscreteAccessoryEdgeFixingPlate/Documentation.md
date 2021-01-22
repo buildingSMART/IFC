@@ -1,1 +1,1 @@
-﻿Properties specific to edge fixing plates.
+Properties specific to edge fixing plates.

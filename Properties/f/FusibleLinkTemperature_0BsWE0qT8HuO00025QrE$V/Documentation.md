@@ -1,1 +1,1 @@
-﻿The temperature that the fusible link melts.
+The temperature that the fusible link melts.

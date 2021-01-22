@@ -1,1 +1,1 @@
-﻿Measure c according to ISO 2553
+Measure c according to ISO 2553

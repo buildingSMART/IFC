@@ -1,4 +1,4 @@
-﻿{ .extDef}
+{ .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
 > A subedge is an edge whose domain is a connected portion of the domain of an existing edge. The topological constraints on a subedge are the same as those on an edge.
 

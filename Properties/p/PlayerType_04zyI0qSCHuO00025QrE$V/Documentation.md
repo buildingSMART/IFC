@@ -1,1 +1,1 @@
-﻿Indicates the type of player.
+Indicates the type of player.

@@ -1,1 +1,1 @@
-﻿Number of gangs in the junction box.
+Number of gangs in the junction box.

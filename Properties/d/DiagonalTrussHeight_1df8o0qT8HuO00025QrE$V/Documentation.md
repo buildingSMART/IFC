@@ -1,1 +1,1 @@
-﻿The overall height of the truss connector.
+The overall height of the truss connector.

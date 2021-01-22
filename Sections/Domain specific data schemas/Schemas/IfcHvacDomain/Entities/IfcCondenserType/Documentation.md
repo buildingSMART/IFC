@@ -1,4 +1,4 @@
-﻿The energy conversion device type **IfcCondenserType** defines commonly shared information for occurrences of condensers. The set of shared information may include:
+The energy conversion device type **IfcCondenserType** defines commonly shared information for occurrences of condensers. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

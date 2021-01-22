@@ -1,1 +1,1 @@
-﻿Common properties for interceptors.
+Common properties for interceptors.

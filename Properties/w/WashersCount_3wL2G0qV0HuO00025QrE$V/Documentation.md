@@ -1,1 +1,1 @@
-﻿Count of washers to be mounted on one bolt
+Count of washers to be mounted on one bolt

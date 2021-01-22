@@ -1,1 +1,1 @@
-﻿Stem top width of the profile.
+Stem top width of the profile.

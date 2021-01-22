@@ -1,1 +1,1 @@
-﻿The nominal frequency of the supply.
+The nominal frequency of the supply.

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcTransportElementType" Name="IfcTransportElementType" UniqueId="b4f9ba21-6b82-4bbb-a406-3aca970b5688" BaseDefinition="IfcElementType" EntityFlags="229">
 	<Localization>
 		<DocLocalization Locale="de" Name="Beförderungsgerät - Typ" />
@@ -6,15 +6,15 @@
 		<DocLocalization Locale="fr" Name="Type d&apos;équipement de transport" />
 	</Localization>
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="59d54e7c-05ef-4b69-8197-5d552e63c8f6" DefinedType="IfcTransportElementTypeEnum">
-			<Documentation>Predefined types to define the particular type of the transport element. There may be property set definitions available for each predefined type.</Documentation>
+		<DocAttribute Name="PredefinedType" UniqueId="59d54e7c-05ef-4b69-8197-5d552e63c8f6" DefinedType="IfcTransportElementTypeSelect">
+			<Documentation></Documentation>
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
 		<DocWhereRule Name="CorrectPredefinedType" UniqueId="501115f8-7ae2-4429-b433-6fecf90a3c8c">
 			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
-			<Expression>(PredefinedType &lt;&gt; IfcTransportElementTypeEnum.USERDEFINED) OR
-((PredefinedType = IfcTransportElementTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+			<Expression>((PredefinedType &lt;&gt; IfcTransportElementFixedTypeEnum.USERDEFINED) AND (PredefinedType &lt;&gt; IfcTransportElementNonFixedTypeEnum.USERDEFINED)) OR
+(((PredefinedType = IfcTransportElementFixedTypeEnum.USERDEFINED) OR (PredefinedType = IfcTransportElementNonFixedTypeEnum.USERDEFINED)) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>

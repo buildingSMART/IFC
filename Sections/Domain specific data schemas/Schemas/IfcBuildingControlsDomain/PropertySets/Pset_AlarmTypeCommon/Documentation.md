@@ -1,1 +1,1 @@
-﻿Alarm type common attributes.  HISTORY: Added in IFC4.
+Alarm type common attributes.  HISTORY: Added in IFC4.

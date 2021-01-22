@@ -1,4 +1,4 @@
-﻿The aggregation relationship _IfcRelAggregates_ is a special type of the general composition/decomposition (or whole/part) relationship _IfcRelDecomposes_. The aggregation relationship can be applied to all subtypes of _IfcObjectDefinition_.
+The aggregation relationship _IfcRelAggregates_ is a special type of the general composition/decomposition (or whole/part) relationship _IfcRelDecomposes_. The aggregation relationship can be applied to all subtypes of _IfcObjectDefinition_.
 
 In cases of aggregation of physical elements into a physical aggregate the shape representation of the whole (within the same representation identifier) can be taken from the sum of the shape representations of the parts.
 
@@ -8,5 +8,5 @@ Decompositions imply a dependency, implying that the whole depends on the defini
 
 > HISTORY&nbsp; New entity in IFC2x.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE The attributes _RelatingObject_ and _RelatedObjects_ are demoted from the supertype _IfcRelDecomposes_.

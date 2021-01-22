@@ -1,1 +1,1 @@
-﻿Fouling resistance on water/air side.
+Fouling resistance on water/air side.

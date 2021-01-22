@@ -1,4 +1,4 @@
-﻿This function returns TRUE if all edges of the input path are consecutive.
+This function returns TRUE if all edges of the input path are consecutive.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  

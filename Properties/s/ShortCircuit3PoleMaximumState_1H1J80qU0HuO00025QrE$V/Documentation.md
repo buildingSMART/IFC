@@ -1,1 +1,1 @@
-﻿Maximum 3 pole short circuit current provided at the point of supply.
+Maximum 3 pole short circuit current provided at the point of supply.

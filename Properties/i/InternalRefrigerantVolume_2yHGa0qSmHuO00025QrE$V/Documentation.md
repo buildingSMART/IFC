@@ -1,1 +1,1 @@
-﻿Internal volume of condenser (refrigerant side).
+Internal volume of condenser (refrigerant side).

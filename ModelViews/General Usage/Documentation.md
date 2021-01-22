@@ -1,4 +1,4 @@
-﻿{ .std}
+{ .std}
 The following are within the entire scope of this release of IFC:
 
 { .std}

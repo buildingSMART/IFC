@@ -1,1 +1,1 @@
-﻿Gross volume enclosed by the space, including the volume of construction elements inside the space.
+Gross volume enclosed by the space, including the volume of construction elements inside the space.

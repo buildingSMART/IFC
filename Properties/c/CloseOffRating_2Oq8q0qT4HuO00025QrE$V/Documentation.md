@@ -1,1 +1,1 @@
-﻿Close off rating.
+Close off rating.

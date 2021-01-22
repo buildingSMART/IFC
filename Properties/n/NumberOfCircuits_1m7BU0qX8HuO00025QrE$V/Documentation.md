@@ -1,1 +1,1 @@
-﻿Number of parallel fluid tube circuits.
+Number of parallel fluid tube circuits.

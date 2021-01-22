@@ -1,1 +1,1 @@
-﻿Heat exchange surface area associated with U-value.
+Heat exchange surface area associated with U-value.

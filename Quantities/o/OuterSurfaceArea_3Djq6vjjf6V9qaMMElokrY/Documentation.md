@@ -1,1 +1,1 @@
-﻿Total surface area.
+Total surface area.

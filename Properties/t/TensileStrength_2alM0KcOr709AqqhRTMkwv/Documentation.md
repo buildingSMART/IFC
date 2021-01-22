@@ -1,1 +1,1 @@
-﻿Defining values: α; defined values: tensile strength.
+Defining values: α; defined values: tensile strength.

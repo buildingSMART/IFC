@@ -1,1 +1,1 @@
-﻿Nominal airflow rate.
+Nominal airflow rate.

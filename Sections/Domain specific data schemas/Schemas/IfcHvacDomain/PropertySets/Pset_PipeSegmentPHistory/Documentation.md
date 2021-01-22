@@ -1,1 +1,1 @@
-﻿Pipe segment performance history common attributes.
+Pipe segment performance history common attributes.

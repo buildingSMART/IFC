@@ -1,4 +1,4 @@
-﻿The _IfcBooleanResult_ is the result of applying a Boolean operation to two operands being solids.
+The _IfcBooleanResult_ is the result of applying a Boolean operation to two operands being solids.
 
 > EXAMPLE&nbsp; If the first operand is a block and the second operand is a solid cylinder of suitable dimensions and location, the boolean result produced with the difference operator would be a block with a circular hole.
 

@@ -1,1 +1,1 @@
-﻿Indicates the type of projector.
+Indicates the type of projector.

@@ -1,1 +1,1 @@
-﻿Fouling resistance on the refrigerant side.
+Fouling resistance on the refrigerant side.

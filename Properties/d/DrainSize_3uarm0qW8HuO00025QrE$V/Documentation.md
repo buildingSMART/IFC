@@ -1,1 +1,1 @@
-﻿The size of the drain outlet connection from the object.
+The size of the drain outlet connection from the object.

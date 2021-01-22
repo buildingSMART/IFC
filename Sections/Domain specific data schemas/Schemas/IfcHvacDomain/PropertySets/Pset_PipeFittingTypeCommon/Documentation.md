@@ -1,1 +1,1 @@
-﻿Pipe fitting type common attributes.
+Pipe fitting type common attributes.

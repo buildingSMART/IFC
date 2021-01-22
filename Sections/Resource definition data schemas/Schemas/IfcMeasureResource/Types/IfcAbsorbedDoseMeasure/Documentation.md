@@ -1,4 +1,4 @@
-﻿_IfcAbsorbedDoseMeasure_ is a measure of the absorbed radioactivity dose.
+_IfcAbsorbedDoseMeasure_ is a measure of the absorbed radioactivity dose.
 
 Usually measured in Gray (Gy, J/kg).
 

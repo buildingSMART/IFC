@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcProperty" Name="IfcProperty" UniqueId="911b51d0-e3e7-45db-a881-520360ded638" BaseDefinition="IfcPropertyAbstraction" EntityFlags="197">
 	<Localization>
 		<DocLocalization Locale="de" Name="Merkmal" />
@@ -18,7 +18,7 @@
 		</DocAttribute>
 		<DocAttribute Name="PartOfPset" UniqueId="79ce08ab-7c92-4db4-9325-4a08c1c70c38" DefinedType="IfcPropertySet" AttributeFlags="32" AggregationType="3" Inverse="HasProperties">
 			<Documentation>Reference to the _IfcPropertySet_ by which the _IfcProperty_ is referenced.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; New inverse attribute to navigate from _IfcProperty_ to _IfcPropertySet_ with upward compatibility for file based exchange.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="PropertyForDependance" UniqueId="386eb852-dc2b-4164-963e-1d2791e03caf" DefinedType="IfcPropertyDependencyRelationship" AttributeFlags="8" AggregationType="3" Inverse="DependingProperty">
@@ -29,7 +29,7 @@
 		</DocAttribute>
 		<DocAttribute Name="PartOfComplex" UniqueId="be34513c-c6e4-4dd1-b6be-63ae5e66413f" DefinedType="IfcComplexProperty" AttributeFlags="8" AggregationType="3" Inverse="HasProperties">
 			<Documentation>Reference to the _IfcComplexProperty_ in which the _IfcProperty_ is contained.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The cardinality has changed to 0..n to allow reuse of instances of _IfcProperty_ in several _IfcComplexProperty_ with upward compatibility for file based exchange.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="HasConstraints" UniqueId="33bd1930-a3a9-40cd-a3cc-6c31ed80b89f" DefinedType="IfcResourceConstraintRelationship" AttributeFlags="1" AggregationType="3" Inverse="RelatedResourceObjects">

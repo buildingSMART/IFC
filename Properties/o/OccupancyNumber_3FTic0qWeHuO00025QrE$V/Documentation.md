@@ -1,1 +1,1 @@
-﻿Number of people required for the activity assigned to this space.
+Number of people required for the activity assigned to this space.

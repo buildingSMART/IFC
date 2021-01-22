@@ -1,1 +1,1 @@
-﻿Total heat transfer rate to primary air flow.
+Total heat transfer rate to primary air flow.

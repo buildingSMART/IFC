@@ -1,1 +1,1 @@
-﻿The period of time for the lease.
+The period of time for the lease.

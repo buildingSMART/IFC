@@ -1,1 +1,1 @@
-﻿Lead out time after end of process.
+Lead out time after end of process.

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcImpactProtectionDeviceType" UniqueId="2611dc1c-60e0-47b7-8506-b0d8829fa389" BaseDefinition="IfcElementComponentType" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="be135578-d55b-4f5f-858b-5c73d8446ff4" DefinedType="IfcImpactProtectionDeviceTypeSelect">
+			<Documentation></Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="a7b73636-b0b3-450c-b7c5-32195c16542c">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcImpactProtectionDeviceTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcImpactProtectionDeviceTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

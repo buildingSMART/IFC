@@ -1,1 +1,1 @@
-﻿Indicates how the speaker is designed to be mounted.
+Indicates how the speaker is designed to be mounted.

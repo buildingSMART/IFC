@@ -1,1 +1,1 @@
-﻿Weight of the pipe segment itself, not including contained fluid.
+Weight of the pipe segment itself, not including contained fluid.

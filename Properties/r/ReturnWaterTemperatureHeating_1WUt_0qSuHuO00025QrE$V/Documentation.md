@@ -1,1 +1,1 @@
-﻿Return water temperature in heating mode.
+Return water temperature in heating mode.

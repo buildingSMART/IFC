@@ -1,1 +1,1 @@
-﻿Length of the water tube inside the component, if applicable.
+Length of the water tube inside the component, if applicable.

@@ -1,1 +1,1 @@
-﻿Water flow rate for heating.
+Water flow rate for heating.

@@ -1,4 +1,4 @@
-﻿The _IfcFontStyle_ type defines whether the normal, the italic or the oblique faces within a font family shall be used. Values are:
+The _IfcFontStyle_ type defines whether the normal, the italic or the oblique faces within a font family shall be used. Values are:
 
 * normal 
 * italic 

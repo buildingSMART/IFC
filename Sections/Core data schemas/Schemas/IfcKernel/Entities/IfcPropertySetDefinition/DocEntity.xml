@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPropertySetDefinition" Name="IfcPropertySetDefinition" UniqueId="dc96d6f9-b8ed-4899-979b-8cc86974ea2d" Status="H" BaseDefinition="IfcPropertyDefinition" EntityFlags="205">
 	<Localization>
 		<DocLocalization Locale="de" Name="Definition der Merkmalliste (allgemein)" />
@@ -15,17 +15,17 @@
 			<Documentation>The type object to which the property set is assigned. The property set acts as a shared property set to all occurrences of the type object.
 &gt; NOTE&amp;nbsp; The relationship between the _IfcPropertySetDefinition_ and the _IfcTypeObject_ is a direct relationship, not utilizing _IfcRelDefinesByProperties_, for maintaining compatibility with earlier releases of this standard.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The cardinality has been changed from 0:1 to 0:? with upward compatibility for file based exchange.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="IsDefinedBy" UniqueId="e9541680-618c-49dc-a052-7d13de3fd336" DefinedType="IfcRelDefinesByTemplate" AggregationType="3" Inverse="RelatedPropertySets">
 			<Documentation>Relation to the property set template, via the objectified relationship _IfcRelDefinesByTemplate_, that, if given, provides the definition template for the property set or quantity set and its properties. 
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; New inverse relationship, change made with upward compatibility for file based exchange.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="DefinesOccurrence" UniqueId="74a32a1f-15b3-4366-a7ac-3776403dd4dd" DefinedType="IfcRelDefinesByProperties" AggregationType="3" AggregationLower="0" AggregationUpper="0" Inverse="RelatingPropertyDefinition">
 			<Documentation>Reference to the relation to one or many object occurrences that are characterized by the property set definition. A single property set can be assigned to multiple object occurrences using the objectified relationship _IfcRefDefinesByProperties_.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE Inverse attribute renamed from PropertyDefinitionOf with upward compatibility for file-based exchange.</Documentation>
 		</DocAttribute>
 	</Attributes>

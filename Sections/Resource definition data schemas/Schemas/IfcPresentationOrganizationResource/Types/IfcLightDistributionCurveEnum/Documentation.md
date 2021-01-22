@@ -1,4 +1,4 @@
-﻿There are three kinds of light distribution curves, see Figure 1.
+There are three kinds of light distribution curves, see Figure 1.
 
 > NOTE&nbsp; The classification as type A, B, C is according to Standard CEN TC 169, prEN 13032-1, CIE 121:
 

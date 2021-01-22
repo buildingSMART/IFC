@@ -1,4 +1,4 @@
-﻿_IfcMaterialDefinitionRepresentation_ defines presentation information relating to _IfcMaterial_. It allows for multiple presentations of the same material for different geometric representation contexts.
+_IfcMaterialDefinitionRepresentation_ defines presentation information relating to _IfcMaterial_. It allows for multiple presentations of the same material for different geometric representation contexts.
 
 > NOTE&nbsp; The _IfcMaterialDefinitionRepresentation_ is currently only used to define presentation information to material used at element occurrences, defined as subtypes of _IfcElement_, or at element types, defined as subtypes of _IfcElementType_. The _IfcMaterial_ is assigned to the subtype of _IfcElement_, or _IfcElementType_ using the _IfcRelAssociatesMaterial_ relationship (eventually via other material related entities _IfcMaterialLayerSetUsage_, _IfcMaterialLayerSet_, _IfcMaterialLayer_, or _IfcMaterialProfileSetUsage_, _IfcMaterialProfileSet_, _IfcMaterialProfile_).
 
@@ -12,7 +12,7 @@ The _IfcMaterialDefinitionRepresentation_ can apply
 { .change-ifc2x3}
 > IFC2x3 CHANGE&nbsp; The entity _IfcMaterialDefinitionRepresentation_ has been added. Upward compatibility for file based exchange is guaranteed.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; The assignment of curve, surface and other styles to an _IfcStyledItem_ has been simplified by _IfcStyleAssignmentSelect_. The use of intermediate _IfcPresentationStyleAssignment_ is deprecated.
 
 &nbsp;

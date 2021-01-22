@@ -1,1 +1,1 @@
-﻿Duct fitting occurrence attributes.
+Duct fitting occurrence attributes.

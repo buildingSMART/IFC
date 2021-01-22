@@ -1,1 +1,1 @@
-﻿Count n according to ISO 2553
+Count n according to ISO 2553

@@ -1,1 +1,1 @@
-﻿The direction of escape pictogram.
+The direction of escape pictogram.

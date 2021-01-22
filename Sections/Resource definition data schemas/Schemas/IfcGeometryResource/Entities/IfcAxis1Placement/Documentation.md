@@ -1,4 +1,4 @@
-﻿The _IfcAxis1Placement_ provides location and direction of a single axis.
+The _IfcAxis1Placement_ provides location and direction of a single axis.
 
 <table>
  <tr>

@@ -1,4 +1,4 @@
-﻿The _IfcGeometricCurveSet_ is used for the exchange of shape representation consisting of an collection of (2D or 3D) points and curves only.
+The _IfcGeometricCurveSet_ is used for the exchange of shape representation consisting of an collection of (2D or 3D) points and curves only.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  

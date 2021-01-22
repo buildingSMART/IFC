@@ -1,4 +1,4 @@
-﻿This entity is a description of a panel within a door or window (as fillers for opening) which allows for air flow. It is given by its properties (_IfcPermeableCoveringProperties_). A permeable covering is a casement, such as a component, fixed or opening, consisting essentially of a frame and the infilling. The infilling is normally a grill, a louver or a screen. The way of operation is defined in the operation type.
+This entity is a description of a panel within a door or window (as fillers for opening) which allows for air flow. It is given by its properties (_IfcPermeableCoveringProperties_). A permeable covering is a casement, such as a component, fixed or opening, consisting essentially of a frame and the infilling. The infilling is normally a grill, a louver or a screen. The way of operation is defined in the operation type.
 
 The _IfcPermeableCoveringProperties_ are included in the list of properties (_HasPropertySets_) of the _IfcWindowStyle_ or the _IfcDoorStyle_. More information about the permeable covering can be included in the same list of the window or door style using the _IfcPropertySet_ for dynamic extensions. This particularly applies for additional properties for the various operation types
 
@@ -12,5 +12,5 @@ Figure 1 illustrates the panel applied to the position within the lining, as def
 
 > HISTORY&nbsp; New entity in IFC2.0, it had been renamed from _IfcPermeableCovering_ in IFC2x.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; Supertype changed to new _IfcPreDefinedPropertySet_.

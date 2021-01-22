@@ -1,1 +1,1 @@
-﻿Pressure loss expected across the meter under conditions of maximum flow.
+Pressure loss expected across the meter under conditions of maximum flow.

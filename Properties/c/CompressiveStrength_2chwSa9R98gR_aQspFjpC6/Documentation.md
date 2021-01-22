@@ -1,1 +1,1 @@
-﻿Defining values: α; defined values: compressive strength.
+Defining values: α; defined values: compressive strength.

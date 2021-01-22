@@ -1,1 +1,1 @@
-﻿The nominal bore of the pipe flange.
+The nominal bore of the pipe flange.

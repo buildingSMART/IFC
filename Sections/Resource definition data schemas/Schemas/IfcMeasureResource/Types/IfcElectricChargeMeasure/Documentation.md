@@ -1,4 +1,4 @@
-﻿_IfcElectricChargeMeasure_ is a measure of the electric charge.
+_IfcElectricChargeMeasure_ is a measure of the electric charge.
 
 Usually measured in Coulomb (C, A s).
 

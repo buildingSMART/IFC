@@ -1,4 +1,4 @@
-﻿The element type _IfcBeamType_ defines commonly shared information for occurrences of beams. The set of shared information may include:
+The element type _IfcBeamType_ defines commonly shared information for occurrences of beams. The set of shared information may include:
 
 * common properties within shared property sets
 * common material information

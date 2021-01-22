@@ -1,1 +1,1 @@
-﻿Light emitter nominal power.
+Light emitter nominal power.

@@ -1,1 +1,1 @@
-﻿The depth of the column shoe base plate.
+The depth of the column shoe base plate.

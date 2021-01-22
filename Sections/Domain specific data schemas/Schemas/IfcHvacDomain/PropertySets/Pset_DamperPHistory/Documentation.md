@@ -1,1 +1,1 @@
-﻿Damper performance history attributes.
+Damper performance history attributes.

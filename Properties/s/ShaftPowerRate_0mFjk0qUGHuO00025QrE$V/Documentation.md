@@ -1,1 +1,1 @@
-﻿Fan shaft power.
+Fan shaft power.

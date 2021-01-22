@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMaterialDefinition" UniqueId="b31f0891-e60f-4cc1-9b3b-9bbae1fde79c" EntityFlags="205">
 	<Localization>
 		<DocLocalization Locale="de" Name="Materialdefinition" />
@@ -17,17 +17,17 @@
 	<Attributes>
 		<DocAttribute Name="AssociatedTo" UniqueId="b1ec3680-78e2-4c73-915a-89a294a334a7" DefinedType="IfcRelAssociatesMaterial" AttributeFlags="32" AggregationType="3" AggregationLower="0" AggregationUpper="0" Inverse="RelatingMaterial">
 			<Documentation>Use of the _IfcMaterialDefinition_ subtypes within the material association of an element occurrence or element type. The association is established by the _IfcRelAssociatesMaterial_ relationship.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The inverse attribute has been added.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="HasExternalReferences" UniqueId="d28dbc0d-d8f5-445d-8f01-e84587f1ef49" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="32" AggregationType="3" Inverse="RelatedResourceObjects">
 			<Documentation>Reference to external references, e.g. library, classification, or document information, that are associated to the material.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The inverse attribute has been added.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="HasProperties" UniqueId="d60a2049-8e83-46d1-9e06-029c5163fab4" DefinedType="IfcMaterialProperties" AggregationType="3" Inverse="Material" XsdFormat="element">
 			<Documentation>Material properties assigned to instances of subtypes of _IfcMaterialDefinition_.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The inverse attribute has been added.</Documentation>
 		</DocAttribute>
 	</Attributes>

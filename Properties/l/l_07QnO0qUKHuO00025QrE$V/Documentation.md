@@ -1,1 +1,1 @@
-﻿Measure l according to ISO 2553
+Measure l according to ISO 2553

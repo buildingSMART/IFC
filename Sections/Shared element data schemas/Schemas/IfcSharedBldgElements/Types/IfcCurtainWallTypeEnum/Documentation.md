@@ -1,4 +1,4 @@
-﻿This enumeration defines the valid types of curtain wall that can be predefined using the enumeration values.
+This enumeration defines the valid types of curtain wall that can be predefined using the enumeration values.
 
 > HISTORY&nbsp; New enumeration in IFC2x3
 

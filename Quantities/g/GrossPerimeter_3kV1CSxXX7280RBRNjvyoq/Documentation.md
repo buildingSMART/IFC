@@ -1,1 +1,1 @@
-﻿Perimeter of the site boundary, measured in horizontal projection.
+Perimeter of the site boundary, measured in horizontal projection.

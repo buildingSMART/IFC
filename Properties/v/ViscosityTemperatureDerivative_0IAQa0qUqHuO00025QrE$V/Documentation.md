@@ -1,1 +1,1 @@
-﻿Viscosity temperature derivative.
+Viscosity temperature derivative.

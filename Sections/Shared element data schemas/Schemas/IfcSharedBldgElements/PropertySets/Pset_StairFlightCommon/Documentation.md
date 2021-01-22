@@ -1,1 +1,1 @@
-﻿Properties common to the definition of all occurrences of IfcStairFlight.
+Properties common to the definition of all occurrences of IfcStairFlight.

@@ -1,1 +1,1 @@
-﻿If TRUE, then the water is considered potable.
+If TRUE, then the water is considered potable.

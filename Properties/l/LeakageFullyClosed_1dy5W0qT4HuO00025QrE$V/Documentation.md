@@ -1,1 +1,1 @@
-﻿Leakage when fully closed.
+Leakage when fully closed.

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPropertyTableValue" Name="IfcPropertyTableValue" UniqueId="e3c26a8d-a8eb-45a1-ae3b-cf89be51902e" BaseDefinition="IfcSimpleProperty" EntityFlags="237">
 	<Localization>
 		<DocLocalization Locale="de" Name="Merkmal mit Tabellenwert" />
@@ -8,12 +8,12 @@
 	<Attributes>
 		<DocAttribute Name="DefiningValues" UniqueId="9867214e-f440-4aef-b09f-77d8191be7e1" DefinedType="IfcValue" AttributeFlags="1" AggregationType="1" AggregationFlag="2" AggregationLower="1" AggregationUpper="0">
 			<Documentation>List of defining values, which determine the defined values. This list shall have unique values only.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute has been made optional with upward compatibility for file based exchange.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="DefinedValues" UniqueId="ceaeca4b-57ed-4f16-b679-5ae20096a3fd" DefinedType="IfcValue" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Defined values which are applicable for the scope as defined by the defining values.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute has been made optional with upward compatibility for file based exchange.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="Expression" UniqueId="44bb4232-b2a5-467d-b418-1173fc69da99" DefinedType="IfcText" AttributeFlags="1">
@@ -27,7 +27,7 @@
 		</DocAttribute>
 		<DocAttribute Name="CurveInterpolation" UniqueId="8f0aca34-80c5-47dd-996e-81d3a9395f49" DefinedType="IfcCurveInterpolationEnum" AttributeFlags="1">
 			<Documentation>Interpolation of the curve between two defining and defined values that are provided. if not provided a linear interpolation is assumed.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute has been added at the end of the attribute list.</Documentation>
 		</DocAttribute>
 	</Attributes>

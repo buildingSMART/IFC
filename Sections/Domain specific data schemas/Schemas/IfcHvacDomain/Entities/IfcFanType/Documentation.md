@@ -1,4 +1,4 @@
-﻿The flow moving device type **IfcFanType** defines commonly shared information for occurrences of fans. The set of shared information may include:
+The flow moving device type **IfcFanType** defines commonly shared information for occurrences of fans. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

@@ -1,1 +1,1 @@
-﻿Key depth of the profile.
+Key depth of the profile.

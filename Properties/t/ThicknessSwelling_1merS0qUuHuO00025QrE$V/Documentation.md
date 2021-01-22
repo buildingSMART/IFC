@@ -1,1 +1,1 @@
-﻿Swelling ratio relative to board depth.
+Swelling ratio relative to board depth.

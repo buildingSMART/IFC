@@ -1,1 +1,1 @@
-﻿Pressure that is automatically maintained in the tank.
+Pressure that is automatically maintained in the tank.

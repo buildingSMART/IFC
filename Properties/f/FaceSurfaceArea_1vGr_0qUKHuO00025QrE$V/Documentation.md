@@ -1,1 +1,1 @@
-﻿Face area of filter frame.
+Face area of filter frame.

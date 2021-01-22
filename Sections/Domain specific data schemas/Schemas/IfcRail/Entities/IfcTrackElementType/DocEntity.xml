@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTrackElementType" UniqueId="05266c5a-05c9-436a-97bd-b9ecbcc319c6" BaseDefinition="IfcBuiltElementType" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="051325ef-d7d3-4c3f-9892-b3f11b902ec3" DefinedType="IfcTrackElementTypeEnum">
+			<Documentation></Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="f9ecd9f0-1c03-45cc-b0e4-ba22e1137a73">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcTrackElementTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcTrackElementTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,1 +1,1 @@
-﻿Angle of visibility to the left of the access.
+Angle of visibility to the left of the access.

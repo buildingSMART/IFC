@@ -1,1 +1,1 @@
-﻿Flow meter occurrence common attributes.
+Flow meter occurrence common attributes.

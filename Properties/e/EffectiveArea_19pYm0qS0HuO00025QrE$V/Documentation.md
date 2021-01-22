@@ -1,1 +1,1 @@
-﻿Effective discharge area of the air terminal.
+Effective discharge area of the air terminal.

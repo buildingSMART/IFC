@@ -1,1 +1,1 @@
-﻿Thickness of the first (inner) glass layer.
+Thickness of the first (inner) glass layer.

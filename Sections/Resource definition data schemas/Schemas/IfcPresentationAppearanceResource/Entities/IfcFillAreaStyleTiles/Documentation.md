@@ -1,4 +1,4 @@
-﻿The _IfcFillAreaStyleTiles_ defines the filling of an _IfcAnnotationFillArea_ by recurring patterns of styled two dimensional geometry, called a tile. The recurrence pattern is determined by two vectors, that multiply the tile in regular form.
+The _IfcFillAreaStyleTiles_ defines the filling of an _IfcAnnotationFillArea_ by recurring patterns of styled two dimensional geometry, called a tile. The recurrence pattern is determined by two vectors, that multiply the tile in regular form.
 
 The two vectors act as a two dimensional repeat factor that determins eight new positions for the tiles.
 
@@ -18,5 +18,5 @@ k~2~\* R~2~_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_k~1~,k~2~_= -1,0,1 , ![formula](../.
 
 > HISTORY&nbsp; New entity in IFC2x2.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; _TilingPattern_ changed to list of two _IfcVector_, _Tiles_ refer directly to _IfcStyledItem_.

@@ -1,1 +1,1 @@
-﻿Flange chamfer of the profile.
+Flange chamfer of the profile.

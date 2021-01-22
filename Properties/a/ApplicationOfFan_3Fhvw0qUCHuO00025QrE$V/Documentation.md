@@ -1,4 +1,4 @@
-﻿The functional application of the fan.
+The functional application of the fan.
 
 SupplyAir: Supply air fan. 
 ReturnAir: Return air fan. 

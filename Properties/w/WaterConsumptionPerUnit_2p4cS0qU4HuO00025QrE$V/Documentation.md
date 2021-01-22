@@ -1,1 +1,1 @@
-﻿Quantity of water used.
+Quantity of water used.

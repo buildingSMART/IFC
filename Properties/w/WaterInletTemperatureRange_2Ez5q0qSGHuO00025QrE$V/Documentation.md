@@ -1,1 +1,1 @@
-﻿Allowable water inlet temperature range.
+Allowable water inlet temperature range.

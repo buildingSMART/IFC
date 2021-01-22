@@ -1,4 +1,4 @@
-﻿An _IfcCartesianTransformationOperator_ defines an abstract supertype of different kinds of geometric transformations.
+An _IfcCartesianTransformationOperator_ defines an abstract supertype of different kinds of geometric transformations.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  

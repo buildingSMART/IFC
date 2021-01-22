@@ -1,1 +1,1 @@
-﻿Fraction of air that is bypassed by the coil (0-1).
+Fraction of air that is bypassed by the coil (0-1).

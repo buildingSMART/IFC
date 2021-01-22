@@ -1,1 +1,1 @@
-﻿Performance history attributes for an active cooled beam.
+Performance history attributes for an active cooled beam.

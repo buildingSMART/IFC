@@ -1,1 +1,1 @@
-﻿Pipe fitting type attributes for bend shapes.
+Pipe fitting type attributes for bend shapes.

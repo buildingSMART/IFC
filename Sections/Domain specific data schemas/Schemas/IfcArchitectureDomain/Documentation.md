@@ -1,4 +1,4 @@
-﻿The _IfcArchitectureDomain_ schema defines basic object concepts used in the architectural domain that have not been generalized and pushed lower in the model (such as shared with other domains or application types).
+The _IfcArchitectureDomain_ schema defines basic object concepts used in the architectural domain that have not been generalized and pushed lower in the model (such as shared with other domains or application types).
 
 > NOTE&nbsp; Most elements used in the architectural domain are shared with other domians and are consequentially declared in lower level schemas, such as _IfcProductExtension_, or _IfcSharedBldgElements_.
 

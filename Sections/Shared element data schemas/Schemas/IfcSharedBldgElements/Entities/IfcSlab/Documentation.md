@@ -1,4 +1,4 @@
-﻿A slab is a component of the construction that may enclose a space vertically. The slab may provide the lower support (floor) or upper construction (roof slab) in any space in a building.
+A slab is a component of the construction that may enclose a space vertically. The slab may provide the lower support (floor) or upper construction (roof slab) in any space in a building.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO 6707-1  

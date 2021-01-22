@@ -1,1 +1,1 @@
-﻿Volumetric capacity of the cistern
+Volumetric capacity of the cistern

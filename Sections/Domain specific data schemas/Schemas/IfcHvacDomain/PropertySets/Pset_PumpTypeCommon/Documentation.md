@@ -1,1 +1,1 @@
-﻿Common attributes of a pump type.
+Common attributes of a pump type.

@@ -1,1 +1,1 @@
-﻿Maximum CaCO3 equivalent that would neutralize the acid.
+Maximum CaCO3 equivalent that would neutralize the acid.

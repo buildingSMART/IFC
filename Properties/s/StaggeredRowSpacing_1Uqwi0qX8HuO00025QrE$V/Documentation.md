@@ -1,1 +1,1 @@
-﻿Staggered tube row spacing.
+Staggered tube row spacing.

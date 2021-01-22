@@ -1,1 +1,1 @@
-﻿Required outside air ventilation.
+Required outside air ventilation.

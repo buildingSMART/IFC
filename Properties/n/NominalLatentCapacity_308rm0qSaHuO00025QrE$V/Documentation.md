@@ -1,1 +1,1 @@
-﻿Nominal latent capacity.
+Nominal latent capacity.

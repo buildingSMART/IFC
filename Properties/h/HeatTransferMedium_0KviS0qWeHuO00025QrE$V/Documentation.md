@@ -1,1 +1,1 @@
-﻿Enumeration defining the heat transfer medium if applicable.
+Enumeration defining the heat transfer medium if applicable.

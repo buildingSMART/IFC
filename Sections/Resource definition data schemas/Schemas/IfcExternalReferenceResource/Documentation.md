@@ -1,4 +1,4 @@
-﻿The _IfcExternalReferenceResource_ provides the means to access or use information from external sources including:
+The _IfcExternalReferenceResource_ provides the means to access or use information from external sources including:
 
 * Classifications
 * Documents

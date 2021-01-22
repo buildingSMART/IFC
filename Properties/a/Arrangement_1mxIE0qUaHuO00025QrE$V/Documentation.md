@@ -1,4 +1,4 @@
-﻿Defines the basic flow arrangements for the heat exchanger:
+Defines the basic flow arrangements for the heat exchanger:
 
 COUNTERFLOW: Counterflow heat exchanger arrangement. 
 CROSSFLOW: Crossflow heat exchanger arrangement. 

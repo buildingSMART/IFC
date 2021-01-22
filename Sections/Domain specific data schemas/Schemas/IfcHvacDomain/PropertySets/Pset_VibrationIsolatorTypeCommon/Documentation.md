@@ -1,1 +1,1 @@
-﻿Vibration isolator type common attributes.
+Vibration isolator type common attributes.

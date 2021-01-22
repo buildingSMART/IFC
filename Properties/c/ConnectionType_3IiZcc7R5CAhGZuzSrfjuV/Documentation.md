@@ -1,4 +1,4 @@
-﻿The end-style treatment of the duct port:
+The end-style treatment of the duct port:
 
 BEADEDSLEEVE: Beaded Sleeve. 
 COMPRESSION: Compression. 

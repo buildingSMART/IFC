@@ -1,1 +1,1 @@
-﻿Inside relative humidity for cooling design.
+Inside relative humidity for cooling design.

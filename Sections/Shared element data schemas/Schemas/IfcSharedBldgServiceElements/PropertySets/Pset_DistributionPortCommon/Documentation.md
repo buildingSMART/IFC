@@ -1,1 +1,1 @@
-﻿Common attributes attached to an instance of IfcDistributionPort.
+Common attributes attached to an instance of IfcDistributionPort.

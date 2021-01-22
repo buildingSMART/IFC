@@ -1,4 +1,4 @@
-﻿The objectified relationship _IfcRelDefinesByType_ defines the relationship between an object type and object occurrences. The _IfcRelDefinesByType_ is a 1-to-N relationship, as it allows for the assignment of one type information to a single or to many objects. Those objects then share the same object type, and the property sets and properties assigned to the object type.
+The objectified relationship _IfcRelDefinesByType_ defines the relationship between an object type and object occurrences. The _IfcRelDefinesByType_ is a 1-to-N relationship, as it allows for the assignment of one type information to a single or to many objects. Those objects then share the same object type, and the property sets and properties assigned to the object type.
 
 The _IfcRelDefinesByType_ links the object type definition with the object occurrence. Both may define properties by assigning an _IfcPropertySet_, including one or many subtypes of _IfcProperty_ to either the object type or object occurrence, as shown in Figure 1.
 
@@ -47,5 +47,5 @@ The following table provides an example of assigning
 
 > HISTORY&nbsp; New entity in IFC2x.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; The attribute _RelatedObjects_ had been demoted from the supertype _IfcRelDefines_ to _IfcRelDefinesByType_.

@@ -1,1 +1,1 @@
-﻿Weight of cable kg/km.
+Weight of cable kg/km.

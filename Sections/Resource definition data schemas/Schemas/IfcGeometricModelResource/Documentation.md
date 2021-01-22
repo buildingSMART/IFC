@@ -1,4 +1,4 @@
-﻿The schema _IfcGeometricModelResource_ defines the resources used for geometric model representations. The primary application of this resource is for representation of the shape or geometric form of a product model.
+The schema _IfcGeometricModelResource_ defines the resources used for geometric model representations. The primary application of this resource is for representation of the shape or geometric form of a product model.
 
 The following is within the scope of the geometric model representation in the current version of the geometric model resource:
 

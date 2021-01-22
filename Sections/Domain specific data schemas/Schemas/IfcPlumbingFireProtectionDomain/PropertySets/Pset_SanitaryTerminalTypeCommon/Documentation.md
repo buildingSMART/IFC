@@ -1,1 +1,1 @@
-﻿Common properties for sanitary terminals.
+Common properties for sanitary terminals.

@@ -1,1 +1,1 @@
-﻿Elastic modulus in compression.
+Elastic modulus in compression.

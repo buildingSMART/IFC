@@ -1,1 +1,1 @@
-﻿Reference ID for this specified type in this project
+Reference ID for this specified type in this project

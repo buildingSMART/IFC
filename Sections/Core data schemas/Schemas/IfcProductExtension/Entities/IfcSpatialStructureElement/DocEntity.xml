@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSpatialStructureElement" Name="IfcSpatialStructureElement" UniqueId="061ba193-076d-4292-a0ce-c96d7aba692e" BaseDefinition="IfcSpatialElement" EntityFlags="197">
 	<Localization>
 		<DocLocalization Locale="de" Name="Räumliches Strukturelement" />
@@ -10,11 +10,12 @@
 		<DocSubtype UniqueId="f270dacf-366f-4ffe-9b9b-f9c781521fef" DefinedType="IfcBuildingStorey" />
 		<DocSubtype UniqueId="fc4ce9b9-0f1f-4964-b35e-e71d6a0cae04" DefinedType="IfcSpace" />
 		<DocSubtype UniqueId="b18c05d7-6169-4317-b902-ee339352f9a0" DefinedType="IfcSite" />
+		<DocSubtype UniqueId="7af08b99-ab7e-4396-93bd-e55934cf9a82" DefinedType="IfcBuildingStorey" />
 	</Subtypes>
 	<Attributes>
 		<DocAttribute Name="CompositionType" UniqueId="726de67f-b56e-4031-b779-84330e1d0483" DefinedType="IfcElementCompositionEnum" AttributeFlags="1">
-			<Documentation>Denotes, whether the predefined spatial structure element represents itself, or an aggregate (complex) or a part (part). The interpretation is given separately for each subtype of spatial structure element. If no _CompositionType_ is asserted, the dafault value &apos;ELEMENT&apos; applies.
-{ .change-ifc4}
+			<Documentation>Denotes, whether the predefined spatial structure element represents itself, or an aggregate (complex) or a part (part). The interpretation is given separately for each subtype of spatial structure element. If no _CompositionType_ is asserted, the dafault value &apos;&apos;ELEMENT&apos;&apos; applies.\X\0D
+{ .change-ifc2x4}\X\0D
 &gt; IFC4 CHANGE&amp;nbsp; Attribute made optional.</Documentation>
 		</DocAttribute>
 	</Attributes>

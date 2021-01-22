@@ -1,4 +1,4 @@
-﻿An _IfcOffsetCurve3D_ is a curve defined by an offset in 3D space from its _BasisCurve_.
+An _IfcOffsetCurve3D_ is a curve defined by an offset in 3D space from its _BasisCurve_.
 
 { .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992  

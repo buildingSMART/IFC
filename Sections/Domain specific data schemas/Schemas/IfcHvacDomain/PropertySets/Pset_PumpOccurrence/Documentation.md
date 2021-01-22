@@ -1,1 +1,1 @@
-﻿Pump occurrence attributes attached to an instance of IfcPump.
+Pump occurrence attributes attached to an instance of IfcPump.

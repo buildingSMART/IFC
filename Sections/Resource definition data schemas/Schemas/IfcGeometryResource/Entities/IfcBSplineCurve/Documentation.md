@@ -1,4 +1,4 @@
-﻿The _IfcBSplineCurve_ is a spline curve parameterized by spline functions.
+The _IfcBSplineCurve_ is a spline curve parameterized by spline functions.
 
 Figure 1 illustrates a B-spline curve.
 

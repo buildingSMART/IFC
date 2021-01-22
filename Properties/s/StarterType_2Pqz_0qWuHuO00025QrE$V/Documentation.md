@@ -1,4 +1,4 @@
-﻿A list of the available types of starter from which that required may be selected where:
+A list of the available types of starter from which that required may be selected where:
 
 AutoTransformer: A starter for an induction motor which uses for starting one or more reduced voltages derived from an auto transformer. (IEC 441-14-45)
 Manual: A starter in which the force for closing the main contacts is provided exclusively by manual energy. (IEC 441-14-39)

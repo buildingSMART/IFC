@@ -1,4 +1,4 @@
-﻿_IfcAppliedValueSelect_ defines a value to be calculated within a formula.
+_IfcAppliedValueSelect_ defines a value to be calculated within a formula.
 
 Types are used as follows:
 

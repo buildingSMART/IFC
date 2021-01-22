@@ -1,1 +1,1 @@
-﻿Nominal sensible capacity.
+Nominal sensible capacity.

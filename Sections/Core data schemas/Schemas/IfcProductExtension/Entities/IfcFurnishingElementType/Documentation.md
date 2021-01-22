@@ -1,4 +1,4 @@
-﻿_IfcFurnishingElementType_ defines a list of commonly shared property set definitions of an element and an optional set of product representations. It is used to define an element specification (the specific product information, that is common to all occurrences of that product type).
+_IfcFurnishingElementType_ defines a list of commonly shared property set definitions of an element and an optional set of product representations. It is used to define an element specification (the specific product information, that is common to all occurrences of that product type).
 
 > NOTE&nbsp; The product representations are defined as representation maps (at the level of the supertype _IfcTypeProduct_, which gets assigned by an element occurrence instance through the _IfcShapeRepresentation.Item[1]_ being an _IfcMappedItem_.
 
@@ -11,5 +11,5 @@ The occurrences of the _IfcFurnishingElementType_ are represented by instances o
 { .change-ifc2x3}
 > IFC2x3 CHANGE&nbsp; The entity has been made non-abstract
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; The entity is marked as deprecated for instantiation - will be made ABSTRACT after IFC4.

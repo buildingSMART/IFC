@@ -1,1 +1,1 @@
-﻿Diversity factor for Summer infiltration.
+Diversity factor for Summer infiltration.

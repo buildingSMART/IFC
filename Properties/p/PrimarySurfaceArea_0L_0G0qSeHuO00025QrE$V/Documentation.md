@@ -1,1 +1,1 @@
-﻿Primary heat transfer surface area of the tubes and headers.
+Primary heat transfer surface area of the tubes and headers.

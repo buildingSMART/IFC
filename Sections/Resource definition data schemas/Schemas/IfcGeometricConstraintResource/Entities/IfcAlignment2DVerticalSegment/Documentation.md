@@ -1,4 +1,4 @@
-﻿Individual segment along the _IfcAlignment2DVertical_, being defined in the distance-along/z coordinate space.
+Individual segment along the _IfcAlignment2DVertical_, being defined in the distance-along/z coordinate space.
 
 The vertical alignment is defined by segments that connects end-to-start. The vertical alignment curve geometry is defined in a plane with x = distance along horizontal, the y = height (or elevation). The transition at the segment connection is not enforced to be tangential, if the “tangential continuity” flag is set to false, otherwise a tangential continuity shall be preserved.
 
@@ -29,4 +29,4 @@ The following checks can be done to validate the correct exchange:
 
 > NOTE&nbsp; Specific subtypes of the <span class="self-ref">IfcAlignment2DVerticalSegment</span> add specific geometric curve parameters. Connectivity between vertical segments is not necessarily tangential, but this can be enforced as a requirement through the attribute _TangentialContinuity_.
 
-!(../../../../../../figures/ifcalignment2dverticalsegment.png "Figure 1 &mdash; Alignment vertical segment")
+!["Alignment vertical segment"](../../../../../../figures/ifcalignment2dverticalsegment.png "Figure 1 &mdash; Alignment vertical segment")

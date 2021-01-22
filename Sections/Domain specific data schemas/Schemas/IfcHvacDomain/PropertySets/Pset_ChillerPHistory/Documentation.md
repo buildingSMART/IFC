@@ -1,1 +1,1 @@
-﻿Chiller performance history attributes.
+Chiller performance history attributes.

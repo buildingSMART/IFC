@@ -1,4 +1,4 @@
-﻿{ .extDef}
+{ .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-46:1992  
 > The colour specification entity contains a direct colour definition. Colour component values refer directly to a specific colour space.
 

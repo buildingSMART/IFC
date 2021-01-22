@@ -1,1 +1,1 @@
-﻿Heat gains and losses from equipment.
+Heat gains and losses from equipment.

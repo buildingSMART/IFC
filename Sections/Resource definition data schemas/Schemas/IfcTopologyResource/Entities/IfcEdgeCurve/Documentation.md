@@ -1,4 +1,4 @@
-﻿An _IfcEdgeCurve_ defines two vertices being connected topologically including the geometric representation of the connection.
+An _IfcEdgeCurve_ defines two vertices being connected topologically including the geometric representation of the connection.
 
 > NOTE&nbsp; The topology is used to trim the geometry of the edge. There is no need to geometrically trim the edge to match the topology.
 

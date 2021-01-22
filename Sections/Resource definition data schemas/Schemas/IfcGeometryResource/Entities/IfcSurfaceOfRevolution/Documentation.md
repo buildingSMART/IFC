@@ -1,4 +1,4 @@
-﻿The IfcSurfaceOfRevolution is a surface derived by rotating a curve about an axis.
+The IfcSurfaceOfRevolution is a surface derived by rotating a curve about an axis.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  

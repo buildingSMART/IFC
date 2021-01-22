@@ -1,1 +1,1 @@
-﻿Indicates the type of radiator.
+Indicates the type of radiator.

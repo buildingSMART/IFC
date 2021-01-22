@@ -1,1 +1,1 @@
-﻿Temperature of fluid entering condenser.
+Temperature of fluid entering condenser.

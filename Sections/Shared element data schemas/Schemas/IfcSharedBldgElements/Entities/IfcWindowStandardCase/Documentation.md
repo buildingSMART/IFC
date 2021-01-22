@@ -1,4 +1,4 @@
-﻿The standard window, _IfcWindowStandardCase_, defines a window with certain constraints for the provision of operation types, opening directions, frame and lining parameters, construction types and with certain constraints for the geometric representation. The _IfcWindowStandardCase_ handles all cases of windows, that:
+The standard window, _IfcWindowStandardCase_, defines a window with certain constraints for the provision of operation types, opening directions, frame and lining parameters, construction types and with certain constraints for the geometric representation. The _IfcWindowStandardCase_ handles all cases of windows, that:
 
 * are inserted into an opening, represented by _IfcOpeningElement_, using the _IfcRelFillsElement_ relationship
 * have a local placement relative to this opening, and with the y-axis of the placement pointing into the opening direction

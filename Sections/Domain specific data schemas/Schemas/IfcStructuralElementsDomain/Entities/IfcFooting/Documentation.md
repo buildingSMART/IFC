@@ -1,4 +1,4 @@
-﻿A footing is a part of the foundation of a structure that spreads and transmits the load to the soil. A footing is also characterized as shallow foundation, where the loads are transfered to the ground near the surface.
+A footing is a part of the foundation of a structure that spreads and transmits the load to the soil. A footing is also characterized as shallow foundation, where the loads are transfered to the ground near the surface.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO 6707-1: stepped construction that spreads the load at the foot of a wall or column.

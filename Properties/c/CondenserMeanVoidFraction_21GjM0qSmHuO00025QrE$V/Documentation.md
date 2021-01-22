@@ -1,1 +1,1 @@
-﻿Mean void fraction in condenser.
+Mean void fraction in condenser.

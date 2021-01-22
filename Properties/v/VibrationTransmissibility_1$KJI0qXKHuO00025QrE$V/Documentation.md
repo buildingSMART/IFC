@@ -1,1 +1,1 @@
-﻿The vibration transmissibility percentage.
+The vibration transmissibility percentage.

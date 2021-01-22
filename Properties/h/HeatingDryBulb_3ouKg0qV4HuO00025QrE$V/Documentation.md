@@ -1,1 +1,1 @@
-﻿Outside dry bulb temperature for heating design.
+Outside dry bulb temperature for heating design.

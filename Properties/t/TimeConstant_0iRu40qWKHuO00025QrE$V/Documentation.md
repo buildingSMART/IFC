@@ -1,1 +1,1 @@
-﻿The time constant of the sensor.
+The time constant of the sensor.

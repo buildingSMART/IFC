@@ -1,4 +1,4 @@
-﻿The reinforcing element type **IfcTendonType** defines commonly shared information for occurrences of tendons. The set of shared information may include:
+The reinforcing element type **IfcTendonType** defines commonly shared information for occurrences of tendons. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

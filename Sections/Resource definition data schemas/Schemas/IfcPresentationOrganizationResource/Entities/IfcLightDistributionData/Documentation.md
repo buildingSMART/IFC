@@ -1,4 +1,4 @@
-﻿_IfcLightDistributionData_ defines the luminous intensity of a light source given at a particular main plane angle. It is based on some standardized light distribution curves; the _MainPlaneAngle_ is either the
+_IfcLightDistributionData_ defines the luminous intensity of a light source given at a particular main plane angle. It is based on some standardized light distribution curves; the _MainPlaneAngle_ is either the
 
 * A angle; if the _IfcLightDistributionCurveEnum_ is set to TYPE_A
 * B angle; if the _IfcLightDistributionCurveEnum_ is set to TYPE_B

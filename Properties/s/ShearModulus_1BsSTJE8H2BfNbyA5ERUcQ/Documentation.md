@@ -1,1 +1,1 @@
-﻿Shear modulus.
+Shear modulus.

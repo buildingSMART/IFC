@@ -1,4 +1,4 @@
-﻿The energy conversion device type **IfcSolarDeviceType** defines commonly shared information for occurrences of solar devices. The set of shared information may include:
+The energy conversion device type **IfcSolarDeviceType** defines commonly shared information for occurrences of solar devices. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

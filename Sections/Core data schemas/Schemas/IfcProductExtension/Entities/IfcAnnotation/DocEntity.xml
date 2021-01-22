@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcAnnotation" Name="IfcAnnotation" UniqueId="34d6582a-8218-4a4c-9073-fdbe06d6d40a" BaseDefinition="IfcProduct" EntityFlags="237">
 	<Localization>
 		<DocLocalization Locale="de" Name="Zeichnungselement / Erläuterung im Modell" />
@@ -8,6 +8,9 @@
 	<Attributes>
 		<DocAttribute Name="ContainedInStructure" UniqueId="ee617cc7-7598-48b6-bbbf-fc39ddd793b1" DefinedType="IfcRelContainedInSpatialStructure" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="RelatedElements">
 			<Documentation>Relationship to a spatial structure element, to which the associate is primarily associated.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="PredefinedType" UniqueId="f0de9d01-18e5-4fdd-9a5c-c0a195481766" DefinedType="IfcAnnotationTypeEnum" AttributeFlags="1">
+			<Documentation></Documentation>
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

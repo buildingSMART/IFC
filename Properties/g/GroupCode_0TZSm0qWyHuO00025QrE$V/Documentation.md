@@ -1,1 +1,1 @@
-﻿e.g. panels, worksurfaces, storage, etc.
+e.g. panels, worksurfaces, storage, etc.

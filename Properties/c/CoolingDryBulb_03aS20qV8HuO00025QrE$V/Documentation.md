@@ -1,1 +1,1 @@
-﻿Outside dry bulb temperature for cooling design.
+Outside dry bulb temperature for cooling design.

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcImpactProtectionDevice" UniqueId="2ccc5500-de35-4db2-87c6-55b53ca06894" BaseDefinition="IfcElementComponent" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="69825b4b-9927-4e49-81de-abb82f226a21" DefinedType="IfcImpactProtectionDeviceTypeSelect" AttributeFlags="1">
+			<Documentation></Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="8b47c82a-4fec-49aa-ac40-8c7b7217bc7f">
+			<Documentation>Either the _PredefinedType_ attribute is unset(e.g. because an _IfcImpactProtectionDeviceType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+(PredefinedType &lt;&gt; IfcImpactProtectionDeviceTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcImpactProtectionDeviceTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="16ec8159-d81f-44a6-83f3-67b9286469d8">
+			<Documentation>Either there is no type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcImpactProtectionDeviceType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+(&apos;IFCSHAREDINFRASTRUCTUREELEMENTS.IFCIMPACTPROTECTIONDEVICETYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,1 +1,1 @@
-﻿Total count of reinforcing items.
+Total count of reinforcing items.

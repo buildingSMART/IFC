@@ -1,4 +1,4 @@
-﻿A door panel is normally a door leaf that opens to allow people or goods to pass. The parameters of the door panel define the geometrically relevant parameter of the panel,
+A door panel is normally a door leaf that opens to allow people or goods to pass. The parameters of the door panel define the geometrically relevant parameter of the panel,
 
 The _IfcDoorPanelProperties_ are used to parametrically describe the shape and operation of door panels. The parametric definition can be added solely or additionally to the explicit shape representation of the door.
 
@@ -41,5 +41,5 @@ The parameters of the _IfcDoorPanelProperties_ define a standard door panel, inc
 
 > HISTORY&nbsp; New entity in IFC2.0.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; Supertype changed to new _IfcPreDefinedPropertySet_.

@@ -1,1 +1,1 @@
-﻿Temperature of the space.
+Temperature of the space.

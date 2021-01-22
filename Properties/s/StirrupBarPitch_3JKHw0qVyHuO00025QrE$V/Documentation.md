@@ -1,1 +1,1 @@
-﻿The pitch length of the stirrup bar.
+The pitch length of the stirrup bar.

@@ -1,1 +1,1 @@
-﻿Core top width of the profile.
+Core top width of the profile.

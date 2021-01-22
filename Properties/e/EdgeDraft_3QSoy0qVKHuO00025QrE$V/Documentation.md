@@ -1,1 +1,1 @@
-﻿Edge draft of the profile.
+Edge draft of the profile.

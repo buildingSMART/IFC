@@ -1,1 +1,1 @@
-﻿Pump performance history attributes.
+Pump performance history attributes.

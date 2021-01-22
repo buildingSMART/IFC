@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStairFlight" Name="IfcStairFlight" UniqueId="c9b965ff-02c6-41a5-937f-4788c8513e6c" BaseDefinition="IfcBuildingElement" EntityFlags="237">
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStairFlight" Name="IfcStairFlight" UniqueId="c9b965ff-02c6-41a5-937f-4788c8513e6c" BaseDefinition="IfcBuiltElement" EntityFlags="237">
 	<Localization>
 		<DocLocalization Locale="de" Name="Treppenlauf" />
 		<DocLocalization Locale="en" Name="Stair Flight" />
@@ -8,31 +8,31 @@
 	<Attributes>
 		<DocAttribute Name="NumberOfRisers" UniqueId="ee984ef4-cde1-44a3-b301-c62a10108bea" DefinedType="IfcInteger" AttributeFlags="1">
 			<Documentation>Number of the risers included in the stair flight
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE The attribute has been deprecated it shall only be exposed with a NIL value. Use _Pset_StairFlightCommon.NumberOfRisers_ instead.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="NumberOfTreads" UniqueId="8b933521-d0a8-4793-9290-c694bfdf4941" DefinedType="IfcInteger" AttributeFlags="1">
 			<Documentation>Number of treads included in the stair flight.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE The attribute has been deprecated it shall only be exposed with a NIL value. Use _Pset_StairFlightCommon.NumberOfTreads_ instead.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="RiserHeight" UniqueId="221e43e9-f43c-47d3-b02e-20a0a86fbab6" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>Vertical distance from tread to tread. The riser height is supposed to be equal for all stairs in a stair flight.
   
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE The attribute has been deprecated it shall only be exposed with a NIL value. Use _Pset_StairFlightCommon.RiserHeight_ instead.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="TreadLength" UniqueId="bf014ecd-1bc8-4fee-bf42-f86df0c5cca6" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>Horizontal distance from the front to the back of the tread. The tread length is supposed to be equal for all steps of the stair flight.
   
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE The attribute has been deprecated it shall only be exposed with a NIL value. Use _Pset_StairFlightCommon.TreadLength_ instead.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="PredefinedType" UniqueId="42c2789a-ba85-449f-8a3c-e9920ec67ef4" DefinedType="IfcStairFlightTypeEnum" AttributeFlags="1">
 			<Documentation>Predefined generic type for a stair flight that is specified in an enumeration. There may be a property set given specificly for the predefined types.
 &gt; NOTE&amp;nbsp; The _PredefinedType_ shall only be used, if no _IfcStairFlightType_ is assigned, providing its own _IfcStairFlightType.PredefinedType_.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE The attribute has been added at the end of the entity definition.</Documentation>
 		</DocAttribute>
 	</Attributes>

@@ -1,1 +1,1 @@
-﻿Quantity of hazardous waste generated
+Quantity of hazardous waste generated

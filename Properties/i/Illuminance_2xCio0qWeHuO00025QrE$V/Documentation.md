@@ -1,1 +1,1 @@
-﻿Required average illuminance value for this space.
+Required average illuminance value for this space.

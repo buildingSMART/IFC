@@ -1,1 +1,1 @@
-﻿Defines the type of breeching inlet.
+Defines the type of breeching inlet.

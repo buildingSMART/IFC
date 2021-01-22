@@ -1,1 +1,1 @@
-﻿Inside relative humidity for heating design.
+Inside relative humidity for heating design.

@@ -1,1 +1,1 @@
-﻿Flange top fillet of the profile.
+Flange top fillet of the profile.

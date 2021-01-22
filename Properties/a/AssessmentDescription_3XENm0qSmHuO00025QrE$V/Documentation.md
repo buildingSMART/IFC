@@ -1,1 +1,1 @@
-﻿Qualitative description of the condition.
+Qualitative description of the condition.

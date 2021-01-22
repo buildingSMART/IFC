@@ -1,4 +1,4 @@
-﻿A covering is an element which covers some part of another element and is fully dependent on that other element. The _IfcCovering_ defines the occurrence of a covering type, that (if given) is expressed by the _IfcCoveringType_.
+A covering is an element which covers some part of another element and is fully dependent on that other element. The _IfcCovering_ defines the occurrence of a covering type, that (if given) is expressed by the _IfcCoveringType_.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO ISO 6707-1: final coverings and treatments of surfaces and their intersections.

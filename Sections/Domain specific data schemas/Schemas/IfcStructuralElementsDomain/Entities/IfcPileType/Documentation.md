@@ -1,4 +1,4 @@
-﻿The building element type **IfcPileType** defines commonly shared information for occurrences of piles. The set of shared information may include:
+The building element type **IfcPileType** defines commonly shared information for occurrences of piles. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

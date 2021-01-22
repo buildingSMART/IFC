@@ -1,1 +1,1 @@
-﻿Weight of the duct segment.
+Weight of the duct segment.

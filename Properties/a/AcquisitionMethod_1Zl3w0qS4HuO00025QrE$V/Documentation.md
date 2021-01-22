@@ -1,1 +1,1 @@
-﻿The means by which survey data was acquired.
+The means by which survey data was acquired.

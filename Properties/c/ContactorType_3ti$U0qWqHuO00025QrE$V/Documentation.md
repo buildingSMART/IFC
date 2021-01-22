@@ -1,4 +1,4 @@
-﻿A list of the available types of contactor from which that required may be selected where:
+A list of the available types of contactor from which that required may be selected where:
 
 CapacitorSwitching: for switching 3 phase single or multi-step capacitor banks.
 LowCurrent: requires the use of low resistance contacts.

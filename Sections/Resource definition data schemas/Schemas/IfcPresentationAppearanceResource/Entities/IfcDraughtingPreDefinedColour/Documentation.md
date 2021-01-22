@@ -1,4 +1,4 @@
-﻿The draughting pre defined colour is a pre defined colour for the purpose to identify a colour by name. Allowable names are:
+The draughting pre defined colour is a pre defined colour for the purpose to identify a colour by name. Allowable names are:
 
 * 'black',
 * 'red',

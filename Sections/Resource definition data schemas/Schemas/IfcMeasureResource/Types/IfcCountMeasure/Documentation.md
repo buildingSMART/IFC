@@ -1,4 +1,4 @@
-﻿A count measure is the value of a count of items.
+A count measure is the value of a count of items.
 
 Type: NUMBER
 

@@ -1,1 +1,1 @@
-﻿Base quantities that are common to the definition of all occurrences of distribution chamber elements.
+Base quantities that are common to the definition of all occurrences of distribution chamber elements.

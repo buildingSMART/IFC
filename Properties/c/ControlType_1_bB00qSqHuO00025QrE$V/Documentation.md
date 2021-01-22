@@ -1,4 +1,4 @@
-﻿The type of signal modification effected and applicable ports:
+The type of signal modification effected and applicable ports:
 
 INPUT: Controller element is a dedicated input.
 OUTPUT: Controller element is a dedicated output.

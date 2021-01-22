@@ -1,1 +1,1 @@
-﻿The pitch length of the short inside center top bar.
+The pitch length of the short inside center top bar.

@@ -1,1 +1,1 @@
-﻿Nominal or quoted width of the object.
+Nominal or quoted width of the object.

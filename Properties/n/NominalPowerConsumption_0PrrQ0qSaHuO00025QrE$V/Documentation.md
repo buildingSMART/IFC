@@ -1,1 +1,1 @@
-﻿Nominal total power consumption.
+Nominal total power consumption.

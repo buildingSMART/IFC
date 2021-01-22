@@ -1,1 +1,1 @@
-﻿Is it free hanging type (not mounted in a false ceiling)?
+Is it free hanging type (not mounted in a false ceiling)?

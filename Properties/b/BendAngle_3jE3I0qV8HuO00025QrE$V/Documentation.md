@@ -1,1 +1,1 @@
-﻿The change of direction of flow.
+The change of direction of flow.

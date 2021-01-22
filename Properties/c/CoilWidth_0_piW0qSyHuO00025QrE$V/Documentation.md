@@ -1,1 +1,1 @@
-﻿Width of coil.
+Width of coil.

@@ -1,1 +1,1 @@
-﻿Indication whether the glass is layered with other materials (TRUE) or not (FALSE).
+Indication whether the glass is layered with other materials (TRUE) or not (FALSE).

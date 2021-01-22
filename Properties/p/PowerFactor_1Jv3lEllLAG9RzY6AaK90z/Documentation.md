@@ -1,1 +1,1 @@
-﻿Power factor.
+Power factor.

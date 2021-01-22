@@ -1,1 +1,1 @@
-﻿Fraction of the total heat transfer rate as the radiant heat transfer.
+Fraction of the total heat transfer rate as the radiant heat transfer.

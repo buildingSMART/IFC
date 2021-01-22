@@ -1,1 +1,1 @@
-﻿Refrigerant condensing temperature.
+Refrigerant condensing temperature.

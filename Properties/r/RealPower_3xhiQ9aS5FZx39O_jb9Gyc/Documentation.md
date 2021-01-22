@@ -1,1 +1,1 @@
-﻿Real power.
+Real power.

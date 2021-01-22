@@ -1,4 +1,4 @@
-﻿An _IfcCivilElementType_ is used to define an element specification of an element used within civil engineering works. Civil element types include for different types of element that may be used to represent information for construction works external to a building. _IfcCivilElementType_'s may include:
+An _IfcCivilElementType_ is used to define an element specification of an element used within civil engineering works. Civil element types include for different types of element that may be used to represent information for construction works external to a building. _IfcCivilElementType_'s may include:
 
 * linear elements such as sections of a roadway (including carriageway/pavement, verge, median, marker line, kerb etc.);
 * elements for connections and junctions including traffic roundabouts, T junctions, 4 way junctions; 

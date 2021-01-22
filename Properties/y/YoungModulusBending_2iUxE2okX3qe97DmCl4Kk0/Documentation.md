@@ -1,1 +1,1 @@
-﻿Defining values: α; defined values: elastic modulus in bending.
+Defining values: α; defined values: elastic modulus in bending.

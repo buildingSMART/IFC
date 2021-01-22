@@ -1,4 +1,4 @@
-﻿The _IfcProductDefinitionShape_ defines all shape relevant information about an _IfcProduct_. It allows for multiple geometric shape representations of the same product. The shape relevant information includes:
+The _IfcProductDefinitionShape_ defines all shape relevant information about an _IfcProduct_. It allows for multiple geometric shape representations of the same product. The shape relevant information includes:
 
 * the shape representation including geometric representation items (for 3D solids, 2D annotations, etc.) and: 
     * associated presentation information (line color, line type, surface rendering properties)

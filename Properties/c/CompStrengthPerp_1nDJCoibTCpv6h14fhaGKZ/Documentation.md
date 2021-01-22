@@ -1,1 +1,1 @@
-﻿Compressive strength, α=90°.
+Compressive strength, α=90°.

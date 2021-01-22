@@ -1,4 +1,4 @@
-﻿The end-style treatment of the pipe port:
+The end-style treatment of the pipe port:
 
 BRAZED: Brazed. 
 COMPRESSION: Compression. 

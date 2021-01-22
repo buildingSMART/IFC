@@ -1,1 +1,1 @@
-﻿A starter is a switch which in the closed position controls the application of power to an electrical device.
+A starter is a switch which in the closed position controls the application of power to an electrical device.

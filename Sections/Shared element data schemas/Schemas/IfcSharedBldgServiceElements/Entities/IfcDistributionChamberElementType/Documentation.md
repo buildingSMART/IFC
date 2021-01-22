@@ -1,4 +1,4 @@
-﻿The distribution flow element type **IfcDistributionChamberElementType** defines commonly shared information for occurrences of distribution chamber elements. The set of shared information may include:
+The distribution flow element type **IfcDistributionChamberElementType** defines commonly shared information for occurrences of distribution chamber elements. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

@@ -1,4 +1,4 @@
-﻿The _IfcHvacDomain_ schema defines basic object concepts required for interoperability within the heating, ventilating and air conditioning (HVAC) domain. It extends concepts defined in the _IfcSharedBldgServiceElements_ schema.
+The _IfcHvacDomain_ schema defines basic object concepts required for interoperability within the heating, ventilating and air conditioning (HVAC) domain. It extends concepts defined in the _IfcSharedBldgServiceElements_ schema.
 
 The scope of the _IfcHvacDomain_ schema is defined as:
 

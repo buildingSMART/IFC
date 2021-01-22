@@ -1,4 +1,4 @@
-﻿{#purpose .num}
+{#purpose .num}
 ### Purpose of the Bridge Design Transfer View
 The purpose of the Bridge Design Transfer View is to provide building information with support for editing of interconnected elements. Such applications enable inserting, deleting, moving, and modifying physical building elements and spaces. The target scenario is that a preliminary design model is transferred to an engineer of a particular discipline, where geometric modifications may need to be made.
 

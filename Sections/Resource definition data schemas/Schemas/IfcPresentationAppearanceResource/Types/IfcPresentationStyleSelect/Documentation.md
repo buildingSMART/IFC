@@ -1,4 +1,4 @@
-﻿The _IfcPresentationStyleSelect_ provides for the selection between different presentation styles to be assigned to a styled item.
+The _IfcPresentationStyleSelect_ provides for the selection between different presentation styles to be assigned to a styled item.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-46:1992  

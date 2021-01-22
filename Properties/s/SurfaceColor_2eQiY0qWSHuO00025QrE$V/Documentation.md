@@ -1,1 +1,1 @@
-﻿The color of the surface.
+The color of the surface.

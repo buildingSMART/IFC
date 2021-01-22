@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcOpenCrossProfileDef" UniqueId="933c4cf0-b722-40f5-9d39-ddae9fd99a6d" BaseDefinition="IfcProfileDef" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="HorizontalWidths" UniqueId="f460eed7-9cad-4747-8fb6-7305c4caed98" DefinedType="IfcBoolean">
+			<Documentation>Indicates if the widths shall be measured horizontally or along the slopes.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Widths" UniqueId="922409dc-b8ca-4e99-8906-05f49162b6cc" DefinedType="IfcNonNegativeLengthMeasure" AggregationType="1" AggregationLower="1" AggregationUpper="?">
+			<Documentation>The horizontal widths (when HorizontalWidths=.T.) or distances along the Slope (when HorizontalWidths=.F.)  for the segments in the profile. And if Horizontal=.T. the Slopes shall not be = +/- 90 deg.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Slopes" UniqueId="fb6dbe81-99cb-4c60-bbba-4f7662acd218" DefinedType="IfcPlaneAngleMeasure" AggregationType="1" AggregationLower="1" AggregationUpper="?">
+			<Documentation>The slope measure.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Tags" UniqueId="e0750c4d-1efe-493d-9699-706d8d0bc7d6" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="1" AggregationLower="2" AggregationUpper="?">
+			<Documentation></Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectProfileType" UniqueId="10dd9554-1c37-4ebe-8fef-7ef0951568dd">
+			<Expression>SELF\IfcProfileDef.ProfileType = IfcProfileTypeEnum.CURVE</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrespondingSlopeWidths" UniqueId="e0d839ff-187e-49d5-ad0e-e3be90e8f21d">
+			<Expression>SIZEOF(Slopes) = SIZEOF(Widths)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrespondingTags" UniqueId="5c8937a2-2cb8-4ca9-8723-b18b4439bd1e">
+			<Expression>(NOT EXISTS (Tags)) OR (SIZEOF(Tags) = (SIZEOF(Slopes) + 1))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,1 +1,1 @@
-﻿The contractual type of the work.
+The contractual type of the work.

@@ -1,4 +1,4 @@
-﻿An _IfcEvent_ is something that happens that triggers an action or response.
+An _IfcEvent_ is something that happens that triggers an action or response.
 
 > HISTORY&nbsp; New entity in IFC4
 

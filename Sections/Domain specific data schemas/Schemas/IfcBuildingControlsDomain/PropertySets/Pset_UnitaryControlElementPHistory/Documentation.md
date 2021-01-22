@@ -1,1 +1,1 @@
-﻿Properties for history and operating schedules of thermostats.  HISTORY: Added in IFC4.
+Properties for history and operating schedules of thermostats.  HISTORY: Added in IFC4.

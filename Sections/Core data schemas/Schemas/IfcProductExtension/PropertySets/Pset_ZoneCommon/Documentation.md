@@ -1,1 +1,1 @@
-﻿Properties common to the definition of all occurrences of IfcZone.
+Properties common to the definition of all occurrences of IfcZone.

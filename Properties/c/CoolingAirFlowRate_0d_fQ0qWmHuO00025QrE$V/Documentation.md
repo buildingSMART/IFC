@@ -1,1 +1,1 @@
-﻿Cooling air flow rate in the space.
+Cooling air flow rate in the space.

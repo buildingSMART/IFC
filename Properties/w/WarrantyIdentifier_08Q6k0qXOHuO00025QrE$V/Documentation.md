@@ -1,1 +1,1 @@
-﻿The identifier assigned to a warranty.
+The identifier assigned to a warranty.

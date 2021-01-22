@@ -1,1 +1,1 @@
-﻿Productive time using the equipment including operating time and excluding idle time.
+Productive time using the equipment including operating time and excluding idle time.

@@ -1,1 +1,1 @@
-﻿Draft side offset of the profile.
+Draft side offset of the profile.

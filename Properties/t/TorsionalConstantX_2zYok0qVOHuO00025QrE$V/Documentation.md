@@ -1,1 +1,1 @@
-﻿Torsional constant about xs. For example measured in mm4.
+Torsional constant about xs. For example measured in mm4.

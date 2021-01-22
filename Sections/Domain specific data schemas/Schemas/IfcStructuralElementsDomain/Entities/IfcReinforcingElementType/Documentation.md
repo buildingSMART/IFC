@@ -1,4 +1,4 @@
-﻿The element component type **IfcReinforcingElementType** defines commonly shared information for occurrences of reinforcing elements. The set of shared information may include:
+The element component type **IfcReinforcingElementType** defines commonly shared information for occurrences of reinforcing elements. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

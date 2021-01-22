@@ -1,1 +1,1 @@
-﻿Latent heat transfer rate.
+Latent heat transfer rate.

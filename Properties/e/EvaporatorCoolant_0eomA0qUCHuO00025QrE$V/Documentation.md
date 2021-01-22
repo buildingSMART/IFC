@@ -1,1 +1,1 @@
-﻿The fluid used for the coolant in the evaporator.
+The fluid used for the coolant in the evaporator.

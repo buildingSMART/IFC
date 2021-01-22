@@ -1,1 +1,1 @@
-﻿The nominal diameter of the pipe segment.
+The nominal diameter of the pipe segment.

@@ -1,4 +1,4 @@
-﻿The objectified relationship _IfcRelAssignsToProcess_ handles the assignment of one or many objects to a process or activity. An object can be a product that is the item the process operates on. Processes and activities can operate on things other than products, and can operate in ways other than input and output.
+The objectified relationship _IfcRelAssignsToProcess_ handles the assignment of one or many objects to a process or activity. An object can be a product that is the item the process operates on. Processes and activities can operate on things other than products, and can operate in ways other than input and output.
 
 > EXAMPLE&nbsp; It may be common to define processes during estimating or scheduling that describe design tasks (resulting in documents), procurement tasks (resulting in construction materials), planning tasks (resulting in processes), etc. Furthermore, the ways in which process can operate on something might include "installs", "finishes", "transports", "removes", etc. The ways are described as operation types.
 
@@ -8,5 +8,5 @@ The inherited attribute _RelatedObjects_ gives the references to the objects, or
 
 > HISTORY&nbsp; New entity in IFC1.5. Has been renamed from IfcRelProcessOperatesOn in IFC2x.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; The data type _RelatingProcess_ has been extended to cover also _IfcTypeProcess_

@@ -1,1 +1,1 @@
-﻿For ports distributing power, indicates function of the conductors to which the load is connected.
+For ports distributing power, indicates function of the conductors to which the load is connected.

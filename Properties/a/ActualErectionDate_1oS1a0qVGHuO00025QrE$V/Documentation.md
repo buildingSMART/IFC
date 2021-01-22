@@ -1,1 +1,1 @@
-﻿Date erected.
+Date erected.

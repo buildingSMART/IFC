@@ -1,1 +1,1 @@
-﻿Fan power consumption.
+Fan power consumption.

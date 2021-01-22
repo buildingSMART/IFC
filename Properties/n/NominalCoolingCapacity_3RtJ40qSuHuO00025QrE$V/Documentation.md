@@ -1,1 +1,1 @@
-﻿Nominal cooling capacity.
+Nominal cooling capacity.

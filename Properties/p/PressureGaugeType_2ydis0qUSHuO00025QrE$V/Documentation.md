@@ -1,1 +1,1 @@
-﻿Identifies the means by which pressure is displayed.
+Identifies the means by which pressure is displayed.

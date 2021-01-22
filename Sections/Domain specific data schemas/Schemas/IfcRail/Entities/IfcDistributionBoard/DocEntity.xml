@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcDistributionBoard" UniqueId="a721822d-2cbd-456f-8867-a69515d99d8f" BaseDefinition="IfcFlowController" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="2a2a4e6f-d34d-470f-b20b-936ec2b2cfde" DefinedType="IfcDistributionBoardTypeEnum" AttributeFlags="1">
+			<Documentation></Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="08154462-9992-4c65-a56d-992a3e43d1db">
+			<Documentation>Either the _PredefinedType_ attribute is unset(e.g. because an _IfcDistributionBoardType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+(PredefinedType &lt;&gt; IfcDistributionBoardTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcDistributionBoardTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="ab15c6d8-e0f8-4f31-a5c0-085d3d5f7516">
+			<Documentation>Either there is no type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcDistributionBoardType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+(&apos;IFCRAIL.IFCDISTRIBUTIONBOARDTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,1 +1,1 @@
-﻿The pitch length of the crossing lower bar.
+The pitch length of the crossing lower bar.

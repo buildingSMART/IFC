@@ -1,1 +1,1 @@
-﻿Space heater performance history common attributes.
+Space heater performance history common attributes.

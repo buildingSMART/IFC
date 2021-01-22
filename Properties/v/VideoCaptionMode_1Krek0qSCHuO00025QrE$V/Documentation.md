@@ -1,1 +1,1 @@
-﻿Indicates closed captioning modes.
+Indicates closed captioning modes.

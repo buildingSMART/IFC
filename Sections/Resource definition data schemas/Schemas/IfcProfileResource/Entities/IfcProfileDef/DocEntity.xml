@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcProfileDef" Name="IfcProfileDef" UniqueId="6721f13a-680a-41f0-b994-52e18d901eb5" EntityFlags="237">
 	<Localization>
 		<DocLocalization Locale="de" Name="Profil" />
@@ -11,6 +11,7 @@
 		<DocSubtype UniqueId="8877825f-955f-4a13-83e9-a8ada4d205c8" DefinedType="IfcArbitraryClosedProfileDef" />
 		<DocSubtype UniqueId="d19fe143-df7d-4013-a43f-f5b5c351aeb3" DefinedType="IfcCompositeProfileDef" />
 		<DocSubtype UniqueId="52249217-e2cf-4f7d-af99-3bf036a6c076" DefinedType="IfcDerivedProfileDef" />
+		<DocSubtype UniqueId="d9cbd8ce-b7f0-4dc0-bddd-f1e70c2d4a2a" DefinedType="IfcOpenCrossProfileDef" />
 	</Subtypes>
 	<Attributes>
 		<DocAttribute Name="ProfileType" UniqueId="c31d0cfe-9eec-49ef-8912-0879d1a77343" DefinedType="IfcProfileTypeEnum">
@@ -21,12 +22,12 @@
 		</DocAttribute>
 		<DocAttribute Name="HasExternalReference" UniqueId="5384e4ff-9e84-45c1-bd5f-b6e037852b2e" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="32" AggregationType="3" Inverse="RelatedResourceObjects">
 			<Documentation>Reference to external information, e.g. library, classification, or document information, which is associated with the profile.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE New inverse attribute</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="HasProperties" UniqueId="68f7e99c-a629-41eb-9442-f3ad71ab2ea7" DefinedType="IfcProfileProperties" AggregationType="3" Inverse="ProfileDefinition" XsdFormat="element">
 			<Documentation>Additional properties of the profile, for example mechanical properties.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE New inverse attribute</Documentation>
 		</DocAttribute>
 	</Attributes>

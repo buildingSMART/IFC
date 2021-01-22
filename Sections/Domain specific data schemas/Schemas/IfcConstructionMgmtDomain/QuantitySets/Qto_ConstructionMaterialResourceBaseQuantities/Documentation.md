@@ -1,1 +1,1 @@
-﻿Base quantities that are common to the definition of all occurrences of construction material resources.
+Base quantities that are common to the definition of all occurrences of construction material resources.

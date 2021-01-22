@@ -1,1 +1,1 @@
-﻿Supply water temperature in heating mode.
+Supply water temperature in heating mode.

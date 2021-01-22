@@ -1,1 +1,1 @@
-﻿Type of dishwasher.
+Type of dishwasher.

@@ -1,1 +1,1 @@
-﻿The outlet diameter of the breeching inlet.
+The outlet diameter of the breeching inlet.

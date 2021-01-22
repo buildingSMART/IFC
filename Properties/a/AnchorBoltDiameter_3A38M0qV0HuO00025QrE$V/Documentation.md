@@ -1,1 +1,1 @@
-﻿The nominal diameter of the anchor bolt bar(s).
+The nominal diameter of the anchor bolt bar(s).

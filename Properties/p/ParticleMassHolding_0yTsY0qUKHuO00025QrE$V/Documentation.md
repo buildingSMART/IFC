@@ -1,1 +1,1 @@
-﻿Mass of particle holding in the filter.
+Mass of particle holding in the filter.

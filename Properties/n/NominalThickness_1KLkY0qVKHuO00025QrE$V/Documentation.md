@@ -1,1 +1,1 @@
-﻿The nominal overall thickness of the slab.
+The nominal overall thickness of the slab.

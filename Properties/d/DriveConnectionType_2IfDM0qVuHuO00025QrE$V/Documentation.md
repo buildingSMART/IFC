@@ -1,4 +1,4 @@
-﻿The way the pump drive mechanism is connected to the pump.
+The way the pump drive mechanism is connected to the pump.
 
 DIRECTDRIVE: Direct drive. 
 BELTDRIVE: Belt drive. 

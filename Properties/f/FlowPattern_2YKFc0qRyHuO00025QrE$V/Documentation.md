@@ -1,1 +1,1 @@
-﻿Flow pattern.
+Flow pattern.

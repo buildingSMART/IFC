@@ -1,1 +1,1 @@
-﻿Total area of the cross section (or profile) of the footing.
+Total area of the cross section (or profile) of the footing.

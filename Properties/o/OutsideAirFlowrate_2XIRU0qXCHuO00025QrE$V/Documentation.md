@@ -1,1 +1,1 @@
-﻿Flow rate of outside air entering the unit.
+Flow rate of outside air entering the unit.

@@ -1,1 +1,1 @@
-﻿Indicates how the space heater is designed to be placed.
+Indicates how the space heater is designed to be placed.

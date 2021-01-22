@@ -1,1 +1,1 @@
-﻿Compressor type common attributes.
+Compressor type common attributes.

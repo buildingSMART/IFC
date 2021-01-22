@@ -1,1 +1,1 @@
-﻿Available panel types from which that required may be selected.
+Available panel types from which that required may be selected.

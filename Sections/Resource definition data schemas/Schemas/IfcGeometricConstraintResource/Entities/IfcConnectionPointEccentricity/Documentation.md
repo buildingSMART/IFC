@@ -1,4 +1,4 @@
-﻿_IfcConnectionPointEccentricity_ is used to describe the geometric constraints that facilitate the physical connection of two objects at a point or vertex point with associated point coordinates. There is a physical distance, or eccentricity, etween the connection points of both object. The eccentricity can be either given by:
+_IfcConnectionPointEccentricity_ is used to describe the geometric constraints that facilitate the physical connection of two objects at a point or vertex point with associated point coordinates. There is a physical distance, or eccentricity, etween the connection points of both object. The eccentricity can be either given by:
 
 * providing the _PointOnRelatingElement_ and the _PointOnRelatedElement_, where both point coordinates are not identical within a common parent coordinate system (latestly within the world coordinate system),
 * providing the _PointOnRelatingElement_ and the three distance measures, _EccentricityInX_, _EccentricityInY_, and _EccentricityInZ_ (or only _EccentricityInX_, and _EccentricityInY_ if the underlying coordinate system is two-dimensional), or

@@ -1,1 +1,1 @@
-﻿The desgnation on the device for the adjustment.
+The desgnation on the device for the adjustment.

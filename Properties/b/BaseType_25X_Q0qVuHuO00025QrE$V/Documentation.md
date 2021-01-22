@@ -1,4 +1,4 @@
-﻿Defines general types of pump bases.
+Defines general types of pump bases.
 
 FRAME: Frame. 
 BASE: Base. 

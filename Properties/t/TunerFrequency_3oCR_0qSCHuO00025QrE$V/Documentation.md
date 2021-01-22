@@ -1,1 +1,1 @@
-﻿Indicates the tuner frequencies, if applicable.
+Indicates the tuner frequencies, if applicable.

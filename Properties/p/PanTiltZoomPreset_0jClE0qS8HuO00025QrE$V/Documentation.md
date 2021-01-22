@@ -1,1 +1,1 @@
-﻿Indicates pan/tilt/zoom position presets.
+Indicates pan/tilt/zoom position presets.

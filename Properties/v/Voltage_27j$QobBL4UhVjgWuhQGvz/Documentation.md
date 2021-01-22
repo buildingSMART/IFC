@@ -1,1 +1,1 @@
-﻿The actual voltage and operable range.
+The actual voltage and operable range.

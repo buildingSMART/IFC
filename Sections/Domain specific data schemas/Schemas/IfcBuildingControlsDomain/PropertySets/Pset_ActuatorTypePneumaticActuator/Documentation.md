@@ -1,1 +1,1 @@
-﻿A device that pneumatically actuates a control element
+A device that pneumatically actuates a control element

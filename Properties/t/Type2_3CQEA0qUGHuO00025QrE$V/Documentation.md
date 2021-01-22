@@ -1,1 +1,1 @@
-﻿See Type1.
+See Type1.

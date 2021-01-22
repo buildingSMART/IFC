@@ -1,4 +1,4 @@
-﻿The _IfcBuildingElementProxy_ is a proxy definition that provides the same functionality as subtypes of _IfcBuildingElement_, but without having a predefined meaning of the special type of building element, it represents.
+The _IfcBuildingElementProxy_ is a proxy definition that provides the same functionality as subtypes of _IfcBuildingElement_, but without having a predefined meaning of the special type of building element, it represents.
 
 Proxies can also be used as spatial place holders or provisions, that are later replaced by special types of elements.
 

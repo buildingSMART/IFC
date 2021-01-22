@@ -1,4 +1,4 @@
-﻿The building element type **IfcShadingDeviceType** defines commonly shared information for occurrences of shading devices. The set of shared information may include:
+The building element type **IfcShadingDeviceType** defines commonly shared information for occurrences of shading devices. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

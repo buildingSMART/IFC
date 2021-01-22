@@ -1,1 +1,1 @@
-﻿This enumeration defines the different types of alignments.
+This enumeration defines the different types of alignments.

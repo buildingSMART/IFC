@@ -1,1 +1,1 @@
-﻿Center core top width of the profile.
+Center core top width of the profile.

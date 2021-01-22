@@ -1,1 +1,1 @@
-﻿Loads from the relative humidity.
+Loads from the relative humidity.

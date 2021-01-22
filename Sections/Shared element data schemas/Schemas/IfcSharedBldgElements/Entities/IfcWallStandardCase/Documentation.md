@@ -1,4 +1,4 @@
-﻿The _IfcWallStandardCase_ defines a wall with certain constraints for the provision of parameters and with certain constraints for the geometric representation. The _IfcWallStandardCase_ handles all cases of walls, that are extruded vertically:
+The _IfcWallStandardCase_ defines a wall with certain constraints for the provision of parameters and with certain constraints for the geometric representation. The _IfcWallStandardCase_ handles all cases of walls, that are extruded vertically:
 
 * along the positive z axis of the wall object coordinate system, and
 * along the positve z axis of the global (world) coordinate system

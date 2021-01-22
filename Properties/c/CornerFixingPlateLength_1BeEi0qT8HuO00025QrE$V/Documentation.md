@@ -1,1 +1,1 @@
-﻿The length of the L-shaped corner plate.
+The length of the L-shaped corner plate.

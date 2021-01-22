@@ -1,1 +1,1 @@
-﻿Elastic modulus, minimal value, α=0°.
+Elastic modulus, minimal value, α=0°.

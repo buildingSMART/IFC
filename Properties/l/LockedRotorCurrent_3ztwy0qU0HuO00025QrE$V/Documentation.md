@@ -1,1 +1,1 @@
-﻿Input current when a motor armature is energized but not rotating.
+Input current when a motor armature is energized but not rotating.

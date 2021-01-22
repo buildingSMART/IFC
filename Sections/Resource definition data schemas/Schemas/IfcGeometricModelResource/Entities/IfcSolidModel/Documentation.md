@@ -1,4 +1,4 @@
-﻿An _IfcSolidModel_ represents the 3D shape by different types of solid model representations. It is the common abstract supertype of Boundary representation, CSG representation, Sweeping representation and other suitable solid representation schemes.
+An _IfcSolidModel_ represents the 3D shape by different types of solid model representations. It is the common abstract supertype of Boundary representation, CSG representation, Sweeping representation and other suitable solid representation schemes.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  

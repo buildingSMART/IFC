@@ -1,1 +1,1 @@
-﻿The scheduled completion percentage of the allocation.
+The scheduled completion percentage of the allocation.

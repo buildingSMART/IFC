@@ -1,1 +1,1 @@
-﻿Control damper position, ranging from 0 to 1.
+Control damper position, ranging from 0 to 1.

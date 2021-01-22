@@ -1,1 +1,1 @@
-﻿Filter performance history attributes.
+Filter performance history attributes.

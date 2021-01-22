@@ -1,4 +1,4 @@
-﻿The reinforcing element type **IfcReinforcingMeshType** defines commonly shared information for occurrences of reinforcing meshs. The set of shared information may include:
+The reinforcing element type **IfcReinforcingMeshType** defines commonly shared information for occurrences of reinforcing meshs. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

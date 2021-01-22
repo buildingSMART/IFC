@@ -1,4 +1,4 @@
-﻿The _IfcPropertyTemplate_ is an abstract supertype comprising the templates for all dynamically extensible properties, either as an _IfcComplexPropertyTemplate_, or an _IfcSimplePropertyTemplate_. These templates determine the structure of:
+The _IfcPropertyTemplate_ is an abstract supertype comprising the templates for all dynamically extensible properties, either as an _IfcComplexPropertyTemplate_, or an _IfcSimplePropertyTemplate_. These templates determine the structure of:
 
 * in case of _IfcComplexPropertyTemplate_ 
     * an _IfcComplexProperty_

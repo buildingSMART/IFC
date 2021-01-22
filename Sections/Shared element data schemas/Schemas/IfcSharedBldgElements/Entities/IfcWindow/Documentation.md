@@ -1,4 +1,4 @@
-﻿The window is a building element that is predominately used to provide natural light and fresh air. It includes vertical opening but also horizontal opening such as skylights or light domes. It includes constructions with swinging, pivoting, sliding, or revolving panels and fixed panels. A window consists of a lining and one or several panels.
+The window is a building element that is predominately used to provide natural light and fresh air. It includes vertical opening but also horizontal opening such as skylights or light domes. It includes constructions with swinging, pivoting, sliding, or revolving panels and fixed panels. A window consists of a lining and one or several panels.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO 6707-1  
@@ -34,7 +34,7 @@ The actual parameter of the window and/or its shape is defined at the _IfcWindow
 
 > HISTORY&nbsp; New entity in IFC1.0.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; The attributes _PredefinedType_ and _OperationType_ are added, the applicable type object has been changed to _IfcDoorType_.
 
 { .use-head}

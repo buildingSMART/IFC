@@ -1,1 +1,1 @@
-﻿Distance cooled beam throws the air.
+Distance cooled beam throws the air.

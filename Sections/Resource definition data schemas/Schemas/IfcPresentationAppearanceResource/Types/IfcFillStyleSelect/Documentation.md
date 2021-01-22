@@ -1,4 +1,4 @@
-﻿The _IfcFillStyleSelect_ provides a selection between a simple fill colour, a hatching, a tiling or an externally defined hatch style as presentation styles for a styled item.
+The _IfcFillStyleSelect_ provides a selection between a simple fill colour, a hatching, a tiling or an externally defined hatch style as presentation styles for a styled item.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-46:1992  

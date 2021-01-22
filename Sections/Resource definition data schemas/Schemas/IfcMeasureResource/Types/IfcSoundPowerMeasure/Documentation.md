@@ -1,4 +1,4 @@
-﻿A sound power measure is a measure of total radiated noise with units of watts (sonic energy per time unit).
+A sound power measure is a measure of total radiated noise with units of watts (sonic energy per time unit).
 
 Type: REAL
 

@@ -1,1 +1,1 @@
-﻿Expected service life in years.
+Expected service life in years.

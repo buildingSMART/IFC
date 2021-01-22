@@ -1,4 +1,4 @@
-﻿Refrigerant class used by the condenser.
+Refrigerant class used by the condenser.
 
 CFC: Chlorofluorocarbons.
 HCFC: Hydrochlorofluorocarbons.

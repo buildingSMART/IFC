@@ -1,4 +1,4 @@
-﻿Motor drive type:
+Motor drive type:
 DIRECTDRIVE: Direct drive. 
 BELTDRIVE: Belt drive. 
 COUPLING: Coupling. 

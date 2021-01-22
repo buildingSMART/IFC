@@ -1,4 +1,4 @@
-﻿The circular arc segment uses the inherited attributes _StartPoint_ as the start of the circular arc, _StartDirection_ as the tangent at the start point and _SegmentLength_ as the arc length.
+The circular arc segment uses the inherited attributes _StartPoint_ as the start of the circular arc, _StartDirection_ as the tangent at the start point and _SegmentLength_ as the arc length.
 
 &nbsp;
 

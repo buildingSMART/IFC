@@ -1,1 +1,1 @@
-﻿The date on which the warranty commences.
+The date on which the warranty commences.

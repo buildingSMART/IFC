@@ -1,1 +1,1 @@
-﻿The type of addressability.
+The type of addressability.

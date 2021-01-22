@@ -1,1 +1,1 @@
-﻿A list of the available types of load disconnection from which that required may be selected.
+A list of the available types of load disconnection from which that required may be selected.

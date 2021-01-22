@@ -1,4 +1,4 @@
-﻿An element is a generalization of all components that make up an AEC product.
+An element is a generalization of all components that make up an AEC product.
 
 Elements are physically existent objects, although they might be void elements, such as holes. Elements either remain permanently in the AEC product, or only temporarily, as formwork does. Elements can be either assembled on site or pre-manufactured and built in on site.
 

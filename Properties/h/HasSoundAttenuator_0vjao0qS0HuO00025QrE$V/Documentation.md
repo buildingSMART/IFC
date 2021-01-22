@@ -1,1 +1,1 @@
-﻿If TRUE, the air terminal has sound attenuation.
+If TRUE, the air terminal has sound attenuation.

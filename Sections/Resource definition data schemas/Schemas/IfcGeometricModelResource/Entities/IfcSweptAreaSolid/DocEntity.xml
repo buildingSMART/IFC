@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSweptAreaSolid" Name="IfcSweptAreaSolid" UniqueId="1bfb8302-5211-4de4-a3b9-20e200cf1097" BaseDefinition="IfcSolidModel" EntityFlags="205">
 	<Localization>
 		<DocLocalization Locale="de" Name="Festkörper - Entlang einem Pfad extrudiert" />
@@ -9,6 +9,8 @@
 		<DocSubtype UniqueId="00e87347-436b-41b3-bfab-c09477823008" DefinedType="IfcRevolvedAreaSolid" />
 		<DocSubtype UniqueId="b8aa1c27-902d-49aa-8fa5-f8769c608c0e" DefinedType="IfcSurfaceCurveSweptAreaSolid" />
 		<DocSubtype UniqueId="238766a3-5214-4d50-97e5-f049d24e29c4" DefinedType="IfcFixedReferenceSweptAreaSolid" />
+		<DocSubtype UniqueId="9e6b8485-ecee-4180-9316-c30547950f8c" DefinedType="IfcDirectrixCurveSweptAreaSolid" />
+		<DocSubtype UniqueId="f6a520c5-cd36-4db8-9e84-260bc607d9e9" DefinedType="IfcDirectrixDistanceSweptAreaSolid" />
 	</Subtypes>
 	<Attributes>
 		<DocAttribute Name="SweptArea" UniqueId="1c1cfe35-c525-4b8e-967a-78258ff390f3" DefinedType="IfcProfileDef" XsdFormat="attribute">
@@ -16,7 +18,7 @@
 		</DocAttribute>
 		<DocAttribute Name="Position" UniqueId="fccab43b-72fa-486a-b491-6d2133f1474b" DefinedType="IfcAxis2Placement3D" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Position coordinate system for the resulting swept solid of the sweeping operation. The position coordinate system allows for re-positioning of the swept solid. If not provided, the swept solid remains within the position as determined by the cross section or by the directrix used for the sweeping operation.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute has been changed to OPTIONAL with upward compatibility for file-based exchange.</Documentation>
 		</DocAttribute>
 	</Attributes>

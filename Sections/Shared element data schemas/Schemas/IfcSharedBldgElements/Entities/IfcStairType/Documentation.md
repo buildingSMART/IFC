@@ -1,4 +1,4 @@
-﻿The building element type _IfcStairType_ defines commonly shared information for occurrences of stairs. The set of shared information may include:
+The building element type _IfcStairType_ defines commonly shared information for occurrences of stairs. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

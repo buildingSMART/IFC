@@ -1,1 +1,1 @@
-﻿External surface area (both primary and secondary area).
+External surface area (both primary and secondary area).

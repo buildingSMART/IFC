@@ -1,4 +1,4 @@
-﻿An _IfcCompositeCurve_ is a continuous curve composed of curve segments.
+An _IfcCompositeCurve_ is a continuous curve composed of curve segments.
 
 Figure 1 illustrates an example of a composite curve.
 

@@ -1,1 +1,1 @@
-﻿Total area of the outer lining of the window.
+Total area of the outer lining of the window.

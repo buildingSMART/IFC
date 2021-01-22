@@ -1,1 +1,1 @@
-﻿Shape properties common to column shoes.
+Shape properties common to column shoes.

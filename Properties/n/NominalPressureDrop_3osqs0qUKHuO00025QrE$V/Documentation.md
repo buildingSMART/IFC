@@ -1,1 +1,1 @@
-﻿Total pressure drop across the filter.
+Total pressure drop across the filter.

@@ -1,4 +1,4 @@
-﻿A property with an enumerated value, _IfcPropertyEnumeratedValue_, defines a property object which has a value assigned that is chosen from an enumeration. It defines a property - value combination for which the property _Name_, an optional _Description_, the optional _EnumerationValues_ with measure type and optionally an _Unit_ is given.
+A property with an enumerated value, _IfcPropertyEnumeratedValue_, defines a property object which has a value assigned that is chosen from an enumeration. It defines a property - value combination for which the property _Name_, an optional _Description_, the optional _EnumerationValues_ with measure type and optionally an _Unit_ is given.
 
 > NOTE&nbsp; Multiple choices from the property enumeration are supported.
 
@@ -78,5 +78,5 @@ It is not mandatory to use an instance of _IfcPropertyEnumeration_ to hold the a
 { .change-ifc2x}
 > IFC2x CHANGE&nbsp; Entity has been renamed from IfcEnumeratedProperty
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; Attribute _EnumerationValues_ has been made OPTIONAL with upward compatibility for file based exchange.

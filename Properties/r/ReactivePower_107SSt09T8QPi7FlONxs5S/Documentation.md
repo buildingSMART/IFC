@@ -1,1 +1,1 @@
-﻿Reactive power.
+Reactive power.

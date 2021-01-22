@@ -1,1 +1,1 @@
-﻿Pipe fitting type attributes for junction shapes.
+Pipe fitting type attributes for junction shapes.

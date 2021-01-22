@@ -1,4 +1,4 @@
-﻿An _IfcBoundaryCurve_ defines a curve acting as the boundary of a surface.
+An _IfcBoundaryCurve_ defines a curve acting as the boundary of a surface.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  

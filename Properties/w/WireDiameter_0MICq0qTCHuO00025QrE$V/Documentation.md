@@ -1,1 +1,1 @@
-﻿The nominal diameter of the wire.
+The nominal diameter of the wire.

@@ -1,1 +1,1 @@
-﻿The pitch length of the horizontal bar.
+The pitch length of the horizontal bar.

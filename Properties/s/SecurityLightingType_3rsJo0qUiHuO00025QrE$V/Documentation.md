@@ -1,1 +1,1 @@
-﻿The type of security lighting.
+The type of security lighting.

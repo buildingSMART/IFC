@@ -1,1 +1,1 @@
-﻿Shape of the junction box.
+Shape of the junction box.

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcElement" Name="IfcElement" UniqueId="9ab3f33b-7e80-4290-afe5-1e7a055cd3ac" BaseDefinition="IfcProduct" EntityFlags="205">
 	<Localization>
 		<DocLocalization Locale="de" Name="Element (allgemein)" />
@@ -15,6 +15,7 @@
 		<DocSubtype UniqueId="6d8f6504-a71c-4379-ab06-7768772b6aa2" DefinedType="IfcVirtualElement" />
 		<DocSubtype UniqueId="912913e0-34ab-4160-b27c-f75de437b6bf" DefinedType="IfcGeographicElement" />
 		<DocSubtype UniqueId="221a2ec2-146f-4239-a7f7-7d8365dab37b" DefinedType="IfcCivilElement" />
+		<DocSubtype UniqueId="f1797700-36bc-4e6f-ac85-e62a3b6545f0" DefinedType="IfcGeotechnicalElement" />
 	</Subtypes>
 	<Attributes>
 		<DocAttribute Name="Tag" UniqueId="dcdb600f-7074-41a2-b876-9fb8a9bdb8ec" DefinedType="IfcIdentifier" AttributeFlags="1">
@@ -30,23 +31,18 @@
 			<Documentation>Reference to the interference relationship to indicate the element that is interfered. The relationship, if provided, indicates that this element has an interference with one or many other elements.
 &gt; NOTE&amp;nbsp; There is no indication of precedence between _IsInterferedByElements_ and _InterferesElements_.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE New inverse relationship.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="InterferesElements" UniqueId="458d5013-ddf1-45f7-b9e5-f043c827ad9c" DefinedType="IfcRelInterferesElements" AggregationType="3" Inverse="RelatingElement">
 			<Documentation>Reference to the interference relationship to indicate the element that interferes. The relationship, if provided, indicates that this element has an interference with one or many other elements.
 &gt; NOTE&amp;nbsp; There is no indication of precedence between _IsInterferedByElements_ and _InterferesElements_.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE New inverse relationship.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="HasProjections" UniqueId="4faee8d9-3beb-4087-9728-11eb04b2e9dd" DefinedType="IfcRelProjectsElement" AggregationType="3" Inverse="RelatingElement" XsdFormat="element">
 			<Documentation>Projection relationship that adds a feature (using a Boolean union) to the _IfcBuildingElement_.</Documentation>
-		</DocAttribute>
-		<DocAttribute Name="ReferencedInStructures" UniqueId="f72e6148-b614-4908-b276-5d15ac3222ce" DefinedType="IfcRelReferencedInSpatialStructure" AggregationType="3" Inverse="RelatedElements">
-			<Documentation>Reference relationship to the spatial structure element, to which the element is additionally associated. This relationship may not be hierarchical, an element may be referenced by zero, one or many spatial structure elements.
-{ .change-ifc2x3}
-&gt; IFC2x3 CHANGE&amp;nbsp; The inverse attribute has been added with upward compatibility for file based exchange.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="HasOpenings" UniqueId="887366e1-d446-4f3b-8643-605d00ce2c16" DefinedType="IfcRelVoidsElement" AggregationType="3" AggregationLower="0" AggregationUpper="?" Inverse="RelatingBuildingElement" XsdFormat="element">
 			<Documentation>Reference to the _IfcRelVoidsElement_ relationship that creates an opening in an element. An element can incorporate zero-to-many openings. For each opening, that voids the element, a new relationship _IfcRelVoidsElement_ is generated.</Documentation>

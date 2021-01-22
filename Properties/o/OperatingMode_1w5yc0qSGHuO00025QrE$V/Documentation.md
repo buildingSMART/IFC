@@ -1,1 +1,1 @@
-﻿Identifies the operating mode of the boiler.
+Identifies the operating mode of the boiler.

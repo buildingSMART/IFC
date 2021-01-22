@@ -1,4 +1,4 @@
-﻿The planar surface is an unbounded surface in the direction of _x_ and _y_. Bounded planar surfaces are defined by using a subtype of _IfcBoundedSurface_ with _BasisSurface_ being a plane.
+The planar surface is an unbounded surface in the direction of _x_ and _y_. Bounded planar surfaces are defined by using a subtype of _IfcBoundedSurface_ with _BasisSurface_ being a plane.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  

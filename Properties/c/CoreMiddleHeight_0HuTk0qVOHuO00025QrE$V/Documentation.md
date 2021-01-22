@@ -1,1 +1,1 @@
-﻿Core middle height of the profile.
+Core middle height of the profile.

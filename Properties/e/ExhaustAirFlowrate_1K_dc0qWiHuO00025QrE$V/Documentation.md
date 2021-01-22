@@ -1,1 +1,1 @@
-﻿Design exhaust air flow rate for the space.
+Design exhaust air flow rate for the space.

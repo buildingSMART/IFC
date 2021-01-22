@@ -1,4 +1,4 @@
-﻿The _IfcBSplineSurfaceWithKnots_ is a general form of rational or polynomial parametric surface in which the knot values are explicitly given.
+The _IfcBSplineSurfaceWithKnots_ is a general form of rational or polynomial parametric surface in which the knot values are explicitly given.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  

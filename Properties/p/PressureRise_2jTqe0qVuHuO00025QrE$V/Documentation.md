@@ -1,1 +1,1 @@
-﻿The developed pressure.
+The developed pressure.

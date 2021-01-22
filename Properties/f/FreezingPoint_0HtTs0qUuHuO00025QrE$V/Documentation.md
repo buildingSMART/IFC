@@ -1,1 +1,1 @@
-﻿The freezing point of the material (fluid).
+The freezing point of the material (fluid).

@@ -1,1 +1,1 @@
-﻿Enumeration defining how the air handler might be fabricated.
+Enumeration defining how the air handler might be fabricated.

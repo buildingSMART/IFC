@@ -1,4 +1,4 @@
-﻿The flow controller type **IfcFlowMeterType** defines commonly shared information for occurrences of flow meters. The set of shared information may include:
+The flow controller type **IfcFlowMeterType** defines commonly shared information for occurrences of flow meters. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

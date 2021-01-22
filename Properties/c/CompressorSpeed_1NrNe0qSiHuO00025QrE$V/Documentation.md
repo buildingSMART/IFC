@@ -1,1 +1,1 @@
-﻿Compressor speed.
+Compressor speed.

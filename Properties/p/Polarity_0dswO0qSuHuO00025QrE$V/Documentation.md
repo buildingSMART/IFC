@@ -1,1 +1,1 @@
-﻿True indicates normal polarity; False indicates reverse polarity.
+True indicates normal polarity; False indicates reverse polarity.

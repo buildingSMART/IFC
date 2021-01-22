@@ -1,4 +1,4 @@
-﻿An inventory is a list of items within an enterprise.
+An inventory is a list of items within an enterprise.
 
 Various types of inventory can be included. These are identified by the range of values within the inventory type enumeration which includes space, asset, and furniture. User defined inventories can also be defined for lists of particular types of element such as may be required in operating and maintenance instructions. Such inventories should be constrained to contain a list of elements of a restricted type.  
   
@@ -8,5 +8,5 @@ There are a number of costs that can be associated with an inventory, each cost 
 
 > HISTORY&nbsp; New entity in IFC2.0.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; All attributes optional, Where Rule removed.

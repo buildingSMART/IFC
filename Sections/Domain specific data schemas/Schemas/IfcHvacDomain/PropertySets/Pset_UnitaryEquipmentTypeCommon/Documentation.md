@@ -1,1 +1,1 @@
-﻿Unitary equipment type common attributes.
+Unitary equipment type common attributes.

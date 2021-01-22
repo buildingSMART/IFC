@@ -1,1 +1,1 @@
-﻿Total surface area of the cable.
+Total surface area of the cable.

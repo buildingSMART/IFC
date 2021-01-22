@@ -1,4 +1,4 @@
-﻿Returns the first choice, if TRUE, otherwise the second choice.
+Returns the first choice, if TRUE, otherwise the second choice.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  

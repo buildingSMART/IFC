@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcShapeAspect" UniqueId="d0b09671-0848-4353-9710-4312d56ffea7" EntityFlags="237">
 	<Localization>
 		<DocLocalization Locale="de" Name="Form - Aspekt" />
@@ -25,7 +25,7 @@ EXAMPLE: Would be FALSE for a center line, identified as shape aspect; would be 
 		</DocAttribute>
 		<DocAttribute Name="PartOfProductDefinitionShape" UniqueId="26d2bffa-08ab-4f51-8c1b-5240f92fc434" DefinedType="IfcProductRepresentationSelect" AttributeFlags="1" XsdFormat="hidden">
 			<Documentation>Reference to the _IfcProductDefinitionShape_ or the _IfcRepresentationMap_ of which this shape is an aspect.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; Data type modified to be _IfcProductRepresentationSelect_ allowing the assignment also to _IfcRepresentationMap_.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="HasExternalReferences" UniqueId="85686d70-e65d-4c7d-b5ff-80615d570e42" DefinedType="IfcExternalReferenceRelationship" AggregationType="3" AggregationLower="0" AggregationUpper="?" Inverse="RelatedResourceObjects">

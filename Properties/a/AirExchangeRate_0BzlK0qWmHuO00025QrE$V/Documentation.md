@@ -1,1 +1,1 @@
-﻿Loads from the air exchange rate.
+Loads from the air exchange rate.

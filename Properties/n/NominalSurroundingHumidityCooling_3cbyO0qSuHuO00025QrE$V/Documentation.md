@@ -1,1 +1,1 @@
-﻿Nominal surrounding humidity (refers to nominal cooling capacity).
+Nominal surrounding humidity (refers to nominal cooling capacity).

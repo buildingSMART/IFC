@@ -1,4 +1,4 @@
-﻿The _IfcTriangulatedFaceSet_ is a tessellated face set with all faces being bound by triangles. The faces are constructed by implicit polylines defined by three Cartesian points. Depending on the value of the attribute _Closed_ the instance of _IfcTriangulatedFaceSet_ represents:
+The _IfcTriangulatedFaceSet_ is a tessellated face set with all faces being bound by triangles. The faces are constructed by implicit polylines defined by three Cartesian points. Depending on the value of the attribute _Closed_ the instance of _IfcTriangulatedFaceSet_ represents:
 
 * if TRUE, a boundary represention (or B-rep);
 * if FALSE, a face based surface representation.

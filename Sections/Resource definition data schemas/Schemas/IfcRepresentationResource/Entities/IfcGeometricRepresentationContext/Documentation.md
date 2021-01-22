@@ -1,4 +1,4 @@
-﻿The _IfcGeometricRepresentationContext_ defines the context that applies to several shape representations of products within a project. It defines the type of the context in which the shape representation is defined, and the numeric precision applicable to the geometric representation items defined in this context. In addition it can be used to offset the project coordinate system from a global point of origin, using the _WorldCoordinateSystem_ attribute. The main representation context may also provide the true north direction, see Figure 1.
+The _IfcGeometricRepresentationContext_ defines the context that applies to several shape representations of products within a project. It defines the type of the context in which the shape representation is defined, and the numeric precision applicable to the geometric representation items defined in this context. In addition it can be used to offset the project coordinate system from a global point of origin, using the _WorldCoordinateSystem_ attribute. The main representation context may also provide the true north direction, see Figure 1.
 
 <table border="0" summary="true north">
  <tr>
@@ -24,7 +24,6 @@
 
 The use of one instance of _IfcGeometricRepresentationContext_ to represent the model (3D) view is mandatory, the use of a second instance of _IfcGeometricRepresentationContext_ to represent the plan (2D) view is optional (but needs to be given, if there are scale dependent plan views), the additional scale or view dependent contexts need to be handled by using the subtype _IfcGeometricRepresentationSubContext_ pointing to the model view (or the plan view) as the _ParentContext_. See Figure 2 for an example using geometric representation contexts for 3D and 2D with assigned sub contexts.
 
-> NOTE&nbsp; The inherited attribute _ContextIdentifier_ shall have a value that matches _IfcShapeRepresentation.RepresentationIdentifier_. For example 'Body', 'Annotation', or 'Axis'.
 > NOTE&nbsp; The inherited attribute _ContextType_ shall have one of the following recognized values: 'Model', 'Plan', 'NotDefined'.
 
 &nbsp;
@@ -57,5 +56,5 @@ The use of one instance of _IfcGeometricRepresentationContext_ to represent the 
 { .change-ifc2x3}
 > IFC2x3 CHANGE&nbsp; Applicable values for _ContextType_ are only 'Model', 'Plan', and 'NotDefined'. All other contexts are now handled by _IfcGeometricRepresentationSubContext_.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; Mapping to Geographic coordinate system added by inverse attribute _HasCoordinateOperation_.

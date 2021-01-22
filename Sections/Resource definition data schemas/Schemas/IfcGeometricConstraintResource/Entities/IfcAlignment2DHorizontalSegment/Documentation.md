@@ -1,4 +1,4 @@
-﻿Individual segment along the _IfcAlignment2DHorizontal_, being defined in the x/y coordinate space. Each single horizontal alignment segment has an associated curve geometry. The following segment curve types are defined by the _CurveGeometry_:
+Individual segment along the _IfcAlignment2DHorizontal_, being defined in the x/y coordinate space. Each single horizontal alignment segment has an associated curve geometry. The following segment curve types are defined by the _CurveGeometry_:
 
 * for line segment - _IfcLineSegment2D_
 * circular arc segment - _IfcCircularArcSegment2D_

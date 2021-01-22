@@ -1,1 +1,1 @@
-﻿The relative humidity of the space.
+The relative humidity of the space.

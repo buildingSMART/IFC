@@ -1,1 +1,1 @@
-﻿The ratio of output capacity to intake capacity.
+The ratio of output capacity to intake capacity.

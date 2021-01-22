@@ -1,1 +1,1 @@
-﻿The person making the request, where known.
+The person making the request, where known.

@@ -1,4 +1,4 @@
-﻿The mechanism by which the valve function is achieved where:
+The mechanism by which the valve function is achieved where:
 
 BALL: Valve that has a ported ball that can be turned relative to the body seat ports.
 BUTTERFLY: Valve in which a streamlined disc pivots about a diametric axis.

@@ -1,1 +1,1 @@
-﻿The nominal diameter of the straight cross-bars.
+The nominal diameter of the straight cross-bars.

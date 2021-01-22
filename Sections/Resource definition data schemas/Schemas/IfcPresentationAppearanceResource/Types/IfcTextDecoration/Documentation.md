@@ -1,4 +1,4 @@
-﻿The _IfcTextDecoration_ describes decorations that are added to the text of an element. Values are:
+The _IfcTextDecoration_ describes decorations that are added to the text of an element. Values are:
 
 * none
 * underline

@@ -1,1 +1,1 @@
-﻿Distance visible to the right of the access.
+Distance visible to the right of the access.

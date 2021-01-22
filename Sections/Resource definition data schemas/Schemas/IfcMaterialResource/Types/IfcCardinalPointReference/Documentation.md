@@ -1,4 +1,4 @@
-﻿An _IfcCardinalPointReference_ is an index reference to significant points of a section profile. This index is used to describe the spatial relationship between the section of a member and a reference axis of the same member.
+An _IfcCardinalPointReference_ is an index reference to significant points of a section profile. This index is used to describe the spatial relationship between the section of a member and a reference axis of the same member.
 
 > HISTORY  New Type in IFC4.
 

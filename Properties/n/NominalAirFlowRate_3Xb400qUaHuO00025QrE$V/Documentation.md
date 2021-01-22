@@ -1,1 +1,1 @@
-﻿Nominal rate of air flow into which water vapor is added.
+Nominal rate of air flow into which water vapor is added.

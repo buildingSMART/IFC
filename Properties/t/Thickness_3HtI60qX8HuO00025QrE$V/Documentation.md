@@ -1,1 +1,1 @@
-﻿Thickness of the fin.
+Thickness of the fin.

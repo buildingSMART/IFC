@@ -1,4 +1,4 @@
-﻿An _IfcSweptDiskSolid_ represents the 3D shape by a sweeping representation scheme allowing a two dimensional circularly bounded plane to sweep along a three dimensional _Directrix_ through space.
+An _IfcSweptDiskSolid_ represents the 3D shape by a sweeping representation scheme allowing a two dimensional circularly bounded plane to sweep along a three dimensional _Directrix_ through space.
 
 The _StartParam_ and _EndParam_ parameter are optional, if not provided they default to the start and end of the _Directrix_. Only if the _Directrix_ is given by a bounded or by a closed curve, it is permissible to omit the values of _StartParam_ and _EndParam_.
 
@@ -24,7 +24,7 @@ Figure 1 illustrates an example.
 
 > HISTORY&nbsp; New entity in IFC2x2.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; The attribute _StartParam_ and _EndParam_ have been made optional.
 
 { .spec-head}

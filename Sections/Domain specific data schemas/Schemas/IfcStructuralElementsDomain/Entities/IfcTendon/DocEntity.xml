@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcTendon" Name="IfcTendon" UniqueId="33cccfc5-2da4-42df-8cac-9c14b6d955a6" BaseDefinition="IfcReinforcingElement" EntityFlags="229">
 	<Localization>
 		<DocLocalization Locale="de" Name="Spannglied" />
@@ -9,19 +9,19 @@
 		<DocAttribute Name="PredefinedType" UniqueId="8bf9e3ad-01c9-436e-a415-02119d9e681e" DefinedType="IfcTendonTypeEnum" AttributeFlags="1">
 			<Documentation>Predefined generic types for a tendon.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; Attribute made optional.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="NominalDiameter" UniqueId="769d5dcc-353b-448a-a5f9-3ff7b462d814" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
 			<Documentation>The nominal diameter defining the cross-section size of the tendon.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; Attribute made optional and deprecated. Use respective attribute at _IfcTendonType_ instead.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="CrossSectionArea" UniqueId="f2710ff8-a1a9-46f2-bbc1-5b12b313be27" DefinedType="IfcAreaMeasure" AttributeFlags="1">
 			<Documentation>The effective cross-section area of the tendon.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; Attribute made optional and deprecated. Use respective attribute at _IfcTendonType_ instead.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="TensionForce" UniqueId="361cb1c1-156f-4fd7-b742-88f20ba76a5d" DefinedType="IfcForceMeasure" AttributeFlags="1">

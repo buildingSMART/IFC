@@ -1,1 +1,1 @@
-﻿Controller type common attributes.
+Controller type common attributes.

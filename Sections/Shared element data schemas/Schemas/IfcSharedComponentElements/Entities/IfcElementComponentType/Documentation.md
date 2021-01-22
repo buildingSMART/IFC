@@ -1,4 +1,4 @@
-﻿The element type **IfcElementComponentType** defines commonly shared information for occurrences of element components. The set of shared information may include:
+The element type **IfcElementComponentType** defines commonly shared information for occurrences of element components. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

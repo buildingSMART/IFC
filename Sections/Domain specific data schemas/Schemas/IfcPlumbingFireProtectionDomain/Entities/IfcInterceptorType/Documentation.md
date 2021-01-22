@@ -1,4 +1,4 @@
-﻿The flow treatment device type **IfcInterceptorType** defines commonly shared information for occurrences of interceptors. The set of shared information may include:
+The flow treatment device type **IfcInterceptorType** defines commonly shared information for occurrences of interceptors. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

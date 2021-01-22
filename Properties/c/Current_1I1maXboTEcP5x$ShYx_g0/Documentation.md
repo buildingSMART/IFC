@@ -1,1 +1,1 @@
-﻿The actual current and operable range.
+The actual current and operable range.

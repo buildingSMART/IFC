@@ -1,1 +1,1 @@
-﻿Maximum working pressure.
+Maximum working pressure.

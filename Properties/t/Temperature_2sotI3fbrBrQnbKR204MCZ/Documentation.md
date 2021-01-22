@@ -1,1 +1,1 @@
-﻿Temperature of the fluid.
+Temperature of the fluid.

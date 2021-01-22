@@ -1,4 +1,4 @@
-﻿An _IfcCartesianTransformationOperator_ defines a geometric transformation in three-dimensional space.
+An _IfcCartesianTransformationOperator_ defines a geometric transformation in three-dimensional space.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  

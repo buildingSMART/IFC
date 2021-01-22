@@ -1,4 +1,4 @@
-﻿Defines the type of connection at the fan discharge.
+Defines the type of connection at the fan discharge.
 
 Duct: Discharge into ductwork.
 Screen: Discharge into screen outlet.

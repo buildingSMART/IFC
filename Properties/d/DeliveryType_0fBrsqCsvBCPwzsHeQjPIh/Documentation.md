@@ -1,1 +1,1 @@
-﻿Determines how the accessory will be delivered to the site.
+Determines how the accessory will be delivered to the site.

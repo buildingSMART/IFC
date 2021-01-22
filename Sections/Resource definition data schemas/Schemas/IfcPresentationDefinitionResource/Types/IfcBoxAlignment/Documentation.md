@@ -1,4 +1,4 @@
-﻿The box alignment specifies the alignment of the text box relative to its position. The following string values shall be used:
+The box alignment specifies the alignment of the text box relative to its position. The following string values shall be used:
 
 * top-left
 * top-middle

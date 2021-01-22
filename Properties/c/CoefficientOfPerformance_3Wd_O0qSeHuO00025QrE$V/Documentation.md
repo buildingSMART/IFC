@@ -1,1 +1,1 @@
-﻿Coefficient of performance (COP).
+Coefficient of performance (COP).

@@ -1,4 +1,4 @@
-﻿The _IfcRelServicesBuildings_ is an objectified relationship that defines the relationship between a system and the sites, buildings, storeys, spaces, or spatial zones, it serves. Examples of systems are:
+The _IfcRelServicesBuildings_ is an objectified relationship that defines the relationship between a system and the sites, buildings, storeys, spaces, or spatial zones, it serves. Examples of systems are:
 
 * building service systems (heating, cooling, waste water system) represented by instances of _IfcDistributionSystem_; 
 * building systems (fenestration, shading) represented by instances of _IfcBuildingSystem_; 

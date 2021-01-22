@@ -1,1 +1,1 @@
-﻿The content of the warranty.
+The content of the warranty.

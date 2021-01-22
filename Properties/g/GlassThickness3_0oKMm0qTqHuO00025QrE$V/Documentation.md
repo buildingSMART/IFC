@@ -1,1 +1,1 @@
-﻿Thickness of the third (outer) glass layer.
+Thickness of the third (outer) glass layer.

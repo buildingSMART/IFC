@@ -1,1 +1,1 @@
-﻿Type of sealant used on the duct and fittings.
+Type of sealant used on the duct and fittings.

@@ -1,4 +1,4 @@
-﻿The resource schema _IfcUtilityResource_ deals with the general concepts of Ownership and Change. It also includes a basic information construct: Tables. The classes of this schema are referenced throughout the whole IFC Object Model by all of its model layers. The _IfcUtilityResource_ schema consequently contains model specifications for specifying the information content of a number of utility types.
+The resource schema _IfcUtilityResource_ deals with the general concepts of Ownership and Change. It also includes a basic information construct: Tables. The classes of this schema are referenced throughout the whole IFC Object Model by all of its model layers. The _IfcUtilityResource_ schema consequently contains model specifications for specifying the information content of a number of utility types.
 
 This schema contains the following concepts:
 

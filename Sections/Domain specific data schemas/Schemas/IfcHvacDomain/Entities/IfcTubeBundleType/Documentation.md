@@ -1,4 +1,4 @@
-﻿The energy conversion device type **IfcTubeBundleType** defines commonly shared information for occurrences of tube bundles. The set of shared information may include:
+The energy conversion device type **IfcTubeBundleType** defines commonly shared information for occurrences of tube bundles. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

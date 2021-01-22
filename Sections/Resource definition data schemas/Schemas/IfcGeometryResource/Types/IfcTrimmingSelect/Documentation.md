@@ -1,4 +1,4 @@
-﻿The IfcTrimmingSelect allows for a choice between two ways of trimming a curve.
+The IfcTrimmingSelect allows for a choice between two ways of trimming a curve.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  

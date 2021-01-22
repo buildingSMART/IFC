@@ -1,4 +1,4 @@
-﻿A roof is the covering of the top part of a building, it protects the building against the effects of wheather.
+A roof is the covering of the top part of a building, it protects the building against the effects of wheather.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO 6707-1: construction enclosing the building from above.
@@ -14,5 +14,5 @@ The _IfcRoof_ shall either be represented:
 
 > HISTORY&nbsp; New entity in IFC2.0.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; Attribute _ShapeType_ renamed to _PredefinedType_.

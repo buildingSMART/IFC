@@ -1,1 +1,1 @@
-﻿Total surface area of the element.
+Total surface area of the element.

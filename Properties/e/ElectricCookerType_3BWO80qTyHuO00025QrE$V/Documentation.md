@@ -1,1 +1,1 @@
-﻿Type of electric cooker.
+Type of electric cooker.

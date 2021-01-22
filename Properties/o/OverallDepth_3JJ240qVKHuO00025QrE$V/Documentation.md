@@ -1,1 +1,1 @@
-﻿Overall depth of the profile.
+Overall depth of the profile.

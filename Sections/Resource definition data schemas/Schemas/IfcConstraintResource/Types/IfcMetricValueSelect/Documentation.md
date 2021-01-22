@@ -1,4 +1,4 @@
-﻿_IfcMetricValueSelect_ is a select type that enables selection of the data type for the value component of an _IfcMetric_.
+_IfcMetricValueSelect_ is a select type that enables selection of the data type for the value component of an _IfcMetric_.
 
 Types are used as follows:
 
@@ -11,5 +11,5 @@ Types are used as follows:
 
 > HISTORY&nbsp; New type in IFC2.0.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; IfcValue added, which includes removed IfcDateTime and IfcText; IfcReference added.

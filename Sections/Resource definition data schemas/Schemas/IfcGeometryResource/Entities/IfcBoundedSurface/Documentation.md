@@ -1,4 +1,4 @@
-﻿An _IfcBoundedSurface_ is a surface of finite area.
+An _IfcBoundedSurface_ is a surface of finite area.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
@@ -8,7 +8,7 @@
 
 > HISTORY&nbsp; New entity in IFC2x
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE Entity made abstract.
 
 { .spec-head}

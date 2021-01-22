@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcClassification" Name="IfcClassification" UniqueId="86dd2655-910b-4394-9cd1-3478de9e1798" BaseDefinition="IfcExternalInformation" EntityFlags="237">
 	<Localization>
 		<DocLocalization Locale="de" Name="Klassifikationssystem" />
@@ -14,14 +14,14 @@
 			<Documentation>The edition or version of the classification system from which the classification notation is derived.
 &gt; NOTE&amp;nbsp; the version labeling system is specific to the classification system.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE The attribute has been changed to be optional.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="EditionDate" UniqueId="f59698df-a014-4cac-9b67-5ca649051dfa" DefinedType="IfcDate" AttributeFlags="1">
 			<Documentation>The date on which the edition of the classification used became valid.
 &gt; NOTE&amp;nbsp; The indication of edition may be sufficient to identify the classification source uniquely but the edition date is provided as an optional attribute to enable more precise identification where required.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE The data type has been changed to _IfcDate_, the date string according to ISO8601.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="Name" UniqueId="85cb5672-fa71-455e-b1ab-7ab4259f6b9c" DefinedType="IfcLabel">
@@ -30,12 +30,12 @@
 		</DocAttribute>
 		<DocAttribute Name="Description" UniqueId="60678a0a-cb22-4814-a99e-b13fb1a3eb07" DefinedType="IfcText" AttributeFlags="1">
 			<Documentation>Additional description provided for the classification.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute added at the end of the attribute list.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="Location" UniqueId="420c7a7d-5921-456f-b645-20a0b62bf121" DefinedType="IfcURIReference" AttributeFlags="1">
 			<Documentation>Resource identifier or locator, provided as URI, URN or URL, of the classification.  
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute added at the end of the attribute list.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="ReferenceTokens" UniqueId="fa9292d9-ac78-4c50-9cca-c5c5171cdbe1" DefinedType="IfcIdentifier" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0" XsdFormat="element">
@@ -51,12 +51,12 @@ conjuction with _IfcClassificationReference_&apos;s. If only one _ReferenceToken
 
 &gt; EXAMPLE&amp;nbsp;2 The use of _ReferenceTokens_ can also be extended to include masks. The use need to be agreed in view definitions or implementer agreements that stipulates a &quot;mask syntax&quot; that should be used.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; New attribute added at the end of the attribute list.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="ClassificationForObjects" UniqueId="4d93c948-effe-49fa-b9d7-d6aaae000629" DefinedType="IfcRelAssociatesClassification" AttributeFlags="32" AggregationType="3" Inverse="RelatingClassification">
 			<Documentation>The classification with which objects are associated.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; New inverse attribute.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="HasReferences" UniqueId="35467369-dd27-41ae-99ba-466f5c1e23ab" DefinedType="IfcClassificationReference" AggregationType="3" Inverse="ReferencedSource" XsdFormat="element">

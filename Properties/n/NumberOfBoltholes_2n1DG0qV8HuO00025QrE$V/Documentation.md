@@ -1,1 +1,1 @@
-﻿Number of boltholes in the flange.
+Number of boltholes in the flange.

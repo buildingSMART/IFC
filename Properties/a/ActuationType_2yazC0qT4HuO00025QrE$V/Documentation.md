@@ -1,1 +1,1 @@
-﻿Enumeration that identifies the different types of dampers.
+Enumeration that identifies the different types of dampers.

@@ -1,1 +1,1 @@
-﻿The actual power consumption of the pump.
+The actual power consumption of the pump.

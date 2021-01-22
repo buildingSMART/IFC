@@ -1,4 +1,4 @@
-﻿{#purpose .num}
+{#purpose .num}
 ### Purpose of the Design Transfer View
 The purpose of the Design Transfer View is to provide building information with support for editing of interconnected elements. Such applications enable inserting, deleting, moving, and modifying physical building elements and spaces. The target scenario is an architect providing building design information to an engineer for a particular discipline, where geometric modifications may need to be made.
 

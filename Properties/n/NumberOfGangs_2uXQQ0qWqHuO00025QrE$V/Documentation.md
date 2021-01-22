@@ -1,1 +1,1 @@
-﻿Number of gangs/buttons on this switch.
+Number of gangs/buttons on this switch.

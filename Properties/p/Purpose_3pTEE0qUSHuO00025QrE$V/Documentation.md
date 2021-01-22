@@ -1,1 +1,1 @@
-﻿Enumeration defining the purpose of the flow meter occurrence.
+Enumeration defining the purpose of the flow meter occurrence.

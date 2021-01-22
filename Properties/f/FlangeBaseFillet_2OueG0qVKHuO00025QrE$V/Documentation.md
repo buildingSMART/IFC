@@ -1,1 +1,1 @@
-﻿Flange base fillet of the profile.
+Flange base fillet of the profile.

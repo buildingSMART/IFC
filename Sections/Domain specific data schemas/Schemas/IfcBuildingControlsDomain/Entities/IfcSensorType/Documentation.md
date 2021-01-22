@@ -1,4 +1,4 @@
-﻿The distribution control element type **IfcSensorType** defines commonly shared information for occurrences of sensors. The set of shared information may include:
+The distribution control element type **IfcSensorType** defines commonly shared information for occurrences of sensors. The set of shared information may include:
 
 * common properties with shared property sets
 * common representations

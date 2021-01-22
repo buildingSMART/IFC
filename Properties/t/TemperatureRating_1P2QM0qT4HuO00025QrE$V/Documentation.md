@@ -1,1 +1,1 @@
-﻿Temperature rating.
+Temperature rating.

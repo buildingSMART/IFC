@@ -1,1 +1,1 @@
-﻿The thermal conductivity of the tube.
+The thermal conductivity of the tube.

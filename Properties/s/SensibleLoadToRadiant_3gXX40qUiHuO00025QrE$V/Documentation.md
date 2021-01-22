@@ -1,1 +1,1 @@
-﻿Percent of sensible thermal load to radiant heat.
+Percent of sensible thermal load to radiant heat.

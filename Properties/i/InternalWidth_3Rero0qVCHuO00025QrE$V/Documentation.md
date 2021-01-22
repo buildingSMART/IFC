@@ -1,1 +1,1 @@
-﻿The internal width of the culvert.
+The internal width of the culvert.

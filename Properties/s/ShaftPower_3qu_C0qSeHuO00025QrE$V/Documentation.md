@@ -1,1 +1,1 @@
-﻿The actual shaft power input to the compressor.
+The actual shaft power input to the compressor.

@@ -1,1 +1,1 @@
-﻿Properties common to the definition of all occurrences of IfcRailing.
+Properties common to the definition of all occurrences of IfcRailing.

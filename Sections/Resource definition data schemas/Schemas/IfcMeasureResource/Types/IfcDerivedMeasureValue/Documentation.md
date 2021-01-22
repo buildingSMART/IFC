@@ -1,4 +1,4 @@
-﻿_IfcDerivedMeasureValue_ is a select type for selecting between derived measure types.
+_IfcDerivedMeasureValue_ is a select type for selecting between derived measure types.
 
 SELECT
 
@@ -76,5 +76,5 @@ SELECT
 
 > HISTORY&nbsp; New type in IFC2x.
 
-{ .change-ifc4}
+{ .change-ifc2x4}
 > IFC4 CHANGE&nbsp; added _IfcAreaDensityMeasure_, _IfcSoundPowerLevelMeasure_, _IfcSoundPressureLevelMeasure_, _IfcTemperatureRateOfChangeMeasure_, removed _IfcTimeStamp_.

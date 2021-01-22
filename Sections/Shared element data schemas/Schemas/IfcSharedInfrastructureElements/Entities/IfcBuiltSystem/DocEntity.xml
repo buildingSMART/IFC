@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBuiltSystem" UniqueId="82d4f6fb-fd80-404d-96f2-af2fb5c64e6c" BaseDefinition="IfcSystem" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="091e3031-c454-4c42-9685-37ac7c4538ab" DefinedType="IfcBuiltSystemTypeEnum" AttributeFlags="1">
+			<Documentation></Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LongName" UniqueId="4624deb8-d8bc-4964-889e-6f107c2d1cbe" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>Long name for a built system, used for informal purposes. It should be used, if available, in conjunction with the inherited Name attribute.
+NOTE  In many scenarios the Name attribute refers to the short name or number of a built system, and the LongName refers to a descriptive name.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="f449cc22-d53e-48e7-b1d8-400b3e9ca3c6">
+			<Documentation>Either the _PredefinedType_ attribute is unset, or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+(PredefinedType &lt;&gt; IfcBuiltSystemTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcBuiltSystemTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

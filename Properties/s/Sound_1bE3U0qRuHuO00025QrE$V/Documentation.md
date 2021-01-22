@@ -1,1 +1,1 @@
-﻿Sound performance.
+Sound performance.

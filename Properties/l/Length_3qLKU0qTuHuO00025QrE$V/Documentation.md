@@ -1,1 +1,1 @@
-﻿The finished length of the silencer.
+The finished length of the silencer.

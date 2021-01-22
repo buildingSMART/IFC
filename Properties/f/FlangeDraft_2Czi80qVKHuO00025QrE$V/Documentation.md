@@ -1,1 +1,1 @@
-﻿Flange draft of the profile.
+Flange draft of the profile.

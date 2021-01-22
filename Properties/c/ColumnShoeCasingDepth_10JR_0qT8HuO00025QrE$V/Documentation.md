@@ -1,1 +1,1 @@
-﻿The depth of the column shoe casing.
+The depth of the column shoe casing.

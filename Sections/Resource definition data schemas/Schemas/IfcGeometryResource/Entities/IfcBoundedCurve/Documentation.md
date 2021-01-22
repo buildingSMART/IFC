@@ -1,4 +1,4 @@
-﻿An _IfcBoundedCurve_ is a curve of finite length.
+An _IfcBoundedCurve_ is a curve of finite length.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  

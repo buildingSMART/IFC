@@ -1,1 +1,1 @@
-﻿Indicates the display contrast ratio.
+Indicates the display contrast ratio.

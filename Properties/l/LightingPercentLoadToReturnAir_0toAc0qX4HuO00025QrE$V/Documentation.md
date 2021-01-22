@@ -1,1 +1,1 @@
-﻿Percent of lighting load to the return air plenum.
+Percent of lighting load to the return air plenum.

@@ -1,1 +1,1 @@
-﻿Air particulate filter media separation type.
+Air particulate filter media separation type.

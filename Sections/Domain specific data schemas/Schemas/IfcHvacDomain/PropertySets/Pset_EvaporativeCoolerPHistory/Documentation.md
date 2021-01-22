@@ -1,1 +1,1 @@
-﻿Evaporative cooler performance history attributes.
+Evaporative cooler performance history attributes.

@@ -1,1 +1,1 @@
-﻿Water filter type attributes.
+Water filter type attributes.

@@ -1,4 +1,4 @@
-﻿The map conversion deals with transforming the local engineering coordinate system, often called world coordinate system, into the coordinate reference system of the underlying map.
+The map conversion deals with transforming the local engineering coordinate system, often called world coordinate system, into the coordinate reference system of the underlying map.
 
 > NOTE&nbsp; The _IfcMapConversion_ does not handle the projection of a map from the geodetic coordinate reference system.
 

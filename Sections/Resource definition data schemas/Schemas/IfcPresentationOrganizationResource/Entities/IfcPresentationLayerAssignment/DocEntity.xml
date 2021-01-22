@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPresentationLayerAssignment" Name="IfcPresentationLayerAssignment" UniqueId="1021fba4-3bfe-4e0a-b0b5-662a3498c052" EntityFlags="229">
 	<Localization>
 		<DocLocalization Locale="de" Name="Zuordnung zu Präsentations-Layer" />
@@ -7,6 +7,7 @@
 	</Localization>
 	<Subtypes>
 		<DocSubtype UniqueId="521d82d8-ad9d-44da-aa0f-4d9e022493ea" DefinedType="IfcPresentationLayerWithStyle" />
+		<DocSubtype UniqueId="4b8ae641-0aa6-4ea7-87fd-a9db46a6e08c" DefinedType="IfcPresentationLayerWithStyle" />
 	</Subtypes>
 	<Attributes>
 		<DocAttribute Name="Name" UniqueId="87af29d2-be1e-4b15-b9ad-c509d2b4f7fa" DefinedType="IfcLabel">
@@ -25,7 +26,7 @@
 	<WhereRules>
 		<DocWhereRule Name="ApplicableItems" UniqueId="10cf5a0c-f690-4dd1-aa55-ff6327d6f97e">
 			<Documentation>The items within the set of _AssignedItems_ that can be assigned to a presentation layer shall be geometric shape representation or representation items.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The where rule has been added.</Documentation>
 			<Expression>SIZEOF(QUERY(temp &lt;* AssignedItems | (
   SIZEOF(TYPEOF(temp) * [

@@ -1,1 +1,1 @@
-﻿The length (or depth) of the damper frame.
+The length (or depth) of the damper frame.

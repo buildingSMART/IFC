@@ -1,1 +1,1 @@
-﻿Molecular weight of material (typically gas).
+Molecular weight of material (typically gas).

@@ -1,1 +1,1 @@
-﻿Nominal or design operating pressure of the tank.
+Nominal or design operating pressure of the tank.

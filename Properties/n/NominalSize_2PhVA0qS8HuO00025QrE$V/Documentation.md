@@ -1,1 +1,1 @@
-﻿Indicates the diagonal screen size.
+Indicates the diagonal screen size.

@@ -1,1 +1,1 @@
-﻿Pipe segment type common attributes.
+Pipe segment type common attributes.

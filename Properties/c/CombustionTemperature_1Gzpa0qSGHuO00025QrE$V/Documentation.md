@@ -1,1 +1,1 @@
-﻿Average combustion chamber temperature.
+Average combustion chamber temperature.

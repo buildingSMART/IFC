@@ -1,1 +1,1 @@
-﻿Slot width.
+Slot width.

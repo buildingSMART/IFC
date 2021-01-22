@@ -1,1 +1,1 @@
-﻿Name of the welding process.  Alternative to the numeric Process property.
+Name of the welding process.  Alternative to the numeric Process property.

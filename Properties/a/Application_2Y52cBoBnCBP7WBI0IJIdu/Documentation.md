@@ -1,1 +1,1 @@
-﻿The application of the unitary control element.
+The application of the unitary control element.

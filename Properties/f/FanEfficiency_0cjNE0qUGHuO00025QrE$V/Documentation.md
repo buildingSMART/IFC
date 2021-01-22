@@ -1,1 +1,1 @@
-﻿Fan mechanical efficiency.
+Fan mechanical efficiency.

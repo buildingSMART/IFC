@@ -1,1 +1,1 @@
-﻿Air flow configuration type of cooled beam.
+Air flow configuration type of cooled beam.

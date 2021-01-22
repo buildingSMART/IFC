@@ -1,1 +1,1 @@
-﻿The nominal thickness of the topping.
+The nominal thickness of the topping.

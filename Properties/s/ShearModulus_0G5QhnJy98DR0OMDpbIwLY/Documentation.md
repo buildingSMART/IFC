@@ -1,1 +1,1 @@
-﻿Shear modulus, mean value.
+Shear modulus, mean value.

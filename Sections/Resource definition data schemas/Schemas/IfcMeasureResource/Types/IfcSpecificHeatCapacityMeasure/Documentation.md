@@ -1,4 +1,4 @@
-﻿_IfcSpecificHeatCapacityMeasure_ defines the specific heat of material: The heat energy absorbed per temperature unit.
+_IfcSpecificHeatCapacityMeasure_ defines the specific heat of material: The heat energy absorbed per temperature unit.
 
 Usually measured in J / kg Kelvin.
 

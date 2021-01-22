@@ -1,1 +1,1 @@
-﻿Actual inner diameter of the tube in the tube bundle.
+Actual inner diameter of the tube in the tube bundle.

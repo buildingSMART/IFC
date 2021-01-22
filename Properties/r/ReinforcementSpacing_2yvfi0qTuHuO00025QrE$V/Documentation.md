@@ -1,1 +1,1 @@
-﻿The spacing between reinforcing elements.
+The spacing between reinforcing elements.

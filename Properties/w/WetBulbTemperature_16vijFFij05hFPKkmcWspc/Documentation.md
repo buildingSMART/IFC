@@ -1,1 +1,1 @@
-﻿Wet bulb temperature of the air.
+Wet bulb temperature of the air.

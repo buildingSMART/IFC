@@ -1,1 +1,1 @@
-﻿Total pressure drop across damper.
+Total pressure drop across damper.

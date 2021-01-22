@@ -1,1 +1,1 @@
-﻿Time factor used for exponential decrease.
+Time factor used for exponential decrease.

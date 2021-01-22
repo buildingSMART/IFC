@@ -1,4 +1,4 @@
-﻿The _IfcFontWeight_ type defines the weight of the font. Values are:
+The _IfcFontWeight_ type defines the weight of the font. Values are:
 
 * normal 
 * bold 

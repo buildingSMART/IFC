@@ -1,1 +1,1 @@
-﻿The width of the base plate.
+The width of the base plate.

@@ -1,1 +1,1 @@
-﻿Size of the bolts securing the flange.
+Size of the bolts securing the flange.

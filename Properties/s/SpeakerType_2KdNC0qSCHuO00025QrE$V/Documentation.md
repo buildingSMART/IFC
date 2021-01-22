@@ -1,1 +1,1 @@
-﻿Indicates the type of speaker.
+Indicates the type of speaker.

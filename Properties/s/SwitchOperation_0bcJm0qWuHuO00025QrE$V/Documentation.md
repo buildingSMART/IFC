@@ -1,1 +1,1 @@
-﻿Indicates operation of emergency stop switch.
+Indicates operation of emergency stop switch.

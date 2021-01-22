@@ -1,1 +1,1 @@
-﻿Properties that are applied to a definition of a protective device.
+Properties that are applied to a definition of a protective device.

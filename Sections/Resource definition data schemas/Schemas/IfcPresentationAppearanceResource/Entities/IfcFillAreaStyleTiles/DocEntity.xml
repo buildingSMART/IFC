@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcFillAreaStyleTiles" UniqueId="94e16249-95c6-4654-92c9-5cfac4e1e234" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="229">
 	<Localization>
 		<DocLocalization Locale="de" Name="Füllfläche - Kachelstil" />
@@ -7,12 +7,12 @@
 	<Attributes>
 		<DocAttribute Name="TilingPattern" UniqueId="85b936d1-2755-4739-9fd0-716ef0622f80" DefinedType="IfcVector" AggregationType="1" AggregationLower="2" AggregationUpper="2">
 			<Documentation>A two direction repeat factor defining the shape and relative positioning of the tiles.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The attribute type has changed to directly reference two _IfcVector_&apos;s.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="Tiles" UniqueId="5812d5a2-edd8-486a-8237-149034e4dcaa" DefinedType="IfcStyledItem" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>A set of constituents of the tile being a styled item that is used as the annotation symbol for tiling the filled area.
-{ .change-ifc4}
+{ .change-ifc2x4}
 &gt; IFC4 CHANGE The data type has been changed to _IfcStyledItem_.
 
 &gt; NOTE&amp;nbsp; Only _IfcStyleItem_&apos;s that refer to a compatible geometric representation item and presentation style shall be used.</Documentation>

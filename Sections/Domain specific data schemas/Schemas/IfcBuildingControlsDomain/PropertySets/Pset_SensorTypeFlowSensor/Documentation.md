@@ -1,1 +1,1 @@
-﻿A device that senses or detects flow. HISTORY: Added in IFC4.
+A device that senses or detects flow. HISTORY: Added in IFC4.

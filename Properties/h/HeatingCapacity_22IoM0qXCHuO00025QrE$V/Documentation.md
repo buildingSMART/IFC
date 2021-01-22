@@ -1,1 +1,1 @@
-﻿Heating capacity.
+Heating capacity.

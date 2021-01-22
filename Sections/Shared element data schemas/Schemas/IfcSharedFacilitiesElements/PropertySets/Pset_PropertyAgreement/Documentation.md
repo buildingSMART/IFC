@@ -1,4 +1,4 @@
-﻿A property agreement is an agreement that enables the occupation of a property for a period of time.
+A property agreement is an agreement that enables the occupation of a property for a period of time.
 
 The objective is to capture the information within an  agreement that is relevant to a facilities manager. Design and construction information associated with the property is not considered. A property agreement may be applied to an instance of IfcSpatialStructureElement including to compositions defined through the IfcSpatialStructureElement.Element.CompositionEnum.
 

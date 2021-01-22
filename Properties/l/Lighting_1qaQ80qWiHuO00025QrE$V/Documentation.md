@@ -1,1 +1,1 @@
-﻿Lighting loads.
+Lighting loads.

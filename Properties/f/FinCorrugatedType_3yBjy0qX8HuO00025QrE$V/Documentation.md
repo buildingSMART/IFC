@@ -1,1 +1,1 @@
-﻿Description of a fin corrugated type.
+Description of a fin corrugated type.

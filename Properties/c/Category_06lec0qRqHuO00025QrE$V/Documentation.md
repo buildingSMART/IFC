@@ -1,1 +1,1 @@
-﻿Designation of the category into which the actors in the population belong.
+Designation of the category into which the actors in the population belong.

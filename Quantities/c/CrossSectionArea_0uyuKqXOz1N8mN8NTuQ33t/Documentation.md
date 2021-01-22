@@ -1,1 +1,1 @@
-﻿Area of the cross section.
+Area of the cross section.

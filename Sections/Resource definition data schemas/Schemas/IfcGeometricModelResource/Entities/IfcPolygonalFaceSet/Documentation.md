@@ -1,4 +1,4 @@
-﻿The _IfcPolygonalFaceSet_ is a tessellated face set with all faces being bound by polygons. The planar faces are constructed by implicit polylines defined by three or more Cartesian points. Each planar face is defined by an instance of _IfcIndexedPolygonalFace_, or in case of faces with inner loops by _IfcIndexedPolygonalFaceWithVoids_.
+The _IfcPolygonalFaceSet_ is a tessellated face set with all faces being bound by polygons. The planar faces are constructed by implicit polylines defined by three or more Cartesian points. Each planar face is defined by an instance of _IfcIndexedPolygonalFace_, or in case of faces with inner loops by _IfcIndexedPolygonalFaceWithVoids_.
 
 Depending on the value of the attribute _Closed_ the instance of _IfcPolygonalFaceSet_ represents:
 

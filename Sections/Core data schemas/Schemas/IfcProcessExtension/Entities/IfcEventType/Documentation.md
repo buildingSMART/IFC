@@ -1,4 +1,4 @@
-﻿An _IfcEventType_ defines a particular type of event that may be specified.
+An _IfcEventType_ defines a particular type of event that may be specified.
 
 > HISTORY&nbsp; New entity in IFC4
 

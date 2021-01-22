@@ -1,1 +1,1 @@
-﻿Number of plates used by the plate heat exchanger.
+Number of plates used by the plate heat exchanger.

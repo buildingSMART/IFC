@@ -1,1 +1,1 @@
-﻿Indicates the current measured temperature.
+Indicates the current measured temperature.

@@ -1,1 +1,1 @@
-﻿Indicates the maximum close-off torque for the actuator.
+Indicates the maximum close-off torque for the actuator.

@@ -1,1 +1,1 @@
-﻿Electrical heat power of sump heater.
+Electrical heat power of sump heater.

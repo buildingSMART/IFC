@@ -1,1 +1,1 @@
-﻿Time of operation at maximum operational ambient air temperature.
+Time of operation at maximum operational ambient air temperature.

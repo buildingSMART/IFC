@@ -1,4 +1,4 @@
-﻿_IfcRotationalStiffnessMeasure_ is a measure of rotational stiffness.
+_IfcRotationalStiffnessMeasure_ is a measure of rotational stiffness.
 
 Usually measured in Nm/rad.
 
